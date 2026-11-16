@@ -7,7 +7,7 @@ import {dirname,resolve} from 'node:path';
 import type {NotebookDocument} from '../model/types';
 import {textOf} from '../model/types';
 import type {PracticeDocument,PracticeError} from './model';
-import {renderPractice,paperText,paperPrompt,escapePaper,type RenderPracticeOptions} from './paper';
+import {renderPractice,paperText,paperPrompt,escapePaper,paperEndText,type RenderPracticeOptions} from './paper';
 import {practiceDigest} from './session';
 import {resolvePaperTemplate,paperGeometry} from './templates';
 
@@ -20,7 +20,7 @@ export async function loadPracticeStyles():Promise<string>{
  let math=await readFile(resolve(here,'../../node_modules/katex/dist/katex.min.css'),'utf8');
  const urls=[...new Set([...math.matchAll(/url\(([^)]+)\)/g)].map(match=>match[1].replace(/["']/g,'')))];
  for(const url of urls){const bytes=await readFile(resolve(here,'../../node_modules/katex/dist',url)),type=url.endsWith('.woff2')?'font/woff2':url.endsWith('.woff')?'font/woff':'font/ttf';math=math.split(url).join(`data:${type};base64,${bytes.toString('base64')}`);}
- const fonts=await Promise.all([['Noto Serif SC','NotoSerifSC-Regular.otf'],['Noto Sans SC','NotoSansSC-Regular.otf']].map(async([family,file])=>`@font-face{font-family:"${family}";src:url(data:font/otf;base64,${(await readFile(resolve(here,'../../assets/practice-fonts',file))).toString('base64')});font-style:normal;font-weight:400;font-display:swap}`));
+ const fonts=await Promise.all([['Noto Serif SC','NotoSerifSC-Regular.otf'],['Noto Sans SC','NotoSansSC-Regular.otf'],['Noto Sans JP','NotoSansJP-Regular.otf'],['Noto Sans KR','NotoSansKR-Regular.otf']].map(async([family,file])=>`@font-face{font-family:"${family}";src:url(data:font/otf;base64,${(await readFile(resolve(here,'../../assets/practice-fonts',file))).toString('base64')});font-style:normal;font-weight:400;font-display:swap}`));
  const fontLicense='Noto Serif SC: Copyright 2017-2024 Adobe (http://www.adobe.com/).\nNoto Sans SC: Copyright 2014-2021 Adobe (http://www.adobe.com/).\n\n'+await readFile(resolve(here,'../../licenses/noto-cjk-OFL.txt'),'utf8');
  return '/* Noto CJK embedded font license\n'+fontLicense.replace(/\*\//g,'* /')+'\n*/\n'+fonts.join('\n')+'\n'+(await readFile(resolve(here,'paper.css'),'utf8'))+'\n'+(await readFile(resolve(here,'university-source.css'),'utf8'))+'\n'+(await readFile(resolve(here,'answer-card.css'),'utf8'))+'\n'+math;
 }
@@ -60,7 +60,7 @@ export function verifyPracticeHtml(html:string,practice?:PracticeDocument,source
   if(!html.includes(payload.paperLanguage==='en'?`Total: ${payload.totalScore} points`:`满分：${payload.totalScore} 分`))add('/html/totalScore','Printed total differs from payload');
   if(!(payload.paperLanguage==='en'?/Page \d+ of \d+/:/第 \d+ 页，共 \d+ 页/).test(html))add('/html/footer','Missing page footer');
  }
- const endText=payload.presentation?.endText??(payload.paperLanguage==='en'?'End of '+(payload.paperKind==='answers'?'answer key':payload.paperKind==='answer-card'?'answer sheet':payload.mode==='bank'?'question bank':'practice paper'):'（'+(payload.paperKind==='answers'?'答案卷':payload.paperKind==='answer-card'?'答题卡':'试卷')+'结束）');
+ const endText=paperEndText(payload,payload.paperKind,payload.presentation?.language??payload.paperLanguage);
  if(payload.paperKind!=='answer-card'&&endText&&!tpl?.includes(escapePaper(endText)))add('/html/end','Missing paper end marker');
  const layout=payload.paperKind==='answer-card'?payload.paperLayout:resolvePaperTemplate(payload.style).layout;
  const geometry=paperGeometry(layout);

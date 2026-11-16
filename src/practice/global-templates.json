@@ -1,0 +1,2262 @@
+[
+  {
+    "id": "cambridge-igcse-math",
+    "name": "IGCSE · 数学",
+    "family": "国际中学课程",
+    "description": "代数、几何与统计分组，计算器规则独立注明，保留演算过程和图示空间。",
+    "subjects": [
+      "Mathematics"
+    ],
+    "level": "Cambridge IGCSE",
+    "source": {
+      "title": "Cambridge IGCSE Mathematics 0580: 2025–2027 syllabus",
+      "url": "https://www.cambridgeinternational.org/Images/662466-2025-2027-syllabus.pdf",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "Core / Extended 及非计算器、计算器卷分别组织",
+        "官方公开 specimen papers；题面保留答案与演算空间"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 80,
+      "sections": [
+        {
+          "title": "Number and algebra",
+          "questionType": "response",
+          "instructions": "Show all necessary working."
+        },
+        {
+          "title": "Geometry and measures",
+          "questionType": "response",
+          "instructions": "Give units and label diagrams clearly."
+        },
+        {
+          "title": "Statistics and probability",
+          "questionType": "response",
+          "instructions": "Use the data given in each question."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cambridge-alevel-math",
+    "name": "A Level · 数学",
+    "family": "国际中学课程",
+    "description": "纯数、微积分与坐标几何，分问与过程分独立，兼容力学及统计科目定制。",
+    "subjects": [
+      "Pure Mathematics"
+    ],
+    "level": "Cambridge AS & A Level",
+    "source": {
+      "title": "Cambridge International AS & A Level Mathematics 9709: 2026–2027 syllabus",
+      "url": "https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "Pure Mathematics、Mechanics、Probability and Statistics 为不同试卷",
+        "Pure Mathematics 1 为110分钟、75分"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 110,
+      "totalScore": 75,
+      "sections": [
+        {
+          "title": "Algebra and functions",
+          "questionType": "response",
+          "instructions": "Give exact answers where appropriate."
+        },
+        {
+          "title": "Calculus",
+          "questionType": "response",
+          "instructions": "Show the method used in differentiation or integration."
+        },
+        {
+          "title": "Coordinate geometry",
+          "questionType": "response",
+          "instructions": "State equations and justify conclusions."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ib-math-aa",
+    "name": "IB DP · 数学 AA",
+    "family": "国际中学课程",
+    "description": "短答与长答分区，SL/HL、Paper 和计算器政策按实际科目设置。",
+    "subjects": [
+      "Mathematics: Analysis and Approaches"
+    ],
+    "level": "IB Diploma",
+    "source": {
+      "title": "IB Diploma sample exam papers: Mathematics AA",
+      "url": "https://ibo.org/programmes/diploma-programme/assessment-and-exams/sample-exam-papers/",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "官方区分 AA 与 AI，提供不同级别及试卷样卷",
+        "应按 SL / HL、Paper 及计算器要求选择规格"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 80,
+      "sections": [
+        {
+          "title": "Section A · Short response",
+          "questionType": "response",
+          "instructions": "Answer each question and show working."
+        },
+        {
+          "title": "Section B · Extended response",
+          "questionType": "response",
+          "instructions": "Follow all subparts and justify your reasoning."
+        }
+      ]
+    }
+  },
+  {
+    "id": "sat",
+    "name": "SAT · 读写与数学",
+    "family": "海外升学考试",
+    "description": "短文读写、数学选择和数值填答；纸面练习保留题型差异，原始分与量尺分分开。",
+    "subjects": [
+      "Reading and Writing · Math"
+    ],
+    "level": "SAT",
+    "source": {
+      "title": "College Board: How the SAT is structured",
+      "url": "https://satsuite.collegeboard.org/sat/whats-on-the-test/structure",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "数字SAT分读写与数学，含分模块自适应",
+        "读写64分钟54项；数学70分钟44项；部分数学为输入作答"
+      ],
+      "scope": "纸面布局用于练习其知识域，不模拟 Bluebook 自适应路由，不将原始正确数换算为官方分数。完整考试题量与时间参照官网；配套题面为原创局部练习。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 134,
+      "totalScore": 98,
+      "sections": [
+        {
+          "title": "Reading and Writing",
+          "questionType": "choice",
+          "instructions": "Choose the answer that best completes the text."
+        },
+        {
+          "title": "Math · Multiple choice",
+          "questionType": "choice",
+          "instructions": "Choose the correct answer."
+        },
+        {
+          "title": "Math · Student-produced response",
+          "questionType": "blank",
+          "instructions": "Enter your answer and show any necessary working."
+        }
+      ]
+    }
+  },
+  {
+    "id": "act",
+    "name": "ACT · 英语、数学与阅读",
+    "family": "海外升学考试",
+    "description": "核心三科加可选科学/写作；文法修订、阅读证据与数据解释各自成组。",
+    "subjects": [
+      "English · Mathematics · Reading"
+    ],
+    "level": "ACT",
+    "source": {
+      "title": "ACT: Exam sections, structure and timing",
+      "url": "https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "当前增强版包含 English、Math、Reading；Science 与 Writing 可选",
+        "各地区及施考方式应核对相应版本；不沿用旧版四科总分规则"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 125,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "English",
+          "questionType": "choice",
+          "instructions": "Choose the most effective revision."
+        },
+        {
+          "title": "Mathematics",
+          "questionType": "choice",
+          "instructions": "Solve the problem and choose one answer."
+        },
+        {
+          "title": "Reading",
+          "questionType": "choice",
+          "instructions": "Use evidence from the passage."
+        },
+        {
+          "title": "Science · Optional",
+          "questionType": "choice",
+          "instructions": "Interpret the supplied data and experimental conditions."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-calculus",
+    "name": "AP · 微积分 AB",
+    "family": "海外升学考试",
+    "description": "微分、积分、图像与过程论证；计算器分区及年度改版信息独立保留。",
+    "subjects": [
+      "Calculus AB"
+    ],
+    "level": "AP",
+    "source": {
+      "title": "College Board: AP Calculus AB exam",
+      "url": "https://apcentral.collegeboard.org/courses/ap-calculus-ab/exam",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "选择题与自由作答题分区；计算器条件按部分标明",
+        "官网预告2027年改版，年度与题数须按目标考试确认"
+      ],
+      "scope": "科目型可编辑布局；默认180分钟、100分是项目练习设置，不是官方2026或2027的完整规格或AP量尺分。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 180,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Multiple choice",
+          "questionType": "choice",
+          "instructions": "Select one answer; calculator use follows the section notice."
+        },
+        {
+          "title": "Free response",
+          "questionType": "response",
+          "instructions": "Show the analysis leading to your answer and include units."
+        }
+      ]
+    }
+  },
+  {
+    "id": "jlpt-n5",
+    "name": "JLPT · 日语 N5",
+    "family": "语言能力考试",
+    "description": "日文卷头、文字词汇、语法读解与听解，短文和四个选项保持完整。",
+    "subjects": [
+      "日本語"
+    ],
+    "level": "JLPT N5",
+    "source": {
+      "title": "JLPT: Composition of test sections and items",
+      "url": "https://www.jlpt.jp/e/guideline/testsections.html",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "N5分文字词汇、语法阅读与听力；N2为语言知识阅读、听力两部分",
+        "听力须配实际录音；等级分别设定时间与合格标准"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.8,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "ja",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "氏名：__________________",
+        "受験番号：__________________"
+      ],
+      "footerTemplate": "{page} / {pages} ページ",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "hei",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "注意事項",
+      "notices": [
+        "氏名と受験番号を記入してください。",
+        "各問題の指示を読み、指定された方法で答えてください。",
+        "解答は指定の欄に記入してください。"
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 180,
+      "sections": [
+        {
+          "title": "文字・語彙",
+          "questionType": "choice",
+          "instructions": "最もよいものを一つ選んでください。"
+        },
+        {
+          "title": "文法・読解",
+          "questionType": "choice",
+          "instructions": "文を読んで、正しい答えを選んでください。"
+        },
+        {
+          "title": "聴解",
+          "questionType": "choice",
+          "instructions": "音声を聞いて答えてください。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jlpt-n2",
+    "name": "JLPT · 日语 N2",
+    "family": "语言能力考试",
+    "description": "语境词汇、长文读解与听力意图；N2题型与N5分开设置。",
+    "subjects": [
+      "日本語"
+    ],
+    "level": "JLPT N2",
+    "source": {
+      "title": "JLPT: Composition of test sections and items",
+      "url": "https://www.jlpt.jp/e/guideline/testsections.html",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "N5分文字词汇、语法阅读与听力；N2为语言知识阅读、听力两部分",
+        "听力须配实际录音；等级分别设定时间与合格标准"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.8,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "ja",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "氏名：__________________",
+        "受験番号：__________________"
+      ],
+      "footerTemplate": "{page} / {pages} ページ",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "hei",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "注意事項",
+      "notices": [
+        "氏名と受験番号を記入してください。",
+        "各問題の指示を読み、指定された方法で答えてください。",
+        "解答は指定の欄に記入してください。"
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 155,
+      "totalScore": 180,
+      "sections": [
+        {
+          "title": "言語知識",
+          "questionType": "choice",
+          "instructions": "文脈に合う表現を一つ選んでください。"
+        },
+        {
+          "title": "読解",
+          "questionType": "choice",
+          "instructions": "文章に基づいて答えてください。"
+        },
+        {
+          "title": "聴解",
+          "questionType": "choice",
+          "instructions": "音声の内容と話し手の意図を確認してください。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jft-basic",
+    "name": "JFT-Basic · 生活日语",
+    "family": "语言能力考试",
+    "description": "购物、工作和通知等真实生活场景；四项能力按当前等级组织。",
+    "subjects": [
+      "日本語コミュニケーション"
+    ],
+    "level": "JFT-Basic A1–A2",
+    "source": {
+      "title": "Japan Foundation: About the JFT-Basic",
+      "url": "https://www.jpf.go.jp/jft-basic/e/about/index.html",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "文字词汇、会话表达、听力、阅读四部分，CBT考试",
+        "2026年8月起区分A1、A2.1与A2.2(A2)"
+      ],
+      "scope": "CBT生活场景的纸面练习；音频和评分量尺应来自实际目标版本，示例原始分不代表官方250分。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.8,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "ja",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "氏名：__________________",
+        "受験番号：__________________"
+      ],
+      "footerTemplate": "{page} / {pages} ページ",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "hei",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "注意事項",
+      "notices": [
+        "氏名と受験番号を記入してください。",
+        "各問題の指示を読み、指定された方法で答えてください。",
+        "解答は指定の欄に記入してください。"
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 60,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "文字と語彙",
+          "questionType": "choice",
+          "instructions": "場面に合う言葉を選んでください。"
+        },
+        {
+          "title": "会話と表現",
+          "questionType": "choice",
+          "instructions": "会話に合う表現を選んでください。"
+        },
+        {
+          "title": "読解",
+          "questionType": "choice",
+          "instructions": "お知らせを読んで答えてください。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eju",
+    "name": "EJU · 日本留学考试",
+    "family": "海外升学考试",
+    "description": "日本语阅读、记述和数学分科组织；按文理报考组合增减科目。",
+    "subjects": [
+      "日本語・数学"
+    ],
+    "level": "EJU",
+    "source": {
+      "title": "JASSO: EJU past exam questions",
+      "url": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/index.html",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "日本語、理科、综合科目、数学按报考科目选择",
+        "数学/理科等使用标记答题，写作与阅读分别处理"
+      ],
+      "scope": "模板按实际报考科目选用；没有统一的全科总时长与总分。默认设置是项目练习设置。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.8,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "ja",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "氏名：__________________",
+        "受験番号：__________________"
+      ],
+      "footerTemplate": "{page} / {pages} ページ",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "hei",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "注意事項",
+      "notices": [
+        "氏名と受験番号を記入してください。",
+        "各問題の指示を読み、指定された方法で答えてください。",
+        "解答は指定の欄に記入してください。"
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "日本語・読解",
+          "questionType": "choice",
+          "instructions": "文章を読んで、最も適切な答えを選んでください。"
+        },
+        {
+          "title": "数学",
+          "questionType": "response",
+          "instructions": "必要な計算を示してください。"
+        },
+        {
+          "title": "記述",
+          "questionType": "response",
+          "instructions": "条件に従って自分の考えを書いてください。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "topik-ii",
+    "name": "TOPIK II · 韩语读写",
+    "family": "语言能力考试",
+    "description": "韩文卷头、短文阅读、句子补写与长文写作；PBT/IBT独立确认。",
+    "subjects": [
+      "한국어"
+    ],
+    "level": "TOPIK II PBT",
+    "source": {
+      "title": "NIIED: Test of Proficiency in Korean",
+      "url": "https://www.niied.go.kr/web/niied/contents/niied_topik",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "TOPIK I、II和口语分立；PBT与IBT题数和时长不同",
+        "TOPIK II包含听力、写作和阅读"
+      ],
+      "scope": "PBT读写任务的可编辑版式，听力需配录音；不混用IBT、PBT及口语考试规格。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.8,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "ko",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "성명: __________________",
+        "수험번호: __________________"
+      ],
+      "footerTemplate": "{page} / {pages} 쪽",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "hei",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "유의 사항",
+      "notices": [
+        "성명과 수험번호를 기입하십시오.",
+        "각 문항의 지시를 읽고 알맞은 방법으로 답하십시오.",
+        "답은 지정된 답안란에 쓰십시오."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 120,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "읽기",
+          "questionType": "choice",
+          "instructions": "글을 읽고 알맞은 답을 고르십시오."
+        },
+        {
+          "title": "쓰기",
+          "questionType": "response",
+          "instructions": "주어진 조건에 맞게 글을 쓰십시오."
+        }
+      ]
+    }
+  },
+  {
+    "id": "hsk3",
+    "name": "HSK 三级 · 中文读写",
+    "family": "语言能力考试",
+    "description": "汉语阅读、语序与汉字书写；拼音、汉字和作答要求清晰分层。",
+    "subjects": [
+      "汉语"
+    ],
+    "level": "HSK 三级",
+    "source": {
+      "title": "中文考试服务网：HSK Level 3",
+      "url": "https://www.chinesetest.cn/HSK/3",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "页面提供听力、阅读、书写三部分及80项结构",
+        "应确认考点、版本及纸笔/网考形式"
+      ],
+      "scope": "参照官网所列HSK三级结构的练习版；新旧大纲、试行版本与当地施考公告应分别核对。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "professional",
+      "fontFamily": "song",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "chinese",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "zh",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "姓名：__________________",
+        "考号：__________________"
+      ],
+      "footerTemplate": "第 {page} 页（共 {pages} 页）",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "song",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "答题说明",
+      "notices": [
+        "请填写姓名和考号，按各题要求作答。",
+        "图像题须保留完整图例、标号、比例尺和单位。",
+        "答案写在指定区域，计算题保留必要步骤。"
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "阅读",
+          "questionType": "choice",
+          "instructions": "读材料，选择最合适的答案。"
+        },
+        {
+          "title": "书写",
+          "questionType": "blank",
+          "instructions": "根据语境填写汉字或完成句子。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "delf-b1",
+    "name": "DELF B1 · 法语",
+    "family": "语言能力考试",
+    "description": "法语阅读、交际写作与口语任务；受众、字数和评分维度分别写明。",
+    "subjects": [
+      "Français"
+    ],
+    "level": "DELF B1",
+    "source": {
+      "title": "France Éducation international: DELF B1 sample papers",
+      "url": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1/exemples-sujets",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "听、读、写与口语任务分别提供",
+        "官方页面提供集体及个人考试相关样题"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "fr",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Nom : __________________",
+        "Numéro de candidat : __________________"
+      ],
+      "footerTemplate": "Page {page} sur {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Consignes",
+      "notices": [
+        "Indiquez votre nom et votre numéro de candidat.",
+        "Lisez les consignes de chaque activité avant de répondre.",
+        "Respectez les limites de réponse et les modalités de chaque tâche."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Compréhension des écrits",
+          "questionType": "choice",
+          "instructions": "Lisez les documents et répondez aux questions."
+        },
+        {
+          "title": "Production écrite",
+          "questionType": "response",
+          "instructions": "Respectez la situation, le destinataire et la longueur demandée."
+        },
+        {
+          "title": "Production orale",
+          "questionType": "task",
+          "instructions": "Préparez vos idées puis présentez-les oralement."
+        }
+      ]
+    }
+  },
+  {
+    "id": "goethe-b1",
+    "name": "Goethe B1 · 德语",
+    "family": "语言能力考试",
+    "description": "德语模块制阅读、邮件写作与口语互动；保留德语标点和变音符。",
+    "subjects": [
+      "Deutsch"
+    ],
+    "level": "Goethe-Zertifikat B1",
+    "source": {
+      "title": "Goethe-Institut: B1 practice materials",
+      "url": "https://www.goethe.de/en/m/spr/prf/ueb/pb1.html",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "提供Hören、Lesen、Schreiben与Sprechen四模块",
+        "读写与口语按模块组织，练习资料独立下载"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "de",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Teilnehmernummer: __________________"
+      ],
+      "footerTemplate": "Seite {page} von {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Hinweise",
+      "notices": [
+        "Tragen Sie Ihren Namen und Ihre Teilnehmernummer ein.",
+        "Lesen Sie die Anweisungen zu jeder Aufgabe sorgfältig.",
+        "Beachten Sie die vorgegebene Antwortform und den Umfang."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Lesen",
+          "questionType": "choice",
+          "instructions": "Lesen Sie den Text und wählen Sie die passende Antwort."
+        },
+        {
+          "title": "Schreiben",
+          "questionType": "response",
+          "instructions": "Schreiben Sie einen zusammenhängenden Text."
+        },
+        {
+          "title": "Sprechen",
+          "questionType": "task",
+          "instructions": "Stellen Sie Ihre Idee vor und reagieren Sie auf Rückfragen."
+        }
+      ]
+    }
+  },
+  {
+    "id": "us-civics",
+    "name": "美国入籍 · 公民口试",
+    "family": "公民与入籍",
+    "description": "口头问答与练习记录，保留版本、申请时间和地区信息；与选择题入籍考试区分。",
+    "subjects": [
+      "U.S. Civics"
+    ],
+    "level": "Naturalization",
+    "source": {
+      "title": "USCIS: 2025 civics questions and answers",
+      "url": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "官方2025版为从128题中口头询问至多20题，至少12题正确",
+        "实际适用2008或2025版取决于申请时间及政策；现任官员答案应实时核对"
+      ],
+      "scope": "口试练习记录表；不将美国口试改造成选择题考试。检索确认官方说明，PDF直取受403限制，未复制PDF题文。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Answer the questions aloud when the examiner asks them.",
+        "Listen to the requested number of examples or answers.",
+        "Keep the answer key separate until the speaking activity is complete."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 20,
+      "totalScore": 20,
+      "sections": [
+        {
+          "title": "American Government",
+          "questionType": "response",
+          "instructions": "Answer aloud in your own words."
+        },
+        {
+          "title": "Rights and Responsibilities",
+          "questionType": "response",
+          "instructions": "Give one clear response for each prompt."
+        },
+        {
+          "title": "Interview record",
+          "questionType": "task",
+          "instructions": "Record the examiner’s prompts and review the accuracy of your spoken answers."
+        }
+      ]
+    }
+  },
+  {
+    "id": "uk-civics",
+    "name": "英国入籍 · Life in the UK",
+    "family": "公民与入籍",
+    "description": "英国历史、制度与公民责任的选择题，原始正确数独立记录。",
+    "subjects": [
+      "British Life and Citizenship"
+    ],
+    "level": "Life in the UK",
+    "source": {
+      "title": "GOV.UK: Life in the UK Test",
+      "url": "https://www.gov.uk/life-in-the-uk-test",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "24题，45分钟；内容来自官方Guide for New Residents",
+        "本项目的原创练习题不替代官方复习指南"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 45,
+      "totalScore": 24,
+      "sections": [
+        {
+          "title": "History and institutions",
+          "questionType": "choice",
+          "instructions": "Choose the most accurate answer."
+        },
+        {
+          "title": "Rights and responsibilities",
+          "questionType": "choice",
+          "instructions": "Read each statement carefully before answering."
+        }
+      ]
+    }
+  },
+  {
+    "id": "canada-civics",
+    "name": "加拿大入籍 · Citizenship",
+    "family": "公民与入籍",
+    "description": "依据Discover Canada组织选择与判断题；更新后的45分钟规格单独记录。",
+    "subjects": [
+      "Canadian Citizenship"
+    ],
+    "level": "Canadian Citizenship Test",
+    "source": {
+      "title": "IRCC: Study for the citizenship test",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "2026页面列20题、45分钟、15题正确通过",
+        "选择或判断题，内容依据Discover Canada"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 45,
+      "totalScore": 20,
+      "sections": [
+        {
+          "title": "Government and rights",
+          "questionType": "choice",
+          "instructions": "Choose one answer."
+        },
+        {
+          "title": "True or false",
+          "questionType": "truefalse",
+          "instructions": "Mark each statement true or false."
+        }
+      ]
+    }
+  },
+  {
+    "id": "australia-civics",
+    "name": "澳大利亚入籍 · Citizenship",
+    "family": "公民与入籍",
+    "description": "公民知识与澳大利亚价值观分组；价值观必过规则独立于总正确数。",
+    "subjects": [
+      "Australian Citizenship"
+    ],
+    "level": "Australian Citizenship Test",
+    "source": {
+      "title": "Home Affairs: Learn about the citizenship test",
+      "url": "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "20道电脑选择题，45分钟；总分至少15/20",
+        "5道Australian values题必须全部正确"
+      ],
+      "scope": "参照官方任务类型的可编辑纸面版式；题量、时长及评分按所选年度、科目与考试形式另行确认。配套题面是项目原创的局部练习，不是官方原卷。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "answerSpace": "ruled",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 45,
+      "totalScore": 20,
+      "sections": [
+        {
+          "title": "Australia and its people",
+          "questionType": "choice",
+          "instructions": "Choose one correct answer."
+        },
+        {
+          "title": "Australian values",
+          "questionType": "choice",
+          "instructions": "Consider the rights, freedoms and responsibilities described in the question."
+        }
+      ]
+    }
+  },
+  {
+    "id": "cambridge-art",
+    "name": "IGCSE · 艺术与设计",
+    "family": "艺术与设计",
+    "description": "彩色作品图、视觉分析、材料试验与创作结果，保留大幅绘图答题区。",
+    "subjects": [
+      "Art & Design"
+    ],
+    "level": "Cambridge IGCSE",
+    "source": {
+      "title": "Cambridge IGCSE Art & Design 0400: 2026 syllabus",
+      "url": "https://www.cambridgeinternational.org/Images/697135-2026-syllabus.pdf",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "作品集与最终成果；观察、探索、发展和表达作为评价依据",
+        "外部命题任务有支持研究与最终作品，正式任务为8小时"
+      ],
+      "scope": "本模板的艺术任务纸与彩色原创图用于可编辑练习；正式考试的8小时、提交格式与评分依据目标年度规范，不将练习分冒充官方成绩。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "color"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "answerSpace": "blank",
+      "questionScores": "show",
+      "printColor": "color",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Use the supplied images and task briefs.",
+        "Support visual analysis with specific evidence; label studies and revisions.",
+        "Use colour for tasks that assess colour relationships."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 120,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Observation and visual analysis",
+          "questionType": "response",
+          "instructions": "Use specific visual evidence in your response."
+        },
+        {
+          "title": "Development studies",
+          "questionType": "task",
+          "instructions": "Explore alternatives and record decisions."
+        },
+        {
+          "title": "Personal outcome",
+          "questionType": "task",
+          "instructions": "Present a resolved outcome and explain its relationship to your studies."
+        }
+      ]
+    }
+  },
+  {
+    "id": "ap-art-history",
+    "name": "AP · 艺术史",
+    "family": "艺术与设计",
+    "description": "作品图与视觉证据并列，比较、语境和归属题各有独立作答空间。",
+    "subjects": [
+      "Art History"
+    ],
+    "level": "AP",
+    "source": {
+      "title": "College Board: AP Art History exam",
+      "url": "https://apcentral.collegeboard.org/courses/ap-art-history/exam",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "图像、比较、视觉/语境分析及归属判断",
+        "官方数字考试提供作品图像；项目不打包受限艺术图片"
+      ],
+      "scope": "可编辑艺术史题型布局，配图为原创抽象构图，不伪称课程规定作品。具体考试版本的题量和时长按官网确认。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "color"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "answerSpace": "blank",
+      "questionScores": "show",
+      "printColor": "color",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Use the supplied images and task briefs.",
+        "Support visual analysis with specific evidence; label studies and revisions.",
+        "Use colour for tasks that assess colour relationships."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 90,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Visual analysis",
+          "questionType": "response",
+          "instructions": "Support each claim with visible evidence."
+        },
+        {
+          "title": "Comparison",
+          "questionType": "response",
+          "instructions": "Compare form, function and context."
+        },
+        {
+          "title": "Context and interpretation",
+          "questionType": "response",
+          "instructions": "Distinguish observation from an inference about context."
+        }
+      ]
+    }
+  },
+  {
+    "id": "music-theory",
+    "name": "乐理 · 读谱与分析",
+    "family": "音乐与表演",
+    "description": "原创五线谱、节奏、调性和音程题；读谱图与书写区独立，避免用概念背诵代替任务。",
+    "subjects": [
+      "Music Theory"
+    ],
+    "level": "Music Theory",
+    "source": {
+      "title": "ABRSM: Music Theory",
+      "url": "https://www.abrsm.org/en-gb/music-theory",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "ABRSM说明1–5级为在线乐理，6–8级为纸笔",
+        "题面练习应按级别组织读谱、节奏、调式与和声"
+      ],
+      "scope": "项目原创读谱和分析题，参考官方能力范围，不是ABRSM原题。官网搜索可确认线上/纸笔类别，正文直取受403限制。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "answerSpace": "blank",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Write your name and candidate number above.",
+        "Read each task carefully and answer in the spaces provided.",
+        "Show the necessary working and follow any stated response limits."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 60,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Notation and rhythm",
+          "questionType": "blank",
+          "instructions": "Use standard music notation or an unambiguous written answer."
+        },
+        {
+          "title": "Keys and intervals",
+          "questionType": "response",
+          "instructions": "Identify notes and intervals accurately."
+        },
+        {
+          "title": "Musical context",
+          "questionType": "response",
+          "instructions": "Explain the notation in its musical context."
+        }
+      ]
+    }
+  },
+  {
+    "id": "music-performance",
+    "name": "演奏 · 曲目与评价",
+    "family": "音乐与表演",
+    "description": "曲目单、连续演奏证据和观察量表；音准、节奏、风格与整体表现分别评价。",
+    "subjects": [
+      "Music Performance"
+    ],
+    "level": "Performance assessment",
+    "source": {
+      "title": "ABRSM Teacher Hub: What is a Performance Grade exam?",
+      "url": "https://teacherhub.abrsm.org/mod/page/view.php?id=2018",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "四首曲目连续录制，三首分别选自对应级别A/B/C曲目表，另加自选曲",
+        "演奏评价与乐理纸题不同，应记录演奏证据与整体表现"
+      ],
+      "scope": "项目练习演奏任务与观察量表；官方曲目、级别及演奏时间上限由实际目标规范确定，不以本表代替认证考试。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "grayscale"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "answerSpace": "blank",
+      "questionScores": "show",
+      "printColor": "grayscale",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Agree the instrument, level and programme before starting.",
+        "Record the performance as a continuous take.",
+        "Use timestamps to support observations and reflection."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 30,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Programme planning",
+          "questionType": "task",
+          "instructions": "List the works, editions, order and estimated duration."
+        },
+        {
+          "title": "Performance",
+          "questionType": "task",
+          "instructions": "Perform the agreed programme and record the performance evidence."
+        },
+        {
+          "title": "Reflection",
+          "questionType": "response",
+          "instructions": "Use timestamps to identify successful choices and points for improvement."
+        }
+      ]
+    }
+  },
+  {
+    "id": "design-studio",
+    "name": "设计 · 项目与作品集",
+    "family": "艺术与设计",
+    "description": "横向A3研究、草图、原型与成品叙事，适合建筑、视觉传达、服装等作品集任务。",
+    "subjects": [
+      "Design Portfolio"
+    ],
+    "level": "Art and Design admission",
+    "source": {
+      "title": "University of the Arts London: Portfolio advice",
+      "url": "https://www.arts.ac.uk/study-at-ual/apply/portfolio-advice",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "按项目呈现research、process与outcome；展示探索过程",
+        "横向页面、简洁注释与作品材料尺寸信息；课程要求须单独核对"
+      ],
+      "scope": "参考大学作品集组织建议的项目任务纸；A3横向与评分量表是项目设计，不是UAL统一招生试卷。"
+    },
+    "layout": {
+      "paperSize": "A3",
+      "orientation": "landscape",
+      "columns": 1,
+      "headerVariant": "language",
+      "fontFamily": "sans",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 25,
+      "marginRightMm": 25,
+      "showSeal": false,
+      "headingNumbering": "arabic",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "color"
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "Name: __________________",
+        "Candidate number: __________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "answerSpace": "blank",
+      "questionScores": "show",
+      "printColor": "color",
+      "titleFont": "times",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "Instructions",
+      "notices": [
+        "Use the supplied images and task briefs.",
+        "Support visual analysis with specific evidence; label studies and revisions.",
+        "Use colour for tasks that assess colour relationships."
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 120,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "Research and problem framing",
+          "questionType": "response",
+          "instructions": "Identify the user, context and evidence behind your brief."
+        },
+        {
+          "title": "Iteration and prototyping",
+          "questionType": "task",
+          "instructions": "Develop and compare alternatives."
+        },
+        {
+          "title": "Portfolio presentation",
+          "questionType": "task",
+          "instructions": "Present research, process and outcome with concise annotations."
+        }
+      ]
+    }
+  },
+  {
+    "id": "science-color",
+    "name": "地理与遥感 · 彩色图像",
+    "family": "科学与图像",
+    "description": "真/假彩色、图例、比例尺和波段信息完整保留；彩印用于有颜色判读要求的题目。",
+    "subjects": [
+      "地理与遥感"
+    ],
+    "level": "高中 / 大学",
+    "source": {
+      "title": "NASA Earth Observatory: Interpreting a false-color satellite image",
+      "url": "https://science.nasa.gov/earth/earth-observatory/how-to-interpret-a-false-color-satellite-image/",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "真彩色使用可见红绿蓝波段；假彩色可使用非可见波段",
+        "图像判读须先阅读波段映射及图例，不能将显示色直接当作地物真实颜色"
+      ],
+      "scope": "项目原创示意图和数值用于图例、波段和颜色信息的推理，不冒称卫星实测影像。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "professional",
+      "fontFamily": "song",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "chinese",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "color"
+    },
+    "presentation": {
+      "language": "zh",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "姓名：__________________",
+        "考号：__________________"
+      ],
+      "footerTemplate": "第 {page} 页（共 {pages} 页）",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "answerSpace": "blank",
+      "questionScores": "show",
+      "printColor": "color",
+      "titleFont": "song",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "答题说明",
+      "notices": [
+        "请填写姓名和考号，按各题要求作答。",
+        "图像题须保留完整图例、标号、比例尺和单位。",
+        "答案写在指定区域，计算题保留必要步骤。"
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 45,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "图例与波段",
+          "questionType": "response",
+          "instructions": "结合波段映射和图例作答。"
+        },
+        {
+          "title": "空间证据与计算",
+          "questionType": "response",
+          "instructions": "列出证据、单位与计算过程。"
+        }
+      ]
+    }
+  },
+  {
+    "id": "biology-visual",
+    "name": "生物实验 · 观察与图像",
+    "family": "科学与图像",
+    "description": "彩色细胞示意图、比例尺、放大倍数和实验对照；观察证据与解释分别作答。",
+    "subjects": [
+      "生物学"
+    ],
+    "level": "高中 / 大学",
+    "source": {
+      "title": "OpenStax Biology 2e: Studying Cells",
+      "url": "https://openstax.org/books/biology-2e/pages/4-1-studying-cells",
+      "referenceYear": 2026,
+      "kind": "official-guidance",
+      "accessedAt": "2026-11-16",
+      "observed": [
+        "区分放大倍数与分辨率",
+        "电子显微镜制样与活体观察条件不同"
+      ],
+      "scope": "根据公开教材概念自编题目，示意图为项目原创，不复制教材图像；颜色只是标记，必须结合结构和比例尺作答。"
+    },
+    "layout": {
+      "paperSize": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "headerVariant": "professional",
+      "fontFamily": "song",
+      "fontSize": 11,
+      "lineHeight": 1.65,
+      "marginTopMm": 24,
+      "marginBottomMm": 24,
+      "marginLeftMm": 24,
+      "marginRightMm": 24,
+      "showSeal": false,
+      "headingNumbering": "chinese",
+      "answerMode": "inline",
+      "institution": "",
+      "examCode": "",
+      "footerText": "",
+      "printColor": "color"
+    },
+    "presentation": {
+      "language": "zh",
+      "sourceLayout": true,
+      "headerRule": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "candidateFields": [
+        "姓名：__________________",
+        "考号：__________________"
+      ],
+      "footerTemplate": "第 {page} 页（共 {pages} 页）",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "answerSpace": "blank",
+      "questionScores": "show",
+      "printColor": "color",
+      "titleFont": "song",
+      "questionGapMm": 5,
+      "headerStyle": "generated",
+      "subtitle": "",
+      "sectionDetails": false,
+      "noticeLabel": "答题说明",
+      "notices": [
+        "请填写姓名和考号，按各题要求作答。",
+        "图像题须保留完整图例、标号、比例尺和单位。",
+        "答案写在指定区域，计算题保留必要步骤。"
+      ]
+    },
+    "blueprint": {
+      "durationMinutes": 45,
+      "totalScore": 100,
+      "sections": [
+        {
+          "title": "观察与标注",
+          "questionType": "response",
+          "instructions": "依据标号与图例描述观察结果。"
+        },
+        {
+          "title": "实验设计与误差",
+          "questionType": "response",
+          "instructions": "说明变量、对照和证据范围。"
+        }
+      ]
+    }
+  }
+]

@@ -1,11 +1,12 @@
 import realCatalog from './real-cases.json';
+import globalTemplates from './global-templates.json';
 import {getExamSpecification} from './exam-specification';
 import {refreshPracticeMetadata} from './bank';
 import type {PracticeDocument,PracticeQuestionType,PracticeStyle,PracticePresentation} from './model';
 
 /** Millimetres are physical paper dimensions. Overrides never change question content. */
 export interface PaperTemplateLayout {
- widthMm?:number;heightMm?:number;paperSize:'A4'|'A3';orientation:'portrait'|'landscape';columns:1|2;
+ printColor?:'color'|'grayscale';widthMm?:number;heightMm?:number;paperSize:'A4'|'A3';orientation:'portrait'|'landscape';columns:1|2;
  headerVariant:'standard'|'gaokao'|'university'|'professional'|'computer'|'ielts'|'language';
  fontFamily:'song'|'times'|'sans';fontSize:number;lineHeight:number;
  marginTopMm:number;marginBottomMm:number;marginLeftMm:number;marginRightMm:number;
@@ -15,7 +16,7 @@ export interface PaperTemplateLayout {
 export type PaperTemplateOverrides=Partial<PaperTemplateLayout>;
 export interface PaperTemplate {
  presentation?:PracticePresentation;caseId?:string;id:string;name:string;family:string;description:string;subjects:string[];level:string;
- source:{title:string;url:string;referenceYear:number;kind:'official-sample'|'official-guidance'|'institution-template'|'researched-paper';observed:string[];scope:string};
+ source:{accessedAt?:string;title:string;url:string;referenceYear:number;kind:'official-sample'|'official-guidance'|'institution-template'|'researched-paper';observed:string[];scope:string};
  layout:PaperTemplateLayout;
  blueprint:{durationMinutes:number;totalScore:number;sections:{title:string;questionType:PracticeQuestionType;count?:number;score?:number;instructions:string}[]};
 }
@@ -53,6 +54,8 @@ PAPER_TEMPLATES.push(
  {id:'engineering-course',name:'工程课程 · 计算与设计',family:'工程课程',description:'条件、示意图、计算过程、单位与结论分别组织，保留画图和演算区。',subjects:['工程力学','结构力学','电路','工程热力学','控制工程'],level:'大学工程课程',source:authoringTemplateSource('工程课程'),presentation:{sourceLayout:false,answerSpace:'none',answerCard:{template:'school'},headerRule:false},layout:layout({headerVariant:'university',showSeal:false,fontSize:11,lineHeight:1.65,marginTopMm:25,marginBottomMm:25,marginLeftMm:25,marginRightMm:25,answerMode:'separate'}),blueprint:{durationMinutes:120,totalScore:100,sections:[sec('基础与分析','response','根据已知条件分析问题，注明所用假设。'),sec('计算题','response','列出模型与计算步骤，注明单位、方向和有效数字。'),sec('综合设计题','response','结合图示、约束与验算要求完成设计。')]}},
  {id:'engineering-professional',name:'工程资格 · 案例实务',family:'工程资格',description:'适用规范、案例条件与分问清晰分开，计算与管理题按专业组织。',subjects:['建设工程实务','注册工程师','造价工程','工程管理'],level:'工程职业资格',source:authoringTemplateSource('工程资格'),presentation:{sourceLayout:false,answerSpace:'none',answerCard:{template:'school'},headerRule:false},layout:layout({headerVariant:'professional',showSeal:false,fontSize:11,lineHeight:1.7,marginTopMm:25,marginBottomMm:25,marginLeftMm:25,marginRightMm:25,answerMode:'separate'}),blueprint:{durationMinutes:180,totalScore:100,sections:[sec('专业知识','choice','依据题目给定条件与适用规范选择答案。'),sec('案例分析','response','分别回答各分问；规范依据应与题目年份、地区和版本一致。')]}}
 );
+/** Source-backed international, language, citizenship and visual-task layouts. */
+PAPER_TEMPLATES.push(...globalTemplates as unknown as PaperTemplate[]);
 /** Named CET profiles use the complete official part allocation, rather than a four-label sketch. */
 for(const id of ['cet4','cet6'] as const){
  const specification=getExamSpecification(id),band=id==='cet4'?4:6,existing=PAPER_TEMPLATES.findIndex(t=>t.id===id);
@@ -71,8 +74,13 @@ export function resolvePaperTemplate(style:PracticeStyle):PaperTemplate {
  return template;
 }
 export function applyPaperTemplate(practice:PracticeDocument,id:string):PracticeDocument {
- const template=getPaperTemplate(id),copy=structuredClone(practice);if(template.presentation)copy.presentation={...structuredClone(template.presentation),...(template.caseId===practice.practiceId?{}:{titleLines:[practice.title]})};else delete copy.presentation;
+ const template=getPaperTemplate(id),copy=structuredClone(practice);if(copy.style.templateId===id)return copy;if(template.presentation)copy.presentation={...structuredClone(template.presentation),...(template.caseId===practice.practiceId?{}:{titleLines:[practice.title]})};else delete copy.presentation;
  if(id==='gaokao-math'&&copy.presentation){copy.presentation.titleLines=[practice.title,practice.subject];copy.presentation.metaLines=[`本试卷共 ${practice.sections.reduce((n,s)=>n+s.questions.length,0)} 小题，满分 ${practice.totalScore} 分。考试用时 ${practice.durationMinutes} 分钟。`];}
+ if(!template.caseId&&copy.presentation){
+  const lang=copy.presentation.language??'zh';
+  copy.presentation.metaLines=[({zh:`考试时间：${copy.durationMinutes} 分钟　满分：${copy.totalScore} 分`,en:`Time allowed: ${copy.durationMinutes} minutes　Total: ${copy.totalScore} points`,ja:`試験時間：${copy.durationMinutes}分　配点：${copy.totalScore}点`,ko:`시험 시간: ${copy.durationMinutes}분　배점: ${copy.totalScore}점`,fr:`Durée : ${copy.durationMinutes} minutes　Total : ${copy.totalScore} points`,de:`Bearbeitungszeit: ${copy.durationMinutes} Minuten　Gesamt: ${copy.totalScore} Punkte`} as const)[lang]];
+ }
+ if(practice.presentation?.printColor)(copy.presentation??={}).printColor=practice.presentation.printColor;
  delete copy.original;
  copy.style={preset:template.layout.headerVariant==='ielts'||template.layout.headerVariant==='language'?'language':template.subjects.includes('数学')?'stem':practice.style.preset,templateId:id};const source=(realCatalog.cases as unknown as PracticeDocument[]).find(p=>p.practiceId===template.caseId);return source?refreshPracticeMetadata(copy,source):copy;
 }

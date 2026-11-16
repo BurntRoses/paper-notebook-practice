@@ -543,6 +543,13 @@
                         "type": "integer",
                         "minimum": 0,
                         "maximum": 100
+                      },
+                      "colorRequired": {
+                        "type": "boolean"
+                      },
+                      "grayscaleDataUrl": {
+                        "type": "string",
+                        "pattern": "^data:image/"
                       }
                     },
                     "required": [
@@ -1468,7 +1475,11 @@
         "language": {
           "enum": [
             "zh",
-            "en"
+            "en",
+            "ja",
+            "ko",
+            "fr",
+            "de"
           ]
         },
         "titleFont": {
@@ -1824,6 +1835,12 @@
         "projectMark": {
           "type": "boolean",
           "description": "Show the removable linked GitHub project credit at the bottom-right of each generated page; defaults to true. Independent of source watermark."
+        },
+        "printColor": {
+          "enum": [
+            "color",
+            "grayscale"
+          ]
         }
       }
     },

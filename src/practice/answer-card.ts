@@ -3,7 +3,7 @@ import type {PaperTemplateLayout} from './templates';
 
 /** Blank identity labels become measured writing fields; literal source rows remain intact. */
 export function candidateIdentityMarkup(fields:string[],e:(value:unknown)=>string,options:{digits?:number;english?:boolean}={}){
- const known=/^(?:姓名|学校|班级|学号|考号|准考证号|报考单位|报考专业|报考院校|考点|考场|考场号|座号|座位号|专业|单位|Name|Candidate name|Candidate number|Candidate No\.?|Student (?:ID|number)|Class|School|Institution|Course|Registration (?:No\.?|number))$/i;
+ const known=/^(?:氏名|受験番号|이름|성명|수험번호|Nom|Numéro de candidat|Prüfungsnummer|Teilnehmernummer|姓名|学校|班级|学号|考号|准考证号|报考单位|报考专业|报考院校|考点|考场|考场号|座号|座位号|专业|单位|Name|Candidate name|Candidate number|Candidate No\.?|Student (?:ID|number)|Class|School|Institution|Course|Registration (?:No\.?|number))$/i;
  const entries=fields.flatMap<{label:string}|{raw:string}>(line=>{
   const trimmed=line.trim();
   if(known.test(trimmed))return [{label:trimmed}];
@@ -13,7 +13,7 @@ export function candidateIdentityMarkup(fields:string[],e:(value:unknown)=>strin
  });
  return `<div class="candidate-identity${options.english?' candidate-identity-latin':''}">${entries.map(entry=>{
   if('raw'in entry)return `<div class="candidate-identity-original">${e(entry.raw)}</div>`;
-  const label=entry.label,number=/准考证号|考号|Candidate (?:number|No\.?)|Registration (?:No\.?|number)/i.test(label),wide=/单位|院校|学校|专业|School|Institution|Course/i.test(label),digits=number&&options.digits;
+  const label=entry.label,number=/受験番号|수험번호|Teilnehmernummer|Numéro de candidat|Prüfungsnummer|准考证号|考号|Candidate (?:number|No\.?)|Registration (?:No\.?|number)/i.test(label),wide=/单位|院校|学校|专业|School|Institution|Course/i.test(label),digits=number&&options.digits;
   return `<div class="candidate-field${wide?' candidate-field-wide':''}${digits?' candidate-field-number':''}" data-candidate-field="${e(label)}"><span class="candidate-field-label">${e(label)}${options.english?':':'：'}</span>${digits?`<span class="candidate-number-cells" style="--candidate-digits:${digits}" aria-hidden="true">${Array.from({length:digits},()=>'<i></i>').join('')}</span>`:'<span class="candidate-field-line" aria-hidden="true"></span>'}</div>`;
  }).join('')}</div>`;
 }
@@ -22,7 +22,8 @@ export function candidateIdentityMarkup(fields:string[],e:(value:unknown)=>strin
 export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLayout,e:(value:unknown)=>string){
  const config=practice.presentation?.answerCard;
  const cet=/^real-cet[46]-/.test(practice.practiceId)||config?.template==='cet';
- const english=practice.presentation?.language==='en'||['ielts','language'].includes(source.headerVariant);
+ const language=practice.presentation?.language??(['ielts','language'].includes(source.headerVariant)?'en':'zh'),english=language!=='zh';
+ const labels=({zh:['答题卡','姓名','考号'],en:['Answer Sheet','Name','Candidate number'],ja:['解答用紙','氏名','受験番号'],ko:['답안지','이름','수험번호'],fr:['Feuille de réponses','Nom','Numéro de candidat'],de:['Antwortbogen','Name','Prüfungsnummer']} as const)[language];
  const boxed=config?.template==='boxed'||(!config&&!cet&&english);
  const essayGrid=config?.template==='essay-grid';
  const university=config?.template==='university'||(!config&&!cet&&!boxed&&(source.headerVariant==='university'||/^real-(pku|ecnu|ustc|zju)/.test(practice.practiceId)));
@@ -86,7 +87,7 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
    }while(startRow<totalRows);
   }
  }else if(boxed){
-  content=`<header class="paper-chunk boxed-card-heading"><h1>${e(config?.title??practice.title)}</h1><p>Answer Sheet</p>${candidateIdentityMarkup(['Name','Candidate number'],e,{digits:config?.candidateDigits,english:true})}${source.headerVariant==='ielts'?'<small>Instructions to candidates: Write your answers in the spaces provided.</small>':''}</header>`;
+  content=`<header class="paper-chunk boxed-card-heading"><h1>${e(config?.title??practice.title)}</h1><p>${labels[0]}</p>${candidateIdentityMarkup([labels[1],labels[2]],e,{digits:config?.candidateDigits,english:true})}${source.headerVariant==='ielts'?'<small>Instructions to candidates: Write your answers in the spaces provided.</small>':''}</header>`;
   for(const q of all){
    if(['choice','multiple','truefalse'].includes(q.type))content+=`<div class="paper-chunk boxed-card-choice" ${attributes(q)}><b>${label(q)}</b>${(q.options??[]).map(o=>bubble(o.id)).join('')}</div>`;
    else if(q.type==='blank')content+=`<div class="paper-chunk boxed-card-blank" ${attributes(q)}><b>${label(q)}</b>${Array.from({length:Array.isArray(q.solution)?q.solution.length:1},()=>'<i></i>').join('')}</div>`;

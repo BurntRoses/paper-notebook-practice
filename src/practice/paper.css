@@ -226,3 +226,12 @@ body[data-source-header=gaokao-national] .exam-notices{font-size:10.5pt;line-hei
 .candidate-identity-latin{column-gap:7mm;font-size:10pt}
 .candidate-identity-latin .candidate-field-label{min-width:0}
 .candidate-identity-latin .candidate-field-line{min-height:6mm}
+
+/* Output color is independent of the application's light/dark appearance. */
+body[data-print-color=grayscale] .exam-page{filter:grayscale(1)}
+.exam-page,.question-attachment img{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+html:lang(ja) .exam-page{--paper-font:"Noto Sans JP","Noto Sans SC",sans-serif}
+html:lang(ko) .exam-page{--paper-font:"Noto Sans KR","Noto Sans SC",sans-serif}
+
+html:lang(ja) .exam-heading h1,html:lang(ja) .section-heading h2,html:lang(ja) .boxed-card-heading h1{font-family:"Noto Sans JP","Noto Sans SC",sans-serif}
+html:lang(ko) .exam-heading h1,html:lang(ko) .section-heading h2,html:lang(ko) .boxed-card-heading h1{font-family:"Noto Sans KR","Noto Sans SC",sans-serif}

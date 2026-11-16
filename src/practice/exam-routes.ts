@@ -1,8 +1,8 @@
 import registry from '../../skills/paper-notebook-practice/references/exam-routes.json';
 
-export type ExamRouteFamily='civil-service'|'postgraduate'|'engineering-course'|'engineering-qualification';
+export type ExamRouteFamily='civil-service'|'postgraduate'|'engineering-course'|'engineering-qualification'|'international-school'|'international-admissions'|'language-certification'|'citizenship'|'arts-performance';
 export interface ExamRoute {
- id:string;name:string;family:ExamRouteFamily;aliases:string[];subject:string;
+ id:string;name:string;family:ExamRouteFamily;aliases:string[];subject:string;templateId?:string;
  profileIds:string[];referenceFiles:string[];sourceGuidance:string[];checks:string[];exclusions?:string[];
 }
 export interface ExamRouteContext {
@@ -13,16 +13,17 @@ export const EXAM_ROUTES=registry.routes as ExamRoute[];
 export const EXAM_ROUTE_FAMILIES=registry.families as {id:ExamRouteFamily;name:string}[];
 export function getExamRoute(id:string):ExamRoute|undefined {return EXAM_ROUTES.find(route=>route.id===id);}
 
-const normalise=(value:string)=>value.normalize('NFKC').toLowerCase().replace(/[\s·•]+/g,'');
+const normalise=(value:string)=>value.normalize('NFKC').toLowerCase().replace(/[\s·•]+/g,' ').trim();
 const numericAlias=(alias:string)=>/^\d+$/.test(alias);
 function aliasMatches(text:string,alias:string):boolean {
  const needle=normalise(alias);
+ const compact=text.replace(/\s/g,'');
  if(numericAlias(needle)){
   // A page number, year, phone number or question number is not an exam code.
-  return text===needle||new RegExp(`(?:考研|统考|科目|代码|课程)[:：-]?${needle}(?!\\d)`).test(text)||new RegExp(`^${needle}(?:数学|英语|思想政治|管理|经济|计算机)`).test(text);
+  return compact===needle||new RegExp(`(?:考研|统考|科目|代码|课程)[:：-]?${needle}(?!\\d)`).test(compact)||new RegExp(`^${needle}(?:数学|英语|思想政治|管理|经济|计算机)`).test(compact);
  }
  if(/^[a-z ]+$/i.test(alias))return new RegExp(`(?:^|[^a-z])${alias.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/ /g,'\\s*')}(?:$|[^a-z])`,'i').test(text);
- return text.includes(needle);
+ return compact.includes(needle.replace(/\s/g,''));
 }
 
 /** A route chooses authoring methods. It is never proof of a verified full exam specification. */

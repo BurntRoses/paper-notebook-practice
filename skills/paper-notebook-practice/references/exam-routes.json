@@ -16,6 +16,26 @@
     {
       "id": "engineering-qualification",
       "name": "工程资格"
+    },
+    {
+      "id": "international-school",
+      "name": "国际中学课程"
+    },
+    {
+      "id": "international-admissions",
+      "name": "海外升学"
+    },
+    {
+      "id": "language-certification",
+      "name": "语言考试"
+    },
+    {
+      "id": "citizenship",
+      "name": "入籍与公民知识"
+    },
+    {
+      "id": "arts-performance",
+      "name": "艺术与音乐"
     }
   ],
   "routes": [
@@ -1241,6 +1261,684 @@
       "checks": [
         "确认基础或专业及知识/案例；路线、路基路面、桥隧或交通工程范围按当期大纲，设计参数与规范一致。",
         "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "cambridge-igcse",
+      "name": "Cambridge IGCSE · 数学",
+      "family": "international-school",
+      "aliases": [
+        "IGCSE Mathematics",
+        "IGCSE数学",
+        "剑桥国际数学0580",
+        "0580数学"
+      ],
+      "subject": "IGCSE Mathematics",
+      "profileIds": [
+        "international-assessment",
+        "mathematics"
+      ],
+      "templateId": "cambridge-igcse-math",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "按科目代码、年度、Core/Extended、component与variant确认范围。官方样卷/评分及更新：https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-mathematics-0580/past-papers/"
+      ],
+      "checks": [
+        "核对计算器/非计算器paper，实做代数、几何、统计和推理；保留方法分及单位。",
+        "原卷变体、命令词和纸面页码分别对应，不将2025 specimen当成所有年度卷式。"
+      ]
+    },
+    {
+      "id": "cambridge-a-level",
+      "name": "Cambridge AS / A Level · 数学",
+      "family": "international-school",
+      "aliases": [
+        "A Level Mathematics",
+        "A-Level数学",
+        "A Level数学",
+        "AS数学",
+        "9709数学"
+      ],
+      "subject": "A Level Mathematics",
+      "profileIds": [
+        "international-assessment",
+        "calculus",
+        "probability-statistics"
+      ],
+      "templateId": "cambridge-alevel-math",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "先确定AS/A Level及pure/mechanics/statistics组合，按当期9709 syllabus和paper核定。2026—2027官方大纲：https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf"
+      ],
+      "checks": [
+        "只选目标component内容，说明允许的计算器、公式表和精度。",
+        "独立求解，力学单位、统计假设、方法分与等价步骤逐项核对。"
+      ]
+    },
+    {
+      "id": "ib-diploma",
+      "name": "IB DP · 数学与学科评估",
+      "family": "international-school",
+      "aliases": [
+        "IB Mathematics",
+        "IB数学",
+        "IB DP数学",
+        "国际文凭数学"
+      ],
+      "subject": "IB Mathematics AA",
+      "profileIds": [
+        "international-assessment",
+        "mathematics"
+      ],
+      "templateId": "ib-math-aa",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "先区分AA/AI与SL/HL，再核定课程版本、paper、计算器与公式册。IB评估说明：https://www.ibo.org/programmes/diploma-programme/assessment-and-exams/"
+      ],
+      "checks": [
+        "笔试、内部探究、口头和实验分开；纸面练习不替代完整DP课程评估。",
+        "解释、模型和推理与分值匹配，录入依据后独立计算，不用答案数字替代解题过程。"
+      ]
+    },
+    {
+      "id": "ap-subject",
+      "name": "AP · 微积分 AB / BC",
+      "family": "international-admissions",
+      "aliases": [
+        "AP Calculus",
+        "AP微积分",
+        "AP微積分"
+      ],
+      "subject": "AP Calculus",
+      "profileIds": [
+        "international-assessment",
+        "calculus"
+      ],
+      "templateId": "ap-calculus",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "确认AB/BC、考试年份、calculator分组与当期hybrid/digital规则。官方：https://apcentral.collegeboard.org/courses/ap-calculus-ab/exam；官网已公布2027年5月起题数与时间更新，旧卷按旧规格。"
+      ],
+      "checks": [
+        "数学任务包含实际求导、积分、图表、建模及解释；核对calculator allowed状态。",
+        "自由响应按当年官方scoring guideline核对，作者新题使用明确作者分步量表，不假造AP等级。"
+      ]
+    },
+    {
+      "id": "sat",
+      "name": "SAT · 阅读写作与数学",
+      "family": "international-admissions",
+      "aliases": [
+        "SAT",
+        "SAT数学",
+        "SAT阅读",
+        "SAT Reading and Writing"
+      ],
+      "subject": "SAT",
+      "profileIds": [
+        "adaptive-admissions",
+        "mathematics"
+      ],
+      "templateId": "sat",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "官方结构：https://satsuite.collegeboard.org/sat/whats-on-the-test/structure；确认digital SAT或官方非自适应纸面适配卷。"
+      ],
+      "checks": [
+        "模块自适应依前一模块表现，固定纸面路径不宣称复制Bluebook测量或官方量尺。",
+        "阅读引用文本证据，数学区分选项与student-produced response，检查合法数值表示和容差。"
+      ]
+    },
+    {
+      "id": "act",
+      "name": "ACT · 英语阅读与数理",
+      "family": "international-admissions",
+      "aliases": [
+        "ACT",
+        "ACT英语",
+        "ACT数学"
+      ],
+      "subject": "ACT",
+      "profileIds": [
+        "adaptive-admissions",
+        "mathematics"
+      ],
+      "templateId": "act",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "官方结构：https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html；按地区、日期、增强版与optional science/writing核定。"
+      ],
+      "checks": [
+        "保留共享文章与实验图表；确认计分题与试测题、可选项及composite规则，不混用历年结构。",
+        "独立解语言修订与数学题，science按数据和实验推理设计，不以名词背诵代替。"
+      ]
+    },
+    {
+      "id": "jlpt",
+      "name": "JLPT · 日本語能力試験",
+      "family": "language-certification",
+      "aliases": [
+        "JLPT",
+        "日本語能力試験",
+        "日语能力考试",
+        "日本语能力测试"
+      ],
+      "subject": "JLPT 日本語",
+      "profileIds": [
+        "japanese-language"
+      ],
+      "templateId": "jlpt-n5",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "先确认N1—N5，按官方level和test item types选择：https://www.jlpt.jp/e/guideline/testsections.html；样题：https://www.jlpt.jp/e/samples/forlearners.html"
+      ],
+      "checks": [
+        "级别不同题型/分组不同；官方公开样题每型一题不等同完整卷，题数时长另核。",
+        "语法排列和文本填空保持完整上下文，听解必须有录音；不额外添加JLPT官方没有的作文口试。"
+      ]
+    },
+    {
+      "id": "jft-basic",
+      "name": "JFT-Basic · 生活日语",
+      "family": "language-certification",
+      "aliases": [
+        "JFT-Basic",
+        "JFT Basic",
+        "国際交流基金日本語基礎テスト",
+        "生活日语JFT"
+      ],
+      "subject": "JFT-Basic 日本語",
+      "profileIds": [
+        "japanese-language"
+      ],
+      "templateId": "jft-basic",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "官方结构与分级：https://www.jpf.go.jp/jft-basic/e/about/index.html；按实际日期核定，2026年8月后分级与之前不同。"
+      ],
+      "checks": [
+        "覆盖文字词汇、会话表达、听解、阅读生活Can-do任务；表达选择题不冒充口试。",
+        "CBT跨section返回与听解操作限制、量尺分与练习原始分分别处理。"
+      ]
+    },
+    {
+      "id": "eju",
+      "name": "EJU · 日本留学試験",
+      "family": "international-admissions",
+      "aliases": [
+        "EJU",
+        "日本留学試験",
+        "日本留学考试"
+      ],
+      "subject": "EJU 日本留学試験",
+      "profileIds": [
+        "japanese-language",
+        "international-assessment",
+        "mathematics"
+      ],
+      "templateId": "eju",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "先按目标大学要求确认日本语、数学course、理科组合或综合科目与语言。官方大纲：https://www.jasso.go.jp/en/ryugaku/eju/examinee/syllabus/index.html；基础学力科目2026首次考试起有新版。"
+      ],
+      "checks": [
+        "日本语的记述、读解、听解/听读解分别供题与评分；听读解同时保留图文和录音。",
+        "数学和理科使用实际计算/图形/实验，选科符合招生要求，不默认所有科目合成一卷。"
+      ]
+    },
+    {
+      "id": "topik",
+      "name": "TOPIK · 한국어능력시험",
+      "family": "language-certification",
+      "aliases": [
+        "TOPIK",
+        "한국어능력시험",
+        "韩国语能力考试",
+        "韩语能力考试"
+      ],
+      "subject": "TOPIK 한국어",
+      "profileIds": [
+        "korean-language"
+      ],
+      "templateId": "topik-ii",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "确认TOPIK I/II、PBT/IBT与独立Speaking。官方NIIED结构：https://www.niied.go.kr/web/niied/contents/niied_topik"
+      ],
+      "checks": [
+        "各模式题数、时长、分值分别核对，不能用PBT规则判IBT。",
+        "写作图表、短答与长文按适用任务给材料和量表；韩文字形、词尾及录音逐题核验。"
+      ]
+    },
+    {
+      "id": "hsk",
+      "name": "HSK · 汉语水平考试",
+      "family": "language-certification",
+      "aliases": [
+        "HSK",
+        "汉语水平考试",
+        "汉语二语考试"
+      ],
+      "subject": "HSK 汉语",
+      "profileIds": [
+        "chinese-second-language"
+      ],
+      "templateId": "hsk3",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "确认考试日期、HSK版次、级别、纸笔/机考与口语安排。官网大纲和样题入口：https://www.chinesetest.cn/hsk；新版公告与实际场次分别核验。"
+      ],
+      "checks": [
+        "旧版1—6级、新版三等九级及HSK口语按适用版本处理；练习分不冒充官方scale。",
+        "核对拼音、汉字、语法范围和实际交际任务，听力必须有音频。"
+      ]
+    },
+    {
+      "id": "delf",
+      "name": "DELF · 法语交际",
+      "family": "language-certification",
+      "aliases": [
+        "DELF",
+        "法语DELF",
+        "DELF法语"
+      ],
+      "subject": "DELF Français",
+      "profileIds": [
+        "cefr-language"
+      ],
+      "templateId": "delf-b1",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "确认A1—B2、tout public/junior/scolaire。官方考试介绍与样题：https://www.france-education-international.fr/diplome/delf-tout-public；网页受限时从官方PDF或用户授权材料核定具体题型量表。"
+      ],
+      "checks": [
+        "听读写说分别提供任务证据；口语考生卡和考官卡分开，录音不可用时不称完成听说全卷。",
+        "按实际级别核对时长、最低分与总分，不把作者练习量表称为官方DELF评分。"
+      ]
+    },
+    {
+      "id": "goethe",
+      "name": "Goethe-Zertifikat · 德语交际",
+      "family": "language-certification",
+      "aliases": [
+        "Goethe",
+        "Goethe-Zertifikat",
+        "歌德德语",
+        "德语歌德"
+      ],
+      "subject": "Goethe Deutsch",
+      "profileIds": [
+        "cefr-language"
+      ],
+      "templateId": "goethe-b1",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "按级别及成人/青少年版核定；B1官方模块：https://www.goethe.de/ins/de/en/prf/gzb1.cfm"
+      ],
+      "checks": [
+        "听、读、写、说模块分别组织，口语搭档互动保留角色与追问，不能以作文替代。",
+        "原语言任务、变音字符、参考答法与分档descriptor逐项检查，模块通过规则另核。"
+      ]
+    },
+    {
+      "id": "us-citizenship-2008",
+      "name": "美国入籍 · 2008 公民知识口试",
+      "family": "citizenship",
+      "aliases": [
+        "US Civics 2008",
+        "USCIS 2008",
+        "美国入籍2008",
+        "美国公民2008"
+      ],
+      "subject": "US Civics 2008",
+      "profileIds": [
+        "citizenship-oral"
+      ],
+      "templateId": "us-civics",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "按申请日期及适用规则选择2008版，官方study入口：https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test；2025实施通知：https://www.govinfo.gov/content/pkg/FR-2025-09-18/html/2025-18050.htm"
+      ],
+      "checks": [
+        "仅使用该版本题号与允许答案，不和2025题库混编。",
+        "口试与英语读写分开，地点/现任官员答案实际回官方更新核对。"
+      ]
+    },
+    {
+      "id": "us-citizenship-2025",
+      "name": "美国入籍 · 2025 公民知识口试",
+      "family": "citizenship",
+      "aliases": [
+        "US Civics 2025",
+        "USCIS 2025",
+        "美国入籍2025",
+        "美国公民2025"
+      ],
+      "subject": "US Civics 2025",
+      "profileIds": [
+        "citizenship-oral"
+      ],
+      "templateId": "us-civics",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "适用时点按USCIS当期规则核定；官方2025题库：https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf；实施依据：https://www.govinfo.gov/content/pkg/FR-2025-09-18/html/2025-18050.htm"
+      ],
+      "checks": [
+        "不把旧版100题/10问/6对规则套入2025版；按官方要求数量和特殊适用规则评分。",
+        "考生纸不泄露答案；现任官员、州和选区答案须实际更新，练习口试不等于完整入籍面试。"
+      ]
+    },
+    {
+      "id": "uk-citizenship",
+      "name": "英国 · Life in the UK",
+      "family": "citizenship",
+      "aliases": [
+        "Life in the UK",
+        "英国入籍",
+        "英国生活考试"
+      ],
+      "subject": "Life in the UK",
+      "profileIds": [
+        "citizenship-written"
+      ],
+      "templateId": "uk-civics",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "内容范围以官方Guide for New Residents为准，结构入口：https://www.gov.uk/life-in-the-uk-test；读取用户合法提供手册，不复制收费资料成公共题库。"
+      ],
+      "checks": [
+        "按允许手册编写并核答案，非官方机构题不标成官方泄露真题。",
+        "按当期形式核对24题/45分钟及通过条件；移民资格与考试练习分开。"
+      ]
+    },
+    {
+      "id": "canada-citizenship",
+      "name": "加拿大 · 公民知识",
+      "family": "citizenship",
+      "aliases": [
+        "Canadian Citizenship",
+        "加拿大入籍",
+        "加拿大公民考试",
+        "Discover Canada"
+      ],
+      "subject": "Canadian Citizenship",
+      "profileIds": [
+        "citizenship-written"
+      ],
+      "templateId": "canada-civics",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "依据官方Discover Canada和更新：https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html；当期网页列20题、45分钟、15题正确。"
+      ],
+      "checks": [
+        "允许英语或法语，选择与判断按当期要求；不可沿用旧30分钟信息。",
+        "题源回到手册章节，语言技能证明与公民知识测试区分；现任和地点性事实实际查验。"
+      ]
+    },
+    {
+      "id": "australia-citizenship",
+      "name": "澳大利亚 · 公民知识",
+      "family": "citizenship",
+      "aliases": [
+        "Australian Citizenship",
+        "澳洲入籍",
+        "澳大利亚入籍",
+        "Our Common Bond"
+      ],
+      "subject": "Australian Citizenship",
+      "profileIds": [
+        "citizenship-written"
+      ],
+      "templateId": "australia-civics",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "依据Our Common Bond和当期测试要求：https://immi.homeaffairs.gov.au/citizenship/test-and-interview/prepare-for-test；正式测试为英语选择题，手册译本用于学习。"
+      ],
+      "checks": [
+        "核对整体通过分和values单独要求，保留该类题目的分组标识。",
+        "不从免费练习样题推断正式题库全部内容；答案逐题回手册。"
+      ]
+    },
+    {
+      "id": "visual-art",
+      "name": "视觉艺术 · 观察与创作",
+      "family": "arts-performance",
+      "aliases": [
+        "IGCSE Art",
+        "Art and Design",
+        "艺术创作",
+        "美术创作",
+        "观察创作"
+      ],
+      "subject": "Art and Design",
+      "profileIds": [
+        "visual-art-design"
+      ],
+      "templateId": "cambridge-art",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "参考Cambridge Art & Design，按考试年度与component核定：https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-art-and-design-0400/"
+      ],
+      "checks": [
+        "真实提供观察对象/图像与媒介条件，观察、过程发展和个人回应都有作答证据。",
+        "作品任务及过程册分别留空间，彩色原图/作品与黑白替代任务独立检查。"
+      ]
+    },
+    {
+      "id": "design-portfolio",
+      "name": "设计 · 项目与作品集",
+      "family": "arts-performance",
+      "aliases": [
+        "Design Studio",
+        "设计作品集",
+        "视觉传达设计",
+        "产品设计任务"
+      ],
+      "subject": "Design Studio",
+      "profileIds": [
+        "visual-art-design"
+      ],
+      "templateId": "design-studio",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "确认学校/课程或AP Art and Design具体类别与年度；数字作品集入口：https://apstudents.collegeboard.org/art-design-program/digital-submission-guide；真实提交规范与作者练习简报分别保存。"
+      ],
+      "checks": [
+        "提供用户、场景、媒介、尺寸和约束，要求调研、方案迭代、成品及理由。",
+        "作品来源与原创过程可追溯，练习参考图不能作为考生原创提交；按项目量表评而非唯一示范答案。"
+      ]
+    },
+    {
+      "id": "art-history",
+      "name": "艺术史 · 作品分析与比较",
+      "family": "arts-performance",
+      "aliases": [
+        "Art History",
+        "艺术史",
+        "美术史",
+        "AP艺术史"
+      ],
+      "subject": "Art History",
+      "profileIds": [
+        "art-history"
+      ],
+      "templateId": "ap-art-history",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "AP Art History官方分析任务：https://apcentral.collegeboard.org/courses/ap-art-history/exam；实际年份、图像集和来源另核。"
+      ],
+      "checks": [
+        "以作品可见细节和真实语境支持论点，分析、比较、归属和延续变化任务分开。",
+        "图像身份、画幅、色彩与授权准确；无版权依据时用合法替代图并明确作者练习身份。"
+      ]
+    },
+    {
+      "id": "music-theory",
+      "name": "音乐 · 乐理与读谱",
+      "family": "arts-performance",
+      "aliases": [
+        "Music Theory",
+        "乐理",
+        "读谱",
+        "ABRSM乐理"
+      ],
+      "subject": "Music Theory",
+      "profileIds": [
+        "music-theory"
+      ],
+      "templateId": "music-theory",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "先确定考试机构、级别和年份；ABRSM官方信息：https://www.abrsm.org/en-gb/music-theory；低级线上/高级纸笔等形式按当期说明核定。"
+      ],
+      "checks": [
+        "实际提供谱例，独立核对拍号、时值、调号、音程、和声及声部。",
+        "听辨真实提供音频；无法取得官方完整量表时用作者练习标准，不编造完整ABRSM成绩。"
+      ]
+    },
+    {
+      "id": "music-performance",
+      "name": "音乐 · 演奏与视奏",
+      "family": "arts-performance",
+      "aliases": [
+        "Music Performance",
+        "器乐演奏",
+        "演唱考试",
+        "视奏考试"
+      ],
+      "subject": "Music Performance",
+      "profileIds": [
+        "music-performance"
+      ],
+      "templateId": "music-performance",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "确认乐器、级别、Practical或Performance、曲目年度及录制条件；官方规格示例：https://www.abrsm.org/sites/default/files/2024-06/Piano%202025%20%26%202026%20Prac%20syllabus%2020240524_access.pdf"
+      ],
+      "checks": [
+        "任务纸、考官评分记录和实际音视频分别交付，不将乐理卷当作演奏考试。",
+        "曲谱/示范音频来源合法，评价基于音高、节奏、音色、乐句和整体表现。"
+      ]
+    },
+    {
+      "id": "color-visual-data",
+      "name": "科学 · 彩色图像与数据",
+      "family": "international-school",
+      "aliases": [
+        "彩色科学",
+        "图像判读",
+        "显微图判读",
+        "遥感图判读"
+      ],
+      "subject": "彩色科学图像判读",
+      "profileIds": [
+        "visual-science",
+        "quantitative-data"
+      ],
+      "templateId": "science-color",
+      "referenceFiles": [
+        "research-workflow.md",
+        "global-exams-authoring.md",
+        "question-pattern-library.md"
+      ],
+      "sourceGuidance": [
+        "先识别课程与图像来源，按目标科学课程官方大纲/用户实验资料组织。国际课程数据响应与实验评估方法参考：https://www.ibo.org/programmes/diploma-programme/assessment-and-exams/"
+      ],
+      "checks": [
+        "图例/通道/色阶/标尺与真实图像一起提供，结论回到可见证据与计算。",
+        "色彩决定答案时保留彩印；灰度另增线型、标签或等价图，不只去色继续沿用答案。"
       ]
     }
   ]

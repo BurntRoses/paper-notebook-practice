@@ -5,7 +5,7 @@ export const PROJECT_URL='https://github.com/BurntRoses/paper-notebook-practice'
 export const ENTRY_PROMPTS={
  agent:{
   label:'智能体',
-  examples:'Codex · Claude Code · DeepSeek Harness · WorkBuddy',
+  examples:'Codex、Claude Code、DeepSeek Harness、WorkBuddy 等智能体',
   instructions:instructions.agent,
   prompt:`请阅读 ${PROJECT_URL} 的 AGENTS.md，先读我上传的资料并一次确认范围、版式、水印和导出格式，再按我的回复制作试卷、答案卷、答题卡或全量题库。`
  },

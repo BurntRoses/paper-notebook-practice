@@ -11,6 +11,7 @@ const root=fileURLToPath(new URL('../',import.meta.url));
 await import('./build-topic-catalog.mjs');
 await import('./build-practice-skill.mjs');
 const out=resolve(process.argv[2]||root+'dist/practice');
+const {version}=JSON.parse(await readFile(root+'package.json','utf8'));
 await mkdir(out,{recursive:true});
 const entries={};
 async function include(relative){for(const item of await readdir(root+relative,{withFileTypes:true})){if(item.name==='__pycache__'||item.name==='.DS_Store'||item.name.endsWith('.pyc'))continue;const path=relative+'/'+item.name;if(item.isDirectory())await include(path);else entries[path]=new Uint8Array(await readFile(root+path));}}
@@ -71,9 +72,9 @@ const topicCatalog=JSON.parse(await readFile(root+'src/practice/topic-catalog.js
 releaseFiles['paper-notebook-practice-topics.zip']=new Uint8Array(await readFile(out+'/paper-notebook-practice-topics.zip'));
 releaseFiles['topics/catalog.json']=strToU8(JSON.stringify(topicCatalog,null,2));
 releaseFiles['topics/manifest.json']=new Uint8Array(await readFile(out+'/topic-delivery-manifest.json'));
-await writeFile(out+'/paper-notebook-practice-v1.0.0.zip',zipSync(releaseFiles));
+await writeFile(out+`/paper-notebook-practice-v${version}.zip`,zipSync(releaseFiles));
 await writeFile(out+'/paper-notebook-practice.zip',zipSync(releaseFiles));
-await writeFile(out+'/release.json',JSON.stringify({version:'1.0.0',license:'MIT',sources:realCatalog.sources.length,cases:realCatalog.cases.length,questions:realCatalog.cases.reduce((n,p)=>n+p.sections.reduce((m,s)=>m+s.questions.length,0),0),topics:{papers:topicCatalog.topics.length,questions:topicCatalog.topics.reduce((n,p)=>n+p.questionCount,0),families:[...new Set(topicCatalog.topics.map(p=>p.family))]}},null,2));
+await writeFile(out+'/release.json',JSON.stringify({version,license:'MIT',sources:realCatalog.sources.length,cases:realCatalog.cases.length,questions:realCatalog.cases.reduce((n,p)=>n+p.sections.reduce((m,s)=>m+s.questions.length,0),0),topics:{papers:topicCatalog.topics.length,questions:topicCatalog.topics.reduce((n,p)=>n+p.questionCount,0),families:[...new Set(topicCatalog.topics.map(p=>p.family))]}},null,2));
 // Ready-to-open complete papers are a separate download alongside the Agent Skill.
 const completeFiles={'使用说明.md':strToU8('两套完整四六级卷。每套含题目卷、答案卷、四面答题卡和可编辑题库。打开题目卷即可本机作答并播放听力；交卷后导入对应答案卷查看解析。四级125分钟，六级130分钟；100分按官方比例练习计分。原创内容MIT许可，官方大纲仅用于结构。'),LICENSE:new Uint8Array(await readFile(root+'LICENSE'))};
 for(const paper of realCatalog.cases.filter(p=>['complete-cet4-original-01','full-cet6-original-01'].includes(p.practiceId))){
@@ -82,6 +83,6 @@ for(const paper of realCatalog.cases.filter(p=>['complete-cet4-original-01','ful
  for(const [kind,label] of [['exam','试卷'],['answers','答案卷'],['answer-card','答题卡']])completeFiles[folder+`/《${paper.title}》-${label}.html`]=strToU8(await buildPracticeHtml(generated,{kind}));
 }
 await writeFile(out+'/paper-notebook-practice-complete-cet.zip',zipSync(completeFiles));
-const names=['paper-notebook-practice-v1.0.0.zip','paper-notebook-practice-skill.zip','paper-notebook-practice-topics.zip','paper-notebook-practice-complete-cet.zip','纸间-试卷预览.html'];
+const names=['paper-notebook-practice.zip','paper-notebook-practice-skill.zip','paper-notebook-practice-topics.zip','paper-notebook-practice-complete-cet.zip','paper-notebook-practice-preview.html'];
 await writeFile(out+'/SHA256SUMS.txt',(await Promise.all(names.map(async name=>createHash('sha256').update(await readFile(out+'/'+name)).digest('hex')+'  '+name))).join('\n')+'\n');
 console.log(`Practice preview, example papers and Agent skill: ${out}`);

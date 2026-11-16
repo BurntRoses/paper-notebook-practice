@@ -17,6 +17,8 @@ export interface PaperCustomization {
  binding?:'source'|'binding'|'none';
  scoreTable?:'source'|'show'|'hide';
  paperSize?:'source'|'A4'|'A3';
+ /** Printing changes color reproduction without replacing the source content. */
+ printColor?:'source'|'color'|'grayscale';
  /** Authoring requirements, never candidate-facing paper text. */
  notes?:string;
 }
@@ -24,7 +26,7 @@ export interface PaperCustomization {
 export function applyPaperCustomization(paper:PracticeDocument,settings:PaperCustomization):PracticeDocument {
  const copy=structuredClone(paper),before=JSON.stringify({style:copy.style,presentation:copy.presentation});
  const layout=resolvePaperTemplate(copy.style).layout;
- const english=copy.presentation?.language?copy.presentation.language==='en':['ielts','language'].includes(layout.headerVariant);
+ const language=copy.presentation?.language??(['ielts','language'].includes(layout.headerVariant)?'en':'zh'),english=language!=='zh';
  const present=()=>copy.presentation??=( {sourceLayout:false} );
  const set=<K extends keyof PracticePresentation>(key:K,value:PracticePresentation[K])=>{
   if(JSON.stringify(copy.presentation?.[key])!==JSON.stringify(value))present()[key]=value;
@@ -51,7 +53,7 @@ export function applyPaperCustomization(paper:PracticeDocument,settings:PaperCus
   if(!copy.presentation||copy.presentation.candidateFields?.length!==0)set('candidateFields',[]);
  }
  if(settings.candidateFields==='standard'){
-  const fields=english?['Candidate name: ________________________','Candidate number: ______________________']:['姓名：________　班级：________','学号：________　考场：____　座号：____'];
+  const fields=({zh:['姓名：________　班级：________','学号：________　考场：____　座号：____'],en:['Candidate name: ________________________','Candidate number: ______________________'],ja:['氏名：________________','受験番号：________________'],ko:['이름: ________________','수험번호: ________________'],fr:['Nom: ________________','Numéro de candidat: ________________'],de:['Name: ________________','Prüfungsnummer: ________________']} as const)[language].slice();
   // Generic papers already render these fields without a presentation override.
   if(copy.presentation?.sourceLayout!==false&&copy.presentation)set('candidateFields',fields);
   else if(copy.presentation?.candidateFields)set('candidateFields',fields);
@@ -72,5 +74,6 @@ export function applyPaperCustomization(paper:PracticeDocument,settings:PaperCus
   if(geometry.widthMm!==widthMm||geometry.heightMm!==heightMm)copy.style.templateOverrides={...copy.style.templateOverrides,paperSize:settings.paperSize,widthMm,heightMm};
  }
  if(JSON.stringify({style:copy.style,presentation:copy.presentation})!==before)delete copy.original;
+ if(settings.printColor==='color'||settings.printColor==='grayscale')set('printColor',settings.printColor);
  return copy;
 }

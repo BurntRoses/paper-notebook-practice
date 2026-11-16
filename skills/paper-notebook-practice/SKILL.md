@@ -1,6 +1,6 @@
 ---
 name: paper-notebook-practice
-description: Produce sourced exams, answer keys, scoring rubrics, answer sheets and reusable banks from uploads and targeted web research. Use for civil-service aptitude and essay exams, postgraduate mathematics I/II/III, English I/II, politics, 199/396/408 and university-specific subjects, engineering courses and qualifications, school exams, OCR, and original-paper replication. Identify subject, scope, difficulty and task types; prioritize uploaded sources and original questions, independently solve and verify answers, respect material-only and norm-version restrictions. Free MIT offline tooling; no paid model, API key or account required.
+description: Produce sourced exams, answer keys, scoring rubrics, answer sheets and reusable banks from uploads and targeted web research. Use for international school and admissions exams (Cambridge, IB, AP, SAT, ACT), language certificates (JLPT, JFT-Basic, EJU, TOPIK, HSK, DELF, Goethe), citizenship knowledge tests, visual art, design and music tasks, civil-service and postgraduate exams, engineering, school exams, OCR, and original-paper replication. Identify subject, scope, difficulty and task types; prioritize uploaded sources and original questions, independently solve and verify answers, respect material-only and norm-version restrictions. Free MIT offline tooling; no paid model, API key or account required.
 ---
 
 从 GitHub 克隆源码时，先在仓库根目录执行 `npm install && npm run build`，再使用本目录的便携脚本；下载的 Skill 安装包已包含运行文件。
@@ -11,6 +11,8 @@ description: Produce sourced exams, answer keys, scoring rubrics, answer sheets 
 
 默认按真实考试规格制作完整试卷，任务范围为 `full`。先核定题型、题量、题组、时间与计分，再补齐缺失的题目、共享文章、录音和答案。只有用户明确要求选编、指定部分或限时小练习时使用 `subset`。题库不足时继续完成题库，保留整卷目标；原卷纸面标题与实际收入范围分别记录。用户要求全量题库时按上传资料覆盖整理，使用 `mode: bank`，不强制整卷题量、时长或录音。
 
+国际考试、语言、入籍及艺术任务另读[国际命题方法](references/global-exams-authoring.md)与[题型和任务模式库](references/question-pattern-library.md)。先辨认纸笔、机考、口试、作品集或演奏及具体component，再确定完整范围；纸面清单不代替录音、作品或实际表现，未满足的component继续保留具体缺项。
+
 开始前读[两轮需求与版式收集](references/design-intake.md)、[Agent 工作流](references/agent-workflow.md)、[学科与年级出题策略](references/exam-authoring.md)、[数据协议](references/practice-contract.md)、[模板目录](references/template-catalog.md)与[OCR / 原卷复刻](references/ocr-replica.md)。正式作者源以 [practice.schema.json](schemas/practice.schema.json) 为准，组卷任务以 [practice-job.schema.json](schemas/practice-job.schema.json) 为准。
 
 两类完整指令随包提供：[智能体](prompts/coding-agent.txt)适用于 Codex、Claude Code、DeepSeek Harness、WorkBuddy；[网页会话](prompts/conversation-model.txt)适用于 ChatGPT、DeepSeek 等附件对话。两者分别从仓库 `AGENTS.md` 与 `WEB_CHAT.md` 进入，共用出题策略、数据协议与渲染器。
@@ -18,9 +20,9 @@ description: Produce sourced exams, answer keys, scoring rubrics, answer sheets 
 
 ## 研究型出卷：识别、检索、命题与核验
 
-7.0覆盖考公行测/申论、考研数一二三/英一二/政治/199/396/408/院校专业课，以及工程课程和工程资格。先按[研究流程](references/research-workflow.md)识别考试身份、学科、年度地区、难度与题型，再查允许的用户资料、定位缺口、按需检索并实际读取网络原文。默认上传优先、原题优先，缺口再改编或新编；用户指定“仅用上传资料”时严格限制，不从网络补题或依据。当前 Agent 使用自身可用工具执行，无额外收费服务、模型密钥或账户。
+学科路线覆盖考公、考研、工程，并扩展国际中学与海外升学、语言证书、入籍知识、艺术设计与音乐。先按[研究流程](references/research-workflow.md)识别考试身份、学科、年度地区、难度与题型，再查允许的用户资料、定位缺口、按需检索并实际读取网络原文。默认上传优先、原题优先，缺口再改编或新编；用户指定“仅用上传资料”时严格限制，不从网络补题或依据。当前 Agent 使用自身可用工具执行，无额外收费服务、模型密钥或账户。
 
-[路线注册表](references/exam-routes.json)提供可组合的学科方法，不代表每条路线都有已核定完整考试规格。按目标阅读：[考公](references/civil-service-authoring.md)、[考研](references/postgraduate-authoring.md)、[工程课程与资格](references/engineering-authoring.md)。数学必须有真实计算、证明或建模；申论答案逐点回到给定资料；工程先核对规范版本、工况、单位与条款，不能统一做成概念背诵题。
+[路线注册表](references/exam-routes.json)提供可组合的学科方法，不代表每条路线都有已核定完整考试规格。按目标阅读：[考公](references/civil-service-authoring.md)、[考研](references/postgraduate-authoring.md)、[工程课程与资格](references/engineering-authoring.md)、[国际课程、语言、入籍与艺术](references/global-exams-authoring.md)。数学必须有真实计算、证明或建模；申论答案逐点回到给定资料；工程先核对规范版本、工况、单位与条款，不能统一做成概念背诵题。
 
 在任务与题库保存 `authoring` 蓝图、`sourcePolicy` 资料边界、材料 `provenance` 与派生关系；每题题源与知识/答案/规范依据分别保留。主观题提供合分 `rubric`，答案用 `answerProvenance` 区分官方、机构与独立解答，`verification` 只记录实际做过的求解和复核。结构校验检查引用、权限、合分和核验记录，不能自动证明学科答案正确；当前 Agent 必须实际推导、计算、回材料或查条文。
 
@@ -39,6 +41,8 @@ node scripts/practice.mjs specs
 node scripts/practice.mjs specs cet4 --out work/cet4-specification.json
 node scripts/practice.mjs plan work/sources/source-manifest.json --out work/job --exam cet4
 node scripts/practice.mjs templates
+node scripts/practice.mjs examples
+node scripts/practice.mjs examples jlpt-n5 --out work/japanese.json
 ```
 
 仓库开发时将 `node scripts/practice.mjs` 换为 `node tools/practice.mjs`。完整技能目录可独立复制安装；所有相对引用、便携 CLI、OCR 适配器、Schema、模板和样例均随包保留。
@@ -64,6 +68,14 @@ node scripts/practice.mjs templates
 node scripts/practice.mjs replicate work/sources/source-manifest.json --out output/原卷
 node scripts/practice.mjs validate-layout work/sources/layout.json
 ```
+
+## 新题型与彩印
+
+[题型和任务模式库](references/question-pattern-library.md)提供25种任务模式与12份已解原创教学任务，包括数字作答、句子排序、信息检索、听读解、角色互动、视觉分析、设计作品集、乐理和演奏。选用时按真实材料继续制作，不复制示例的核验状态。`examples`列出所有可作答模板范例；`examples <template-id> --out practice.json`取得同源作者数据后可`build`。范例用于试版和任务演示，实际收入范围见数据，不能当作已核定的官方完整考试。
+
+打印可选保留原色、彩印或灰度。`job.customization.printColor`保存`source/color/grayscale`，`presentation.printColor`保存最终`color/grayscale`。色彩本身决定答案的图设`attachments[].colorRequired: true`；经过核对的等价灰度图可用`grayscaleDataUrl`。没有等价图时保留彩印或另出任务，不只去色继续沿用答案。页面明暗主题与打印色彩独立。
+
+日文、韩文、法文与德文纸面使用相应`presentation.language`及实际可用字体，检查字形、变音符号、注音和行尾。听力交付实际录音；口试、作品集和演奏按真实证据与分档量表评分。每项任务的具体版本、材料权限和媒介要求见[国际命题方法](references/global-exams-authoring.md)。
 
 ## 使用真实案例
 

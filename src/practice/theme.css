@@ -18,10 +18,11 @@
 .select-option[data-highlighted=true]{background:var(--soft)}
 .select-option[aria-selected=true][data-highlighted=true]{background:var(--selected)}
 .select-option[aria-disabled=true]{opacity:.4;cursor:default}
-.theme-control{position:relative;display:flex;align-items:center;flex:none;width:112px;color:var(--muted);border-radius:var(--radius)}
-.theme-control .theme-symbol{position:absolute;left:11px;top:50%;transform:translateY(-50%);display:flex;pointer-events:none;z-index:1;color:var(--ink)}
-.theme-control .select-trigger{min-height:38px;padding:8px 9px 8px 35px;font-size:12px;background:transparent;border:0;color:var(--muted)}
-.theme-control .select-trigger:hover,.theme-control .select-trigger:focus-visible,.theme-control .select-trigger[aria-expanded=true]{background:var(--soft);color:var(--ink)}
+.theme-control{display:flex;align-items:center;flex:none;color:var(--muted)}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:80px;min-height:38px;padding:8px 11px;border-radius:var(--radius);background:var(--soft);font-size:12px;color:var(--ink);transition:background .18s cubic-bezier(.2,.8,.2,1)}
+.theme-toggle .theme-symbol{display:flex;align-items:center;justify-content:center}
+.theme-toggle:hover,.theme-toggle:focus-visible{background:var(--selected)}
+.theme-toggle:focus-visible .theme-label{text-decoration:underline;text-underline-offset:3px}
 .setup-field .select-trigger{min-height:42px;font-size:13px}
 .blueprint-table .select-trigger{min-height:36px;padding:7px 9px;font-size:12px}
 .question-toolbar .select-control{max-width:190px}
@@ -40,4 +41,4 @@
 :root[data-theme=dark] .source-text{background:var(--soft)}
 :root[data-theme=dark] .exam-showcase{background:var(--preview-surround)}
 :root[data-theme=dark] .real-case-grid .template-card:hover .template-card-text{background:transparent}
-@media(max-width:650px){.theme-control{width:100px}.theme-control .select-trigger{padding-left:30px;font-size:11px}.theme-control .theme-symbol{left:8px}.theme-control .theme-symbol svg{width:15px;height:15px}.question-toolbar .select-control{max-width:none;flex:1}}
+@media(max-width:650px){.theme-toggle{min-width:70px;min-height:34px;padding:7px 9px;font-size:11px;gap:6px}.theme-toggle .theme-symbol svg{width:15px;height:15px}.question-toolbar .select-control{max-width:none;flex:1}}

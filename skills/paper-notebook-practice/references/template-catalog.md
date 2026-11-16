@@ -118,3 +118,38 @@ IELTS PDF 已通过官方页面/PDF 文本读取；本机直连其 CDN 下载返
 由presentation.answerCard覆盖类型、标题、准考证位数与A3面数。原卷题纸和答题卡分别确认打印几何，不复制题纸中的来源水印和留白参数。
 
 英文课程与算法题默认使用boxed答题纸，保留原Letter/A4纸型、原题号及矩形答题框，不套入中文高校装订栏。
+
+
+## 国际、语言、公民与艺术版式
+
+以下为可编辑版式与原创可作答范例。考试局、年份和模块由用户目标及当期官方资料确定；完整考试要求另由规格和来源核定。`node tools/practice.mjs examples <模板ID> --out practice.json` 读取同源范例，安装包入口为 `node scripts/practice.mjs examples`。
+
+| 模板ID | 名称 | 纸型与输出 | 参考来源 |
+| --- | --- | --- | --- |
+| `cambridge-igcse-math` | IGCSE · 数学 | A4 纵向；保留原色，可选灰度 | [Cambridge IGCSE Mathematics 0580: 2025–2027 syllabus](https://www.cambridgeinternational.org/Images/662466-2025-2027-syllabus.pdf) |
+| `cambridge-alevel-math` | A Level · 数学 | A4 纵向；保留原色，可选灰度 | [Cambridge International AS & A Level Mathematics 9709: 2026–2027 syllabus](https://www.cambridgeinternational.org/Images/697427-2026-2027-syllabus.pdf) |
+| `ib-math-aa` | IB DP · 数学 AA | A4 纵向；保留原色，可选灰度 | [IB Diploma sample exam papers: Mathematics AA](https://ibo.org/programmes/diploma-programme/assessment-and-exams/sample-exam-papers/) |
+| `sat` | SAT · 读写与数学 | A4 纵向；保留原色，可选灰度 | [College Board: How the SAT is structured](https://satsuite.collegeboard.org/sat/whats-on-the-test/structure) |
+| `act` | ACT · 英语、数学与阅读 | A4 纵向；保留原色，可选灰度 | [ACT: Exam sections, structure and timing](https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/act-exam-sections-and-structure.html) |
+| `ap-calculus` | AP · 微积分 AB | A4 纵向；保留原色，可选灰度 | [College Board: AP Calculus AB exam](https://apcentral.collegeboard.org/courses/ap-calculus-ab/exam) |
+| `jlpt-n5` | JLPT · 日语 N5 | A4 纵向；保留原色，可选灰度 | [JLPT: Composition of test sections and items](https://www.jlpt.jp/e/guideline/testsections.html) |
+| `jlpt-n2` | JLPT · 日语 N2 | A4 纵向；保留原色，可选灰度 | [JLPT: Composition of test sections and items](https://www.jlpt.jp/e/guideline/testsections.html) |
+| `jft-basic` | JFT-Basic · 生活日语 | A4 纵向；保留原色，可选灰度 | [Japan Foundation: About the JFT-Basic](https://www.jpf.go.jp/jft-basic/e/about/index.html) |
+| `eju` | EJU · 日本留学考试 | A4 纵向；保留原色，可选灰度 | [JASSO: EJU past exam questions](https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/index.html) |
+| `topik-ii` | TOPIK II · 韩语读写 | A4 纵向；保留原色，可选灰度 | [NIIED: Test of Proficiency in Korean](https://www.niied.go.kr/web/niied/contents/niied_topik) |
+| `hsk3` | HSK 三级 · 中文读写 | A4 纵向；保留原色，可选灰度 | [中文考试服务网：HSK Level 3](https://www.chinesetest.cn/HSK/3) |
+| `delf-b1` | DELF B1 · 法语 | A4 纵向；保留原色，可选灰度 | [France Éducation international: DELF B1 sample papers](https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1/exemples-sujets) |
+| `goethe-b1` | Goethe B1 · 德语 | A4 纵向；保留原色，可选灰度 | [Goethe-Institut: B1 practice materials](https://www.goethe.de/en/m/spr/prf/ueb/pb1.html) |
+| `us-civics` | 美国入籍 · 公民口试 | A4 纵向；保留原色，可选灰度 | [USCIS: 2025 civics questions and answers](https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf) |
+| `uk-civics` | 英国入籍 · Life in the UK | A4 纵向；保留原色，可选灰度 | [GOV.UK: Life in the UK Test](https://www.gov.uk/life-in-the-uk-test) |
+| `canada-civics` | 加拿大入籍 · Citizenship | A4 纵向；保留原色，可选灰度 | [IRCC: Study for the citizenship test](https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html) |
+| `australia-civics` | 澳大利亚入籍 · Citizenship | A4 纵向；保留原色，可选灰度 | [Home Affairs: Learn about the citizenship test](https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test) |
+| `cambridge-art` | IGCSE · 艺术与设计 | A4 纵向；彩色 | [Cambridge IGCSE Art & Design 0400: 2026 syllabus](https://www.cambridgeinternational.org/Images/697135-2026-syllabus.pdf) |
+| `ap-art-history` | AP · 艺术史 | A4 纵向；彩色 | [College Board: AP Art History exam](https://apcentral.collegeboard.org/courses/ap-art-history/exam) |
+| `music-theory` | 乐理 · 读谱与分析 | A4 纵向；保留原色，可选灰度 | [ABRSM: Music Theory](https://www.abrsm.org/en-gb/music-theory) |
+| `music-performance` | 演奏 · 曲目与评价 | A4 纵向；保留原色，可选灰度 | [ABRSM Teacher Hub: What is a Performance Grade exam?](https://teacherhub.abrsm.org/mod/page/view.php?id=2018) |
+| `design-studio` | 设计 · 项目与作品集 | A3 横向；彩色 | [University of the Arts London: Portfolio advice](https://www.arts.ac.uk/study-at-ual/apply/portfolio-advice) |
+| `science-color` | 地理与遥感 · 彩色图像 | A4 纵向；彩色 | [NASA Earth Observatory: Interpreting a false-color satellite image](https://science.nasa.gov/earth/earth-observatory/how-to-interpret-a-false-color-satellite-image/) |
+| `biology-visual` | 生物实验 · 观察与图像 | A4 纵向；彩色 | [OpenStax Biology 2e: Studying Cells](https://openstax.org/books/biology-2e/pages/4-1-studying-cells) |
+
+新增范例使用项目原创题文和图像，含独立答案与按任务拆分的评分项。艺术色彩辨识题的图像标记 `colorRequired`；无等价灰度图时输出器要求保留彩印。科学图像同时使用标号、图例或线型，不以颜色作为唯一编码。日韩语采用对应 Noto 字体并随离线文件和 Word 嵌入，字体许可随包保留。

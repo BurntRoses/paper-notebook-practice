@@ -7,11 +7,13 @@ import {authoringRequirements} from './authoring';
 import {getExamRoute} from './exam-routes';
 
 export interface DraftQuestionGroup {id:string;title:string;type:'choice'|'multiple'|'truefalse'|'blank'|'response'|'task';count:number;pointsPerQuestion:number}
-export const DRAFT_QUESTION_TYPES={choice:'单项选择',multiple:'多项选择',truefalse:'判断题',blank:'填空题',response:'解答与论述',task:'操作题'} as const;
+export const DRAFT_QUESTION_TYPES={choice:'单项选择',multiple:'多项选择',truefalse:'判断题',blank:'填空题',response:'解答与论述',task:'操作、作品与实践任务'} as const;
 export const blueprintTotal=(groups:DraftQuestionGroup[])=>Math.round(groups.reduce((sum,g)=>sum+g.count*g.pointsPerQuestion,0)*100)/100;
 export function defaultDraftGroups(draft:Pick<PaperDraft,'templateId'|'subject'>):DraftQuestionGroup[]{
  const spec=EXAM_SPECIFICATIONS.find(s=>s.templateIds?.includes(draft.templateId)&&s.subject===draft.subject);
  if(spec){const groups:DraftQuestionGroup[]=[];for(const part of spec.sections){for(let i=0;i<part.count;i++){const points=part.questionScores?.[i]??part.pointsPerQuestion??part.totalScore/part.count,type=part.questionTypes?.[i]??(part.questionType==='mixed'?'response':part.questionType),previous=groups.at(-1);if(previous&&previous.title===part.title&&previous.type===type&&previous.pointsPerQuestion===points)previous.count++;else groups.push({id:`group-${groups.length+1}`,title:part.title,type,count:1,pointsPerQuestion:points});}}return groups;}
+ const template=PAPER_TEMPLATES.find(t=>t.id===draft.templateId);
+ if(template?.blueprint.sections.length)return template.blueprint.sections.map((part,i)=>({id:`group-${i+1}`,title:part.title,type:part.questionType,count:part.count??1,pointsPerQuestion:Math.round(((part.score??template.blueprint.totalScore/template.blueprint.sections.length)/(part.count??1))*100)/100}));
  return [{id:'group-1',title:'单项选择题',type:'choice',count:10,pointsPerQuestion:3},{id:'group-2',title:'解答题',type:'response',count:5,pointsPerQuestion:14}];
 }
 
@@ -31,7 +33,7 @@ export const DRAFT_TEMPLATES:PaperTemplate[]=PAPER_TEMPLATES
  .filter(t=>!t.id.startsWith('source-')&&(!t.caseId||t.id==='cet4'||t.id==='cet6'))
  .map(({caseId:_caseId,...template})=>structuredClone(template));
 const draftTemplate=(id:unknown)=>DRAFT_TEMPLATES.find(t=>t.id===id)??DRAFT_TEMPLATES.find(t=>t.id==='gaokao-math')!;
-const sourceChoices=():PaperCustomization=>({projectMark:true,watermark:'source',integrity:'source',security:'source',candidateFields:'source',binding:'source',scoreTable:'source',paperSize:'source'});
+const sourceChoices=():PaperCustomization=>({projectMark:true,watermark:'source',integrity:'source',security:'source',candidateFields:'source',binding:'source',scoreTable:'source',paperSize:'source',printColor:'source'});
 const defaultTitles:Record<string,string>={
  standard:'学科考试',
  'gaokao-math':'普通高等学校招生全国统一考试',
@@ -58,7 +60,7 @@ export function changeDraftTemplate(draft:PaperDraft,id:string):PaperDraft {
 export function changeDraftRoute(draft:PaperDraft,id:string):PaperDraft {
  const current=restorePaperDraft(draft),route=getExamRoute(id);
  if(!route)return {...current,routeId:''};
- const templateId=route.family==='civil-service'?(route.id==='civil-essay'?'shenlun':'civil-service'):route.family==='postgraduate'?(/english/.test(route.id)?'postgraduate-english':/math/.test(route.id)?'postgraduate-math':'university-a4'):route.family==='engineering-course'?'engineering-course':'engineering-professional';
+ const templateId=route.templateId??(route.family==='civil-service'?(route.id==='civil-essay'?'shenlun':'civil-service'):route.family==='postgraduate'?(/english/.test(route.id)?'postgraduate-english':/math/.test(route.id)?'postgraduate-math':'university-a4'):route.family==='engineering-course'?'engineering-course':route.family==='engineering-qualification'?'engineering-professional':'standard');
  const next=changeDraftTemplate(current,templateId);
  return {...next,routeId:route.id,subject:route.subject,level:route.family==='postgraduate'?'硕士研究生招生考试':next.level,...(route.family==='postgraduate'?{title:'全国硕士研究生招生考试'}:{}),examName:route.name,examCode:route.aliases.find(alias=>/^\d{3}$/.test(alias))??'',specialty:current.specialty};
 }
@@ -83,7 +85,8 @@ export function restorePaperDraft(value:unknown):PaperDraft {
   candidateFields:choice(settings.candidateFields,['source','standard','none'],'source'),
   binding:choice(settings.binding,['source','binding','none'],'source'),
   scoreTable:choice(settings.scoreTable,['source','show','hide'],'source'),
-  paperSize:choice(settings.paperSize,['source','A4','A3'],'source')
+  paperSize:choice(settings.paperSize,['source','A4','A3'],'source'),
+  printColor:choice(settings.printColor,['source','color','grayscale'],'source')
  };
  for(const key of ['watermarkText','integrityText','securityText','institution','courseCode','notes'] as const){
   const content=text(settings[key],'',key==='notes'?6000:key==='integrityText'?4000:300);
@@ -118,12 +121,12 @@ function hasVisualCustomization(settings:PaperCustomization):boolean {
  return ['watermark','integrity','security','candidateFields','binding','scoreTable','paperSize'].some(key=>{const value=settings[key as keyof PaperCustomization];return value!==undefined&&value!=='source';})||Boolean(settings.institution?.trim()||settings.courseCode?.trim());
 }
 function draftPresentation(draft:PaperDraft,template:PaperTemplate):PracticePresentation {
- const english=['ielts','language'].includes(template.layout.headerVariant);
+ const language=template.presentation?.language??(['ielts','language'].includes(template.layout.headerVariant)?'en':'zh'),english=language==='en';
  const presentation:PracticePresentation={...structuredClone(template.presentation??{sourceLayout:false}),
   titleLines:draft.title.includes('\n')?draft.title.split('\n').filter(Boolean):template.layout.headerVariant==='gaokao'||['postgraduate-math','postgraduate-english'].includes(template.id)?[draft.title,draft.subject]:[draft.title],
-  metaLines:[english?`Time allowed: ${draft.durationMinutes} minutes　Total: ${draft.totalScore} points`:`考试时间：${draft.durationMinutes} 分钟　满分：${draft.totalScore} 分`],
-  sectionDetails:false,endText:'',subtitle:'',language:english?'en':'zh',
-  footerTemplate:english?'Page {page} of {pages}':`${draft.subject}试题　第 {page} 页（共 {pages} 页）`
+  metaLines:[({zh:`考试时间：${draft.durationMinutes} 分钟　满分：${draft.totalScore} 分`,en:`Time allowed: ${draft.durationMinutes} minutes　Total: ${draft.totalScore} points`,ja:`試験時間：${draft.durationMinutes}分　配点：${draft.totalScore}点`,ko:`시험 시간: ${draft.durationMinutes}분　배점: ${draft.totalScore}점`,fr:`Durée : ${draft.durationMinutes} minutes　Total : ${draft.totalScore} points`,de:`Bearbeitungszeit: ${draft.durationMinutes} Minuten　Gesamt: ${draft.totalScore} Punkte`} as const)[language]],
+  sectionDetails:false,endText:'',subtitle:'',language,
+  footerTemplate:({zh:`${draft.subject}试题　第 {page} 页（共 {pages} 页）`,en:'Page {page} of {pages}',ja:'{page} / {pages} ページ',ko:'{page} / {pages} 페이지',fr:'Page {page} sur {pages}',de:'Seite {page} von {pages}'} as const)[language]
  };
  if(!template.subjects.includes(draft.subject)){
   presentation.notices=english?['Read the instructions and answer as directed.','Return the paper and answer sheet at the end of the examination.']:['请认真阅读题目要求，按指定方式作答。','考试结束后，请将试卷和答题卡一并交回。'];
@@ -182,6 +185,7 @@ export function paperDraftPrompt(value:PaperDraft,mode:'agent'|'chat'):string {
   `- 制作目标：${intent}；本次范围以此为准：${scopeRequirement}。${draft.scope==='subset'?'不扩大为整卷；自由文本范围由当前会话结合资料落实，范围不明确时只补问实际缺项。':''}\n`+
   `- ${titleRequirement}${sourceOriginal?'参考学科':'学科'}：${draft.subject}；${sourceOriginal?'参考层级':'层级'}：${draft.level}；年级：${draft.grade||'依据资料确定'}。纸面不加“选编”“模拟”“重组”等制作标签；来源身份和实际范围保存在元数据与交付说明。\n`+
   `- 参考版式：${template.name}；${sourceOriginal||bank?'参考时间':'考试时间'}：${draft.durationMinutes} 分钟；${sourceOriginal||bank?'参考总分':'总分'}：${draft.totalScore} 分。${structureRequirement}${customizationRequirement}\n`+
+  `- 打印颜色：${{source:'保留原件或模板中的颜色',color:'彩印，保留图像与作品原色',grayscale:'黑白灰度，图例同时使用编号、线型或形状；若题目考查颜色，先换用等价可作答材料，不直接去色'}[draft.customization.printColor??'source']}。色彩辨识题的附件标记 colorRequired:true；无等价黑白替代时保持彩印，并说明打印要求。\n`+
   `- 知识范围与重点：${draft.coverage||'按上传资料覆盖'}；${sourceOriginal?'难度选择仅作参考，以原题为准':'难度'}：${difficulty}。${draft.scope==='subset'&&draft.subset?'只收入所指定的部分，保留完整共享材料。':''}\n\n`+
   `- 考试目标：${draft.examName||'结合科目与资料识别'}${draft.examCode?'；科目代码：'+draft.examCode:''}${draft.year?'；考试年份：'+draft.year:''}${draft.region?'；地区：'+draft.region:''}${draft.specialty?'；专业 / 方向：'+draft.specialty:''}。未填写的年份、地区和适用规范，以资料或正式发布内容核实。\n`+
   `- 资料来源：${{ 'uploads-only':'仅用上传资料，不检索网络、不补入外部材料','uploads-first':'优先上传资料；资料不足时检索可靠互联网来源补齐',open:'结合上传资料与可靠互联网来源'}[draft.sourceMode]}。题目偏好：${{'originals-first':'优先核实的原题，缺口再改编或新编',balanced:'原题、改编与新编按考查目标搭配','generated-first':'优先围绕资料新编实质题目'}[draft.questionPreference]}。${draft.materialInstructions?'指定资料要求：'+draft.materialInstructions+'。先把文件名映射到实际 materialId，再写入 requiredMaterialIds / allowedMaterialIds / excludedMaterialIds；不能用猜测的 ID。':''}\n\n`+

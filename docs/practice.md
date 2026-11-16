@@ -1,6 +1,6 @@
 # 资料出卷与成品预览
 
-纸间提供智能体与网页对话两种入口，默认按已核定考试规格或明确的课程蓝图制作完整试卷。7.0由当前会话先识别考试、学科、年度、难度和题型，再读取资料、按需检索、整理题库、补齐题组、独立求解并交付成品；预览台用于成品核对、选题和局部修订。MIT 免费开源，成品可离线使用。
+纸间提供智能体与网页对话两种入口，默认按已核定考试规格或明确的课程蓝图制作完整试卷。由当前会话先识别考试、学科、年度、难度和题型，再读取资料、按需检索、整理题库、补齐题组、独立求解并交付成品；预览台用于成品核对、选题和局部修订。MIT 免费开源，成品可离线使用。
 
 ## 一句话开始
 
@@ -18,13 +18,21 @@
 
 上传资料后由当前会话继续执行。intro 是可选入口，其选择可附成个性化要求，不需要重新填写。[网页会话入口](../WEB_CHAT.md) 根据实际文件读取、视觉与执行工具完成交付；以下为智能体的完整本地工作流。
 
-两份完整指令随包提供：[智能体指令](../skills/paper-notebook-practice/prompts/coding-agent.txt)、[网页会话指令](../skills/paper-notebook-practice/prompts/conversation-model.txt)。它们共用[学科与年级出题策略](../skills/paper-notebook-practice/references/exam-authoring.md)及[策略注册表](../skills/paper-notebook-practice/references/authoring-profiles.json)：十五类学科与课程、五种层级分别规定目标、题目设计、独立核对和评分方式。
+两份完整指令随包提供：[智能体指令](../skills/paper-notebook-practice/prompts/coding-agent.txt)、[网页会话指令](../skills/paper-notebook-practice/prompts/conversation-model.txt)。它们共用[学科与年级出题策略](../skills/paper-notebook-practice/references/exam-authoring.md)及[策略注册表](../skills/paper-notebook-practice/references/authoring-profiles.json)：学科与课程策略、五种层级分别规定目标、题目设计、独立核对和评分方式。
 
-## 7.0 研究与学科路线
+## 研究与学科路线
 
-[路线注册表](../skills/paper-notebook-practice/references/exam-routes.json)包含45条路线：2条考公、10条考研、19条工程课程和14条工程资格。考研涵盖数一/二/三、英一/二、政治、199、396、408与院校专业课；工程覆盖力学与土木水利、机械电气电子控制、计算机化工热能材料环境、安全测绘矿业，以及建造、造价、监理和注册工程资格。资格考试先区分级别、基础/专业、知识/案例、方向和目标年度。
+[路线注册表](../skills/paper-notebook-practice/references/exam-routes.json)包含69条路线：既有45条考公、考研与工程方法，新增24条国际课程、海外升学、语言、公民知识与艺术音乐方法。考研涵盖数一/二/三、英一/二、政治、199、396、408与院校专业课；工程覆盖力学与土木水利、机械电气电子控制、计算机化工热能材料环境、安全测绘矿业，以及建造、造价、监理和注册工程资格。资格考试先区分级别、基础/专业、知识/案例、方向和目标年度。
 
 路线决定学科方法，`exam.specification` 决定整卷题组、题数、时长和计分，模板决定纸面。课程期末或自命题专题可明确采用 `source.kind: user-blueprint` 的作者蓝图；不能把一套课程题、资格案例或某院校结构写成所有年份通用的官方整卷。完整方法、来源边界和交付设计见[研究与命题流程](../skills/paper-notebook-practice/references/research-workflow.md)。
+
+### 国际、语言与艺术任务
+
+Cambridge IGCSE/AS/A Level、IB DP、AP、SAT/ACT先核对考试局、年度、科目、级别和component；JLPT/JFT-Basic/EJU、TOPIK、HSK、DELF与Goethe按实际版本设计原语言任务。美国公民知识分2008/2025口试版本，英国、加拿大、澳洲依据当期官方手册。艺术史、视觉创作、设计作品集、乐理、演奏和彩色科学图像各用对应作答证据和评分量表，纸面任务不代替实际音视频、作品或操作。
+
+完整方法和官方研究入口见[国际命题](../skills/paper-notebook-practice/references/global-exams-authoring.md)；[题型模式库](../skills/paper-notebook-practice/references/question-pattern-library.md)含25种任务模式及12份已解原创教学任务。`examples`列出可作答模板范例，`examples <template-id> --out practice.json`取得共享作者数据后可继续`build`；示例身份、实际范围与完整规格分开保存。
+
+打印可选择保留原色、彩印或灰度；页面明暗主题不影响打印政策。颜色是答题依据时保留彩印，或另做已核对的等价灰度任务。图像可保存`colorRequired`与`grayscaleDataUrl`，最终打印设置使用`presentation.printColor`，定制选择用`job.customization.printColor`。日文、韩文、法文与德文逐格式检查字形和标点。图像、谱例与音频各自许可保留，新增原创任务不冒充官方真题。
 
 ### 上传优先与指定资料
 
@@ -108,6 +116,8 @@ node tools/practice.mjs topics postgraduate-math1-01 --out work/math1.json
 node tools/practice.mjs build work/math1.json --out output/math1
 node tools/practice.mjs plan work/sources/source-manifest.json --out work/job --exam cet4
 node tools/practice.mjs templates
+node tools/practice.mjs examples
+node tools/practice.mjs examples jlpt-n5 --out work/japanese.json
 # Agent 完成 bank.json、job.json 与复核记录后执行：
 node tools/practice.mjs coverage work/job/bank.json
 node tools/practice.mjs run work/job/bank.json --plan work/job/job.json --out output
@@ -131,7 +141,7 @@ node tools/practice.mjs plan work/sources/source-manifest.json --out work/job \
 
 其他已核定考试通过 `plan ... --exam <id>` 指定。自定义规格使用 `plan ... --exam-spec work/exam-specification.json`。选编任务使用 `plan ... --exam cet4 --scope subset`，随后按用户指定的题组、题目或练习时长设置任务。`coverage practice.json` 报告整卷要求和当前覆盖，缺失完整题组时由 Agent 继续完成。
 
-`job.customization` 可保存用户明确选择的水印、诚信承诺、院校、课程代码、密级、考生信息、装订线、评分表和纸型，字段缺省时沿用来源；详见[需求与版式收集](../skills/paper-notebook-practice/references/design-intake.md)。实际视觉修改后，定制的可编辑纸面与原页快照分离。内部生成要求只保存在任务与元数据中。
+`job.customization` 可保存用户明确选择的水印、诚信承诺、院校、课程代码、密级、考生信息、装订线、评分表、纸型和打印色彩，字段缺省时沿用来源；详见[需求与版式收集](../skills/paper-notebook-practice/references/design-intake.md)。实际视觉修改后，定制的可编辑纸面与原页快照分离。内部生成要求只保存在任务与元数据中。
 
 `job.json` 可指定题组、固定题目、学科 / 章节 / 知识点 / 题型 / 难度、题数、时长、总分、模板及版式覆盖。原题保留原选项顺序；只有明确启用 `balanceChoices` 才均衡独立 A–D 单选选项。支持多选、判断、填空、解答和操作任务；原题、改编与新编分开标记，图表与截图内嵌到题目附件。
 

@@ -12,9 +12,11 @@
 
 ## 资料与试卷
 
-支持考公行测与申论、考研数学与英语、政治和综合科目，以及工程课程和工程资格。资料优先，原题优先；支持仅用指定资料、版本限制、材料题组、逐题解答与评分细则。专题案例附完整作者题库、题目卷、答案卷和答题纸。
+支持中高考、大学课程、考公考研与工程，以及国际课程和海外升学、日语等语言考试、入籍公民知识、艺术设计与音乐。资料优先，原题优先；支持仅用指定资料、版本限制、材料题组、逐题解答与评分细则。专题案例附完整作者题库、题目卷、答案卷和答题纸。
 
-试卷使用正式标题与真实纸面比例，支持明暗预览和本机 HTML、PDF、Word、PNG 导出。上传内容保存在当前浏览器中。
+试卷与版式采用单层考试方向分类，支持资源类型和关键词筛选。定制流程直接生成智能体或网页对话的个性化提示词。试卷使用正式标题与真实纸面比例，支持明暗预览和本机 HTML、PDF、Word、PNG 导出。支持彩印与灰度，色彩辨识任务保留彩色条件；日韩文字体随离线成品嵌入。上传内容保存在当前浏览器中。
+
+“打开文件”可恢复成品试卷/题库，或读取 PDF、DOCX、TXT 与笔记资料。普通资料在本机整理，下载出题资料包与个性化提示词后交给当前智能体或网页对话制作。
 
 ## 本地开发
 
@@ -30,9 +32,13 @@ npm run build:site
 ```sh
 node tools/practice.mjs routes
 node tools/practice.mjs topics
+node tools/practice.mjs examples
+node tools/practice.mjs examples jlpt-n5 --out japanese.json
 node tools/practice.mjs topics postgraduate-math1-01 --out math1.json
 node tools/practice.mjs build math1.json --out papers
 ```
+
+[Paper Notebook](https://burntroses.github.io/paper-notebook/) 是本项目的孪生项目，用于从资料制作离线学习笔记。
 
 ## 许可
 

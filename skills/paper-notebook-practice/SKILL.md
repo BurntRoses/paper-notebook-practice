@@ -1,6 +1,6 @@
 ---
 name: paper-notebook-practice
-description: Produce sourced exams, answer keys, scoring rubrics, answer sheets and reusable banks from uploads and targeted web research. Use for international school and admissions exams (Cambridge, IB, AP, SAT, ACT), language certificates (JLPT, JFT-Basic, EJU, TOPIK, HSK, DELF, Goethe), citizenship knowledge tests, visual art, design and music tasks, civil-service and postgraduate exams, engineering, school exams, OCR, and original-paper replication. Identify subject, scope, difficulty and task types; prioritize uploaded sources and original questions, independently solve and verify answers, respect material-only and norm-version restrictions. Free MIT offline tooling; no paid model, API key or account required.
+description: Create sourced exams, answer keys, scoring rubrics, answer sheets and reusable question banks from uploaded papers or learning materials and targeted web research. Use for school, university, admission, professional, language, civic and arts assessments, OCR and original-paper replication.
 ---
 
 从 GitHub 克隆源码时，先在仓库根目录执行 `npm install && npm run build`，再使用本目录的便携脚本；下载的 Skill 安装包已包含运行文件。
@@ -15,10 +15,12 @@ description: Produce sourced exams, answer keys, scoring rubrics, answer sheets 
 
 开始前读[两轮需求与版式收集](references/design-intake.md)、[Agent 工作流](references/agent-workflow.md)、[学科与年级出题策略](references/exam-authoring.md)、[数据协议](references/practice-contract.md)、[模板目录](references/template-catalog.md)与[OCR / 原卷复刻](references/ocr-replica.md)。正式作者源以 [practice.schema.json](schemas/practice.schema.json) 为准，组卷任务以 [practice-job.schema.json](schemas/practice-job.schema.json) 为准。
 
-两类完整指令随包提供：[智能体](prompts/coding-agent.txt)适用于 Codex、Claude Code、DeepSeek Harness、WorkBuddy；[网页会话](prompts/conversation-model.txt)适用于 ChatGPT、DeepSeek 等附件对话。两者分别从仓库 `AGENTS.md` 与 `WEB_CHAT.md` 进入，共用出题策略、数据协议与渲染器。
+两类一句话入口随包提供：[智能体](prompts/coding-agent.txt)适用于 Codex、Claude Code、DeepSeek Harness、WorkBuddy；[网页会话](prompts/conversation-model.txt)适用于 ChatGPT、DeepSeek 等附件对话。两者分别从仓库 `AGENTS.md` 与 `WEB_CHAT.md` 进入，共用出题策略、数据协议与渲染器。
 
 
 ## 研究型出卷：识别、检索、命题与核验
+
+出题前按[真实样卷研究](references/reference-study.md)读取对应集合：`sources <template-id|route-id|collection-id>`；`plan` 附 `reference-study.json`。实际读题目与评分文件，比较任务、难度和得分证据，再建立能力蓝图与独立解答。集合中的整卷、官方样卷、单项任务及作品/口试按真实范围使用。小学按年级和课程选择 `primary-math/chinese/english` 路线。
 
 学科路线覆盖考公、考研、工程，并扩展国际中学与海外升学、语言证书、入籍知识、艺术设计与音乐。先按[研究流程](references/research-workflow.md)识别考试身份、学科、年度地区、难度与题型，再查允许的用户资料、定位缺口、按需检索并实际读取网络原文。默认上传优先、原题优先，缺口再改编或新编；用户指定“仅用上传资料”时严格限制，不从网络补题或依据。当前 Agent 使用自身可用工具执行，无额外收费服务、模型密钥或账户。
 

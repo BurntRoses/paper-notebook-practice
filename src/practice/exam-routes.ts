@@ -1,6 +1,6 @@
 import registry from '../../skills/paper-notebook-practice/references/exam-routes.json';
 
-export type ExamRouteFamily='civil-service'|'postgraduate'|'engineering-course'|'engineering-qualification'|'international-school'|'international-admissions'|'language-certification'|'citizenship'|'arts-performance';
+export type ExamRouteFamily='school-assessment'|'civil-service'|'postgraduate'|'engineering-course'|'engineering-qualification'|'international-school'|'international-admissions'|'language-certification'|'citizenship'|'arts-performance';
 export interface ExamRoute {
  id:string;name:string;family:ExamRouteFamily;aliases:string[];subject:string;templateId?:string;
  profileIds:string[];referenceFiles:string[];sourceGuidance:string[];checks:string[];exclusions?:string[];
@@ -12,6 +12,10 @@ export interface ExamRouteContext {
 export const EXAM_ROUTES=registry.routes as ExamRoute[];
 export const EXAM_ROUTE_FAMILIES=registry.families as {id:ExamRouteFamily;name:string}[];
 export function getExamRoute(id:string):ExamRoute|undefined {return EXAM_ROUTES.find(route=>route.id===id);}
+/** Shared fallback for route-driven setup and authentic reference discovery. */
+export function examRouteTemplateId(route:ExamRoute):string {
+ return route.templateId??(route.family==='civil-service'?(route.id==='civil-essay'?'shenlun':'civil-service'):route.family==='postgraduate'?(/english/.test(route.id)?'postgraduate-english':/math/.test(route.id)?'postgraduate-math':'university-a4'):route.family==='engineering-course'?'engineering-course':route.family==='engineering-qualification'?'engineering-professional':'standard');
+}
 
 const normalise=(value:string)=>value.normalize('NFKC').toLowerCase().replace(/[\s·•]+/g,' ').trim();
 const numericAlias=(alias:string)=>/^\d+$/.test(alias);

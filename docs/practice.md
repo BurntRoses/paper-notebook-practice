@@ -7,18 +7,18 @@
 **智能体** · Codex、Claude Code、DeepSeek Harness、WorkBuddy
 
 ```text
-请阅读 https://github.com/BurntRoses/paper-notebook-practice 的 AGENTS.md，先读我上传的资料并一次确认范围、版式、水印和导出格式，再按我的回复制作试卷、答案卷、答题卡或全量题库。
+请读取 https://github.com/BurntRoses/paper-notebook-practice 的 AGENTS.md，按项目要求和我的资料、需求制作试卷或整理题库。
 ```
 
 **网页对话** · ChatGPT、DeepSeek 等
 
 ```text
-请阅读 https://github.com/BurntRoses/paper-notebook-practice 的 WEB_CHAT.md，先读我上传的资料并一次确认范围、版式、水印和导出格式，再按我的回复制作试卷、答案卷、答题卡或全量题库。
+请读取 https://github.com/BurntRoses/paper-notebook-practice 的 WEB_CHAT.md，按项目要求和我的资料、需求制作试卷或整理题库。
 ```
 
 上传资料后由当前会话继续执行。intro 是可选入口，其选择可附成个性化要求，不需要重新填写。[网页会话入口](../WEB_CHAT.md) 根据实际文件读取、视觉与执行工具完成交付；以下为智能体的完整本地工作流。
 
-两份完整指令随包提供：[智能体指令](../skills/paper-notebook-practice/prompts/coding-agent.txt)、[网页会话指令](../skills/paper-notebook-practice/prompts/conversation-model.txt)。它们共用[学科与年级出题策略](../skills/paper-notebook-practice/references/exam-authoring.md)及[策略注册表](../skills/paper-notebook-practice/references/authoring-profiles.json)：学科与课程策略、五种层级分别规定目标、题目设计、独立核对和评分方式。
+两份一句话入口随包提供：[智能体指令](../skills/paper-notebook-practice/prompts/coding-agent.txt)、[网页会话指令](../skills/paper-notebook-practice/prompts/conversation-model.txt)。它们共用[学科与年级出题策略](../skills/paper-notebook-practice/references/exam-authoring.md)及[策略注册表](../skills/paper-notebook-practice/references/authoring-profiles.json)：学科与课程策略、五种层级分别规定目标、题目设计、独立核对和评分方式。
 
 ## 研究与学科路线
 
@@ -206,3 +206,9 @@ node tools/practice.mjs plan work/sources/source-manifest.json --out work/job \
 在“定制我的试卷”的“内容”步骤选择“自定义”，逐组设置名称、题型、题量和每题分值。总分自动合计，实时卷面和两类出卷指令同步更新；切回“依照考试”恢复所选考试的默认总分。年级、知识范围与难度进入学科命题要求。
 
 指令中的 `job.sections` 使用现有 `types`、`count`、`pointsPerQuestion` 字段。完整自定义卷同时附带 `specification.source.kind: user-blueprint` 的用户规格，按该规格组卷并检查题型、题数和分值；资料不足时报出具体缺少的题组。原卷复刻与全量题库按实际资料覆盖整理，不用制卷草稿的题量改写原题范围。
+
+## 查看真实样卷
+
+“试卷与版式”按学段或考试用途分类，学科通过关键词筛选。版式卡的“查看样例”独立预览真实参考卷与可编辑示范；“应用版式”保留当前题目与标题，尚未打开试卷时进入定制。真实原卷按实际公开形态展示，答案与评分链接另列。
+
+命题时读取[真实样卷研究](../skills/paper-notebook-practice/references/reference-study.md)；命令 `node tools/practice.mjs sources postgraduate-math` 返回匹配集合，`plan` 附 `reference-study.json`。仅用上传资料时不从外部集合补知识或题目。

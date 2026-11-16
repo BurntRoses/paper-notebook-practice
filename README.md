@@ -6,13 +6,15 @@
 
 ## 开始使用
 
-- 智能体：请阅读本仓库的 [AGENTS.md](AGENTS.md)，上传资料并说明考试目标。
-- 网页会话：请阅读 [WEB_CHAT.md](WEB_CHAT.md)，按同一流程制作成品。
+- 智能体：`请读取 https://github.com/BurntRoses/paper-notebook-practice 的 AGENTS.md，按项目要求和我的资料、需求制作试卷或整理题库。`
+- 网页会话：同一句话，将入口换为 `WEB_CHAT.md`。
 - 本机预览：下载完整离线包，打开其中的“纸间-试卷预览.html”。
 
 ## 资料与试卷
 
-支持中高考、大学课程、考公考研与工程，以及国际课程和海外升学、日语等语言考试、入籍公民知识、艺术设计与音乐。资料优先，原题优先；支持仅用指定资料、版本限制、材料题组、逐题解答与评分细则。专题案例附完整作者题库、题目卷、答案卷和答题纸。
+支持小学、初中与中高考、大学课程、考公考研与工程，以及国际课程和海外升学、日语等语言考试、入籍公民知识、艺术设计与音乐。资料优先，原题优先；支持仅用指定资料、版本限制、材料题组、逐题解答与评分细则。专题案例附完整作者题库、题目卷、答案卷和答题纸。
+
+每类版式关联实际读取的真实参考卷或评估任务与评分依据，见[真实样卷研究](skills/paper-notebook-practice/references/reference-study.md)。查看样例与应用版式分别操作，真实原卷保留发布来源与公开范围。
 
 试卷与版式采用单层考试方向分类，支持资源类型和关键词筛选。定制流程直接生成智能体或网页对话的个性化提示词。试卷使用正式标题与真实纸面比例，支持明暗预览和本机 HTML、PDF、Word、PNG 导出。支持彩印与灰度，色彩辨识任务保留彩色条件；日韩文字体随离线成品嵌入。上传内容保存在当前浏览器中。
 
@@ -30,6 +32,7 @@ npm run build:site
 离线成品位于 `dist/practice/`，静态站点位于 `dist/site/`。
 
 ```sh
+node tools/practice.mjs sources postgraduate-math
 node tools/practice.mjs routes
 node tools/practice.mjs topics
 node tools/practice.mjs examples

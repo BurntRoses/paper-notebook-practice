@@ -2,10 +2,10 @@
 
 适用于 ChatGPT、DeepSeek 等支持资料上传的网页会话。用户发送下面一句话并上传往年卷、题库、知识点或参考资料；当前会话负责读取、编题、核对和文件交付。
 
-完整可复制指令见[网页会话指令](skills/paper-notebook-practice/prompts/conversation-model.txt)；Codex、Claude Code、DeepSeek Harness、WorkBuddy 使用[智能体指令](skills/paper-notebook-practice/prompts/coding-agent.txt)与 [AGENTS.md](AGENTS.md)。
+一句话入口见[网页会话指令](skills/paper-notebook-practice/prompts/conversation-model.txt)；Codex、Claude Code、DeepSeek Harness、WorkBuddy 使用[智能体指令](skills/paper-notebook-practice/prompts/coding-agent.txt)与 [AGENTS.md](AGENTS.md)。
 
 ```text
-请阅读 https://github.com/BurntRoses/paper-notebook-practice 的 WEB_CHAT.md，先读我上传的资料并一次确认范围、版式、水印和导出格式，再按我的回复制作试卷、答案卷、答题卡或全量题库。
+请读取 https://github.com/BurntRoses/paper-notebook-practice 的 WEB_CHAT.md，按项目要求和我的资料、需求制作试卷或整理题库。
 ```
 
 ## 读取项目与资料
@@ -67,3 +67,7 @@ PDF、Word 和 PNG 的实际离线导出步骤见[文件格式与离线导出](s
 按确认的格式交付题目卷、答案卷、答题卡和可复用题库；默认离线 HTML，有原页时保留原卷归档。PDF 检查纸型、分页与字体，Word 必须是真实可编辑 `.docx`，PNG 按实际物理页导出，不能以改名 HTML 或打印按钮代替实际文件。考生卷移除答案、解析及答案来源，完整 `practice.json` 用作编辑备份。打开实际文件核对文字、公式、图表、题号、分值、作答与打印；只报告实际运行过的检查。数据问题继续由当前会话修正，不转交用户手工排查。
 
 项目代码采用 MIT 许可，免费使用，不要求模型 API 密钥或收费 OCR。上传资料保留各自来源与许可；会话及其附件处理遵循用户所选产品的设置。
+
+## 真实样卷学习
+
+按[真实样卷研究](skills/paper-notebook-practice/references/reference-study.md)读取对应的[中国考试集合](skills/paper-notebook-practice/references/authentic-china-papers.json)或[国际及语言艺术集合](skills/paper-notebook-practice/references/authentic-global-papers.json)，实际读题目和评分再形成能力蓝图。区分整卷、specimen、公开单项任务与非固定卷评估；发布者和答案作者分别记录。仅用上传资料时不引入外部知识与题目。小学先核定年级与地区课程，按已学进度和阅读负担出题。

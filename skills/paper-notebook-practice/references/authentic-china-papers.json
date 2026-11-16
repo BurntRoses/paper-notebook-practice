@@ -1,0 +1,1404 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-16",
+  "description": "按教育阶段与考试用途整理的真实原卷、官方样卷和明确来源的回忆资料。完整原卷与试题片段分别标注；公开链接不等同于开放版权。",
+  "collections": [
+    {
+      "id": "hk-primary-math-2024",
+      "title": "小学数学 · 香港官方六年级评估",
+      "category": "小学",
+      "templateIds": [
+        "primary-math"
+      ],
+      "papers": [
+        {
+          "id": "hkeaa24-6MC1",
+          "title": "2024 年全港性系統評估 · 小學六年級數學 6MC1",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Math/TSA2024_6MC1.pdf",
+          "language": "zh",
+          "pages": 20,
+          "sha256": "48b79cf7707d6957ad97f8af13d5cf0a6d46b32516e7fd6502a2a138618bff51",
+          "scope": "full",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "39 题、50 分钟、不得使用计算器；包括选择、列式计算、测量、图表和几何作图。",
+            "首面为条码、学籍填格、作答说明；页侧禁写框、页码和每页作答边界贯穿全卷。"
+          ],
+          "authoringLessons": [
+            "用基本能力代号映射题目，跨整数、分数、百分率、量度、空间及数据；从单步辨认递进到情境计算。",
+            "答案需给计算过程、数值与单位；角度测量按官方容差评判，填空组合按全对规则。",
+            "适用香港 KS2；为中国大陆小学出卷时另取当地年级课程标准和完整卷，不能直接换名套用。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "questionCount": 39,
+          "durationMinutes": 50,
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_6MC1_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        },
+        {
+          "id": "hkeaa24-6MC2",
+          "title": "2024 年全港性系統評估 · 小學六年級數學 6MC2",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Math/TSA2024_6MC2.pdf",
+          "language": "zh",
+          "pages": 20,
+          "sha256": "2c38818521e587ea4d19a8e24ee137370456c0b65cb1ad0419e014262a7aca10",
+          "scope": "full",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "39 题、50 分钟、不得使用计算器；包括选择、列式计算、测量、图表和几何作图。",
+            "首面为条码、学籍填格、作答说明；页侧禁写框、页码和每页作答边界贯穿全卷。"
+          ],
+          "authoringLessons": [
+            "用基本能力代号映射题目，跨整数、分数、百分率、量度、空间及数据；从单步辨认递进到情境计算。",
+            "答案需给计算过程、数值与单位；角度测量按官方容差评判，填空组合按全对规则。",
+            "适用香港 KS2；为中国大陆小学出卷时另取当地年级课程标准和完整卷，不能直接换名套用。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "questionCount": 39,
+          "durationMinutes": 50,
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_6MC2_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        }
+      ]
+    },
+    {
+      "id": "hk-primary-chinese-2024",
+      "title": "小学语文 · 香港官方阅读与写作评估",
+      "category": "小学",
+      "templateIds": [
+        "primary-chinese"
+      ],
+      "papers": [
+        {
+          "id": "hkeaa24-6CR1",
+          "title": "2024 年全港性系統評估 · 小學六年級中國語文 閱讀評估 6CR1",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Chi/TSA2024_6CR1.pdf",
+          "language": "zh",
+          "pages": 12,
+          "sha256": "214f1273a402731a8d9107bf65133e6287b63fc2b6cd3dc1d01d00ffe8c05e95",
+          "scope": "component",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "25 题、30 分钟；全文阅读材料与选择／短答题。"
+          ],
+          "authoringLessons": [
+            "阅读题需记录答案对应的段落或语句，兼顾提取、推断、主旨和语言效果。",
+            "写作评分按内容、结构、语言与标点等维度给等级描述和分项反馈；不只给一篇范文。",
+            "实用文必须保留称谓、格式与收件对象等任务限制。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "component": "阅读",
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_P6Chi_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        },
+        {
+          "id": "hkeaa24-6CR2",
+          "title": "2024 年全港性系統評估 · 小學六年級中國語文 閱讀評估 6CR2",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Chi/TSA2024_6CR2.pdf",
+          "language": "zh",
+          "pages": 12,
+          "sha256": "ea654587a7962f6f1a1aece1935ec281b9d9955ee0c229ec66576ce1c7f511ce",
+          "scope": "component",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "25 题、30 分钟；全文阅读材料与选择／短答题。"
+          ],
+          "authoringLessons": [
+            "阅读题需记录答案对应的段落或语句，兼顾提取、推断、主旨和语言效果。",
+            "写作评分按内容、结构、语言与标点等维度给等级描述和分项反馈；不只给一篇范文。",
+            "实用文必须保留称谓、格式与收件对象等任务限制。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "component": "阅读",
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_P6Chi_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        },
+        {
+          "id": "hkeaa24-6CW1",
+          "title": "2024 年全港性系統評估 · 小學六年級中國語文 寫作評估 6CW1",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Chi/TSA2024_6CW1.pdf",
+          "language": "zh",
+          "pages": 8,
+          "sha256": "2f58d42aeac4b66806d75052ba6d01dcfb93117ccab4a5d2079481f90bae0b7e",
+          "scope": "component",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "2 题、55 分钟；实用写作与长篇写作各有独立答题页。"
+          ],
+          "authoringLessons": [
+            "阅读题需记录答案对应的段落或语句，兼顾提取、推断、主旨和语言效果。",
+            "写作评分按内容、结构、语言与标点等维度给等级描述和分项反馈；不只给一篇范文。",
+            "实用文必须保留称谓、格式与收件对象等任务限制。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "component": "写作",
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_P6Chi_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        },
+        {
+          "id": "hkeaa24-6CW2",
+          "title": "2024 年全港性系統評估 · 小學六年級中國語文 寫作評估 6CW2",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Chi/TSA2024_6CW2.pdf",
+          "language": "zh",
+          "pages": 8,
+          "sha256": "d2357786f1306e24e9e02590c128f9608588252fcddcff43d98ab7115c396e9d",
+          "scope": "component",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "2 题、55 分钟；实用写作与长篇写作各有独立答题页。"
+          ],
+          "authoringLessons": [
+            "阅读题需记录答案对应的段落或语句，兼顾提取、推断、主旨和语言效果。",
+            "写作评分按内容、结构、语言与标点等维度给等级描述和分项反馈；不只给一篇范文。",
+            "实用文必须保留称谓、格式与收件对象等任务限制。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "component": "写作",
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_P6Chi_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        }
+      ]
+    },
+    {
+      "id": "hk-primary-english-2024",
+      "title": "小学英语 · 香港官方阅读写作整卷",
+      "category": "小学",
+      "templateIds": [
+        "primary-english"
+      ],
+      "papers": [
+        {
+          "id": "hkeaa24-6ERW1",
+          "title": "Territory-wide System Assessment 2024 · P6 English Language Reading and Writing 6ERW1",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Eng/TSA2024_6ERW1.pdf",
+          "language": "zh",
+          "pages": 20,
+          "sha256": "30892303b3dff724984bab0ac18a18c77b3762985b7289af592a54ab9d895ec3",
+          "scope": "component",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "共 9 个阅读／写作部分，50 分钟；题目、图示及写作答题位置完整。"
+          ],
+          "authoringLessons": [
+            "真实语篇结合信息提取与推断，题组使用图表、对话、短文和生活场景。",
+            "拼写是否影响得分由具体题与评分规则决定；写作按内容和语言分别判断。",
+            "阅读写作卷可独立作为完整测试；听力和口语需另取官方音频及考官材料。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_6ERW1_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        },
+        {
+          "id": "hkeaa24-6ERW2",
+          "title": "Territory-wide System Assessment 2024 · P6 English Language Reading and Writing 6ERW2",
+          "year": 2024,
+          "board": "香港教育局／香港考試及評核局",
+          "paperUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priPaper/P6Eng/TSA2024_6ERW2.pdf",
+          "language": "zh",
+          "pages": 20,
+          "sha256": "332b4e03562ff2b40d0deaf7abb4f05093e0b8f4e17cfbbfe835f87ce68f8a52",
+          "scope": "component",
+          "readNotes": [
+            "香港小学六年级评估；2024 年全港小六 TSA 暂停，本套为学校自愿参与评估，原卷脚注明确地域与参与范围。",
+            "已阅读完整分卷及对应官方评卷参考；单个分卷不是听说读写全部考试包。",
+            "共 9 个阅读／写作部分，50 分钟；题目、图示及写作答题位置完整。"
+          ],
+          "authoringLessons": [
+            "真实语篇结合信息提取与推断，题组使用图表、对话、短文和生活场景。",
+            "拼写是否影响得分由具体题与评分规则决定；写作按内容和语言分别判断。",
+            "阅读写作卷可独立作为完整测试；听力和口语需另取官方音频及考官材料。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国香港",
+          "sourceType": "official-original",
+          "answerUrl": "https://www.bca.hkeaa.edu.hk/web/Common/res/2024priMarking/P6/TSA2024_6ERW2_MS.pdf",
+          "specificationUrl": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html"
+        }
+      ]
+    },
+    {
+      "id": "national-postgraduate-math-2024",
+      "title": "考研数学 · 数一／数二／数三完整题本",
+      "category": "考研",
+      "templateIds": [
+        "postgraduate-math"
+      ],
+      "papers": [
+        {
+          "id": "national-math24-1",
+          "title": "2024 年全国硕士研究生招生考试数学（一）试题及参考解答",
+          "year": 2024,
+          "board": "全国硕士研究生招生考试；郑州工商学院转载",
+          "paperUrl": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+          "language": "zh",
+          "pages": 5,
+          "sha256": "cb2a9d01471a5d7eb5e441b58622b1613e897adeec662c5a8ef53f4d7117961c",
+          "scope": "full",
+          "readNotes": [
+            "郑州工商学院基础教学部公开转载，PDF 是培训者整理的真题与参考解答，不是教育部教育考试院发布的原始卷面或官方评分标准。",
+            "已读至第 22 题，包含 10 道选择、6 道填空、6 道解答题；150 分、180 分钟为该年度结构。"
+          ],
+          "authoringLessons": [
+            "先锁定数学一／二／三与考试年份，不把数学二配概率统计或把数学三配三重积分、曲面积分。",
+            "数学题必须包含可解的数值／函数条件与明确问题，计算或证明的推理链构成考点，不能以默写定义代替。",
+            "难度按运算长度、综合知识数、隐含条件和证明跨度分层；答案需独立推导并代入、边界或数值验证。",
+            "选择题保证唯一正确；解答题把文字说明、演算和关键评分点分开记录。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "university-repost",
+          "questionCount": 22,
+          "totalScore": 150,
+          "durationMinutes": 180,
+          "answerUrl": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/1066d05b0b708445.pdf",
+          "specificationUrl": "https://gjb.ztbu.edu.cn/2024_09/10_16/content-64823.html"
+        },
+        {
+          "id": "national-math24-2",
+          "title": "2024 年全国硕士研究生招生考试数学（二）试题及参考解答",
+          "year": 2024,
+          "board": "全国硕士研究生招生考试；郑州工商学院转载",
+          "paperUrl": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/feb7baa021470806.pdf",
+          "language": "zh",
+          "pages": 9,
+          "sha256": "ae2d92dd3af4d2ea42467dbd5ddb6467c37b097ed4934f1c7301a3206c4637ce",
+          "scope": "full",
+          "readNotes": [
+            "郑州工商学院基础教学部公开转载，PDF 是培训者整理的真题与参考解答，不是教育部教育考试院发布的原始卷面或官方评分标准。",
+            "已读至第 22 题，包含 10 道选择、6 道填空、6 道解答题；150 分、180 分钟为该年度结构。"
+          ],
+          "authoringLessons": [
+            "先锁定数学一／二／三与考试年份，不把数学二配概率统计或把数学三配三重积分、曲面积分。",
+            "数学题必须包含可解的数值／函数条件与明确问题，计算或证明的推理链构成考点，不能以默写定义代替。",
+            "难度按运算长度、综合知识数、隐含条件和证明跨度分层；答案需独立推导并代入、边界或数值验证。",
+            "选择题保证唯一正确；解答题把文字说明、演算和关键评分点分开记录。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "university-repost",
+          "questionCount": 22,
+          "totalScore": 150,
+          "durationMinutes": 180,
+          "answerUrl": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/feb7baa021470806.pdf",
+          "specificationUrl": "https://gjb.ztbu.edu.cn/2024_09/10_16/content-64823.html"
+        },
+        {
+          "id": "national-math24-3",
+          "title": "2024 年全国硕士研究生招生考试数学（三）试题及参考解答",
+          "year": 2024,
+          "board": "全国硕士研究生招生考试；郑州工商学院转载",
+          "paperUrl": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/b1113bba1ab3ea48.pdf",
+          "language": "zh",
+          "pages": 15,
+          "sha256": "d7c001afa61b5082bc421bd45c47f614cac0f71c36d42a23d8f5d9e933c89a79",
+          "scope": "full",
+          "readNotes": [
+            "郑州工商学院基础教学部公开转载，PDF 是培训者整理的真题与参考解答，不是教育部教育考试院发布的原始卷面或官方评分标准。",
+            "已读至第 22 题，包含 10 道选择、6 道填空、6 道解答题；150 分、180 分钟为该年度结构。"
+          ],
+          "authoringLessons": [
+            "先锁定数学一／二／三与考试年份，不把数学二配概率统计或把数学三配三重积分、曲面积分。",
+            "数学题必须包含可解的数值／函数条件与明确问题，计算或证明的推理链构成考点，不能以默写定义代替。",
+            "难度按运算长度、综合知识数、隐含条件和证明跨度分层；答案需独立推导并代入、边界或数值验证。",
+            "选择题保证唯一正确；解答题把文字说明、演算和关键评分点分开记录。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "university-repost",
+          "questionCount": 22,
+          "totalScore": 150,
+          "durationMinutes": 180,
+          "answerUrl": "https://gjb.ztbu.edu.cn/attachment/sites/item/2025_09/18_17/b1113bba1ab3ea48.pdf",
+          "specificationUrl": "https://gjb.ztbu.edu.cn/2024_09/10_16/content-64823.html"
+        }
+      ]
+    },
+    {
+      "id": "national-postgraduate-english-2024",
+      "title": "考研英语 · 英一／英二完整题本",
+      "category": "考研",
+      "templateIds": [
+        "postgraduate-english"
+      ],
+      "papers": [
+        {
+          "id": "national-english24-1",
+          "title": "2024 年全国硕士研究生招生考试英语（一）",
+          "year": 2024,
+          "board": "全国硕士研究生招生考试；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/e4db78fcd7075a97.pdf",
+          "language": "en",
+          "pages": 14,
+          "sha256": "969cf8c175e037eebecb289293dbb2457fde4fc696b42315c0204fe59f02a465",
+          "scope": "full",
+          "readNotes": [
+            "大学网站转载 BurningVocabulary 整理题本；完整题目共 14 页，未提供官方答案。",
+            "英语一含完形 1—20、阅读与新题型 21—45、划线翻译 46—50、写作 51—52；英语二含完形、阅读、新题型、整段翻译 46、写作 47—48。"
+          ],
+          "authoringLessons": [
+            "英语一与二翻译对象、篇幅与大作文长度不同，不能共享一份蓝图。",
+            "干扰项从同一语篇语义和逻辑产生；给正确项证据及其余项错误原因。",
+            "写作保留收件对象、语体、任务点、字数和图表单位；英一大作文 160—200 词，英二约 150 词。",
+            "参考答案需要标为独立解答或第三方解析，并核对原文证据；本题本无官方评分答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "university-repost",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58248.html"
+        },
+        {
+          "id": "national-english24-2",
+          "title": "2024 年全国硕士研究生招生考试英语（二）",
+          "year": 2024,
+          "board": "全国硕士研究生招生考试；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/fd83a789bfc10a7a.pdf",
+          "language": "en",
+          "pages": 14,
+          "sha256": "6576c7aa0767457d66d4f070db20dc13e7758b306cadda433387cb1c54c5bfcc",
+          "scope": "full",
+          "readNotes": [
+            "大学网站转载 BurningVocabulary 整理题本；完整题目共 14 页，未提供官方答案。",
+            "英语一含完形 1—20、阅读与新题型 21—45、划线翻译 46—50、写作 51—52；英语二含完形、阅读、新题型、整段翻译 46、写作 47—48。"
+          ],
+          "authoringLessons": [
+            "英语一与二翻译对象、篇幅与大作文长度不同，不能共享一份蓝图。",
+            "干扰项从同一语篇语义和逻辑产生；给正确项证据及其余项错误原因。",
+            "写作保留收件对象、语体、任务点、字数和图表单位；英一大作文 160—200 词，英二约 150 词。",
+            "参考答案需要标为独立解答或第三方解析，并核对原文证据；本题本无官方评分答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "university-repost",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58248.html"
+        }
+      ]
+    },
+    {
+      "id": "national-civil-objective-2024",
+      "title": "公务员考试 · 行测三类完整回忆资料",
+      "category": "考公",
+      "templateIds": [
+        "civil-service"
+      ],
+      "papers": [
+        {
+          "id": "civil24-7",
+          "title": "2024 年国家公务员录用考试《行测》地市级（网友回忆版）",
+          "year": 2024,
+          "board": "粉笔题源／公考真题库整理；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/06270e73315532d6.pdf",
+          "language": "zh",
+          "pages": 26,
+          "sha256": "5a7f0d279572d8c251d06adddb2454f114b8c8999278c6b6305c91fc0c33d562",
+          "scope": "full",
+          "readNotes": [
+            "实际 PDF 封面明确“网友回忆版”、粉笔来源；本目录保留回忆资料身份，不称官方原卷或原始卷面。",
+            "三类职位分别保留，不混用题量和作答要求。",
+            "末题可见原题号 130 或 135；包括常识、言语、数量、判断与资料分析，图表和选项均在完整题本内。",
+            "本套为 2024 年试题结构；后续年度政治理论模块等变化须按目标年度大纲重新核对。"
+          ],
+          "authoringLessons": [
+            "数量关系与资料分析必须实际求解并核算单位、百分比／百分点和基期／现期口径。",
+            "图形推理应保存清晰完整图像，不能用文字猜测缺失图；选项顺序与唯一答案逐题验证。",
+            "先取目标年份官方公共科目大纲，再使用同类职位完整真题校准。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/a60002458d717e05.pdf",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58247.html"
+        },
+        {
+          "id": "civil24-9",
+          "title": "2024 年国家公务员录用考试《行测》副省级（网友回忆版）",
+          "year": 2024,
+          "board": "粉笔题源／公考真题库整理；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/aa96ee9fa2814667.pdf",
+          "language": "zh",
+          "pages": 25,
+          "sha256": "7eb5f84921e614d44106cf804fd731a6011292423c5de722931454aed1b35d09",
+          "scope": "full",
+          "readNotes": [
+            "实际 PDF 封面明确“网友回忆版”、粉笔来源；本目录保留回忆资料身份，不称官方原卷或原始卷面。",
+            "三类职位分别保留，不混用题量和作答要求。",
+            "末题可见原题号 130 或 135；包括常识、言语、数量、判断与资料分析，图表和选项均在完整题本内。",
+            "本套为 2024 年试题结构；后续年度政治理论模块等变化须按目标年度大纲重新核对。"
+          ],
+          "authoringLessons": [
+            "数量关系与资料分析必须实际求解并核算单位、百分比／百分点和基期／现期口径。",
+            "图形推理应保存清晰完整图像，不能用文字猜测缺失图；选项顺序与唯一答案逐题验证。",
+            "先取目标年份官方公共科目大纲，再使用同类职位完整真题校准。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/8c28962fb9830da2.pdf",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58247.html"
+        },
+        {
+          "id": "civil24-11",
+          "title": "2024 年国家公务员录用考试《行测》行政执法（网友回忆版）",
+          "year": 2024,
+          "board": "粉笔题源／公考真题库整理；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/dbe54ee9d5c2ea15.pdf",
+          "language": "zh",
+          "pages": 25,
+          "sha256": "31dc4f1dac6370d902e9e2dae7670f50bd0b1f317e74944ef18c076048eb57bd",
+          "scope": "full",
+          "readNotes": [
+            "实际 PDF 封面明确“网友回忆版”、粉笔来源；本目录保留回忆资料身份，不称官方原卷或原始卷面。",
+            "三类职位分别保留，不混用题量和作答要求。",
+            "末题可见原题号 130 或 135；包括常识、言语、数量、判断与资料分析，图表和选项均在完整题本内。",
+            "本套为 2024 年试题结构；后续年度政治理论模块等变化须按目标年度大纲重新核对。"
+          ],
+          "authoringLessons": [
+            "数量关系与资料分析必须实际求解并核算单位、百分比／百分点和基期／现期口径。",
+            "图形推理应保存清晰完整图像，不能用文字猜测缺失图；选项顺序与唯一答案逐题验证。",
+            "先取目标年份官方公共科目大纲，再使用同类职位完整真题校准。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/7120bceae6add710.pdf",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58247.html"
+        }
+      ]
+    },
+    {
+      "id": "national-civil-writing-2024",
+      "title": "公务员考试 · 申论三类完整回忆资料",
+      "category": "考公",
+      "templateIds": [
+        "shenlun"
+      ],
+      "papers": [
+        {
+          "id": "civil24-1",
+          "title": "2024 年国家公务员录用考试《申论》副省级（网友回忆版）",
+          "year": 2024,
+          "board": "粉笔题源／公考真题库整理；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/b9830e8e8c52cd8e.pdf",
+          "language": "zh",
+          "pages": 6,
+          "sha256": "d8cda21a2b85e6bcc6b6ea6084a01ed62d2716a3bc97f114a095eb40cbb47e48",
+          "scope": "full",
+          "readNotes": [
+            "实际 PDF 封面明确“网友回忆版”、粉笔来源；本目录保留回忆资料身份，不称官方原卷或原始卷面。",
+            "三类职位分别保留，不混用题量和作答要求。",
+            "给定资料与 5 道作答任务完整，180 分钟、100 分；不同类别材料及字数要求不同。",
+            "解析为培训机构参考要点，不是官方评分细则；应区分信息点、结构与表达。"
+          ],
+          "authoringLessons": [
+            "先建立资料事实与题目要求的对应表，归纳、对策、公文、综合分析和文章题分别设计评分点。",
+            "答案只在资料范围内进行有证据的概括和必要推理，按对象、任务、字数与文体评分。",
+            "每题给可复核要点、材料定位、分值和多种合理表述；大作文给论证结构及分档标准。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/b28afae970b4de08.pdf",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58247.html"
+        },
+        {
+          "id": "civil24-3",
+          "title": "2024 年国家公务员录用考试《申论》地市级（网友回忆版）",
+          "year": 2024,
+          "board": "粉笔题源／公考真题库整理；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/c1b037d5ac614dd7.pdf",
+          "language": "zh",
+          "pages": 6,
+          "sha256": "cb368728d5318f89620b0af43ef7b44845ec684bce49200cae56ae30dcd5c191",
+          "scope": "full",
+          "readNotes": [
+            "实际 PDF 封面明确“网友回忆版”、粉笔来源；本目录保留回忆资料身份，不称官方原卷或原始卷面。",
+            "三类职位分别保留，不混用题量和作答要求。",
+            "给定资料与 5 道作答任务完整，180 分钟、100 分；不同类别材料及字数要求不同。",
+            "解析为培训机构参考要点，不是官方评分细则；应区分信息点、结构与表达。"
+          ],
+          "authoringLessons": [
+            "先建立资料事实与题目要求的对应表，归纳、对策、公文、综合分析和文章题分别设计评分点。",
+            "答案只在资料范围内进行有证据的概括和必要推理，按对象、任务、字数与文体评分。",
+            "每题给可复核要点、材料定位、分值和多种合理表述；大作文给论证结构及分档标准。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/65b24ea6171a2cdf.pdf",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58247.html"
+        },
+        {
+          "id": "civil24-5",
+          "title": "2024 年国家公务员录用考试《申论》行政执法（网友回忆版）",
+          "year": 2024,
+          "board": "粉笔题源／公考真题库整理；郑州工商学院转载",
+          "paperUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/6465323b9362bd59.pdf",
+          "language": "zh",
+          "pages": 6,
+          "sha256": "6d932caa205c3cab8c79d3b3a489131b25f4390471606aed5c2a7df50c6abcd5",
+          "scope": "full",
+          "readNotes": [
+            "实际 PDF 封面明确“网友回忆版”、粉笔来源；本目录保留回忆资料身份，不称官方原卷或原始卷面。",
+            "三类职位分别保留，不混用题量和作答要求。",
+            "给定资料与 5 道作答任务完整，180 分钟、100 分；不同类别材料及字数要求不同。",
+            "解析为培训机构参考要点，不是官方评分细则；应区分信息点、结构与表达。"
+          ],
+          "authoringLessons": [
+            "先建立资料事实与题目要求的对应表，归纳、对策、公文、综合分析和文章题分别设计评分点。",
+            "答案只在资料范围内进行有证据的概括和必要推理，按对象、任务、字数与文体评分。",
+            "每题给可复核要点、材料定位、分值和多种合理表述；大作文给论证结构及分档标准。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://xxgcxy.ztbu.edu.cn/attachment/sites/item/2024_11/05_17/875d645433907fec.pdf",
+          "specificationUrl": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58247.html"
+        }
+      ]
+    },
+    {
+      "id": "tongji-engineering-mechanics-2007",
+      "title": "工程课程 · 同济官方力学 A／B 整卷与评分",
+      "category": "工程与资格",
+      "templateIds": [
+        "engineering-course",
+        "university-a4",
+        "university-a3"
+      ],
+      "papers": [
+        {
+          "id": "tongji-mechanics07-a",
+          "title": "同济大学 2006—2007 学年第一学期工程力学Ⅱ试卷（A 卷）",
+          "year": 2007,
+          "board": "同济大学航空航天与力学学院",
+          "paperUrl": "https://lx-lab.tongji.edu.cn/web/jpkc_gclx_2010/subject/images2/2006-2007_1_%E5%B7%A5%E7%A8%8B%E5%8A%9B%E5%AD%A62%E8%AF%95%E5%8D%B7A.pdf",
+          "language": "zh",
+          "pages": 4,
+          "sha256": "fd8194350a2fe727ca85ce5bbc01b7558def1e254e931284985dc594ffd6ea37",
+          "scope": "full",
+          "readNotes": [
+            "官方精品课程站保留完整 4 页试卷、7 页答案与步骤给分；卷头含课号、学年、考核类型、年级专业学号姓名、分值表。",
+            "A 卷填空合计 30 分，5 道计算题合计 70 分；包含机构运动、刚体动力学、虚位移与拉格朗日方程。"
+          ],
+          "authoringLessons": [
+            "工程题完整列出几何、连接、载荷、材料和假设，图形与题干符号一一对应。",
+            "需真正建模、受力分析、方程推导和数值计算；答案记录单位、方向、正负号与计算过程。",
+            "参考答案逐步赋分，允许等效正确解法；不能只背材料或定义。",
+            "A／B 卷依据能力和计算负荷等值设计，不能只改随机数字。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "official-original",
+          "totalScore": 100,
+          "answerUrl": "https://lx-lab.tongji.edu.cn/web/jpkc_gclx_2010/subject/images2/2006-2007_1_%E5%B7%A5%E7%A8%8B%E5%8A%9B%E5%AD%A62%E8%AF%95%E5%8D%B7A_key.pdf",
+          "specificationUrl": "https://lx-lab.tongji.edu.cn/web/jpkc_gclx_2010/subject/jiaoxuexiaoguo-5.html"
+        },
+        {
+          "id": "tongji-mechanics07-b",
+          "title": "同济大学 2006—2007 学年第一学期工程力学Ⅱ试卷（B 卷）",
+          "year": 2007,
+          "board": "同济大学航空航天与力学学院",
+          "paperUrl": "https://lx-lab.tongji.edu.cn/web/jpkc_gclx_2010/subject/images2/2006-2007_1_%E5%B7%A5%E7%A8%8B%E5%8A%9B%E5%AD%A62%E8%AF%95%E5%8D%B7B.pdf",
+          "language": "zh",
+          "pages": 4,
+          "sha256": "6fd77db78d656644e3e6ba1cdd9440f8aa3c9ba9d8fd58726087d2255455008a",
+          "scope": "full",
+          "readNotes": [
+            "官方精品课程站保留完整 4 页试卷、7 页答案与步骤给分；卷头含课号、学年、考核类型、年级专业学号姓名、分值表。",
+            "A 卷填空合计 30 分，5 道计算题合计 70 分；包含机构运动、刚体动力学、虚位移与拉格朗日方程。"
+          ],
+          "authoringLessons": [
+            "工程题完整列出几何、连接、载荷、材料和假设，图形与题干符号一一对应。",
+            "需真正建模、受力分析、方程推导和数值计算；答案记录单位、方向、正负号与计算过程。",
+            "参考答案逐步赋分，允许等效正确解法；不能只背材料或定义。",
+            "A／B 卷依据能力和计算负荷等值设计，不能只改随机数字。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "official-original",
+          "totalScore": 100,
+          "answerUrl": "https://lx-lab.tongji.edu.cn/web/jpkc_gclx_2010/subject/images2/2006-2007_1_%E5%B7%A5%E7%A8%8B%E5%8A%9B%E5%AD%A62%E8%AF%95%E5%8D%B7B_key.pdf",
+          "specificationUrl": "https://lx-lab.tongji.edu.cn/web/jpkc_gclx_2010/subject/jiaoxuexiaoguo-5.html"
+        }
+      ]
+    },
+    {
+      "id": "nuaa-thermodynamics-2018",
+      "title": "工程考研 · 南航官方工程热力学整卷",
+      "category": "考研",
+      "templateIds": [
+        "engineering-course"
+      ],
+      "papers": [
+        {
+          "id": "nuaa-thermodynamics18",
+          "title": "南京航空航天大学 2018 年硕士研究生入学考试初试试题 · 817 工程热力学",
+          "year": 2018,
+          "board": "南京航空航天大学研究生院",
+          "paperUrl": "https://yzsbm.nuaa.edu.cn/stcx/getFj?fjmc=MS102872018817.pdf&id=MS102872018817&lbmc=STFJ",
+          "language": "zh",
+          "pages": 3,
+          "sha256": "679f23a86cc0795273760ba75d0d2f6e4f1b7f04fb1162a95cfb4caafc412790",
+          "scope": "full",
+          "readNotes": [
+            "官方历年试题查询平台提供完整 3 页试题。",
+            "满分 150 分，第一大题 8 道简答共 50 分，其余 7 道推导／计算大题共 100 分，含过程图与循环图任务；未附官方解答。"
+          ],
+          "authoringLessons": [
+            "热力学计算必须给定状态、过程、工质模型和必要物性；单位转换、正负号和循环功效率均独立核算。",
+            "要求图示时输出 p-v／T-s 等实际图，不能仅以文字占位。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "official-original",
+          "specificationUrl": "https://yzsbm.nuaa.edu.cn/stcx/index?kmdm=817"
+        }
+      ]
+    },
+    {
+      "id": "ncre-python-official-2025",
+      "title": "计算机二级 · Python 官方完整样题文件",
+      "category": "大学课程",
+      "templateIds": [
+        "ncre-python"
+      ],
+      "papers": [
+        {
+          "id": "ncre-python25",
+          "title": "全国计算机等级考试二级 Python 语言程序设计 · 样题及参考答案",
+          "year": 2025,
+          "board": "教育部教育考试院",
+          "paperUrl": "https://ncre.neea.edu.cn/res/Home/2501/930587d629e8ddf2c8b6eaf9e080a858.pdf",
+          "language": "zh",
+          "pages": 9,
+          "sha256": "a0f6a19967464aba6bbb5150d4311311672179c963f631eeed6745e7f4956fd8",
+          "scope": "official-specimen",
+          "readNotes": [
+            "9 页官方样题文件完整；30 道选择、3 道基本操作、2 道简单应用、1 道综合应用。",
+            "官方参考答案只列选择项，操作题答案略；不是一套附全部运行素材和完整评分的机考包。",
+            "原样题存在需复核之处：第 4 题八进制问法与 0b 选项冲突；第 14、15 题答案表与程序基础知识冲突。"
+          ],
+          "authoringLessons": [
+            "保留原题身份时记录疑错，不静默篡改原文；新编题必须执行代码并逐项验证。",
+            "编程题需要可运行输入、期望输出、边界样例和实际环境版本；不能只考概念背诵。",
+            "选择题也需运行验证每个可执行选项，不把官方来源等同于答案正确。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "official-specimen",
+          "questionCount": 36,
+          "answerUrl": "https://ncre.neea.edu.cn/res/Home/2501/930587d629e8ddf2c8b6eaf9e080a858.pdf",
+          "specificationUrl": "https://ncre.neea.edu.cn/xhtml1/report/2501/88-1.htm"
+        }
+      ]
+    },
+    {
+      "id": "ncre-office-official-2025",
+      "title": "计算机二级 · Office 官方完整样题文件",
+      "category": "大学课程",
+      "templateIds": [
+        "ncre-office"
+      ],
+      "papers": [
+        {
+          "id": "ncre-office25",
+          "title": "全国计算机等级考试二级 MS Office 高级应用与设计 · 样题及参考答案",
+          "year": 2025,
+          "board": "教育部教育考试院",
+          "paperUrl": "https://ncre.neea.edu.cn/res/Home/2501/d7be5a3807a06e9124639f438bcd28cc.pdf",
+          "language": "zh",
+          "pages": 8,
+          "sha256": "a5b602fba582e2c83b9bf6f5dae4e757c6c92a17ca0ffb7cf4c360e80fc0f1bb",
+          "scope": "official-specimen",
+          "readNotes": [
+            "官方 8 页样题文件包含选择、Word、Excel、PowerPoint 操作任务与选择题参考答案。",
+            "文件注明操作题只提供题干，素材文件略；操作题参考答案略。因此不能直接作为可运行的完整考试素材包。"
+          ],
+          "authoringLessons": [
+            "Office 任务必须附可打开的原始文档、数据表、图片与目标文件名，任务顺序和软件版本明确。",
+            "自动检查应验证页眉页脚、样式、公式与单元格引用、图表、母版和导出格式等实际文件结果。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "official-specimen",
+          "answerUrl": "https://ncre.neea.edu.cn/res/Home/2501/d7be5a3807a06e9124639f438bcd28cc.pdf",
+          "specificationUrl": "https://ncre.neea.edu.cn/xhtml1/report/2501/90-1.htm"
+        }
+      ]
+    },
+    {
+      "id": "cpa-accounting-references",
+      "title": "注册会计师 · 会计公开参考材料",
+      "category": "工程与资格",
+      "templateIds": [
+        "cpa-accounting"
+      ],
+      "papers": [
+        {
+          "id": "cpa-accounting24-recalled",
+          "title": "2024 年注册会计师考试《会计》试题及答案解析（考生回忆版）",
+          "year": 2024,
+          "board": "正保会计网校",
+          "paperUrl": "https://www.chinaacc.com/upload/resources/file/2024/08/25/2387955.pdf",
+          "language": "zh",
+          "pages": 8,
+          "sha256": "29f351c367cf1ed5ea5b6c07b22f049fdd2c67b2d9c7e371f751780a84d31039",
+          "scope": "component",
+          "readNotes": [
+            "提供者明确标注考生回忆版；实际文件为部分题型，不能当作完整正式考试。",
+            "会计 8 页含部分单选、多选和计算分析，缺综合题。",
+            "官方机考模拟入口见中注协公告；页面说明其用途为熟悉机考环境，正式题型题量分值可能调整。"
+          ],
+          "authoringLessons": [
+            "先锁定考试年份与准则／法规版本，判断—依据—处理或分录／金额形成完整答案。",
+            "会计计算写出确认、计量、分录与报表影响；审计案例写出认定、风险、程序、证据和结论。",
+            "公开回忆解析为非官方参考答案，必须独立复算并查准则，不能由其推断当年完整蓝图。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://www.chinaacc.com/upload/resources/file/2024/08/25/2387955.pdf",
+          "specificationUrl": "https://www.cicpa.org.cn/xxfb/tzgg/202604/t20260414_65907.html"
+        }
+      ],
+      "officialInteractiveUrl": "https://cpademo.joytest.org.cn"
+    },
+    {
+      "id": "cpa-audit-references",
+      "title": "注册会计师 · 审计公开参考材料",
+      "category": "工程与资格",
+      "templateIds": [
+        "cpa-audit"
+      ],
+      "papers": [
+        {
+          "id": "cpa-audit24-recalled",
+          "title": "2024 年注册会计师考试《审计》试题及答案解析（考生回忆版）",
+          "year": 2024,
+          "board": "正保会计网校",
+          "paperUrl": "https://www.chinaacc.com/upload/resources/file/2024/08/25/2387975.pdf",
+          "language": "zh",
+          "pages": 10,
+          "sha256": "c40263a9141bcfa5577b42914f60cab5ca9966599a641aa2d542552b32342c57",
+          "scope": "component",
+          "readNotes": [
+            "提供者明确标注考生回忆版；实际文件为部分题型，不能当作完整正式考试。",
+            "审计 10 页含部分单选、多选，未含简答与综合案例。",
+            "官方机考模拟入口见中注协公告；页面说明其用途为熟悉机考环境，正式题型题量分值可能调整。"
+          ],
+          "authoringLessons": [
+            "先锁定考试年份与准则／法规版本，判断—依据—处理或分录／金额形成完整答案。",
+            "会计计算写出确认、计量、分录与报表影响；审计案例写出认定、风险、程序、证据和结论。",
+            "公开回忆解析为非官方参考答案，必须独立复算并查准则，不能由其推断当年完整蓝图。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://www.chinaacc.com/upload/resources/file/2024/08/25/2387975.pdf",
+          "specificationUrl": "https://www.cicpa.org.cn/xxfb/tzgg/202604/t20260414_65907.html"
+        }
+      ],
+      "officialInteractiveUrl": "https://cpademo.joytest.org.cn"
+    },
+    {
+      "id": "construction-professional-2024",
+      "title": "工程资格 · 一级建造师公开回忆资料",
+      "category": "工程与资格",
+      "templateIds": [
+        "engineering-professional"
+      ],
+      "papers": [
+        {
+          "id": "constructor-mechanical24",
+          "title": "2024 年一级建造师《机电工程管理与实务》试题及参考解析",
+          "year": 2024,
+          "board": "建设工程教育网",
+          "paperUrl": "https://www.jianshe99.com/upload/resources/file/2024/09/11/595957.pdf",
+          "language": "zh",
+          "pages": 12,
+          "sha256": "9ed0116ba2fe380f20e650ff6df77342a9455ccf2e049394c9f220df42718799",
+          "scope": "component",
+          "readNotes": [
+            "培训机构公开整理，非官方原卷或官方评分答案。",
+            "12 页覆盖单选、多选与 5 道案例，但案例四一幅传动装置图标为“暂缺”；不能当作完整可作答原卷。"
+          ],
+          "authoringLessons": [
+            "工程实务先锁定专业、考试年份、地区和适用规范版本；答案指出条款或依据及其适用条件。",
+            "缺图、缺表和缺条件的题不能进入可作答试卷；应补原图或从试卷中排除并报告缺口。",
+            "案例保持项目背景、时间线、图表、任务与分问的联系，计算题给单位与过程。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "recalled-reconstruction",
+          "answerUrl": "https://www.jianshe99.com/upload/resources/file/2024/09/11/595957.pdf"
+        }
+      ]
+    },
+    {
+      "id": "taiwan-engineer-official-2024",
+      "title": "工程技师 · 台湾考选部官方整卷",
+      "category": "工程与资格",
+      "templateIds": [
+        "engineering-professional"
+      ],
+      "papers": [
+        {
+          "id": "tw-civil-structure24",
+          "title": "113 年专技高考土木工程技师 · 结构分析（包括材料力学与结构学）",
+          "year": 2024,
+          "board": "台湾考选部",
+          "paperUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=001&code=113190&q=1&s=0304&t=Q",
+          "language": "zh",
+          "pages": 2,
+          "sha256": "c21946fdfac321b891696983fc16b171614bf93c40d1cc62295a1b25ac5d00f9",
+          "scope": "full",
+          "readNotes": [
+            "民国 113 年即公历 2024 年；为台湾地区专业技术考试，完整科目试卷，非中国大陆注册工程师。",
+            "卷头明确 2 小时、座号、计算器规则、在答题卷按题号作答和分问分值；未发布申论题官方解答。"
+          ],
+          "authoringLessons": [
+            "结构分析要按指定方法求解，约束、位移协调、杆端力和内力图可交叉验证。",
+            "力学题应给清晰受力／几何图和材料数据；建模、演算、验算构成题目难度。",
+            "各地资格规范与范围不同，跨地区原卷用于能力／题型研究，不能换名充作当地试卷。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国台湾",
+          "sourceType": "official-original",
+          "totalScore": 100,
+          "durationMinutes": 120,
+          "specificationUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113190&y=2024"
+        },
+        {
+          "id": "tw-mechanical-mechanics24",
+          "title": "113 年专技高考机械工程技师 · 工程力学（包括静力学、动力学与材料力学）",
+          "year": 2024,
+          "board": "台湾考选部",
+          "paperUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=008&code=113190&q=1&s=0606&t=Q",
+          "language": "zh",
+          "pages": 3,
+          "sha256": "00ffa806728f3ea35f9f536622d1391f63cd3793551c73d1f04dafad08a2435c",
+          "scope": "full",
+          "readNotes": [
+            "民国 113 年即公历 2024 年；为台湾地区专业技术考试，完整科目试卷，非中国大陆注册工程师。",
+            "卷头明确 2 小时、座号、计算器规则、在答题卷按题号作答和分问分值；未发布申论题官方解答。"
+          ],
+          "authoringLessons": [
+            "结构分析要按指定方法求解，约束、位移协调、杆端力和内力图可交叉验证。",
+            "力学题应给清晰受力／几何图和材料数据；建模、演算、验算构成题目难度。",
+            "各地资格规范与范围不同，跨地区原卷用于能力／题型研究，不能换名充作当地试卷。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国台湾",
+          "sourceType": "official-original",
+          "totalScore": 100,
+          "durationMinutes": 120,
+          "specificationUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113190&y=2024"
+        },
+        {
+          "id": "tw-mechanical-thermo24",
+          "title": "113 年专技高考机械工程技师 · 热力学与热传学（包括热机）",
+          "year": 2024,
+          "board": "台湾考选部",
+          "paperUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=008&code=113190&q=1&s=0608&t=Q",
+          "language": "zh",
+          "pages": 1,
+          "sha256": "90a448563f0e7d7a669f95159fe3b9ffe527afecd154b085b157c3e93c08f3ef",
+          "scope": "full",
+          "readNotes": [
+            "民国 113 年即公历 2024 年；为台湾地区专业技术考试，完整科目试卷，非中国大陆注册工程师。",
+            "卷头明确 2 小时、座号、计算器规则、在答题卷按题号作答和分问分值；未发布申论题官方解答。"
+          ],
+          "authoringLessons": [
+            "结构分析要按指定方法求解，约束、位移协调、杆端力和内力图可交叉验证。",
+            "力学题应给清晰受力／几何图和材料数据；建模、演算、验算构成题目难度。",
+            "各地资格规范与范围不同，跨地区原卷用于能力／题型研究，不能换名充作当地试卷。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国台湾",
+          "sourceType": "official-original",
+          "totalScore": 100,
+          "durationMinutes": 120,
+          "specificationUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113190&y=2024"
+        }
+      ]
+    },
+    {
+      "id": "taiwan-accountant-accounting-2024",
+      "title": "会计师考试 · 台湾官方高等会计学整卷",
+      "category": "工程与资格",
+      "templateIds": [
+        "cpa-accounting"
+      ],
+      "papers": [
+        {
+          "id": "tw-accountant-accounting24",
+          "title": "113 年专技高考会计师 · 高等会计学",
+          "year": 2024,
+          "board": "台湾考选部",
+          "paperUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=803&code=113130&q=1&s=0202&t=Q",
+          "language": "zh",
+          "pages": 8,
+          "sha256": "8f357fdfae90a3f00fc5760222a02fcfd8a0915b3908a7d7608603ce33d77365",
+          "scope": "full",
+          "readNotes": [
+            "台湾地区会计师考试完整科目原卷，含申论与测验两部分；不是中国大陆 CPA。",
+            "官方仅发布测验题答案／更正答案，申论题需独立推导参考解答。高等会计学第 15 道测验题更正为一律给分；审计学答案见官方答案汇册第 16 页。"
+          ],
+          "authoringLessons": [
+            "申论与客观题分别评分，使用题面指定的地区准则与制度。",
+            "官方答案更正优先于初版答案；答案入库保留版本和更正记录。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国台湾",
+          "sourceType": "official-original",
+          "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=803&code=113130&q=1&s=0202&t=M",
+          "specificationUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113130&y=2024"
+        }
+      ]
+    },
+    {
+      "id": "taiwan-accountant-audit-2024",
+      "title": "会计师考试 · 台湾官方审计学整卷",
+      "category": "工程与资格",
+      "templateIds": [
+        "cpa-audit"
+      ],
+      "papers": [
+        {
+          "id": "tw-accountant-audit24",
+          "title": "113 年专技高考会计师 · 审计学",
+          "year": 2024,
+          "board": "台湾考选部",
+          "paperUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=803&code=113130&q=1&s=0201&t=Q",
+          "language": "zh",
+          "pages": 5,
+          "sha256": "b7e157b40cacff7e0a2bf66e2de8d2c4a702392d0ccd9b02657cca52a2d7531e",
+          "scope": "full",
+          "readNotes": [
+            "台湾地区会计师考试完整科目原卷，含申论与测验两部分；不是中国大陆 CPA。",
+            "官方仅发布测验题答案／更正答案，申论题需独立推导参考解答。高等会计学第 15 道测验题更正为一律给分；审计学答案见官方答案汇册第 16 页。"
+          ],
+          "authoringLessons": [
+            "申论与客观题分别评分，使用题面指定的地区准则与制度。",
+            "官方答案更正优先于初版答案；答案入库保留版本和更正记录。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国台湾",
+          "sourceType": "official-original",
+          "answerUrl": "https://wwwq.moex.gov.tw/exam/wHandExamQandA_File.ashx?c=803&code=113130&q=1&s=0201&t=A",
+          "specificationUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx?e=113130&y=2024"
+        }
+      ]
+    },
+    {
+      "id": "secondary-school-real",
+      "title": "初中学业考试 · 广东／广州完整数学原卷",
+      "category": "初中",
+      "templateIds": [
+        "standard"
+      ],
+      "papers": [
+        {
+          "id": "guangdong-2024-math",
+          "title": "2024年广东省初中学业水平考试·数学",
+          "year": 2024,
+          "board": "广东省教育考试院命题；高考直通车公开扫描存档",
+          "paperUrl": "https://imgs.app.gaokaozhitongche.com/resource/pdf/paper/202407/20240702080602_it4GXR.pdf",
+          "language": "zh",
+          "scope": "full",
+          "readNotes": [
+            "18页PDF前6页为原卷、后12页为参考解答；完整人工转录23题，按题面数据独立核对答案与配图。",
+            "题源为完整原卷；项目中可编辑案例可能仅含其中部分题，应用或预览时须查看当前题量与范围。"
+          ],
+          "authoringLessons": [
+            "原题题号、分问、公式、分值、配图与条件逐项核对；各科与各地考试蓝图分别读取。",
+            "数学题按完整推导和独立验算确定参考答案，不能根据相近题猜答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "sourceType": "archived-reprint",
+          "region": "中国大陆",
+          "pages": 6,
+          "sha256": "1c6e04a3f569acfe867701b9b34ed89e1caca427308a2cffcddad542c7f0001e"
+        },
+        {
+          "id": "guangzhou-2023-math",
+          "title": "2023年广州市初中学业水平考试·数学",
+          "year": 2023,
+          "board": "广州市考试命题；高考直通车公开扫描存档",
+          "paperUrl": "https://imgs.app.gaokaozhitongche.com/resource/pdf/paper/202408/20240805100413_vfixLG.pdf",
+          "language": "zh",
+          "scope": "full",
+          "readNotes": [
+            "原卷版式差异研究；当前可编辑中考案例仅使用2024广东原卷，不混入本卷。",
+            "题源为完整原卷；项目中可编辑案例可能仅含其中部分题，应用或预览时须查看当前题量与范围。"
+          ],
+          "authoringLessons": [
+            "原题题号、分问、公式、分值、配图与条件逐项核对；各科与各地考试蓝图分别读取。",
+            "数学题按完整推导和独立验算确定参考答案，不能根据相近题猜答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "sourceType": "archived-reprint",
+          "region": "中国大陆",
+          "pages": 7,
+          "sha256": "4fbf198ac0b0a1029ff1b7733a2f53b2aa85efa3d7a78b958b682eaa497e269f"
+        }
+      ]
+    },
+    {
+      "id": "gaokao-adaptation-real",
+      "title": "高中学业与升学 · 官方适应性数学／语文整卷",
+      "category": "高中",
+      "templateIds": [
+        "gaokao-math",
+        "gaokao-chinese"
+      ],
+      "papers": [
+        {
+          "id": "neea-2024-math",
+          "title": "2024年高考综合改革适应性测试 数学",
+          "year": 2024,
+          "board": "教育部教育考试院",
+          "paperUrl": "https://www.neea.edu.cn/html1/report/2401/426-1.htm",
+          "language": "zh",
+          "scope": "full",
+          "readNotes": [
+            "19题完整数学卷的人工核对转录，配独立推导答案；A4尺寸为可编辑归一化版。",
+            "题源为完整原卷；项目中可编辑案例可能仅含其中部分题，应用或预览时须查看当前题量与范围。"
+          ],
+          "authoringLessons": [
+            "原题题号、分问、公式、分值、配图与条件逐项核对；各科与各地考试蓝图分别读取。",
+            "数学题按完整推导和独立验算确定参考答案，不能根据相近题猜答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "sourceType": "official-original",
+          "region": "中国大陆",
+          "pages": 4,
+          "sha256": "3cb3bf6e4a6750ce26b77339d4c9214c7192902dcadd80101d3c16bdae680e97"
+        },
+        {
+          "id": "neea-2024-chinese",
+          "title": "2024年高考综合改革适应性测试语文试题",
+          "year": 2024,
+          "board": "教育部教育考试院",
+          "paperUrl": "https://www.neea.edu.cn/xhtml1/report/2401/376-1.htm",
+          "language": "zh",
+          "scope": "full",
+          "readNotes": [
+            "完整原卷结构研究；案例保留原卷15—17题，含17题全部三组默写；范围记录在元数据。",
+            "题源为完整原卷；项目中可编辑案例可能仅含其中部分题，应用或预览时须查看当前题量与范围。"
+          ],
+          "authoringLessons": [
+            "原题题号、分问、公式、分值、配图与条件逐项核对；各科与各地考试蓝图分别读取。",
+            "数学题按完整推导和独立验算确定参考答案，不能根据相近题猜答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "sourceType": "official-original",
+          "region": "中国大陆",
+          "pages": 11,
+          "sha256": "2fe44f07fac25b72e542da534ade378ecdb5a733c6b73342fb98417b1e412456"
+        }
+      ]
+    },
+    {
+      "id": "university-real",
+      "title": "大学课程 · 线性代数／微积分／概率统计整卷",
+      "category": "大学课程",
+      "templateIds": [
+        "university-a4",
+        "university-a3"
+      ],
+      "papers": [
+        {
+          "id": "ecnu-linear-2023",
+          "title": "华东师范大学2023—2024学年第一学期期末试卷（A）",
+          "year": 2023,
+          "board": "华东师范大学",
+          "paperUrl": "https://ggsx.ecnu.edu.cn/2e/16/c44824a601622/page.htm",
+          "language": "zh",
+          "scope": "full",
+          "readNotes": [
+            "既有题源研究记录完整考试结构。",
+            "题源为完整原卷；项目中可编辑案例可能仅含其中部分题，应用或预览时须查看当前题量与范围。"
+          ],
+          "authoringLessons": [
+            "原题题号、分问、公式、分值、配图与条件逐项核对；各科与各地考试蓝图分别读取。",
+            "数学题按完整推导和独立验算确定参考答案，不能根据相近题猜答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "sourceType": "official-original",
+          "region": "中国大陆",
+          "sha256": "b0cf4c2e5d2a0a2280e8e66577f5434e78587f9b7b98bb55d7c1756b4844fe19"
+        },
+        {
+          "id": "pku-calculus-2013",
+          "title": "北京大学信息学院期末试题 · 2013—2014学年第一学期",
+          "year": 2013,
+          "board": "北京大学信息学院",
+          "paperUrl": "https://github.com/lib-pku/libpku/blob/master/%E4%B8%93%E4%B8%9A%E8%AF%BE/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6B/13%E4%BF%A1%E7%A7%91%E6%9C%9F%E6%9C%AB.pdf",
+          "language": "zh",
+          "scope": "full",
+          "readNotes": [
+            "既有题源研究记录完整考试结构。",
+            "题源为完整原卷；项目中可编辑案例可能仅含其中部分题，应用或预览时须查看当前题量与范围。"
+          ],
+          "authoringLessons": [
+            "原题题号、分问、公式、分值、配图与条件逐项核对；各科与各地考试蓝图分别读取。",
+            "数学题按完整推导和独立验算确定参考答案，不能根据相近题猜答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "sourceType": "archived-reprint",
+          "region": "中国大陆",
+          "sha256": "39654af2bc9e1718c01d60e1bf1cb26d08adc0350a3b31592de6ee288264b479"
+        },
+        {
+          "id": "ustc-probstat-2023",
+          "title": "中国科学技术大学2022—2023学年第一学期概率论与数理统计",
+          "year": 2023,
+          "board": "中国科学技术大学",
+          "paperUrl": "https://icourse.club/uploads/files/9f996da48afc145c5158fc7f09153825a3177e41.pdf",
+          "language": "zh",
+          "scope": "full",
+          "readNotes": [
+            "既有题源研究记录完整考试结构。",
+            "题源为完整原卷；项目中可编辑案例可能仅含其中部分题，应用或预览时须查看当前题量与范围。"
+          ],
+          "authoringLessons": [
+            "原题题号、分问、公式、分值、配图与条件逐项核对；各科与各地考试蓝图分别读取。",
+            "数学题按完整推导和独立验算确定参考答案，不能根据相近题猜答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "sourceType": "archived-reprint",
+          "region": "中国大陆",
+          "sha256": "ee62bb65204cc7d3f6031c0ce9d9eaf77bc5888f9fe332964f0b03f788fc9b3c"
+        }
+      ]
+    },
+    {
+      "id": "cet4-official-specimen",
+      "title": "大学英语四级 · 官方整套笔试样卷",
+      "category": "大学课程",
+      "templateIds": [
+        "cet4"
+      ],
+      "papers": [
+        {
+          "id": "cet4-official2016",
+          "title": "全国大学英语四级考试（笔试）官方样卷",
+          "year": 2016,
+          "board": "教育部教育考试院／全国大学英语四、六级考试委员会",
+          "paperUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+          "language": "zh",
+          "pages": 215,
+          "sha256": "9166d3c03b7bc43abd9d9df91bd2ef8085b4419286f1e5ca100dea68f3cfd1f1",
+          "scope": "official-specimen",
+          "readNotes": [
+            "原始大纲 PDF 共 215 页，样卷是文件中的完整考试分部。",
+            "笔试样卷位于 PDF 第 150—168 页；听力文本、客观题答案、作文／翻译评分标准与评分样卷在大纲其他页，须配套读取。",
+            "听力考试还需取得匹配音频或按原听力文字提供音频；不能仅保留选择项。官方四级答题卡见 PDF 第 194—197 页，六级见第 198—201 页。"
+          ],
+          "authoringLessons": [
+            "听力、阅读、写作和翻译按官方比例与时限组织；小题原始分与 710 分报道分不要混用。",
+            "作文与翻译用分档描述与已评分样卷校准，给任务完成度、语言与篇章反馈。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "official-specimen",
+          "pageRange": "150-168",
+          "answerUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cet6-official-specimen",
+      "title": "大学英语六级 · 官方整套笔试样卷",
+      "category": "大学课程",
+      "templateIds": [
+        "cet6"
+      ],
+      "papers": [
+        {
+          "id": "cet6-official2016",
+          "title": "全国大学英语六级考试（笔试）官方样卷",
+          "year": 2016,
+          "board": "教育部教育考试院／全国大学英语四、六级考试委员会",
+          "paperUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+          "language": "zh",
+          "pages": 215,
+          "sha256": "9166d3c03b7bc43abd9d9df91bd2ef8085b4419286f1e5ca100dea68f3cfd1f1",
+          "scope": "official-specimen",
+          "readNotes": [
+            "原始大纲 PDF 共 215 页，样卷是文件中的完整考试分部。",
+            "笔试样卷位于 PDF 第 172—191 页；听力文本、客观题答案、作文／翻译评分标准与评分样卷在大纲其他页，须配套读取。",
+            "听力考试还需取得匹配音频或按原听力文字提供音频；不能仅保留选择项。官方四级答题卡见 PDF 第 194—197 页，六级见第 198—201 页。"
+          ],
+          "authoringLessons": [
+            "听力、阅读、写作和翻译按官方比例与时限组织；小题原始分与 710 分报道分不要混用。",
+            "作文与翻译用分档描述与已评分样卷校准，给任务完成度、语言与篇章反馈。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原卷与评分材料保留发布者权利；本目录提供题源链接和研究摘要，项目 MIT 许可证不覆盖原卷。"
+          },
+          "region": "中国大陆",
+          "sourceType": "official-specimen",
+          "pageRange": "172-191",
+          "answerUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf"
+        }
+      ]
+    }
+  ]
+}

@@ -13,3 +13,9 @@ Paper Notebook Practice 的代码、渲染器、原创模板参数，以及两�
 原始资料可从案例所列发布页获取。用户也可上传自己的原件，通过 `ingest` 和 `replicate` 生成本地成品。
 
 案例清单见 `skills/paper-notebook-practice/examples/real-exams/catalog.json`；每份可编辑 JSON 中的 materials 包含来源与权利说明。
+
+## 真实参考卷与任务集合
+
+`skills/paper-notebook-practice/references/authentic-*-papers.json` 保存外部真实试卷、官方样卷、题库与评估任务的来源、公开范围、实际阅读笔记和命题方法。原始 PDF 不随新增集合再分发；站点提供有限原页缩略参考和原发布页面入口。引用材料的版权归原机构，公开可读不等于 MIT 授权。`src/practice/reference-paper-previews.json` 中的缩略参考沿用对应来源身份。完整卷、单项公开组件、口试题库与作品/演奏任务各按其真实形态标识。
+
+大学转载的全国统考卷、机构回忆整理与官方原卷分开标注；独立求解、机构参考答案和官方评分分开记录。具体缺页、缺图、答案疑错与年度适用性写在各集合中，出卷时继续解决，不因来源名称而自动采纳。

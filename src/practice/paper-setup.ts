@@ -10,6 +10,7 @@ const titles=['考试','内容','卷面','定稿'];
 let draft=createPaperDraft(),step=0,furthest=0;
 try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved){draft=restorePaperDraft(saved.draft);step=Number.isInteger(saved.step)?Math.max(0,Math.min(3,saved.step)):0;furthest=Math.max(step,Math.min(3,Number(saved.furthest)||0));}}catch{}
 interface SetupOptions{
+ templateId?:string;
  css:string;
  previewHTML:(html:string)=>string;
  copy:(button:HTMLButtonElement,text:string)=>Promise<void>;
@@ -21,6 +22,7 @@ interface SetupOptions{
 
 /** MaterialSteps' retained form/step/back structure, adapted to the offline DOM reader. */
 export function mountPaperSetup(host:HTMLElement,options:SetupOptions){
+ if(options.templateId&&options.templateId!==draft.templateId){draft=changeDraftTemplate(draft,options.templateId);step=0;furthest=0;}
  let frameTimer:ReturnType<typeof setTimeout>|undefined,page=0,token=0,abort=new AbortController();
  const detailsState=new Map<string,boolean>(),scrollState=new Map<number,number>();
  const save=()=>{try{localStorage.setItem(KEY,JSON.stringify({draft,step,furthest}));}catch{const state=host.querySelector('#draft-save-status');if(state)state.textContent='本机存储不可用，可下载要求保存。';}};

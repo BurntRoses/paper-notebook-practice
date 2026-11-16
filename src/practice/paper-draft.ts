@@ -3,8 +3,7 @@ import {ENTRY_PROMPTS} from './entry-prompts';
 import {EXAM_SPECIFICATIONS,type ExamSpecification} from './exam-specification';
 import type {PracticeDocument,PracticePresentation,PracticeAuthoring,PracticeSourcePolicy} from './model';
 import {PAPER_TEMPLATES,type PaperTemplate} from './templates';
-import {authoringRequirements} from './authoring';
-import {getExamRoute} from './exam-routes';
+import {getExamRoute,examRouteTemplateId} from './exam-routes';
 
 export interface DraftQuestionGroup {id:string;title:string;type:'choice'|'multiple'|'truefalse'|'blank'|'response'|'task';count:number;pointsPerQuestion:number}
 export const DRAFT_QUESTION_TYPES={choice:'单项选择',multiple:'多项选择',truefalse:'判断题',blank:'填空题',response:'解答与论述',task:'操作、作品与实践任务'} as const;
@@ -60,7 +59,7 @@ export function changeDraftTemplate(draft:PaperDraft,id:string):PaperDraft {
 export function changeDraftRoute(draft:PaperDraft,id:string):PaperDraft {
  const current=restorePaperDraft(draft),route=getExamRoute(id);
  if(!route)return {...current,routeId:''};
- const templateId=route.templateId??(route.family==='civil-service'?(route.id==='civil-essay'?'shenlun':'civil-service'):route.family==='postgraduate'?(/english/.test(route.id)?'postgraduate-english':/math/.test(route.id)?'postgraduate-math':'university-a4'):route.family==='engineering-course'?'engineering-course':route.family==='engineering-qualification'?'engineering-professional':'standard');
+ const templateId=examRouteTemplateId(route);
  const next=changeDraftTemplate(current,templateId);
  return {...next,routeId:route.id,subject:route.subject,level:route.family==='postgraduate'?'硕士研究生招生考试':next.level,...(route.family==='postgraduate'?{title:'全国硕士研究生招生考试'}:{}),examName:route.name,examCode:route.aliases.find(alias=>/^\d{3}$/.test(alias))??'',specialty:current.specialty};
 }
@@ -161,37 +160,28 @@ export function paperDraftDocument(value:PaperDraft):PracticeDocument {
  return applyPaperCustomization(paper,draft.customization);
 }
 
-/** The brief records wizard answers; the receiving conversation finishes source reading and authoring. */
+/** A compact brief carries user choices; production rules are read from GitHub. */
 export function paperDraftPrompt(value:PaperDraft,mode:'agent'|'chat'):string {
- const draft=restorePaperDraft(value),template=draftTemplate(draft.templateId),spec=draftSpecification(draft);
- const matchingSubject=template.subjects.includes(draft.subject),conflict=draft.blueprintMode==='auto'&&spec&&!specificationFits(draft,spec);
- const sourceOriginal=draft.intent==='original',bank=draft.intent==='bank';
- const customizedTitle=sourceOriginal&&draft.titleOrigin==='custom';
- const customizedOriginal=sourceOriginal&&(customizedTitle||hasVisualCustomization(draft.customization));
- const structureRequirement=sourceOriginal?'原卷以上传源件核定真实纸型、边距、题组、题量、时长、分值和完整原印标题；向导模板、学科层级、时间与总分只作设计参考，不覆盖原页。用户选择与源件冲突时，在一次集中补问中明确采用原件还是独立定制编辑版，不能静默改写原卷。':bank?'全量题库指上传资料中符合范围的题目全量，不是完整考试；按资料组织学科、章节、知识点和原有共享材料，不强制凑齐某考试的题量、题组、总分或录音。已有听力和录音按资料保留，只有用户明确要求制作听力题时补齐所需录音。':draft.blueprintMode==='custom'?`按我设置的题组、题型、题量和每题分值制作${draft.scope==='subset'?'指定部分，不扩展到整卷':'完整试卷'}；这是用户自定规格，不套用其他考试的固定题量。`:!matchingSubject?`当前学科“${draft.subject}”与参考模板学科不匹配，模板仅用于纸面样式。请依据新学科和上传资料重新确定题型、题组、题量与计分，不沿用旧学科的内容结构。`:draft.scope==='subset'?'本次仅制作指定部分，按该范围确定题组、题量、分值和材料，不按完整考试规格补齐其余题目。':conflict?`当前设置与${spec.name}的标准规格（${spec.durationMinutes===null?'原卷未注明时长':spec.durationMinutes+' 分钟'}、${spec.totalScore} 分）存在冲突。保留我设置的 ${draft.durationMinutes} 分钟、${draft.totalScore} 分，不静默改回标准值，也不套用标准题量或分段分值；请在一次集中补问中确认采用标准考试还是用户自定练习规格，若我授权沿用当前设置，则按自定规格制作。`:spec?'按同学科考试规格核对完整题组、题量、分值和材料。':'这是通用纸面模板，不预设统一题量，请依资料和具体课程核定题型、题组与题分。';
- const intent=sourceOriginal?(customizedOriginal?'依据上传原卷制作独立定制编辑版':draft.scope==='subset'?'从上传原卷提取指定部分并保留来源版式':'按上传的完整原卷逐页还原'):bank?'整理和交付全量题库':'根据上传资料制作新试卷';
- const titleRequirement=sourceOriginal?(customizedTitle?`自定义正式标题：${JSON.stringify(draft.title)}。此标题仅用于独立定制编辑版，任务标记为改编；原卷原文件和原印标题独立保留，不将定制版冒称原卷或原卷逐页复刻。`:`向导中的模板标题 ${JSON.stringify(draft.title)} 仅为设计占位，不作为原卷的改名要求。读取上传原卷后以完整原印标题、年份、地区、卷别及科目层级为准，不能用通用模板标题覆盖原卷标题。`):`正式标题：${JSON.stringify(draft.title)}。仅使用此标题。`;
- const difficulty={easy:'基础巩固，以直接应用与清晰推理为主',source:'沿用原件或资料的难度',balanced:'难度均衡、覆盖基础与综合应用',hard:'提高综合性与区分度'}[draft.difficulty];
- const customSpec:ExamSpecification|undefined=!sourceOriginal&&!bank&&draft.blueprintMode==='custom'?{id:'user-paper-blueprint',name:draft.title,subject:draft.subject,level:draft.level,durationMinutes:draft.durationMinutes,totalScore:draft.totalScore,scoreScale:'user-points',source:{kind:'user-blueprint',title:'用户题型与分值设置'},sections:draft.questionGroups.map(g=>({id:g.id,title:g.title,count:g.count,questionType:g.type,totalScore:Math.round(g.count*g.pointsPerQuestion*100)/100,pointsPerQuestion:g.pointsPerQuestion}))}:undefined;
- const job={...(customSpec?{specification:customSpec}:{}),...(!sourceOriginal||customizedTitle?{title:draft.title}:{}),
-  ...(!sourceOriginal?{subject:draft.subject,level:draft.level}:{}),
-  ...(!sourceOriginal&&!bank?{templateId:draft.templateId,durationMinutes:draft.durationMinutes,targetScore:draft.totalScore}:{}),
-  ...(!sourceOriginal&&!bank&&draft.blueprintMode==='custom'?{count:draft.questionGroups.reduce((sum,g)=>sum+g.count,0),sections:draft.questionGroups.map(g=>({id:g.id,title:g.title,count:g.count,types:[g.type],pointsPerQuestion:g.pointsPerQuestion}))}:{}),
-  intent:sourceOriginal?(customizedOriginal?'adapt':'original'):'generate',mode:bank?'bank':'mock',scope:draft.scope,customization:draft.customization,authoring:draftAuthoring(draft),sourcePolicy:draftSourcePolicy(draft)};
- const designReference=sourceOriginal||bank?{title:draft.title,titleOrigin:draft.titleOrigin,subject:draft.subject,level:draft.level,templateId:draft.templateId,durationMinutes:draft.durationMinutes,totalScore:draft.totalScore}:undefined;
- const scopeRequirement=draft.scope==='subset'?`指定部分：${draft.subset||'具体部分待结合资料确认'}`:bank?'上传资料范围内的全量题库':'完整考试 / 完整原卷';
- const customizationRequirement=sourceOriginal?(customizedOriginal?'已明确选择的自定义标题或非 source 纸面设置仅落实在独立定制编辑版，原件和原页复刻保持独立，不能将编辑版称为原卷。':'本次所有纸面选项沿用源件，模板默认卷头、纸型、装饰和留白不替代原件。'):'';
- return `${ENTRY_PROMPTS[mode].prompt}\n\n我的出卷要求：\n`+
-  `- 制作目标：${intent}；本次范围以此为准：${scopeRequirement}。${draft.scope==='subset'?'不扩大为整卷；自由文本范围由当前会话结合资料落实，范围不明确时只补问实际缺项。':''}\n`+
-  `- ${titleRequirement}${sourceOriginal?'参考学科':'学科'}：${draft.subject}；${sourceOriginal?'参考层级':'层级'}：${draft.level}；年级：${draft.grade||'依据资料确定'}。纸面不加“选编”“模拟”“重组”等制作标签；来源身份和实际范围保存在元数据与交付说明。\n`+
-  `- 参考版式：${template.name}；${sourceOriginal||bank?'参考时间':'考试时间'}：${draft.durationMinutes} 分钟；${sourceOriginal||bank?'参考总分':'总分'}：${draft.totalScore} 分。${structureRequirement}${customizationRequirement}\n`+
-  `- 打印颜色：${{source:'保留原件或模板中的颜色',color:'彩印，保留图像与作品原色',grayscale:'黑白灰度，图例同时使用编号、线型或形状；若题目考查颜色，先换用等价可作答材料，不直接去色'}[draft.customization.printColor??'source']}。色彩辨识题的附件标记 colorRequired:true；无等价黑白替代时保持彩印，并说明打印要求。\n`+
-  `- 知识范围与重点：${draft.coverage||'按上传资料覆盖'}；${sourceOriginal?'难度选择仅作参考，以原题为准':'难度'}：${difficulty}。${draft.scope==='subset'&&draft.subset?'只收入所指定的部分，保留完整共享材料。':''}\n\n`+
-  `- 考试目标：${draft.examName||'结合科目与资料识别'}${draft.examCode?'；科目代码：'+draft.examCode:''}${draft.year?'；考试年份：'+draft.year:''}${draft.region?'；地区：'+draft.region:''}${draft.specialty?'；专业 / 方向：'+draft.specialty:''}。未填写的年份、地区和适用规范，以资料或正式发布内容核实。\n`+
-  `- 资料来源：${{ 'uploads-only':'仅用上传资料，不检索网络、不补入外部材料','uploads-first':'优先上传资料；资料不足时检索可靠互联网来源补齐',open:'结合上传资料与可靠互联网来源'}[draft.sourceMode]}。题目偏好：${{'originals-first':'优先核实的原题，缺口再改编或新编',balanced:'原题、改编与新编按考查目标搭配','generated-first':'优先围绕资料新编实质题目'}[draft.questionPreference]}。${draft.materialInstructions?'指定资料要求：'+draft.materialInstructions+'。先把文件名映射到实际 materialId，再写入 requiredMaterialIds / allowedMaterialIds / excludedMaterialIds；不能用猜测的 ID。':''}\n\n`+
-  `${authoringRequirements({subject:draft.subject,level:draft.level,...draftAuthoring(draft),sourcePolicy:draftSourcePolicy(draft),mode:draft.intent==='bank'?'bank':'mock',intent:sourceOriginal?(customizedOriginal?'adapt':'original'):'generate',blueprint:draft.blueprintMode==='custom'&&draft.intent==='generate'?draft.questionGroups:undefined})}\n\n`+
-  `结构化组卷要求（job.customization 记录全部纸面选择；source 表示沿用原件，不增删原件内容）：\n\`\`\`json\n${JSON.stringify({job,...(designReference?{designReference}:{})},null,2)}\n\`\`\`\n\n`+
-  `${designReference?'designReference 仅记录向导设计参考，不是最终 job 的强制属性；读完资料后再核定真实规格。\n':''}资料尚待我上传，当前向导只确定卷面设计和制作偏好，尚未完成题目、答案或原卷复刻。请先读取我上传的往年卷、题库、知识点和参考资料，以及本条已有选择；将仍影响成品的缺失偏好一次集中询问，已在向导中回答的内容不要重复询问。我授权自行决定的项目按资料和合理默认值继续。\n`+
-  `原卷任务先核对完整首页、封面、页序和总页数，保留真实标题、密级、诚信承诺、课程代码、考生栏、须知、装订线、评分表、水印、装饰、页眉页脚与留白；网页裁切图不证明历史原卷缺少相应内容。自定义视觉内容使用独立可编辑版，保留原始文件。${sourceOriginal?(draft.scope==='subset'?'指定部分只保留源件中该部分的完整共享材料与已有录音，不补造原题、不扩展到整卷。':'完整原卷保留全部原题、共享材料与已有录音，缺页继续取得可靠原件，不补造历史试题。'):bank?'全量题库按上传资料的实际题目与材料整理，不补造整套考试；保留该范围原有的共享材料与已有录音。':'新卷按实际学科、已选范围与相应规格完成题组、材料和必要录音；指定部分只补齐该部分的完整共享材料和录音，不扩展到整卷。'}\n`+
-  `逐题核对题号、题干、选项、公式、图表、单位、答案、评分与总分，检查答题卡的实际题号、选项、空数及作答空间，再检查渲染和打印。交付离线题目卷、独立答案卷、答题卡和可复用题库；需要时另附原卷复刻。沿用项目免费、MIT、离线流程，无需账户、付费OCR或模型 API 密钥；识别、数据整理、命令和文件生成由当前会话完成。`;
+ const d=restorePaperDraft(value),original=d.intent==='original',bank=d.intent==='bank';
+ const customTitle=original&&d.titleOrigin==='custom';
+ const editedOriginal=original&&(customTitle||hasVisualCustomization(d.customization));
+ const customization=Object.fromEntries(Object.entries(d.customization).filter(([,v])=>v!==undefined&&v!==''&&v!=='source'));
+ const customGroups=d.intent==='generate'&&d.blueprintMode==='custom'?d.questionGroups.map(g=>({title:g.title,type:g.type,count:g.count,pointsPerQuestion:g.pointsPerQuestion})):undefined;
+ const choices={
+  intent:original?(editedOriginal?'adapt':'original'):bank?'bank':'generate',scope:d.scope,
+  ...(!original||customTitle?{title:d.title}:{}),subject:d.subject,level:d.level,
+  ...(d.grade?{grade:d.grade}:{}),templateId:d.templateId,
+  ...(!original&&!bank?{durationMinutes:d.durationMinutes,totalScore:d.totalScore}:{}),
+  ...(d.scope==='subset'?{subset:d.subset||'结合资料确认'}:{}),
+  ...(d.coverage?{coverage:d.coverage}:{}),difficulty:d.difficulty,
+  ...(d.routeId?{routeId:d.routeId}:{}),...(d.examName?{examName:d.examName}:{}),
+  ...(d.examCode?{examCode:d.examCode}:{}),...(d.year?{year:d.year}:{}),
+  ...(d.region?{region:d.region}:{}),...(d.specialty?{specialty:d.specialty}:{}),
+  sourceMode:d.sourceMode,questionPreference:d.questionPreference,
+  ...(d.materialInstructions?{materialInstructions:d.materialInstructions}:{}),
+  ...(customGroups?{questionGroups:customGroups}:{}),
+  ...(Object.keys(customization).length?{customization}:{}),
+  ...(original?{designReference:{title:d.title,titleOrigin:d.titleOrigin,durationMinutes:d.durationMinutes,totalScore:d.totalScore}}:{})
+ };
+ return `${ENTRY_PROMPTS[mode].prompt}\n已确认要求（未填项结合资料决定）：${JSON.stringify(choices)}`;
 }

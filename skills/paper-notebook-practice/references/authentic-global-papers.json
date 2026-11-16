@@ -1,0 +1,1452 @@
+{
+  "schemaVersion": "1.0",
+  "verifiedDate": "2026-11-16",
+  "policy": "仅收录已实际阅读的官方试卷、样卷、题目集合或评估任务。scope标明公开范围，组件/题库/作品集/任务不称完整固定考试。原文件不随开源项目再分发。",
+  "collections": [
+    {
+      "id": "cambridge-igcse-math",
+      "title": "Cambridge IGCSE Mathematics 0580",
+      "category": "international",
+      "templateIds": [
+        "cambridge-igcse-math"
+      ],
+      "papers": [
+        {
+          "id": "igcse-math-2025-p2",
+          "title": "Cambridge IGCSE Mathematics 0580/02 — 2025 Specimen Paper 2",
+          "year": 2025,
+          "board": "Cambridge University Press & Assessment",
+          "paperUrl": "https://www.cambridgeinternational.org/Images/663664-2025-specimen-paper-2.pdf",
+          "answerUrl": "https://www.cambridgeinternational.org/Images/663672-2025-specimen-paper-2-mark-scheme.pdf",
+          "specificationUrl": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-mathematics-0580/",
+          "language": "en",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已读18页完整Extended非计算器Paper 2；封面说明、逐问分值、作答区域与尾页版权均属于原卷。",
+            "题干包含运算、代数、几何和统计，不能用定义问答替代数学运算与论证。"
+          ],
+          "authoringLessons": [
+            "先锁定0580课程版本、Core/Extended与允许计算器的组件；题目和评分逐步对应。",
+            "保留每小问分值及图形尺寸信息，解答先独立演算再按评分方案逐分复核。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 18,
+          "sha256": "b762b9f9493744e17fee21a97577474d1c86bebf1c9160bc874e7e1868c01857",
+          "answerEvidence": {
+            "url": "https://www.cambridgeinternational.org/Images/663672-2025-specimen-paper-2-mark-scheme.pdf",
+            "pages": 10,
+            "sha256": "f363fa3db96af0cd6b07abff575c53d22bbfa358976761cab6b77cc7860867dc"
+          }
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "cambridge-alevel-math",
+      "title": "Cambridge International AS & A Level Mathematics 9709",
+      "category": "international",
+      "templateIds": [
+        "cambridge-alevel-math"
+      ],
+      "papers": [
+        {
+          "id": "alevel-math-2024-p11",
+          "title": "Cambridge International AS & A Level Mathematics 9709/11 — May/June 2024",
+          "year": 2024,
+          "board": "Cambridge University Press & Assessment",
+          "paperUrl": "https://www.cambridgeinternational.org/Images/567744-june-2024-question-paper-11.pdf",
+          "answerUrl": "https://www.cambridgeinternational.org/Images/567738-june-2024-mark-scheme-paper-11.pdf",
+          "specificationUrl": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-9709/",
+          "language": "en",
+          "scope": "full",
+          "readNotes": [
+            "已读20页真实Pure Mathematics 1试卷及18页同场评分方案；这是组件1，不是整个A Level所有组件。"
+          ],
+          "authoringLessons": [
+            "以方法分和准确分区分过程与结果；每问应能用对应P1知识求解。",
+            "整卷需按所选P1/P2/P3/Mechanics/Statistics组合，不把组件1称完整资格考试。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 20,
+          "sha256": "3f974ef05f6a3d262370fa46ac91adc9039f600c65a2c343d22ec3e85689bf47",
+          "answerEvidence": {
+            "url": "https://www.cambridgeinternational.org/Images/567738-june-2024-mark-scheme-paper-11.pdf",
+            "pages": 18,
+            "sha256": "e85474937a9560c6485020eee375593f006d888f8d1e321575744e6f6e4e7a01"
+          }
+        },
+        {
+          "id": "alevel-math-2020-p1",
+          "title": "Cambridge International AS & A Level Mathematics 9709/01 — 2020 Specimen Paper 1",
+          "year": 2020,
+          "board": "Cambridge University Press & Assessment",
+          "paperUrl": "https://www.cambridgeinternational.org/Images/751747-2020-specimen-paper-1.pdf",
+          "answerUrl": "https://www.cambridgeinternational.org/Images/751735-2020-specimen-mark-scheme-paper-1.pdf",
+          "specificationUrl": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-international-as-and-a-level-mathematics-9709/",
+          "language": "en",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已读22页官方样卷与10页评分；与2024真题形成样卷及实考试卷双参照。"
+          ],
+          "authoringLessons": [
+            "区分样卷年份与实际考试年份；按最新适用考纲确认变化。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 22,
+          "sha256": "029abb2710efdc48aade82c93a5e011ce3cea2fc7b184bb64d5fafe55dc9810a",
+          "answerEvidence": {
+            "url": "https://www.cambridgeinternational.org/Images/751735-2020-specimen-mark-scheme-paper-1.pdf",
+            "pages": 10,
+            "sha256": "13aec2f97fe93ab1c1d903432f3f1114963b146a3b4d692b35932154bf504742"
+          }
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "act",
+      "title": "ACT",
+      "category": "international",
+      "templateIds": [
+        "act"
+      ],
+      "papers": [
+        {
+          "id": "act-guide",
+          "title": "Preparing for the ACT Test 2025–2026",
+          "year": 2025,
+          "board": "ACT Education Corp.",
+          "paperUrl": "https://www.act.org/content/dam/act/unsecured/documents/Preparing-for-the-ACT-e.pdf",
+          "answerUrl": "https://www.act.org/content/dam/act/unsecured/documents/Preparing-for-the-ACT-e.pdf",
+          "specificationUrl": "https://www.act.org/content/act/en/products-and-services/the-act/test-preparation.html",
+          "language": "en",
+          "scope": "full",
+          "readNotes": [
+            "已读82页官方guide；含完整退役真题练习、Science与Writing可选组件、答题卡、客观题答案及写作评分。",
+            "封面为2025–2026版；第13页开始客观题，第60页写作，第64页答题卡，第72页计分。"
+          ],
+          "authoringLessons": [
+            "英语、数学、阅读及可选科学按该版本计时和题量组卷；不能套用历史四必考组件配置。",
+            "科学题必须有可读数据图表和实验推断；写作按多维评分而非唯一标准答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 82,
+          "sha256": "0010be68548a3429c44265a4749d0a0cc353dfd75033101959584b63d89a029a",
+          "answerEvidence": {
+            "url": "https://www.act.org/content/dam/act/unsecured/documents/Preparing-for-the-ACT-e.pdf",
+            "pages": 82,
+            "sha256": "0010be68548a3429c44265a4749d0a0cc353dfd75033101959584b63d89a029a"
+          }
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "ap-calculus",
+      "title": "AP Calculus AB",
+      "category": "international",
+      "templateIds": [
+        "ap-calculus"
+      ],
+      "papers": [
+        {
+          "id": "ap-calculus-2025",
+          "title": "2025 AP Calculus AB Free-Response Questions",
+          "year": 2025,
+          "board": "College Board",
+          "paperUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-frq-calculus-ab.pdf",
+          "answerUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-calculus-ab.pdf",
+          "specificationUrl": "https://apcentral.collegeboard.org/courses/ap-calculus-ab/exam",
+          "language": "en",
+          "scope": "component",
+          "readNotes": [
+            "已读9页2025 FRQ与27页官方评分；仅Section II公开主观题，未包含保密选择题。",
+            "Part A两题30分钟需图形计算器；其余题为不同计算器规则，不能合并成整卷。"
+          ],
+          "authoringLessons": [
+            "题目考函数模型、导数、积分和论证；要求写出建立方程/积分与理由。",
+            "评分保留设置、计算、结论及单位的具体得分点，并检验定理适用条件。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 9,
+          "sha256": "5d1d881d7c3f4a66965276c8a5e169104718daaeba0faf60fcf698a5ff527725",
+          "answerEvidence": {
+            "url": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-calculus-ab.pdf",
+            "pages": 27,
+            "sha256": "a6e619eeb5e6ba0acbcf77ad9fc0da046a58d82eab5f13568b2f76613d941e12"
+          }
+        }
+      ],
+      "gaps": [
+        "官方免费公开材料为FRQ组件；不能把6道FRQ标成完整AP考试。"
+      ]
+    },
+    {
+      "id": "jlpt-n5",
+      "title": "JLPT N5",
+      "category": "languages",
+      "templateIds": [
+        "jlpt-n5"
+      ],
+      "papers": [
+        {
+          "id": "jlpt-n5-v",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N5 — 文字・語彙",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5V.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 10,
+          "sha256": "44d6c36e877b5cace8cbbb3d96d7d6114d69d8f48520fc2a7bac0a4273307575",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+            "pages": 2,
+            "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
+          }
+        },
+        {
+          "id": "jlpt-n5-g",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N5 — 文法",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5G.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 9,
+          "sha256": "cba53d2111eec8b33adb85641e5fd41b4c3f775ef4553448b59aa15d638b040a",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+            "pages": 2,
+            "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
+          }
+        },
+        {
+          "id": "jlpt-n5-r",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N5 — 読解",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5R.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 8,
+          "sha256": "1a3ff408e7cdc29243a990d503c4d5dde71cdf9c3cf847245932ffa81322ba7c",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+            "pages": 2,
+            "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
+          }
+        },
+        {
+          "id": "jlpt-n5-l",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N5 — 聴解",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5L.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 16,
+          "sha256": "a30197b749c909dace07ce62f63dfdff93420ec71598557f23f3370e703fb697",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
+            "pages": 2,
+            "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
+          },
+          "audioUrl": "https://www.jlpt.jp/samples/sample2018/mp3/N5Q1.mp3"
+        }
+      ],
+      "gaps": [
+        "2018官方问题集作为历史真实题目参照；现行考试时间与分数须另核对应等级规则，不能照搬问题集分模块页码作为考场分页。"
+      ]
+    },
+    {
+      "id": "jlpt-n2",
+      "title": "JLPT N2",
+      "category": "languages",
+      "templateIds": [
+        "jlpt-n2"
+      ],
+      "papers": [
+        {
+          "id": "jlpt-n2-v",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N2 — 文字・語彙",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2V.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 9,
+          "sha256": "c16247e1e6dc3c8b06dc0caf0ea94b7201628c3032c18bb2cc2ac0b1e69f79d6",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+            "pages": 2,
+            "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
+          }
+        },
+        {
+          "id": "jlpt-n2-g",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N2 — 文法",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2G.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 6,
+          "sha256": "b48d6e9002c981ca3d4250db4d0961a97d53145402b5eca058c2eb6fe75185e6",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+            "pages": 2,
+            "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
+          }
+        },
+        {
+          "id": "jlpt-n2-r",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N2 — 読解",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2R.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 20,
+          "sha256": "cae736f4da5baa87fedbc9457964d86ca90cbc1e3f6b3f2d7a405e3a33563f23",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+            "pages": 2,
+            "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
+          }
+        },
+        {
+          "id": "jlpt-n2-l",
+          "title": "日本語能力試験 公式問題集 第二集（2018）N2 — 聴解",
+          "year": 2018,
+          "board": "The Japan Foundation / Japan Educational Exchanges and Services",
+          "paperUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2L.pdf",
+          "answerUrl": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+          "specificationUrl": "https://www.jlpt.jp/samples/sampleindex.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已读官方2018问题集该模块全页；四模块共同组成官方发布题目集合，听力须配同版音频和听解原文。"
+          ],
+          "authoringLessons": [
+            "选项必须仅有一个最优解；阅读不能脱离原文与指代。",
+            "不得从原始正确数推算官方尺度分；依等级分别设置题型和所需能力。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 15,
+          "sha256": "d61edaadaae301d347cae040505016dd5057c2a3ac2a25b4b1aaa92070c2f3cb",
+          "answerEvidence": {
+            "url": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
+            "pages": 2,
+            "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
+          },
+          "audioUrl": "https://www.jlpt.jp/samples/sample2018/mp3/N2Q1.mp3"
+        }
+      ],
+      "gaps": [
+        "2018官方问题集作为历史真实题目参照；现行考试时间与分数须另核对应等级规则，不能照搬问题集分模块页码作为考场分页。"
+      ]
+    },
+    {
+      "id": "delf-b1",
+      "title": "DELF B1 tout public",
+      "category": "languages",
+      "templateIds": [
+        "delf-b1"
+      ],
+      "papers": [
+        {
+          "id": "delf-b1-candidate",
+          "title": "DELF B1 tout public — Sujet démonstration, épreuves collectives (exemple 1)",
+          "year": null,
+          "board": "France Éducation international",
+          "paperUrl": "https://www.france-education-international.fr/document/delf-b1-tp-candidat-coll-exemple1",
+          "answerUrl": "https://www.france-education-international.fr/document/delf-b1-tp-correcteur-coll-exemple1",
+          "specificationUrl": "https://www.france-education-international.fr/diplome/delf-tout-public/niveau-b1/exemples-sujets",
+          "language": "fr",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已读12页完整集体考试候选人题册；听力约25分钟、阅读45分钟、写作45分钟，每能力25分。",
+            "封面要求姓名、折叠匿名栏和考生代码；总分50/100及单项5/25为不同门槛。"
+          ],
+          "authoringLessons": [
+            "答案题册、听力转录、音频与口语材料必须同套配齐。",
+            "开放写作/口语需任务完成、语言表现等分析评分；示例答案不等于唯一答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 12,
+          "sha256": "2ef1ce90e9eddfacf74f7349842a07f595d21d062587cb91c8eeb13339a89f91",
+          "answerEvidence": {
+            "url": "https://www.france-education-international.fr/document/delf-b1-tp-correcteur-coll-exemple1",
+            "pages": 3,
+            "sha256": "1c6b5cc121fec21d5f6e89391a50151ab37f52ef9c7c6058bef10bef69bb3c9b"
+          }
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "goethe-b1",
+      "title": "Goethe-Zertifikat B1 / ÖSD Zertifikat B1",
+      "category": "languages",
+      "templateIds": [
+        "goethe-b1"
+      ],
+      "papers": [
+        {
+          "id": "goethe-b1-model",
+          "title": "Goethe/ÖSD Zertifikat B1 — Modellsatz Erwachsene",
+          "year": 2015,
+          "board": "Goethe-Institut / ÖSD / Universität Freiburg",
+          "paperUrl": "https://www.goethe.de/pro/relaunch/prf/materialien/B1/b1_modellsatz_erwachsene.pdf",
+          "answerUrl": "https://www.goethe.de/pro/relaunch/prf/materialien/B1/b1_modellsatz_erwachsene.pdf",
+          "specificationUrl": "https://www.goethe.de/ins/de/en/prf/gzb1/ueb.html",
+          "language": "de",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已读52页完整四模块样卷；含Lesen/Hören/Schreiben/Sprechen、答题卡、答案、听力转录、写作示例与评分标准。",
+            "各模块单独100分、60分通过；阅读65分钟、听力约40分钟、写作60分钟、口语双人约15分钟。"
+          ],
+          "authoringLessons": [
+            "按模块计分，不能误设整项总分100。",
+            "口语必须保留伙伴互动，写作使用真实任务及评分量表。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 52,
+          "sha256": "9eed7caad7c61a8ab5fb6fb1e129275ab4965002f2c4ec1e3276f8082b0b0f42",
+          "answerEvidence": {
+            "url": "https://www.goethe.de/pro/relaunch/prf/materialien/B1/b1_modellsatz_erwachsene.pdf",
+            "pages": 52,
+            "sha256": "9eed7caad7c61a8ab5fb6fb1e129275ab4965002f2c4ec1e3276f8082b0b0f42"
+          }
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "us-civics",
+      "title": "美国入籍 Civics Test",
+      "category": "citizenship",
+      "templateIds": [
+        "us-civics"
+      ],
+      "papers": [
+        {
+          "id": "us-civics-2025",
+          "title": "128 Civics Questions and Answers — 2025 version",
+          "year": 2025,
+          "board": "USCIS",
+          "paperUrl": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
+          "answerUrl": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
+          "specificationUrl": "https://www.uscis.gov/citizenship/2025test",
+          "language": "en",
+          "scope": "official-bank",
+          "readNotes": [
+            "已读19页官方128问答题库；为口试，抽问至多20题、至少答对12题；不是固定公开20题试卷。",
+            "官员、选举、地域问题的答案随面试时点和居住地变化；65/20规则另有适用范围。"
+          ],
+          "authoringLessons": [
+            "输出可练的官方题库与抽样口试，不伪造某年固定真卷。",
+            "动态答案必须实时核查，个人和地域答案让用户补充。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 19,
+          "sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c",
+          "answerEvidence": {
+            "url": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
+            "pages": 19,
+            "sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c"
+          }
+        }
+      ],
+      "gaps": [
+        "题库全部公开，但每次面试无固定公开整卷。适用版本按N-400递交时间核查。"
+      ]
+    },
+    {
+      "id": "cambridge-art",
+      "title": "Cambridge IGCSE Art & Design 0400",
+      "category": "arts",
+      "templateIds": [
+        "cambridge-art"
+      ],
+      "papers": [
+        {
+          "id": "igcse-art",
+          "title": "Cambridge IGCSE Art & Design 0400/02 — 2025 Specimen Externally Set Assignment",
+          "year": 2025,
+          "board": "Cambridge University Press & Assessment",
+          "paperUrl": "https://www.cambridgeinternational.org/Images/730863-2025-specimen-paper-2.pdf",
+          "answerUrl": "https://www.cambridgeinternational.org/Images/664588-2025-syllabus.pdf",
+          "specificationUrl": "https://www.cambridgeinternational.org/Images/664588-2025-syllabus.pdf",
+          "language": "en",
+          "scope": "official-task",
+          "readNotes": [
+            "已读4页完整任务；8小时100分，5个starting points选1；准备期与监督测试分开。",
+            "两张A2支持研究及一张A2最终作品，标明来源并数字提交；样题明确不可用于正式考试提交。"
+          ],
+          "authoringLessons": [
+            "艺术任务要有研究、试验、发展、个人回应的评价证据。",
+            "用任务书与评分维度组织，不制造客观唯一艺术答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 4,
+          "sha256": "5bd8c37eae190c18ee92b632175819a8e895df4d425e10a0c1ec5c57ccb4edb6",
+          "answerEvidence": {
+            "url": "https://www.cambridgeinternational.org/Images/664588-2025-syllabus.pdf",
+            "pages": 26,
+            "sha256": "032c4885b35d05cfc34f5d3fe877511cdcefc562c6f1115d1378767c77b53f58"
+          }
+        }
+      ],
+      "gaps": [
+        "任务书及26页2025考纲的AO1记录/AO2探索/AO3发展/AO4呈现各25分评分标准已读；艺术任务没有唯一答案。"
+      ]
+    },
+    {
+      "id": "music-performance",
+      "title": "ABRSM Practical Music Grades — Piano",
+      "category": "arts",
+      "templateIds": [
+        "music-performance"
+      ],
+      "papers": [
+        {
+          "id": "music-performance-spec",
+          "title": "ABRSM Piano Practical Music Grades — Syllabus 2025 & 2026",
+          "year": 2025,
+          "board": "ABRSM",
+          "paperUrl": "https://www.abrsm.org/sites/default/files/2024-06/Piano%202025%20%26%202026%20Prac%20syllabus%2020240524_access.pdf",
+          "answerUrl": "https://www.abrsm.org/sites/default/files/2024-06/Piano%202025%20%26%202026%20Prac%20syllabus%2020240524_access.pdf",
+          "specificationUrl": "https://www.abrsm.org/en-gb/instruments/piano",
+          "language": "en",
+          "scope": "official-task",
+          "readNotes": [
+            "已读63页资格规范；包含各级曲目清单、技术要求、视奏、听觉测试及53页起评分规则。",
+            "Practical Grades由三首曲目及其他现场部分组成；与Performance Grades视频作品考试不同。"
+          ],
+          "authoringLessons": [
+            "先确认Practical或Performance路径、乐器与级别，不能混用分值和曲目数。",
+            "演奏给任务与评价量表及可听见的表现证据，不给唯一文本标准答案。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 63,
+          "sha256": "f1ddae1140a12ee22599e11cce2837f2d3622d58acc3ca738328cc1a5f86e04b",
+          "answerEvidence": {
+            "url": "https://www.abrsm.org/sites/default/files/2024-06/Piano%202025%20%26%202026%20Prac%20syllabus%2020240524_access.pdf",
+            "pages": 63,
+            "sha256": "f1ddae1140a12ee22599e11cce2837f2d3622d58acc3ca738328cc1a5f86e04b"
+          }
+        }
+      ],
+      "gaps": [
+        "这是官方真实演奏任务及评分规范；现场视奏与听觉试题未在此公开为固定完整卷。"
+      ]
+    },
+    {
+      "id": "ib-math-aa",
+      "title": "IB Diploma Mathematics: Analysis and Approaches",
+      "category": "international",
+      "templateIds": [
+        "ib-math-aa"
+      ],
+      "papers": [
+        {
+          "id": "ib-math-aa",
+          "title": "Mathematics: Analysis and Approaches HL and SL — Specimen papers 1, 2 and 3",
+          "year": 2021,
+          "board": "International Baccalaureate Organization",
+          "paperUrl": "https://ibo.org/globalassets/new-structure/university-admission/pdfs/dp-mathematics-analysis-and-approaches-specimen-papers-en.pdf",
+          "answerUrl": "https://ibo.org/globalassets/new-structure/university-admission/pdfs/dp-mathematics-analysis-and-approaches-specimen-papers-en.pdf",
+          "specificationUrl": "https://www.ibo.org/programmes/diploma-programme/curriculum/mathematics/mathematics-analysis-and-approaches/",
+          "language": "en",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已在线阅读121页官方合订样卷，包含HL P1/P2/P3及SL P1/P2与各自完整评分。",
+            "HL P1为2小时110分且禁计算器；不能与SL卷或允许计算器的P2混用。"
+          ],
+          "authoringLessons": [
+            "方法分M、准确分A、推理分R和承接错误FT有不同条件；每道题保留推导而非只给最终答案。",
+            "核对HL/SL、AA/AI、组件及考纲年份；不是整个IB文凭资格的全部考试。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 121,
+          "evidenceMode": "official-pdf-read-online"
+        }
+      ],
+      "gaps": [
+        "官方PDF可在线阅读；本次文件下载接口403，未提供本地文件sha256。"
+      ]
+    },
+    {
+      "id": "sat",
+      "title": "SAT — 纸质非自适应练习",
+      "category": "international",
+      "templateIds": [
+        "sat"
+      ],
+      "papers": [
+        {
+          "id": "sat-4",
+          "title": "The SAT Practice Test #4 — for students taking the digital SAT in nondigital format",
+          "year": 2023,
+          "board": "College Board",
+          "paperUrl": "https://satsuite.collegeboard.org/media/pdf/sat-practice-test-4-digital.pdf",
+          "answerUrl": "https://satsuite.collegeboard.org/media/pdf/sat-practice-test-4-answers-digital.pdf",
+          "specificationUrl": "https://satsuite.collegeboard.org/sat/practice-preparation/practice-tests/linear",
+          "language": "en",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已读56页官方练习及53页答案详解；封面明确为digital SAT的非数字适配形式。",
+            "阅读与写作每模块33题；不能当成Bluebook自适应考试的27题模块或据原始正确数声称官方分数。"
+          ],
+          "authoringLessons": [
+            "按原卷区分Reading and Writing及Math模块、题量、图表及多选/数值输入。",
+            "适应性计分及官方量尺转换不能用普通百分制代替。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 56,
+          "sha256": "5d4a55e241f46beec90c6f273c346be6b6d5231127d73068083d881aa2a37d7a",
+          "answerEvidence": {
+            "url": "https://satsuite.collegeboard.org/media/pdf/sat-practice-test-4-answers-digital.pdf",
+            "pages": 53,
+            "sha256": "ee2ed6b3a5d77994b6e6ad460137f6959c5b142695ae20e0bb28089171649b56"
+          }
+        }
+      ],
+      "gaps": [
+        "此集合是官方完整纸质练习，不是Bluebook自适应路径的真实固定整卷。"
+      ]
+    },
+    {
+      "id": "jft-basic",
+      "title": "JFT-Basic — 生活日语机考公开样题",
+      "category": "languages",
+      "templateIds": [
+        "jft-basic"
+      ],
+      "papers": [
+        {
+          "id": "jft-sample",
+          "title": "JFT-Basic official interactive Sample Questions",
+          "year": null,
+          "board": "The Japan Foundation",
+          "paperUrl": "https://www.jpf.go.jp/jft-basic/sample/q01.html",
+          "answerUrl": "https://www.jpf.go.jp/jft-basic/sample/answer.html",
+          "specificationUrl": "https://www.jpf.go.jp/jft-basic/e/about/",
+          "language": "ja",
+          "scope": "official-task",
+          "readNotes": [
+            "已读官方互动题页及结果脚本；文字词汇、会话表达、听力、阅读按不同任务呈现。",
+            "第1题依据笑脸图选词，非纯文字背诵；官方结果脚本有14道题对应答案。"
+          ],
+          "authoringLessons": [
+            "生活场景、图片和音频是题目证据，不能以词汇释义替代应用理解。",
+            "CBT样题用来学习任务与反馈，不伪造成某年固定完整考试。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "sha256": "b5548332dab6bbefa7003005e31295a26c1f189dacbe5fd0b79ba07a133d5dff",
+          "itemCount": 14,
+          "answerEvidence": {
+            "url": "https://www.jpf.go.jp/jft-basic/sample/common/script/test.js",
+            "sha256": "0c5f75e68f59240b2f53323717c43abba51acc22bb985f139e22ebba35063dfc"
+          }
+        }
+      ],
+      "gaps": [
+        "本轮取得全部q01–q11共11页的14道样题及14个官方答案；q09/q10/q11每页两问，不存在q12–q14页面。公开样题不是保密正式机考试卷。",
+        "2026年8月起测量等级范围变化，应核查官网现行说明，不把历史只测A2的表述当现行规则。"
+      ]
+    },
+    {
+      "id": "eju",
+      "title": "EJU 日本留学試験",
+      "category": "international",
+      "templateIds": [
+        "eju"
+      ],
+      "papers": [
+        {
+          "id": "eju-math",
+          "title": "2018 EJU (1st Session) — Mathematics Course 1 / Course 2 (English)",
+          "year": 2018,
+          "board": "Japan Student Services Organization",
+          "paperUrl": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2021/09/10/2018_1question_math_e_1.pdf",
+          "answerUrl": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2026/10/23/2018_1answer_e.pdf",
+          "specificationUrl": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/pastpaper_2018_1.html",
+          "language": "en",
+          "scope": "component",
+          "readNotes": [
+            "已取得29页数学两课程题册及4页跨科答案；视觉核对封面、课程选择、二次函数与计数问题及数学答案页。",
+            "80分钟，Course 1基本与Course 2进阶二选一；方框字母对应数码填涂而不是A/B/C/D单选。"
+          ],
+          "authoringLessons": [
+            "数学题须实际运算、范围判断及排列计数，按原有填涂格式给出答案槽。",
+            "Course 1与Course 2分别组织；不得把两课程相加当同一必做整卷。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 29,
+          "sha256": "463e475c4f906f378dccb3eec561acc5956188af1b883998e008ec4d2f8468d0",
+          "answerEvidence": {
+            "url": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2026/10/23/2018_1answer_e.pdf",
+            "pages": 4,
+            "sha256": "e1c1a24e9a98efbec3e58a79eae337853959a2fe8b15987c56044c2ab90b8431"
+          }
+        },
+        {
+          "id": "eju-japanese",
+          "title": "2018 EJU (1st Session) — Japanese as a Foreign Language (released pages)",
+          "year": 2018,
+          "board": "Japan Student Services Organization",
+          "paperUrl": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2026/02/24/2018_1question_jafl_e.pdf",
+          "answerUrl": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2026/10/23/2018_1answer_e.pdf",
+          "specificationUrl": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/pastpaper_2018_1.html",
+          "language": "ja",
+          "scope": "component",
+          "readNotes": [
+            "已取得32页官方发布日本语题册；记述主题二选一、按指定方向横书；官方仅发布获得转载许可的题目及对应答案。"
+          ],
+          "authoringLessons": [
+            "按日语记述、读解、听解/听读解分开任务，配同场音频和评分基准。",
+            "识别原文件的未获公开许可材料缺页，不能补造并保留真题名义。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 32,
+          "sha256": "3f988bd6a0e2bfcfa6e3cc59340ff719a32237e7d4b2026661f5366ce4925f10",
+          "answerEvidence": {
+            "url": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2026/10/23/2018_1answer_e.pdf",
+            "pages": 4,
+            "sha256": "e1c1a24e9a98efbec3e58a79eae337853959a2fe8b15987c56044c2ab90b8431"
+          }
+        }
+      ],
+      "gaps": [
+        "公开材料可能因著作权省略题目；本集合未包含理科/综合科目及全部音频，不称全科EJU完整卷。"
+      ]
+    },
+    {
+      "id": "topik-ii",
+      "title": "TOPIK II — 第83回PBT公开题",
+      "category": "languages",
+      "templateIds": [
+        "topik-ii"
+      ],
+      "papers": [
+        {
+          "id": "topik-83-reading-test-paper",
+          "title": "제83회 한국어능력시험 TOPIK II — 읽기",
+          "year": 2022,
+          "board": "National Institute for International Education (NIIED)",
+          "paperUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Reading-Test-Paper.pdf",
+          "answerUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Reading-Answers.pdf",
+          "specificationUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
+          "language": "ko",
+          "scope": "component",
+          "readNotes": [
+            "已实取并视觉核对第83回TOPIK II公开题与同组件答案；阅读封面明确Odd Number Type与2교시，不能混用偶数型答案。",
+            "公开读取来自TOPIK GUIDE镜像，已核卷头、版权机构与题号；官方档案接口本轮返回400。"
+          ],
+          "authoringLessons": [
+            "TOPIK II PBT听力50题、写作4题、阅读50题；与IBT题量/时间分开。",
+            "写作51–52补句、53图表/说明、54论述；示范答案与可接受变体按评分维度解释。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 25,
+          "sha256": "1711e12a34f15ada2c60f3e573a993fd91b52d76b921f4146bccbf3d750d3adf",
+          "answerEvidence": {
+            "url": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Reading-Answers.pdf",
+            "pages": 1,
+            "sha256": "77994a042317bee33c13135898f49f87174516ccd8247f4f7330f9457041efbf"
+          },
+          "sourceAccess": "publisher-released-paper-via-mirror",
+          "officialArchiveUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do"
+        },
+        {
+          "id": "topik-83-listening-test-paper",
+          "title": "제83회 한국어능력시험 TOPIK II — 듣기",
+          "year": 2022,
+          "board": "National Institute for International Education (NIIED)",
+          "paperUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Listening-Test-Paper.pdf",
+          "answerUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Listening-Answers.pdf",
+          "specificationUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
+          "language": "ko",
+          "scope": "component",
+          "readNotes": [
+            "已实取并视觉核对第83回TOPIK II公开题与同组件答案；阅读封面明确Odd Number Type与2교시，不能混用偶数型答案。",
+            "公开读取来自TOPIK GUIDE镜像，已核卷头、版权机构与题号；官方档案接口本轮返回400。"
+          ],
+          "authoringLessons": [
+            "TOPIK II PBT听力50题、写作4题、阅读50题；与IBT题量/时间分开。",
+            "写作51–52补句、53图表/说明、54论述；示范答案与可接受变体按评分维度解释。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 14,
+          "sha256": "de54071eb2e76339e11c1473741faeea63eba9962114e155e7726be1d7ecc92a",
+          "answerEvidence": {
+            "url": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Listening-Answers.pdf",
+            "pages": 1,
+            "sha256": "89cefea7250d27f5ce246c97c39b055e51cf61a3d34d33fd3b4ae375dffb35ec"
+          },
+          "sourceAccess": "publisher-released-paper-via-mirror",
+          "officialArchiveUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
+          "audioUrl": "https://files.topikguide.com/listening/83-TOPIK-II-Listening-Audio-File.mp3"
+        },
+        {
+          "id": "topik-83-writing-test-paper",
+          "title": "제83회 한국어능력시험 TOPIK II — 쓰기",
+          "year": 2022,
+          "board": "National Institute for International Education (NIIED)",
+          "paperUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Writing-Test-Paper.pdf",
+          "answerUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Writing-Answers.pdf",
+          "specificationUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
+          "language": "ko",
+          "scope": "component",
+          "readNotes": [
+            "已实取并视觉核对第83回TOPIK II公开题与同组件答案；阅读封面明确Odd Number Type与2교시，不能混用偶数型答案。",
+            "公开读取来自TOPIK GUIDE镜像，已核卷头、版权机构与题号；官方档案接口本轮返回400。"
+          ],
+          "authoringLessons": [
+            "TOPIK II PBT听力50题、写作4题、阅读50题；与IBT题量/时间分开。",
+            "写作51–52补句、53图表/说明、54论述；示范答案与可接受变体按评分维度解释。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 2,
+          "sha256": "ceb0012ab0074ac330f4cf7a775f5cc123e4d007cd4277382a6266593b49d36f",
+          "answerEvidence": {
+            "url": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Writing-Answers.pdf",
+            "pages": 1,
+            "sha256": "15d145629af21b32b9d22e523363d8cd75b489f83c9e227fed6e761f1b8f36a9"
+          },
+          "sourceAccess": "publisher-released-paper-via-mirror",
+          "officialArchiveUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do"
+        }
+      ],
+      "gaps": [
+        "镜像文件用于核实既有公开试题，不在本仓库复制分发。官网档案需恢复访问后核对同版原件；写作镜像为题目摘页，不是完整第一场考试封面题册。"
+      ]
+    },
+    {
+      "id": "hsk3",
+      "title": "HSK 三级 — H31001（历史2.0制式）",
+      "category": "languages",
+      "templateIds": [
+        "hsk3"
+      ],
+      "papers": [
+        {
+          "id": "hsk3",
+          "title": "新汉语水平考试 HSK（三级）H31001",
+          "year": null,
+          "board": "国家汉办 / 孔子学院总部",
+          "paperUrl": "https://admin.chinesetest.cn/userfiles/file/HSK/level3/H31001.pdf",
+          "answerUrl": "https://admin.chinesetest.cn/userfiles/file/HSK/level3/H31001.pdf",
+          "specificationUrl": "https://admin.chinesetest.cn/godownload.do",
+          "language": "zh",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已读22页官方整套H31001；含听力40、阅读30、书写10题，后附听力转录及全部答案。",
+            "封面约90分钟含填个人信息与听力后5分钟填卡，属于历史HSK 2.0制式。"
+          ],
+          "authoringLessons": [
+            "汉字书写与词序题保留字形、拼音与格线要求；听力必须配音频或明确为转录阅读。",
+            "先问考试版本；不要把H31001旧制样卷标为2026 HSK3.0现行整卷。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 22,
+          "sha256": "fafdab23a1a63a7f571bf44fb8dd0df8907f7c20d4b0c0840fac1c2b8ac3194f",
+          "answerEvidence": {
+            "url": "https://admin.chinesetest.cn/userfiles/file/HSK/level3/H31001.pdf",
+            "pages": 22,
+            "sha256": "fafdab23a1a63a7f571bf44fb8dd0df8907f7c20d4b0c0840fac1c2b8ac3194f"
+          }
+        }
+      ],
+      "gaps": [
+        "HSK新旧制式并存转换；按用户考试日期和考点确认适用版本。"
+      ]
+    },
+    {
+      "id": "uk-civics",
+      "title": "英国 Life in the UK — 官方考试规则",
+      "category": "citizenship",
+      "templateIds": [
+        "uk-civics"
+      ],
+      "papers": [
+        {
+          "id": "uk-civics",
+          "title": "Life in the UK Test — GOV.UK official test and preparation rules",
+          "year": null,
+          "board": "UK Home Office / GOV.UK",
+          "paperUrl": "https://www.gov.uk/life-in-the-uk-test",
+          "answerUrl": "",
+          "specificationUrl": "https://www.gov.uk/life-in-the-uk-test",
+          "language": "en",
+          "scope": "study-guide",
+          "readNotes": [
+            "已读GOV.UK考试与备考规则：45分钟24题，仅考官方Guide for New Residents内容。",
+            "官方真题题库不公开；官方出版商的免费测试旧链接目前404，付费手册/应用不作为本免费项目依赖。"
+          ],
+          "authoringLessons": [
+            "英国入籍方向只能声称提供考纲规则与资料出题能力；用户提供合法手册后逐页溯源出题。",
+            "不得把第三方24题练习或项目原创题标为官方历年真卷。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "sha256": "2bb9d33037b564a58d005f65d04c5b8ebc172e04942d1af161fc9ce7afce25eb"
+        }
+      ],
+      "gaps": [
+        "尚无本次实际取得、可免费公开阅读的官方完整题目加答案。此方向不列为“官方完整样卷就绪”；须用户资料或可验证的正式公开样题支撑。"
+      ]
+    },
+    {
+      "id": "canada-civics",
+      "title": "加拿大 Discover Canada 与官方学习问题",
+      "category": "citizenship",
+      "templateIds": [
+        "canada-civics"
+      ],
+      "papers": [
+        {
+          "id": "canada-study-questions",
+          "title": "Discover Canada — Official Study Questions",
+          "year": 2023,
+          "board": "Immigration, Refugees and Citizenship Canada",
+          "paperUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/study-questions.html",
+          "answerUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/study-questions.html",
+          "specificationUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada.html",
+          "language": "en",
+          "scope": "study-guide",
+          "readNotes": [
+            "已读官方学习问题页；前三道选择题直接给正确答案，随后为需查Discover Canada的开放复习问题。",
+            "开放问题含本地议员与省/领地首府，不能给予全国统一的固定答案；历史手册也存在君主称谓需校时。"
+          ],
+          "authoringLessons": [
+            "以权利义务、历史、政府、地域等官方章节组织资料索引和答案证据。",
+            "示例题、复习问题和真正入籍测验区别标注；动态身份/官职依日期核对。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "sha256": "1e106514931b265034fba0b7320dd20afac9009c436dd8c003073ce990e4edfb",
+          "answerEvidence": {
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/study-questions.html",
+            "sha256": "1e106514931b265034fba0b7320dd20afac9009c436dd8c003073ce990e4edfb"
+          }
+        }
+      ],
+      "gaps": [
+        "本轮官方完整PDF传输截断，未作为完整已读证据；已读官方在线题目页。真实安全题库与固定整卷未公开，不能伪称真实考场卷。"
+      ]
+    },
+    {
+      "id": "australia-civics",
+      "title": "澳大利亚公民考试 — Our Common Bond",
+      "category": "citizenship",
+      "templateIds": [
+        "australia-civics"
+      ],
+      "papers": [
+        {
+          "id": "australia-civics",
+          "title": "Australian Citizenship: Our Common Bond — Testable Section",
+          "year": 2020,
+          "board": "Australian Government Department of Home Affairs",
+          "paperUrl": "https://immi.homeaffairs.gov.au/citizenship-subsite/files/our-common-bond-testable.pdf",
+          "answerUrl": "https://citizenshippracticetest.homeaffairs.gov.au/test/",
+          "specificationUrl": "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/prepare-for-test",
+          "language": "en",
+          "scope": "study-guide",
+          "readNotes": [
+            "已读50页官方可考部分及官方在线练习公开20题/20答案数据；覆盖国家与人民、民主、政府法律、澳大利亚价值观。",
+            "正式通过要求不只15/20，还须五道价值观题全对；不能只按总分百分比判断。"
+          ],
+          "authoringLessons": [
+            "按官方章节准备题目与依据，价值观题单独标记并验证通过门槛。",
+            "公开20题为官方练习，正式考试会不同；不冒充某次真实安全卷。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 50,
+          "sha256": "c5d70f7274a856ee424e6f9975477430363e7d32b7226b0dbafb4ad0f73e9ede",
+          "sampleUrl": "https://citizenshippracticetest.homeaffairs.gov.au/test/",
+          "sampleEvidence": {
+            "url": "https://citizenshippracticetest.homeaffairs.gov.au/_next/static/chunks/9024420fa6e7110d.js",
+            "sha256": "e9e78f2caaea810dddc279e8c3f696507c3df10e090059e7d18b6834b67832c9",
+            "itemCount": 20,
+            "answerCount": 20
+          }
+        }
+      ],
+      "gaps": [
+        "完整公开学习手册和20题官方练习已读；真正考试安全题库不公开。"
+      ]
+    },
+    {
+      "id": "ap-art-history",
+      "title": "AP Art History — 彩色图像与论证",
+      "category": "arts",
+      "templateIds": [
+        "ap-art-history"
+      ],
+      "papers": [
+        {
+          "id": "ap-art-history",
+          "title": "2025 AP Art History Free-Response Questions",
+          "year": 2025,
+          "board": "College Board",
+          "paperUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-frq-art-history.pdf",
+          "answerUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-art-history.pdf",
+          "specificationUrl": "https://apcentral.collegeboard.org/courses/ap-art-history/exam",
+          "language": "en",
+          "scope": "component",
+          "readNotes": [
+            "已读10页2025 FRQ与22页评分；问题使用艺术作品彩色图像，要求识别、描述、视觉证据和背景论证。",
+            "公开为自由作答组件，不包含选择题；作品图像涉及独立版权。"
+          ],
+          "authoringLessons": [
+            "图像、作品信息、视觉证据与写作任务需完整配套；彩印保留作品色彩与图注。",
+            "评分逐条判定可观察证据与论证，不能用背诵作者年代替代艺术分析。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 10,
+          "sha256": "8f360326c817349f6c1af8172b3cf7a800b7c0f3ec4f19b58c8c5db401d37abf",
+          "answerEvidence": {
+            "url": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-art-history.pdf",
+            "pages": 22,
+            "sha256": "19e37ca4e6f3316b46dae52193a7957ed891e17fac048f8ec290361922232d2f"
+          }
+        }
+      ],
+      "gaps": [
+        "仅公开FRQ组件；不得称完整AP Art History考试。"
+      ]
+    },
+    {
+      "id": "music-theory",
+      "title": "ABRSM 音乐理论 Grade 5",
+      "category": "arts",
+      "templateIds": [
+        "music-theory"
+      ],
+      "papers": [
+        {
+          "id": "music-theory-g5",
+          "title": "ABRSM Music Theory Grade 5 — 2020 Sample Paper",
+          "year": 2020,
+          "board": "ABRSM",
+          "paperUrl": "https://www.abrsm.org/sites/default/files/2023-09/music-theory-grade-5-sample-paper-200722.pdf",
+          "answerUrl": "https://www.abrsm.org/sites/default/files/2023-09/music-theory-grade-5-sample-model-answers.pdf",
+          "specificationUrl": "https://www.abrsm.org/en-gb/practice-resources",
+          "language": "en",
+          "scope": "official-specimen",
+          "readNotes": [
+            "已读11页官方全样卷与5页示范答案；七部分节奏、音高、调式音阶、音程、和弦、术语与乐器、音乐语境，75分、最多2小时。",
+            "封面说明这是线上考试的印刷呈现，在线措辞/作答方式可能不同。"
+          ],
+          "authoringLessons": [
+            "五线谱、谱号、调号、变音、符尾与小节线都是题干，必须按最终印刷尺寸检查。",
+            "出真正的读谱、移调、音程/和弦和语境题，不能只问概念定义。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 11,
+          "sha256": "050dd3f7a549595268c33046cb73f0afbbc0fe9db68edffc241b60e82041c002",
+          "answerEvidence": {
+            "url": "https://www.abrsm.org/sites/default/files/2023-09/music-theory-grade-5-sample-model-answers.pdf",
+            "pages": 5,
+            "sha256": "217bbe6639e721fb8e25f28881d7abd885c7b1b2e954042c296a4cf7dfd1fe9b"
+          }
+        }
+      ],
+      "gaps": []
+    },
+    {
+      "id": "design-studio",
+      "title": "AP 2-D Art and Design — 作品集与评分",
+      "category": "arts",
+      "templateIds": [
+        "design-studio"
+      ],
+      "papers": [
+        {
+          "id": "design-full-portfolio",
+          "title": "2025 AP 2-D Art and Design — Complete Sustained Investigation and Selected Works Portfolio",
+          "year": 2025,
+          "board": "College Board",
+          "paperUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-2d-art-and-design-full-portfolio.pdf",
+          "answerUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-art-and-design.pdf",
+          "specificationUrl": "https://apcentral.collegeboard.org/courses/ap-2-d-art-and-design/portfolio/past-exam-questions",
+          "language": "en",
+          "scope": "official-task",
+          "readNotes": [
+            "已读27页官方完整学生作品集、6页评分规范，以及8页Selected Works满分样本的评分说明。",
+            "持续研究的探究问题、实践/试验/修订的书面证据与视觉作品共同评分；不是固定文字试卷。"
+          ],
+          "authoringLessons": [
+            "设计任务要明确材料、尺寸、过程、研究和最终作品，使用分析量表及评分示例。",
+            "按Inquiry/Practice and Experimentation/Materials Processes Ideas/2-D Skills等维度独立评分，不能只给笼统美观分。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 27,
+          "sha256": "aacab3bcd86ee89a61060e78c38735db15d137e45256c6d8d34c912accb97994",
+          "answerEvidence": {
+            "url": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-art-and-design.pdf",
+            "pages": 6,
+            "sha256": "f9fda753536ba2677ce4f6f38835d0d09ca0c3a1490cf1cd8da9b83ff580bb7d"
+          },
+          "scoredSampleUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-2d-art-and-design-selected-works-score-5.pdf"
+        }
+      ],
+      "gaps": [
+        "真实作品集评估没有固定统一卷面题册；不能冒充标准答案唯一的笔试。"
+      ]
+    },
+    {
+      "id": "science-color",
+      "title": "彩色地图、摄影与科学资料 — IGCSE Geography",
+      "category": "science",
+      "templateIds": [
+        "science-color"
+      ],
+      "papers": [
+        {
+          "id": "geography-2024-p11",
+          "title": "Cambridge IGCSE Geography 0460/11 — May/June 2024",
+          "year": 2024,
+          "board": "Cambridge University Press & Assessment",
+          "paperUrl": "https://www.cambridgeinternational.org/Images/569599-june-2024-question-paper-11.pdf",
+          "answerUrl": "https://www.cambridgeinternational.org/Images/569596-june-2024-paper-11-mark-scheme.pdf",
+          "specificationUrl": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-geography-0460/",
+          "language": "en",
+          "scope": "full",
+          "readNotes": [
+            "已读28页真实题册、24页评分及8页配套彩色insert；题册1小时45分75分，三个分区各选一题。",
+            "城市/自然摄影与地理资料在附册，通过图号与题册对应；不是所有题必答。"
+          ],
+          "authoringLessons": [
+            "按地图/图表/摄影解释与情境知识分配认知要求，提供图号及来源。",
+            "保留彩色资料、比例尺/单位与最终输出尺寸；答案区不出现在仅供观察的insert。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 28,
+          "sha256": "37127498fe3d6ec938b089daa66cce22a6c371760f4e8b7392fde3866cfc8df4",
+          "answerEvidence": {
+            "url": "https://www.cambridgeinternational.org/Images/569596-june-2024-paper-11-mark-scheme.pdf",
+            "pages": 24,
+            "sha256": "1a040bbaa1a91a945cac8880ab9da1bb68e1c0fabc66c03ed8fc79816a423c4f"
+          },
+          "resourceUrl": "https://www.cambridgeinternational.org/Images/569595-june-2024-paper-11-insert.pdf",
+          "resourceEvidence": {
+            "pages": 8,
+            "sha256": "985a1ee690e738f1649660331304a71e74c9c29b559bd0a9a5b320c04a4817af"
+          }
+        }
+      ],
+      "gaps": [
+        "2020地理P2公开map链接仅为版权缺图通知，因此不用该卷声称完整地图套卷。"
+      ]
+    },
+    {
+      "id": "biology-visual",
+      "title": "生物图像与实验资料 — IGCSE Biology",
+      "category": "science",
+      "templateIds": [
+        "biology-visual"
+      ],
+      "papers": [
+        {
+          "id": "biology-2024-p41",
+          "title": "Cambridge IGCSE Biology 0610/41 — May/June 2024",
+          "year": 2024,
+          "board": "Cambridge University Press & Assessment",
+          "paperUrl": "https://www.cambridgeinternational.org/Images/649822-june-2024-question-paper-41.pdf",
+          "answerUrl": "https://www.cambridgeinternational.org/Images/649816-june-2024-mark-scheme-paper-41.pdf",
+          "specificationUrl": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-biology-0610/",
+          "language": "en",
+          "scope": "full",
+          "readNotes": [
+            "已读20页真实Extended理论组件与15页同场评分；1小时15分钟80分，鱼类照片、循环系统图、实验与数据材料均为题干。"
+          ],
+          "authoringLessons": [
+            "图像标注、尺度、实验变量与数据推断各自出题；评分用具体生物学要点。",
+            "不能凭示意图外观猜题，须按原题图号、箭头、结构与数据复核。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 20,
+          "sha256": "eb485797e1cb553149a322327435d0adf7bfe5c637ffa9f2f134db0358e9acac",
+          "answerEvidence": {
+            "url": "https://www.cambridgeinternational.org/Images/649816-june-2024-mark-scheme-paper-41.pdf",
+            "pages": 15,
+            "sha256": "7c91a864ecb01a1ca3c90143090075980ff9c473aad8cfc0ad35a8fb0a552118"
+          }
+        }
+      ],
+      "gaps": [
+        "这是完整Paper 4组件，不代表包含选择题、实验/替代实验在内的全部IGCSE资格考试。"
+      ]
+    },
+    {
+      "id": "ielts-reading",
+      "title": "IELTS Academic Reading — 官方完整阅读样卷",
+      "category": "languages",
+      "templateIds": [
+        "ielts-reading"
+      ],
+      "papers": [
+        {
+          "id": "ielts-academic-reading-access-arrangement-modified-large-print-question-booklet",
+          "title": "IELTS Academic Reading Sample Test — Modified Large Print Version",
+          "year": 2024,
+          "board": "IELTS / Cambridge University Press & Assessment",
+          "paperUrl": "https://ielts.org/cdn/ielts-access-arrangements-sample-tests/ielts-modified-large-print/ielts-academic-reading-access-arrangement-modified-large-print-question-booklet.pdf",
+          "answerUrl": "https://ielts.org/cdn/ielts-access-arrangements-sample-tests/ielts-modified-large-print/ielts-academic-reading-access-arrangement-modified-large-print-sample-test-answer-key.pdf",
+          "specificationUrl": "https://ielts.org/take-a-test/booking-your-test/access-arrangements",
+          "language": "en",
+          "scope": "component",
+          "readNotes": [
+            "已读16页题册、16页三篇文章附册及2页答案；40题、每题1分、1小时加个人获批额外时间。",
+            "这是官方无障碍大字版样卷；文/题分册、姓名考号、TRUE/FALSE/NOT GIVEN等要求完整呈现。"
+          ],
+          "authoringLessons": [
+            "阅读题须与全文和题号范围绑定，区分FALSE与NOT GIVEN证据。",
+            "单词/数字限制、可接受拼写与配对复用规则逐题核对；不能把大字版页数当普通原卷分页。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 16,
+          "sha256": "d6c26a5799908c6a131c3d44288b0dd5b6b7767dbb769778a0e643be3dc414e2",
+          "answerEvidence": {
+            "url": "https://ielts.org/cdn/ielts-access-arrangements-sample-tests/ielts-modified-large-print/ielts-academic-reading-access-arrangement-modified-large-print-sample-test-answer-key.pdf",
+            "pages": 2,
+            "sha256": "05991f570c4aa6e7c690acfb5fe2ebd05e38e78733ea530a8e625f2af96aeacb"
+          },
+          "textUrl": "https://ielts.org/cdn/ielts-access-arrangements-sample-tests/ielts-modified-large-print/ielts-academic-reading-access-arrangement-modified-large-print-text-booklet.pdf",
+          "textEvidence": {
+            "pages": 16,
+            "sha256": "2ba2d0da08ff8b8230872044358ab4cf221916df276f11c5a7c52f08b3ca29ef"
+          }
+        }
+      ],
+      "gaps": [
+        "已具完整阅读组件，不代表Listening/Writing/Speaking整套IELTS考试。"
+      ]
+    },
+    {
+      "id": "ielts-writing",
+      "title": "IELTS Academic Writing — 官方两任务样卷",
+      "category": "languages",
+      "templateIds": [
+        "ielts-writing"
+      ],
+      "papers": [
+        {
+          "id": "ielts-academic-writing-access-arrangement-modified-large-print-question-paper",
+          "title": "IELTS Academic Writing Sample Test — Modified Large Print Version",
+          "year": 2024,
+          "board": "IELTS / Cambridge University Press & Assessment",
+          "paperUrl": "https://ielts.org/cdn/ielts-access-arrangements-sample-tests/ielts-modified-large-print/ielts-academic-writing-access-arrangement-modified-large-print-question-paper.pdf",
+          "answerUrl": "https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf",
+          "specificationUrl": "https://ielts.org/take-a-test/booking-your-test/access-arrangements",
+          "language": "en",
+          "scope": "component",
+          "readNotes": [
+            "已读16页完整两任务样卷及官方2023版Writing Band Descriptors；Task1表格比较、Task2论证，150/250最低词数，Task2权重为Task1两倍。",
+            "这是无障碍大字版，时间1小时另加批准额外时间；不称通用原卷。"
+          ],
+          "authoringLessons": [
+            "Task Achievement/Response、Coherence and Cohesion、Lexical Resource、Grammatical Range and Accuracy分别评价。",
+            "范文要准确使用给定数据并满足任务，说明可行论证路线和评分理由；不伪造官方范文。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
+          },
+          "pages": 16,
+          "sha256": "63da18c3c3e5d70058552a7f9319b3984b8700eda9bc2ab4e687c898ea4a9651",
+          "answerEvidence": {
+            "url": "https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf",
+            "pages": 9,
+            "sha256": "e3c88943ef92d98988ce4db454fd7fa8d8435f0b25e9ec667e3720a5c1168d1b"
+          }
+        }
+      ],
+      "gaps": [
+        "写作不存在唯一答案；当前样卷未提供官方对应范文，官方量表作为评分依据。"
+      ]
+    }
+  ]
+}

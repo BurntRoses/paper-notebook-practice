@@ -1,8 +1,8 @@
 # 试卷模板、来源与复现范围
 
-模板定义位于 `src/practice/templates.ts`，完整考试规格位于 `src/practice/exam-specifications.json`。所有版式均可离线导出，项目代码采用 MIT 许可。原题案例保留逐题出处，来源材料按各自许可使用。发布包不分发完整第三方源PDF或整页扫描图。4.0默认 `full`：规格确定题型、题量、题组、时间与分值，模板确定纸面呈现；用户明确选编时记录 `subset`。
+模板定义位于 `src/practice/templates.ts`，完整考试规格位于 `src/practice/exam-specifications.json`。所有版式均可离线导出，项目代码采用 MIT 许可。原题案例保留逐题出处，来源材料按各自许可使用。新增参考集合仅链接原始文件并提供有限原页缩略参考；既有原卷档案的具体收入范围与许可见数据清单。默认 `full`：规格确定题型、题量、题组、时间与分值，模板确定纸面呈现；用户明确选编时记录 `subset`。
 
-## 完整考试规格（4.0）
+## 完整考试规格
 
 `specs` 列出9个已核定规格。`plan --exam <id>` 选择规格，`--exam-spec specification.json` 保存Agent根据其他官方规定或完整原卷核定的规格，`--scope full|subset` 记录范围。`coverage practice.json` 核对当前题库与完整要求；缺失题组、共享材料、录音或答案由Agent完成后交付。
 
@@ -24,7 +24,7 @@
 
 ## 原题与原创完整案例
 
-`cases` 列出16份案例、218个可作答项、19个材料来源，包括14份原题案例和2份原创MIT完整四六级卷。`cases <id> --out practice.json` 写出可编辑作者源。每个案例对应 `source-<practiceId>` 模板，保存卷头、字阶、纸张和题组约定；目录的 `scope` 记录完整或选编，纸面标题保持其原始内容。
+`cases` 列出16份案例、235个可作答项、19个材料来源，包括14份原题案例和2份原创MIT完整四六级卷。`cases <id> --out practice.json` 写出可编辑作者源。每个案例对应 `source-<practiceId>` 模板，保存卷头、字阶、纸张和题组约定；目录的 `scope` 记录完整或选编，纸面标题保持其原始内容。
 
 |案例|范围|关键组织|
 |---|---|---|
@@ -153,3 +153,11 @@ IELTS PDF 已通过官方页面/PDF 文本读取；本机直连其 CDN 下载返
 | `biology-visual` | 生物实验 · 观察与图像 | A4 纵向；彩色 | [OpenStax Biology 2e: Studying Cells](https://openstax.org/books/biology-2e/pages/4-1-studying-cells) |
 
 新增范例使用项目原创题文和图像，含独立答案与按任务拆分的评分项。艺术色彩辨识题的图像标记 `colorRequired`；无等价灰度图时输出器要求保留彩印。科学图像同时使用标号、图例或线型，不以颜色作为唯一编码。日韩语采用对应 Noto 字体并随离线文件和 Word 嵌入，字体许可随包保留。
+
+## 真实参考卷集合与独立预览
+
+运行 `sources <template-id|route-id|collection-id>` 读取对应的真实题目、答案/评分、结构研究与具体缺口。中国与国际集合分别在 `authentic-china-papers.json`、`authentic-global-papers.json`，按 [reference-study.md](reference-study.md)用于命题。`plan` 同步输出匹配的 `reference-study.json`。
+
+目录按学段或考试用途分为小学、初中与中考、高中与高考、大学课程、研究生考试、公务员与招聘、职业资格、国际课程与升学、语言考试、公民与入籍、艺术与音乐及通用排版；学科以关键词筛选。版式详情分别提供原页预览/完整来源、可编辑示例和应用动作。查看不写入当前卷，应用保留当前内容；无当前卷时用所选版式定制。
+
+小学数学、语文、英语版式对应 `primary-math/chinese/english` 路线，按实际年级和地区课程出题。公开样卷与用户目标考试不一致时先核定身份和规则，不把地区性评估视作全国统一考试。

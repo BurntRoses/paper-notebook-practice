@@ -19,7 +19,7 @@ await include('skills/paper-notebook-practice');
 entries['WEB_CHAT.md']=new Uint8Array(await readFile(root+'WEB_CHAT.md'));
 entries['AGENTS.md']=new Uint8Array(await readFile(root+'AGENTS.md'));
 
-entries['README.txt']=strToU8('将 skills/paper-notebook-practice 安装到自己的 Agent 技能目录。命令行入口：node skills/paper-notebook-practice/scripts/practice.mjs help。routes 查看考试路线；topics 按需读取考公、考研、工程专题完整卷。基础组卷只需 Node.js 20.19+；扫描件 OCR 使用免费的本机 Python 与 Vision/Tesseract，安装方式见 Skill references/ocr-replica.md。MIT 免费开源。');
+entries['README.txt']=strToU8('将 skills/paper-notebook-practice 安装到自己的 Agent 技能目录。命令行入口：node skills/paper-notebook-practice/scripts/practice.mjs help。sources 按版式或考试路线读取真实样卷与评分集合；routes 查看考试路线；topics 按需读取考公、考研、工程专题完整卷。基础组卷只需 Node.js 20.19+；扫描件 OCR 使用免费的本机 Python 与 Vision/Tesseract，安装方式见 Skill references/ocr-replica.md。MIT 免费开源。');
 const skillZip=zipSync(entries);
 await writeFile(out+'/paper-notebook-practice-skill.zip',skillZip);
 const {loadPracticeStyles,buildPracticeHtml}=await tsImport('../src/practice/build.ts',import.meta.url);
@@ -44,6 +44,9 @@ await writeFile(out+'/paper-notebook-practice-preview.html',html);
 await writeFile(out+'/纸间-刷题工作台.html',html);
 await writeFile(out+'/index.html',html);
 const realCatalog=JSON.parse(await readFile(root+'src/practice/real-cases.json','utf8'));
+const {REFERENCE_COLLECTIONS,REFERENCE_PAPERS}=await tsImport('../src/practice/reference-papers.ts',import.meta.url);
+const referenceCatalog=JSON.stringify({collections:REFERENCE_COLLECTIONS,papers:REFERENCE_PAPERS},null,2);
+await writeFile(out+'/authentic-reference-catalog.json',referenceCatalog);
 await writeFile(out+'/real-exam-catalog.json',JSON.stringify(realCatalog,null,2));
 const example=JSON.parse(await readFile(root+'skills/paper-notebook-practice/examples/practice-example.json','utf8'));
 await writeFile(out+'/practice.json',JSON.stringify(example,null,2));
@@ -64,6 +67,7 @@ const releaseFiles={
  'examples/practice.json':strToU8(JSON.stringify(example,null,2)),
 };
 for(const label of ['试卷','答案卷','答题卡'])releaseFiles[`examples/《${example.title}》-${label}.html`]=new Uint8Array(await readFile(out+`/《${example.title}》-${label}.html`));
+releaseFiles['authentic-reference-catalog.json']=strToU8(referenceCatalog);
 releaseFiles['真实试卷与许可.md']=new Uint8Array(await readFile(root+'docs/exam-materials.md'));
 releaseFiles['real-exams/catalog.json']=new Uint8Array(await readFile(root+'skills/paper-notebook-practice/examples/real-exams/catalog.json'));
 for(const paper of realCatalog.cases)releaseFiles['real-exams/'+paper.practiceId+'.json']=strToU8(JSON.stringify(paper,null,2));
@@ -74,7 +78,7 @@ releaseFiles['topics/catalog.json']=strToU8(JSON.stringify(topicCatalog,null,2))
 releaseFiles['topics/manifest.json']=new Uint8Array(await readFile(out+'/topic-delivery-manifest.json'));
 await writeFile(out+`/paper-notebook-practice-v${version}.zip`,zipSync(releaseFiles));
 await writeFile(out+'/paper-notebook-practice.zip',zipSync(releaseFiles));
-await writeFile(out+'/release.json',JSON.stringify({version,license:'MIT',sources:realCatalog.sources.length,cases:realCatalog.cases.length,questions:realCatalog.cases.reduce((n,p)=>n+p.sections.reduce((m,s)=>m+s.questions.length,0),0),topics:{papers:topicCatalog.topics.length,questions:topicCatalog.topics.reduce((n,p)=>n+p.questionCount,0),families:[...new Set(topicCatalog.topics.map(p=>p.family))]}},null,2));
+await writeFile(out+'/release.json',JSON.stringify({version,license:'MIT',referenceStudy:{collections:REFERENCE_COLLECTIONS.length,papers:REFERENCE_PAPERS.length,scopes:[...new Set(REFERENCE_PAPERS.map(p=>p.scope))]},sources:realCatalog.sources.length,cases:realCatalog.cases.length,questions:realCatalog.cases.reduce((n,p)=>n+p.sections.reduce((m,s)=>m+s.questions.length,0),0),topics:{papers:topicCatalog.topics.length,questions:topicCatalog.topics.reduce((n,p)=>n+p.questionCount,0),families:[...new Set(topicCatalog.topics.map(p=>p.family))]}},null,2));
 // Ready-to-open complete papers are a separate download alongside the Agent Skill.
 const completeFiles={'使用说明.md':strToU8('两套完整四六级卷。每套含题目卷、答案卷、四面答题卡和可编辑题库。打开题目卷即可本机作答并播放听力；交卷后导入对应答案卷查看解析。四级125分钟，六级130分钟；100分按官方比例练习计分。原创内容MIT许可，官方大纲仅用于结构。'),LICENSE:new Uint8Array(await readFile(root+'LICENSE'))};
 for(const paper of realCatalog.cases.filter(p=>['complete-cet4-original-01','full-cet6-original-01'].includes(p.practiceId))){

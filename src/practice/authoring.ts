@@ -45,7 +45,7 @@ export function selectAuthoringStage(context:AuthoringContext):AuthoringStage|un
   return undefined;
  };
  const route=selectAuthoringRoute(context);
- const id=infer(context.level??'')??infer(context.grade??'')??(route?.family==='postgraduate'||route?.family==='engineering-course'?'university':route?.family==='engineering-qualification'?'vocational':undefined);
+ const id=infer(context.level??'')??infer(context.grade??'')??(route?.family==='postgraduate'||route?.family==='engineering-course'?'university':route?.family==='engineering-qualification'?'vocational':route?.family==='school-assessment'?'primary':undefined);
  return AUTHORING_STAGES.find(s=>s.id===id);
 }
 

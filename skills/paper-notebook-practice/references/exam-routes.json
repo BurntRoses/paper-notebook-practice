@@ -2,6 +2,10 @@
   "version": 1,
   "families": [
     {
+      "id": "school-assessment",
+      "name": "小学学科评估"
+    },
+    {
       "id": "civil-service",
       "name": "考公"
     },
@@ -39,6 +43,84 @@
     }
   ],
   "routes": [
+    {
+      "id": "primary-english",
+      "name": "小学 · 英语",
+      "family": "school-assessment",
+      "aliases": [
+        "小学英语",
+        "小学生英语"
+      ],
+      "subject": "英语",
+      "templateId": "primary-english",
+      "profileIds": [
+        "english"
+      ],
+      "referenceFiles": [
+        "reference-study.md",
+        "exam-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先确认年级、地区课程、教材进度与作答能力；参考同学段真实评估卷和评分，不将香港小六评估当作内地统一小升初考试。"
+      ],
+      "checks": [
+        "阅读负担、字词、数字范围与单位符合用户年级；不提前引入未学概念。",
+        "图示完整，书写空间与题目任务相符；独立解题并给出部分分。",
+        "按知识点与能力覆盖设计，不把低龄练习全部出成概念背诵。"
+      ]
+    },
+    {
+      "id": "primary-chinese",
+      "name": "小学 · 语文",
+      "family": "school-assessment",
+      "aliases": [
+        "小学语文",
+        "小学生语文"
+      ],
+      "subject": "语文",
+      "templateId": "primary-chinese",
+      "profileIds": [
+        "chinese"
+      ],
+      "referenceFiles": [
+        "reference-study.md",
+        "exam-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先确认年级、地区课程、教材进度与作答能力；参考同学段真实评估卷和评分，不将香港小六评估当作内地统一小升初考试。"
+      ],
+      "checks": [
+        "阅读负担、字词、数字范围与单位符合用户年级；不提前引入未学概念。",
+        "图示完整，书写空间与题目任务相符；独立解题并给出部分分。",
+        "按知识点与能力覆盖设计，不把低龄练习全部出成概念背诵。"
+      ]
+    },
+    {
+      "id": "primary-math",
+      "name": "小学 · 数学",
+      "family": "school-assessment",
+      "aliases": [
+        "小学数学",
+        "小学生数学"
+      ],
+      "subject": "数学",
+      "templateId": "primary-math",
+      "profileIds": [
+        "mathematics"
+      ],
+      "referenceFiles": [
+        "reference-study.md",
+        "exam-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先确认年级、地区课程、教材进度与作答能力；参考同学段真实评估卷和评分，不将香港小六评估当作内地统一小升初考试。"
+      ],
+      "checks": [
+        "阅读负担、字词、数字范围与单位符合用户年级；不提前引入未学概念。",
+        "图示完整，书写空间与题目任务相符；独立解题并给出部分分。",
+        "按知识点与能力覆盖设计，不把低龄练习全部出成概念背诵。"
+      ]
+    },
     {
       "id": "civil-aptitude",
       "name": "考公 · 行测",

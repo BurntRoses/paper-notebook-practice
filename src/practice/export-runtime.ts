@@ -20,7 +20,7 @@ export function paperExportRuntime(){
    for(const node of nodes)if(node.textContent?.trim()&&!node.parentElement?.closest('.katex,svg,.source-watermark,.seal')){const span=document.createElement('span');span.style.setProperty('color','transparent','important');span.style.setProperty('text-shadow','none','important');span.textContent=node.textContent;node.replaceWith(span);}
   }
   const body=document.createElement('div');for(const attr of Array.from(document.body.attributes))body.setAttribute(attr.name,attr.value);body.style.cssText=document.body.style.cssText+';margin:0!important;padding:0!important;background:white!important;width:'+width+'px!important;height:'+height+'px!important;overflow:hidden;';body.append(clone);
-  const css=Array.from(document.querySelectorAll('style')).map(e=>e.textContent??'').join('\n').replace(/\bbody(?=[\s\[.#:{>])/g,'.export-body');body.classList.add('export-body','print-preview');
+  const css=Array.from(document.querySelectorAll('style')).map(e=>e.textContent??'').join('\n').replace(/\bbody(?=[\s\[.#:{>])/g,'.export-body')+(textFree?'\n.export-body .option-letter::after{visibility:hidden!important}':'');body.classList.add('export-body','print-preview');
   const source='<svg xmlns="http://www.w3.org/2000/svg" width="'+width+'" height="'+height+'" viewBox="0 0 '+width+' '+height+'"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml"><style>'+css.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</style>'+new XMLSerializer().serializeToString(body)+'</div></foreignObject></svg>';
   const image=new Image();image.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(source);await image.decode();
   // WebKit completes embedded font/image paint on its next frame.
@@ -42,7 +42,11 @@ export function paperExportRuntime(){
    const text=node.textContent??'';if(!text.trim())continue;const style=getComputedStyle(parent),range=document.createRange();let at=0,line:Line|undefined;
    for(const ch of text){range.setStart(node,at);range.setEnd(node,at+ch.length);at+=ch.length;const r=range.getBoundingClientRect();if(r.width<.01||r.height<.01)continue;const x=(r.left-pageRect.left)*.75,y=(r.top-pageRect.top)*.75,width=r.width*.75,height=r.height*.75;
     if(!line||Math.abs(line.y-y)>.8||Math.abs(line.x+line.width-x)>3){line={text:ch,x,y,width,height,font:style.fontFamily,size:parseFloat(style.fontSize)*.75,bold:Number(style.fontWeight)>=600||style.fontWeight==='bold',italic:style.fontStyle==='italic',color:(style.color.match(/\d+/g)??['0','0','0']).slice(0,3).map(v=>Number(v).toString(16).padStart(2,'0')).join(''),spacing:parseFloat(style.letterSpacing)*.75||0,link:Boolean(parent.closest('.project-credit'))};lines.push(line);}else{line.text+=ch;line.width=x+width-line.x;}
-   }if(line&&node.nextSibling instanceof Element&&(node.nextSibling.matches('.katex')||node.nextSibling.querySelector('.katex')))line.beforeMath=true;range.detach();
+   }
+   // Export each option label and its generated full stop in the same editable run.
+   // Mixing a rasterized stop with Word's Latin glyph metrics shifts their baselines.
+   if(line&&parent.matches('.option-letter')&&getComputedStyle(parent,'::after').content==='"."'){line.text+='.';line.width=Math.max(line.width,(parent.getBoundingClientRect().right-pageRect.left)*.75-line.x);}
+   if(line&&node.nextSibling instanceof Element&&(node.nextSibling.matches('.katex')||node.nextSibling.querySelector('.katex')))line.beforeMath=true;range.detach();
   }return lines;
  }
  async function docx(pages:HTMLElement[],width:number,height:number,mark:boolean,onProgress:(s:string)=>void){

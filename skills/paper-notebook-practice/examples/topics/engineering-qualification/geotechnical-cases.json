@@ -1,0 +1,790 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-geotechnical-engineer-cases-01",
+  "notebookId": "registered-geotechnical-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册土木工程师（岩土）　专业案例",
+  "subject": "岩土工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册土木工程师（岩土）　专业案例",
+      "地基·边坡·桩基·地下水"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册土木工程师（岩土）　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "岩土工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "岩土工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-geotechnical-engineer",
+    "examName": "注册土木工程师（岩土）　专业案例",
+    "specialty": "地基·边坡·桩基·地下水",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-geotechnical-engineer-cases-01-q1",
+        "knowledge": "有效应力、降水、沉降机制",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-geotechnical-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-geotechnical-engineer-cases-01-q2",
+        "knowledge": "固结沉降、排水距离、固结历程",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-geotechnical-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-geotechnical-engineer-cases-01-q3",
+        "knowledge": "边坡稳定、渗流、参数反算、措施验证",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-geotechnical-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-geotechnical-engineer-cases-01-q4",
+        "knowledge": "桩基承载、负摩阻、中性点、单位",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-geotechnical-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-geotechnical-engineer-cases-01-q5",
+        "knowledge": "主动土压力、水压力、分布合成、排水失效",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-geotechnical-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-specialist-scope",
+      "kind": "reference",
+      "title": "2026勘察设计考试专业与作答要求",
+      "text": "2026湖北考试通知列明结构、岩土等注册专业，并说明一级结构专业与岩土专业案例在专用答题卡填涂所选项及填写计算步骤。本卷为原创五案例蓝图，具体承载模型、限值和参数逐题给定。",
+      "blocks": [
+        {
+          "id": "design-specialist-scope-block",
+          "title": "2026勘察设计考试专业与作答要求",
+          "text": "2026湖北考试通知列明结构、岩土等注册专业，并说明一级结构专业与岩土专业案例在专用答题卡填涂所选项及填写计算步骤。本卷为原创五案例蓝图，具体承载模型、限值和参数逐题给定。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "331c32c827f5eb42d9dd28407197ca8d3cff7324a0bae364d9b1977b28f34a19",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-geotechnical-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "地表至2m深为湿砂，重度18kN/m³；其下为饱和砂，饱和重度20kN/m³，地下水位初始在2m深。水重度9.81kN/m³。忽略毛细水，按静水孔压。\n（1）求地表下6m处总应力、孔压及竖向有效应力。\n（2）附近抽水使水位降到5m深。为本题近似，原湿层及原饱和层的总重度保持不变，不发生地表荷载变化；重算6m处有效应力并求增量。\n（3）说明抽水为何可能引起相邻地面沉降及还需哪些参数才能计算。",
+      "blocks": [
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "地表至2m深为湿砂，重度18kN/m³；其下为饱和砂，饱和重度20kN/m³，地下水位初始在2m深。水重度9.81kN/m³。忽略毛细水，按静水孔压。\n（1）求地表下6m处总应力、孔压及竖向有效应力。\n（2）附近抽水使水位降到5m深。为本题近似，原湿层及原饱和层的总重度保持不变，不发生地表荷载变化；重算6m处有效应力并求增量。\n（3）说明抽水为何可能引起相邻地面沉降及还需哪些参数才能计算。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "2c794a9f6101cecedbf415b5517e621b987e0a717526fdaa09b971b678c82e5a",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-geotechnical-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "4m厚正常固结黏土层，初始孔隙比0.80，压缩指数Cc=0.25，初始平均有效应力100kPa，加载后最终有效应力增加80kPa。按一维均匀应力模型s=H·Cc/(1+e₀)·log₁₀[(σ′₀+Δσ′)/σ′₀]。固结系数cv=1×10⁻⁷m²/s，上下双面排水；给定达到平均固结度50%时Tv=0.197。\n（1）求最终主固结沉降。\n（2）求达到50%沉降的时间。\n（3）若下边界不透水，其他不变，时间如何变化？并说明超固结土为何不能直接沿用本题Cc公式全过程。",
+      "blocks": [
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "4m厚正常固结黏土层，初始孔隙比0.80，压缩指数Cc=0.25，初始平均有效应力100kPa，加载后最终有效应力增加80kPa。按一维均匀应力模型s=H·Cc/(1+e₀)·log₁₀[(σ′₀+Δσ′)/σ′₀]。固结系数cv=1×10⁻⁷m²/s，上下双面排水；给定达到平均固结度50%时Tv=0.197。\n（1）求最终主固结沉降。\n（2）求达到50%沉降的时间。\n（3）若下边界不透水，其他不变，时间如何变化？并说明超固结土为何不能直接沿用本题Cc公式全过程。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "8420e29a59447031a3b5858f273add64b26c782b1b9289f89712921ce5bc99f4",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-geotechnical-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "无限边坡倾角25°，潜在滑面与坡面平行，竖直覆土厚度3m。有效强度c′=5kPa、φ′=32°。暴雨饱和且有平行坡面渗流时，按题给模型Fs=c′/(γsat·z·sinβ·cosβ)+[(γsat−γw)/γsat]·tanφ′/tanβ，γsat=20kN/m³。干燥无孔压情景改用γ=18，并删除浮重度折减项。项目要求Fs≥1.30。\n（1）分别计算两情景。\n（2）饱和情景若只增加c′，求满足目标所需c′。\n（3）说明为什么把排水作为措施时必须用真实孔压和出口条件复核，而不能直接套回干燥结果。",
+      "blocks": [
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "无限边坡倾角25°，潜在滑面与坡面平行，竖直覆土厚度3m。有效强度c′=5kPa、φ′=32°。暴雨饱和且有平行坡面渗流时，按题给模型Fs=c′/(γsat·z·sinβ·cosβ)+[(γsat−γw)/γsat]·tanφ′/tanβ，γsat=20kN/m³。干燥无孔压情景改用γ=18，并删除浮重度折减项。项目要求Fs≥1.30。\n（1）分别计算两情景。\n（2）饱和情景若只增加c′，求满足目标所需c′。\n（3）说明为什么把排水作为措施时必须用真实孔压和出口条件复核，而不能直接套回干燥结果。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "73a0ebf27c3fccb3c067ba67d3ea5f75e695b4fcd3834ef53e3e3d0403c2cd7d",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-geotechnical-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "圆形灌注桩直径0.60m、入土20m，全段采用均匀不排水黏土模型：cu=45kPa，侧阻系数α=0.60，端承系数Nc=9，极限轴向承载力Qult=αcuπdL+Nccuπd²/4。项目采用整体安全系数2.0。另因8m厚新填土区产生负摩阻力15kPa，按该8m全周作用，桩顶工作荷载800kN。题设正侧阻仍按20m计算，用于比较规定模型，不代表真实中性点分析。\n（1）求极限及容许承载力。\n（2）求下拉力并按“工作荷载+下拉力≤容许值”判定。\n（3）求在此模型下允许的最大桩顶工作荷载；说明真实负摩阻应如何处理。",
+      "blocks": [
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "圆形灌注桩直径0.60m、入土20m，全段采用均匀不排水黏土模型：cu=45kPa，侧阻系数α=0.60，端承系数Nc=9，极限轴向承载力Qult=αcuπdL+Nccuπd²/4。项目采用整体安全系数2.0。另因8m厚新填土区产生负摩阻力15kPa，按该8m全周作用，桩顶工作荷载800kN。题设正侧阻仍按20m计算，用于比较规定模型，不代表真实中性点分析。\n（1）求极限及容许承载力。\n（2）求下拉力并按“工作荷载+下拉力≤容许值”判定。\n（3）求在此模型下允许的最大桩顶工作荷载；说明真实负摩阻应如何处理。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "bd3b492eb4910f16e934bd5f8a8c927bbe174557c3c35cc75848decd267ff4bb",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-geotechnical-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "直立光滑挡土墙高6m，墙背水平填土，φ′=30°、黏聚力0，土的有效重度按题设统一取18kN/m³，地表均布附加荷载20kPa。采用Rankine主动系数Ka=(1−sinφ′)/(1+sinφ′)。\n（1）背水充分排除时，求土压力与附加荷载侧压力合力及其对墙底力矩。\n（2）若墙后全高积水，土的有效重度仍按18用于本题，另叠加γw=9.81的静水压力，求总合力与力矩。\n（3）判断排水堵塞增加的作用，并列排水/反滤系统核查要点；说明真实水下有效重度必须与孔压模型协调。",
+      "blocks": [
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "直立光滑挡土墙高6m，墙背水平填土，φ′=30°、黏聚力0，土的有效重度按题设统一取18kN/m³，地表均布附加荷载20kPa。采用Rankine主动系数Ka=(1−sinφ′)/(1+sinφ′)。\n（1）背水充分排除时，求土压力与附加荷载侧压力合力及其对墙底力矩。\n（2）若墙后全高积水，土的有效重度仍按18用于本题，另叠加γw=9.81的静水压力，求总合力与力矩。\n（3）判断排水堵塞增加的作用，并列排水/反滤系统核查要点；说明真实水下有效重度必须与孔压模型协调。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "ac5f9f26ae7a321eb228f03060c3bee6090f2f70120dfa7bd9545e9fc5a43bd0",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "地表至2m深为湿砂，重度18kN/m³；其下为饱和砂，饱和重度20kN/m³，地下水位初始在2m深。水重度9.81kN/m³。忽略毛细水，按静水孔压。\n（1）求地表下6m处总应力、孔压及竖向有效应力。\n（2）附近抽水使水位降到5m深。为本题近似，原湿层及原饱和层的总重度保持不变，不发生地表荷载变化；重算6m处有效应力并求增量。\n（3）说明抽水为何可能引起相邻地面沉降及还需哪些参数才能计算。",
+          "score": 20,
+          "solution": "初始总应力116kPa，孔压39.24kPa，有效应力76.76kPa。降水后总应力按题设仍116，孔压9.81，有效106.19，增加29.43kPa。孔压下降提高骨架应力，压缩土层可能固结/压缩沉降；需土层分布、压缩性、排水与时间参数及建筑物敏感性，不可只凭水位降幅直接算沉降。",
+          "explanation": "σ′=σ−u；初始有效饱和厚4m，降水后6m点在新水面下1m。题目明确固定总重度是隔离孔压效应的近似，真实降水后重度、非饱和状态和三维渗流需重新核定。",
+          "source": {
+            "materialId": "registered-geotechnical-engineer-cases-01-q1-source",
+            "blockId": "registered-geotechnical-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "地表至2m深为湿砂，重度18kN/m³；其下为饱和砂，饱和重度20kN/m³，地下水位初始在2m深。水重度9.81kN/m³。忽略毛细水，按静水孔压。\n（1）求地表下6m处总应力、孔压及竖向有效应力。\n（2）附近抽水使水位降到5m深。为本题近似，原湿层及原饱和层的总重度保持不变，不发生地表荷载变化；重算6m处有效应力并求增量。\n（3）说明抽水为何可能引起相邻地面沉降及还需哪些参数才能计算。"
+          },
+          "chapter": "有效应力",
+          "tags": [
+            "有效应力",
+            "降水",
+            "沉降机制"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "有效应力",
+              "降水",
+              "沉降机制"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "初始三应力正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "降水后三应力及增量",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "骨架应力与沉降因果机制",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "真实参数与固定重度近似",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-initial-effective: independent Python calculation = 76.76; expected = 76.76; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-drawdown-effective: independent Python calculation = 106.19; expected = 106.19; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-effective-increase: independent Python calculation = 29.43; expected = 29.43; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "4m厚正常固结黏土层，初始孔隙比0.80，压缩指数Cc=0.25，初始平均有效应力100kPa，加载后最终有效应力增加80kPa。按一维均匀应力模型s=H·Cc/(1+e₀)·log₁₀[(σ′₀+Δσ′)/σ′₀]。固结系数cv=1×10⁻⁷m²/s，上下双面排水；给定达到平均固结度50%时Tv=0.197。\n（1）求最终主固结沉降。\n（2）求达到50%沉降的时间。\n（3）若下边界不透水，其他不变，时间如何变化？并说明超固结土为何不能直接沿用本题Cc公式全过程。",
+          "score": 20,
+          "solution": "最终沉降141.818058mm；双面排水距离2m，t₅₀=91.203704d，50%主固结沉降70.909029mm。单面排水距离4m，时间4倍为364.814815d。超固结土需先期固结压力及回弹再压缩参数，不能全程按正常固结直线。",
+          "explanation": "Tv=cv t/Hdr²，H为土层厚度，Hdr为最大排水路径，二者不可混淆。log₁₀与自然对数不能互换而不改系数；时间估计未计次固结和施工逐级加载效应。",
+          "source": {
+            "materialId": "registered-geotechnical-engineer-cases-01-q2-source",
+            "blockId": "registered-geotechnical-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "4m厚正常固结黏土层，初始孔隙比0.80，压缩指数Cc=0.25，初始平均有效应力100kPa，加载后最终有效应力增加80kPa。按一维均匀应力模型s=H·Cc/(1+e₀)·log₁₀[(σ′₀+Δσ′)/σ′₀]。固结系数cv=1×10⁻⁷m²/s，上下双面排水；给定达到平均固结度50%时Tv=0.197。\n（1）求最终主固结沉降。\n（2）求达到50%沉降的时间。\n（3）若下边界不透水，其他不变，时间如何变化？并说明超固结土为何不能直接沿用本题Cc公式全过程。"
+          },
+          "chapter": "固结沉降",
+          "tags": [
+            "固结沉降",
+            "排水距离",
+            "固结历程"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "固结沉降",
+              "排水距离",
+              "固结历程"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "对数沉降141.8181mm正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "双排水2m与91.2037d",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "单排水4倍",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "先期压力和模型边界",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-consolidation-settlement: independent Python calculation = 0.1418180584; expected = 0.1418180584; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-t50-days: independent Python calculation = 91.2037037; expected = 91.2037037; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-single-double-time-ratio: independent Python calculation = 4; expected = 4; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "无限边坡倾角25°，潜在滑面与坡面平行，竖直覆土厚度3m。有效强度c′=5kPa、φ′=32°。暴雨饱和且有平行坡面渗流时，按题给模型Fs=c′/(γsat·z·sinβ·cosβ)+[(γsat−γw)/γsat]·tanφ′/tanβ，γsat=20kN/m³。干燥无孔压情景改用γ=18，并删除浮重度折减项。项目要求Fs≥1.30。\n（1）分别计算两情景。\n（2）饱和情景若只增加c′，求满足目标所需c′。\n（3）说明为什么把排水作为措施时必须用真实孔压和出口条件复核，而不能直接套回干燥结果。",
+          "score": 20,
+          "solution": "饱和Fs=0.900317，干燥Fs=1.581779；前者不满足，后者满足。饱和情景所需c′≥14.185258kPa。排水效果必须由孔压/水位与排水能力证实，不能假定暴雨即刻成为干坡；黏聚提升也需强度与耐久试验。",
+          "explanation": "z按题给竖直厚度，不应换成法向厚度而仍沿用同一公式。黏聚、摩擦及渗流是不同项；仅增加自重不一定提高稳定性。无限边坡模型不覆盖深层圆弧、三维或局部坡脚破坏。",
+          "source": {
+            "materialId": "registered-geotechnical-engineer-cases-01-q3-source",
+            "blockId": "registered-geotechnical-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "无限边坡倾角25°，潜在滑面与坡面平行，竖直覆土厚度3m。有效强度c′=5kPa、φ′=32°。暴雨饱和且有平行坡面渗流时，按题给模型Fs=c′/(γsat·z·sinβ·cosβ)+[(γsat−γw)/γsat]·tanφ′/tanβ，γsat=20kN/m³。干燥无孔压情景改用γ=18，并删除浮重度折减项。项目要求Fs≥1.30。\n（1）分别计算两情景。\n（2）饱和情景若只增加c′，求满足目标所需c′。\n（3）说明为什么把排水作为措施时必须用真实孔压和出口条件复核，而不能直接套回干燥结果。"
+          },
+          "chapter": "边坡稳定",
+          "tags": [
+            "边坡稳定",
+            "渗流",
+            "参数反算",
+            "措施验证"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "边坡稳定",
+              "渗流",
+              "参数反算",
+              "措施验证"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "饱和与干燥Fs正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "分别与1.30比较",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "c′反算正确",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "孔压证据及模型适用性",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-saturated-slope-Fs: independent Python calculation = 0.9003165545; expected = 0.9003165545; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-dry-slope-Fs: independent Python calculation = 1.58177874; expected = 1.58177874; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "圆形灌注桩直径0.60m、入土20m，全段采用均匀不排水黏土模型：cu=45kPa，侧阻系数α=0.60，端承系数Nc=9，极限轴向承载力Qult=αcuπdL+Nccuπd²/4。项目采用整体安全系数2.0。另因8m厚新填土区产生负摩阻力15kPa，按该8m全周作用，桩顶工作荷载800kN。题设正侧阻仍按20m计算，用于比较规定模型，不代表真实中性点分析。\n（1）求极限及容许承载力。\n（2）求下拉力并按“工作荷载+下拉力≤容许值”判定。\n（3）求在此模型下允许的最大桩顶工作荷载；说明真实负摩阻应如何处理。",
+          "score": 20,
+          "solution": "正侧阻1017.876020kN、端阻114.511052kN，Qult=1132.387072kN，容许566.193536kN；下拉力226.194671kN，合计1026.194671kN，不满足。最大桩顶工作荷载339.998865kN。真实工程须核定中性点、土桩相对沉降、正负侧阻分区与桩身内力，不能不加区分地双计同段侧阻。",
+          "explanation": "侧面积πdL与端面积πd²/4应分别使用。负摩阻作为下拉作用，本题不再以另外一次承载折减重复扣除。按实际中性点分析可改变正阻力长度与最大轴力位置，需结合勘察和沉降而不是把本题简化公式直接推广。",
+          "source": {
+            "materialId": "registered-geotechnical-engineer-cases-01-q4-source",
+            "blockId": "registered-geotechnical-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "圆形灌注桩直径0.60m、入土20m，全段采用均匀不排水黏土模型：cu=45kPa，侧阻系数α=0.60，端承系数Nc=9，极限轴向承载力Qult=αcuπdL+Nccuπd²/4。项目采用整体安全系数2.0。另因8m厚新填土区产生负摩阻力15kPa，按该8m全周作用，桩顶工作荷载800kN。题设正侧阻仍按20m计算，用于比较规定模型，不代表真实中性点分析。\n（1）求极限及容许承载力。\n（2）求下拉力并按“工作荷载+下拉力≤容许值”判定。\n（3）求在此模型下允许的最大桩顶工作荷载；说明真实负摩阻应如何处理。"
+          },
+          "chapter": "桩基承载",
+          "tags": [
+            "桩基承载",
+            "负摩阻",
+            "中性点",
+            "单位"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "桩基承载",
+              "负摩阻",
+              "中性点",
+              "单位"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "侧阻/端阻与极限/容许",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "下拉力226.1947与不满足",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "桩顶允许荷载",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "真实中性点及不双计",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-pile-side: independent Python calculation = 1017.87602; expected = 1017.87602; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-pile-tip: independent Python calculation = 114.5110522; expected = 114.5110522; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-dragload: independent Python calculation = 226.1946711; expected = 226.1946711; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-geotechnical-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "直立光滑挡土墙高6m，墙背水平填土，φ′=30°、黏聚力0，土的有效重度按题设统一取18kN/m³，地表均布附加荷载20kPa。采用Rankine主动系数Ka=(1−sinφ′)/(1+sinφ′)。\n（1）背水充分排除时，求土压力与附加荷载侧压力合力及其对墙底力矩。\n（2）若墙后全高积水，土的有效重度仍按18用于本题，另叠加γw=9.81的静水压力，求总合力与力矩。\n（3）判断排水堵塞增加的作用，并列排水/反滤系统核查要点；说明真实水下有效重度必须与孔压模型协调。",
+          "score": 20,
+          "solution": "Ka=1/3，土压力108kN/m作用于底上2m，附加荷载侧力40kN/m作用于3m；排水情景总148kN/m、力矩336kN·m/m。积水增加176.58kN/m与353.16kN·m/m；总324.58kN/m、689.16kN·m/m。须检查反滤、排水孔、出口、堵塞与监测，真实饱和土有效重度应按一致模型取得，不能重复计水。",
+          "explanation": "土自重产生三角分布，均布附加荷载产生矩形分布，水压力又是三角分布；不能全部用H/3作用臂。题目明确固定有效重度用于展示水压力影响，非宣称地下水变化时土参数必定不变。",
+          "source": {
+            "materialId": "registered-geotechnical-engineer-cases-01-q5-source",
+            "blockId": "registered-geotechnical-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "直立光滑挡土墙高6m，墙背水平填土，φ′=30°、黏聚力0，土的有效重度按题设统一取18kN/m³，地表均布附加荷载20kPa。采用Rankine主动系数Ka=(1−sinφ′)/(1+sinφ′)。\n（1）背水充分排除时，求土压力与附加荷载侧压力合力及其对墙底力矩。\n（2）若墙后全高积水，土的有效重度仍按18用于本题，另叠加γw=9.81的静水压力，求总合力与力矩。\n（3）判断排水堵塞增加的作用，并列排水/反滤系统核查要点；说明真实水下有效重度必须与孔压模型协调。"
+          },
+          "chapter": "主动土压力",
+          "tags": [
+            "主动土压力",
+            "水压力",
+            "分布合成",
+            "排水失效"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "主动土压力",
+              "水压力",
+              "分布合成",
+              "排水失效"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "Ka及土/附加合力作用点",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "排水总力148/矩336",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "积水总力324.58/矩689.16",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "排水反滤与有效应力一致性",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-active-Ka: independent Python calculation = 0.3333333333; expected = 0.3333333333; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-wall-dry-force: independent Python calculation = 148; expected = 148; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-wall-water-force: independent Python calculation = 176.58; expected = 176.58; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "geotechnical-wall-total-moment: independent Python calculation = 689.16; expected = 689.16; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-geotechnical-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-geotechnical-engineer-project-blueprint",
+      "name": "岩土工程专业案例案例能力蓝图",
+      "subject": "岩土工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-geotechnical-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-geotechnical-engineer-cases-01-q1",
+      "registered-geotechnical-engineer-cases-01-q2",
+      "registered-geotechnical-engineer-cases-01-q3",
+      "registered-geotechnical-engineer-cases-01-q4",
+      "registered-geotechnical-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

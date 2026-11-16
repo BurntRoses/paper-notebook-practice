@@ -1,0 +1,881 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "safety-engineering-course-01",
+  "notebookId": "safety-engineering-source",
+  "notebookRevision": 1,
+  "title": "安全工程分析与控制课程考试",
+  "subject": "安全工程分析与控制",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "安全工程分析与控制课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "safety-engineering-scope",
+      "title": "MIT 16.863J System Safety",
+      "kind": "reference",
+      "url": "https://www.ocw.mit.edu/courses/16-863j-system-safety-spring-2016/",
+      "text": "system and software hazard analysis, designing for safety, fault tolerance",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2016",
+        "accessedAt": "2026-11-16",
+        "url": "https://www.ocw.mit.edu/courses/16-863j-system-safety-spring-2016/"
+      }
+    },
+    {
+      "id": "safety-engineering-q1-statement",
+      "title": "安全工程分析与控制第1题命题原稿",
+      "kind": "question-bank",
+      "text": "某教学装置顶事件为$T=A\\lor(B\\land C)$，A、B、C表示同一任务期内部件失效，概率分别0.01、0.02、0.03，三者独立。（1）列最小割集；（2）求精确顶事件概率，并比较直接相加近似；（3）分别把A或B的失效概率降低一半，比较收益；（4）若B、C有未量化共同原因，原乘法是否仍有依据？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "safety-engineering-q2-statement",
+      "title": "安全工程分析与控制第2题命题原稿",
+      "kind": "question-bank",
+      "text": "教学模型中起始异常发生率0.20次/年。异常后检测成功概率0.90；在检测成功条件下隔离成功概率0.95。检测失败或隔离失败都导致释放；无释放时后果为零。发生释放后，独立的被动缓解使严重后果避免概率0.80。（1）列完整分支及年频率；（2）求释放与严重后果年频率；（3）若把0.95当无条件值并把0.90与0.95相加，有何问题？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "safety-engineering-q3-statement",
+      "title": "安全工程分析与控制第3题命题原稿",
+      "kind": "question-bank",
+      "text": "仅作课程计算：100 m³完全混合空间初始浓度为零，污染物恒速释放30 mg/s，新风0.50 m³/s且不含污染物，等量排风，不吸附、不反应。（1）建立浓度方程并求解；（2）浓度何时首次到达题设比较值20 mg/m³；（3）判断能否靠该风量使长期浓度不超过20；（4）求稳态不超过20所需最小风量，并说明完全混合近似不证明局部源附近浓度。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "safety-engineering-q4-statement",
+      "title": "安全工程分析与控制第4题命题原稿",
+      "kind": "question-bank",
+      "text": "某教学记录包含2 h声级94 dB、6 h声级82 dB，各时段内恒定，按8 h能量等效定义$L_{eq}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$。（1）求8 h等效声级；（2）仅在高声级工段通过设备改造降低6 dB，重算；（3）高工段降低6 dB为何不代表总等效声级也降低6 dB；（4）说明为什么不能直接作分贝算术平均。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "safety-engineering-q5-statement",
+      "title": "安全工程分析与控制第5题命题原稿",
+      "kind": "question-bank",
+      "text": "三通道保护系统采用2取3成功逻辑，各通道任务成功概率0.98且相互独立。（1）求系统成功概率；（2）现另有概率0.005的共同供电失效，会同时使三通道失败；共同供电正常条件下各通道仍按上述独立概率工作，求实际系统成功概率；（3）列独立通道故障的最小割集，并解释为何单纯加通道不解决共同供电。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "safety-engineering-q6-statement",
+      "title": "安全工程分析与控制第6题命题原稿",
+      "kind": "question-bank",
+      "text": "教学设备有门闭G、区域无人C、人工复位R、启动按钮S四个布尔输入。设状态SAFE、ARMED、RUN，初态SAFE。每次扫描：若¬G或¬C，立即转SAFE；否则SAFE仅在R=1时转ARMED（同次即使S=1也不运行），ARMED在S=1时转RUN，其余保持；RUN在G∧C成立时保持。（1）写转移表或伪代码；（2）依次输入GC/RS为11/11、11/01、01/00、11/01、11/10、11/01，求状态序列；（3）证明开门再关门且未复位不会自动再启动；（4）仅用RUN=G∧C∧S为何未满足本题要求？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "safety-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "safety-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "某教学装置顶事件为$T=A\\lor(B\\land C)$，A、B、C表示同一任务期内部件失效，概率分别0.01、0.02、0.03，三者独立。（1）列最小割集；（2）求精确顶事件概率，并比较直接相加近似；（3）分别把A或B的失效概率降低一半，比较收益；（4）若B、C有未量化共同原因，原乘法是否仍有依据？",
+          "score": 15,
+          "solution": "最小割集{A}、{B,C}；$P(T)=0.01+0.99\\times0.02\\times0.03=0.010594$。直接相加为0.0106，重复计入交集0.000006。A减半得0.005597，B减半得0.010297，前者改善更大。",
+          "explanation": "按互斥分解A或(非A且B且C)可避免重复。A减半改善0.004997，B减半改善0.000297；不是简单按部件数量平均分配。独立性是数值乘法的条件，共同原因改变联合分布，需另建事件与条件概率，不能自动沿用PBPC。",
+          "source": {
+            "materialId": "safety-engineering-q1-statement",
+            "blockId": "safety-engineering-q1-statement",
+            "exact": "某教学装置顶事件为$T=A\\lor(B\\land C)$，A、B、C表示同一任务期内部件失效，概率分别0.01、0.02、0.03，三者独立。（1）列最小割集；（2）求精确顶事件概率，并比较直接相加近似；（3）分别把A或B的失效概率降低一半，比较收益；（4）若B、C有未量化共同原因，原乘法是否仍有依据？"
+          },
+          "chapter": "故障树与最小割集",
+          "tags": [
+            "安全工程分析与控制",
+            "故障树与最小割集",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "故障树与最小割集"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "safety-engineering-scope",
+                "blockId": "safety-engineering-scope",
+                "exact": "system and software hazard analysis, designing for safety, fault tolerance"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "最小割集与逻辑正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "safety-engineering-q1-statement",
+                    "blockId": "safety-engineering-q1-statement",
+                    "exact": "某教学装置顶事件为$T=A\\lor(B\\land C)$，A、B、C表示同一任务期内部件失效，概率分别0.01、0.02、0.03，三者独立。（1）列最小割集；（2）求精确顶事件概率，并比较直接相加近似；（3）分别把A或B的失效概率降低一半，比较收益；（4）若B、C有未量化共同原因，原乘法是否仍有依据？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "精确概率和近似差正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "两方案数值和收益正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "共同原因条件解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q1 exhaustive probability",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q1 exhaustive probability\", \"actual\": 0.010594, \"expected\": 0.010594, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q1 A upgrade",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q1 A upgrade\", \"actual\": 0.005597, \"expected\": 0.005597, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q1 B upgrade",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q1 B upgrade\", \"actual\": 0.010297, \"expected\": 0.010297, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "safety-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "教学模型中起始异常发生率0.20次/年。异常后检测成功概率0.90；在检测成功条件下隔离成功概率0.95。检测失败或隔离失败都导致释放；无释放时后果为零。发生释放后，独立的被动缓解使严重后果避免概率0.80。（1）列完整分支及年频率；（2）求释放与严重后果年频率；（3）若把0.95当无条件值并把0.90与0.95相加，有何问题？",
+          "score": 15,
+          "solution": "完整末端：检测失败、缓解成功0.016次/年；检测失败、缓解失败0.004次/年；检出但隔离失败、缓解成功0.0072次/年；检出但隔离失败、缓解失败0.0018次/年；成功隔离无释放0.171次/年。五个末端合计0.20次/年。总释放0.020+0.009=0.029次/年；严重后果0.004+0.0018=0.0058次/年。",
+          "explanation": "事件树沿路径乘条件概率，在互斥末端之间相加。释放概率为0.10+0.90×0.05=0.145，而非两个屏障成功率相加。缓解概率只作用于已释放分支，不能把0.8直接从异常年频率中减去。年频率单位与无量纲概率分别保留。",
+          "source": {
+            "materialId": "safety-engineering-q2-statement",
+            "blockId": "safety-engineering-q2-statement",
+            "exact": "教学模型中起始异常发生率0.20次/年。异常后检测成功概率0.90；在检测成功条件下隔离成功概率0.95。检测失败或隔离失败都导致释放；无释放时后果为零。发生释放后，独立的被动缓解使严重后果避免概率0.80。（1）列完整分支及年频率；（2）求释放与严重后果年频率；（3）若把0.95当无条件值并把0.90与0.95相加，有何问题？"
+          },
+          "chapter": "事件树与条件成功概率",
+          "tags": [
+            "安全工程分析与控制",
+            "事件树与条件成功概率",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "事件树与条件成功概率"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "safety-engineering-scope",
+                "blockId": "safety-engineering-scope",
+                "exact": "system and software hazard analysis, designing for safety, fault tolerance"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "完整互斥路径及条件概率正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "safety-engineering-q2-statement",
+                    "blockId": "safety-engineering-q2-statement",
+                    "exact": "教学模型中起始异常发生率0.20次/年。异常后检测成功概率0.90；在检测成功条件下隔离成功概率0.95。检测失败或隔离失败都导致释放；无释放时后果为零。发生释放后，独立的被动缓解使严重后果避免概率0.80。（1）列完整分支及年频率；（2）求释放与严重后果年频率；（3）若把0.95当无条件值并把0.90与0.95相加，有何问题？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两类频率及单位正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "路径闭合和错误算法解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q2 event branches sum",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q2 event branches sum\", \"actual\": 0.2, \"expected\": 0.2, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q2 all five terminal paths",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q2 all five terminal paths\", \"actual\": 0.2, \"expected\": 0.2, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q2 severe rate",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q2 severe rate\", \"actual\": 0.005800000000000001, \"expected\": 0.0058, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "safety-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "仅作课程计算：100 m³完全混合空间初始浓度为零，污染物恒速释放30 mg/s，新风0.50 m³/s且不含污染物，等量排风，不吸附、不反应。（1）建立浓度方程并求解；（2）浓度何时首次到达题设比较值20 mg/m³；（3）判断能否靠该风量使长期浓度不超过20；（4）求稳态不超过20所需最小风量，并说明完全混合近似不证明局部源附近浓度。",
+          "score": 15,
+          "solution": "$100\\dot C=30-0.5C$，$C=60(1-e^{-0.005t})$ mg/m³；到20需$t=-200\\ln(2/3)=81.093022$ s。原风量稳态60，不能满足；稳态≤20需Q≥1.5 m³/s。",
+          "explanation": "对控制体列输入−输出=积累，时间常数V/Q=200 s。稳态是G/Q，不能把总释放率直接当作浓度；有限时间低于比较值不代表长期满足。新风与有效通风量还需工况核实，局部暴露、死角和短路不在本均匀模型中。题给20仅为计算比较值，不声称法定限值。",
+          "source": {
+            "materialId": "safety-engineering-q3-statement",
+            "blockId": "safety-engineering-q3-statement",
+            "exact": "仅作课程计算：100 m³完全混合空间初始浓度为零，污染物恒速释放30 mg/s，新风0.50 m³/s且不含污染物，等量排风，不吸附、不反应。（1）建立浓度方程并求解；（2）浓度何时首次到达题设比较值20 mg/m³；（3）判断能否靠该风量使长期浓度不超过20；（4）求稳态不超过20所需最小风量，并说明完全混合近似不证明局部源附近浓度。"
+          },
+          "chapter": "通风稀释的瞬态模型",
+          "tags": [
+            "安全工程分析与控制",
+            "通风稀释的瞬态模型",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "通风稀释的瞬态模型"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "safety-engineering-scope",
+                "blockId": "safety-engineering-scope",
+                "exact": "system and software hazard analysis, designing for safety, fault tolerance"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "控制体/单位与解析解正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "safety-engineering-q3-statement",
+                    "blockId": "safety-engineering-q3-statement",
+                    "exact": "仅作课程计算：100 m³完全混合空间初始浓度为零，污染物恒速释放30 mg/s，新风0.50 m³/s且不含污染物，等量排风，不吸附、不反应。（1）建立浓度方程并求解；（2）浓度何时首次到达题设比较值20 mg/m³；（3）判断能否靠该风量使长期浓度不超过20；（4）求稳态不超过20所需最小风量，并说明完全混合近似不证明局部源附近浓度。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "到达时间和稳态正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "风量约束与模型范围正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q3 ODE target",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q3 ODE target\", \"actual\": 20.000000000000004, \"expected\": 20, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q3 steady source removal",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q3 steady source removal\", \"actual\": 30.0, \"expected\": 30, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "safety-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "某教学记录包含2 h声级94 dB、6 h声级82 dB，各时段内恒定，按8 h能量等效定义$L_{eq}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$。（1）求8 h等效声级；（2）仅在高声级工段通过设备改造降低6 dB，重算；（3）高工段降低6 dB为何不代表总等效声级也降低6 dB；（4）说明为什么不能直接作分贝算术平均。",
+          "score": 15,
+          "solution": "原等效88.732268 dB；改造后84.418621 dB，总下降4.313646 dB。直接时间加权分贝85 dB不等于能量等效结果。",
+          "explanation": "先将对数声级还原为相对能量，按时间相加，再取对数。改造仅改变2小时工段，剩余6小时能量保持不变，因而总降幅小于该工段6 dB。这里只比较题给等效定义，未给频率计权、测量位置和特定法规，不能额外宣布职业限值符合性。",
+          "source": {
+            "materialId": "safety-engineering-q4-statement",
+            "blockId": "safety-engineering-q4-statement",
+            "exact": "某教学记录包含2 h声级94 dB、6 h声级82 dB，各时段内恒定，按8 h能量等效定义$L_{eq}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$。（1）求8 h等效声级；（2）仅在高声级工段通过设备改造降低6 dB，重算；（3）高工段降低6 dB为何不代表总等效声级也降低6 dB；（4）说明为什么不能直接作分贝算术平均。"
+          },
+          "chapter": "分贝能量叠加与源头治理",
+          "tags": [
+            "安全工程分析与控制",
+            "分贝能量叠加与源头治理",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "分贝能量叠加与源头治理"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "safety-engineering-scope",
+                "blockId": "safety-engineering-scope",
+                "exact": "system and software hazard analysis, designing for safety, fault tolerance"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "能量基准和8h加权正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "safety-engineering-q4-statement",
+                    "blockId": "safety-engineering-q4-statement",
+                    "exact": "某教学记录包含2 h声级94 dB、6 h声级82 dB，各时段内恒定，按8 h能量等效定义$L_{eq}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$。（1）求8 h等效声级；（2）仅在高声级工段通过设备改造降低6 dB，重算；（3）高工段降低6 dB为何不代表总等效声级也降低6 dB；（4）说明为什么不能直接作分贝算术平均。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "改造前后和降幅正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "对数/局部控制解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q4 energy reconstruction",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q4 energy reconstruction\", \"actual\": 5974708778.49583, \"expected\": 5974708778.495831, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q4 lowered source energy ratio",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q4 lowered source energy ratio\", \"actual\": 0.25118864315095824, \"expected\": 0.251188643150958, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "safety-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "三通道保护系统采用2取3成功逻辑，各通道任务成功概率0.98且相互独立。（1）求系统成功概率；（2）现另有概率0.005的共同供电失效，会同时使三通道失败；共同供电正常条件下各通道仍按上述独立概率工作，求实际系统成功概率；（3）列独立通道故障的最小割集，并解释为何单纯加通道不解决共同供电。",
+          "score": 20,
+          "solution": "独立模型成功率$0.98^3+3(0.98)^2(0.02)=0.998816$。含共同电源后为0.995×0.998816=0.993821920。通道故障最小割集为{1,2}、{1,3}、{2,3}；共同供电失效自身也是单事件割集。",
+          "explanation": "2取3成功包含恰好两条成功和三条成功互斥情形。共同供电失效应在系统层单独列入，而不是把0.005各自独立地分配给每个通道后继续乘。电源分离、监测与故障隔离须针对共因设计，不能以名义冗余数替代系统分析。",
+          "source": {
+            "materialId": "safety-engineering-q5-statement",
+            "blockId": "safety-engineering-q5-statement",
+            "exact": "三通道保护系统采用2取3成功逻辑，各通道任务成功概率0.98且相互独立。（1）求系统成功概率；（2）现另有概率0.005的共同供电失效，会同时使三通道失败；共同供电正常条件下各通道仍按上述独立概率工作，求实际系统成功概率；（3）列独立通道故障的最小割集，并解释为何单纯加通道不解决共同供电。"
+          },
+          "chapter": "冗余投票与共同原因",
+          "tags": [
+            "安全工程分析与控制",
+            "冗余投票与共同原因",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "冗余投票与共同原因"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "safety-engineering-scope",
+                "blockId": "safety-engineering-scope",
+                "exact": "system and software hazard analysis, designing for safety, fault tolerance"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "投票组合及成功率正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "safety-engineering-q5-statement",
+                    "blockId": "safety-engineering-q5-statement",
+                    "exact": "三通道保护系统采用2取3成功逻辑，各通道任务成功概率0.98且相互独立。（1）求系统成功概率；（2）现另有概率0.005的共同供电失效，会同时使三通道失败；共同供电正常条件下各通道仍按上述独立概率工作，求实际系统成功概率；（3）列独立通道故障的最小割集，并解释为何单纯加通道不解决共同供电。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "条件概率合成正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "割集和共同原因控制理由正确",
+                "points": 8
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q5 success-state enumeration",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q5 success-state enumeration\", \"actual\": 0.9988159999999999, \"expected\": 0.998816, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q5 shared supply",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q5 shared supply\", \"actual\": 0.99382192, \"expected\": 0.99382192, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "safety-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "教学设备有门闭G、区域无人C、人工复位R、启动按钮S四个布尔输入。设状态SAFE、ARMED、RUN，初态SAFE。每次扫描：若¬G或¬C，立即转SAFE；否则SAFE仅在R=1时转ARMED（同次即使S=1也不运行），ARMED在S=1时转RUN，其余保持；RUN在G∧C成立时保持。（1）写转移表或伪代码；（2）依次输入GC/RS为11/11、11/01、01/00、11/01、11/10、11/01，求状态序列；（3）证明开门再关门且未复位不会自动再启动；（4）仅用RUN=G∧C∧S为何未满足本题要求？",
+          "score": 20,
+          "solution": "序列为ARMED、RUN、SAFE、SAFE、ARMED、RUN。优先处理G或C失效；SAFE复位只能预备，下一扫描才可接受启动。关门后仍处SAFE，缺R不能进入ARMED，因此持续按启动也不自动运行。",
+          "explanation": "按扫描前旧状态求唯一新状态，不能在一次扫描内把SAFE→ARMED→RUN连续执行。状态不变量：RUN只可能在G∧C成立时保持或进入；发生任一安全条件失效后，必须重新经过有效复位和后续启动。组合逻辑G∧C∧S没有复位记忆，S持续时关门即可起动。此题验证离散控制逻辑；真实系统还需器件故障、响应时间和独立安全功能设计。",
+          "source": {
+            "materialId": "safety-engineering-q6-statement",
+            "blockId": "safety-engineering-q6-statement",
+            "exact": "教学设备有门闭G、区域无人C、人工复位R、启动按钮S四个布尔输入。设状态SAFE、ARMED、RUN，初态SAFE。每次扫描：若¬G或¬C，立即转SAFE；否则SAFE仅在R=1时转ARMED（同次即使S=1也不运行），ARMED在S=1时转RUN，其余保持；RUN在G∧C成立时保持。（1）写转移表或伪代码；（2）依次输入GC/RS为11/11、11/01、01/00、11/01、11/10、11/01，求状态序列；（3）证明开门再关门且未复位不会自动再启动；（4）仅用RUN=G∧C∧S为何未满足本题要求？"
+          },
+          "chapter": "联锁状态机与禁止自动再启动",
+          "tags": [
+            "安全工程分析与控制",
+            "联锁状态机与禁止自动再启动",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "联锁状态机与禁止自动再启动"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "safety-engineering-scope",
+                "blockId": "safety-engineering-scope",
+                "exact": "system and software hazard analysis, designing for safety, fault tolerance"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "优先级与三个状态转移完整",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "safety-engineering-q6-statement",
+                    "blockId": "safety-engineering-q6-statement",
+                    "exact": "教学设备有门闭G、区域无人C、人工复位R、启动按钮S四个布尔输入。设状态SAFE、ARMED、RUN，初态SAFE。每次扫描：若¬G或¬C，立即转SAFE；否则SAFE仅在R=1时转ARMED（同次即使S=1也不运行），ARMED在S=1时转RUN，其余保持；RUN在G∧C成立时保持。（1）写转移表或伪代码；（2）依次输入GC/RS为11/11、11/01、01/00、11/01、11/10、11/01，求状态序列；（3）证明开门再关门且未复位不会自动再启动；（4）仅用RUN=G∧C∧S为何未满足本题要求？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "六步状态序列正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "无自动再启的不变量论证正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "组合逻辑反例及实现边界正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "状态和逻辑应准确一致；等价的表格、流程图或代码均可，不按文字表述逐字评分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q6 exhaustive state-input unsafe transitions",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q6 exhaustive state-input unsafe transitions\", \"actual\": 0, \"expected\": 0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q6 six-step state trace",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q6 six-step state trace\", \"actual\": [1, 2, 0, 0, 1, 2], \"expected\": [1, 2, 0, 0, 1, 2], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "safety-q6 all declared states reachable",
+                "result": "pass",
+                "evidence": "{\"label\": \"safety-q6 all declared states reachable\", \"actual\": 3, \"expected\": 3, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "safety-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "safety-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "safety-engineering-q1",
+        "knowledge": "故障树与最小割集",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "safety-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "safety-engineering-q2",
+        "knowledge": "事件树与条件成功概率",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "safety-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "safety-engineering-q3",
+        "knowledge": "通风稀释的瞬态模型",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "safety-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "safety-engineering-q4",
+        "knowledge": "分贝能量叠加与源头治理",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "safety-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "safety-engineering-q5",
+        "knowledge": "冗余投票与共同原因",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "safety-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "safety-engineering-q6",
+        "knowledge": "联锁状态机与禁止自动再启动",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "safety-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "safety-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "safety-engineering-course-blueprint",
+      "name": "安全工程分析与控制课程考试",
+      "subject": "安全工程分析与控制",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "safety-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

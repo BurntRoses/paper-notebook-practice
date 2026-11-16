@@ -1,0 +1,816 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "cost-engineer-1-cases-01",
+  "notebookId": "cost-engineer-1-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "一级造价工程师　建设工程造价案例分析",
+  "subject": "建设工程造价案例分析",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "一级造价工程师　建设工程造价案例分析",
+      "土木建筑工程·投资与计价"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "一级造价工程师　建设工程造价案例分析答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "建设工程造价案例分析",
+      "rule": true
+    },
+    "footerTemplate": "建设工程造价案例分析　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "cost-engineer-1",
+    "examName": "一级造价工程师　建设工程造价案例分析",
+    "specialty": "土木建筑工程·投资与计价",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "cost-engineer-1-cases-01-q1",
+        "knowledge": "全寿命成本、现金流折现、多方案比选",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-1-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-1-cases-01-q2",
+        "knowledge": "清单工程量、单价组成、费用基数、防止重复计量",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-1-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-1-cases-01-q3",
+        "knowledge": "进度支付、预付款回收、累计与本期口径",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-1-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-1-cases-01-q4",
+        "knowledge": "价格指数调整、加权贡献、变更计价基准",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-1-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-1-cases-01-q5",
+        "knowledge": "风险期望成本、保险决策、投标利润率",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-1-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "cost1-syllabus-notice",
+      "kind": "reference",
+      "title": "2026福建一造通知阅读记录",
+      "text": "2026福建报考通知指定2025版考试大纲，专业包括土木建筑、交通运输、水利、安装；土建和安装案例采用主客观混合题。此处用于确认版本与专业差异，不据此推定题量或引用未读取的计价条款。",
+      "blocks": [
+        {
+          "id": "cost1-syllabus-notice-block",
+          "title": "2026福建一造通知阅读记录",
+          "text": "2026福建报考通知指定2025版考试大纲，专业包括土木建筑、交通运输、水利、安装；土建和安装案例采用主客观混合题。此处用于确认版本与专业差异，不据此推定题量或引用未读取的计价条款。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "fefaf89bec50684a1bee87e1a2f959c93002bd924ba352d2a4410cec1fcf7acf",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026报考简章；指定2025大纲",
+        "url": "https://zjt.fujian.gov.cn/xxgk/gzdt/bmdt/202607/t20260724_7191968.htm",
+        "publisher": "福建省住房和城乡建设厅"
+      },
+      "url": "https://zjt.fujian.gov.cn/xxgk/gzdt/bmdt/202607/t20260724_7191968.htm"
+    },
+    {
+      "id": "cost-engineer-1-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "两个设备方案提供相同服务，寿命均5年，折现率8%，现金流均在年末发生。A初始投资300万元、每年运维50万元、期末残值50万元；B初始投资400万元、每年运维25万元、期末残值80万元。无税费、无通胀、无中途更新。\n（1）分别求全寿命成本现值。\n（2）选择成本较低方案并求现值差。\n（3）如果只按初始投资选择，可能遗漏什么？说明残值的符号。",
+      "blocks": [
+        {
+          "id": "cost-engineer-1-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "两个设备方案提供相同服务，寿命均5年，折现率8%，现金流均在年末发生。A初始投资300万元、每年运维50万元、期末残值50万元；B初始投资400万元、每年运维25万元、期末残值80万元。无税费、无通胀、无中途更新。\n（1）分别求全寿命成本现值。\n（2）选择成本较低方案并求现值差。\n（3）如果只按初始投资选择，可能遗漏什么？说明残值的符号。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "8d341564e111b30937950ce60a6a4bd44a5431122b0688ca0a78e8c3b97e5cd5",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-1-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "一块30m×20m、厚0.40m的混凝土板有两个3m×4m的贯穿开洞。题设计量规则：洞口均扣除，工程量按净体积计，钢筋不扣；材料损耗只计入单价。每净m³的人工80元、机械30元；混凝土材料基价450元/实物m³，损耗系数按净耗量增加2%。管理费按人工+机械+含损耗材料的8%计，利润按直接费与管理费之和的5%计。本题税率取9%。\n（1）计算净工程量与每净m³的直接费。\n（2）计算不含税、含税综合单价与含税合价。\n（3）解释为何不应在工程量中再次增加2%。中间值至少保留四位小数，最终金额保留两位。",
+      "blocks": [
+        {
+          "id": "cost-engineer-1-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "一块30m×20m、厚0.40m的混凝土板有两个3m×4m的贯穿开洞。题设计量规则：洞口均扣除，工程量按净体积计，钢筋不扣；材料损耗只计入单价。每净m³的人工80元、机械30元；混凝土材料基价450元/实物m³，损耗系数按净耗量增加2%。管理费按人工+机械+含损耗材料的8%计，利润按直接费与管理费之和的5%计。本题税率取9%。\n（1）计算净工程量与每净m³的直接费。\n（2）计算不含税、含税综合单价与含税合价。\n（3）解释为何不应在工程量中再次增加2%。中间值至少保留四位小数，最终金额保留两位。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "2b99b767e7770fe0a35795b4ded7e70a75eceb8181d3e909e23be83003459b47",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-1-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "合同总额100万元，开工时已另付预付款10万元。前期累计确认工程价款40万元，已按确认价款扣3%保证金，实际进度款已付38.8万元；预付款尚未扣回。本期后累计确认价款达到60万元。专用条款：保证金为累计确认价款的3%；从累计确认超过50万元起，超过部分按20%累计扣回预付款，最多扣完；所有金额不含税，不计其他扣款。\n（1）求本期新增确认价款、累计保证金和本期新增保证金。\n（2）求累计及本期预付款扣回、本期应支付进度款、未扣回预付款。\n（3）用累计现金收付核对，避免把10万元预付款重复全额扣除。",
+      "blocks": [
+        {
+          "id": "cost-engineer-1-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "合同总额100万元，开工时已另付预付款10万元。前期累计确认工程价款40万元，已按确认价款扣3%保证金，实际进度款已付38.8万元；预付款尚未扣回。本期后累计确认价款达到60万元。专用条款：保证金为累计确认价款的3%；从累计确认超过50万元起，超过部分按20%累计扣回预付款，最多扣完；所有金额不含税，不计其他扣款。\n（1）求本期新增确认价款、累计保证金和本期新增保证金。\n（2）求累计及本期预付款扣回、本期应支付进度款、未扣回预付款。\n（3）用累计现金收付核对，避免把10万元预付款重复全额扣除。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "06ad5de2675d7dc0b20507ffe52e2ff9d7edde5fa4a34434e85ae6fcd4aa4653",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-1-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "某合同当期按基准价确认工程款200万元，价格调整公式为P=P₀[0.15+0.25(L/L₀)+0.40(M/M₀)+0.20(E/E₀)]。当期人工、材料、机械指数比依次为1.10、1.20、0.95。另有已经按当期价格批准的变更5万元，不再参加该公式调整。金额均不含税。\n（1）核对权重并求调价系数与调增额。\n（2）分别计算人工、材料、机械对调增的贡献。\n（3）求含该变更的计价额，说明为何不能把变更再整体乘调价系数。",
+      "blocks": [
+        {
+          "id": "cost-engineer-1-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "某合同当期按基准价确认工程款200万元，价格调整公式为P=P₀[0.15+0.25(L/L₀)+0.40(M/M₀)+0.20(E/E₀)]。当期人工、材料、机械指数比依次为1.10、1.20、0.95。另有已经按当期价格批准的变更5万元，不再参加该公式调整。金额均不含税。\n（1）核对权重并求调价系数与调增额。\n（2）分别计算人工、材料、机械对调增的贡献。\n（3）求含该变更的计价额，说明为何不能把变更再整体乘调价系数。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "d3c8390ae8a5a9ad5fcc5ff0ca720fd959adc4ff8e2688122340fcf15a1e982f",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-1-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "一个投标项目确定性成本500万元。独立风险事件为：天气损失20万元、概率0.15；设计返工损失50万元、概率0.10。两事件可以同时发生，按损失线性相加估算期望成本。保险方案保费2.5万元，只把设计返工每次净损失降到5万元，不改变发生概率，天气不承保。目标利润率定义为利润/报价=10%，报价不含税，最高允许报价560万元。\n（1）比较不投保与投保的期望风险及保费总成本。\n（2）选择期望成本较低方案，求实现目标利润率的报价。\n（3）最高限价560万元时可实现的期望利润率是多少？还应向决策者说明哪些期望值未表达的信息？",
+      "blocks": [
+        {
+          "id": "cost-engineer-1-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "一个投标项目确定性成本500万元。独立风险事件为：天气损失20万元、概率0.15；设计返工损失50万元、概率0.10。两事件可以同时发生，按损失线性相加估算期望成本。保险方案保费2.5万元，只把设计返工每次净损失降到5万元，不改变发生概率，天气不承保。目标利润率定义为利润/报价=10%，报价不含税，最高允许报价560万元。\n（1）比较不投保与投保的期望风险及保费总成本。\n（2）选择期望成本较低方案，求实现目标利润率的报价。\n（3）最高限价560万元时可实现的期望利润率是多少？还应向决策者说明哪些期望值未表达的信息？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "15101d2decf1fe56763d19b3dee5c092898786f90fbb637616c4833781549dea",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "cost-engineer-1-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "两个设备方案提供相同服务，寿命均5年，折现率8%，现金流均在年末发生。A初始投资300万元、每年运维50万元、期末残值50万元；B初始投资400万元、每年运维25万元、期末残值80万元。无税费、无通胀、无中途更新。\n（1）分别求全寿命成本现值。\n（2）选择成本较低方案并求现值差。\n（3）如果只按初始投资选择，可能遗漏什么？说明残值的符号。",
+          "score": 20,
+          "solution": "A成本现值465.6063万元，B为445.3711万元；应选B，其成本现值低20.2352万元。仅比较初始投资遗漏运维和残值；残值为期末流入，在成本现值中扣减。",
+          "explanation": "P/A=(1−1.08⁻⁵)/0.08=3.992710037，P/F=1.08⁻⁵=0.680583197。A=300+50(P/A)−50(P/F)；B=400+25(P/A)−80(P/F)。两方案等寿命、等服务，因此可以直接比较成本现值。",
+          "source": {
+            "materialId": "cost-engineer-1-cases-01-q1-source",
+            "blockId": "cost-engineer-1-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "两个设备方案提供相同服务，寿命均5年，折现率8%，现金流均在年末发生。A初始投资300万元、每年运维50万元、期末残值50万元；B初始投资400万元、每年运维25万元、期末残值80万元。无税费、无通胀、无中途更新。\n（1）分别求全寿命成本现值。\n（2）选择成本较低方案并求现值差。\n（3）如果只按初始投资选择，可能遗漏什么？说明残值的符号。"
+          },
+          "chapter": "全寿命成本",
+          "tags": [
+            "全寿命成本",
+            "现金流折现",
+            "多方案比选"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "全寿命成本",
+              "现金流折现",
+              "多方案比选"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "统一现金流时点和成本符号",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "两方案现值计算",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "选B及差额20.2352万元",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "说明等寿命等服务条件",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "残值和初始投资局限",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost1-PW-A: independent Python calculation = 465.606342; expected = 465.606342; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-PW-B: independent Python calculation = 445.3710952; expected = 445.3710952; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-PW-difference: independent Python calculation = 20.23524684; expected = 20.23524684; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-1-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "一块30m×20m、厚0.40m的混凝土板有两个3m×4m的贯穿开洞。题设计量规则：洞口均扣除，工程量按净体积计，钢筋不扣；材料损耗只计入单价。每净m³的人工80元、机械30元；混凝土材料基价450元/实物m³，损耗系数按净耗量增加2%。管理费按人工+机械+含损耗材料的8%计，利润按直接费与管理费之和的5%计。本题税率取9%。\n（1）计算净工程量与每净m³的直接费。\n（2）计算不含税、含税综合单价与含税合价。\n（3）解释为何不应在工程量中再次增加2%。中间值至少保留四位小数，最终金额保留两位。",
+          "score": 20,
+          "solution": "净工程量230.4m³；直接费569元/m³；管理费45.52元/m³，利润30.726元/m³。不含税单价645.246元/m³，含税单价703.31814元/m³；按未提前舍入单价算含税合价162044.50元。2%已经通过材料消耗1.02m³/m³进入单价，工程量再增加会重复计损。",
+          "explanation": "净体积=(600−24)×0.4。直接费=80+30+450×1.02；依次乘1.08、1.05、1.09。费率、扣洞和损耗方法均为本题给定口径，并不声称取自某版现行清单规范。",
+          "source": {
+            "materialId": "cost-engineer-1-cases-01-q2-source",
+            "blockId": "cost-engineer-1-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "一块30m×20m、厚0.40m的混凝土板有两个3m×4m的贯穿开洞。题设计量规则：洞口均扣除，工程量按净体积计，钢筋不扣；材料损耗只计入单价。每净m³的人工80元、机械30元；混凝土材料基价450元/实物m³，损耗系数按净耗量增加2%。管理费按人工+机械+含损耗材料的8%计，利润按直接费与管理费之和的5%计。本题税率取9%。\n（1）计算净工程量与每净m³的直接费。\n（2）计算不含税、含税综合单价与含税合价。\n（3）解释为何不应在工程量中再次增加2%。中间值至少保留四位小数，最终金额保留两位。"
+          },
+          "chapter": "清单工程量",
+          "tags": [
+            "清单工程量",
+            "单价组成",
+            "费用基数",
+            "防止重复计量"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "清单工程量",
+              "单价组成",
+              "费用基数",
+              "防止重复计量"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "净工程量230.4",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "直接费与损耗单价",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "管理费、利润及不含税单价",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "含税单价与合价且舍入一致",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "说明损耗不重复计入净量",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost1-slab-quantity: independent Python calculation = 230.4; expected = 230.4; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-direct-unit: independent Python calculation = 569; expected = 569; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-priced-unit: independent Python calculation = 645.246; expected = 645.246; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-contract-total: independent Python calculation = 162044.4995; expected = 162044.4995; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-1-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "合同总额100万元，开工时已另付预付款10万元。前期累计确认工程价款40万元，已按确认价款扣3%保证金，实际进度款已付38.8万元；预付款尚未扣回。本期后累计确认价款达到60万元。专用条款：保证金为累计确认价款的3%；从累计确认超过50万元起，超过部分按20%累计扣回预付款，最多扣完；所有金额不含税，不计其他扣款。\n（1）求本期新增确认价款、累计保证金和本期新增保证金。\n（2）求累计及本期预付款扣回、本期应支付进度款、未扣回预付款。\n（3）用累计现金收付核对，避免把10万元预付款重复全额扣除。",
+          "score": 20,
+          "solution": "本期新增20万元，累计保证金1.8万元、本期新增0.6万元。累计及本期扣回预付款均为(60−50)×20%=2万元；本期进度款=20−0.6−2=17.4万元，预付款未扣回8万元。累计含预付款现金=10+38.8+17.4=66.2万元，等于累计确认60−保证金1.8+未扣回预付款8。",
+          "explanation": "也可按累计应付进度款60−1.8−2=56.2，再减已付38.8，得到17.4。预付款的原支付和按条款回收须分栏记录；不能在本期进度款里再扣一次全部10万元。",
+          "source": {
+            "materialId": "cost-engineer-1-cases-01-q3-source",
+            "blockId": "cost-engineer-1-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "合同总额100万元，开工时已另付预付款10万元。前期累计确认工程价款40万元，已按确认价款扣3%保证金，实际进度款已付38.8万元；预付款尚未扣回。本期后累计确认价款达到60万元。专用条款：保证金为累计确认价款的3%；从累计确认超过50万元起，超过部分按20%累计扣回预付款，最多扣完；所有金额不含税，不计其他扣款。\n（1）求本期新增确认价款、累计保证金和本期新增保证金。\n（2）求累计及本期预付款扣回、本期应支付进度款、未扣回预付款。\n（3）用累计现金收付核对，避免把10万元预付款重复全额扣除。"
+          },
+          "chapter": "进度支付",
+          "tags": [
+            "进度支付",
+            "预付款回收",
+            "累计与本期口径"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "进度支付",
+              "预付款回收",
+              "累计与本期口径"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "本期20及保证金1.8/0.6",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "扣回阈值及2万元",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "本期17.4与未回收8",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "累计现金66.2双向核对",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "不重复扣预付款",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost1-progress-payment: independent Python calculation = 17.4; expected = 17.4; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-cash-reconciliation: independent Python calculation = 66.2; expected = 66.2; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-1-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "某合同当期按基准价确认工程款200万元，价格调整公式为P=P₀[0.15+0.25(L/L₀)+0.40(M/M₀)+0.20(E/E₀)]。当期人工、材料、机械指数比依次为1.10、1.20、0.95。另有已经按当期价格批准的变更5万元，不再参加该公式调整。金额均不含税。\n（1）核对权重并求调价系数与调增额。\n（2）分别计算人工、材料、机械对调增的贡献。\n（3）求含该变更的计价额，说明为何不能把变更再整体乘调价系数。",
+          "score": 20,
+          "solution": "权重之和1.00，系数1.095，原工程调增19万元；人工贡献5万元、材料16万元、机械−2万元。含变更的计价额=200×1.095+5=224万元。变更已按当期价格定价，再调一次将重复反映价格变化。",
+          "explanation": "固定部分不随指数变化；贡献法200×[0.25×0.10+0.40×0.20+0.20×(−0.05)]=19，与整体系数法一致。不能把机械下降项忽略，或把所有费用统一加20%。",
+          "source": {
+            "materialId": "cost-engineer-1-cases-01-q4-source",
+            "blockId": "cost-engineer-1-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "某合同当期按基准价确认工程款200万元，价格调整公式为P=P₀[0.15+0.25(L/L₀)+0.40(M/M₀)+0.20(E/E₀)]。当期人工、材料、机械指数比依次为1.10、1.20、0.95。另有已经按当期价格批准的变更5万元，不再参加该公式调整。金额均不含税。\n（1）核对权重并求调价系数与调增额。\n（2）分别计算人工、材料、机械对调增的贡献。\n（3）求含该变更的计价额，说明为何不能把变更再整体乘调价系数。"
+          },
+          "chapter": "价格指数调整",
+          "tags": [
+            "价格指数调整",
+            "加权贡献",
+            "变更计价基准"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "价格指数调整",
+              "加权贡献",
+              "变更计价基准"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "权重与系数1.095",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "调增19万元",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "人工5/材料16/机械−2分项",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "最终224万元",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "指出变更不重复调价的原因",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost1-adjustment-index: independent Python calculation = 1.095; expected = 1.095; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-adjustment-contributions: independent Python calculation = 19; expected = 19; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-adjusted-payment: independent Python calculation = 224; expected = 224; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-1-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "一个投标项目确定性成本500万元。独立风险事件为：天气损失20万元、概率0.15；设计返工损失50万元、概率0.10。两事件可以同时发生，按损失线性相加估算期望成本。保险方案保费2.5万元，只把设计返工每次净损失降到5万元，不改变发生概率，天气不承保。目标利润率定义为利润/报价=10%，报价不含税，最高允许报价560万元。\n（1）比较不投保与投保的期望风险及保费总成本。\n（2）选择期望成本较低方案，求实现目标利润率的报价。\n（3）最高限价560万元时可实现的期望利润率是多少？还应向决策者说明哪些期望值未表达的信息？",
+          "score": 20,
+          "solution": "不投保风险期望8万元；投保后风险3.5万元加保费2.5万元合计6万元，节省2万元。选择投保，期望总成本506万元，10%销售利润率要求报价506/0.9=562.2222万元，超过限价。限价560时利润率(560−506)/560=9.6429%。还须评估最坏损失、现金流、赔付条件、免赔和两风险相关性假设，期望低不代表没有较大尾部损失。",
+          "explanation": "目标是销售利润率，分母为报价；不能用成本×1.10代替除以0.90。期望损失可相加，题设独立性只用于进一步讨论联合情景；不得把未发生损失当成确定现金支出。",
+          "source": {
+            "materialId": "cost-engineer-1-cases-01-q5-source",
+            "blockId": "cost-engineer-1-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "一个投标项目确定性成本500万元。独立风险事件为：天气损失20万元、概率0.15；设计返工损失50万元、概率0.10。两事件可以同时发生，按损失线性相加估算期望成本。保险方案保费2.5万元，只把设计返工每次净损失降到5万元，不改变发生概率，天气不承保。目标利润率定义为利润/报价=10%，报价不含税，最高允许报价560万元。\n（1）比较不投保与投保的期望风险及保费总成本。\n（2）选择期望成本较低方案，求实现目标利润率的报价。\n（3）最高限价560万元时可实现的期望利润率是多少？还应向决策者说明哪些期望值未表达的信息？"
+          },
+          "chapter": "风险期望成本",
+          "tags": [
+            "风险期望成本",
+            "保险决策",
+            "投标利润率"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "风险期望成本",
+              "保险决策",
+              "投标利润率"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "两方案8与6万元",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "选择投保与总成本506",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "目标报价562.2222",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "限价利润率9.6429%",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "说明尾部与赔付假设",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost1-uninsured-risk: independent Python calculation = 8; expected = 8; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-insured-risk: independent Python calculation = 6; expected = 6; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-target-bid: independent Python calculation = 562.2222222; expected = 562.2222222; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost1-capped-margin: independent Python calculation = 0.09642857143; expected = 0.09642857143; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "cost-engineer-1-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "cost-engineer-1-project-blueprint",
+      "name": "建设工程造价案例分析案例能力蓝图",
+      "subject": "建设工程造价案例分析",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "cost-engineer-1-cases-v7",
+    "sourceQuestionIds": [
+      "cost-engineer-1-cases-01-q1",
+      "cost-engineer-1-cases-01-q2",
+      "cost-engineer-1-cases-01-q3",
+      "cost-engineer-1-cases-01-q4",
+      "cost-engineer-1-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

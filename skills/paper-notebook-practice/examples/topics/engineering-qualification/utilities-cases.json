@@ -1,0 +1,794 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-public-equipment-engineer-cases-01",
+  "notebookId": "registered-public-equipment-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册公用设备工程师　专业案例",
+  "subject": "公用设备工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册公用设备工程师　专业案例",
+      "暖通空调·给排水·动力设备"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册公用设备工程师　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "公用设备工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "公用设备工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-public-equipment-engineer",
+    "examName": "注册公用设备工程师　专业案例",
+    "specialty": "暖通空调·给排水·动力设备",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-public-equipment-engineer-cases-01-q1",
+        "knowledge": "湿空气、混合与除湿、冷负荷、基准一致",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-public-equipment-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-public-equipment-engineer-cases-01-q2",
+        "knowledge": "换热器、逆流LMTD、结垢、设计工况与运行工况",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-public-equipment-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-public-equipment-engineer-cases-01-q3",
+        "knowledge": "管路水力、系统曲线、泵匹配、静扬程",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-public-equipment-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-public-equipment-engineer-cases-01-q4",
+        "knowledge": "锅炉热平衡、低位热值、节能计算、余热边界",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-public-equipment-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-public-equipment-engineer-cases-01-q5",
+        "knowledge": "蓄热平衡、峰值削减、储备率、回充",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-public-equipment-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-exam-2026",
+      "kind": "reference",
+      "title": "2026勘察设计注册专业与案例作答方式",
+      "text": "2026年湖北省勘察设计注册工程师考务通知列出电气、公用设备和化工等专业，并说明这些专业案例须在专用答题卡填涂答案选项、在指定编号位置填写计算过程。各专业的实际题量和作答范围应另据相应专业官方大纲。本项目五案例蓝图用于展示完整命题、演算、评分和答题区域；专业参数与控制值逐题给定。",
+      "blocks": [
+        {
+          "id": "design-exam-2026-block",
+          "title": "2026勘察设计注册专业与案例作答方式",
+          "text": "2026年湖北省勘察设计注册工程师考务通知列出电气、公用设备和化工等专业，并说明这些专业案例须在专用答题卡填涂答案选项、在指定编号位置填写计算过程。各专业的实际题量和作答范围应另据相应专业官方大纲。本项目五案例蓝图用于展示完整命题、演算、评分和答题区域；专业参数与控制值逐题给定。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "ce22026d52e5c51a56eea743a55da7dd3438eaaa2ff4015185b13749635e7dcb",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-16",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-public-equipment-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "空调系统按干空气质量流量10kg/s处理混合空气，新风干空气比例30%。新风焓80kJ/kg干空气、含湿量0.030kg/kg干空气；回风焓45、含湿量0.010。冷却盘管出口焓35、含湿量0.008；忽略风机热、漏风和冷凝水带出的显热。\n（1）求混合焓、混合含湿量、盘管总冷量及冷凝水流率。\n（2）若新风比例提高至50%而其余相同，求冷量与凝水；盘管额定冷量250kW能否满足两个工况？\n（3）说明干空气基准的重要性及真实盘管选型还需哪些状态/边界条件。",
+      "blocks": [
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "空调系统按干空气质量流量10kg/s处理混合空气，新风干空气比例30%。新风焓80kJ/kg干空气、含湿量0.030kg/kg干空气；回风焓45、含湿量0.010。冷却盘管出口焓35、含湿量0.008；忽略风机热、漏风和冷凝水带出的显热。\n（1）求混合焓、混合含湿量、盘管总冷量及冷凝水流率。\n（2）若新风比例提高至50%而其余相同，求冷量与凝水；盘管额定冷量250kW能否满足两个工况？\n（3）说明干空气基准的重要性及真实盘管选型还需哪些状态/边界条件。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "9338dec46c9f70e87e7792cb95a7b057b21fdd06a857567c841ccbae922dfdbc",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-public-equipment-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "逆流换热器热侧水流量2kg/s，90℃冷却到60℃；冷侧水流量3kg/s，入口20℃。两侧比热均4.2kJ/(kg·K)，无相变、对外绝热；总传热系数0.80kW/(m²·K)，修正系数1。\n（1）求换热量与冷侧出口温度。\n（2）计算两端温差、对数平均温差及所需传热面积。\n（3）若结垢使U降20%，原面积不变，在保持原四个进出口设计温度的要求下可提供多少换热量，是否满足？应如何调整？\n（4）说明第三问为什么不等同于已求出实际新出口温度。",
+      "blocks": [
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "逆流换热器热侧水流量2kg/s，90℃冷却到60℃；冷侧水流量3kg/s，入口20℃。两侧比热均4.2kJ/(kg·K)，无相变、对外绝热；总传热系数0.80kW/(m²·K)，修正系数1。\n（1）求换热量与冷侧出口温度。\n（2）计算两端温差、对数平均温差及所需传热面积。\n（3）若结垢使U降20%，原面积不变，在保持原四个进出口设计温度的要求下可提供多少换热量，是否满足？应如何调整？\n（4）说明第三问为什么不等同于已求出实际新出口温度。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "2080c32b71d6c50c65779d4a9e12da6880f098119306a9d8dd25059744da8303",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-public-equipment-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "水由下池送至上池，水面高差15m，两池均大气压、池面流速忽略。流量0.020m³/s，管长100m、内径0.10m，题给Darcy摩阻系数0.025、局部阻力系数总和8；ρ=1000kg/m³、g=9.81m/s²。泵综合效率0.75。\n（1）求管内流速、沿程损失、局部损失、所需泵扬程及输入功率。\n（2）保持同管径和系数，流量降至0.010m³/s，重算扬程及输入功率（效率按相同）。\n（3）候选泵额定工况0.020m³/s时扬程24m，能否实现设计流量？为什么不能仅凭输入功率足够就判定满足？",
+      "blocks": [
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "水由下池送至上池，水面高差15m，两池均大气压、池面流速忽略。流量0.020m³/s，管长100m、内径0.10m，题给Darcy摩阻系数0.025、局部阻力系数总和8；ρ=1000kg/m³、g=9.81m/s²。泵综合效率0.75。\n（1）求管内流速、沿程损失、局部损失、所需泵扬程及输入功率。\n（2）保持同管径和系数，流量降至0.010m³/s，重算扬程及输入功率（效率按相同）。\n（3）候选泵额定工况0.020m³/s时扬程24m，能否实现设计流量？为什么不能仅凭输入功率足够就判定满足？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "906a84fb93170f3d6e52140ad8f5fdb92bc26531c7fc1cdfed59e3ef24a86187",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-public-equipment-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "锅炉蒸汽流量1.5kg/s，蒸汽焓2800kJ/kg，给水焓400kJ/kg。燃料低位热值42000kJ/kg，按低位热值定义的锅炉效率84%。\n（1）求有效热功率、燃料质量流量和每小时燃耗。\n（2）另一个明确的改造评估模型给定：在同蒸汽负荷下效率提高到87%，求节省燃料与节省比例。\n（3）某烟气余热样本流量15kg/s、比热1.1kJ/(kg·K)，由180℃降至25℃理论可回收多少热量？能否无条件把这全部计入第二问效率增益？说明露点、排烟与边界问题。",
+      "blocks": [
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "锅炉蒸汽流量1.5kg/s，蒸汽焓2800kJ/kg，给水焓400kJ/kg。燃料低位热值42000kJ/kg，按低位热值定义的锅炉效率84%。\n（1）求有效热功率、燃料质量流量和每小时燃耗。\n（2）另一个明确的改造评估模型给定：在同蒸汽负荷下效率提高到87%，求节省燃料与节省比例。\n（3）某烟气余热样本流量15kg/s、比热1.1kJ/(kg·K)，由180℃降至25℃理论可回收多少热量？能否无条件把这全部计入第二问效率增益？说明露点、排烟与边界问题。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "73ee31a58b99f0c58c7f3854e45b782eb76c0e096ec9a04c8caba1aa8124388d",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-public-equipment-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "热水系统峰时需求350kW持续30min，热源同期只供150kW，差额由蓄热罐提供。罐可用温度由80℃降到50℃，水密度1000kg/m³、比热4.2kJ/(kg·K)，假定理想可用蓄热、无热损和温度分层附加限制。\n（1）求最小可用水容积。候选罐可用容积2.5、3.0、4.0m³，选择最小满足者。\n（2）选中3m³罐能维持峰时多久？若项目另规定储备率20%，选择是否改变？\n（3）4m³罐完全由50恢复到80℃时，热源200kW而同期需求100kW，需多久？说明为何不能以200kW全功率算回充时间。",
+      "blocks": [
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "热水系统峰时需求350kW持续30min，热源同期只供150kW，差额由蓄热罐提供。罐可用温度由80℃降到50℃，水密度1000kg/m³、比热4.2kJ/(kg·K)，假定理想可用蓄热、无热损和温度分层附加限制。\n（1）求最小可用水容积。候选罐可用容积2.5、3.0、4.0m³，选择最小满足者。\n（2）选中3m³罐能维持峰时多久？若项目另规定储备率20%，选择是否改变？\n（3）4m³罐完全由50恢复到80℃时，热源200kW而同期需求100kW，需多久？说明为何不能以200kW全功率算回充时间。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "26bebac3c2f06ef27339164f68f186fd521bd744fcbbf298fd109e382fffbb6f",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "空调系统按干空气质量流量10kg/s处理混合空气，新风干空气比例30%。新风焓80kJ/kg干空气、含湿量0.030kg/kg干空气；回风焓45、含湿量0.010。冷却盘管出口焓35、含湿量0.008；忽略风机热、漏风和冷凝水带出的显热。\n（1）求混合焓、混合含湿量、盘管总冷量及冷凝水流率。\n（2）若新风比例提高至50%而其余相同，求冷量与凝水；盘管额定冷量250kW能否满足两个工况？\n（3）说明干空气基准的重要性及真实盘管选型还需哪些状态/边界条件。",
+          "score": 20,
+          "solution": "30%时混合焓55.5kJ/kg干空气、含湿量0.016；冷量205kW、冷凝水0.080kg/s=288kg/h。50%时混合焓62.5、含湿量0.020；冷量275kW、凝水0.120kg/s=432kg/h；250kW满足前者不满足后者。流量与焓/含湿量必须同为干空气基准；还需干球温度与饱和可达性、接触因子、冷媒/水温和流量、压降、风机热与设计新风量等。",
+          "explanation": "混合按干空气质量守恒线性加权。不能把0.008当百分数8%，也不能把全部205kW当显热；冷凝水等于干空气流率乘含湿量差。题给状态用于质量/能量计算，真实设备需校验湿空气状态组合。",
+          "source": {
+            "materialId": "registered-public-equipment-engineer-cases-01-q1-source",
+            "blockId": "registered-public-equipment-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "空调系统按干空气质量流量10kg/s处理混合空气，新风干空气比例30%。新风焓80kJ/kg干空气、含湿量0.030kg/kg干空气；回风焓45、含湿量0.010。冷却盘管出口焓35、含湿量0.008；忽略风机热、漏风和冷凝水带出的显热。\n（1）求混合焓、混合含湿量、盘管总冷量及冷凝水流率。\n（2）若新风比例提高至50%而其余相同，求冷量与凝水；盘管额定冷量250kW能否满足两个工况？\n（3）说明干空气基准的重要性及真实盘管选型还需哪些状态/边界条件。"
+          },
+          "chapter": "湿空气",
+          "tags": [
+            "湿空气",
+            "混合与除湿",
+            "冷负荷",
+            "基准一致"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "湿空气",
+              "混合与除湿",
+              "冷负荷",
+              "基准一致"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "30%混合两状态",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "205kW及0.08kg/s",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "50%275及0.12与容量",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "干空气基准和状态/设备条件",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "utilities-HVAC-base-kW: independent Python calculation = 205; expected = 205; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-HVAC-condensate: independent Python calculation = 0.08; expected = 0.08; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-HVAC-peak-kW: independent Python calculation = 275; expected = 275; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "逆流换热器热侧水流量2kg/s，90℃冷却到60℃；冷侧水流量3kg/s，入口20℃。两侧比热均4.2kJ/(kg·K)，无相变、对外绝热；总传热系数0.80kW/(m²·K)，修正系数1。\n（1）求换热量与冷侧出口温度。\n（2）计算两端温差、对数平均温差及所需传热面积。\n（3）若结垢使U降20%，原面积不变，在保持原四个进出口设计温度的要求下可提供多少换热量，是否满足？应如何调整？\n（4）说明第三问为什么不等同于已求出实际新出口温度。",
+          "score": 20,
+          "solution": "Q=252kW，冷出口40℃。逆流两端温差90−40=50K、60−20=40K，ΔTlm=44.814201177K，面积7.029021866m²。设计温度仍要求不变时，原面积的UAΔT只能给201.6kW，不满足252；若允许增面积，需增至8.786277333m²（25%），或清洗恢复U。实际出口温度会随换热量耦合变化，需能量平衡联合ε−NTU或LMTD求解，不能直接把201.6当真实新工况唯一热量。",
+          "explanation": "逆流热端对应冷侧出口、冷端对应冷入口，不能用(90−20、60−40)作为逆流两端差。结垢问采用设计温度可达性检验，明确与实际耦合工况区分。",
+          "source": {
+            "materialId": "registered-public-equipment-engineer-cases-01-q2-source",
+            "blockId": "registered-public-equipment-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "逆流换热器热侧水流量2kg/s，90℃冷却到60℃；冷侧水流量3kg/s，入口20℃。两侧比热均4.2kJ/(kg·K)，无相变、对外绝热；总传热系数0.80kW/(m²·K)，修正系数1。\n（1）求换热量与冷侧出口温度。\n（2）计算两端温差、对数平均温差及所需传热面积。\n（3）若结垢使U降20%，原面积不变，在保持原四个进出口设计温度的要求下可提供多少换热量，是否满足？应如何调整？\n（4）说明第三问为什么不等同于已求出实际新出口温度。"
+          },
+          "chapter": "换热器",
+          "tags": [
+            "换热器",
+            "逆流LMTD",
+            "结垢",
+            "设计工况与运行工况"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "换热器",
+              "逆流LMTD",
+              "结垢",
+              "设计工况与运行工况"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "能量平衡252与40",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "正确两端差及LMTD",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "面积7.029与结垢不足/增25%",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "实际出口须耦合求解",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "utilities-HX-LMTD: independent Python calculation = 44.81420118; expected = 44.81420118; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-HX-area: independent Python calculation = 7.029021866; expected = 7.029021866; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-HX-heat-balance: independent Python calculation = 252; expected = 252; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "水由下池送至上池，水面高差15m，两池均大气压、池面流速忽略。流量0.020m³/s，管长100m、内径0.10m，题给Darcy摩阻系数0.025、局部阻力系数总和8；ρ=1000kg/m³、g=9.81m/s²。泵综合效率0.75。\n（1）求管内流速、沿程损失、局部损失、所需泵扬程及输入功率。\n（2）保持同管径和系数，流量降至0.010m³/s，重算扬程及输入功率（效率按相同）。\n（3）候选泵额定工况0.020m³/s时扬程24m，能否实现设计流量？为什么不能仅凭输入功率足够就判定满足？",
+          "score": 20,
+          "solution": "设计v=2.546479089m/s，沿程损失8.262685720m，局部2.644059430m，H=25.906745150m，输入6.777204531kW。半流量时损失为原1/4，H=17.726686288m，输入2.318650566kW。24m小于设计需25.9067m，不能在该给定点实现设计流量；应查泵曲线与系统曲线交点、汽蚀余量和运行区间，电机功率不代替扬程流量匹配。",
+          "explanation": "Darcy公式h_f=f(L/D)v²/(2g)中的f不应再乘4。静扬程不随流量平方下降，因此半流量总扬程并非原1/4，输入功率也并非简单1/8。",
+          "source": {
+            "materialId": "registered-public-equipment-engineer-cases-01-q3-source",
+            "blockId": "registered-public-equipment-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "水由下池送至上池，水面高差15m，两池均大气压、池面流速忽略。流量0.020m³/s，管长100m、内径0.10m，题给Darcy摩阻系数0.025、局部阻力系数总和8；ρ=1000kg/m³、g=9.81m/s²。泵综合效率0.75。\n（1）求管内流速、沿程损失、局部损失、所需泵扬程及输入功率。\n（2）保持同管径和系数，流量降至0.010m³/s，重算扬程及输入功率（效率按相同）。\n（3）候选泵额定工况0.020m³/s时扬程24m，能否实现设计流量？为什么不能仅凭输入功率足够就判定满足？"
+          },
+          "chapter": "管路水力",
+          "tags": [
+            "管路水力",
+            "系统曲线",
+            "泵匹配",
+            "静扬程"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "管路水力",
+              "系统曲线",
+              "泵匹配",
+              "静扬程"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "流速与两损失",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "25.9067m和6.7772kW",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "半流量静/动分离",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "24m否决与曲线/汽蚀条件",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "utilities-pipe-velocity: independent Python calculation = 2.546479089; expected = 2.546479089; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-pump-head: independent Python calculation = 25.90674515; expected = 25.90674515; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-pump-power: independent Python calculation = 6.777204531; expected = 6.777204531; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "锅炉蒸汽流量1.5kg/s，蒸汽焓2800kJ/kg，给水焓400kJ/kg。燃料低位热值42000kJ/kg，按低位热值定义的锅炉效率84%。\n（1）求有效热功率、燃料质量流量和每小时燃耗。\n（2）另一个明确的改造评估模型给定：在同蒸汽负荷下效率提高到87%，求节省燃料与节省比例。\n（3）某烟气余热样本流量15kg/s、比热1.1kJ/(kg·K)，由180℃降至25℃理论可回收多少热量？能否无条件把这全部计入第二问效率增益？说明露点、排烟与边界问题。",
+          "score": 20,
+          "solution": "有效热功率3600kW，原燃料0.102040816kg/s即367.346939kg/h；改造后0.098522167kg/s即354.679803kg/h，节省12.667136kg/h，比例3.448276%。烟气显热理论15×1.1×155=2557.5kW；这不是无条件可利用热量，需确认酸/水露点、腐蚀与凝结、换热端差、阻力、热汇和测量边界，也不能与已包含的87%效率重复计算。",
+          "explanation": "效率是有效热量/燃料低位热输入，不是将蒸汽总焓乘效率；给水已有焓必须扣除。第三问是独立样本理论量，并未宣称与前两问全部能量边界自洽可直接相加。",
+          "source": {
+            "materialId": "registered-public-equipment-engineer-cases-01-q4-source",
+            "blockId": "registered-public-equipment-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "锅炉蒸汽流量1.5kg/s，蒸汽焓2800kJ/kg，给水焓400kJ/kg。燃料低位热值42000kJ/kg，按低位热值定义的锅炉效率84%。\n（1）求有效热功率、燃料质量流量和每小时燃耗。\n（2）另一个明确的改造评估模型给定：在同蒸汽负荷下效率提高到87%，求节省燃料与节省比例。\n（3）某烟气余热样本流量15kg/s、比热1.1kJ/(kg·K)，由180℃降至25℃理论可回收多少热量？能否无条件把这全部计入第二问效率增益？说明露点、排烟与边界问题。"
+          },
+          "chapter": "锅炉热平衡",
+          "tags": [
+            "锅炉热平衡",
+            "低位热值",
+            "节能计算",
+            "余热边界"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "锅炉热平衡",
+              "低位热值",
+              "节能计算",
+              "余热边界"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "焓差功率与原燃耗",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "87%新燃耗及节省3.4483%",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "2557.5kW理论值",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "露点热汇与不重复计入",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "utilities-boiler-fuel: independent Python calculation = 0.1020408163; expected = 0.1020408163; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-boiler-saving-percent: independent Python calculation = 3.448275862; expected = 3.448275862; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-flue-recovery-theory: independent Python calculation = 2557.5; expected = 2557.5; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-public-equipment-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "热水系统峰时需求350kW持续30min，热源同期只供150kW，差额由蓄热罐提供。罐可用温度由80℃降到50℃，水密度1000kg/m³、比热4.2kJ/(kg·K)，假定理想可用蓄热、无热损和温度分层附加限制。\n（1）求最小可用水容积。候选罐可用容积2.5、3.0、4.0m³，选择最小满足者。\n（2）选中3m³罐能维持峰时多久？若项目另规定储备率20%，选择是否改变？\n（3）4m³罐完全由50恢复到80℃时，热源200kW而同期需求100kW，需多久？说明为何不能以200kW全功率算回充时间。",
+          "score": 20,
+          "solution": "峰时缺口200kW，需360000kJ，可用最小容积2.857142857m³，选3.0m³；3m³可供378000kJ，持续31.5min。20%储备按1.20倍所需能量/容积，需3.428571429m³，改选4.0m³。4m³回充需504000kJ，净回充功率100kW，需1.400000000h=84min；用200kW忽略同期需求会低估一半。真实还需温差、混水、热损、卫生和可用容积验证。",
+          "explanation": "蓄热承担的是需求减同期供热之差，而不是全部350kW。温度差30K，单位kW×s=kJ；容积是可用水容积，不能直接当罐几何公称容积。",
+          "source": {
+            "materialId": "registered-public-equipment-engineer-cases-01-q5-source",
+            "blockId": "registered-public-equipment-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "热水系统峰时需求350kW持续30min，热源同期只供150kW，差额由蓄热罐提供。罐可用温度由80℃降到50℃，水密度1000kg/m³、比热4.2kJ/(kg·K)，假定理想可用蓄热、无热损和温度分层附加限制。\n（1）求最小可用水容积。候选罐可用容积2.5、3.0、4.0m³，选择最小满足者。\n（2）选中3m³罐能维持峰时多久？若项目另规定储备率20%，选择是否改变？\n（3）4m³罐完全由50恢复到80℃时，热源200kW而同期需求100kW，需多久？说明为何不能以200kW全功率算回充时间。"
+          },
+          "chapter": "蓄热平衡",
+          "tags": [
+            "蓄热平衡",
+            "峰值削减",
+            "储备率",
+            "回充"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "蓄热平衡",
+              "峰值削减",
+              "储备率",
+              "回充"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "差额能量与2.857m³",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "3m³及31.5min",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "20%后3.4286选4",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "净100kW及84min",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "utilities-buffer-volume: independent Python calculation = 2.857142857; expected = 2.857142857; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-buffer-runtime-min: independent Python calculation = 31.5; expected = 31.5; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "utilities-buffer-recovery-hours: independent Python calculation = 1.4; expected = 1.4; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-public-equipment-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-public-equipment-engineer-project-blueprint",
+      "name": "公用设备工程专业案例案例能力蓝图",
+      "subject": "公用设备工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-public-equipment-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-public-equipment-engineer-cases-01-q1",
+      "registered-public-equipment-engineer-cases-01-q2",
+      "registered-public-equipment-engineer-cases-01-q3",
+      "registered-public-equipment-engineer-cases-01-q4",
+      "registered-public-equipment-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

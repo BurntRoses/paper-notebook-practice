@@ -1,0 +1,4186 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "postgraduate-politics-01",
+  "notebookId": "postgraduate-politics",
+  "notebookRevision": 1,
+  "title": "硕士研究生入学考试 思想政治理论",
+  "subject": "思想政治理论",
+  "level": "考研",
+  "durationMinutes": 180,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "humanities",
+    "sealed": true
+  },
+  "presentation": {
+    "titleLines": [
+      "硕士研究生入学考试",
+      "思想政治理论"
+    ],
+    "candidateFields": [
+      "姓名",
+      "准考证号",
+      "报考单位"
+    ],
+    "notices": [
+      "单项选择题每题只有一个正确答案；多项选择题每题至少有两个正确答案。",
+      "多项选择题多选、少选或错选均不得分；分析题请结合材料作答。"
+    ],
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "思想政治理论",
+      "rule": true
+    },
+    "footerTemplate": "思想政治理论　第 {page} 页",
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "university",
+      "candidateDigits": 15
+    },
+    "questionScores": "show",
+    "sectionDetails": true,
+    "projectMark": false
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "authoring": {
+    "routeId": "postgrad-politics",
+    "examName": "思想政治理论",
+    "requireVerification": true
+  },
+  "materials": [
+    {
+      "id": "marx-method",
+      "title": "马克思主义原理核对提要（作者概述）",
+      "kind": "knowledge",
+      "text": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。",
+      "blocks": [
+        {
+          "id": "marx-method-block",
+          "title": "马克思主义原理核对提要（作者概述）",
+          "text": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c80a978dc171680893f365fb4c58f97640ad54869dbc84ce5cc5320fcbcb4c5f"
+    },
+    {
+      "id": "report-2022",
+      "title": "党的二十大报告相关命题提要（作者概述）",
+      "kind": "knowledge",
+      "text": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。",
+      "blocks": [
+        {
+          "id": "report-2022-block",
+          "title": "党的二十大报告相关命题提要（作者概述）",
+          "text": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://cpc.people.com.cn/GB/64162/448633/index.html",
+        "publisher": "人民网·中国共产党新闻网",
+        "version": "2022年10月16日党的二十大报告全文",
+        "publishedAt": "2022-10-16"
+      },
+      "url": "https://cpc.people.com.cn/GB/64162/448633/index.html",
+      "sha256": "1f1230bdecfebc0e4f81863d797a27684b59e3e95b839f72e02aeb6cac72fe3c"
+    },
+    {
+      "id": "constitution-history",
+      "title": "宪法序言所述历史线索（作者概述）",
+      "kind": "knowledge",
+      "text": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。",
+      "blocks": [
+        {
+          "id": "constitution-history-block",
+          "title": "宪法序言所述历史线索（作者概述）",
+          "text": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958942.html",
+        "publisher": "国家统计局（2018年修正宪法转载）",
+        "version": "2018年3月11日修正宪法",
+        "publishedAt": "2025-03-12"
+      },
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958942.html",
+      "sha256": "cc1f42df916c20b8fefca5e5cf722f5520c72f28a27e7f9edc153c25d3f8a200"
+    },
+    {
+      "id": "constitution-rights",
+      "title": "2018年修正宪法权利义务提要（作者概述）",
+      "kind": "knowledge",
+      "text": "国家尊重和保障人权；公民在法律面前一律平等；公民享有宪法法律规定的权利，也须履行义务，行使自由和权利不得损害国家、社会、集体利益及其他公民合法自由和权利；宪法具有最高法律效力。",
+      "blocks": [
+        {
+          "id": "constitution-rights-block",
+          "title": "2018年修正宪法权利义务提要（作者概述）",
+          "text": "国家尊重和保障人权；公民在法律面前一律平等；公民享有宪法法律规定的权利，也须履行义务，行使自由和权利不得损害国家、社会、集体利益及其他公民合法自由和权利；宪法具有最高法律效力。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958942.html",
+        "publisher": "国家统计局",
+        "version": "2018年3月11日修正宪法",
+        "publishedAt": "2025-03-12"
+      },
+      "url": "https://www.stats.gov.cn/gk/tjfg/xgfxfg/202503/t20250312_1958942.html",
+      "sha256": "f3e6033ba93e448d522d560d3c72aed80847d1f6d3396e0ba109a8069dd521d2"
+    },
+    {
+      "id": "professional-ethics",
+      "title": "职业道德应用核对（作者概述）",
+      "kind": "knowledge",
+      "text": "职业行为应诚实记录事实、遵守承诺并对失误负责，尊重服务对象的人格与合法权益。工程赶工不能成为删除安全检测数据或隐瞒产品缺陷的理由。此为命题用原则概述，不将其冒充宪法条文。",
+      "blocks": [
+        {
+          "id": "professional-ethics-block",
+          "title": "职业道德应用核对（作者概述）",
+          "text": "职业行为应诚实记录事实、遵守承诺并对失误负责，尊重服务对象的人格与合法权益。工程赶工不能成为删除安全检测数据或隐瞒产品缺陷的理由。此为命题用原则概述，不将其冒充宪法条文。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "24382c69b42f4827dee00df2845ba1c8582288b2a230562f0d37f2e684f2cb8c"
+    },
+    {
+      "id": "report-peace",
+      "title": "国际合作命题依据（作者概述）",
+      "kind": "knowledge",
+      "text": "2022年报告论述维护世界和平、促进共同发展，倡导以对话协商处理分歧、反对霸权主义，推动构建人类命运共同体；各国发展相互联系，跨国问题需要合作。",
+      "blocks": [
+        {
+          "id": "report-peace-block",
+          "title": "国际合作命题依据（作者概述）",
+          "text": "2022年报告论述维护世界和平、促进共同发展，倡导以对话协商处理分歧、反对霸权主义，推动构建人类命运共同体；各国发展相互联系，跨国问题需要合作。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://cpc.people.com.cn/GB/64162/448633/index.html",
+        "publisher": "人民网·中国共产党新闻网",
+        "version": "2022年10月16日党的二十大报告全文",
+        "publishedAt": "2022-10-16"
+      },
+      "url": "https://cpc.people.com.cn/GB/64162/448633/index.html",
+      "sha256": "8aece5ddc1d383f551a994db4a57c5d8da48f51d362e04be61d3ad95a9b91ad6"
+    },
+    {
+      "id": "postgraduate-politics-01-q1-source",
+      "title": "原创命题记录 1",
+      "kind": "question-bank",
+      "text": "同一灌溉方法在平原增产，在山地却因坡度导致水土流失。因而推广时必须先调查本地条件。材料最直接体现：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q1-source-block",
+          "title": "原创命题记录 1",
+          "text": "同一灌溉方法在平原增产，在山地却因坡度导致水土流失。因而推广时必须先调查本地条件。材料最直接体现："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "219459364e2370fde21c9bad590558fed53ec9104627d5fa4b46a010b12bb413"
+    },
+    {
+      "id": "postgraduate-politics-01-q2-source",
+      "title": "原创命题记录 2",
+      "kind": "question-bank",
+      "text": "某工程方案经反复实验发现原模型漏掉温度影响，研究者据实验修正模型。材料主要表明：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q2-source-block",
+          "title": "原创命题记录 2",
+          "text": "某工程方案经反复实验发现原模型漏掉温度影响，研究者据实验修正模型。材料主要表明："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "acf0b59588028790b21c62e469e4192c16a82ba047e70b424bbd6ddd58058494"
+    },
+    {
+      "id": "postgraduate-politics-01-q3-source",
+      "title": "原创命题记录 3",
+      "kind": "question-bank",
+      "text": "堤坝长期微小渗漏不断积累，最终造成结构失稳。材料说明：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q3-source-block",
+          "title": "原创命题记录 3",
+          "text": "堤坝长期微小渗漏不断积累，最终造成结构失稳。材料说明："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b32cf8a6be48df8f6f8ee376d4cbce441dab85fc92c832ebd9af7bee940b31af"
+    },
+    {
+      "id": "postgraduate-politics-01-q4-source",
+      "title": "原创命题记录 4",
+      "kind": "question-bank",
+      "text": "工厂采用节能技术，但必须按设备热力学边界安排运行。这里人的能动作用表现为：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q4-source-block",
+          "title": "原创命题记录 4",
+          "text": "工厂采用节能技术，但必须按设备热力学边界安排运行。这里人的能动作用表现为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "535ae56e0b72a89c56df83804af5c50981be12cca795943819e8a6e7c119bc16"
+    },
+    {
+      "id": "postgraduate-politics-01-q5-source",
+      "title": "原创命题记录 5",
+      "kind": "question-bank",
+      "text": "一件商品能满足使用需要，同时凝结社会必要劳动。这里分别涉及商品的：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q5-source-block",
+          "title": "原创命题记录 5",
+          "text": "一件商品能满足使用需要，同时凝结社会必要劳动。这里分别涉及商品的："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "aa638df61aff5cbd60db39d383759f12b50bb8bbcf16c960867930cf333272bf"
+    },
+    {
+      "id": "postgraduate-politics-01-q6-source",
+      "title": "原创命题记录 6",
+      "kind": "question-bank",
+      "text": "在其他条件不变时，某部门社会劳动生产率提高，同类商品单位价值量一般：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q6-source-block",
+          "title": "原创命题记录 6",
+          "text": "在其他条件不变时，某部门社会劳动生产率提高，同类商品单位价值量一般："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "00044dfcb27d2c4cd39ef428cc04aafd1742cafcaa549b87e97c33589ab8f5ba"
+    },
+    {
+      "id": "postgraduate-politics-01-q7-source",
+      "title": "原创命题记录 7",
+      "kind": "question-bank",
+      "text": "资本主义生产过程中，劳动力商品使用所创造的价值超过其自身价值，这个超出部分是：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q7-source-block",
+          "title": "原创命题记录 7",
+          "text": "资本主义生产过程中，劳动力商品使用所创造的价值超过其自身价值，这个超出部分是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f9c44df9f3a525bfe1db5b6d5aa95953d7bc0edb9e5f343b31cdf2e870ab6cc5"
+    },
+    {
+      "id": "postgraduate-politics-01-q8-source",
+      "title": "原创命题记录 8",
+      "kind": "question-bank",
+      "text": "改进管理制度后，原有技术设备的潜能得到释放。按生产力与生产关系原理，这表明：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q8-source-block",
+          "title": "原创命题记录 8",
+          "text": "改进管理制度后，原有技术设备的潜能得到释放。按生产力与生产关系原理，这表明："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b491ba0954485ff8d26058e6e4e2bd21d46d7954983b6b15484db46d7050e0e0"
+    },
+    {
+      "id": "postgraduate-politics-01-q9-source",
+      "title": "原创命题记录 9",
+      "kind": "question-bank",
+      "text": "近代中国反帝反封建革命任务的社会历史根源主要是：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q9-source-block",
+          "title": "原创命题记录 9",
+          "text": "近代中国反帝反封建革命任务的社会历史根源主要是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "048abe44fef71d1318f9d74ad95815eba1e2a3e91c638a6372bc7c02cb28baff"
+    },
+    {
+      "id": "postgraduate-politics-01-q10-source",
+      "title": "原创命题记录 10",
+      "kind": "question-bank",
+      "text": "依据宪法序言，辛亥革命的历史成果之一是：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q10-source-block",
+          "title": "原创命题记录 10",
+          "text": "依据宪法序言，辛亥革命的历史成果之一是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "3bf4b470d4456ca24faf253ca2a2e290c3cb17de84ebd08a84085eab95959ee7"
+    },
+    {
+      "id": "postgraduate-politics-01-q11-source",
+      "title": "原创命题记录 11",
+      "kind": "question-bank",
+      "text": "依据宪法序言，新中国建立后实现向社会主义社会转变的重要制度基础是：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q11-source-block",
+          "title": "原创命题记录 11",
+          "text": "依据宪法序言，新中国建立后实现向社会主义社会转变的重要制度基础是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4f701be1e61a529fc0a3a038974888817c0c7b645f07de622232682456477ad1"
+    },
+    {
+      "id": "postgraduate-politics-01-q12-source",
+      "title": "原创命题记录 12",
+      "kind": "question-bank",
+      "text": "依据党的二十大报告，中国式现代化的一个鲜明特征是：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q12-source-block",
+          "title": "原创命题记录 12",
+          "text": "依据党的二十大报告，中国式现代化的一个鲜明特征是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "57ddbbe00f8cb138023333901ab4a68a5764665c67975c772f7faf5664a4401b"
+    },
+    {
+      "id": "postgraduate-politics-01-q13-source",
+      "title": "原创命题记录 13",
+      "kind": "question-bank",
+      "text": "依据党的二十大报告，全面建设社会主义现代化国家的首要任务是：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q13-source-block",
+          "title": "原创命题记录 13",
+          "text": "依据党的二十大报告，全面建设社会主义现代化国家的首要任务是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b6de75e2401dd88596a83b5e974ccd13656016281727353faac100d40f6bdeeb"
+    },
+    {
+      "id": "postgraduate-politics-01-q14-source",
+      "title": "原创命题记录 14",
+      "kind": "question-bank",
+      "text": "社会主义核心价值观中，属于社会层面的价值取向是：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q14-source-block",
+          "title": "原创命题记录 14",
+          "text": "社会主义核心价值观中，属于社会层面的价值取向是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b22e02ef01e08eff3476944f05da9590f8272f84927ae17553616565069a9972"
+    },
+    {
+      "id": "postgraduate-politics-01-q15-source",
+      "title": "原创命题记录 15",
+      "kind": "question-bank",
+      "text": "某机关主张本单位内部文件可以抵触宪法。依据宪法地位，应当认为：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q15-source-block",
+          "title": "原创命题记录 15",
+          "text": "某机关主张本单位内部文件可以抵触宪法。依据宪法地位，应当认为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "673265ef972dd264be5df6bdab949a21c7829e06ed283686e475e348ea89a977"
+    },
+    {
+      "id": "postgraduate-politics-01-q16-source",
+      "title": "原创命题记录 16",
+      "kind": "question-bank",
+      "text": "跨国流行病和气候风险说明，促进共同安全与发展需要：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q16-source-block",
+          "title": "原创命题记录 16",
+          "text": "跨国流行病和气候风险说明，促进共同安全与发展需要："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "00e6351e4beee9c59919f5eda7411f5b9bd74c2923d4ba52df919339db11fb1d"
+    },
+    {
+      "id": "postgraduate-politics-01-q17-source",
+      "title": "原创命题记录 17",
+      "kind": "question-bank",
+      "text": "将城市经验用于乡村治理，应当：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q17-source-block",
+          "title": "原创命题记录 17",
+          "text": "将城市经验用于乡村治理，应当："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "cfaf550b0699268c51f4aa2467a9bb982d924e50967cdaed7118c4fdaab58ccf"
+    },
+    {
+      "id": "postgraduate-politics-01-q18-source",
+      "title": "原创命题记录 18",
+      "kind": "question-bank",
+      "text": "科研中正确处理认识与实践关系的做法有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q18-source-block",
+          "title": "原创命题记录 18",
+          "text": "科研中正确处理认识与实践关系的做法有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b9bc83516cb53b83aa10883efde78d5b415b5afdfebcb8d6c0be3c698c42181d"
+    },
+    {
+      "id": "postgraduate-politics-01-q19-source",
+      "title": "原创命题记录 19",
+      "kind": "question-bank",
+      "text": "关于联系的观点，正确的有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q19-source-block",
+          "title": "原创命题记录 19",
+          "text": "关于联系的观点，正确的有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "da92a7f509ed48d2f4b4aefec9f04e61cb1898ac7d722fd117323338a4bc932d"
+    },
+    {
+      "id": "postgraduate-politics-01-q20-source",
+      "title": "原创命题记录 20",
+      "kind": "question-bank",
+      "text": "关于量变与质变，正确的有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q20-source-block",
+          "title": "原创命题记录 20",
+          "text": "关于量变与质变，正确的有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4d94cf6d778bdeb28e7459e1a490dfd0d3872001021ce09b1e558d67facc8504"
+    },
+    {
+      "id": "postgraduate-politics-01-q21-source",
+      "title": "原创命题记录 21",
+      "kind": "question-bank",
+      "text": "对社会历史发展的理解，符合历史唯物主义的有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q21-source-block",
+          "title": "原创命题记录 21",
+          "text": "对社会历史发展的理解，符合历史唯物主义的有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "576aac5bd30283c9298825e1620e43513bab2769b682a084e155d590a3e1ca82"
+    },
+    {
+      "id": "postgraduate-politics-01-q22-source",
+      "title": "原创命题记录 22",
+      "kind": "question-bank",
+      "text": "关于商品与劳动二重性，正确的有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q22-source-block",
+          "title": "原创命题记录 22",
+          "text": "关于商品与劳动二重性，正确的有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "83bfe199027f24efd4c371f94acb47a147c6f6f5726282ada260af0340829150"
+    },
+    {
+      "id": "postgraduate-politics-01-q23-source",
+      "title": "原创命题记录 23",
+      "kind": "question-bank",
+      "text": "资本家通过缩短必要劳动时间而保持工作日长度不变来增加剩余劳动时间，相关判断有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q23-source-block",
+          "title": "原创命题记录 23",
+          "text": "资本家通过缩短必要劳动时间而保持工作日长度不变来增加剩余劳动时间，相关判断有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a7bf538812a32ec68a13084b2eab485d18aa60a990093c13d38a2b4424db8858"
+    },
+    {
+      "id": "postgraduate-politics-01-q24-source",
+      "title": "原创命题记录 24",
+      "kind": "question-bank",
+      "text": "依据宪法序言，关于近现代中国历史的表述正确的有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q24-source-block",
+          "title": "原创命题记录 24",
+          "text": "依据宪法序言，关于近现代中国历史的表述正确的有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "83f79ab91c63ad8776e099997d8dd5193b863c7326c17b21de44a89344eeb741"
+    },
+    {
+      "id": "postgraduate-politics-01-q25-source",
+      "title": "原创命题记录 25",
+      "kind": "question-bank",
+      "text": "研究革命历史应当：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q25-source-block",
+          "title": "原创命题记录 25",
+          "text": "研究革命历史应当："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "d6fc1e7ec68076d2714dd10c8f9c468ebd2f5c3f11beea6705b385be4d1a2eb5"
+    },
+    {
+      "id": "postgraduate-politics-01-q26-source",
+      "title": "原创命题记录 26",
+      "kind": "question-bank",
+      "text": "依据党的二十大报告，中国式现代化相关特征包括：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q26-source-block",
+          "title": "原创命题记录 26",
+          "text": "依据党的二十大报告，中国式现代化相关特征包括："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7383df58387c5851059b0405647c10c4d199ddb2f1e28ed2b84ff9786c571ee6"
+    },
+    {
+      "id": "postgraduate-politics-01-q27-source",
+      "title": "原创命题记录 27",
+      "kind": "question-bank",
+      "text": "依据党的二十大报告，教育、科技、人才的关系可理解为：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q27-source-block",
+          "title": "原创命题记录 27",
+          "text": "依据党的二十大报告，教育、科技、人才的关系可理解为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "cacc41363b98a2af0a925f6099dca96a45291456bb0d440ccf95f3d829a715a0"
+    },
+    {
+      "id": "postgraduate-politics-01-q28-source",
+      "title": "原创命题记录 28",
+      "kind": "question-bank",
+      "text": "推动高质量发展，符合相关理念的做法有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q28-source-block",
+          "title": "原创命题记录 28",
+          "text": "推动高质量发展，符合相关理念的做法有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b4e86866426422a251e17d0996bfdfddf0c11ecfef6eb31093e997aa5fe2cc19"
+    },
+    {
+      "id": "postgraduate-politics-01-q29-source",
+      "title": "原创命题记录 29",
+      "kind": "question-bank",
+      "text": "生态治理中坚持系统观念，应当：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q29-source-block",
+          "title": "原创命题记录 29",
+          "text": "生态治理中坚持系统观念，应当："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "17e1290b8b339cd63827e183d6cac789330a22b8a390f42d8f444853e57f1f56"
+    },
+    {
+      "id": "postgraduate-politics-01-q30-source",
+      "title": "原创命题记录 30",
+      "kind": "question-bank",
+      "text": "依2018年修正宪法，关于公民权利义务正确的有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q30-source-block",
+          "title": "原创命题记录 30",
+          "text": "依2018年修正宪法，关于公民权利义务正确的有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "32cb8145fa769bc282b66668b50696611bde32ee9ef72abd6133a6ed6b749f3a"
+    },
+    {
+      "id": "postgraduate-politics-01-q31-source",
+      "title": "原创命题记录 31",
+      "kind": "question-bank",
+      "text": "践行职业道德的表现有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q31-source-block",
+          "title": "原创命题记录 31",
+          "text": "践行职业道德的表现有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "053692f346f9f9e67dd1210183f7103829d9e500dccf2d4d5ac6b44ab8eaeb7e"
+    },
+    {
+      "id": "postgraduate-politics-01-q32-source",
+      "title": "原创命题记录 32",
+      "kind": "question-bank",
+      "text": "公共协商为决策提供价值，原因包括：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q32-source-block",
+          "title": "原创命题记录 32",
+          "text": "公共协商为决策提供价值，原因包括："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a5e5981f3814bd5cecdbd7cf3f4d65871a5a93706f47feef7eb29fb6d22cee7d"
+    },
+    {
+      "id": "postgraduate-politics-01-q33-source",
+      "title": "原创命题记录 33",
+      "kind": "question-bank",
+      "text": "围绕跨国环境问题开展合作，合理做法有：",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q33-source-block",
+          "title": "原创命题记录 33",
+          "text": "围绕跨国环境问题开展合作，合理做法有："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "da49f20c1ab188eb54a4a2f76e945c86a2d5299e9e20e55302cfa474ecf4666d"
+    },
+    {
+      "id": "analysis-34-passage",
+      "title": "三、分析题 · 第34题材料",
+      "kind": "reference",
+      "text": "材料一：某县购买一套在北方平原验证有效的灌溉控制系统，直接用于本地山坡茶园。首年设备读数准确，但部分地块出现径流，节水目标未实现。\n材料二：技术人员与农户共同分区记录坡度、土壤和降雨，发现同一湿度阈值在不同坡位作用不同。团队将统一阈值改为分区方案，先小范围试验，保留失败记录，逐步调整。\n材料三：有人认为，既然外地经验曾失败，就应放弃所有外部技术；也有人主张，只要增加采购量，效果自然会出现。",
+      "blocks": [
+        {
+          "id": "analysis-34-passage-block",
+          "title": "三、分析题 · 第34题材料",
+          "text": "材料一：某县购买一套在北方平原验证有效的灌溉控制系统，直接用于本地山坡茶园。首年设备读数准确，但部分地块出现径流，节水目标未实现。\n材料二：技术人员与农户共同分区记录坡度、土壤和降雨，发现同一湿度阈值在不同坡位作用不同。团队将统一阈值改为分区方案，先小范围试验，保留失败记录，逐步调整。\n材料三：有人认为，既然外地经验曾失败，就应放弃所有外部技术；也有人主张，只要增加采购量，效果自然会出现。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "770fb6d1e4c0917dc1cdc211a0573541dd3fe0974f129f97efe1a7791a9304dc"
+    },
+    {
+      "id": "postgraduate-politics-01-q34-source",
+      "title": "原创命题记录 34",
+      "kind": "question-bank",
+      "text": "（1）运用认识与实践关系说明为什么要保留失败记录并开展分区试验。（5分）\n（2）运用矛盾普遍性与特殊性关系，评析材料三的两种看法。（5分）",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q34-source-block",
+          "title": "原创命题记录 34",
+          "text": "（1）运用认识与实践关系说明为什么要保留失败记录并开展分区试验。（5分）\n（2）运用矛盾普遍性与特殊性关系，评析材料三的两种看法。（5分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "2b5b8dc96b99ed6cba2b82b4f8ffa2bce062f1b310dafcb8f276cbfa908bfd21"
+    },
+    {
+      "id": "analysis-35-passage",
+      "title": "三、分析题 · 第35题材料",
+      "kind": "reference",
+      "text": "某资源型城市讨论转型。方案甲把短期产值设为唯一指标，拟扩大高耗能产能；方案乙只要求停产，却未安排就业和基本公共服务；方案丙提出更新工艺、治理污染、培养技能，并公开就业、能耗、收入和公共服务等指标，分阶段评估不同群体的影响。材料为命题情境，不表示任何现实城市的统计结论。",
+      "blocks": [
+        {
+          "id": "analysis-35-passage-block",
+          "title": "三、分析题 · 第35题材料",
+          "text": "某资源型城市讨论转型。方案甲把短期产值设为唯一指标，拟扩大高耗能产能；方案乙只要求停产，却未安排就业和基本公共服务；方案丙提出更新工艺、治理污染、培养技能，并公开就业、能耗、收入和公共服务等指标，分阶段评估不同群体的影响。材料为命题情境，不表示任何现实城市的统计结论。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e5e552fa218ea6a150da1ac7bbc5fdf6ff410d436bae4eb214dc042b5f500067"
+    },
+    {
+      "id": "postgraduate-politics-01-q35-source",
+      "title": "原创命题记录 35",
+      "kind": "question-bank",
+      "text": "（1）结合高质量发展和中国式现代化有关要求，说明为什么不能只看短期产值。（5分）\n（2）说明转型中如何统筹发展、生态与民生。（5分）",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q35-source-block",
+          "title": "原创命题记录 35",
+          "text": "（1）结合高质量发展和中国式现代化有关要求，说明为什么不能只看短期产值。（5分）\n（2）说明转型中如何统筹发展、生态与民生。（5分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "309fd76c0de8135236416e9d41c3e317e7ed842e22fefef98e001d2053757e66"
+    },
+    {
+      "id": "analysis-36-passage",
+      "title": "三、分析题 · 第36题材料",
+      "kind": "reference",
+      "text": "材料一：宪法序言记述，辛亥革命结束封建帝制，但中国人民反对帝国主义和封建主义的历史任务尚未完成。\n材料二：宪法序言记述，1949年中华人民共和国成立，中国人民掌握国家权力；中华人民共和国成立后，我国社会逐步实现由新民主主义到社会主义的过渡。\n上述材料按现行宪法序言归纳，供历史分析。",
+      "blocks": [
+        {
+          "id": "analysis-36-passage-block",
+          "title": "三、分析题 · 第36题材料",
+          "text": "材料一：宪法序言记述，辛亥革命结束封建帝制，但中国人民反对帝国主义和封建主义的历史任务尚未完成。\n材料二：宪法序言记述，1949年中华人民共和国成立，中国人民掌握国家权力；中华人民共和国成立后，我国社会逐步实现由新民主主义到社会主义的过渡。\n上述材料按现行宪法序言归纳，供历史分析。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "32a85ff86c6897e57d9fed37c790269f538306b7e58f67dfcfed38a01be731ed"
+    },
+    {
+      "id": "postgraduate-politics-01-q36-source",
+      "title": "原创命题记录 36",
+      "kind": "question-bank",
+      "text": "（1）说明为什么评价辛亥革命既要肯定历史功绩，又要分析历史局限。（5分）\n（2）说明应如何区分新民主主义革命胜利、国家建立与社会主义制度确立这几个相联系的历史环节。（5分）",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q36-source-block",
+          "title": "原创命题记录 36",
+          "text": "（1）说明为什么评价辛亥革命既要肯定历史功绩，又要分析历史局限。（5分）\n（2）说明应如何区分新民主主义革命胜利、国家建立与社会主义制度确立这几个相联系的历史环节。（5分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c7dec93b3d5d5d694de633b32d1b3648f5d919d5093b2aaff054fbefa60403d8"
+    },
+    {
+      "id": "analysis-37-passage",
+      "title": "三、分析题 · 第37题材料",
+      "kind": "reference",
+      "text": "某社区志愿服务平台为了提高注册数量，默认公开所有参与者的联系方式。居民提出异议后，负责人说：“大家做公益，就不应计较个人权利；参与自愿，因此平台的任何安排都合法。”另一位志愿者认为，提升公共服务应尊重人格和合法权益，规则应公开说明、接受意见并设置纠错渠道。",
+      "blocks": [
+        {
+          "id": "analysis-37-passage-block",
+          "title": "三、分析题 · 第37题材料",
+          "text": "某社区志愿服务平台为了提高注册数量，默认公开所有参与者的联系方式。居民提出异议后，负责人说：“大家做公益，就不应计较个人权利；参与自愿，因此平台的任何安排都合法。”另一位志愿者认为，提升公共服务应尊重人格和合法权益，规则应公开说明、接受意见并设置纠错渠道。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "5be5264e10bf4a3604460c5dc0a66acfca620b282d65e816d306790e06d5bf9e"
+    },
+    {
+      "id": "postgraduate-politics-01-q37-source",
+      "title": "原创命题记录 37",
+      "kind": "question-bank",
+      "text": "（1）结合权利义务关系与法治观念，评析负责人的说法。（5分）\n（2）说明职业和社会责任应如何落实到平台的具体改进。（5分）",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q37-source-block",
+          "title": "原创命题记录 37",
+          "text": "（1）结合权利义务关系与法治观念，评析负责人的说法。（5分）\n（2）说明职业和社会责任应如何落实到平台的具体改进。（5分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "972efd38b0396f293aef152c3d6690080dbaaeb70bf6540c3302094bbfd1bd94"
+    },
+    {
+      "id": "analysis-38-passage",
+      "title": "三、分析题 · 第38题材料",
+      "kind": "reference",
+      "text": "多个国家共享一条河流。上游发生洪水可能影响下游农业和居民安全，而各国监测能力和应急资源不同。一次技术会议提出共享监测数据、明确预警责任并联合演练。有人主张只维护本国即时利益、拒绝所有协商；也有人认为合作意味着各国必须放弃一切自主决定。材料为命题情境。",
+      "blocks": [
+        {
+          "id": "analysis-38-passage-block",
+          "title": "三、分析题 · 第38题材料",
+          "text": "多个国家共享一条河流。上游发生洪水可能影响下游农业和居民安全，而各国监测能力和应急资源不同。一次技术会议提出共享监测数据、明确预警责任并联合演练。有人主张只维护本国即时利益、拒绝所有协商；也有人认为合作意味着各国必须放弃一切自主决定。材料为命题情境。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f3aa8b6da7bf994931d06374b64b71e5f9d5f291c3aeda0ec9a9d86129a57093"
+    },
+    {
+      "id": "postgraduate-politics-01-q38-source",
+      "title": "原创命题记录 38",
+      "kind": "question-bank",
+      "text": "（1）说明跨境风险为何需要合作及对话协商。（5分）\n（2）评析材料中的两种极端看法，并提出合作应把握的原则和实施环节。（5分）",
+      "blocks": [
+        {
+          "id": "postgraduate-politics-01-q38-source-block",
+          "title": "原创命题记录 38",
+          "text": "（1）说明跨境风险为何需要合作及对话协商。（5分）\n（2）评析材料中的两种极端看法，并提出合作应把握的原则和实施环节。（5分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "d54380e2a7fdc9672a20e2bd9dce4a6de80f392497f3c83d107f921f3cd95527"
+    }
+  ],
+  "sections": [
+    {
+      "id": "single",
+      "title": "一、单项选择题",
+      "examPartId": "single",
+      "instructions": "第1—16题，每题1分，每题只有一个正确答案。",
+      "score": 16,
+      "questions": [
+        {
+          "id": "postgraduate-politics-01-q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "同一灌溉方法在平原增产，在山地却因坡度导致水土流失。因而推广时必须先调查本地条件。材料最直接体现：",
+          "score": 1,
+          "solution": "B",
+          "explanation": "共性方法须通过具体条件发挥作用，不能由一地有效推出处处有效。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q1-source",
+            "blockId": "postgraduate-politics-01-q1-source-block",
+            "title": "原创命题记录 1",
+            "exact": "同一灌溉方法在平原增产，在山地却因坡度导致水土流失。因而推广时必须先调查本地条件。材料最直接体现："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；共性方法须通过具体条件发挥作用，不能由一地有效推出处处有效。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "普遍经验可以脱离具体条件照搬"
+            },
+            {
+              "id": "B",
+              "text": "矛盾特殊性要求具体问题具体分析"
+            },
+            {
+              "id": "C",
+              "text": "认识不具有共性"
+            },
+            {
+              "id": "D",
+              "text": "客观规律由人任意创造"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "某工程方案经反复实验发现原模型漏掉温度影响，研究者据实验修正模型。材料主要表明：",
+          "score": 1,
+          "solution": "C",
+          "explanation": "模型由实践获得反馈，错误被修正，体现实践标准和认识发展。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q2-source",
+            "blockId": "postgraduate-politics-01-q2-source-block",
+            "title": "原创命题记录 2",
+            "exact": "某工程方案经反复实验发现原模型漏掉温度影响，研究者据实验修正模型。材料主要表明："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；模型由实践获得反馈，错误被修正，体现实践标准和认识发展。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "理论无需检验"
+            },
+            {
+              "id": "B",
+              "text": "实验结果随意志改变"
+            },
+            {
+              "id": "C",
+              "text": "实践检验并推动认识发展"
+            },
+            {
+              "id": "D",
+              "text": "一次失败否定所有科学认识"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "堤坝长期微小渗漏不断积累，最终造成结构失稳。材料说明：",
+          "score": 1,
+          "solution": "A",
+          "explanation": "累计变化越过结构承受的度，发生性质变化；不代表每次量变立即质变。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q3-source",
+            "blockId": "postgraduate-politics-01-q3-source-block",
+            "title": "原创命题记录 3",
+            "exact": "堤坝长期微小渗漏不断积累，最终造成结构失稳。材料说明："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；累计变化越过结构承受的度，发生性质变化；不代表每次量变立即质变。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "量变积累在一定条件下引起质变"
+            },
+            {
+              "id": "B",
+              "text": "量变与质变完全无关"
+            },
+            {
+              "id": "C",
+              "text": "任何微小变化立即成为质变"
+            },
+            {
+              "id": "D",
+              "text": "发展不受条件影响"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "工厂采用节能技术，但必须按设备热力学边界安排运行。这里人的能动作用表现为：",
+          "score": 1,
+          "solution": "D",
+          "explanation": "能动性以尊重客观规律为前提，通过条件和行动实现目标。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q4-source",
+            "blockId": "postgraduate-politics-01-q4-source-block",
+            "title": "原创命题记录 4",
+            "exact": "工厂采用节能技术，但必须按设备热力学边界安排运行。这里人的能动作用表现为："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；能动性以尊重客观规律为前提，通过条件和行动实现目标。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "取消客观规律"
+            },
+            {
+              "id": "B",
+              "text": "用意愿替代物质条件"
+            },
+            {
+              "id": "C",
+              "text": "规律仅存在于意识"
+            },
+            {
+              "id": "D",
+              "text": "认识并利用规律改善实践"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q5",
+          "number": 5,
+          "type": "choice",
+          "prompt": "一件商品能满足使用需要，同时凝结社会必要劳动。这里分别涉及商品的：",
+          "score": 1,
+          "solution": "B",
+          "explanation": "使用价值是有用性，价值是无差别人类劳动的凝结，不等于价格。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q5-source",
+            "blockId": "postgraduate-politics-01-q5-source-block",
+            "title": "原创命题记录 5",
+            "exact": "一件商品能满足使用需要，同时凝结社会必要劳动。这里分别涉及商品的："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；使用价值是有用性，价值是无差别人类劳动的凝结，不等于价格。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "价格与利润"
+            },
+            {
+              "id": "B",
+              "text": "使用价值与价值"
+            },
+            {
+              "id": "C",
+              "text": "个别劳动时间与工资"
+            },
+            {
+              "id": "D",
+              "text": "资本与利息"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q6",
+          "number": 6,
+          "type": "choice",
+          "prompt": "在其他条件不变时，某部门社会劳动生产率提高，同类商品单位价值量一般：",
+          "score": 1,
+          "solution": "A",
+          "explanation": "社会必要劳动时间下降，单位价值量与社会劳动生产率成反比。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q6-source",
+            "blockId": "postgraduate-politics-01-q6-source-block",
+            "title": "原创命题记录 6",
+            "exact": "在其他条件不变时，某部门社会劳动生产率提高，同类商品单位价值量一般："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；社会必要劳动时间下降，单位价值量与社会劳动生产率成反比。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "下降"
+            },
+            {
+              "id": "B",
+              "text": "上升"
+            },
+            {
+              "id": "C",
+              "text": "必然不变"
+            },
+            {
+              "id": "D",
+              "text": "等于个别企业愿望"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q7",
+          "number": 7,
+          "type": "choice",
+          "prompt": "资本主义生产过程中，劳动力商品使用所创造的价值超过其自身价值，这个超出部分是：",
+          "score": 1,
+          "solution": "C",
+          "explanation": "劳动力具有创造超过自身价值的新价值的特殊使用价值。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q7-source",
+            "blockId": "postgraduate-politics-01-q7-source-block",
+            "title": "原创命题记录 7",
+            "exact": "资本主义生产过程中，劳动力商品使用所创造的价值超过其自身价值，这个超出部分是："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；劳动力具有创造超过自身价值的新价值的特殊使用价值。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "不变资本"
+            },
+            {
+              "id": "B",
+              "text": "成本价格"
+            },
+            {
+              "id": "C",
+              "text": "剩余价值"
+            },
+            {
+              "id": "D",
+              "text": "固定资本折旧"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q8",
+          "number": 8,
+          "type": "choice",
+          "prompt": "改进管理制度后，原有技术设备的潜能得到释放。按生产力与生产关系原理，这表明：",
+          "score": 1,
+          "solution": "D",
+          "explanation": "生产力决定生产关系，后者具有反作用；适合时能促进。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q8-source",
+            "blockId": "postgraduate-politics-01-q8-source-block",
+            "title": "原创命题记录 8",
+            "exact": "改进管理制度后，原有技术设备的潜能得到释放。按生产力与生产关系原理，这表明："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；生产力决定生产关系，后者具有反作用；适合时能促进。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "生产关系决定一切技术"
+            },
+            {
+              "id": "B",
+              "text": "生产关系永不变化"
+            },
+            {
+              "id": "C",
+              "text": "制度与生产力无联系"
+            },
+            {
+              "id": "D",
+              "text": "适合的生产关系能促进生产力发展"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q9",
+          "number": 9,
+          "type": "choice",
+          "prompt": "近代中国反帝反封建革命任务的社会历史根源主要是：",
+          "score": 1,
+          "solution": "B",
+          "explanation": "社会性质决定革命任务，不能只作技术解释。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q9-source",
+            "blockId": "postgraduate-politics-01-q9-source-block",
+            "title": "原创命题记录 9",
+            "exact": "近代中国反帝反封建革命任务的社会历史根源主要是："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；社会性质决定革命任务，不能只作技术解释。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "纯粹封建社会从未变化"
+            },
+            {
+              "id": "B",
+              "text": "半殖民地半封建社会性质及主要矛盾"
+            },
+            {
+              "id": "C",
+              "text": "已完全实现国家独立"
+            },
+            {
+              "id": "D",
+              "text": "单一技术落后而无社会关系问题"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-history",
+                "blockId": "constitution-history-block",
+                "title": "宪法序言所述历史线索（作者概述）",
+                "exact": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "依据宪法序言，辛亥革命的历史成果之一是：",
+          "score": 1,
+          "solution": "C",
+          "explanation": "1911年结束帝制；序言同时指出有关历史任务尚未完成。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q10-source",
+            "blockId": "postgraduate-politics-01-q10-source-block",
+            "title": "原创命题记录 10",
+            "exact": "依据宪法序言，辛亥革命的历史成果之一是："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；1911年结束帝制；序言同时指出有关历史任务尚未完成。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "完成社会主义改造"
+            },
+            {
+              "id": "B",
+              "text": "建立中华人民共和国"
+            },
+            {
+              "id": "C",
+              "text": "结束封建帝制"
+            },
+            {
+              "id": "D",
+              "text": "完成全部反帝反封建任务"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-history",
+                "blockId": "constitution-history-block",
+                "title": "宪法序言所述历史线索（作者概述）",
+                "exact": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q11",
+          "number": 11,
+          "type": "choice",
+          "prompt": "依据宪法序言，新中国建立后实现向社会主义社会转变的重要制度基础是：",
+          "score": 1,
+          "solution": "A",
+          "explanation": "按序言历史线索，社会主义改造完成与制度确立相联系。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q11-source",
+            "blockId": "postgraduate-politics-01-q11-source-block",
+            "title": "原创命题记录 11",
+            "exact": "依据宪法序言，新中国建立后实现向社会主义社会转变的重要制度基础是："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；按序言历史线索，社会主义改造完成与制度确立相联系。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "社会主义改造完成并确立社会主义制度"
+            },
+            {
+              "id": "B",
+              "text": "恢复封建土地制度"
+            },
+            {
+              "id": "C",
+              "text": "取消人民当家作主"
+            },
+            {
+              "id": "D",
+              "text": "仅改变行政区划"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-history",
+                "blockId": "constitution-history-block",
+                "title": "宪法序言所述历史线索（作者概述）",
+                "exact": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q12",
+          "number": 12,
+          "type": "choice",
+          "prompt": "依据党的二十大报告，中国式现代化的一个鲜明特征是：",
+          "score": 1,
+          "solution": "D",
+          "explanation": "共同富裕是所列特征之一；其余均与报告相反。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q12-source",
+            "blockId": "postgraduate-politics-01-q12-source-block",
+            "title": "原创命题记录 12",
+            "exact": "依据党的二十大报告，中国式现代化的一个鲜明特征是："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；共同富裕是所列特征之一；其余均与报告相反。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "少数人独占现代化成果"
+            },
+            {
+              "id": "B",
+              "text": "以对外扩张为前提"
+            },
+            {
+              "id": "C",
+              "text": "只重物质不重精神"
+            },
+            {
+              "id": "D",
+              "text": "全体人民共同富裕"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q13",
+          "number": 13,
+          "type": "choice",
+          "prompt": "依据党的二十大报告，全面建设社会主义现代化国家的首要任务是：",
+          "score": 1,
+          "solution": "B",
+          "explanation": "报告第四部分明确首要任务为高质量发展。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q13-source",
+            "blockId": "postgraduate-politics-01-q13-source-block",
+            "title": "原创命题记录 13",
+            "exact": "依据党的二十大报告，全面建设社会主义现代化国家的首要任务是："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；报告第四部分明确首要任务为高质量发展。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "只追求速度"
+            },
+            {
+              "id": "B",
+              "text": "高质量发展"
+            },
+            {
+              "id": "C",
+              "text": "排斥科技创新"
+            },
+            {
+              "id": "D",
+              "text": "停止扩大内需"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q14",
+          "number": 14,
+          "type": "choice",
+          "prompt": "社会主义核心价值观中，属于社会层面的价值取向是：",
+          "score": 1,
+          "solution": "C",
+          "explanation": "三层次分别为国家、社会、公民；社会层面是自由平等公正法治。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q14-source",
+            "blockId": "postgraduate-politics-01-q14-source-block",
+            "title": "原创命题记录 14",
+            "exact": "社会主义核心价值观中，属于社会层面的价值取向是："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；三层次分别为国家、社会、公民；社会层面是自由平等公正法治。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "爱国、敬业、诚信、友善"
+            },
+            {
+              "id": "B",
+              "text": "富强、民主、文明、和谐"
+            },
+            {
+              "id": "C",
+              "text": "自由、平等、公正、法治"
+            },
+            {
+              "id": "D",
+              "text": "竞争、利润、速度、规模"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q15",
+          "number": 15,
+          "type": "choice",
+          "prompt": "某机关主张本单位内部文件可以抵触宪法。依据宪法地位，应当认为：",
+          "score": 1,
+          "solution": "A",
+          "explanation": "宪法具有最高法律效力，国家机关同样受其约束。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q15-source",
+            "blockId": "postgraduate-politics-01-q15-source-block",
+            "title": "原创命题记录 15",
+            "exact": "某机关主张本单位内部文件可以抵触宪法。依据宪法地位，应当认为："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；宪法具有最高法律效力，国家机关同样受其约束。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "内部文件不能抵触具有最高法律效力的宪法"
+            },
+            {
+              "id": "B",
+              "text": "内部文件效力高于宪法"
+            },
+            {
+              "id": "C",
+              "text": "只要效率高即可抵触"
+            },
+            {
+              "id": "D",
+              "text": "宪法仅约束普通公民"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-rights",
+                "blockId": "constitution-rights-block",
+                "title": "2018年修正宪法权利义务提要（作者概述）",
+                "exact": "国家尊重和保障人权；公民在法律面前一律平等；公民享有宪法法律规定的权利，也须履行义务，行使自由和权利不得损害国家、社会、集体利益及其他公民合法自由和权利；宪法具有最高法律效力。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q16",
+          "number": 16,
+          "type": "choice",
+          "prompt": "跨国流行病和气候风险说明，促进共同安全与发展需要：",
+          "score": 1,
+          "solution": "D",
+          "explanation": "跨境外部性要求合作，不意味取消主权或放弃各方合法权益。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q16-source",
+            "blockId": "postgraduate-politics-01-q16-source-block",
+            "title": "原创命题记录 16",
+            "exact": "跨国流行病和气候风险说明，促进共同安全与发展需要："
+          },
+          "chapter": "理论与材料应用",
+          "tags": [
+            "理论与材料应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "理论与材料应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按指定版本概念和材料逐项排除；跨境外部性要求合作，不意味取消主权或放弃各方合法权益。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "各国永不交流"
+            },
+            {
+              "id": "B",
+              "text": "任何国家独自解决所有问题"
+            },
+            {
+              "id": "C",
+              "text": "以强制代替所有协商"
+            },
+            {
+              "id": "D",
+              "text": "在尊重各国权利基础上加强合作"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-peace",
+                "blockId": "report-peace-block",
+                "title": "国际合作命题依据（作者概述）",
+                "exact": "2022年报告论述维护世界和平、促进共同发展，倡导以对话协商处理分歧、反对霸权主义，推动构建人类命运共同体；各国发展相互联系，跨国问题需要合作。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multiple",
+      "title": "二、多项选择题",
+      "examPartId": "multiple",
+      "instructions": "第17—33题，每题2分。每题至少有两个正确选项。多选、少选、错选均不得分。",
+      "score": 34,
+      "questions": [
+        {
+          "id": "postgraduate-politics-01-q17",
+          "number": 17,
+          "type": "multiple",
+          "prompt": "将城市经验用于乡村治理，应当：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "共性与特殊性统一，经验迁移需条件与实践检验。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q17-source",
+            "blockId": "postgraduate-politics-01-q17-source-block",
+            "title": "原创命题记录 17",
+            "exact": "将城市经验用于乡村治理，应当："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；共性与特殊性统一，经验迁移需条件与实践检验。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "调查人口、资源与组织条件"
+            },
+            {
+              "id": "B",
+              "text": "提炼可迁移的一般机制"
+            },
+            {
+              "id": "C",
+              "text": "逐字照搬且不允许调整"
+            },
+            {
+              "id": "D",
+              "text": "在实践中检验并修正"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q18",
+          "number": 18,
+          "type": "multiple",
+          "prompt": "科研中正确处理认识与实践关系的做法有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "实践提供问题与检验；权威身份不能代替证据。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q18-source",
+            "blockId": "postgraduate-politics-01-q18-source-block",
+            "title": "原创命题记录 18",
+            "exact": "科研中正确处理认识与实践关系的做法有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；实践提供问题与检验；权威身份不能代替证据。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "从实际问题提出假设"
+            },
+            {
+              "id": "B",
+              "text": "用可复查实验检验模型"
+            },
+            {
+              "id": "C",
+              "text": "只凭权威断定结论"
+            },
+            {
+              "id": "D",
+              "text": "根据新证据修正认识"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q19",
+          "number": 19,
+          "type": "multiple",
+          "prompt": "关于联系的观点，正确的有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "普遍联系不等于任意直接联系；人可依据客观条件建立具体联系。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q19-source",
+            "blockId": "postgraduate-politics-01-q19-source-block",
+            "title": "原创命题记录 19",
+            "exact": "关于联系的观点，正确的有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；普遍联系不等于任意直接联系；人可依据客观条件建立具体联系。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "事物联系具有客观性"
+            },
+            {
+              "id": "B",
+              "text": "分析系统须考虑结构与环境"
+            },
+            {
+              "id": "C",
+              "text": "所有事物任意两点都有直接联系"
+            },
+            {
+              "id": "D",
+              "text": "可以改变条件建立新的具体联系"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q20",
+          "number": 20,
+          "type": "multiple",
+          "prompt": "关于量变与质变，正确的有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "条件和度是关键，不能机械跳跃。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q20-source",
+            "blockId": "postgraduate-politics-01-q20-source-block",
+            "title": "原创命题记录 20",
+            "exact": "关于量变与质变，正确的有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；条件和度是关键，不能机械跳跃。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "量变是质变的必要准备"
+            },
+            {
+              "id": "B",
+              "text": "质变为新的量变开辟道路"
+            },
+            {
+              "id": "C",
+              "text": "任何量变都立即造成同一种质变"
+            },
+            {
+              "id": "D",
+              "text": "应注意把握度及变化条件"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q21",
+          "number": 21,
+          "type": "multiple",
+          "prompt": "对社会历史发展的理解，符合历史唯物主义的有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "C"
+          ],
+          "explanation": "前三项为相关原理；个人作用须置于历史条件中理解。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q21-source",
+            "blockId": "postgraduate-politics-01-q21-source-block",
+            "title": "原创命题记录 21",
+            "exact": "对社会历史发展的理解，符合历史唯物主义的有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；前三项为相关原理；个人作用须置于历史条件中理解。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "社会存在对社会意识有决定作用"
+            },
+            {
+              "id": "B",
+              "text": "社会意识具有相对独立性"
+            },
+            {
+              "id": "C",
+              "text": "人民群众是社会历史的创造者"
+            },
+            {
+              "id": "D",
+              "text": "个别人物意志可以脱离社会条件决定历史"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q22",
+          "number": 22,
+          "type": "multiple",
+          "prompt": "关于商品与劳动二重性，正确的有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "区分有用性与价值，商品包含二者而不等同。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q22-source",
+            "blockId": "postgraduate-politics-01-q22-source-block",
+            "title": "原创命题记录 22",
+            "exact": "关于商品与劳动二重性，正确的有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；区分有用性与价值，商品包含二者而不等同。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "具体劳动创造使用价值"
+            },
+            {
+              "id": "B",
+              "text": "抽象劳动形成价值"
+            },
+            {
+              "id": "C",
+              "text": "使用价值与价值完全等同"
+            },
+            {
+              "id": "D",
+              "text": "商品是使用价值与价值的统一体"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q23",
+          "number": 23,
+          "type": "multiple",
+          "prompt": "资本家通过缩短必要劳动时间而保持工作日长度不变来增加剩余劳动时间，相关判断有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "相对剩余价值通过必要劳动时间缩短产生，绝对剩余价值典型为延长工作日。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q23-source",
+            "blockId": "postgraduate-politics-01-q23-source-block",
+            "title": "原创命题记录 23",
+            "exact": "资本家通过缩短必要劳动时间而保持工作日长度不变来增加剩余劳动时间，相关判断有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；相对剩余价值通过必要劳动时间缩短产生，绝对剩余价值典型为延长工作日。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "可能增加相对剩余价值"
+            },
+            {
+              "id": "B",
+              "text": "涉及劳动生产率及劳动力价值变化"
+            },
+            {
+              "id": "C",
+              "text": "等同于单纯延长工作日"
+            },
+            {
+              "id": "D",
+              "text": "必要劳动与剩余劳动的比例发生变化"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q24",
+          "number": 24,
+          "type": "multiple",
+          "prompt": "依据宪法序言，关于近现代中国历史的表述正确的有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "C",
+            "D"
+          ],
+          "explanation": "按所引序言逐项核对，B与序言明确表述相反。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q24-source",
+            "blockId": "postgraduate-politics-01-q24-source-block",
+            "title": "原创命题记录 24",
+            "exact": "依据宪法序言，关于近现代中国历史的表述正确的有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；按所引序言逐项核对，B与序言明确表述相反。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "辛亥革命结束封建帝制"
+            },
+            {
+              "id": "B",
+              "text": "辛亥革命后反帝反封建任务已全部完成"
+            },
+            {
+              "id": "C",
+              "text": "1949年中华人民共和国成立"
+            },
+            {
+              "id": "D",
+              "text": "社会主义改造与社会主义制度确立相联系"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-history",
+                "blockId": "constitution-history-block",
+                "title": "宪法序言所述历史线索（作者概述）",
+                "exact": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q25",
+          "number": 25,
+          "type": "multiple",
+          "prompt": "研究革命历史应当：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "历史解释需条件、阶段和证据，避免后见之明替代当时情境。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q25-source",
+            "blockId": "postgraduate-politics-01-q25-source-block",
+            "title": "原创命题记录 25",
+            "exact": "研究革命历史应当："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；历史解释需条件、阶段和证据，避免后见之明替代当时情境。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "将事件放在当时社会条件中"
+            },
+            {
+              "id": "B",
+              "text": "区分历史任务、力量与阶段"
+            },
+            {
+              "id": "C",
+              "text": "用结果反推当事人知晓全部未来"
+            },
+            {
+              "id": "D",
+              "text": "用多种史料相互印证"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-history",
+                "blockId": "constitution-history-block",
+                "title": "宪法序言所述历史线索（作者概述）",
+                "exact": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q26",
+          "number": 26,
+          "type": "multiple",
+          "prompt": "依据党的二十大报告，中国式现代化相关特征包括：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "explanation": "四项均在报告列举的中国特色之中。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q26-source",
+            "blockId": "postgraduate-politics-01-q26-source-block",
+            "title": "原创命题记录 26",
+            "exact": "依据党的二十大报告，中国式现代化相关特征包括："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；四项均在报告列举的中国特色之中。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "人口规模巨大"
+            },
+            {
+              "id": "B",
+              "text": "物质文明和精神文明相协调"
+            },
+            {
+              "id": "C",
+              "text": "人与自然和谐共生"
+            },
+            {
+              "id": "D",
+              "text": "走和平发展道路"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q27",
+          "number": 27,
+          "type": "multiple",
+          "prompt": "依据党的二十大报告，教育、科技、人才的关系可理解为：",
+          "score": 2,
+          "solution": [
+            "A",
+            "C",
+            "D"
+          ],
+          "explanation": "报告强调三者基础性战略性支撑及统筹作用，不能割裂。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q27-source",
+            "blockId": "postgraduate-politics-01-q27-source-block",
+            "title": "原创命题记录 27",
+            "exact": "依据党的二十大报告，教育、科技、人才的关系可理解为："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；报告强调三者基础性战略性支撑及统筹作用，不能割裂。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "共同提供基础性、战略性支撑"
+            },
+            {
+              "id": "B",
+              "text": "彼此完全割裂"
+            },
+            {
+              "id": "C",
+              "text": "需要统筹推进"
+            },
+            {
+              "id": "D",
+              "text": "与创新发展密切相关"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q28",
+          "number": 28,
+          "type": "multiple",
+          "prompt": "推动高质量发展，符合相关理念的做法有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "创新、绿色、共享不能被单一短期规模指标替代。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q28-source",
+            "blockId": "postgraduate-politics-01-q28-source-block",
+            "title": "原创命题记录 28",
+            "exact": "推动高质量发展，符合相关理念的做法有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；创新、绿色、共享不能被单一短期规模指标替代。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "以创新提高生产能力和效率"
+            },
+            {
+              "id": "B",
+              "text": "兼顾资源环境承载能力"
+            },
+            {
+              "id": "C",
+              "text": "把短期产值作为唯一标准"
+            },
+            {
+              "id": "D",
+              "text": "促进成果更公平地惠及人民"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q29",
+          "number": 29,
+          "type": "multiple",
+          "prompt": "生态治理中坚持系统观念，应当：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "整体联系要求跨界协调和综合评价，不能局部改善整体受损。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q29-source",
+            "blockId": "postgraduate-politics-01-q29-source-block",
+            "title": "原创命题记录 29",
+            "exact": "生态治理中坚持系统观念，应当："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；整体联系要求跨界协调和综合评价，不能局部改善整体受损。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "统筹上下游和左右岸"
+            },
+            {
+              "id": "B",
+              "text": "关注污染转移而非只看本地数字"
+            },
+            {
+              "id": "C",
+              "text": "把所有治理成本转嫁邻区"
+            },
+            {
+              "id": "D",
+              "text": "协调生产、生活与生态需求"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q30",
+          "number": 30,
+          "type": "multiple",
+          "prompt": "依2018年修正宪法，关于公民权利义务正确的有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "C",
+            "D"
+          ],
+          "explanation": "分别依据第33条及第51条原则核对。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q30-source",
+            "blockId": "postgraduate-politics-01-q30-source-block",
+            "title": "原创命题记录 30",
+            "exact": "依2018年修正宪法，关于公民权利义务正确的有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；分别依据第33条及第51条原则核对。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "公民在法律面前一律平等"
+            },
+            {
+              "id": "B",
+              "text": "行使权利可以任意侵害他人权利"
+            },
+            {
+              "id": "C",
+              "text": "享有权利同时须履行相应义务"
+            },
+            {
+              "id": "D",
+              "text": "国家尊重和保障人权"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-rights",
+                "blockId": "constitution-rights-block",
+                "title": "2018年修正宪法权利义务提要（作者概述）",
+                "exact": "国家尊重和保障人权；公民在法律面前一律平等；公民享有宪法法律规定的权利，也须履行义务，行使自由和权利不得损害国家、社会、集体利益及其他公民合法自由和权利；宪法具有最高法律效力。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q31",
+          "number": 31,
+          "type": "multiple",
+          "prompt": "践行职业道德的表现有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "C",
+            "D"
+          ],
+          "explanation": "诚信、责任、尊重与安全要求相一致；隐瞒数据损害职业责任。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q31-source",
+            "blockId": "postgraduate-politics-01-q31-source-block",
+            "title": "原创命题记录 31",
+            "exact": "践行职业道德的表现有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；诚信、责任、尊重与安全要求相一致；隐瞒数据损害职业责任。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "对产品缺陷如实记录"
+            },
+            {
+              "id": "B",
+              "text": "为了赶工删除安全检测数据"
+            },
+            {
+              "id": "C",
+              "text": "遵守承诺并对失误负责"
+            },
+            {
+              "id": "D",
+              "text": "尊重服务对象的人格与权益"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "professional-ethics",
+                "blockId": "professional-ethics-block",
+                "title": "职业道德应用核对（作者概述）",
+                "exact": "职业行为应诚实记录事实、遵守承诺并对失误负责，尊重服务对象的人格与合法权益。工程赶工不能成为删除安全检测数据或隐瞒产品缺陷的理由。此为命题用原则概述，不将其冒充宪法条文。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q32",
+          "number": 32,
+          "type": "multiple",
+          "prompt": "公共协商为决策提供价值，原因包括：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "协商改善信息与理由，不保证消除全部利益差异。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q32-source",
+            "blockId": "postgraduate-politics-01-q32-source-block",
+            "title": "原创命题记录 32",
+            "exact": "公共协商为决策提供价值，原因包括："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；协商改善信息与理由，不保证消除全部利益差异。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "可以了解不同群体实际需要"
+            },
+            {
+              "id": "B",
+              "text": "能暴露方案的遗漏条件"
+            },
+            {
+              "id": "C",
+              "text": "保证所有人意见完全一致"
+            },
+            {
+              "id": "D",
+              "text": "有助于形成可说明的公共理由"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-politics-01-q33",
+          "number": 33,
+          "type": "multiple",
+          "prompt": "围绕跨国环境问题开展合作，合理做法有：",
+          "score": 2,
+          "solution": [
+            "A",
+            "B",
+            "D"
+          ],
+          "explanation": "合作可在差异中推进，需证据、责任、权利及能力协调。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q33-source",
+            "blockId": "postgraduate-politics-01-q33-source-block",
+            "title": "原创命题记录 33",
+            "exact": "围绕跨国环境问题开展合作，合理做法有："
+          },
+          "chapter": "综合辨析",
+          "tags": [
+            "综合辨析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "综合辨析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项核定真值与适用条件，全部选项集合与答案一一比对；合作可在差异中推进，需证据、责任、权利及能力协调。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "共享可核对的监测数据"
+            },
+            {
+              "id": "B",
+              "text": "通过协商明确责任与资源"
+            },
+            {
+              "id": "C",
+              "text": "把差异等同于无法合作"
+            },
+            {
+              "id": "D",
+              "text": "尊重各国正当发展权益"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-peace",
+                "blockId": "report-peace-block",
+                "title": "国际合作命题依据（作者概述）",
+                "exact": "2022年报告论述维护世界和平、促进共同发展，倡导以对话协商处理分歧、反对霸权主义，推动构建人类命运共同体；各国发展相互联系，跨国问题需要合作。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysis-34",
+      "title": "三、分析题 · 第34题",
+      "examPartId": "analysis",
+      "instructions": "结合材料和所学知识作答。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "postgraduate-politics-01-q34",
+          "number": 34,
+          "type": "response",
+          "prompt": "（1）运用认识与实践关系说明为什么要保留失败记录并开展分区试验。（5分）\n（2）运用矛盾普遍性与特殊性关系，评析材料三的两种看法。（5分）",
+          "score": 10,
+          "solution": "（1）实践提出节水问题、提供坡位和径流证据，并检验系统模型。失败记录揭示统一阈值的适用边界，不能因结论不理想而删除。分区试验使研究者比较条件与结果，修正认识，再以新实践验证，体现实践—认识—再实践的过程。（2）外地经验可能包含灌溉控制的一般规律，但须通过本地特殊条件发挥作用。一次迁移失败不能否定所有一般知识；扩大采购量也不能自动弥补模型与条件不匹配。应提炼共性机制，调查具体条件，形成可验证的本地方案。",
+          "explanation": "两问各5分。理论概念必须与材料中的事实、条件和行为相联系；仅抄概念而不分析材料，在对应材料项不得分。允许准确的等义表述和合理补充。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q34-source",
+            "blockId": "postgraduate-politics-01-q34-source-block",
+            "title": "原创命题记录 34",
+            "exact": "（1）运用认识与实践关系说明为什么要保留失败记录并开展分区试验。（5分）\n（2）运用矛盾普遍性与特殊性关系，评析材料三的两种看法。（5分）"
+          },
+          "chapter": "材料分析",
+          "tags": [
+            "材料分析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "材料分析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "依明确版本知识重建理论—材料—结论链条；检查每问5分、整题10分及情境与现实事实的边界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "marx-method",
+                "blockId": "marx-method-block",
+                "title": "马克思主义原理核对提要（作者概述）",
+                "exact": "实践是认识的来源、发展的动力、目的和检验真理的唯一标准；矛盾的普遍性寓于特殊性之中。联系具有客观性和条件性，尊重规律是发挥能动性的前提；量变达到一定条件可引起质变，须把握度。生产力决定生产关系，生产关系有反作用；社会存在决定社会意识，社会意识有相对独立性，人民群众是历史创造者。具体劳动创造使用价值，抽象劳动形成价值；单位商品价值与社会劳动生产率成反比。剩余价值来自剩余劳动，必要劳动时间缩短而工作日不变可形成相对剩余价值。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "实践的来源、检验与发展作用",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "结合失败记录和分区试验证据",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "说明普遍性寓于特殊性、须具体分析",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "分别指出全盘否定与机械照搬的错误",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "boxed"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "材料一：某县购买一套在北方平原验证有效的灌溉控制系统，直接用于本地山坡茶园。首年设备读数准确，但部分地块出现径流，节水目标未实现。\n材料二：技术人员与农户共同分区记录坡度、土壤和降雨，发现同一湿度阈值在不同坡位作用不同。团队将统一阈值改为分区方案，先小范围试验，保留失败记录，逐步调整。\n材料三：有人认为，既然外地经验曾失败，就应放弃所有外部技术；也有人主张，只要增加采购量，效果自然会出现。",
+        "source": {
+          "materialId": "analysis-34-passage",
+          "blockId": "analysis-34-passage-block",
+          "title": "三、分析题 · 第34题材料",
+          "exact": "材料一：某县购买一套在北方平原验证有效的灌溉控制系统，直接用于本地山坡茶园。首年设备读数准确，但部分地块出现径流，节水目标未实现。\n材料二：技术人员与农户共同分区记录坡度、土壤和降雨，发现同一湿度阈值在不同坡位作用不同。团队将统一阈值改为分区方案，先小范围试验，保留失败记录，逐步调整。\n材料三：有人认为，既然外地经验曾失败，就应放弃所有外部技术；也有人主张，只要增加采购量，效果自然会出现。"
+        }
+      }
+    },
+    {
+      "id": "analysis-35",
+      "title": "三、分析题 · 第35题",
+      "examPartId": "analysis",
+      "instructions": "结合材料和所学知识作答。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "postgraduate-politics-01-q35",
+          "number": 35,
+          "type": "response",
+          "prompt": "（1）结合高质量发展和中国式现代化有关要求，说明为什么不能只看短期产值。（5分）\n（2）说明转型中如何统筹发展、生态与民生。（5分）",
+          "score": 10,
+          "solution": "（1）高质量发展关注发展的质量、效率、动力和成果，现代化还涉及共同富裕、物质精神协调与人与自然和谐共生。只看短期产值会遗漏资源环境代价和群体利益，不能据单一规模指标判断现代化成效。（2）把技术创新、产业升级与污染治理结合，评估就业与收入变化，提供转岗培训和基本公共服务，避免将转型成本集中给少数群体。采用分阶段方案和多维可核对指标，在公众参与和反馈中修订。甲忽视生态民生，乙缺少转型承接，丙体现统筹但仍须落实资金、责任和执行条件。",
+          "explanation": "两问各5分。理论概念必须与材料中的事实、条件和行为相联系；仅抄概念而不分析材料，在对应材料项不得分。允许准确的等义表述和合理补充。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q35-source",
+            "blockId": "postgraduate-politics-01-q35-source-block",
+            "title": "原创命题记录 35",
+            "exact": "（1）结合高质量发展和中国式现代化有关要求，说明为什么不能只看短期产值。（5分）\n（2）说明转型中如何统筹发展、生态与民生。（5分）"
+          },
+          "chapter": "材料分析",
+          "tags": [
+            "材料分析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "材料分析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "依明确版本知识重建理论—材料—结论链条；检查每问5分、整题10分及情境与现实事实的边界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-2022",
+                "blockId": "report-2022-block",
+                "title": "党的二十大报告相关命题提要（作者概述）",
+                "exact": "2022年报告把高质量发展置于全面建设社会主义现代化国家的重要位置；中国式现代化具有大人口规模、共同富裕、物质精神协调、人与自然和谐共生、和平发展等特征；教育、科技、人才共同提供基础性战略性支撑。社会主义核心价值观区分国家、社会、公民三个层次，社会层面的价值取向是自由、平等、公正、法治。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "高质量发展及现代化多维目标",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "解释单一产值指标局限",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "技术、生态、就业及公共服务的具体协同",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "实施条件、分阶段评价与反馈",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "boxed"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "某资源型城市讨论转型。方案甲把短期产值设为唯一指标，拟扩大高耗能产能；方案乙只要求停产，却未安排就业和基本公共服务；方案丙提出更新工艺、治理污染、培养技能，并公开就业、能耗、收入和公共服务等指标，分阶段评估不同群体的影响。材料为命题情境，不表示任何现实城市的统计结论。",
+        "source": {
+          "materialId": "analysis-35-passage",
+          "blockId": "analysis-35-passage-block",
+          "title": "三、分析题 · 第35题材料",
+          "exact": "某资源型城市讨论转型。方案甲把短期产值设为唯一指标，拟扩大高耗能产能；方案乙只要求停产，却未安排就业和基本公共服务；方案丙提出更新工艺、治理污染、培养技能，并公开就业、能耗、收入和公共服务等指标，分阶段评估不同群体的影响。材料为命题情境，不表示任何现实城市的统计结论。"
+        }
+      }
+    },
+    {
+      "id": "analysis-36",
+      "title": "三、分析题 · 第36题",
+      "examPartId": "analysis",
+      "instructions": "结合材料和所学知识作答。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "postgraduate-politics-01-q36",
+          "number": 36,
+          "type": "response",
+          "prompt": "（1）说明为什么评价辛亥革命既要肯定历史功绩，又要分析历史局限。（5分）\n（2）说明应如何区分新民主主义革命胜利、国家建立与社会主义制度确立这几个相联系的历史环节。（5分）",
+          "score": 10,
+          "solution": "（1）辛亥革命结束君主专制制度，推动政治与思想变革，应放在当时历史条件下肯定其进步意义；但半殖民地半封建社会根源和反帝反封建任务未因帝制结束而全部消失，不能将政治形式变化等同于全部社会任务完成。（2）新民主主义革命解决当时革命任务，其胜利与中华人民共和国成立相联系，国家建立使人民掌握国家权力。新中国成立后经过过渡和社会主义改造，社会主义制度逐步确立。三个环节在历史上连续又有阶段差别；不能把1949年国家成立与其后社会主义改造完成写成同一个时间点，也不能割断其内在联系。",
+          "explanation": "两问各5分。理论概念必须与材料中的事实、条件和行为相联系；仅抄概念而不分析材料，在对应材料项不得分。允许准确的等义表述和合理补充。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q36-source",
+            "blockId": "postgraduate-politics-01-q36-source-block",
+            "title": "原创命题记录 36",
+            "exact": "（1）说明为什么评价辛亥革命既要肯定历史功绩，又要分析历史局限。（5分）\n（2）说明应如何区分新民主主义革命胜利、国家建立与社会主义制度确立这几个相联系的历史环节。（5分）"
+          },
+          "chapter": "材料分析",
+          "tags": [
+            "材料分析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "材料分析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "依明确版本知识重建理论—材料—结论链条；检查每问5分、整题10分及情境与现实事实的边界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-history",
+                "blockId": "constitution-history-block",
+                "title": "宪法序言所述历史线索（作者概述）",
+                "exact": "1840年以后中国逐渐成为半殖民地半封建社会；辛亥革命结束封建帝制，但反帝反封建任务尚未完成；1949年中华人民共和国成立；社会主义改造完成后确立社会主义制度。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "辛亥革命功绩并置于历史条件",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "反帝反封建任务未全部完成的局限",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "三个环节的阶段与联系",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "避免混同时间、任务及制度性质",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "boxed"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "材料一：宪法序言记述，辛亥革命结束封建帝制，但中国人民反对帝国主义和封建主义的历史任务尚未完成。\n材料二：宪法序言记述，1949年中华人民共和国成立，中国人民掌握国家权力；中华人民共和国成立后，我国社会逐步实现由新民主主义到社会主义的过渡。\n上述材料按现行宪法序言归纳，供历史分析。",
+        "source": {
+          "materialId": "analysis-36-passage",
+          "blockId": "analysis-36-passage-block",
+          "title": "三、分析题 · 第36题材料",
+          "exact": "材料一：宪法序言记述，辛亥革命结束封建帝制，但中国人民反对帝国主义和封建主义的历史任务尚未完成。\n材料二：宪法序言记述，1949年中华人民共和国成立，中国人民掌握国家权力；中华人民共和国成立后，我国社会逐步实现由新民主主义到社会主义的过渡。\n上述材料按现行宪法序言归纳，供历史分析。"
+        }
+      }
+    },
+    {
+      "id": "analysis-37",
+      "title": "三、分析题 · 第37题",
+      "examPartId": "analysis",
+      "instructions": "结合材料和所学知识作答。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "postgraduate-politics-01-q37",
+          "number": 37,
+          "type": "response",
+          "prompt": "（1）结合权利义务关系与法治观念，评析负责人的说法。（5分）\n（2）说明职业和社会责任应如何落实到平台的具体改进。（5分）",
+          "score": 10,
+          "solution": "（1）公益目的不能自行消除个人合法权利，公民权利与义务相统一，行使权利和开展活动均须遵守法律并尊重他人权益。自愿加入一种活动不等于概括同意任何后续安排；平台是否合法应依据相应法律与具体行为判断，不能以目的良好代替程序和依据。（2）先核查信息处理的合法依据、范围与必要性，清楚说明规则和实际用途，提供可行的选择、反馈与纠错途径，尽量减少不必要公开。对提出异议者平等回应，记录问题并明确处理责任。评价服务质量不能只看注册量，还应考察权益保障、实际服务效果和纠错能力。",
+          "explanation": "两问各5分。理论概念必须与材料中的事实、条件和行为相联系；仅抄概念而不分析材料，在对应材料项不得分。允许准确的等义表述和合理补充。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q37-source",
+            "blockId": "postgraduate-politics-01-q37-source-block",
+            "title": "原创命题记录 37",
+            "exact": "（1）结合权利义务关系与法治观念，评析负责人的说法。（5分）\n（2）说明职业和社会责任应如何落实到平台的具体改进。（5分）"
+          },
+          "chapter": "材料分析",
+          "tags": [
+            "材料分析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "材料分析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "依明确版本知识重建理论—材料—结论链条；检查每问5分、整题10分及情境与现实事实的边界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "constitution-rights",
+                "blockId": "constitution-rights-block",
+                "title": "2018年修正宪法权利义务提要（作者概述）",
+                "exact": "国家尊重和保障人权；公民在法律面前一律平等；公民享有宪法法律规定的权利，也须履行义务，行使自由和权利不得损害国家、社会、集体利益及其他公民合法自由和权利；宪法具有最高法律效力。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "权利义务统一及公益不排除权利",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "自愿参与不等于一切行为自动合法",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "具体透明、必要性、选择与纠错措施",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "责任与评价指标联系材料",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "boxed"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "某社区志愿服务平台为了提高注册数量，默认公开所有参与者的联系方式。居民提出异议后，负责人说：“大家做公益，就不应计较个人权利；参与自愿，因此平台的任何安排都合法。”另一位志愿者认为，提升公共服务应尊重人格和合法权益，规则应公开说明、接受意见并设置纠错渠道。",
+        "source": {
+          "materialId": "analysis-37-passage",
+          "blockId": "analysis-37-passage-block",
+          "title": "三、分析题 · 第37题材料",
+          "exact": "某社区志愿服务平台为了提高注册数量，默认公开所有参与者的联系方式。居民提出异议后，负责人说：“大家做公益，就不应计较个人权利；参与自愿，因此平台的任何安排都合法。”另一位志愿者认为，提升公共服务应尊重人格和合法权益，规则应公开说明、接受意见并设置纠错渠道。"
+        }
+      }
+    },
+    {
+      "id": "analysis-38",
+      "title": "三、分析题 · 第38题",
+      "examPartId": "analysis",
+      "instructions": "结合材料和所学知识作答。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "postgraduate-politics-01-q38",
+          "number": 38,
+          "type": "response",
+          "prompt": "（1）说明跨境风险为何需要合作及对话协商。（5分）\n（2）评析材料中的两种极端看法，并提出合作应把握的原则和实施环节。（5分）",
+          "score": 10,
+          "solution": "（1）跨境河流联系使一国行为与风险具有外部影响，单边信息和资源不足以处理整条流域风险。共享数据、预警与联合演练可降低信息差，形成协调行动，促进共同安全与发展。（2）拒绝一切协商忽视相互联系，可能使本国与他国都承受可避免的损失；合作也不等于取消各国自主权。应在尊重主权、平等协商和互利基础上明确规则，兼顾能力差异与正当发展权益。具体可约定数据质量、发送时限、预警阈值、应急联络和争议处理，并通过演练和复盘检查落实。",
+          "explanation": "两问各5分。理论概念必须与材料中的事实、条件和行为相联系；仅抄概念而不分析材料，在对应材料项不得分。允许准确的等义表述和合理补充。",
+          "source": {
+            "materialId": "postgraduate-politics-01-q38-source",
+            "blockId": "postgraduate-politics-01-q38-source-block",
+            "title": "原创命题记录 38",
+            "exact": "（1）说明跨境风险为何需要合作及对话协商。（5分）\n（2）评析材料中的两种极端看法，并提出合作应把握的原则和实施环节。（5分）"
+          },
+          "chapter": "材料分析",
+          "tags": [
+            "材料分析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "材料分析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "依明确版本知识重建理论—材料—结论链条；检查每问5分、整题10分及情境与现实事实的边界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "report-peace",
+                "blockId": "report-peace-block",
+                "title": "国际合作命题依据（作者概述）",
+                "exact": "2022年报告论述维护世界和平、促进共同发展，倡导以对话协商处理分歧、反对霸权主义，推动构建人类命运共同体；各国发展相互联系，跨国问题需要合作。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "风险跨境联系与单边局限",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "数据预警演练的具体合作价值",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "分别评析两种极端并说明主权平等互利",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "可执行规则、能力差异与落实机制",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "boxed"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "多个国家共享一条河流。上游发生洪水可能影响下游农业和居民安全，而各国监测能力和应急资源不同。一次技术会议提出共享监测数据、明确预警责任并联合演练。有人主张只维护本国即时利益、拒绝所有协商；也有人认为合作意味着各国必须放弃一切自主决定。材料为命题情境。",
+        "source": {
+          "materialId": "analysis-38-passage",
+          "blockId": "analysis-38-passage-block",
+          "title": "三、分析题 · 第38题材料",
+          "exact": "多个国家共享一条河流。上游发生洪水可能影响下游农业和居民安全，而各国监测能力和应急资源不同。一次技术会议提出共享监测数据、明确预警责任并联合演练。有人主张只维护本国即时利益、拒绝所有协商；也有人认为合作意味着各国必须放弃一切自主决定。材料为命题情境。"
+        }
+      }
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "politics-v7",
+    "sourceQuestionIds": [
+      "postgraduate-politics-01-q1",
+      "postgraduate-politics-01-q2",
+      "postgraduate-politics-01-q3",
+      "postgraduate-politics-01-q4",
+      "postgraduate-politics-01-q5",
+      "postgraduate-politics-01-q6",
+      "postgraduate-politics-01-q7",
+      "postgraduate-politics-01-q8",
+      "postgraduate-politics-01-q9",
+      "postgraduate-politics-01-q10",
+      "postgraduate-politics-01-q11",
+      "postgraduate-politics-01-q12",
+      "postgraduate-politics-01-q13",
+      "postgraduate-politics-01-q14",
+      "postgraduate-politics-01-q15",
+      "postgraduate-politics-01-q16",
+      "postgraduate-politics-01-q17",
+      "postgraduate-politics-01-q18",
+      "postgraduate-politics-01-q19",
+      "postgraduate-politics-01-q20",
+      "postgraduate-politics-01-q21",
+      "postgraduate-politics-01-q22",
+      "postgraduate-politics-01-q23",
+      "postgraduate-politics-01-q24",
+      "postgraduate-politics-01-q25",
+      "postgraduate-politics-01-q26",
+      "postgraduate-politics-01-q27",
+      "postgraduate-politics-01-q28",
+      "postgraduate-politics-01-q29",
+      "postgraduate-politics-01-q30",
+      "postgraduate-politics-01-q31",
+      "postgraduate-politics-01-q32",
+      "postgraduate-politics-01-q33",
+      "postgraduate-politics-01-q34",
+      "postgraduate-politics-01-q35",
+      "postgraduate-politics-01-q36",
+      "postgraduate-politics-01-q37",
+      "postgraduate-politics-01-q38"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创完整练习基准，采用所列考试结构；不是任何年份的官方原卷。题文、参考答案和评分要点为项目原创，MIT。外部资料仅作结构与知识核对，权利分别保留。 本卷为基础理论与指定版本材料的完整题量基准，未覆盖2026年度全部时事专题；时政扩充须按用户目标考试年度另行检索核对。"
+  },
+  "exam": {
+    "specificationId": "postgraduate-politics-blueprint",
+    "scope": "full",
+    "scoreScale": "卷面分",
+    "specification": {
+      "id": "postgraduate-politics-blueprint",
+      "name": "思想政治理论完整练习结构",
+      "subject": "思想政治理论",
+      "level": "考研",
+      "durationMinutes": 180,
+      "totalScore": 100,
+      "scoreScale": "卷面分",
+      "source": {
+        "kind": "reproduced-exam-structure",
+        "title": "2026政治试卷转载结构核对",
+        "url": "https://static.kaoyan.cn/file/question/2025/12/20/e42f4c7191a84bde7b9688900c790a1a.pdf",
+        "accessedAt": "2026-11-15",
+        "notes": "第三方转载含OCR瑕疵，仅核对16/17/5题与16/34/50分；本卷题文和答案均为原创。"
+      },
+      "sections": [
+        {
+          "id": "single",
+          "title": "单项选择题",
+          "count": 16,
+          "questionType": "choice",
+          "totalScore": 16,
+          "pointsPerQuestion": 1,
+          "displayStart": 1
+        },
+        {
+          "id": "multiple",
+          "title": "多项选择题",
+          "count": 17,
+          "questionType": "multiple",
+          "totalScore": 34,
+          "pointsPerQuestion": 2,
+          "displayStart": 17
+        },
+        {
+          "id": "analysis",
+          "title": "分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 50,
+          "pointsPerQuestion": 10,
+          "displayStart": 34,
+          "groups": [
+            {
+              "count": 1
+            },
+            {
+              "count": 1
+            },
+            {
+              "count": 1
+            },
+            {
+              "count": 1
+            },
+            {
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

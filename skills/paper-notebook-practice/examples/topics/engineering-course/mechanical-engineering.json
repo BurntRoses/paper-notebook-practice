@@ -1,0 +1,847 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "mechanical-engineering-course-01",
+  "notebookId": "mechanical-engineering-source",
+  "notebookRevision": 1,
+  "title": "机械设计与动力学课程考试",
+  "subject": "机械设计与动力学",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "机械设计与动力学课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "mechanical-engineering-scope",
+      "title": "MIT 2.003SC Engineering Dynamics",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/",
+      "text": "Newton's Laws, Vectors, and Reference Frames",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2011",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/"
+      }
+    },
+    {
+      "id": "mechanical-engineering-q1-statement",
+      "title": "机械设计与动力学第1题命题原稿",
+      "kind": "question-bank",
+      "text": "实心圆轴以1000 r/min传递10 kW。采用$T=9550P/n$，P用kW、T用N·m。材料本题许用切应力40 MPa，纯扭转模型，$\\tau_{\\max}=16T/(\\pi d^3)$。（1）求工作扭矩和理论最小直径；（2）在25、30 mm两规格中选取较小合格者；（3）若工况系数为1.5，重新选取，并说明键槽等实际因素需如何处理。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mechanical-engineering-q2-statement",
+      "title": "机械设计与动力学第2题命题原稿",
+      "kind": "question-bank",
+      "text": "一对标准直齿圆柱齿轮齿数分别20、60，模数3 mm，压力角20°。主动小齿轮以900 r/min输入5 kW，啮合效率0.96。忽略轴承损失。（1）求两分度圆直径、中心距和输出转速；（2）求输入和输出扭矩；（3）求小齿轮的切向、径向啮合力，并解释效率是否改变几何传动比。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mechanical-engineering-q3-statement",
+      "title": "机械设计与动力学第3题命题原稿",
+      "kind": "question-bank",
+      "text": "某球轴承额定动载荷C=20 kN，在600 r/min下运转，载荷分两段：60%转数对应等效径向载荷4 kN，40%转数对应8 kN。题给球轴承寿命指数p=3，变载荷等效值$P_e=(\\sum f_iP_i^3)^{1/3}$，额定寿命$L_{10}=(C/P_e)^3$百万转。（1）求等效载荷；（2）求百万转寿命和小时寿命；（3）比较直接取算术平均载荷造成的寿命偏差。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mechanical-engineering-q4-statement",
+      "title": "机械设计与动力学第4题命题原稿",
+      "kind": "question-bank",
+      "text": "装配间隙$G=A-B-C$。三尺寸独立且近似正态：A均值100.00 mm、标准差0.04 mm；B均值60.00 mm、标准差0.03 mm；C均值39.50 mm、标准差0.02 mm。（1）求间隙均值与标准差；（2）用均值±3σ区间检验题给允许间隙[0.30,0.70] mm；（3）若B和C测量误差存在相关系数0.5而其他独立，重算标准差，并说明独立RSS公式的适用条件。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mechanical-engineering-q5-statement",
+      "title": "机械设计与动力学第5题命题原稿",
+      "kind": "question-bank",
+      "text": "机器质量100 kg，安装在总刚度100000 N/m、阻尼比0.10的隔振支承上。受旋转机械谐波外力。题给力传递率$T_R=\\sqrt{[1+(2\\zeta r)^2]/[(1-r^2)^2+(2\\zeta r)^2]}$，$r=\\omega/\\omega_n$。（1）求固有频率及固有转速；（2）在1200 r/min时计算传递率；（3）推导开始出现隔振的转速下限；（4）说明机器升速过程仍需考虑的问题。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mechanical-engineering-q6-statement",
+      "title": "机械设计与动力学第6题命题原稿",
+      "kind": "question-bank",
+      "text": "加工同一零件可选A、B两方案。A一次准备费800元，每件变动成本12元，预计不合格率2%；B准备费2000元，每件变动成本9元，不合格率1%。不合格件无法返修且已发生全部变动成本。每批要求获得1000件合格品。（1）用期望值模型分别计算所需投入件数及总成本；（2）求合格品需求N变化时两方案成本相等的临界N；（3）解释为何按期望投入量不能承诺一次批量必定够1000件。允许投入期望值为非整数用于比较。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "mechanical-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "mechanical-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "实心圆轴以1000 r/min传递10 kW。采用$T=9550P/n$，P用kW、T用N·m。材料本题许用切应力40 MPa，纯扭转模型，$\\tau_{\\max}=16T/(\\pi d^3)$。（1）求工作扭矩和理论最小直径；（2）在25、30 mm两规格中选取较小合格者；（3）若工况系数为1.5，重新选取，并说明键槽等实际因素需如何处理。",
+          "score": 15,
+          "solution": "工作扭矩95.500000 N·m；理论直径22.995234 mm。工作工况25 mm合格。乘1.5后理论直径26.322972 mm，25 mm不合格，选30 mm。",
+          "explanation": "应力用N/mm²时，扭矩先由N·m换为N·mm。计算得到25 mm原应力31.128160 MPa；工况后为46.692241 MPa，30 mm为27.020973 MPa。给定纯扭矩法未包括弯矩、应力集中、键槽削弱和疲劳，应按真实条件另行校核而不是任意补一个未知系数。",
+          "source": {
+            "materialId": "mechanical-engineering-q1-statement",
+            "blockId": "mechanical-engineering-q1-statement",
+            "exact": "实心圆轴以1000 r/min传递10 kW。采用$T=9550P/n$，P用kW、T用N·m。材料本题许用切应力40 MPa，纯扭转模型，$\\tau_{\\max}=16T/(\\pi d^3)$。（1）求工作扭矩和理论最小直径；（2）在25、30 mm两规格中选取较小合格者；（3）若工况系数为1.5，重新选取，并说明键槽等实际因素需如何处理。"
+          },
+          "chapter": "传动轴强度与功率",
+          "tags": [
+            "机械设计与动力学",
+            "传动轴强度与功率",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "传动轴强度与功率"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mechanical-engineering-scope",
+                "blockId": "mechanical-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "扭矩及单位正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "mechanical-engineering-q1-statement",
+                    "blockId": "mechanical-engineering-q1-statement",
+                    "exact": "实心圆轴以1000 r/min传递10 kW。采用$T=9550P/n$，P用kW、T用N·m。材料本题许用切应力40 MPa，纯扭转模型，$\\tau_{\\max}=16T/(\\pi d^3)$。（1）求工作扭矩和理论最小直径；（2）在25、30 mm两规格中选取较小合格者；（3）若工况系数为1.5，重新选取，并说明键槽等实际因素需如何处理。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "最小直径与原规格选择正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "工况后直径和新规格正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "提出具体未涵盖机制",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mechanical-q1 stress diameter boundary",
+                "result": "pass",
+                "evidence": "{\"label\": \"mechanical-q1 stress diameter boundary\", \"actual\": 40.00000000000002, \"expected\": 40, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mechanical-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "一对标准直齿圆柱齿轮齿数分别20、60，模数3 mm，压力角20°。主动小齿轮以900 r/min输入5 kW，啮合效率0.96。忽略轴承损失。（1）求两分度圆直径、中心距和输出转速；（2）求输入和输出扭矩；（3）求小齿轮的切向、径向啮合力，并解释效率是否改变几何传动比。",
+          "score": 15,
+          "solution": "分度圆直径60、180 mm，中心距120 mm；输出300 r/min；输入扭矩53.055556 N·m，输出扭矩152.800000 N·m；切向力1768.518519 N、径向力643.688099 N。",
+          "explanation": "$d=mz$，$i=z_2/z_1=3$。效率降低输出功率，故$T_2=\\eta iT_1$，但理想刚性无滑动的齿数比仍确定转速比。小齿轮所传扭矩由输入侧平衡求切向力$F_t=2T_1/d_1$，径向力$F_r=F_t\\tan\\alpha$；不应将径向力计入传递扭矩。",
+          "source": {
+            "materialId": "mechanical-engineering-q2-statement",
+            "blockId": "mechanical-engineering-q2-statement",
+            "exact": "一对标准直齿圆柱齿轮齿数分别20、60，模数3 mm，压力角20°。主动小齿轮以900 r/min输入5 kW，啮合效率0.96。忽略轴承损失。（1）求两分度圆直径、中心距和输出转速；（2）求输入和输出扭矩；（3）求小齿轮的切向、径向啮合力，并解释效率是否改变几何传动比。"
+          },
+          "chapter": "齿轮传动与载荷分解",
+          "tags": [
+            "机械设计与动力学",
+            "齿轮传动与载荷分解",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "齿轮传动与载荷分解"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mechanical-engineering-scope",
+                "blockId": "mechanical-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "尺寸、中心距及速比正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mechanical-engineering-q2-statement",
+                    "blockId": "mechanical-engineering-q2-statement",
+                    "exact": "一对标准直齿圆柱齿轮齿数分别20、60，模数3 mm，压力角20°。主动小齿轮以900 r/min输入5 kW，啮合效率0.96。忽略轴承损失。（1）求两分度圆直径、中心距和输出转速；（2）求输入和输出扭矩；（3）求小齿轮的切向、径向啮合力，并解释效率是否改变几何传动比。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "含效率的功率和扭矩正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "力分解与数值正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "解释几何比与效率的区别",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mechanical-q2 power transmission",
+                "result": "pass",
+                "evidence": "{\"label\": \"mechanical-q2 power transmission\", \"actual\": 2.8800000000000003, \"expected\": 2.88, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mechanical-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "某球轴承额定动载荷C=20 kN，在600 r/min下运转，载荷分两段：60%转数对应等效径向载荷4 kN，40%转数对应8 kN。题给球轴承寿命指数p=3，变载荷等效值$P_e=(\\sum f_iP_i^3)^{1/3}$，额定寿命$L_{10}=(C/P_e)^3$百万转。（1）求等效载荷；（2）求百万转寿命和小时寿命；（3）比较直接取算术平均载荷造成的寿命偏差。",
+          "score": 15,
+          "solution": "$P_e=6.241963$ kN；$L_{10}=32.894737$百万转，即913.742690 h。算术均值5.6 kN会得到45.553936百万转，高估寿命。",
+          "explanation": "载荷按转数比例加权，其三次方表征损伤累积；高载段不能只用线性平均。每小时转数为600×60=36000。L10为题给统计额定指标，不能说每一个轴承必定在该时刻失效，也未涵盖润滑、污染和静强度。",
+          "source": {
+            "materialId": "mechanical-engineering-q3-statement",
+            "blockId": "mechanical-engineering-q3-statement",
+            "exact": "某球轴承额定动载荷C=20 kN，在600 r/min下运转，载荷分两段：60%转数对应等效径向载荷4 kN，40%转数对应8 kN。题给球轴承寿命指数p=3，变载荷等效值$P_e=(\\sum f_iP_i^3)^{1/3}$，额定寿命$L_{10}=(C/P_e)^3$百万转。（1）求等效载荷；（2）求百万转寿命和小时寿命；（3）比较直接取算术平均载荷造成的寿命偏差。"
+          },
+          "chapter": "滚动轴承等效载荷与寿命",
+          "tags": [
+            "机械设计与动力学",
+            "滚动轴承等效载荷与寿命",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "滚动轴承等效载荷与寿命"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mechanical-engineering-scope",
+                "blockId": "mechanical-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "三次方等效载荷正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mechanical-engineering-q3-statement",
+                    "blockId": "mechanical-engineering-q3-statement",
+                    "exact": "某球轴承额定动载荷C=20 kN，在600 r/min下运转，载荷分两段：60%转数对应等效径向载荷4 kN，40%转数对应8 kN。题给球轴承寿命指数p=3，变载荷等效值$P_e=(\\sum f_iP_i^3)^{1/3}$，额定寿命$L_{10}=(C/P_e)^3$百万转。（1）求等效载荷；（2）求百万转寿命和小时寿命；（3）比较直接取算术平均载荷造成的寿命偏差。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "寿命与小时换算正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "算术均值对比及偏差方向正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "解释统计指标及条件",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mechanical-q3 cubic load sum",
+                "result": "pass",
+                "evidence": "{\"label\": \"mechanical-q3 cubic load sum\", \"actual\": 243.20000000000002, \"expected\": 243.2, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mechanical-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "装配间隙$G=A-B-C$。三尺寸独立且近似正态：A均值100.00 mm、标准差0.04 mm；B均值60.00 mm、标准差0.03 mm；C均值39.50 mm、标准差0.02 mm。（1）求间隙均值与标准差；（2）用均值±3σ区间检验题给允许间隙[0.30,0.70] mm；（3）若B和C测量误差存在相关系数0.5而其他独立，重算标准差，并说明独立RSS公式的适用条件。",
+          "score": 15,
+          "solution": "均值0.50 mm，独立时标准差$\\sqrt{0.0029}=0.053852$ mm，3σ区间[0.338445,0.661555] mm，落在题给区间内。相关后方差0.0035 mm²，标准差0.059161 mm。",
+          "explanation": "方差传播$\\operatorname{Var}(A-B-C)=\\sigma_A^2+\\sigma_B^2+\\sigma_C^2+2\\operatorname{Cov}(B,C)$，因为B、C前系数同为−1，所以正相关项增加方差。±3σ是给定分布模型下的统计区间，不等同绝对最坏尺寸极限。",
+          "source": {
+            "materialId": "mechanical-engineering-q4-statement",
+            "blockId": "mechanical-engineering-q4-statement",
+            "exact": "装配间隙$G=A-B-C$。三尺寸独立且近似正态：A均值100.00 mm、标准差0.04 mm；B均值60.00 mm、标准差0.03 mm；C均值39.50 mm、标准差0.02 mm。（1）求间隙均值与标准差；（2）用均值±3σ区间检验题给允许间隙[0.30,0.70] mm；（3）若B和C测量误差存在相关系数0.5而其他独立，重算标准差，并说明独立RSS公式的适用条件。"
+          },
+          "chapter": "线性公差链与装配概率",
+          "tags": [
+            "机械设计与动力学",
+            "线性公差链与装配概率",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "线性公差链与装配概率"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mechanical-engineering-scope",
+                "blockId": "mechanical-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "公差链符号及均值正确",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "mechanical-engineering-q4-statement",
+                    "blockId": "mechanical-engineering-q4-statement",
+                    "exact": "装配间隙$G=A-B-C$。三尺寸独立且近似正态：A均值100.00 mm、标准差0.04 mm；B均值60.00 mm、标准差0.03 mm；C均值39.50 mm、标准差0.02 mm。（1）求间隙均值与标准差；（2）用均值±3σ区间检验题给允许间隙[0.30,0.70] mm；（3）若B和C测量误差存在相关系数0.5而其他独立，重算标准差，并说明独立RSS公式的适用条件。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "独立方差和3σ区间正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "相关项符号及新标准差正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "统计区间与最坏边界区别正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mechanical-q4 covariance propagation",
+                "result": "pass",
+                "evidence": "{\"label\": \"mechanical-q4 covariance propagation\", \"actual\": 0.0035, \"expected\": 0.0035, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mechanical-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "机器质量100 kg，安装在总刚度100000 N/m、阻尼比0.10的隔振支承上。受旋转机械谐波外力。题给力传递率$T_R=\\sqrt{[1+(2\\zeta r)^2]/[(1-r^2)^2+(2\\zeta r)^2]}$，$r=\\omega/\\omega_n$。（1）求固有频率及固有转速；（2）在1200 r/min时计算传递率；（3）推导开始出现隔振的转速下限；（4）说明机器升速过程仍需考虑的问题。",
+          "score": 20,
+          "solution": "$\\omega_n=\\sqrt{1000}=31.622777$ rad/s，$f_n=5.032921$ Hz，固有转速301.975273 r/min。1200 r/min时$r=3.973835$，$T_R=0.086234$。隔振要求$r>\\sqrt2$，转速大于427.057526 r/min。",
+          "explanation": "令传递率平方小于1，阻尼项抵消，得到$(1-r^2)^2>1$，正频率下为$r>\\sqrt2$。稳态工作转速在隔振区不意味着升速无风险；升降速经过共振附近的振幅、启动时长和支承限位仍需核定。不能用无阻尼固有频率与稳态激振频率相混淆。",
+          "source": {
+            "materialId": "mechanical-engineering-q5-statement",
+            "blockId": "mechanical-engineering-q5-statement",
+            "exact": "机器质量100 kg，安装在总刚度100000 N/m、阻尼比0.10的隔振支承上。受旋转机械谐波外力。题给力传递率$T_R=\\sqrt{[1+(2\\zeta r)^2]/[(1-r^2)^2+(2\\zeta r)^2]}$，$r=\\omega/\\omega_n$。（1）求固有频率及固有转速；（2）在1200 r/min时计算传递率；（3）推导开始出现隔振的转速下限；（4）说明机器升速过程仍需考虑的问题。"
+          },
+          "chapter": "机械振动隔离与转速区间",
+          "tags": [
+            "机械设计与动力学",
+            "机械振动隔离与转速区间",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "机械振动隔离与转速区间"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mechanical-engineering-scope",
+                "blockId": "mechanical-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "固有频率与转速单位正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mechanical-engineering-q5-statement",
+                    "blockId": "mechanical-engineering-q5-statement",
+                    "exact": "机器质量100 kg，安装在总刚度100000 N/m、阻尼比0.10的隔振支承上。受旋转机械谐波外力。题给力传递率$T_R=\\sqrt{[1+(2\\zeta r)^2]/[(1-r^2)^2+(2\\zeta r)^2]}$，$r=\\omega/\\omega_n$。（1）求固有频率及固有转速；（2）在1200 r/min时计算传递率；（3）推导开始出现隔振的转速下限；（4）说明机器升速过程仍需考虑的问题。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "频率比和传递率正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "推导隔振下限而非只背结论",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "共振穿越及实际约束合理",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mechanical-q5 isolation boundary",
+                "result": "pass",
+                "evidence": "{\"label\": \"mechanical-q5 isolation boundary\", \"actual\": 1.0, \"expected\": 1, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mechanical-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "加工同一零件可选A、B两方案。A一次准备费800元，每件变动成本12元，预计不合格率2%；B准备费2000元，每件变动成本9元，不合格率1%。不合格件无法返修且已发生全部变动成本。每批要求获得1000件合格品。（1）用期望值模型分别计算所需投入件数及总成本；（2）求合格品需求N变化时两方案成本相等的临界N；（3）解释为何按期望投入量不能承诺一次批量必定够1000件。允许投入期望值为非整数用于比较。",
+          "score": 20,
+          "solution": "A期望投入1020.408163件，成本13044.897959元；B期望投入1010.101010件，成本11090.909091元，应选B。临界合格需求$N=1200/(12/0.98-9/0.99)=380.470588$件。",
+          "explanation": "每件合格品的期望变动成本分别12/0.98和9/0.99。两直线的固定成本差1200元除以单位期望成本差得到临界点。实际合格数量随机，若要规定交付保障概率，需要二项分布或相应良率模型、独立性假设与安全投入量，不能把期望值当作保证下限。",
+          "source": {
+            "materialId": "mechanical-engineering-q6-statement",
+            "blockId": "mechanical-engineering-q6-statement",
+            "exact": "加工同一零件可选A、B两方案。A一次准备费800元，每件变动成本12元，预计不合格率2%；B准备费2000元，每件变动成本9元，不合格率1%。不合格件无法返修且已发生全部变动成本。每批要求获得1000件合格品。（1）用期望值模型分别计算所需投入件数及总成本；（2）求合格品需求N变化时两方案成本相等的临界N；（3）解释为何按期望投入量不能承诺一次批量必定够1000件。允许投入期望值为非整数用于比较。"
+          },
+          "chapter": "制造方案与批量经济性",
+          "tags": [
+            "机械设计与动力学",
+            "制造方案与批量经济性",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "制造方案与批量经济性"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mechanical-engineering-scope",
+                "blockId": "mechanical-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "良率修正投入与成本模型正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mechanical-engineering-q6-statement",
+                    "blockId": "mechanical-engineering-q6-statement",
+                    "exact": "加工同一零件可选A、B两方案。A一次准备费800元，每件变动成本12元，预计不合格率2%；B准备费2000元，每件变动成本9元，不合格率1%。不合格件无法返修且已发生全部变动成本。每批要求获得1000件合格品。（1）用期望值模型分别计算所需投入件数及总成本；（2）求合格品需求N变化时两方案成本相等的临界N；（3）解释为何按期望投入量不能承诺一次批量必定够1000件。允许投入期望值为非整数用于比较。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两方案数值与选择正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "临界批量推导及数值正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "期望与保障概率区别正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mechanical-q6 breakeven residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"mechanical-q6 breakeven residual\", \"actual\": 9.094947017729282e-13, \"expected\": 0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "mechanical-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "mechanical-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "mechanical-engineering-q1",
+        "knowledge": "传动轴强度与功率",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mechanical-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "mechanical-engineering-q2",
+        "knowledge": "齿轮传动与载荷分解",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mechanical-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "mechanical-engineering-q3",
+        "knowledge": "滚动轴承等效载荷与寿命",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mechanical-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "mechanical-engineering-q4",
+        "knowledge": "线性公差链与装配概率",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mechanical-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "mechanical-engineering-q5",
+        "knowledge": "机械振动隔离与转速区间",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mechanical-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "mechanical-engineering-q6",
+        "knowledge": "制造方案与批量经济性",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mechanical-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "mechanical-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "mechanical-engineering-course-blueprint",
+      "name": "机械设计与动力学课程考试",
+      "subject": "机械设计与动力学",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "mechanical-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

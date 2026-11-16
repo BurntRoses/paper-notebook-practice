@@ -1,0 +1,784 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-road-engineer-cases-01",
+  "notebookId": "registered-road-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册土木工程师（道路工程）　专业案例",
+  "subject": "道路工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册土木工程师（道路工程）　专业案例",
+      "路线·交通运行·路面与施工"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册土木工程师（道路工程）　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "道路工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "道路工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-road-engineer",
+    "examName": "注册土木工程师（道路工程）　专业案例",
+    "specialty": "路线·交通运行·路面与施工",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-road-engineer-cases-01-q1",
+        "knowledge": "平曲线、超高、设计约束",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-road-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-road-engineer-cases-01-q2",
+        "knowledge": "停车视距、凸形竖曲线、公式分支",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-road-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-road-engineer-cases-01-q3",
+        "knowledge": "施工交通、动态排队、延误积分",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-road-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-road-engineer-cases-01-q4",
+        "knowledge": "轴载谱、累积损伤、交通增长",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-road-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-road-engineer-cases-01-q5",
+        "knowledge": "路基土石方、状态转换、利用与调配",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-road-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-2026-scope",
+      "kind": "reference",
+      "title": "道路考试路线核定",
+      "text": "2026湖北勘察设计考试通知分别列出环保、水利水电及道路等专业，并区分基础与专业考试。专业考试允许指定目录资料。此处仅核定考试路线；本卷技术指标、合同条件和公式逐题给定，不推定未读取的规范条款。",
+      "blocks": [
+        {
+          "id": "design-2026-scope-block",
+          "title": "道路考试路线核定",
+          "text": "2026湖北勘察设计考试通知分别列出环保、水利水电及道路等专业，并区分基础与专业考试。专业考试允许指定目录资料。此处仅核定考试路线；本卷技术指标、合同条件和公式逐题给定，不推定未读取的规范条款。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "fab9e2a1163070cede8e4d7a5ecce01a58a95083c141489034ad848f6d6acd46",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-road-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "道路平曲线半径400m，设计速度80km/h，超高率6%。本题采用v²/(127R)=e+f，项目允许横向力系数f≤0.06，半径R用m。\n（1）求所需f并判定。\n（2）维持半径与超高不变时求满足条件的最大速度；若必须维持80km/h，求最小半径。\n（3）说明该式不能替代缓和曲线、视距、排水及重车稳定的核查；为什么不能把6%写成6代入？",
+      "blocks": [
+        {
+          "id": "registered-road-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "道路平曲线半径400m，设计速度80km/h，超高率6%。本题采用v²/(127R)=e+f，项目允许横向力系数f≤0.06，半径R用m。\n（1）求所需f并判定。\n（2）维持半径与超高不变时求满足条件的最大速度；若必须维持80km/h，求最小半径。\n（3）说明该式不能替代缓和曲线、视距、排水及重车稳定的核查；为什么不能把6%写成6代入？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "c576b0481709c1793065608ee80b91f6483dddca74b3064a0842cbcf83362a80",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-road-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "凸形竖曲线由+2%坡度接−2%坡度，抛物线长200m。设计速度80km/h；本题停车视距S=vt+v²/(2gf)，v用m/s、t=2.5s、f=0.35、g=9.81m/s²。司机视高h₁=1.1m、障碍物高h₂=0.2m。采用S≤L时公式L要求=A·S²/[200(√h₁+√h₂)²]，A为坡差的百分数值。\n（1）求停车视距。\n（2）求所需最小竖曲线长度并核验公式分支。\n（3）200m原设计能否满足，若不能，应如何选择可复核方案？",
+      "blocks": [
+        {
+          "id": "registered-road-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "凸形竖曲线由+2%坡度接−2%坡度，抛物线长200m。设计速度80km/h；本题停车视距S=vt+v²/(2gf)，v用m/s、t=2.5s、f=0.35、g=9.81m/s²。司机视高h₁=1.1m、障碍物高h₂=0.2m。采用S≤L时公式L要求=A·S²/[200(√h₁+√h₂)²]，A为坡差的百分数值。\n（1）求停车视距。\n（2）求所需最小竖曲线长度并核验公式分支。\n（3）200m原设计能否满足，若不能，应如何选择可复核方案？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "dbe4de7d26110b4b6981001449f6b4e38bef1cf9c2dfd15739c53a392305afe3",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-road-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "道路施工瓶颈放行能力1600veh/h。连续四个15min时段到达率1000/1800/2200/1200veh/h，各时段率恒定，初始无排队。点排队模型、FIFO、车辆不改道、队列无限可容。\n（1）求各时段末队长与最大队长。\n（2）第四时段结束后到达率保持1200，队列还需多久消散？\n（3）求从开始至完全消散的总排队延误veh·h及每辆车平均延误的适用分母，说明为什么不能把每时段末队长简单相加当延误。",
+      "blocks": [
+        {
+          "id": "registered-road-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "道路施工瓶颈放行能力1600veh/h。连续四个15min时段到达率1000/1800/2200/1200veh/h，各时段率恒定，初始无排队。点排队模型、FIFO、车辆不改道、队列无限可容。\n（1）求各时段末队长与最大队长。\n（2）第四时段结束后到达率保持1200，队列还需多久消散？\n（3）求从开始至完全消散的总排队延误veh·h及每辆车平均延误的适用分母，说明为什么不能把每时段末队长简单相加当延误。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "afd0a0647bd8719463e8ce6a78b479b5092516c07b5df7d2dcd51573a28c6b0a",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-road-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "某车道每日轴载谱：60kN单轴1000次、100kN单轴300次、150kN单轴80次。仅为本题采用等效轴载系数(轴重/100kN)^4，各轴独立线性累积；10年交通每年增长4%，首年取上述年量，无方向/车道二次折减。项目路面结构允许累计标准轴次4.0×10⁶。\n（1）求每日、首年及10年累计等效标准轴次。\n（2）若150kN轴次减半，其余不变，重算累计量并判断。\n（3）解释轻重轴不能按“每次轴数相同”赋相同损伤，以及本简化模型尚未表达的因素。",
+      "blocks": [
+        {
+          "id": "registered-road-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "某车道每日轴载谱：60kN单轴1000次、100kN单轴300次、150kN单轴80次。仅为本题采用等效轴载系数(轴重/100kN)^4，各轴独立线性累积；10年交通每年增长4%，首年取上述年量，无方向/车道二次折减。项目路面结构允许累计标准轴次4.0×10⁶。\n（1）求每日、首年及10年累计等效标准轴次。\n（2）若150kN轴次减半，其余不变，重算累计量并判断。\n（3）解释轻重轴不能按“每次轴数相同”赋相同损伤，以及本简化模型尚未表达的因素。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "357e9c434b0cfc2983cfe8c2f989e1e4e442132d702c5f4ea306002084980e0b",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-road-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "路基工程挖方原状体积30000m³，可用比例80%；可用土压实后体积为其原状体积的90%。填方设计要求压实体积25000m³。借土压实率同为0.90，弃土含不可用挖方。运输费用：可用挖方至填区4元/原状m³，借土采运18元/原状m³，不可用弃土外运6元/原状m³；无松方计价，不计税。\n（1）求可用挖方可形成压实量与缺口。\n（2）求借土原状量及弃土量。\n（3）求三项费用与总额。\n（4）若有人直接以“30000挖方大于25000填方”为由取消借土，指出物料平衡错误和现场需核实的参数。",
+      "blocks": [
+        {
+          "id": "registered-road-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "路基工程挖方原状体积30000m³，可用比例80%；可用土压实后体积为其原状体积的90%。填方设计要求压实体积25000m³。借土压实率同为0.90，弃土含不可用挖方。运输费用：可用挖方至填区4元/原状m³，借土采运18元/原状m³，不可用弃土外运6元/原状m³；无松方计价，不计税。\n（1）求可用挖方可形成压实量与缺口。\n（2）求借土原状量及弃土量。\n（3）求三项费用与总额。\n（4）若有人直接以“30000挖方大于25000填方”为由取消借土，指出物料平衡错误和现场需核实的参数。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "f85908ff386d3104ced48003cdc275fd1d1d7d4261485554fe8c5a741e03b3a7",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-road-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "道路平曲线半径400m，设计速度80km/h，超高率6%。本题采用v²/(127R)=e+f，项目允许横向力系数f≤0.06，半径R用m。\n（1）求所需f并判定。\n（2）维持半径与超高不变时求满足条件的最大速度；若必须维持80km/h，求最小半径。\n（3）说明该式不能替代缓和曲线、视距、排水及重车稳定的核查；为什么不能把6%写成6代入？",
+          "score": 20,
+          "solution": "所需f=0.0659843>0.06，不满足。最大速度78.076885km/h；80时最小半径419.947507m。6%应取0.06。题给横向力与超高为本题设计参数，不能据此宣称所有道路均适用同一上限。",
+          "explanation": "速度、半径和横向力的单位已包含在常数127内，不能用m/s的数直接代入v位置。提高超高或降低速度需结合全线衔接与运行条件，单项满足不等于路线全部合格。",
+          "source": {
+            "materialId": "registered-road-engineer-cases-01-q1-source",
+            "blockId": "registered-road-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "道路平曲线半径400m，设计速度80km/h，超高率6%。本题采用v²/(127R)=e+f，项目允许横向力系数f≤0.06，半径R用m。\n（1）求所需f并判定。\n（2）维持半径与超高不变时求满足条件的最大速度；若必须维持80km/h，求最小半径。\n（3）说明该式不能替代缓和曲线、视距、排水及重车稳定的核查；为什么不能把6%写成6代入？"
+          },
+          "chapter": "平曲线",
+          "tags": [
+            "平曲线",
+            "超高",
+            "设计约束"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "平曲线",
+              "超高",
+              "设计约束"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "f值与判断",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "最大速度78.0769km/h正确",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "最小半径419.9475m正确",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "百分率/单位及多约束核查",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "roads-lateral-factor: independent Python calculation = 0.06598425197; expected = 0.06598425197; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-maximum-speed: independent Python calculation = 78.07688518; expected = 78.07688518; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-minimum-radius: independent Python calculation = 419.9475066; expected = 419.9475066; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-road-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "凸形竖曲线由+2%坡度接−2%坡度，抛物线长200m。设计速度80km/h；本题停车视距S=vt+v²/(2gf)，v用m/s、t=2.5s、f=0.35、g=9.81m/s²。司机视高h₁=1.1m、障碍物高h₂=0.2m。采用S≤L时公式L要求=A·S²/[200(√h₁+√h₂)²]，A为坡差的百分数值。\n（1）求停车视距。\n（2）求所需最小竖曲线长度并核验公式分支。\n（3）200m原设计能否满足，若不能，应如何选择可复核方案？",
+          "score": 20,
+          "solution": "停车视距127.468641m，坡差A=4；所需最小L=145.197952m，且L要求>S，公式分支自洽。原200m大于要求且S<200m，满足题给停车视距条件。仍须核定标高、排水及相邻线形。",
+          "explanation": "先把80km/h换成22.2222m/s，反应距离与制动距离相加。A=|+2−(−2)|=4，不能把0.04又放在包含百分数的公式中。延长后还需核定标高、排水和相邻线形，不只改图上一个数字。",
+          "source": {
+            "materialId": "registered-road-engineer-cases-01-q2-source",
+            "blockId": "registered-road-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "凸形竖曲线由+2%坡度接−2%坡度，抛物线长200m。设计速度80km/h；本题停车视距S=vt+v²/(2gf)，v用m/s、t=2.5s、f=0.35、g=9.81m/s²。司机视高h₁=1.1m、障碍物高h₂=0.2m。采用S≤L时公式L要求=A·S²/[200(√h₁+√h₂)²]，A为坡差的百分数值。\n（1）求停车视距。\n（2）求所需最小竖曲线长度并核验公式分支。\n（3）200m原设计能否满足，若不能，应如何选择可复核方案？"
+          },
+          "chapter": "停车视距",
+          "tags": [
+            "停车视距",
+            "凸形竖曲线",
+            "公式分支"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "停车视距",
+              "凸形竖曲线",
+              "公式分支"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "速度换算及视距",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "A4与最小长度",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "S≤L分支和200m满足",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "可核查调整方案及衔接",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "roads-stopping-sight-distance: independent Python calculation = 127.4686414; expected = 127.4686414; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-crest-length: independent Python calculation = 145.1979523; expected = 145.1979523; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-road-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "道路施工瓶颈放行能力1600veh/h。连续四个15min时段到达率1000/1800/2200/1200veh/h，各时段率恒定，初始无排队。点排队模型、FIFO、车辆不改道、队列无限可容。\n（1）求各时段末队长与最大队长。\n（2）第四时段结束后到达率保持1200，队列还需多久消散？\n（3）求从开始至完全消散的总排队延误veh·h及每辆车平均延误的适用分母，说明为什么不能把每时段末队长简单相加当延误。",
+          "score": 20,
+          "solution": "四时段末队长0/50/200/100veh，最大200。第四时段后净消散400veh/h，还需0.25h=15min。总延误=第二段6.25+第三31.25+第四37.5+随后12.5=87.5veh·h。统计区间总到达1850veh，平均排队延误87.5/1850h=2.83784min/veh；该分母包含初始无排队及末尾至清空的所有到达。",
+          "explanation": "队长随时间的面积即延误，车辆数×小时；两端队长线性变化时取梯形面积，清空后不可继续出现负队列。第四段结束队长100，不应以该时段全部1200到达量替代排队车辆。",
+          "source": {
+            "materialId": "registered-road-engineer-cases-01-q3-source",
+            "blockId": "registered-road-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "道路施工瓶颈放行能力1600veh/h。连续四个15min时段到达率1000/1800/2200/1200veh/h，各时段率恒定，初始无排队。点排队模型、FIFO、车辆不改道、队列无限可容。\n（1）求各时段末队长与最大队长。\n（2）第四时段结束后到达率保持1200，队列还需多久消散？\n（3）求从开始至完全消散的总排队延误veh·h及每辆车平均延误的适用分母，说明为什么不能把每时段末队长简单相加当延误。"
+          },
+          "chapter": "施工交通",
+          "tags": [
+            "施工交通",
+            "动态排队",
+            "延误积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工交通",
+              "动态排队",
+              "延误积分"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "逐段队长及200峰值",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "15min消散时间",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "87.5veh·h及面积法",
+                "points": 7
+              },
+              {
+                "id": "r4",
+                "description": "分母1850与2.83784min的区间解释",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "roads-queue-end: independent Python calculation = 100; expected = 100; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-queue-peak: independent Python calculation = 200; expected = 200; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-queue-delay-complete: independent Python calculation = 87.5; expected = 87.5; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-average-delay-min: independent Python calculation = 2.837837838; expected = 2.837837838; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-road-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "某车道每日轴载谱：60kN单轴1000次、100kN单轴300次、150kN单轴80次。仅为本题采用等效轴载系数(轴重/100kN)^4，各轴独立线性累积；10年交通每年增长4%，首年取上述年量，无方向/车道二次折减。项目路面结构允许累计标准轴次4.0×10⁶。\n（1）求每日、首年及10年累计等效标准轴次。\n（2）若150kN轴次减半，其余不变，重算累计量并判断。\n（3）解释轻重轴不能按“每次轴数相同”赋相同损伤，以及本简化模型尚未表达的因素。",
+          "score": 20,
+          "solution": "每日834.6000等效次，首年304629.0000次，10年3657408.4068次，超过4.0×10⁶。150kN轴次减半后每日632.1000次，10年2770007.0140次，仍超过4.0×10⁶。应复核结构设计或进一步治理；本模型未计轮组、温湿度、材料非线性及分布效应。",
+          "explanation": "第四次幂使150kN单轴系数5.0625，而60kN仅0.1296。累计采用等比求和首项年量，不能错加第11年或把10×增长后末年流量当总量。给定4次幂为练习模型，不冒称现行道路规范所有情形统一公式。",
+          "source": {
+            "materialId": "registered-road-engineer-cases-01-q4-source",
+            "blockId": "registered-road-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "某车道每日轴载谱：60kN单轴1000次、100kN单轴300次、150kN单轴80次。仅为本题采用等效轴载系数(轴重/100kN)^4，各轴独立线性累积；10年交通每年增长4%，首年取上述年量，无方向/车道二次折减。项目路面结构允许累计标准轴次4.0×10⁶。\n（1）求每日、首年及10年累计等效标准轴次。\n（2）若150kN轴次减半，其余不变，重算累计量并判断。\n（3）解释轻重轴不能按“每次轴数相同”赋相同损伤，以及本简化模型尚未表达的因素。"
+          },
+          "chapter": "轴载谱",
+          "tags": [
+            "轴载谱",
+            "累积损伤",
+            "交通增长"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "轴载谱",
+              "累积损伤",
+              "交通增长"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "逐轴换算及每日/首年",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "10年等比累计与不满足",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "减半后新累计与判断",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "重载影响与模型边界",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "roads-daily-equivalent-axles: independent Python calculation = 834.6; expected = 834.6; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-tenyear-explicit-sum: independent Python calculation = 3657408.407; expected = 3657408.407; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-heavy-half-daily: independent Python calculation = 632.1; expected = 632.1; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-road-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "路基工程挖方原状体积30000m³，可用比例80%；可用土压实后体积为其原状体积的90%。填方设计要求压实体积25000m³。借土压实率同为0.90，弃土含不可用挖方。运输费用：可用挖方至填区4元/原状m³，借土采运18元/原状m³，不可用弃土外运6元/原状m³；无松方计价，不计税。\n（1）求可用挖方可形成压实量与缺口。\n（2）求借土原状量及弃土量。\n（3）求三项费用与总额。\n（4）若有人直接以“30000挖方大于25000填方”为由取消借土，指出物料平衡错误和现场需核实的参数。",
+          "score": 20,
+          "solution": "可用原状24000m³，形成压实21600m³，缺3400压实m³；需借原状3777.7778m³，不可用弃土6000m³。可用土运输96000元、借土68000元、弃运36000元，总200000元。挖填体积的材料合格性与密实状态不同，不能直接相减；须核实土质、含水量、试验压实转换、实际计量及运距。",
+          "explanation": "平衡式0.90(24000+B)=25000。借土费用以原状B乘18；不能将3400压实m³直接按原状单价计。弃土6000来自不可用部分，未把借土的压实差额虚构成弃土。",
+          "source": {
+            "materialId": "registered-road-engineer-cases-01-q5-source",
+            "blockId": "registered-road-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "路基工程挖方原状体积30000m³，可用比例80%；可用土压实后体积为其原状体积的90%。填方设计要求压实体积25000m³。借土压实率同为0.90，弃土含不可用挖方。运输费用：可用挖方至填区4元/原状m³，借土采运18元/原状m³，不可用弃土外运6元/原状m³；无松方计价，不计税。\n（1）求可用挖方可形成压实量与缺口。\n（2）求借土原状量及弃土量。\n（3）求三项费用与总额。\n（4）若有人直接以“30000挖方大于25000填方”为由取消借土，指出物料平衡错误和现场需核实的参数。"
+          },
+          "chapter": "路基土石方",
+          "tags": [
+            "路基土石方",
+            "状态转换",
+            "利用与调配"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "路基土石方",
+              "状态转换",
+              "利用与调配"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "可用/压实21600与缺口",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "借土3777.7778及弃土6000",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "三费用和200000",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "状态/适用性区别与试验核实",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "roads-fill-compacted: independent Python calculation = 21600; expected = 21600; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-borrow-bank: independent Python calculation = 3777.777778; expected = 3777.777778; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "roads-earthwork-cost: independent Python calculation = 200000; expected = 200000; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-road-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-road-engineer-project-blueprint",
+      "name": "道路工程专业案例案例能力蓝图",
+      "subject": "道路工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-road-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-road-engineer-cases-01-q1",
+      "registered-road-engineer-cases-01-q2",
+      "registered-road-engineer-cases-01-q3",
+      "registered-road-engineer-cases-01-q4",
+      "registered-road-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

@@ -1,0 +1,765 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "constructor-2-cases-01",
+  "notebookId": "constructor-2-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "二级建造师　建筑工程管理与实务",
+  "subject": "建筑工程管理与实务",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "二级建造师　建筑工程管理与实务",
+      "建筑工程·现场实施与计量"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "二级建造师　建筑工程管理与实务答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "建筑工程管理与实务",
+      "rule": true
+    },
+    "footerTemplate": "建筑工程管理与实务　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "constructor-2",
+    "examName": "二级建造师　建筑工程管理与实务",
+    "specialty": "建筑工程·现场实施与计量",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "constructor-2-cases-01-q1",
+        "knowledge": "土方工程量、放坡几何、实方与松方",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-2-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "constructor-2-cases-01-q2",
+        "knowledge": "劳动生产率、资源配置、现场数据口径",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-2-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "constructor-2-cases-01-q3",
+        "knowledge": "分段计价、工程计量、支付审核",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-2-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "constructor-2-cases-01-q4",
+        "knowledge": "工序逻辑、资源与持续时间、赶工措施",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-2-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "constructor-2-cases-01-q5",
+        "knowledge": "隐蔽工程验收、条件变化、质量证据闭环",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-2-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "constructor-2-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "一栋小型办公楼基础开挖净平面为20m×12m，深2m。施工方案给定：四周各留0.5m工作面，边坡水平增宽与垂直高度之比为0.5:1，四边均放坡；地面、槽底均为矩形且边坡线性展开。\n（1）计算槽底与槽顶尺寸、两端及中截面面积。\n（2）用棱台体积公式或辛普森公式求开挖体积。\n（3）土方松散系数取1.20，外运车有效容积10m³，计算最少车次；说明不能直接以净基础体积作为外运量。",
+      "blocks": [
+        {
+          "id": "constructor-2-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "一栋小型办公楼基础开挖净平面为20m×12m，深2m。施工方案给定：四周各留0.5m工作面，边坡水平增宽与垂直高度之比为0.5:1，四边均放坡；地面、槽底均为矩形且边坡线性展开。\n（1）计算槽底与槽顶尺寸、两端及中截面面积。\n（2）用棱台体积公式或辛普森公式求开挖体积。\n（3）土方松散系数取1.20，外运车有效容积10m³，计算最少车次；说明不能直接以净基础体积作为外运量。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "8a2509d8a2ff7d00df0fb53a8096ca250fbc472023f6229a52c475cdd32efc09",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-2-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "现场计划砌筑360m³砌体，合同预算人工消耗为1.8工日/m³。实际前6天每天投入30人，完成120m³，均按每日1工日计，出勤完整。后续要求在另8天完成剩余工程。\n（1）比较预算与实际人工单耗。\n（2）若后续保持前期实际效率，求完成剩余任务的最少固定人数。\n（3）若管理优化使实际单耗降低10%，人数可降至多少？\n（4）说明应怎样用现场资料验证效率改善，而不是仅增加人员。",
+      "blocks": [
+        {
+          "id": "constructor-2-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "现场计划砌筑360m³砌体，合同预算人工消耗为1.8工日/m³。实际前6天每天投入30人，完成120m³，均按每日1工日计，出勤完整。后续要求在另8天完成剩余工程。\n（1）比较预算与实际人工单耗。\n（2）若后续保持前期实际效率，求完成剩余任务的最少固定人数。\n（3）若管理优化使实际单耗降低10%，人数可降至多少？\n（4）说明应怎样用现场资料验证效率改善，而不是仅增加人员。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "9a0c06a31429068767f85668a4907298d2f099766b094ec66138c29c7ec1c965",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-2-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "合同约定清单工程量1000m³、综合单价300元/m³；实际计量1160m³。专用条款约定：超过原量10%的部分单价降低8%，其余按原单价。合格工程量全部确认；本期另有已批准措施费12000元。本题按不含税金额计算，扣留已确认计价额的3%作为质量保证金；前期无支付也无预付款。\n（1）将实际量分段并求工程价款。\n（2）求含措施费的本期计价额、质量保证金与应支付金额。\n（3）如未经确认的返工量20m³混入计量，应怎样核查，不得怎样处理？",
+      "blocks": [
+        {
+          "id": "constructor-2-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "合同约定清单工程量1000m³、综合单价300元/m³；实际计量1160m³。专用条款约定：超过原量10%的部分单价降低8%，其余按原单价。合格工程量全部确认；本期另有已批准措施费12000元。本题按不含税金额计算，扣留已确认计价额的3%作为质量保证金；前期无支付也无预付款。\n（1）将实际量分段并求工程价款。\n（2）求含措施费的本期计价额、质量保证金与应支付金额。\n（3）如未经确认的返工量20m³混入计量，应怎样核查，不得怎样处理？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "5e5d60b16002c45a0b8ab085ea3948ae8be463ab2cf834762157b8f5f8fb3ef5",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-2-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "安装工作采用先预埋后设备就位再联调的串联流程，计划工期分别4、3、2天。预埋实际第1—5日完成；设备原定第5日到货，实际第7日开工前到货；就位必须在预埋和到货两条件均满足后开始，仍需3天；联调仍需2天。以第1日开工、每天结束完成工作为口径。\n（1）给出原计划和实际的各工作起止日及总延误。\n（2）若联调可分两个独立区并行，每区需2天，现有资源只支持一个区，另增加一套资源能否把整体联调缩短为1天？解释。\n（3）提出一项有明确前提的赶工方案，并列出交底、验收与风险复核要求。",
+      "blocks": [
+        {
+          "id": "constructor-2-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "安装工作采用先预埋后设备就位再联调的串联流程，计划工期分别4、3、2天。预埋实际第1—5日完成；设备原定第5日到货，实际第7日开工前到货；就位必须在预埋和到货两条件均满足后开始，仍需3天；联调仍需2天。以第1日开工、每天结束完成工作为口径。\n（1）给出原计划和实际的各工作起止日及总延误。\n（2）若联调可分两个独立区并行，每区需2天，现有资源只支持一个区，另增加一套资源能否把整体联调缩短为1天？解释。\n（3）提出一项有明确前提的赶工方案，并列出交底、验收与风险复核要求。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "d417b32f7caa59b36265a7690491fca77df4fea1cb0a0b623275adf929c6ac94",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-2-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "某防水作业的项目检验表规定：每个检验区先确认基层干燥及排水、再验收节点附加层、再做面层，最后进行约定的24h蓄水观察；上一检查点未签认不得进入下一工序。现场A区节点未验收已覆盖面层；B区完成24h观察无可见渗漏，但观察结束后擅自钻孔安装设备；C区记录“观察24h”，实际仅10h。\n（1）逐区指出缺失的可验证证据或已改变的条件。\n（2）提出针对性的复核/返工与再次检验路径。\n（3）编制最少包含责任人、记录、放行条件的关闭清单。",
+      "blocks": [
+        {
+          "id": "constructor-2-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "某防水作业的项目检验表规定：每个检验区先确认基层干燥及排水、再验收节点附加层、再做面层，最后进行约定的24h蓄水观察；上一检查点未签认不得进入下一工序。现场A区节点未验收已覆盖面层；B区完成24h观察无可见渗漏，但观察结束后擅自钻孔安装设备；C区记录“观察24h”，实际仅10h。\n（1）逐区指出缺失的可验证证据或已改变的条件。\n（2）提出针对性的复核/返工与再次检验路径。\n（3）编制最少包含责任人、记录、放行条件的关闭清单。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "6145a7ece44e9a7c004db1851c494e2081f740c3890013fb34bcf08978f61d74",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "constructor-2-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "一栋小型办公楼基础开挖净平面为20m×12m，深2m。施工方案给定：四周各留0.5m工作面，边坡水平增宽与垂直高度之比为0.5:1，四边均放坡；地面、槽底均为矩形且边坡线性展开。\n（1）计算槽底与槽顶尺寸、两端及中截面面积。\n（2）用棱台体积公式或辛普森公式求开挖体积。\n（3）土方松散系数取1.20，外运车有效容积10m³，计算最少车次；说明不能直接以净基础体积作为外运量。",
+          "score": 20,
+          "solution": "槽底21m×13m，顶23m×15m；面积分别273、345m²，中截面22m×14m=308m²。开挖体积=2(273+4×308+345)/6=616.667m³。松方740m³，最少74车次。净基础体积未包括工作面和放坡体积，也未计松散转换。",
+          "explanation": "矩形四周同时线性放大时，截面面积随高度是二次函数，辛普森公式精确。直接用(底面积+顶面积)/2×高会产生误差；本题工作面、坡比和松散系数均由施工方案给定。",
+          "source": {
+            "materialId": "constructor-2-cases-01-q1-source",
+            "blockId": "constructor-2-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "一栋小型办公楼基础开挖净平面为20m×12m，深2m。施工方案给定：四周各留0.5m工作面，边坡水平增宽与垂直高度之比为0.5:1，四边均放坡；地面、槽底均为矩形且边坡线性展开。\n（1）计算槽底与槽顶尺寸、两端及中截面面积。\n（2）用棱台体积公式或辛普森公式求开挖体积。\n（3）土方松散系数取1.20，外运车有效容积10m³，计算最少车次；说明不能直接以净基础体积作为外运量。"
+          },
+          "chapter": "土方工程量",
+          "tags": [
+            "土方工程量",
+            "放坡几何",
+            "实方与松方"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "土方工程量",
+              "放坡几何",
+              "实方与松方"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "底顶尺寸正确",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "中截面308m²",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "体积616.667m³且公式适用",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "松方740及74车次",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "解释净量和外运量区别",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-excavation: independent Python calculation = 616.6666667; expected = 616.6666667; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-loose: independent Python calculation = 740; expected = 740; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-trips: independent Python calculation = 74; expected = 74; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-2-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "现场计划砌筑360m³砌体，合同预算人工消耗为1.8工日/m³。实际前6天每天投入30人，完成120m³，均按每日1工日计，出勤完整。后续要求在另8天完成剩余工程。\n（1）比较预算与实际人工单耗。\n（2）若后续保持前期实际效率，求完成剩余任务的最少固定人数。\n（3）若管理优化使实际单耗降低10%，人数可降至多少？\n（4）说明应怎样用现场资料验证效率改善，而不是仅增加人员。",
+          "score": 20,
+          "solution": "预算1.8工日/m³；实际180/120=1.5工日/m³，低于预算。剩余240m³，需360工日，8天固定人数至少45人。优化后单耗1.35，需324工日，至少41人。应核对合格产出、工时、返工、材料供应、作业面、机械和班组干扰，按同一质量与计量口径对比。",
+          "explanation": "降低10%是单耗乘0.90，而非直接把所需人数或工期随意减10%。41人8天为328工日，40人仅320工日不足。优化不能以降低验收质量或未计返工换取表面效率。",
+          "source": {
+            "materialId": "constructor-2-cases-01-q2-source",
+            "blockId": "constructor-2-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "现场计划砌筑360m³砌体，合同预算人工消耗为1.8工日/m³。实际前6天每天投入30人，完成120m³，均按每日1工日计，出勤完整。后续要求在另8天完成剩余工程。\n（1）比较预算与实际人工单耗。\n（2）若后续保持前期实际效率，求完成剩余任务的最少固定人数。\n（3）若管理优化使实际单耗降低10%，人数可降至多少？\n（4）说明应怎样用现场资料验证效率改善，而不是仅增加人员。"
+          },
+          "chapter": "劳动生产率",
+          "tags": [
+            "劳动生产率",
+            "资源配置",
+            "现场数据口径"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "劳动生产率",
+              "资源配置",
+              "现场数据口径"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "预算与实际单耗",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "剩余任务及45人",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "优化单耗及41人向上取整",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "同质量/同计量口径的验证",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "识别作业面与资源约束",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-labor-rate: independent Python calculation = 1.5; expected = 1.5; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-workers-normal: independent Python calculation = 45; expected = 45; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-workers-improved: independent Python calculation = 41; expected = 41; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-2-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "合同约定清单工程量1000m³、综合单价300元/m³；实际计量1160m³。专用条款约定：超过原量10%的部分单价降低8%，其余按原单价。合格工程量全部确认；本期另有已批准措施费12000元。本题按不含税金额计算，扣留已确认计价额的3%作为质量保证金；前期无支付也无预付款。\n（1）将实际量分段并求工程价款。\n（2）求含措施费的本期计价额、质量保证金与应支付金额。\n（3）如未经确认的返工量20m³混入计量，应怎样核查，不得怎样处理？",
+          "score": 20,
+          "solution": "原单价范围1100m³，超出60m³按276元/m³；工程价款346560元。加措施费后计价额358560元，扣保证金10756.80元，应支付347803.20元。返工量须核对设计变更、验收和责任归属并由授权人员确认，不能仅凭施工记录自动计入合格清单量，也不能把已批准的正当变更与责任返工混为一类。",
+          "explanation": "超过10%的判定阈值是1100，不是1000。8%调减作用于超出阈值的60m³，而不是全部工程量。3%保证金的计提基数依本题专用条款包含已批准措施费。",
+          "source": {
+            "materialId": "constructor-2-cases-01-q3-source",
+            "blockId": "constructor-2-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "合同约定清单工程量1000m³、综合单价300元/m³；实际计量1160m³。专用条款约定：超过原量10%的部分单价降低8%，其余按原单价。合格工程量全部确认；本期另有已批准措施费12000元。本题按不含税金额计算，扣留已确认计价额的3%作为质量保证金；前期无支付也无预付款。\n（1）将实际量分段并求工程价款。\n（2）求含措施费的本期计价额、质量保证金与应支付金额。\n（3）如未经确认的返工量20m³混入计量，应怎样核查，不得怎样处理？"
+          },
+          "chapter": "分段计价",
+          "tags": [
+            "分段计价",
+            "工程计量",
+            "支付审核"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "分段计价",
+              "工程计量",
+              "支付审核"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "1100与60分段正确",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "工程价款346560元",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "计价额、保证金、支付额",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "返工与变更证据核查",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "指出调价和保证金基数",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-remeasurement: independent Python calculation = 346560; expected = 346560; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-payment: independent Python calculation = 347803.2; expected = 347803.2; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-2-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "安装工作采用先预埋后设备就位再联调的串联流程，计划工期分别4、3、2天。预埋实际第1—5日完成；设备原定第5日到货，实际第7日开工前到货；就位必须在预埋和到货两条件均满足后开始，仍需3天；联调仍需2天。以第1日开工、每天结束完成工作为口径。\n（1）给出原计划和实际的各工作起止日及总延误。\n（2）若联调可分两个独立区并行，每区需2天，现有资源只支持一个区，另增加一套资源能否把整体联调缩短为1天？解释。\n（3）提出一项有明确前提的赶工方案，并列出交底、验收与风险复核要求。",
+          "score": 20,
+          "solution": "原计划预埋1—4日、就位5—7日、联调8—9日，结束第9日。实际预埋1—5日、等货至第7日，就位7—9日、联调10—11日，结束第11日，延误2天。两区各需2天且本可并行，增加一套资源只使两个区同时用2天完成，不能证明缩短到1天。可在工艺及安全允许并经批准前提下，把设备就位3天压到2天，完成日可提前1天；须核对吊装能力、工序依赖、质量检验与人员交底。",
+          "explanation": "等待受max(预埋完成、到货)约束，预埋延误1天与到货延误2天不能直接相加。区段并行消除串行时间，不改变每区必须经历的物理持续时间。",
+          "source": {
+            "materialId": "constructor-2-cases-01-q4-source",
+            "blockId": "constructor-2-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "安装工作采用先预埋后设备就位再联调的串联流程，计划工期分别4、3、2天。预埋实际第1—5日完成；设备原定第5日到货，实际第7日开工前到货；就位必须在预埋和到货两条件均满足后开始，仍需3天；联调仍需2天。以第1日开工、每天结束完成工作为口径。\n（1）给出原计划和实际的各工作起止日及总延误。\n（2）若联调可分两个独立区并行，每区需2天，现有资源只支持一个区，另增加一套资源能否把整体联调缩短为1天？解释。\n（3）提出一项有明确前提的赶工方案，并列出交底、验收与风险复核要求。"
+          },
+          "chapter": "工序逻辑",
+          "tags": [
+            "工序逻辑",
+            "资源与持续时间",
+            "赶工措施"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "工序逻辑",
+              "资源与持续时间",
+              "赶工措施"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "计划与实际起止日正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "总延误2天及max逻辑",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "解释并行两区仍需2天",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "赶工方案有工艺与批准前提",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "质量安全复核具体",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-finish-plan: independent Python calculation = 9; expected = 9; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor2-finish-actual: independent Python calculation = 11; expected = 11; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "case-evidence-review",
+                "detail": "逐日排程：第7日是就位第一天，连续3天在第9日结束，联调第10—11日；并行不把单区2天变为1天。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-2-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "某防水作业的项目检验表规定：每个检验区先确认基层干燥及排水、再验收节点附加层、再做面层，最后进行约定的24h蓄水观察；上一检查点未签认不得进入下一工序。现场A区节点未验收已覆盖面层；B区完成24h观察无可见渗漏，但观察结束后擅自钻孔安装设备；C区记录“观察24h”，实际仅10h。\n（1）逐区指出缺失的可验证证据或已改变的条件。\n（2）提出针对性的复核/返工与再次检验路径。\n（3）编制最少包含责任人、记录、放行条件的关闭清单。",
+          "score": 20,
+          "solution": "A区缺节点附加层隐蔽验收，应按批准方案揭检或采用足以验证节点的技术措施，必要时返工，再逐点签认。B区钻孔改变了既有防水完整性，应核查孔洞密封及节点处理并对受影响范围重新检验。C区检验时长不足，原“24h”记录不得维持，应更正事实并完成约定时长的有效观察。清单应列施工修复、检验见证、批准放行责任，保留原始与更正记录、影像/测量及复验结果，全部签认后放行后续工序。",
+          "explanation": "24h仅是本题项目约定，不据此声称统一规范时长。A的隐蔽证据缺失、B的条件后变、C的原始记录失真是三种不同问题，不能用同一张补签单替代处理。",
+          "source": {
+            "materialId": "constructor-2-cases-01-q5-source",
+            "blockId": "constructor-2-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "某防水作业的项目检验表规定：每个检验区先确认基层干燥及排水、再验收节点附加层、再做面层，最后进行约定的24h蓄水观察；上一检查点未签认不得进入下一工序。现场A区节点未验收已覆盖面层；B区完成24h观察无可见渗漏，但观察结束后擅自钻孔安装设备；C区记录“观察24h”，实际仅10h。\n（1）逐区指出缺失的可验证证据或已改变的条件。\n（2）提出针对性的复核/返工与再次检验路径。\n（3）编制最少包含责任人、记录、放行条件的关闭清单。"
+          },
+          "chapter": "隐蔽工程验收",
+          "tags": [
+            "隐蔽工程验收",
+            "条件变化",
+            "质量证据闭环"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "隐蔽工程验收",
+              "条件变化",
+              "质量证据闭环"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "分别识别A/B/C的事实问题",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "处置路径逐区对应",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "责任人与原始/更正记录",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "复验及放行条件完整",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "case-evidence-review",
+                "detail": "按项目检验表逐项对照：A违反前置签认；B在检验后改变条件；C实际10h不足约定24h。答案分别恢复所缺证据或复核改变后的条件，未将补签当作实体质量证明。",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "constructor-2-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "constructor-2-project-blueprint",
+      "name": "建筑工程管理与实务案例能力蓝图",
+      "subject": "建筑工程管理与实务",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "constructor-2-cases-v7",
+    "sourceQuestionIds": [
+      "constructor-2-cases-01-q1",
+      "constructor-2-cases-01-q2",
+      "constructor-2-cases-01-q3",
+      "constructor-2-cases-01-q4",
+      "constructor-2-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

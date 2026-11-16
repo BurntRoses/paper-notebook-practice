@@ -1,0 +1,36 @@
+{
+  "name": "paper-notebook-practice",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Free, local-first question banks, exam papers, answer keys and answer sheets.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BurntRoses/paper-notebook-practice.git"
+  },
+  "engines": {
+    "node": ">=20.19"
+  },
+  "bin": {
+    "paper-notebook-practice": "tools/practice.mjs"
+  },
+  "scripts": {
+    "build": "node tools/build-practice.mjs",
+    "build:site": "node tools/build-practice-site.mjs",
+    "check": "tsc --noEmit",
+    "practice": "node tools/practice.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "fflate": "^0.8.2",
+    "katex": "^0.16.22",
+    "pdfjs-dist": "^4.10.38"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.7",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}

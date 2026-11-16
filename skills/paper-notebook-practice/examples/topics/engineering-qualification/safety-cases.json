@@ -1,0 +1,777 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-safety-engineer-cases-01",
+  "notebookId": "registered-safety-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "中级注册安全工程师　安全生产专业实务",
+  "subject": "安全生产专业实务",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "中级注册安全工程师　安全生产专业实务",
+      "化工与其他安全·风险分析和控制"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "中级注册安全工程师　安全生产专业实务答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "安全生产专业实务",
+      "rule": true
+    },
+    "footerTemplate": "安全生产专业实务　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-safety-engineer",
+    "examName": "中级注册安全工程师　安全生产专业实务",
+    "specialty": "化工与其他安全·风险分析和控制",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-safety-engineer-cases-01-q1",
+        "knowledge": "保护层、故障树、共同原因、风险目标",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-safety-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-safety-engineer-cases-01-q2",
+        "knowledge": "局部危害、通风衡算、动态清除、单位转换",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-safety-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-safety-engineer-cases-01-q3",
+        "knowledge": "噪声能量、时间加权暴露、控制层次",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-safety-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-safety-engineer-cases-01-q4",
+        "knowledge": "受限空间、能量隔离、条件变化、应急救援",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-safety-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-safety-engineer-cases-01-q5",
+        "knowledge": "安全绩效、暴露率、因果与不确定性、指标设计",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-safety-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "safety-current-syllabus",
+      "kind": "reference",
+      "title": "2026湖北注安考试版本阅读记录",
+      "text": "2026湖北注安考试通知将专业实务分为七专业，并指定2019版考试大纲；专业实务为主客观题。该记录确认路线及版本，不引用未读取的实体安全规范阈值。",
+      "blocks": [
+        {
+          "id": "safety-current-syllabus-block",
+          "title": "2026湖北注安考试版本阅读记录",
+          "text": "2026湖北注安考试通知将专业实务分为七专业，并指定2019版考试大纲；专业实务为主客观题。该记录确认路线及版本，不引用未读取的实体安全规范阈值。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "a73af777ce9e742e1583b87633bc6cfed537fc80bd35a6c2a3c5e781d96656e8",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026通知；指定2019大纲",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026zjzcaqgcs/202607/t20260716_5978635.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026zjzcaqgcs/202607/t20260716_5978635.shtml"
+    },
+    {
+      "id": "registered-safety-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "危险事件A的年发生频率0.02/年，若发生将导致事故，现有一套低需求保护功能：两个独立最终元件串联触发任意一个成功均可切断，按故障概率模型，只有两元件均失效才无法保护。元件危险失效概率分别0.02、0.03；另有共同原因事件，概率0.005，会使两元件同时失效；其余情况下两元件独立。触发事件与保护失效独立。项目目标事故频率≤1×10⁻⁵/年。\n（1）不计共同原因时求保护失效概率及事故频率。\n（2）按“共同原因或其未发生时双失效”模型重新计算。\n（3）判断是否满足目标，解释不能直接相乘的条件，并提出针对共同原因的措施与验证证据。",
+      "blocks": [
+        {
+          "id": "registered-safety-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "危险事件A的年发生频率0.02/年，若发生将导致事故，现有一套低需求保护功能：两个独立最终元件串联触发任意一个成功均可切断，按故障概率模型，只有两元件均失效才无法保护。元件危险失效概率分别0.02、0.03；另有共同原因事件，概率0.005，会使两元件同时失效；其余情况下两元件独立。触发事件与保护失效独立。项目目标事故频率≤1×10⁻⁵/年。\n（1）不计共同原因时求保护失效概率及事故频率。\n（2）按“共同原因或其未发生时双失效”模型重新计算。\n（3）判断是否满足目标，解释不能直接相乘的条件，并提出针对共同原因的措施与验证证据。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "9c064561c3504638675bfe6018b6037b6932ab9cdfe9656a7a18af21545d9d0f",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-safety-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "某密闭但充分混合的工作间容积600m³，持续有污染气体0.40L/s释放，送入清洁空气且等量排风。按气体体积分数计算，初始浓度为0，忽略吸附和反应；项目控制值为20ppm。\n（1）求长期稳态满足控制值所需最小通风量。\n（2）若按该最小量运行，求达到稳态浓度90%所需时间。\n（3）停源后保持通风，求从20ppm降至2ppm时间；指出“充分混合”和源强误差怎样影响设计。给定模型$VdC/dt=G-QC$，使用一致单位。",
+      "blocks": [
+        {
+          "id": "registered-safety-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "某密闭但充分混合的工作间容积600m³，持续有污染气体0.40L/s释放，送入清洁空气且等量排风。按气体体积分数计算，初始浓度为0，忽略吸附和反应；项目控制值为20ppm。\n（1）求长期稳态满足控制值所需最小通风量。\n（2）若按该最小量运行，求达到稳态浓度90%所需时间。\n（3）停源后保持通风，求从20ppm降至2ppm时间；指出“充分混合”和源强误差怎样影响设计。给定模型$VdC/dt=G-QC$，使用一致单位。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "950d31ceadb907aede4cb7964ceb3efb829a1325f8b5248153f98b3e5785525a",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-safety-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "一名作业人员8h工作日中，分别在80dB(A)环境2h、90dB(A)环境2h、70dB(A)环境4h。题设采用等能量8h等效声级$L_{eq,8h}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$，项目设计目标≤85dB(A)。\n（1）计算等效声级，不能用声级算术平均。\n（2）若只把90dB(A)作业降为85dB(A)，重算结果。\n（3）为降噪方案列出源头、传播路径与接收端控制，并说明耳塞标称衰减为什么不能直接从环境等效值中机械扣除。",
+      "blocks": [
+        {
+          "id": "registered-safety-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "一名作业人员8h工作日中，分别在80dB(A)环境2h、90dB(A)环境2h、70dB(A)环境4h。题设采用等能量8h等效声级$L_{eq,8h}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$，项目设计目标≤85dB(A)。\n（1）计算等效声级，不能用声级算术平均。\n（2）若只把90dB(A)作业降为85dB(A)，重算结果。\n（3）为降噪方案列出源头、传播路径与接收端控制，并说明耳塞标称衰减为什么不能直接从环境等效值中机械扣除。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "b11c1cef67891f45b167ed1e689848708a074f21c9c1bf7067dcc7f04a7827b1",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-safety-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "检修一台有毒液体储槽。企业作业程序明确：停机、隔离所有进出料及能量源并上锁挂牌，排空/清洗/置换，确认检测合格，签发进入许可，专人监护，救援资源就位；任一关键条件失效必须停止进入。现场记录：已停泵并关闭入口阀，但出口与氮气管未隔离；仅检测槽口一次，许可签发后又接回清洗软管；救援预案写“发生事故由监护人立即入槽救人”。\n（1）按给定程序列出至少五项具体问题。\n（2）提出恢复进入条件的可验证步骤。\n（3）说明许可签字为何不能替代实际隔离、持续条件确认与救援能力。",
+      "blocks": [
+        {
+          "id": "registered-safety-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "检修一台有毒液体储槽。企业作业程序明确：停机、隔离所有进出料及能量源并上锁挂牌，排空/清洗/置换，确认检测合格，签发进入许可，专人监护，救援资源就位；任一关键条件失效必须停止进入。现场记录：已停泵并关闭入口阀，但出口与氮气管未隔离；仅检测槽口一次，许可签发后又接回清洗软管；救援预案写“发生事故由监护人立即入槽救人”。\n（1）按给定程序列出至少五项具体问题。\n（2）提出恢复进入条件的可验证步骤。\n（3）说明许可签字为何不能替代实际隔离、持续条件确认与救援能力。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "25a975e7d3f15901e6067f60291edcbbc1591c2a30e86df4b26ab40f3ed6b053",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-safety-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "某站一年发生轻微泄漏6次，暴露工时120000h，其中A班组2次/20000h、B班组4次/100000h。每次泄漏均单独记录。整改后下一年站内1次/30000h；作业内容和报告制度可能变化。\n（1）按每100000工时分别计算首年全站、A、B及次年的频率。\n（2）比较绝对次数与暴露率结论，能否只据这些数据宣布整改导致风险下降？\n（3）制定包含领先指标与结果指标的最小评估方案，说明如何处理漏报、作业结构与统计不确定性。",
+      "blocks": [
+        {
+          "id": "registered-safety-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "某站一年发生轻微泄漏6次，暴露工时120000h，其中A班组2次/20000h、B班组4次/100000h。每次泄漏均单独记录。整改后下一年站内1次/30000h；作业内容和报告制度可能变化。\n（1）按每100000工时分别计算首年全站、A、B及次年的频率。\n（2）比较绝对次数与暴露率结论，能否只据这些数据宣布整改导致风险下降？\n（3）制定包含领先指标与结果指标的最小评估方案，说明如何处理漏报、作业结构与统计不确定性。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "f728b68b6f1f8a0541626f8ed9c039a81b9ff2936d85da1b254f6ec1aad1d20c",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-safety-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "危险事件A的年发生频率0.02/年，若发生将导致事故，现有一套低需求保护功能：两个独立最终元件串联触发任意一个成功均可切断，按故障概率模型，只有两元件均失效才无法保护。元件危险失效概率分别0.02、0.03；另有共同原因事件，概率0.005，会使两元件同时失效；其余情况下两元件独立。触发事件与保护失效独立。项目目标事故频率≤1×10⁻⁵/年。\n（1）不计共同原因时求保护失效概率及事故频率。\n（2）按“共同原因或其未发生时双失效”模型重新计算。\n（3）判断是否满足目标，解释不能直接相乘的条件，并提出针对共同原因的措施与验证证据。",
+          "score": 20,
+          "solution": "不计共同原因PFD=0.0006，事故频率1.2×10⁻⁵/年，已略高于目标。计共同原因PFD=0.005+0.995×0.02×0.03=0.0055970，事故频率0.000111940/年，不满足。需针对共同电源、环境、维护或设计依赖采取隔离、多样化、独立测试等措施，并提供实际独立性与测试记录。",
+          "explanation": "两个元件的拓扑为1oo2成功逻辑，不是两元件都成功才保护；共同原因分支与独立双失效分支必须互斥处理。概率数量级显示共同原因主导。题给目标是项目设计值，不是宣称某通用法定安全完整性等级。",
+          "source": {
+            "materialId": "registered-safety-engineer-cases-01-q1-source",
+            "blockId": "registered-safety-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "危险事件A的年发生频率0.02/年，若发生将导致事故，现有一套低需求保护功能：两个独立最终元件串联触发任意一个成功均可切断，按故障概率模型，只有两元件均失效才无法保护。元件危险失效概率分别0.02、0.03；另有共同原因事件，概率0.005，会使两元件同时失效；其余情况下两元件独立。触发事件与保护失效独立。项目目标事故频率≤1×10⁻⁵/年。\n（1）不计共同原因时求保护失效概率及事故频率。\n（2）按“共同原因或其未发生时双失效”模型重新计算。\n（3）判断是否满足目标，解释不能直接相乘的条件，并提出针对共同原因的措施与验证证据。"
+          },
+          "chapter": "保护层",
+          "tags": [
+            "保护层",
+            "故障树",
+            "共同原因",
+            "风险目标"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "保护层",
+              "故障树",
+              "共同原因",
+              "风险目标"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "无共因PFD与频率",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "互斥模型及有共因数值",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "与目标定量比较",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "独立假设、针对措施和可核验证据",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "safety-independent-pfd: independent Python calculation = 0.0006; expected = 0.0006; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "safety-common-cause-pfd: independent Python calculation = 0.005597; expected = 0.005597; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "safety-residual-frequency: independent Python calculation = 0.00011194; expected = 0.00011194; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-safety-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "某密闭但充分混合的工作间容积600m³，持续有污染气体0.40L/s释放，送入清洁空气且等量排风。按气体体积分数计算，初始浓度为0，忽略吸附和反应；项目控制值为20ppm。\n（1）求长期稳态满足控制值所需最小通风量。\n（2）若按该最小量运行，求达到稳态浓度90%所需时间。\n（3）停源后保持通风，求从20ppm降至2ppm时间；指出“充分混合”和源强误差怎样影响设计。给定模型$VdC/dt=G-QC$，使用一致单位。",
+          "score": 20,
+          "solution": "源强0.00040m³/s，最小Q=20m³/s。时间常数V/Q=30s；达到90%需30ln10=69.077553s；停源20降至2ppm同为69.077553s。工程设计须复核短路流、局部高浓度、源强波动与实际捕集效率。",
+          "explanation": "体积分数20ppm=20×10⁻⁶，故Q=G/C限。启动C=C∞(1−e⁻ᵗ/τ)，停源C=C₀e⁻ᵗ/τ。20m³/s数值较大是给定源强/控制值之比，不应为取得“合理外观”擅自改单位或把L/s直接当m³/s。20ppm仅是项目题设控制值。",
+          "source": {
+            "materialId": "registered-safety-engineer-cases-01-q2-source",
+            "blockId": "registered-safety-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "某密闭但充分混合的工作间容积600m³，持续有污染气体0.40L/s释放，送入清洁空气且等量排风。按气体体积分数计算，初始浓度为0，忽略吸附和反应；项目控制值为20ppm。\n（1）求长期稳态满足控制值所需最小通风量。\n（2）若按该最小量运行，求达到稳态浓度90%所需时间。\n（3）停源后保持通风，求从20ppm降至2ppm时间；指出“充分混合”和源强误差怎样影响设计。给定模型$VdC/dt=G-QC$，使用一致单位。"
+          },
+          "chapter": "局部危害",
+          "tags": [
+            "局部危害",
+            "通风衡算",
+            "动态清除",
+            "单位转换"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "局部危害",
+              "通风衡算",
+              "动态清除",
+              "单位转换"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "源强转换与20m³/s",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "启动模型及69.0776s",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "停源模型与时间",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "模型局限及现场核验措施",
+                "points": 6
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "safety-ventilation-Q: independent Python calculation = 20; expected = 20; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "safety-cleanout-ratio: independent Python calculation = 2; expected = 2; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-safety-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "一名作业人员8h工作日中，分别在80dB(A)环境2h、90dB(A)环境2h、70dB(A)环境4h。题设采用等能量8h等效声级$L_{eq,8h}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$，项目设计目标≤85dB(A)。\n（1）计算等效声级，不能用声级算术平均。\n（2）若只把90dB(A)作业降为85dB(A)，重算结果。\n（3）为降噪方案列出源头、传播路径与接收端控制，并说明耳塞标称衰减为什么不能直接从环境等效值中机械扣除。",
+          "score": 20,
+          "solution": "原等效声级84.47158dB(A)，满足题设85目标；降为85后等效声级80.37653dB(A)。应优先低噪设备/工艺、隔声减振和暴露时间管理，个人防护需适配、佩戴和现场效果验证。",
+          "explanation": "声级为对数量，能量先加权再取对数。原值约84.47dB(A)，不是(80×2+90×2+70×4)/8=77.5。环境声级与耳内暴露并不等同；标称衰减依赖频谱、适配和佩戴，不能把额定值当作实际全班恒定衰减。项目目标不是对通用法定限值的无来源引述。",
+          "source": {
+            "materialId": "registered-safety-engineer-cases-01-q3-source",
+            "blockId": "registered-safety-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "一名作业人员8h工作日中，分别在80dB(A)环境2h、90dB(A)环境2h、70dB(A)环境4h。题设采用等能量8h等效声级$L_{eq,8h}=10\\log_{10}[\\sum t_i10^{L_i/10}/8]$，项目设计目标≤85dB(A)。\n（1）计算等效声级，不能用声级算术平均。\n（2）若只把90dB(A)作业降为85dB(A)，重算结果。\n（3）为降噪方案列出源头、传播路径与接收端控制，并说明耳塞标称衰减为什么不能直接从环境等效值中机械扣除。"
+          },
+          "chapter": "噪声能量",
+          "tags": [
+            "噪声能量",
+            "时间加权暴露",
+            "控制层次"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "噪声能量",
+              "时间加权暴露",
+              "控制层次"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "能量加权原值正确",
+                "points": 7
+              },
+              {
+                "id": "r2",
+                "description": "改造后等效值正确",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "按源/路径/接收端给针对措施",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "解释实际防护验证与标称值差异",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "safety-noise-original: independent Python calculation = 84.47158031; expected = 84.47158031; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "safety-noise-reduced: independent Python calculation = 80.37653314; expected = 80.37653314; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-safety-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "检修一台有毒液体储槽。企业作业程序明确：停机、隔离所有进出料及能量源并上锁挂牌，排空/清洗/置换，确认检测合格，签发进入许可，专人监护，救援资源就位；任一关键条件失效必须停止进入。现场记录：已停泵并关闭入口阀，但出口与氮气管未隔离；仅检测槽口一次，许可签发后又接回清洗软管；救援预案写“发生事故由监护人立即入槽救人”。\n（1）按给定程序列出至少五项具体问题。\n（2）提出恢复进入条件的可验证步骤。\n（3）说明许可签字为何不能替代实际隔离、持续条件确认与救援能力。",
+          "score": 20,
+          "solution": "问题包括仅停泵关入口未隔绝出口/氮气/其他能量，未核实可靠隔离与挂牌，槽口单点不能代表不同空间或持续变化，许可后接管改变边界，未授权重新确认，监护人贸然进入会增加伤亡且无人维持监护，救援能力未证明。应停止进入，建立并核实隔离清单，按批准方案清洗置换与空间/时序检测，恢复边界后重新评估许可，保证监护通信、受训救援与适用装备并演练。",
+          "explanation": "答案依据完整题给程序，未捏造全国统一的检测次数或间隔。氮气既是能量/介质源，也可能造成缺氧；必须识别其作用。无防护、无训练、无能力的临时入槽救人不是可接受的救援方案。",
+          "source": {
+            "materialId": "registered-safety-engineer-cases-01-q4-source",
+            "blockId": "registered-safety-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "检修一台有毒液体储槽。企业作业程序明确：停机、隔离所有进出料及能量源并上锁挂牌，排空/清洗/置换，确认检测合格，签发进入许可，专人监护，救援资源就位；任一关键条件失效必须停止进入。现场记录：已停泵并关闭入口阀，但出口与氮气管未隔离；仅检测槽口一次，许可签发后又接回清洗软管；救援预案写“发生事故由监护人立即入槽救人”。\n（1）按给定程序列出至少五项具体问题。\n（2）提出恢复进入条件的可验证步骤。\n（3）说明许可签字为何不能替代实际隔离、持续条件确认与救援能力。"
+          },
+          "chapter": "受限空间",
+          "tags": [
+            "受限空间",
+            "能量隔离",
+            "条件变化",
+            "应急救援"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "受限空间",
+              "能量隔离",
+              "条件变化",
+              "应急救援"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "至少五项具体问题且对应记录",
+                "points": 7
+              },
+              {
+                "id": "r2",
+                "description": "停作业、隔离、检测、复审可核验",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "监护、通信、救援能力与演练",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "许可与实体条件关系清楚",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "case-evidence-review",
+                "detail": "依据题给七步程序逐项映射现场事实：出口/氮气未隔离、检测代表性不足、许可后边界变化、盲目施救均被识别；答案未依赖未提供条款。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-safety-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "某站一年发生轻微泄漏6次，暴露工时120000h，其中A班组2次/20000h、B班组4次/100000h。每次泄漏均单独记录。整改后下一年站内1次/30000h；作业内容和报告制度可能变化。\n（1）按每100000工时分别计算首年全站、A、B及次年的频率。\n（2）比较绝对次数与暴露率结论，能否只据这些数据宣布整改导致风险下降？\n（3）制定包含领先指标与结果指标的最小评估方案，说明如何处理漏报、作业结构与统计不确定性。",
+          "score": 20,
+          "solution": "首年全站5次/十万工时；A为10，B为4；次年3.3333。A事故数更少但率更高；全站次年次数和点估计率均下降，但观察期工时少、稀有事件波动且作业/报告可能改变，不能据此认定整改因果有效。应记录统一事件定义、暴露工时与任务结构，核查漏报；持续跟踪关键隔离/联锁测试、缺陷关闭质量等领先指标及泄漏频率/严重度，用可比基线、足够暴露和置信区间或适当对照评估。",
+          "explanation": "事故频率的分母是工时，不能用2<4断言A更安全。率比次年/首年为2/3，但这是点估计描述，不能消除混杂与不确定性。领先指标也应检查实体质量，不能只统计培训或检查次数。",
+          "source": {
+            "materialId": "registered-safety-engineer-cases-01-q5-source",
+            "blockId": "registered-safety-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "某站一年发生轻微泄漏6次，暴露工时120000h，其中A班组2次/20000h、B班组4次/100000h。每次泄漏均单独记录。整改后下一年站内1次/30000h；作业内容和报告制度可能变化。\n（1）按每100000工时分别计算首年全站、A、B及次年的频率。\n（2）比较绝对次数与暴露率结论，能否只据这些数据宣布整改导致风险下降？\n（3）制定包含领先指标与结果指标的最小评估方案，说明如何处理漏报、作业结构与统计不确定性。"
+          },
+          "chapter": "安全绩效",
+          "tags": [
+            "安全绩效",
+            "暴露率",
+            "因果与不确定性",
+            "指标设计"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "安全绩效",
+              "暴露率",
+              "因果与不确定性",
+              "指标设计"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "四项暴露率正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "次数与率区分及不直接因果结论",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "领先/结果指标对应真实控制",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "漏报、任务结构、暴露和不确定性处理",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "safety-first-year-rate: independent Python calculation = 5; expected = 5; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "safety-A-rate: independent Python calculation = 10; expected = 10; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "safety-B-rate: independent Python calculation = 4; expected = 4; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "safety-next-year-rate: independent Python calculation = 3.333333333; expected = 3.333333333; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-safety-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-safety-engineer-project-blueprint",
+      "name": "安全生产专业实务案例能力蓝图",
+      "subject": "安全生产专业实务",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-safety-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-safety-engineer-cases-01-q1",
+      "registered-safety-engineer-cases-01-q2",
+      "registered-safety-engineer-cases-01-q3",
+      "registered-safety-engineer-cases-01-q4",
+      "registered-safety-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

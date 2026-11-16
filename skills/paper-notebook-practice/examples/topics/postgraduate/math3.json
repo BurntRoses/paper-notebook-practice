@@ -1,0 +1,2259 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "postgraduate-math3-01",
+  "notebookId": "postgraduate-math3",
+  "notebookRevision": 1,
+  "title": "硕士研究生入学考试 数学（三）",
+  "subject": "数学（三）",
+  "level": "考研",
+  "durationMinutes": 180,
+  "totalScore": 150,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "sealed": true
+  },
+  "presentation": {
+    "titleLines": [
+      "硕士研究生入学考试",
+      "数学（三）"
+    ],
+    "candidateFields": [
+      "姓名",
+      "准考证号",
+      "报考单位"
+    ],
+    "notices": [
+      "请在答题卡规定区域作答，写在试题上的答案无效。",
+      "选择题每题只有一个正确选项；多项选择题按题目说明作答。"
+    ],
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "数学（三）",
+      "rule": true
+    },
+    "footerTemplate": "数学（三）　第 {page} 页",
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "university",
+      "candidateDigits": 15
+    },
+    "questionScores": "show",
+    "sectionDetails": true,
+    "projectMark": false
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "authoring": {
+    "routeId": "postgrad-math-3",
+    "examName": "数学（三）",
+    "requireVerification": true
+  },
+  "materials": [
+    {
+      "id": "calculus",
+      "title": "微积分知识核对（作者概述）",
+      "kind": "knowledge",
+      "text": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。",
+      "blocks": [
+        {
+          "id": "calculus-block",
+          "title": "微积分知识核对（作者概述）",
+          "text": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/5-3-double-integrals-in-polar-coordinates",
+        "publisher": "OpenStax"
+      },
+      "url": "https://openstax.org/books/calculus-volume-3/pages/5-3-double-integrals-in-polar-coordinates",
+      "sha256": "9c22146e8fbc1fd4b16c4f978ffbebadc449c2a267127f61381e731f1d323ac2"
+    },
+    {
+      "id": "linear-algebra",
+      "title": "线性代数知识核对（作者概述）",
+      "kind": "knowledge",
+      "text": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。",
+      "blocks": [
+        {
+          "id": "linear-algebra-block",
+          "title": "线性代数知识核对（作者概述）",
+          "text": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/readings/",
+        "publisher": "MIT OCW / Gilbert Strang"
+      },
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/readings/",
+      "sha256": "480dc2b56e0cfca28fb95d5ba0166a25036edfbe99873874eec741cc8f69ebe5"
+    },
+    {
+      "id": "probability",
+      "title": "概率统计知识核对（作者概述）",
+      "kind": "knowledge",
+      "text": "概率密度非负且积分为1；条件概率需要限定事件；期望和方差按联合分布或独立性计算；估计量无偏性由其期望验证。",
+      "blocks": [
+        {
+          "id": "probability-block",
+          "title": "概率统计知识核对（作者概述）",
+          "text": "概率密度非负且积分为1；条件概率需要限定事件；期望和方差按联合分布或独立性计算；估计量无偏性由其期望验证。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b9bc9dd9653246d74b559ab42cac51a73d68ae11bc9303a99f40c6f2167352ed"
+    },
+    {
+      "id": "postgraduate-math3-01-q1-source",
+      "title": "原创命题记录 1",
+      "kind": "question-bank",
+      "text": "$\\lim_{x\\to0}\\frac{e^{2x}-1}{\\ln(1+3x)}$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q1-source-block",
+          "title": "原创命题记录 1",
+          "text": "$\\lim_{x\\to0}\\frac{e^{2x}-1}{\\ln(1+3x)}$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "308da02eb30692d6256d74bdad6165d5d145d8963b3c7a8135194cc8a2527d7e"
+    },
+    {
+      "id": "postgraduate-math3-01-q2-source",
+      "title": "原创命题记录 2",
+      "kind": "question-bank",
+      "text": "需求函数 $q=100-2p$，$0\\le p\\le50$。收入最大的价格为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q2-source-block",
+          "title": "原创命题记录 2",
+          "text": "需求函数 $q=100-2p$，$0\\le p\\le50$。收入最大的价格为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "94153696efc9a20644c6f36b3a45476edeadc4326f07c23feb9f4c8ab00350ba"
+    },
+    {
+      "id": "postgraduate-math3-01-q3-source",
+      "title": "原创命题记录 3",
+      "kind": "question-bank",
+      "text": "成本函数 $C(q)=100+5q+q^2$，q>0。平均成本最小时的产量为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q3-source-block",
+          "title": "原创命题记录 3",
+          "text": "成本函数 $C(q)=100+5q+q^2$，q>0。平均成本最小时的产量为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "88229046dcf3e37768671d9390c72cd2e38be02b6c821269192b310d2c3bcf73"
+    },
+    {
+      "id": "postgraduate-math3-01-q4-source",
+      "title": "原创命题记录 4",
+      "kind": "question-bank",
+      "text": "$\\int_1^e\\ln x\\,dx$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q4-source-block",
+          "title": "原创命题记录 4",
+          "text": "$\\int_1^e\\ln x\\,dx$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8c94b647a63e1a501e83a6175933974f5f7c0c7bc62d85b3a3a1434cc4e11db7"
+    },
+    {
+      "id": "postgraduate-math3-01-q5-source",
+      "title": "原创命题记录 5",
+      "kind": "question-bank",
+      "text": "$\\sum_{n=0}^{\\infty}(x-1)^n/3^n$ 的和函数（$|x-1|<3$）为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q5-source-block",
+          "title": "原创命题记录 5",
+          "text": "$\\sum_{n=0}^{\\infty}(x-1)^n/3^n$ 的和函数（$|x-1|<3$）为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "66a27e3233f514aa38047ff65ceddd5681ec7f4891ef796d5483364315696d9b"
+    },
+    {
+      "id": "postgraduate-math3-01-q6-source",
+      "title": "原创命题记录 6",
+      "kind": "question-bank",
+      "text": "若 $z=\\ln(x+y)$，则 $z_{xy}$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q6-source-block",
+          "title": "原创命题记录 6",
+          "text": "若 $z=\\ln(x+y)$，则 $z_{xy}$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "9990f34a739f99382adec516d7405838af7ea54d8cd3d4ab169f9ce0a4ec395c"
+    },
+    {
+      "id": "postgraduate-math3-01-q7-source",
+      "title": "原创命题记录 7",
+      "kind": "question-bank",
+      "text": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的非零特征值为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q7-source-block",
+          "title": "原创命题记录 7",
+          "text": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的非零特征值为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "db8c9789fd84375a058ec6aaf2c805a02a2b679ff96346673149a1e70a2abc0f"
+    },
+    {
+      "id": "postgraduate-math3-01-q8-source",
+      "title": "原创命题记录 8",
+      "kind": "question-bank",
+      "text": "齐次方程 $x_1+x_2+x_3=0$ 的基础解系可以取",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q8-source-block",
+          "title": "原创命题记录 8",
+          "text": "齐次方程 $x_1+x_2+x_3=0$ 的基础解系可以取"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b160e6ef54d17864cefbaa89e182d3f15f6c0275fb7f74a3c28d35a3fe364479"
+    },
+    {
+      "id": "postgraduate-math3-01-q9-source",
+      "title": "原创命题记录 9",
+      "kind": "question-bank",
+      "text": "独立的 $X,Y\\sim U(0,1)$，则 $P(X+Y\\le1)$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q9-source-block",
+          "title": "原创命题记录 9",
+          "text": "独立的 $X,Y\\sim U(0,1)$，则 $P(X+Y\\le1)$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "18637095e3fbe06b1c0ba81c7ede73a337e8f7127c445b7661d52a09e1b14f41"
+    },
+    {
+      "id": "postgraduate-math3-01-q10-source",
+      "title": "原创命题记录 10",
+      "kind": "question-bank",
+      "text": "某检验原假设为总体均值等于μ₀。第一类错误是",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q10-source-block",
+          "title": "原创命题记录 10",
+          "text": "某检验原假设为总体均值等于μ₀。第一类错误是"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a049ac2cdbde8f9380beaba243301f62d6b37f4a5cd6c3b415c67600e9b13a28"
+    },
+    {
+      "id": "postgraduate-math3-01-q11-source",
+      "title": "原创命题记录 11",
+      "kind": "question-bank",
+      "text": "$\\lim_{x\\to0}\\frac{\\ln(1+x)-x}{x^2}=$ ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q11-source-block",
+          "title": "原创命题记录 11",
+          "text": "$\\lim_{x\\to0}\\frac{\\ln(1+x)-x}{x^2}=$ ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "62fe87440399244e82aec504320c1e035a5aa5495b65f0d32b030aacd02bab1c"
+    },
+    {
+      "id": "postgraduate-math3-01-q12-source",
+      "title": "原创命题记录 12",
+      "kind": "question-bank",
+      "text": "生产函数 $Q=K^{1/2}L^{1/2}$ 在K=4、L=9处的资本边际产量为 ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q12-source-block",
+          "title": "原创命题记录 12",
+          "text": "生产函数 $Q=K^{1/2}L^{1/2}$ 在K=4、L=9处的资本边际产量为 ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a405b6eaa1fac723081cbc139b4a54ede594e049f26f520514d151972a119097"
+    },
+    {
+      "id": "postgraduate-math3-01-q13-source",
+      "title": "原创命题记录 13",
+      "kind": "question-bank",
+      "text": "$\\int_0^1\\int_0^1(x+y)\\,dxdy=$ ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q13-source-block",
+          "title": "原创命题记录 13",
+          "text": "$\\int_0^1\\int_0^1(x+y)\\,dxdy=$ ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e111687e2981af63d6b429deb1b6fc9b21df31f2ffc0f3cf7e17eada1adcda41"
+    },
+    {
+      "id": "postgraduate-math3-01-q14-source",
+      "title": "原创命题记录 14",
+      "kind": "question-bank",
+      "text": "$\\det\\begin{pmatrix}1&1&1\\\\0&2&1\\\\0&0&3\\end{pmatrix}=$ ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q14-source-block",
+          "title": "原创命题记录 14",
+          "text": "$\\det\\begin{pmatrix}1&1&1\\\\0&2&1\\\\0&0&3\\end{pmatrix}=$ ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f9a127762019aef944ff94be7492ea88ec90ce2e5d1381880c765359467b0a97"
+    },
+    {
+      "id": "postgraduate-math3-01-q15-source",
+      "title": "原创命题记录 15",
+      "kind": "question-bank",
+      "text": "二次型 $2x^2+2xy+2y^2$ 对应矩阵的最小特征值为 ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q15-source-block",
+          "title": "原创命题记录 15",
+          "text": "二次型 $2x^2+2xy+2y^2$ 对应矩阵的最小特征值为 ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f25b7007fd754a2928f74aef602430a16ef08e840547a84220f6aa445dc31b3b"
+    },
+    {
+      "id": "postgraduate-math3-01-q16-source",
+      "title": "原创命题记录 16",
+      "kind": "question-bank",
+      "text": "$X\\sim P(3)$，则 $E(X^2)=$ ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q16-source-block",
+          "title": "原创命题记录 16",
+          "text": "$X\\sim P(3)$，则 $E(X^2)=$ ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "5927edc685a9baa89a30de3cc6917fd22f3211150f20ffeed2bc42cad3733f14"
+    },
+    {
+      "id": "postgraduate-math3-01-q17-source",
+      "title": "原创命题记录 17",
+      "kind": "question-bank",
+      "text": "设需求函数 $q=120-3p$，成本函数 $C(q)=20q+100$。（1）将利润写成q的函数并确定经济定义域；（2）求最优产量、价格和最大利润。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q17-source-block",
+          "title": "原创命题记录 17",
+          "text": "设需求函数 $q=120-3p$，成本函数 $C(q)=20q+100$。（1）将利润写成q的函数并确定经济定义域；（2）求最优产量、价格和最大利润。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "259fea253af531316d8466a1d982ad642e29a5459f3ce51a81ff90aca170565f"
+    },
+    {
+      "id": "postgraduate-math3-01-q18-source",
+      "title": "原创命题记录 18",
+      "kind": "question-bank",
+      "text": "设连续函数f满足 $f(x)=1+\\int_0^x f(t)\\,dt$。（1）证明f可导并求f；（2）求 $\\int_0^1xf(x)\\,dx$。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q18-source-block",
+          "title": "原创命题记录 18",
+          "text": "设连续函数f满足 $f(x)=1+\\int_0^x f(t)\\,dt$。（1）证明f可导并求f；（2）求 $\\int_0^1xf(x)\\,dx$。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0b4966597b4fb22fa901dc78258b8a97bc6f4d2925b82a6c297d161a50b0a18f"
+    },
+    {
+      "id": "postgraduate-math3-01-q19-source",
+      "title": "原创命题记录 19",
+      "kind": "question-bank",
+      "text": "在约束 $x+y=12$、$x>0,y>0$ 下，求 $U(x,y)=\\ln x+2\\ln y$ 的最大值点。写出拉格朗日条件，并说明全局最大性。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q19-source-block",
+          "title": "原创命题记录 19",
+          "text": "在约束 $x+y=12$、$x>0,y>0$ 下，求 $U(x,y)=\\ln x+2\\ln y$ 的最大值点。写出拉格朗日条件，并说明全局最大性。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "95f5bf35611a91c92bf0359b712bfc1ac583da6b124c277daec6580683751b04"
+    },
+    {
+      "id": "postgraduate-math3-01-q20-source",
+      "title": "原创命题记录 20",
+      "kind": "question-bank",
+      "text": "设数列 $a_n=\\int_0^1x^n/(1+x)\\,dx$。（1）证明a_n>0且趋于0；（2）证明 $a_n+a_{n+1}=1/(n+1)$；（3）证明交错调和级数和为ln2。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q20-source-block",
+          "title": "原创命题记录 20",
+          "text": "设数列 $a_n=\\int_0^1x^n/(1+x)\\,dx$。（1）证明a_n>0且趋于0；（2）证明 $a_n+a_{n+1}=1/(n+1)$；（3）证明交错调和级数和为ln2。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "85df6f6eac84d7753a1d655348c9ca3b9087bcfa3cfce222180dee2b5fa4d378"
+    },
+    {
+      "id": "postgraduate-math3-01-q21-source",
+      "title": "原创命题记录 21",
+      "kind": "question-bank",
+      "text": "设 $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$，$b=(1,0)^T$。（1）将二次型 $x^TAx$ 正交化；（2）求 $F(x)=x^TAx-2b^Tx$ 的唯一最小点与最小值。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q21-source-block",
+          "title": "原创命题记录 21",
+          "text": "设 $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$，$b=(1,0)^T$。（1）将二次型 $x^TAx$ 正交化；（2）求 $F(x)=x^TAx-2b^Tx$ 的唯一最小点与最小值。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c01e99e38850ec276448f7f76b8a20644e53225e001c3f5adc6b8bb47cc88b3a"
+    },
+    {
+      "id": "postgraduate-math3-01-q22-source",
+      "title": "原创命题记录 22",
+      "kind": "question-bank",
+      "text": "设样本 $X_1,\\ldots,X_n$ 独立同分布于 $U(0,\\theta)$，θ>0，n≥2，$M=\\max X_i$。（1）求M的分布函数和密度；（2）求M的期望；（3）构造θ的无偏估计并求其方差。",
+      "blocks": [
+        {
+          "id": "postgraduate-math3-01-q22-source-block",
+          "title": "原创命题记录 22",
+          "text": "设样本 $X_1,\\ldots,X_n$ 独立同分布于 $U(0,\\theta)$，θ>0，n≥2，$M=\\max X_i$。（1）求M的分布函数和密度；（2）求M的期望；（3）构造θ的无偏估计并求其方差。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "6ac1dfc3a22b17691b21c7bb597ae045c4dd1930c6075feb86a78855b45df537"
+    }
+  ],
+  "sections": [
+    {
+      "id": "choice",
+      "title": "一、选择题",
+      "examPartId": "choice",
+      "instructions": "第1—10题，每题5分。每题只有一个正确选项。",
+      "score": 50,
+      "questions": [
+        {
+          "id": "postgraduate-math3-01-q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "$\\lim_{x\\to0}\\frac{e^{2x}-1}{\\ln(1+3x)}$ 为",
+          "score": 5,
+          "solution": "A",
+          "explanation": "分子、分母分别与2x、3x等价。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q1-source",
+            "blockId": "postgraduate-math3-01-q1-source-block",
+            "title": "原创命题记录 1",
+            "exact": "$\\lim_{x\\to0}\\frac{e^{2x}-1}{\\ln(1+3x)}$ 为"
+          },
+          "chapter": "高等数学·极限",
+          "tags": [
+            "高等数学·极限"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·极限"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；分子、分母分别与2x、3x等价。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$2/3$"
+            },
+            {
+              "id": "B",
+              "text": "$3/2$"
+            },
+            {
+              "id": "C",
+              "text": "6"
+            },
+            {
+              "id": "D",
+              "text": "1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "需求函数 $q=100-2p$，$0\\le p\\le50$。收入最大的价格为",
+          "score": 5,
+          "solution": "B",
+          "explanation": "$R=p(100-2p)$，R'=100−4p，最大点p=25。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q2-source",
+            "blockId": "postgraduate-math3-01-q2-source-block",
+            "title": "原创命题记录 2",
+            "exact": "需求函数 $q=100-2p$，$0\\le p\\le50$。收入最大的价格为"
+          },
+          "chapter": "高等数学·经济应用",
+          "tags": [
+            "高等数学·经济应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·经济应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；$R=p(100-2p)$，R'=100−4p，最大点p=25。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "20"
+            },
+            {
+              "id": "B",
+              "text": "25"
+            },
+            {
+              "id": "C",
+              "text": "40"
+            },
+            {
+              "id": "D",
+              "text": "50"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "成本函数 $C(q)=100+5q+q^2$，q>0。平均成本最小时的产量为",
+          "score": 5,
+          "solution": "B",
+          "explanation": "平均成本 $100/q+5+q$；导数为−100/q²+1，解q=10。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q3-source",
+            "blockId": "postgraduate-math3-01-q3-source-block",
+            "title": "原创命题记录 3",
+            "exact": "成本函数 $C(q)=100+5q+q^2$，q>0。平均成本最小时的产量为"
+          },
+          "chapter": "高等数学·经济应用",
+          "tags": [
+            "高等数学·经济应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·经济应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；平均成本 $100/q+5+q$；导数为−100/q²+1，解q=10。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "5"
+            },
+            {
+              "id": "B",
+              "text": "10"
+            },
+            {
+              "id": "C",
+              "text": "20"
+            },
+            {
+              "id": "D",
+              "text": "100"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "$\\int_1^e\\ln x\\,dx$ 为",
+          "score": 5,
+          "solution": "C",
+          "explanation": "原函数xlnx−x，代上下限得1。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q4-source",
+            "blockId": "postgraduate-math3-01-q4-source-block",
+            "title": "原创命题记录 4",
+            "exact": "$\\int_1^e\\ln x\\,dx$ 为"
+          },
+          "chapter": "高等数学·定积分",
+          "tags": [
+            "高等数学·定积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·定积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；原函数xlnx−x，代上下限得1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$e$"
+            },
+            {
+              "id": "B",
+              "text": "$e-1$"
+            },
+            {
+              "id": "C",
+              "text": "1"
+            },
+            {
+              "id": "D",
+              "text": "0"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q5",
+          "number": 5,
+          "type": "choice",
+          "prompt": "$\\sum_{n=0}^{\\infty}(x-1)^n/3^n$ 的和函数（$|x-1|<3$）为",
+          "score": 5,
+          "solution": "A",
+          "explanation": "等比级数和1/[1−(x−1)/3]=3/(4−x)。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q5-source",
+            "blockId": "postgraduate-math3-01-q5-source-block",
+            "title": "原创命题记录 5",
+            "exact": "$\\sum_{n=0}^{\\infty}(x-1)^n/3^n$ 的和函数（$|x-1|<3$）为"
+          },
+          "chapter": "高等数学·级数",
+          "tags": [
+            "高等数学·级数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·级数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；等比级数和1/[1−(x−1)/3]=3/(4−x)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$3/(4-x)$"
+            },
+            {
+              "id": "B",
+              "text": "$3/(2-x)$"
+            },
+            {
+              "id": "C",
+              "text": "$1/(4-x)$"
+            },
+            {
+              "id": "D",
+              "text": "$3/(x+2)$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q6",
+          "number": 6,
+          "type": "choice",
+          "prompt": "若 $z=\\ln(x+y)$，则 $z_{xy}$ 为",
+          "score": 5,
+          "solution": "C",
+          "explanation": "先对x求导1/(x+y)，再对y求导。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q6-source",
+            "blockId": "postgraduate-math3-01-q6-source-block",
+            "title": "原创命题记录 6",
+            "exact": "若 $z=\\ln(x+y)$，则 $z_{xy}$ 为"
+          },
+          "chapter": "高等数学·偏导数",
+          "tags": [
+            "高等数学·偏导数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·偏导数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；先对x求导1/(x+y)，再对y求导。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/(x+y)$"
+            },
+            {
+              "id": "B",
+              "text": "$1/(x+y)^2$"
+            },
+            {
+              "id": "C",
+              "text": "$-1/(x+y)^2$"
+            },
+            {
+              "id": "D",
+              "text": "0"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q7",
+          "number": 7,
+          "type": "choice",
+          "prompt": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的非零特征值为",
+          "score": 5,
+          "solution": "C",
+          "explanation": "行列式0、迹5，特征值0与5。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q7-source",
+            "blockId": "postgraduate-math3-01-q7-source-block",
+            "title": "原创命题记录 7",
+            "exact": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的非零特征值为"
+          },
+          "chapter": "线性代数·特征值",
+          "tags": [
+            "线性代数·特征值"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·特征值"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；行列式0、迹5，特征值0与5。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "5"
+            },
+            {
+              "id": "D",
+              "text": "6"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q8",
+          "number": 8,
+          "type": "choice",
+          "prompt": "齐次方程 $x_1+x_2+x_3=0$ 的基础解系可以取",
+          "score": 5,
+          "solution": "A",
+          "explanation": "A中两向量均满足方程且线性无关；B,D不满足，C线性相关。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q8-source",
+            "blockId": "postgraduate-math3-01-q8-source-block",
+            "title": "原创命题记录 8",
+            "exact": "齐次方程 $x_1+x_2+x_3=0$ 的基础解系可以取"
+          },
+          "chapter": "线性代数·解空间",
+          "tags": [
+            "线性代数·解空间"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·解空间"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；A中两向量均满足方程且线性无关；B,D不满足，C线性相关。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$(1,-1,0)^T,(1,0,-1)^T$"
+            },
+            {
+              "id": "B",
+              "text": "$(1,1,0)^T,(1,0,1)^T$"
+            },
+            {
+              "id": "C",
+              "text": "$(1,-1,0)^T,(2,-2,0)^T$"
+            },
+            {
+              "id": "D",
+              "text": "$(1,0,0)^T,(0,1,0)^T$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q9",
+          "number": 9,
+          "type": "choice",
+          "prompt": "独立的 $X,Y\\sim U(0,1)$，则 $P(X+Y\\le1)$ 为",
+          "score": 5,
+          "solution": "B",
+          "explanation": "单位正方形内x+y≤1的三角形面积为1/2。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q9-source",
+            "blockId": "postgraduate-math3-01-q9-source-block",
+            "title": "原创命题记录 9",
+            "exact": "独立的 $X,Y\\sim U(0,1)$，则 $P(X+Y\\le1)$ 为"
+          },
+          "chapter": "概率统计·联合分布",
+          "tags": [
+            "概率统计·联合分布"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·联合分布"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；单位正方形内x+y≤1的三角形面积为1/2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "$3/4$"
+            },
+            {
+              "id": "D",
+              "text": "1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "probability",
+                "blockId": "probability-block",
+                "title": "概率统计知识核对（作者概述）",
+                "exact": "概率密度非负且积分为1；条件概率需要限定事件；期望和方差按联合分布或独立性计算；估计量无偏性由其期望验证。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "某检验原假设为总体均值等于μ₀。第一类错误是",
+          "score": 5,
+          "solution": "A",
+          "explanation": "第一类错误以原假设为真为条件；第二类错误是原假设为假却未拒绝。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q10-source",
+            "blockId": "postgraduate-math3-01-q10-source-block",
+            "title": "原创命题记录 10",
+            "exact": "某检验原假设为总体均值等于μ₀。第一类错误是"
+          },
+          "chapter": "概率统计·假设检验",
+          "tags": [
+            "概率统计·假设检验"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·假设检验"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；第一类错误以原假设为真为条件；第二类错误是原假设为假却未拒绝。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "原假设真却拒绝它"
+            },
+            {
+              "id": "B",
+              "text": "原假设假却未拒绝它"
+            },
+            {
+              "id": "C",
+              "text": "样本均值恰好等于μ₀"
+            },
+            {
+              "id": "D",
+              "text": "检验统计量计算错误"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "probability",
+                "blockId": "probability-block",
+                "title": "概率统计知识核对（作者概述）",
+                "exact": "概率密度非负且积分为1；条件概率需要限定事件；期望和方差按联合分布或独立性计算；估计量无偏性由其期望验证。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blank",
+      "title": "二、填空题",
+      "examPartId": "blank",
+      "instructions": "第11—16题，每题5分。",
+      "score": 30,
+      "questions": [
+        {
+          "id": "postgraduate-math3-01-q11",
+          "number": 11,
+          "type": "blank",
+          "prompt": "$\\lim_{x\\to0}\\frac{\\ln(1+x)-x}{x^2}=$ ______。",
+          "score": 5,
+          "solution": [
+            "-1/2"
+          ],
+          "explanation": "由ln(1+x)=x−x²/2+o(x²)。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q11-source",
+            "blockId": "postgraduate-math3-01-q11-source-block",
+            "title": "原创命题记录 11",
+            "exact": "$\\lim_{x\\to0}\\frac{\\ln(1+x)-x}{x^2}=$ ______。"
+          },
+          "chapter": "高等数学·极限",
+          "tags": [
+            "高等数学·极限"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·极限"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "由ln(1+x)=x−x²/2+o(x²)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q12",
+          "number": 12,
+          "type": "blank",
+          "prompt": "生产函数 $Q=K^{1/2}L^{1/2}$ 在K=4、L=9处的资本边际产量为 ______。",
+          "score": 5,
+          "solution": [
+            "3/4"
+          ],
+          "explanation": "$Q_K=(1/2)K^{-1/2}L^{1/2}=3/4$。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q12-source",
+            "blockId": "postgraduate-math3-01-q12-source-block",
+            "title": "原创命题记录 12",
+            "exact": "生产函数 $Q=K^{1/2}L^{1/2}$ 在K=4、L=9处的资本边际产量为 ______。"
+          },
+          "chapter": "高等数学·经济应用",
+          "tags": [
+            "高等数学·经济应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·经济应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "$Q_K=(1/2)K^{-1/2}L^{1/2}=3/4$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q13",
+          "number": 13,
+          "type": "blank",
+          "prompt": "$\\int_0^1\\int_0^1(x+y)\\,dxdy=$ ______。",
+          "score": 5,
+          "solution": [
+            "1"
+          ],
+          "explanation": "两项积分各1/2。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q13-source",
+            "blockId": "postgraduate-math3-01-q13-source-block",
+            "title": "原创命题记录 13",
+            "exact": "$\\int_0^1\\int_0^1(x+y)\\,dxdy=$ ______。"
+          },
+          "chapter": "高等数学·二重积分",
+          "tags": [
+            "高等数学·二重积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·二重积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "两项积分各1/2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q14",
+          "number": 14,
+          "type": "blank",
+          "prompt": "$\\det\\begin{pmatrix}1&1&1\\\\0&2&1\\\\0&0&3\\end{pmatrix}=$ ______。",
+          "score": 5,
+          "solution": [
+            "6"
+          ],
+          "explanation": "上三角行列式为对角线元素的积。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q14-source",
+            "blockId": "postgraduate-math3-01-q14-source-block",
+            "title": "原创命题记录 14",
+            "exact": "$\\det\\begin{pmatrix}1&1&1\\\\0&2&1\\\\0&0&3\\end{pmatrix}=$ ______。"
+          },
+          "chapter": "线性代数·行列式",
+          "tags": [
+            "线性代数·行列式"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·行列式"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "上三角行列式为对角线元素的积。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q15",
+          "number": 15,
+          "type": "blank",
+          "prompt": "二次型 $2x^2+2xy+2y^2$ 对应矩阵的最小特征值为 ______。",
+          "score": 5,
+          "solution": [
+            "1"
+          ],
+          "explanation": "矩阵为 $\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$，特征值1,3。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q15-source",
+            "blockId": "postgraduate-math3-01-q15-source-block",
+            "title": "原创命题记录 15",
+            "exact": "二次型 $2x^2+2xy+2y^2$ 对应矩阵的最小特征值为 ______。"
+          },
+          "chapter": "线性代数·二次型",
+          "tags": [
+            "线性代数·二次型"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·二次型"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "矩阵为 $\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$，特征值1,3。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math3-01-q16",
+          "number": 16,
+          "type": "blank",
+          "prompt": "$X\\sim P(3)$，则 $E(X^2)=$ ______。",
+          "score": 5,
+          "solution": [
+            "12"
+          ],
+          "explanation": "E(X²)=D(X)+[E(X)]²=3+9=12。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q16-source",
+            "blockId": "postgraduate-math3-01-q16-source-block",
+            "title": "原创命题记录 16",
+            "exact": "$X\\sim P(3)$，则 $E(X^2)=$ ______。"
+          },
+          "chapter": "概率统计·数字特征",
+          "tags": [
+            "概率统计·数字特征"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·数字特征"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "E(X²)=D(X)+[E(X)]²=3+9=12。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "probability",
+                "blockId": "probability-block",
+                "title": "概率统计知识核对（作者概述）",
+                "exact": "概率密度非负且积分为1；条件概率需要限定事件；期望和方差按联合分布或独立性计算；估计量无偏性由其期望验证。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "title": "三、解答题",
+      "examPartId": "response",
+      "instructions": "第17—22题。解答应写出文字说明、证明过程或演算步骤。",
+      "score": 70,
+      "questions": [
+        {
+          "id": "postgraduate-math3-01-q17",
+          "number": 17,
+          "type": "response",
+          "prompt": "设需求函数 $q=120-3p$，成本函数 $C(q)=20q+100$。（1）将利润写成q的函数并确定经济定义域；（2）求最优产量、价格和最大利润。",
+          "score": 10,
+          "solution": "$\\Pi(q)=20q-q^2/3-100$，$0\\le q\\le120$；最优q=30、p=30，最大利润200。",
+          "explanation": "反需求p=40−q/3；收入40q−q²/3，减成本得利润。Π'=20−2q/3，Π''=−2/3<0。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q17-source",
+            "blockId": "postgraduate-math3-01-q17-source-block",
+            "title": "原创命题记录 17",
+            "exact": "设需求函数 $q=120-3p$，成本函数 $C(q)=20q+100$。（1）将利润写成q的函数并确定经济定义域；（2）求最优产量、价格和最大利润。"
+          },
+          "chapter": "高等数学·利润优化",
+          "tags": [
+            "高等数学·利润优化"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·利润优化"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "二次函数顶点法与微分法交叉核对，并比较停产边界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "反需求、定义域与利润模型",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "驻点及全局最大性",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "产量价格利润及单位解释",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math3-01-q18",
+          "number": 18,
+          "type": "response",
+          "prompt": "设连续函数f满足 $f(x)=1+\\int_0^x f(t)\\,dt$。（1）证明f可导并求f；（2）求 $\\int_0^1xf(x)\\,dx$。",
+          "score": 12,
+          "solution": "$f(x)=e^x$；积分等于1。",
+          "explanation": "连续性使积分上限函数可导，f'=f且f(0)=1，得e^x；分部积分 $[xe^x-e^x]_0^1=1$。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q18-source",
+            "blockId": "postgraduate-math3-01-q18-source-block",
+            "title": "原创命题记录 18",
+            "exact": "设连续函数f满足 $f(x)=1+\\int_0^x f(t)\\,dt$。（1）证明f可导并求f；（2）求 $\\int_0^1xf(x)\\,dx$。"
+          },
+          "chapter": "高等数学·积分方程与微分方程",
+          "tags": [
+            "高等数学·积分方程与微分方程"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·积分方程与微分方程"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "将e^x代入原积分方程；符号积分核对。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "说明连续性保证求导",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "建立微分方程与初值",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "求函数",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "计算定积分",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math3-01-q19",
+          "number": 19,
+          "type": "response",
+          "prompt": "在约束 $x+y=12$、$x>0,y>0$ 下，求 $U(x,y)=\\ln x+2\\ln y$ 的最大值点。写出拉格朗日条件，并说明全局最大性。",
+          "score": 12,
+          "solution": "最大值点为(4,8)，最大值 $\\ln256$。",
+          "explanation": "设L=lnx+2lny−λ(x+y−12)，则1/x=λ，2/y=λ，得y=2x；沿约束的二阶导为−1/x²−2/(12−x)²<0，两端U趋负无穷。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q19-source",
+            "blockId": "postgraduate-math3-01-q19-source-block",
+            "title": "原创命题记录 19",
+            "exact": "在约束 $x+y=12$、$x>0,y>0$ 下，求 $U(x,y)=\\ln x+2\\ln y$ 的最大值点。写出拉格朗日条件，并说明全局最大性。"
+          },
+          "chapter": "高等数学·条件极值",
+          "tags": [
+            "高等数学·条件极值"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·条件极值"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "单变量代入法独立核对；对数定义域完整。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "约束与拉格朗日条件",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "解最优点",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "最大值",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "严格凹性及边界",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math3-01-q20",
+          "number": 20,
+          "type": "response",
+          "prompt": "设数列 $a_n=\\int_0^1x^n/(1+x)\\,dx$。（1）证明a_n>0且趋于0；（2）证明 $a_n+a_{n+1}=1/(n+1)$；（3）证明交错调和级数和为ln2。",
+          "score": 12,
+          "solution": "$0<a_n\\le1/(n+1)\\to0$；递推如题；$\\sum_{k=1}^{\\infty}(-1)^{k-1}/k=\\ln2$。",
+          "explanation": "正性与上界由0<1/(1+x)≤1；递推相加消去分母。有限几何恒等式积分：ln2=Σ_{k=1}^N(−1)^{k−1}/k+(−1)^Na_N，余项趋0。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q20-source",
+            "blockId": "postgraduate-math3-01-q20-source-block",
+            "title": "原创命题记录 20",
+            "exact": "设数列 $a_n=\\int_0^1x^n/(1+x)\\,dx$。（1）证明a_n>0且趋于0；（2）证明 $a_n+a_{n+1}=1/(n+1)$；（3）证明交错调和级数和为ln2。"
+          },
+          "chapter": "高等数学·积分与级数证明",
+          "tags": [
+            "高等数学·积分与级数证明"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·积分与级数证明"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "以N=1,2检查余项符号，使用显式上界而非未经说明交换无穷和。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "正性及夹逼极限",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "递推关系",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "有限和余项等式",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "极限得到ln2",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math3-01-q21",
+          "number": 21,
+          "type": "response",
+          "prompt": "设 $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$，$b=(1,0)^T$。（1）将二次型 $x^TAx$ 正交化；（2）求 $F(x)=x^TAx-2b^Tx$ 的唯一最小点与最小值。",
+          "score": 12,
+          "solution": "取正交坐标 $u=(x_1+x_2)/\\sqrt2,v=(x_1-x_2)/\\sqrt2$，二次型为 $3u^2+v^2$；最小点 $A^{-1}b=(2/3,-1/3)^T$，最小值 $-2/3$。",
+          "explanation": "特征值3,1均正。由梯度2Ax−2b=0或配方，F=(x−A⁻¹b)^TA(x−A⁻¹b)−b^TA⁻¹b。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q21-source",
+            "blockId": "postgraduate-math3-01-q21-source-block",
+            "title": "原创命题记录 21",
+            "exact": "设 $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$，$b=(1,0)^T$。（1）将二次型 $x^TAx$ 正交化；（2）求 $F(x)=x^TAx-2b^Tx$ 的唯一最小点与最小值。"
+          },
+          "chapter": "线性代数·二次型与优化",
+          "tags": [
+            "线性代数·二次型与优化"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·二次型与优化"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "直接代回并检查梯度为0及Hessian正定。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "正交变换与标准形",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "正定性",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "求最小点",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "最小值与唯一性",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math3-01-q22",
+          "number": 22,
+          "type": "response",
+          "prompt": "设样本 $X_1,\\ldots,X_n$ 独立同分布于 $U(0,\\theta)$，θ>0，n≥2，$M=\\max X_i$。（1）求M的分布函数和密度；（2）求M的期望；（3）构造θ的无偏估计并求其方差。",
+          "score": 12,
+          "solution": "$F_M(t)=(t/\\theta)^n$（0<t<θ），区间外为0或1；密度 $nt^{n-1}/\\theta^n$。$E(M)=n\\theta/(n+1)$；$\\hat\\theta=(n+1)M/n$，方差 $\\theta^2/[n(n+2)]$。",
+          "explanation": "独立性给P(M≤t)=ΠP(X_i≤t)。积分得E(M²)=nθ²/(n+2)，从而D(M)=nθ²/[(n+1)²(n+2)]，再按比例缩放。",
+          "source": {
+            "materialId": "postgraduate-math3-01-q22-source",
+            "blockId": "postgraduate-math3-01-q22-source-block",
+            "title": "原创命题记录 22",
+            "exact": "设样本 $X_1,\\ldots,X_n$ 独立同分布于 $U(0,\\theta)$，θ>0，n≥2，$M=\\max X_i$。（1）求M的分布函数和密度；（2）求M的期望；（3）构造θ的无偏估计并求其方差。"
+          },
+          "chapter": "概率统计·次序统计量与估计",
+          "tags": [
+            "概率统计·次序统计量与估计"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·次序统计量与估计"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分布函数端点、密度归一化、矩积分独立符号核对。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "probability",
+                "blockId": "probability-block",
+                "title": "概率统计知识核对（作者概述）",
+                "exact": "概率密度非负且积分为1；条件概率需要限定事件；期望和方差按联合分布或独立性计算；估计量无偏性由其期望验证。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "含区间外端点的分布函数",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "密度",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "一阶矩及无偏修正",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "二阶矩及方差",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        }
+      ]
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "math3-v7",
+    "sourceQuestionIds": [
+      "postgraduate-math3-01-q1",
+      "postgraduate-math3-01-q2",
+      "postgraduate-math3-01-q3",
+      "postgraduate-math3-01-q4",
+      "postgraduate-math3-01-q5",
+      "postgraduate-math3-01-q6",
+      "postgraduate-math3-01-q7",
+      "postgraduate-math3-01-q8",
+      "postgraduate-math3-01-q9",
+      "postgraduate-math3-01-q10",
+      "postgraduate-math3-01-q11",
+      "postgraduate-math3-01-q12",
+      "postgraduate-math3-01-q13",
+      "postgraduate-math3-01-q14",
+      "postgraduate-math3-01-q15",
+      "postgraduate-math3-01-q16",
+      "postgraduate-math3-01-q17",
+      "postgraduate-math3-01-q18",
+      "postgraduate-math3-01-q19",
+      "postgraduate-math3-01-q20",
+      "postgraduate-math3-01-q21",
+      "postgraduate-math3-01-q22"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创完整练习基准，采用所列考试结构；不是任何年份的官方原卷。题文、参考答案和评分要点为项目原创，MIT。外部资料仅作结构与知识核对，权利分别保留。"
+  },
+  "exam": {
+    "specificationId": "postgraduate-math3-blueprint",
+    "scope": "full",
+    "scoreScale": "卷面分",
+    "specification": {
+      "id": "postgraduate-math3-blueprint",
+      "name": "数学（三）完整练习结构",
+      "subject": "数学（三）",
+      "level": "考研",
+      "durationMinutes": 180,
+      "totalScore": 150,
+      "scoreScale": "卷面分",
+      "source": {
+        "kind": "published-syllabus-summary",
+        "title": "考研数学结构核对（2027，第三方大纲解读）",
+        "url": "https://www.qihangai.com/zx/dagang/188.html",
+        "accessedAt": "2026-11-15",
+        "notes": "22题、150分、180分钟；本卷为原创题文，不冒称官方原卷。"
+      },
+      "sections": [
+        {
+          "id": "choice",
+          "title": "选择题",
+          "count": 10,
+          "questionType": "choice",
+          "totalScore": 50,
+          "pointsPerQuestion": 5,
+          "displayStart": 1
+        },
+        {
+          "id": "blank",
+          "title": "填空题",
+          "count": 6,
+          "questionType": "blank",
+          "totalScore": 30,
+          "pointsPerQuestion": 5,
+          "displayStart": 11
+        },
+        {
+          "id": "response",
+          "title": "解答题",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 70,
+          "questionScores": [
+            10,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "displayStart": 17
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1294 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "postgraduate-specialist-01",
+  "notebookId": "postgraduate-specialist",
+  "notebookRevision": 1,
+  "title": "硕士研究生入学考试 自动控制原理",
+  "subject": "自动控制原理",
+  "level": "考研",
+  "durationMinutes": 180,
+  "totalScore": 150,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "sealed": true,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "硕士研究生入学考试",
+      "自动控制原理"
+    ],
+    "candidateFields": [
+      "姓名",
+      "准考证号",
+      "报考单位"
+    ],
+    "notices": [
+      "全部题目均须写出方程、推导步骤和最终结果。",
+      "连续系统默认零初始条件；离散系统、非零初值另按题设。"
+    ],
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "自动控制原理",
+      "rule": true
+    },
+    "footerTemplate": "自动控制原理　第 {page} 页",
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "university",
+      "candidateDigits": 15
+    },
+    "questionScores": "show",
+    "sectionDetails": true,
+    "projectMark": false
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "authoring": {
+    "routeId": "postgrad-specialist",
+    "examName": "自动控制原理",
+    "requireVerification": true,
+    "examCode": "819",
+    "year": 2027,
+    "specialty": "自动控制原理（院校自命题）"
+  },
+  "materials": [
+    {
+      "id": "control-819-2027",
+      "title": "2027年819自动控制原理大纲结构核对",
+      "kind": "reference",
+      "text": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。",
+      "blocks": [
+        {
+          "id": "control-819-2027-block",
+          "title": "2027年819自动控制原理大纲结构核对",
+          "text": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "institution",
+        "accessedAt": "2026-11-15",
+        "url": "https://dqxxgcxy.nepu.edu.cn/info/1045/5761.htm",
+        "publisher": "东北石油大学电气信息工程学院",
+        "version": "2027年入学考试大纲",
+        "publishedAt": "2026-09-16"
+      },
+      "url": "https://dqxxgcxy.nepu.edu.cn/info/1045/5761.htm",
+      "sha256": "66df1a98a1eca1321961dcf608e8e21e6c6fdedcbaf4b1bc4e3d014a14290538"
+    },
+    {
+      "id": "postgraduate-specialist-01-q1-source",
+      "title": "原创命题记录 1",
+      "kind": "question-bank",
+      "text": "某执行机构满足$\\dot v(t)+2v(t)=u(t)+d(t)$、$\\dot y(t)=v(t)$。控制律为$u(t)=K[r(t)-y(t)]$，$K>0$；d为加在执行机构输入端的扰动。初始条件为零。\n（1）由运动方程求$Y/R$和$Y/D$。（6分）\n（2）求闭环渐近稳定的K范围。（3分）\n（3）K=8时，分别求单位阶跃指令下的输出终值，以及零指令、单位阶跃扰动下的输出终值和控制输入终值。（6分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q1-source-block",
+          "title": "原创命题记录 1",
+          "text": "某执行机构满足$\\dot v(t)+2v(t)=u(t)+d(t)$、$\\dot y(t)=v(t)$。控制律为$u(t)=K[r(t)-y(t)]$，$K>0$；d为加在执行机构输入端的扰动。初始条件为零。\n（1）由运动方程求$Y/R$和$Y/D$。（6分）\n（2）求闭环渐近稳定的K范围。（3分）\n（3）K=8时，分别求单位阶跃指令下的输出终值，以及零指令、单位阶跃扰动下的输出终值和控制输入终值。（6分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b0df3d711b248fb99f67d56078ebdb81e9b248d590c9d0a17802b616263ec954"
+    },
+    {
+      "id": "postgraduate-specialist-01-q2-source",
+      "title": "原创命题记录 2",
+      "kind": "question-bank",
+      "text": "单位负反馈系统开环为$G(s)=K/[s(s+4)]$。\n（1）选择K>0，使闭环二阶系统阻尼比$\\zeta=1/2$，求自然频率。（5分）\n（2）求该系统单位阶跃响应的峰值时间与超调量。（5分）\n（3）求单位斜坡输入的稳态误差，并说明系统型别和终值定理适用条件。（5分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q2-source-block",
+          "title": "原创命题记录 2",
+          "text": "单位负反馈系统开环为$G(s)=K/[s(s+4)]$。\n（1）选择K>0，使闭环二阶系统阻尼比$\\zeta=1/2$，求自然频率。（5分）\n（2）求该系统单位阶跃响应的峰值时间与超调量。（5分）\n（3）求单位斜坡输入的稳态误差，并说明系统型别和终值定理适用条件。（5分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8b83b13dafd15324d31efc6946fe629a2fd335350a7d994c98d29f6d93a4f04d"
+    },
+    {
+      "id": "postgraduate-specialist-01-q3-source",
+      "title": "原创命题记录 3",
+      "kind": "question-bank",
+      "text": "闭环特征多项式为$D(s)=s^4+3s^3+3s^2+2s+K$，参数K为实数。\n（1）建立Routh表并求渐近稳定的全部K范围。（9分）\n（2）在正的临界K处求虚轴根，并求剩余两根所在半平面。（6分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q3-source-block",
+          "title": "原创命题记录 3",
+          "text": "闭环特征多项式为$D(s)=s^4+3s^3+3s^2+2s+K$，参数K为实数。\n（1）建立Routh表并求渐近稳定的全部K范围。（9分）\n（2）在正的临界K处求虚轴根，并求剩余两根所在半平面。（6分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e8a2c4e73f180110064d2641f6f721e74450efcba680039202af60000becc953"
+    },
+    {
+      "id": "postgraduate-specialist-01-q4-source",
+      "title": "原创命题记录 4",
+      "kind": "question-bank",
+      "text": "单位负反馈系统$G(s)=K/[s(s+2)(s+4)]$，K从0增加。\n（1）写出实轴根轨迹区间、渐近线重心和角度。（5分）\n（2）求实轴有效分离点及对应K。（5分）\n（3）求闭环稳定K范围及穿越虚轴的位置。（5分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q4-source-block",
+          "title": "原创命题记录 4",
+          "text": "单位负反馈系统$G(s)=K/[s(s+2)(s+4)]$，K从0增加。\n（1）写出实轴根轨迹区间、渐近线重心和角度。（5分）\n（2）求实轴有效分离点及对应K。（5分）\n（3）求闭环稳定K范围及穿越虚轴的位置。（5分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a6defda750517498be03553d98981067cbda4b2e3dba6ff2e524d238176bbb90"
+    },
+    {
+      "id": "postgraduate-specialist-01-q5-source",
+      "title": "原创命题记录 5",
+      "kind": "question-bank",
+      "text": "单位负反馈系统开环$L(s)=K/[s(1+s)(1+s/4)]$。选择K使增益交叉频率$\\omega_c=1$ rad/s。\n（1）求K及相角裕度。（6分）\n（2）求相位交叉频率、增益裕度的倍数及dB值。（6分）\n（3）用Routh判据交叉验证闭环稳定性。（3分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q5-source-block",
+          "title": "原创命题记录 5",
+          "text": "单位负反馈系统开环$L(s)=K/[s(1+s)(1+s/4)]$。选择K使增益交叉频率$\\omega_c=1$ rad/s。\n（1）求K及相角裕度。（6分）\n（2）求相位交叉频率、增益裕度的倍数及dB值。（6分）\n（3）用Routh判据交叉验证闭环稳定性。（3分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "1af7f6d94cf1eeb439d804d7f0009beee23d46134c088bdd022a6f0d8209bfe5"
+    },
+    {
+      "id": "postgraduate-specialist-01-q6-source",
+      "title": "原创命题记录 6",
+      "kind": "question-bank",
+      "text": "被控对象$G_p(s)=1/[s(s+1)]$，采用单位负反馈和串联超前校正$G_c(s)=K_c(1+Ts)/(1+\\alpha Ts)$。要求校正网络在$\\omega=2$ rad/s处产生其最大超前相位30°，并使该频率为整个开环的增益交叉频率。\n（1）求$\\alpha,T,K_c$。（8分）\n（2）求校正后相角裕度及单位斜坡误差。（4分）\n（3）给出闭环特征多项式并检验稳定。（3分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q6-source-block",
+          "title": "原创命题记录 6",
+          "text": "被控对象$G_p(s)=1/[s(s+1)]$，采用单位负反馈和串联超前校正$G_c(s)=K_c(1+Ts)/(1+\\alpha Ts)$。要求校正网络在$\\omega=2$ rad/s处产生其最大超前相位30°，并使该频率为整个开环的增益交叉频率。\n（1）求$\\alpha,T,K_c$。（8分）\n（2）求校正后相角裕度及单位斜坡误差。（4分）\n（3）给出闭环特征多项式并检验稳定。（3分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7ecfa29ee436329ee1dc7344ce84b08284ec95801ebaf75f1a4b2633554cb8f1"
+    },
+    {
+      "id": "postgraduate-specialist-01-q7-source",
+      "title": "原创命题记录 7",
+      "kind": "question-bank",
+      "text": "本题分为相互独立的两部分。\n（1）理想对称继电器输出±1，与线性环节$G(s)=1/[s(s+1)(s+2)]$构成负反馈。继电器描述函数$N(A)=4/(\\pi A)$，A为继电器输入的一次谐波振幅。由$1+N(A)G(j\\omega)=0$预测可能振荡的A与频率，并说明该方法的近似性质。（8分）\n（2）离散单位负反馈系统开环$G(z)=K/(z-0.5)$，K>0。求闭环渐近稳定范围，并在K=0.5时求单位阶跃稳态误差。初始状态为零。（7分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q7-source-block",
+          "title": "原创命题记录 7",
+          "text": "本题分为相互独立的两部分。\n（1）理想对称继电器输出±1，与线性环节$G(s)=1/[s(s+1)(s+2)]$构成负反馈。继电器描述函数$N(A)=4/(\\pi A)$，A为继电器输入的一次谐波振幅。由$1+N(A)G(j\\omega)=0$预测可能振荡的A与频率，并说明该方法的近似性质。（8分）\n（2）离散单位负反馈系统开环$G(z)=K/(z-0.5)$，K>0。求闭环渐近稳定范围，并在K=0.5时求单位阶跃稳态误差。初始状态为零。（7分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "83332521df030c61d29907eba9e9e81c8c5f872fcb21a9cdcfb7da0c6d34867c"
+    },
+    {
+      "id": "postgraduate-specialist-01-q8-source",
+      "title": "原创命题记录 8",
+      "kind": "question-bank",
+      "text": "线性系统$\\dot x=Ax+Bu$，$y=Cx$，其中$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=\\begin{pmatrix}0\\\\1\\end{pmatrix}$、$C=\\begin{pmatrix}1&0\\end{pmatrix}$、D=0。\n（1）求零初值传递函数及状态转移矩阵。（9分）\n（2）当$x(0)=(1,0)^T$、$u(t)=1$（t≥0）时求$x_1(t),x_2(t)$，同时检验初值和终值。（6分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q8-source-block",
+          "title": "原创命题记录 8",
+          "text": "线性系统$\\dot x=Ax+Bu$，$y=Cx$，其中$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=\\begin{pmatrix}0\\\\1\\end{pmatrix}$、$C=\\begin{pmatrix}1&0\\end{pmatrix}$、D=0。\n（1）求零初值传递函数及状态转移矩阵。（9分）\n（2）当$x(0)=(1,0)^T$、$u(t)=1$（t≥0）时求$x_1(t),x_2(t)$，同时检验初值和终值。（6分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "55dce19ca4bbc9c3e66cdc220363701f93106965706fe33a11695ab0ac5fb464"
+    },
+    {
+      "id": "postgraduate-specialist-01-q9-source",
+      "title": "原创命题记录 9",
+      "kind": "question-bank",
+      "text": "对第8题给定的A、B、C，采用$u=-Fx+r$，其中$F=(f_1,f_2)$。全阶观测器为$\\dot{\\hat x}=A\\hat x+Bu+L(y-C\\hat x)$。\n（1）检验系统能控、能观。（4分）\n（2）配置状态反馈极点−4、−5，求F。（4分）\n（3）配置观测误差极点−6、−7，求L。（4分）\n（4）若实际使用$u=-F\\hat x+r$，说明闭环整体极点及分离原理的依据。（3分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q9-source-block",
+          "title": "原创命题记录 9",
+          "text": "对第8题给定的A、B、C，采用$u=-Fx+r$，其中$F=(f_1,f_2)$。全阶观测器为$\\dot{\\hat x}=A\\hat x+Bu+L(y-C\\hat x)$。\n（1）检验系统能控、能观。（4分）\n（2）配置状态反馈极点−4、−5，求F。（4分）\n（3）配置观测误差极点−6、−7，求L。（4分）\n（4）若实际使用$u=-F\\hat x+r$，说明闭环整体极点及分离原理的依据。（3分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a84481f81e993cdfcc3f1cfe1b675d7196e509884cd56f01b09d248feb5ecf26"
+    },
+    {
+      "id": "postgraduate-specialist-01-q10-source",
+      "title": "原创命题记录 10",
+      "kind": "question-bank",
+      "text": "系统$\\dot x=Ax$，$A=\\begin{pmatrix}-1&2\\\\0&-2\\end{pmatrix}$。\n（1）求对称矩阵P，使$A^TP+PA=-I$。（6分）\n（2）用Sylvester判据证明P正定，由$V=x^TPx$证明原点全局渐近稳定。（5分）\n（3）给出基于P极值特征值的$\\|x(t)\\|_2$指数上界，不将$\\dot V<0$误写成状态每个分量单调下降。（4分）",
+      "blocks": [
+        {
+          "id": "postgraduate-specialist-01-q10-source-block",
+          "title": "原创命题记录 10",
+          "text": "系统$\\dot x=Ax$，$A=\\begin{pmatrix}-1&2\\\\0&-2\\end{pmatrix}$。\n（1）求对称矩阵P，使$A^TP+PA=-I$。（6分）\n（2）用Sylvester判据证明P正定，由$V=x^TPx$证明原点全局渐近稳定。（5分）\n（3）给出基于P极值特征值的$\\|x(t)\\|_2$指数上界，不将$\\dot V<0$误写成状态每个分量单调下降。（4分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7be9fb28bd69ca548b56a8ba90cc50ed89a2e30ee1d2d899910958553f5bb20a"
+    }
+  ],
+  "sections": [
+    {
+      "id": "classical",
+      "title": "一、古典控制理论",
+      "examPartId": "classical",
+      "instructions": "第1—7题，每题15分，共105分。写出稳定性、误差和性能结论成立的条件。",
+      "score": 105,
+      "questions": [
+        {
+          "id": "postgraduate-specialist-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "某执行机构满足$\\dot v(t)+2v(t)=u(t)+d(t)$、$\\dot y(t)=v(t)$。控制律为$u(t)=K[r(t)-y(t)]$，$K>0$；d为加在执行机构输入端的扰动。初始条件为零。\n（1）由运动方程求$Y/R$和$Y/D$。（6分）\n（2）求闭环渐近稳定的K范围。（3分）\n（3）K=8时，分别求单位阶跃指令下的输出终值，以及零指令、单位阶跃扰动下的输出终值和控制输入终值。（6分）",
+          "score": 15,
+          "solution": "$(s^2+2s+K)Y=KR+D$，所以$Y/R=K/(s^2+2s+K)$、$Y/D=1/(s^2+2s+K)$。K>0时闭环渐近稳定。K=8时阶跃指令的输出终值为1；阶跃扰动下$y(\\infty)=1/8$、$u(\\infty)=-1$。",
+          "explanation": "先将第一式与$V=sY$联立，再代入反馈，扰动不经过比例增益K。二阶多项式稳定要求一次项和常数项均正，本题一次项恒为2。只有在闭环稳定后才能用终值定理；对阶跃扰动有$U=-KY$，稳态控制输入恰抵消扰动，而输出保留$1/K$偏差。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q1-source",
+            "blockId": "postgraduate-specialist-01-q1-source-block",
+            "title": "原创命题记录 1",
+            "exact": "某执行机构满足$\\dot v(t)+2v(t)=u(t)+d(t)$、$\\dot y(t)=v(t)$。控制律为$u(t)=K[r(t)-y(t)]$，$K>0$；d为加在执行机构输入端的扰动。初始条件为零。\n（1）由运动方程求$Y/R$和$Y/D$。（6分）\n（2）求闭环渐近稳定的K范围。（3分）\n（3）K=8时，分别求单位阶跃指令下的输出终值，以及零指令、单位阶跃扰动下的输出终值和控制输入终值。（6分）"
+          },
+          "chapter": "建模、反馈与扰动传递",
+          "tags": [
+            "建模、反馈与扰动传递"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "建模、反馈与扰动传递"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐步独立推导，另以verify_specialist.py符号代回、特征多项式及数值边界复核。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "正确建立拉普拉斯方程并保留扰动入口",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "两个闭环传递函数及分母正确",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "稳定范围K>0且说明二阶判据",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "指令输出终值1，先核定稳定",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "扰动输出1/8、控制输入−1及符号正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 65
+        },
+        {
+          "id": "postgraduate-specialist-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "单位负反馈系统开环为$G(s)=K/[s(s+4)]$。\n（1）选择K>0，使闭环二阶系统阻尼比$\\zeta=1/2$，求自然频率。（5分）\n（2）求该系统单位阶跃响应的峰值时间与超调量。（5分）\n（3）求单位斜坡输入的稳态误差，并说明系统型别和终值定理适用条件。（5分）",
+          "score": 15,
+          "solution": "K=16，$\\omega_n=4$ rad/s；$\\omega_d=2\\sqrt3$ rad/s，$t_p=\\pi/(2\\sqrt3)=0.906900$ s；相对超调量$M_p=e^{-\\pi/\\sqrt3}=0.163034$，即16.3034%。系统为I型，$K_v=4$，单位斜坡误差1/4。",
+          "explanation": "闭环分母$s^2+4s+K$与$s^2+2\\zeta\\omega_ns+\\omega_n^2$逐项比较。选定K后极点为$-2\\pm j2\\sqrt3$，均在左半平面，允许误差终值计算。斜坡输入$R=1/s^2$，$e_{ss}=\\lim_{s\\to0}1/[s(1+G(s))]=4/K=1/4$；不能把单位阶跃零误差外推给斜坡。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q2-source",
+            "blockId": "postgraduate-specialist-01-q2-source-block",
+            "title": "原创命题记录 2",
+            "exact": "单位负反馈系统开环为$G(s)=K/[s(s+4)]$。\n（1）选择K>0，使闭环二阶系统阻尼比$\\zeta=1/2$，求自然频率。（5分）\n（2）求该系统单位阶跃响应的峰值时间与超调量。（5分）\n（3）求单位斜坡输入的稳态误差，并说明系统型别和终值定理适用条件。（5分）"
+          },
+          "chapter": "二阶瞬态与稳态误差",
+          "tags": [
+            "二阶瞬态与稳态误差"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "二阶瞬态与稳态误差"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐步独立推导，另以verify_specialist.py符号代回、特征多项式及数值边界复核。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "标准二阶形式、阻尼关系正确",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "K和自然频率正确",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "峰值时间及阻尼振荡频率正确",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "超调指数及百分比正确",
+                "points": 2
+              },
+              {
+                "id": "r5",
+                "description": "型别、速度误差系数及斜坡误差正确",
+                "points": 3
+              },
+              {
+                "id": "r6",
+                "description": "稳定与终值条件说明",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 65
+        },
+        {
+          "id": "postgraduate-specialist-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "闭环特征多项式为$D(s)=s^4+3s^3+3s^2+2s+K$，参数K为实数。\n（1）建立Routh表并求渐近稳定的全部K范围。（9分）\n（2）在正的临界K处求虚轴根，并求剩余两根所在半平面。（6分）",
+          "score": 15,
+          "solution": "Routh首列为$1,3,7/3,(14-9K)/7,K$。渐近稳定当且仅当$0<K<14/9$。K=14/9时虚轴根为$\\pm j\\sqrt{2/3}$；因式分解为$(s^2+2/3)(s^2+3s+7/3)$，其余两根为$-3/2\\pm j\\sqrt{3}/6$，在左半平面。",
+          "explanation": "Routh表前两行为$(1,3,K)$与$(3,2,0)$，第三行为$(7/3,K,0)$。首列严格同号推出K的开区间。临界时s¹行全零，利用s²行辅助多项式$(7/3)s^2+14/9$求虚轴对，再分解原多项式。K=0有原点根，不属于渐近稳定范围；临界值也不能包含在稳定区间中。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q3-source",
+            "blockId": "postgraduate-specialist-01-q3-source-block",
+            "title": "原创命题记录 3",
+            "exact": "闭环特征多项式为$D(s)=s^4+3s^3+3s^2+2s+K$，参数K为实数。\n（1）建立Routh表并求渐近稳定的全部K范围。（9分）\n（2）在正的临界K处求虚轴根，并求剩余两根所在半平面。（6分）"
+          },
+          "chapter": "Routh稳定判据与临界根",
+          "tags": [
+            "Routh稳定判据与临界根"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "Routh稳定判据与临界根"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐步独立推导，另以verify_specialist.py符号代回、特征多项式及数值边界复核。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "Routh前三行及计算正确",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "剩余首列与严格不等式正确",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "稳定开区间完整",
+                "points": 2
+              },
+              {
+                "id": "r4",
+                "description": "辅助多项式和虚轴根正确",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "剩余因式、根位置及临界性质正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 65
+        },
+        {
+          "id": "postgraduate-specialist-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "单位负反馈系统$G(s)=K/[s(s+2)(s+4)]$，K从0增加。\n（1）写出实轴根轨迹区间、渐近线重心和角度。（5分）\n（2）求实轴有效分离点及对应K。（5分）\n（3）求闭环稳定K范围及穿越虚轴的位置。（5分）",
+          "score": 15,
+          "solution": "实轴轨迹在$(-\\infty,-4)$及$(-2,0)$；三条渐近线重心−2，角度60°、180°、300°。有效分离点$s=-2+2\\sqrt3/3$，$K=16\\sqrt3/9$。闭环稳定范围$0<K<48$，K=48时在$\\pm j2\\sqrt2$穿越，另一个根为−6。",
+          "explanation": "开环有3极点、无有限零点。实轴上右侧实极点/零点数为奇数的区间才有效。由$K=-s(s+2)(s+4)$得$dK/ds=-(3s^2+12s+8)$，两个驻点中只有约−0.8453位于有效实轴区间；约−3.1547不是正增益根轨迹分离点。特征式$s^3+6s^2+8s+K$按Routh给出$0<K<48$；临界因式为$(s+6)(s^2+8)$。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q4-source",
+            "blockId": "postgraduate-specialist-01-q4-source-block",
+            "title": "原创命题记录 4",
+            "exact": "单位负反馈系统$G(s)=K/[s(s+2)(s+4)]$，K从0增加。\n（1）写出实轴根轨迹区间、渐近线重心和角度。（5分）\n（2）求实轴有效分离点及对应K。（5分）\n（3）求闭环稳定K范围及穿越虚轴的位置。（5分）"
+          },
+          "chapter": "根轨迹与稳定边界",
+          "tags": [
+            "根轨迹与稳定边界"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "根轨迹与稳定边界"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐步独立推导，另以verify_specialist.py符号代回、特征多项式及数值边界复核。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "实轴区间正确",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "渐近线重心和角度正确",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "求驻点并剔除无效点",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "分离点对应增益正确",
+                "points": 2
+              },
+              {
+                "id": "r5",
+                "description": "稳定范围与Routh依据",
+                "points": 3
+              },
+              {
+                "id": "r6",
+                "description": "虚轴根及剩余极点正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 65
+        },
+        {
+          "id": "postgraduate-specialist-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "单位负反馈系统开环$L(s)=K/[s(1+s)(1+s/4)]$。选择K使增益交叉频率$\\omega_c=1$ rad/s。\n（1）求K及相角裕度。（6分）\n（2）求相位交叉频率、增益裕度的倍数及dB值。（6分）\n（3）用Routh判据交叉验证闭环稳定性。（3分）",
+          "score": 15,
+          "solution": "$K=\\sqrt{17/8}=1.457738$；相角裕度$\\gamma=90^\\circ-\\arctan1-\\arctan(1/4)=30.963757^\\circ$。相位交叉频率2 rad/s；增益裕度$G_m=5/K=\\sqrt{200/17}=3.429972$，即10.705811 dB。闭环稳定条件0<K<5，所选K满足。",
+          "explanation": "模值方程在ω=1为$K/[\\sqrt2\\sqrt{17/16}]=1$。相位为$-90^\\circ-\\arctan\\omega-\\arctan(\\omega/4)$，相位交叉时两个反正切之和90°，故ω²/4=1。ω=2时分母模为$2\\sqrt5\\sqrt{5/4}=5$，因此$L(j2)=-K/5$。闭环分母乘4后为$s^3+5s^2+4s+4K$，Routh要求$20>4K$。开环原点极点须在Nyquist作绕行处理；这里使用频率裕度与Routh交叉核定。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q5-source",
+            "blockId": "postgraduate-specialist-01-q5-source-block",
+            "title": "原创命题记录 5",
+            "exact": "单位负反馈系统开环$L(s)=K/[s(1+s)(1+s/4)]$。选择K使增益交叉频率$\\omega_c=1$ rad/s。\n（1）求K及相角裕度。（6分）\n（2）求相位交叉频率、增益裕度的倍数及dB值。（6分）\n（3）用Routh判据交叉验证闭环稳定性。（3分）"
+          },
+          "chapter": "频域稳定裕度",
+          "tags": [
+            "频域稳定裕度"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "频域稳定裕度"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐步独立推导，另以verify_specialist.py符号代回、特征多项式及数值边界复核。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "由模值解K正确",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "相角裕度含相位符号与角度单位",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "相位交叉频率和幅值正确",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "裕度倍数与20log10换算正确",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "独立稳定判据正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 65
+        },
+        {
+          "id": "postgraduate-specialist-01-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "被控对象$G_p(s)=1/[s(s+1)]$，采用单位负反馈和串联超前校正$G_c(s)=K_c(1+Ts)/(1+\\alpha Ts)$。要求校正网络在$\\omega=2$ rad/s处产生其最大超前相位30°，并使该频率为整个开环的增益交叉频率。\n（1）求$\\alpha,T,K_c$。（8分）\n（2）求校正后相角裕度及单位斜坡误差。（4分）\n（3）给出闭环特征多项式并检验稳定。（3分）",
+          "score": 15,
+          "solution": "$\\alpha=1/3$，$T=\\sqrt3/2$ s，$K_c=\\sqrt{20/3}=2.581989$。相角裕度$90^\\circ-\\arctan2+30^\\circ=56.565051^\\circ$；单位斜坡误差$1/K_c=\\sqrt{3/20}=0.387298$。闭环特征式为$\\alpha Ts^3+(1+\\alpha T)s^2+(1+K_cT)s+K_c$，全部根在左半平面。",
+          "explanation": "最大相位满足$\\sin\\phi_m=(1-\\alpha)/(1+\\alpha)$，得α=1/3；最大相位频率$\\omega_m=1/(T\\sqrt\\alpha)$给T。该处校正网络除增益外模为$1/\\sqrt\\alpha=\\sqrt3$，对象模为$1/(2\\sqrt5)$，故$K_c=2\\sqrt{5/3}$。闭环三阶稳定还需验证$(1+\\alpha T)(1+K_cT)>\\alpha TK_c$；本题两边约为4.1702和0.7454，严格成立。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q6-source",
+            "blockId": "postgraduate-specialist-01-q6-source-block",
+            "title": "原创命题记录 6",
+            "exact": "被控对象$G_p(s)=1/[s(s+1)]$，采用单位负反馈和串联超前校正$G_c(s)=K_c(1+Ts)/(1+\\alpha Ts)$。要求校正网络在$\\omega=2$ rad/s处产生其最大超前相位30°，并使该频率为整个开环的增益交叉频率。\n（1）求$\\alpha,T,K_c$。（8分）\n（2）求校正后相角裕度及单位斜坡误差。（4分）\n（3）给出闭环特征多项式并检验稳定。（3分）"
+          },
+          "chapter": "超前校正设计与交叉核验",
+          "tags": [
+            "超前校正设计与交叉核验"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "超前校正设计与交叉核验"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐步独立推导，另以verify_specialist.py符号代回、特征多项式及数值边界复核。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "由相位求α正确",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "最大相位频率求T正确",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "模值约束求Kc正确",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "总相角裕度正确",
+                "points": 2
+              },
+              {
+                "id": "r5",
+                "description": "速度误差系数与斜坡误差正确",
+                "points": 2
+              },
+              {
+                "id": "r6",
+                "description": "特征式与三阶Routh不等式正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 65
+        },
+        {
+          "id": "postgraduate-specialist-01-q7",
+          "number": 7,
+          "type": "response",
+          "prompt": "本题分为相互独立的两部分。\n（1）理想对称继电器输出±1，与线性环节$G(s)=1/[s(s+1)(s+2)]$构成负反馈。继电器描述函数$N(A)=4/(\\pi A)$，A为继电器输入的一次谐波振幅。由$1+N(A)G(j\\omega)=0$预测可能振荡的A与频率，并说明该方法的近似性质。（8分）\n（2）离散单位负反馈系统开环$G(z)=K/(z-0.5)$，K>0。求闭环渐近稳定范围，并在K=0.5时求单位阶跃稳态误差。初始状态为零。（7分）",
+          "score": 15,
+          "solution": "（1）$\\omega=\\sqrt2$ rad/s时$G(j\\omega)=-1/6$，须$N=6$，所以$A=2/(3\\pi)=0.212207$。这是描述函数的一次谐波预测，不能单独证明真实周期解存在、唯一或稳定。\n（2）闭环极点$z=0.5-K$，渐近稳定为$0<K<1.5$。K=0.5时$K_p=G(1)=1$，单位阶跃误差1/2。",
+          "explanation": "线性环节分母在$j\\omega$处为$-3\\omega^2+j(2\\omega-\\omega^3)$。要成为负实数须正频率ω²=2，实部−6，再由幅值条件求A。继电器含高次谐波，预测仍需时域或更充分分析核定。离散稳定要求极点严格在单位圆内，即$|0.5-K|<1$，结合K>0取交集。误差终值利用$\\lim_{z\\to1}(z-1)E(z)/z$，K=0.5时闭环稳定，公式可用。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q7-source",
+            "blockId": "postgraduate-specialist-01-q7-source-block",
+            "title": "原创命题记录 7",
+            "exact": "本题分为相互独立的两部分。\n（1）理想对称继电器输出±1，与线性环节$G(s)=1/[s(s+1)(s+2)]$构成负反馈。继电器描述函数$N(A)=4/(\\pi A)$，A为继电器输入的一次谐波振幅。由$1+N(A)G(j\\omega)=0$预测可能振荡的A与频率，并说明该方法的近似性质。（8分）\n（2）离散单位负反馈系统开环$G(z)=K/(z-0.5)$，K>0。求闭环渐近稳定范围，并在K=0.5时求单位阶跃稳态误差。初始状态为零。（7分）"
+          },
+          "chapter": "非线性描述函数与离散系统",
+          "tags": [
+            "非线性描述函数与离散系统"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "非线性描述函数与离散系统"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐步独立推导，另以verify_specialist.py符号代回、特征多项式及数值边界复核。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "继电器相位条件及频率正确",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "描述函数幅值条件与A正确",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "明确一次谐波近似及不足",
+                "points": 2
+              },
+              {
+                "id": "r4",
+                "description": "离散极点与单位圆稳定范围正确",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "阶跃静态误差系数与1/2正确",
+                "points": 2
+              },
+              {
+                "id": "r6",
+                "description": "离散终值和严格边界说明",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 65
+        }
+      ]
+    },
+    {
+      "id": "modern",
+      "title": "二、现代控制理论",
+      "examPartId": "modern",
+      "instructions": "第8—10题，每题15分，共45分。状态变量、反馈与观测器符号按题设。",
+      "score": 45,
+      "questions": [
+        {
+          "id": "postgraduate-specialist-01-q8",
+          "number": 8,
+          "type": "response",
+          "prompt": "线性系统$\\dot x=Ax+Bu$，$y=Cx$，其中$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=\\begin{pmatrix}0\\\\1\\end{pmatrix}$、$C=\\begin{pmatrix}1&0\\end{pmatrix}$、D=0。\n（1）求零初值传递函数及状态转移矩阵。（9分）\n（2）当$x(0)=(1,0)^T$、$u(t)=1$（t≥0）时求$x_1(t),x_2(t)$，同时检验初值和终值。（6分）",
+          "score": 15,
+          "solution": "$G(s)=1/[(s+1)(s+2)]$；$e^{At}=\\begin{pmatrix}2e^{-t}-e^{-2t}&e^{-t}-e^{-2t}\\\\-2e^{-t}+2e^{-2t}&-e^{-t}+2e^{-2t}\\end{pmatrix}$。给定初值与输入时，$x_1=1/2+e^{-t}-e^{-2t}/2$，$x_2=-e^{-t}+e^{-2t}$。初值(1,0)，终值(1/2,0)。",
+          "explanation": "由$C(sI-A)^{-1}B$计算传递函数；A具有相异特征值−1和−2，可以谱分解或逆Laplace求矩阵指数。非零初值问题不能只计算传递函数乘U；应加入$e^{At}x(0)$。将所列响应代回$\\dot x_1=x_2$、$\\dot x_2=-2x_1-3x_2+1$并检验t=0，均满足。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q8-source",
+            "blockId": "postgraduate-specialist-01-q8-source-block",
+            "title": "原创命题记录 8",
+            "exact": "线性系统$\\dot x=Ax+Bu$，$y=Cx$，其中$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=\\begin{pmatrix}0\\\\1\\end{pmatrix}$、$C=\\begin{pmatrix}1&0\\end{pmatrix}$、D=0。\n（1）求零初值传递函数及状态转移矩阵。（9分）\n（2）当$x(0)=(1,0)^T$、$u(t)=1$（t≥0）时求$x_1(t),x_2(t)$，同时检验初值和终值。（6分）"
+          },
+          "chapter": "状态空间、矩阵指数与非齐次响应",
+          "tags": [
+            "状态空间、矩阵指数与非齐次响应"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "状态空间、矩阵指数与非齐次响应"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立矩阵推导，另以verify_specialist.py精确检验矩阵指数、极点配置与Lyapunov残差。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "传递函数与零初值前提正确",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "完整状态转移矩阵并满足Φ(0)=I",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "含初始响应与强迫响应的两状态正确",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "初值和终值检验正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 70
+        },
+        {
+          "id": "postgraduate-specialist-01-q9",
+          "number": 9,
+          "type": "response",
+          "prompt": "对第8题给定的A、B、C，采用$u=-Fx+r$，其中$F=(f_1,f_2)$。全阶观测器为$\\dot{\\hat x}=A\\hat x+Bu+L(y-C\\hat x)$。\n（1）检验系统能控、能观。（4分）\n（2）配置状态反馈极点−4、−5，求F。（4分）\n（3）配置观测误差极点−6、−7，求L。（4分）\n（4）若实际使用$u=-F\\hat x+r$，说明闭环整体极点及分离原理的依据。（3分）",
+          "score": 15,
+          "solution": "能控矩阵$[B,AB]=\\begin{pmatrix}0&1\\\\1&-3\\end{pmatrix}$行列式−1，能观矩阵$\\begin{pmatrix}C\\\\CA\\end{pmatrix}=I$，均满秩。$F=(18,6)$；$L=(10,10)^T$。使用观测状态反馈时，闭环极点为−4、−5、−6、−7。",
+          "explanation": "$A-BF$的特征多项式为$s^2+(3+f_2)s+(2+f_1)$，与$(s+4)(s+5)$比较。$A-LC=\\begin{pmatrix}-l_1&1\\\\-2-l_2&-3\\end{pmatrix}$，特征式$s^2+(l_1+3)s+(3l_1+l_2+2)$，与$(s+6)(s+7)$比较得L。定义误差$e=x-\\hat x$后，联立系统在(x,e)坐标下呈块上三角，两个对角块为$A-BF$和$A-LC$，所以极点为二者并集。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q9-source",
+            "blockId": "postgraduate-specialist-01-q9-source-block",
+            "title": "原创命题记录 9",
+            "exact": "对第8题给定的A、B、C，采用$u=-Fx+r$，其中$F=(f_1,f_2)$。全阶观测器为$\\dot{\\hat x}=A\\hat x+Bu+L(y-C\\hat x)$。\n（1）检验系统能控、能观。（4分）\n（2）配置状态反馈极点−4、−5，求F。（4分）\n（3）配置观测误差极点−6、−7，求L。（4分）\n（4）若实际使用$u=-F\\hat x+r$，说明闭环整体极点及分离原理的依据。（3分）"
+          },
+          "chapter": "能控能观、反馈与观测器配置",
+          "tags": [
+            "能控能观、反馈与观测器配置"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "能控能观、反馈与观测器配置"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立矩阵推导，另以verify_specialist.py精确检验矩阵指数、极点配置与Lyapunov残差。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "能控矩阵及满秩",
+                "points": 2
+              },
+              {
+                "id": "r2",
+                "description": "能观矩阵及满秩",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "反馈符号、系数比较及F正确",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "观测器误差矩阵及L正确",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "误差坐标块三角与极点并集正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 70
+        },
+        {
+          "id": "postgraduate-specialist-01-q10",
+          "number": 10,
+          "type": "response",
+          "prompt": "系统$\\dot x=Ax$，$A=\\begin{pmatrix}-1&2\\\\0&-2\\end{pmatrix}$。\n（1）求对称矩阵P，使$A^TP+PA=-I$。（6分）\n（2）用Sylvester判据证明P正定，由$V=x^TPx$证明原点全局渐近稳定。（5分）\n（3）给出基于P极值特征值的$\\|x(t)\\|_2$指数上界，不将$\\dot V<0$误写成状态每个分量单调下降。（4分）",
+          "score": 15,
+          "solution": "$P=\\begin{pmatrix}1/2&1/3\\\\1/3&7/12\\end{pmatrix}$，首阶主子式1/2、行列式13/72均正。$\\dot V=-\\|x\\|_2^2$，P正定且V径向无界，原点全局渐近稳定。$\\lambda_{\\max,\\min}=(13\\pm\\sqrt{65})/24$；$\\|x(t)\\|_2\\le\\sqrt{\\lambda_{\\max}/\\lambda_{\\min}}e^{-t/(2\\lambda_{\\max})}\\|x(0)\\|_2$。",
+          "explanation": "令$P=\\begin{pmatrix}a&b\\\\b&c\\end{pmatrix}$，矩阵方程分量为$-2a=-1$、$2a-3b=0$、$4b-4c=-1$。二次型沿轨线严格下降，但因状态耦合，某个分量可以先增后减。由$\\lambda_{min}\\|x\\|^2\\le V\\le\\lambda_{max}\\|x\\|^2$及$\\dot V\\le -V/\\lambda_{max}$积分得到指数界；全局结论适用于题给线性系统全部状态。",
+          "source": {
+            "materialId": "postgraduate-specialist-01-q10-source",
+            "blockId": "postgraduate-specialist-01-q10-source-block",
+            "title": "原创命题记录 10",
+            "exact": "系统$\\dot x=Ax$，$A=\\begin{pmatrix}-1&2\\\\0&-2\\end{pmatrix}$。\n（1）求对称矩阵P，使$A^TP+PA=-I$。（6分）\n（2）用Sylvester判据证明P正定，由$V=x^TPx$证明原点全局渐近稳定。（5分）\n（3）给出基于P极值特征值的$\\|x(t)\\|_2$指数上界，不将$\\dot V<0$误写成状态每个分量单调下降。（4分）"
+          },
+          "chapter": "Lyapunov稳定性与指数估计",
+          "tags": [
+            "Lyapunov稳定性与指数估计"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "Lyapunov稳定性与指数估计"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立矩阵推导，另以verify_specialist.py精确检验矩阵指数、极点配置与Lyapunov残差。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-819-2027",
+                "blockId": "control-819-2027-block",
+                "title": "2027年819自动控制原理大纲结构核对",
+                "exact": "题型构成：计算题，共10题。分值分配：每题15分，共10题，总分150分。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "对称矩阵方程及P三项正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "两个主子式与正定判断",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "V、导数、径向无界与全局结论",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "特征值及指数范数上界正确",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "区分V下降与各分量单调",
+                "points": 1
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "answerBoxMm": 70
+        }
+      ]
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "specialist-v7",
+    "sourceQuestionIds": [
+      "postgraduate-specialist-01-q1",
+      "postgraduate-specialist-01-q2",
+      "postgraduate-specialist-01-q3",
+      "postgraduate-specialist-01-q4",
+      "postgraduate-specialist-01-q5",
+      "postgraduate-specialist-01-q6",
+      "postgraduate-specialist-01-q7",
+      "postgraduate-specialist-01-q8",
+      "postgraduate-specialist-01-q9",
+      "postgraduate-specialist-01-q10"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创完整专业课基准；结构依据东北石油大学2027年819自动控制原理官方大纲，题文、数值、解答和评分点均由本项目独立命制，不是该校原题。古典7题105分，现代3题45分。"
+  },
+  "exam": {
+    "specificationId": "postgraduate-specialist-blueprint",
+    "scope": "full",
+    "scoreScale": "卷面分",
+    "specification": {
+      "id": "postgraduate-specialist-blueprint",
+      "name": "自动控制原理完整练习结构",
+      "subject": "自动控制原理",
+      "level": "考研",
+      "durationMinutes": 180,
+      "totalScore": 150,
+      "scoreScale": "卷面分",
+      "source": {
+        "kind": "institution-syllabus",
+        "title": "东北石油大学2027年819自动控制原理考试大纲",
+        "url": "https://dqxxgcxy.nepu.edu.cn/info/1045/5761.htm",
+        "accessedAt": "2026-11-15",
+        "publishedAt": "2026-09-16",
+        "notes": "实际阅读正文；150分/180分钟，10题×15，古典70%现代30%。只沿用结构，不使用或冒称该校原题。"
+      },
+      "sections": [
+        {
+          "id": "classical",
+          "title": "古典控制理论",
+          "count": 7,
+          "questionType": "response",
+          "totalScore": 105,
+          "pointsPerQuestion": 15,
+          "displayStart": 1
+        },
+        {
+          "id": "modern",
+          "title": "现代控制理论",
+          "count": 3,
+          "questionType": "response",
+          "totalScore": 45,
+          "pointsPerQuestion": 15,
+          "displayStart": 8
+        }
+      ]
+    }
+  }
+}

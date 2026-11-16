@@ -1,0 +1,877 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "fluid-mechanics-course-01",
+  "notebookId": "fluid-mechanics-source",
+  "notebookRevision": 1,
+  "title": "流体力学与水力学课程考试",
+  "subject": "流体力学与水力学",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "流体力学与水力学课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "fluid-mechanics-scope",
+      "title": "MIT 1.060 Engineering Mechanics II",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/",
+      "text": "This subject provides an introduction to fluid mechanics.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2006",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/"
+      }
+    },
+    {
+      "id": "fluid-mechanics-q1-statement",
+      "title": "流体力学与水力学第1题命题原稿",
+      "kind": "question-bank",
+      "text": "竖直矩形闸门宽2 m、高3 m，上缘位于静水水面下1 m，下缘为水平铰轴。门外侧通大气。取水密度1000 kg/m³、$g=9.81$ m/s²。（1）求门上静水合力及压力中心深度；（2）忽略门重与摩擦，求施于上缘的水平启门力；（3）说明用几何中心深度作为合力作用点的误差方向。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "fluid-mechanics-q2-statement",
+      "title": "流体力学与水力学第2题命题原稿",
+      "kind": "question-bank",
+      "text": "水平理想文丘里管入口直径0.20 m、喉部直径0.10 m，流体为水，密度1000 kg/m³。入口静压比喉部高30 kPa。忽略损失与高度差。（1）求两截面平均速度和流量；（2）若流量不变但入口至喉部发生2 kPa压力形式的能量损失，静压差应为多少；（3）说明仍用理想压差公式反推流量会向哪一方向偏差。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "fluid-mechanics-q3-statement",
+      "title": "流体力学与水力学第3题命题原稿",
+      "kind": "question-bank",
+      "text": "20℃水在长10 m、内径25 mm的水平直圆管中充分发展流动，流量$1.0\\times10^{-5}$ m³/s。取$\\rho=1000$ kg/m³、$\\mu=1.0\\times10^{-3}$ Pa·s。使用圆管层流式$\\Delta p=128\\mu LQ/(\\pi D^4)$，并以Re<2300作本题层流判据。（1）求平均速度、Re与压降；（2）若内径减半而流量不变，压降倍率和Re如何变化；（3）对新管复核模型。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "fluid-mechanics-q4-statement",
+      "title": "流体力学与水力学第4题命题原稿",
+      "kind": "question-bank",
+      "text": "水平90°弯管进出口内径均0.10 m，水以0.020 m³/s从+x方向流入，沿+y方向流出。两截面表压分别200 kPa、150 kPa，取密度1000 kg/m³，忽略重力。定义R为管壁施于控制体流体的合力。（1）画控制体并求R的x、y分量；（2）求流体对弯管的力；（3）说明为何不能只用进出口压力差乘面积求该力。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "fluid-mechanics-q5-statement",
+      "title": "流体力学与水力学第5题命题原稿",
+      "kind": "question-bank",
+      "text": "宽矩形明渠单位宽流量q=4.0 m²/s。水跃前水深0.60 m，取$g=9.81$ m/s²。忽略跃区底坡及摩阻，使用动量守恒。（1）求临界水深和跃前Froude数；（2）求共轭水深；（3）计算水跃的比能损失，并说明不能在跃前后直接令Bernoulli总能相等。可用矩形渠动量函数$M=y^2/2+q^2/(gy)$。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "fluid-mechanics-q6-statement",
+      "title": "流体力学与水力学第6题命题原稿",
+      "kind": "question-bank",
+      "text": "某离心泵在指定转速下扬程曲线为$H_p=50-2000Q^2$，管路系统曲线为$H_s=20+2000Q^2$，H用m、Q用m³/s。泵效率在该工作点取0.75，水密度1000 kg/m³，g=9.81 m/s²。（1）求稳态工作点；（2）求轴功率；（3）若另有一根完全相同的并联管路且两支路等流量、共同静扬程仍20 m，推导新系统曲线并求新总流量。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "fluid-mechanics-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "fluid-mechanics-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "竖直矩形闸门宽2 m、高3 m，上缘位于静水水面下1 m，下缘为水平铰轴。门外侧通大气。取水密度1000 kg/m³、$g=9.81$ m/s²。（1）求门上静水合力及压力中心深度；（2）忽略门重与摩擦，求施于上缘的水平启门力；（3）说明用几何中心深度作为合力作用点的误差方向。",
+          "score": 15,
+          "solution": "合力147.15 kN，压力中心位于水面下2.80 m。绕下缘铰轴的水压力矩176.58 kN·m，所需上缘水平力58.86 kN。误用形心会高估力矩和启门力。",
+          "explanation": "形心深度$h_c=2.5$ m，面积6 m²，$F=\\rho gAh_c$。水平形心轴惯性矩$I_G=bh^3/12=4.5$ m⁴，$h_p=h_c+I_G/(Ah_c)=2.8$ m。下缘深4 m，实际力臂1.2 m；上缘水平力的力臂3 m。静水压随深度增加，压力中心位于形心下方。",
+          "source": {
+            "materialId": "fluid-mechanics-q1-statement",
+            "blockId": "fluid-mechanics-q1-statement",
+            "exact": "竖直矩形闸门宽2 m、高3 m，上缘位于静水水面下1 m，下缘为水平铰轴。门外侧通大气。取水密度1000 kg/m³、$g=9.81$ m/s²。（1）求门上静水合力及压力中心深度；（2）忽略门重与摩擦，求施于上缘的水平启门力；（3）说明用几何中心深度作为合力作用点的误差方向。"
+          },
+          "chapter": "静水总压力与作用点",
+          "tags": [
+            "流体力学与水力学",
+            "静水总压力与作用点",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "静水总压力与作用点"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "fluid-mechanics-scope",
+                "blockId": "fluid-mechanics-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "压力分布与合力正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "fluid-mechanics-q1-statement",
+                    "blockId": "fluid-mechanics-q1-statement",
+                    "exact": "竖直矩形闸门宽2 m、高3 m，上缘位于静水水面下1 m，下缘为水平铰轴。门外侧通大气。取水密度1000 kg/m³、$g=9.81$ m/s²。（1）求门上静水合力及压力中心深度；（2）忽略门重与摩擦，求施于上缘的水平启门力；（3）说明用几何中心深度作为合力作用点的误差方向。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "形心惯性矩和压力中心正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "铰轴力矩、启门力正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "误差方向解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q1 independent integrated force",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q1 independent integrated force\", \"actual\": 147150.0, \"expected\": 147150, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q1 integrated hinge moment",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q1 integrated hinge moment\", \"actual\": 176580.0, \"expected\": 176580, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "fluid-mechanics-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "水平理想文丘里管入口直径0.20 m、喉部直径0.10 m，流体为水，密度1000 kg/m³。入口静压比喉部高30 kPa。忽略损失与高度差。（1）求两截面平均速度和流量；（2）若流量不变但入口至喉部发生2 kPa压力形式的能量损失，静压差应为多少；（3）说明仍用理想压差公式反推流量会向哪一方向偏差。",
+          "score": 15,
+          "solution": "入口速度2.000 m/s，喉部速度8.000 m/s，流量0.06283185 m³/s。有损失且流量相同时静压差32 kPa；将32 kPa全作动压差会高估流量。",
+          "explanation": "面积比4给出$v_2=4v_1$。能量式$\\Delta p=\\rho(v_2^2-v_1^2)/2=7500v_1^2$，得$v_1=2$。有损失时$p_1-p_2=\\rho(v_2^2-v_1^2)/2+\\Delta p_L$。未经标定的理想系数不等于真实流量系数。",
+          "source": {
+            "materialId": "fluid-mechanics-q2-statement",
+            "blockId": "fluid-mechanics-q2-statement",
+            "exact": "水平理想文丘里管入口直径0.20 m、喉部直径0.10 m，流体为水，密度1000 kg/m³。入口静压比喉部高30 kPa。忽略损失与高度差。（1）求两截面平均速度和流量；（2）若流量不变但入口至喉部发生2 kPa压力形式的能量损失，静压差应为多少；（3）说明仍用理想压差公式反推流量会向哪一方向偏差。"
+          },
+          "chapter": "连续方程与Bernoulli方程",
+          "tags": [
+            "流体力学与水力学",
+            "连续方程与Bernoulli方程",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "连续方程与Bernoulli方程"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "fluid-mechanics-scope",
+                "blockId": "fluid-mechanics-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "连续性关系正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "fluid-mechanics-q2-statement",
+                    "blockId": "fluid-mechanics-q2-statement",
+                    "exact": "水平理想文丘里管入口直径0.20 m、喉部直径0.10 m，流体为水，密度1000 kg/m³。入口静压比喉部高30 kPa。忽略损失与高度差。（1）求两截面平均速度和流量；（2）若流量不变但入口至喉部发生2 kPa压力形式的能量损失，静压差应为多少；（3）说明仍用理想压差公式反推流量会向哪一方向偏差。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "速度与流量计算正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "损失项方向和32kPa正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "反演偏差及模型条件清楚",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q2 dynamic pressure difference",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q2 dynamic pressure difference\", \"actual\": 30000.0, \"expected\": 30000, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q2 continuity",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q2 continuity\", \"actual\": [0.06283185307179587, 0.06283185307179587], \"expected\": [0.06283185307179587, 0.06283185307179587], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "fluid-mechanics-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "20℃水在长10 m、内径25 mm的水平直圆管中充分发展流动，流量$1.0\\times10^{-5}$ m³/s。取$\\rho=1000$ kg/m³、$\\mu=1.0\\times10^{-3}$ Pa·s。使用圆管层流式$\\Delta p=128\\mu LQ/(\\pi D^4)$，并以Re<2300作本题层流判据。（1）求平均速度、Re与压降；（2）若内径减半而流量不变，压降倍率和Re如何变化；（3）对新管复核模型。",
+          "score": 15,
+          "solution": "原速度0.02037183 m/s，Re=509.29582，压降10.430378 Pa。内径减半后速度4倍、Re2倍为1018.59164，仍小于2300；压降16倍为166.886054 Pa。",
+          "explanation": "由连续性$v=4Q/(\\pi D^2)$，Re=$4\\rho Q/(\\pi\\mu D)$。给定层流公式只有在圆管、牛顿流体、充分发展且无显著入口局部损失时适用。本题新Re约1019，仍自洽；不能仅凭D⁻⁴比例忽略流态改变的可能性。",
+          "source": {
+            "materialId": "fluid-mechanics-q3-statement",
+            "blockId": "fluid-mechanics-q3-statement",
+            "exact": "20℃水在长10 m、内径25 mm的水平直圆管中充分发展流动，流量$1.0\\times10^{-5}$ m³/s。取$\\rho=1000$ kg/m³、$\\mu=1.0\\times10^{-3}$ Pa·s。使用圆管层流式$\\Delta p=128\\mu LQ/(\\pi D^4)$，并以Re<2300作本题层流判据。（1）求平均速度、Re与压降；（2）若内径减半而流量不变，压降倍率和Re如何变化；（3）对新管复核模型。"
+          },
+          "chapter": "层流管阻与流态自洽",
+          "tags": [
+            "流体力学与水力学",
+            "层流管阻与流态自洽",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "层流管阻与流态自洽"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "fluid-mechanics-scope",
+                "blockId": "fluid-mechanics-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "速度和Re正确并核定原流态",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "fluid-mechanics-q3-statement",
+                    "blockId": "fluid-mechanics-q3-statement",
+                    "exact": "20℃水在长10 m、内径25 mm的水平直圆管中充分发展流动，流量$1.0\\times10^{-5}$ m³/s。取$\\rho=1000$ kg/m³、$\\mu=1.0\\times10^{-3}$ Pa·s。使用圆管层流式$\\Delta p=128\\mu LQ/(\\pi D^4)$，并以Re<2300作本题层流判据。（1）求平均速度、Re与压降；（2）若内径减半而流量不变，压降倍率和Re如何变化；（3）对新管复核模型。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "原压降及单位正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "缩径比例正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "复核新Re及适用条件",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q3 Poiseuille vs Darcy",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q3 Poiseuille vs Darcy\", \"actual\": 10.430378350470452, \"expected\": 10.430378350470455, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q3 half diameter scaling",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q3 half diameter scaling\", \"actual\": 16.0, \"expected\": 16, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "fluid-mechanics-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "水平90°弯管进出口内径均0.10 m，水以0.020 m³/s从+x方向流入，沿+y方向流出。两截面表压分别200 kPa、150 kPa，取密度1000 kg/m³，忽略重力。定义R为管壁施于控制体流体的合力。（1）画控制体并求R的x、y分量；（2）求流体对弯管的力；（3）说明为何不能只用进出口压力差乘面积求该力。",
+          "score": 15,
+          "solution": "$v=2.546479$ m/s；管壁对流体$R_x=-1621.725909$ N，$R_y=1229.026827$ N；流体对弯管力为其反向。",
+          "explanation": "入口压力作用于流体的力为$+p_1A\\mathbf i$，出口为$-p_2A\\mathbf j$。动量通量差为$\\rho Qv(-\\mathbf i+\\mathbf j)$，故$R_x=-\\rho Qv-p_1A$、$R_y=\\rho Qv+p_2A$。压力方向不共线，且存在流向改变的动量项，不能化为一个标量压差。表压形式已扣除外界均匀大气作用。",
+          "source": {
+            "materialId": "fluid-mechanics-q4-statement",
+            "blockId": "fluid-mechanics-q4-statement",
+            "exact": "水平90°弯管进出口内径均0.10 m，水以0.020 m³/s从+x方向流入，沿+y方向流出。两截面表压分别200 kPa、150 kPa，取密度1000 kg/m³，忽略重力。定义R为管壁施于控制体流体的合力。（1）画控制体并求R的x、y分量；（2）求流体对弯管的力；（3）说明为何不能只用进出口压力差乘面积求该力。"
+          },
+          "chapter": "控制体动量与弯管支承",
+          "tags": [
+            "流体力学与水力学",
+            "控制体动量与弯管支承",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "控制体动量与弯管支承"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "fluid-mechanics-scope",
+                "blockId": "fluid-mechanics-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "控制面及压力方向正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "fluid-mechanics-q4-statement",
+                    "blockId": "fluid-mechanics-q4-statement",
+                    "exact": "水平90°弯管进出口内径均0.10 m，水以0.020 m³/s从+x方向流入，沿+y方向流出。两截面表压分别200 kPa、150 kPa，取密度1000 kg/m³，忽略重力。定义R为管壁施于控制体流体的合力。（1）画控制体并求R的x、y分量；（2）求流体对弯管的力；（3）说明为何不能只用进出口压力差乘面积求该力。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两分量动量方程正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "反作用力及数值正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "解释标量压差失效",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q4 control volume momentum residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q4 control volume momentum residual\", \"actual\": -50.929581789406484, \"expected\": -50.9295817894065, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "fluid-mechanics-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "宽矩形明渠单位宽流量q=4.0 m²/s。水跃前水深0.60 m，取$g=9.81$ m/s²。忽略跃区底坡及摩阻，使用动量守恒。（1）求临界水深和跃前Froude数；（2）求共轭水深；（3）计算水跃的比能损失，并说明不能在跃前后直接令Bernoulli总能相等。可用矩形渠动量函数$M=y^2/2+q^2/(gy)$。",
+          "score": 20,
+          "solution": "临界水深1.177110 m，跃前Fr=2.747885；跃后共轭水深2.050878 m；比能损失0.620500 m。",
+          "explanation": "$y_c=(q^2/g)^{1/3}$，$Fr_1=q/\\sqrt{gy_1^3}$。由$M(y_1)=M(y_2)$取不同于$y_1$的正根：$y_2=y_1(\\sqrt{1+8Fr_1^2}-1)/2$。前后比能$E=y+q^2/(2gy^2)$，其差等于$(y_2-y_1)^3/(4y_1y_2)>0$。水跃是强耗散过程，动量近似守恒不意味着机械能守恒。",
+          "source": {
+            "materialId": "fluid-mechanics-q5-statement",
+            "blockId": "fluid-mechanics-q5-statement",
+            "exact": "宽矩形明渠单位宽流量q=4.0 m²/s。水跃前水深0.60 m，取$g=9.81$ m/s²。忽略跃区底坡及摩阻，使用动量守恒。（1）求临界水深和跃前Froude数；（2）求共轭水深；（3）计算水跃的比能损失，并说明不能在跃前后直接令Bernoulli总能相等。可用矩形渠动量函数$M=y^2/2+q^2/(gy)$。"
+          },
+          "chapter": "明渠临界流与水跃",
+          "tags": [
+            "流体力学与水力学",
+            "明渠临界流与水跃",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "明渠临界流与水跃"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "fluid-mechanics-scope",
+                "blockId": "fluid-mechanics-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "临界水深及Fr计算正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "fluid-mechanics-q5-statement",
+                    "blockId": "fluid-mechanics-q5-statement",
+                    "exact": "宽矩形明渠单位宽流量q=4.0 m²/s。水跃前水深0.60 m，取$g=9.81$ m/s²。忽略跃区底坡及摩阻，使用动量守恒。（1）求临界水深和跃前Froude数；（2）求共轭水深；（3）计算水跃的比能损失，并说明不能在跃前后直接令Bernoulli总能相等。可用矩形渠动量函数$M=y^2/2+q^2/(gy)$。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "动量方程、根选择及共轭水深正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "比能损失正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "动量与能量假设区分清楚",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q5 momentum back-substitution",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q5 momentum back-substitution\", \"actual\": 2.89831464492015, \"expected\": 2.8983146449201493, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q5 independent specific energy drop",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q5 independent specific energy drop\", \"actual\": 0.6205001607163854, \"expected\": 0.6205001607163848, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "fluid-mechanics-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "某离心泵在指定转速下扬程曲线为$H_p=50-2000Q^2$，管路系统曲线为$H_s=20+2000Q^2$，H用m、Q用m³/s。泵效率在该工作点取0.75，水密度1000 kg/m³，g=9.81 m/s²。（1）求稳态工作点；（2）求轴功率；（3）若另有一根完全相同的并联管路且两支路等流量、共同静扬程仍20 m，推导新系统曲线并求新总流量。",
+          "score": 20,
+          "solution": "原工作点$Q=\\sqrt{30/4000}=0.08660254$ m³/s、H=35.000 m，轴功率39.646643 kW。并联后$H_s=20+500Q_{tot}^2$；总流量$\\sqrt{30/2500}=0.10954451$ m³/s，扬程26.000 m。",
+          "explanation": "工作点要求泵扬程与系统所需扬程相等，先解$50-2000Q^2=20+2000Q^2$。轴功率为$\\rho gQH/\\eta$。并联支路各流$Q_{tot}/2$，每支摩阻为$2000(Q_{tot}/2)^2$；并联只能分担流量，不能把共同静扬程减半。新的工作点也必须重新与泵曲线联立。",
+          "source": {
+            "materialId": "fluid-mechanics-q6-statement",
+            "blockId": "fluid-mechanics-q6-statement",
+            "exact": "某离心泵在指定转速下扬程曲线为$H_p=50-2000Q^2$，管路系统曲线为$H_s=20+2000Q^2$，H用m、Q用m³/s。泵效率在该工作点取0.75，水密度1000 kg/m³，g=9.81 m/s²。（1）求稳态工作点；（2）求轴功率；（3）若另有一根完全相同的并联管路且两支路等流量、共同静扬程仍20 m，推导新系统曲线并求新总流量。"
+          },
+          "chapter": "泵管系统工作点与功率",
+          "tags": [
+            "流体力学与水力学",
+            "泵管系统工作点与功率",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "泵管系统工作点与功率"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "fluid-mechanics-scope",
+                "blockId": "fluid-mechanics-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "原两曲线联立及工作点正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "fluid-mechanics-q6-statement",
+                    "blockId": "fluid-mechanics-q6-statement",
+                    "exact": "某离心泵在指定转速下扬程曲线为$H_p=50-2000Q^2$，管路系统曲线为$H_s=20+2000Q^2$，H用m、Q用m³/s。泵效率在该工作点取0.75，水密度1000 kg/m³，g=9.81 m/s²。（1）求稳态工作点；（2）求轴功率；（3）若另有一根完全相同的并联管路且两支路等流量、共同静扬程仍20 m，推导新系统曲线并求新总流量。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "轴功率含效率、单位正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "并联系统曲线正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "新工作点与静扬程解释正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q6 original operating residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q6 original operating residual\", \"actual\": 0.0, \"expected\": 0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "fluid-q6 parallel operating residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"fluid-q6 parallel operating residual\", \"actual\": 0.0, \"expected\": 0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "fluid-mechanics-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "fluid-mechanics",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "fluid-mechanics-q1",
+        "knowledge": "静水总压力与作用点",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "fluid-mechanics-q1-statement"
+        ]
+      },
+      {
+        "id": "fluid-mechanics-q2",
+        "knowledge": "连续方程与Bernoulli方程",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "fluid-mechanics-q2-statement"
+        ]
+      },
+      {
+        "id": "fluid-mechanics-q3",
+        "knowledge": "层流管阻与流态自洽",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "fluid-mechanics-q3-statement"
+        ]
+      },
+      {
+        "id": "fluid-mechanics-q4",
+        "knowledge": "控制体动量与弯管支承",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "fluid-mechanics-q4-statement"
+        ]
+      },
+      {
+        "id": "fluid-mechanics-q5",
+        "knowledge": "明渠临界流与水跃",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "fluid-mechanics-q5-statement"
+        ]
+      },
+      {
+        "id": "fluid-mechanics-q6",
+        "knowledge": "泵管系统工作点与功率",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "fluid-mechanics-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "fluid-mechanics-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "fluid-mechanics-course-blueprint",
+      "name": "流体力学与水力学课程考试",
+      "subject": "流体力学与水力学",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "fluid-mechanics-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

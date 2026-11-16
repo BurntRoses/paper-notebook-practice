@@ -1,0 +1,867 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "structural-mechanics-course-01",
+  "notebookId": "structural-mechanics-source",
+  "notebookRevision": 1,
+  "title": "结构力学课程考试",
+  "subject": "结构力学",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "结构力学课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "structural-mechanics-scope",
+      "title": "MIT 1.050 Engineering Mechanics I",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/",
+      "text": "This subject provides an introduction to the mechanics of materials and structures.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2007",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/"
+      }
+    },
+    {
+      "id": "structural-mechanics-q1-statement",
+      "title": "结构力学第1题命题原稿",
+      "kind": "question-bank",
+      "text": "平面三杆铰接桁架节点坐标为A(0,0)、B(4,0)、C(2,3)，坐标单位m。A为铰支座，B为竖向滚动支座。C节点受竖直向下12 kN集中力。各杆只承受轴力，忽略自重。（1）求支反力；（2）用节点法求全部杆力，注明拉压；（3）检验C节点平衡。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "structural-mechanics-q2-statement",
+      "title": "结构力学第2题命题原稿",
+      "kind": "question-bank",
+      "text": "等截面悬臂梁长3 m，抗弯刚度$EI=6.0\\times10^6$ N·m²，自由端受向下2 kN集中力。（1）使用单位荷载法推导自由端挠度；（2）求端部转角；（3）求弯曲应变能并用Castigliano定理复核挠度。忽略剪切变形。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "structural-mechanics-q3-statement",
+      "title": "结构力学第3题命题原稿",
+      "kind": "question-bank",
+      "text": "长4 m的等截面梁左端固定、右端设竖向滚动支座，全跨受4 kN/m向下均布载荷。$EI$为常数，无支座沉降。（1）以右支反力为多余未知力列协调方程；（2）求两支竖向反力与固定端反力矩；（3）求弯矩为正的最大值及跨内反弯点。以跨中下缘受拉为弯矩正。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "structural-mechanics-q4-statement",
+      "title": "结构力学第4题命题原稿",
+      "kind": "question-bank",
+      "text": "两跨连续梁AB、BC均长4 m，各跨$EI$相同。A、C为铰支座，B为无沉降竖向支座；梁在B处连续，两跨各受4 kN/m全跨均布荷载。（1）用三弯矩方程或转角位移法求B处弯矩；（2）求三支反力；（3）比较与两跨互不连续简支梁的跨中弯矩。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "structural-mechanics-q5-statement",
+      "title": "结构力学第5题命题原稿",
+      "kind": "question-bank",
+      "text": "单层刚性横梁连接两根相同的固定端柱，柱高3 m，每柱$EI=3.0\\times10^6$ N·m²。横梁仅作水平平移，柱顶转角为零，受水平力100 kN；本层总竖向荷载1.0 MN。（1）建立侧移刚度并求一阶侧移；（2）检验题给侧移角限值1/250；（3）计算$\\theta=P\\Delta/(VH)$，题给筛查界限0.10，并说明其含义。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "structural-mechanics-q6-statement",
+      "title": "结构力学第6题命题原稿",
+      "kind": "question-bank",
+      "text": "简支梁长10 m，研究距左支座4 m处的弯矩。两个向下移动集中力分别为100 kN和150 kN，前者在左、后者在右，两者间距3 m。只考虑两力都在梁上的位置，左力坐标$x\\in[0,7]$。（1）写出所研究截面弯矩影响线；（2）求最大弯矩及所有达到最大值的位置；（3）说明为什么只检查单个“最重轮在截面上”的位置不够。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "structural-mechanics-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "structural-mechanics-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "平面三杆铰接桁架节点坐标为A(0,0)、B(4,0)、C(2,3)，坐标单位m。A为铰支座，B为竖向滚动支座。C节点受竖直向下12 kN集中力。各杆只承受轴力，忽略自重。（1）求支反力；（2）用节点法求全部杆力，注明拉压；（3）检验C节点平衡。",
+          "score": 15,
+          "solution": "$A_x=0$，$A_y=B_y=6$ kN。$N_{AC}=N_{BC}=-2\\sqrt{13}=-7.211103$ kN（压），$N_{AB}=4$ kN（拉）。",
+          "explanation": "对称性及整体平衡给出两竖向反力。AC杆方向余弦为$(2,3)/\\sqrt{13}$。A节点竖向平衡给出$N_{AC}=-2\\sqrt{13}$，水平平衡给出$N_{AB}=4$。C节点处两压杆对节点各提供6 kN向上分量，水平分量相消。拉力正号约定应贯穿计算。",
+          "source": {
+            "materialId": "structural-mechanics-q1-statement",
+            "blockId": "structural-mechanics-q1-statement",
+            "exact": "平面三杆铰接桁架节点坐标为A(0,0)、B(4,0)、C(2,3)，坐标单位m。A为铰支座，B为竖向滚动支座。C节点受竖直向下12 kN集中力。各杆只承受轴力，忽略自重。（1）求支反力；（2）用节点法求全部杆力，注明拉压；（3）检验C节点平衡。"
+          },
+          "chapter": "静定桁架节点法",
+          "tags": [
+            "结构力学",
+            "静定桁架节点法",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "静定桁架节点法"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "structural-mechanics-scope",
+                "blockId": "structural-mechanics-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "整体平衡与支反力正确",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "structural-mechanics-q1-statement",
+                    "blockId": "structural-mechanics-q1-statement",
+                    "exact": "平面三杆铰接桁架节点坐标为A(0,0)、B(4,0)、C(2,3)，坐标单位m。A为铰支座，B为竖向滚动支座。C节点受竖直向下12 kN集中力。各杆只承受轴力，忽略自重。（1）求支反力；（2）用节点法求全部杆力，注明拉压；（3）检验C节点平衡。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "斜杆方向余弦、杆力及压杆判断正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "水平杆力及拉杆判断正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "C节点两方向平衡检验正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q1 joint C vertical residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q1 joint C vertical residual\", \"actual\": 0.0, \"expected\": 0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          },
+          "attachments": [
+            {
+              "id": "structural-mechanics-q1-figure-1",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MDAiIGhlaWdodD0iNDQwIiB2aWV3Qm94PSIwIDAgNjAwIDQ0MCI+PHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSI0NDAiIGZpbGw9IndoaXRlIi8+PGcgc3Ryb2tlPSIjMTExIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjMiPjxwYXRoIGQ9Ik0xMDAgMzUwSDUwMEwzMDAgNTB6Ii8+PHBhdGggZD0iTTEwMCAzNTNsLTE1IDIzaDMwek01MDAgMzUzbC0xNSAyM2gzMHpNMzAwIDEwdjM1bS03LTEwIDcgMTAgNy0xME04MCAzODZIMTIwTTQ4MCAzOTZINTIwIi8+PGNpcmNsZSBjeD0iNDkyIiBjeT0iMzg1IiByPSI1Ii8+PGNpcmNsZSBjeD0iNTA4IiBjeT0iMzg1IiByPSI1Ii8+PC9nPjxnIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzExMSI+PHRleHQgeD0iMTUiIHk9IjM0MCI+QSgwLDApPC90ZXh0Pjx0ZXh0IHg9IjQ2NSIgeT0iNDIwIj5CKDQsMCk8L3RleHQ+PHRleHQgeD0iMzE1IiB5PSI3MCI+QygyLDMpPC90ZXh0Pjx0ZXh0IHg9IjMyNSIgeT0iMjgiPjEyIGtOPC90ZXh0PjwvZz48L3N2Zz4=",
+              "alt": "三角形桁架节点A(0,0)、B(4,0)、C(2,3)，C受竖直向下12kN，A铰支、B滚动支。",
+              "widthMm": 105
+            }
+          ]
+        },
+        {
+          "id": "structural-mechanics-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "等截面悬臂梁长3 m，抗弯刚度$EI=6.0\\times10^6$ N·m²，自由端受向下2 kN集中力。（1）使用单位荷载法推导自由端挠度；（2）求端部转角；（3）求弯曲应变能并用Castigliano定理复核挠度。忽略剪切变形。",
+          "score": 15,
+          "solution": "端部挠度3.000 mm（向下），转角0.001500 rad；弯曲应变能3.000 J。",
+          "explanation": "从固定端取坐标x，真实弯矩$M=P(L-x)$，端部单位力产生$m=L-x$。$\\delta=\\int_0^L Mm/(EI)dx=PL^3/(3EI)$。端部转角为$PL^2/(2EI)$。$U=\\int M^2/(2EI)dx=P^2L^3/(6EI)=3$ J，$\\partial U/\\partial P=PL^3/(3EI)$。",
+          "source": {
+            "materialId": "structural-mechanics-q2-statement",
+            "blockId": "structural-mechanics-q2-statement",
+            "exact": "等截面悬臂梁长3 m，抗弯刚度$EI=6.0\\times10^6$ N·m²，自由端受向下2 kN集中力。（1）使用单位荷载法推导自由端挠度；（2）求端部转角；（3）求弯曲应变能并用Castigliano定理复核挠度。忽略剪切变形。"
+          },
+          "chapter": "虚功法与挠度互等",
+          "tags": [
+            "结构力学",
+            "虚功法与挠度互等",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "虚功法与挠度互等"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "structural-mechanics-scope",
+                "blockId": "structural-mechanics-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "单位弯矩图及虚功积分正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "structural-mechanics-q2-statement",
+                    "blockId": "structural-mechanics-q2-statement",
+                    "exact": "等截面悬臂梁长3 m，抗弯刚度$EI=6.0\\times10^6$ N·m²，自由端受向下2 kN集中力。（1）使用单位荷载法推导自由端挠度；（2）求端部转角；（3）求弯曲应变能并用Castigliano定理复核挠度。忽略剪切变形。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "挠度正确且单位一致",
+                "points": 3
+              },
+              {
+                "id": "step-3",
+                "description": "转角正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "能量及偏导复核正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q2 energy derivative",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q2 energy derivative\", \"actual\": 0.005999999999999783, \"expected\": 0.006, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "structural-mechanics-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "长4 m的等截面梁左端固定、右端设竖向滚动支座，全跨受4 kN/m向下均布载荷。$EI$为常数，无支座沉降。（1）以右支反力为多余未知力列协调方程；（2）求两支竖向反力与固定端反力矩；（3）求弯矩为正的最大值及跨内反弯点。以跨中下缘受拉为弯矩正。",
+          "score": 15,
+          "solution": "右支反力6 kN，左支反力10 kN；固定端外反力矩8 kN·m（逆时针），梁内端弯矩$M(0)=-8$ kN·m。$M(x)=-8+10x-2x^2$ kN·m，正最大值4.5 kN·m，位于x=2.5 m；跨内反弯点x=1 m。",
+          "explanation": "移去右支座后的端挠度为$qL^4/(8EI)$，右反力抵消的挠度为$R_BL^3/(3EI)$。令端挠度零得$R_B=3qL/8$。用整体平衡求其余反力。由$V=10-4x=0$得弯矩驻点，解$M=0$得x=1、4；x=4为端点，不是跨内反弯点。",
+          "source": {
+            "materialId": "structural-mechanics-q3-statement",
+            "blockId": "structural-mechanics-q3-statement",
+            "exact": "长4 m的等截面梁左端固定、右端设竖向滚动支座，全跨受4 kN/m向下均布载荷。$EI$为常数，无支座沉降。（1）以右支反力为多余未知力列协调方程；（2）求两支竖向反力与固定端反力矩；（3）求弯矩为正的最大值及跨内反弯点。以跨中下缘受拉为弯矩正。"
+          },
+          "chapter": "超静定结构的力法",
+          "tags": [
+            "结构力学",
+            "超静定结构的力法",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "超静定结构的力法"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "structural-mechanics-scope",
+                "blockId": "structural-mechanics-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "基本体系及协调方程正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "structural-mechanics-q3-statement",
+                    "blockId": "structural-mechanics-q3-statement",
+                    "exact": "长4 m的等截面梁左端固定、右端设竖向滚动支座，全跨受4 kN/m向下均布载荷。$EI$为常数，无支座沉降。（1）以右支反力为多余未知力列协调方程；（2）求两支竖向反力与固定端反力矩；（3）求弯矩为正的最大值及跨内反弯点。以跨中下缘受拉为弯矩正。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "反力与内外力矩符号清楚",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "弯矩函数及正最大值正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "区分跨内反弯点和支座零弯矩",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q3 reaction and compatibility residuals",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q3 reaction and compatibility residuals\", \"actual\": [0, 0, 0.0], \"expected\": [0, 0, 0], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "structural-mechanics-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "两跨连续梁AB、BC均长4 m，各跨$EI$相同。A、C为铰支座，B为无沉降竖向支座；梁在B处连续，两跨各受4 kN/m全跨均布荷载。（1）用三弯矩方程或转角位移法求B处弯矩；（2）求三支反力；（3）比较与两跨互不连续简支梁的跨中弯矩。",
+          "score": 15,
+          "solution": "$M_B=-8$ kN·m，$R_A=R_C=6$ kN，$R_B=20$ kN。连续梁各跨跨中弯矩4 kN·m；独立简支梁为8 kN·m。",
+          "explanation": "对等长等刚度两跨，三弯矩方程给出$4LM_B=-qL^3/2$。单跨的端弯矩为0、−8 kN·m，平衡得外侧反力$qL/2+M_B/L=6$ kN，靠B的一侧反力10 kN。B支反力由两跨贡献相加。跨中弯矩为$6\\times2-4\\times2^2/2=4$。",
+          "source": {
+            "materialId": "structural-mechanics-q4-statement",
+            "blockId": "structural-mechanics-q4-statement",
+            "exact": "两跨连续梁AB、BC均长4 m，各跨$EI$相同。A、C为铰支座，B为无沉降竖向支座；梁在B处连续，两跨各受4 kN/m全跨均布荷载。（1）用三弯矩方程或转角位移法求B处弯矩；（2）求三支反力；（3）比较与两跨互不连续简支梁的跨中弯矩。"
+          },
+          "chapter": "连续梁内力与分配",
+          "tags": [
+            "结构力学",
+            "连续梁内力与分配",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "连续梁内力与分配"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "structural-mechanics-scope",
+                "blockId": "structural-mechanics-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "连续性条件和B支弯矩正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "structural-mechanics-q4-statement",
+                    "blockId": "structural-mechanics-q4-statement",
+                    "exact": "两跨连续梁AB、BC均长4 m，各跨$EI$相同。A、C为铰支座，B为无沉降竖向支座；梁在B处连续，两跨各受4 kN/m全跨均布荷载。（1）用三弯矩方程或转角位移法求B处弯矩；（2）求三支反力；（3）比较与两跨互不连续简支梁的跨中弯矩。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "三支反力及合力校核正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "连续梁跨中值正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "简支对照及原因正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q4 global force",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q4 global force\", \"actual\": [32, 128], \"expected\": [32, 128], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "structural-mechanics-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "单层刚性横梁连接两根相同的固定端柱，柱高3 m，每柱$EI=3.0\\times10^6$ N·m²。横梁仅作水平平移，柱顶转角为零，受水平力100 kN；本层总竖向荷载1.0 MN。（1）建立侧移刚度并求一阶侧移；（2）检验题给侧移角限值1/250；（3）计算$\\theta=P\\Delta/(VH)$，题给筛查界限0.10，并说明其含义。",
+          "score": 20,
+          "solution": "总侧移刚度$k=2(12EI/H^3)=2.666667\\times10^6$ N/m；侧移37.5 mm，侧移角1/80，不满足1/250。$\\theta=0.125>0.10$，应进一步作二阶分析或调整结构。",
+          "explanation": "两柱在同一侧移下并联，刚度相加。每柱端部转角受约束，不能误用悬臂柱$3EI/H^3$。$P\\Delta$为附加倾覆矩，$VH$为一阶水平力矩；其比值是本题约定的筛查量，既不是结构安全结论，也不能替代完整的几何非线性分析。",
+          "source": {
+            "materialId": "structural-mechanics-q5-statement",
+            "blockId": "structural-mechanics-q5-statement",
+            "exact": "单层刚性横梁连接两根相同的固定端柱，柱高3 m，每柱$EI=3.0\\times10^6$ N·m²。横梁仅作水平平移，柱顶转角为零，受水平力100 kN；本层总竖向荷载1.0 MN。（1）建立侧移刚度并求一阶侧移；（2）检验题给侧移角限值1/250；（3）计算$\\theta=P\\Delta/(VH)$，题给筛查界限0.10，并说明其含义。"
+          },
+          "chapter": "刚度法与二阶效应筛查",
+          "tags": [
+            "结构力学",
+            "刚度法与二阶效应筛查",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "刚度法与二阶效应筛查"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "structural-mechanics-scope",
+                "blockId": "structural-mechanics-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "柱顶转角条件与刚度模型正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "structural-mechanics-q5-statement",
+                    "blockId": "structural-mechanics-q5-statement",
+                    "exact": "单层刚性横梁连接两根相同的固定端柱，柱高3 m，每柱$EI=3.0\\times10^6$ N·m²。横梁仅作水平平移，柱顶转角为零，受水平力100 kN；本层总竖向荷载1.0 MN。（1）建立侧移刚度并求一阶侧移；（2）检验题给侧移角限值1/250；（3）计算$\\theta=P\\Delta/(VH)$，题给筛查界限0.10，并说明其含义。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "侧移及侧移角正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "定量比较题给限值",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "二阶系数与后续工程判断合理",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q5 stiffness equilibrium",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q5 stiffness equilibrium\", \"actual\": 99999.99999999999, \"expected\": 100000, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q5 second order moment ratio",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q5 second order moment ratio\", \"actual\": 0.125, \"expected\": 0.125, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "structural-mechanics-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "简支梁长10 m，研究距左支座4 m处的弯矩。两个向下移动集中力分别为100 kN和150 kN，前者在左、后者在右，两者间距3 m。只考虑两力都在梁上的位置，左力坐标$x\\in[0,7]$。（1）写出所研究截面弯矩影响线；（2）求最大弯矩及所有达到最大值的位置；（3）说明为什么只检查单个“最重轮在截面上”的位置不够。",
+          "score": 20,
+          "solution": "影响线$y(z)=0.6z$（$0\\le z\\le4$），$y(z)=0.4(10-z)$（$4\\le z\\le10$），顶点2.4 m。最大弯矩420 kN·m；所有$x\\in[1,4]$均达到最大值。",
+          "explanation": "弯矩$M(x)=100y(x)+150y(x+3)$。在x∈[0,1]时斜率为150；在[1,4]时斜率$100(0.6)+150(-0.4)=0$；在[4,7]时斜率为−100。因此存在平台而不是唯一最不利位置。影响线纵坐标量纲为长度，乘力得到弯矩。",
+          "source": {
+            "materialId": "structural-mechanics-q6-statement",
+            "blockId": "structural-mechanics-q6-statement",
+            "exact": "简支梁长10 m，研究距左支座4 m处的弯矩。两个向下移动集中力分别为100 kN和150 kN，前者在左、后者在右，两者间距3 m。只考虑两力都在梁上的位置，左力坐标$x\\in[0,7]$。（1）写出所研究截面弯矩影响线；（2）求最大弯矩及所有达到最大值的位置；（3）说明为什么只检查单个“最重轮在截面上”的位置不够。"
+          },
+          "chapter": "移动荷载与影响线包络",
+          "tags": [
+            "结构力学",
+            "移动荷载与影响线包络",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "移动荷载与影响线包络"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "structural-mechanics-scope",
+                "blockId": "structural-mechanics-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "分段影响线及顶点正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "structural-mechanics-q6-statement",
+                    "blockId": "structural-mechanics-q6-statement",
+                    "exact": "简支梁长10 m，研究距左支座4 m处的弯矩。两个向下移动集中力分别为100 kN和150 kN，前者在左、后者在右，两者间距3 m。只考虑两力都在梁上的位置，左力坐标$x\\in[0,7]$。（1）写出所研究截面弯矩影响线；（2）求最大弯矩及所有达到最大值的位置；（3）说明为什么只检查单个“最重轮在截面上”的位置不够。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两力叠加和分区正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "最大值与整个位置区间正确",
+                "points": 7
+              },
+              {
+                "id": "step-4",
+                "description": "量纲和平台成因解释正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q6 piecewise enumeration maximum",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q6 piecewise enumeration maximum\", \"actual\": 420.00000000000006, \"expected\": 420, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "structural-q6 plateau endpoints",
+                "result": "pass",
+                "evidence": "{\"label\": \"structural-q6 plateau endpoints\", \"actual\": [420.0, 420.0], \"expected\": [420, 420], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "structural-mechanics-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "structural-mechanics",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "structural-mechanics-q1",
+        "knowledge": "静定桁架节点法",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "structural-mechanics-q1-statement"
+        ]
+      },
+      {
+        "id": "structural-mechanics-q2",
+        "knowledge": "虚功法与挠度互等",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "structural-mechanics-q2-statement"
+        ]
+      },
+      {
+        "id": "structural-mechanics-q3",
+        "knowledge": "超静定结构的力法",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "structural-mechanics-q3-statement"
+        ]
+      },
+      {
+        "id": "structural-mechanics-q4",
+        "knowledge": "连续梁内力与分配",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "structural-mechanics-q4-statement"
+        ]
+      },
+      {
+        "id": "structural-mechanics-q5",
+        "knowledge": "刚度法与二阶效应筛查",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "structural-mechanics-q5-statement"
+        ]
+      },
+      {
+        "id": "structural-mechanics-q6",
+        "knowledge": "移动荷载与影响线包络",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "structural-mechanics-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "structural-mechanics-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "structural-mechanics-course-blueprint",
+      "name": "结构力学课程考试",
+      "subject": "结构力学",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "structural-mechanics-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

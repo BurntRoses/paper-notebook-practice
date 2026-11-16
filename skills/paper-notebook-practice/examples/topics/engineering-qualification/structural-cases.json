@@ -1,0 +1,813 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-structural-engineer-cases-01",
+  "notebookId": "registered-structural-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册结构工程师　专业案例",
+  "subject": "结构工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册结构工程师　专业案例",
+      "混凝土·钢结构·抗侧与基础设计"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册结构工程师　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "结构工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "结构工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-structural-engineer",
+    "examName": "注册结构工程师　专业案例",
+    "specialty": "混凝土·钢结构·抗侧与基础设计",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-structural-engineer-cases-01-q1",
+        "knowledge": "受弯承载、内力平衡、离散选筋、模型边界",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-structural-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-structural-engineer-cases-01-q2",
+        "knowledge": "钢柱稳定、压弯相互作用、截面选择",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-structural-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-structural-engineer-cases-01-q3",
+        "knowledge": "螺栓连接、抗滑、施工参数敏感性",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-structural-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-structural-engineer-cases-01-q4",
+        "knowledge": "刚性楼面、偏心扭转、层间位移、刚度调整",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-structural-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-structural-engineer-cases-01-q5",
+        "knowledge": "偏心基础、基底压力、几何选型、多极限状态",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-structural-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-specialist-scope",
+      "kind": "reference",
+      "title": "2026勘察设计考试专业与作答要求",
+      "text": "2026湖北考试通知列明结构、岩土等注册专业，并说明一级结构专业与岩土专业案例在专用答题卡填涂所选项及填写计算步骤。本卷为原创五案例蓝图，具体承载模型、限值和参数逐题给定。",
+      "blocks": [
+        {
+          "id": "design-specialist-scope-block",
+          "title": "2026勘察设计考试专业与作答要求",
+          "text": "2026湖北考试通知列明结构、岩土等注册专业，并说明一级结构专业与岩土专业案例在专用答题卡填涂所选项及填写计算步骤。本卷为原创五案例蓝图，具体承载模型、限值和参数逐题给定。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "331c32c827f5eb42d9dd28407197ca8d3cff7324a0bae364d9b1977b28f34a19",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-structural-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "矩形单筋梁b=300mm、总高550mm、有效高度h₀=500mm，设计弯矩200kN·m。题给等效矩形压应力αf_c=14.3MPa、钢筋设计强度360MPa，允许受压区高度x≤0.50h₀，最小钢筋面积为0.002bh。忽略受压钢筋。使用力平衡αf_cbx=f_yA_s及M=f_yA_s(h₀−x/2)。\n（1）解出所需A_s及x，并检验适用边界。\n（2）从下列面积选择满足条件的最小方案，填选项并给出该方案承载弯矩。\n（3）解释为何只比较f_yA_sh₀≥M会偏不安全。",
+      "blocks": [
+        {
+          "id": "registered-structural-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "矩形单筋梁b=300mm、总高550mm、有效高度h₀=500mm，设计弯矩200kN·m。题给等效矩形压应力αf_c=14.3MPa、钢筋设计强度360MPa，允许受压区高度x≤0.50h₀，最小钢筋面积为0.002bh。忽略受压钢筋。使用力平衡αf_cbx=f_yA_s及M=f_yA_s(h₀−x/2)。\n（1）解出所需A_s及x，并检验适用边界。\n（2）从下列面积选择满足条件的最小方案，填选项并给出该方案承载弯矩。\n（3）解释为何只比较f_yA_sh₀≥M会偏不安全。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "1414b230484b5981f46e966023e0bb23bfcb639a0d8410edbf7146f0e0d073d0",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-structural-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "某钢柱设计轴压力800kN、单向弯矩50kN·m，A=5000mm²、W=1.0×10⁶mm³。题给稳定系数φ=0.70、设计强度f=215MPa，采用项目简化相互作用条件N/(φAf)+M/(Wf)≤1。新截面系列的A与W同时按比例λ放大，其他参数保持不变；可选λ为1.10/1.20/1.30/1.40。\n（1）求原相互作用值。\n（2）求理论最小λ并选最小可用系列，重算相互作用值。\n（3）指出保持φ不变的假设在真实换截面时必须怎样复核。",
+      "blocks": [
+        {
+          "id": "registered-structural-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "某钢柱设计轴压力800kN、单向弯矩50kN·m，A=5000mm²、W=1.0×10⁶mm³。题给稳定系数φ=0.70、设计强度f=215MPa，采用项目简化相互作用条件N/(φAf)+M/(Wf)≤1。新截面系列的A与W同时按比例λ放大，其他参数保持不变；可选λ为1.10/1.20/1.30/1.40。\n（1）求原相互作用值。\n（2）求理论最小λ并选最小可用系列，重算相互作用值。\n（3）指出保持φ不变的假设在真实换截面时必须怎样复核。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "912f2d2b639f1cf47ceb98ffd109f1e137f0dc3929a615451299f2ec1f1fde62",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-structural-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "一高强螺栓摩擦型接头有4个螺栓、每个螺栓两个有效摩擦面；每个螺栓安装预拉力180kN，摩擦系数0.35。只按本题抗滑模型R=μ·n面·ΣP校核设计剪力300kN，不计其他折减。\n（1）求安装状态抗滑承载力。\n（2）若全部预拉力损失20%，重算；若同时实测摩擦系数只有0.25，是否仍满足？\n（3）在20%预拉力损失下求最低摩擦系数。\n（4）列出预拉力和摩擦面的可验证施工资料，说明满足抗滑并不覆盖哪些其他破坏。",
+      "blocks": [
+        {
+          "id": "registered-structural-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "一高强螺栓摩擦型接头有4个螺栓、每个螺栓两个有效摩擦面；每个螺栓安装预拉力180kN，摩擦系数0.35。只按本题抗滑模型R=μ·n面·ΣP校核设计剪力300kN，不计其他折减。\n（1）求安装状态抗滑承载力。\n（2）若全部预拉力损失20%，重算；若同时实测摩擦系数只有0.25，是否仍满足？\n（3）在20%预拉力损失下求最低摩擦系数。\n（4）列出预拉力和摩擦面的可验证施工资料，说明满足抗滑并不覆盖哪些其他破坏。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "f49255cd16882e098d8715ee3f007e132190bad7b1814bbd75adf39cd5deebad",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-structural-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "刚性楼面只连接两榀沿同一受力方向的抗侧框架，平面位置x=−5m和+5m，侧向刚度分别10MN/m与20MN/m。沿该受力方向的水平力300kN作用于x=0；层高3m，忽略其他抗侧构件。令刚度中心平移u，转角θ，框架位移u_i=u+θ(x_i−x_R)，扭转刚度Kθ=Σk_i(x_i−x_R)²。\n（1）求刚度中心、平移、扭矩与转角。\n（2）求两框架位移和剪力，并核对合力与关于x=0力矩。\n（3）题设层间最大位移角≤1/250，是否满足？若两刚度同比放大，至少放大几倍？",
+      "blocks": [
+        {
+          "id": "registered-structural-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "刚性楼面只连接两榀沿同一受力方向的抗侧框架，平面位置x=−5m和+5m，侧向刚度分别10MN/m与20MN/m。沿该受力方向的水平力300kN作用于x=0；层高3m，忽略其他抗侧构件。令刚度中心平移u，转角θ，框架位移u_i=u+θ(x_i−x_R)，扭转刚度Kθ=Σk_i(x_i−x_R)²。\n（1）求刚度中心、平移、扭矩与转角。\n（2）求两框架位移和剪力，并核对合力与关于x=0力矩。\n（3）题设层间最大位移角≤1/250，是否满足？若两刚度同比放大，至少放大几倍？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "5e043a158343bd23978a878e4448bb339e9280502d192b7d756890adf9f4da31",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-structural-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "矩形独立基础宽B=3m、沿偏心方向长L=4m，基底竖向合力1800kN、该方向弯矩450kN·m，已计基础自重及题设所有竖向荷载。采用刚性基底线性压力分布，不允许拉应力；项目地基压力上限200kPa。\n（1）求偏心距、最大与最小压力并逐项判断。\n（2）保持B与荷载不变，解满足上限的理论最小L；可选长度按0.1m进位，选择并复核。\n（3）说明仅凭基底压力通过，不能代替哪些基础与地基验算。",
+      "blocks": [
+        {
+          "id": "registered-structural-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "矩形独立基础宽B=3m、沿偏心方向长L=4m，基底竖向合力1800kN、该方向弯矩450kN·m，已计基础自重及题设所有竖向荷载。采用刚性基底线性压力分布，不允许拉应力；项目地基压力上限200kPa。\n（1）求偏心距、最大与最小压力并逐项判断。\n（2）保持B与荷载不变，解满足上限的理论最小L；可选长度按0.1m进位，选择并复核。\n（3）说明仅凭基底压力通过，不能代替哪些基础与地基验算。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "8bb2b623c63ee698ac1dcfffa56dba59d2264df191940dd8676a3c7a8f559240",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-structural-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "矩形单筋梁b=300mm、总高550mm、有效高度h₀=500mm，设计弯矩200kN·m。题给等效矩形压应力αf_c=14.3MPa、钢筋设计强度360MPa，允许受压区高度x≤0.50h₀，最小钢筋面积为0.002bh。忽略受压钢筋。使用力平衡αf_cbx=f_yA_s及M=f_yA_s(h₀−x/2)。\n（1）解出所需A_s及x，并检验适用边界。\n（2）从下列面积选择满足条件的最小方案，填选项并给出该方案承载弯矩。\n（3）解释为何只比较f_yA_sh₀≥M会偏不安全。",
+          "score": 20,
+          "solution": "所需x=104.070831mm、A_s=1240.177404mm²；x<250mm且A_s>330mm²。选择C（1400mm²）；该方案x=117.482517mm，承载弯矩222.394406kN·m，满足200。忽略压区合力位置会高估内力臂和弯矩承载力。",
+          "explanation": "从M=αf_cbx(h₀−x/2)得到二次方程，取较小根；大根不满足受压区边界。离散选筋后必须按实际A_s重新检验x与弯矩，不能只把连续计算面积向上进位而不复核。所有强度及限值为题给设计参数，并不伪称某版规范条号。",
+          "source": {
+            "materialId": "registered-structural-engineer-cases-01-q1-source",
+            "blockId": "registered-structural-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "矩形单筋梁b=300mm、总高550mm、有效高度h₀=500mm，设计弯矩200kN·m。题给等效矩形压应力αf_c=14.3MPa、钢筋设计强度360MPa，允许受压区高度x≤0.50h₀，最小钢筋面积为0.002bh。忽略受压钢筋。使用力平衡αf_cbx=f_yA_s及M=f_yA_s(h₀−x/2)。\n（1）解出所需A_s及x，并检验适用边界。\n（2）从下列面积选择满足条件的最小方案，填选项并给出该方案承载弯矩。\n（3）解释为何只比较f_yA_sh₀≥M会偏不安全。"
+          },
+          "chapter": "受弯承载",
+          "tags": [
+            "受弯承载",
+            "内力平衡",
+            "离散选筋",
+            "模型边界"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "受弯承载",
+              "内力平衡",
+              "离散选筋",
+              "模型边界"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "二次方程、小根与所需面积",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "x及最小面积两边界",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "选C且实际面积重算222.3944kN·m",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "内力臂与不安全近似解释",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "structural-required-rebar: independent Python calculation = 1240.177404; expected = 1240.177404; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-selected-capacity: independent Python calculation = 222.3944056; expected = 222.3944056; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-equilibrium-reaction: independent Python calculation = 446463.8656; expected = 446463.8656; pass.",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1000mm²"
+            },
+            {
+              "id": "B",
+              "text": "1200mm²"
+            },
+            {
+              "id": "C",
+              "text": "1400mm²"
+            },
+            {
+              "id": "D",
+              "text": "1600mm²"
+            }
+          ]
+        },
+        {
+          "id": "registered-structural-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "某钢柱设计轴压力800kN、单向弯矩50kN·m，A=5000mm²、W=1.0×10⁶mm³。题给稳定系数φ=0.70、设计强度f=215MPa，采用项目简化相互作用条件N/(φAf)+M/(Wf)≤1。新截面系列的A与W同时按比例λ放大，其他参数保持不变；可选λ为1.10/1.20/1.30/1.40。\n（1）求原相互作用值。\n（2）求理论最小λ并选最小可用系列，重算相互作用值。\n（3）指出保持φ不变的假设在真实换截面时必须怎样复核。",
+          "score": 20,
+          "solution": "原比值1.295681063>1；理论λ≥1.295681063，选1.30。新A6500mm²、W1.30×10⁶mm³，作用值0.996677741，满足。实际换截面后需重新求长细比、稳定系数、局部稳定和弯扭边界，不能自动保持φ。",
+          "explanation": "轴力与弯矩先统一为N、N·mm。两项分母都随λ成比例，故相互作用值为原值/λ。本题为明确给定的初步筛选式，不将其扩展为全部受压构件的完整规范设计公式。",
+          "source": {
+            "materialId": "registered-structural-engineer-cases-01-q2-source",
+            "blockId": "registered-structural-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "某钢柱设计轴压力800kN、单向弯矩50kN·m，A=5000mm²、W=1.0×10⁶mm³。题给稳定系数φ=0.70、设计强度f=215MPa，采用项目简化相互作用条件N/(φAf)+M/(Wf)≤1。新截面系列的A与W同时按比例λ放大，其他参数保持不变；可选λ为1.10/1.20/1.30/1.40。\n（1）求原相互作用值。\n（2）求理论最小λ并选最小可用系列，重算相互作用值。\n（3）指出保持φ不变的假设在真实换截面时必须怎样复核。"
+          },
+          "chapter": "钢柱稳定",
+          "tags": [
+            "钢柱稳定",
+            "压弯相互作用",
+            "截面选择"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "钢柱稳定",
+              "压弯相互作用",
+              "截面选择"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "单位与原作用值1.295681",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "理论λ及选1.30",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "新参数与0.996678",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "真实φ和失稳模式复核",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "structural-combined-ratio: independent Python calculation = 1.295681063; expected = 1.295681063; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-section130-ratio: independent Python calculation = 0.9966777409; expected = 0.9966777409; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-structural-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "一高强螺栓摩擦型接头有4个螺栓、每个螺栓两个有效摩擦面；每个螺栓安装预拉力180kN，摩擦系数0.35。只按本题抗滑模型R=μ·n面·ΣP校核设计剪力300kN，不计其他折减。\n（1）求安装状态抗滑承载力。\n（2）若全部预拉力损失20%，重算；若同时实测摩擦系数只有0.25，是否仍满足？\n（3）在20%预拉力损失下求最低摩擦系数。\n（4）列出预拉力和摩擦面的可验证施工资料，说明满足抗滑并不覆盖哪些其他破坏。",
+          "score": 20,
+          "solution": "原抗滑504kN；损失20%后403.2kN仍满足。摩擦系数降到0.25且保留80%预拉力时为288kN，不满足。临界μ=300/(2×4×180×0.8)=0.2604167。需核对连接面处理和试验、批次螺栓、扭矩/张拉标定与施工记录；还需按真实设计检验螺栓剪断、孔壁承压、板件净截面和局部稳定等。",
+          "explanation": "损失应作用到每个螺栓预拉力；两个摩擦面是同一传力接头的有效接触面数，不是把螺栓数量重复加一遍。摩擦系数实测下降与预拉力损失是可同时发生的不同因素。",
+          "source": {
+            "materialId": "registered-structural-engineer-cases-01-q3-source",
+            "blockId": "registered-structural-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "一高强螺栓摩擦型接头有4个螺栓、每个螺栓两个有效摩擦面；每个螺栓安装预拉力180kN，摩擦系数0.35。只按本题抗滑模型R=μ·n面·ΣP校核设计剪力300kN，不计其他折减。\n（1）求安装状态抗滑承载力。\n（2）若全部预拉力损失20%，重算；若同时实测摩擦系数只有0.25，是否仍满足？\n（3）在20%预拉力损失下求最低摩擦系数。\n（4）列出预拉力和摩擦面的可验证施工资料，说明满足抗滑并不覆盖哪些其他破坏。"
+          },
+          "chapter": "螺栓连接",
+          "tags": [
+            "螺栓连接",
+            "抗滑",
+            "施工参数敏感性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "螺栓连接",
+              "抗滑",
+              "施工参数敏感性"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "504kN原值",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "403.2与288及两判断",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "临界0.2604167",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "施工证据和其他极限状态",
+                "points": 6
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "structural-slip-original: independent Python calculation = 504; expected = 504; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-slip-preload-loss: independent Python calculation = 403.2; expected = 403.2; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-slip-lowfriction: independent Python calculation = 288; expected = 288; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-slip-friction-bound: independent Python calculation = 0.2604166667; expected = 0.2604166667; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-structural-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "刚性楼面只连接两榀沿同一受力方向的抗侧框架，平面位置x=−5m和+5m，侧向刚度分别10MN/m与20MN/m。沿该受力方向的水平力300kN作用于x=0；层高3m，忽略其他抗侧构件。令刚度中心平移u，转角θ，框架位移u_i=u+θ(x_i−x_R)，扭转刚度Kθ=Σk_i(x_i−x_R)²。\n（1）求刚度中心、平移、扭矩与转角。\n（2）求两框架位移和剪力，并核对合力与关于x=0力矩。\n（3）题设层间最大位移角≤1/250，是否满足？若两刚度同比放大，至少放大几倍？",
+          "score": 20,
+          "solution": "x_R=1.666667m，u=10mm，T=−500kN·m，θ=-0.0007500rad。两框架位移分别15mm、7.5mm，剪力均150kN；合力300kN且关于x=0矩相消。最大位移角0.015/3=1/200，不满足1/250；刚度同比至少放大1.25倍。",
+          "explanation": "荷载偏离刚度中心，即使作用于几何中心仍有扭转。F_i=k_i u_i，不能直接按10:20分力而忽略偏心。同比提高两刚度不改变刚度中心和相对分配，全部位移同比缩小。此简化只适用于题给刚性楼面和两框架模型。",
+          "source": {
+            "materialId": "registered-structural-engineer-cases-01-q4-source",
+            "blockId": "registered-structural-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "刚性楼面只连接两榀沿同一受力方向的抗侧框架，平面位置x=−5m和+5m，侧向刚度分别10MN/m与20MN/m。沿该受力方向的水平力300kN作用于x=0；层高3m，忽略其他抗侧构件。令刚度中心平移u，转角θ，框架位移u_i=u+θ(x_i−x_R)，扭转刚度Kθ=Σk_i(x_i−x_R)²。\n（1）求刚度中心、平移、扭矩与转角。\n（2）求两框架位移和剪力，并核对合力与关于x=0力矩。\n（3）题设层间最大位移角≤1/250，是否满足？若两刚度同比放大，至少放大几倍？"
+          },
+          "chapter": "刚性楼面",
+          "tags": [
+            "刚性楼面",
+            "偏心扭转",
+            "层间位移",
+            "刚度调整"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "刚性楼面",
+              "偏心扭转",
+              "层间位移",
+              "刚度调整"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "刚度中心、扭刚度和转角",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "位移/剪力及两平衡核对",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "最大位移角与不满足",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "1.25倍率及模型适用性",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "structural-frame-u1: independent Python calculation = 0.015; expected = 0.015; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-frame-u2: independent Python calculation = 0.0075; expected = 0.0075; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-frame-force-equilibrium: independent Python calculation = 300000; expected = 300000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-frame-moment-equilibrium: independent Python calculation = 0; expected = 0; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-structural-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "矩形独立基础宽B=3m、沿偏心方向长L=4m，基底竖向合力1800kN、该方向弯矩450kN·m，已计基础自重及题设所有竖向荷载。采用刚性基底线性压力分布，不允许拉应力；项目地基压力上限200kPa。\n（1）求偏心距、最大与最小压力并逐项判断。\n（2）保持B与荷载不变，解满足上限的理论最小L；可选长度按0.1m进位，选择并复核。\n（3）说明仅凭基底压力通过，不能代替哪些基础与地基验算。",
+          "score": 20,
+          "solution": "e=0.25m，小于偏心方向核心半径L/6=0.666667m；q均=150kPa，q最大206.25、最小93.75kPa，无拉但超200。理论L≥4.098076m，按0.1m进位选4.1m；q最大=199.881023kPa，满足。仍需承载机制、沉降/差异沉降、冲切/剪切/受弯、配筋锚固及地下水等完整核查。",
+          "explanation": "沿L方向偏心时q边=(N/BL)(1±6e/L)，不能误用宽B计算核心范围。qmax=600/L+900/L²，将其不大于200解二次不等式。不要因为初始qmin>0就跳过压应力上限，也不要将基底压力与混凝土冲切当同一极限状态。",
+          "source": {
+            "materialId": "registered-structural-engineer-cases-01-q5-source",
+            "blockId": "registered-structural-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "矩形独立基础宽B=3m、沿偏心方向长L=4m，基底竖向合力1800kN、该方向弯矩450kN·m，已计基础自重及题设所有竖向荷载。采用刚性基底线性压力分布，不允许拉应力；项目地基压力上限200kPa。\n（1）求偏心距、最大与最小压力并逐项判断。\n（2）保持B与荷载不变，解满足上限的理论最小L；可选长度按0.1m进位，选择并复核。\n（3）说明仅凭基底压力通过，不能代替哪些基础与地基验算。"
+          },
+          "chapter": "偏心基础",
+          "tags": [
+            "偏心基础",
+            "基底压力",
+            "几何选型",
+            "多极限状态"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "偏心基础",
+              "基底压力",
+              "几何选型",
+              "多极限状态"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "e及方向核心范围",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "两压力及超限判断",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "最小L和4.1m复核",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "地基与基础其他验算",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "structural-footing-qmax: independent Python calculation = 206.25; expected = 206.25; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-footing-length: independent Python calculation = 4.098076211; expected = 4.098076211; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "structural-footing-selected-qmax: independent Python calculation = 199.8810232; expected = 199.8810232; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-structural-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-structural-engineer-project-blueprint",
+      "name": "结构工程专业案例案例能力蓝图",
+      "subject": "结构工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-structural-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-structural-engineer-cases-01-q1",
+      "registered-structural-engineer-cases-01-q2",
+      "registered-structural-engineer-cases-01-q3",
+      "registered-structural-engineer-cases-01-q4",
+      "registered-structural-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

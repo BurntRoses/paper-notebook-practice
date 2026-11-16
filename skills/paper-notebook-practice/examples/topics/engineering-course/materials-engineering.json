@@ -1,0 +1,881 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "materials-engineering-course-01",
+  "notebookId": "materials-engineering-source",
+  "notebookRevision": 1,
+  "title": "材料科学与工程基础课程考试",
+  "subject": "材料科学与工程基础",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "材料科学与工程基础课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "materials-engineering-scope",
+      "title": "MIT 3.091SC Introduction to Solid State Chemistry",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/",
+      "text": "Binary Phase Diagrams: Limited Solubility",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2010",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/"
+      }
+    },
+    {
+      "id": "materials-engineering-q1-statement",
+      "title": "材料科学与工程基础第1题命题原稿",
+      "kind": "question-bank",
+      "text": "二元合金总质量10 kg，总体B质量分数0.35。在指定温度处仅有α、β两相，系线两端B质量分数分别0.20、0.80（图为系线示意，不要求推断未给的其他边界）。（1）求两相质量分数和质量；（2）计算两相中B的质量并复核；（3）若相含量误用总体成分0.35和0.65，指出为何不满足平衡。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-engineering-q2-statement",
+      "title": "材料科学与工程基础第2题命题原稿",
+      "kind": "question-bank",
+      "text": "半无限固体初始溶质浓度C0=0，t=0起表面维持Cs=1（相同浓度单位），扩散系数D=1.0×10⁻¹¹ m²/s恒定。解为$C/C_s=1-\\operatorname{erf}[x/(2\\sqrt{Dt})]$。题给erf(0.5)=0.520499878。（1）3600 s时求C/Cs=0.479500122对应深度；（2）达到同一相对浓度而深度翻倍时，时间如何改变；（3）说明该解的初始及表面条件，并判断有限薄板背面何时不能忽略。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-engineering-q3-statement",
+      "title": "材料科学与工程基础第3题命题原稿",
+      "kind": "question-bank",
+      "text": "圆柱试样原标距50 mm、原截面积100 mm²。均匀拉伸阶段，载荷30 kN、伸长2.5 mm；本题近似试样总体积不变，忽略弹性体积变化。（1）求工程应力、工程应变；（2）求瞬时截面积、真实应力和真实应变；（3）若已发生局部颈缩，能否仅用总伸长继续算出颈部真实应力？说明需要的测量。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-engineering-q4-statement",
+      "title": "材料科学与工程基础第4题命题原稿",
+      "kind": "question-bank",
+      "text": "大板有穿透中心裂纹，总裂纹长2a=4.0 mm，远场拉应力100 MPa；几何因子Y=1.0，平面应变断裂韧度KIC=30 MPa√m，采用$K_I=Y\\sigma\\sqrt{\\pi a}$。（1）计算当前KI并判断在题给线弹性断裂模型下是否失稳；（2）求同一应力下临界半裂纹长；（3）若只要求KI≤KIC/1.5，求允许应力；（4）为何仍不能据此声称任意小试样都满足平面应变条件？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-engineering-q5-statement",
+      "title": "材料科学与工程基础第5题命题原稿",
+      "kind": "question-bank",
+      "text": "材料屈服强度满足$\\sigma_y=\\sigma_0+kd^{-1/2}$，d以mm计。两次试验：d=0.040 mm时σy=200 MPa；d=0.010 mm时σy=300 MPa。（1）辨识σ0、k及单位；（2）预测d=0.025 mm时强度；（3）若要求σy≥350 MPa，求模型允许的最大d；（4）解释不能将关系任意外推到零晶粒尺寸。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-engineering-q6-statement",
+      "title": "材料科学与工程基础第6题命题原稿",
+      "kind": "question-bank",
+      "text": "连续纤维复合材料纤维体积分数0.60，纤维模量Ef=200 GPa、基体Em=3.0 GPa，界面理想。纤维密度1600、基体1200 kg/m³。（1）按等应变模型求纵向模量；（2）按等应力模型求横向模量估计；（3）求密度和纵向比模量；（4）若设计要求纵向模量≥100 GPa且密度≤1500 kg/m³，该方案是否通过这两个指标？说明这能否替代实际横向强度和界面耐久试验。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "materials-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "materials-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "二元合金总质量10 kg，总体B质量分数0.35。在指定温度处仅有α、β两相，系线两端B质量分数分别0.20、0.80（图为系线示意，不要求推断未给的其他边界）。（1）求两相质量分数和质量；（2）计算两相中B的质量并复核；（3）若相含量误用总体成分0.35和0.65，指出为何不满足平衡。",
+          "score": 15,
+          "solution": "α质量分数(0.80−0.35)/(0.80−0.20)=0.75，β为0.25；相质量7.5、2.5 kg。α含B1.5 kg，β含B2.0 kg，合计3.5 kg。",
+          "explanation": "联立$f_\\alpha+f_\\beta=1$及$0.20f_\\alpha+0.80f_\\beta=0.35$。相分数由系线两端的距离比得到，不能直接把总体组分分数当相分数。错误取0.35、0.65会给总体B=0.59而非0.35。图仅说明题给系线，两相成分以文字明确数值为准。",
+          "source": {
+            "materialId": "materials-engineering-q1-statement",
+            "blockId": "materials-engineering-q1-statement",
+            "exact": "二元合金总质量10 kg，总体B质量分数0.35。在指定温度处仅有α、β两相，系线两端B质量分数分别0.20、0.80（图为系线示意，不要求推断未给的其他边界）。（1）求两相质量分数和质量；（2）计算两相中B的质量并复核；（3）若相含量误用总体成分0.35和0.65，指出为何不满足平衡。"
+          },
+          "chapter": "两相区杠杆定律与成分守恒",
+          "tags": [
+            "材料科学与工程基础",
+            "两相区杠杆定律与成分守恒",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "两相区杠杆定律与成分守恒"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-engineering-scope",
+                "blockId": "materials-engineering-scope",
+                "exact": "Binary Phase Diagrams: Limited Solubility"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "质量和组分方程正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "materials-engineering-q1-statement",
+                    "blockId": "materials-engineering-q1-statement",
+                    "exact": "二元合金总质量10 kg，总体B质量分数0.35。在指定温度处仅有α、β两相，系线两端B质量分数分别0.20、0.80（图为系线示意，不要求推断未给的其他边界）。（1）求两相质量分数和质量；（2）计算两相中B的质量并复核；（3）若相含量误用总体成分0.35和0.65，指出为何不满足平衡。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "杠杆比与相质量正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "B守恒及错误方案检查正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q1 species balance",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q1 species balance\", \"actual\": 3.5, \"expected\": 3.5, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q1 wrong fraction consequence",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q1 wrong fraction consequence\", \"actual\": 0.59, \"expected\": 0.59, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          },
+          "attachments": [
+            {
+              "id": "materials-engineering-q1-figure-1",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NTAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgNjUwIDI2MCI+PHJlY3Qgd2lkdGg9IjY1MCIgaGVpZ2h0PSIyNjAiIGZpbGw9IndoaXRlIi8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTExIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik02MCAzMFYyMDVINjAwTTEyMCAxMjVINDcwIi8+PHBhdGggZD0iTTEyMCAxMTVWMTM1TTQ3MCAxMTVWMTM1TTIwNy41IDgwVjIwNSIgc3Ryb2tlLWRhc2hhcnJheT0iNSA1Ii8+PC9nPjxnIGZpbGw9IiMxMTEiPjxjaXJjbGUgY3g9IjEyMCIgY3k9IjEyNSIgcj0iNSIvPjxjaXJjbGUgY3g9IjQ3MCIgY3k9IjEyNSIgcj0iNSIvPjxjaXJjbGUgY3g9IjIwNy41IiBjeT0iMTI1IiByPSI1Ii8+PC9nPjxnIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIxOSIgZmlsbD0iIzExMSI+PHRleHQgeD0iNyIgeT0iMjgiPua4qeW6pjwvdGV4dD48dGV4dCB4PSI0NDUiIHk9IjI0NSI+Qui0qOmHj+WIhuaVsDwvdGV4dD48dGV4dCB4PSI5OCIgeT0iMjMwIj4wLjIwPC90ZXh0Pjx0ZXh0IHg9IjE4NSIgeT0iMjMwIj4wLjM1PC90ZXh0Pjx0ZXh0IHg9IjQ0OCIgeT0iMjMwIj4wLjgwPC90ZXh0Pjx0ZXh0IHg9Ijk4IiB5PSIxMDAiPs6x55u4PC90ZXh0Pjx0ZXh0IHg9IjQ0NSIgeT0iMTAwIj7OsuebuDwvdGV4dD48dGV4dCB4PSIyMTQiIHk9IjcyIj7mgLvkvZPmiJDliIY8L3RleHQ+PHRleHQgeD0iMjcwIiB5PSIxNTMiPs6xICsgzrI8L3RleHQ+PHRleHQgeD0iMzE1IiB5PSIyOCI+6aKY57uZ5rip5bqm5aSE55qE5Y2V5p2h57O757q/PC90ZXh0PjwvZz48L3N2Zz4=",
+              "alt": "给定两相系线：α的B质量分数0.20，β为0.80，总体0.35。",
+              "widthMm": 105
+            }
+          ]
+        },
+        {
+          "id": "materials-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "半无限固体初始溶质浓度C0=0，t=0起表面维持Cs=1（相同浓度单位），扩散系数D=1.0×10⁻¹¹ m²/s恒定。解为$C/C_s=1-\\operatorname{erf}[x/(2\\sqrt{Dt})]$。题给erf(0.5)=0.520499878。（1）3600 s时求C/Cs=0.479500122对应深度；（2）达到同一相对浓度而深度翻倍时，时间如何改变；（3）说明该解的初始及表面条件，并判断有限薄板背面何时不能忽略。",
+          "score": 15,
+          "solution": "误差函数自变量0.5，深度$x=\\sqrt{Dt}=1.897366596\\times10^{-4}$ m=0.189736660 mm。深度翻倍需时间4倍，即14400 s。",
+          "explanation": "浓度固定时x/√t不变，故t∝x²，不能按深度线性放大时间。x=0时erf0=0，表面浓度为Cs；t趋0且x>0时erf∞=1，内部浓度为0。半无限要求扩散影响深度相对试样厚度足够小；若背面附近已有显著浓度变化，应改用有限域边界条件，不能继续称半无限结果精确。",
+          "source": {
+            "materialId": "materials-engineering-q2-statement",
+            "blockId": "materials-engineering-q2-statement",
+            "exact": "半无限固体初始溶质浓度C0=0，t=0起表面维持Cs=1（相同浓度单位），扩散系数D=1.0×10⁻¹¹ m²/s恒定。解为$C/C_s=1-\\operatorname{erf}[x/(2\\sqrt{Dt})]$。题给erf(0.5)=0.520499878。（1）3600 s时求C/Cs=0.479500122对应深度；（2）达到同一相对浓度而深度翻倍时，时间如何改变；（3）说明该解的初始及表面条件，并判断有限薄板背面何时不能忽略。"
+          },
+          "chapter": "扩散时间尺度与误差函数解",
+          "tags": [
+            "材料科学与工程基础",
+            "扩散时间尺度与误差函数解",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "扩散时间尺度与误差函数解"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-engineering-scope",
+                "blockId": "materials-engineering-scope",
+                "exact": "Binary Phase Diagrams: Limited Solubility"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "由给定erf反求自变量正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "materials-engineering-q2-statement",
+                    "blockId": "materials-engineering-q2-statement",
+                    "exact": "半无限固体初始溶质浓度C0=0，t=0起表面维持Cs=1（相同浓度单位），扩散系数D=1.0×10⁻¹¹ m²/s恒定。解为$C/C_s=1-\\operatorname{erf}[x/(2\\sqrt{Dt})]$。题给erf(0.5)=0.520499878。（1）3600 s时求C/Cs=0.479500122对应深度；（2）达到同一相对浓度而深度翻倍时，时间如何改变；（3）说明该解的初始及表面条件，并判断有限薄板背面何时不能忽略。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "深度数值和单位正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "平方时间尺度正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "边界及半无限条件正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q2 diffusion similarity",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q2 diffusion similarity\", \"actual\": 2.0, \"expected\": 2, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "圆柱试样原标距50 mm、原截面积100 mm²。均匀拉伸阶段，载荷30 kN、伸长2.5 mm；本题近似试样总体积不变，忽略弹性体积变化。（1）求工程应力、工程应变；（2）求瞬时截面积、真实应力和真实应变；（3）若已发生局部颈缩，能否仅用总伸长继续算出颈部真实应力？说明需要的测量。",
+          "score": 15,
+          "solution": "工程应力300 MPa，工程应变0.05；瞬时面积100/1.05=95.238095 mm²，真实应力315 MPa，真实应变ln1.05=0.048790164。颈缩后需测最小截面，不能由总伸长唯一恢复。",
+          "explanation": "均匀单轴变形下$AL=A_0L_0$，故$\\sigma_t=\\sigma_e(1+e)$、$\\varepsilon_t=\\ln(1+e)$。单位kN/mm²须换算MPa。颈缩时应变空间不均匀且局部应力状态复杂；最小截面可给平均轴向真实应力F/Amin，若求局部单轴等效流动应力还需相应修正。",
+          "source": {
+            "materialId": "materials-engineering-q3-statement",
+            "blockId": "materials-engineering-q3-statement",
+            "exact": "圆柱试样原标距50 mm、原截面积100 mm²。均匀拉伸阶段，载荷30 kN、伸长2.5 mm；本题近似试样总体积不变，忽略弹性体积变化。（1）求工程应力、工程应变；（2）求瞬时截面积、真实应力和真实应变；（3）若已发生局部颈缩，能否仅用总伸长继续算出颈部真实应力？说明需要的测量。"
+          },
+          "chapter": "拉伸试验的工程量与真实量",
+          "tags": [
+            "材料科学与工程基础",
+            "拉伸试验的工程量与真实量",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "拉伸试验的工程量与真实量"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-engineering-scope",
+                "blockId": "materials-engineering-scope",
+                "exact": "Binary Phase Diagrams: Limited Solubility"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "工程应力应变及单位正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "materials-engineering-q3-statement",
+                    "blockId": "materials-engineering-q3-statement",
+                    "exact": "圆柱试样原标距50 mm、原截面积100 mm²。均匀拉伸阶段，载荷30 kN、伸长2.5 mm；本题近似试样总体积不变，忽略弹性体积变化。（1）求工程应力、工程应变；（2）求瞬时截面积、真实应力和真实应变；（3）若已发生局部颈缩，能否仅用总伸长继续算出颈部真实应力？说明需要的测量。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "体积关系与真实量正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "均匀变形适用条件和颈缩测量正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q3 volume invariance",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q3 volume invariance\", \"actual\": 5000.0, \"expected\": 5000, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q3 load recovery",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q3 load recovery\", \"actual\": 30000.0, \"expected\": 30000, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "大板有穿透中心裂纹，总裂纹长2a=4.0 mm，远场拉应力100 MPa；几何因子Y=1.0，平面应变断裂韧度KIC=30 MPa√m，采用$K_I=Y\\sigma\\sqrt{\\pi a}$。（1）计算当前KI并判断在题给线弹性断裂模型下是否失稳；（2）求同一应力下临界半裂纹长；（3）若只要求KI≤KIC/1.5，求允许应力；（4）为何仍不能据此声称任意小试样都满足平面应变条件？",
+          "score": 15,
+          "solution": "当前$K_I=7.926655$ MPa√m，小于30；临界半长$a_c=(30/100)^2/\\pi=0.028647890$ m=28.647890 mm；允许应力$252.313252$ MPa。",
+          "explanation": "公式中a是半裂纹长，必须将2 mm换成0.002 m。临界值由KI=KIC解出；设计限值用KIC/1.5代入。断裂判据之外，还要检查屈服、小范围屈服、厚度和几何适用性；题未给屈服强度与厚度，不能确认平面应变试样条件或忽略净截面屈服。",
+          "source": {
+            "materialId": "materials-engineering-q4-statement",
+            "blockId": "materials-engineering-q4-statement",
+            "exact": "大板有穿透中心裂纹，总裂纹长2a=4.0 mm，远场拉应力100 MPa；几何因子Y=1.0，平面应变断裂韧度KIC=30 MPa√m，采用$K_I=Y\\sigma\\sqrt{\\pi a}$。（1）计算当前KI并判断在题给线弹性断裂模型下是否失稳；（2）求同一应力下临界半裂纹长；（3）若只要求KI≤KIC/1.5，求允许应力；（4）为何仍不能据此声称任意小试样都满足平面应变条件？"
+          },
+          "chapter": "裂纹、断裂韧度与尺寸效应",
+          "tags": [
+            "材料科学与工程基础",
+            "裂纹、断裂韧度与尺寸效应",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "裂纹、断裂韧度与尺寸效应"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-engineering-scope",
+                "blockId": "materials-engineering-scope",
+                "exact": "Binary Phase Diagrams: Limited Solubility"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "半长及单位使用正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "materials-engineering-q4-statement",
+                    "blockId": "materials-engineering-q4-statement",
+                    "exact": "大板有穿透中心裂纹，总裂纹长2a=4.0 mm，远场拉应力100 MPa；几何因子Y=1.0，平面应变断裂韧度KIC=30 MPa√m，采用$K_I=Y\\sigma\\sqrt{\\pi a}$。（1）计算当前KI并判断在题给线弹性断裂模型下是否失稳；（2）求同一应力下临界半裂纹长；（3）若只要求KI≤KIC/1.5，求允许应力；（4）为何仍不能据此声称任意小试样都满足平面应变条件？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "当前与临界计算正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "安全要求下应力正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "线弹性/厚度条件边界清楚",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q4 critical condition",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q4 critical condition\", \"actual\": 30.0, \"expected\": 30, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q4 allowable condition",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q4 allowable condition\", \"actual\": 20.0, \"expected\": 20, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "材料屈服强度满足$\\sigma_y=\\sigma_0+kd^{-1/2}$，d以mm计。两次试验：d=0.040 mm时σy=200 MPa；d=0.010 mm时σy=300 MPa。（1）辨识σ0、k及单位；（2）预测d=0.025 mm时强度；（3）若要求σy≥350 MPa，求模型允许的最大d；（4）解释不能将关系任意外推到零晶粒尺寸。",
+          "score": 20,
+          "solution": "σ0=100 MPa，k=20 MPa√mm；d=0.025 mm时226.491106 MPa。强度至少350要求d≤0.0064 mm。",
+          "explanation": "将两个点按横坐标d⁻¹ᐟ²求斜率和截距。350−100≤20/√d，所有量为正，整理得√d≤0.08。模型是特定尺度和材料状态下的经验关系；纳米尺度机制、晶界行为和工艺状态可变化，d→0的无限强度没有物理保证。若改d单位，k数值须同步变换。",
+          "source": {
+            "materialId": "materials-engineering-q5-statement",
+            "blockId": "materials-engineering-q5-statement",
+            "exact": "材料屈服强度满足$\\sigma_y=\\sigma_0+kd^{-1/2}$，d以mm计。两次试验：d=0.040 mm时σy=200 MPa；d=0.010 mm时σy=300 MPa。（1）辨识σ0、k及单位；（2）预测d=0.025 mm时强度；（3）若要求σy≥350 MPa，求模型允许的最大d；（4）解释不能将关系任意外推到零晶粒尺寸。"
+          },
+          "chapter": "晶粒细化与Hall–Petch数据辨识",
+          "tags": [
+            "材料科学与工程基础",
+            "晶粒细化与Hall–Petch数据辨识",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "晶粒细化与Hall–Petch数据辨识"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-engineering-scope",
+                "blockId": "materials-engineering-scope",
+                "exact": "Binary Phase Diagrams: Limited Solubility"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "两点辨识与参数单位正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "materials-engineering-q5-statement",
+                    "blockId": "materials-engineering-q5-statement",
+                    "exact": "材料屈服强度满足$\\sigma_y=\\sigma_0+kd^{-1/2}$，d以mm计。两次试验：d=0.040 mm时σy=200 MPa；d=0.010 mm时σy=300 MPa。（1）辨识σ0、k及单位；（2）预测d=0.025 mm时强度；（3）若要求σy≥350 MPa，求模型允许的最大d；（4）解释不能将关系任意外推到零晶粒尺寸。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "第三尺寸预测正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "不等式方向及最大尺寸正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "外推与单位变换说明正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q5 two-point reconstruction",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q5 two-point reconstruction\", \"actual\": [200.0, 300.0], \"expected\": [200, 300], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q5 target size",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q5 target size\", \"actual\": 350.0, \"expected\": 350, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "连续纤维复合材料纤维体积分数0.60，纤维模量Ef=200 GPa、基体Em=3.0 GPa，界面理想。纤维密度1600、基体1200 kg/m³。（1）按等应变模型求纵向模量；（2）按等应力模型求横向模量估计；（3）求密度和纵向比模量；（4）若设计要求纵向模量≥100 GPa且密度≤1500 kg/m³，该方案是否通过这两个指标？说明这能否替代实际横向强度和界面耐久试验。",
+          "score": 20,
+          "solution": "纵向EL=121.2 GPa；等应力估计ET=1/(0.6/200+0.4/3)=7.334963 GPa；密度1440 kg/m³，比模量84.166667×10⁶ m²/s²。满足两个给定筛选指标。",
+          "explanation": "纵向同应变时应力按体积分数加权；横向等应力理想化按柔度加权，不能把同一个算术平均用于两个方向。密度按体积分数加权。比模量须把GPa换Pa；这两项筛选不含断裂、疲劳、湿热、界面缺陷等，所以不能替代题述强度和耐久验证。等应力模型是理想估计，并非声称任意真实铺层横向性能都精确等于该值。",
+          "source": {
+            "materialId": "materials-engineering-q6-statement",
+            "blockId": "materials-engineering-q6-statement",
+            "exact": "连续纤维复合材料纤维体积分数0.60，纤维模量Ef=200 GPa、基体Em=3.0 GPa，界面理想。纤维密度1600、基体1200 kg/m³。（1）按等应变模型求纵向模量；（2）按等应力模型求横向模量估计；（3）求密度和纵向比模量；（4）若设计要求纵向模量≥100 GPa且密度≤1500 kg/m³，该方案是否通过这两个指标？说明这能否替代实际横向强度和界面耐久试验。"
+          },
+          "chapter": "复合材料上下界与选材判断",
+          "tags": [
+            "材料科学与工程基础",
+            "复合材料上下界与选材判断",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "复合材料上下界与选材判断"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-engineering-scope",
+                "blockId": "materials-engineering-scope",
+                "exact": "Binary Phase Diagrams: Limited Solubility"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "两模型推导及方向区分正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "materials-engineering-q6-statement",
+                    "blockId": "materials-engineering-q6-statement",
+                    "exact": "连续纤维复合材料纤维体积分数0.60，纤维模量Ef=200 GPa、基体Em=3.0 GPa，界面理想。纤维密度1600、基体1200 kg/m³。（1）按等应变模型求纵向模量；（2）按等应力模型求横向模量估计；（3）求密度和纵向比模量；（4）若设计要求纵向模量≥100 GPa且密度≤1500 kg/m³，该方案是否通过这两个指标？说明这能否替代实际横向强度和界面耐久试验。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "模量/密度和比模量正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "两个阈值判断正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "性能筛选与验证边界清楚",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q6 longitudinal stress averaging",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q6 longitudinal stress averaging\", \"actual\": 121.2, \"expected\": 121.2, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q6 transverse compliance",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q6 transverse compliance\", \"actual\": 0.13633333333333333, \"expected\": 0.13633333333333333, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q6 density",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q6 density\", \"actual\": 1440.0, \"expected\": 1440, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "materials-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "materials-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "materials-engineering-q1",
+        "knowledge": "两相区杠杆定律与成分守恒",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "materials-engineering-q2",
+        "knowledge": "扩散时间尺度与误差函数解",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "materials-engineering-q3",
+        "knowledge": "拉伸试验的工程量与真实量",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "materials-engineering-q4",
+        "knowledge": "裂纹、断裂韧度与尺寸效应",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "materials-engineering-q5",
+        "knowledge": "晶粒细化与Hall–Petch数据辨识",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "materials-engineering-q6",
+        "knowledge": "复合材料上下界与选材判断",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "materials-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "materials-engineering-course-blueprint",
+      "name": "材料科学与工程基础课程考试",
+      "subject": "材料科学与工程基础",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "materials-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

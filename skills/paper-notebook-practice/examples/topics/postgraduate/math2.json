@@ -1,0 +1,2234 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "postgraduate-math2-01",
+  "notebookId": "postgraduate-math2",
+  "notebookRevision": 1,
+  "title": "硕士研究生入学考试 数学（二）",
+  "subject": "数学（二）",
+  "level": "考研",
+  "durationMinutes": 180,
+  "totalScore": 150,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "sealed": true
+  },
+  "presentation": {
+    "titleLines": [
+      "硕士研究生入学考试",
+      "数学（二）"
+    ],
+    "candidateFields": [
+      "姓名",
+      "准考证号",
+      "报考单位"
+    ],
+    "notices": [
+      "请在答题卡规定区域作答，写在试题上的答案无效。",
+      "选择题每题只有一个正确选项；多项选择题按题目说明作答。"
+    ],
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "数学（二）",
+      "rule": true
+    },
+    "footerTemplate": "数学（二）　第 {page} 页",
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "university",
+      "candidateDigits": 15
+    },
+    "questionScores": "show",
+    "sectionDetails": true,
+    "projectMark": false
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "authoring": {
+    "routeId": "postgrad-math-2",
+    "examName": "数学（二）",
+    "requireVerification": true
+  },
+  "materials": [
+    {
+      "id": "calculus",
+      "title": "微积分知识核对（作者概述）",
+      "kind": "knowledge",
+      "text": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。",
+      "blocks": [
+        {
+          "id": "calculus-block",
+          "title": "微积分知识核对（作者概述）",
+          "text": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://openstax.org/books/calculus-volume-3/pages/5-3-double-integrals-in-polar-coordinates",
+        "publisher": "OpenStax"
+      },
+      "url": "https://openstax.org/books/calculus-volume-3/pages/5-3-double-integrals-in-polar-coordinates",
+      "sha256": "9c22146e8fbc1fd4b16c4f978ffbebadc449c2a267127f61381e731f1d323ac2"
+    },
+    {
+      "id": "linear-algebra",
+      "title": "线性代数知识核对（作者概述）",
+      "kind": "knowledge",
+      "text": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。",
+      "blocks": [
+        {
+          "id": "linear-algebra-block",
+          "title": "线性代数知识核对（作者概述）",
+          "text": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/readings/",
+        "publisher": "MIT OCW / Gilbert Strang"
+      },
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/pages/readings/",
+      "sha256": "480dc2b56e0cfca28fb95d5ba0166a25036edfbe99873874eec741cc8f69ebe5"
+    },
+    {
+      "id": "postgraduate-math2-01-q1-source",
+      "title": "原创命题记录 1",
+      "kind": "question-bank",
+      "text": "$\\lim_{x\\to0}(1+2x)^{1/x}$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q1-source-block",
+          "title": "原创命题记录 1",
+          "text": "$\\lim_{x\\to0}(1+2x)^{1/x}$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ec7bb92628486e9dd7d757b01b919824d9dbf6ae65e0544917f81211a4d9ca21"
+    },
+    {
+      "id": "postgraduate-math2-01-q2-source",
+      "title": "原创命题记录 2",
+      "kind": "question-bank",
+      "text": "函数 $f(x)=|x|^3$ 在0处",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q2-source-block",
+          "title": "原创命题记录 2",
+          "text": "函数 $f(x)=|x|^3$ 在0处"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7007379317b3154ee60a56715fbd1357567993c1568a71a88fd4c56f2e47a081"
+    },
+    {
+      "id": "postgraduate-math2-01-q3-source",
+      "title": "原创命题记录 3",
+      "kind": "question-bank",
+      "text": "$\\int_0^1\\frac{2x}{1+x^2}dx$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q3-source-block",
+          "title": "原创命题记录 3",
+          "text": "$\\int_0^1\\frac{2x}{1+x^2}dx$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f793a68b21423abf14c025013a7144445b5a386154df49fac67b7157258305ea"
+    },
+    {
+      "id": "postgraduate-math2-01-q4-source",
+      "title": "原创命题记录 4",
+      "kind": "question-bank",
+      "text": "由 $x^2+y^2=1$ 确定且 $y>0$ 的函数，在 $x=0$ 处二阶导数为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q4-source-block",
+          "title": "原创命题记录 4",
+          "text": "由 $x^2+y^2=1$ 确定且 $y>0$ 的函数，在 $x=0$ 处二阶导数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0c473ecec67f46bbfaca6b71c7387a35518d71d071e91422bfd96800bd00d755"
+    },
+    {
+      "id": "postgraduate-math2-01-q5-source",
+      "title": "原创命题记录 5",
+      "kind": "question-bank",
+      "text": "$f(x,y)=x^2+2y^2-2x-4y$ 的最小值为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q5-source-block",
+          "title": "原创命题记录 5",
+          "text": "$f(x,y)=x^2+2y^2-2x-4y$ 的最小值为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "1832c9c64cf8308cff855135e6f9e203024017ad0cf974b00cde166e978d6a70"
+    },
+    {
+      "id": "postgraduate-math2-01-q6-source",
+      "title": "原创命题记录 6",
+      "kind": "question-bank",
+      "text": "$\\int_0^1\\int_0^x y\\,dydx$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q6-source-block",
+          "title": "原创命题记录 6",
+          "text": "$\\int_0^1\\int_0^x y\\,dydx$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "d9a397949a245b2e3b08a66966ba9a234d1cd1dd343a42bef86dd844e51f1db7"
+    },
+    {
+      "id": "postgraduate-math2-01-q7-source",
+      "title": "原创命题记录 7",
+      "kind": "question-bank",
+      "text": "$y''-y=0$ 的满足 $y(0)=0,y'(0)=2$ 的解为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q7-source-block",
+          "title": "原创命题记录 7",
+          "text": "$y''-y=0$ 的满足 $y(0)=0,y'(0)=2$ 的解为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "17721f10deb7cfba216937967f45c5625cb07784feeb9f0a0dfbd473ef6f1dd6"
+    },
+    {
+      "id": "postgraduate-math2-01-q8-source",
+      "title": "原创命题记录 8",
+      "kind": "question-bank",
+      "text": "曲线 $y=x^2$（$0\\le x\\le1$）与x轴围成图形绕x轴旋转的体积为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q8-source-block",
+          "title": "原创命题记录 8",
+          "text": "曲线 $y=x^2$（$0\\le x\\le1$）与x轴围成图形绕x轴旋转的体积为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f0add45b4a42e6f45858e2eb8bd30967e3cd4a3389edfc349952ade8a667016a"
+    },
+    {
+      "id": "postgraduate-math2-01-q9-source",
+      "title": "原创命题记录 9",
+      "kind": "question-bank",
+      "text": "若 $A$ 为三阶矩阵且 $r(A)=2$，则齐次方程组 $Ax=0$ 的基础解系含",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q9-source-block",
+          "title": "原创命题记录 9",
+          "text": "若 $A$ 为三阶矩阵且 $r(A)=2$，则齐次方程组 $Ax=0$ 的基础解系含"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "6dd91c2bd180cc6ea87736636f49a9c7ec4611056f5a08890f4c14524d9d6f46"
+    },
+    {
+      "id": "postgraduate-math2-01-q10-source",
+      "title": "原创命题记录 10",
+      "kind": "question-bank",
+      "text": "实对称矩阵 $A=\\begin{pmatrix}a&1\\\\1&a\\end{pmatrix}$ 正定的充要条件为",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q10-source-block",
+          "title": "原创命题记录 10",
+          "text": "实对称矩阵 $A=\\begin{pmatrix}a&1\\\\1&a\\end{pmatrix}$ 正定的充要条件为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ae08a2666226502ec6c41c7c5825229564062064e2a842a5e6d0569af403e287"
+    },
+    {
+      "id": "postgraduate-math2-01-q11-source",
+      "title": "原创命题记录 11",
+      "kind": "question-bank",
+      "text": "$\\lim_{x\\to0}\\dfrac{\\tan x-x}{x^3}=$ ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q11-source-block",
+          "title": "原创命题记录 11",
+          "text": "$\\lim_{x\\to0}\\dfrac{\\tan x-x}{x^3}=$ ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "db808142be56f6e61eb5e49597222c1724bf660f6130059be7d6ca593f802757"
+    },
+    {
+      "id": "postgraduate-math2-01-q12-source",
+      "title": "原创命题记录 12",
+      "kind": "question-bank",
+      "text": "$\\int_0^1x e^{x^2}\\,dx=$ ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q12-source-block",
+          "title": "原创命题记录 12",
+          "text": "$\\int_0^1x e^{x^2}\\,dx=$ ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "21bbf5bb8e8b0fdbd07607bec2bcf46289f1d4bf255b0c70439e405df4b4e7fa"
+    },
+    {
+      "id": "postgraduate-math2-01-q13-source",
+      "title": "原创命题记录 13",
+      "kind": "question-bank",
+      "text": "$z=e^{xy}$ 在 $(1,0)$ 处的混合偏导 $z_{xy}$ 为 ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q13-source-block",
+          "title": "原创命题记录 13",
+          "text": "$z=e^{xy}$ 在 $(1,0)$ 处的混合偏导 $z_{xy}$ 为 ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ef15647a3c0945da2831afaa26f9e3a90adbc9309d18ecbad74838f520998ed8"
+    },
+    {
+      "id": "postgraduate-math2-01-q14-source",
+      "title": "原创命题记录 14",
+      "kind": "question-bank",
+      "text": "微分方程 $y'=y/x$ 在 $x>0$ 上满足 $y(1)=2$ 的解为 ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q14-source-block",
+          "title": "原创命题记录 14",
+          "text": "微分方程 $y'=y/x$ 在 $x>0$ 上满足 $y(1)=2$ 的解为 ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8a54ce85417162634a787b096dbf07133b54683373cf3c6cdc19d88589c3f5c5"
+    },
+    {
+      "id": "postgraduate-math2-01-q15-source",
+      "title": "原创命题记录 15",
+      "kind": "question-bank",
+      "text": "$A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的逆矩阵第一行是 ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q15-source-block",
+          "title": "原创命题记录 15",
+          "text": "$A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的逆矩阵第一行是 ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "6bebc9b29612af7ded89f5d688f090fe9825ed0c7e45dc7c94fcbca7abc507d4"
+    },
+    {
+      "id": "postgraduate-math2-01-q16-source",
+      "title": "原创命题记录 16",
+      "kind": "question-bank",
+      "text": "若三阶矩阵A的特征值为1、2、3，则 $\\det(A+I)=$ ______。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q16-source-block",
+          "title": "原创命题记录 16",
+          "text": "若三阶矩阵A的特征值为1、2、3，则 $\\det(A+I)=$ ______。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "9f34933cc6680d3198489fd8809dc661ccbb6bfd17c33bac3a036d0a4e47b444"
+    },
+    {
+      "id": "postgraduate-math2-01-q17-source",
+      "title": "原创命题记录 17",
+      "kind": "question-bank",
+      "text": "求 $\\int_0^1x\\arctan x\\,dx$。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q17-source-block",
+          "title": "原创命题记录 17",
+          "text": "求 $\\int_0^1x\\arctan x\\,dx$。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0d75e3d62811e4e4eecbe933d9271085525f6b86c80ac9b2eadfea2de60f55c1"
+    },
+    {
+      "id": "postgraduate-math2-01-q18-source",
+      "title": "原创命题记录 18",
+      "kind": "question-bank",
+      "text": "设 $f(x)=x-\\ln(1+x)$（$x\\ge0$）。（1）证明 $f(x)\\ge0$；（2）证明 $\\ln(1+x)\\ge x-x^2/2$；（3）由此估计 $\\ln1.1$ 的上下界。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q18-source-block",
+          "title": "原创命题记录 18",
+          "text": "设 $f(x)=x-\\ln(1+x)$（$x\\ge0$）。（1）证明 $f(x)\\ge0$；（2）证明 $\\ln(1+x)\\ge x-x^2/2$；（3）由此估计 $\\ln1.1$ 的上下界。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0684a03d940f35d7c92ef2fad385b074b337550747cb083d63e4e578debaf9b5"
+    },
+    {
+      "id": "postgraduate-math2-01-q19-source",
+      "title": "原创命题记录 19",
+      "kind": "question-bank",
+      "text": "由曲线 $y=x^2$ 与 $y=2x$ 围成区域D。（1）求面积；（2）求该均匀薄片的质心坐标。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q19-source-block",
+          "title": "原创命题记录 19",
+          "text": "由曲线 $y=x^2$ 与 $y=2x$ 围成区域D。（1）求面积；（2）求该均匀薄片的质心坐标。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "93be525fff0b2bc2c2646059e499c66f0a9eabae544f22c7faaa2521f82319f3"
+    },
+    {
+      "id": "postgraduate-math2-01-q20-source",
+      "title": "原创命题记录 20",
+      "kind": "question-bank",
+      "text": "求初值问题 $y''-2y'+y=e^x$，$y(0)=1,y'(0)=0$ 的解。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q20-source-block",
+          "title": "原创命题记录 20",
+          "text": "求初值问题 $y''-2y'+y=e^x$，$y(0)=1,y'(0)=0$ 的解。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4304452536fff0f190f4886301a99554bd74cce438fbe0a747e128846922bde3"
+    },
+    {
+      "id": "postgraduate-math2-01-q21-source",
+      "title": "原创命题记录 21",
+      "kind": "question-bank",
+      "text": "无盖圆柱容器体积为 $16\\pi$，底面和侧面每单位面积造价相同。（1）以半径r建立表面积函数；（2）求使造价最小的r和高h；（3）说明极小值是全局最小值。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q21-source-block",
+          "title": "原创命题记录 21",
+          "text": "无盖圆柱容器体积为 $16\\pi$，底面和侧面每单位面积造价相同。（1）以半径r建立表面积函数；（2）求使造价最小的r和高h；（3）说明极小值是全局最小值。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e9cc544a656c60a24b1966939aec4021072322f5cc01bc214a071330367057bd"
+    },
+    {
+      "id": "postgraduate-math2-01-q22-source",
+      "title": "原创命题记录 22",
+      "kind": "question-bank",
+      "text": "讨论方程组 $x+y+z=1$，$x+ay+z=2$，$x+y+az=2$ 随实参数a的解。对可唯一求解情形写出解；对其余情形说明秩与相容性。",
+      "blocks": [
+        {
+          "id": "postgraduate-math2-01-q22-source-block",
+          "title": "原创命题记录 22",
+          "text": "讨论方程组 $x+y+z=1$，$x+ay+z=2$，$x+y+az=2$ 随实参数a的解。对可唯一求解情形写出解；对其余情形说明秩与相容性。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f372dc6c2260cacc8f9ff43d95b00e0914df7fafb9a21562f524f1d06c179e81"
+    }
+  ],
+  "sections": [
+    {
+      "id": "choice",
+      "title": "一、选择题",
+      "examPartId": "choice",
+      "instructions": "第1—10题，每题5分。每题只有一个正确选项。",
+      "score": 50,
+      "questions": [
+        {
+          "id": "postgraduate-math2-01-q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "$\\lim_{x\\to0}(1+2x)^{1/x}$ 为",
+          "score": 5,
+          "solution": "C",
+          "explanation": "取对数得 $\\ln(1+2x)/x\\to2$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q1-source",
+            "blockId": "postgraduate-math2-01-q1-source-block",
+            "title": "原创命题记录 1",
+            "exact": "$\\lim_{x\\to0}(1+2x)^{1/x}$ 为"
+          },
+          "chapter": "高等数学·极限",
+          "tags": [
+            "高等数学·极限"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·极限"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；取对数得 $\\ln(1+2x)/x\\to2$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "$e$"
+            },
+            {
+              "id": "C",
+              "text": "$e^2$"
+            },
+            {
+              "id": "D",
+              "text": "2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "函数 $f(x)=|x|^3$ 在0处",
+          "score": 5,
+          "solution": "C",
+          "explanation": "$f'(x)=3x|x|$，$f''(x)=6|x|$（含0），其在0处不可导。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q2-source",
+            "blockId": "postgraduate-math2-01-q2-source-block",
+            "title": "原创命题记录 2",
+            "exact": "函数 $f(x)=|x|^3$ 在0处"
+          },
+          "chapter": "高等数学·可导性",
+          "tags": [
+            "高等数学·可导性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·可导性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；$f'(x)=3x|x|$，$f''(x)=6|x|$（含0），其在0处不可导。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "不可导"
+            },
+            {
+              "id": "B",
+              "text": "一阶可导但二阶不可导"
+            },
+            {
+              "id": "C",
+              "text": "二阶可导且二阶导数为0"
+            },
+            {
+              "id": "D",
+              "text": "三阶可导"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "$\\int_0^1\\frac{2x}{1+x^2}dx$ 为",
+          "score": 5,
+          "solution": "A",
+          "explanation": "原函数为 $\\ln(1+x^2)$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q3-source",
+            "blockId": "postgraduate-math2-01-q3-source-block",
+            "title": "原创命题记录 3",
+            "exact": "$\\int_0^1\\frac{2x}{1+x^2}dx$ 为"
+          },
+          "chapter": "高等数学·积分",
+          "tags": [
+            "高等数学·积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；原函数为 $\\ln(1+x^2)$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\ln2$"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "$2\\ln2$"
+            },
+            {
+              "id": "D",
+              "text": "$\\pi/4$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "由 $x^2+y^2=1$ 确定且 $y>0$ 的函数，在 $x=0$ 处二阶导数为",
+          "score": 5,
+          "solution": "C",
+          "explanation": "$y=\\sqrt{1-x^2}$，$y''(0)=-1$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q4-source",
+            "blockId": "postgraduate-math2-01-q4-source-block",
+            "title": "原创命题记录 4",
+            "exact": "由 $x^2+y^2=1$ 确定且 $y>0$ 的函数，在 $x=0$ 处二阶导数为"
+          },
+          "chapter": "高等数学·隐函数",
+          "tags": [
+            "高等数学·隐函数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·隐函数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；$y=\\sqrt{1-x^2}$，$y''(0)=-1$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "-1"
+            },
+            {
+              "id": "D",
+              "text": "2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q5",
+          "number": 5,
+          "type": "choice",
+          "prompt": "$f(x,y)=x^2+2y^2-2x-4y$ 的最小值为",
+          "score": 5,
+          "solution": "A",
+          "explanation": "配方 $(x-1)^2+2(y-1)^2-3$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q5-source",
+            "blockId": "postgraduate-math2-01-q5-source-block",
+            "title": "原创命题记录 5",
+            "exact": "$f(x,y)=x^2+2y^2-2x-4y$ 的最小值为"
+          },
+          "chapter": "高等数学·多元极值",
+          "tags": [
+            "高等数学·多元极值"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·多元极值"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；配方 $(x-1)^2+2(y-1)^2-3$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "-3"
+            },
+            {
+              "id": "B",
+              "text": "-2"
+            },
+            {
+              "id": "C",
+              "text": "0"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q6",
+          "number": 6,
+          "type": "choice",
+          "prompt": "$\\int_0^1\\int_0^x y\\,dydx$ 为",
+          "score": 5,
+          "solution": "D",
+          "explanation": "内积分为 $x^2/2$，外积分为1/6。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q6-source",
+            "blockId": "postgraduate-math2-01-q6-source-block",
+            "title": "原创命题记录 6",
+            "exact": "$\\int_0^1\\int_0^x y\\,dydx$ 为"
+          },
+          "chapter": "高等数学·二重积分",
+          "tags": [
+            "高等数学·二重积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·二重积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；内积分为 $x^2/2$，外积分为1/6。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/2$"
+            },
+            {
+              "id": "B",
+              "text": "$1/3$"
+            },
+            {
+              "id": "C",
+              "text": "$1/4$"
+            },
+            {
+              "id": "D",
+              "text": "$1/6$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q7",
+          "number": 7,
+          "type": "choice",
+          "prompt": "$y''-y=0$ 的满足 $y(0)=0,y'(0)=2$ 的解为",
+          "score": 5,
+          "solution": "B",
+          "explanation": "通解 $C_1e^x+C_2e^{-x}$，初值得 $C_1=1,C_2=-1$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q7-source",
+            "blockId": "postgraduate-math2-01-q7-source-block",
+            "title": "原创命题记录 7",
+            "exact": "$y''-y=0$ 的满足 $y(0)=0,y'(0)=2$ 的解为"
+          },
+          "chapter": "高等数学·微分方程",
+          "tags": [
+            "高等数学·微分方程"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·微分方程"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；通解 $C_1e^x+C_2e^{-x}$，初值得 $C_1=1,C_2=-1$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$2e^x$"
+            },
+            {
+              "id": "B",
+              "text": "$e^x-e^{-x}$"
+            },
+            {
+              "id": "C",
+              "text": "$e^x+e^{-x}$"
+            },
+            {
+              "id": "D",
+              "text": "$2x$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q8",
+          "number": 8,
+          "type": "choice",
+          "prompt": "曲线 $y=x^2$（$0\\le x\\le1$）与x轴围成图形绕x轴旋转的体积为",
+          "score": 5,
+          "solution": "C",
+          "explanation": "圆盘法 $V=\\pi\\int_0^1(x^2)^2dx=\\pi/5$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q8-source",
+            "blockId": "postgraduate-math2-01-q8-source-block",
+            "title": "原创命题记录 8",
+            "exact": "曲线 $y=x^2$（$0\\le x\\le1$）与x轴围成图形绕x轴旋转的体积为"
+          },
+          "chapter": "高等数学·积分应用",
+          "tags": [
+            "高等数学·积分应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·积分应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；圆盘法 $V=\\pi\\int_0^1(x^2)^2dx=\\pi/5$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\pi/3$"
+            },
+            {
+              "id": "B",
+              "text": "$\\pi/4$"
+            },
+            {
+              "id": "C",
+              "text": "$\\pi/5$"
+            },
+            {
+              "id": "D",
+              "text": "$2\\pi/5$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q9",
+          "number": 9,
+          "type": "choice",
+          "prompt": "若 $A$ 为三阶矩阵且 $r(A)=2$，则齐次方程组 $Ax=0$ 的基础解系含",
+          "score": 5,
+          "solution": "B",
+          "explanation": "零空间维数为3−2=1。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q9-source",
+            "blockId": "postgraduate-math2-01-q9-source-block",
+            "title": "原创命题记录 9",
+            "exact": "若 $A$ 为三阶矩阵且 $r(A)=2$，则齐次方程组 $Ax=0$ 的基础解系含"
+          },
+          "chapter": "线性代数·齐次方程组",
+          "tags": [
+            "线性代数·齐次方程组"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·齐次方程组"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；零空间维数为3−2=1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0个向量"
+            },
+            {
+              "id": "B",
+              "text": "1个向量"
+            },
+            {
+              "id": "C",
+              "text": "2个向量"
+            },
+            {
+              "id": "D",
+              "text": "3个向量"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "实对称矩阵 $A=\\begin{pmatrix}a&1\\\\1&a\\end{pmatrix}$ 正定的充要条件为",
+          "score": 5,
+          "solution": "B",
+          "explanation": "特征值为 $a+1,a-1$，均正当且仅当a>1。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q10-source",
+            "blockId": "postgraduate-math2-01-q10-source-block",
+            "title": "原创命题记录 10",
+            "exact": "实对称矩阵 $A=\\begin{pmatrix}a&1\\\\1&a\\end{pmatrix}$ 正定的充要条件为"
+          },
+          "chapter": "线性代数·正定性",
+          "tags": [
+            "线性代数·正定性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·正定性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项求值或以反例排除；特征值为 $a+1,a-1$，均正当且仅当a>1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$a>0$"
+            },
+            {
+              "id": "B",
+              "text": "$a>1$"
+            },
+            {
+              "id": "C",
+              "text": "$a\\ne1$"
+            },
+            {
+              "id": "D",
+              "text": "$|a|>1$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blank",
+      "title": "二、填空题",
+      "examPartId": "blank",
+      "instructions": "第11—16题，每题5分。",
+      "score": 30,
+      "questions": [
+        {
+          "id": "postgraduate-math2-01-q11",
+          "number": 11,
+          "type": "blank",
+          "prompt": "$\\lim_{x\\to0}\\dfrac{\\tan x-x}{x^3}=$ ______。",
+          "score": 5,
+          "solution": [
+            "1/3"
+          ],
+          "explanation": "$\\tan x=x+x^3/3+o(x^3)$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q11-source",
+            "blockId": "postgraduate-math2-01-q11-source-block",
+            "title": "原创命题记录 11",
+            "exact": "$\\lim_{x\\to0}\\dfrac{\\tan x-x}{x^3}=$ ______。"
+          },
+          "chapter": "高等数学·泰勒展开",
+          "tags": [
+            "高等数学·泰勒展开"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·泰勒展开"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "$\\tan x=x+x^3/3+o(x^3)$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q12",
+          "number": 12,
+          "type": "blank",
+          "prompt": "$\\int_0^1x e^{x^2}\\,dx=$ ______。",
+          "score": 5,
+          "solution": [
+            "$(e-1)/2$"
+          ],
+          "explanation": "令u=x²，得 $(1/2)\\int_0^1e^u du$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q12-source",
+            "blockId": "postgraduate-math2-01-q12-source-block",
+            "title": "原创命题记录 12",
+            "exact": "$\\int_0^1x e^{x^2}\\,dx=$ ______。"
+          },
+          "chapter": "高等数学·定积分",
+          "tags": [
+            "高等数学·定积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·定积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "令u=x²，得 $(1/2)\\int_0^1e^u du$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q13",
+          "number": 13,
+          "type": "blank",
+          "prompt": "$z=e^{xy}$ 在 $(1,0)$ 处的混合偏导 $z_{xy}$ 为 ______。",
+          "score": 5,
+          "solution": [
+            "1"
+          ],
+          "explanation": "$z_{xy}=e^{xy}(1+xy)$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q13-source",
+            "blockId": "postgraduate-math2-01-q13-source-block",
+            "title": "原创命题记录 13",
+            "exact": "$z=e^{xy}$ 在 $(1,0)$ 处的混合偏导 $z_{xy}$ 为 ______。"
+          },
+          "chapter": "高等数学·偏导数",
+          "tags": [
+            "高等数学·偏导数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·偏导数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "$z_{xy}=e^{xy}(1+xy)$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q14",
+          "number": 14,
+          "type": "blank",
+          "prompt": "微分方程 $y'=y/x$ 在 $x>0$ 上满足 $y(1)=2$ 的解为 ______。",
+          "score": 5,
+          "solution": [
+            "$y=2x$"
+          ],
+          "explanation": "分离变量得y=Cx，初值确定C=2。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q14-source",
+            "blockId": "postgraduate-math2-01-q14-source-block",
+            "title": "原创命题记录 14",
+            "exact": "微分方程 $y'=y/x$ 在 $x>0$ 上满足 $y(1)=2$ 的解为 ______。"
+          },
+          "chapter": "高等数学·微分方程",
+          "tags": [
+            "高等数学·微分方程"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·微分方程"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分离变量得y=Cx，初值确定C=2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q15",
+          "number": 15,
+          "type": "blank",
+          "prompt": "$A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的逆矩阵第一行是 ______。",
+          "score": 5,
+          "solution": [
+            "$(-2,1)$"
+          ],
+          "explanation": "$A^{-1}=(-1/2)\\begin{pmatrix}4&-2\\\\-3&1\\end{pmatrix}$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q15-source",
+            "blockId": "postgraduate-math2-01-q15-source-block",
+            "title": "原创命题记录 15",
+            "exact": "$A=\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的逆矩阵第一行是 ______。"
+          },
+          "chapter": "线性代数·逆矩阵",
+          "tags": [
+            "线性代数·逆矩阵"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·逆矩阵"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "$A^{-1}=(-1/2)\\begin{pmatrix}4&-2\\\\-3&1\\end{pmatrix}$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-math2-01-q16",
+          "number": 16,
+          "type": "blank",
+          "prompt": "若三阶矩阵A的特征值为1、2、3，则 $\\det(A+I)=$ ______。",
+          "score": 5,
+          "solution": [
+            "24"
+          ],
+          "explanation": "A+I的特征值为2、3、4，其积为24。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q16-source",
+            "blockId": "postgraduate-math2-01-q16-source-block",
+            "title": "原创命题记录 16",
+            "exact": "若三阶矩阵A的特征值为1、2、3，则 $\\det(A+I)=$ ______。"
+          },
+          "chapter": "线性代数·特征值",
+          "tags": [
+            "线性代数·特征值"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·特征值"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "A+I的特征值为2、3、4，其积为24。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "title": "三、解答题",
+      "examPartId": "response",
+      "instructions": "第17—22题。解答应写出文字说明、证明过程或演算步骤。",
+      "score": 70,
+      "questions": [
+        {
+          "id": "postgraduate-math2-01-q17",
+          "number": 17,
+          "type": "response",
+          "prompt": "求 $\\int_0^1x\\arctan x\\,dx$。",
+          "score": 10,
+          "solution": "$\\pi/4-1/2$。",
+          "explanation": "分部积分得 $[x^2\\arctan x/2]_0^1-(1/2)\\int_0^1x^2/(1+x^2)dx=\\pi/8-1/2+\\pi/8$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q17-source",
+            "blockId": "postgraduate-math2-01-q17-source-block",
+            "title": "原创命题记录 17",
+            "exact": "求 $\\int_0^1x\\arctan x\\,dx$。"
+          },
+          "chapter": "高等数学·分部积分",
+          "tags": [
+            "高等数学·分部积分"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·分部积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "高精度数值积分与符号原函数微分一致。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "选择分部积分并正确边界",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "有理式拆分与积分",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "化简结果",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math2-01-q18",
+          "number": 18,
+          "type": "response",
+          "prompt": "设 $f(x)=x-\\ln(1+x)$（$x\\ge0$）。（1）证明 $f(x)\\ge0$；（2）证明 $\\ln(1+x)\\ge x-x^2/2$；（3）由此估计 $\\ln1.1$ 的上下界。",
+          "score": 12,
+          "solution": "$x-x^2/2\\le\\ln(1+x)\\le x$；故 $0.095\\le\\ln1.1\\le0.1$。",
+          "explanation": "$f'(x)=x/(1+x)\\ge0$且f(0)=0；令 $g(x)=\\ln(1+x)-x+x^2/2$，$g'(x)=x^2/(1+x)\\ge0$且g(0)=0。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q18-source",
+            "blockId": "postgraduate-math2-01-q18-source-block",
+            "title": "原创命题记录 18",
+            "exact": "设 $f(x)=x-\\ln(1+x)$（$x\\ge0$）。（1）证明 $f(x)\\ge0$；（2）证明 $\\ln(1+x)\\ge x-x^2/2$；（3）由此估计 $\\ln1.1$ 的上下界。"
+          },
+          "chapter": "高等数学·中值定理与不等式",
+          "tags": [
+            "高等数学·中值定理与不等式"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·中值定理与不等式"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "对导数代数化简并检验端点等号。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "第一辅助函数、导数、初值",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "第二辅助函数、导数、初值",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "代x=0.1得上下界",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math2-01-q19",
+          "number": 19,
+          "type": "response",
+          "prompt": "由曲线 $y=x^2$ 与 $y=2x$ 围成区域D。（1）求面积；（2）求该均匀薄片的质心坐标。",
+          "score": 12,
+          "solution": "面积 $4/3$；质心 $(1,8/5)$。",
+          "explanation": "$0\\le x\\le2$。$A=\\int_0^2(2x-x^2)dx=4/3$；对y轴静矩为 $\\int_0^2x(2x-x^2)dx=4/3$；对x轴静矩为 $(1/2)\\int_0^2(4x^2-x^4)dx=32/15$。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q19-source",
+            "blockId": "postgraduate-math2-01-q19-source-block",
+            "title": "原创命题记录 19",
+            "exact": "由曲线 $y=x^2$ 与 $y=2x$ 围成区域D。（1）求面积；（2）求该均匀薄片的质心坐标。"
+          },
+          "chapter": "高等数学·二重积分应用",
+          "tags": [
+            "高等数学·二重积分应用"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·二重积分应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立二重积分计算一阶矩；质心在区域凸包内。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "交点及区域",
+                "points": 2
+              },
+              {
+                "id": "r2",
+                "description": "面积",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "对y轴静矩",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "对x轴静矩",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "归一化质心",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math2-01-q20",
+          "number": 20,
+          "type": "response",
+          "prompt": "求初值问题 $y''-2y'+y=e^x$，$y(0)=1,y'(0)=0$ 的解。",
+          "score": 12,
+          "solution": "$y=e^x(1-x+x^2/2)$。",
+          "explanation": "令y=e^xu，则左侧=e^xu''，故u''=1，u=x²/2+C_1x+C_2；由初值得C_2=1,C_1=-1。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q20-source",
+            "blockId": "postgraduate-math2-01-q20-source-block",
+            "title": "原创命题记录 20",
+            "exact": "求初值问题 $y''-2y'+y=e^x$，$y(0)=1,y'(0)=0$ 的解。"
+          },
+          "chapter": "高等数学·二阶常系数方程",
+          "tags": [
+            "高等数学·二阶常系数方程"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·二阶常系数方程"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "符号微分验证方程左右相等且两初值成立。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "正确处理重复特征根或代换",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "求通解",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "初值确定常数",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "代回核验",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math2-01-q21",
+          "number": 21,
+          "type": "response",
+          "prompt": "无盖圆柱容器体积为 $16\\pi$，底面和侧面每单位面积造价相同。（1）以半径r建立表面积函数；（2）求使造价最小的r和高h；（3）说明极小值是全局最小值。",
+          "score": 12,
+          "solution": "$S(r)=\\pi r^2+32\\pi/r$，$r=h=\\sqrt[3]{16}$。",
+          "explanation": "约束 $\\pi r^2h=16\\pi$ 给h=16/r²；$S'=2\\pi r-32\\pi/r²$，得r³=16。$S''=2\\pi+64\\pi/r³>0$，且两端S趋无穷。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q21-source",
+            "blockId": "postgraduate-math2-01-q21-source-block",
+            "title": "原创命题记录 21",
+            "exact": "无盖圆柱容器体积为 $16\\pi$，底面和侧面每单位面积造价相同。（1）以半径r建立表面积函数；（2）求使造价最小的r和高h；（3）说明极小值是全局最小值。"
+          },
+          "chapter": "高等数学·优化建模",
+          "tags": [
+            "高等数学·优化建模"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "高等数学·优化建模"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "符号求导并核对单位：面积随长度平方变化。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "calculus",
+                "blockId": "calculus-block",
+                "title": "微积分知识核对（作者概述）",
+                "exact": "极限与泰勒展开、微分与积分、微分方程及多元微积分均须写明定义域与定理条件；变量代换包含雅可比因子；优化须比较边界与驻点。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "约束与正定义域",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "目标函数",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "求驻点与尺寸",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "凸性或端点论证全局性",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-math2-01-q22",
+          "number": 22,
+          "type": "response",
+          "prompt": "讨论方程组 $x+y+z=1$，$x+ay+z=2$，$x+y+az=2$ 随实参数a的解。对可唯一求解情形写出解；对其余情形说明秩与相容性。",
+          "score": 12,
+          "solution": "a≠1时唯一解：$y=z=1/(a-1)$，$x=(a-3)/(a-1)$；a=1时无解，系数秩1、增广秩2。",
+          "explanation": "第二、三式分别减第一式得到 $(a-1)y=1,(a-1)z=1$。分a=1与a≠1；不得除以可能为零的参数。",
+          "source": {
+            "materialId": "postgraduate-math2-01-q22-source",
+            "blockId": "postgraduate-math2-01-q22-source-block",
+            "title": "原创命题记录 22",
+            "exact": "讨论方程组 $x+y+z=1$，$x+ay+z=2$，$x+y+az=2$ 随实参数a的解。对可唯一求解情形写出解；对其余情形说明秩与相容性。"
+          },
+          "chapter": "线性代数·含参方程组",
+          "tags": [
+            "线性代数·含参方程组"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·含参方程组"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "符号代回一般解；a=1单独计算系数与增广矩阵秩。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "linear-algebra",
+                "blockId": "linear-algebra-block",
+                "title": "线性代数知识核对（作者概述）",
+                "exact": "用秩与消元判断方程解；实对称矩阵可正交对角化；特征值、特征向量与二次型的推断须检验重根及几何重数。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "消元并识别临界参数",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "一般情形解",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "奇异情形及秩判据",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        }
+      ]
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "math2-v7",
+    "sourceQuestionIds": [
+      "postgraduate-math2-01-q1",
+      "postgraduate-math2-01-q2",
+      "postgraduate-math2-01-q3",
+      "postgraduate-math2-01-q4",
+      "postgraduate-math2-01-q5",
+      "postgraduate-math2-01-q6",
+      "postgraduate-math2-01-q7",
+      "postgraduate-math2-01-q8",
+      "postgraduate-math2-01-q9",
+      "postgraduate-math2-01-q10",
+      "postgraduate-math2-01-q11",
+      "postgraduate-math2-01-q12",
+      "postgraduate-math2-01-q13",
+      "postgraduate-math2-01-q14",
+      "postgraduate-math2-01-q15",
+      "postgraduate-math2-01-q16",
+      "postgraduate-math2-01-q17",
+      "postgraduate-math2-01-q18",
+      "postgraduate-math2-01-q19",
+      "postgraduate-math2-01-q20",
+      "postgraduate-math2-01-q21",
+      "postgraduate-math2-01-q22"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创完整练习基准，采用所列考试结构；不是任何年份的官方原卷。题文、参考答案和评分要点为项目原创，MIT。外部资料仅作结构与知识核对，权利分别保留。"
+  },
+  "exam": {
+    "specificationId": "postgraduate-math2-blueprint",
+    "scope": "full",
+    "scoreScale": "卷面分",
+    "specification": {
+      "id": "postgraduate-math2-blueprint",
+      "name": "数学（二）完整练习结构",
+      "subject": "数学（二）",
+      "level": "考研",
+      "durationMinutes": 180,
+      "totalScore": 150,
+      "scoreScale": "卷面分",
+      "source": {
+        "kind": "published-syllabus-summary",
+        "title": "考研数学结构核对（2027，第三方大纲解读）",
+        "url": "https://www.qihangai.com/zx/dagang/188.html",
+        "accessedAt": "2026-11-15",
+        "notes": "22题、150分、180分钟；本卷为原创题文，不冒称官方原卷。"
+      },
+      "sections": [
+        {
+          "id": "choice",
+          "title": "选择题",
+          "count": 10,
+          "questionType": "choice",
+          "totalScore": 50,
+          "pointsPerQuestion": 5,
+          "displayStart": 1
+        },
+        {
+          "id": "blank",
+          "title": "填空题",
+          "count": 6,
+          "questionType": "blank",
+          "totalScore": 30,
+          "pointsPerQuestion": 5,
+          "displayStart": 11
+        },
+        {
+          "id": "response",
+          "title": "解答题",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 70,
+          "questionScores": [
+            10,
+            12,
+            12,
+            12,
+            12,
+            12
+          ],
+          "displayStart": 17
+        }
+      ]
+    }
+  }
+}

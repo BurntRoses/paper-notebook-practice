@@ -1,0 +1,911 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "mining-engineering-course-01",
+  "notebookId": "mining-engineering-source",
+  "notebookRevision": 1,
+  "title": "采矿工程系统与计算课程考试",
+  "subject": "采矿工程系统与计算",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "采矿工程系统与计算课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "mining-engineering-scope",
+      "title": "中国矿业大学 矿井通风与安全课程介绍",
+      "kind": "reference",
+      "url": "https://sol.cumt.edu.cn/_s174/7102/list.psp",
+      "text": "通风网络及矿井通风网络图；简单通风网络及其性质；风量分配及复杂通风网络解算；局部风量调节；矿井总风量调节。",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "中国矿业大学",
+        "sourceType": "institution",
+        "version": "课程页，访问于2026-11-16",
+        "accessedAt": "2026-11-16",
+        "url": "https://sol.cumt.edu.cn/_s174/7102/list.psp"
+      }
+    },
+    {
+      "id": "mining-engineering-q1-statement",
+      "title": "采矿工程系统与计算第1题命题原稿",
+      "kind": "question-bank",
+      "text": "仅作课程模型：均匀矿体长500 m、宽300 m、厚3 m，原矿密度1.4 t/m³；回采率定义为采出矿石/地质矿石量，为85%；贫化率定义为混入废石/采出原矿总量，为10%，废石不含有效热值，原矿热值26 MJ/kg。（1）求地质量、采出矿石、混入废石和采出原矿总量；（2）求混合平均热值；（3）若原矿年处理能力20万t，求理论服务年限，并说明不等于完整矿山寿命论证。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mining-engineering-q2-statement",
+      "title": "采矿工程系统与计算第2题命题原稿",
+      "kind": "question-bank",
+      "text": "教学通风网络如图：公共段阻力系数R0=0.01，后分两条并联支路R1=0.02、R2=0.08，最终汇合；所有阻力符合Δp=RQ²，Δp单位Pa、Q单位m³/s。总风量60 m³/s，风机效率70%，忽略其他损失。（1）求支路风量、支路压降和公共段压降；（2）求风机所需静压及输入功率；（3）核对流量与并联同压条件；（4）为何不能把两支路R直接相加？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mining-engineering-q3-statement",
+      "title": "采矿工程系统与计算第3题命题原稿",
+      "kind": "question-bank",
+      "text": "纯教学完全混合控制体中，进风气体含某气体体积分数0.002，风量Q m³/s；另有该纯气体以0.15 m³/s加入，流量均在相同温压条件计。出口总流量Q+0.15，暂不反应。（1）写出口体积分数；（2）Q=15时求浓度；（3）按题设比较值0.010反求Q下限；（4）为何不能把纯气体加入量忽略在分母，也不能据均匀混合结果直接认定现场局部浓度？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mining-engineering-q4-statement",
+      "title": "采矿工程系统与计算第4题命题原稿",
+      "kind": "question-bank",
+      "text": "课程模型的提升容器每循环运输净载荷8 t，循环时间120 s，计划开机时段内可用率85%、可用时段内利用率90%。年计划300 d、16 h/d。另给满载提升时需克服重力的总质量10 t、高度500 m、传动效率80%；忽略下降回收、加速与其他损失，取g=9.81 m/s²。（1）求净小时/年运输能力；（2）求每次满载的电能及单位净载荷电耗；（3）说明按峰值提升功率直接乘全年小时为何与循环模型不同。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mining-engineering-q5-statement",
+      "title": "采矿工程系统与计算第5题命题原稿",
+      "kind": "question-bank",
+      "text": "露天教学系统只有一台装载机，斗容5 m³、装满系数0.90、松散物料密度1.6 t/m³；卡车有效载荷36 t。每斗循环0.50 min，每车定位另占装载机0.50 min。重载行驶12 min、卸载1 min、空返10 min。无随机延误，同型车循环包括定位和装载。（1）求每车所需斗数与装载服务时间；（2）求单车无等待循环；（3）求让装载机连续服务所需最少车数；（4）比较8车、9车的系统能力，指出增加第10车是否提高理论瓶颈能力。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "mining-engineering-q6-statement",
+      "title": "采矿工程系统与计算第6题命题原稿",
+      "kind": "question-bank",
+      "text": "仅用于课程力学模型：规则方形矿柱边长b=10 m，房间净宽w=10 m，覆盖厚度200 m、平均重度25 kN/m³。按分担面积法，柱平均应力$\\sigma=\\gamma H(b+w)^2/b^2$。题给柱抗压强度40 MPa，要求模型安全系数≥1.8。（1）求当前柱应力和安全系数；（2）w改12 m时重算；（3）反求满足题给系数的最大w；（4）说明该代数校核未覆盖哪些地质与力学机制。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "mining-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "mining-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "仅作课程模型：均匀矿体长500 m、宽300 m、厚3 m，原矿密度1.4 t/m³；回采率定义为采出矿石/地质矿石量，为85%；贫化率定义为混入废石/采出原矿总量，为10%，废石不含有效热值，原矿热值26 MJ/kg。（1）求地质量、采出矿石、混入废石和采出原矿总量；（2）求混合平均热值；（3）若原矿年处理能力20万t，求理论服务年限，并说明不等于完整矿山寿命论证。",
+          "score": 15,
+          "solution": "地质矿石630000 t；采出有效矿石535500 t。原矿总量535500/0.90=595000 t，废石59500 t；平均热值23.4 MJ/kg；理论处理年限2.975年。",
+          "explanation": "先用几何体积×密度，再乘回采率。题给贫化分母是混合原矿，故不能以有效矿石量再乘0.10作为废石量；应解w/(ore+w)=0.10。平均热值按质量加权。投产爬坡、可采边界、开拓接续、设备维护等未纳入，故服务年限只是本题恒处理能力衡算。",
+          "source": {
+            "materialId": "mining-engineering-q1-statement",
+            "blockId": "mining-engineering-q1-statement",
+            "exact": "仅作课程模型：均匀矿体长500 m、宽300 m、厚3 m，原矿密度1.4 t/m³；回采率定义为采出矿石/地质矿石量，为85%；贫化率定义为混入废石/采出原矿总量，为10%，废石不含有效热值，原矿热值26 MJ/kg。（1）求地质量、采出矿石、混入废石和采出原矿总量；（2）求混合平均热值；（3）若原矿年处理能力20万t，求理论服务年限，并说明不等于完整矿山寿命论证。"
+          },
+          "chapter": "地质量、回采率与贫化基准",
+          "tags": [
+            "采矿工程系统与计算",
+            "地质量、回采率与贫化基准",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "地质量、回采率与贫化基准"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mining-engineering-scope",
+                "blockId": "mining-engineering-scope",
+                "exact": "通风网络及矿井通风网络图；简单通风网络及其性质；风量分配及复杂通风网络解算；局部风量调节；矿井总风量调节。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "三个定义及地质量正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mining-engineering-q1-statement",
+                    "blockId": "mining-engineering-q1-statement",
+                    "exact": "仅作课程模型：均匀矿体长500 m、宽300 m、厚3 m，原矿密度1.4 t/m³；回采率定义为采出矿石/地质矿石量，为85%；贫化率定义为混入废石/采出原矿总量，为10%，废石不含有效热值，原矿热值26 MJ/kg。（1）求地质量、采出矿石、混入废石和采出原矿总量；（2）求混合平均热值；（3）若原矿年处理能力20万t，求理论服务年限，并说明不等于完整矿山寿命论证。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "采出/废石/原矿量正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "热值和年限及范围正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q1 resource volume",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q1 resource volume\", \"actual\": 630000.0, \"expected\": 630000, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q1 dilution identity",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q1 dilution identity\", \"actual\": 0.1, \"expected\": 0.1, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q1 output conservation",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q1 output conservation\", \"actual\": 595000, \"expected\": 595000, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mining-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "教学通风网络如图：公共段阻力系数R0=0.01，后分两条并联支路R1=0.02、R2=0.08，最终汇合；所有阻力符合Δp=RQ²，Δp单位Pa、Q单位m³/s。总风量60 m³/s，风机效率70%，忽略其他损失。（1）求支路风量、支路压降和公共段压降；（2）求风机所需静压及输入功率；（3）核对流量与并联同压条件；（4）为何不能把两支路R直接相加？",
+          "score": 15,
+          "solution": "Q1=40、Q2=20 m³/s；两支路压降均32 Pa，公共段36 Pa；风机静压68 Pa，空气功率4080 W，输入功率5828.571429 W。",
+          "explanation": "并联端点压差相同，R1Q1²=R2Q2²且Q1+Q2=60，故Q1=2Q2。公共段承受总风量。风机功率QΔp/η，压力乘体积流量的量纲为W。非线性并联等效满足1/√Req=1/√R1+1/√R2，不是串联阻力相加；模型未覆盖实际风机曲线与自然风压。",
+          "source": {
+            "materialId": "mining-engineering-q2-statement",
+            "blockId": "mining-engineering-q2-statement",
+            "exact": "教学通风网络如图：公共段阻力系数R0=0.01，后分两条并联支路R1=0.02、R2=0.08，最终汇合；所有阻力符合Δp=RQ²，Δp单位Pa、Q单位m³/s。总风量60 m³/s，风机效率70%，忽略其他损失。（1）求支路风量、支路压降和公共段压降；（2）求风机所需静压及输入功率；（3）核对流量与并联同压条件；（4）为何不能把两支路R直接相加？"
+          },
+          "chapter": "简单通风网络与能量",
+          "tags": [
+            "采矿工程系统与计算",
+            "简单通风网络与能量",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "简单通风网络与能量"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mining-engineering-scope",
+                "blockId": "mining-engineering-scope",
+                "exact": "通风网络及矿井通风网络图；简单通风网络及其性质；风量分配及复杂通风网络解算；局部风量调节；矿井总风量调节。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "网络节点与回路方程正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mining-engineering-q2-statement",
+                    "blockId": "mining-engineering-q2-statement",
+                    "exact": "教学通风网络如图：公共段阻力系数R0=0.01，后分两条并联支路R1=0.02、R2=0.08，最终汇合；所有阻力符合Δp=RQ²，Δp单位Pa、Q单位m³/s。总风量60 m³/s，风机效率70%，忽略其他损失。（1）求支路风量、支路压降和公共段压降；（2）求风机所需静压及输入功率；（3）核对流量与并联同压条件；（4）为何不能把两支路R直接相加？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "风量/压降及风机静压正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "功率和单位正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "并联解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q2 node continuity",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q2 node continuity\", \"actual\": 60, \"expected\": 60, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q2 parallel pressure",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q2 parallel pressure\", \"actual\": 32.0, \"expected\": 32.0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q2 power balance",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q2 power balance\", \"actual\": 4080.0000000000005, \"expected\": 4080, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          },
+          "attachments": [
+            {
+              "id": "mining-engineering-q2-figure-1",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMjAwIj48cmVjdCB3aWR0aD0iNjgwIiBoZWlnaHQ9IjIwMCIgZmlsbD0id2hpdGUiLz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiMxMTEiIHN0cm9rZS13aWR0aD0iMyI+PHBhdGggZD0iTTMwIDEwMEgxODBMMzUwIDQwSDUzMEw2MjAgMTAwSDY1NU0xODAgMTAwTDM1MCAxNjBINTMwTDYyMCAxMDAiLz48cGF0aCBkPSJNODAgOTRsMTAgNi0xMCA2TTQwMCAzNGwxMCA2LTEwIDZNNDAwIDE1NGwxMCA2LTEwIDYiLz48L2c+PGcgZm9udC1mYW1pbHk9InNlcmlmIiBmb250LXNpemU9IjIwIj48dGV4dCB4PSIzNSIgeT0iNzUiPuWFrOWFseautSBSPTAuMDE8L3RleHQ+PHRleHQgeD0iMzUwIiB5PSIyNSI+5pSv6LevMSBSPTAuMDI8L3RleHQ+PHRleHQgeD0iMzUwIiB5PSIxOTIiPuaUr+i3rzIgUj0wLjA4PC90ZXh0Pjx0ZXh0IHg9IjU2MCIgeT0iNzUiPuaxh+WQiDwvdGV4dD48L2c+PC9zdmc+",
+              "alt": "公共段后分为两支路并重新汇合，阻力系数及流向均已标注。",
+              "widthMm": 145
+            }
+          ]
+        },
+        {
+          "id": "mining-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "纯教学完全混合控制体中，进风气体含某气体体积分数0.002，风量Q m³/s；另有该纯气体以0.15 m³/s加入，流量均在相同温压条件计。出口总流量Q+0.15，暂不反应。（1）写出口体积分数；（2）Q=15时求浓度；（3）按题设比较值0.010反求Q下限；（4）为何不能把纯气体加入量忽略在分母，也不能据均匀混合结果直接认定现场局部浓度？",
+          "score": 15,
+          "solution": "$C=(0.002Q+0.15)/(Q+0.15)$。Q=15时C=0.180/15.15=0.011881188（1.188119%）；要求C≤0.010得Q≥18.5625 m³/s。",
+          "explanation": "同温压下体积流量可用于气体组分衡算；背景气体输入为0.002Q，纯气体输入为0.15。整理0.002Q+0.15≤0.010Q+0.0015得下限。忽略小流量可作近似，但必须标识并估计误差；真实通风中的积聚、空间混合、监测和运行阈值需另行核实。题设比较值只供模型计算，不引用安全规程。",
+          "source": {
+            "materialId": "mining-engineering-q3-statement",
+            "blockId": "mining-engineering-q3-statement",
+            "exact": "纯教学完全混合控制体中，进风气体含某气体体积分数0.002，风量Q m³/s；另有该纯气体以0.15 m³/s加入，流量均在相同温压条件计。出口总流量Q+0.15，暂不反应。（1）写出口体积分数；（2）Q=15时求浓度；（3）按题设比较值0.010反求Q下限；（4）为何不能把纯气体加入量忽略在分母，也不能据均匀混合结果直接认定现场局部浓度？"
+          },
+          "chapter": "含背景气体的体积混合",
+          "tags": [
+            "采矿工程系统与计算",
+            "含背景气体的体积混合",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "含背景气体的体积混合"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mining-engineering-scope",
+                "blockId": "mining-engineering-scope",
+                "exact": "通风网络及矿井通风网络图；简单通风网络及其性质；风量分配及复杂通风网络解算；局部风量调节；矿井总风量调节。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "体积组分与总量方程正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mining-engineering-q3-statement",
+                    "blockId": "mining-engineering-q3-statement",
+                    "exact": "纯教学完全混合控制体中，进风气体含某气体体积分数0.002，风量Q m³/s；另有该纯气体以0.15 m³/s加入，流量均在相同温压条件计。出口总流量Q+0.15，暂不反应。（1）写出口体积分数；（2）Q=15时求浓度；（3）按题设比较值0.010反求Q下限；（4）为何不能把纯气体加入量忽略在分母，也不能据均匀混合结果直接认定现场局部浓度？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "原工况数值正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "不等式/下限正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "分母和空间条件解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q3 threshold substitution",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q3 threshold substitution\", \"actual\": 0.01, \"expected\": 0.01, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q3 initial concentration",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q3 initial concentration\", \"actual\": 0.011881188118811881, \"expected\": 0.01188118811881188, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mining-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "课程模型的提升容器每循环运输净载荷8 t，循环时间120 s，计划开机时段内可用率85%、可用时段内利用率90%。年计划300 d、16 h/d。另给满载提升时需克服重力的总质量10 t、高度500 m、传动效率80%；忽略下降回收、加速与其他损失，取g=9.81 m/s²。（1）求净小时/年运输能力；（2）求每次满载的电能及单位净载荷电耗；（3）说明按峰值提升功率直接乘全年小时为何与循环模型不同。",
+          "score": 15,
+          "solution": "净能力8×30×0.85×0.90=183.6 t/h；年881280 t。每满载重力能49.05 MJ，电能61.3125 MJ=17.03125 kWh；单位净载荷2.12890625 kWh/t。",
+          "explanation": "可用率与利用率分母不同，按题给嵌套定义相乘。循环能力用净载荷，能量则用实际需要抬升总质量；不能混用8 t和10 t。单次重力能mgh，不需要另乘循环时间。峰值功率只持续于部分运动时段，全年还有装卸、回程、停机和空闲，不能替代能量积分。",
+          "source": {
+            "materialId": "mining-engineering-q4-statement",
+            "blockId": "mining-engineering-q4-statement",
+            "exact": "课程模型的提升容器每循环运输净载荷8 t，循环时间120 s，计划开机时段内可用率85%、可用时段内利用率90%。年计划300 d、16 h/d。另给满载提升时需克服重力的总质量10 t、高度500 m、传动效率80%；忽略下降回收、加速与其他损失，取g=9.81 m/s²。（1）求净小时/年运输能力；（2）求每次满载的电能及单位净载荷电耗；（3）说明按峰值提升功率直接乘全年小时为何与循环模型不同。"
+          },
+          "chapter": "提升系统生产能力与电耗",
+          "tags": [
+            "采矿工程系统与计算",
+            "提升系统生产能力与电耗",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "提升系统生产能力与电耗"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mining-engineering-scope",
+                "blockId": "mining-engineering-scope",
+                "exact": "通风网络及矿井通风网络图；简单通风网络及其性质；风量分配及复杂通风网络解算；局部风量调节；矿井总风量调节。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "时间/能力及年计划换算正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "mining-engineering-q4-statement",
+                    "blockId": "mining-engineering-q4-statement",
+                    "exact": "课程模型的提升容器每循环运输净载荷8 t，循环时间120 s，计划开机时段内可用率85%、可用时段内利用率90%。年计划300 d、16 h/d。另给满载提升时需克服重力的总质量10 t、高度500 m、传动效率80%；忽略下降回收、加速与其他损失，取g=9.81 m/s²。（1）求净小时/年运输能力；（2）求每次满载的电能及单位净载荷电耗；（3）说明按峰值提升功率直接乘全年小时为何与循环模型不同。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "总质量能量与效率正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "kWh/t及峰值区别正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q4 yearly production",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q4 yearly production\", \"actual\": 881280.0, \"expected\": 881280, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q4 hoisting energy",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q4 hoisting energy\", \"actual\": 17.03125, \"expected\": 17.03125, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mining-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "露天教学系统只有一台装载机，斗容5 m³、装满系数0.90、松散物料密度1.6 t/m³；卡车有效载荷36 t。每斗循环0.50 min，每车定位另占装载机0.50 min。重载行驶12 min、卸载1 min、空返10 min。无随机延误，同型车循环包括定位和装载。（1）求每车所需斗数与装载服务时间；（2）求单车无等待循环；（3）求让装载机连续服务所需最少车数；（4）比较8车、9车的系统能力，指出增加第10车是否提高理论瓶颈能力。",
+          "score": 20,
+          "solution": "每斗7.2 t，5斗满车；装载2.5 min，加定位服务3.0 min；循环26 min。最少ceil(26/3)=9车。8车能力8×36×60/26=664.615385 t/h；9车受装载机限制为720 t/h；第10车不再提高此模型瓶颈能力。",
+          "explanation": "一台装载机服务间隔为3 min，卡车离开服务后需23 min才能重新入队，9车能覆盖循环并产生必要等待。能力取装载机36×60/3与车队n×36×60/26的较小者。定位占装载机时间已明确，不可漏掉而误算11车；真实调度还需道路、排队波动和维护约束。",
+          "source": {
+            "materialId": "mining-engineering-q5-statement",
+            "blockId": "mining-engineering-q5-statement",
+            "exact": "露天教学系统只有一台装载机，斗容5 m³、装满系数0.90、松散物料密度1.6 t/m³；卡车有效载荷36 t。每斗循环0.50 min，每车定位另占装载机0.50 min。重载行驶12 min、卸载1 min、空返10 min。无随机延误，同型车循环包括定位和装载。（1）求每车所需斗数与装载服务时间；（2）求单车无等待循环；（3）求让装载机连续服务所需最少车数；（4）比较8车、9车的系统能力，指出增加第10车是否提高理论瓶颈能力。"
+          },
+          "chapter": "装运设备匹配与瓶颈",
+          "tags": [
+            "采矿工程系统与计算",
+            "装运设备匹配与瓶颈",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "装运设备匹配与瓶颈"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mining-engineering-scope",
+                "blockId": "mining-engineering-scope",
+                "exact": "通风网络及矿井通风网络图；简单通风网络及其性质；风量分配及复杂通风网络解算；局部风量调节；矿井总风量调节。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "斗数/服务/循环正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "mining-engineering-q5-statement",
+                    "blockId": "mining-engineering-q5-statement",
+                    "exact": "露天教学系统只有一台装载机，斗容5 m³、装满系数0.90、松散物料密度1.6 t/m³；卡车有效载荷36 t。每斗循环0.50 min，每车定位另占装载机0.50 min。重载行驶12 min、卸载1 min、空返10 min。无随机延误，同型车循环包括定位和装载。（1）求每车所需斗数与装载服务时间；（2）求单车无等待循环；（3）求让装载机连续服务所需最少车数；（4）比较8车、9车的系统能力，指出增加第10车是否提高理论瓶颈能力。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "最小车数条件正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "两车队产量及瓶颈正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "增加车辆的边际解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q5 bucket payload",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q5 bucket payload\", \"actual\": 7.2, \"expected\": 7.2, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q5 cycle",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q5 cycle\", \"actual\": 26.0, \"expected\": 26, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q5 integer match",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q5 integer match\", \"actual\": 9, \"expected\": 9, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q5 eight-truck bound",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q5 eight-truck bound\", \"actual\": 664.6153846153846, \"expected\": 664.6153846153846, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "mining-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "仅用于课程力学模型：规则方形矿柱边长b=10 m，房间净宽w=10 m，覆盖厚度200 m、平均重度25 kN/m³。按分担面积法，柱平均应力$\\sigma=\\gamma H(b+w)^2/b^2$。题给柱抗压强度40 MPa，要求模型安全系数≥1.8。（1）求当前柱应力和安全系数；（2）w改12 m时重算；（3）反求满足题给系数的最大w；（4）说明该代数校核未覆盖哪些地质与力学机制。",
+          "score": 20,
+          "solution": "覆盖应力5 MPa。w=10时柱应力20 MPa，系数2；w=12时24.2 MPa，系数1.652893。最大w=$10[\\sqrt{40/(1.8\\times5)}-1]=11.081851$ m。",
+          "explanation": "每柱承担面积(b+w)²，除柱面积b²得到应力放大；kN/m²须换MPa。系数随房间加宽而下降；反求不等式时各长度和强度均正，故取正平方根。未覆盖柱宽高效应、节理、非均匀应力、顶底板、时间效应及突发破坏，也不引用该1.8为实际法规；不能把简化单柱结果当作现场方案。",
+          "source": {
+            "materialId": "mining-engineering-q6-statement",
+            "blockId": "mining-engineering-q6-statement",
+            "exact": "仅用于课程力学模型：规则方形矿柱边长b=10 m，房间净宽w=10 m，覆盖厚度200 m、平均重度25 kN/m³。按分担面积法，柱平均应力$\\sigma=\\gamma H(b+w)^2/b^2$。题给柱抗压强度40 MPa，要求模型安全系数≥1.8。（1）求当前柱应力和安全系数；（2）w改12 m时重算；（3）反求满足题给系数的最大w；（4）说明该代数校核未覆盖哪些地质与力学机制。"
+          },
+          "chapter": "矿柱分担面积模型与敏感性",
+          "tags": [
+            "采矿工程系统与计算",
+            "矿柱分担面积模型与敏感性",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "矿柱分担面积模型与敏感性"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "mining-engineering-scope",
+                "blockId": "mining-engineering-scope",
+                "exact": "通风网络及矿井通风网络图；简单通风网络及其性质；风量分配及复杂通风网络解算；局部风量调节；矿井总风量调节。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "分担面积和应力单位正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "mining-engineering-q6-statement",
+                    "blockId": "mining-engineering-q6-statement",
+                    "exact": "仅用于课程力学模型：规则方形矿柱边长b=10 m，房间净宽w=10 m，覆盖厚度200 m、平均重度25 kN/m³。按分担面积法，柱平均应力$\\sigma=\\gamma H(b+w)^2/b^2$。题给柱抗压强度40 MPa，要求模型安全系数≥1.8。（1）求当前柱应力和安全系数；（2）w改12 m时重算；（3）反求满足题给系数的最大w；（4）说明该代数校核未覆盖哪些地质与力学机制。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两工况系数正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "反解尺寸及边界正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "模型机制范围解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q6 vertical load conservation",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q6 vertical load conservation\", \"actual\": 2000, \"expected\": 2000, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q6 width boundary",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q6 width boundary\", \"actual\": 1.8, \"expected\": 1.8, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "mining-q6 widened stress",
+                "result": "pass",
+                "evidence": "{\"label\": \"mining-q6 widened stress\", \"actual\": 24.2, \"expected\": 24.2, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "mining-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "mining-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "mining-engineering-q1",
+        "knowledge": "地质量、回采率与贫化基准",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mining-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "mining-engineering-q2",
+        "knowledge": "简单通风网络与能量",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mining-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "mining-engineering-q3",
+        "knowledge": "含背景气体的体积混合",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mining-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "mining-engineering-q4",
+        "knowledge": "提升系统生产能力与电耗",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mining-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "mining-engineering-q5",
+        "knowledge": "装运设备匹配与瓶颈",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mining-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "mining-engineering-q6",
+        "knowledge": "矿柱分担面积模型与敏感性",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "mining-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "mining-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "mining-engineering-course-blueprint",
+      "name": "采矿工程系统与计算课程考试",
+      "subject": "采矿工程系统与计算",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "mining-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

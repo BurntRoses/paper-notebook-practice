@@ -1,0 +1,892 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "computer-engineering-course-01",
+  "notebookId": "computer-engineering-source",
+  "notebookRevision": 1,
+  "title": "计算机与软件工程课程考试",
+  "subject": "计算机与软件工程",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "计算机与软件工程课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "computer-engineering-scope",
+      "title": "MIT 6.006 Introduction to Algorithms",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/",
+      "text": "It emphasizes the relationship between algorithms and programming",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2020",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+      }
+    },
+    {
+      "id": "computer-engineering-q1-statement",
+      "title": "计算机与软件工程第1题命题原稿",
+      "kind": "question-bank",
+      "text": "单台设备处理不可中断任务，结束时刻等于下一任务开始时刻允许连续执行。任务（开始、结束、收益）为A(0,3,5)、B(1,4,6)、C(3,5,5)、D(4,7,8)、E(5,7,4)。（1）求最大总收益及全部最优任务集合；（2）按结束时刻排序写动态规划递推和各前缀最优值；（3）说明为何直接选当前收益最大的任务不构成一般正确算法，并给出反例。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "computer-engineering-q2-statement",
+      "title": "计算机与软件工程第2题命题原稿",
+      "kind": "question-bank",
+      "text": "有向图边为S→A(4)、S→B(1)、B→A(2)、A→C(1)、B→C(5)、C→T(3)、A→T(7)、B→T(12)，括号内为权重。（1）从S执行Dijkstra，给出确定节点顺序、最终距离及到T路径；（2）说明松弛必须比较什么；（3）若允许负边，给出一个3节点无负环图，证明“节点确定后永不再修改”的Dijkstra不再一般正确。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "computer-engineering-q3-statement",
+      "title": "计算机与软件工程第3题命题原稿",
+      "kind": "question-bank",
+      "text": "订单表orders(id,amount)中有(1,50)、(2,80)、(3,40)。付款表payments(id,order_id,amount)中有(1,1,20)、(2,1,30)、(3,2,70)、(4,3,40)，金额均为整数元。（1）写SQL查询付款总额小于订单额的订单，返回订单号、订单额和已付额，未付款按0；（2）给出结果；（3）解释将两表连接后直接SUM(o.amount)会有何错误；（4）说明为什么应保留未付款订单。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "computer-engineering-q4-statement",
+      "title": "计算机与软件工程第4题命题原稿",
+      "kind": "question-bank",
+      "text": "容量为2的有界缓冲区由一个生产者和一个消费者访问。初始empty=2、full=0、mutex=1，P是等待并减1、V是加1。某生产者程序先P(mutex)、再P(empty)，放入后V(full)、V(mutex)；消费者先P(full)、再P(mutex)，取出后V(mutex)、V(empty)。（1）给出可达死锁场景；（2）写正确的生产与消费顺序；（3）说明empty+full=2为何不能在任意指令间隙都直接断言，而只能结合已预留但未提交的槽位状态。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "computer-engineering-q5-statement",
+      "title": "计算机与软件工程第5题命题原稿",
+      "kind": "question-bank",
+      "text": "网络为10.24.8.0/22。（1）求传统子网规则下的可分配主机地址范围与数量；（2）另有1500字节IPv4数据报（含20字节首部，无选项）经过MTU=620字节链路，DF=0。给出各分片总长度、片偏移和MF位；（3）解释为何只有最后一片的数据长度可不为8字节倍数，首部是否计入片偏移。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "computer-engineering-q6-statement",
+      "title": "计算机与软件工程第6题命题原稿",
+      "kind": "question-bank",
+      "text": "在升序数组a中实现lower_bound，返回首个不小于t的元素下标；不存在时返回len(a)。允许空数组和重复元素。某实现使用半开区间[lo,hi)，循环内mid=(lo+hi)//2；当a[mid]<t时写lo=mid，否则hi=mid。（1）给出最小不终止反例；（2）修正算法；（3）给出循环不变量与终止性论证；（4）计算a=[1,3,3,7]在t=3、4、9、0时的结果，并设计边界测试。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "computer-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "computer-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "单台设备处理不可中断任务，结束时刻等于下一任务开始时刻允许连续执行。任务（开始、结束、收益）为A(0,3,5)、B(1,4,6)、C(3,5,5)、D(4,7,8)、E(5,7,4)。（1）求最大总收益及全部最优任务集合；（2）按结束时刻排序写动态规划递推和各前缀最优值；（3）说明为何直接选当前收益最大的任务不构成一般正确算法，并给出反例。",
+          "score": 15,
+          "solution": "最大收益14，最优集合为{B,D}和{A,C,E}。按A、B、C、D、E排序，前缀最优值5、6、10、14、14；$OPT(j)=\\max\\{OPT(j-1),w_j+OPT(p(j))\\}$。",
+          "explanation": "p(j)为结束不晚于j开始的最后任务，无则为0。D的前驱是B，E的前驱是C，产生两条等值路径，回溯时不能只留一条而声称唯一解。收益贪心反例：一个任务[0,4]收益8，两个相容任务[0,2]与[2,4]各收益5；先取8会错过总收益10。排序并二分前驱需O(n log n)，DP需O(n)。",
+          "source": {
+            "materialId": "computer-engineering-q1-statement",
+            "blockId": "computer-engineering-q1-statement",
+            "exact": "单台设备处理不可中断任务，结束时刻等于下一任务开始时刻允许连续执行。任务（开始、结束、收益）为A(0,3,5)、B(1,4,6)、C(3,5,5)、D(4,7,8)、E(5,7,4)。（1）求最大总收益及全部最优任务集合；（2）按结束时刻排序写动态规划递推和各前缀最优值；（3）说明为何直接选当前收益最大的任务不构成一般正确算法，并给出反例。"
+          },
+          "chapter": "加权区间调度与最优性",
+          "tags": [
+            "计算机与软件工程",
+            "加权区间调度与最优性",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "加权区间调度与最优性"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "computer-engineering-scope",
+                "blockId": "computer-engineering-scope",
+                "exact": "It emphasizes the relationship between algorithms and programming"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "兼容边界及最优集合完整",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "computer-engineering-q1-statement",
+                    "blockId": "computer-engineering-q1-statement",
+                    "exact": "单台设备处理不可中断任务，结束时刻等于下一任务开始时刻允许连续执行。任务（开始、结束、收益）为A(0,3,5)、B(1,4,6)、C(3,5,5)、D(4,7,8)、E(5,7,4)。（1）求最大总收益及全部最优任务集合；（2）按结束时刻排序写动态规划递推和各前缀最优值；（3）说明为何直接选当前收益最大的任务不构成一般正确算法，并给出反例。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "递推和前驱定义正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "前缀值正确且保留并列解",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "反例与复杂度正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "可用子集穷举、回溯或区间兼容图求出并列最优集合；第（2）问仍须给出按结束时刻的动态规划递推与前缀值。",
+              "动态规划可用自顶向下记忆化或自底向上表格实现；不同合法的同结束时刻排序须注明，并给出与该排序对应的前缀值和全部最优解。",
+              "收益贪心反例可另选相容区间与收益，只要明确展示贪心选择的总收益低于可行最优解。"
+            ],
+            "tolerance": "任务集合与整数收益精确一致；正确等价算法同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q1 exhaustive optimum over 32 subsets",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q1 exhaustive optimum over 32 subsets\", \"actual\": 14, \"expected\": 14, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q1 optimal set count",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q1 optimal set count\", \"actual\": 2, \"expected\": 2, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "computer-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "有向图边为S→A(4)、S→B(1)、B→A(2)、A→C(1)、B→C(5)、C→T(3)、A→T(7)、B→T(12)，括号内为权重。（1）从S执行Dijkstra，给出确定节点顺序、最终距离及到T路径；（2）说明松弛必须比较什么；（3）若允许负边，给出一个3节点无负环图，证明“节点确定后永不再修改”的Dijkstra不再一般正确。",
+          "score": 15,
+          "solution": "确定顺序S、B、A、C、T；距离分别0、1、3、4、7；路径S→B→A→C→T。负边反例：S→A=1、S→B=2、B→A=−3，无环；先确定A=1后会漏掉真实−1。",
+          "explanation": "松弛比较当前d[v]与d[u]+w(u,v)，不是仅比较边权。B确定后把A由4改3、C设6、T设13；A把C改4、T改10；C再把T改7。非负边保证已取最小暂定距离不会经未确定节点变短，负边破坏该论证。",
+          "source": {
+            "materialId": "computer-engineering-q2-statement",
+            "blockId": "computer-engineering-q2-statement",
+            "exact": "有向图边为S→A(4)、S→B(1)、B→A(2)、A→C(1)、B→C(5)、C→T(3)、A→T(7)、B→T(12)，括号内为权重。（1）从S执行Dijkstra，给出确定节点顺序、最终距离及到T路径；（2）说明松弛必须比较什么；（3）若允许负边，给出一个3节点无负环图，证明“节点确定后永不再修改”的Dijkstra不再一般正确。"
+          },
+          "chapter": "最短路径与算法前提",
+          "tags": [
+            "计算机与软件工程",
+            "最短路径与算法前提",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "最短路径与算法前提"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "computer-engineering-scope",
+                "blockId": "computer-engineering-scope",
+                "exact": "It emphasizes the relationship between algorithms and programming"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "确定顺序与距离正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "computer-engineering-q2-statement",
+                    "blockId": "computer-engineering-q2-statement",
+                    "exact": "有向图边为S→A(4)、S→B(1)、B→A(2)、A→C(1)、B→C(5)、C→T(3)、A→T(7)、B→T(12)，括号内为权重。（1）从S执行Dijkstra，给出确定节点顺序、最终距离及到T路径；（2）说明松弛必须比较什么；（3）若允许负边，给出一个3节点无负环图，证明“节点确定后永不再修改”的Dijkstra不再一般正确。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "完整路径和松弛过程正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "正确写出松弛比较",
+                "points": 2
+              },
+              {
+                "id": "step-4",
+                "description": "负边反例及失效机制正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "可用数组扫描、优先队列或手工暂定距离表执行Dijkstra，须保留正确的节点确定顺序、松弛比较与路径；其他最短路算法可用于复核距离，不能替代题目要求的Dijkstra过程。",
+              "负边反例可另用任意三个节点的无负环有向图，只要给出节点被过早确定的步骤以及与真实最短距离的冲突。"
+            ],
+            "tolerance": "节点、路径和距离精确；同距离节点允许相应合法顺序。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q2 executed distances",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q2 executed distances\", \"actual\": [0, 1, 3, 4, 7], \"expected\": [0, 1, 3, 4, 7], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "computer-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "订单表orders(id,amount)中有(1,50)、(2,80)、(3,40)。付款表payments(id,order_id,amount)中有(1,1,20)、(2,1,30)、(3,2,70)、(4,3,40)，金额均为整数元。（1）写SQL查询付款总额小于订单额的订单，返回订单号、订单额和已付额，未付款按0；（2）给出结果；（3）解释将两表连接后直接SUM(o.amount)会有何错误；（4）说明为什么应保留未付款订单。",
+          "score": 15,
+          "solution": "```sql\nSELECT o.id,o.amount,COALESCE(SUM(p.amount),0) AS paid FROM orders o LEFT JOIN payments p ON p.order_id=o.id GROUP BY o.id,o.amount HAVING COALESCE(SUM(p.amount),0)<o.amount ORDER BY o.id;\n```\n结果：(2,80,70)。",
+          "explanation": "付款为一对多，先按订单分组求付款之和，或先在付款子查询聚合后连接。订单1连接后出现两行，若SUM(o.amount)会把50计为100。LEFT JOIN保留无付款行，COALESCE将空付款和变为0；INNER JOIN会遗漏最需要追款的未付款订单。金额整数不涉及本题浮点舍入。",
+          "source": {
+            "materialId": "computer-engineering-q3-statement",
+            "blockId": "computer-engineering-q3-statement",
+            "exact": "订单表orders(id,amount)中有(1,50)、(2,80)、(3,40)。付款表payments(id,order_id,amount)中有(1,1,20)、(2,1,30)、(3,2,70)、(4,3,40)，金额均为整数元。（1）写SQL查询付款总额小于订单额的订单，返回订单号、订单额和已付额，未付款按0；（2）给出结果；（3）解释将两表连接后直接SUM(o.amount)会有何错误；（4）说明为什么应保留未付款订单。"
+          },
+          "chapter": "关系数据库聚合与重复行",
+          "tags": [
+            "计算机与软件工程",
+            "关系数据库聚合与重复行",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "关系数据库聚合与重复行"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "computer-engineering-scope",
+                "blockId": "computer-engineering-scope",
+                "exact": "It emphasizes the relationship between algorithms and programming"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "连接、分组及未付款处理正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "computer-engineering-q3-statement",
+                    "blockId": "computer-engineering-q3-statement",
+                    "exact": "订单表orders(id,amount)中有(1,50)、(2,80)、(3,40)。付款表payments(id,order_id,amount)中有(1,1,20)、(2,1,30)、(3,2,70)、(4,3,40)，金额均为整数元。（1）写SQL查询付款总额小于订单额的订单，返回订单号、订单额和已付额，未付款按0；（2）给出结果；（3）解释将两表连接后直接SUM(o.amount)会有何错误；（4）说明为什么应保留未付款订单。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "HAVING条件与执行结果正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "一对多重复计算解释正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "保留未付款订单的理由正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "可使用LEFT JOIN后GROUP BY/HAVING、先在付款子查询或CTE聚合再连接，或以相关聚合子查询求付款和；均须将无付款的NULL视作0，并避免重复累加订单金额。",
+              "可使用目标SQL方言中等价的空值替换和过滤写法，返回订单号、订单额、已付额相同；查询须正确处理一笔订单对应零笔或多笔付款。"
+            ],
+            "tolerance": "SQL可执行且语义等价；所有未付款与多笔付款情况均应正确。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q3 executed SQLite result",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q3 executed SQLite result\", \"actual\": [2, 80, 70], \"expected\": [2, 80, 70], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q3 duplicated joined order sum",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q3 duplicated joined order sum\", \"actual\": 100, \"expected\": 100, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "computer-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "容量为2的有界缓冲区由一个生产者和一个消费者访问。初始empty=2、full=0、mutex=1，P是等待并减1、V是加1。某生产者程序先P(mutex)、再P(empty)，放入后V(full)、V(mutex)；消费者先P(full)、再P(mutex)，取出后V(mutex)、V(empty)。（1）给出可达死锁场景；（2）写正确的生产与消费顺序；（3）说明empty+full=2为何不能在任意指令间隙都直接断言，而只能结合已预留但未提交的槽位状态。",
+          "score": 15,
+          "solution": "先生产两件填满缓冲区，第三次生产先取得mutex，再阻塞在empty；消费者虽可通过P(full)，却阻塞在mutex，形成死锁。生产者应P(empty)→P(mutex)→put→V(mutex)→V(full)；消费者P(full)→P(mutex)→get→V(mutex)→V(empty)。",
+          "explanation": "等待空槽或已有数据之前不能持有互斥锁。计数信号量描述可预订槽位与可预订数据；P(empty)成功但V(full)尚未发生时，一个槽位已预留，empty+full可小于容量。正确不变量需把生产者预留槽、消费者已预留数据及缓冲区实际内容共同计入。只检查计数和不能证明互斥或无死锁。",
+          "source": {
+            "materialId": "computer-engineering-q4-statement",
+            "blockId": "computer-engineering-q4-statement",
+            "exact": "容量为2的有界缓冲区由一个生产者和一个消费者访问。初始empty=2、full=0、mutex=1，P是等待并减1、V是加1。某生产者程序先P(mutex)、再P(empty)，放入后V(full)、V(mutex)；消费者先P(full)、再P(mutex)，取出后V(mutex)、V(empty)。（1）给出可达死锁场景；（2）写正确的生产与消费顺序；（3）说明empty+full=2为何不能在任意指令间隙都直接断言，而只能结合已预留但未提交的槽位状态。"
+          },
+          "chapter": "信号量同步与死锁",
+          "tags": [
+            "计算机与软件工程",
+            "信号量同步与死锁",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "信号量同步与死锁"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "computer-engineering-scope",
+                "blockId": "computer-engineering-scope",
+                "exact": "It emphasizes the relationship between algorithms and programming"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "给出从初态可达的完整死锁顺序",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "computer-engineering-q4-statement",
+                    "blockId": "computer-engineering-q4-statement",
+                    "exact": "容量为2的有界缓冲区由一个生产者和一个消费者访问。初始empty=2、full=0、mutex=1，P是等待并减1、V是加1。某生产者程序先P(mutex)、再P(empty)，放入后V(full)、V(mutex)；消费者先P(full)、再P(mutex)，取出后V(mutex)、V(empty)。（1）给出可达死锁场景；（2）写正确的生产与消费顺序；（3）说明empty+full=2为何不能在任意指令间隙都直接断言，而只能结合已预留但未提交的槽位状态。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "双方P/V顺序正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "解释等待资源与持锁循环",
+                "points": 2
+              },
+              {
+                "id": "step-4",
+                "description": "预留状态与不变量解释正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "可用P/V操作时序表、可达状态图或实际执行轨迹证明死锁，须从给定初态到达双方阻塞，并明确mutex的持有者及各自等待资源。",
+              "生产与消费伪代码可调整安全的唤醒/释放细节，但须在等待empty/full前释放或尚未持有mutex，并保持缓冲区互斥和槽位/数据计数正确；监视器可作等价补充说明，第（2）问仍须给出正确的P/V顺序。",
+              "不变量可用生产者预留槽、消费者预留数据与已提交内容的状态计数，或等价的资源所有权论证表达，不能仅断言任意指令间隙empty+full恒等于2。"
+            ],
+            "tolerance": "同步顺序必须避免持有mutex等待empty/full；可接受等价监视器实现及具体状态论证。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q4 reachable deadlock after both waits",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q4 reachable deadlock after both waits\", \"actual\": [0, 1, 0, 1, 1], \"expected\": [0, 1, 0, 1, 1], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q4 executed instruction count",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q4 executed instruction count\", \"actual\": 12, \"expected\": 12, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "computer-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "网络为10.24.8.0/22。（1）求传统子网规则下的可分配主机地址范围与数量；（2）另有1500字节IPv4数据报（含20字节首部，无选项）经过MTU=620字节链路，DF=0。给出各分片总长度、片偏移和MF位；（3）解释为何只有最后一片的数据长度可不为8字节倍数，首部是否计入片偏移。",
+          "score": 20,
+          "solution": "主机范围10.24.8.1至10.24.11.254，共1022个。原数据1480字节；三片数据分别600、600、280字节，总长度620、620、300字节；偏移0、75、150，MF依次1、1、0。",
+          "explanation": "/22留下10位主机号，传统规则扣除全0与全1。IPv4片偏移以原数据部分的8字节单位表示，不包括每片重复的首部。非末片数据长度必须保证下一片起点可表示；末片本例280也恰为8倍数，但一般不强制。各分片均拥有独立20字节首部，总传输字节数比原报文多40。",
+          "source": {
+            "materialId": "computer-engineering-q5-statement",
+            "blockId": "computer-engineering-q5-statement",
+            "exact": "网络为10.24.8.0/22。（1）求传统子网规则下的可分配主机地址范围与数量；（2）另有1500字节IPv4数据报（含20字节首部，无选项）经过MTU=620字节链路，DF=0。给出各分片总长度、片偏移和MF位；（3）解释为何只有最后一片的数据长度可不为8字节倍数，首部是否计入片偏移。"
+          },
+          "chapter": "网络地址与IPv4分片",
+          "tags": [
+            "计算机与软件工程",
+            "网络地址与IPv4分片",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "网络地址与IPv4分片"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "computer-engineering-scope",
+                "blockId": "computer-engineering-scope",
+                "exact": "It emphasizes the relationship between algorithms and programming"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "子网范围和主机数正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "computer-engineering-q5-statement",
+                    "blockId": "computer-engineering-q5-statement",
+                    "exact": "网络为10.24.8.0/22。（1）求传统子网规则下的可分配主机地址范围与数量；（2）另有1500字节IPv4数据报（含20字节首部，无选项）经过MTU=620字节链路，DF=0。给出各分片总长度、片偏移和MF位；（3）解释为何只有最后一片的数据长度可不为8字节倍数，首部是否计入片偏移。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "数据分割与总长度正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "偏移及MF位正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "单位、首部与末片条件解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "主机范围可用二进制掩码、CIDR地址块或等价整数区间运算求出；均须按题设传统规则排除网络地址和广播地址。",
+              "分片可用字节区间图、表格或逐片装箱计算，须明确每片重复20字节首部，按最大允许数据长度分片，并将原数据起始字节换成8字节单位片偏移；MF与原数据重组结果须一致。"
+            ],
+            "tolerance": "地址、偏移、标志位及字节数须精确。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q5 subnet host capacity",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q5 subnet host capacity\", \"actual\": 1022, \"expected\": 1022, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q5 reassembled payload",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q5 reassembled payload\", \"actual\": 1480, \"expected\": 1480, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q5 offset units",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q5 offset units\", \"actual\": [75, 150], \"expected\": [75, 150], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "computer-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "在升序数组a中实现lower_bound，返回首个不小于t的元素下标；不存在时返回len(a)。允许空数组和重复元素。某实现使用半开区间[lo,hi)，循环内mid=(lo+hi)//2；当a[mid]<t时写lo=mid，否则hi=mid。（1）给出最小不终止反例；（2）修正算法；（3）给出循环不变量与终止性论证；（4）计算a=[1,3,3,7]在t=3、4、9、0时的结果，并设计边界测试。",
+          "score": 20,
+          "solution": "最小反例a=[1]、t=2：lo=0、hi=1、mid=0且lo始终为0。\n```python\ndef lower_bound(a, t):\n    lo, hi = 0, len(a)\n    while lo < hi:\n        mid = (lo + hi) // 2\n        if a[mid] < t:\n            lo = mid + 1\n        else:\n            hi = mid\n    return lo\n```\n四个结果分别1、3、4、0。",
+          "explanation": "保持0≤lo≤hi≤n，所有下标i<lo均满足a[i]<t，所有i≥hi均满足a[i]≥t；目标分界位于[lo,hi]。更新lo=mid+1排除已知不足的mid，每轮整数长度hi−lo严格减小。结束lo=hi即分界。测试含空数组、全相等、首尾命中、低于最小、高于最大及重复值。当前作者脚本穷举长度0至5、元素−2至2的所有非降序数组和目标−3至3，与线性基准逐项比较。",
+          "source": {
+            "materialId": "computer-engineering-q6-statement",
+            "blockId": "computer-engineering-q6-statement",
+            "exact": "在升序数组a中实现lower_bound，返回首个不小于t的元素下标；不存在时返回len(a)。允许空数组和重复元素。某实现使用半开区间[lo,hi)，循环内mid=(lo+hi)//2；当a[mid]<t时写lo=mid，否则hi=mid。（1）给出最小不终止反例；（2）修正算法；（3）给出循环不变量与终止性论证；（4）计算a=[1,3,3,7]在t=3、4、9、0时的结果，并设计边界测试。"
+          },
+          "chapter": "二分查找、循环不变量与终止性",
+          "tags": [
+            "计算机与软件工程",
+            "二分查找、循环不变量与终止性",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "二分查找、循环不变量与终止性"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "computer-engineering-scope",
+                "blockId": "computer-engineering-scope",
+                "exact": "It emphasizes the relationship between algorithms and programming"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "最小反例与不终止原因正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "computer-engineering-q6-statement",
+                    "blockId": "computer-engineering-q6-statement",
+                    "exact": "在升序数组a中实现lower_bound，返回首个不小于t的元素下标；不存在时返回len(a)。允许空数组和重复元素。某实现使用半开区间[lo,hi)，循环内mid=(lo+hi)//2；当a[mid]<t时写lo=mid，否则hi=mid。（1）给出最小不终止反例；（2）修正算法；（3）给出循环不变量与终止性论证；（4）计算a=[1,3,3,7]在t=3、4、9、0时的结果，并设计边界测试。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "修正程序正确含空数组",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "不变量及严格递减终止证明正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "四个返回值和边界测试合理",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "可用半开区间、闭区间或递归二分实现同一lower_bound语义，须返回重复值的首个不小于目标的位置，正确处理空数组和不存在时的len(a)，且时间复杂度为O(log n)。",
+              "不变量和终止性证明可随区间表示改变，但必须说明目标分界始终保留、每次递归或迭代严格缩小整数搜索区间，并据结束条件推出返回值；仅调用库函数或列测试结果不能替代该证明。",
+              "边界测试可另选具体数组，须覆盖空数组、重复值、目标低于最小值、高于最大值及首尾命中。"
+            ],
+            "tolerance": "返回下标和空数组行为精确；可接受等价O(log n)算法及有效不变量。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q6 example outputs",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q6 example outputs\", \"actual\": [1, 3, 4, 0], \"expected\": [1, 3, 4, 0], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "computer-q6 exhaustive linear-oracle comparisons",
+                "result": "pass",
+                "evidence": "{\"label\": \"computer-q6 exhaustive linear-oracle comparisons\", \"actual\": 1764, \"expected\": 1764, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "computer-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "computer-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "computer-engineering-q1",
+        "knowledge": "加权区间调度与最优性",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "computer-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "computer-engineering-q2",
+        "knowledge": "最短路径与算法前提",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "computer-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "computer-engineering-q3",
+        "knowledge": "关系数据库聚合与重复行",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "computer-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "computer-engineering-q4",
+        "knowledge": "信号量同步与死锁",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "computer-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "computer-engineering-q5",
+        "knowledge": "网络地址与IPv4分片",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "computer-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "computer-engineering-q6",
+        "knowledge": "二分查找、循环不变量与终止性",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "computer-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "computer-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "computer-engineering-course-blueprint",
+      "name": "计算机与软件工程课程考试",
+      "subject": "计算机与软件工程",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "computer-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

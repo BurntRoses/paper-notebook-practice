@@ -1,0 +1,797 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-environmental-engineer-cases-01",
+  "notebookId": "registered-environmental-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册环保工程师　专业案例",
+  "subject": "环保工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册环保工程师　专业案例",
+      "水处理·大气控制·运行监测"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册环保工程师　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "环保工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "环保工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-environmental-engineer",
+    "examName": "注册环保工程师　专业案例",
+    "specialty": "水处理·大气控制·运行监测",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-environmental-engineer-cases-01-q1",
+        "knowledge": "混合质量守恒、完全混合池、反应器模型比较",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-environmental-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-environmental-engineer-cases-01-q2",
+        "knowledge": "串联反应器、容积分配、模型与实测",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-environmental-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-environmental-engineer-cases-01-q3",
+        "knowledge": "污泥龄、系统边界、固体衡算",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-environmental-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-environmental-engineer-cases-01-q4",
+        "knowledge": "串联去除、风机能耗、测量状态基准",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-environmental-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-environmental-engineer-cases-01-q5",
+        "knowledge": "流量加权采样、负荷、测量不确定度",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-environmental-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-2026-scope",
+      "kind": "reference",
+      "title": "环保考试路线核定",
+      "text": "2026湖北勘察设计考试通知分别列出环保、水利水电及道路等专业，并区分基础与专业考试。专业考试允许指定目录资料。此处仅核定考试路线；本卷技术指标、合同条件和公式逐题给定，不推定未读取的规范条款。",
+      "blocks": [
+        {
+          "id": "design-2026-scope-block",
+          "title": "环保考试路线核定",
+          "text": "2026湖北勘察设计考试通知分别列出环保、水利水电及道路等专业，并区分基础与专业考试。专业考试允许指定目录资料。此处仅核定考试路线；本卷技术指标、合同条件和公式逐题给定，不推定未读取的规范条款。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "fab9e2a1163070cede8e4d7a5ecce01a58a95083c141489034ad848f6d6acd46",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-environmental-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "两股废水连续混合：A流量600m³/d、污染物300mg/L；B流量400m³/d、50mg/L，均按相同污染物质量浓度计，体积可加，不发生反应。混合后进入完全混合稳态反应池，一阶降解系数k=0.50d⁻¹，目标出水≤40mg/L，且无其他去除。\n（1）求混合浓度和污染物负荷kg/d。\n（2）由稳态物料衡算推导所需最小池容。\n（3）若误用活塞流公式，求其池容并说明偏差。给定活塞流C/C₀=exp(−kV/Q)。",
+      "blocks": [
+        {
+          "id": "registered-environmental-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "两股废水连续混合：A流量600m³/d、污染物300mg/L；B流量400m³/d、50mg/L，均按相同污染物质量浓度计，体积可加，不发生反应。混合后进入完全混合稳态反应池，一阶降解系数k=0.50d⁻¹，目标出水≤40mg/L，且无其他去除。\n（1）求混合浓度和污染物负荷kg/d。\n（2）由稳态物料衡算推导所需最小池容。\n（3）若误用活塞流公式，求其池容并说明偏差。给定活塞流C/C₀=exp(−kV/Q)。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "61a157dd775255f26a43f2a4112ada2bed002e7bc4d9e9872106f219cb43b17d",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-environmental-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "总有效池容1000m³、处理流量100m³/h的一阶完全混合反应系统，进水100mg/L，k=0.20h⁻¹。可选择单池，或将总池容分成两个串联完全混合池；无回流、无短路。\n（1）求单池出水。\n（2）将两池均分时求出水；目标≤26mg/L，能否满足？\n（3）设第一池容V₁、第二池1000−V₁，推导为什么均分使出水最低。\n（4）若实测出水30mg/L，不能仅凭模型预测作达标结论，应核实什么？",
+      "blocks": [
+        {
+          "id": "registered-environmental-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "总有效池容1000m³、处理流量100m³/h的一阶完全混合反应系统，进水100mg/L，k=0.20h⁻¹。可选择单池，或将总池容分成两个串联完全混合池；无回流、无短路。\n（1）求单池出水。\n（2）将两池均分时求出水；目标≤26mg/L，能否满足？\n（3）设第一池容V₁、第二池1000−V₁，推导为什么均分使出水最低。\n（4）若实测出水30mg/L，不能仅凭模型预测作达标结论，应核实什么？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "3006624cabc12bd87a3272ebde7a456b1de156ea9c67334b568d28671b729e5a",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-environmental-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "某曝气池有效容积5000m³，池内悬浮固体浓度3000mg/L。剩余污泥流量100m³/d、浓度8000mg/L；最终出水9900m³/d、悬浮固体15mg/L。按固体停留时间定义θc=系统固体库存/每日离开固体量，题目只计曝气池库存，不计二沉池库存；回流在系统边界内部。\n（1）求库存、每日排出固体及θc。\n（2）其他条件不变，希望θc=20d，求剩余污泥流量；本问近似固定最终出水9900m³/d。\n（3）说明为什么不能将回流污泥量再次加作系统固体损失，及高低θc决策还需哪些工艺依据。",
+      "blocks": [
+        {
+          "id": "registered-environmental-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "某曝气池有效容积5000m³，池内悬浮固体浓度3000mg/L。剩余污泥流量100m³/d、浓度8000mg/L；最终出水9900m³/d、悬浮固体15mg/L。按固体停留时间定义θc=系统固体库存/每日离开固体量，题目只计曝气池库存，不计二沉池库存；回流在系统边界内部。\n（1）求库存、每日排出固体及θc。\n（2）其他条件不变，希望θc=20d，求剩余污泥流量；本问近似固定最终出水9900m³/d。\n（3）说明为什么不能将回流污泥量再次加作系统固体损失，及高低θc决策还需哪些工艺依据。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "18513f30842ef1271279772d6f5d77133d9ed30b93e989c6495fa32cbf74b1ed",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-environmental-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "一股实际工况废气10000m³/h，污染物500mg/m³，串联两级净化，单级质量去除率分别80%、75%，不加旁路、气量近似不变。项目控制浓度≤30mg/m³。设备总压降1800Pa，风机总效率65%。浓度和流量均为同一实际温压、干湿基准。\n（1）求总去除率、出口浓度和总去除质量kg/h。\n（2）求风机轴功率。\n（3）若一级失效而二级效率仍75%，判断出口；说明双级效率不能直接相加以及标准状态折算需要什么。",
+      "blocks": [
+        {
+          "id": "registered-environmental-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "一股实际工况废气10000m³/h，污染物500mg/m³，串联两级净化，单级质量去除率分别80%、75%，不加旁路、气量近似不变。项目控制浓度≤30mg/m³。设备总压降1800Pa，风机总效率65%。浓度和流量均为同一实际温压、干湿基准。\n（1）求总去除率、出口浓度和总去除质量kg/h。\n（2）求风机轴功率。\n（3）若一级失效而二级效率仍75%，判断出口；说明双级效率不能直接相加以及标准状态折算需要什么。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "a60247077aae41d2106428e97c9da3c7fb70fafd695d3f28ef4a9115cdf7e220",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-environmental-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "同一天分三个时段排水：100m³、40mg/L；300m³、80mg/L；600m³、20mg/L，各浓度代表该时段混合样，基准一致。项目日均流量加权浓度目标≤40mg/L，总日质量负荷目标≤40kg/d。实验室又给出流量加权浓度的扩展不确定度±4mg/L；题设保守判定规则为“测得值+扩展不确定度≤限值才接受”。\n（1）求算术平均、流量加权平均和日负荷，按点估计判断。\n（2）按保守规则判断并给出结论措辞。\n（3）设计最小采样与质量保证记录，避免稀释、错基准或遗漏高负荷时段。",
+      "blocks": [
+        {
+          "id": "registered-environmental-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "同一天分三个时段排水：100m³、40mg/L；300m³、80mg/L；600m³、20mg/L，各浓度代表该时段混合样，基准一致。项目日均流量加权浓度目标≤40mg/L，总日质量负荷目标≤40kg/d。实验室又给出流量加权浓度的扩展不确定度±4mg/L；题设保守判定规则为“测得值+扩展不确定度≤限值才接受”。\n（1）求算术平均、流量加权平均和日负荷，按点估计判断。\n（2）按保守规则判断并给出结论措辞。\n（3）设计最小采样与质量保证记录，避免稀释、错基准或遗漏高负荷时段。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "06f9f6d65a5c4b7d5553a8faf3a03a380a4656e36ed4a9386f6faee0263b758f",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-environmental-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "两股废水连续混合：A流量600m³/d、污染物300mg/L；B流量400m³/d、50mg/L，均按相同污染物质量浓度计，体积可加，不发生反应。混合后进入完全混合稳态反应池，一阶降解系数k=0.50d⁻¹，目标出水≤40mg/L，且无其他去除。\n（1）求混合浓度和污染物负荷kg/d。\n（2）由稳态物料衡算推导所需最小池容。\n（3）若误用活塞流公式，求其池容并说明偏差。给定活塞流C/C₀=exp(−kV/Q)。",
+          "score": 20,
+          "solution": "混合浓度200mg/L，负荷200kg/d。完全混合池C=C₀/(1+kV/Q)，要求V≥8000m³。活塞流公式给V=Qln(200/40)/k=3218.8758m³，小于本题完全混合池所需值；两者停留时间分布不同，不能混用。",
+          "explanation": "在mg/L与m³/d间，质量负荷换算为QC/1000 kg/d。完全混合稳态输入QC₀=QC+kVC，解得V=Q(C₀/C−1)/k。活塞流沿程浓度下降，反应速率平均较高，不能把其指数式套到完全混合池。",
+          "source": {
+            "materialId": "registered-environmental-engineer-cases-01-q1-source",
+            "blockId": "registered-environmental-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "两股废水连续混合：A流量600m³/d、污染物300mg/L；B流量400m³/d、50mg/L，均按相同污染物质量浓度计，体积可加，不发生反应。混合后进入完全混合稳态反应池，一阶降解系数k=0.50d⁻¹，目标出水≤40mg/L，且无其他去除。\n（1）求混合浓度和污染物负荷kg/d。\n（2）由稳态物料衡算推导所需最小池容。\n（3）若误用活塞流公式，求其池容并说明偏差。给定活塞流C/C₀=exp(−kV/Q)。"
+          },
+          "chapter": "混合质量守恒",
+          "tags": [
+            "混合质量守恒",
+            "完全混合池",
+            "反应器模型比较"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "混合质量守恒",
+              "完全混合池",
+              "反应器模型比较"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "混合浓度及200kg/d",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "稳态方程与8000m³",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "活塞流3218.8758m³及比较",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "单位及流态适用条件",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "environment-mixed-concentration: independent Python calculation = 200; expected = 200; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-load: independent Python calculation = 200; expected = 200; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-CSTR-volume: independent Python calculation = 8000; expected = 8000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-PFR-volume: independent Python calculation = 3218.875825; expected = 3218.875825; pass.",
+                "result": "pass"
+              }
+            ]
+          },
+          "attachments": [
+            {
+              "id": "registered-environmental-engineer-cases-01-q1-diagram",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iMTgwIiB2aWV3Qm94PSIwIDAgNzIwIDE4MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSIxODAiIGZpbGw9IndoaXRlIi8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik0yMCA0NUgxNzBWODVIMjUwTTIwIDEzMEgxNzBWOTBNMjUwIDI1SDQ2NVYxNTBIMjUwWk00NjUgODVINjkwIi8+PHBhdGggZD0iTTIzMCA3OGwyMCA3LTIwIDdNNjcwIDc4bDIwIDctMjAgN00zMzUgNDh2NzBtLTM1LTM1aDcwIi8+PC9nPjxnIGZvbnQtZmFtaWx5PSJzYW5zLXNlcmlmIiBmb250LXNpemU9IjE3Ij48dGV4dCB4PSIyNSIgeT0iMzAiPkE6IDYwMCBtwrMvZCwgMzAwIG1nL0w8L3RleHQ+PHRleHQgeD0iMjUiIHk9IjE2MCI+QjogNDAwIG3Csy9kLCA1MCBtZy9MPC90ZXh0Pjx0ZXh0IHg9IjI3NSIgeT0iMTM1Ij7lrozlhajmt7flkIjmsaAgaz0wLjUwIGTigbvCuTwvdGV4dD48dGV4dCB4PSI0OTAiIHk9IjY1Ij7nm67moIcg4omkNDAgbWcvTDwvdGV4dD48L2c+PC9zdmc+",
+              "alt": "两股废水汇合进入完全混合反应池，A600m³/d300mg/L，B400m³/d50mg/L，k0.50d⁻¹，目标40mg/L。",
+              "widthMm": 140
+            }
+          ]
+        },
+        {
+          "id": "registered-environmental-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "总有效池容1000m³、处理流量100m³/h的一阶完全混合反应系统，进水100mg/L，k=0.20h⁻¹。可选择单池，或将总池容分成两个串联完全混合池；无回流、无短路。\n（1）求单池出水。\n（2）将两池均分时求出水；目标≤26mg/L，能否满足？\n（3）设第一池容V₁、第二池1000−V₁，推导为什么均分使出水最低。\n（4）若实测出水30mg/L，不能仅凭模型预测作达标结论，应核实什么？",
+          "score": 20,
+          "solution": "单池出水33.3333mg/L；均分串联出水25mg/L，满足题设目标。出水=100/[(1+0.002V₁)(1+0.002(1000−V₁))]；分母=3+0.000004V₁(1000−V₁)，在V₁=500m³最大。实测30超过26，须核查有效容积、混合/短流、k与温度、流量负荷及采样分析，不能以设计值替代实测。",
+          "explanation": "每池沿用C_out=C_in/(1+kV/Q)。固定总停留时间时，两池分母的乘积用配方或AM–GM证明均分最优；但只在相同k、相同理想混合模型及无额外约束下成立。",
+          "source": {
+            "materialId": "registered-environmental-engineer-cases-01-q2-source",
+            "blockId": "registered-environmental-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "总有效池容1000m³、处理流量100m³/h的一阶完全混合反应系统，进水100mg/L，k=0.20h⁻¹。可选择单池，或将总池容分成两个串联完全混合池；无回流、无短路。\n（1）求单池出水。\n（2）将两池均分时求出水；目标≤26mg/L，能否满足？\n（3）设第一池容V₁、第二池1000−V₁，推导为什么均分使出水最低。\n（4）若实测出水30mg/L，不能仅凭模型预测作达标结论，应核实什么？"
+          },
+          "chapter": "串联反应器",
+          "tags": [
+            "串联反应器",
+            "容积分配",
+            "模型与实测"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "串联反应器",
+              "容积分配",
+              "模型与实测"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "单池与两池计算",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "分母与最优分配证明",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "26mg/L设计判断",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "实测超标事实及针对核实",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "environment-single-CSTR: independent Python calculation = 33.33333333; expected = 33.33333333; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-two-CSTR: independent Python calculation = 25; expected = 25; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-split-endpoint-check: independent Python calculation = 27.47252747; expected = 27.47252747; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-environmental-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "某曝气池有效容积5000m³，池内悬浮固体浓度3000mg/L。剩余污泥流量100m³/d、浓度8000mg/L；最终出水9900m³/d、悬浮固体15mg/L。按固体停留时间定义θc=系统固体库存/每日离开固体量，题目只计曝气池库存，不计二沉池库存；回流在系统边界内部。\n（1）求库存、每日排出固体及θc。\n（2）其他条件不变，希望θc=20d，求剩余污泥流量；本问近似固定最终出水9900m³/d。\n（3）说明为什么不能将回流污泥量再次加作系统固体损失，及高低θc决策还需哪些工艺依据。",
+          "score": 20,
+          "solution": "库存15000kg；剩余污泥800kg/d、出水148.5kg/d，共948.5kg/d，θc=15.814444d。目标总损失750kg/d，剩余污泥应601.5kg/d，对应75.1875m³/d。回流是内部转移，不构成系统边界损失；还需核定温度、硝化目标、负荷、沉降及溶解氧等。",
+          "explanation": "浓度mg/L等值g/m³，体积乘浓度后除1000得kg。θc不是水力停留时间5000/10000=0.5d。控制固体库存需要真实流量和浓度资料，不能仅用名义泵运行时间。",
+          "source": {
+            "materialId": "registered-environmental-engineer-cases-01-q3-source",
+            "blockId": "registered-environmental-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "某曝气池有效容积5000m³，池内悬浮固体浓度3000mg/L。剩余污泥流量100m³/d、浓度8000mg/L；最终出水9900m³/d、悬浮固体15mg/L。按固体停留时间定义θc=系统固体库存/每日离开固体量，题目只计曝气池库存，不计二沉池库存；回流在系统边界内部。\n（1）求库存、每日排出固体及θc。\n（2）其他条件不变，希望θc=20d，求剩余污泥流量；本问近似固定最终出水9900m³/d。\n（3）说明为什么不能将回流污泥量再次加作系统固体损失，及高低θc决策还需哪些工艺依据。"
+          },
+          "chapter": "污泥龄",
+          "tags": [
+            "污泥龄",
+            "系统边界",
+            "固体衡算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "污泥龄",
+              "系统边界",
+              "固体衡算"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "库存与各损失换算",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "实际θc正确",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "20d反算排泥75.1875",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "内部回流、HRT及运行条件区分",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "environment-solids-inventory: independent Python calculation = 15000; expected = 15000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-SRT: independent Python calculation = 15.81444386; expected = 15.81444386; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-target-wasteflow: independent Python calculation = 75.1875; expected = 75.1875; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-environmental-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "一股实际工况废气10000m³/h，污染物500mg/m³，串联两级净化，单级质量去除率分别80%、75%，不加旁路、气量近似不变。项目控制浓度≤30mg/m³。设备总压降1800Pa，风机总效率65%。浓度和流量均为同一实际温压、干湿基准。\n（1）求总去除率、出口浓度和总去除质量kg/h。\n（2）求风机轴功率。\n（3）若一级失效而二级效率仍75%，判断出口；说明双级效率不能直接相加以及标准状态折算需要什么。",
+          "score": 20,
+          "solution": "总效率95%，出口25mg/m³，去除4.75kg/h。风机轴功率7.692308kW。一级失效后出口125mg/m³，不满足30。两级剩余比例相乘；状态折算须有绝对温压、含湿量及采用的基准，不能混用实际流量和标况浓度。",
+          "explanation": "级联质量守恒C₂=C₀(1−η₁)(1−η₂)；功率QΔp/η，先将h转换成s。80%+75%既超过100%，也忽略二级只处理一级残余负荷。项目浓度限值是题设值，无未引用的法定排放限值。",
+          "source": {
+            "materialId": "registered-environmental-engineer-cases-01-q4-source",
+            "blockId": "registered-environmental-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "一股实际工况废气10000m³/h，污染物500mg/m³，串联两级净化，单级质量去除率分别80%、75%，不加旁路、气量近似不变。项目控制浓度≤30mg/m³。设备总压降1800Pa，风机总效率65%。浓度和流量均为同一实际温压、干湿基准。\n（1）求总去除率、出口浓度和总去除质量kg/h。\n（2）求风机轴功率。\n（3）若一级失效而二级效率仍75%，判断出口；说明双级效率不能直接相加以及标准状态折算需要什么。"
+          },
+          "chapter": "串联去除",
+          "tags": [
+            "串联去除",
+            "风机能耗",
+            "测量状态基准"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "串联去除",
+              "风机能耗",
+              "测量状态基准"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "总效率与出口浓度",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "4.75kg/h负荷",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "功率单位与7.6923kW",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "失效情景125mg/m³",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "状态基准及效率逻辑",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "environment-stack-outlet: independent Python calculation = 25; expected = 25; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-stack-removal: independent Python calculation = 4.75; expected = 4.75; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-fan-power-kW: independent Python calculation = 7.692307692; expected = 7.692307692; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-environmental-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "同一天分三个时段排水：100m³、40mg/L；300m³、80mg/L；600m³、20mg/L，各浓度代表该时段混合样，基准一致。项目日均流量加权浓度目标≤40mg/L，总日质量负荷目标≤40kg/d。实验室又给出流量加权浓度的扩展不确定度±4mg/L；题设保守判定规则为“测得值+扩展不确定度≤限值才接受”。\n（1）求算术平均、流量加权平均和日负荷，按点估计判断。\n（2）按保守规则判断并给出结论措辞。\n（3）设计最小采样与质量保证记录，避免稀释、错基准或遗漏高负荷时段。",
+          "score": 20,
+          "solution": "三值算术平均46.6667mg/L；流量加权均值40mg/L；总负荷40kg/d。点估计恰达两项目标，但保守上界44mg/L>40，不满足题给接受规则，应报告测值、范围与判定依据，不能直接宣布“确定合格”。需保存连续/分段流量、等流量或流量比例混合样方案、采样保存运输、校准/空白/平行及实验室原始数据。",
+          "explanation": "加权浓度=(100×40+300×80+600×20)/1000。浓度目标与负荷目标本题数值恰好对应，换流量后未必相同；两者不能一概替代。保守判定是明确给定的项目决策规则，非任意套用。",
+          "source": {
+            "materialId": "registered-environmental-engineer-cases-01-q5-source",
+            "blockId": "registered-environmental-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "同一天分三个时段排水：100m³、40mg/L；300m³、80mg/L；600m³、20mg/L，各浓度代表该时段混合样，基准一致。项目日均流量加权浓度目标≤40mg/L，总日质量负荷目标≤40kg/d。实验室又给出流量加权浓度的扩展不确定度±4mg/L；题设保守判定规则为“测得值+扩展不确定度≤限值才接受”。\n（1）求算术平均、流量加权平均和日负荷，按点估计判断。\n（2）按保守规则判断并给出结论措辞。\n（3）设计最小采样与质量保证记录，避免稀释、错基准或遗漏高负荷时段。"
+          },
+          "chapter": "流量加权采样",
+          "tags": [
+            "流量加权采样",
+            "负荷",
+            "测量不确定度"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "流量加权采样",
+              "负荷",
+              "测量不确定度"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "算术与加权均值区分",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "40kg/d与点估计边界",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "44mg/L保守上界及正确措辞",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "采样和质控记录可执行",
+                "points": 6
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "environment-composite-weighted: independent Python calculation = 40; expected = 40; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "environment-daily-load: independent Python calculation = 40; expected = 40; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-environmental-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-environmental-engineer-project-blueprint",
+      "name": "环保工程专业案例案例能力蓝图",
+      "subject": "环保工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-environmental-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-environmental-engineer-cases-01-q1",
+      "registered-environmental-engineer-cases-01-q2",
+      "registered-environmental-engineer-cases-01-q3",
+      "registered-environmental-engineer-cases-01-q4",
+      "registered-environmental-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

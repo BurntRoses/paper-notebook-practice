@@ -1,0 +1,785 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "constructor-1-cases-01",
+  "notebookId": "constructor-1-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "一级建造师　建筑工程管理与实务",
+  "subject": "建筑工程管理与实务",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "一级建造师　建筑工程管理与实务",
+      "建筑工程·施工组织与项目控制"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "一级建造师　建筑工程管理与实务答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "建筑工程管理与实务",
+      "rule": true
+    },
+    "footerTemplate": "建筑工程管理与实务　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "constructor-1",
+    "examName": "一级建造师　建筑工程管理与实务",
+    "specialty": "建筑工程·施工组织与项目控制",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "constructor-1-cases-01-q1",
+        "knowledge": "网络计划、关键线路转换、工期费用优化",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-1-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "constructor-1-cases-01-q2",
+        "knowledge": "工程量计算、资源瓶颈、连续施工组织",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-1-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "constructor-1-cases-01-q3",
+        "knowledge": "挣值分析、成本预测、估计假设",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-1-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "constructor-1-cases-01-q4",
+        "knowledge": "工期索赔、并发事件、合同证据链",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-1-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "constructor-1-cases-01-q5",
+        "knowledge": "施工质量控制、多条件判定、不符合项处置",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "constructor-1-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "constructor-1-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。",
+      "blocks": [
+        {
+          "id": "constructor-1-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "413ef9ad985438287d211dcccd91a0c0a0f388be327aaccb15117f14857d1a37",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-1-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "一块筏板长24m、宽18m、厚0.80m，按几何体积计算，不扣钢筋。采购量在净用量上增加2%损耗，搅拌运输车每车可用8m³。现场每小时最多到达5车，泵送能力45m³/h，作业面摊铺能力42m³/h。每车足额供料，供料均匀；浇筑准备和清理合计1h。项目施工方案要求该作业总时长不超过10h。\n（1）求混凝土净量、采购量和最少整车数。\n（2）按净量计算连续浇筑时间及含准备清理的总时长，指出瓶颈。\n（3）若到车率降到4车/h，是否仍满足该方案时长要求？说明调整措施及复核项目。",
+      "blocks": [
+        {
+          "id": "constructor-1-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "一块筏板长24m、宽18m、厚0.80m，按几何体积计算，不扣钢筋。采购量在净用量上增加2%损耗，搅拌运输车每车可用8m³。现场每小时最多到达5车，泵送能力45m³/h，作业面摊铺能力42m³/h。每车足额供料，供料均匀；浇筑准备和清理合计1h。项目施工方案要求该作业总时长不超过10h。\n（1）求混凝土净量、采购量和最少整车数。\n（2）按净量计算连续浇筑时间及含准备清理的总时长，指出瓶颈。\n（3）若到车率降到4车/h，是否仍满足该方案时长要求？说明调整措施及复核项目。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "d0a1037c100c83165dd9d084d966fc19aaf48f6d86eca3b10d30d3613dc24b65",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-1-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "合同预算单价为200元/m²，项目总预算BAC=600000元。检查日计划完成1500m²，实际完成1200m²，实际成本AC=270000元。按挣值法，不考虑税费和价格变化。\n（1）求PV、EV、CV、SV、CPI、SPI并解释。\n（2）假定后续成本效率保持当前CPI，求完工估算EAC和尚需成本ETC。\n（3）若改为剩余工程按原预算效率完成，EAC是多少？两种估计为什么不能混用？",
+      "blocks": [
+        {
+          "id": "constructor-1-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "合同预算单价为200元/m²，项目总预算BAC=600000元。检查日计划完成1500m²，实际完成1200m²，实际成本AC=270000元。按挣值法，不考虑税费和价格变化。\n（1）求PV、EV、CV、SV、CPI、SPI并解释。\n（2）假定后续成本效率保持当前CPI，求完工估算EAC和尚需成本ETC。\n（3）若改为剩余工程按原预算效率完成，EAC是多少？两种估计为什么不能混用？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "9ba9295413f5cbba7e7ca1eedb2145cd05f7c7b350124465ce2104d8d1980902",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-1-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "工作B原计划在第6—10日施工，共5个工作日，是关键工作；其后关键工作C需5日。按原计划项目第15日结束。业主未交场地影响第6、7日；承包人自有设备故障影响第7、8、9日。期间B完全不能作业，其余日期每天完成一个工作日的工程量。合同专用条款约定：业主原因导致的关键停工日可顺延；与承包人原因并发的业主停工日只顺延不补偿费用；承包人独有停工日不顺延不补偿。现场可补偿维持费为10000元/日，不计其他费用。\n（1）按日列出原因分类与B实际完成日、项目完成日。\n（2）计算可顺延天数与可补偿费用。\n（3）指出索赔记录应保留的三类证据。",
+      "blocks": [
+        {
+          "id": "constructor-1-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "工作B原计划在第6—10日施工，共5个工作日，是关键工作；其后关键工作C需5日。按原计划项目第15日结束。业主未交场地影响第6、7日；承包人自有设备故障影响第7、8、9日。期间B完全不能作业，其余日期每天完成一个工作日的工程量。合同专用条款约定：业主原因导致的关键停工日可顺延；与承包人原因并发的业主停工日只顺延不补偿费用；承包人独有停工日不顺延不补偿。现场可补偿维持费为10000元/日，不计其他费用。\n（1）按日列出原因分类与B实际完成日、项目完成日。\n（2）计算可顺延天数与可补偿费用。\n（3）指出索赔记录应保留的三类证据。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "795712ab0424b3617dc446c30d1a09b8badb19808c8359eaf7b19d7662871296",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "constructor-1-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "项目质量计划对两个独立批次的五组试件设定本题判定规则：五组平均值不得低于36MPa，且任何一组不得低于32MPa；两个批次不得合并评定。A批结果为38、37、36、34、35MPa；B批为30、41、40、39、38MPa。现场记录又显示B批有一次未经核准的加水，施工员拟用两批合并平均值签认。\n（1）按给定规则分别计算并判定。\n（2）说明合并平均值不能解决什么问题。\n（3）列出发现、隔离、复核、处置和关闭的质量控制链，说明何时可以恢复受影响后续工序。",
+      "blocks": [
+        {
+          "id": "constructor-1-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "项目质量计划对两个独立批次的五组试件设定本题判定规则：五组平均值不得低于36MPa，且任何一组不得低于32MPa；两个批次不得合并评定。A批结果为38、37、36、34、35MPa；B批为30、41、40、39、38MPa。现场记录又显示B批有一次未经核准的加水，施工员拟用两批合并平均值签认。\n（1）按给定规则分别计算并判定。\n（2）说明合并平均值不能解决什么问题。\n（3）列出发现、隔离、复核、处置和关闭的质量控制链，说明何时可以恢复受影响后续工序。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "c7ddb929363ec591fee0928bf1b0f9b77b0458b7cb63559fbbb51f9979a7a386",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "constructor-1-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。",
+          "score": 20,
+          "solution": "正常工期16天，关键线路A—C—D—E；B总时差1天。最低成本为C压缩1天、D压缩1天，增量20千元，工期14天。只把C从5天压到3天，B的4天成为控制支路，总工期仍为15天。",
+          "explanation": "A完成时刻3，B/C最早完成7/8，D完成14，E完成16。压缩1天C后B/C同为4天；再压缩C不缩短汇合时刻。枚举B∈{0,1}、C/D∈{0,1,2}的全部18个方案，满足14天的最小费用为20千元。",
+          "source": {
+            "materialId": "constructor-1-cases-01-q1-source",
+            "blockId": "constructor-1-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。"
+          },
+          "chapter": "网络计划",
+          "tags": [
+            "网络计划",
+            "关键线路转换",
+            "工期费用优化"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "网络计划",
+              "关键线路转换",
+              "工期费用优化"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "计算正常工期16天及关键线路",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "B总时差1天",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "识别支路转换并给出C1+D1方案",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "比较可行组合，证明20千元为最低成本",
+                "points": 6
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-network-normal: independent Python calculation = 16; expected = 16; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-crash-mincost: independent Python calculation = 20; expected = 20; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-crash-duration: independent Python calculation = 14; expected = 14; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-1-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "一块筏板长24m、宽18m、厚0.80m，按几何体积计算，不扣钢筋。采购量在净用量上增加2%损耗，搅拌运输车每车可用8m³。现场每小时最多到达5车，泵送能力45m³/h，作业面摊铺能力42m³/h。每车足额供料，供料均匀；浇筑准备和清理合计1h。项目施工方案要求该作业总时长不超过10h。\n（1）求混凝土净量、采购量和最少整车数。\n（2）按净量计算连续浇筑时间及含准备清理的总时长，指出瓶颈。\n（3）若到车率降到4车/h，是否仍满足该方案时长要求？说明调整措施及复核项目。",
+          "score": 20,
+          "solution": "净量345.60m³，采购量352.512m³，至少45车。正常供料40m³/h为瓶颈，连续浇筑8.64h，总时长9.64h，满足10h。降为4车/h后供料32m³/h，总时长11.8h，不满足。可增派车辆恢复稳定供料，并同步复核交通周转、作业面、设备备用和施工缝方案。",
+          "explanation": "体积24×18×0.8=345.6；采购量乘1.02，车辆数向上取整。有效产能取min(供料40,泵45,摊铺42)=40。降到32后345.6/32+1=11.8。2%是本题采购参数，10h是项目方案值，不作为普遍规范限值。",
+          "source": {
+            "materialId": "constructor-1-cases-01-q2-source",
+            "blockId": "constructor-1-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "一块筏板长24m、宽18m、厚0.80m，按几何体积计算，不扣钢筋。采购量在净用量上增加2%损耗，搅拌运输车每车可用8m³。现场每小时最多到达5车，泵送能力45m³/h，作业面摊铺能力42m³/h。每车足额供料，供料均匀；浇筑准备和清理合计1h。项目施工方案要求该作业总时长不超过10h。\n（1）求混凝土净量、采购量和最少整车数。\n（2）按净量计算连续浇筑时间及含准备清理的总时长，指出瓶颈。\n（3）若到车率降到4车/h，是否仍满足该方案时长要求？说明调整措施及复核项目。"
+          },
+          "chapter": "工程量计算",
+          "tags": [
+            "工程量计算",
+            "资源瓶颈",
+            "连续施工组织"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "工程量计算",
+              "资源瓶颈",
+              "连续施工组织"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "净量与采购量计算正确",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "整车数向上取整45",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "瓶颈40及正常时长9.64h",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "降供料情形11.8h并正确判定",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "调整措施与瓶颈相对应",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-concrete-net: independent Python calculation = 345.6; expected = 345.6; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-trucks: independent Python calculation = 45; expected = 45; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-pour-total: independent Python calculation = 9.64; expected = 9.64; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-pour-reduced: independent Python calculation = 11.8; expected = 11.8; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-1-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "合同预算单价为200元/m²，项目总预算BAC=600000元。检查日计划完成1500m²，实际完成1200m²，实际成本AC=270000元。按挣值法，不考虑税费和价格变化。\n（1）求PV、EV、CV、SV、CPI、SPI并解释。\n（2）假定后续成本效率保持当前CPI，求完工估算EAC和尚需成本ETC。\n（3）若改为剩余工程按原预算效率完成，EAC是多少？两种估计为什么不能混用？",
+          "score": 20,
+          "solution": "PV=300000元，EV=240000元；CV=-30000元，SV=-60000元；CPI=0.8889，SPI=0.8000，成本超支且进度落后。持续当前效率时EAC=675000元，ETC=405000元。剩余工程恢复原预算效率时EAC=630000元。两式对剩余工作效率的假设不同。",
+          "explanation": "PV=1500×200，EV=1200×200。CPI=EV/AC，SPI=EV/PV。EAC=BAC/CPI；另一个情形为AC+(BAC−EV)。SV以预算货币表示，不直接等于延误天数。",
+          "source": {
+            "materialId": "constructor-1-cases-01-q3-source",
+            "blockId": "constructor-1-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "合同预算单价为200元/m²，项目总预算BAC=600000元。检查日计划完成1500m²，实际完成1200m²，实际成本AC=270000元。按挣值法，不考虑税费和价格变化。\n（1）求PV、EV、CV、SV、CPI、SPI并解释。\n（2）假定后续成本效率保持当前CPI，求完工估算EAC和尚需成本ETC。\n（3）若改为剩余工程按原预算效率完成，EAC是多少？两种估计为什么不能混用？"
+          },
+          "chapter": "挣值分析",
+          "tags": [
+            "挣值分析",
+            "成本预测",
+            "估计假设"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "挣值分析",
+              "成本预测",
+              "估计假设"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "PV/EV及CV/SV",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "CPI/SPI与含义",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "EAC675000及ETC405000",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "恢复效率情形630000",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "解释假设差异且不把SV当作天数",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-CPI: independent Python calculation = 0.8888888889; expected = 0.8888888889; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-EAC-current: independent Python calculation = 675000; expected = 675000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-EAC-restored: independent Python calculation = 630000; expected = 630000; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-1-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "工作B原计划在第6—10日施工，共5个工作日，是关键工作；其后关键工作C需5日。按原计划项目第15日结束。业主未交场地影响第6、7日；承包人自有设备故障影响第7、8、9日。期间B完全不能作业，其余日期每天完成一个工作日的工程量。合同专用条款约定：业主原因导致的关键停工日可顺延；与承包人原因并发的业主停工日只顺延不补偿费用；承包人独有停工日不顺延不补偿。现场可补偿维持费为10000元/日，不计其他费用。\n（1）按日列出原因分类与B实际完成日、项目完成日。\n（2）计算可顺延天数与可补偿费用。\n（3）指出索赔记录应保留的三类证据。",
+          "score": 20,
+          "solution": "第6日仅业主原因，第7日并发，第8、9日仅承包人原因；停工并集4日，B于第14日完成，项目于第19日完成。可顺延第6、7日共2日；仅第6日可获费用补偿，共10000元。保留场地移交与通知、设备维修和施工日志、关键线路与实际进度、维持费台账等相互对应证据。",
+          "explanation": "损失天数按停工日期并集计算，不能将2+3重复加总为5。合同补偿规则明确给定，不推定适用未列明的法定并发延误规则。工期顺延2日与实际延误4日分别计算，不能混为同一个数。",
+          "source": {
+            "materialId": "constructor-1-cases-01-q4-source",
+            "blockId": "constructor-1-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "工作B原计划在第6—10日施工，共5个工作日，是关键工作；其后关键工作C需5日。按原计划项目第15日结束。业主未交场地影响第6、7日；承包人自有设备故障影响第7、8、9日。期间B完全不能作业，其余日期每天完成一个工作日的工程量。合同专用条款约定：业主原因导致的关键停工日可顺延；与承包人原因并发的业主停工日只顺延不补偿费用；承包人独有停工日不顺延不补偿。现场可补偿维持费为10000元/日，不计其他费用。\n（1）按日列出原因分类与B实际完成日、项目完成日。\n（2）计算可顺延天数与可补偿费用。\n（3）指出索赔记录应保留的三类证据。"
+          },
+          "chapter": "工期索赔",
+          "tags": [
+            "工期索赔",
+            "并发事件",
+            "合同证据链"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "工期索赔",
+              "并发事件",
+              "合同证据链"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "按日正确分类并发和独有原因",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "并集4日及B14/项目19日",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "顺延2日、费用10000元",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "实际延误和可顺延区别",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "证据逐项对应原因、影响和费用",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-delay-union: independent Python calculation = 4; expected = 4; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-extension: independent Python calculation = 2; expected = 2; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-compensation: independent Python calculation = 10000; expected = 10000; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "constructor-1-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "项目质量计划对两个独立批次的五组试件设定本题判定规则：五组平均值不得低于36MPa，且任何一组不得低于32MPa；两个批次不得合并评定。A批结果为38、37、36、34、35MPa；B批为30、41、40、39、38MPa。现场记录又显示B批有一次未经核准的加水，施工员拟用两批合并平均值签认。\n（1）按给定规则分别计算并判定。\n（2）说明合并平均值不能解决什么问题。\n（3）列出发现、隔离、复核、处置和关闭的质量控制链，说明何时可以恢复受影响后续工序。",
+          "score": 20,
+          "solution": "A平均36MPa、最小34MPa，两项均满足。B平均37.6MPa，但最小30MPa，不满足。合并平均不能掩盖单批或单组不合格，也不能消除未经核准加水的过程偏差。应登记不符合项并标识隔离，核查取样、设备和加水记录，按批准的检验与技术处理方案复核，实施修复/加固或其他经批准处置，形成复验与责任人签认后按项目程序关闭；受影响后续工序须经批准放行。",
+          "explanation": "逐批复核“均值+最小值”的逻辑与AND条件，B不能因均值高而判合格。这里32/36MPa是明确给定的项目练习判据，并未引用或替代国家混凝土验收规范。处置不得直接凭一次追加取样自动改写原记录。",
+          "source": {
+            "materialId": "constructor-1-cases-01-q5-source",
+            "blockId": "constructor-1-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "项目质量计划对两个独立批次的五组试件设定本题判定规则：五组平均值不得低于36MPa，且任何一组不得低于32MPa；两个批次不得合并评定。A批结果为38、37、36、34、35MPa；B批为30、41、40、39、38MPa。现场记录又显示B批有一次未经核准的加水，施工员拟用两批合并平均值签认。\n（1）按给定规则分别计算并判定。\n（2）说明合并平均值不能解决什么问题。\n（3）列出发现、隔离、复核、处置和关闭的质量控制链，说明何时可以恢复受影响后续工序。"
+          },
+          "chapter": "施工质量控制",
+          "tags": [
+            "施工质量控制",
+            "多条件判定",
+            "不符合项处置"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工质量控制",
+              "多条件判定",
+              "不符合项处置"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "A均值36/最小34及正确判定",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "B均值37.6/最小30及正确判定",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "解释批次独立及过程偏差",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "完整证据与技术处置闭环",
+                "points": 5
+              },
+              {
+                "id": "r5",
+                "description": "放行条件明确",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-quality-A: independent Python calculation = 36; expected = 36; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "constructor1-quality-B: independent Python calculation = 37.6; expected = 37.6; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "case-evidence-review",
+                "detail": "逐项对照案例约定：B最小值30<32；合并两批违反题设。处置链包含原始记录、复核、批准及复验。",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "constructor-1-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "constructor-1-project-blueprint",
+      "name": "建筑工程管理与实务案例能力蓝图",
+      "subject": "建筑工程管理与实务",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "constructor-1-cases-v7",
+    "sourceQuestionIds": [
+      "constructor-1-cases-01-q1",
+      "constructor-1-cases-01-q2",
+      "constructor-1-cases-01-q3",
+      "constructor-1-cases-01-q4",
+      "constructor-1-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

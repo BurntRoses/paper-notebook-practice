@@ -1,0 +1,786 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-hydraulic-engineer-cases-01",
+  "notebookId": "registered-hydraulic-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册土木工程师（水利水电）　专业案例",
+  "subject": "水利水电工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册土木工程师（水利水电）　专业案例",
+      "工程规划·水工结构·水力与运行"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册土木工程师（水利水电）　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "水利水电工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "水利水电工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-hydraulic-engineer",
+    "examName": "注册土木工程师（水利水电）　专业案例",
+    "specialty": "工程规划·水工结构·水力与运行",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-hydraulic-engineer-cases-01-q1",
+        "knowledge": "洪水调度、水量连续、受限优化",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-hydraulic-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-hydraulic-engineer-cases-01-q2",
+        "knowledge": "重力坝稳定、偏心受压、扬压力边界",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-hydraulic-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-hydraulic-engineer-cases-01-q3",
+        "knowledge": "水泵效率、分时调度、容量约束",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-hydraulic-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-hydraulic-engineer-cases-01-q4",
+        "knowledge": "泄洪建筑物、堰流、几何取整、适用工况",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-hydraulic-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-hydraulic-engineer-cases-01-q5",
+        "knowledge": "渗透稳定、有效应力、水头控制",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-hydraulic-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-2026-scope",
+      "kind": "reference",
+      "title": "水利水电考试路线核定",
+      "text": "2026湖北勘察设计考试通知分别列出环保、水利水电及道路等专业，并区分基础与专业考试。专业考试允许指定目录资料。此处仅核定考试路线；本卷技术指标、合同条件和公式逐题给定，不推定未读取的规范条款。",
+      "blocks": [
+        {
+          "id": "design-2026-scope-block",
+          "title": "水利水电考试路线核定",
+          "text": "2026湖北勘察设计考试通知分别列出环保、水利水电及道路等专业，并区分基础与专业考试。专业考试允许指定目录资料。此处仅核定考试路线；本卷技术指标、合同条件和公式逐题给定，不推定未读取的规范条款。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "fab9e2a1163070cede8e4d7a5ecce01a58a95083c141489034ad848f6d6acd46",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-hydraulic-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "某水库分5个连续1h时段运行，入流依次40/80/120/70/30m³/s，计划出流40/60/80/60/40m³/s。各时段流量恒定，初始可用防洪库容220000m³，忽略蒸发渗漏。\n（1）求每时段库容增量及相对初始蓄水量的累计变化。\n（2）判断原方案是否超出可用库容，超出多少。\n（3）仅允许第3时段额外匀速增加泄量，求恰好满足库容限制的最小增量；泄洪设施该时段最大允许85m³/s，能否做到？\n（4）指出将本题调度应用到真实工程还需核定哪些条件。",
+      "blocks": [
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "某水库分5个连续1h时段运行，入流依次40/80/120/70/30m³/s，计划出流40/60/80/60/40m³/s。各时段流量恒定，初始可用防洪库容220000m³，忽略蒸发渗漏。\n（1）求每时段库容增量及相对初始蓄水量的累计变化。\n（2）判断原方案是否超出可用库容，超出多少。\n（3）仅允许第3时段额外匀速增加泄量，求恰好满足库容限制的最小增量；泄洪设施该时段最大允许85m³/s，能否做到？\n（4）指出将本题调度应用到真实工程还需核定哪些条件。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "c19ac641d8f68c2deac394564abd15a88929e658f6e5196ad237662791fca3e4",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-hydraulic-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "按每米坝长分析某重力坝截面：底宽12m，计入扬压力后的竖向合力9000kN/m，关于底面中心的倾覆净力矩12000kN·m/m，水平合力4000kN/m。采用刚性底板线性应力分布，无黏聚抗滑，基底摩擦系数0.65。项目初步验算要求：基底不出现拉应力、最大压应力≤1500kPa、抗滑比≥1.5。\n（1）求偏心距及两边缘应力。\n（2）求抗滑比并逐项判定。\n（3）说明竖向合力已扣扬压力，为什么不能再次扣除；还需哪些真实结构验算。",
+      "blocks": [
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "按每米坝长分析某重力坝截面：底宽12m，计入扬压力后的竖向合力9000kN/m，关于底面中心的倾覆净力矩12000kN·m/m，水平合力4000kN/m。采用刚性底板线性应力分布，无黏聚抗滑，基底摩擦系数0.65。项目初步验算要求：基底不出现拉应力、最大压应力≤1500kPa、抗滑比≥1.5。\n（1）求偏心距及两边缘应力。\n（2）求抗滑比并逐项判定。\n（3）说明竖向合力已扣扬压力，为什么不能再次扣除；还需哪些真实结构验算。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "c7759c910de3a40c6cbe39731b853898ceb6db8d35d76ea0a392f24e1cdd9352",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-hydraulic-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "灌区需在一日内提升净水量100000m³，水泵实际总扬程18m，总效率0.72。输水损失已计入总扬程，无额外水量损失。可用两个时段：低价8h、电价0.40元/kWh，高价16h、电价0.90元/kWh；泵站最大流量2m³/s，任一时段效率均不变。\n（1）求总电耗。\n（2）以最低电费安排两时段水量与运行时长。\n（3）求最低电费，并比较全按高价抽水的增加费用；说明不能将低价时段分配超过输水能力。",
+      "blocks": [
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "灌区需在一日内提升净水量100000m³，水泵实际总扬程18m，总效率0.72。输水损失已计入总扬程，无额外水量损失。可用两个时段：低价8h、电价0.40元/kWh，高价16h、电价0.90元/kWh；泵站最大流量2m³/s，任一时段效率均不变。\n（1）求总电耗。\n（2）以最低电费安排两时段水量与运行时长。\n（3）求最低电费，并比较全按高价抽水的增加费用；说明不能将低价时段分配超过输水能力。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "40773c303338a3791f58d11498f96c980cf8a7e1f9bf37856164f7a36e887ef0",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-hydraulic-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "溢流设施按给定自由堰流模型Q=C·b有效·h^(3/2)，C=1.70m^(1/2)/s，设计Q=600m³/s、允许堰上水头h≤4m。两侧收缩使有效净宽比结构净宽少1.2m。结构净宽只能取2m的整数倍，现场最大可布置宽48m。\n（1）求最小有效宽与可选结构净宽。\n（2）取选定宽度求h=4m时能力和通过600m³/s所需水头。\n（3）若尾水淹没使该自由堰流公式不适用，应怎样处理，能否继续用同一C保证能力？",
+      "blocks": [
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "溢流设施按给定自由堰流模型Q=C·b有效·h^(3/2)，C=1.70m^(1/2)/s，设计Q=600m³/s、允许堰上水头h≤4m。两侧收缩使有效净宽比结构净宽少1.2m。结构净宽只能取2m的整数倍，现场最大可布置宽48m。\n（1）求最小有效宽与可选结构净宽。\n（2）取选定宽度求h=4m时能力和通过600m³/s所需水头。\n（3）若尾水淹没使该自由堰流公式不适用，应怎样处理，能否继续用同一C保证能力？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "06d249fabd9f0f9913c531f4c53c760d54dabcd1805fcddc5d6ddc8f8067d6ec",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "registered-hydraulic-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "均质饱和砂层厚8m，竖直向上渗流的上下边界总水头差4m，水头沿厚度线性变化。土粒比重Gs=2.65、孔隙比e=0.65，水重度9.81kN/m³。采用题给无黏聚砂沸腾模型ic=(Gs−1)/(1+e)，项目要求ic/i≥2.5。\n（1）求渗透坡降、临界坡降与抗沸腾比。\n（2）求满足要求允许的最大水头差。\n（3）从有效应力角度解释上向渗流风险，并提出两项针对性工程措施及相应核查。",
+      "blocks": [
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "均质饱和砂层厚8m，竖直向上渗流的上下边界总水头差4m，水头沿厚度线性变化。土粒比重Gs=2.65、孔隙比e=0.65，水重度9.81kN/m³。采用题给无黏聚砂沸腾模型ic=(Gs−1)/(1+e)，项目要求ic/i≥2.5。\n（1）求渗透坡降、临界坡降与抗沸腾比。\n（2）求满足要求允许的最大水头差。\n（3）从有效应力角度解释上向渗流风险，并提出两项针对性工程措施及相应核查。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "892198802514730e58e42eb482d84a9dca51f59783fad0f89146309a6c8a02e9",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "某水库分5个连续1h时段运行，入流依次40/80/120/70/30m³/s，计划出流40/60/80/60/40m³/s。各时段流量恒定，初始可用防洪库容220000m³，忽略蒸发渗漏。\n（1）求每时段库容增量及相对初始蓄水量的累计变化。\n（2）判断原方案是否超出可用库容，超出多少。\n（3）仅允许第3时段额外匀速增加泄量，求恰好满足库容限制的最小增量；泄洪设施该时段最大允许85m³/s，能否做到？\n（4）指出将本题调度应用到真实工程还需核定哪些条件。",
+          "score": 20,
+          "solution": "逐时库容增量0/72000/144000/36000/−36000m³；累计0/72000/216000/252000/216000m³。最大252000，超32000。第3时段额外泄量至少32000/3600=8.8889m³/s，即总88.8889，超过85限制，单靠该时段不可行；即使升至85仍超14000m³。需联合其他时段调度并核定水位库容曲线、泄流能力、下游安全、预测不确定性与闸门约束。",
+          "explanation": "水量连续方程逐段ΔS=(I−O)Δt；第4时段发生峰值，不能只看最终216000。第3时段多泄的水量同时降低第3以后累计量；容量、出流和下游控制是不同约束。",
+          "source": {
+            "materialId": "registered-hydraulic-engineer-cases-01-q1-source",
+            "blockId": "registered-hydraulic-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "某水库分5个连续1h时段运行，入流依次40/80/120/70/30m³/s，计划出流40/60/80/60/40m³/s。各时段流量恒定，初始可用防洪库容220000m³，忽略蒸发渗漏。\n（1）求每时段库容增量及相对初始蓄水量的累计变化。\n（2）判断原方案是否超出可用库容，超出多少。\n（3）仅允许第3时段额外匀速增加泄量，求恰好满足库容限制的最小增量；泄洪设施该时段最大允许85m³/s，能否做到？\n（4）指出将本题调度应用到真实工程还需核定哪些条件。"
+          },
+          "chapter": "洪水调度",
+          "tags": [
+            "洪水调度",
+            "水量连续",
+            "受限优化"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "洪水调度",
+              "水量连续",
+              "受限优化"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "逐时与累计库容正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "峰值/超量32000",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "最小增量8.8889及85不足",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "真实运行条件与多时段约束",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "water-storage-peak: independent Python calculation = 252000; expected = 252000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-extra-release: independent Python calculation = 8.888888889; expected = 8.888888889; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-residual-excess-at85: independent Python calculation = 14000; expected = 14000; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "按每米坝长分析某重力坝截面：底宽12m，计入扬压力后的竖向合力9000kN/m，关于底面中心的倾覆净力矩12000kN·m/m，水平合力4000kN/m。采用刚性底板线性应力分布，无黏聚抗滑，基底摩擦系数0.65。项目初步验算要求：基底不出现拉应力、最大压应力≤1500kPa、抗滑比≥1.5。\n（1）求偏心距及两边缘应力。\n（2）求抗滑比并逐项判定。\n（3）说明竖向合力已扣扬压力，为什么不能再次扣除；还需哪些真实结构验算。",
+          "score": 20,
+          "solution": "偏心e=1.333333m，小于B/6=2m。平均750kPa，最大1250.000000kPa、最小250.000000kPa，前两项满足；抗滑比1.462500<1.5，不满足。不得重复扣扬压力；还需实际荷载组合、地基承载/变形、坝体应力、渗流与材料等适用验算。",
+          "explanation": "q边缘=(W/B)(1±6e/B)，单位(kN/m)/m=kPa。抗滑比=μW/H，只在题给无黏聚简化模型成立。不能因无拉应力且压应力小就宣布整体通过，三个判据需同时满足。",
+          "source": {
+            "materialId": "registered-hydraulic-engineer-cases-01-q2-source",
+            "blockId": "registered-hydraulic-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "按每米坝长分析某重力坝截面：底宽12m，计入扬压力后的竖向合力9000kN/m，关于底面中心的倾覆净力矩12000kN·m/m，水平合力4000kN/m。采用刚性底板线性应力分布，无黏聚抗滑，基底摩擦系数0.65。项目初步验算要求：基底不出现拉应力、最大压应力≤1500kPa、抗滑比≥1.5。\n（1）求偏心距及两边缘应力。\n（2）求抗滑比并逐项判定。\n（3）说明竖向合力已扣扬压力，为什么不能再次扣除；还需哪些真实结构验算。"
+          },
+          "chapter": "重力坝稳定",
+          "tags": [
+            "重力坝稳定",
+            "偏心受压",
+            "扬压力边界"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "重力坝稳定",
+              "偏心受压",
+              "扬压力边界"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "偏心及核心范围",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "两边缘应力和压应力判断",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "抗滑1.4625与不通过",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "不重复扬压力及适用模型",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "water-base-stress-max: independent Python calculation = 1250; expected = 1250; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-base-stress-min: independent Python calculation = 250; expected = 250; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-sliding-ratio: independent Python calculation = 1.4625; expected = 1.4625; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "灌区需在一日内提升净水量100000m³，水泵实际总扬程18m，总效率0.72。输水损失已计入总扬程，无额外水量损失。可用两个时段：低价8h、电价0.40元/kWh，高价16h、电价0.90元/kWh；泵站最大流量2m³/s，任一时段效率均不变。\n（1）求总电耗。\n（2）以最低电费安排两时段水量与运行时长。\n（3）求最低电费，并比较全按高价抽水的增加费用；说明不能将低价时段分配超过输水能力。",
+          "score": 20,
+          "solution": "总电耗6812.500000kWh。低价8h满流输水57600m³；余42400m³在高价运行5.888889h。最低电费4169.250000元；全高价为6131.250000元，多1962.000000元。",
+          "explanation": "E=ρgVH/η，J除3.6×10⁶为kWh。单位水量电耗恒定，因此先用足低价时段，受最大Q×时间限制；高价时段运行时间必须在16h内。不能只拿100000m³全部乘最低电价。",
+          "source": {
+            "materialId": "registered-hydraulic-engineer-cases-01-q3-source",
+            "blockId": "registered-hydraulic-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "灌区需在一日内提升净水量100000m³，水泵实际总扬程18m，总效率0.72。输水损失已计入总扬程，无额外水量损失。可用两个时段：低价8h、电价0.40元/kWh，高价16h、电价0.90元/kWh；泵站最大流量2m³/s，任一时段效率均不变。\n（1）求总电耗。\n（2）以最低电费安排两时段水量与运行时长。\n（3）求最低电费，并比较全按高价抽水的增加费用；说明不能将低价时段分配超过输水能力。"
+          },
+          "chapter": "水泵效率",
+          "tags": [
+            "水泵效率",
+            "分时调度",
+            "容量约束"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "水泵效率",
+              "分时调度",
+              "容量约束"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "电耗单位转换",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "低价水量57600/高价42400",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "运行时长及可行性",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "最低费用、比较和优化理由",
+                "points": 6
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "water-pumping-energy: independent Python calculation = 6812.5; expected = 6812.5; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-low-time-volume: independent Python calculation = 57600; expected = 57600; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-high-time-hours: independent Python calculation = 5.888888889; expected = 5.888888889; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-minimum-cost: independent Python calculation = 4169.25; expected = 4169.25; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "溢流设施按给定自由堰流模型Q=C·b有效·h^(3/2)，C=1.70m^(1/2)/s，设计Q=600m³/s、允许堰上水头h≤4m。两侧收缩使有效净宽比结构净宽少1.2m。结构净宽只能取2m的整数倍，现场最大可布置宽48m。\n（1）求最小有效宽与可选结构净宽。\n（2）取选定宽度求h=4m时能力和通过600m³/s所需水头。\n（3）若尾水淹没使该自由堰流公式不适用，应怎样处理，能否继续用同一C保证能力？",
+          "score": 20,
+          "solution": "所需有效宽44.117647m；结构净宽至少45.317647m，按2m进位选46m，未超48m。有效44.8m，h4时能力609.28m³/s，600时需水头3.959280m。出现淹没须采用经核定的淹没流关系/模型试验并复核水面线，不能把自由流C原样当保证。",
+          "explanation": "先扣收缩后再作几何选型；若先取有效宽整数再忽略1.2m可能选小。C带量纲，Q=Cb h^(3/2)量纲为m³/s。结构布置与水力工况必须同时可行。",
+          "source": {
+            "materialId": "registered-hydraulic-engineer-cases-01-q4-source",
+            "blockId": "registered-hydraulic-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "溢流设施按给定自由堰流模型Q=C·b有效·h^(3/2)，C=1.70m^(1/2)/s，设计Q=600m³/s、允许堰上水头h≤4m。两侧收缩使有效净宽比结构净宽少1.2m。结构净宽只能取2m的整数倍，现场最大可布置宽48m。\n（1）求最小有效宽与可选结构净宽。\n（2）取选定宽度求h=4m时能力和通过600m³/s所需水头。\n（3）若尾水淹没使该自由堰流公式不适用，应怎样处理，能否继续用同一C保证能力？"
+          },
+          "chapter": "泄洪建筑物",
+          "tags": [
+            "泄洪建筑物",
+            "堰流",
+            "几何取整",
+            "适用工况"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "泄洪建筑物",
+              "堰流",
+              "几何取整",
+              "适用工况"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "有效宽44.117647及收缩",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "46m选型且满足布置",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "能力609.28与水头",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "淹没条件、模型与量纲",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "water-spillway-width: independent Python calculation = 44.11764706; expected = 44.11764706; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-spillway-capacity: independent Python calculation = 609.28; expected = 609.28; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-hydraulic-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "均质饱和砂层厚8m，竖直向上渗流的上下边界总水头差4m，水头沿厚度线性变化。土粒比重Gs=2.65、孔隙比e=0.65，水重度9.81kN/m³。采用题给无黏聚砂沸腾模型ic=(Gs−1)/(1+e)，项目要求ic/i≥2.5。\n（1）求渗透坡降、临界坡降与抗沸腾比。\n（2）求满足要求允许的最大水头差。\n（3）从有效应力角度解释上向渗流风险，并提出两项针对性工程措施及相应核查。",
+          "score": 20,
+          "solution": "i=0.5，ic=1.0，抗沸腾比2.0，不满足2.5。允许i≤0.4，故最大水头差3.2m。上向渗流体积力减小有效应力，接近临界时骨架承载趋弱；可减小水头差/设置减压排水或增加稳定覆盖、延长渗径等，但须复核出口梯度、排水能力和反滤防颗粒流失，不能只看平均坡降。",
+          "explanation": "有效浮重度γ′=(Gs−1)γw/(1+e)，临界时iγw=γ′。本模型为均质一维筛查，真实局部出口梯度可能高于平均梯度；加大渗径也需真实流网或数值计算支持。",
+          "source": {
+            "materialId": "registered-hydraulic-engineer-cases-01-q5-source",
+            "blockId": "registered-hydraulic-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "均质饱和砂层厚8m，竖直向上渗流的上下边界总水头差4m，水头沿厚度线性变化。土粒比重Gs=2.65、孔隙比e=0.65，水重度9.81kN/m³。采用题给无黏聚砂沸腾模型ic=(Gs−1)/(1+e)，项目要求ic/i≥2.5。\n（1）求渗透坡降、临界坡降与抗沸腾比。\n（2）求满足要求允许的最大水头差。\n（3）从有效应力角度解释上向渗流风险，并提出两项针对性工程措施及相应核查。"
+          },
+          "chapter": "渗透稳定",
+          "tags": [
+            "渗透稳定",
+            "有效应力",
+            "水头控制"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "渗透稳定",
+              "有效应力",
+              "水头控制"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "两坡降及比2.0",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "3.2m水头上限",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "有效应力与体积力解释",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "两项具体措施及局部/反滤复核",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "water-critical-gradient: independent Python calculation = 1; expected = 1; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-heave-ratio: independent Python calculation = 2; expected = 2; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "water-maximum-head: independent Python calculation = 3.2; expected = 3.2; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-hydraulic-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-hydraulic-engineer-project-blueprint",
+      "name": "水利水电工程专业案例案例能力蓝图",
+      "subject": "水利水电工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-hydraulic-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-hydraulic-engineer-cases-01-q1",
+      "registered-hydraulic-engineer-cases-01-q2",
+      "registered-hydraulic-engineer-cases-01-q3",
+      "registered-hydraulic-engineer-cases-01-q4",
+      "registered-hydraulic-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

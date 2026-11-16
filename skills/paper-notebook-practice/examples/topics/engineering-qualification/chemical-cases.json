@@ -1,0 +1,794 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-chemical-engineer-cases-01",
+  "notebookId": "registered-chemical-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册化工工程师　专业案例",
+  "subject": "化工工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册化工工程师　专业案例",
+      "反应·分离·压缩·循环系统"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册化工工程师　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "化工工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "化工工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-chemical-engineer",
+    "examName": "注册化工工程师　专业案例",
+    "specialty": "反应·分离·压缩·循环系统",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-chemical-engineer-cases-01-q1",
+        "knowledge": "CSTR、一级动力学、能量衡算、热稳定",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-chemical-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-chemical-engineer-cases-01-q2",
+        "knowledge": "精馏衡算、回流比、进料热状况、设计资料边界",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-chemical-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-chemical-engineer-cases-01-q3",
+        "knowledge": "气液吸收、无溶质基准、去除率、传质下限",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-chemical-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-chemical-engineer-cases-01-q4",
+        "knowledge": "气体压缩、中间冷却、多级优化、绝压",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-chemical-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-chemical-engineer-cases-01-q5",
+        "knowledge": "循环与排放、惰性积累、稳态衡算、约束反算",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-chemical-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-exam-2026",
+      "kind": "reference",
+      "title": "2026勘察设计注册专业与案例作答方式",
+      "text": "2026年湖北省勘察设计注册工程师考务通知列出电气、公用设备和化工等专业，并说明这些专业案例须在专用答题卡填涂答案选项、在指定编号位置填写计算过程。各专业的实际题量和作答范围应另据相应专业官方大纲。本项目五案例蓝图用于展示完整命题、演算、评分和答题区域；专业参数与控制值逐题给定。",
+      "blocks": [
+        {
+          "id": "design-exam-2026-block",
+          "title": "2026勘察设计注册专业与案例作答方式",
+          "text": "2026年湖北省勘察设计注册工程师考务通知列出电气、公用设备和化工等专业，并说明这些专业案例须在专用答题卡填涂答案选项、在指定编号位置填写计算过程。各专业的实际题量和作答范围应另据相应专业官方大纲。本项目五案例蓝图用于展示完整命题、演算、评分和答题区域；专业参数与控制值逐题给定。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "ce22026d52e5c51a56eea743a55da7dd3438eaaa2ff4015185b13749635e7dcb",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-16",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-chemical-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "液相不可逆一级反应A→B在完全混合连续釜中稳态等温进行。进料体积流量2m³/h、C_A0=2kmol/m³，反应器有效容积5m³；在指定温度下k=0.30h⁻¹、速率−r_A=kC_A。液体密度和体积流量不变，反应放热80MJ/kmol，进料已在反应温度，无其他热负荷。\n（1）建立稳态物料衡算，求出口浓度、转化率和单位时间反应量。\n（2）求为保持该温度需移走的热功率；冷却能力35kW能否维持？\n（3）同一k下若要求转化率60%，求所需釜体积与热移除功率。解释为何冷却不足时不能只保持同k再随意提高转化率。",
+      "blocks": [
+        {
+          "id": "registered-chemical-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "液相不可逆一级反应A→B在完全混合连续釜中稳态等温进行。进料体积流量2m³/h、C_A0=2kmol/m³，反应器有效容积5m³；在指定温度下k=0.30h⁻¹、速率−r_A=kC_A。液体密度和体积流量不变，反应放热80MJ/kmol，进料已在反应温度，无其他热负荷。\n（1）建立稳态物料衡算，求出口浓度、转化率和单位时间反应量。\n（2）求为保持该温度需移走的热功率；冷却能力35kW能否维持？\n（3）同一k下若要求转化率60%，求所需釜体积与热移除功率。解释为何冷却不足时不能只保持同k再随意提高转化率。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "5c5face20b1c904f308ab7ccfd2026f94e29ea641b622975bfcdea340cb7c492",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-chemical-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "二元精馏塔稳态进料100kmol/h，轻组分摩尔分数0.40；塔顶产品0.95、塔底产品0.05。全凝器，总回流比定义R=L/D=2.5；进料为饱和液体q=1，恒摩尔流假设成立，塔顶凝液无其他支路。\n（1）求塔顶与塔底产品流率，并核对轻组分总衡算。\n（2）求精馏段液相L和汽相V；求提馏段液相L′和汽相V′。\n（3）若只知道这些资料，能否确定理论板数或最小回流比？写明还缺的资料。\n（4）若塔底实测轻组分变为0.08、塔顶仍0.95且进料不变，重新求产品流率，不能只改组成不改产量。",
+      "blocks": [
+        {
+          "id": "registered-chemical-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "二元精馏塔稳态进料100kmol/h，轻组分摩尔分数0.40；塔顶产品0.95、塔底产品0.05。全凝器，总回流比定义R=L/D=2.5；进料为饱和液体q=1，恒摩尔流假设成立，塔顶凝液无其他支路。\n（1）求塔顶与塔底产品流率，并核对轻组分总衡算。\n（2）求精馏段液相L和汽相V；求提馏段液相L′和汽相V′。\n（3）若只知道这些资料，能否确定理论板数或最小回流比？写明还缺的资料。\n（4）若塔底实测轻组分变为0.08、塔顶仍0.95且进料不变，重新求产品流率，不能只改组成不改产量。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "40937c6bca1f4d9aa2155e7e4b853ab4fbe0ccfab57370e03f5e5461f1eb41a3",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-chemical-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "吸收器气体进料总量100kmol/h，其中待吸收溶质摩尔分数0.08，惰性气不溶且流量不变；出口要求气相溶质摩尔分数0.01。纯溶剂进入，溶剂蒸发忽略。以不含溶质基准定义Y=y/(1−y)，液相X为溶质/溶剂摩尔比；项目规定出口富液X不得超过0.020。\n（1）求惰性气流率、实际出口总气流、溶质吸收量和去除率。\n（2）仅按富液浓度上限求最低溶剂摩尔流量。\n（3）若有人用100(0.08−0.01)=7kmol/h估吸收量，其误差来自哪里？\n（4）上题最低量可否直接当实际塔设计溶剂量并确定塔高？说明平衡与传质约束。",
+      "blocks": [
+        {
+          "id": "registered-chemical-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "吸收器气体进料总量100kmol/h，其中待吸收溶质摩尔分数0.08，惰性气不溶且流量不变；出口要求气相溶质摩尔分数0.01。纯溶剂进入，溶剂蒸发忽略。以不含溶质基准定义Y=y/(1−y)，液相X为溶质/溶剂摩尔比；项目规定出口富液X不得超过0.020。\n（1）求惰性气流率、实际出口总气流、溶质吸收量和去除率。\n（2）仅按富液浓度上限求最低溶剂摩尔流量。\n（3）若有人用100(0.08−0.01)=7kmol/h估吸收量，其误差来自哪里？\n（4）上题最低量可否直接当实际塔设计溶剂量并确定塔高？说明平衡与传质约束。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "ffc8aae55f032d3bbb2904e3fe0905e37bd146a48e899180a957e72551a97d9d",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-chemical-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "理想气体从0.10MPa压至1.60MPa（均为绝对压力），入口300K，γ=1.4，气体常数R=0.287kJ/(kg·K)。每级绝热等熵效率0.80。单级比功按w=[γ/(γ−1)]RT₁[(p₂/p₁)^((γ−1)/γ)−1]/η。两级方案中间完全冷却回300K、无压降，两级效率相同。\n（1）求最小总功时各级压比与中间压力，并说明等压比成立条件。\n（2）计算单级、最优两级比功和节能率。\n（3）气体质量流量2kg/s时两方案轴功率多少？\n（4）若中冷有压降或冷不回300K，能否不经重算保持原最优中间压力？",
+      "blocks": [
+        {
+          "id": "registered-chemical-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "理想气体从0.10MPa压至1.60MPa（均为绝对压力），入口300K，γ=1.4，气体常数R=0.287kJ/(kg·K)。每级绝热等熵效率0.80。单级比功按w=[γ/(γ−1)]RT₁[(p₂/p₁)^((γ−1)/γ)−1]/η。两级方案中间完全冷却回300K、无压降，两级效率相同。\n（1）求最小总功时各级压比与中间压力，并说明等压比成立条件。\n（2）计算单级、最优两级比功和节能率。\n（3）气体质量流量2kg/s时两方案轴功率多少？\n（4）若中冷有压降或冷不回300K，能否不经重算保持原最优中间压力？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "1db595b13dd60e20971f27a2349b601ffc6a25dc23c205491c2976d50557b5e2",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-chemical-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "新鲜进料含反应物A90kmol/h、惰性I10kmol/h。反应器单程A转化率30%，I不反应；反应产物在下游被完全分离，未反应A和I形成尾气。尾气充分混合后排放10%，其余90%回流，与新鲜料混合。忽略损失，稳态。\n（1）建立A和I各自循环衡算，求反应器入口两组分流量及惰性摩尔分数。\n（2）求产物所对应A反应量、排放A和I、总循环尾气量，核对全系统A/I收支。\n（3）若要求反应器入口惰性分数不超过20%，其他条件不变，以排放比例p为变量求p下限；说明p增大会怎样影响A总利用率。",
+      "blocks": [
+        {
+          "id": "registered-chemical-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "新鲜进料含反应物A90kmol/h、惰性I10kmol/h。反应器单程A转化率30%，I不反应；反应产物在下游被完全分离，未反应A和I形成尾气。尾气充分混合后排放10%，其余90%回流，与新鲜料混合。忽略损失，稳态。\n（1）建立A和I各自循环衡算，求反应器入口两组分流量及惰性摩尔分数。\n（2）求产物所对应A反应量、排放A和I、总循环尾气量，核对全系统A/I收支。\n（3）若要求反应器入口惰性分数不超过20%，其他条件不变，以排放比例p为变量求p下限；说明p增大会怎样影响A总利用率。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "10c9718d44ee86f2bd4b6fa61189db3726f484ab6966b611ef086e8f78c99774",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-chemical-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "液相不可逆一级反应A→B在完全混合连续釜中稳态等温进行。进料体积流量2m³/h、C_A0=2kmol/m³，反应器有效容积5m³；在指定温度下k=0.30h⁻¹、速率−r_A=kC_A。液体密度和体积流量不变，反应放热80MJ/kmol，进料已在反应温度，无其他热负荷。\n（1）建立稳态物料衡算，求出口浓度、转化率和单位时间反应量。\n（2）求为保持该温度需移走的热功率；冷却能力35kW能否维持？\n（3）同一k下若要求转化率60%，求所需釜体积与热移除功率。解释为何冷却不足时不能只保持同k再随意提高转化率。",
+          "score": 20,
+          "solution": "F(C₀−C)=VkC，C=1.142857143kmol/m³，X=0.428571429，反应量1.714285714kmol/h。需移热38.095238095kW，35不足。目标60%时V=FX/[k(1−X)]=10m³，反应2.4kmol/h，需53.333333kW。冷却不足将改变温度、k及安全边界，应联立动力学与能量衡算，核验热稳定，不能把等温假设延伸到失控工况。",
+          "explanation": "连续全混釜反应速率用出口浓度，不用进料浓度。MJ/h转kW需除3.6，80MJ/kmol=80000kJ/kmol。单纯增容提高等温转化率同时增加热负荷。",
+          "source": {
+            "materialId": "registered-chemical-engineer-cases-01-q1-source",
+            "blockId": "registered-chemical-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "液相不可逆一级反应A→B在完全混合连续釜中稳态等温进行。进料体积流量2m³/h、C_A0=2kmol/m³，反应器有效容积5m³；在指定温度下k=0.30h⁻¹、速率−r_A=kC_A。液体密度和体积流量不变，反应放热80MJ/kmol，进料已在反应温度，无其他热负荷。\n（1）建立稳态物料衡算，求出口浓度、转化率和单位时间反应量。\n（2）求为保持该温度需移走的热功率；冷却能力35kW能否维持？\n（3）同一k下若要求转化率60%，求所需釜体积与热移除功率。解释为何冷却不足时不能只保持同k再随意提高转化率。"
+          },
+          "chapter": "CSTR",
+          "tags": [
+            "CSTR",
+            "一级动力学",
+            "能量衡算",
+            "热稳定"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "CSTR",
+              "一级动力学",
+              "能量衡算",
+              "热稳定"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "物料方程及浓度/转化率",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "反应量及38.0952kW",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "目标体积10m³及53.3333kW",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "冷却不足与温度耦合",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "chemical-cstr-Ca: independent Python calculation = 1.142857143; expected = 1.142857143; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-cstr-cooling-kW: independent Python calculation = 38.0952381; expected = 38.0952381; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-cstr-material-residual: independent Python calculation = 2.220446049e-16; expected = 0; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-chemical-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "二元精馏塔稳态进料100kmol/h，轻组分摩尔分数0.40；塔顶产品0.95、塔底产品0.05。全凝器，总回流比定义R=L/D=2.5；进料为饱和液体q=1，恒摩尔流假设成立，塔顶凝液无其他支路。\n（1）求塔顶与塔底产品流率，并核对轻组分总衡算。\n（2）求精馏段液相L和汽相V；求提馏段液相L′和汽相V′。\n（3）若只知道这些资料，能否确定理论板数或最小回流比？写明还缺的资料。\n（4）若塔底实测轻组分变为0.08、塔顶仍0.95且进料不变，重新求产品流率，不能只改组成不改产量。",
+          "score": 20,
+          "solution": "D=38.888888889、B=61.111111111kmol/h；0.95D+0.05B=40。L=97.222222222、V=136.111111111；q=1使L′=L+100=197.222222222、V′=V=136.111111111kmol/h。板数/最小回流比尚需汽液平衡、操作压力/相对挥发度等资料，不能从物料平衡唯一确定。底0.08时D=100(0.40−0.08)/(0.95−0.08)=36.781609195，B=63.218390805kmol/h。",
+          "explanation": "回流比为L/D，不是L/V。饱和液体进料对两段流率的影响按q分配。总量和组分衡算可算产品，不等于已完成传质或板效率设计。",
+          "source": {
+            "materialId": "registered-chemical-engineer-cases-01-q2-source",
+            "blockId": "registered-chemical-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "二元精馏塔稳态进料100kmol/h，轻组分摩尔分数0.40；塔顶产品0.95、塔底产品0.05。全凝器，总回流比定义R=L/D=2.5；进料为饱和液体q=1，恒摩尔流假设成立，塔顶凝液无其他支路。\n（1）求塔顶与塔底产品流率，并核对轻组分总衡算。\n（2）求精馏段液相L和汽相V；求提馏段液相L′和汽相V′。\n（3）若只知道这些资料，能否确定理论板数或最小回流比？写明还缺的资料。\n（4）若塔底实测轻组分变为0.08、塔顶仍0.95且进料不变，重新求产品流率，不能只改组成不改产量。"
+          },
+          "chapter": "精馏衡算",
+          "tags": [
+            "精馏衡算",
+            "回流比",
+            "进料热状况",
+            "设计资料边界"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "精馏衡算",
+              "回流比",
+              "进料热状况",
+              "设计资料边界"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "D/B及轻组分闭合",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "两段L/V与q作用",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "板数所缺平衡资料",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "0.08新D/B",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "chemical-distillate-flow: independent Python calculation = 38.88888889; expected = 38.88888889; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-distillation-light-balance: independent Python calculation = 40; expected = 40; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-distillation-vapour: independent Python calculation = 136.1111111; expected = 136.1111111; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-chemical-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "吸收器气体进料总量100kmol/h，其中待吸收溶质摩尔分数0.08，惰性气不溶且流量不变；出口要求气相溶质摩尔分数0.01。纯溶剂进入，溶剂蒸发忽略。以不含溶质基准定义Y=y/(1−y)，液相X为溶质/溶剂摩尔比；项目规定出口富液X不得超过0.020。\n（1）求惰性气流率、实际出口总气流、溶质吸收量和去除率。\n（2）仅按富液浓度上限求最低溶剂摩尔流量。\n（3）若有人用100(0.08−0.01)=7kmol/h估吸收量，其误差来自哪里？\n（4）上题最低量可否直接当实际塔设计溶剂量并确定塔高？说明平衡与传质约束。",
+          "score": 20,
+          "solution": "惰性92kmol/h，出口总气92/0.99=92.929292929kmol/h，吸收量7.070707071kmol/h，去除率88.383838384%。最低溶剂353.535353535kmol/h。用100×差值默认总气流不变，与溶质移除后总量减少矛盾；正确用恒定惰性基准Ys。此量只是项目富液限值约束下的衡算下限，仍需汽液平衡、夹点/推动力、实际裕量、传质系数、有效面积和压降等，无法直接确定塔高。",
+          "explanation": "不能把摩尔分数y当摩尔比Y；富液X亦按题定为溶质/纯溶剂，而非溶质占富液总量。物料下限不保证每个塔高位置都有正传质推动力。",
+          "source": {
+            "materialId": "registered-chemical-engineer-cases-01-q3-source",
+            "blockId": "registered-chemical-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "吸收器气体进料总量100kmol/h，其中待吸收溶质摩尔分数0.08，惰性气不溶且流量不变；出口要求气相溶质摩尔分数0.01。纯溶剂进入，溶剂蒸发忽略。以不含溶质基准定义Y=y/(1−y)，液相X为溶质/溶剂摩尔比；项目规定出口富液X不得超过0.020。\n（1）求惰性气流率、实际出口总气流、溶质吸收量和去除率。\n（2）仅按富液浓度上限求最低溶剂摩尔流量。\n（3）若有人用100(0.08−0.01)=7kmol/h估吸收量，其误差来自哪里？\n（4）上题最低量可否直接当实际塔设计溶剂量并确定塔高？说明平衡与传质约束。"
+          },
+          "chapter": "气液吸收",
+          "tags": [
+            "气液吸收",
+            "无溶质基准",
+            "去除率",
+            "传质下限"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "气液吸收",
+              "无溶质基准",
+              "去除率",
+              "传质下限"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "惰性与实际出口",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "7.070707与88.3838%",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "353.5354溶剂下限",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "错误基准及平衡/传质限制",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "chemical-absorption-removed: independent Python calculation = 7.070707071; expected = 7.070707071; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-solvent-lower-bound: independent Python calculation = 353.5353535; expected = 353.5353535; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-absorber-solute-residual: independent Python calculation = 0; expected = 0; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-chemical-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "理想气体从0.10MPa压至1.60MPa（均为绝对压力），入口300K，γ=1.4，气体常数R=0.287kJ/(kg·K)。每级绝热等熵效率0.80。单级比功按w=[γ/(γ−1)]RT₁[(p₂/p₁)^((γ−1)/γ)−1]/η。两级方案中间完全冷却回300K、无压降，两级效率相同。\n（1）求最小总功时各级压比与中间压力，并说明等压比成立条件。\n（2）计算单级、最优两级比功和节能率。\n（3）气体质量流量2kg/s时两方案轴功率多少？\n（4）若中冷有压降或冷不回300K，能否不经重算保持原最优中间压力？",
+          "score": 20,
+          "solution": "总压比16，最优各级压比4，中间压力0.40MPa绝压。单级比功455.105937364kJ/kg，两级366.135947579kJ/kg，节能19.549292259%；2kg/s时轴功率分别910.211874728、732.271895157kW。等压比基于相同入口温度/气性/效率及无级间压降；条件改变需按真实温度和压降重建总功并优化，不能沿用几何平均压力。",
+          "explanation": "表压不可直接求压比；给定公式已除等熵效率，不能再乘一次效率。两级总功为每级比功之和，不是把单级功简单除2。此题忽略机械传动额外损耗。",
+          "source": {
+            "materialId": "registered-chemical-engineer-cases-01-q4-source",
+            "blockId": "registered-chemical-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "理想气体从0.10MPa压至1.60MPa（均为绝对压力），入口300K，γ=1.4，气体常数R=0.287kJ/(kg·K)。每级绝热等熵效率0.80。单级比功按w=[γ/(γ−1)]RT₁[(p₂/p₁)^((γ−1)/γ)−1]/η。两级方案中间完全冷却回300K、无压降，两级效率相同。\n（1）求最小总功时各级压比与中间压力，并说明等压比成立条件。\n（2）计算单级、最优两级比功和节能率。\n（3）气体质量流量2kg/s时两方案轴功率多少？\n（4）若中冷有压降或冷不回300K，能否不经重算保持原最优中间压力？"
+          },
+          "chapter": "气体压缩",
+          "tags": [
+            "气体压缩",
+            "中间冷却",
+            "多级优化",
+            "绝压"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "气体压缩",
+              "中间冷却",
+              "多级优化",
+              "绝压"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "压比4与0.40MPa及条件",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "两比功455.1059/366.1359",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "19.5493%与两轴功",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "中冷/压降后重优化",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "chemical-compressor-one-stage: independent Python calculation = 455.1059374; expected = 455.1059374; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-compressor-two-stage: independent Python calculation = 366.1359476; expected = 366.1359476; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-compressor-saving: independent Python calculation = 19.54929226; expected = 19.54929226; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-chemical-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "新鲜进料含反应物A90kmol/h、惰性I10kmol/h。反应器单程A转化率30%，I不反应；反应产物在下游被完全分离，未反应A和I形成尾气。尾气充分混合后排放10%，其余90%回流，与新鲜料混合。忽略损失，稳态。\n（1）建立A和I各自循环衡算，求反应器入口两组分流量及惰性摩尔分数。\n（2）求产物所对应A反应量、排放A和I、总循环尾气量，核对全系统A/I收支。\n（3）若要求反应器入口惰性分数不超过20%，其他条件不变，以排放比例p为变量求p下限；说明p增大会怎样影响A总利用率。",
+          "score": 20,
+          "solution": "入口A满足A=90+0.9×0.7A，得243.243243243kmol/h；I=10+0.9I得100。入口惰性分数0.291338583。A反应72.972972973、排放A=17.027027027、排放I=10kmol/h；回流量0.9(0.7A+I)=243.243243243kmol/h。A反应+排放=90，I排放=10。一般A=90/(0.3+0.7p)、I=10/p；I/(A+I)≤0.2推出p≥6/31≈0.193548387。p越大，循环及惰性降低，但A随排气损失增加、总利用率0.3/(0.3+0.7p)降低，需权衡且复核处理能力。",
+          "explanation": "10%是分离产物后尾气的排放比例，不是新鲜总进料的10%。若无排放惰性将持续积累而不能稳态；不能只对A做循环衡算忽略I。",
+          "source": {
+            "materialId": "registered-chemical-engineer-cases-01-q5-source",
+            "blockId": "registered-chemical-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "新鲜进料含反应物A90kmol/h、惰性I10kmol/h。反应器单程A转化率30%，I不反应；反应产物在下游被完全分离，未反应A和I形成尾气。尾气充分混合后排放10%，其余90%回流，与新鲜料混合。忽略损失，稳态。\n（1）建立A和I各自循环衡算，求反应器入口两组分流量及惰性摩尔分数。\n（2）求产物所对应A反应量、排放A和I、总循环尾气量，核对全系统A/I收支。\n（3）若要求反应器入口惰性分数不超过20%，其他条件不变，以排放比例p为变量求p下限；说明p增大会怎样影响A总利用率。"
+          },
+          "chapter": "循环与排放",
+          "tags": [
+            "循环与排放",
+            "惰性积累",
+            "稳态衡算",
+            "约束反算"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "循环与排放",
+              "惰性积累",
+              "稳态衡算",
+              "约束反算"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "两入口平衡与0.291339",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "反应/排放/回流及两收支",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "一般式与p≥6/31≈0.193548387",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "排放对利用率的权衡",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "chemical-recycle-A-inlet: independent Python calculation = 243.2432432; expected = 243.2432432; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-overall-A-balance: independent Python calculation = 90; expected = 90; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "chemical-purge-bound-inert-fraction: independent Python calculation = 0.2; expected = 0.2; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-chemical-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-chemical-engineer-project-blueprint",
+      "name": "化工工程专业案例案例能力蓝图",
+      "subject": "化工工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-chemical-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-chemical-engineer-cases-01-q1",
+      "registered-chemical-engineer-cases-01-q2",
+      "registered-chemical-engineer-cases-01-q3",
+      "registered-chemical-engineer-cases-01-q4",
+      "registered-chemical-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

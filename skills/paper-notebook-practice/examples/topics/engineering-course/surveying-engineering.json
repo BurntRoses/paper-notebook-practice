@@ -1,0 +1,909 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "surveying-engineering-course-01",
+  "notebookId": "surveying-engineering-source",
+  "notebookRevision": 1,
+  "title": "测量平差与工程测绘课程考试",
+  "subject": "测量平差与工程测绘",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "测量平差与工程测绘课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "surveying-engineering-scope",
+      "title": "MIT 12.215 Modern Navigation",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/12-215-modern-navigation-fall-2006/",
+      "text": "Laboratory sessions cover the use of sextants, astronomical telescopes, and field use of GPS.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2006",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/12-215-modern-navigation-fall-2006/"
+      }
+    },
+    {
+      "id": "surveying-engineering-q1-statement",
+      "title": "测量平差与工程测绘第1题命题原稿",
+      "kind": "question-bank",
+      "text": "平面闭合导线A→B→C→D→A，起点N=1000.000 m、E=500.000 m。四边观测长依次100.000、80.000、100.020、79.980 m；方位角从北顺时针依次0°、90°、180°、270°，本题不另作角度平差，指定采用以下Bowditch坐标改正。（1）求N/E坐标增量闭合差与相对闭合差；（2）按Bowditch法将每坐标闭合差按边长比例分配，求四边改正；（3）给改正后B、C、D坐标并检查回到A；（4）说明Bowditch简化分配为何不同于严格采用观测协方差的最小二乘。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "surveying-engineering-q2-statement",
+      "title": "测量平差与工程测绘第2题命题原稿",
+      "kind": "question-bank",
+      "text": "闭合水准路线A→B→C→D→A，A已知高程100.000 m。四段测得高差+0.842、−0.315、+1.126、−1.647 m，距离分别1、2、1、2 km。误差方差与距离成正比。（1）求闭合差；（2）按距离比例分配高差改正；（3）求B、C、D高程及闭合结果；（4）若第二段按反方向记录，如何转换才能参与同一闭合式？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "surveying-engineering-q3-statement",
+      "title": "测量平差与工程测绘第3题命题原稿",
+      "kind": "question-bank",
+      "text": "同一高程独立观测三次100.012、100.006、100.010 m，已知标准差分别2、4、2 mm，假设无系统偏差。（1）写权最小二乘目标，求高程估计和形式标准差；（2）求三个残差v=估计−观测并验证加权和为零；（3）若简单平均，哪次低精度观测被相对高估；（4）形式标准差是否已包含未建模的共同基准偏差？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "surveying-engineering-q4-statement",
+      "title": "测量平差与工程测绘第4题命题原稿",
+      "kind": "question-bank",
+      "text": "平面直角坐标x向东、y向北，A=(0,0)、B=(60,0) m，待定点P至两点距离均50 m；现场记录P在AB北侧。两距离独立，标准差均0.020 m，控制点视为无误差。（1）求所有几何交点并依据记录选P；（2）在选定点线性化距离方程；（3）求坐标标准差σx、σy及协方差；（4）若没有北侧记录，两距离能否唯一定位？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "surveying-engineering-q5-statement",
+      "title": "测量平差与工程测绘第5题命题原稿",
+      "kind": "question-bank",
+      "text": "平面基线网固定A=(0,0)，x向东、y向北。观测AB=(100.010,0.000)、BC=(−0.020,100.020)、AC=(100.000,100.000) m；各向量分量独立且等精度。要求AB+BC−AC=0。（1）求闭合向量；（2）按最小二乘分别给三条基线改正；（3）求B、C坐标，比较A→B→C和A→C；（4）若真实GNSS分量间相关，为何须改用完整协方差？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "surveying-engineering-q6-statement",
+      "title": "测量平差与工程测绘第6题命题原稿",
+      "kind": "question-bank",
+      "text": "矩形场地x∈[0,20] m、y∈[0,10] m，原地面是平面z=10+0.10x m，设计面为水平z=11.20 m；不考虑松胀、压实与边坡。（1）求零填挖线；（2）分别积分求填方、挖方及净需借土；（3）用四角平均高差×总面积计算净值复核；（4）为何净土方不能替代实际挖填工程量？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "surveying-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "surveying-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "平面闭合导线A→B→C→D→A，起点N=1000.000 m、E=500.000 m。四边观测长依次100.000、80.000、100.020、79.980 m；方位角从北顺时针依次0°、90°、180°、270°，本题不另作角度平差，指定采用以下Bowditch坐标改正。（1）求N/E坐标增量闭合差与相对闭合差；（2）按Bowditch法将每坐标闭合差按边长比例分配，求四边改正；（3）给改正后B、C、D坐标并检查回到A；（4）说明Bowditch简化分配为何不同于严格采用观测协方差的最小二乘。",
+          "score": 15,
+          "solution": "闭合差fN=−0.020 m、fE=+0.020 m，平面0.028284271 m，总长360 m，相对约1∶12727.922。每边cN=+0.020Li/360，cE=−0.020Li/360。B=(1100.005556,499.994444)，C=(1100.010000,579.990000)，D=(999.995557,579.984443) m；最后回A。",
+          "explanation": "各边增量为Li cosα、Li sinα。Bowditch直接对坐标闭合差分配，四项改正之和恰抵消闭合差。本题指定的Bowditch法是近似坐标分配，不声称方向完全无误差；它不等同于按全部距离、方向及协方差建立的最优估计，严格平差需观测模型及权阵。",
+          "source": {
+            "materialId": "surveying-engineering-q1-statement",
+            "blockId": "surveying-engineering-q1-statement",
+            "exact": "平面闭合导线A→B→C→D→A，起点N=1000.000 m、E=500.000 m。四边观测长依次100.000、80.000、100.020、79.980 m；方位角从北顺时针依次0°、90°、180°、270°，本题不另作角度平差，指定采用以下Bowditch坐标改正。（1）求N/E坐标增量闭合差与相对闭合差；（2）按Bowditch法将每坐标闭合差按边长比例分配，求四边改正；（3）给改正后B、C、D坐标并检查回到A；（4）说明Bowditch简化分配为何不同于严格采用观测协方差的最小二乘。"
+          },
+          "chapter": "闭合导线与Bowditch改正",
+          "tags": [
+            "测量平差与工程测绘",
+            "闭合导线与Bowditch改正",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "闭合导线与Bowditch改正"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "surveying-engineering-scope",
+                "blockId": "surveying-engineering-scope",
+                "exact": "Laboratory sessions cover the use of sextants, astronomical telescopes, and field use of GPS."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "坐标正负号与闭合差正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "surveying-engineering-q1-statement",
+                    "blockId": "surveying-engineering-q1-statement",
+                    "exact": "平面闭合导线A→B→C→D→A，起点N=1000.000 m、E=500.000 m。四边观测长依次100.000、80.000、100.020、79.980 m；方位角从北顺时针依次0°、90°、180°、270°，本题不另作角度平差，指定采用以下Bowditch坐标改正。（1）求N/E坐标增量闭合差与相对闭合差；（2）按Bowditch法将每坐标闭合差按边长比例分配，求四边改正；（3）给改正后B、C、D坐标并检查回到A；（4）说明Bowditch简化分配为何不同于严格采用观测协方差的最小二乘。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "比例改正及合量正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "坐标成果和回点检查正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "近似平差与权模型区别正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q1 corrected closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q1 corrected closure\", \"actual\": [3.511947677115046e-15, 3.5110803153770576e-15], \"expected\": [0, 0], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q1 station coordinates",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q1 station coordinates\", \"actual\": [999.9955566666666, 579.9844433333334], \"expected\": [999.9955566666667, 579.9844433333334], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q1 relative closure denominator",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q1 relative closure denominator\", \"actual\": 12727.922061357855, \"expected\": 12727.922061357855, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "surveying-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "闭合水准路线A→B→C→D→A，A已知高程100.000 m。四段测得高差+0.842、−0.315、+1.126、−1.647 m，距离分别1、2、1、2 km。误差方差与距离成正比。（1）求闭合差；（2）按距离比例分配高差改正；（3）求B、C、D高程及闭合结果；（4）若第二段按反方向记录，如何转换才能参与同一闭合式？",
+          "score": 15,
+          "solution": "闭合差+0.006 m；改正依次−0.001、−0.002、−0.001、−0.002 m。改正高差+0.841、−0.317、+1.125、−1.649 m；B=100.841、C=100.524、D=101.649 m，回到100.000 m。反向记录的高差须先变号，距离仍取正。",
+          "explanation": "闭合条件为四段真高差和0。最小化Σvi²/Li并约束Σvi=−f，可由Lagrange乘子得到vi=−fLi/ΣL。不是简单把6 mm平均分四段；距离权重反映题给方差模型。往返方向是高差符号约定，不改变路线长度或方差。",
+          "source": {
+            "materialId": "surveying-engineering-q2-statement",
+            "blockId": "surveying-engineering-q2-statement",
+            "exact": "闭合水准路线A→B→C→D→A，A已知高程100.000 m。四段测得高差+0.842、−0.315、+1.126、−1.647 m，距离分别1、2、1、2 km。误差方差与距离成正比。（1）求闭合差；（2）按距离比例分配高差改正；（3）求B、C、D高程及闭合结果；（4）若第二段按反方向记录，如何转换才能参与同一闭合式？"
+          },
+          "chapter": "闭合水准路线的距离加权",
+          "tags": [
+            "测量平差与工程测绘",
+            "闭合水准路线的距离加权",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "闭合水准路线的距离加权"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "surveying-engineering-scope",
+                "blockId": "surveying-engineering-scope",
+                "exact": "Laboratory sessions cover the use of sextants, astronomical telescopes, and field use of GPS."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "闭合符号和数值正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "surveying-engineering-q2-statement",
+                    "blockId": "surveying-engineering-q2-statement",
+                    "exact": "闭合水准路线A→B→C→D→A，A已知高程100.000 m。四段测得高差+0.842、−0.315、+1.126、−1.647 m，距离分别1、2、1、2 km。误差方差与距离成正比。（1）求闭合差；（2）按距离比例分配高差改正；（3）求B、C、D高程及闭合结果；（4）若第二段按反方向记录，如何转换才能参与同一闭合式？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "权模型及分配正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "各点高程/回点正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "反向观测处理正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q2 observed closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q2 observed closure\", \"actual\": 0.005999999999999839, \"expected\": 0.006, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q2 corrected closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q2 corrected closure\", \"actual\": -5.551115123125783e-17, \"expected\": 0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q2 final height",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q2 final height\", \"actual\": 100.0, \"expected\": 100, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "surveying-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "同一高程独立观测三次100.012、100.006、100.010 m，已知标准差分别2、4、2 mm，假设无系统偏差。（1）写权最小二乘目标，求高程估计和形式标准差；（2）求三个残差v=估计−观测并验证加权和为零；（3）若简单平均，哪次低精度观测被相对高估；（4）形式标准差是否已包含未建模的共同基准偏差？",
+          "score": 15,
+          "solution": "相对权4∶1∶4，高程100.010444444 m，形式标准差1/√Σ(1/σi²)=0.001333333 m。残差依次−0.001555556、+0.004444444、+0.000444444 m。第二次低精度观测被简单平均相对高估。",
+          "explanation": "令Σ(H−hi)²/σi²对H导数为零，得到加权平均和正规条件Σvi/σi²=0。标准差公式依赖给定独立且正确的σ，不再用残差任意乘另一个经验因子。共同基准偏差不能通过重复平均消除，需控制点或外部基准检查。",
+          "source": {
+            "materialId": "surveying-engineering-q3-statement",
+            "blockId": "surveying-engineering-q3-statement",
+            "exact": "同一高程独立观测三次100.012、100.006、100.010 m，已知标准差分别2、4、2 mm，假设无系统偏差。（1）写权最小二乘目标，求高程估计和形式标准差；（2）求三个残差v=估计−观测并验证加权和为零；（3）若简单平均，哪次低精度观测被相对高估；（4）形式标准差是否已包含未建模的共同基准偏差？"
+          },
+          "chapter": "异精度重复观测的最小二乘",
+          "tags": [
+            "测量平差与工程测绘",
+            "异精度重复观测的最小二乘",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "异精度重复观测的最小二乘"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "surveying-engineering-scope",
+                "blockId": "surveying-engineering-scope",
+                "exact": "Laboratory sessions cover the use of sextants, astronomical telescopes, and field use of GPS."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "目标函数/权比及估计正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "surveying-engineering-q3-statement",
+                    "blockId": "surveying-engineering-q3-statement",
+                    "exact": "同一高程独立观测三次100.012、100.006、100.010 m，已知标准差分别2、4、2 mm，假设无系统偏差。（1）写权最小二乘目标，求高程估计和形式标准差；（2）求三个残差v=估计−观测并验证加权和为零；（3）若简单平均，哪次低精度观测被相对高估；（4）形式标准差是否已包含未建模的共同基准偏差？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "标准差及三个残差正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "正规条件和误差范围解释正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q3 normal equation",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q3 normal equation\", \"actual\": -8.881784197001252e-10, \"expected\": 0, \"tolerance\": 1e-07}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q3 estimate",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q3 estimate\", \"actual\": 100.01044444444445, \"expected\": 100.01044444444445, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q3 formal variance",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q3 formal variance\", \"actual\": 1.7777777777777777e-06, \"expected\": 1.7777777777777777e-06, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "surveying-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "平面直角坐标x向东、y向北，A=(0,0)、B=(60,0) m，待定点P至两点距离均50 m；现场记录P在AB北侧。两距离独立，标准差均0.020 m，控制点视为无误差。（1）求所有几何交点并依据记录选P；（2）在选定点线性化距离方程；（3）求坐标标准差σx、σy及协方差；（4）若没有北侧记录，两距离能否唯一定位？",
+          "score": 15,
+          "solution": "两交点(30,±40) m，选P=(30,40)。Jacobian两行为(0.6,0.8)、(−0.6,0.8)。σx=0.023570226 m，σy=0.017677670 m，协方差0。没有北侧约束则有镜像二解。",
+          "explanation": "两距离平方相减得120x=3600；代入圆方程得y²=1600。线性扰动δdA=0.6δx+0.8δy，δdB=−0.6δx+0.8δy，因此δx=(δdA−δdB)/1.2，δy=(δdA+δdB)/1.6；独立等方差使协方差相消。平差可给局部精度，不能替代离散几何分支的判别。",
+          "source": {
+            "materialId": "surveying-engineering-q4-statement",
+            "blockId": "surveying-engineering-q4-statement",
+            "exact": "平面直角坐标x向东、y向北，A=(0,0)、B=(60,0) m，待定点P至两点距离均50 m；现场记录P在AB北侧。两距离独立，标准差均0.020 m，控制点视为无误差。（1）求所有几何交点并依据记录选P；（2）在选定点线性化距离方程；（3）求坐标标准差σx、σy及协方差；（4）若没有北侧记录，两距离能否唯一定位？"
+          },
+          "chapter": "距离交会与几何解的选择",
+          "tags": [
+            "测量平差与工程测绘",
+            "距离交会与几何解的选择",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "距离交会与几何解的选择"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "surveying-engineering-scope",
+                "blockId": "surveying-engineering-scope",
+                "exact": "Laboratory sessions cover the use of sextants, astronomical telescopes, and field use of GPS."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "两圆解与北侧选择正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "surveying-engineering-q4-statement",
+                    "blockId": "surveying-engineering-q4-statement",
+                    "exact": "平面直角坐标x向东、y向北，A=(0,0)、B=(60,0) m，待定点P至两点距离均50 m；现场记录P在AB北侧。两距离独立，标准差均0.020 m，控制点视为无误差。（1）求所有几何交点并依据记录选P；（2）在选定点线性化距离方程；（3）求坐标标准差σx、σy及协方差；（4）若没有北侧记录，两距离能否唯一定位？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "Jacobian和局部反解正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "误差传播及非唯一性解释正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q4 two circle ranges",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q4 two circle ranges\", \"actual\": [50.0, 50.0], \"expected\": [50, 50], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q4 inverse Jacobian",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q4 inverse Jacobian\", \"actual\": [1.0, 1.0], \"expected\": [1, 1], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q4 coordinate sigmas",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q4 coordinate sigmas\", \"actual\": [0.023570226039551587, 0.017677669529663688], \"expected\": [0.023570226039551587, 0.017677669529663688], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "surveying-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "平面基线网固定A=(0,0)，x向东、y向北。观测AB=(100.010,0.000)、BC=(−0.020,100.020)、AC=(100.000,100.000) m；各向量分量独立且等精度。要求AB+BC−AC=0。（1）求闭合向量；（2）按最小二乘分别给三条基线改正；（3）求B、C坐标，比较A→B→C和A→C；（4）若真实GNSS分量间相关，为何须改用完整协方差？",
+          "score": 20,
+          "solution": "闭合f=(−0.010,+0.020) m；AB、BC改正均−f/3=(+0.003333,−0.006667)，AC改正+f/3=(−0.003333,+0.006667)。B=(100.013333,−0.006667)，C=(99.996667,100.006667) m。",
+          "explanation": "每个坐标分量有三观测、一个约束，最小化vAB²+vBC²+vAC²，条件vAB+vBC−vAC=−f。所得改正与约束系数成比例。固定A定义平移基准；无法仅由相对基线发现共同绝对坐标平移。相关误差改变权阵，简单三等分不再普遍最优。",
+          "source": {
+            "materialId": "surveying-engineering-q5-statement",
+            "blockId": "surveying-engineering-q5-statement",
+            "exact": "平面基线网固定A=(0,0)，x向东、y向北。观测AB=(100.010,0.000)、BC=(−0.020,100.020)、AC=(100.000,100.000) m；各向量分量独立且等精度。要求AB+BC−AC=0。（1）求闭合向量；（2）按最小二乘分别给三条基线改正；（3）求B、C坐标，比较A→B→C和A→C；（4）若真实GNSS分量间相关，为何须改用完整协方差？"
+          },
+          "chapter": "GNSS基线网的闭合与基准",
+          "tags": [
+            "测量平差与工程测绘",
+            "GNSS基线网的闭合与基准",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "GNSS基线网的闭合与基准"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "surveying-engineering-scope",
+                "blockId": "surveying-engineering-scope",
+                "exact": "Laboratory sessions cover the use of sextants, astronomical telescopes, and field use of GPS."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "闭合向量与约束正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "surveying-engineering-q5-statement",
+                    "blockId": "surveying-engineering-q5-statement",
+                    "exact": "平面基线网固定A=(0,0)，x向东、y向北。观测AB=(100.010,0.000)、BC=(−0.020,100.020)、AC=(100.000,100.000) m；各向量分量独立且等精度。要求AB+BC−AC=0。（1）求闭合向量；（2）按最小二乘分别给三条基线改正；（3）求B、C坐标，比较A→B→C和A→C；（4）若真实GNSS分量间相关，为何须改用完整协方差？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "最小二乘改正及符号正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "坐标双路径一致正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "基准和协方差范围清楚",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q5 adjusted x paths",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q5 adjusted x paths\", \"actual\": 99.99666666666667, \"expected\": 99.99666666666667, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q5 adjusted y paths",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q5 adjusted y paths\", \"actual\": 100.00666666666667, \"expected\": 100.00666666666666, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q5 correction constraint",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q5 correction constraint\", \"actual\": 0.01, \"expected\": 0.01, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "surveying-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "矩形场地x∈[0,20] m、y∈[0,10] m，原地面是平面z=10+0.10x m，设计面为水平z=11.20 m；不考虑松胀、压实与边坡。（1）求零填挖线；（2）分别积分求填方、挖方及净需借土；（3）用四角平均高差×总面积计算净值复核；（4）为何净土方不能替代实际挖填工程量？",
+          "score": 20,
+          "solution": "零填挖线x=12 m。填方$10\\int_0^{12}(1.2-0.1x)dx=72$ m³，挖方$10\\int_{12}^{20}(0.1x-1.2)dx=32$ m³，净需借土40 m³。四角平均设计−地面为0.20 m，乘200 m²得40 m³。",
+          "explanation": "先按高差正负分区再积分绝对体积。矩形上平面函数平均值等于角点平均，故可用以核对净值；若直接将净值40称为填方，会漏掉32 m³内部挖运和对应回填。实际材料转换与施工运输还需另有松胀压实参数，题未给故不引入。",
+          "source": {
+            "materialId": "surveying-engineering-q6-statement",
+            "blockId": "surveying-engineering-q6-statement",
+            "exact": "矩形场地x∈[0,20] m、y∈[0,10] m，原地面是平面z=10+0.10x m，设计面为水平z=11.20 m；不考虑松胀、压实与边坡。（1）求零填挖线；（2）分别积分求填方、挖方及净需借土；（3）用四角平均高差×总面积计算净值复核；（4）为何净土方不能替代实际挖填工程量？"
+          },
+          "chapter": "地形面与分区土方积分",
+          "tags": [
+            "测量平差与工程测绘",
+            "地形面与分区土方积分",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "地形面与分区土方积分"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "surveying-engineering-scope",
+                "blockId": "surveying-engineering-scope",
+                "exact": "Laboratory sessions cover the use of sextants, astronomical telescopes, and field use of GPS."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "零线与分区边界正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "surveying-engineering-q6-statement",
+                    "blockId": "surveying-engineering-q6-statement",
+                    "exact": "矩形场地x∈[0,20] m、y∈[0,10] m，原地面是平面z=10+0.10x m，设计面为水平z=11.20 m；不考虑松胀、压实与边坡。（1）求零填挖线；（2）分别积分求填方、挖方及净需借土；（3）用四角平均高差×总面积计算净值复核；（4）为何净土方不能替代实际挖填工程量？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两积分及三个体积正确",
+                "points": 7
+              },
+              {
+                "id": "step-3",
+                "description": "角点净值复核正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "净量与工程量区别正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q6 fill integral",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q6 fill integral\", \"actual\": 71.99999999999999, \"expected\": 72, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q6 cut integral",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q6 cut integral\", \"actual\": 31.999999999999986, \"expected\": 32, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "survey-q6 signed-volume closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"survey-q6 signed-volume closure\", \"actual\": 40, \"expected\": 39.99999999999999, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "surveying-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "surveying-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "surveying-engineering-q1",
+        "knowledge": "闭合导线与Bowditch改正",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "surveying-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "surveying-engineering-q2",
+        "knowledge": "闭合水准路线的距离加权",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "surveying-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "surveying-engineering-q3",
+        "knowledge": "异精度重复观测的最小二乘",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "surveying-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "surveying-engineering-q4",
+        "knowledge": "距离交会与几何解的选择",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "surveying-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "surveying-engineering-q5",
+        "knowledge": "GNSS基线网的闭合与基准",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "surveying-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "surveying-engineering-q6",
+        "knowledge": "地形面与分区土方积分",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "surveying-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "surveying-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "surveying-engineering-course-blueprint",
+      "name": "测量平差与工程测绘课程考试",
+      "subject": "测量平差与工程测绘",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "surveying-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

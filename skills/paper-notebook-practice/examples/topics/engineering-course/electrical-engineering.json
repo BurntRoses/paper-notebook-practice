@@ -1,0 +1,879 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "electrical-engineering-course-01",
+  "notebookId": "electrical-engineering-source",
+  "notebookRevision": 1,
+  "title": "电路与电气工程课程考试",
+  "subject": "电路与电气工程",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "电路与电气工程课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "electrical-engineering-scope",
+      "title": "MIT 6.002 Circuits and Electronics",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+      "text": "The course introduces the fundamentals of the lumped circuit abstraction.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2007",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+      }
+    },
+    {
+      "id": "electrical-engineering-q1-statement",
+      "title": "电路与电气工程第1题命题原稿",
+      "kind": "question-bank",
+      "text": "电路以地为零电位。理想12 V电压源正端经2 kΩ电阻接节点v；节点v经3 kΩ接地；另有1 mA理想电流源由地流向v。（1）列节点方程并求v及两电阻电流；（2）计算两电阻功率；（3）以被动符号约定核对两电源提供的功率与耗散平衡。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electrical-engineering-q2-statement",
+      "title": "电路与电气工程第2题命题原稿",
+      "kind": "question-bank",
+      "text": "12 V理想电压源依次串联3 kΩ与6 kΩ电阻，取6 kΩ电阻两端作为输出端，外接可变负载$R_L$。两电阻始终保留。（1）求输出端Thevenin等效；（2）求最大负载功率及对应负载；（3）负载为1 kΩ时求输出电压、功率，并解释最大功率匹配是否等于效率最高。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electrical-engineering-q3-statement",
+      "title": "电路与电气工程第3题命题原稿",
+      "kind": "question-bank",
+      "text": "电容100 μF初始电压为0，经1 kΩ电阻在t=0接入5 V理想直流源。元件线性且忽略漏电。（1）由KVL建立微分方程并给出电容电压、电流；（2）求t=0.20 s的电压和电流；（3）求到最终稳态电源提供的能量、储能与电阻耗能；（4）为何电源能量不能只取最终电容储能？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electrical-engineering-q4-statement",
+      "title": "电路与电气工程第4题命题原稿",
+      "kind": "question-bank",
+      "text": "50 Hz、100 V有效值的正弦电源驱动串联支路，R=6 Ω，感抗$X_L=8$ Ω。（1）求复阻抗、有效值电流和电流相位；（2）求有功、无功与视在功率；（3）在整个支路两端并联理想电容，使电源功率因数为1，求电容值以及补偿后电源电流。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electrical-engineering-q5-statement",
+      "title": "电路与电气工程第5题命题原稿",
+      "kind": "question-bank",
+      "text": "对称三相负载接400 V线电压、50 Hz电网，有功输入15 kW，原功率因数0.75滞后。拟并联三角形电容组使总功率因数升至0.95滞后。（1）求原及补偿后线电流；（2）求所需三相总无功补偿；（3）求每相电容；（4）若误按星形相电压计算三角形电容，会带来何种倍率错误？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electrical-engineering-q6-statement",
+      "title": "电路与电气工程第6题命题原稿",
+      "kind": "question-bank",
+      "text": "一台单相变压器额定容量2 kVA，额定电压1000/100 V，铁损20 W，额定电流时铜损80 W。负载电流标幺值x∈[0,1]，负载功率因数恒为1；另忽略励磁无功，输入功率因数也按1计。忽略电压调整率，铜损按$x^2$变化。（1）给出输出功率与效率函数；（2）求允许范围内的最高效率及对应x；（3）求此时二次电流与一次输入电流（按输入有功/1000 V）；（4）解释为何最高效率负载不一定是额定负载。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "electrical-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "electrical-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "电路以地为零电位。理想12 V电压源正端经2 kΩ电阻接节点v；节点v经3 kΩ接地；另有1 mA理想电流源由地流向v。（1）列节点方程并求v及两电阻电流；（2）计算两电阻功率；（3）以被动符号约定核对两电源提供的功率与耗散平衡。",
+          "score": 15,
+          "solution": "$v=8.4$ V。12 V源经2 kΩ向节点流入1.8 mA；3 kΩ向地流出2.8 mA。电阻功率6.48、23.52 mW，总耗散30.00 mW；电压源提供21.60 mW，电流源提供8.40 mW。",
+          "explanation": "节点流出方程$(v-12)/2000+v/3000-0.001=0$。电阻功率可分别用$I^2R$与$V^2/R$复核。两电源电流均从正电位端流出，因此在吸收功率约定下为负：−21.6、−8.4 mW，与电阻功率总和为零。",
+          "source": {
+            "materialId": "electrical-engineering-q1-statement",
+            "blockId": "electrical-engineering-q1-statement",
+            "exact": "电路以地为零电位。理想12 V电压源正端经2 kΩ电阻接节点v；节点v经3 kΩ接地；另有1 mA理想电流源由地流向v。（1）列节点方程并求v及两电阻电流；（2）计算两电阻功率；（3）以被动符号约定核对两电源提供的功率与耗散平衡。"
+          },
+          "chapter": "节点电位与功率守恒",
+          "tags": [
+            "电路与电气工程",
+            "节点电位与功率守恒",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "节点电位与功率守恒"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electrical-engineering-scope",
+                "blockId": "electrical-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "KCL方程及电位正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electrical-engineering-q1-statement",
+                    "blockId": "electrical-engineering-q1-statement",
+                    "exact": "电路以地为零电位。理想12 V电压源正端经2 kΩ电阻接节点v；节点v经3 kΩ接地；另有1 mA理想电流源由地流向v。（1）列节点方程并求v及两电阻电流；（2）计算两电阻功率；（3）以被动符号约定核对两电源提供的功率与耗散平衡。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两电流方向、数值正确",
+                "points": 3
+              },
+              {
+                "id": "step-3",
+                "description": "耗散功率正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "电源符号与功率平衡正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q1 KCL residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q1 KCL residual\", \"actual\": 2.168404344971009e-19, \"expected\": 0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q1 power balance",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q1 power balance\", \"actual\": [0.03, 0.030000000000000002], \"expected\": [0.03, 0.03], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          },
+          "attachments": [
+            {
+              "id": "electrical-engineering-q1-figure-1",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMjgwIiB2aWV3Qm94PSIwIDAgNjQwIDI4MCI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIyODAiIGZpbGw9IndoaXRlIi8+PGcgc3Ryb2tlPSIjMTExIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik04MCA4MEgxNzBNMjUwIDgwSDU1ME04MCA4MFYxMjBNODAgMTcwVjIxMEg1NTBNMTcwIDY1aDgwdjMwaC04MHpNMzQ1IDgwdjMwbS0xNSAwaDMwdjYwaC0zMHptMTUgNjB2NDBNNTUwIDgwdjQwbTAgNTB2NDAiLz48Y2lyY2xlIGN4PSI4MCIgY3k9IjE0NSIgcj0iMjUiLz48Y2lyY2xlIGN4PSI1NTAiIGN5PSIxNDUiIHI9IjI1Ii8+PHBhdGggZD0iTTU1MCAxNjB2LTMwbS02IDggNi04IDYgOCIvPjxjaXJjbGUgY3g9IjM0NSIgY3k9IjgwIiByPSI0IiBmaWxsPSIjMTExIi8+PC9nPjxnIGZvbnQtZmFtaWx5PSJzZXJpZiIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzExMSI+PHRleHQgeD0iMTUiIHk9IjE1MyI+MTIgVjwvdGV4dD48dGV4dCB4PSIxNzAiIHk9IjUyIj4yIGvOqTwvdGV4dD48dGV4dCB4PSIzNzAiIHk9IjE0NyI+MyBrzqk8L3RleHQ+PHRleHQgeD0iNTgwIiB5PSIxNTMiPjEgbUE8L3RleHQ+PHRleHQgeD0iMzMwIiB5PSI1NSI+djwvdGV4dD48dGV4dCB4PSIzMDAiIHk9IjI0NSI+MCBWPC90ZXh0Pjx0ZXh0IHg9IjczIiB5PSIxMzkiPis8L3RleHQ+PHRleHQgeD0iNzMiIHk9IjE2MiI+4oiSPC90ZXh0PjwvZz48L3N2Zz4=",
+              "alt": "12V理想电压源经2kΩ接节点v；v经3kΩ接地；1mA理想电流源由地注入v。",
+              "widthMm": 135
+            }
+          ]
+        },
+        {
+          "id": "electrical-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "12 V理想电压源依次串联3 kΩ与6 kΩ电阻，取6 kΩ电阻两端作为输出端，外接可变负载$R_L$。两电阻始终保留。（1）求输出端Thevenin等效；（2）求最大负载功率及对应负载；（3）负载为1 kΩ时求输出电压、功率，并解释最大功率匹配是否等于效率最高。",
+          "score": 15,
+          "solution": "$V_{th}=8$ V、$R_{th}=2$ kΩ。$R_L=2$ kΩ时最大功率8 mW。$R_L=1$ kΩ时输出$8/3$ V，功率$64/9=7.111111$ mW。",
+          "explanation": "开路分压$12\\times6/(3+6)=8$ V；将独立理想电压源置零后，两电阻并联。$P_L=V_{th}^2R_L/(R_{th}+R_L)^2$，求导或平方不等式得到匹配点。等效源内部电阻在匹配点与负载耗散相等，但原分压网络还具有开路静态耗电；最大负载功率不等于系统最高效率。",
+          "source": {
+            "materialId": "electrical-engineering-q2-statement",
+            "blockId": "electrical-engineering-q2-statement",
+            "exact": "12 V理想电压源依次串联3 kΩ与6 kΩ电阻，取6 kΩ电阻两端作为输出端，外接可变负载$R_L$。两电阻始终保留。（1）求输出端Thevenin等效；（2）求最大负载功率及对应负载；（3）负载为1 kΩ时求输出电压、功率，并解释最大功率匹配是否等于效率最高。"
+          },
+          "chapter": "等效电源与最大功率",
+          "tags": [
+            "电路与电气工程",
+            "等效电源与最大功率",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "等效电源与最大功率"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electrical-engineering-scope",
+                "blockId": "electrical-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "开路电压与置零等效电阻正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electrical-engineering-q2-statement",
+                    "blockId": "electrical-engineering-q2-statement",
+                    "exact": "12 V理想电压源依次串联3 kΩ与6 kΩ电阻，取6 kΩ电阻两端作为输出端，外接可变负载$R_L$。两电阻始终保留。（1）求输出端Thevenin等效；（2）求最大负载功率及对应负载；（3）负载为1 kΩ时求输出电压、功率，并解释最大功率匹配是否等于效率最高。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "最大功率条件及数值正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "1kΩ负载计算正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "功率与效率区分正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q2 maximum and load power",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q2 maximum and load power\", \"actual\": [0.008, 0.007111111111111111], \"expected\": [0.008, 0.0071111111111111115], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electrical-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "电容100 μF初始电压为0，经1 kΩ电阻在t=0接入5 V理想直流源。元件线性且忽略漏电。（1）由KVL建立微分方程并给出电容电压、电流；（2）求t=0.20 s的电压和电流；（3）求到最终稳态电源提供的能量、储能与电阻耗能；（4）为何电源能量不能只取最终电容储能？",
+          "score": 15,
+          "solution": "$\\tau=0.10$ s，$v_C=5(1-e^{-10t})$ V、$i=0.005e^{-10t}$ A。t=0.20 s时电压4.323324 V、电流0.676676 mA。总供能2.50 mJ，储能1.25 mJ，电阻耗能1.25 mJ。",
+          "explanation": "由$Ri+v_C=5$和$i=C\\dot v_C$得到$RC\\dot v_C+v_C=5$。总供能$\\int_0^\\infty5i\\,dt=CV_s^2$；电容储能$CV_s^2/2$，差值由电阻耗散。电阻趋近零时该理想瞬态模型的电流趋于奇异，但能量分配不能用简单“电阻小所以无耗能”替代积分。",
+          "source": {
+            "materialId": "electrical-engineering-q3-statement",
+            "blockId": "electrical-engineering-q3-statement",
+            "exact": "电容100 μF初始电压为0，经1 kΩ电阻在t=0接入5 V理想直流源。元件线性且忽略漏电。（1）由KVL建立微分方程并给出电容电压、电流；（2）求t=0.20 s的电压和电流；（3）求到最终稳态电源提供的能量、储能与电阻耗能；（4）为何电源能量不能只取最终电容储能？"
+          },
+          "chapter": "一阶电路暂态",
+          "tags": [
+            "电路与电气工程",
+            "一阶电路暂态",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "一阶电路暂态"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electrical-engineering-scope",
+                "blockId": "electrical-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "方程、初值与时间常数正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electrical-engineering-q3-statement",
+                    "blockId": "electrical-engineering-q3-statement",
+                    "exact": "电容100 μF初始电压为0，经1 kΩ电阻在t=0接入5 V理想直流源。元件线性且忽略漏电。（1）由KVL建立微分方程并给出电容电压、电流；（2）求t=0.20 s的电压和电流；（3）求到最终稳态电源提供的能量、储能与电阻耗能；（4）为何电源能量不能只取最终电容储能？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "暂态表达及数值正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "三项能量计算正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "能量解释完整",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q3 transient KVL",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q3 transient KVL\", \"actual\": 5.0, \"expected\": 5, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q3 energy partition",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q3 energy partition\", \"actual\": 0.0025, \"expected\": 0.0025, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electrical-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "50 Hz、100 V有效值的正弦电源驱动串联支路，R=6 Ω，感抗$X_L=8$ Ω。（1）求复阻抗、有效值电流和电流相位；（2）求有功、无功与视在功率；（3）在整个支路两端并联理想电容，使电源功率因数为1，求电容值以及补偿后电源电流。",
+          "score": 15,
+          "solution": "$Z=6+j8$ Ω，$I=6-j8$ A，有效值10 A，相位−53.130102°。P=600 W、Q=800 var、S=1000 VA。电容$C=800/(2\\pi\\times50\\times100^2)=254.647909$ μF；补偿后电源电流6 A。",
+          "explanation": "复功率采用$\\underline S=\\underline V\\underline I^*$。电容在并联端提供$Q_C=-\\omega CV^2$，抵消支路正无功，但不改变原RL支路电流或有功耗散。不能把补偿后电源电流6 A误当成原支路电流。",
+          "source": {
+            "materialId": "electrical-engineering-q4-statement",
+            "blockId": "electrical-engineering-q4-statement",
+            "exact": "50 Hz、100 V有效值的正弦电源驱动串联支路，R=6 Ω，感抗$X_L=8$ Ω。（1）求复阻抗、有效值电流和电流相位；（2）求有功、无功与视在功率；（3）在整个支路两端并联理想电容，使电源功率因数为1，求电容值以及补偿后电源电流。"
+          },
+          "chapter": "正弦稳态与无功补偿",
+          "tags": [
+            "电路与电气工程",
+            "正弦稳态与无功补偿",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "正弦稳态与无功补偿"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electrical-engineering-scope",
+                "blockId": "electrical-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "相量及共轭符号正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electrical-engineering-q4-statement",
+                    "blockId": "electrical-engineering-q4-statement",
+                    "exact": "50 Hz、100 V有效值的正弦电源驱动串联支路，R=6 Ω，感抗$X_L=8$ Ω。（1）求复阻抗、有效值电流和电流相位；（2）求有功、无功与视在功率；（3）在整个支路两端并联理想电容，使电源功率因数为1，求电容值以及补偿后电源电流。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "P/Q/S正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "并联电容及电源电流正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "区分支路与电源电流",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q4 complex division",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q4 complex division\", \"actual\": [6.0, -8.0], \"expected\": [6, -8], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q4 apparent power",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q4 apparent power\", \"actual\": 1000.0, \"expected\": 1000, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electrical-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "对称三相负载接400 V线电压、50 Hz电网，有功输入15 kW，原功率因数0.75滞后。拟并联三角形电容组使总功率因数升至0.95滞后。（1）求原及补偿后线电流；（2）求所需三相总无功补偿；（3）求每相电容；（4）若误按星形相电压计算三角形电容，会带来何种倍率错误？",
+          "score": 20,
+          "solution": "原线电流28.867513 A，补偿后22.790142 A。总补偿8.298495 kvar；三角形每相$C=Q_C/(3\\omega U_L^2)=55.031104$ μF。",
+          "explanation": "$Q=P\\tan\\varphi$，所以补偿取两个工况无功之差。三角形每只电容承受400 V，不能用400/√3 V；若误用星形相电压，会把每只电容量放大3倍，实际投入三角形后过补偿。有效值线量与相量关系要随接法明确。",
+          "source": {
+            "materialId": "electrical-engineering-q5-statement",
+            "blockId": "electrical-engineering-q5-statement",
+            "exact": "对称三相负载接400 V线电压、50 Hz电网，有功输入15 kW，原功率因数0.75滞后。拟并联三角形电容组使总功率因数升至0.95滞后。（1）求原及补偿后线电流；（2）求所需三相总无功补偿；（3）求每相电容；（4）若误按星形相电压计算三角形电容，会带来何种倍率错误？"
+          },
+          "chapter": "三相负载与补偿组接法",
+          "tags": [
+            "电路与电气工程",
+            "三相负载与补偿组接法",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "三相负载与补偿组接法"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electrical-engineering-scope",
+                "blockId": "electrical-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "三相功率和两线电流正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electrical-engineering-q5-statement",
+                    "blockId": "electrical-engineering-q5-statement",
+                    "exact": "对称三相负载接400 V线电压、50 Hz电网，有功输入15 kW，原功率因数0.75滞后。拟并联三角形电容组使总功率因数升至0.95滞后。（1）求原及补偿后线电流；（2）求所需三相总无功补偿；（3）求每相电容；（4）若误按星形相电压计算三角形电容，会带来何种倍率错误？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "目标无功差正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "三角形电容正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "接法误用三倍关系解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q5 target power factor",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q5 target power factor\", \"actual\": 0.95, \"expected\": 0.95, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electrical-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "一台单相变压器额定容量2 kVA，额定电压1000/100 V，铁损20 W，额定电流时铜损80 W。负载电流标幺值x∈[0,1]，负载功率因数恒为1；另忽略励磁无功，输入功率因数也按1计。忽略电压调整率，铜损按$x^2$变化。（1）给出输出功率与效率函数；（2）求允许范围内的最高效率及对应x；（3）求此时二次电流与一次输入电流（按输入有功/1000 V）；（4）解释为何最高效率负载不一定是额定负载。",
+          "score": 20,
+          "solution": "$P_o=2000x$ W，$\\eta=2000x/(2000x+20+80x^2)$。最佳$x=0.5$，效率25/26=96.153846%。二次电流10 A，输入功率1040 W、一次电流1.04 A。",
+          "explanation": "对效率求导等价于最小化单位输出损耗$(20+80x^2)/(2000x)$，驻点满足铁损=铜损，即20=80x²。x=0.5在允许区间内。一次输入电流包含损耗，不能再机械用理想变比得到1.00 A并称为含损耗输入。题给功率因数为1，故能直接用有功除电压。",
+          "source": {
+            "materialId": "electrical-engineering-q6-statement",
+            "blockId": "electrical-engineering-q6-statement",
+            "exact": "一台单相变压器额定容量2 kVA，额定电压1000/100 V，铁损20 W，额定电流时铜损80 W。负载电流标幺值x∈[0,1]，负载功率因数恒为1；另忽略励磁无功，输入功率因数也按1计。忽略电压调整率，铜损按$x^2$变化。（1）给出输出功率与效率函数；（2）求允许范围内的最高效率及对应x；（3）求此时二次电流与一次输入电流（按输入有功/1000 V）；（4）解释为何最高效率负载不一定是额定负载。"
+          },
+          "chapter": "变压器损耗与最佳负载",
+          "tags": [
+            "电路与电气工程",
+            "变压器损耗与最佳负载",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "变压器损耗与最佳负载"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electrical-engineering-scope",
+                "blockId": "electrical-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "效率及随负载损耗模型正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electrical-engineering-q6-statement",
+                    "blockId": "electrical-engineering-q6-statement",
+                    "exact": "一台单相变压器额定容量2 kVA，额定电压1000/100 V，铁损20 W，额定电流时铜损80 W。负载电流标幺值x∈[0,1]，负载功率因数恒为1；另忽略励磁无功，输入功率因数也按1计。忽略电压调整率，铜损按$x^2$变化。（1）给出输出功率与效率函数；（2）求允许范围内的最高效率及对应x；（3）求此时二次电流与一次输入电流（按输入有功/1000 V）；（4）解释为何最高效率负载不一定是额定负载。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "极值推导及范围核定正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "效率与两侧电流正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "固定损耗和变动损耗解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q6 optimum loss equality",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q6 optimum loss equality\", \"actual\": 20.0, \"expected\": 20, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electrical-q6 input energy",
+                "result": "pass",
+                "evidence": "{\"label\": \"electrical-q6 input energy\", \"actual\": 1040.0, \"expected\": 1040.0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "electrical-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "electrical-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "electrical-engineering-q1",
+        "knowledge": "节点电位与功率守恒",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electrical-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "electrical-engineering-q2",
+        "knowledge": "等效电源与最大功率",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electrical-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "electrical-engineering-q3",
+        "knowledge": "一阶电路暂态",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electrical-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "electrical-engineering-q4",
+        "knowledge": "正弦稳态与无功补偿",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electrical-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "electrical-engineering-q5",
+        "knowledge": "三相负载与补偿组接法",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electrical-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "electrical-engineering-q6",
+        "knowledge": "变压器损耗与最佳负载",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electrical-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "electrical-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "electrical-engineering-course-blueprint",
+      "name": "电路与电气工程课程考试",
+      "subject": "电路与电气工程",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "electrical-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

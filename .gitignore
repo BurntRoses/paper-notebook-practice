@@ -1,0 +1,15 @@
+node_modules/
+dist/
+output/
+.DS_Store
+__pycache__/
+*.pyc
+*.log
+
+# Generated portable runtime and samples are provided in release downloads.
+skills/paper-notebook-practice/scripts/practice.mjs
+skills/paper-notebook-practice/examples/exam-paper-sample.html
+skills/paper-notebook-practice/scripts/practice-ingest.py
+skills/paper-notebook-practice/scripts/practice-ocr.swift
+skills/paper-notebook-practice/licenses/
+skills/paper-notebook-practice/THIRD_PARTY_NOTICES.txt

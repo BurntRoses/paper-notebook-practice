@@ -1,0 +1,281 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "workflow-mixed-bank",
+  "notebookId": "workflow-reference-notebook",
+  "notebookRevision": 1,
+  "title": "复利与数据处理综合练习",
+  "subject": "数学与计算机基础",
+  "level": "大学基础",
+  "durationMinutes": 45,
+  "totalScore": 24,
+  "mode": "bank",
+  "style": {
+    "preset": "stem",
+    "sealed": false
+  },
+  "materials": [
+    {
+      "id": "workflow-reference",
+      "title": "复利与数据处理 · 自编教学资料",
+      "kind": "knowledge",
+      "text": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。",
+      "blocks": [
+        {
+          "id": "workflow-reference-text",
+          "title": "知识与任务",
+          "text": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。",
+          "page": 1
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "workflow-choice",
+      "title": "单项选择",
+      "instructions": "按题目要求作答。",
+      "score": 2,
+      "questions": [
+        {
+          "id": "wf-choice",
+          "number": 1,
+          "type": "choice",
+          "prompt": "每期利息计入本金的方式是：",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "复利"
+            },
+            {
+              "id": "B",
+              "text": "单利"
+            },
+            {
+              "id": "C",
+              "text": "折旧"
+            },
+            {
+              "id": "D",
+              "text": "摊销"
+            },
+            {
+              "id": "E",
+              "text": "税率"
+            }
+          ],
+          "solution": "A",
+          "explanation": "复利每期将利息计入本金。",
+          "chapter": "复利",
+          "difficulty": "easy",
+          "source": {
+            "materialId": "workflow-reference",
+            "blockId": "workflow-reference-text",
+            "title": "知识与任务",
+            "page": 1,
+            "exact": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "tags": [
+            "复利"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow-multiple",
+      "title": "多项选择",
+      "instructions": "按题目要求作答。",
+      "score": 2,
+      "questions": [
+        {
+          "id": "wf-multiple",
+          "number": 2,
+          "type": "multiple",
+          "prompt": "资料涉及的数据完整性约束包括：",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "非空约束"
+            },
+            {
+              "id": "B",
+              "text": "配色约束"
+            },
+            {
+              "id": "C",
+              "text": "唯一约束"
+            },
+            {
+              "id": "D",
+              "text": "字重约束"
+            }
+          ],
+          "solution": [
+            "A",
+            "C"
+          ],
+          "explanation": "资料明确列出非空和唯一约束。",
+          "chapter": "数据处理",
+          "difficulty": "easy",
+          "source": {
+            "materialId": "workflow-reference",
+            "blockId": "workflow-reference-text",
+            "title": "知识与任务",
+            "page": 1,
+            "exact": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "tags": [
+            "数据处理"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow-truefalse",
+      "title": "判断",
+      "instructions": "按题目要求作答。",
+      "score": 2,
+      "questions": [
+        {
+          "id": "wf-truefalse",
+          "number": 3,
+          "type": "truefalse",
+          "prompt": "复利每期将利息计入下一期本金。",
+          "score": 2,
+          "options": [
+            {
+              "id": "TRUE",
+              "text": "正确"
+            },
+            {
+              "id": "FALSE",
+              "text": "错误"
+            }
+          ],
+          "solution": "TRUE",
+          "explanation": "这与资料给出的复利定义一致。",
+          "chapter": "复利",
+          "difficulty": "easy",
+          "source": {
+            "materialId": "workflow-reference",
+            "blockId": "workflow-reference-text",
+            "title": "知识与任务",
+            "page": 1,
+            "exact": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "tags": [
+            "复利"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow-blank",
+      "title": "填空",
+      "instructions": "按题目要求作答。",
+      "score": 4,
+      "questions": [
+        {
+          "id": "wf-blank",
+          "number": 4,
+          "type": "blank",
+          "prompt": "复利递推的闭式中，指数表示经历的____。",
+          "score": 4,
+          "solution": [
+            "期数"
+          ],
+          "explanation": "式中 n 表示增长期数。",
+          "chapter": "复利",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "workflow-reference",
+            "blockId": "workflow-reference-text",
+            "title": "知识与任务",
+            "page": 1,
+            "exact": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "tags": [
+            "复利"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow-response",
+      "title": "计算",
+      "instructions": "按题目要求作答。",
+      "score": 6,
+      "questions": [
+        {
+          "id": "wf-response",
+          "number": 5,
+          "type": "response",
+          "prompt": "根据原式，说明本金为100、每期增长率为10%时，两期后的余额，并写出过程。",
+          "score": 6,
+          "solution": "100×1.1²=121",
+          "explanation": "代入 P_n=P_0(1+r)^n：100×1.1×1.1=121。代入3分，运算与单位3分。",
+          "chapter": "复利",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "workflow-reference",
+            "blockId": "workflow-reference-text",
+            "title": "知识与任务",
+            "page": 1,
+            "exact": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "tags": [
+            "复利"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workflow-task",
+      "title": "操作任务",
+      "instructions": "按题目要求作答。",
+      "score": 8,
+      "questions": [
+        {
+          "id": "wf-task",
+          "number": 6,
+          "type": "task",
+          "prompt": "编写 SQL，按 region 汇总 sales 表中的 amount，并按合计降序输出。",
+          "score": 8,
+          "solution": "SELECT region, SUM(amount) AS total FROM sales GROUP BY region ORDER BY total DESC;",
+          "explanation": "正确聚合与字段2分，GROUP BY 2分，降序排序2分，语句完整2分。",
+          "chapter": "数据处理",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "workflow-reference",
+            "blockId": "workflow-reference-text",
+            "title": "知识与任务",
+            "page": 1,
+            "exact": "原始学习资料\n单利只对本金计算利息；复利每期将利息计入本金。\n相同增长率下，复利满足 P_n=P_0(1+r)^n，其中 n 表示期数。\n数据完整性需要非空约束与唯一约束。\nSQL 任务：从 sales 表按 region 分组，计算金额 amount 合计，并按合计降序排列。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "tags": [
+            "数据处理"
+          ]
+        }
+      ]
+    }
+  ]
+}

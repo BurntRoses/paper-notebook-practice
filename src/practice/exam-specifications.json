@@ -1,0 +1,2439 @@
+{
+  "schemaVersion": "1.0.0",
+  "catalogVersion": "2026-11-14",
+  "defaultScope": "full",
+  "subsetPolicy": "Only an explicit user choice of sections, questions or time-limited partial practice may narrow a complete examination. Missing bank questions must produce an authoring requirement, never a silent smaller paper.",
+  "sourceRightsPolicy": "Software is MIT licensed. Exam passages, recordings, figures and original questions retain their source rights. Public access does not imply an open-content license.",
+  "exams": [
+    {
+      "id": "cet4",
+      "name": "全国大学英语四级考试（笔试）",
+      "subject": "英语",
+      "level": "CET-4",
+      "scope": "complete-written-examination",
+      "version": "2016-revised-syllabus",
+      "aliases": [
+        "CET-4",
+        "大学英语四级"
+      ],
+      "templateIds": [
+        "cet4",
+        "source-real-cet4-translation-2016"
+      ],
+      "sourcePracticeIds": [
+        "real-cet4-translation-2016"
+      ],
+      "sourcePracticeCoverage": "subset-only",
+      "durationMinutes": 125,
+      "durationStatus": "official-syllabus",
+      "totalScore": 100,
+      "scoreScale": "practice-weighted-100",
+      "overall": {
+        "questionCount": 57,
+        "objectiveQuestionCount": 55,
+        "writingTaskCount": 1,
+        "translationTaskCount": 1
+      },
+      "source": {
+        "title": "全国大学英语四、六级考试大纲（2016年修订版）· 四级笔试样卷",
+        "url": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+        "downloadUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+        "sha256": "9166d3c03b7bc43abd9d9df91bd2ef8085b4419286f1e5ca100dea68f3cfd1f1",
+        "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+        "accessedAt": "2026-11-14",
+        "locator": "大纲印刷页5–8（PDF10–13），分数解释印刷页12–13（PDF17–18）；笔试样卷PDF150–161 / 172–183。"
+      },
+      "reportingScale": {
+        "max": 710,
+        "conversion": "equated-norm-referenced",
+        "automaticConversionAvailable": false,
+        "parts": [
+          {
+            "id": "listening",
+            "weightPercent": 35,
+            "reportedMaximum": 249
+          },
+          {
+            "id": "reading",
+            "weightPercent": 35,
+            "reportedMaximum": 249
+          },
+          {
+            "id": "writing-and-translation",
+            "weightPercent": 30,
+            "reportedMaximum": 212
+          }
+        ],
+        "source": {
+          "title": "教育部教育考试院：分数解释",
+          "url": "https://cet.neea.edu.cn/html1/folder/19081/5124-1.htm",
+          "accessedAt": "2026-11-14"
+        },
+        "note": "100分练习权重按大纲比例相加；官方报道分经等值与常模转换。每题练习权重乘7.1、或把练习总分乘7.1，均不构成官方CET报道分。"
+      },
+      "timingGroups": [
+        {
+          "id": "cet4-writing-time",
+          "title": "Writing",
+          "minutes": 30,
+          "sectionIds": [
+            "cet4-writing"
+          ]
+        },
+        {
+          "id": "cet4-listening-time",
+          "title": "Listening Comprehension",
+          "minutes": 25,
+          "sectionIds": [
+            "cet4-listening-news",
+            "cet4-listening-conversations",
+            "cet4-listening-passages"
+          ]
+        },
+        {
+          "id": "cet4-reading-time",
+          "title": "Reading Comprehension",
+          "minutes": 40,
+          "sectionIds": [
+            "cet4-reading-words",
+            "cet4-reading-matching",
+            "cet4-reading-detail"
+          ]
+        },
+        {
+          "id": "cet4-translation-time",
+          "title": "Translation",
+          "minutes": 30,
+          "sectionIds": [
+            "cet4-translation"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "cet4-writing",
+          "label": "Writing",
+          "title": "Writing",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 15,
+          "minutes": 30,
+          "pointsPerQuestion": 15,
+          "format": "essay",
+          "timingGroupId": "cet4-writing-time",
+          "minimumWords": 120,
+          "sampleWordRange": [
+            120,
+            180
+          ],
+          "scoreBasis": "official-section-weight-percent",
+          "stimulusKind": "writing-prompt"
+        },
+        {
+          "id": "cet4-listening-news",
+          "label": "Listening Section A · 短篇新闻",
+          "title": "Listening Section A · 短篇新闻",
+          "questionType": "choice",
+          "count": 7,
+          "totalScore": 7,
+          "minutes": null,
+          "displayStart": 1,
+          "pointsPerQuestion": 1,
+          "format": "listening-choice",
+          "timingGroupId": "cet4-listening-time",
+          "stimulusKind": "audio",
+          "groups": [
+            {
+              "count": 2,
+              "optionsCount": 4,
+              "stimulusKind": "news"
+            },
+            {
+              "count": 2,
+              "optionsCount": 4,
+              "stimulusKind": "news"
+            },
+            {
+              "count": 3,
+              "optionsCount": 4,
+              "stimulusKind": "news"
+            }
+          ],
+          "groupingBasis": "2016-official-sample; per-stimulus counts may vary within the syllabus ranges",
+          "questionsPerStimulusRange": [
+            2,
+            3
+          ],
+          "audioRequired": true,
+          "playbackCount": 1,
+          "speechRateWordsPerMinuteRange": [
+            120,
+            140
+          ],
+          "answerPauseSecondsPerQuestion": 15,
+          "totalStimulusWordCountRange": [
+            450,
+            500
+          ]
+        },
+        {
+          "id": "cet4-listening-conversations",
+          "label": "Listening Section B · 长对话",
+          "title": "Listening Section B · 长对话",
+          "questionType": "choice",
+          "count": 8,
+          "totalScore": 8,
+          "minutes": null,
+          "displayStart": 8,
+          "pointsPerQuestion": 1,
+          "format": "listening-choice",
+          "timingGroupId": "cet4-listening-time",
+          "stimulusKind": "audio",
+          "groups": [
+            {
+              "count": 4,
+              "optionsCount": 4,
+              "stimulusKind": "conversation"
+            },
+            {
+              "count": 4,
+              "optionsCount": 4,
+              "stimulusKind": "conversation"
+            }
+          ],
+          "groupingBasis": "2016-official-sample; per-stimulus counts may vary within the syllabus ranges",
+          "questionsPerStimulusRange": [
+            4,
+            4
+          ],
+          "audioRequired": true,
+          "playbackCount": 1,
+          "speechRateWordsPerMinuteRange": [
+            120,
+            140
+          ],
+          "answerPauseSecondsPerQuestion": 15,
+          "wordCountRangePerStimulus": [
+            240,
+            280
+          ]
+        },
+        {
+          "id": "cet4-listening-passages",
+          "label": "Listening Section C · 听力篇章",
+          "title": "Listening Section C · 听力篇章",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 20,
+          "minutes": null,
+          "displayStart": 16,
+          "pointsPerQuestion": 2,
+          "format": "listening-choice",
+          "timingGroupId": "cet4-listening-time",
+          "stimulusKind": "audio",
+          "groups": [
+            {
+              "count": 3,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            },
+            {
+              "count": 3,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            },
+            {
+              "count": 4,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            }
+          ],
+          "groupingBasis": "2016-official-sample; per-stimulus counts may vary within the syllabus ranges",
+          "questionsPerStimulusRange": [
+            3,
+            4
+          ],
+          "audioRequired": true,
+          "playbackCount": 1,
+          "speechRateWordsPerMinuteRange": [
+            120,
+            140
+          ],
+          "answerPauseSecondsPerQuestion": 15,
+          "wordCountRangePerStimulus": [
+            220,
+            240
+          ]
+        },
+        {
+          "id": "cet4-reading-words",
+          "label": "Reading Section A · 词汇理解",
+          "title": "Reading Section A · 词汇理解",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 5,
+          "minutes": null,
+          "displayStart": 26,
+          "pointsPerQuestion": 0.5,
+          "format": "word-bank",
+          "timingGroupId": "cet4-reading-time",
+          "stimulusKind": "word-bank",
+          "groups": [
+            {
+              "count": 10,
+              "optionsCount": 15,
+              "stimulusKind": "gapped-passage"
+            }
+          ],
+          "wordCountRange": [
+            200,
+            250
+          ],
+          "optionReuse": false
+        },
+        {
+          "id": "cet4-reading-matching",
+          "label": "Reading Section B · 长篇阅读",
+          "title": "Reading Section B · 长篇阅读",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 10,
+          "minutes": null,
+          "displayStart": 36,
+          "pointsPerQuestion": 1,
+          "format": "paragraph-matching",
+          "timingGroupId": "cet4-reading-time",
+          "stimulusKind": "lettered-paragraphs",
+          "groups": [
+            {
+              "count": 10,
+              "stimulusKind": "long-passage"
+            }
+          ],
+          "approximateWordCount": 1000,
+          "optionReuse": true,
+          "sampleParagraphOptionCount": 11,
+          "paragraphOptionCountPolicy": "Use the actual passage paragraph labels; the syllabus does not prescribe a fixed count."
+        },
+        {
+          "id": "cet4-reading-detail",
+          "label": "Reading Section C · 仔细阅读",
+          "title": "Reading Section C · 仔细阅读",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 20,
+          "minutes": null,
+          "displayStart": 46,
+          "pointsPerQuestion": 2,
+          "format": "reading-choice",
+          "timingGroupId": "cet4-reading-time",
+          "stimulusKind": "reading-passage",
+          "groups": [
+            {
+              "count": 5,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            },
+            {
+              "count": 5,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            }
+          ],
+          "wordCountRangePerPassage": [
+            300,
+            350
+          ]
+        },
+        {
+          "id": "cet4-translation",
+          "label": "Translation",
+          "title": "Translation",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 15,
+          "minutes": 30,
+          "pointsPerQuestion": 15,
+          "format": "translation-zh-en",
+          "timingGroupId": "cet4-translation-time",
+          "stimulusKind": "chinese-paragraph"
+        }
+      ],
+      "deliveryRequirements": {
+        "fullPaperDefault": true,
+        "allowAutomaticSubsetFallback": false,
+        "sharedStimuliRequired": true,
+        "embeddedAudioRequired": true,
+        "audioTranscriptRequired": true,
+        "listeningTextIsNotAudio": true,
+        "missingMaterialAction": "Complete the missing passages, question groups, recordings and answer rubric before delivery. A transcript-only practice requires an explicit subset/alternative-mode choice.",
+        "assetPolicy": "Use user-provided, openly licensed, public-domain or original local materials; retain rights and attribution. No paid API, account or model key."
+      }
+    },
+    {
+      "id": "cet6",
+      "name": "全国大学英语六级考试（笔试）",
+      "subject": "英语",
+      "level": "CET-6",
+      "scope": "complete-written-examination",
+      "version": "2016-revised-syllabus",
+      "aliases": [
+        "CET-6",
+        "大学英语六级"
+      ],
+      "templateIds": [
+        "cet6",
+        "source-real-cet6-writing-translation-2016"
+      ],
+      "sourcePracticeIds": [
+        "real-cet6-writing-translation-2016"
+      ],
+      "sourcePracticeCoverage": "subset-only",
+      "durationMinutes": 130,
+      "durationStatus": "official-syllabus",
+      "totalScore": 100,
+      "scoreScale": "practice-weighted-100",
+      "overall": {
+        "questionCount": 57,
+        "objectiveQuestionCount": 55,
+        "writingTaskCount": 1,
+        "translationTaskCount": 1
+      },
+      "source": {
+        "title": "全国大学英语四、六级考试大纲（2016年修订版）· 六级笔试样卷",
+        "url": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+        "downloadUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+        "sha256": "9166d3c03b7bc43abd9d9df91bd2ef8085b4419286f1e5ca100dea68f3cfd1f1",
+        "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+        "accessedAt": "2026-11-14",
+        "locator": "大纲印刷页5–8（PDF10–13），分数解释印刷页12–13（PDF17–18）；笔试样卷PDF150–161 / 172–183。"
+      },
+      "reportingScale": {
+        "max": 710,
+        "conversion": "equated-norm-referenced",
+        "automaticConversionAvailable": false,
+        "parts": [
+          {
+            "id": "listening",
+            "weightPercent": 35,
+            "reportedMaximum": 249
+          },
+          {
+            "id": "reading",
+            "weightPercent": 35,
+            "reportedMaximum": 249
+          },
+          {
+            "id": "writing-and-translation",
+            "weightPercent": 30,
+            "reportedMaximum": 212
+          }
+        ],
+        "source": {
+          "title": "教育部教育考试院：分数解释",
+          "url": "https://cet.neea.edu.cn/html1/folder/19081/5124-1.htm",
+          "accessedAt": "2026-11-14"
+        },
+        "note": "100分练习权重按大纲比例相加；官方报道分经等值与常模转换。每题练习权重乘7.1、或把练习总分乘7.1，均不构成官方CET报道分。"
+      },
+      "timingGroups": [
+        {
+          "id": "cet6-writing-time",
+          "title": "Writing",
+          "minutes": 30,
+          "sectionIds": [
+            "cet6-writing"
+          ]
+        },
+        {
+          "id": "cet6-listening-time",
+          "title": "Listening Comprehension",
+          "minutes": 30,
+          "sectionIds": [
+            "cet6-listening-conversations",
+            "cet6-listening-passages",
+            "cet6-listening-lectures"
+          ]
+        },
+        {
+          "id": "cet6-reading-time",
+          "title": "Reading Comprehension",
+          "minutes": 40,
+          "sectionIds": [
+            "cet6-reading-words",
+            "cet6-reading-matching",
+            "cet6-reading-detail"
+          ]
+        },
+        {
+          "id": "cet6-translation-time",
+          "title": "Translation",
+          "minutes": 30,
+          "sectionIds": [
+            "cet6-translation"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "cet6-writing",
+          "label": "Writing",
+          "title": "Writing",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 15,
+          "minutes": 30,
+          "pointsPerQuestion": 15,
+          "format": "essay",
+          "timingGroupId": "cet6-writing-time",
+          "minimumWords": 150,
+          "sampleWordRange": [
+            150,
+            200
+          ],
+          "scoreBasis": "official-section-weight-percent",
+          "stimulusKind": "writing-prompt"
+        },
+        {
+          "id": "cet6-listening-conversations",
+          "label": "Listening Section A · 长对话",
+          "title": "Listening Section A · 长对话",
+          "questionType": "choice",
+          "count": 8,
+          "totalScore": 8,
+          "minutes": null,
+          "displayStart": 1,
+          "pointsPerQuestion": 1,
+          "format": "listening-choice",
+          "timingGroupId": "cet6-listening-time",
+          "stimulusKind": "audio",
+          "groups": [
+            {
+              "count": 4,
+              "optionsCount": 4,
+              "stimulusKind": "conversation"
+            },
+            {
+              "count": 4,
+              "optionsCount": 4,
+              "stimulusKind": "conversation"
+            }
+          ],
+          "groupingBasis": "2016-official-sample; per-stimulus counts may vary within the syllabus ranges",
+          "questionsPerStimulusRange": [
+            4,
+            4
+          ],
+          "audioRequired": true,
+          "playbackCount": 1,
+          "speechRateWordsPerMinuteRange": [
+            140,
+            160
+          ],
+          "answerPauseSecondsPerQuestion": 13,
+          "wordCountRangePerStimulus": [
+            280,
+            320
+          ]
+        },
+        {
+          "id": "cet6-listening-passages",
+          "label": "Listening Section B · 听力篇章",
+          "title": "Listening Section B · 听力篇章",
+          "questionType": "choice",
+          "count": 7,
+          "totalScore": 7,
+          "minutes": null,
+          "displayStart": 9,
+          "pointsPerQuestion": 1,
+          "format": "listening-choice",
+          "timingGroupId": "cet6-listening-time",
+          "stimulusKind": "audio",
+          "groups": [
+            {
+              "count": 3,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            },
+            {
+              "count": 4,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            }
+          ],
+          "groupingBasis": "2016-official-sample; per-stimulus counts may vary within the syllabus ranges",
+          "questionsPerStimulusRange": [
+            3,
+            4
+          ],
+          "audioRequired": true,
+          "playbackCount": 1,
+          "speechRateWordsPerMinuteRange": [
+            140,
+            160
+          ],
+          "answerPauseSecondsPerQuestion": 13,
+          "wordCountRangePerStimulus": [
+            240,
+            260
+          ]
+        },
+        {
+          "id": "cet6-listening-lectures",
+          "label": "Listening Section C · 讲话／报道／讲座",
+          "title": "Listening Section C · 讲话／报道／讲座",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 20,
+          "minutes": null,
+          "displayStart": 16,
+          "pointsPerQuestion": 2,
+          "format": "listening-choice",
+          "timingGroupId": "cet6-listening-time",
+          "stimulusKind": "audio",
+          "groups": [
+            {
+              "count": 4,
+              "optionsCount": 4,
+              "stimulusKind": "talk-report-lecture"
+            },
+            {
+              "count": 3,
+              "optionsCount": 4,
+              "stimulusKind": "talk-report-lecture"
+            },
+            {
+              "count": 3,
+              "optionsCount": 4,
+              "stimulusKind": "talk-report-lecture"
+            }
+          ],
+          "groupingBasis": "2016-official-sample; per-stimulus counts may vary within the syllabus ranges",
+          "questionsPerStimulusRange": [
+            3,
+            4
+          ],
+          "audioRequired": true,
+          "playbackCount": 1,
+          "speechRateWordsPerMinuteRange": [
+            140,
+            160
+          ],
+          "answerPauseSecondsPerQuestion": 13,
+          "approximateTotalStimulusWordCount": 1200
+        },
+        {
+          "id": "cet6-reading-words",
+          "label": "Reading Section A · 词汇理解",
+          "title": "Reading Section A · 词汇理解",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 5,
+          "minutes": null,
+          "displayStart": 26,
+          "pointsPerQuestion": 0.5,
+          "format": "word-bank",
+          "timingGroupId": "cet6-reading-time",
+          "stimulusKind": "word-bank",
+          "groups": [
+            {
+              "count": 10,
+              "optionsCount": 15,
+              "stimulusKind": "gapped-passage"
+            }
+          ],
+          "wordCountRange": [
+            250,
+            300
+          ],
+          "optionReuse": false
+        },
+        {
+          "id": "cet6-reading-matching",
+          "label": "Reading Section B · 长篇阅读",
+          "title": "Reading Section B · 长篇阅读",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 10,
+          "minutes": null,
+          "displayStart": 36,
+          "pointsPerQuestion": 1,
+          "format": "paragraph-matching",
+          "timingGroupId": "cet6-reading-time",
+          "stimulusKind": "lettered-paragraphs",
+          "groups": [
+            {
+              "count": 10,
+              "stimulusKind": "long-passage"
+            }
+          ],
+          "approximateWordCount": 1200,
+          "optionReuse": true,
+          "sampleParagraphOptionCount": 15,
+          "paragraphOptionCountPolicy": "Use the actual passage paragraph labels; the syllabus does not prescribe a fixed count."
+        },
+        {
+          "id": "cet6-reading-detail",
+          "label": "Reading Section C · 仔细阅读",
+          "title": "Reading Section C · 仔细阅读",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 20,
+          "minutes": null,
+          "displayStart": 46,
+          "pointsPerQuestion": 2,
+          "format": "reading-choice",
+          "timingGroupId": "cet6-reading-time",
+          "stimulusKind": "reading-passage",
+          "groups": [
+            {
+              "count": 5,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            },
+            {
+              "count": 5,
+              "optionsCount": 4,
+              "stimulusKind": "passage"
+            }
+          ],
+          "wordCountRangePerPassage": [
+            400,
+            450
+          ]
+        },
+        {
+          "id": "cet6-translation",
+          "label": "Translation",
+          "title": "Translation",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 15,
+          "minutes": 30,
+          "pointsPerQuestion": 15,
+          "format": "translation-zh-en",
+          "timingGroupId": "cet6-translation-time",
+          "stimulusKind": "chinese-paragraph"
+        }
+      ],
+      "deliveryRequirements": {
+        "fullPaperDefault": true,
+        "allowAutomaticSubsetFallback": false,
+        "sharedStimuliRequired": true,
+        "embeddedAudioRequired": true,
+        "audioTranscriptRequired": true,
+        "listeningTextIsNotAudio": true,
+        "missingMaterialAction": "Complete the missing passages, question groups, recordings and answer rubric before delivery. A transcript-only practice requires an explicit subset/alternative-mode choice.",
+        "assetPolicy": "Use user-provided, openly licensed, public-domain or original local materials; retain rights and attribution. No paid API, account or model key."
+      }
+    },
+    {
+      "id": "neea-2024-math",
+      "name": "2024年高考综合改革适应性测试·数学",
+      "subject": "数学",
+      "level": "高中",
+      "scope": "specific-complete-paper",
+      "version": "2024",
+      "aliases": [
+        "2024数学适应性测试"
+      ],
+      "templateIds": [
+        "gaokao-math",
+        "source-neea-2024-math-full",
+        "source-gaokao-2024-probability-selected"
+      ],
+      "sourcePracticeIds": [
+        "neea-2024-math-full",
+        "gaokao-2024-probability-selected"
+      ],
+      "completePracticeIds": [
+        "neea-2024-math-full"
+      ],
+      "durationMinutes": 120,
+      "durationStatus": "official-test-schedule",
+      "totalScore": 150,
+      "scoreScale": "source-paper-points",
+      "overall": {
+        "questionCount": 19,
+        "majorSectionCount": 4
+      },
+      "source": {
+        "title": "2024年高考综合改革适应性测试：数学试题及问卷调查",
+        "url": "https://www.neea.edu.cn/html1/report/2401/426-1.htm",
+        "sha256": "3cb3bf6e4a6750ce26b77339d4c9214c7192902dcadd80101d3c16bdae680e97",
+        "rights": "公开试题；官方网页未附开放内容许可证。代码MIT不覆盖试题原文。",
+        "accessedAt": "2026-11-14",
+        "locator": "原卷4页；一8×5，二3×6，三3×5，四13+15+15+17+17。"
+      },
+      "supportingSources": [
+        {
+          "title": "甘肃省教育考试院：关于举行2024年新高考适应性测试的公告",
+          "url": "https://www.ganseea.cn/gaokaogaozhao/850.html",
+          "accessedAt": "2026-11-14",
+          "locator": "1月19日：语文9:00–11:30、数学15:00–17:00；三门统考科目由教育部教育考试院命题。"
+        }
+      ],
+      "timingGroups": [
+        {
+          "id": "neea-2024-math-time",
+          "title": "全卷",
+          "minutes": 120,
+          "sectionIds": [
+            "neea-2024-math-single",
+            "neea-2024-math-multiple",
+            "neea-2024-math-blank",
+            "neea-2024-math-response"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "neea-2024-math-single",
+          "label": "一、单项选择题",
+          "title": "一、单项选择题",
+          "questionType": "choice",
+          "count": 8,
+          "totalScore": 40,
+          "minutes": null,
+          "displayStart": 1,
+          "pointsPerQuestion": 5,
+          "optionsCount": 4
+        },
+        {
+          "id": "neea-2024-math-multiple",
+          "label": "二、多项选择题",
+          "title": "二、多项选择题",
+          "questionType": "multiple",
+          "count": 3,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 9,
+          "pointsPerQuestion": 6,
+          "optionsCount": 4,
+          "scoringRule": "全部选对得6分，部分选对得部分分，有选错得0分；原卷未在卷面细列每种部分选对组合的分值。"
+        },
+        {
+          "id": "neea-2024-math-blank",
+          "label": "三、填空题",
+          "title": "三、填空题",
+          "questionType": "blank",
+          "count": 3,
+          "totalScore": 15,
+          "minutes": null,
+          "displayStart": 12,
+          "pointsPerQuestion": 5
+        },
+        {
+          "id": "neea-2024-math-response",
+          "label": "四、解答题",
+          "title": "四、解答题",
+          "questionType": "response",
+          "count": 5,
+          "totalScore": 77,
+          "minutes": null,
+          "displayStart": 15,
+          "questionScores": [
+            13,
+            15,
+            15,
+            17,
+            17
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guangdong-2024-math",
+      "name": "2024年广东省初中学业水平考试·数学",
+      "subject": "数学",
+      "level": "初中",
+      "scope": "specific-complete-paper",
+      "version": "2024",
+      "aliases": [
+        "广东中考数学2024"
+      ],
+      "templateIds": [
+        "source-zhongkao-2023-2024-recombined"
+      ],
+      "sourcePracticeIds": [
+        "zhongkao-2023-2024-recombined"
+      ],
+      "sourcePracticeCoverage": "complete",
+      "durationMinutes": 120,
+      "durationStatus": "printed-on-original",
+      "totalScore": 120,
+      "scoreScale": "source-paper-points",
+      "overall": {
+        "questionCount": 23,
+        "majorSectionCount": 5
+      },
+      "source": {
+        "title": "2024年广东省初中学业水平考试·数学",
+        "url": "https://imgs.app.gaokaozhitongche.com/resource/pdf/paper/202407/20240702080602_it4GXR.pdf",
+        "sha256": "1c6e04a3f569acfe867701b9b34ed89e1caca427308a2cffcddad542c7f0001e",
+        "rights": "公开试题扫描，未附开放内容许可证；扫描水印、平台标志与答案排版不打包为MIT素材。",
+        "accessedAt": "2026-11-14",
+        "locator": "扫描PDF前6页为试题；第一页卷头明确23题、120分、120分钟。"
+      },
+      "timingGroups": [
+        {
+          "id": "guangdong-2024-math-time",
+          "title": "全卷",
+          "minutes": 120,
+          "sectionIds": [
+            "guangdong-2024-math-choice",
+            "guangdong-2024-math-blank",
+            "guangdong-2024-math-response-one",
+            "guangdong-2024-math-response-two",
+            "guangdong-2024-math-response-three"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "guangdong-2024-math-choice",
+          "label": "一、选择题",
+          "title": "一、选择题",
+          "questionType": "choice",
+          "count": 10,
+          "totalScore": 30,
+          "minutes": null,
+          "displayStart": 1,
+          "pointsPerQuestion": 3,
+          "optionsCount": 4
+        },
+        {
+          "id": "guangdong-2024-math-blank",
+          "label": "二、填空题",
+          "title": "二、填空题",
+          "questionType": "blank",
+          "count": 5,
+          "totalScore": 15,
+          "minutes": null,
+          "displayStart": 11,
+          "pointsPerQuestion": 3
+        },
+        {
+          "id": "guangdong-2024-math-response-one",
+          "label": "三、解答题（一）",
+          "title": "三、解答题（一）",
+          "questionType": "response",
+          "count": 3,
+          "totalScore": 21,
+          "minutes": null,
+          "displayStart": 16,
+          "pointsPerQuestion": 7
+        },
+        {
+          "id": "guangdong-2024-math-response-two",
+          "label": "四、解答题（二）",
+          "title": "四、解答题（二）",
+          "questionType": "response",
+          "count": 3,
+          "totalScore": 27,
+          "minutes": null,
+          "displayStart": 19,
+          "pointsPerQuestion": 9
+        },
+        {
+          "id": "guangdong-2024-math-response-three",
+          "label": "五、解答题（三）",
+          "title": "五、解答题（三）",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 27,
+          "minutes": null,
+          "displayStart": 22,
+          "questionScores": [
+            13,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neea-2024-chinese",
+      "name": "2024年高考综合改革适应性测试·语文",
+      "subject": "语文",
+      "level": "高中",
+      "scope": "specific-complete-paper-with-writing-variants",
+      "version": "2024",
+      "aliases": [
+        "2024语文适应性测试"
+      ],
+      "templateIds": [
+        "gaokao-chinese",
+        "source-gaokao-2024-chinese-poetry-selected"
+      ],
+      "sourcePracticeIds": [
+        "gaokao-2024-chinese-poetry-selected"
+      ],
+      "sourcePracticeCoverage": "subset-only",
+      "durationMinutes": 150,
+      "durationStatus": "official-test-schedule",
+      "totalScore": 150,
+      "scoreScale": "source-paper-points",
+      "overall": {
+        "questionCount": 23,
+        "majorSectionCount": 4,
+        "writingVariantsAvailable": 4,
+        "writingVariantsPerPaper": 1
+      },
+      "source": {
+        "title": "2024年高考综合改革适应性测试语文试题",
+        "url": "https://www.neea.edu.cn/xhtml1/report/2401/376-1.htm",
+        "sha256": "2fe44f07fac25b72e542da534ade378ecdb5a733c6b73342fb98417b1e412456",
+        "rights": "古代诗词原作已进入公有领域；试题原文保留出处，现代文材料未再分发。",
+        "accessedAt": "2026-11-14",
+        "locator": "原卷11张官方页面图；第1、4、7、8、9、10–11页的题组标题及逐题分值。"
+      },
+      "supportingSources": [
+        {
+          "title": "甘肃省教育考试院：关于举行2024年新高考适应性测试的公告",
+          "url": "https://www.ganseea.cn/gaokaogaozhao/850.html",
+          "accessedAt": "2026-11-14",
+          "locator": "1月19日：语文9:00–11:30、数学15:00–17:00；三门统考科目由教育部教育考试院命题。"
+        }
+      ],
+      "paperSections": [
+        {
+          "label": "一、",
+          "title": "现代文阅读",
+          "totalScore": 35,
+          "sectionIds": [
+            "neea-2024-chinese-modern-one",
+            "neea-2024-chinese-modern-two"
+          ]
+        },
+        {
+          "label": "二、",
+          "title": "古代诗文阅读",
+          "totalScore": 35,
+          "sectionIds": [
+            "neea-2024-chinese-classical",
+            "neea-2024-chinese-poetry",
+            "neea-2024-chinese-memorization"
+          ]
+        },
+        {
+          "label": "三、",
+          "title": "语言文字运用",
+          "totalScore": 20,
+          "sectionIds": [
+            "neea-2024-chinese-language-one",
+            "neea-2024-chinese-language-two"
+          ]
+        },
+        {
+          "label": "四、",
+          "title": "写作",
+          "totalScore": 60,
+          "sectionIds": [
+            "neea-2024-chinese-writing"
+          ]
+        }
+      ],
+      "timingGroups": [
+        {
+          "id": "neea-2024-chinese-time",
+          "title": "全卷",
+          "minutes": 150,
+          "sectionIds": [
+            "neea-2024-chinese-modern-one",
+            "neea-2024-chinese-modern-two",
+            "neea-2024-chinese-classical",
+            "neea-2024-chinese-poetry",
+            "neea-2024-chinese-memorization",
+            "neea-2024-chinese-language-one",
+            "neea-2024-chinese-language-two",
+            "neea-2024-chinese-writing"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "neea-2024-chinese-modern-one",
+          "label": "（一）现代文阅读I",
+          "title": "（一）现代文阅读I",
+          "questionType": "mixed",
+          "count": 5,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 1,
+          "questionScores": [
+            3,
+            3,
+            3,
+            3,
+            6
+          ],
+          "questionTypes": [
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "response"
+          ],
+          "stimulusKind": "modern-reading-one"
+        },
+        {
+          "id": "neea-2024-chinese-modern-two",
+          "label": "（二）现代文阅读II",
+          "title": "（二）现代文阅读II",
+          "questionType": "mixed",
+          "count": 4,
+          "totalScore": 17,
+          "minutes": null,
+          "displayStart": 6,
+          "questionScores": [
+            3,
+            3,
+            5,
+            6
+          ],
+          "questionTypes": [
+            "choice",
+            "choice",
+            "response",
+            "response"
+          ],
+          "stimulusKind": "modern-reading-two"
+        },
+        {
+          "id": "neea-2024-chinese-classical",
+          "label": "（一）文言文阅读",
+          "title": "（一）文言文阅读",
+          "questionType": "mixed",
+          "count": 5,
+          "totalScore": 20,
+          "minutes": null,
+          "displayStart": 10,
+          "questionScores": [
+            3,
+            3,
+            3,
+            8,
+            3
+          ],
+          "questionTypes": [
+            "multiple",
+            "choice",
+            "choice",
+            "response",
+            "response"
+          ],
+          "stimulusKind": "classical-chinese",
+          "questionRules": [
+            {
+              "displayNumber": 10,
+              "type": "multiple",
+              "optionsCount": 8,
+              "requiredSelections": 3,
+              "scoringRule": "每涂对一处给1分；涂黑超过三处给0分。"
+            }
+          ]
+        },
+        {
+          "id": "neea-2024-chinese-poetry",
+          "label": "（二）古代诗歌阅读",
+          "title": "（二）古代诗歌阅读",
+          "questionType": "mixed",
+          "count": 2,
+          "totalScore": 9,
+          "minutes": null,
+          "displayStart": 15,
+          "questionScores": [
+            3,
+            6
+          ],
+          "questionTypes": [
+            "choice",
+            "response"
+          ],
+          "stimulusKind": "classical-poem"
+        },
+        {
+          "id": "neea-2024-chinese-memorization",
+          "label": "（三）名篇名句默写",
+          "title": "（三）名篇名句默写",
+          "questionType": "blank",
+          "count": 1,
+          "totalScore": 6,
+          "minutes": null,
+          "displayStart": 17,
+          "questionScores": [
+            6
+          ],
+          "questionTypes": [
+            "blank"
+          ],
+          "stimulusKind": "quotation-completion",
+          "blankCount": 6
+        },
+        {
+          "id": "neea-2024-chinese-language-one",
+          "label": "（一）语言文字运用I",
+          "title": "（一）语言文字运用I",
+          "questionType": "mixed",
+          "count": 3,
+          "totalScore": 9,
+          "minutes": null,
+          "displayStart": 18,
+          "questionScores": [
+            3,
+            3,
+            3
+          ],
+          "questionTypes": [
+            "blank",
+            "choice",
+            "choice"
+          ],
+          "stimulusKind": "language-context-one"
+        },
+        {
+          "id": "neea-2024-chinese-language-two",
+          "label": "（二）语言文字运用II",
+          "title": "（二）语言文字运用II",
+          "questionType": "mixed",
+          "count": 2,
+          "totalScore": 11,
+          "minutes": null,
+          "displayStart": 21,
+          "questionScores": [
+            6,
+            5
+          ],
+          "questionTypes": [
+            "blank",
+            "response"
+          ],
+          "stimulusKind": "language-context-two"
+        },
+        {
+          "id": "neea-2024-chinese-writing",
+          "label": "四、写作",
+          "title": "四、写作",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 60,
+          "minutes": null,
+          "displayStart": 23,
+          "questionScores": [
+            60
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "stimulusKind": "writing-prompt",
+          "minimumWords": 800,
+          "variantCount": 4,
+          "variantsToAdminister": 1,
+          "variantPolicy": "四个题23是供不同省份选用的备选任务；一张完整试卷只编入其中一道。"
+        }
+      ],
+      "deliveryRequirements": {
+        "sharedStimuliRequired": true,
+        "writingVariantRequired": true,
+        "rightsReviewRequiredForPassages": true
+      }
+    },
+    {
+      "id": "pku-calculus-2013",
+      "name": "北京大学信息学院2013—2014学年第一学期高等数学B（上）期末试题",
+      "subject": "高等数学B（上）",
+      "level": "大学",
+      "scope": "specific-complete-course-paper",
+      "version": "2013",
+      "aliases": [],
+      "templateIds": [
+        "source-real-pku-calculus-2013"
+      ],
+      "sourcePracticeIds": [
+        "real-pku-calculus-2013"
+      ],
+      "completePracticeIds": [
+        "real-pku-calculus-2013"
+      ],
+      "durationMinutes": null,
+      "durationStatus": "not-stated-in-source",
+      "totalScore": 100,
+      "scoreScale": "source-paper-section-points",
+      "overall": {
+        "questionCount": 14,
+        "majorQuestionCount": 8
+      },
+      "source": {
+        "title": "北京大学信息学院期末试题 · 2013—2014学年第一学期",
+        "url": "https://github.com/lib-pku/libpku/blob/master/%E4%B8%93%E4%B8%9A%E8%AF%BE/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6B/13%E4%BF%A1%E7%A7%91%E6%9C%9F%E6%9C%AB.pdf",
+        "downloadUrl": "https://raw.githubusercontent.com/lib-pku/libpku/master/%E4%B8%93%E4%B8%9A%E8%AF%BE/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6B/13%E4%BF%A1%E7%A7%91%E6%9C%AB.pdf",
+        "sha256": "39654af2bc9e1718c01d60e1bf1cb26d08adc0350a3b31592de6ee288264b479",
+        "rights": "原试卷由原作者保留权利；lib-pku 声明仅收集资料，未授予统一再许可。数学表达式与题目出处按原件记录，不适用代码 MIT 许可。",
+        "accessedAt": "2026-11-14",
+        "locator": "原卷所有大题和分问；题分依原件及配套参考答案，未标小问分时另记练习分配。"
+      },
+      "timingGroups": [],
+      "sections": [
+        {
+          "id": "pku-calculus-2013-limits",
+          "label": "求极限（12分）",
+          "title": "求极限（12分）",
+          "questionType": "response",
+          "count": 3,
+          "totalScore": 12,
+          "minutes": null,
+          "displayStart": 1,
+          "questionScores": [
+            4,
+            4,
+            4
+          ],
+          "sourceSectionLabel": "一 ",
+          "sourceQuestionNumbers": [
+            "一、1",
+            "一、2",
+            "一、3"
+          ],
+          "questionTypes": [
+            "response",
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        },
+        {
+          "id": "pku-calculus-2013-integrals",
+          "label": "求积分（共18分）",
+          "title": "求积分（共18分）",
+          "questionType": "response",
+          "count": 3,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 4,
+          "questionScores": [
+            6,
+            6,
+            6
+          ],
+          "sourceSectionLabel": "二 ",
+          "sourceQuestionNumbers": [
+            "二、1",
+            "二、2",
+            "二、3"
+          ],
+          "questionTypes": [
+            "response",
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        },
+        {
+          "id": "pku-calculus-2013-arc",
+          "label": "（共8分）",
+          "title": "（共8分）",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 8,
+          "minutes": null,
+          "displayStart": 7,
+          "questionScores": [
+            8
+          ],
+          "sourceSectionLabel": "三 ",
+          "sourceQuestionNumbers": [
+            "三"
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "pku-calculus-2013-differential",
+          "label": "求偏导数或微分（10分）",
+          "title": "求偏导数或微分（10分）",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 10,
+          "minutes": null,
+          "displayStart": 8,
+          "questionScores": [
+            5,
+            5
+          ],
+          "sourceSectionLabel": "四 ",
+          "sourceQuestionNumbers": [
+            "四、1",
+            "四、2"
+          ],
+          "questionTypes": [
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        },
+        {
+          "id": "pku-calculus-2013-space",
+          "label": "（18分）",
+          "title": "（18分）",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 10,
+          "questionScores": [
+            9,
+            9
+          ],
+          "sourceSectionLabel": "五 ",
+          "sourceQuestionNumbers": [
+            "五、1",
+            "五、2"
+          ],
+          "questionTypes": [
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        },
+        {
+          "id": "pku-calculus-2013-taylor",
+          "label": "（共12分）",
+          "title": "（共12分）",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 12,
+          "minutes": null,
+          "displayStart": 12,
+          "questionScores": [
+            12
+          ],
+          "sourceSectionLabel": "六 ",
+          "sourceQuestionNumbers": [
+            "六"
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "pku-calculus-2013-continuity",
+          "label": "（共12分）",
+          "title": "（共12分）",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 12,
+          "minutes": null,
+          "displayStart": 13,
+          "questionScores": [
+            12
+          ],
+          "sourceSectionLabel": "七 ",
+          "sourceQuestionNumbers": [
+            "七"
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "pku-calculus-2013-proof",
+          "label": "（10分）",
+          "title": "（10分）",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 10,
+          "minutes": null,
+          "displayStart": 14,
+          "questionScores": [
+            10
+          ],
+          "sourceSectionLabel": "八 ",
+          "sourceQuestionNumbers": [
+            "八"
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        }
+      ],
+      "practiceDurationMinutes": 120,
+      "durationNote": "原卷未注明时长。120分钟仅沿用既有案例的练习计时；用户或Agent可指定，不能写成原考试规定。"
+    },
+    {
+      "id": "ecnu-linear-2023",
+      "name": "华东师范大学2023—2024学年第一学期线性代数A期末试卷（A）",
+      "subject": "线性代数A",
+      "level": "大学",
+      "scope": "specific-complete-course-paper",
+      "version": "2023",
+      "aliases": [],
+      "templateIds": [
+        "source-real-ecnu-linear-2023"
+      ],
+      "sourcePracticeIds": [
+        "real-ecnu-linear-2023"
+      ],
+      "completePracticeIds": [
+        "real-ecnu-linear-2023"
+      ],
+      "durationMinutes": null,
+      "durationStatus": "not-stated-in-source",
+      "totalScore": 100,
+      "scoreScale": "source-paper-section-points",
+      "overall": {
+        "questionCount": 19,
+        "majorQuestionCount": 8
+      },
+      "source": {
+        "title": "华东师范大学2023—2024学年第一学期期末试卷（A）",
+        "url": "https://ggsx.ecnu.edu.cn/2e/16/c44824a601622/page.htm",
+        "downloadUrl": "https://ggsx.ecnu.edu.cn/_upload/article/files/88/27/da869e6d4147917c4f7c115ed7f7/2b083b94-11eb-4dc9-8105-79ac2addc735.pdf",
+        "sha256": "b0cf4c2e5d2a0a2280e8e66577f5434e78587f9b7b98bb55d7c1756b4844fe19",
+        "rights": "学校公开教学材料，原作者保留权利；未标明开放许可。数学题保留原题号及学校链接，代码 MIT 许可不涵盖原试卷。",
+        "accessedAt": "2026-11-14",
+        "locator": "原卷所有大题和分问；题分依原件及配套参考答案，未标小问分时另记练习分配。"
+      },
+      "timingGroups": [],
+      "sections": [
+        {
+          "id": "ecnu-linear-2023-choice",
+          "label": "（本题共32分，每题各4分）",
+          "title": "（本题共32分，每题各4分）",
+          "questionType": "choice",
+          "count": 8,
+          "totalScore": 32,
+          "minutes": null,
+          "displayStart": 1,
+          "questionScores": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "sourceSectionLabel": "一、",
+          "sourceQuestionNumbers": [
+            "一、1",
+            "一、2",
+            "一、3",
+            "一、4",
+            "一、5",
+            "一、6",
+            "一、7",
+            "一、8"
+          ],
+          "questionTypes": [
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ecnu-linear-2023-linear-system",
+          "label": "（本题12分）",
+          "title": "（本题12分）",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 12,
+          "minutes": null,
+          "displayStart": 9,
+          "questionScores": [
+            12
+          ],
+          "sourceSectionLabel": "二、",
+          "sourceQuestionNumbers": [
+            "二"
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ecnu-linear-2023-diagonalization",
+          "label": "（本题10分）",
+          "title": "（本题10分）",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 10,
+          "minutes": null,
+          "displayStart": 10,
+          "questionScores": [
+            5,
+            5
+          ],
+          "sourceSectionLabel": "三、",
+          "sourceQuestionNumbers": [
+            "三、1",
+            "三、2"
+          ],
+          "questionTypes": [
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        },
+        {
+          "id": "ecnu-linear-2023-quadratic",
+          "label": "（本题12分）",
+          "title": "（本题12分）",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 12,
+          "minutes": null,
+          "displayStart": 12,
+          "questionScores": [
+            12
+          ],
+          "sourceSectionLabel": "四、",
+          "sourceQuestionNumbers": [
+            "四"
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ecnu-linear-2023-determinant",
+          "label": "（本题10分）",
+          "title": "（本题10分）",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 10,
+          "minutes": null,
+          "displayStart": 13,
+          "questionScores": [
+            10
+          ],
+          "sourceSectionLabel": "五、",
+          "sourceQuestionNumbers": [
+            "五"
+          ],
+          "questionTypes": [
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ecnu-linear-2023-eigen-parameter",
+          "label": "（本题14分）",
+          "title": "（本题14分）",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 14,
+          "minutes": null,
+          "displayStart": 14,
+          "questionScores": [
+            7,
+            7
+          ],
+          "sourceSectionLabel": "六、",
+          "sourceQuestionNumbers": [
+            "六、1",
+            "六、2"
+          ],
+          "questionTypes": [
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        },
+        {
+          "id": "ecnu-linear-2023-positive-definite",
+          "label": "（本题6分）",
+          "title": "（本题6分）",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 6,
+          "minutes": null,
+          "displayStart": 16,
+          "questionScores": [
+            3,
+            3
+          ],
+          "sourceSectionLabel": "七、",
+          "sourceQuestionNumbers": [
+            "七、1",
+            "七、2"
+          ],
+          "questionTypes": [
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        },
+        {
+          "id": "ecnu-linear-2023-householder",
+          "label": "（本题4分）",
+          "title": "（本题4分）",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 4,
+          "minutes": null,
+          "displayStart": 18,
+          "questionScores": [
+            2,
+            2
+          ],
+          "sourceSectionLabel": "八、",
+          "sourceQuestionNumbers": [
+            "八、1",
+            "八、2"
+          ],
+          "questionTypes": [
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-section-total; subquestion scores are practice allocations",
+          "questionScoreStatus": "practice-equal-allocation; not an official per-subquestion rubric"
+        }
+      ],
+      "practiceDurationMinutes": 120,
+      "durationNote": "原卷未注明时长。120分钟仅沿用既有案例的练习计时；用户或Agent可指定，不能写成原考试规定。"
+    },
+    {
+      "id": "ustc-probstat-2023",
+      "name": "中国科学技术大学2022—2023学年第一学期概率论与数理统计期末试卷",
+      "subject": "概率论与数理统计",
+      "level": "大学",
+      "scope": "specific-complete-course-paper",
+      "version": "2023",
+      "aliases": [],
+      "templateIds": [
+        "source-real-ustc-probstat-2023"
+      ],
+      "sourcePracticeIds": [
+        "real-ustc-probstat-2023"
+      ],
+      "completePracticeIds": [
+        "real-ustc-probstat-2023"
+      ],
+      "durationMinutes": 120,
+      "durationStatus": "printed-on-original",
+      "totalScore": 100,
+      "scoreScale": "source-paper-section-points",
+      "overall": {
+        "questionCount": 22,
+        "majorQuestionCount": 5
+      },
+      "source": {
+        "title": "中国科学技术大学2022—2023学年第一学期概率论与数理统计",
+        "url": "https://icourse.club/uploads/files/9f996da48afc145c5158fc7f09153825a3177e41.pdf",
+        "downloadUrl": "https://icourse.club/uploads/files/9f996da48afc145c5158fc7f09153825a3177e41.pdf",
+        "sha256": "ee62bb65204cc7d3f6031c0ce9d9eaf77bc5888f9fe332964f0b03f788fc9b3c",
+        "rights": "公开流传的高校试卷及参考答案，原作者保留权利；未标明开放许可。数学题的出处和原题号单独保留，代码 MIT 许可不涵盖原试卷。",
+        "accessedAt": "2026-11-14",
+        "locator": "原卷所有大题和分问；题分依原件及配套参考答案，未标小问分时另记练习分配。"
+      },
+      "timingGroups": [
+        {
+          "id": "ustc-probstat-2023-time",
+          "title": "全卷",
+          "minutes": 120,
+          "sectionIds": [
+            "ustc-probstat-2023-mixed",
+            "ustc-probstat-2023-joint",
+            "ustc-probstat-2023-random-maximum",
+            "ustc-probstat-2023-estimation",
+            "ustc-probstat-2023-two-sample-tests"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "ustc-probstat-2023-mixed",
+          "label": "(30分，每小题3分) 填空题或单选题，答案可以直接写在试卷上.",
+          "title": "(30分，每小题3分) 填空题或单选题，答案可以直接写在试卷上.",
+          "questionType": "mixed",
+          "count": 10,
+          "totalScore": 30,
+          "minutes": null,
+          "displayStart": 1,
+          "questionScores": [
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "sourceSectionLabel": "一、",
+          "sourceQuestionNumbers": [
+            "一、1",
+            "一、2",
+            "一、3",
+            "一、4",
+            "一、5",
+            "一、6",
+            "一、7",
+            "一、8",
+            "一、9",
+            "一、10"
+          ],
+          "questionTypes": [
+            "blank",
+            "choice",
+            "blank",
+            "choice",
+            "blank",
+            "choice",
+            "choice",
+            "choice",
+            "blank",
+            "blank"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ustc-probstat-2023-joint",
+          "label": "(16分)",
+          "title": "(16分)",
+          "questionType": "response",
+          "count": 4,
+          "totalScore": 16,
+          "minutes": null,
+          "displayStart": 11,
+          "questionScores": [
+            4,
+            4,
+            4,
+            4
+          ],
+          "sourceSectionLabel": "二、",
+          "sourceQuestionNumbers": [
+            "二、1",
+            "二、2",
+            "二、3",
+            "二、4"
+          ],
+          "questionTypes": [
+            "response",
+            "response",
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ustc-probstat-2023-random-maximum",
+          "label": "(18分)",
+          "title": "(18分)",
+          "questionType": "response",
+          "count": 3,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 15,
+          "questionScores": [
+            6,
+            6,
+            6
+          ],
+          "sourceSectionLabel": "三、",
+          "sourceQuestionNumbers": [
+            "三、1",
+            "三、2",
+            "三、3"
+          ],
+          "questionTypes": [
+            "response",
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ustc-probstat-2023-estimation",
+          "label": "(18分)",
+          "title": "(18分)",
+          "questionType": "response",
+          "count": 3,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 18,
+          "questionScores": [
+            6,
+            6,
+            6
+          ],
+          "sourceSectionLabel": "四、",
+          "sourceQuestionNumbers": [
+            "四、1",
+            "四、2",
+            "四、3"
+          ],
+          "questionTypes": [
+            "response",
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        },
+        {
+          "id": "ustc-probstat-2023-two-sample-tests",
+          "label": "(18分)",
+          "title": "(18分)",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 21,
+          "questionScores": [
+            9,
+            9
+          ],
+          "sourceSectionLabel": "五、",
+          "sourceQuestionNumbers": [
+            "五、1",
+            "五、2"
+          ],
+          "questionTypes": [
+            "response",
+            "response"
+          ],
+          "scoreBasis": "printed-question-points"
+        }
+      ],
+      "notes": [
+        "原卷一大题10个小题为填空与单选交错，保持原顺序。",
+        "原PDF1–2页为试题，3–4页为参考答案；原附录属于完整题目材料。"
+      ]
+    },
+    {
+      "id": "mit-6006-final-2020",
+      "name": "MIT 6.006 Introduction to Algorithms · Spring 2020 Final",
+      "subject": "算法与数据结构",
+      "level": "大学",
+      "scope": "specific-complete-course-paper",
+      "version": "2020-spring",
+      "aliases": [
+        "MIT 6.006 Spring 2020 Final"
+      ],
+      "templateIds": [
+        "source-real-mit-6006-final-2020"
+      ],
+      "sourcePracticeIds": [
+        "real-mit-6006-final-2020"
+      ],
+      "sourcePracticeCoverage": "subset-only",
+      "durationMinutes": 180,
+      "durationStatus": "printed-on-original",
+      "totalScore": 180,
+      "scoreScale": "source-paper-points",
+      "overall": {
+        "questionCount": 21,
+        "majorQuestionCount": 10,
+        "academicQuestionCount": 19,
+        "administrativeTaskCount": 2
+      },
+      "source": {
+        "title": "6.006 Introduction to Algorithms · Spring 2020 Final",
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_final/",
+        "downloadUrl": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/e03194e510866d81da1071da884876e3_MIT6_006S20_final.pdf",
+        "sha256": "91d236a292cb136f029963f0392530d192bc47ffa46de7b419d19bf270ca64d6",
+        "rights": "MIT OpenCourseWare，CC BY-NC-SA 4.0（https://creativecommons.org/licenses/by-nc-sa/4.0/）。署名Erik Demaine、Jason Ku、Justin Solomon及MIT OCW；本项目仅选编、公式转为LaTeX并以中文重写答案解析，改编素材继续按CC BY-NC-SA 4.0。代码MIT许可单独适用。",
+        "accessedAt": "2026-11-14",
+        "locator": "PDF1页原分表：10道大题、21个parts，其中Problem1为两个身份填写任务。"
+      },
+      "timingGroups": [
+        {
+          "id": "mit-6006-final-2020-time",
+          "title": "Final",
+          "minutes": 180,
+          "sectionIds": [
+            "mit-6006-final-2020-information",
+            "mit-6006-final-2020-decision",
+            "mit-6006-final-2020-sorting",
+            "mit-6006-final-2020-pythagorean",
+            "mit-6006-final-2020-animals",
+            "mit-6006-final-2020-connections",
+            "mit-6006-final-2020-street",
+            "mit-6006-final-2020-rgb",
+            "mit-6006-final-2020-subsets",
+            "mit-6006-final-2020-crowns"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "mit-6006-final-2020-information",
+          "label": "Problem 1. Information",
+          "title": "Problem 1. Information",
+          "questionType": "task",
+          "count": 2,
+          "totalScore": 2,
+          "minutes": null,
+          "displayStart": 1,
+          "questionScores": [
+            1,
+            1
+          ],
+          "format": "administrative-task"
+        },
+        {
+          "id": "mit-6006-final-2020-decision",
+          "label": "Problem 2. Decision Problems",
+          "title": "Problem 2. Decision Problems",
+          "questionType": "response",
+          "count": 10,
+          "totalScore": 40,
+          "minutes": null,
+          "displayStart": 3,
+          "questionScores": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "format": "true-false-with-justification",
+          "scoringRule": "每小问4分：T/F判断2分、理由2分；判断与理由均空白给1分。不得仅按自动判断题判满分。"
+        },
+        {
+          "id": "mit-6006-final-2020-sorting",
+          "label": "Problem 3. Sorting Sorts",
+          "title": "Problem 3. Sorting Sorts",
+          "questionType": "response",
+          "count": 2,
+          "totalScore": 24,
+          "minutes": null,
+          "displayStart": 13,
+          "questionScores": [
+            12,
+            12
+          ],
+          "format": "algorithm-response"
+        },
+        {
+          "id": "mit-6006-final-2020-pythagorean",
+          "label": "Problem 4. Pythagorean Quad",
+          "title": "Problem 4. Pythagorean Quad",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 14,
+          "minutes": null,
+          "displayStart": 15,
+          "questionScores": [
+            14
+          ],
+          "format": "algorithm-response"
+        },
+        {
+          "id": "mit-6006-final-2020-animals",
+          "label": "Problem 5. Animal Counting",
+          "title": "Problem 5. Animal Counting",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 20,
+          "minutes": null,
+          "displayStart": 16,
+          "questionScores": [
+            20
+          ],
+          "format": "algorithm-response"
+        },
+        {
+          "id": "mit-6006-final-2020-connections",
+          "label": "Problem 6. Limited Connections",
+          "title": "Problem 6. Limited Connections",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 14,
+          "minutes": null,
+          "displayStart": 17,
+          "questionScores": [
+            14
+          ],
+          "format": "algorithm-response"
+        },
+        {
+          "id": "mit-6006-final-2020-street",
+          "label": "Problem 7. On the Street",
+          "title": "Problem 7. On the Street",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 14,
+          "minutes": null,
+          "displayStart": 18,
+          "questionScores": [
+            14
+          ],
+          "format": "algorithm-response"
+        },
+        {
+          "id": "mit-6006-final-2020-rgb",
+          "label": "Problem 8. RGB Graph",
+          "title": "Problem 8. RGB Graph",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 19,
+          "questionScores": [
+            18
+          ],
+          "format": "algorithm-response"
+        },
+        {
+          "id": "mit-6006-final-2020-subsets",
+          "label": "Problem 9. Separated Subsets",
+          "title": "Problem 9. Separated Subsets",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 16,
+          "minutes": null,
+          "displayStart": 20,
+          "questionScores": [
+            16
+          ],
+          "format": "algorithm-response"
+        },
+        {
+          "id": "mit-6006-final-2020-crowns",
+          "label": "Problem 10. A Feast for Crowns",
+          "title": "Problem 10. A Feast for Crowns",
+          "questionType": "response",
+          "count": 1,
+          "totalScore": 18,
+          "minutes": null,
+          "displayStart": 21,
+          "questionScores": [
+            18
+          ],
+          "format": "algorithm-response"
+        }
+      ],
+      "deliveryRequirements": {
+        "attribution": "Erik Demaine, Jason Ku, Justin Solomon, Massachusetts Institute of Technology OpenCourseWare",
+        "materialLicense": "CC-BY-NC-SA-4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "codeLicenseSeparate": "MIT",
+        "allOriginalProblemsRequired": true
+      }
+    }
+  ],
+  "requirements": [
+    {
+      "id": "university-course-paper",
+      "templateIds": [
+        "university-a4",
+        "university-a3"
+      ],
+      "status": "requires-specific-paper",
+      "reason": "高校期末没有跨学校、跨课程统一题量、分值或时长。先确定院校、课程、学期与原卷。",
+      "required": [
+        "institution",
+        "course",
+        "term",
+        "sourcePaper",
+        "questionCounts",
+        "sectionScores",
+        "durationMinutes-or-explicit-practice-time"
+      ]
+    },
+    {
+      "id": "cpa-specific-subject-year",
+      "templateIds": [
+        "cpa-accounting",
+        "cpa-audit"
+      ],
+      "status": "requires-specific-subject-year-paper",
+      "reason": "现有两个通用版式各覆盖多个CPA科目，不能共享一组题量。须按科目、年份和官方机考样卷/原卷建立独立规格。",
+      "source": {
+        "title": "中国注册会计师协会：2024年注册会计师全国统一考试机考练习网站开放公告",
+        "url": "https://www.cicpa.org.cn/xxfb/tzgg/202405/t20240529_64870.html",
+        "accessedAt": "2026-11-14"
+      },
+      "required": [
+        "subject",
+        "year",
+        "official-paper-or-sample",
+        "questionCounts",
+        "sectionScores",
+        "durationMinutes"
+      ]
+    },
+    {
+      "id": "ncre-python-2025",
+      "templateIds": [
+        "ncre-python"
+      ],
+      "status": "requires-complete-paper",
+      "known": {
+        "durationMinutes": 120,
+        "totalScore": 100,
+        "choiceSectionScore": 40,
+        "publicFoundationScoreWithinChoice": 10,
+        "operationSectionScore": 60
+      },
+      "sampleOnly": {
+        "pythonChoices": 30,
+        "basicOperationTasks": 3,
+        "simpleApplicationTasks": 2,
+        "comprehensiveApplicationTasks": 1,
+        "completeExam": false,
+        "individualQuestionScoresPublished": false
+      },
+      "reason": "2025大纲给出40分单选/60分操作，但未给逐类题量与逐题分。官方Python样题只有30道专业单选与6个操作样题，缺公共基础选择部分；不得当成完整试卷。",
+      "source": {
+        "title": "NEEA：二级Python语言程序设计考试大纲（2025年版）",
+        "url": "https://www.neea.edu.cn/res/Home/2412/dcf184e2f5b6d8ccdb90b3f8eb417ab6.pdf",
+        "accessedAt": "2026-11-14",
+        "locator": "PDF第3页考试方式"
+      },
+      "supportingSources": [
+        {
+          "title": "NEEA：二级Python样题及参考答案",
+          "url": "https://www.neea.edu.cn/res/Home/2501/930587d629e8ddf2c8b6eaf9e080a858.pdf",
+          "accessedAt": "2026-11-14",
+          "locator": "专业单选1–30；基本操作31–33；简单应用34–35；综合36。"
+        }
+      ],
+      "required": [
+        "complete-source-paper",
+        "public-foundation-questions",
+        "operation-scores"
+      ]
+    },
+    {
+      "id": "ncre-office-specific-software",
+      "templateIds": [
+        "ncre-office"
+      ],
+      "status": "requires-specific-software-paper",
+      "reason": "MS Office与WPS Office为不同科目；需确定软件、版本、大纲年版和具体样卷，不能共享题量。",
+      "required": [
+        "software",
+        "syllabusEdition",
+        "officialSamplePaper",
+        "questionCounts",
+        "sectionScores",
+        "taskAssets"
+      ]
+    },
+    {
+      "id": "ielts-academic-reading",
+      "templateIds": [
+        "ielts-reading"
+      ],
+      "status": "requires-specific-module-paper",
+      "known": {
+        "module": "Academic Reading",
+        "durationMinutes": 60,
+        "totalScore": 40,
+        "questionCount": 40,
+        "passageCount": 3,
+        "pointsPerCorrectAnswer": 1,
+        "questionTypeCounts": "variable",
+        "questionCountsPerPassage": "variable",
+        "totalPassageWordRange": [
+          2150,
+          2750
+        ]
+      },
+      "reason": "官方固定3篇40题60分钟，但题型与各篇题量可变；取得一整套Academic Reading再保存其真实题组，不把样题PDF的片段强配成13/13/14。",
+      "source": {
+        "title": "IELTS Academic: Reading test format",
+        "url": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-reading",
+        "accessedAt": "2026-11-14"
+      },
+      "reportingScale": {
+        "min": 0,
+        "max": 9,
+        "kind": "ielts-band",
+        "conversion": "official raw-to-band conversion; no universal exact linear formula"
+      },
+      "required": [
+        "completeReadingPaper",
+        "threePassages",
+        "questionTypeGroups",
+        "answerKey"
+      ]
+    },
+    {
+      "id": "ielts-academic-writing",
+      "templateIds": [
+        "ielts-writing"
+      ],
+      "status": "requires-module-rubric",
+      "known": {
+        "module": "Academic Writing",
+        "durationMinutes": 60,
+        "questionCount": 2,
+        "tasks": [
+          {
+            "id": "task-1",
+            "minimumWords": 150,
+            "recommendedMinutes": 20,
+            "relativeScoreWeight": 1
+          },
+          {
+            "id": "task-2",
+            "minimumWords": 250,
+            "recommendedMinutes": 40,
+            "relativeScoreWeight": 2
+          }
+        ],
+        "scoreScale": "ielts-band-0-9"
+      },
+      "reason": "两项均必答，Task2权重是Task1的两倍；33/67是近似练习分配，不是官方逐题分值。整套模块需要Task1图表及两项评分量表，不代表完整四技能IELTS。",
+      "source": {
+        "title": "IELTS Academic: Writing test format",
+        "url": "https://ielts.org/take-a-test/test-types/ielts-academic-test/ielts-academic-format-writing",
+        "accessedAt": "2026-11-14"
+      },
+      "required": [
+        "task1Visual",
+        "task1Prompt",
+        "task2Prompt",
+        "officialBandDescriptors",
+        "separateTaskAssessments"
+      ]
+    },
+    {
+      "id": "zju-english3-quiz-2016",
+      "sourcePracticeIds": [
+        "real-university-english3-2016"
+      ],
+      "templateIds": [
+        "source-real-university-english3-2016"
+      ],
+      "status": "requires-complete-source-audit",
+      "reason": "现案例仅为Spelling原14、16、20；5分钟/3分是选编练习。原照片全卷题量、分值与时长须逐项核完后再建立完整规格。",
+      "source": {
+        "title": "大学英语Ⅲ · Quiz 1 · Form F（2016-1目录）",
+        "url": "https://github.com/QSCTech/zju-icicles/blob/master/%E5%A4%A7%E5%AD%A6%E8%8B%B1%E8%AF%AD%E2%85%A2/quiz/2016-1/4.jpg",
+        "downloadUrl": "https://api.github.com/repos/QSCTech/zju-icicles/git/blobs/fe77cd482047424834f4ce2448c57505999d1347",
+        "sha256": "5642375b3f8d035d8ad9db5554a93c3301bb2b53692449a32e2c7a12874fa9fc",
+        "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+        "accessedAt": "2026-11-14"
+      }
+    },
+    {
+      "id": "zju-marxism-final-2016",
+      "sourcePracticeIds": [
+        "real-zju-marxism-2016"
+      ],
+      "templateIds": [
+        "source-real-zju-marxism-2016"
+      ],
+      "status": "requires-complete-source-audit",
+      "known": {
+        "durationMinutes": 120,
+        "totalScore": 100,
+        "singleChoiceCount": 40,
+        "singleChoicePointsEach": 1,
+        "remainingMajorQuestionScores": [
+          20,
+          20,
+          20
+        ]
+      },
+      "reason": "现案例仅3道选择题；原卷二至四的全部材料与分问须完整转录并核对评分后方可交付整卷。",
+      "source": {
+        "title": "浙江大学2015—2016学年秋冬学期《马克思主义基本原理概论》期末A卷",
+        "url": "https://github.com/QSCTech/zju-icicles/blob/master/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98/15-16-%E7%A7%8B%E5%86%AC%E9%A9%AC%E5%8E%9F%E5%8D%B7.doc",
+        "downloadUrl": "https://api.github.com/repos/QSCTech/zju-icicles/git/blobs/6293b2e2edba3d670df87a13c510196125f94701",
+        "sha256": "1acc2d7ed2808454cc3c91e5d9e8e5b671c0cf0b26dfd9ba442ca7a3d7539e3a",
+        "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+        "accessedAt": "2026-11-14"
+      }
+    },
+    {
+      "id": "neea-ethics-2024",
+      "sourcePracticeIds": [
+        "real-neea-ethics-2024"
+      ],
+      "templateIds": [
+        "source-real-neea-ethics-2024"
+      ],
+      "status": "requires-official-section-score-evidence",
+      "known": {
+        "durationMinutes": 150,
+        "totalScore": 100,
+        "choiceCount": 25,
+        "shortResponseCount": 5,
+        "essayOptions": 3,
+        "essaysToAnswer": 2,
+        "printedQuestionCount": 33,
+        "requiredAnswerCount": 32
+      },
+      "reason": "2024年修订大纲的附录参考样卷；样题未标逐题分，现案例2+2+6为练习分，不得当作官方原题分。",
+      "source": {
+        "title": "《思想道德与法治》自学考试大纲 · 附录参考样卷",
+        "url": "https://zikao.neea.edu.cn/xhtml1/report/2502/42-1.htm",
+        "downloadUrl": "https://www.neea.edu.cn/res/Home/2502/9bca2915c4f3cc7ce33a14b1603dd1e7.pdf",
+        "sha256": "e4e5e82dd358bd463381e3b86168dac375514f58848d76d6c51acf6895cabce0",
+        "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+        "accessedAt": "2026-11-14"
+      },
+      "required": [
+        "section-score-rubric",
+        "all-source-stimuli",
+        "complete-answer-rubric"
+      ]
+    },
+    {
+      "id": "neea-mao-2024",
+      "sourcePracticeIds": [
+        "real-neea-mao-2024"
+      ],
+      "templateIds": [
+        "source-real-neea-mao-2024"
+      ],
+      "status": "requires-official-section-score-evidence",
+      "known": {
+        "durationMinutes": 150,
+        "totalScore": 100,
+        "choiceCount": 25,
+        "shortResponseCount": 5,
+        "materialAnalysisCount": 1,
+        "printedQuestionCount": 31
+      },
+      "reason": "2024年修订大纲的附录参考样卷；样题未标逐题分，现案例2+2+6为练习分，不得当作官方原题分。",
+      "source": {
+        "title": "《毛泽东思想和中国特色社会主义理论体系概论》自学考试大纲 · 附录参考样卷",
+        "url": "https://zikao.neea.edu.cn/xhtml1/report/2502/42-1.htm",
+        "downloadUrl": "https://www.neea.edu.cn/res/Home/2502/f6d87d01ba99dd23da2bdc0068b616bf.pdf",
+        "sha256": "57ee1f153ca9d8f123ebd7dc5479a5c06b887cd691efe4c61c06dbb17274566e",
+        "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+        "accessedAt": "2026-11-14"
+      },
+      "required": [
+        "section-score-rubric",
+        "all-source-stimuli",
+        "complete-answer-rubric"
+      ]
+    }
+  ]
+}

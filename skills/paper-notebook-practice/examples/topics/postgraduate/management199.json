@@ -1,0 +1,5547 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "postgraduate-management199-01",
+  "notebookId": "postgraduate-management199",
+  "notebookRevision": 1,
+  "title": "硕士研究生入学考试 管理类综合能力（199）",
+  "subject": "管理类综合能力（199）",
+  "level": "考研",
+  "durationMinutes": 180,
+  "totalScore": 200,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "sealed": true
+  },
+  "presentation": {
+    "titleLines": [
+      "硕士研究生入学考试",
+      "管理类综合能力（199）"
+    ],
+    "candidateFields": [
+      "姓名",
+      "准考证号",
+      "报考单位"
+    ],
+    "notices": [
+      "请在答题卡规定区域作答，写在试题上的答案无效。",
+      "选择题每题只有一个正确选项；多项选择题按题目说明作答。"
+    ],
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "管理类综合能力（199）",
+      "rule": true
+    },
+    "footerTemplate": "管理类综合能力（199）　第 {page} 页",
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "university",
+      "candidateDigits": 15
+    },
+    "questionScores": "show",
+    "sectionDetails": true,
+    "projectMark": false
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "authoring": {
+    "routeId": "postgrad-management-199",
+    "examName": "管理类综合能力（199）",
+    "requireVerification": true
+  },
+  "materials": [
+    {
+      "id": "management-math-methods",
+      "title": "数学基础核对（作者概述）",
+      "kind": "knowledge",
+      "text": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。",
+      "blocks": [
+        {
+          "id": "management-math-methods-block",
+          "title": "数学基础核对（作者概述）",
+          "text": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "6943516e42c281a6fa3cde05c7125c80bd6c4bda2d9aaad4f6d276abdf10e966"
+    },
+    {
+      "id": "postgraduate-management199-01-q1-source",
+      "title": "原创命题记录 1",
+      "kind": "question-bank",
+      "text": "一商品先提价20%，再按新价打八折。最终价格是原价的：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q1-source-block",
+          "title": "原创命题记录 1",
+          "text": "一商品先提价20%，再按新价打八折。最终价格是原价的："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a3e4848f8b6e6d397de95fef530aec354a21eeab0741e9f4c9b5dc6cd7aef17d"
+    },
+    {
+      "id": "postgraduate-management199-01-q2-source",
+      "title": "原创命题记录 2",
+      "kind": "question-bank",
+      "text": "甲独做需6天，乙独做需3天。两人合作完成同一工作需：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q2-source-block",
+          "title": "原创命题记录 2",
+          "text": "甲独做需6天，乙独做需3天。两人合作完成同一工作需："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "efcbcde3124545231fe2c42db0ff215bfeaa261cb3781113b061d1be495c66eb"
+    },
+    {
+      "id": "postgraduate-management199-01-q3-source",
+      "title": "原创命题记录 3",
+      "kind": "question-bank",
+      "text": "正整数a、b满足最大公约数6、最小公倍数72，则ab为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q3-source-block",
+          "title": "原创命题记录 3",
+          "text": "正整数a、b满足最大公约数6、最小公倍数72，则ab为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "2f2254a9f5edac7cc10dd134ca7458863ca1d77da6df1816d88b17bd71f2a5d7"
+    },
+    {
+      "id": "postgraduate-management199-01-q4-source",
+      "title": "原创命题记录 4",
+      "kind": "question-bank",
+      "text": "方程 $x^2-5x+6=0$ 的两根平方和为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q4-source-block",
+          "title": "原创命题记录 4",
+          "text": "方程 $x^2-5x+6=0$ 的两根平方和为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a6ca4e1ebbc2981e76450b95e62074b8f2b07c05f7dec23e8ec0769c7e2b49a4"
+    },
+    {
+      "id": "postgraduate-management199-01-q5-source",
+      "title": "原创命题记录 5",
+      "kind": "question-bank",
+      "text": "等差数列首项3、公差2，前10项和为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q5-source-block",
+          "title": "原创命题记录 5",
+          "text": "等差数列首项3、公差2，前10项和为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "5019d3d4cb250e517f3560dbb82df59384ad4442a5e3418600fdccbdcf67ad49"
+    },
+    {
+      "id": "postgraduate-management199-01-q6-source",
+      "title": "原创命题记录 6",
+      "kind": "question-bank",
+      "text": "不等式 $|x-1|<2$ 的解集为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q6-source-block",
+          "title": "原创命题记录 6",
+          "text": "不等式 $|x-1|<2$ 的解集为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "816b64f52dc463cbc731c2c209713a0d444e95dffd2662457aea11046a6c3b18"
+    },
+    {
+      "id": "postgraduate-management199-01-q7-source",
+      "title": "原创命题记录 7",
+      "kind": "question-bank",
+      "text": "从5名不同成员中选2名组成无职务区别小组，方法数为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q7-source-block",
+          "title": "原创命题记录 7",
+          "text": "从5名不同成员中选2名组成无职务区别小组，方法数为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4e5896d44ec02bb79523fd9a2802bd7117e0dc337d0c6650152a2fdc86e0fea0"
+    },
+    {
+      "id": "postgraduate-management199-01-q8-source",
+      "title": "原创命题记录 8",
+      "kind": "question-bank",
+      "text": "掷两枚相互独立的均匀骰子，点数和为7的概率为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q8-source-block",
+          "title": "原创命题记录 8",
+          "text": "掷两枚相互独立的均匀骰子，点数和为7的概率为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "273a709466b98a12a1c9dd1338a9a64945d5fb2d314bb08ee77e17016902700f"
+    },
+    {
+      "id": "postgraduate-management199-01-q9-source",
+      "title": "原创命题记录 9",
+      "kind": "question-bank",
+      "text": "直角三角形两直角边分别为6、8，其内切圆半径为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q9-source-block",
+          "title": "原创命题记录 9",
+          "text": "直角三角形两直角边分别为6、8，其内切圆半径为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "368c644edcb235387bf4c88025a3b6e0df83db9e9082021f0673d316af978c28"
+    },
+    {
+      "id": "postgraduate-management199-01-q10-source",
+      "title": "原创命题记录 10",
+      "kind": "question-bank",
+      "text": "圆柱半径2、高3，其体积为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q10-source-block",
+          "title": "原创命题记录 10",
+          "text": "圆柱半径2、高3，其体积为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f2423acf89488072d5a9968692154ae050c6f173e449db33168da6f562325d5f"
+    },
+    {
+      "id": "postgraduate-management199-01-q11-source",
+      "title": "原创命题记录 11",
+      "kind": "question-bank",
+      "text": "点(1,2)到直线 $3x+4y-1=0$ 的距离为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q11-source-block",
+          "title": "原创命题记录 11",
+          "text": "点(1,2)到直线 $3x+4y-1=0$ 的距离为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b42324249a22338f4e398523d7585911fdab12fde492cae62290e793a12e9a3d"
+    },
+    {
+      "id": "postgraduate-management199-01-q12-source",
+      "title": "原创命题记录 12",
+      "kind": "question-bank",
+      "text": "数据2、4、6、8、10的总体方差（分母为5）为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q12-source-block",
+          "title": "原创命题记录 12",
+          "text": "数据2、4、6、8、10的总体方差（分母为5）为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8c050d05ab5275a2756ca15edb84b5134583ff34e6782339d1865220e43da67d"
+    },
+    {
+      "id": "postgraduate-management199-01-q13-source",
+      "title": "原创命题记录 13",
+      "kind": "question-bank",
+      "text": "袋中3红2白球，无放回抽2球，恰有1红1白的概率为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q13-source-block",
+          "title": "原创命题记录 13",
+          "text": "袋中3红2白球，无放回抽2球，恰有1红1白的概率为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "54af3180fd44fb89462414b3cda0394e1af9738672529f4606f1d4ca615879d8"
+    },
+    {
+      "id": "postgraduate-management199-01-q14-source",
+      "title": "原创命题记录 14",
+      "kind": "question-bank",
+      "text": "正数x、y满足x+y=10，xy的最大值为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q14-source-block",
+          "title": "原创命题记录 14",
+          "text": "正数x、y满足x+y=10，xy的最大值为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8939fd026345463ac961db8dc102e7e4dcb4814a0ba5de56cdb543291acd3082"
+    },
+    {
+      "id": "postgraduate-management199-01-q15-source",
+      "title": "原创命题记录 15",
+      "kind": "question-bank",
+      "text": "甲车以60千米/时走一半路程，以40千米/时走另一半，总平均速度为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q15-source-block",
+          "title": "原创命题记录 15",
+          "text": "甲车以60千米/时走一半路程，以40千米/时走另一半，总平均速度为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a04180bb9f9a2372eef9649fa0a5cd83859deb121a281a256a5cb3a8a1227c11"
+    },
+    {
+      "id": "postgraduate-management199-01-q16-source",
+      "title": "原创命题记录 16",
+      "kind": "question-bank",
+      "text": "判断实数x是否为正数。\n（1）x³>0；（2）x²>0。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q16-source-block",
+          "title": "原创命题记录 16",
+          "text": "判断实数x是否为正数。\n（1）x³>0；（2）x²>0。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "06cdc9da57ec0f8ce087841792988480b0d0749b8c027d012f0a862ccc68ad3a"
+    },
+    {
+      "id": "postgraduate-management199-01-q17-source",
+      "title": "原创命题记录 17",
+      "kind": "question-bank",
+      "text": "确定全程平均速度（全程时间为正）。\n（1）第一小时速度为40千米/时；（2）全程80千米，总用时2小时。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q17-source-block",
+          "title": "原创命题记录 17",
+          "text": "确定全程平均速度（全程时间为正）。\n（1）第一小时速度为40千米/时；（2）全程80千米，总用时2小时。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "91a04e079f49e86c0ef50723e74411ca5e5801aadefc56eb9a2ec46a542b992e"
+    },
+    {
+      "id": "postgraduate-management199-01-q18-source",
+      "title": "原创命题记录 18",
+      "kind": "question-bank",
+      "text": "判断整数n是否为偶数。\n（1）n²为偶数；（2）n是4的倍数。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q18-source-block",
+          "title": "原创命题记录 18",
+          "text": "判断整数n是否为偶数。\n（1）n²为偶数；（2）n是4的倍数。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c9116e34f663354af61f9474919c55bc83df6df3e502480a8a7f4efe3522135a"
+    },
+    {
+      "id": "postgraduate-management199-01-q19-source",
+      "title": "原创命题记录 19",
+      "kind": "question-bank",
+      "text": "确定实数x的值。\n（1）x+y=10；（2）x−y=2。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q19-source-block",
+          "title": "原创命题记录 19",
+          "text": "确定实数x的值。\n（1）x+y=10；（2）x−y=2。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "054d21cca1b44f87736db6e8a2584badabd35c410e56fa220259d90377fec12d"
+    },
+    {
+      "id": "postgraduate-management199-01-q20-source",
+      "title": "原创命题记录 20",
+      "kind": "question-bank",
+      "text": "判断非零实数x、y的积是否大于0。\n（1）x+y>0；（2）x−y>0。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q20-source-block",
+          "title": "原创命题记录 20",
+          "text": "判断非零实数x、y的积是否大于0。\n（1）x+y>0；（2）x−y>0。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "400eef70db1771cba8e2db24ee5ca61569ce77078af2b3147c2b67580b3f6bb5"
+    },
+    {
+      "id": "postgraduate-management199-01-q21-source",
+      "title": "原创命题记录 21",
+      "kind": "question-bank",
+      "text": "判断实数x是否等于1。\n（1）x²=1；（2）x≥1。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q21-source-block",
+          "title": "原创命题记录 21",
+          "text": "判断实数x是否等于1。\n（1）x²=1；（2）x≥1。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "dd5d3fe6cde579de49cacb40f2234f2158f5773b0c3b11664834fd647c981ff8"
+    },
+    {
+      "id": "postgraduate-management199-01-q22-source",
+      "title": "原创命题记录 22",
+      "kind": "question-bank",
+      "text": "判断某三角形是否为等腰三角形。\n（1）边长为3、3、4；（2）有两个内角相等。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q22-source-block",
+          "title": "原创命题记录 22",
+          "text": "判断某三角形是否为等腰三角形。\n（1）边长为3、3、4；（2）有两个内角相等。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "bfd691463a2d16eb6c51770192638e5697d3652b69b6d8a56d15eaff776399a0"
+    },
+    {
+      "id": "postgraduate-management199-01-q23-source",
+      "title": "原创命题记录 23",
+      "kind": "question-bank",
+      "text": "确定某等差数列首项。\n（1）前两项和为10；（2）公差为2。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q23-source-block",
+          "title": "原创命题记录 23",
+          "text": "确定某等差数列首项。\n（1）前两项和为10；（2）公差为2。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a265f30a53862ad883398c171d91bd529d240f1af2524f1bd86e9d826cc29ab7"
+    },
+    {
+      "id": "postgraduate-management199-01-q24-source",
+      "title": "原创命题记录 24",
+      "kind": "question-bank",
+      "text": "确定某矩形面积。\n（1）周长20；（2）一边长4。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q24-source-block",
+          "title": "原创命题记录 24",
+          "text": "确定某矩形面积。\n（1）周长20；（2）一边长4。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "acc79ca48daf404d14bd774773bd6f386cc65e93d6b78afb7969cc231ecbf4c9"
+    },
+    {
+      "id": "postgraduate-management199-01-q25-source",
+      "title": "原创命题记录 25",
+      "kind": "question-bank",
+      "text": "判断非零实数x是否为正。\n（1）x>2；（2）x>3。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q25-source-block",
+          "title": "原创命题记录 25",
+          "text": "判断非零实数x是否为正。\n（1）x>2；（2）x>3。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "dad9d1b8bf1dbf0501e893827de23971b1b5263f4d4eb6e97a2e8ef6eb7695eb"
+    },
+    {
+      "id": "postgraduate-management199-01-q26-source",
+      "title": "原创命题记录 26",
+      "kind": "question-bank",
+      "text": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q26-source-block",
+          "title": "原创命题记录 26",
+          "text": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "04d8c35417d1574bdf8f1509b7f790c561935d1b7e3c0ec76c4178975b1d4af4"
+    },
+    {
+      "id": "postgraduate-management199-01-q27-source",
+      "title": "原创命题记录 27",
+      "kind": "question-bank",
+      "text": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q27-source-block",
+          "title": "原创命题记录 27",
+          "text": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ef9d88f47c9f3a195cacbeaa107430663ba458f9df0b8df6bb97707031fa3860"
+    },
+    {
+      "id": "postgraduate-management199-01-q28-source",
+      "title": "原创命题记录 28",
+      "kind": "question-bank",
+      "text": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q28-source-block",
+          "title": "原创命题记录 28",
+          "text": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8e67a48f5e5033b418815bc3adeea52d19c4d805215398a39622fbf10bb340da"
+    },
+    {
+      "id": "postgraduate-management199-01-q29-source",
+      "title": "原创命题记录 29",
+      "kind": "question-bank",
+      "text": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q29-source-block",
+          "title": "原创命题记录 29",
+          "text": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "962f8e124619c5ad284985eba92f43d54e77ceea144db189486d9674a0316bce"
+    },
+    {
+      "id": "postgraduate-management199-01-q30-source",
+      "title": "原创命题记录 30",
+      "kind": "question-bank",
+      "text": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q30-source-block",
+          "title": "原创命题记录 30",
+          "text": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "fa9f535b4546703922ed1579158fceb62e8141ab711d5d6f721aecaaa077a217"
+    },
+    {
+      "id": "postgraduate-management199-01-q31-source",
+      "title": "原创命题记录 31",
+      "kind": "question-bank",
+      "text": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q31-source-block",
+          "title": "原创命题记录 31",
+          "text": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e86a64dbdad51f8fea336658c011c1e45a5e2d2ba49a7eaccd7febc1c95974ae"
+    },
+    {
+      "id": "postgraduate-management199-01-q32-source",
+      "title": "原创命题记录 32",
+      "kind": "question-bank",
+      "text": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q32-source-block",
+          "title": "原创命题记录 32",
+          "text": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ae92abb91d7e12f3106e893bb243d5b40dfc5473fdf0af132a22cab01775e0c4"
+    },
+    {
+      "id": "postgraduate-management199-01-q33-source",
+      "title": "原创命题记录 33",
+      "kind": "question-bank",
+      "text": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q33-source-block",
+          "title": "原创命题记录 33",
+          "text": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a742e232c885d7328f4816ff7b62eeaacc65475c324b7a9d56778d52d7f295ca"
+    },
+    {
+      "id": "postgraduate-management199-01-q34-source",
+      "title": "原创命题记录 34",
+      "kind": "question-bank",
+      "text": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q34-source-block",
+          "title": "原创命题记录 34",
+          "text": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c0e03be8e771b2480584f5300bd0587b3b9c34ec694043fc3713ddfdaac87e69"
+    },
+    {
+      "id": "postgraduate-management199-01-q35-source",
+      "title": "原创命题记录 35",
+      "kind": "question-bank",
+      "text": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q35-source-block",
+          "title": "原创命题记录 35",
+          "text": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "64bc5d7a5a3fe07407ad60a572ab68818394776cdcd4c15f5769282f5f07a514"
+    },
+    {
+      "id": "postgraduate-management199-01-q36-source",
+      "title": "原创命题记录 36",
+      "kind": "question-bank",
+      "text": "“如果今晚下雨，比赛就改期”的逻辑等价表述是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q36-source-block",
+          "title": "原创命题记录 36",
+          "text": "“如果今晚下雨，比赛就改期”的逻辑等价表述是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8e0c28b268ac10af08fa54dd3dca55fc013403eb30025d936f05445545b2edae"
+    },
+    {
+      "id": "postgraduate-management199-01-q37-source",
+      "title": "原创命题记录 37",
+      "kind": "question-bank",
+      "text": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q37-source-block",
+          "title": "原创命题记录 37",
+          "text": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8f392ea01e7183e32a4958db29a317f74514e38a4421cec7914a25b549d10f19"
+    },
+    {
+      "id": "postgraduate-management199-01-q38-source",
+      "title": "原创命题记录 38",
+      "kind": "question-bank",
+      "text": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q38-source-block",
+          "title": "原创命题记录 38",
+          "text": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a51e37d6877d339c3e7953c51cf0114e7f538d694f71ef6e905d401228ed68b2"
+    },
+    {
+      "id": "postgraduate-management199-01-q39-source",
+      "title": "原创命题记录 39",
+      "kind": "question-bank",
+      "text": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q39-source-block",
+          "title": "原创命题记录 39",
+          "text": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "89bf90c8c0c911bf2f4162ac122dc8a028c72af61f7dca968a896248e827cc23"
+    },
+    {
+      "id": "postgraduate-management199-01-q40-source",
+      "title": "原创命题记录 40",
+      "kind": "question-bank",
+      "text": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q40-source-block",
+          "title": "原创命题记录 40",
+          "text": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f238cdb16dbd6d838086cba25f93405979749069236fbbdb1130baa543dad07f"
+    },
+    {
+      "id": "postgraduate-management199-01-q41-source",
+      "title": "原创命题记录 41",
+      "kind": "question-bank",
+      "text": "若所有A都是B，所有B都是C，则以下关系必然成立：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q41-source-block",
+          "title": "原创命题记录 41",
+          "text": "若所有A都是B，所有B都是C，则以下关系必然成立："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c005138d547bddc9ab34f2c49e17606253872ebf08a4ffcc681281efdee38e9e"
+    },
+    {
+      "id": "postgraduate-management199-01-q42-source",
+      "title": "原创命题记录 42",
+      "kind": "question-bank",
+      "text": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q42-source-block",
+          "title": "原创命题记录 42",
+          "text": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "54c2493156b1758ecb22e7857f4c59c9c1eef88c70cb67a294728475bac97c59"
+    },
+    {
+      "id": "postgraduate-management199-01-q43-source",
+      "title": "原创命题记录 43",
+      "kind": "question-bank",
+      "text": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q43-source-block",
+          "title": "原创命题记录 43",
+          "text": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "44e0fac917c7a4dc3bdad57a1bf705b6a83bb59f04606005b7be4f4a00a99473"
+    },
+    {
+      "id": "postgraduate-management199-01-q44-source",
+      "title": "原创命题记录 44",
+      "kind": "question-bank",
+      "text": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q44-source-block",
+          "title": "原创命题记录 44",
+          "text": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "fb38290239ab168c9d08faca0baa61155421607ed492141e765bb6dfec83c416"
+    },
+    {
+      "id": "postgraduate-management199-01-q45-source",
+      "title": "原创命题记录 45",
+      "kind": "question-bank",
+      "text": "有人把“可能发生”解释为“必定发生”。其推论错误在于：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q45-source-block",
+          "title": "原创命题记录 45",
+          "text": "有人把“可能发生”解释为“必定发生”。其推论错误在于："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "48dc0d57b1b3ea2e21a7e174cb878f0fbdd3bc88797574b68c64c8995bfc61d1"
+    },
+    {
+      "id": "postgraduate-management199-01-q46-source",
+      "title": "原创命题记录 46",
+      "kind": "question-bank",
+      "text": "医生建议某人复查。此人说：“需要复查的人中有人最终健康，所以我不用复查。”最直接的反驳是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q46-source-block",
+          "title": "原创命题记录 46",
+          "text": "医生建议某人复查。此人说：“需要复查的人中有人最终健康，所以我不用复查。”最直接的反驳是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "00730b6a34e6b3647cedc0a023ece7dd8ab36ef59a61e37bf03a8805b88f948d"
+    },
+    {
+      "id": "postgraduate-management199-01-q47-source",
+      "title": "原创命题记录 47",
+      "kind": "question-bank",
+      "text": "某校学生平均每天运动40分钟，据此断言每名学生都运动40分钟。问题在于：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q47-source-block",
+          "title": "原创命题记录 47",
+          "text": "某校学生平均每天运动40分钟，据此断言每名学生都运动40分钟。问题在于："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "eaa03cc545d6a3bffebd0cfe2a5379db1dabb4505c5c89c1c1660c5404a2280f"
+    },
+    {
+      "id": "postgraduate-management199-01-q48-source",
+      "title": "原创命题记录 48",
+      "kind": "question-bank",
+      "text": "甲乙两店出售同款商品。甲店价格高，但成交更多。下列哪项最能解释这一现象？",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q48-source-block",
+          "title": "原创命题记录 48",
+          "text": "甲乙两店出售同款商品。甲店价格高，但成交更多。下列哪项最能解释这一现象？"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7f7283f43d026acb57a337eec4a596732a6b502f53aaf2e59c249d4a06284472"
+    },
+    {
+      "id": "postgraduate-management199-01-q49-source",
+      "title": "原创命题记录 49",
+      "kind": "question-bank",
+      "text": "一个论证把“经济增长快”与“社会所有方面都进步”当作同一概念。其主要问题是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q49-source-block",
+          "title": "原创命题记录 49",
+          "text": "一个论证把“经济增长快”与“社会所有方面都进步”当作同一概念。其主要问题是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ba8365ee4ddcff53f39c034b763d314ac2e0b8dc070f9365a41afcb91ad632e2"
+    },
+    {
+      "id": "postgraduate-management199-01-q50-source",
+      "title": "原创命题记录 50",
+      "kind": "question-bank",
+      "text": "在甲乙丙三项任务中，至少完成两项；完成甲则未完成乙；未完成丙则完成乙。以下必然成立：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q50-source-block",
+          "title": "原创命题记录 50",
+          "text": "在甲乙丙三项任务中，至少完成两项；完成甲则未完成乙；未完成丙则完成乙。以下必然成立："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "56a097753c000b7738a53347d0c349f162ee77e8c06fde44a1de1f123f028283"
+    },
+    {
+      "id": "postgraduate-management199-01-q51-source",
+      "title": "原创命题记录 51",
+      "kind": "question-bank",
+      "text": "某设备故障率从2%降到1%。以下表达准确的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q51-source-block",
+          "title": "原创命题记录 51",
+          "text": "某设备故障率从2%降到1%。以下表达准确的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a81273ffc1f1f4ecedd0dd345ed5c8e19db66fd69e2f9c4bc85061550c6f1233"
+    },
+    {
+      "id": "postgraduate-management199-01-q52-source",
+      "title": "原创命题记录 52",
+      "kind": "question-bank",
+      "text": "某人声称“凡未被证伪的说法都是真的”。最能说明问题的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q52-source-block",
+          "title": "原创命题记录 52",
+          "text": "某人声称“凡未被证伪的说法都是真的”。最能说明问题的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a2002557808b48f7486c0bc91b2c49d34897493a77d37625d87cefbd489ca11a"
+    },
+    {
+      "id": "postgraduate-management199-01-q53-source",
+      "title": "原创命题记录 53",
+      "kind": "question-bank",
+      "text": "A、B、C三箱中恰有一箱装样品。标签分别写“A箱装样品”“B箱不装样品”“A箱不装样品”，恰有两句真。样品在：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q53-source-block",
+          "title": "原创命题记录 53",
+          "text": "A、B、C三箱中恰有一箱装样品。标签分别写“A箱装样品”“B箱不装样品”“A箱不装样品”，恰有两句真。样品在："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f4a64b5bd22eac6eb223b3d5cd7c3f0530234c2317695cd00c628fbd40921464"
+    },
+    {
+      "id": "postgraduate-management199-01-q54-source",
+      "title": "原创命题记录 54",
+      "kind": "question-bank",
+      "text": "论证认为“如果培训有效，成绩会上升；成绩上升了，所以培训有效”。该形式为：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q54-source-block",
+          "title": "原创命题记录 54",
+          "text": "论证认为“如果培训有效，成绩会上升；成绩上升了，所以培训有效”。该形式为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e2a94ca4b20816d4ba84be18fec188befe37f5d18615e71810055fb0c5522cf7"
+    },
+    {
+      "id": "postgraduate-management199-01-q55-source",
+      "title": "原创命题记录 55",
+      "kind": "question-bank",
+      "text": "一项研究先公开分析方案，然后按方案报告全部主要结果。这样做最直接有助于：",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q55-source-block",
+          "title": "原创命题记录 55",
+          "text": "一项研究先公开分析方案，然后按方案报告全部主要结果。这样做最直接有助于："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7a64498c6e3ab0c74569d6028b43e4f68d28bc9267e1c6ca9bce9040ed9cf563"
+    },
+    {
+      "id": "argument-analysis-passage",
+      "title": "写作一、论证有效性分析材料",
+      "kind": "reference",
+      "text": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。",
+      "blocks": [
+        {
+          "id": "argument-analysis-passage-block",
+          "title": "写作一、论证有效性分析材料",
+          "text": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "24a441d285f5603a530d6270561ad3f91457ffc2659c2562050831b7858915bd"
+    },
+    {
+      "id": "postgraduate-management199-01-q56-source",
+      "title": "原创命题记录 56",
+      "kind": "question-bank",
+      "text": "评论给定材料的论证有效性，写一篇约600字的文章。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q56-source-block",
+          "title": "原创命题记录 56",
+          "text": "评论给定材料的论证有效性，写一篇约600字的文章。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "3fb123df5709d96b4fd8b90637226ed04c6ee21e30741d7ebfc91c608a81af31"
+    },
+    {
+      "id": "essay-passage",
+      "title": "写作二、论说文材料",
+      "kind": "reference",
+      "text": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。",
+      "blocks": [
+        {
+          "id": "essay-passage-block",
+          "title": "写作二、论说文材料",
+          "text": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4b72561979c8eaf3336cb4d03e00a492a515b6b6163769545a4166f165e2c8dc"
+    },
+    {
+      "id": "postgraduate-management199-01-q57-source",
+      "title": "原创命题记录 57",
+      "kind": "question-bank",
+      "text": "围绕给定材料自拟题目，写一篇约700字论说文。",
+      "blocks": [
+        {
+          "id": "postgraduate-management199-01-q57-source-block",
+          "title": "原创命题记录 57",
+          "text": "围绕给定材料自拟题目，写一篇约700字论说文。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "570b91c961307a7f476391447aaf9b9e995128a1e116ff3963f97e0b5d09572e"
+    }
+  ],
+  "sections": [
+    {
+      "id": "problem-solving",
+      "title": "一、数学基础·问题求解",
+      "examPartId": "math-problem",
+      "instructions": "第1—15题，每题3分。每题只有一个正确选项。",
+      "score": 45,
+      "questions": [
+        {
+          "id": "postgraduate-management199-01-q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "一商品先提价20%，再按新价打八折。最终价格是原价的：",
+          "score": 3,
+          "solution": "A",
+          "explanation": "相继变化乘1.2×0.8=0.96。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q1-source",
+            "blockId": "postgraduate-management199-01-q1-source-block",
+            "title": "原创命题记录 1",
+            "exact": "一商品先提价20%，再按新价打八折。最终价格是原价的："
+          },
+          "chapter": "百分比",
+          "tags": [
+            "百分比"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "百分比"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；相继变化乘1.2×0.8=0.96。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "96%"
+            },
+            {
+              "id": "B",
+              "text": "100%"
+            },
+            {
+              "id": "C",
+              "text": "104%"
+            },
+            {
+              "id": "D",
+              "text": "108%"
+            },
+            {
+              "id": "E",
+              "text": "120%"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "甲独做需6天，乙独做需3天。两人合作完成同一工作需：",
+          "score": 3,
+          "solution": "B",
+          "explanation": "效率和1/6+1/3=1/2，时间2天。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q2-source",
+            "blockId": "postgraduate-management199-01-q2-source-block",
+            "title": "原创命题记录 2",
+            "exact": "甲独做需6天，乙独做需3天。两人合作完成同一工作需："
+          },
+          "chapter": "工作效率",
+          "tags": [
+            "工作效率"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "工作效率"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；效率和1/6+1/3=1/2，时间2天。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1天"
+            },
+            {
+              "id": "B",
+              "text": "2天"
+            },
+            {
+              "id": "C",
+              "text": "3天"
+            },
+            {
+              "id": "D",
+              "text": "4天"
+            },
+            {
+              "id": "E",
+              "text": "9天"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "正整数a、b满足最大公约数6、最小公倍数72，则ab为：",
+          "score": 3,
+          "solution": "C",
+          "explanation": "ab=gcd×lcm=6×72=432。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q3-source",
+            "blockId": "postgraduate-management199-01-q3-source-block",
+            "title": "原创命题记录 3",
+            "exact": "正整数a、b满足最大公约数6、最小公倍数72，则ab为："
+          },
+          "chapter": "整数性质",
+          "tags": [
+            "整数性质"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "整数性质"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；ab=gcd×lcm=6×72=432。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "72"
+            },
+            {
+              "id": "B",
+              "text": "216"
+            },
+            {
+              "id": "C",
+              "text": "432"
+            },
+            {
+              "id": "D",
+              "text": "864"
+            },
+            {
+              "id": "E",
+              "text": "5184"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "方程 $x^2-5x+6=0$ 的两根平方和为：",
+          "score": 3,
+          "solution": "D",
+          "explanation": "根和5、积6，平方和25−12=13。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q4-source",
+            "blockId": "postgraduate-management199-01-q4-source-block",
+            "title": "原创命题记录 4",
+            "exact": "方程 $x^2-5x+6=0$ 的两根平方和为："
+          },
+          "chapter": "代数",
+          "tags": [
+            "代数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "代数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；根和5、积6，平方和25−12=13。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "5"
+            },
+            {
+              "id": "B",
+              "text": "9"
+            },
+            {
+              "id": "C",
+              "text": "11"
+            },
+            {
+              "id": "D",
+              "text": "13"
+            },
+            {
+              "id": "E",
+              "text": "25"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q5",
+          "number": 5,
+          "type": "choice",
+          "prompt": "等差数列首项3、公差2，前10项和为：",
+          "score": 3,
+          "solution": "E",
+          "explanation": "a10=21，S10=10(3+21)/2=120。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q5-source",
+            "blockId": "postgraduate-management199-01-q5-source-block",
+            "title": "原创命题记录 5",
+            "exact": "等差数列首项3、公差2，前10项和为："
+          },
+          "chapter": "数列",
+          "tags": [
+            "数列"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数列"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；a10=21，S10=10(3+21)/2=120。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "90"
+            },
+            {
+              "id": "B",
+              "text": "100"
+            },
+            {
+              "id": "C",
+              "text": "110"
+            },
+            {
+              "id": "D",
+              "text": "115"
+            },
+            {
+              "id": "E",
+              "text": "120"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q6",
+          "number": 6,
+          "type": "choice",
+          "prompt": "不等式 $|x-1|<2$ 的解集为：",
+          "score": 3,
+          "solution": "A",
+          "explanation": "−2<x−1<2，得−1<x<3。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q6-source",
+            "blockId": "postgraduate-management199-01-q6-source-block",
+            "title": "原创命题记录 6",
+            "exact": "不等式 $|x-1|<2$ 的解集为："
+          },
+          "chapter": "不等式",
+          "tags": [
+            "不等式"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "不等式"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；−2<x−1<2，得−1<x<3。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "(-1,3)"
+            },
+            {
+              "id": "B",
+              "text": "(-3,1)"
+            },
+            {
+              "id": "C",
+              "text": "[−1,3]"
+            },
+            {
+              "id": "D",
+              "text": "(1,3)"
+            },
+            {
+              "id": "E",
+              "text": "(−∞,−1)∪(3,∞)"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q7",
+          "number": 7,
+          "type": "choice",
+          "prompt": "从5名不同成员中选2名组成无职务区别小组，方法数为：",
+          "score": 3,
+          "solution": "B",
+          "explanation": "组合C(5,2)=10，不区分顺序。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q7-source",
+            "blockId": "postgraduate-management199-01-q7-source-block",
+            "title": "原创命题记录 7",
+            "exact": "从5名不同成员中选2名组成无职务区别小组，方法数为："
+          },
+          "chapter": "计数",
+          "tags": [
+            "计数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；组合C(5,2)=10，不区分顺序。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "5"
+            },
+            {
+              "id": "B",
+              "text": "10"
+            },
+            {
+              "id": "C",
+              "text": "15"
+            },
+            {
+              "id": "D",
+              "text": "20"
+            },
+            {
+              "id": "E",
+              "text": "25"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q8",
+          "number": 8,
+          "type": "choice",
+          "prompt": "掷两枚相互独立的均匀骰子，点数和为7的概率为：",
+          "score": 3,
+          "solution": "C",
+          "explanation": "36个等可能有序结果中6个和为7。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q8-source",
+            "blockId": "postgraduate-management199-01-q8-source-block",
+            "title": "原创命题记录 8",
+            "exact": "掷两枚相互独立的均匀骰子，点数和为7的概率为："
+          },
+          "chapter": "概率",
+          "tags": [
+            "概率"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；36个等可能有序结果中6个和为7。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1/12"
+            },
+            {
+              "id": "B",
+              "text": "1/9"
+            },
+            {
+              "id": "C",
+              "text": "1/6"
+            },
+            {
+              "id": "D",
+              "text": "1/4"
+            },
+            {
+              "id": "E",
+              "text": "1/3"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q9",
+          "number": 9,
+          "type": "choice",
+          "prompt": "直角三角形两直角边分别为6、8，其内切圆半径为：",
+          "score": 3,
+          "solution": "D",
+          "explanation": "斜边10；r=(6+8−10)/2=2。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q9-source",
+            "blockId": "postgraduate-management199-01-q9-source-block",
+            "title": "原创命题记录 9",
+            "exact": "直角三角形两直角边分别为6、8，其内切圆半径为："
+          },
+          "chapter": "平面几何",
+          "tags": [
+            "平面几何"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "平面几何"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；斜边10；r=(6+8−10)/2=2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "3/2"
+            },
+            {
+              "id": "C",
+              "text": "3"
+            },
+            {
+              "id": "D",
+              "text": "2"
+            },
+            {
+              "id": "E",
+              "text": "4"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "圆柱半径2、高3，其体积为：",
+          "score": 3,
+          "solution": "E",
+          "explanation": "V=πr²h=12π。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q10-source",
+            "blockId": "postgraduate-management199-01-q10-source-block",
+            "title": "原创命题记录 10",
+            "exact": "圆柱半径2、高3，其体积为："
+          },
+          "chapter": "立体几何",
+          "tags": [
+            "立体几何"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "立体几何"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；V=πr²h=12π。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$6\\pi$"
+            },
+            {
+              "id": "B",
+              "text": "$8\\pi$"
+            },
+            {
+              "id": "C",
+              "text": "$10\\pi$"
+            },
+            {
+              "id": "D",
+              "text": "$16\\pi$"
+            },
+            {
+              "id": "E",
+              "text": "$12\\pi$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q11",
+          "number": 11,
+          "type": "choice",
+          "prompt": "点(1,2)到直线 $3x+4y-1=0$ 的距离为：",
+          "score": 3,
+          "solution": "A",
+          "explanation": "|3+8−1|/√(9+16)=10/5=2。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q11-source",
+            "blockId": "postgraduate-management199-01-q11-source-block",
+            "title": "原创命题记录 11",
+            "exact": "点(1,2)到直线 $3x+4y-1=0$ 的距离为："
+          },
+          "chapter": "解析几何",
+          "tags": [
+            "解析几何"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "解析几何"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；|3+8−1|/√(9+16)=10/5=2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "2"
+            },
+            {
+              "id": "B",
+              "text": "3"
+            },
+            {
+              "id": "C",
+              "text": "4"
+            },
+            {
+              "id": "D",
+              "text": "5"
+            },
+            {
+              "id": "E",
+              "text": "10"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q12",
+          "number": 12,
+          "type": "choice",
+          "prompt": "数据2、4、6、8、10的总体方差（分母为5）为：",
+          "score": 3,
+          "solution": "B",
+          "explanation": "均值6，离差平方和40，除5得8。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q12-source",
+            "blockId": "postgraduate-management199-01-q12-source-block",
+            "title": "原创命题记录 12",
+            "exact": "数据2、4、6、8、10的总体方差（分母为5）为："
+          },
+          "chapter": "数据分析",
+          "tags": [
+            "数据分析"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据分析"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；均值6，离差平方和40，除5得8。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "6"
+            },
+            {
+              "id": "B",
+              "text": "8"
+            },
+            {
+              "id": "C",
+              "text": "10"
+            },
+            {
+              "id": "D",
+              "text": "12"
+            },
+            {
+              "id": "E",
+              "text": "16"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q13",
+          "number": 13,
+          "type": "choice",
+          "prompt": "袋中3红2白球，无放回抽2球，恰有1红1白的概率为：",
+          "score": 3,
+          "solution": "C",
+          "explanation": "有利组合3×2，总C(5,2)=10，概率6/10。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q13-source",
+            "blockId": "postgraduate-management199-01-q13-source-block",
+            "title": "原创命题记录 13",
+            "exact": "袋中3红2白球，无放回抽2球，恰有1红1白的概率为："
+          },
+          "chapter": "概率",
+          "tags": [
+            "概率"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；有利组合3×2，总C(5,2)=10，概率6/10。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1/5"
+            },
+            {
+              "id": "B",
+              "text": "2/5"
+            },
+            {
+              "id": "C",
+              "text": "3/5"
+            },
+            {
+              "id": "D",
+              "text": "4/5"
+            },
+            {
+              "id": "E",
+              "text": "1/2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q14",
+          "number": 14,
+          "type": "choice",
+          "prompt": "正数x、y满足x+y=10，xy的最大值为：",
+          "score": 3,
+          "solution": "D",
+          "explanation": "xy≤[(x+y)/2]²=25，x=y=5取等。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q14-source",
+            "blockId": "postgraduate-management199-01-q14-source-block",
+            "title": "原创命题记录 14",
+            "exact": "正数x、y满足x+y=10，xy的最大值为："
+          },
+          "chapter": "均值不等式",
+          "tags": [
+            "均值不等式"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "均值不等式"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；xy≤[(x+y)/2]²=25，x=y=5取等。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "10"
+            },
+            {
+              "id": "B",
+              "text": "20"
+            },
+            {
+              "id": "C",
+              "text": "24"
+            },
+            {
+              "id": "D",
+              "text": "25"
+            },
+            {
+              "id": "E",
+              "text": "100"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q15",
+          "number": 15,
+          "type": "choice",
+          "prompt": "甲车以60千米/时走一半路程，以40千米/时走另一半，总平均速度为：",
+          "score": 3,
+          "solution": "E",
+          "explanation": "等距平均是调和平均2/(1/60+1/40)=48。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q15-source",
+            "blockId": "postgraduate-management199-01-q15-source-block",
+            "title": "原创命题记录 15",
+            "exact": "甲车以60千米/时走一半路程，以40千米/时走另一半，总平均速度为："
+          },
+          "chapter": "行程",
+          "tags": [
+            "行程"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "行程"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "独立建模求值并核对五个选项；等距平均是调和平均2/(1/60+1/40)=48。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "45"
+            },
+            {
+              "id": "B",
+              "text": "46"
+            },
+            {
+              "id": "C",
+              "text": "50"
+            },
+            {
+              "id": "D",
+              "text": "52"
+            },
+            {
+              "id": "E",
+              "text": "48"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sufficiency",
+      "title": "一、数学基础·条件充分性判断",
+      "examPartId": "math-sufficiency",
+      "instructions": "每题给两个条件。A：条件1充分、条件2不充分；B：条件2充分、条件1不充分；C：两条件合并充分、各自不充分；D：各自都充分；E：合并仍不充分。每题3分。",
+      "score": 30,
+      "questions": [
+        {
+          "id": "postgraduate-management199-01-q16",
+          "number": 16,
+          "type": "choice",
+          "prompt": "判断实数x是否为正数。\n（1）x³>0；（2）x²>0。",
+          "score": 3,
+          "solution": "A",
+          "explanation": "立方函数保号，条件1充分；平方正只能排除0，x=±1均可，条件2不充分。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q16-source",
+            "blockId": "postgraduate-management199-01-q16-source-block",
+            "title": "原创命题记录 16",
+            "exact": "判断实数x是否为正数。\n（1）x³>0；（2）x²>0。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；立方函数保号，条件1充分；平方正只能排除0，x=±1均可，条件2不充分。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q17",
+          "number": 17,
+          "type": "choice",
+          "prompt": "确定全程平均速度（全程时间为正）。\n（1）第一小时速度为40千米/时；（2）全程80千米，总用时2小时。",
+          "score": 3,
+          "solution": "B",
+          "explanation": "条件2直接给平均40；第一小时不能确定之后行程。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q17-source",
+            "blockId": "postgraduate-management199-01-q17-source-block",
+            "title": "原创命题记录 17",
+            "exact": "确定全程平均速度（全程时间为正）。\n（1）第一小时速度为40千米/时；（2）全程80千米，总用时2小时。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；条件2直接给平均40；第一小时不能确定之后行程。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q18",
+          "number": 18,
+          "type": "choice",
+          "prompt": "判断整数n是否为偶数。\n（1）n²为偶数；（2）n是4的倍数。",
+          "score": 3,
+          "solution": "D",
+          "explanation": "平方偶当且仅当n偶；4的倍数也必偶，两条件各自充分。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q18-source",
+            "blockId": "postgraduate-management199-01-q18-source-block",
+            "title": "原创命题记录 18",
+            "exact": "判断整数n是否为偶数。\n（1）n²为偶数；（2）n是4的倍数。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；平方偶当且仅当n偶；4的倍数也必偶，两条件各自充分。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q19",
+          "number": 19,
+          "type": "choice",
+          "prompt": "确定实数x的值。\n（1）x+y=10；（2）x−y=2。",
+          "score": 3,
+          "solution": "C",
+          "explanation": "单一方程x不定；联立得x=6。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q19-source",
+            "blockId": "postgraduate-management199-01-q19-source-block",
+            "title": "原创命题记录 19",
+            "exact": "确定实数x的值。\n（1）x+y=10；（2）x−y=2。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；单一方程x不定；联立得x=6。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q20",
+          "number": 20,
+          "type": "choice",
+          "prompt": "判断非零实数x、y的积是否大于0。\n（1）x+y>0；（2）x−y>0。",
+          "score": 3,
+          "solution": "E",
+          "explanation": "合并也不充分：(2,1)积正、(2,−1)积负，均满足两条件。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q20-source",
+            "blockId": "postgraduate-management199-01-q20-source-block",
+            "title": "原创命题记录 20",
+            "exact": "判断非零实数x、y的积是否大于0。\n（1）x+y>0；（2）x−y>0。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；合并也不充分：(2,1)积正、(2,−1)积负，均满足两条件。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q21",
+          "number": 21,
+          "type": "choice",
+          "prompt": "判断实数x是否等于1。\n（1）x²=1；（2）x≥1。",
+          "score": 3,
+          "solution": "C",
+          "explanation": "条件1含±1，条件2含1与2；合并只有1。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q21-source",
+            "blockId": "postgraduate-management199-01-q21-source-block",
+            "title": "原创命题记录 21",
+            "exact": "判断实数x是否等于1。\n（1）x²=1；（2）x≥1。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；条件1含±1，条件2含1与2；合并只有1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q22",
+          "number": 22,
+          "type": "choice",
+          "prompt": "判断某三角形是否为等腰三角形。\n（1）边长为3、3、4；（2）有两个内角相等。",
+          "score": 3,
+          "solution": "D",
+          "explanation": "相等两边或相等两角各自足以判等腰，均满足三角形存在。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q22-source",
+            "blockId": "postgraduate-management199-01-q22-source-block",
+            "title": "原创命题记录 22",
+            "exact": "判断某三角形是否为等腰三角形。\n（1）边长为3、3、4；（2）有两个内角相等。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；相等两边或相等两角各自足以判等腰，均满足三角形存在。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q23",
+          "number": 23,
+          "type": "choice",
+          "prompt": "确定某等差数列首项。\n（1）前两项和为10；（2）公差为2。",
+          "score": 3,
+          "solution": "C",
+          "explanation": "两条件联立2a1+2=10，得a1=4；各自不能唯一确定。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q23-source",
+            "blockId": "postgraduate-management199-01-q23-source-block",
+            "title": "原创命题记录 23",
+            "exact": "确定某等差数列首项。\n（1）前两项和为10；（2）公差为2。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；两条件联立2a1+2=10，得a1=4；各自不能唯一确定。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q24",
+          "number": 24,
+          "type": "choice",
+          "prompt": "确定某矩形面积。\n（1）周长20；（2）一边长4。",
+          "score": 3,
+          "solution": "C",
+          "explanation": "合并两边为4、6，面积24；各自留下另一维自由。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q24-source",
+            "blockId": "postgraduate-management199-01-q24-source-block",
+            "title": "原创命题记录 24",
+            "exact": "确定某矩形面积。\n（1）周长20；（2）一边长4。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；合并两边为4、6，面积24；各自留下另一维自由。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q25",
+          "number": 25,
+          "type": "choice",
+          "prompt": "判断非零实数x是否为正。\n（1）x>2；（2）x>3。",
+          "score": 3,
+          "solution": "D",
+          "explanation": "各自均推出x>0，且不要求确定x具体值。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q25-source",
+            "blockId": "postgraduate-management199-01-q25-source-block",
+            "title": "原创命题记录 25",
+            "exact": "判断非零实数x是否为正。\n（1）x>2；（2）x>3。"
+          },
+          "chapter": "条件充分性",
+          "tags": [
+            "条件充分性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "条件充分性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "分别构造单条件与合并条件的可行集合；各自均推出x>0，且不要求确定x具体值。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "条件1充分，条件2不充分"
+            },
+            {
+              "id": "B",
+              "text": "条件2充分，条件1不充分"
+            },
+            {
+              "id": "C",
+              "text": "两条件合并充分，各自不充分"
+            },
+            {
+              "id": "D",
+              "text": "各自都充分"
+            },
+            {
+              "id": "E",
+              "text": "两条件合并仍不充分"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "management-math-methods",
+                "blockId": "management-math-methods-block",
+                "title": "数学基础核对（作者概述）",
+                "exact": "数量关系按单位、比例与定义域建模；条件充分性分别检验单条件、合并条件与反例；行程平均速度以总路程除总时间计算。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logic",
+      "title": "二、逻辑推理",
+      "examPartId": "logic",
+      "instructions": "第26—55题，每题2分。依据题干与一般推理规则选择最佳答案。",
+      "score": 60,
+      "questions": [
+        {
+          "id": "postgraduate-management199-01-q26",
+          "number": 26,
+          "type": "choice",
+          "prompt": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "令本周设备为W、通过复核为R、可出库为D；R⊆D且W∩R非空，故W∩D非空。其余均反转或扩大全称。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q26-source",
+            "blockId": "postgraduate-management199-01-q26-source-block",
+            "title": "原创命题记录 26",
+            "exact": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；令本周设备为W、通过复核为R、可出库为D；R⊆D且W∩R非空，故W∩D非空。其余均反转或扩大全称。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "有些本周生产的设备可以出库"
+            },
+            {
+              "id": "B",
+              "text": "所有可以出库的设备都在本周生产"
+            },
+            {
+              "id": "C",
+              "text": "没有本周设备未通过复核"
+            },
+            {
+              "id": "D",
+              "text": "所有本周设备都可以出库"
+            },
+            {
+              "id": "E",
+              "text": "所有未出库设备均不安全"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q27",
+          "number": 27,
+          "type": "choice",
+          "prompt": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "P→Q与¬Q推出¬P；未延期不等于提前，不能倒推。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q27-source",
+            "blockId": "postgraduate-management199-01-q27-source-block",
+            "title": "原创命题记录 27",
+            "exact": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；P→Q与¬Q推出¬P；未延期不等于提前，不能倒推。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "项目必定延期"
+            },
+            {
+              "id": "B",
+              "text": "项目没有延期"
+            },
+            {
+              "id": "C",
+              "text": "增加预算就会延期"
+            },
+            {
+              "id": "D",
+              "text": "所有项目均不延期"
+            },
+            {
+              "id": "E",
+              "text": "项目一定提前完成"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q28",
+          "number": 28,
+          "type": "choice",
+          "prompt": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "“只有A才B”表示B→A；由B可得A，不得反转。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q28-source",
+            "blockId": "postgraduate-management199-01-q28-source-block",
+            "title": "原创命题记录 28",
+            "exact": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；“只有A才B”表示B→A；由B可得A，不得反转。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "小林没有完成培训"
+            },
+            {
+              "id": "B",
+              "text": "完成培训者都独立上岗"
+            },
+            {
+              "id": "C",
+              "text": "小林完成了培训"
+            },
+            {
+              "id": "D",
+              "text": "小林培训成绩最高"
+            },
+            {
+              "id": "E",
+              "text": "培训是上岗的充分条件"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q29",
+          "number": 29,
+          "type": "choice",
+          "prompt": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "甲与乙的两句话互否，必一真；要总计两真，丙的“乙值班”须真，故乙值班。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q29-source",
+            "blockId": "postgraduate-management199-01-q29-source-block",
+            "title": "原创命题记录 29",
+            "exact": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；甲与乙的两句话互否，必一真；要总计两真，丙的“乙值班”须真，故乙值班。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "甲"
+            },
+            {
+              "id": "B",
+              "text": "丙"
+            },
+            {
+              "id": "C",
+              "text": "无法判断"
+            },
+            {
+              "id": "D",
+              "text": "乙"
+            },
+            {
+              "id": "E",
+              "text": "甲与乙"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q30",
+          "number": 30,
+          "type": "choice",
+          "prompt": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "相关不等于因果；学习动力可为共同原因，且观察群体均值不能保证每个人的干预效果。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q30-source",
+            "blockId": "postgraduate-management199-01-q30-source-block",
+            "title": "原创命题记录 30",
+            "exact": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；相关不等于因果；学习动力可为共同原因，且观察群体均值不能保证每个人的干预效果。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "图书馆需要经费"
+            },
+            {
+              "id": "B",
+              "text": "学生有不同专业"
+            },
+            {
+              "id": "C",
+              "text": "原有学习动力可能同时影响图书馆使用与成绩"
+            },
+            {
+              "id": "D",
+              "text": "所有学校都设图书馆"
+            },
+            {
+              "id": "E",
+              "text": "成绩可以用分数记录"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q31",
+          "number": 31,
+          "type": "choice",
+          "prompt": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？",
+          "score": 2,
+          "solution": "D",
+          "explanation": "同期停产是能耗下降的强竞争解释，未控制生产强度无法归因。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q31-source",
+            "blockId": "postgraduate-management199-01-q31-source-block",
+            "title": "原创命题记录 31",
+            "exact": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？"
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；同期停产是能耗下降的强竞争解释，未控制生产强度无法归因。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "灯具可调光"
+            },
+            {
+              "id": "B",
+              "text": "员工喜欢新灯"
+            },
+            {
+              "id": "C",
+              "text": "照明占原能耗的30%"
+            },
+            {
+              "id": "D",
+              "text": "同一时期工厂停产一个月，而比较未调整产量与开工时间"
+            },
+            {
+              "id": "E",
+              "text": "经理保存了账单"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q32",
+          "number": 32,
+          "type": "choice",
+          "prompt": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？",
+          "score": 2,
+          "solution": "A",
+          "explanation": "有未满足的周末空间需求且被闭馆直接限制，连接延时与增加实际机会。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q32-source",
+            "blockId": "postgraduate-management199-01-q32-source-block",
+            "title": "原创命题记录 32",
+            "exact": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？"
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；有未满足的周末空间需求且被闭馆直接限制，连接延时与增加实际机会。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "周末现有座位在闭馆前仍满员，且有学生因闭馆离开"
+            },
+            {
+              "id": "B",
+              "text": "图书馆墙面新近刷漆"
+            },
+            {
+              "id": "C",
+              "text": "教师平均年龄增加"
+            },
+            {
+              "id": "D",
+              "text": "某些学生不喜欢纸书"
+            },
+            {
+              "id": "E",
+              "text": "开放时间曾在十年前调整"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q33",
+          "number": 33,
+          "type": "choice",
+          "prompt": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "丙只能周二（需甲在前且非周四）；甲周一，丁周三，乙周四。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q33-source",
+            "blockId": "postgraduate-management199-01-q33-source-block",
+            "title": "原创命题记录 33",
+            "exact": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；丙只能周二（需甲在前且非周四）；甲周一，丁周三，乙周四。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "甲"
+            },
+            {
+              "id": "B",
+              "text": "乙"
+            },
+            {
+              "id": "C",
+              "text": "丙"
+            },
+            {
+              "id": "D",
+              "text": "丁"
+            },
+            {
+              "id": "E",
+              "text": "无法确定"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q34",
+          "number": 34,
+          "type": "choice",
+          "prompt": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "全称命题∀x(Q→B)的否定为∃x(Q且¬B)。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q34-source",
+            "blockId": "postgraduate-management199-01-q34-source-block",
+            "title": "原创命题记录 34",
+            "exact": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；全称命题∀x(Q→B)的否定为∃x(Q且¬B)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "所有蓝色样品均合格"
+            },
+            {
+              "id": "B",
+              "text": "没有蓝色样品"
+            },
+            {
+              "id": "C",
+              "text": "至少有一个合格样品不是蓝色"
+            },
+            {
+              "id": "D",
+              "text": "有一个不合格样品是蓝色"
+            },
+            {
+              "id": "E",
+              "text": "有一个样品颜色未知"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q35",
+          "number": 35,
+          "type": "choice",
+          "prompt": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "自愿参加者可能更关注健康知识，选择偏差不能由扩大同类样本自动消除。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q35-source",
+            "blockId": "postgraduate-management199-01-q35-source-block",
+            "title": "原创命题记录 35",
+            "exact": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；自愿参加者可能更关注健康知识，选择偏差不能由扩大同类样本自动消除。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "签到会耗费纸张"
+            },
+            {
+              "id": "B",
+              "text": "讲座不是每天举行"
+            },
+            {
+              "id": "C",
+              "text": "问卷可以打印"
+            },
+            {
+              "id": "D",
+              "text": "抽样框可能系统排除不关注健康讲座者"
+            },
+            {
+              "id": "E",
+              "text": "访问人数不是整数"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q36",
+          "number": 36,
+          "type": "choice",
+          "prompt": "“如果今晚下雨，比赛就改期”的逻辑等价表述是：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "P→Q等价¬P∨Q；不是逆命题。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q36-source",
+            "blockId": "postgraduate-management199-01-q36-source-block",
+            "title": "原创命题记录 36",
+            "exact": "“如果今晚下雨，比赛就改期”的逻辑等价表述是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；P→Q等价¬P∨Q；不是逆命题。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "今晚不下雨或比赛改期"
+            },
+            {
+              "id": "B",
+              "text": "今晚下雨且比赛改期"
+            },
+            {
+              "id": "C",
+              "text": "比赛改期就下雨"
+            },
+            {
+              "id": "D",
+              "text": "今晚不下雨且比赛不改期"
+            },
+            {
+              "id": "E",
+              "text": "今晚下雨或比赛不改期"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q37",
+          "number": 37,
+          "type": "choice",
+          "prompt": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "乙与丙的语句互为否定，必一真；要总共一真，甲句须假，故乙获奖。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q37-source",
+            "blockId": "postgraduate-management199-01-q37-source-block",
+            "title": "原创命题记录 37",
+            "exact": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；乙与丙的语句互为否定，必一真；要总共一真，甲句须假，故乙获奖。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "甲"
+            },
+            {
+              "id": "B",
+              "text": "乙"
+            },
+            {
+              "id": "C",
+              "text": "丙"
+            },
+            {
+              "id": "D",
+              "text": "甲或乙"
+            },
+            {
+              "id": "E",
+              "text": "无法确定"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q38",
+          "number": 38,
+          "type": "choice",
+          "prompt": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "随机分配降低组间混杂，结果须记录复诊率而非发送量或态度。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q38-source",
+            "blockId": "postgraduate-management199-01-q38-source-block",
+            "title": "原创命题记录 38",
+            "exact": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；随机分配降低组间混杂，结果须记录复诊率而非发送量或态度。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "比较愿用提醒者与拒绝者"
+            },
+            {
+              "id": "B",
+              "text": "只访问按时复诊者"
+            },
+            {
+              "id": "C",
+              "text": "将符合条件者随机分组，除提醒方式外尽量保持一致"
+            },
+            {
+              "id": "D",
+              "text": "只记录提醒发送量"
+            },
+            {
+              "id": "E",
+              "text": "询问医生是否喜欢新系统"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q39",
+          "number": 39,
+          "type": "choice",
+          "prompt": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？",
+          "score": 2,
+          "solution": "D",
+          "explanation": "仅B满足A∨B、A→¬C、¬B→C；逐项代入其余选项均冲突。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q39-source",
+            "blockId": "postgraduate-management199-01-q39-source-block",
+            "title": "原创命题记录 39",
+            "exact": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？"
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；仅B满足A∨B、A→¬C、¬B→C；逐项代入其余选项均冲突。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "仅A"
+            },
+            {
+              "id": "B",
+              "text": "仅C"
+            },
+            {
+              "id": "C",
+              "text": "A和C"
+            },
+            {
+              "id": "D",
+              "text": "仅B"
+            },
+            {
+              "id": "E",
+              "text": "A、B、C"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q40",
+          "number": 40,
+          "type": "choice",
+          "prompt": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "从投诉数推质量须排除渠道、意愿、服务量等可比性差异，不能用投诉少独立证明。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q40-source",
+            "blockId": "postgraduate-management199-01-q40-source-block",
+            "title": "原创命题记录 40",
+            "exact": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；从投诉数推质量须排除渠道、意愿、服务量等可比性差异，不能用投诉少独立证明。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "投诉从来不存在情绪因素"
+            },
+            {
+              "id": "B",
+              "text": "两年的投诉渠道和投诉意愿等足以使投诉数可比"
+            },
+            {
+              "id": "C",
+              "text": "前年没有服务人员"
+            },
+            {
+              "id": "D",
+              "text": "服务质量不能改进"
+            },
+            {
+              "id": "E",
+              "text": "去年服务人数为零"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q41",
+          "number": 41,
+          "type": "choice",
+          "prompt": "若所有A都是B，所有B都是C，则以下关系必然成立：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "集合包含具有传递性；全称关系不额外承诺A非空。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q41-source",
+            "blockId": "postgraduate-management199-01-q41-source-block",
+            "title": "原创命题记录 41",
+            "exact": "若所有A都是B，所有B都是C，则以下关系必然成立："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；集合包含具有传递性；全称关系不额外承诺A非空。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "所有C都是A"
+            },
+            {
+              "id": "B",
+              "text": "有些A不是C"
+            },
+            {
+              "id": "C",
+              "text": "所有A都是C"
+            },
+            {
+              "id": "D",
+              "text": "所有C都不是B"
+            },
+            {
+              "id": "E",
+              "text": "A必定存在"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q42",
+          "number": 42,
+          "type": "choice",
+          "prompt": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "选择性试点和少量社区不足支持全国逐社区同效的全称外推。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q42-source",
+            "blockId": "postgraduate-management199-01-q42-source-block",
+            "title": "原创命题记录 42",
+            "exact": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；选择性试点和少量社区不足支持全国逐社区同效的全称外推。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "应查看满意度测量方式"
+            },
+            {
+              "id": "B",
+              "text": "应考虑报名社区的特点"
+            },
+            {
+              "id": "C",
+              "text": "可继续研究不同社区"
+            },
+            {
+              "id": "D",
+              "text": "政策必然在全国每个社区产生相同提升"
+            },
+            {
+              "id": "E",
+              "text": "可比较试点前后数据"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q43",
+          "number": 43,
+          "type": "choice",
+          "prompt": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "用析因/对照设计分离措施及交互作用；总前后变化不能区分。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q43-source",
+            "blockId": "postgraduate-management199-01-q43-source-block",
+            "title": "原创命题记录 43",
+            "exact": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；用析因/对照设计分离措施及交互作用；总前后变化不能区分。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "设置只降价、只延时、两者皆无等可比组并观察变化"
+            },
+            {
+              "id": "B",
+              "text": "只问店主喜欢哪项"
+            },
+            {
+              "id": "C",
+              "text": "删除所有旧账单"
+            },
+            {
+              "id": "D",
+              "text": "只记录总销售额"
+            },
+            {
+              "id": "E",
+              "text": "将营业时间记为价格"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q44",
+          "number": 44,
+          "type": "choice",
+          "prompt": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "只有ABE同时满足E在、A→B、¬(C∧D)。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q44-source",
+            "blockId": "postgraduate-management199-01-q44-source-block",
+            "title": "原创命题记录 44",
+            "exact": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；只有ABE同时满足E在、A→B、¬(C∧D)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "A、C、E"
+            },
+            {
+              "id": "B",
+              "text": "C、D、E"
+            },
+            {
+              "id": "C",
+              "text": "A、B、E"
+            },
+            {
+              "id": "D",
+              "text": "A、B、C"
+            },
+            {
+              "id": "E",
+              "text": "B、C、D"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q45",
+          "number": 45,
+          "type": "choice",
+          "prompt": "有人把“可能发生”解释为“必定发生”。其推论错误在于：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "◇P不能推出□P，须保留可能与必然的强度差别。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q45-source",
+            "blockId": "postgraduate-management199-01-q45-source-block",
+            "title": "原创命题记录 45",
+            "exact": "有人把“可能发生”解释为“必定发生”。其推论错误在于："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；◇P不能推出□P，须保留可能与必然的强度差别。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "否定所有可能性"
+            },
+            {
+              "id": "B",
+              "text": "将模态可能性强化为必然性"
+            },
+            {
+              "id": "C",
+              "text": "对概念进行了定义"
+            },
+            {
+              "id": "D",
+              "text": "使用了条件命题"
+            },
+            {
+              "id": "E",
+              "text": "引用了统计样本"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q46",
+          "number": 46,
+          "type": "choice",
+          "prompt": "医生建议某人复查。此人说：“需要复查的人中有人最终健康，所以我不用复查。”最直接的反驳是：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "存在量词事实不能支持关于该个体无需检查的结论；不需断言其健康状态。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q46-source",
+            "blockId": "postgraduate-management199-01-q46-source-block",
+            "title": "原创命题记录 46",
+            "exact": "医生建议某人复查。此人说：“需要复查的人中有人最终健康，所以我不用复查。”最直接的反驳是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；存在量词事实不能支持关于该个体无需检查的结论；不需断言其健康状态。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "存在健康复查者不能推出此人无需复查"
+            },
+            {
+              "id": "B",
+              "text": "所有复查者最终都不健康"
+            },
+            {
+              "id": "C",
+              "text": "健康者从不检查"
+            },
+            {
+              "id": "D",
+              "text": "建议不能被理解"
+            },
+            {
+              "id": "E",
+              "text": "此人必定患病"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q47",
+          "number": 47,
+          "type": "choice",
+          "prompt": "某校学生平均每天运动40分钟，据此断言每名学生都运动40分钟。问题在于：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "平均值不蕴含个体相等；20与60的均值也是40。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q47-source",
+            "blockId": "postgraduate-management199-01-q47-source-block",
+            "title": "原创命题记录 47",
+            "exact": "某校学生平均每天运动40分钟，据此断言每名学生都运动40分钟。问题在于："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；平均值不蕴含个体相等；20与60的均值也是40。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "40不是整数"
+            },
+            {
+              "id": "B",
+              "text": "运动不能计时"
+            },
+            {
+              "id": "C",
+              "text": "把群体平均值当成每个成员的值"
+            },
+            {
+              "id": "D",
+              "text": "学校没有学生"
+            },
+            {
+              "id": "E",
+              "text": "平均值必等于最大值"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q48",
+          "number": 48,
+          "type": "choice",
+          "prompt": "甲乙两店出售同款商品。甲店价格高，但成交更多。下列哪项最能解释这一现象？",
+          "score": 2,
+          "solution": "D",
+          "explanation": "总交易价值含服务，高价格与更多成交可由附加价值同时解释。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q48-source",
+            "blockId": "postgraduate-management199-01-q48-source-block",
+            "title": "原创命题记录 48",
+            "exact": "甲乙两店出售同款商品。甲店价格高，但成交更多。下列哪项最能解释这一现象？"
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；总交易价值含服务，高价格与更多成交可由附加价值同时解释。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "商品有包装"
+            },
+            {
+              "id": "B",
+              "text": "两店都有收银台"
+            },
+            {
+              "id": "C",
+              "text": "甲店每天开门"
+            },
+            {
+              "id": "D",
+              "text": "甲店提供对顾客很有价值的安装与保修，乙店不提供"
+            },
+            {
+              "id": "E",
+              "text": "商品价格可以比较"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q49",
+          "number": 49,
+          "type": "choice",
+          "prompt": "一个论证把“经济增长快”与“社会所有方面都进步”当作同一概念。其主要问题是：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "经济指标只是社会评价的部分维度，不能无论证扩大为全部方面。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q49-source",
+            "blockId": "postgraduate-management199-01-q49-source-block",
+            "title": "原创命题记录 49",
+            "exact": "一个论证把“经济增长快”与“社会所有方面都进步”当作同一概念。其主要问题是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；经济指标只是社会评价的部分维度，不能无论证扩大为全部方面。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "偷换了评价范围不同的概念"
+            },
+            {
+              "id": "B",
+              "text": "正确运用充分条件"
+            },
+            {
+              "id": "C",
+              "text": "进行同义改写"
+            },
+            {
+              "id": "D",
+              "text": "使用了互斥命题"
+            },
+            {
+              "id": "E",
+              "text": "只出现一次概念"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q50",
+          "number": 50,
+          "type": "choice",
+          "prompt": "在甲乙丙三项任务中，至少完成两项；完成甲则未完成乙；未完成丙则完成乙。以下必然成立：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "若丙未完成，要至少两项则甲乙都完成，与甲→¬乙冲突；故丙必成。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q50-source",
+            "blockId": "postgraduate-management199-01-q50-source-block",
+            "title": "原创命题记录 50",
+            "exact": "在甲乙丙三项任务中，至少完成两项；完成甲则未完成乙；未完成丙则完成乙。以下必然成立："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；若丙未完成，要至少两项则甲乙都完成，与甲→¬乙冲突；故丙必成。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "甲完成"
+            },
+            {
+              "id": "B",
+              "text": "乙未完成"
+            },
+            {
+              "id": "C",
+              "text": "三项都完成"
+            },
+            {
+              "id": "D",
+              "text": "丙完成"
+            },
+            {
+              "id": "E",
+              "text": "乙完成"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q51",
+          "number": 51,
+          "type": "choice",
+          "prompt": "某设备故障率从2%降到1%。以下表达准确的是：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "百分点差2−1=1，相对变化(2−1)/2=50%；群体率不保证每个设备。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q51-source",
+            "blockId": "postgraduate-management199-01-q51-source-block",
+            "title": "原创命题记录 51",
+            "exact": "某设备故障率从2%降到1%。以下表达准确的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；百分点差2−1=1，相对变化(2−1)/2=50%；群体率不保证每个设备。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "下降1%且没有歧义"
+            },
+            {
+              "id": "B",
+              "text": "相对下降1个百分点"
+            },
+            {
+              "id": "C",
+              "text": "下降1个百分点，相对下降50%"
+            },
+            {
+              "id": "D",
+              "text": "故障减少为零"
+            },
+            {
+              "id": "E",
+              "text": "所有设备均更可靠"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q52",
+          "number": 52,
+          "type": "choice",
+          "prompt": "某人声称“凡未被证伪的说法都是真的”。最能说明问题的是：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "无知诉求：未证伪不蕴含已证实，尤其在未充分检验时。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q52-source",
+            "blockId": "postgraduate-management199-01-q52-source-block",
+            "title": "原创命题记录 52",
+            "exact": "某人声称“凡未被证伪的说法都是真的”。最能说明问题的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；无知诉求：未证伪不蕴含已证实，尤其在未充分检验时。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "证据不能被观察"
+            },
+            {
+              "id": "B",
+              "text": "缺少反证不等于已有足够支持证据"
+            },
+            {
+              "id": "C",
+              "text": "所有说法都是假的"
+            },
+            {
+              "id": "D",
+              "text": "所有真说法都未被提出"
+            },
+            {
+              "id": "E",
+              "text": "没有人使用语言"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q53",
+          "number": 53,
+          "type": "choice",
+          "prompt": "A、B、C三箱中恰有一箱装样品。标签分别写“A箱装样品”“B箱不装样品”“A箱不装样品”，恰有两句真。样品在：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "第一与第三互否，一真；第二也须真，故B无样品，A/C皆可。选D是明确的析取结论。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q53-source",
+            "blockId": "postgraduate-management199-01-q53-source-block",
+            "title": "原创命题记录 53",
+            "exact": "A、B、C三箱中恰有一箱装样品。标签分别写“A箱装样品”“B箱不装样品”“A箱不装样品”，恰有两句真。样品在："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；第一与第三互否，一真；第二也须真，故B无样品，A/C皆可。选D是明确的析取结论。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "A箱"
+            },
+            {
+              "id": "B",
+              "text": "B箱"
+            },
+            {
+              "id": "C",
+              "text": "C箱"
+            },
+            {
+              "id": "D",
+              "text": "A或C箱"
+            },
+            {
+              "id": "E",
+              "text": "三箱均无样品"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q54",
+          "number": 54,
+          "type": "choice",
+          "prompt": "论证认为“如果培训有效，成绩会上升；成绩上升了，所以培训有效”。该形式为：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "P→Q,Q不能推出P；其他因素也可能使Q发生。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q54-source",
+            "blockId": "postgraduate-management199-01-q54-source-block",
+            "title": "原创命题记录 54",
+            "exact": "论证认为“如果培训有效，成绩会上升；成绩上升了，所以培训有效”。该形式为："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；P→Q,Q不能推出P；其他因素也可能使Q发生。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "有效的否定后件"
+            },
+            {
+              "id": "B",
+              "text": "有效的肯定前件"
+            },
+            {
+              "id": "C",
+              "text": "否定前件错误"
+            },
+            {
+              "id": "D",
+              "text": "肯定后件错误"
+            },
+            {
+              "id": "E",
+              "text": "选言消去"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-management199-01-q55",
+          "number": 55,
+          "type": "choice",
+          "prompt": "一项研究先公开分析方案，然后按方案报告全部主要结果。这样做最直接有助于：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "预先记录可提高分析透明度，但不自动保证测量、样本、因果与结论。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q55-source",
+            "blockId": "postgraduate-management199-01-q55-source-block",
+            "title": "原创命题记录 55",
+            "exact": "一项研究先公开分析方案，然后按方案报告全部主要结果。这样做最直接有助于："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件、枚举可行情形或逐项检查论证关联；预先记录可提高分析透明度，但不自动保证测量、样本、因果与结论。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "使所有结论自动为真"
+            },
+            {
+              "id": "B",
+              "text": "区分事先计划的分析与看数据后的选择"
+            },
+            {
+              "id": "C",
+              "text": "保证样本代表全国"
+            },
+            {
+              "id": "D",
+              "text": "免除测量有效性检查"
+            },
+            {
+              "id": "E",
+              "text": "禁止解释数据"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "argument-analysis",
+      "title": "写作一、论证有效性分析",
+      "examPartId": "analysis",
+      "instructions": "分析下述论证中的缺陷，选择若干要点，写一篇约600字的文章，评论其论证有效性。",
+      "score": 30,
+      "questions": [
+        {
+          "id": "postgraduate-management199-01-q56",
+          "number": 56,
+          "type": "response",
+          "prompt": "评论给定材料的论证有效性，写一篇约600字的文章。",
+          "score": 30,
+          "solution": "这段广告在样本代表性、指标关系、类比条件及效果评价方面存在多处跳跃。第一，主动填写问卷的50人可能与未回复者不同；‘觉得有帮助’也不等于一次通过考试，90%的满意比例不能直接充当全体考生通过率。第二，报名人数受宣传、价格、考试热度等多因素影响，增长20%不能量化为教学质量提高20%。第三，另一机构直播后收入翻倍不能证明翻倍由直播引起，更不能保证本机构照搬后同效，两家机构的生源、定价、师资与同期变化都需比较。第四，样本仅含能看直播者，不能据此否认网络不稳定用户的需要，取消下载可能使需求者被排除。第五，只招基础好的学员改变了入学人群，即使通过率上升，也可能源于生源变化；评价新课程的增量效果需要可比学员、明确结果、合适对照与完整随访。若要估计通过率，至少应记录报名者的实际考试结果、缺考与失访情况，并交代调查覆盖和统计口径。\n广告中的三个变化也不宜拼接成同一条证据链。报名人数是需求指标，收入受人数和单价共同影响，通过率又以实际应考人数为分母；它们并非可以相互替换的教学效果指标。全改直播还涉及成本、互动质量与用户可达性，不能只因别人的收入变化就决定。\n最后，不能把排除困难学员当作改善教学的充分证据。若新旧课程面对不同基础、不同备考时间的学员，就需要在相近条件下比较进步，或采用合适的对照设计。评价不仅应问最后有多少人通过，还应问课程使原本相近的学员获得了多少额外帮助。\n因此，在作出教学与商业决策前，应扩大并说明调查覆盖，区分满意度、通过率和收入指标，控制可比条件并保留多种交付方式。材料可以提出值得试验的方案，却不足以支持对通过率和收入作必然保证。",
+          "explanation": "每点评分含‘指出具体前提/跳跃—解释为何不支持结论—说明需何证据’。只贴谬误名称而无材料分析，至多得该点的一半。可选择其他实质缺陷；不要求反对课程本身。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q56-source",
+            "blockId": "postgraduate-management199-01-q56-source-block",
+            "title": "原创命题记录 56",
+            "exact": "评论给定材料的论证有效性，写一篇约600字的文章。"
+          },
+          "chapter": "写作·论证有效性",
+          "tags": [
+            "写作·论证有效性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "写作·论证有效性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项重建论证的样本、指标、因果、类比与比较基线；参考答案未以相反断言取代证据。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "argument-analysis-passage",
+                "blockId": "argument-analysis-passage-block",
+                "title": "写作一、论证有效性分析材料",
+                "exact": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "识别满意度与通过率混同及自愿回访选择偏差，说明影响",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "识别报名人数增长不能量化为质量提高，给竞争解释",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "指出直播类比与因果归因不足，说明可比条件",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "指出可联网样本不能代表被排除者及下载需求",
+                "points": 6
+              },
+              {
+                "id": "r5",
+                "description": "指出生源筛选混杂，结构清晰并提出与缺陷对应的改进",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "minWords": 550,
+            "maxWords": 700,
+            "countUnit": "characters",
+            "answerStyle": "grid"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。",
+        "source": {
+          "materialId": "argument-analysis-passage",
+          "blockId": "argument-analysis-passage-block",
+          "title": "写作一、论证有效性分析材料",
+          "exact": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。"
+        }
+      }
+    },
+    {
+      "id": "essay",
+      "title": "写作二、论说文",
+      "examPartId": "essay",
+      "instructions": "根据材料自拟题目，写一篇约700字的论说文。",
+      "score": 35,
+      "questions": [
+        {
+          "id": "postgraduate-management199-01-q57",
+          "number": 57,
+          "type": "response",
+          "prompt": "围绕给定材料自拟题目，写一篇约700字论说文。",
+          "score": 35,
+          "solution": "让流程与判断形成闭环\n\n流程与个人判断常被看作彼此竞争的选择：依照流程似乎意味着放弃思考，鼓励判断又仿佛会削弱规则。实际上，有效组织需要两者承担不同任务，并通过责任机制相互补充。流程为常见情境提供可靠的起点，判断识别其适用边界，责任则使例外能够被说明、追踪和改进。\n\n流程首先降低了重复工作的风险。检查单、交接记录和操作顺序，把过去的经验转化为团队可以共同执行的步骤。新成员不必重新犯过所有错误，协作者也能知道前一环节完成了什么。这种共同语言有助于减少遗漏，避免工作质量完全取决于某个人当天的记忆和状态。因此，面对稳定而高频的任务，尊重流程是专业性的表现。\n\n但流程不能预先列出所有情况。环境、设备和需求不断变化，过去有效的步骤可能遇到新的条件。如果只问清单是否勾完，而不再观察现实，规则就可能偏离其原本保护的目标。例如工程质检人员完成常规项目后发现异常振动，即使清单没有这一条，也应保留证据、暂停交付并请求专业复核。继续观察异常不是任性，而是对流程目的负责。\n\n个人经验同样不能被神化。经验可能来自有限样本，也可能使人习惯于过去侥幸没有出事的做法。若任何人都能以“情况特殊”为由绕开程序，规则很快失去约束。因此，组织应规定谁有权作例外决定、达到什么风险阈值必须升级、需要记录哪些理由。让专业判断拥有空间，也让这种空间有清楚的边界。\n\n更重要的是把例外变成学习的入口。事后复盘不应只寻找承担责任的人，还应检视原有规则为何没有覆盖风险、哪些信号能更早出现，以及流程是否需要修订。合理的例外若反复发生，就提示共同规则应当更新；某种判断若持续失误，也需要训练和校正。\n\n可见，流程负责托底，判断负责应变，责任负责闭环。三者相连，组织才能既保持稳定，又不因机械执行而失去适应能力。真正可靠的工作方式，是让规则接受实践检验，让经验接受证据约束，并使每次改进留下下一次可以使用的知识。",
+          "explanation": "参考范文提供一种完整论证，不是唯一立意。与材料相关、论点明确且有充分论证的不同观点可按量表得分。以例代论、把流程或经验绝对化，应在相应论证项扣分。",
+          "source": {
+            "materialId": "postgraduate-management199-01-q57-source",
+            "blockId": "postgraduate-management199-01-q57-source-block",
+            "title": "原创命题记录 57",
+            "exact": "围绕给定材料自拟题目，写一篇约700字论说文。"
+          },
+          "chapter": "写作·论说文",
+          "tags": [
+            "写作·论说文"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "写作·论说文"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "核对主张—理由—例证—反方—结论链条；评分标准评价可观察论证行为，未把固定结论作为唯一答案。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "essay-passage",
+                "blockId": "essay-passage-block",
+                "title": "写作二、论说文材料",
+                "exact": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "立意准确，回应材料的两种极端并提出清晰主张",
+                "points": 8
+              },
+              {
+                "id": "r2",
+                "description": "围绕流程价值、局限及判断条件形成有因果支撑的论证",
+                "points": 10
+              },
+              {
+                "id": "r3",
+                "description": "具体例证及反方/边界讨论",
+                "points": 7
+              },
+              {
+                "id": "r4",
+                "description": "结构完整、衔接连贯、结论有依据",
+                "points": 6
+              },
+              {
+                "id": "r5",
+                "description": "语言准确、论述得体",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "minWords": 650,
+            "maxWords": 850,
+            "countUnit": "characters",
+            "answerStyle": "grid"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。",
+        "source": {
+          "materialId": "essay-passage",
+          "blockId": "essay-passage-block",
+          "title": "写作二、论说文材料",
+          "exact": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。"
+        }
+      }
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "management199-v7",
+    "sourceQuestionIds": [
+      "postgraduate-management199-01-q1",
+      "postgraduate-management199-01-q2",
+      "postgraduate-management199-01-q3",
+      "postgraduate-management199-01-q4",
+      "postgraduate-management199-01-q5",
+      "postgraduate-management199-01-q6",
+      "postgraduate-management199-01-q7",
+      "postgraduate-management199-01-q8",
+      "postgraduate-management199-01-q9",
+      "postgraduate-management199-01-q10",
+      "postgraduate-management199-01-q11",
+      "postgraduate-management199-01-q12",
+      "postgraduate-management199-01-q13",
+      "postgraduate-management199-01-q14",
+      "postgraduate-management199-01-q15",
+      "postgraduate-management199-01-q16",
+      "postgraduate-management199-01-q17",
+      "postgraduate-management199-01-q18",
+      "postgraduate-management199-01-q19",
+      "postgraduate-management199-01-q20",
+      "postgraduate-management199-01-q21",
+      "postgraduate-management199-01-q22",
+      "postgraduate-management199-01-q23",
+      "postgraduate-management199-01-q24",
+      "postgraduate-management199-01-q25",
+      "postgraduate-management199-01-q26",
+      "postgraduate-management199-01-q27",
+      "postgraduate-management199-01-q28",
+      "postgraduate-management199-01-q29",
+      "postgraduate-management199-01-q30",
+      "postgraduate-management199-01-q31",
+      "postgraduate-management199-01-q32",
+      "postgraduate-management199-01-q33",
+      "postgraduate-management199-01-q34",
+      "postgraduate-management199-01-q35",
+      "postgraduate-management199-01-q36",
+      "postgraduate-management199-01-q37",
+      "postgraduate-management199-01-q38",
+      "postgraduate-management199-01-q39",
+      "postgraduate-management199-01-q40",
+      "postgraduate-management199-01-q41",
+      "postgraduate-management199-01-q42",
+      "postgraduate-management199-01-q43",
+      "postgraduate-management199-01-q44",
+      "postgraduate-management199-01-q45",
+      "postgraduate-management199-01-q46",
+      "postgraduate-management199-01-q47",
+      "postgraduate-management199-01-q48",
+      "postgraduate-management199-01-q49",
+      "postgraduate-management199-01-q50",
+      "postgraduate-management199-01-q51",
+      "postgraduate-management199-01-q52",
+      "postgraduate-management199-01-q53",
+      "postgraduate-management199-01-q54",
+      "postgraduate-management199-01-q55",
+      "postgraduate-management199-01-q56",
+      "postgraduate-management199-01-q57"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创完整练习基准，采用所列考试结构；不是任何年份的官方原卷。题文、参考答案和评分要点为项目原创，MIT。外部资料仅作结构与知识核对，权利分别保留。"
+  },
+  "exam": {
+    "specificationId": "postgraduate-management199-blueprint",
+    "scope": "full",
+    "scoreScale": "卷面分",
+    "specification": {
+      "id": "postgraduate-management199-blueprint",
+      "name": "管理类综合能力（199）完整练习结构",
+      "subject": "管理类综合能力（199）",
+      "level": "考研",
+      "durationMinutes": 180,
+      "totalScore": 200,
+      "scoreScale": "卷面分",
+      "source": {
+        "kind": "published-syllabus-summary",
+        "title": "2022管理类综合能力考试大纲转载",
+        "url": "https://kaoyan.eol.cn/kao_shi_da_gang/zhuany/202109/t20210915_2155530.shtml",
+        "accessedAt": "2026-11-15",
+        "notes": "已逐项核对题型、题量、分值、180分钟及禁用计算器；原创题文独立于该转载。"
+      },
+      "sections": [
+        {
+          "id": "math-problem",
+          "title": "数学问题求解",
+          "count": 15,
+          "questionType": "choice",
+          "totalScore": 45,
+          "pointsPerQuestion": 3,
+          "displayStart": 1
+        },
+        {
+          "id": "math-sufficiency",
+          "title": "条件充分性判断",
+          "count": 10,
+          "questionType": "choice",
+          "totalScore": 30,
+          "pointsPerQuestion": 3,
+          "displayStart": 16
+        },
+        {
+          "id": "logic",
+          "title": "逻辑推理",
+          "count": 30,
+          "questionType": "choice",
+          "totalScore": 60,
+          "pointsPerQuestion": 2,
+          "displayStart": 26
+        },
+        {
+          "id": "analysis",
+          "title": "论证有效性分析",
+          "count": 1,
+          "questionType": "response",
+          "totalScore": 30,
+          "displayStart": 56
+        },
+        {
+          "id": "essay",
+          "title": "论说文",
+          "count": 1,
+          "questionType": "response",
+          "totalScore": 35,
+          "displayStart": 57
+        }
+      ]
+    }
+  }
+}

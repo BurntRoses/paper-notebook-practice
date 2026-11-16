@@ -1,0 +1,837 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "hydraulic-engineering-course-01",
+  "notebookId": "hydraulic-engineering-source",
+  "notebookRevision": 1,
+  "title": "水利水电工程基础课程考试",
+  "subject": "水利水电工程基础",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "水利水电工程基础课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "hydraulic-engineering-scope",
+      "title": "MIT 1.060 Engineering Mechanics II",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/",
+      "text": "This subject provides an introduction to fluid mechanics.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2006",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/1-060-engineering-mechanics-ii-spring-2006/"
+      }
+    },
+    {
+      "id": "hydraulic-engineering-q1-statement",
+      "title": "水利水电工程基础第1题命题原稿",
+      "kind": "question-bank",
+      "text": "水平水库在所考察范围内水面面积恒为$2.0\\times10^5$ m²。初始水位100.00 m。在接下来2小时内，入库流量按$Q_i(t)=50+10t$ m³/s变化，t以小时计，出库流量恒为40 m³/s。忽略降雨蒸发渗漏。（1）积分求2小时蓄量变化及水位；（2）若允许最高水位100.60 m，判断是否满足；（3）求使末水位恰为100.60 m的恒定出库流量。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "hydraulic-engineering-q2-statement",
+      "title": "水利水电工程基础第2题命题原稿",
+      "kind": "question-bank",
+      "text": "自由出流堰采用题给经验关系$Q=1.70bH^{3/2}$，Q用m³/s、b和H用m；系数已包含本题流量系数。现堰净宽5 m，堰上水头1.20 m。（1）求流量；（2）要在水头不超过1.20 m时泄流15 m³/s，所需最小净宽；（3）若错误地把同一系数当成无量纲，并额外乘$\\sqrt{2g}$，结果有何问题？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "hydraulic-engineering-q3-statement",
+      "title": "水利水电工程基础第3题命题原稿",
+      "kind": "question-bank",
+      "text": "水电机组净水头30 m、流量12 m³/s，水轮机效率0.88，发电机效率0.96。水密度1000 kg/m³、g=9.81 m/s²。一天内按上述工况连续运行8小时。（1）计算水轮机轴功率、机端电功率和发电量；（2）若上游毛水头34 m，求输水损失功率；（3）说明能否将净水头30 m再扣除4 m损失。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "hydraulic-engineering-q4-statement",
+      "title": "水利水电工程基础第4题命题原稿",
+      "kind": "question-bank",
+      "text": "宽度方向取每米的平底重力坝，坝基长20 m。坝底扬压力线性从上游100 kPa降至下游20 kPa。坝及上部荷载合计竖向向下3000 kN/m，合力作用于坝底中点。另有水平水推力500 kN/m，作用点距坝底8 m。忽略摩擦以外抗滑机制，接触面摩擦系数0.6。（1）求扬压力及其作用点；（2）求抗滑力与抗滑比；（3）求全部外力对下游趾的净稳定力矩，并区分水平滑动与转动判断。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "hydraulic-engineering-q5-statement",
+      "title": "水利水电工程基础第5题命题原稿",
+      "kind": "question-bank",
+      "text": "矩形明渠底宽3 m、水深1 m，Manning糙率n=0.020、底坡0.001，采用均匀流，$Q=A R^{2/3}S^{1/2}/n$。（1）求流量与平均速度；（2）保持过水面积3 m²、糙率和底坡不变，推导最优矩形宽深比并求最大流量；（3）为什么面积不变不能保证输水能力不变？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "hydraulic-engineering-q6-statement",
+      "title": "水利水电工程基础第6题命题原稿",
+      "kind": "question-bank",
+      "text": "长500 m的压力管中水初速2 m/s，压力波速1000 m/s，密度1000 kg/m³，g=9.81 m/s²。阀门在0.20 s内关闭。题给快速关闭条件为关闭时间小于$2L/a$，可采用Joukowsky式$\\Delta p=\\rho a\\Delta v$。（1）判断关闭类型；（2）估算压力上升及对应压头；（3）若初始表压0.60 MPa、题给允许最高表压2.0 MPa，检验；（4）把关闭时间改为2 s后，能否直接照用快速关闭峰值作为精确结果？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hydraulic-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "hydraulic-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "水平水库在所考察范围内水面面积恒为$2.0\\times10^5$ m²。初始水位100.00 m。在接下来2小时内，入库流量按$Q_i(t)=50+10t$ m³/s变化，t以小时计，出库流量恒为40 m³/s。忽略降雨蒸发渗漏。（1）积分求2小时蓄量变化及水位；（2）若允许最高水位100.60 m，判断是否满足；（3）求使末水位恰为100.60 m的恒定出库流量。",
+          "score": 15,
+          "solution": "净增蓄量144000 m³，末水位100.72 m，不满足100.60 m。目标恒定出库流量为$130/3=43.333333$ m³/s。",
+          "explanation": "入流总量为$3600\\int_0^2(50+10t)dt=432000$ m³，出流288000 m³。水位增量$\\Delta V/A=0.72$ m。允许蓄量增量120000 m³，因此需出流312000 m³，再除以7200 s。须保持时间单位一致；把小时直接与m³/s相乘会差3600倍。",
+          "source": {
+            "materialId": "hydraulic-engineering-q1-statement",
+            "blockId": "hydraulic-engineering-q1-statement",
+            "exact": "水平水库在所考察范围内水面面积恒为$2.0\\times10^5$ m²。初始水位100.00 m。在接下来2小时内，入库流量按$Q_i(t)=50+10t$ m³/s变化，t以小时计，出库流量恒为40 m³/s。忽略降雨蒸发渗漏。（1）积分求2小时蓄量变化及水位；（2）若允许最高水位100.60 m，判断是否满足；（3）求使末水位恰为100.60 m的恒定出库流量。"
+          },
+          "chapter": "水库调洪与连续方程",
+          "tags": [
+            "水利水电工程基础",
+            "水库调洪与连续方程",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "水库调洪与连续方程"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "hydraulic-engineering-scope",
+                "blockId": "hydraulic-engineering-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "正确列连续方程及小时换算",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "hydraulic-engineering-q1-statement",
+                    "blockId": "hydraulic-engineering-q1-statement",
+                    "exact": "水平水库在所考察范围内水面面积恒为$2.0\\times10^5$ m²。初始水位100.00 m。在接下来2小时内，入库流量按$Q_i(t)=50+10t$ m³/s变化，t以小时计，出库流量恒为40 m³/s。忽略降雨蒸发渗漏。（1）积分求2小时蓄量变化及水位；（2）若允许最高水位100.60 m，判断是否满足；（3）求使末水位恰为100.60 m的恒定出库流量。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "体积和末水位正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "限值比较正确",
+                "points": 2
+              },
+              {
+                "id": "step-4",
+                "description": "反算恒定泄量正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "hydraulic-q1 balance",
+                "result": "pass",
+                "evidence": "{\"label\": \"hydraulic-q1 balance\", \"actual\": [144000, 43.333333333333336], \"expected\": [144000, 43.333333333333336], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "hydraulic-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "自由出流堰采用题给经验关系$Q=1.70bH^{3/2}$，Q用m³/s、b和H用m；系数已包含本题流量系数。现堰净宽5 m，堰上水头1.20 m。（1）求流量；（2）要在水头不超过1.20 m时泄流15 m³/s，所需最小净宽；（3）若错误地把同一系数当成无量纲，并额外乘$\\sqrt{2g}$，结果有何问题？",
+          "score": 15,
+          "solution": "现流量11.173540 m³/s；所需净宽6.712286 m。不能在已定义经验系数之外再乘$\\sqrt{2g}$。",
+          "explanation": "直接按题给关系计算。系数1.70在所定单位制下量纲为m$^{1/2}$/s，不是无量纲流量系数；另一种写法把$\\sqrt{2g}$显式列出时，其数值系数必须相应改变。若乘上约4.43，将重复引入重力因素并破坏本式单位。堰的淹没、侧收缩等实际条件需另核，不由此题给模型自动涵盖。",
+          "source": {
+            "materialId": "hydraulic-engineering-q2-statement",
+            "blockId": "hydraulic-engineering-q2-statement",
+            "exact": "自由出流堰采用题给经验关系$Q=1.70bH^{3/2}$，Q用m³/s、b和H用m；系数已包含本题流量系数。现堰净宽5 m，堰上水头1.20 m。（1）求流量；（2）要在水头不超过1.20 m时泄流15 m³/s，所需最小净宽；（3）若错误地把同一系数当成无量纲，并额外乘$\\sqrt{2g}$，结果有何问题？"
+          },
+          "chapter": "溢流能力与尺寸反算",
+          "tags": [
+            "水利水电工程基础",
+            "溢流能力与尺寸反算",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "溢流能力与尺寸反算"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "hydraulic-engineering-scope",
+                "blockId": "hydraulic-engineering-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "按正确经验式计算流量",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "hydraulic-engineering-q2-statement",
+                    "blockId": "hydraulic-engineering-q2-statement",
+                    "exact": "自由出流堰采用题给经验关系$Q=1.70bH^{3/2}$，Q用m³/s、b和H用m；系数已包含本题流量系数。现堰净宽5 m，堰上水头1.20 m。（1）求流量；（2）要在水头不超过1.20 m时泄流15 m³/s，所需最小净宽；（3）若错误地把同一系数当成无量纲，并额外乘$\\sqrt{2g}$，结果有何问题？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "宽度反算及向上取值原则正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "系数量纲与重复乘因子解释正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "hydraulic-q2 inverse discharge",
+                "result": "pass",
+                "evidence": "{\"label\": \"hydraulic-q2 inverse discharge\", \"actual\": 14.999999999999998, \"expected\": 15, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "hydraulic-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "水电机组净水头30 m、流量12 m³/s，水轮机效率0.88，发电机效率0.96。水密度1000 kg/m³、g=9.81 m/s²。一天内按上述工况连续运行8小时。（1）计算水轮机轴功率、机端电功率和发电量；（2）若上游毛水头34 m，求输水损失功率；（3）说明能否将净水头30 m再扣除4 m损失。",
+          "score": 15,
+          "solution": "轴功率3.107808 MW，电功率2.983496 MW，8小时电量23.867965 MWh；输水损失功率0.470880 MW。",
+          "explanation": "净水力功率$\\rho gQH_{net}$乘水轮机效率得轴功率，再乘发电机效率得电功率。毛、净水头之差4 m已代表输水损失，不能从净水头重复扣除。电量为功率乘时间，MW·h与MJ换算要区分。",
+          "source": {
+            "materialId": "hydraulic-engineering-q3-statement",
+            "blockId": "hydraulic-engineering-q3-statement",
+            "exact": "水电机组净水头30 m、流量12 m³/s，水轮机效率0.88，发电机效率0.96。水密度1000 kg/m³、g=9.81 m/s²。一天内按上述工况连续运行8小时。（1）计算水轮机轴功率、机端电功率和发电量；（2）若上游毛水头34 m，求输水损失功率；（3）说明能否将净水头30 m再扣除4 m损失。"
+          },
+          "chapter": "水电能量利用",
+          "tags": [
+            "水利水电工程基础",
+            "水电能量利用",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "水电能量利用"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "hydraulic-engineering-scope",
+                "blockId": "hydraulic-engineering-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "分级效率和水力功率正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "hydraulic-engineering-q3-statement",
+                    "blockId": "hydraulic-engineering-q3-statement",
+                    "exact": "水电机组净水头30 m、流量12 m³/s，水轮机效率0.88，发电机效率0.96。水密度1000 kg/m³、g=9.81 m/s²。一天内按上述工况连续运行8小时。（1）计算水轮机轴功率、机端电功率和发电量；（2）若上游毛水头34 m，求输水损失功率；（3）说明能否将净水头30 m再扣除4 m损失。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "机端功率及电量正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "损失功率与避免重复扣减正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "hydraulic-q3 gross power partition",
+                "result": "pass",
+                "evidence": "{\"label\": \"hydraulic-q3 gross power partition\", \"actual\": 4002480.0, \"expected\": 4002480.0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "hydraulic-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "宽度方向取每米的平底重力坝，坝基长20 m。坝底扬压力线性从上游100 kPa降至下游20 kPa。坝及上部荷载合计竖向向下3000 kN/m，合力作用于坝底中点。另有水平水推力500 kN/m，作用点距坝底8 m。忽略摩擦以外抗滑机制，接触面摩擦系数0.6。（1）求扬压力及其作用点；（2）求抗滑力与抗滑比；（3）求全部外力对下游趾的净稳定力矩，并区分水平滑动与转动判断。",
+          "score": 15,
+          "solution": "扬压力1200 kN/m，距上游端$70/9=7.777778$ m。有效法向力1800 kN/m，摩擦抗力1080 kN/m，抗滑比2.16。对下游趾，向下荷载稳定矩30000，扬压力倾覆矩14666.666667，水平力倾覆矩4000，净稳定矩11333.333333 kN·m/m。",
+          "explanation": "将扬压力分为全底20 kPa矩形（400 kN/m、距上游10 m）与上游高80 kPa三角形（800 kN/m、距上游20/3 m）。其合力矩给出作用点。摩擦取有效法向力；倾覆计算各自实际力臂，不能把扬压力简单放在坝底中心。抗滑比与净矩只回答本题相应理想化失效机制。",
+          "source": {
+            "materialId": "hydraulic-engineering-q4-statement",
+            "blockId": "hydraulic-engineering-q4-statement",
+            "exact": "宽度方向取每米的平底重力坝，坝基长20 m。坝底扬压力线性从上游100 kPa降至下游20 kPa。坝及上部荷载合计竖向向下3000 kN/m，合力作用于坝底中点。另有水平水推力500 kN/m，作用点距坝底8 m。忽略摩擦以外抗滑机制，接触面摩擦系数0.6。（1）求扬压力及其作用点；（2）求抗滑力与抗滑比；（3）求全部外力对下游趾的净稳定力矩，并区分水平滑动与转动判断。"
+          },
+          "chapter": "渗流与坝基扬压力",
+          "tags": [
+            "水利水电工程基础",
+            "渗流与坝基扬压力",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "渗流与坝基扬压力"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "hydraulic-engineering-scope",
+                "blockId": "hydraulic-engineering-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "分布积分及偏心作用点正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "hydraulic-engineering-q4-statement",
+                    "blockId": "hydraulic-engineering-q4-statement",
+                    "exact": "宽度方向取每米的平底重力坝，坝基长20 m。坝底扬压力线性从上游100 kPa降至下游20 kPa。坝及上部荷载合计竖向向下3000 kN/m，合力作用于坝底中点。另有水平水推力500 kN/m，作用点距坝底8 m。忽略摩擦以外抗滑机制，接触面摩擦系数0.6。（1）求扬压力及其作用点；（2）求抗滑力与抗滑比；（3）求全部外力对下游趾的净稳定力矩，并区分水平滑动与转动判断。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "有效法向力、摩擦及抗滑比正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "以同一趾点计算全部力矩",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "区分两类机制及模型局限",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "hydraulic-q4 uplift moment about toe",
+                "result": "pass",
+                "evidence": "{\"label\": \"hydraulic-q4 uplift moment about toe\", \"actual\": 14666.666666666666, \"expected\": 14666.666666666666, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "hydraulic-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "矩形明渠底宽3 m、水深1 m，Manning糙率n=0.020、底坡0.001，采用均匀流，$Q=A R^{2/3}S^{1/2}/n$。（1）求流量与平均速度；（2）保持过水面积3 m²、糙率和底坡不变，推导最优矩形宽深比并求最大流量；（3）为什么面积不变不能保证输水能力不变？",
+          "score": 20,
+          "solution": "原$R=0.60$ m，流量3.374365 m³/s，流速1.124788 m/s。最优$b=2y$，$y=\\sqrt{1.5}$ m、$b=\\sqrt6$ m，最大流量3.420595 m³/s。",
+          "explanation": "原湿周P=3+2=5 m。固定A时$P=A/y+2y$，导数$-A/y^2+2=0$，得$b=2y$。最小湿周使水力半径A/P最大，因而在题给均匀流关系下流量最大。此为水力最优，尚未纳入岸坡稳定、造价、超高和施工条件。",
+          "source": {
+            "materialId": "hydraulic-engineering-q5-statement",
+            "blockId": "hydraulic-engineering-q5-statement",
+            "exact": "矩形明渠底宽3 m、水深1 m，Manning糙率n=0.020、底坡0.001，采用均匀流，$Q=A R^{2/3}S^{1/2}/n$。（1）求流量与平均速度；（2）保持过水面积3 m²、糙率和底坡不变，推导最优矩形宽深比并求最大流量；（3）为什么面积不变不能保证输水能力不变？"
+          },
+          "chapter": "渠道输水与断面设计",
+          "tags": [
+            "水利水电工程基础",
+            "渠道输水与断面设计",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "渠道输水与断面设计"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "hydraulic-engineering-scope",
+                "blockId": "hydraulic-engineering-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "原湿周、流量和速度正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "hydraulic-engineering-q5-statement",
+                    "blockId": "hydraulic-engineering-q5-statement",
+                    "exact": "矩形明渠底宽3 m、水深1 m，Manning糙率n=0.020、底坡0.001，采用均匀流，$Q=A R^{2/3}S^{1/2}/n$。（1）求流量与平均速度；（2）保持过水面积3 m²、糙率和底坡不变，推导最优矩形宽深比并求最大流量；（3）为什么面积不变不能保证输水能力不变？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "优化目标及求导正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "最优尺寸和流量正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "解释湿周效应与设计边界",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "hydraulic-q5 optimum area",
+                "result": "pass",
+                "evidence": "{\"label\": \"hydraulic-q5 optimum area\", \"actual\": 2.9999999999999996, \"expected\": 3, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "hydraulic-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "长500 m的压力管中水初速2 m/s，压力波速1000 m/s，密度1000 kg/m³，g=9.81 m/s²。阀门在0.20 s内关闭。题给快速关闭条件为关闭时间小于$2L/a$，可采用Joukowsky式$\\Delta p=\\rho a\\Delta v$。（1）判断关闭类型；（2）估算压力上升及对应压头；（3）若初始表压0.60 MPa、题给允许最高表压2.0 MPa，检验；（4）把关闭时间改为2 s后，能否直接照用快速关闭峰值作为精确结果？",
+          "score": 20,
+          "solution": "$2L/a=1.0$ s，0.20 s属题给快速关闭。压力上升2.0 MPa，对应203.873598 m水头；估算最高表压2.60 MPa，超过2.0 MPa。2 s已不满足该快速关闭条件，应使用相应瞬变边界模型，不能把该峰值称为精确预测。",
+          "explanation": "将初始压力和瞬变增量相加后与允许总压力比较，不能把允许总压力只和增量比较。快速近似未描述阀门具体关度曲线、支管反射、摩阻及空化；缓慢关闭情形须重建边界随时间变化。",
+          "source": {
+            "materialId": "hydraulic-engineering-q6-statement",
+            "blockId": "hydraulic-engineering-q6-statement",
+            "exact": "长500 m的压力管中水初速2 m/s，压力波速1000 m/s，密度1000 kg/m³，g=9.81 m/s²。阀门在0.20 s内关闭。题给快速关闭条件为关闭时间小于$2L/a$，可采用Joukowsky式$\\Delta p=\\rho a\\Delta v$。（1）判断关闭类型；（2）估算压力上升及对应压头；（3）若初始表压0.60 MPa、题给允许最高表压2.0 MPa，检验；（4）把关闭时间改为2 s后，能否直接照用快速关闭峰值作为精确结果？"
+          },
+          "chapter": "管道水锤与模型边界",
+          "tags": [
+            "水利水电工程基础",
+            "管道水锤与模型边界",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "管道水锤与模型边界"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "hydraulic-engineering-scope",
+                "blockId": "hydraulic-engineering-scope",
+                "exact": "This subject provides an introduction to fluid mechanics."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "特征传播时间与关闭分类正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "hydraulic-engineering-q6-statement",
+                    "blockId": "hydraulic-engineering-q6-statement",
+                    "exact": "长500 m的压力管中水初速2 m/s，压力波速1000 m/s，密度1000 kg/m³，g=9.81 m/s²。阀门在0.20 s内关闭。题给快速关闭条件为关闭时间小于$2L/a$，可采用Joukowsky式$\\Delta p=\\rho a\\Delta v$。（1）判断关闭类型；（2）估算压力上升及对应压头；（3）若初始表压0.60 MPa、题给允许最高表压2.0 MPa，检验；（4）把关闭时间改为2 s后，能否直接照用快速关闭峰值作为精确结果？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "压升和压头正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "最高总压与限值正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "慢关闭及必要边界条件解释正确",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "hydraulic-q6 pressure head",
+                "result": "pass",
+                "evidence": "{\"label\": \"hydraulic-q6 pressure head\", \"actual\": 203.8735983690112, \"expected\": 203.8735983690112, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "hydraulic-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "hydraulic-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "hydraulic-engineering-q1",
+        "knowledge": "水库调洪与连续方程",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "hydraulic-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "hydraulic-engineering-q2",
+        "knowledge": "溢流能力与尺寸反算",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "hydraulic-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "hydraulic-engineering-q3",
+        "knowledge": "水电能量利用",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "hydraulic-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "hydraulic-engineering-q4",
+        "knowledge": "渗流与坝基扬压力",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "hydraulic-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "hydraulic-engineering-q5",
+        "knowledge": "渠道输水与断面设计",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "hydraulic-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "hydraulic-engineering-q6",
+        "knowledge": "管道水锤与模型边界",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "hydraulic-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "hydraulic-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "hydraulic-engineering-course-blueprint",
+      "name": "水利水电工程基础课程考试",
+      "subject": "水利水电工程基础",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "hydraulic-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,859 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "civil-engineering-course-01",
+  "notebookId": "civil-engineering-source",
+  "notebookRevision": 1,
+  "title": "土木工程基础与设计课程考试",
+  "subject": "土木工程基础与设计",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "土木工程基础与设计课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "civil-engineering-scope",
+      "title": "MIT 1.050 Engineering Mechanics I",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/",
+      "text": "This subject provides an introduction to the mechanics of materials and structures.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2007",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/"
+      }
+    },
+    {
+      "id": "civil-engineering-q1-statement",
+      "title": "土木工程基础与设计第1题命题原稿",
+      "kind": "question-bank",
+      "text": "矩形独立基础平面尺寸为沿x方向2 m、沿y方向3 m。基底承受竖向压力900 kN及绕y轴力矩180 kN·m，忽略自重。假定基底压力沿x线性分布、地基不能承受拉力。本题允许最大压力250 kPa。（1）求偏心距；（2）检验是否全截面接触，求最大、最小基底压力；（3）保持轴力不变时，允许力矩上限由不出现拉应力还是由最大压力控制？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "civil-engineering-q2-statement",
+      "title": "土木工程基础与设计第2题命题原稿",
+      "kind": "question-bank",
+      "text": "建筑基础下有两层可压缩土。上层厚2 m，体积压缩系数0.20 m²/MN，层平均附加有效应力100 kPa；下层厚3 m，系数0.10 m²/MN，平均附加有效应力60 kPa。采用一维线性分层总和法。（1）求最终沉降；（2）若上层处理后系数减半，最终沉降减小多少；（3）相邻柱处理后的计算沉降为22 mm，两柱间距6 m，检验题给差异沉降角限值1/500。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "civil-engineering-q3-statement",
+      "title": "土木工程基础与设计第3题命题原稿",
+      "kind": "question-bank",
+      "text": "矩形单筋截面宽300 mm、有效高度450 mm，受拉钢筋面积1200 mm²。题给理想计算模型：混凝土等效矩形压应力14.3 MPa，钢筋充分屈服应力360 MPa，忽略受拉混凝土，$f_cb x=f_yA_s$；仅在$x\\le0.55h_0$时允许使用该简化延性模型。（1）求受压区高度并验算模型；（2）求名义抗弯能力；（3）设计弯矩160 kN·m时是否满足题给要求？不得自行加入未给的荷载或抗力系数。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "civil-engineering-q4-statement",
+      "title": "土木工程基础与设计第4题命题原稿",
+      "kind": "question-bank",
+      "text": "高4 m的竖直挡墙后填无黏性水平土，重度18 kN/m³、内摩擦角30°，墙背光滑且可充分向外位移。使用Rankine主动状态，均布地面附加荷载12 kPa，不计地下水。（1）求主动土压力系数；（2）求每米墙长总水平推力及作用点距墙底高度；（3）若原总推力计算漏掉地面附加荷载，推力和倾覆矩各低估多少？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "civil-engineering-q5-statement",
+      "title": "土木工程基础与设计第5题命题原稿",
+      "kind": "question-bank",
+      "text": "工程活动A、B可从第0天同时开始，工期分别4、6天；C在A后进行，工期5天；D需A和B均完成后进行，工期3天；E需C和D均完成后进行，工期2天。所有活动不可中断。（1）忽略资源约束，求最早工期和关键路径；（2）若C、D共用唯一一台设备，求最短可行工期并给出日程；（3）若用租赁第二台设备恢复原工期，租金每天300元，最少需租几天？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "civil-engineering-q6-statement",
+      "title": "土木工程基础与设计第6题命题原稿",
+      "kind": "question-bank",
+      "text": "同一批混凝土6个试件抗压强度为31.8、32.5、30.9、33.0、31.3、32.1 MPa。题给批次验收规则：均值至少32.0 MPa，且每个试件至少30.0 MPa；两项均满足才接受。（1）计算均值与样本标准差；（2）据给定规则作判断；（3）检测员提出“去掉最低值再平均即可合格”，评价该做法，并说明发现测量异常应如何处理。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "civil-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "civil-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "矩形独立基础平面尺寸为沿x方向2 m、沿y方向3 m。基底承受竖向压力900 kN及绕y轴力矩180 kN·m，忽略自重。假定基底压力沿x线性分布、地基不能承受拉力。本题允许最大压力250 kPa。（1）求偏心距；（2）检验是否全截面接触，求最大、最小基底压力；（3）保持轴力不变时，允许力矩上限由不出现拉应力还是由最大压力控制？",
+          "score": 15,
+          "solution": "$e=0.20$ m，小于$B/6=1/3$ m；$q_{\\max}=240$ kPa，$q_{\\min}=60$ kPa。最大压力控制，$e_{\\max}=2/9$ m，$M_{\\max}=200$ kN·m；无拉力单独允许300 kN·m。",
+          "explanation": "$q_0=N/(BL)=150$ kPa，$q_{\\max,\\min}=q_0(1\\pm6e/B)$。两限制分别给出$e\\le B/6$及$e\\le(B/6)(250/150-1)$。在当前全接触范围内，压力积分恢复900 kN和180 kN·m；超出中核后不能继续沿用带负值的线性全接触分布。",
+          "source": {
+            "materialId": "civil-engineering-q1-statement",
+            "blockId": "civil-engineering-q1-statement",
+            "exact": "矩形独立基础平面尺寸为沿x方向2 m、沿y方向3 m。基底承受竖向压力900 kN及绕y轴力矩180 kN·m，忽略自重。假定基底压力沿x线性分布、地基不能承受拉力。本题允许最大压力250 kPa。（1）求偏心距；（2）检验是否全截面接触，求最大、最小基底压力；（3）保持轴力不变时，允许力矩上限由不出现拉应力还是由最大压力控制？"
+          },
+          "chapter": "偏心基础接触应力",
+          "tags": [
+            "土木工程基础与设计",
+            "偏心基础接触应力",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "偏心基础接触应力"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "civil-engineering-scope",
+                "blockId": "civil-engineering-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "偏心方向、平均压力与偏心距正确",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "civil-engineering-q1-statement",
+                    "blockId": "civil-engineering-q1-statement",
+                    "exact": "矩形独立基础平面尺寸为沿x方向2 m、沿y方向3 m。基底承受竖向压力900 kN及绕y轴力矩180 kN·m，忽略自重。假定基底压力沿x线性分布、地基不能承受拉力。本题允许最大压力250 kPa。（1）求偏心距；（2）检验是否全截面接触，求最大、最小基底压力；（3）保持轴力不变时，允许力矩上限由不出现拉应力还是由最大压力控制？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "中核检验及两极值正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "分别推得两项力矩界限",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "说明模型失效条件",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q1 resultant moment",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q1 resultant moment\", \"actual\": 180.0, \"expected\": 180, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q1 design eccentricity",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q1 design eccentricity\", \"actual\": 200.0, \"expected\": 200, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "civil-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "建筑基础下有两层可压缩土。上层厚2 m，体积压缩系数0.20 m²/MN，层平均附加有效应力100 kPa；下层厚3 m，系数0.10 m²/MN，平均附加有效应力60 kPa。采用一维线性分层总和法。（1）求最终沉降；（2）若上层处理后系数减半，最终沉降减小多少；（3）相邻柱处理后的计算沉降为22 mm，两柱间距6 m，检验题给差异沉降角限值1/500。",
+          "score": 15,
+          "solution": "原沉降58 mm。处理后上层20 mm、下层18 mm，总沉降38 mm，减小20 mm。与相邻柱差16 mm，差异沉降角约1/375，不满足1/500。",
+          "explanation": "每层$s_i=m_{v,i}\\Delta\\sigma_i H_i$，先将100、60 kPa换为0.10、0.06 MN/m²。仅压缩系数减半的上层贡献改变；总沉降不能整体减半。角度用差异沉降除以水平距离，允许差值为6000/500=12 mm。该简化法给最终一维压缩量，未给固结系数时不能据此预测完成时间。",
+          "source": {
+            "materialId": "civil-engineering-q2-statement",
+            "blockId": "civil-engineering-q2-statement",
+            "exact": "建筑基础下有两层可压缩土。上层厚2 m，体积压缩系数0.20 m²/MN，层平均附加有效应力100 kPa；下层厚3 m，系数0.10 m²/MN，平均附加有效应力60 kPa。采用一维线性分层总和法。（1）求最终沉降；（2）若上层处理后系数减半，最终沉降减小多少；（3）相邻柱处理后的计算沉降为22 mm，两柱间距6 m，检验题给差异沉降角限值1/500。"
+          },
+          "chapter": "分层地基压缩",
+          "tags": [
+            "土木工程基础与设计",
+            "分层地基压缩",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "分层地基压缩"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "civil-engineering-scope",
+                "blockId": "civil-engineering-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "单位换算和分层计算正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "civil-engineering-q2-statement",
+                    "blockId": "civil-engineering-q2-statement",
+                    "exact": "建筑基础下有两层可压缩土。上层厚2 m，体积压缩系数0.20 m²/MN，层平均附加有效应力100 kPa；下层厚3 m，系数0.10 m²/MN，平均附加有效应力60 kPa。采用一维线性分层总和法。（1）求最终沉降；（2）若上层处理后系数减半，最终沉降减小多少；（3）相邻柱处理后的计算沉降为22 mm，两柱间距6 m，检验题给差异沉降角限值1/500。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "处理后沉降和改善量正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "差异沉降角与判定正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "解释时间预测所缺参数",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q2 layer totals m",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q2 layer totals m\", \"actual\": [0.05800000000000001, 0.038000000000000006], \"expected\": [0.058, 0.038], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "civil-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "矩形单筋截面宽300 mm、有效高度450 mm，受拉钢筋面积1200 mm²。题给理想计算模型：混凝土等效矩形压应力14.3 MPa，钢筋充分屈服应力360 MPa，忽略受拉混凝土，$f_cb x=f_yA_s$；仅在$x\\le0.55h_0$时允许使用该简化延性模型。（1）求受压区高度并验算模型；（2）求名义抗弯能力；（3）设计弯矩160 kN·m时是否满足题给要求？不得自行加入未给的荷载或抗力系数。",
+          "score": 15,
+          "solution": "$x=100.699301$ mm，$x/h_0=0.223776<0.55$；名义抗弯能力$M_u=172.648951$ kN·m，超过160 kN·m。",
+          "explanation": "压力合力与拉力均为432000 N，力臂为$h_0-x/2$。$M_u=f_yA_s(h_0-x/2)$，N·mm除以$10^6$换为kN·m。本题是给定材料本构与等效应力块的截面计算，不把0.55或这些强度值解释为所有材料、年份、规范通用的规定。",
+          "source": {
+            "materialId": "civil-engineering-q3-statement",
+            "blockId": "civil-engineering-q3-statement",
+            "exact": "矩形单筋截面宽300 mm、有效高度450 mm，受拉钢筋面积1200 mm²。题给理想计算模型：混凝土等效矩形压应力14.3 MPa，钢筋充分屈服应力360 MPa，忽略受拉混凝土，$f_cb x=f_yA_s$；仅在$x\\le0.55h_0$时允许使用该简化延性模型。（1）求受压区高度并验算模型；（2）求名义抗弯能力；（3）设计弯矩160 kN·m时是否满足题给要求？不得自行加入未给的荷载或抗力系数。"
+          },
+          "chapter": "受弯截面简化平衡设计",
+          "tags": [
+            "土木工程基础与设计",
+            "受弯截面简化平衡设计",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "受弯截面简化平衡设计"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "civil-engineering-scope",
+                "blockId": "civil-engineering-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "拉压力平衡与受压区正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "civil-engineering-q3-statement",
+                    "blockId": "civil-engineering-q3-statement",
+                    "exact": "矩形单筋截面宽300 mm、有效高度450 mm，受拉钢筋面积1200 mm²。题给理想计算模型：混凝土等效矩形压应力14.3 MPa，钢筋充分屈服应力360 MPa，忽略受拉混凝土，$f_cb x=f_yA_s$；仅在$x\\le0.55h_0$时允许使用该简化延性模型。（1）求受压区高度并验算模型；（2）求名义抗弯能力；（3）设计弯矩160 kN·m时是否满足题给要求？不得自行加入未给的荷载或抗力系数。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "检验给定延性条件",
+                "points": 3
+              },
+              {
+                "id": "step-3",
+                "description": "力臂、承载力及单位正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "比较设计弯矩且不混入未知系数",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q3 force equilibrium",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q3 force equilibrium\", \"actual\": 432000.0, \"expected\": 432000, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q3 section moment",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q3 section moment\", \"actual\": 172.64895104895106, \"expected\": 172.64895104895103, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "civil-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "高4 m的竖直挡墙后填无黏性水平土，重度18 kN/m³、内摩擦角30°，墙背光滑且可充分向外位移。使用Rankine主动状态，均布地面附加荷载12 kPa，不计地下水。（1）求主动土压力系数；（2）求每米墙长总水平推力及作用点距墙底高度；（3）若原总推力计算漏掉地面附加荷载，推力和倾覆矩各低估多少？",
+          "score": 15,
+          "solution": "$K_a=1/3$；土自重三角形推力48 kN/m，附加荷载矩形推力16 kN/m，总推力64 kN/m；对墙底力矩96 kN·m/m，合力作用点距底1.50 m。漏项将低估16 kN/m及32 kN·m/m。",
+          "explanation": "$K_a=\\tan^2(45^\\circ-\\varphi/2)$。土重分布为$K_a\\gamma z$，合力作用于H/3；超载分布为常数$K_aq$，作用于H/2。总作用点必须由两部分合矩除以总力求得。墙体不能位移或有地下水时，主动无水模型需要修正。",
+          "source": {
+            "materialId": "civil-engineering-q4-statement",
+            "blockId": "civil-engineering-q4-statement",
+            "exact": "高4 m的竖直挡墙后填无黏性水平土，重度18 kN/m³、内摩擦角30°，墙背光滑且可充分向外位移。使用Rankine主动状态，均布地面附加荷载12 kPa，不计地下水。（1）求主动土压力系数；（2）求每米墙长总水平推力及作用点距墙底高度；（3）若原总推力计算漏掉地面附加荷载，推力和倾覆矩各低估多少？"
+          },
+          "chapter": "挡土结构与主动土压力",
+          "tags": [
+            "土木工程基础与设计",
+            "挡土结构与主动土压力",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "挡土结构与主动土压力"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "civil-engineering-scope",
+                "blockId": "civil-engineering-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "主动状态条件与系数正确",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "civil-engineering-q4-statement",
+                    "blockId": "civil-engineering-q4-statement",
+                    "exact": "高4 m的竖直挡墙后填无黏性水平土，重度18 kN/m³、内摩擦角30°，墙背光滑且可充分向外位移。使用Rankine主动状态，均布地面附加荷载12 kPa，不计地下水。（1）求主动土压力系数；（2）求每米墙长总水平推力及作用点距墙底高度；（3）若原总推力计算漏掉地面附加荷载，推力和倾覆矩各低估多少？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两部分推力正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "合矩与总作用点正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "漏项影响及适用条件正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q4 total moment",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q4 total moment\", \"actual\": 96.0, \"expected\": 96, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "civil-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "工程活动A、B可从第0天同时开始，工期分别4、6天；C在A后进行，工期5天；D需A和B均完成后进行，工期3天；E需C和D均完成后进行，工期2天。所有活动不可中断。（1）忽略资源约束，求最早工期和关键路径；（2）若C、D共用唯一一台设备，求最短可行工期并给出日程；（3）若用租赁第二台设备恢复原工期，租金每天300元，最少需租几天？",
+          "score": 20,
+          "solution": "无资源约束时11天，两条关键路径A–C–E、B–D–E。共用一台设备时最短14天：A0–4、B0–6、C4–9、D9–12、E12–14。恢复11天时，C4–9与D6–9重叠3天，最少租3天、900元。",
+          "explanation": "最早完成C、D都为9，因此E在9–11。资源约束下比较两种不可中断顺序：C先，完成点9、12，最终14；D先必须等到6，D6–9、C9–14、E14–16。为恢复11天，C必须4–9且D必须6–9，重叠区不可再压缩。",
+          "source": {
+            "materialId": "civil-engineering-q5-statement",
+            "blockId": "civil-engineering-q5-statement",
+            "exact": "工程活动A、B可从第0天同时开始，工期分别4、6天；C在A后进行，工期5天；D需A和B均完成后进行，工期3天；E需C和D均完成后进行，工期2天。所有活动不可中断。（1）忽略资源约束，求最早工期和关键路径；（2）若C、D共用唯一一台设备，求最短可行工期并给出日程；（3）若用租赁第二台设备恢复原工期，租金每天300元，最少需租几天？"
+          },
+          "chapter": "施工网络与资源约束",
+          "tags": [
+            "土木工程基础与设计",
+            "施工网络与资源约束",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "施工网络与资源约束"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "civil-engineering-scope",
+                "blockId": "civil-engineering-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "无资源网络与两条关键路径正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "civil-engineering-q5-statement",
+                    "blockId": "civil-engineering-q5-statement",
+                    "exact": "工程活动A、B可从第0天同时开始，工期分别4、6天；C在A后进行，工期5天；D需A和B均完成后进行，工期3天；E需C和D均完成后进行，工期2天。所有活动不可中断。（1）忽略资源约束，求最早工期和关键路径；（2）若C、D共用唯一一台设备，求最短可行工期并给出日程；（3）若用租赁第二台设备恢复原工期，租金每天300元，最少需租几天？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "枚举两种设备顺序",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "最优日程及14天正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "最少租期的必要性、日程及费用正确",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q5 resource order enumeration",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q5 resource order enumeration\", \"actual\": [14, 16], \"expected\": [14, 16], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "civil-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "同一批混凝土6个试件抗压强度为31.8、32.5、30.9、33.0、31.3、32.1 MPa。题给批次验收规则：均值至少32.0 MPa，且每个试件至少30.0 MPa；两项均满足才接受。（1）计算均值与样本标准差；（2）据给定规则作判断；（3）检测员提出“去掉最低值再平均即可合格”，评价该做法，并说明发现测量异常应如何处理。",
+          "score": 20,
+          "solution": "均值31.933333 MPa，样本标准差0.771146 MPa。每个试件均超过30.0 MPa，但均值不足32.0 MPa，不能按本题规则接受。",
+          "explanation": "均值为191.6/6=31.933333 MPa；样本标准差使用n−1分母。不能因结果不利而事后删除最低读数。若有独立记录证实设备、试件或操作异常，应按预先规定的方法调查、记录并决定复测或剔除，保留原始数据和理由；不得把统计波动直接当作操作异常。",
+          "source": {
+            "materialId": "civil-engineering-q6-statement",
+            "blockId": "civil-engineering-q6-statement",
+            "exact": "同一批混凝土6个试件抗压强度为31.8、32.5、30.9、33.0、31.3、32.1 MPa。题给批次验收规则：均值至少32.0 MPa，且每个试件至少30.0 MPa；两项均满足才接受。（1）计算均值与样本标准差；（2）据给定规则作判断；（3）检测员提出“去掉最低值再平均即可合格”，评价该做法，并说明发现测量异常应如何处理。"
+          },
+          "chapter": "试验数据与质量判断",
+          "tags": [
+            "土木工程基础与设计",
+            "试验数据与质量判断",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "试验数据与质量判断"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "civil-engineering-scope",
+                "blockId": "civil-engineering-scope",
+                "exact": "This subject provides an introduction to the mechanics of materials and structures."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "均值和样本分母正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "civil-engineering-q6-statement",
+                    "blockId": "civil-engineering-q6-statement",
+                    "exact": "同一批混凝土6个试件抗压强度为31.8、32.5、30.9、33.0、31.3、32.1 MPa。题给批次验收规则：均值至少32.0 MPa，且每个试件至少30.0 MPa；两项均满足才接受。（1）计算均值与样本标准差；（2）据给定规则作判断；（3）检测员提出“去掉最低值再平均即可合格”，评价该做法，并说明发现测量异常应如何处理。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "标准差计算正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "两条验收规则分别判断",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "对删除读数的评价与实际异常处理合理",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "civil-q6 mean and centered sum",
+                "result": "pass",
+                "evidence": "{\"label\": \"civil-q6 mean and centered sum\", \"actual\": [31.933333333333334, 0.0], \"expected\": [31.933333333333334, 0], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "civil-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "civil-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "civil-engineering-q1",
+        "knowledge": "偏心基础接触应力",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "civil-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "civil-engineering-q2",
+        "knowledge": "分层地基压缩",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "civil-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "civil-engineering-q3",
+        "knowledge": "受弯截面简化平衡设计",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "civil-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "civil-engineering-q4",
+        "knowledge": "挡土结构与主动土压力",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "civil-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "civil-engineering-q5",
+        "knowledge": "施工网络与资源约束",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "civil-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "civil-engineering-q6",
+        "knowledge": "试验数据与质量判断",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "civil-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "civil-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "civil-engineering-course-blueprint",
+      "name": "土木工程基础与设计课程考试",
+      "subject": "土木工程基础与设计",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "civil-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

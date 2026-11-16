@@ -1,0 +1,43 @@
+/* Palette + native DOM Select adaptation from frontend-prescription shadcn Select
+   and MUI ColorModeIconDropdown (MIT). Paper documents keep their own white page. */
+:root[data-theme=light]{color-scheme:light;--bg:#f7f8f5;--surface:#fff;--soft:#edf1eb;--selected:#dfe9e0;--ink:#202d26;--muted:#58655c;--line:#dbe2d9;--accent:#2e5141;--on-accent:#fff;--error:#a13d32;--preview-surround:#e8ece5;--menu-shadow:0 10px 28px #20362916}
+:root[data-theme=dark]{color-scheme:dark;--bg:#1b211d;--surface:#252d27;--soft:#2e3830;--selected:#3b4e3f;--ink:#edf2e9;--muted:#b7c4b6;--line:#414e42;--accent:#d0e2cc;--on-accent:#233625;--error:#f5b7a3;--preview-surround:#2b352e;--menu-shadow:0 12px 32px #0005}
+.select-control{position:relative;display:inline-flex;min-width:0;width:100%;vertical-align:middle}
+.select-source{position:absolute!important;inset:0 auto auto 0!important;width:1px!important;height:1px!important;min-width:0!important;min-height:0!important;opacity:0!important;padding:0!important;border:0!important;pointer-events:none!important}
+.select-trigger{width:100%;min-width:0;min-height:42px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 12px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);font-size:13px;line-height:1.5;text-align:left;color:var(--ink);transition:background .16s cubic-bezier(.2,.8,.2,1)}
+.select-value{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.select-trigger>svg{color:var(--muted);flex:none;transition:transform .16s cubic-bezier(.2,.8,.2,1)}
+.select-trigger:hover:not(:disabled){background:var(--soft)}
+.select-trigger:focus-visible,.select-trigger[aria-expanded=true]{background:var(--selected)}
+.select-trigger[aria-expanded=true]>svg{transform:rotate(180deg)}
+.select-panel{position:fixed;inset:auto;margin:0;padding:5px;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);box-shadow:var(--menu-shadow);z-index:200;font:13px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif}
+.select-panel[hidden]{display:none!important}
+.select-option{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 11px;min-height:40px;border-radius:4px;cursor:pointer}
+.select-option>span{overflow-wrap:anywhere;min-width:0}
+.select-option[aria-selected=true]{color:var(--accent);font-weight:600}
+.select-option[data-highlighted=true]{background:var(--soft)}
+.select-option[aria-selected=true][data-highlighted=true]{background:var(--selected)}
+.select-option[aria-disabled=true]{opacity:.4;cursor:default}
+.theme-control{position:relative;display:flex;align-items:center;flex:none;width:112px;color:var(--muted);border-radius:var(--radius)}
+.theme-control .theme-symbol{position:absolute;left:11px;top:50%;transform:translateY(-50%);display:flex;pointer-events:none;z-index:1;color:var(--ink)}
+.theme-control .select-trigger{min-height:38px;padding:8px 9px 8px 35px;font-size:12px;background:transparent;border:0;color:var(--muted)}
+.theme-control .select-trigger:hover,.theme-control .select-trigger:focus-visible,.theme-control .select-trigger[aria-expanded=true]{background:var(--soft);color:var(--ink)}
+.setup-field .select-trigger{min-height:42px;font-size:13px}
+.blueprint-table .select-trigger{min-height:36px;padding:7px 9px;font-size:12px}
+.question-toolbar .select-control{max-width:190px}
+.material-tools .select-control{width:155px}
+.preview-actions{flex:none}
+.preview-actions>.select-control{width:168px;flex:none}
+.preview-actions>#export-package{min-width:118px}
+:root[data-theme=dark] .workflow{background:var(--soft)}
+:root[data-theme=dark] .workflow-title,:root[data-theme=dark] .workflow-step{border-color:var(--line)}
+:root[data-theme=dark] .template-thumbnail{background:var(--preview-surround)}
+:root[data-theme=dark] .template-card:hover .template-card-text{background:var(--soft)}
+:root[data-theme=dark] .template-card-meta>span:last-child{color:var(--accent)}
+:root[data-theme=dark] .paper-stage,:root[data-theme=dark] .paper-stage iframe{background:#d4dbd1}
+:root[data-theme=dark] .button.primary:focus-visible{background:#e1efd9;color:#183220}
+:root[data-theme=dark] #global-status.error{background:#482e27}
+:root[data-theme=dark] .source-text{background:var(--soft)}
+:root[data-theme=dark] .exam-showcase{background:var(--preview-surround)}
+:root[data-theme=dark] .real-case-grid .template-card:hover .template-card-text{background:transparent}
+@media(max-width:650px){.theme-control{width:100px}.theme-control .select-trigger{padding-left:30px;font-size:11px}.theme-control .theme-symbol{left:8px}.theme-control .theme-symbol svg{width:15px;height:15px}.question-toolbar .select-control{max-width:none;flex:1}}

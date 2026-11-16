@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "practice-job",
+  "title": "复利与数据处理综合测验",
+  "subject": "数学与计算机基础",
+  "level": "大学基础",
+  "mode": "mock",
+  "intent": "original",
+  "durationMinutes": 45,
+  "count": 6,
+  "targetScore": 24,
+  "seed": "workflow-fixture-1",
+  "balanceChoices": false,
+  "requirements": "验证单选、多选、判断、填空、解答与操作任务的完整组卷。",
+  "quality": {
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "自编来源已核对；SQL 与复利计算逐项核对。"
+  }
+}

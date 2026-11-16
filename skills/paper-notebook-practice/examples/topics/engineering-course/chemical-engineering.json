@@ -1,0 +1,889 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "chemical-engineering-course-01",
+  "notebookId": "chemical-engineering-source",
+  "notebookRevision": 1,
+  "title": "化学工程原理与过程分析课程考试",
+  "subject": "化学工程原理与过程分析",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "化学工程原理与过程分析课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "chemical-engineering-scope",
+      "title": "MIT 10.37 Chemical and Biological Reaction Engineering",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/10-37-chemical-and-biological-reaction-engineering-spring-2007/",
+      "text": "batch, plug flow and well-stirred reactors",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2007",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/10-37-chemical-and-biological-reaction-engineering-spring-2007/"
+      }
+    },
+    {
+      "id": "chemical-engineering-q1-statement",
+      "title": "化学工程原理与过程分析第1题命题原稿",
+      "kind": "question-bank",
+      "text": "液相不可逆反应A→B为一级反应，等温、恒密度，速率$-r_A=kC_A$，k=0.20 min⁻¹。新鲜进料10 L/min，$C_{A0}=2.0$ mol/L，目标转化率80%。（1）分别计算单釜CSTR与PFR体积；（2）若用两个等体积CSTR串联达到同一转化率，求每釜及总体积；（3）用出口浓度复核，并比较三种总体积。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "chemical-engineering-q2-statement",
+      "title": "化学工程原理与过程分析第2题命题原稿",
+      "kind": "question-bank",
+      "text": "惰性杂质不反应。新鲜进料100 mol/min，其中A为90%、惰性I为10%；反应器按A→P的1∶1摩尔计量关系，每程使A的50%变为P。分离器完全移走P，未反应A和I混合气的20%排放，其余循环。忽略其他损失。（1）求反应器入口A、I流量；（2）求产品、排放及循环各组分流量；（3）核对总外部物料衡算；（4）若排放比例为零，能否保持有限惰性流量的稳态？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "chemical-engineering-q3-statement",
+      "title": "化学工程原理与过程分析第3题命题原稿",
+      "kind": "question-bank",
+      "text": "二元液体以100 mol/min进料，轻组分摩尔分数z=0.50。在给定温压下，气液平衡为$y=2x/(1+x)$，气化率V/F=0.40；x、y分别为液相和气相轻组分分数。（1）由总量及组分衡算联立求x、y；（2）求两出口中轻、重组分流量；（3）检验物理根并解释为何不能取x=y=z。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "chemical-engineering-q4-statement",
+      "title": "化学工程原理与过程分析第4题命题原稿",
+      "kind": "question-bank",
+      "text": "稀溶质逆流填料吸收塔采用无溶质基准比率Y、X（mol/mol），惰性气体G=100、无溶质溶剂L=200 mol/min；入口气Yin=0.100，出口Yout=0.010，入口溶剂Xin=0。平衡式$Y^*=0.8X$，总气相传质单元高度HOG=0.70 m，流量近似不变。求出口X、操作线、传质单元数$N_{OG}=\\int_{Yout}^{Yin}dY/(Y-Y^*)$及塔高；检查全塔推动力。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "chemical-engineering-q5-statement",
+      "title": "化学工程原理与过程分析第5题命题原稿",
+      "kind": "question-bank",
+      "text": "绝热稳态混合器，热液A为2.0 kg/s、80°C、比热4.0 kJ/(kg·K)，冷液B为3.0 kg/s、20°C、比热2.0 kJ/(kg·K)。液体不反应、不相变，比热恒定，动位能忽略，混合热为零。（1）求出口温度；（2）若混合器向外散热28 kW，求新温度；（3）以0°C与20°C为焓基准分别列式，说明结果是否改变；（4）有同学算成质量加权44°C，解释错误。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "chemical-engineering-q6-statement",
+      "title": "化学工程原理与过程分析第6题命题原稿",
+      "kind": "question-bank",
+      "text": "恒容等温间歇釜中平行反应A→B、A→C均一级，速率常数分别k1、k2。初始仅A，$C_{A0}=1.0$ mol/L。10 min时$C_A=e^{-1}$ mol/L、$C_B=0.8(1-e^{-1})$ mol/L。（1）辨识k1、k2；（2）求任意t时A、B、C浓度；（3）求A转化率90%所需时间及B收率；（4）延长时间能否把B占产物比例由80%提高到90%？给依据。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "chemical-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "chemical-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "液相不可逆反应A→B为一级反应，等温、恒密度，速率$-r_A=kC_A$，k=0.20 min⁻¹。新鲜进料10 L/min，$C_{A0}=2.0$ mol/L，目标转化率80%。（1）分别计算单釜CSTR与PFR体积；（2）若用两个等体积CSTR串联达到同一转化率，求每釜及总体积；（3）用出口浓度复核，并比较三种总体积。",
+          "score": 15,
+          "solution": "单CSTR体积200 L；PFR体积$50\\ln5=80.471896$ L；两等釜各$50(\\sqrt5-1)=61.803399$ L，总123.606798 L。出口浓度均0.40 mol/L。",
+          "explanation": "CSTR稳态衡算$Q(C_{in}-C_{out})=VkC_{out}$，单釜$\\tau=X/[k(1-X)]$；PFR积分得$\\tau=-\\ln(1-X)/k$。两等釜浓度比为$(1+kV_i/Q)^{-2}$，令其为0.2解出体积。一级反应速率随浓度下降，返混使整釜均处低出口浓度，故单釜所需体积最大；本比较仅适用于题给动力学和恒密度条件。",
+          "source": {
+            "materialId": "chemical-engineering-q1-statement",
+            "blockId": "chemical-engineering-q1-statement",
+            "exact": "液相不可逆反应A→B为一级反应，等温、恒密度，速率$-r_A=kC_A$，k=0.20 min⁻¹。新鲜进料10 L/min，$C_{A0}=2.0$ mol/L，目标转化率80%。（1）分别计算单釜CSTR与PFR体积；（2）若用两个等体积CSTR串联达到同一转化率，求每釜及总体积；（3）用出口浓度复核，并比较三种总体积。"
+          },
+          "chapter": "反应器设计与停留时间",
+          "tags": [
+            "化学工程原理与过程分析",
+            "反应器设计与停留时间",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "反应器设计与停留时间"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "chemical-engineering-scope",
+                "blockId": "chemical-engineering-scope",
+                "exact": "batch, plug flow and well-stirred reactors"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "两类反应器衡算与积分正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "chemical-engineering-q1-statement",
+                    "blockId": "chemical-engineering-q1-statement",
+                    "exact": "液相不可逆反应A→B为一级反应，等温、恒密度，速率$-r_A=kC_A$，k=0.20 min⁻¹。新鲜进料10 L/min，$C_{A0}=2.0$ mol/L，目标转化率80%。（1）分别计算单釜CSTR与PFR体积；（2）若用两个等体积CSTR串联达到同一转化率，求每釜及总体积；（3）用出口浓度复核，并比较三种总体积。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "单釜/PFR体积与单位正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "串联方程及体积正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "浓度代回与返混解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q1 CSTR molar balance",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q1 CSTR molar balance\", \"actual\": 16.0, \"expected\": 16.0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q1 PFR outlet",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q1 PFR outlet\", \"actual\": 0.4, \"expected\": 0.4, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q1 two-tank outlet",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q1 two-tank outlet\", \"actual\": 0.3999999999999999, \"expected\": 0.4, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "chemical-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "惰性杂质不反应。新鲜进料100 mol/min，其中A为90%、惰性I为10%；反应器按A→P的1∶1摩尔计量关系，每程使A的50%变为P。分离器完全移走P，未反应A和I混合气的20%排放，其余循环。忽略其他损失。（1）求反应器入口A、I流量；（2）求产品、排放及循环各组分流量；（3）核对总外部物料衡算；（4）若排放比例为零，能否保持有限惰性流量的稳态？",
+          "score": 15,
+          "solution": "入口A=150、I=50 mol/min；产品P=75 mol/min。排放A=15、I=10 mol/min；循环A=60、I=40 mol/min。外部100=75+15+10；无排放时惰性持续积累，无有限稳态。",
+          "explanation": "设入口A为a，则$a=90+0.8(0.5a)$；入口惰性i满足$i=10+0.8i$。先分别列组分衡算，再得到循环与排放，不能把进料90 mol/min直接作为反应器入口。零排放时i=10+i矛盾，表明稳态假设失效，而不是惰性流量为零。反应A→P按1∶1计量，因此本题总摩尔量也守恒。",
+          "source": {
+            "materialId": "chemical-engineering-q2-statement",
+            "blockId": "chemical-engineering-q2-statement",
+            "exact": "惰性杂质不反应。新鲜进料100 mol/min，其中A为90%、惰性I为10%；反应器按A→P的1∶1摩尔计量关系，每程使A的50%变为P。分离器完全移走P，未反应A和I混合气的20%排放，其余循环。忽略其他损失。（1）求反应器入口A、I流量；（2）求产品、排放及循环各组分流量；（3）核对总外部物料衡算；（4）若排放比例为零，能否保持有限惰性流量的稳态？"
+          },
+          "chapter": "回收与排放的稳态组分衡算",
+          "tags": [
+            "化学工程原理与过程分析",
+            "回收与排放的稳态组分衡算",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "回收与排放的稳态组分衡算"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "chemical-engineering-scope",
+                "blockId": "chemical-engineering-scope",
+                "exact": "batch, plug flow and well-stirred reactors"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "循环闭合方程正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "chemical-engineering-q2-statement",
+                    "blockId": "chemical-engineering-q2-statement",
+                    "exact": "惰性杂质不反应。新鲜进料100 mol/min，其中A为90%、惰性I为10%；反应器按A→P的1∶1摩尔计量关系，每程使A的50%变为P。分离器完全移走P，未反应A和I混合气的20%排放，其余循环。忽略其他损失。（1）求反应器入口A、I流量；（2）求产品、排放及循环各组分流量；（3）核对总外部物料衡算；（4）若排放比例为零，能否保持有限惰性流量的稳态？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "入口及各流股组分正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "外部/组分衡算完整",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "零排放不存在有限稳态的论证正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q2 recycle closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q2 recycle closure\", \"actual\": [150.0, 50.0], \"expected\": [150, 50], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q2 external balance",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q2 external balance\", \"actual\": 100, \"expected\": 100, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "chemical-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "二元液体以100 mol/min进料，轻组分摩尔分数z=0.50。在给定温压下，气液平衡为$y=2x/(1+x)$，气化率V/F=0.40；x、y分别为液相和气相轻组分分数。（1）由总量及组分衡算联立求x、y；（2）求两出口中轻、重组分流量；（3）检验物理根并解释为何不能取x=y=z。",
+          "score": 15,
+          "solution": "$0.6x^2+0.9x-0.5=0$，物理根$x=(-0.9+\\sqrt{2.01})/1.2=0.431453907$，y=0.602819140。液相60 mol/min，轻25.887234、重34.112766；气相40，轻24.112766、重15.887234 mol/min。",
+          "explanation": "总量给L=60、V=40；轻组分$0.5=0.6x+0.4y$。代入平衡式后化为二次方程，另一根小于0应舍去。解满足0<x<z<y<1，轻组分在气相富集。只有相平衡关系允许且总体衡算相容时才可能x=y；这里x=y=0.5不满足给定相平衡。",
+          "source": {
+            "materialId": "chemical-engineering-q3-statement",
+            "blockId": "chemical-engineering-q3-statement",
+            "exact": "二元液体以100 mol/min进料，轻组分摩尔分数z=0.50。在给定温压下，气液平衡为$y=2x/(1+x)$，气化率V/F=0.40；x、y分别为液相和气相轻组分分数。（1）由总量及组分衡算联立求x、y；（2）求两出口中轻、重组分流量；（3）检验物理根并解释为何不能取x=y=z。"
+          },
+          "chapter": "二元闪蒸与相平衡",
+          "tags": [
+            "化学工程原理与过程分析",
+            "二元闪蒸与相平衡",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "二元闪蒸与相平衡"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "chemical-engineering-scope",
+                "blockId": "chemical-engineering-scope",
+                "exact": "batch, plug flow and well-stirred reactors"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "两衡算与相平衡联立正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "chemical-engineering-q3-statement",
+                    "blockId": "chemical-engineering-q3-statement",
+                    "exact": "二元液体以100 mol/min进料，轻组分摩尔分数z=0.50。在给定温压下，气液平衡为$y=2x/(1+x)$，气化率V/F=0.40；x、y分别为液相和气相轻组分分数。（1）由总量及组分衡算联立求x、y；（2）求两出口中轻、重组分流量；（3）检验物理根并解释为何不能取x=y=z。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "根与物理范围判断正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "四个组分流量正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "富集和错误假设解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q3 independent quadratic substitution",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q3 independent quadratic substitution\", \"actual\": -1.1102230246251565e-16, \"expected\": 0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q3 component closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q3 component closure\", \"actual\": 49.99999999999999, \"expected\": 50, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "chemical-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "稀溶质逆流填料吸收塔采用无溶质基准比率Y、X（mol/mol），惰性气体G=100、无溶质溶剂L=200 mol/min；入口气Yin=0.100，出口Yout=0.010，入口溶剂Xin=0。平衡式$Y^*=0.8X$，总气相传质单元高度HOG=0.70 m，流量近似不变。求出口X、操作线、传质单元数$N_{OG}=\\int_{Yout}^{Yin}dY/(Y-Y^*)$及塔高；检查全塔推动力。",
+          "score": 15,
+          "solution": "Xout=0.045，$X=0.5(Y-0.010)$，$Y-Y^*=0.6Y+0.004$。$N_{OG}=\\ln(6.4)/0.6=3.093830$，塔高2.165681 m。两端推动力为0.010和0.064，均为正。",
+          "explanation": "总体溶质衡算$G(Yin-Yout)=L(Xout-Xin)$。操作线由塔顶到任意截面的衡算得到，注意不能把出口液Xout代入全塔每个位置的平衡浓度。积分分母是沿操作线的局部气相推动力；它在区间内线性递增且最小值为0.010，无夹点。高度仅在题给恒定HOG和稀溶质近似下成立。",
+          "source": {
+            "materialId": "chemical-engineering-q4-statement",
+            "blockId": "chemical-engineering-q4-statement",
+            "exact": "稀溶质逆流填料吸收塔采用无溶质基准比率Y、X（mol/mol），惰性气体G=100、无溶质溶剂L=200 mol/min；入口气Yin=0.100，出口Yout=0.010，入口溶剂Xin=0。平衡式$Y^*=0.8X$，总气相传质单元高度HOG=0.70 m，流量近似不变。求出口X、操作线、传质单元数$N_{OG}=\\int_{Yout}^{Yin}dY/(Y-Y^*)$及塔高；检查全塔推动力。"
+          },
+          "chapter": "逆流吸收的操作线与推动力",
+          "tags": [
+            "化学工程原理与过程分析",
+            "逆流吸收的操作线与推动力",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "逆流吸收的操作线与推动力"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "chemical-engineering-scope",
+                "blockId": "chemical-engineering-scope",
+                "exact": "batch, plug flow and well-stirred reactors"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "总体衡算和操作线正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "chemical-engineering-q4-statement",
+                    "blockId": "chemical-engineering-q4-statement",
+                    "exact": "稀溶质逆流填料吸收塔采用无溶质基准比率Y、X（mol/mol），惰性气体G=100、无溶质溶剂L=200 mol/min；入口气Yin=0.100，出口Yout=0.010，入口溶剂Xin=0。平衡式$Y^*=0.8X$，总气相传质单元高度HOG=0.70 m，流量近似不变。求出口X、操作线、传质单元数$N_{OG}=\\int_{Yout}^{Yin}dY/(Y-Y^*)$及塔高；检查全塔推动力。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "局部平衡与推动力正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "积分、塔高及单位正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "夹点和近似条件检查正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q4 solute conservation",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q4 solute conservation\", \"actual\": 9.000000000000002, \"expected\": 9.0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q4 analytical integral",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q4 analytical integral\", \"actual\": 3.0938299839427095, \"expected\": 3.0938299839427104, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "chemical-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "绝热稳态混合器，热液A为2.0 kg/s、80°C、比热4.0 kJ/(kg·K)，冷液B为3.0 kg/s、20°C、比热2.0 kJ/(kg·K)。液体不反应、不相变，比热恒定，动位能忽略，混合热为零。（1）求出口温度；（2）若混合器向外散热28 kW，求新温度；（3）以0°C与20°C为焓基准分别列式，说明结果是否改变；（4）有同学算成质量加权44°C，解释错误。",
+          "score": 20,
+          "solution": "绝热温度$T=(2\\times4\\times80+3\\times2\\times20)/(2\\times4+3\\times2)=380/7=54.285714$°C；散热后52.285714°C。更换一致焓基准不改变结果。",
+          "explanation": "两路热容流率分别8和6 kW/K，出口焓流为(8+6)T。散热以输入负项列入，故温度降低28/14=2 K。以20°C为基准时8(80−20)=14(T−20)（绝热），与原式等价。质量加权仅在两路比热相同且满足题给其他条件时成立；本题须用热容流率加权。",
+          "source": {
+            "materialId": "chemical-engineering-q5-statement",
+            "blockId": "chemical-engineering-q5-statement",
+            "exact": "绝热稳态混合器，热液A为2.0 kg/s、80°C、比热4.0 kJ/(kg·K)，冷液B为3.0 kg/s、20°C、比热2.0 kJ/(kg·K)。液体不反应、不相变，比热恒定，动位能忽略，混合热为零。（1）求出口温度；（2）若混合器向外散热28 kW，求新温度；（3）以0°C与20°C为焓基准分别列式，说明结果是否改变；（4）有同学算成质量加权44°C，解释错误。"
+          },
+          "chapter": "不发生相变的混合能量衡算",
+          "tags": [
+            "化学工程原理与过程分析",
+            "不发生相变的混合能量衡算",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "不发生相变的混合能量衡算"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "chemical-engineering-scope",
+                "blockId": "chemical-engineering-scope",
+                "exact": "batch, plug flow and well-stirred reactors"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "完整能量方程与假设正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "chemical-engineering-q5-statement",
+                    "blockId": "chemical-engineering-q5-statement",
+                    "exact": "绝热稳态混合器，热液A为2.0 kg/s、80°C、比热4.0 kJ/(kg·K)，冷液B为3.0 kg/s、20°C、比热2.0 kJ/(kg·K)。液体不反应、不相变，比热恒定，动位能忽略，混合热为零。（1）求出口温度；（2）若混合器向外散热28 kW，求新温度；（3）以0°C与20°C为焓基准分别列式，说明结果是否改变；（4）有同学算成质量加权44°C，解释错误。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两工况温度正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "两种基准等价推导正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "质量加权错误定位正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q5 adiabatic energy residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q5 adiabatic energy residual\", \"actual\": 0.0, \"expected\": 0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q5 heat-loss energy",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q5 heat-loss energy\", \"actual\": 28.0, \"expected\": 28, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "chemical-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "恒容等温间歇釜中平行反应A→B、A→C均一级，速率常数分别k1、k2。初始仅A，$C_{A0}=1.0$ mol/L。10 min时$C_A=e^{-1}$ mol/L、$C_B=0.8(1-e^{-1})$ mol/L。（1）辨识k1、k2；（2）求任意t时A、B、C浓度；（3）求A转化率90%所需时间及B收率；（4）延长时间能否把B占产物比例由80%提高到90%？给依据。",
+          "score": 20,
+          "solution": "k1+k2=0.10 min⁻¹，k1=0.08、k2=0.02 min⁻¹。$C_A=e^{-0.1t}$，$C_B=0.8(1-e^{-0.1t})$，$C_C=0.2(1-e^{-0.1t})$。90%转化需$10\\ln10=23.025851$ min；B收率0.72 mol/mol。产物中B比例恒0.8，单靠延时不能升至0.9。",
+          "explanation": "联立$dC_A/dt=-(k1+k2)C_A$、$dC_B/dt=k1C_A$积分。先用A衰减辨识常数和，再用B的分流比例辨识两常数。收率B/A初始与选择性B/(B+C)不同；在同阶平行反应且常数不变时，后者由k1/(k1+k2)决定，与停留时间无关。",
+          "source": {
+            "materialId": "chemical-engineering-q6-statement",
+            "blockId": "chemical-engineering-q6-statement",
+            "exact": "恒容等温间歇釜中平行反应A→B、A→C均一级，速率常数分别k1、k2。初始仅A，$C_{A0}=1.0$ mol/L。10 min时$C_A=e^{-1}$ mol/L、$C_B=0.8(1-e^{-1})$ mol/L。（1）辨识k1、k2；（2）求任意t时A、B、C浓度；（3）求A转化率90%所需时间及B收率；（4）延长时间能否把B占产物比例由80%提高到90%？给依据。"
+          },
+          "chapter": "选择性、转化率与实验数据辨识",
+          "tags": [
+            "化学工程原理与过程分析",
+            "选择性、转化率与实验数据辨识",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "选择性、转化率与实验数据辨识"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "chemical-engineering-scope",
+                "blockId": "chemical-engineering-scope",
+                "exact": "batch, plug flow and well-stirred reactors"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "微分方程及常数辨识正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "chemical-engineering-q6-statement",
+                    "blockId": "chemical-engineering-q6-statement",
+                    "exact": "恒容等温间歇釜中平行反应A→B、A→C均一级，速率常数分别k1、k2。初始仅A，$C_{A0}=1.0$ mol/L。10 min时$C_A=e^{-1}$ mol/L、$C_B=0.8(1-e^{-1})$ mol/L。（1）辨识k1、k2；（2）求任意t时A、B、C浓度；（3）求A转化率90%所需时间及B收率；（4）延长时间能否把B占产物比例由80%提高到90%？给依据。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "完整浓度解与初值正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "时间和B收率正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "选择性与转化率区别正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q6 species conservation",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q6 species conservation\", \"actual\": 1.0, \"expected\": 1, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "chemical-q6 time substitution",
+                "result": "pass",
+                "evidence": "{\"label\": \"chemical-q6 time substitution\", \"actual\": 0.09999999999999994, \"expected\": 0.1, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "chemical-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "chemical-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "chemical-engineering-q1",
+        "knowledge": "反应器设计与停留时间",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "chemical-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "chemical-engineering-q2",
+        "knowledge": "回收与排放的稳态组分衡算",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "chemical-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "chemical-engineering-q3",
+        "knowledge": "二元闪蒸与相平衡",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "chemical-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "chemical-engineering-q4",
+        "knowledge": "逆流吸收的操作线与推动力",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "chemical-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "chemical-engineering-q5",
+        "knowledge": "不发生相变的混合能量衡算",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "chemical-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "chemical-engineering-q6",
+        "knowledge": "选择性、转化率与实验数据辨识",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "chemical-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "chemical-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "chemical-engineering-course-blueprint",
+      "name": "化学工程原理与过程分析课程考试",
+      "subject": "化学工程原理与过程分析",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "chemical-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

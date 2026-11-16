@@ -1,0 +1,800 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "cost-engineer-2-cases-01",
+  "notebookId": "cost-engineer-2-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "二级造价工程师　建设工程计量与计价实务",
+  "subject": "建设工程计量与计价实务",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "二级造价工程师　建设工程计量与计价实务",
+      "土木建筑工程·工程量与资源计价"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "二级造价工程师　建设工程计量与计价实务答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "建设工程计量与计价实务",
+      "rule": true
+    },
+    "footerTemplate": "建设工程计量与计价实务　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "cost-engineer-2",
+    "examName": "二级造价工程师　建设工程计量与计价实务",
+    "specialty": "土木建筑工程·工程量与资源计价",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "cost-engineer-2-cases-01-q1",
+        "knowledge": "砌体计量、材料损耗、采购包装取整",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-2-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-2-cases-01-q2",
+        "knowledge": "机械台班、利用率、费用时间口径",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-2-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-2-cases-01-q3",
+        "knowledge": "采购方案比选、物料合格率、临界报价",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-2-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-2-cases-01-q4",
+        "knowledge": "含税与不含税、结算减让、收入成本口径",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-2-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "cost-engineer-2-cases-01-q5",
+        "knowledge": "成本因素分析、交互项、剩余预算约束",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "cost-engineer-2-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "cost-engineer-2-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "外墙中心线总长40m，高3m、厚0.24m，共8个宽1.2m、高1.5m的门窗洞口。题设计量规则：全部洞口扣除，不考虑过梁及构造柱的另行扣减。每净m³砌体理论用砌块400块，采购在理论量上增加3%，整块向上取整；供应商按每500块一托整托出售，2.40元/块。\n（1）计算净墙体工程量。\n（2）计算含损耗所需整块数、应购买托数和购买数量。\n（3）求材料采购费及与最少整块需求相比的余量，区分计量、损耗与包装进位。",
+      "blocks": [
+        {
+          "id": "cost-engineer-2-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "外墙中心线总长40m，高3m、厚0.24m，共8个宽1.2m、高1.5m的门窗洞口。题设计量规则：全部洞口扣除，不考虑过梁及构造柱的另行扣减。每净m³砌体理论用砌块400块，采购在理论量上增加3%，整块向上取整；供应商按每500块一托整托出售，2.40元/块。\n（1）计算净墙体工程量。\n（2）计算含损耗所需整块数、应购买托数和购买数量。\n（3）求材料采购费及与最少整块需求相比的余量，区分计量、损耗与包装进位。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "1dab4df8614e6bd063659e3349a042b1731cf1de7305fb362edb6c5494db4d2a",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-2-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "需开挖1000m³土方。一台挖掘机在实际发动机作业时间内平均产量22m³/h，作业利用率为租赁班时的80%；每班8h，按整班租赁，每班1800元，不含司机及燃油。司机300元/班；燃油消耗15L/实际发动机作业小时，单价7.50元/L。非作业班时不耗燃油，整班费用照付。\n（1）求实际发动机作业小时、租赁班时和最少班数。\n（2）求机械租赁费、司机费、燃油费及合计。\n（3）说明为什么不能对燃油量再次除以80%，以及整班进位与实际耗油时间的区别。",
+      "blocks": [
+        {
+          "id": "cost-engineer-2-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "需开挖1000m³土方。一台挖掘机在实际发动机作业时间内平均产量22m³/h，作业利用率为租赁班时的80%；每班8h，按整班租赁，每班1800元，不含司机及燃油。司机300元/班；燃油消耗15L/实际发动机作业小时，单价7.50元/L。非作业班时不耗燃油，整班费用照付。\n（1）求实际发动机作业小时、租赁班时和最少班数。\n（2）求机械租赁费、司机费、燃油费及合计。\n（3）说明为什么不能对燃油量再次除以80%，以及整班进位与实际耗油时间的区别。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "13f84f50c2bed1a27169bb4a41a7a382076a51e7c5f615117a2ff9b09e49825e",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-2-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "项目需要最终进入成品的合格材料100t。供应商A按采购重量960元/t供货，运输和加工损失占采购重量的3%；B报价1000元/t，损失占采购重量的1%。两报价均含运输，不含税，质量及付款条件相同；允许按小数吨采购，无其他费用。\n（1）分别求采购重量和达到100t成品所需采购费。\n（2）选择成本较低供应商并求差额。\n（3）求A报价上升至多少元/t时两方案成本相等。\n（4）解释“损失占采购量3%”与“在净量上加3%”的差别。",
+      "blocks": [
+        {
+          "id": "cost-engineer-2-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "项目需要最终进入成品的合格材料100t。供应商A按采购重量960元/t供货，运输和加工损失占采购重量的3%；B报价1000元/t，损失占采购重量的1%。两报价均含运输，不含税，质量及付款条件相同；允许按小数吨采购，无其他费用。\n（1）分别求采购重量和达到100t成品所需采购费。\n（2）选择成本较低供应商并求差额。\n（3）求A报价上升至多少元/t时两方案成本相等。\n（4）解释“损失占采购量3%”与“在净量上加3%”的差别。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "da3c53da59bf1ff4b866dad007456582496a6fca1eab1dc8fff4b3b79988932e",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-2-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "某已完成工程原含税结算价500000元。本题约定税率为9%，全部价款适用同一税率。经协商对原不含税价减让2%，税额按减让后的不含税价重新计算。可抵扣进项税额已确认20000元，不含税成本350000元；忽略其他税费。\n（1）求原不含税价和原税额。\n（2）求减让后的不含税收入、销项税额、含税结算价与本题净应缴税额。\n（3）求减让后按不含税口径的毛利，说明不能将全部含税收款直接与不含税成本相减。",
+      "blocks": [
+        {
+          "id": "cost-engineer-2-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "某已完成工程原含税结算价500000元。本题约定税率为9%，全部价款适用同一税率。经协商对原不含税价减让2%，税额按减让后的不含税价重新计算。可抵扣进项税额已确认20000元，不含税成本350000元；忽略其他税费。\n（1）求原不含税价和原税额。\n（2）求减让后的不含税收入、销项税额、含税结算价与本题净应缴税额。\n（3）求减让后按不含税口径的毛利，说明不能将全部含税收款直接与不含税成本相减。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "5c58e2cca153b97ddc1e008649774ca08f3ffc8c020cf50a8be6ecf16dfb3c23",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "cost-engineer-2-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "某清单项总计划1000单位，预算单价300元/单位。检查日计划完成600单位，实际合格完成650单位，实际单价320元/单位，实际成本208000元。\n（1）按“先数量、后单价”的连环替代顺序，把相对检查日计划成本的偏差分解为数量影响与单价影响。\n（2）若改为“先单价、后数量”，两分项如何变化，总偏差是否改变？\n（3）总预算仍为300000元且总量1000单位不变，剩余350单位若要不突破总预算，平均单价上限是多少？当前可获得的305元/单位报价能否实现该目标？提出两项合法的管理应对。",
+      "blocks": [
+        {
+          "id": "cost-engineer-2-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "某清单项总计划1000单位，预算单价300元/单位。检查日计划完成600单位，实际合格完成650单位，实际单价320元/单位，实际成本208000元。\n（1）按“先数量、后单价”的连环替代顺序，把相对检查日计划成本的偏差分解为数量影响与单价影响。\n（2）若改为“先单价、后数量”，两分项如何变化，总偏差是否改变？\n（3）总预算仍为300000元且总量1000单位不变，剩余350单位若要不突破总预算，平均单价上限是多少？当前可获得的305元/单位报价能否实现该目标？提出两项合法的管理应对。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "aa6d9b57d9aa790ede6bd2eed88832f75766de41c1ff565bebad6f3e2ed2e2a6",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "cost-engineer-2-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "外墙中心线总长40m，高3m、厚0.24m，共8个宽1.2m、高1.5m的门窗洞口。题设计量规则：全部洞口扣除，不考虑过梁及构造柱的另行扣减。每净m³砌体理论用砌块400块，采购在理论量上增加3%，整块向上取整；供应商按每500块一托整托出售，2.40元/块。\n（1）计算净墙体工程量。\n（2）计算含损耗所需整块数、应购买托数和购买数量。\n（3）求材料采购费及与最少整块需求相比的余量，区分计量、损耗与包装进位。",
+          "score": 20,
+          "solution": "净体积25.344m³。理论10137.6块，含损耗10441.728块，最少10442整块。需21托，购10500块，采购费25200元；相对10442块的包装余量58块。净清单量不因采购进托而增加。",
+          "explanation": "面积40×3−8×1.2×1.5=105.6m²，乘0.24。先按3%计算再整块进位，最后按500整托进位；三个口径分别记录，不能把10500/400当作净工程量。",
+          "source": {
+            "materialId": "cost-engineer-2-cases-01-q1-source",
+            "blockId": "cost-engineer-2-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "外墙中心线总长40m，高3m、厚0.24m，共8个宽1.2m、高1.5m的门窗洞口。题设计量规则：全部洞口扣除，不考虑过梁及构造柱的另行扣减。每净m³砌体理论用砌块400块，采购在理论量上增加3%，整块向上取整；供应商按每500块一托整托出售，2.40元/块。\n（1）计算净墙体工程量。\n（2）计算含损耗所需整块数、应购买托数和购买数量。\n（3）求材料采购费及与最少整块需求相比的余量，区分计量、损耗与包装进位。"
+          },
+          "chapter": "砌体计量",
+          "tags": [
+            "砌体计量",
+            "材料损耗",
+            "采购包装取整"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "砌体计量",
+              "材料损耗",
+              "采购包装取整"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "洞口扣减与25.344m³",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "理论及10442块",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "21托10500块",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "25200元及58块",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "说明采购量不反推净清单量",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost2-masonry: independent Python calculation = 25.344; expected = 25.344; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-blocks: independent Python calculation = 10442; expected = 10442; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-purchase: independent Python calculation = 10500; expected = 10500; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-material-cost: independent Python calculation = 25200; expected = 25200; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-2-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "需开挖1000m³土方。一台挖掘机在实际发动机作业时间内平均产量22m³/h，作业利用率为租赁班时的80%；每班8h，按整班租赁，每班1800元，不含司机及燃油。司机300元/班；燃油消耗15L/实际发动机作业小时，单价7.50元/L。非作业班时不耗燃油，整班费用照付。\n（1）求实际发动机作业小时、租赁班时和最少班数。\n（2）求机械租赁费、司机费、燃油费及合计。\n（3）说明为什么不能对燃油量再次除以80%，以及整班进位与实际耗油时间的区别。",
+          "score": 20,
+          "solution": "实际发动机作业45.4545h；所需租赁班时56.8182h，至少8班。租赁14400元，司机2400元，燃油约681.8182L、5113.64元，总计21913.64元。利用率已用于把实际作业时间转换为支付班时；本题燃油仅按实际发动机小时计，不再对燃油除0.80，也不按64h满额耗油。",
+          "explanation": "先计算Q/生产率，再按利用率换班时、按8h取班数。燃油独立按发动机作业小时计算。这样的口径来自题设租赁条件，并不推定定额台班规则。",
+          "source": {
+            "materialId": "cost-engineer-2-cases-01-q2-source",
+            "blockId": "cost-engineer-2-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "需开挖1000m³土方。一台挖掘机在实际发动机作业时间内平均产量22m³/h，作业利用率为租赁班时的80%；每班8h，按整班租赁，每班1800元，不含司机及燃油。司机300元/班；燃油消耗15L/实际发动机作业小时，单价7.50元/L。非作业班时不耗燃油，整班费用照付。\n（1）求实际发动机作业小时、租赁班时和最少班数。\n（2）求机械租赁费、司机费、燃油费及合计。\n（3）说明为什么不能对燃油量再次除以80%，以及整班进位与实际耗油时间的区别。"
+          },
+          "chapter": "机械台班",
+          "tags": [
+            "机械台班",
+            "利用率",
+            "费用时间口径"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "机械台班",
+              "利用率",
+              "费用时间口径"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "45.4545h与56.8182h",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "8班正确取整",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "三项费用及合计",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "燃油不重复计利用率",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "整班支付与实际耗油区分",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost2-machine-hours: independent Python calculation = 45.45454545; expected = 45.45454545; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-machine-shifts: independent Python calculation = 8; expected = 8; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-machine-total: independent Python calculation = 21913.63636; expected = 21913.63636; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-2-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "项目需要最终进入成品的合格材料100t。供应商A按采购重量960元/t供货，运输和加工损失占采购重量的3%；B报价1000元/t，损失占采购重量的1%。两报价均含运输，不含税，质量及付款条件相同；允许按小数吨采购，无其他费用。\n（1）分别求采购重量和达到100t成品所需采购费。\n（2）选择成本较低供应商并求差额。\n（3）求A报价上升至多少元/t时两方案成本相等。\n（4）解释“损失占采购量3%”与“在净量上加3%”的差别。",
+          "score": 20,
+          "solution": "A需103.0928t，费98969.07元；B需101.0101t，费101010.10元，选A，节省2041.03元。A临界单价=1000×0.97/0.99=979.79798元/t。以采购量为分母的损失应除以合格率，不能把净量直接乘1.03。",
+          "explanation": "物料守恒为采购量×(1−损失率)=成品量。两方案成本可写为100×采购单价/合格率，再令其相等求报价临界值，避免错误比较表面单价。",
+          "source": {
+            "materialId": "cost-engineer-2-cases-01-q3-source",
+            "blockId": "cost-engineer-2-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "项目需要最终进入成品的合格材料100t。供应商A按采购重量960元/t供货，运输和加工损失占采购重量的3%；B报价1000元/t，损失占采购重量的1%。两报价均含运输，不含税，质量及付款条件相同；允许按小数吨采购，无其他费用。\n（1）分别求采购重量和达到100t成品所需采购费。\n（2）选择成本较低供应商并求差额。\n（3）求A报价上升至多少元/t时两方案成本相等。\n（4）解释“损失占采购量3%”与“在净量上加3%”的差别。"
+          },
+          "chapter": "采购方案比选",
+          "tags": [
+            "采购方案比选",
+            "物料合格率",
+            "临界报价"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "采购方案比选",
+              "物料合格率",
+              "临界报价"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "两采购重量",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "两采购费及差额",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "临界单价979.798",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "物料守恒模型",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "区分两个损耗分母",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost2-buy-A: independent Python calculation = 98969.07216; expected = 98969.07216; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-buy-B: independent Python calculation = 101010.101; expected = 101010.101; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-break-even-price: independent Python calculation = 979.7979798; expected = 979.7979798; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-2-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "某已完成工程原含税结算价500000元。本题约定税率为9%，全部价款适用同一税率。经协商对原不含税价减让2%，税额按减让后的不含税价重新计算。可抵扣进项税额已确认20000元，不含税成本350000元；忽略其他税费。\n（1）求原不含税价和原税额。\n（2）求减让后的不含税收入、销项税额、含税结算价与本题净应缴税额。\n（3）求减让后按不含税口径的毛利，说明不能将全部含税收款直接与不含税成本相减。",
+          "score": 20,
+          "solution": "原不含税458715.60元、税额41284.40元。减让后不含税收入449541.28元，销项40458.72元，含税结算490000元；按题设抵扣后净税额20458.72元。毛利99541.28元。销项税额不是企业营业收入；税率和抵扣资格为本题明确假设，不据此推断具体纳税人的真实税务处理。",
+          "explanation": "原价除1.09得到不含税价；减让乘0.98。所有中间值保留足够精度，净税额按减让后的销项减已确认进项。毛利使用同一不含税口径449541.2844−350000。",
+          "source": {
+            "materialId": "cost-engineer-2-cases-01-q4-source",
+            "blockId": "cost-engineer-2-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "某已完成工程原含税结算价500000元。本题约定税率为9%，全部价款适用同一税率。经协商对原不含税价减让2%，税额按减让后的不含税价重新计算。可抵扣进项税额已确认20000元，不含税成本350000元；忽略其他税费。\n（1）求原不含税价和原税额。\n（2）求减让后的不含税收入、销项税额、含税结算价与本题净应缴税额。\n（3）求减让后按不含税口径的毛利，说明不能将全部含税收款直接与不含税成本相减。"
+          },
+          "chapter": "含税与不含税",
+          "tags": [
+            "含税与不含税",
+            "结算减让",
+            "收入成本口径"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "含税与不含税",
+              "结算减让",
+              "收入成本口径"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "原不含税与原税额",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "减让后收入/销项/含税价",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "净税额20458.72",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "毛利99541.28",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "解释销项不作营业收入及假设边界",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost2-net-revenue: independent Python calculation = 449541.2844; expected = 449541.2844; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-output-tax: independent Python calculation = 40458.7156; expected = 40458.7156; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-gross-profit: independent Python calculation = 99541.2844; expected = 99541.2844; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cost-engineer-2-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "某清单项总计划1000单位，预算单价300元/单位。检查日计划完成600单位，实际合格完成650单位，实际单价320元/单位，实际成本208000元。\n（1）按“先数量、后单价”的连环替代顺序，把相对检查日计划成本的偏差分解为数量影响与单价影响。\n（2）若改为“先单价、后数量”，两分项如何变化，总偏差是否改变？\n（3）总预算仍为300000元且总量1000单位不变，剩余350单位若要不突破总预算，平均单价上限是多少？当前可获得的305元/单位报价能否实现该目标？提出两项合法的管理应对。",
+          "score": 20,
+          "solution": "计划检查成本180000元，总偏差28000元。先数量后单价：数量+15000元、单价+13000元；先单价后数量：单价+12000元、数量+16000元，总额仍28000元。剩余预算92000元，平均单价上限262.8571元；305元报价对应总成本314750元，超14750元，不能实现原总预算。可重新优化资源与采购、核实效率和变更依据，并在必要时履行目标调整审批，不能虚减合格量或隐去已发生费用。",
+          "explanation": "交互项(650−600)(320−300)=1000元按替代顺序归入不同因素，因而不能混合两套分项。总目标控制使用总预算−实际已发生成本，而不是把检查日进度偏差机械视为全部可压缩成本。",
+          "source": {
+            "materialId": "cost-engineer-2-cases-01-q5-source",
+            "blockId": "cost-engineer-2-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "某清单项总计划1000单位，预算单价300元/单位。检查日计划完成600单位，实际合格完成650单位，实际单价320元/单位，实际成本208000元。\n（1）按“先数量、后单价”的连环替代顺序，把相对检查日计划成本的偏差分解为数量影响与单价影响。\n（2）若改为“先单价、后数量”，两分项如何变化，总偏差是否改变？\n（3）总预算仍为300000元且总量1000单位不变，剩余350单位若要不突破总预算，平均单价上限是多少？当前可获得的305元/单位报价能否实现该目标？提出两项合法的管理应对。"
+          },
+          "chapter": "成本因素分析",
+          "tags": [
+            "成本因素分析",
+            "交互项",
+            "剩余预算约束"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "成本因素分析",
+              "交互项",
+              "剩余预算约束"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "总偏差及第一顺序分解",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "第二顺序分解与交互项",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "剩余平均价262.8571",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "305报价总314750与超14750",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "管理应对真实且不篡改数据",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "cost2-deviation: independent Python calculation = 28000; expected = 28000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-order1: independent Python calculation = 28000; expected = 28000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-order2: independent Python calculation = 28000; expected = 28000; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-remaining-cap: independent Python calculation = 262.8571429; expected = 262.8571429; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "cost2-forecast-quote: independent Python calculation = 314750; expected = 314750; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "cost-engineer-2-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "cost-engineer-2-project-blueprint",
+      "name": "建设工程计量与计价实务案例能力蓝图",
+      "subject": "建设工程计量与计价实务",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "cost-engineer-2-cases-v7",
+    "sourceQuestionIds": [
+      "cost-engineer-2-cases-01-q1",
+      "cost-engineer-2-cases-01-q2",
+      "cost-engineer-2-cases-01-q3",
+      "cost-engineer-2-cases-01-q4",
+      "cost-engineer-2-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

@@ -1,0 +1,799 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "supervision-engineer-cases-01",
+  "notebookId": "supervision-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "监理工程师　建设工程监理案例分析",
+  "subject": "建设工程监理案例分析",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "监理工程师　建设工程监理案例分析",
+      "土木建筑工程·质量、投资、进度与合同控制"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "监理工程师　建设工程监理案例分析答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "建设工程监理案例分析",
+      "rule": true
+    },
+    "footerTemplate": "建设工程监理案例分析　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "supervision-engineer",
+    "examName": "监理工程师　建设工程监理案例分析",
+    "specialty": "土木建筑工程·质量、投资、进度与合同控制",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "supervision-engineer-cases-01-q1",
+        "knowledge": "网络计划、总时差、关键线路、进度证据",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "supervision-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "supervision-engineer-cases-01-q2",
+        "knowledge": "挣值、完工预测、合同支付",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "supervision-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "supervision-engineer-cases-01-q3",
+        "knowledge": "施工质量、双条件验收、不符合项闭环",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "supervision-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "supervision-engineer-cases-01-q4",
+        "knowledge": "并发延误、索赔、合同边界",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "supervision-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "supervision-engineer-cases-01-q5",
+        "knowledge": "大纲效力、指定版本、来源边界、命题证据",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "supervision-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "supervision-2026-notice",
+      "kind": "reference",
+      "title": "监理考试大纲版本核定",
+      "text": "住建部2026年第7号公告于2026年1月16日实施2026版监理考试大纲，同时废止2020版。公告用于核定大纲身份，不代替具体合同、规范或考试附件正文。",
+      "blocks": [
+        {
+          "id": "supervision-2026-notice-block",
+          "title": "监理考试大纲版本核定",
+          "text": "住建部2026年第7号公告于2026年1月16日实施2026版监理考试大纲，同时废止2020版。公告用于核定大纲身份，不代替具体合同、规范或考试附件正文。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "189941ba75aa3014f748c366cf4f77a6404cb928f3a274a7a45deda0d8039caa",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-15",
+        "version": "2026年第7号；2026-01-16",
+        "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2026/art_9b08b3642a234e62b41175197bc16c31.html",
+        "publisher": "住房城乡建设部"
+      },
+      "url": "https://www.mohurd.gov.cn/gongkai/zc/wjk/art/2026/art_9b08b3642a234e62b41175197bc16c31.html"
+    },
+    {
+      "id": "supervision-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "六项工作关系及工期为：A(3日)无前置；B(5日)、C(4日)均在A后；D(6日)在B后；E(3日)在B、C均完成后；F(2日)在D、E均完成后。均为完成—开始、零时距、资源充足，时刻从0开始。\n（1）用前推、后退计算各工作最早开始时刻和总时差，求总工期与关键线路。\n（2）C延长2日，其他不变，是否改变总工期？若D延长2日又如何？\n（3）监理核实进度影响时，须比较哪些资料，为什么不能把任一工作延误都直接作为项目顺延？",
+      "blocks": [
+        {
+          "id": "supervision-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "六项工作关系及工期为：A(3日)无前置；B(5日)、C(4日)均在A后；D(6日)在B后；E(3日)在B、C均完成后；F(2日)在D、E均完成后。均为完成—开始、零时距、资源充足，时刻从0开始。\n（1）用前推、后退计算各工作最早开始时刻和总时差，求总工期与关键线路。\n（2）C延长2日，其他不变，是否改变总工期？若D延长2日又如何？\n（3）监理核实进度影响时，须比较哪些资料，为什么不能把任一工作延误都直接作为项目顺延？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "21b3753f9e846e1c1e5e0165c04d7ef2b348f8eeacc9311371cb3b21489b65af",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "supervision-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "合同BAC=1000万元，检查日PV=500万元、EV=450万元、AC=480万元；累计实际形象进度45%。合同付款规则：累计合格计价额按EV计算，扣5%保留金；已支付前期进度款300万元；无预付款和其他扣项。\n（1）计算CV、SV、CPI、SPI。\n（2）分别在“剩余按预算效率”和“剩余保持当前成本效率”下求EAC。\n（3）求本期应支付进度款，说明EAC和合同应付款为什么不是同一个数。",
+      "blocks": [
+        {
+          "id": "supervision-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "合同BAC=1000万元，检查日PV=500万元、EV=450万元、AC=480万元；累计实际形象进度45%。合同付款规则：累计合格计价额按EV计算，扣5%保留金；已支付前期进度款300万元；无预付款和其他扣项。\n（1）计算CV、SV、CPI、SPI。\n（2）分别在“剩余按预算效率”和“剩余保持当前成本效率”下求EAC。\n（3）求本期应支付进度款，说明EAC和合同应付款为什么不是同一个数。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "645dc962300a98414a6c30993686b987215094b932303bfdc69a1711149371f1",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "supervision-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "项目检验方案对每批五个试样规定：均值≥25MPa，且每个值≥22MPa，批次独立。A批为24/26/25/23/27MPa；B批29/30/20/28/28MPa。B批对应构件已浇筑，但后续加载工序未开始。现场提出“把B最低值删除后平均”或“以A和B合并均值验收”。\n（1）计算并分别判定。\n（2）评价两个建议。\n（3）列出监理发现后至加载工序放行的处理链，区分原始不合格、追加检测与技术处置之间的关系。",
+      "blocks": [
+        {
+          "id": "supervision-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "项目检验方案对每批五个试样规定：均值≥25MPa，且每个值≥22MPa，批次独立。A批为24/26/25/23/27MPa；B批29/30/20/28/28MPa。B批对应构件已浇筑，但后续加载工序未开始。现场提出“把B最低值删除后平均”或“以A和B合并均值验收”。\n（1）计算并分别判定。\n（2）评价两个建议。\n（3）列出监理发现后至加载工序放行的处理链，区分原始不合格、追加检测与技术处置之间的关系。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "41eb786ed14418c7babc3011f686efa2f7d9969b24bc098a9850270077f1331c",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "supervision-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "关键工作原定第4—9日连续施工6个工作日，后续关键工作还需4日，原项目第13日完成。业主变更导致第4/5/6日无法施工；承包人设备故障导致第6/7日无法施工。其余日正常，停工期间该工作完全无产出。合同约定：业主独有及并发原因的关键停工日均可顺延；并发日不补费用；仅业主独有日补偿实际已核实维持费0.8万元/日。\n（1）列逐日原因、实际工期和项目实际完成日。\n（2）求顺延、费用补偿和承包人自负延误。\n（3）识别需要保留的通知、影响和费用证据，并说明结论为何限于题给合同。",
+      "blocks": [
+        {
+          "id": "supervision-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "关键工作原定第4—9日连续施工6个工作日，后续关键工作还需4日，原项目第13日完成。业主变更导致第4/5/6日无法施工；承包人设备故障导致第6/7日无法施工。其余日正常，停工期间该工作完全无产出。合同约定：业主独有及并发原因的关键停工日均可顺延；并发日不补费用；仅业主独有日补偿实际已核实维持费0.8万元/日。\n（1）列逐日原因、实际工期和项目实际完成日。\n（2）求顺延、费用补偿和承包人自负延误。\n（3）识别需要保留的通知、影响和费用证据，并说明结论为何限于题给合同。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "03d6cdc641b8412f0fd166c527abf1a0af531b18e1c9904bae57cd26e7fe1079",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    },
+    {
+      "id": "supervision-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "一次资料核验中，施工单位提交“2020版监理考试大纲”为现行命题依据；项目合同另明确该工程设计验算采用《项目结构计算手册》2024修订版。上传包含：①住建部2026年第7号公告，实施日2026-01-16，规定2026监理考试大纲执行、2020版同时废止；②合同指定2024手册；③网上2025手册摘要，无正文、无批准替换文件。用户要求“按当前考试路线，以合同指定材料出一个结构验算题”。\n（1）分别确定考试大纲与结构验算技术取值应采用什么。\n（2）哪些信息还需补读，哪些不能从摘要推定？\n（3）为新题建立最小证据清单；若2024手册缺少必要公式，如何处理而不越过用户限定？",
+      "blocks": [
+        {
+          "id": "supervision-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "一次资料核验中，施工单位提交“2020版监理考试大纲”为现行命题依据；项目合同另明确该工程设计验算采用《项目结构计算手册》2024修订版。上传包含：①住建部2026年第7号公告，实施日2026-01-16，规定2026监理考试大纲执行、2020版同时废止；②合同指定2024手册；③网上2025手册摘要，无正文、无批准替换文件。用户要求“按当前考试路线，以合同指定材料出一个结构验算题”。\n（1）分别确定考试大纲与结构验算技术取值应采用什么。\n（2）哪些信息还需补读，哪些不能从摘要推定？\n（3）为新题建立最小证据清单；若2024手册缺少必要公式，如何处理而不越过用户限定？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "f62182608530dd0d73529f09536071c01e8acee4f4e30e8fbe08cd5bafa94673",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "supervision-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "六项工作关系及工期为：A(3日)无前置；B(5日)、C(4日)均在A后；D(6日)在B后；E(3日)在B、C均完成后；F(2日)在D、E均完成后。均为完成—开始、零时距、资源充足，时刻从0开始。\n（1）用前推、后退计算各工作最早开始时刻和总时差，求总工期与关键线路。\n（2）C延长2日，其他不变，是否改变总工期？若D延长2日又如何？\n（3）监理核实进度影响时，须比较哪些资料，为什么不能把任一工作延误都直接作为项目顺延？",
+          "score": 20,
+          "solution": "最早开始A/B/C/D/E/F分别0/3/3/8/8/14日，总时差0/0/4/0/3/0日。工期16日，关键线路A—B—D—F。C延长2日后E最早开始9日、结束12日，仍早于D的14日，总工期不变；D延长2日使总工期18日。应对照批准基准计划、事件记录、实际逻辑与同期资源/措施，识别关键线路、可用时差和责任，工作延误不必等于项目延误。",
+          "explanation": "前推按所有前置完成最大值，后退按所有后续最迟开始最小值。C本身总时差4日，其延长后仍有2日可用时差；E支路原有3日总时差。关键工作D延长直接推迟F，前提是其余逻辑与资源条件不变。",
+          "source": {
+            "materialId": "supervision-engineer-cases-01-q1-source",
+            "blockId": "supervision-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "六项工作关系及工期为：A(3日)无前置；B(5日)、C(4日)均在A后；D(6日)在B后；E(3日)在B、C均完成后；F(2日)在D、E均完成后。均为完成—开始、零时距、资源充足，时刻从0开始。\n（1）用前推、后退计算各工作最早开始时刻和总时差，求总工期与关键线路。\n（2）C延长2日，其他不变，是否改变总工期？若D延长2日又如何？\n（3）监理核实进度影响时，须比较哪些资料，为什么不能把任一工作延误都直接作为项目顺延？"
+          },
+          "chapter": "网络计划",
+          "tags": [
+            "网络计划",
+            "总时差",
+            "关键线路",
+            "进度证据"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "网络计划",
+              "总时差",
+              "关键线路",
+              "进度证据"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "各最早开始和16日工期正确",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "后退与各总时差正确",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "两情景分别16/18日并解释路径",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "将事实、关键影响及责任分开核实",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "supervision-network-duration: independent Python calculation = 16; expected = 16; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-C-total-float: independent Python calculation = 4; expected = 4; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-E-total-float: independent Python calculation = 3; expected = 3; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "supervision-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "合同BAC=1000万元，检查日PV=500万元、EV=450万元、AC=480万元；累计实际形象进度45%。合同付款规则：累计合格计价额按EV计算，扣5%保留金；已支付前期进度款300万元；无预付款和其他扣项。\n（1）计算CV、SV、CPI、SPI。\n（2）分别在“剩余按预算效率”和“剩余保持当前成本效率”下求EAC。\n（3）求本期应支付进度款，说明EAC和合同应付款为什么不是同一个数。",
+          "score": 20,
+          "solution": "CV=-30万元，SV=-50万元，CPI=0.9375，SPI=0.9。剩余恢复预算效率时EAC=480+(1000−450)=1030万元；效率持续时EAC=1000/0.9375=1066.6667万元。本期进度款=450×0.95−300=127.5万元。EAC是成本预测，付款依据是累计合格计量与合同扣项。",
+          "explanation": "负CV表明已完工程成本超支，负SV表明按预算权重计进度落后，不能将−50万元直接称作延误50天。保留金按题设合格计价额计，不应按AC或预测EAC扣留。",
+          "source": {
+            "materialId": "supervision-engineer-cases-01-q2-source",
+            "blockId": "supervision-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "合同BAC=1000万元，检查日PV=500万元、EV=450万元、AC=480万元；累计实际形象进度45%。合同付款规则：累计合格计价额按EV计算，扣5%保留金；已支付前期进度款300万元；无预付款和其他扣项。\n（1）计算CV、SV、CPI、SPI。\n（2）分别在“剩余按预算效率”和“剩余保持当前成本效率”下求EAC。\n（3）求本期应支付进度款，说明EAC和合同应付款为什么不是同一个数。"
+          },
+          "chapter": "挣值",
+          "tags": [
+            "挣值",
+            "完工预测",
+            "合同支付"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "挣值",
+              "完工预测",
+              "合同支付"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "四项指标正确",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "两EAC分别1030/1066.6667并说明假设",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "累计与本期支付口径127.5",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "预测、进度权重、支付含义分明",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "supervision-CPI: independent Python calculation = 0.9375; expected = 0.9375; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-EAC-budget-rest: independent Python calculation = 1030; expected = 1030; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-EAC-trend: independent Python calculation = 1066.666667; expected = 1066.666667; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-current-payment: independent Python calculation = 127.5; expected = 127.5; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "supervision-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "项目检验方案对每批五个试样规定：均值≥25MPa，且每个值≥22MPa，批次独立。A批为24/26/25/23/27MPa；B批29/30/20/28/28MPa。B批对应构件已浇筑，但后续加载工序未开始。现场提出“把B最低值删除后平均”或“以A和B合并均值验收”。\n（1）计算并分别判定。\n（2）评价两个建议。\n（3）列出监理发现后至加载工序放行的处理链，区分原始不合格、追加检测与技术处置之间的关系。",
+          "score": 20,
+          "solution": "A均值25MPa、最小23MPa，满足；B均值27MPa、最小20MPa，不满足。删值和合批均违反题给规则，较高均值不能覆盖单项失败。应登记并通知、暂停受影响加载，保留原试验和取样记录，核实试验有效性；由有权技术主体提出并批准检测/复核与处置方案，实施后复验或验算，满足批准的放行条件并签认。追加检测不会自动使原始不合格记录消失。",
+          "explanation": "按“均值与最小值同时满足”的AND逻辑逐批判定。这里阈值为项目练习参数，不引用未列明的国家强度验收条款。须在程序上和实体上都解决问题，不能只补签或仅增加一个有利试样。",
+          "source": {
+            "materialId": "supervision-engineer-cases-01-q3-source",
+            "blockId": "supervision-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "项目检验方案对每批五个试样规定：均值≥25MPa，且每个值≥22MPa，批次独立。A批为24/26/25/23/27MPa；B批29/30/20/28/28MPa。B批对应构件已浇筑，但后续加载工序未开始。现场提出“把B最低值删除后平均”或“以A和B合并均值验收”。\n（1）计算并分别判定。\n（2）评价两个建议。\n（3）列出监理发现后至加载工序放行的处理链，区分原始不合格、追加检测与技术处置之间的关系。"
+          },
+          "chapter": "施工质量",
+          "tags": [
+            "施工质量",
+            "双条件验收",
+            "不符合项闭环"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工质量",
+              "双条件验收",
+              "不符合项闭环"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "两批均值/极小值和判定",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "指出删值/合批均无依据",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "通知、保全、复核、批准处置与复验链完整",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "加载放行须实体证据与有权签认",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "supervision-A-mean: independent Python calculation = 25; expected = 25; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-B-mean: independent Python calculation = 27; expected = 27; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "case-evidence-review",
+                "detail": "逐项核对：A全部值≥22且均值25；B最低20<22。两错误建议均绕开明确判据。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "supervision-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "关键工作原定第4—9日连续施工6个工作日，后续关键工作还需4日，原项目第13日完成。业主变更导致第4/5/6日无法施工；承包人设备故障导致第6/7日无法施工。其余日正常，停工期间该工作完全无产出。合同约定：业主独有及并发原因的关键停工日均可顺延；并发日不补费用；仅业主独有日补偿实际已核实维持费0.8万元/日。\n（1）列逐日原因、实际工期和项目实际完成日。\n（2）求顺延、费用补偿和承包人自负延误。\n（3）识别需要保留的通知、影响和费用证据，并说明结论为何限于题给合同。",
+          "score": 20,
+          "solution": "第4/5日仅业主，第6日并发，第7日仅承包人；停工并集4日，关键工作第13日完成，项目第17日完成。可顺延3日，补偿2×0.8=1.6万元；承包人独有1日不顺延，顺延后的合同完成日为16日，实际仍迟1日。应保留变更指令、设备与施工日志、基准及同期计划、实际发生维持费和通知记录。",
+          "explanation": "实际影响按事件日期并集，责任顺延与费用分别依专用条款计算；3+2不能重复记成5天停工，所有可顺延日也不等于可补偿日。本题给出合同规则，不推定各法域或全部合同均采用相同并发处理。",
+          "source": {
+            "materialId": "supervision-engineer-cases-01-q4-source",
+            "blockId": "supervision-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "关键工作原定第4—9日连续施工6个工作日，后续关键工作还需4日，原项目第13日完成。业主变更导致第4/5/6日无法施工；承包人设备故障导致第6/7日无法施工。其余日正常，停工期间该工作完全无产出。合同约定：业主独有及并发原因的关键停工日均可顺延；并发日不补费用；仅业主独有日补偿实际已核实维持费0.8万元/日。\n（1）列逐日原因、实际工期和项目实际完成日。\n（2）求顺延、费用补偿和承包人自负延误。\n（3）识别需要保留的通知、影响和费用证据，并说明结论为何限于题给合同。"
+          },
+          "chapter": "并发延误",
+          "tags": [
+            "并发延误",
+            "索赔",
+            "合同边界"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "并发延误",
+              "索赔",
+              "合同边界"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "逐日分类与4日并集",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "工作13/项目17日",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "顺延3、费用1.6、自负1",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "调整合同完成日16",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "证据及适用合同边界",
+                "points": 3
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "supervision-delay-union: independent Python calculation = 4; expected = 4; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-extension-days: independent Python calculation = 3; expected = 3; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "supervision-compensation: independent Python calculation = 1.6; expected = 1.6; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "supervision-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "一次资料核验中，施工单位提交“2020版监理考试大纲”为现行命题依据；项目合同另明确该工程设计验算采用《项目结构计算手册》2024修订版。上传包含：①住建部2026年第7号公告，实施日2026-01-16，规定2026监理考试大纲执行、2020版同时废止；②合同指定2024手册；③网上2025手册摘要，无正文、无批准替换文件。用户要求“按当前考试路线，以合同指定材料出一个结构验算题”。\n（1）分别确定考试大纲与结构验算技术取值应采用什么。\n（2）哪些信息还需补读，哪些不能从摘要推定？\n（3）为新题建立最小证据清单；若2024手册缺少必要公式，如何处理而不越过用户限定？",
+          "score": 20,
+          "solution": "当前考试路线采用2026监理大纲；2020版仅作历史对照。结构验算仍以合同指定2024手册为给定技术边界，不能因发现2025摘要便静默换版。须读取2026大纲附件确认具体范围，读取2024手册必要正文、公式、适用条件与勘误；摘要不能证明2025公式、效力或已获合同替换批准。证据清单含资料ID/版本/页码、确切条文、题设参数、模型适用性、独立算式及评分依据。缺公式时定位缺页，补取允许的同版正文或向用户集中说明缺项，不凭外部摘要填入答案。",
+          "explanation": "考试范围文件与工程合同技术文件承担不同角色：一个被公告废止，不意味着合同指定的另一份文件也失效。当前年份不能替代效力判断；完整引用和真实推导也不能互相替代。",
+          "source": {
+            "materialId": "supervision-engineer-cases-01-q5-source",
+            "blockId": "supervision-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "一次资料核验中，施工单位提交“2020版监理考试大纲”为现行命题依据；项目合同另明确该工程设计验算采用《项目结构计算手册》2024修订版。上传包含：①住建部2026年第7号公告，实施日2026-01-16，规定2026监理考试大纲执行、2020版同时废止；②合同指定2024手册；③网上2025手册摘要，无正文、无批准替换文件。用户要求“按当前考试路线，以合同指定材料出一个结构验算题”。\n（1）分别确定考试大纲与结构验算技术取值应采用什么。\n（2）哪些信息还需补读，哪些不能从摘要推定？\n（3）为新题建立最小证据清单；若2024手册缺少必要公式，如何处理而不越过用户限定？"
+          },
+          "chapter": "大纲效力",
+          "tags": [
+            "大纲效力",
+            "指定版本",
+            "来源边界",
+            "命题证据"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "大纲效力",
+              "指定版本",
+              "来源边界",
+              "命题证据"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "考试2026与技术2024分开判断",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "附件/正文/勘误及摘要边界",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "题目到答案的证据清单完整",
+                "points": 6
+              },
+              {
+                "id": "r4",
+                "description": "缺页具体定位且不擅自越界",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "case-evidence-review",
+                "detail": "实际读取住建部2026年第7号公告：发布/实施日2026-01-16，正文明确2020大纲同时废止；案例中的合同及手册数据为题给条件，答案没有捏造其条款。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "supervision-2026-notice",
+                "blockId": "supervision-2026-notice-block",
+                "title": "监理考试大纲版本核定",
+                "exact": "住建部2026年第7号公告于2026年1月16日实施2026版监理考试大纲，同时废止2020版。公告用于核定大纲身份，不代替具体合同、规范或考试附件正文。"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "supervision-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "supervision-engineer-project-blueprint",
+      "name": "建设工程监理案例分析案例能力蓝图",
+      "subject": "建设工程监理案例分析",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "supervision-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "supervision-engineer-cases-01-q1",
+      "supervision-engineer-cases-01-q2",
+      "supervision-engineer-cases-01-q3",
+      "supervision-engineer-cases-01-q4",
+      "supervision-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

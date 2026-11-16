@@ -1,0 +1,883 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "thermal-engineering-course-01",
+  "notebookId": "thermal-engineering-source",
+  "notebookRevision": 1,
+  "title": "工程热力学与传热课程考试",
+  "subject": "工程热力学与传热",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "工程热力学与传热课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "thermal-engineering-scope",
+      "title": "MIT 2.051 Introduction to Heat Transfer",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/2-051-introduction-to-heat-transfer-fall-2015/",
+      "text": "This course is an introduction to the principal concepts and methods of heat transfer.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2015",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/2-051-introduction-to-heat-transfer-fall-2015/"
+      }
+    },
+    {
+      "id": "thermal-engineering-q1-statement",
+      "title": "工程热力学与传热第1题命题原稿",
+      "kind": "question-bank",
+      "text": "1 kg理想气体在无摩擦活塞内准静态等压膨胀，由300 K升至450 K。常比热cv=0.718、cp=1.005 kJ/(kg·K)，R=cp−cv；忽略动位能。规定气体对外作功为正。（1）求ΔU、W、Q；（2）用焓变核对热量；（3）若相同初终温度改为刚性容器加热，W和Q如何变化？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "thermal-engineering-q2-statement",
+      "title": "工程热力学与传热第2题命题原稿",
+      "kind": "question-bank",
+      "text": "热机在600 K热源和300 K冷源之间工作，每循环从热源吸热1000 kJ，实际效率0.40。（1）求功和排热；（2）求Carnot效率并判断实际值是否违反第二定律；（3）求两热源总熵变；（4）另一装置用100 kJ功把300 K热源的热量送至600 K，声称冷端吸热150 kJ，判断能否实现。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "thermal-engineering-q3-statement",
+      "title": "工程热力学与传热第3题命题原稿",
+      "kind": "question-bank",
+      "text": "平壁面积10 m²，两层串联厚度分别0.10、0.05 m，导热系数1.0、0.05 W/(m·K)。室内空气25°C、h内=10，室外−5°C、h外=20 W/(m²·K)。稳态一维，无接触热阻或辐射。（1）求总热阻及散热量；（2）求内外壁面及两层界面温度；（3）第二层厚度翻倍时散热量如何变化？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "thermal-engineering-q4-statement",
+      "title": "工程热力学与传热第4题命题原稿",
+      "kind": "question-bank",
+      "text": "金属小球半径r=0.010 m，ρ=7800 kg/m³，c=500 J/(kg·K)，k=45 W/(m·K)，初温200°C，放入20°C静止流体中，表面对流h=30 W/(m²·K)，忽略辐射。（1）用Lc=V/A计算Bi并判断集中参数近似；（2）推导温度随时间变化；（3）求球降到50°C的时间；（4）若h提高10倍，是否仍可直接认为时间精确变为十分之一？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "thermal-engineering-q5-statement",
+      "title": "工程热力学与传热第5题命题原稿",
+      "kind": "question-bank",
+      "text": "无相变逆流换热器，热流体质量流量2 kg/s、cp=4 kJ/(kg·K)，150°C降到90°C；冷流体质量流量3 kg/s、cp=2 kJ/(kg·K)，入口20°C。总传热系数U=500 W/(m²·K)，无散热，修正系数为1。（1）求热负荷与冷出口；（2）求正确的两端温差、对数平均温差和所需面积；（3）若按并流连接还要求相同四端温度，能否实现？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "thermal-engineering-q6-statement",
+      "title": "工程热力学与传热第6题命题原稿",
+      "kind": "question-bank",
+      "text": "理想空气Brayton循环，压缩及膨胀等熵，定压加热和放热，γ=1.4、cp=1.0 kJ/(kg·K)，压缩机入口T1=300 K、涡轮入口T3=1200 K，压比rp=16。（1）求T2、T4、净功与效率；（2）令$x=r_p^{(\\gamma-1)/\\gamma}$，求在固定两端温度下使净功最大的x与压比；（3）证明最优处T2=T4，并说明最大净功与最大效率是否同一优化目标。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "thermal-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "thermal-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "1 kg理想气体在无摩擦活塞内准静态等压膨胀，由300 K升至450 K。常比热cv=0.718、cp=1.005 kJ/(kg·K)，R=cp−cv；忽略动位能。规定气体对外作功为正。（1）求ΔU、W、Q；（2）用焓变核对热量；（3）若相同初终温度改为刚性容器加热，W和Q如何变化？",
+          "score": 15,
+          "solution": "等压：ΔU=107.70 kJ，W=43.05 kJ，Q=150.75 kJ=ΔH。刚性容器：W=0，Q=107.70 kJ。",
+          "explanation": "第一定律$\\Delta U=Q-W$；等压功$W=p(V_2-V_1)=mR\\Delta T$。理想气体内能只由温度决定，两路径ΔU相同，但热与功为过程量。刚性容器不做边界体积功；初终压力不同并不改变题给温度对应的ΔU。",
+          "source": {
+            "materialId": "thermal-engineering-q1-statement",
+            "blockId": "thermal-engineering-q1-statement",
+            "exact": "1 kg理想气体在无摩擦活塞内准静态等压膨胀，由300 K升至450 K。常比热cv=0.718、cp=1.005 kJ/(kg·K)，R=cp−cv；忽略动位能。规定气体对外作功为正。（1）求ΔU、W、Q；（2）用焓变核对热量；（3）若相同初终温度改为刚性容器加热，W和Q如何变化？"
+          },
+          "chapter": "闭口系统第一定律与符号",
+          "tags": [
+            "工程热力学与传热",
+            "闭口系统第一定律与符号",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "闭口系统第一定律与符号"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "thermal-engineering-scope",
+                "blockId": "thermal-engineering-scope",
+                "exact": "This course is an introduction to the principal concepts and methods of heat transfer."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "定律、功正号与理想气体关系正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "thermal-engineering-q1-statement",
+                    "blockId": "thermal-engineering-q1-statement",
+                    "exact": "1 kg理想气体在无摩擦活塞内准静态等压膨胀，由300 K升至450 K。常比热cv=0.718、cp=1.005 kJ/(kg·K)，R=cp−cv；忽略动位能。规定气体对外作功为正。（1）求ΔU、W、Q；（2）用焓变核对热量；（3）若相同初终温度改为刚性容器加热，W和Q如何变化？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "三能量及焓核对正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "刚性路径比较正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "状态量/过程量区别正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q1 first law",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q1 first law\", \"actual\": 107.69999999999999, \"expected\": 107.69999999999999, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "thermal-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "热机在600 K热源和300 K冷源之间工作，每循环从热源吸热1000 kJ，实际效率0.40。（1）求功和排热；（2）求Carnot效率并判断实际值是否违反第二定律；（3）求两热源总熵变；（4）另一装置用100 kJ功把300 K热源的热量送至600 K，声称冷端吸热150 kJ，判断能否实现。",
+          "score": 15,
+          "solution": "热机功400、排热600 kJ；Carnot效率0.50，总熵变$-1000/600+600/300=1/3$ kJ/K。制冷装置声称COPR=1.5，大于Carnot上限300/(600−300)=1，不可实现。",
+          "explanation": "循环工质熵变为0，热源总熵变等于整个热机—热源组合的熵产生。制冷装置应向热端排热250 kJ，总熵变250/600−150/300=−1/12 kJ/K为负，与第二定律矛盾。只满足能量平衡不足以证明循环可实现。",
+          "source": {
+            "materialId": "thermal-engineering-q2-statement",
+            "blockId": "thermal-engineering-q2-statement",
+            "exact": "热机在600 K热源和300 K冷源之间工作，每循环从热源吸热1000 kJ，实际效率0.40。（1）求功和排热；（2）求Carnot效率并判断实际值是否违反第二定律；（3）求两热源总熵变；（4）另一装置用100 kJ功把300 K热源的热量送至600 K，声称冷端吸热150 kJ，判断能否实现。"
+          },
+          "chapter": "热机、制冷与第二定律",
+          "tags": [
+            "工程热力学与传热",
+            "热机、制冷与第二定律",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "热机、制冷与第二定律"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "thermal-engineering-scope",
+                "blockId": "thermal-engineering-scope",
+                "exact": "This course is an introduction to the principal concepts and methods of heat transfer."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "循环能量平衡正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "thermal-engineering-q2-statement",
+                    "blockId": "thermal-engineering-q2-statement",
+                    "exact": "热机在600 K热源和300 K冷源之间工作，每循环从热源吸热1000 kJ，实际效率0.40。（1）求功和排热；（2）求Carnot效率并判断实际值是否违反第二定律；（3）求两热源总熵变；（4）另一装置用100 kJ功把300 K热源的热量送至600 K，声称冷端吸热150 kJ，判断能否实现。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "热机极限及熵变正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "制冷COP极限正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "用负总熵判不可实现",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q2 reservoir entropy",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q2 reservoir entropy\", \"actual\": 0.33333333333333326, \"expected\": 0.3333333333333333, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q2 impossible refrigerator entropy",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q2 impossible refrigerator entropy\", \"actual\": -0.08333333333333331, \"expected\": -0.08333333333333333, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "thermal-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "平壁面积10 m²，两层串联厚度分别0.10、0.05 m，导热系数1.0、0.05 W/(m·K)。室内空气25°C、h内=10，室外−5°C、h外=20 W/(m²·K)。稳态一维，无接触热阻或辐射。（1）求总热阻及散热量；（2）求内外壁面及两层界面温度；（3）第二层厚度翻倍时散热量如何变化？",
+          "score": 15,
+          "solution": "总热阻0.125 K/W，散热240 W；内壁22.6°C，界面20.2°C，外壁−3.8°C。第二层厚度变0.10 m后总热阻0.225 K/W，散热133.333333 W。",
+          "explanation": "串联热阻$1/(h_iA)+d_1/(k_1A)+d_2/(k_2A)+1/(h_oA)$依次为0.010、0.010、0.100、0.005 K/W。各段温降等于同一Q乘该段热阻，由室内侧逐段求温度。不能混用面积热阻m²K/W和总热阻K/W；各温度应沿热流方向单调下降。",
+          "source": {
+            "materialId": "thermal-engineering-q3-statement",
+            "blockId": "thermal-engineering-q3-statement",
+            "exact": "平壁面积10 m²，两层串联厚度分别0.10、0.05 m，导热系数1.0、0.05 W/(m·K)。室内空气25°C、h内=10，室外−5°C、h外=20 W/(m²·K)。稳态一维，无接触热阻或辐射。（1）求总热阻及散热量；（2）求内外壁面及两层界面温度；（3）第二层厚度翻倍时散热量如何变化？"
+          },
+          "chapter": "复合壁导热与界面温度",
+          "tags": [
+            "工程热力学与传热",
+            "复合壁导热与界面温度",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "复合壁导热与界面温度"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "thermal-engineering-scope",
+                "blockId": "thermal-engineering-scope",
+                "exact": "This course is an introduction to the principal concepts and methods of heat transfer."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "串联模型和单位正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "thermal-engineering-q3-statement",
+                    "blockId": "thermal-engineering-q3-statement",
+                    "exact": "平壁面积10 m²，两层串联厚度分别0.10、0.05 m，导热系数1.0、0.05 W/(m·K)。室内空气25°C、h内=10，室外−5°C、h外=20 W/(m²·K)。稳态一维，无接触热阻或辐射。（1）求总热阻及散热量；（2）求内外壁面及两层界面温度；（3）第二层厚度翻倍时散热量如何变化？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "热量与三个温度正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "厚度变化计算正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "共同热流/单调检查正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q3 temperature closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q3 temperature closure\", \"actual\": -5.0, \"expected\": -5, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q3 changed resistance",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q3 changed resistance\", \"actual\": 0.225, \"expected\": 0.225, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "thermal-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "金属小球半径r=0.010 m，ρ=7800 kg/m³，c=500 J/(kg·K)，k=45 W/(m·K)，初温200°C，放入20°C静止流体中，表面对流h=30 W/(m²·K)，忽略辐射。（1）用Lc=V/A计算Bi并判断集中参数近似；（2）推导温度随时间变化；（3）求球降到50°C的时间；（4）若h提高10倍，是否仍可直接认为时间精确变为十分之一？",
+          "score": 15,
+          "solution": "Lc=r/3，Bi=0.002222222；$T=20+180e^{-t/\\tau}$，$\\tau=\\rho cr/(3h)=433.333333$ s；降至50°C需$\\tau\\ln6=776.429103$ s。h十倍时Bi=0.022222222，集中参数近似仍合理，模型预测时间十分之一，但非精确空间导热解。",
+          "explanation": "整体能量衡算$\\rho Vc\\,dT/dt=-hA(T-T_\\infty)$。Bi应用特征长度V/A，不能把直径直接代入。小Bi意味着内部温差相对小，结论还依赖常物性、均匀初温和恒定对流；“近似适用”不等于误差严格为零。",
+          "source": {
+            "materialId": "thermal-engineering-q4-statement",
+            "blockId": "thermal-engineering-q4-statement",
+            "exact": "金属小球半径r=0.010 m，ρ=7800 kg/m³，c=500 J/(kg·K)，k=45 W/(m·K)，初温200°C，放入20°C静止流体中，表面对流h=30 W/(m²·K)，忽略辐射。（1）用Lc=V/A计算Bi并判断集中参数近似；（2）推导温度随时间变化；（3）求球降到50°C的时间；（4）若h提高10倍，是否仍可直接认为时间精确变为十分之一？"
+          },
+          "chapter": "集中参数冷却与模型适用性",
+          "tags": [
+            "工程热力学与传热",
+            "集中参数冷却与模型适用性",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "集中参数冷却与模型适用性"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "thermal-engineering-scope",
+                "blockId": "thermal-engineering-scope",
+                "exact": "This course is an introduction to the principal concepts and methods of heat transfer."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "Bi特征长度与判断正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "thermal-engineering-q4-statement",
+                    "blockId": "thermal-engineering-q4-statement",
+                    "exact": "金属小球半径r=0.010 m，ρ=7800 kg/m³，c=500 J/(kg·K)，k=45 W/(m·K)，初温200°C，放入20°C静止流体中，表面对流h=30 W/(m²·K)，忽略辐射。（1）用Lc=V/A计算Bi并判断集中参数近似；（2）推导温度随时间变化；（3）求球降到50°C的时间；（4）若h提高10倍，是否仍可直接认为时间精确变为十分之一？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "微分方程及指数解正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "时间常数/时间正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "h变化的近似边界清楚",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q4 target temperature",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q4 target temperature\", \"actual\": 50.0, \"expected\": 50, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q4 thermal time constant",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q4 thermal time constant\", \"actual\": 433.3333333333333, \"expected\": 433.3333333333333, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "thermal-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "无相变逆流换热器，热流体质量流量2 kg/s、cp=4 kJ/(kg·K)，150°C降到90°C；冷流体质量流量3 kg/s、cp=2 kJ/(kg·K)，入口20°C。总传热系数U=500 W/(m²·K)，无散热，修正系数为1。（1）求热负荷与冷出口；（2）求正确的两端温差、对数平均温差和所需面积；（3）若按并流连接还要求相同四端温度，能否实现？",
+          "score": 20,
+          "solution": "Q=480 kW，冷出口100°C；逆流端差150−100=50 K与90−20=70 K，LMTD=20/ln(1.4)=59.440268 K，面积16.150667 m²。并流出口热90°C低于冷100°C，不符合无相变被动并流温度分布，无法维持该四端温度。",
+          "explanation": "先用两侧热容流率8和6 kW/K作能量衡算。逆流允许冷出口超过热出口，因为这两出口不位于同一端。传热面积$A=Q/(U\\Delta T_{lm})$中Q须换成W。并流的两出口在同一截面，正向局部传热不能跨越到负温差；不可把负端差硬塞进对数式。",
+          "source": {
+            "materialId": "thermal-engineering-q5-statement",
+            "blockId": "thermal-engineering-q5-statement",
+            "exact": "无相变逆流换热器，热流体质量流量2 kg/s、cp=4 kJ/(kg·K)，150°C降到90°C；冷流体质量流量3 kg/s、cp=2 kJ/(kg·K)，入口20°C。总传热系数U=500 W/(m²·K)，无散热，修正系数为1。（1）求热负荷与冷出口；（2）求正确的两端温差、对数平均温差和所需面积；（3）若按并流连接还要求相同四端温度，能否实现？"
+          },
+          "chapter": "逆流换热器的端差与面积",
+          "tags": [
+            "工程热力学与传热",
+            "逆流换热器的端差与面积",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "逆流换热器的端差与面积"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "thermal-engineering-scope",
+                "blockId": "thermal-engineering-scope",
+                "exact": "This course is an introduction to the principal concepts and methods of heat transfer."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "两侧能量与冷出口正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "thermal-engineering-q5-statement",
+                    "blockId": "thermal-engineering-q5-statement",
+                    "exact": "无相变逆流换热器，热流体质量流量2 kg/s、cp=4 kJ/(kg·K)，150°C降到90°C；冷流体质量流量3 kg/s、cp=2 kJ/(kg·K)，入口20°C。总传热系数U=500 W/(m²·K)，无散热，修正系数为1。（1）求热负荷与冷出口；（2）求正确的两端温差、对数平均温差和所需面积；（3）若按并流连接还要求相同四端温度，能否实现？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "逆流端差及LMTD正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "面积和kW/W换算正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "并流不可行理由正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q5 two-side energy",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q5 two-side energy\", \"actual\": 480, \"expected\": 480, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q5 area closure",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q5 area closure\", \"actual\": 480000.0, \"expected\": 480000, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "thermal-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "理想空气Brayton循环，压缩及膨胀等熵，定压加热和放热，γ=1.4、cp=1.0 kJ/(kg·K)，压缩机入口T1=300 K、涡轮入口T3=1200 K，压比rp=16。（1）求T2、T4、净功与效率；（2）令$x=r_p^{(\\gamma-1)/\\gamma}$，求在固定两端温度下使净功最大的x与压比；（3）证明最优处T2=T4，并说明最大净功与最大效率是否同一优化目标。",
+          "score": 20,
+          "solution": "$x=16^{2/7}=2.208179$；$T_2=300x=662.453708$ K，$T_4=1200/x=543.434199$ K。净功294.112093 kJ/kg，效率$1-1/x=0.54713817$。最优x=2、压比$2^{7/2}=11.313708$，T2=T4=600 K，最大净功300 kJ/kg。",
+          "explanation": "净功$w=c_p[T_3(1-1/x)-T_1(x-1)]$，导数$c_p(T_3/x^2-T_1)$在$x=\\sqrt{T_3/T_1}=2$为零，二阶导负。此时T1x=T3/x。理想效率$1-1/x$随x增大，但加热量和净功也改变；接近无净加热边界时净功趋零。因此不能用单一“效率越高”代替最大比功目标。",
+          "source": {
+            "materialId": "thermal-engineering-q6-statement",
+            "blockId": "thermal-engineering-q6-statement",
+            "exact": "理想空气Brayton循环，压缩及膨胀等熵，定压加热和放热，γ=1.4、cp=1.0 kJ/(kg·K)，压缩机入口T1=300 K、涡轮入口T3=1200 K，压比rp=16。（1）求T2、T4、净功与效率；（2）令$x=r_p^{(\\gamma-1)/\\gamma}$，求在固定两端温度下使净功最大的x与压比；（3）证明最优处T2=T4，并说明最大净功与最大效率是否同一优化目标。"
+          },
+          "chapter": "理想Brayton循环与压比选择",
+          "tags": [
+            "工程热力学与传热",
+            "理想Brayton循环与压比选择",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "理想Brayton循环与压比选择"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "thermal-engineering-scope",
+                "blockId": "thermal-engineering-scope",
+                "exact": "This course is an introduction to the principal concepts and methods of heat transfer."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "等熵温度关系和状态正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "thermal-engineering-q6-statement",
+                    "blockId": "thermal-engineering-q6-statement",
+                    "exact": "理想空气Brayton循环，压缩及膨胀等熵，定压加热和放热，γ=1.4、cp=1.0 kJ/(kg·K)，压缩机入口T1=300 K、涡轮入口T3=1200 K，压比rp=16。（1）求T2、T4、净功与效率；（2）令$x=r_p^{(\\gamma-1)/\\gamma}$，求在固定两端温度下使净功最大的x与压比；（3）证明最优处T2=T4，并说明最大净功与最大效率是否同一优化目标。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "功热及效率正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "驻点/最大值及压比正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "目标区别与边界解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q6 cycle first law",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q6 cycle first law\", \"actual\": 294.11209323736864, \"expected\": 294.11209323736864, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q6 optimum derivative",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q6 optimum derivative\", \"actual\": 0.0, \"expected\": 0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "thermal-q6 optimum work",
+                "result": "pass",
+                "evidence": "{\"label\": \"thermal-q6 optimum work\", \"actual\": 300.0, \"expected\": 300, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "thermal-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "thermal-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "thermal-engineering-q1",
+        "knowledge": "闭口系统第一定律与符号",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "thermal-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "thermal-engineering-q2",
+        "knowledge": "热机、制冷与第二定律",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "thermal-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "thermal-engineering-q3",
+        "knowledge": "复合壁导热与界面温度",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "thermal-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "thermal-engineering-q4",
+        "knowledge": "集中参数冷却与模型适用性",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "thermal-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "thermal-engineering-q5",
+        "knowledge": "逆流换热器的端差与面积",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "thermal-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "thermal-engineering-q6",
+        "knowledge": "理想Brayton循环与压比选择",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "thermal-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "thermal-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "thermal-engineering-course-blueprint",
+      "name": "工程热力学与传热课程考试",
+      "subject": "工程热力学与传热",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "thermal-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

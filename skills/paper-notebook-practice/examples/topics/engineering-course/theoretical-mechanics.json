@@ -1,0 +1,867 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "theoretical-mechanics-course-01",
+  "notebookId": "theoretical-mechanics-source",
+  "notebookRevision": 1,
+  "title": "理论力学课程考试",
+  "subject": "理论力学",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "理论力学课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "theoretical-mechanics-scope",
+      "title": "MIT 2.003SC Engineering Dynamics",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/",
+      "text": "Newton's Laws, Vectors, and Reference Frames",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2011",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/"
+      }
+    },
+    {
+      "id": "theoretical-mechanics-q1-statement",
+      "title": "理论力学第1题命题原稿",
+      "kind": "question-bank",
+      "text": "水平简支梁AB长6 m，A为铰支座，B为滚动支座。全跨受竖直向下的2 kN/m均布载荷；距A端2 m处另有8 kN向下集中力。忽略梁自重。（1）画梁的受力图并求支座反力；（2）以A为原点，求集中力左右两侧的剪力；（3）将集中力移至B端时，哪项反力改变、改变多少？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "theoretical-mechanics-q2-statement",
+      "title": "理论力学第2题命题原稿",
+      "kind": "question-bank",
+      "text": "均匀梯子长5 m、重200 N，与水平地面成60°。上端靠光滑竖直墙，下端接触粗糙水平地面。无人攀爬。（1）求墙反力、地面法向力与所需静摩擦力；（2）求维持平衡的最小静摩擦系数；（3）若实际系数为0.25，判断上述静止假设能否成立。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "theoretical-mechanics-q3-statement",
+      "title": "理论力学第3题命题原稿",
+      "kind": "question-bank",
+      "text": "质量3 kg的小车在水平圆形轨道上运动，轨道半径2 m。某瞬间角速度为2 rad/s，角加速度为3 rad/s²，均以逆时针为正。忽略竖向运动。（1）写出速度及加速度的切向、径向分量；（2）求轨道平面内合外力大小和它相对向心方向的夹角；（3）说明只用$m\\alpha r$作为合力大小会遗漏什么。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "theoretical-mechanics-q4-statement",
+      "title": "理论力学第4题命题原稿",
+      "kind": "question-bank",
+      "text": "轻绳连接3 kg与5 kg两物块，跨过质量2 kg、半径0.2 m的均质圆盘滑轮。绳不可伸长、不打滑，轴承无摩擦，初始静止。取$g=9.81$ m/s²。（1）列两物块及滑轮的运动方程；（2）求加速度及绳两侧张力；（3）求运动1 s后系统的总动能，并用重力势能变化检验。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "theoretical-mechanics-q5-statement",
+      "title": "理论力学第5题命题原稿",
+      "kind": "question-bank",
+      "text": "质量2 kg、半径0.1 m的均质实心球从静止沿固定斜面下行，球心下降0.7 m。忽略空气阻力，取g=9.81 m/s²，实心球转动惯量$I=2mR^2/5$。（1）在纯滚动假设下求底端速度与角速度；（2）检验平动、转动动能之和；（3）若测得底端速度3.70 m/s，能否仍采用纯滚动答案？提出一种可能的模型修正及一项需要补测的量。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "theoretical-mechanics-q6-statement",
+      "title": "理论力学第6题命题原稿",
+      "kind": "question-bank",
+      "text": "水平无阻尼系统由两个1 kg质块组成：左右外侧各由100 N/m弹簧连到固定墙，两质块间再以100 N/m弹簧连接。位移向右为正。初始$x_1=0.020$ m、$x_2=0$，两速度均为零。（1）建立矩阵运动方程；（2）求固有频率和振型；（3）给出两质块自由响应并检验初始总能量。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "theoretical-mechanics-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "theoretical-mechanics-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "水平简支梁AB长6 m，A为铰支座，B为滚动支座。全跨受竖直向下的2 kN/m均布载荷；距A端2 m处另有8 kN向下集中力。忽略梁自重。（1）画梁的受力图并求支座反力；（2）以A为原点，求集中力左右两侧的剪力；（3）将集中力移至B端时，哪项反力改变、改变多少？",
+          "score": 15,
+          "solution": "$A_x=0$，$A_y=34/3$ kN，$B_y=26/3$ kN；$V(2^-)=22/3$ kN，$V(2^+)=-2/3$ kN。集中力移至B后，$A_y=6$ kN、$B_y=14$ kN，分别减少、增加$16/3$ kN。",
+          "explanation": "用均布载荷的合力12 kN及作用点x=3 m列平衡式：$6B_y-12\\times3-8\\times2=0$，$A_y+B_y=20$。集中力导致剪力向下跳8 kN。新作用点距A为6 m，因此新的总力矩为84 kN·m；载荷总量不变，两支反力的改变量互为相反数。",
+          "source": {
+            "materialId": "theoretical-mechanics-q1-statement",
+            "blockId": "theoretical-mechanics-q1-statement",
+            "exact": "水平简支梁AB长6 m，A为铰支座，B为滚动支座。全跨受竖直向下的2 kN/m均布载荷；距A端2 m处另有8 kN向下集中力。忽略梁自重。（1）画梁的受力图并求支座反力；（2）以A为原点，求集中力左右两侧的剪力；（3）将集中力移至B端时，哪项反力改变、改变多少？"
+          },
+          "chapter": "平面力系与支座反力",
+          "tags": [
+            "理论力学",
+            "平面力系与支座反力",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "平面力系与支座反力"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "theoretical-mechanics-scope",
+                "blockId": "theoretical-mechanics-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "受力图含支座类型及均布载荷等效合力",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "theoretical-mechanics-q1-statement",
+                    "blockId": "theoretical-mechanics-q1-statement",
+                    "exact": "水平简支梁AB长6 m，A为铰支座，B为滚动支座。全跨受竖直向下的2 kN/m均布载荷；距A端2 m处另有8 kN向下集中力。忽略梁自重。（1）画梁的受力图并求支座反力；（2）以A为原点，求集中力左右两侧的剪力；（3）将集中力移至B端时，哪项反力改变、改变多少？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两项竖向反力正确并满足力矩平衡",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "两侧剪力及跳跃量正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "移动载荷后的反力变化正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q1 equilibrium residuals",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q1 equilibrium residuals\", \"actual\": [0.0, 0.0], \"expected\": [0, 0], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          },
+          "attachments": [
+            {
+              "id": "theoretical-mechanics-q1-figure-1",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2ODAiIGhlaWdodD0iMjMwIiB2aWV3Qm94PSIwIDAgNjgwIDIzMCI+PHJlY3Qgd2lkdGg9IjY4MCIgaGVpZ2h0PSIyMzAiIGZpbGw9IndoaXRlIi8+PGcgc3Ryb2tlPSIjMWIxYjFiIiBmaWxsPSJub25lIiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik03MCAxMTBINjEwIiBzdHJva2Utd2lkdGg9IjUiLz48cGF0aCBkPSJNNzAgMTEzbC0xNSAyNWgzMHpNNjEwIDExM2wtMTUgMjVoMzB6Ii8+PGNpcmNsZSBjeD0iNjAyIiBjeT0iMTQ1IiByPSI0Ii8+PGNpcmNsZSBjeD0iNjE4IiBjeT0iMTQ1IiByPSI0Ii8+PHBhdGggZD0iTTUwIDE1M2g0ME01OTAgMTUzaDQwTTcwIDE4NUg2MTBNNzAgMTc2djE4TTYxMCAxNzZ2MThNNzAgMTY1SDI1ME0yNTAgMTU3djE1Ii8+PHBhdGggZD0iTTI1MCA1MHY1NW0tNi0xMCA2IDEwIDYtMTAiLz48cGF0aCBkPSJNOTAgNzh2MjhtLTQtOCA0IDggNC04Ii8+PHBhdGggZD0iTTEzMCA3OHYyOG0tNC04IDQgOCA0LTgiLz48cGF0aCBkPSJNMTcwIDc4djI4bS00LTggNCA4IDQtOCIvPjxwYXRoIGQ9Ik0yMTAgNzh2MjhtLTQtOCA0IDggNC04Ii8+PHBhdGggZD0iTTI1MCA3OHYyOG0tNC04IDQgOCA0LTgiLz48cGF0aCBkPSJNMjkwIDc4djI4bS00LTggNCA4IDQtOCIvPjxwYXRoIGQ9Ik0zMzAgNzh2MjhtLTQtOCA0IDggNC04Ii8+PHBhdGggZD0iTTM3MCA3OHYyOG0tNC04IDQgOCA0LTgiLz48cGF0aCBkPSJNNDEwIDc4djI4bS00LTggNCA4IDQtOCIvPjxwYXRoIGQ9Ik00NTAgNzh2MjhtLTQtOCA0IDggNC04Ii8+PHBhdGggZD0iTTQ5MCA3OHYyOG0tNC04IDQgOCA0LTgiLz48cGF0aCBkPSJNNTMwIDc4djI4bS00LTggNCA4IDQtOCIvPjxwYXRoIGQ9Ik01NzAgNzh2MjhtLTQtOCA0IDggNC04Ii8+PHBhdGggZD0iTTkwIDc4SDU3MCIvPjwvZz48ZyBmb250LWZhbWlseT0ic2VyaWYiIGZvbnQtc2l6ZT0iMjEiIGZpbGw9IiMxMTEiPjx0ZXh0IHg9IjU4IiB5PSIxMDkiPkE8L3RleHQ+PHRleHQgeD0iNjE1IiB5PSIxMDkiPkI8L3RleHQ+PHRleHQgeD0iMjc1IiB5PSI1MyI+OCBrTjwvdGV4dD48dGV4dCB4PSI0MzAiIHk9IjYwIj4yIGtOL208L3RleHQ+PHRleHQgeD0iMTI1IiB5PSIxNjMiPjIgbTwvdGV4dD48dGV4dCB4PSIzMTAiIHk9IjIxMiI+NiBtPC90ZXh0PjwvZz48L3N2Zz4=",
+              "alt": "简支梁AB长6 m，距A2 m处竖向集中力8 kN，全跨均布载荷2 kN/m。",
+              "widthMm": 105
+            }
+          ]
+        },
+        {
+          "id": "theoretical-mechanics-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "均匀梯子长5 m、重200 N，与水平地面成60°。上端靠光滑竖直墙，下端接触粗糙水平地面。无人攀爬。（1）求墙反力、地面法向力与所需静摩擦力；（2）求维持平衡的最小静摩擦系数；（3）若实际系数为0.25，判断上述静止假设能否成立。",
+          "score": 15,
+          "solution": "墙反力与所需地面摩擦力均为$100/\\sqrt3=57.735$ N；地面法向力200 N；$\\mu_{\\min}=1/(2\\sqrt3)=0.288675$。0.25不足以维持该姿态。",
+          "explanation": "以梯脚为矩心：$N_w(5\\sin60^\\circ)=200(2.5\\cos60^\\circ)$。水平平衡给出摩擦力大小等于墙反力，方向朝墙；竖向平衡给出地面法向力200 N。静摩擦是约束反力，先由平衡确定所需值，再检验$F\\leq\\mu N$，不能预先一律令$F=\\mu N$。",
+          "source": {
+            "materialId": "theoretical-mechanics-q2-statement",
+            "blockId": "theoretical-mechanics-q2-statement",
+            "exact": "均匀梯子长5 m、重200 N，与水平地面成60°。上端靠光滑竖直墙，下端接触粗糙水平地面。无人攀爬。（1）求墙反力、地面法向力与所需静摩擦力；（2）求维持平衡的最小静摩擦系数；（3）若实际系数为0.25，判断上述静止假设能否成立。"
+          },
+          "chapter": "刚体平衡与摩擦约束",
+          "tags": [
+            "理论力学",
+            "刚体平衡与摩擦约束",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "刚体平衡与摩擦约束"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "theoretical-mechanics-scope",
+                "blockId": "theoretical-mechanics-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "明确墙面无切向力、地面有法向与摩擦反力",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "theoretical-mechanics-q2-statement",
+                    "blockId": "theoretical-mechanics-q2-statement",
+                    "exact": "均匀梯子长5 m、重200 N，与水平地面成60°。上端靠光滑竖直墙，下端接触粗糙水平地面。无人攀爬。（1）求墙反力、地面法向力与所需静摩擦力；（2）求维持平衡的最小静摩擦系数；（3）若实际系数为0.25，判断上述静止假设能否成立。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "力矩方程与反力数值正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "最小摩擦系数正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "以50 N可用摩擦对比57.735 N并否定静止",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q2 moment and friction",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q2 moment and friction\", \"actual\": [250.0, 57.73502691896258], \"expected\": [250, 57.73502691896258], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "theoretical-mechanics-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "质量3 kg的小车在水平圆形轨道上运动，轨道半径2 m。某瞬间角速度为2 rad/s，角加速度为3 rad/s²，均以逆时针为正。忽略竖向运动。（1）写出速度及加速度的切向、径向分量；（2）求轨道平面内合外力大小和它相对向心方向的夹角；（3）说明只用$m\\alpha r$作为合力大小会遗漏什么。",
+          "score": 15,
+          "solution": "$v_t=4$ m/s；$a_r=-8$ m/s²、$a_t=6$ m/s²；$F_r=-24$ N、$F_t=18$ N，合力30 N，与向心方向夹角$\\arctan(3/4)=36.87^\\circ$。",
+          "explanation": "半径恒定时，$a_r=-r\\omega^2$，$a_t=r\\alpha$。两个分量互相垂直，合加速度为10 m/s²。角加速度仅决定切向分量；即使$\\alpha=0$，曲线运动仍具有向心加速度。竖向重力和支持力相互平衡，不进入本问的平面合力。",
+          "source": {
+            "materialId": "theoretical-mechanics-q3-statement",
+            "blockId": "theoretical-mechanics-q3-statement",
+            "exact": "质量3 kg的小车在水平圆形轨道上运动，轨道半径2 m。某瞬间角速度为2 rad/s，角加速度为3 rad/s²，均以逆时针为正。忽略竖向运动。（1）写出速度及加速度的切向、径向分量；（2）求轨道平面内合外力大小和它相对向心方向的夹角；（3）说明只用$m\\alpha r$作为合力大小会遗漏什么。"
+          },
+          "chapter": "曲线运动的法向与切向动力学",
+          "tags": [
+            "理论力学",
+            "曲线运动的法向与切向动力学",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "曲线运动的法向与切向动力学"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "theoretical-mechanics-scope",
+                "blockId": "theoretical-mechanics-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "速度及加速度分量含正确方向",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "theoretical-mechanics-q3-statement",
+                    "blockId": "theoretical-mechanics-q3-statement",
+                    "exact": "质量3 kg的小车在水平圆形轨道上运动，轨道半径2 m。某瞬间角速度为2 rad/s，角加速度为3 rad/s²，均以逆时针为正。忽略竖向运动。（1）写出速度及加速度的切向、径向分量；（2）求轨道平面内合外力大小和它相对向心方向的夹角；（3）说明只用$m\\alpha r$作为合力大小会遗漏什么。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "外力两分量正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "合力与夹角正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "解释向心分量及适用平面",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q3 vector norm",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q3 vector norm\", \"actual\": 30.0, \"expected\": 30, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "theoretical-mechanics-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "轻绳连接3 kg与5 kg两物块，跨过质量2 kg、半径0.2 m的均质圆盘滑轮。绳不可伸长、不打滑，轴承无摩擦，初始静止。取$g=9.81$ m/s²。（1）列两物块及滑轮的运动方程；（2）求加速度及绳两侧张力；（3）求运动1 s后系统的总动能，并用重力势能变化检验。",
+          "score": 15,
+          "solution": "5 kg物块向下加速度2.180000 m/s²；3 kg侧张力35.9700 N，5 kg侧张力38.1500 N；1 s时总动能21.385800 J。",
+          "explanation": "$T_1-3g=3a$，$5g-T_2=5a$，$(T_2-T_1)R=I\\alpha$，$I=MR^2/2$、$\\alpha=a/R$。因此$a=(5-3)g/(3+5+M/2)=2.18$。1 s位移为$a/2$，速度为$a$；总动能$\\tfrac12(3+5+M/2)a^2=21.3858$ J，等于$(5-3)g(a/2)$。两侧张力不同，差值为滑轮提供转动加速度。",
+          "source": {
+            "materialId": "theoretical-mechanics-q4-statement",
+            "blockId": "theoretical-mechanics-q4-statement",
+            "exact": "轻绳连接3 kg与5 kg两物块，跨过质量2 kg、半径0.2 m的均质圆盘滑轮。绳不可伸长、不打滑，轴承无摩擦，初始静止。取$g=9.81$ m/s²。（1）列两物块及滑轮的运动方程；（2）求加速度及绳两侧张力；（3）求运动1 s后系统的总动能，并用重力势能变化检验。"
+          },
+          "chapter": "刚体转动与绳轮耦合",
+          "tags": [
+            "理论力学",
+            "刚体转动与绳轮耦合",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "刚体转动与绳轮耦合"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "theoretical-mechanics-scope",
+                "blockId": "theoretical-mechanics-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "完整列三项动力学方程与不打滑关系",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "theoretical-mechanics-q4-statement",
+                    "blockId": "theoretical-mechanics-q4-statement",
+                    "exact": "轻绳连接3 kg与5 kg两物块，跨过质量2 kg、半径0.2 m的均质圆盘滑轮。绳不可伸长、不打滑，轴承无摩擦，初始静止。取$g=9.81$ m/s²。（1）列两物块及滑轮的运动方程；（2）求加速度及绳两侧张力；（3）求运动1 s后系统的总动能，并用重力势能变化检验。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "加速度正确",
+                "points": 3
+              },
+              {
+                "id": "step-3",
+                "description": "两侧张力及大小关系正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "含滑轮转动动能并完成能量复核",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q4 rotational residual",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q4 rotational residual\", \"actual\": 0.4360000000000014, \"expected\": 0.4360000000000001, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q4 independent energy",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q4 independent energy\", \"actual\": 21.385800000000003, \"expected\": 21.385800000000003, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "theoretical-mechanics-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "质量2 kg、半径0.1 m的均质实心球从静止沿固定斜面下行，球心下降0.7 m。忽略空气阻力，取g=9.81 m/s²，实心球转动惯量$I=2mR^2/5$。（1）在纯滚动假设下求底端速度与角速度；（2）检验平动、转动动能之和；（3）若测得底端速度3.70 m/s，能否仍采用纯滚动答案？提出一种可能的模型修正及一项需要补测的量。",
+          "score": 20,
+          "solution": "纯滚动$v=3.132092$ m/s，$\\omega=31.320920$ rad/s；平动动能9.810000 J、转动动能3.924000 J，总计13.734 J。3.70 m/s不符合从静止、无额外做功的纯滚动模型。",
+          "explanation": "由$v=R\\omega$及$mgh=mv^2/2+I\\omega^2/2$得$v^2=10gh/7=9.81$。若仍将测量值代入纯滚动约束，总动能为$0.7mv^2=19.166$ J，超过13.734 J。可考虑滑动使转动能分配下降，或检查初始动能/外部做功；仅凭平动速度不能确定摩擦模型，应补测角速度或接触点滑移。",
+          "source": {
+            "materialId": "theoretical-mechanics-q5-statement",
+            "blockId": "theoretical-mechanics-q5-statement",
+            "exact": "质量2 kg、半径0.1 m的均质实心球从静止沿固定斜面下行，球心下降0.7 m。忽略空气阻力，取g=9.81 m/s²，实心球转动惯量$I=2mR^2/5$。（1）在纯滚动假设下求底端速度与角速度；（2）检验平动、转动动能之和；（3）若测得底端速度3.70 m/s，能否仍采用纯滚动答案？提出一种可能的模型修正及一项需要补测的量。"
+          },
+          "chapter": "滚动与能量模型检验",
+          "tags": [
+            "理论力学",
+            "滚动与能量模型检验",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "滚动与能量模型检验"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "theoretical-mechanics-scope",
+                "blockId": "theoretical-mechanics-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "滚动约束与能量方程正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "theoretical-mechanics-q5-statement",
+                    "blockId": "theoretical-mechanics-q5-statement",
+                    "exact": "质量2 kg、半径0.1 m的均质实心球从静止沿固定斜面下行，球心下降0.7 m。忽略空气阻力，取g=9.81 m/s²，实心球转动惯量$I=2mR^2/5$。（1）在纯滚动假设下求底端速度与角速度；（2）检验平动、转动动能之和；（3）若测得底端速度3.70 m/s，能否仍采用纯滚动答案？提出一种可能的模型修正及一项需要补测的量。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "线速度和角速度正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "动能分配与总量正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "量化指出矛盾并提出合理补测",
+                "points": 7
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q5 energy partition",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q5 energy partition\", \"actual\": 13.734000000000002, \"expected\": 13.734, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "theoretical-mechanics-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "水平无阻尼系统由两个1 kg质块组成：左右外侧各由100 N/m弹簧连到固定墙，两质块间再以100 N/m弹簧连接。位移向右为正。初始$x_1=0.020$ m、$x_2=0$，两速度均为零。（1）建立矩阵运动方程；（2）求固有频率和振型；（3）给出两质块自由响应并检验初始总能量。",
+          "score": 20,
+          "solution": "$M=I$，$K=\\begin{pmatrix}200&-100\\\\-100&200\\end{pmatrix}$；$\\omega_1=10$、$\\omega_2=10\\sqrt3$ rad/s；振型分别为$(1,1)^T$、$(1,-1)^T$。$x_1=0.01\\cos10t+0.01\\cos(10\\sqrt3t)$，$x_2=0.01\\cos10t-0.01\\cos(10\\sqrt3t)$；总能量0.040 J。",
+          "explanation": "每个质块受到本侧弹簧及中间弹簧的恢复力。解$\\det(K-\\omega^2M)=0$得特征值100、300。将初位移分解为$0.01(1,1)^T+0.01(1,-1)^T$，初速度为零故无正弦项。初始能量为$\\tfrac12x^TKx=0.04$ J；正交模态能量分别0.01和0.03 J。",
+          "source": {
+            "materialId": "theoretical-mechanics-q6-statement",
+            "blockId": "theoretical-mechanics-q6-statement",
+            "exact": "水平无阻尼系统由两个1 kg质块组成：左右外侧各由100 N/m弹簧连到固定墙，两质块间再以100 N/m弹簧连接。位移向右为正。初始$x_1=0.020$ m、$x_2=0$，两速度均为零。（1）建立矩阵运动方程；（2）求固有频率和振型；（3）给出两质块自由响应并检验初始总能量。"
+          },
+          "chapter": "多自由度振动与初值响应",
+          "tags": [
+            "理论力学",
+            "多自由度振动与初值响应",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "多自由度振动与初值响应"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "theoretical-mechanics-scope",
+                "blockId": "theoretical-mechanics-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "质量、刚度矩阵及恢复力符号正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "theoretical-mechanics-q6-statement",
+                    "blockId": "theoretical-mechanics-q6-statement",
+                    "exact": "水平无阻尼系统由两个1 kg质块组成：左右外侧各由100 N/m弹簧连到固定墙，两质块间再以100 N/m弹簧连接。位移向右为正。初始$x_1=0.020$ m、$x_2=0$，两速度均为零。（1）建立矩阵运动方程；（2）求固有频率和振型；（3）给出两质块自由响应并检验初始总能量。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两固有频率与振型正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "模态分解和两项响应正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "初值与能量检验正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q6 eigenmode residuals",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q6 eigenmode residuals\", \"actual\": [0, 0], \"expected\": [0, 0], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "theoretical-q6 energy",
+                "result": "pass",
+                "evidence": "{\"label\": \"theoretical-q6 energy\", \"actual\": 0.04, \"expected\": 0.04, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "theoretical-mechanics-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "theoretical-mechanics",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "theoretical-mechanics-q1",
+        "knowledge": "平面力系与支座反力",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "theoretical-mechanics-q1-statement"
+        ]
+      },
+      {
+        "id": "theoretical-mechanics-q2",
+        "knowledge": "刚体平衡与摩擦约束",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "theoretical-mechanics-q2-statement"
+        ]
+      },
+      {
+        "id": "theoretical-mechanics-q3",
+        "knowledge": "曲线运动的法向与切向动力学",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "theoretical-mechanics-q3-statement"
+        ]
+      },
+      {
+        "id": "theoretical-mechanics-q4",
+        "knowledge": "刚体转动与绳轮耦合",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "theoretical-mechanics-q4-statement"
+        ]
+      },
+      {
+        "id": "theoretical-mechanics-q5",
+        "knowledge": "滚动与能量模型检验",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "theoretical-mechanics-q5-statement"
+        ]
+      },
+      {
+        "id": "theoretical-mechanics-q6",
+        "knowledge": "多自由度振动与初值响应",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "theoretical-mechanics-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "theoretical-mechanics-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "theoretical-mechanics-course-blueprint",
+      "name": "理论力学课程考试",
+      "subject": "理论力学",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "theoretical-mechanics-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

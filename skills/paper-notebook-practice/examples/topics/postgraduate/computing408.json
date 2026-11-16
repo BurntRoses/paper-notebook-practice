@@ -1,0 +1,4739 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "postgraduate-computing408-01",
+  "notebookId": "postgraduate-computing408",
+  "notebookRevision": 1,
+  "title": "硕士研究生入学考试 计算机学科专业基础（408）",
+  "subject": "计算机学科专业基础（408）",
+  "level": "考研",
+  "durationMinutes": 180,
+  "totalScore": 150,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "sealed": true
+  },
+  "presentation": {
+    "titleLines": [
+      "硕士研究生入学考试",
+      "计算机学科专业基础（408）"
+    ],
+    "candidateFields": [
+      "姓名",
+      "准考证号",
+      "报考单位"
+    ],
+    "notices": [
+      "请在答题卡规定区域作答，写在试题上的答案无效。",
+      "选择题每题只有一个正确选项；多项选择题按题目说明作答。"
+    ],
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "计算机学科专业基础（408）",
+      "rule": true
+    },
+    "footerTemplate": "计算机学科专业基础（408）　第 {page} 页",
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "university",
+      "candidateDigits": 15
+    },
+    "questionScores": "show",
+    "sectionDetails": true,
+    "projectMark": false
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "authoring": {
+    "routeId": "postgrad-computing-408",
+    "examName": "计算机学科专业基础（408）",
+    "requireVerification": true
+  },
+  "materials": [
+    {
+      "id": "algorithms",
+      "title": "算法知识核对（作者概述）",
+      "kind": "knowledge",
+      "text": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。",
+      "blocks": [
+        {
+          "id": "algorithms-block",
+          "title": "算法知识核对（作者概述）",
+          "text": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/",
+        "publisher": "MIT OCW"
+      },
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/pages/lecture-notes/",
+      "sha256": "33220adcaee6ff33a3b6fbab4a56cd3c01ab5927004a2c62386016954f67bc14"
+    },
+    {
+      "id": "architecture",
+      "title": "计算机组成命题约定（原创）",
+      "kind": "knowledge",
+      "text": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。",
+      "blocks": [
+        {
+          "id": "architecture-block",
+          "title": "计算机组成命题约定（原创）",
+          "text": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "3b77715fb5cd4754f8766f06e3e061f742e97d911b7acab88695bf301a73a680"
+    },
+    {
+      "id": "operating-systems",
+      "title": "操作系统知识核对（作者概述）",
+      "kind": "knowledge",
+      "text": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。",
+      "blocks": [
+        {
+          "id": "operating-systems-block",
+          "title": "操作系统知识核对（作者概述）",
+          "text": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+        "publisher": "Remzi H. Arpaci-Dusseau / Andrea C. Arpaci-Dusseau"
+      },
+      "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+      "sha256": "fb9689ab5231aa1b52b867c6674d1653257d6efbeb8f8daa3a6f58181f3e9ed5"
+    },
+    {
+      "id": "networks",
+      "title": "网络协议核对（作者概述）",
+      "kind": "reference",
+      "text": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。",
+      "blocks": [
+        {
+          "id": "networks-block",
+          "title": "网络协议核对（作者概述）",
+          "text": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15",
+        "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+        "publisher": "IETF"
+      },
+      "url": "https://www.rfc-editor.org/rfc/rfc9293.html",
+      "sha256": "54e1b2b08a51ffd0aa605b1b0988b3dba3e0e679b414ff65743f19b05a17aa0a"
+    },
+    {
+      "id": "postgraduate-computing408-01-q1-source",
+      "title": "原创命题记录 1",
+      "kind": "question-bank",
+      "text": "执行：for i=1..n，j从1开始，每次乘2直到j>n，每轮执行常数工作。总时间复杂度为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q1-source-block",
+          "title": "原创命题记录 1",
+          "text": "执行：for i=1..n，j从1开始，每次乘2直到j>n，每轮执行常数工作。总时间复杂度为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "84f0f39db4082835f7996ea581eb60fad2d42f94f8a1f0274bd0bca23d8a3f07"
+    },
+    {
+      "id": "postgraduate-computing408-01-q2-source",
+      "title": "原创命题记录 2",
+      "kind": "question-bank",
+      "text": "初始空栈依次push(1)、push(2)、pop、push(3)、pop、pop，弹出序列为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q2-source-block",
+          "title": "原创命题记录 2",
+          "text": "初始空栈依次push(1)、push(2)、pop、push(3)、pop、pop，弹出序列为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f95570a1608f64987a306b7cd92e3a1ae5c760b734f10686df7690ff0f9d08e7"
+    },
+    {
+      "id": "postgraduate-computing408-01-q3-source",
+      "title": "原创命题记录 3",
+      "kind": "question-bank",
+      "text": "二叉树先序为A B D E C，中序为D B E A C，其后序为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q3-source-block",
+          "title": "原创命题记录 3",
+          "text": "二叉树先序为A B D E C，中序为D B E A C，其后序为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "3361ea83b1788246c79e426eb6754f0166c3787b24cd270c891eceafcd8eddcb"
+    },
+    {
+      "id": "postgraduate-computing408-01-q4-source",
+      "title": "原创命题记录 4",
+      "kind": "question-bank",
+      "text": "非空二叉树中，度为2的结点有8个，则叶结点个数为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q4-source-block",
+          "title": "原创命题记录 4",
+          "text": "非空二叉树中，度为2的结点有8个，则叶结点个数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "bba7e28cdfcfba54624f34f112f8676f9d297c2b823534ec506bbf2bfbfa4df3"
+    },
+    {
+      "id": "postgraduate-computing408-01-q5-source",
+      "title": "原创命题记录 5",
+      "kind": "question-bank",
+      "text": "在关键字均不同的二叉搜索树中查找35，以下路径不可能的是",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q5-source-block",
+          "title": "原创命题记录 5",
+          "text": "在关键字均不同的二叉搜索树中查找35，以下路径不可能的是"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "34d6ab785dbc2df2f72718d84deebb2fb840c100d9110e954893fc65c48fb420"
+    },
+    {
+      "id": "postgraduate-computing408-01-q6-source",
+      "title": "原创命题记录 6",
+      "kind": "question-bank",
+      "text": "AVL树某结点左子树高3、右子树高1，采用左高减右高定义平衡因子，则该结点",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q6-source-block",
+          "title": "原创命题记录 6",
+          "text": "AVL树某结点左子树高3、右子树高1，采用左高减右高定义平衡因子，则该结点"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "3defae55bb7d676b975e72f8cbc52bc8d330c04e5bc41fde9ea57897331f477e"
+    },
+    {
+      "id": "postgraduate-computing408-01-q7-source",
+      "title": "原创命题记录 7",
+      "kind": "question-bank",
+      "text": "含n≥2个顶点的连通无向简单图，最少有多少条边",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q7-source-block",
+          "title": "原创命题记录 7",
+          "text": "含n≥2个顶点的连通无向简单图，最少有多少条边"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0d7d25579ff1672e4ab57b2e732ffa38027f59ce7d8da8267b3b24e97c610535"
+    },
+    {
+      "id": "postgraduate-computing408-01-q8-source",
+      "title": "原创命题记录 8",
+      "kind": "question-bank",
+      "text": "有向图边A→B=2、A→C=5、B→C=1、B→D=4、C→D=1。从A到D的最短距离为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q8-source-block",
+          "title": "原创命题记录 8",
+          "text": "有向图边A→B=2、A→C=5、B→C=1、B→D=4、C→D=1。从A到D的最短距离为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ec53170f5c9e50cb81317446c63e085b0310f3d124e75e367415cf34400b8493"
+    },
+    {
+      "id": "postgraduate-computing408-01-q9-source",
+      "title": "原创命题记录 9",
+      "kind": "question-bank",
+      "text": "长度7散列表，h(k)=k mod 7，线性探测，初始空，依次插入10、17、24。24所在下标为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q9-source-block",
+          "title": "原创命题记录 9",
+          "text": "长度7散列表，h(k)=k mod 7，线性探测，初始空，依次插入10、17、24。24所在下标为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a042b9418ac685cfc4e1ae5855d5353e08d77233c85c9c1578856d4fa67de1f5"
+    },
+    {
+      "id": "postgraduate-computing408-01-q10-source",
+      "title": "原创命题记录 10",
+      "kind": "question-bank",
+      "text": "快速排序每次以当前段首元素为枢轴，不采用随机化。对已升序且互异的n个元素，最坏时间为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q10-source-block",
+          "title": "原创命题记录 10",
+          "text": "快速排序每次以当前段首元素为枢轴，不采用随机化。对已升序且互异的n个元素，最坏时间为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "34d38bd1da6b8b4e773cc94651aca3d33b5bfd9a8931cd6167450294a00a888e"
+    },
+    {
+      "id": "postgraduate-computing408-01-q11-source",
+      "title": "原创命题记录 11",
+      "kind": "question-bank",
+      "text": "用自底向上逐结点下滤构建含n个元素的二叉堆，时间复杂度为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q11-source-block",
+          "title": "原创命题记录 11",
+          "text": "用自底向上逐结点下滤构建含n个元素的二叉堆，时间复杂度为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "234506e8610cd53022ab28af2abdfe88298d72c8a44a3c96e5eb8379329825af"
+    },
+    {
+      "id": "postgraduate-computing408-01-q12-source",
+      "title": "原创命题记录 12",
+      "kind": "question-bank",
+      "text": "8位补码表示的−5，其十六进制位型为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q12-source-block",
+          "title": "原创命题记录 12",
+          "text": "8位补码表示的−5，其十六进制位型为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "1c998a00cb2f09e161c38cd8cdcc0c11a480a181ca818d3fd8ee722664ed6f9b"
+    },
+    {
+      "id": "postgraduate-computing408-01-q13-source",
+      "title": "原创命题记录 13",
+      "kind": "question-bank",
+      "text": "二进制数1.101₂的十进制值为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q13-source-block",
+          "title": "原创命题记录 13",
+          "text": "二进制数1.101₂的十进制值为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0a43d9775744c6729e02ea84d872d6e1eaea1efba472f93b3dc88e065e868e61"
+    },
+    {
+      "id": "postgraduate-computing408-01-q14-source",
+      "title": "原创命题记录 14",
+      "kind": "question-bank",
+      "text": "32位数0x12345678按小端存放，最低地址字节为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q14-source-block",
+          "title": "原创命题记录 14",
+          "text": "32位数0x12345678按小端存放，最低地址字节为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "d43643d4fb7beed6550790ac6c2afa4f9d8a2c0b0fa422b68f3d0f4175975c54"
+    },
+    {
+      "id": "postgraduate-computing408-01-q15-source",
+      "title": "原创命题记录 15",
+      "kind": "question-bank",
+      "text": "按字节编址且地址总线宽20位，最多直接寻址",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q15-source-block",
+          "title": "原创命题记录 15",
+          "text": "按字节编址且地址总线宽20位，最多直接寻址"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "54bba2c1b12567e724403941cef761855aed1d8dba0e9c94fbb4ac99baed89be"
+    },
+    {
+      "id": "postgraduate-computing408-01-q16-source",
+      "title": "原创命题记录 16",
+      "kind": "question-bank",
+      "text": "直接映射Cache含64行，每行16字节，地址按字节编址。地址0x1234映射到的行号（从0起）为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q16-source-block",
+          "title": "原创命题记录 16",
+          "text": "直接映射Cache含64行，每行16字节，地址按字节编址。地址0x1234映射到的行号（从0起）为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "51193d3408491911a31aeb650b6b93f0590926e731f26c38344c1fa74c700de7"
+    },
+    {
+      "id": "postgraduate-computing408-01-q17-source",
+      "title": "原创命题记录 17",
+      "kind": "question-bank",
+      "text": "Cache访问1ns，命中率90%，每次未命中另加100ns惩罚。平均访问时间为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q17-source-block",
+          "title": "原创命题记录 17",
+          "text": "Cache访问1ns，命中率90%，每次未命中另加100ns惩罚。平均访问时间为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "dc1bebd533cb8fe564811add584735299e03b05964403a406821e5801493c60e"
+    },
+    {
+      "id": "postgraduate-computing408-01-q18-source",
+      "title": "原创命题记录 18",
+      "kind": "question-bank",
+      "text": "理想5级流水线各级1周期，无停顿，执行10条指令需",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q18-source-block",
+          "title": "原创命题记录 18",
+          "text": "理想5级流水线各级1周期，无停顿，执行10条指令需"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "967f0069b4b50aad8fad07f26d2276739a9af9a90294d3e75244e634e437296c"
+    },
+    {
+      "id": "postgraduate-computing408-01-q19-source",
+      "title": "原创命题记录 19",
+      "kind": "question-bank",
+      "text": "指令比例：50%的CPI为1，30%的CPI为2，20%的CPI为3。平均CPI为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q19-source-block",
+          "title": "原创命题记录 19",
+          "text": "指令比例：50%的CPI为1，30%的CPI为2，20%的CPI为3。平均CPI为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "832a0eb811d6bc7d2e68526ccc94b2de55959625db989cea65d21f44cb206520"
+    },
+    {
+      "id": "postgraduate-computing408-01-q20-source",
+      "title": "原创命题记录 20",
+      "kind": "question-bank",
+      "text": "比较程序查询I/O与中断I/O，正确的是",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q20-source-block",
+          "title": "原创命题记录 20",
+          "text": "比较程序查询I/O与中断I/O，正确的是"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "50dc23b85e30c1e427a96df33fcb5af37ac305946a47692e3e47a53630edeac2"
+    },
+    {
+      "id": "postgraduate-computing408-01-q21-source",
+      "title": "原创命题记录 21",
+      "kind": "question-bank",
+      "text": "8位加法器计算0x7F+0x01，按补码解释时",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q21-source-block",
+          "title": "原创命题记录 21",
+          "text": "8位加法器计算0x7F+0x01，按补码解释时"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "1fec6779f0701f09b6973f32b8e4f97b60582b1b51040df77997e9f6cdf1cd1f"
+    },
+    {
+      "id": "postgraduate-computing408-01-q22-source",
+      "title": "原创命题记录 22",
+      "kind": "question-bank",
+      "text": "DRAM需要周期刷新主要是因为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q22-source-block",
+          "title": "原创命题记录 22",
+          "text": "DRAM需要周期刷新主要是因为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "16c933592102ad78b67c816d7eaf14ec2acc835243fdaf1e8cac0e2c39fd9bb8"
+    },
+    {
+      "id": "postgraduate-computing408-01-q23-source",
+      "title": "原创命题记录 23",
+      "kind": "question-bank",
+      "text": "进程等待磁盘I/O后进入阻塞态，I/O完成后通常先转入",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q23-source-block",
+          "title": "原创命题记录 23",
+          "text": "进程等待磁盘I/O后进入阻塞态，I/O完成后通常先转入"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "1ef46a70d737fa07575c4d2bff325519e42b45e1b28bd0dd3b1930f5f41ea334"
+    },
+    {
+      "id": "postgraduate-computing408-01-q24-source",
+      "title": "原创命题记录 24",
+      "kind": "question-bank",
+      "text": "时间片轮转中将时间片从较大值减小，通常会",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q24-source-block",
+          "title": "原创命题记录 24",
+          "text": "时间片轮转中将时间片从较大值减小，通常会"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "897574374f237305b42f25c8b8bae8b6fdf750d2a91717228e2f1b912c43d0e5"
+    },
+    {
+      "id": "postgraduate-computing408-01-q25-source",
+      "title": "原创命题记录 25",
+      "kind": "question-bank",
+      "text": "互斥信号量初值1，采用P先减1、若负则阻塞；连续两个进程各执行一次P且无V。此时信号量及阻塞进程数为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q25-source-block",
+          "title": "原创命题记录 25",
+          "text": "互斥信号量初值1，采用P先减1、若负则阻塞；连续两个进程各执行一次P且无V。此时信号量及阻塞进程数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4e46baaa1524caed29ddfcb5735ce7f781f878f4eaed713cac44da0177b59a60"
+    },
+    {
+      "id": "postgraduate-computing408-01-q26-source",
+      "title": "原创命题记录 26",
+      "kind": "question-bank",
+      "text": "为所有资源类型规定统一申请次序，可破坏死锁必要条件中的",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q26-source-block",
+          "title": "原创命题记录 26",
+          "text": "为所有资源类型规定统一申请次序，可破坏死锁必要条件中的"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "debc6b96af14dc69e48001f69cf34808dc03526c485e6ae6f7ff0f9f0ef9d4f1"
+    },
+    {
+      "id": "postgraduate-computing408-01-q27-source",
+      "title": "原创命题记录 27",
+      "kind": "question-bank",
+      "text": "32位虚拟地址，页面大小4KiB，页内偏移位数为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q27-source-block",
+          "title": "原创命题记录 27",
+          "text": "32位虚拟地址，页面大小4KiB，页内偏移位数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e1c6890e0b2c552b504662b69f1080499a6c86f9090cfe5e606a7e7415654a4f"
+    },
+    {
+      "id": "postgraduate-computing408-01-q28-source",
+      "title": "原创命题记录 28",
+      "kind": "question-bank",
+      "text": "3个初始空页框，FIFO置换，引用串1,2,3,1,4,2,5。缺页次数为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q28-source-block",
+          "title": "原创命题记录 28",
+          "text": "3个初始空页框，FIFO置换，引用串1,2,3,1,4,2,5。缺页次数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "68e231f00506180d52dc6982c073eb52aeaea4054058591fdd0c96acf2dda4a8"
+    },
+    {
+      "id": "postgraduate-computing408-01-q29-source",
+      "title": "原创命题记录 29",
+      "kind": "question-bank",
+      "text": "单级页表，TLB查找10ns、访存100ns；命中率90%，查找串行，未命中须一次页表访问再一次数据访问，无缺页。平均时间为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q29-source-block",
+          "title": "原创命题记录 29",
+          "text": "单级页表，TLB查找10ns、访存100ns；命中率90%，查找串行，未命中须一次页表访问再一次数据访问，无缺页。平均时间为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e07a1bcfe493845061a7bf4a016b8729788e421dd6dd4ca7b811155d6efda27e"
+    },
+    {
+      "id": "postgraduate-computing408-01-q30-source",
+      "title": "原创命题记录 30",
+      "kind": "question-bank",
+      "text": "索引块1KiB，每指针4字节，一个一级间接索引块最多指向多少数据块",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q30-source-block",
+          "title": "原创命题记录 30",
+          "text": "索引块1KiB，每指针4字节，一个一级间接索引块最多指向多少数据块"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4fec64035f8b5cdba503134091dab0830cb0384bda150b8fc8b34243eaa04e74"
+    },
+    {
+      "id": "postgraduate-computing408-01-q31-source",
+      "title": "原创命题记录 31",
+      "kind": "question-bank",
+      "text": "磁头起始50，按FCFS服务82,170,43,140,24,16,190，移动总磁道数为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q31-source-block",
+          "title": "原创命题记录 31",
+          "text": "磁头起始50，按FCFS服务82,170,43,140,24,16,190，移动总磁道数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c73cf84ebcfd3ce7ee34cd019f40066154937472be4dd1fd0087619cb5c8cab4"
+    },
+    {
+      "id": "postgraduate-computing408-01-q32-source",
+      "title": "原创命题记录 32",
+      "kind": "question-bank",
+      "text": "类UNIX权限640表示",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q32-source-block",
+          "title": "原创命题记录 32",
+          "text": "类UNIX权限640表示"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "5b5d7d3c12b7b887bae725c5eadb17faffc0c1dec33222715ff5d0606bc5c948"
+    },
+    {
+      "id": "postgraduate-computing408-01-q33-source",
+      "title": "原创命题记录 33",
+      "kind": "question-bank",
+      "text": "普通IPv4子网192.168.10.0/26，排除网络地址与广播地址，可用主机地址数为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q33-source-block",
+          "title": "原创命题记录 33",
+          "text": "普通IPv4子网192.168.10.0/26，排除网络地址与广播地址，可用主机地址数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "2d191b896a980b7930ba2c4bf4b530536856c977caa60bc0d267b11cd2fa0813"
+    },
+    {
+      "id": "postgraduate-computing408-01-q34-source",
+      "title": "原创命题记录 34",
+      "kind": "question-bank",
+      "text": "路由表有192.168.1.0/24走R1、192.168.1.128/25走R2、默认走R3。目的192.168.1.200走",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q34-source-block",
+          "title": "原创命题记录 34",
+          "text": "路由表有192.168.1.0/24走R1、192.168.1.128/25走R2、默认走R3。目的192.168.1.200走"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a6551b687c837186f3ebc62ea3a3087515f52b547e1f3866e9f0c4e337eb2742"
+    },
+    {
+      "id": "postgraduate-computing408-01-q35-source",
+      "title": "原创命题记录 35",
+      "kind": "question-bank",
+      "text": "模2除法，数据1101、生成多项式位串1011。附加3个0后除法所得CRC余数为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q35-source-block",
+          "title": "原创命题记录 35",
+          "text": "模2除法，数据1101、生成多项式位串1011。附加3个0后除法所得CRC余数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c55d5cb8394523d6fb9ef6956dc4a001b3d2c9ea08305b1ecc08dad4ff8d686b"
+    },
+    {
+      "id": "postgraduate-computing408-01-q36-source",
+      "title": "原创命题记录 36",
+      "kind": "question-bank",
+      "text": "忽略协议开销，以10Mbit/s发送1MB数据（1MB=10⁶字节），发送时延为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q36-source-block",
+          "title": "原创命题记录 36",
+          "text": "忽略协议开销，以10Mbit/s发送1MB数据（1MB=10⁶字节），发送时延为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0e9435cbef07aecf45073df9255c027611a389c1d9b4f6197b4bb5a1a32aa7d7"
+    },
+    {
+      "id": "postgraduate-computing408-01-q37-source",
+      "title": "原创命题记录 37",
+      "kind": "question-bank",
+      "text": "停等协议，数据帧发送1ms，从最后一比特发出到ACK返回为9ms，ACK发送时延忽略。无差错时链路利用率为",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q37-source-block",
+          "title": "原创命题记录 37",
+          "text": "停等协议，数据帧发送1ms，从最后一比特发出到ACK返回为9ms，ACK发送时延忽略。无差错时链路利用率为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "56e54c94fa8bf92a35a2e1f67334b09d2b742584a2478edcb67257d0771537fa"
+    },
+    {
+      "id": "postgraduate-computing408-01-q38-source",
+      "title": "原创命题记录 38",
+      "kind": "question-bank",
+      "text": "TCP发送方cwnd=12MSS，接收窗口rwnd=8MSS，当前无未确认数据。最多可再发送",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q38-source-block",
+          "title": "原创命题记录 38",
+          "text": "TCP发送方cwnd=12MSS，接收窗口rwnd=8MSS，当前无未确认数据。最多可再发送"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "df40547e529d21b1d11e76e27b7aba9cc89d418c718432e6487183358964d0b0"
+    },
+    {
+      "id": "postgraduate-computing408-01-q39-source",
+      "title": "原创命题记录 39",
+      "kind": "question-bank",
+      "text": "RIP以跳数计量，跳数16通常表示",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q39-source-block",
+          "title": "原创命题记录 39",
+          "text": "RIP以跳数计量，跳数16通常表示"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ef022356957eeb6102a307ae2e01a2a3dded23629b01fd04d05d7070d97ec484"
+    },
+    {
+      "id": "postgraduate-computing408-01-q40-source",
+      "title": "原创命题记录 40",
+      "kind": "question-bank",
+      "text": "关于DNS传输，正确的是",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q40-source-block",
+          "title": "原创命题记录 40",
+          "text": "关于DNS传输，正确的是"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "2fb7b085f73eb2b5d886dc7a5051b62b1acd2f7ae3f68bf62ccc744027a0b66c"
+    },
+    {
+      "id": "postgraduate-computing408-01-q41-source",
+      "title": "原创命题记录 41",
+      "kind": "question-bank",
+      "text": "向空二叉搜索树依次插入50,30,70,20,40,60,80。\n（1）写出中序与层序遍历。（3分）\n（2）删除50，采用右子树最小结点替代，写出删除后层序。（3分）\n（3）给出统计任意BST中落在闭区间[L,R]内关键字个数的递归算法，说明最坏时间。（4分）",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q41-source-block",
+          "title": "原创命题记录 41",
+          "text": "向空二叉搜索树依次插入50,30,70,20,40,60,80。\n（1）写出中序与层序遍历。（3分）\n（2）删除50，采用右子树最小结点替代，写出删除后层序。（3分）\n（3）给出统计任意BST中落在闭区间[L,R]内关键字个数的递归算法，说明最坏时间。（4分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e7ff06a194dde7145f596522d093e2ddcd65ef3743e41f759ac4b58c4ce9d9ed"
+    },
+    {
+      "id": "postgraduate-computing408-01-q42-source",
+      "title": "原创命题记录 42",
+      "kind": "question-bank",
+      "text": "无向连通图顶点A,B,C,D,E，边及权：AB=2,AC=3,BC=1,BD=4,CD=2,CE=5,DE=1。\n（1）用Kruskal求一棵最小生成树及总权。（5分）\n（2）用Dijkstra求A到各点最短距离，列出确定顶点顺序，距离相等时按字母序。（5分）\n（3）说明最小生成树与单源最短路的优化目标为何不同。（3分）",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q42-source-block",
+          "title": "原创命题记录 42",
+          "text": "无向连通图顶点A,B,C,D,E，边及权：AB=2,AC=3,BC=1,BD=4,CD=2,CE=5,DE=1。\n（1）用Kruskal求一棵最小生成树及总权。（5分）\n（2）用Dijkstra求A到各点最短距离，列出确定顶点顺序，距离相等时按字母序。（5分）\n（3）说明最小生成树与单源最短路的优化目标为何不同。（3分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "fe31de087956cbb29cdbd423a9ea7813f09bbf7edb62dbe9501f912048408844"
+    },
+    {
+      "id": "postgraduate-computing408-01-q43-source",
+      "title": "原创命题记录 43",
+      "kind": "question-bank",
+      "text": "Cache直接映射，4行，每行16字节，初始空，按字节编址，访问地址序列0,16,0,64,16,80,0,16。\n（1）列出各地址块号、行号及命中/失效。（6分）\n（2）求命中率；若Cache每次1ns，失效额外40ns，求平均访问时间。（4分）",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q43-source-block",
+          "title": "原创命题记录 43",
+          "text": "Cache直接映射，4行，每行16字节，初始空，按字节编址，访问地址序列0,16,0,64,16,80,0,16。\n（1）列出各地址块号、行号及命中/失效。（6分）\n（2）求命中率；若Cache每次1ns，失效额外40ns，求平均访问时间。（4分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "11bbef76c8c11ab8afe6e3f30060dc9ddb4bd3ba45ef0100f71deeca4dc6d04b"
+    },
+    {
+      "id": "postgraduate-computing408-01-q44-source",
+      "title": "原创命题记录 44",
+      "kind": "question-bank",
+      "text": "五级单发射顺序流水线IF/ID/EX/MEM/WB，各1周期。仅考虑RAW数据相关；有完整EX输入转发，load结果MEM结束可供下一周期EX使用。分支与资源冲突均无。指令依次为I1:LW R1,0(R2)；I2:ADD R3,R1,R4；I3:SUB R5,R3,R6；I4:ADD R7,R5,R8。\n（1）标明RAW相关。（3分）\n（2）有转发时说明停顿并列各指令EX/WB周期，IF首周期为1。（6分）\n（3）求总周期及相对于无流水、每条5周期的加速比。（4分）",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q44-source-block",
+          "title": "原创命题记录 44",
+          "text": "五级单发射顺序流水线IF/ID/EX/MEM/WB，各1周期。仅考虑RAW数据相关；有完整EX输入转发，load结果MEM结束可供下一周期EX使用。分支与资源冲突均无。指令依次为I1:LW R1,0(R2)；I2:ADD R3,R1,R4；I3:SUB R5,R3,R6；I4:ADD R7,R5,R8。\n（1）标明RAW相关。（3分）\n（2）有转发时说明停顿并列各指令EX/WB周期，IF首周期为1。（6分）\n（3）求总周期及相对于无流水、每条5周期的加速比。（4分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "95d264a51bc9e96c249d61c26e6de89ef2b5c32f7b4366c081994b820902c2c1"
+    },
+    {
+      "id": "postgraduate-computing408-01-q45-source",
+      "title": "原创命题记录 45",
+      "kind": "question-bank",
+      "text": "三个进程P0、P1、P2，三类资源A/B/C。Allocation分别为(1,0,0)、(0,1,0)、(0,0,1)，Max分别为(2,1,0)、(1,2,1)、(1,0,2)，Available=(1,1,1)。\n（1）计算Need并给出安全序列。（4分）\n（2）P1请求(1,0,1)，判断是否超过Need/Available；试分配后是否安全，给出依据。（3分）",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q45-source-block",
+          "title": "原创命题记录 45",
+          "text": "三个进程P0、P1、P2，三类资源A/B/C。Allocation分别为(1,0,0)、(0,1,0)、(0,0,1)，Max分别为(2,1,0)、(1,2,1)、(1,0,2)，Available=(1,1,1)。\n（1）计算Need并给出安全序列。（4分）\n（2）P1请求(1,0,1)，判断是否超过Need/Available；试分配后是否安全，给出依据。（3分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "48ce4db9e7ef9b39dec849fd476796ca02dfe8d90dbdd20ccb215c8588663927"
+    },
+    {
+      "id": "postgraduate-computing408-01-q46-source",
+      "title": "原创命题记录 46",
+      "kind": "question-bank",
+      "text": "某进程有3个初始空页框，页引用串为1,2,3,1,4,2,5,1。\n（1）按LRU列出逐次命中/缺页、被替换页和缺页数。（5分）\n（2）若页面4KiB，虚拟地址0x1234且虚页1映射物理页框7，写出页号、页内偏移、物理地址。（3分）",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q46-source-block",
+          "title": "原创命题记录 46",
+          "text": "某进程有3个初始空页框，页引用串为1,2,3,1,4,2,5,1。\n（1）按LRU列出逐次命中/缺页、被替换页和缺页数。（5分）\n（2）若页面4KiB，虚拟地址0x1234且虚页1映射物理页框7，写出页号、页内偏移、物理地址。（3分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e985545b1d535cf7bc49f5978fe594279e29bc65375b5b41976b15c6e4717351"
+    },
+    {
+      "id": "postgraduate-computing408-01-q47-source",
+      "title": "原创命题记录 47",
+      "kind": "question-bank",
+      "text": "地址块192.168.8.0/24分配给甲、乙、丙三部门，分别需100、50、20个普通主机地址，不使用/31。\n（1）按先大后小给出互不重叠子网、可用范围与广播地址。（6分）\n（2）TCP当前cwnd=10MSS、rwnd=8MSS、已发未确认3MSS且均在窗口内，最多还可发送多少？如收到确认使在途数据降为1MSS且两窗口不变，再可发送多少？（3分）",
+      "blocks": [
+        {
+          "id": "postgraduate-computing408-01-q47-source-block",
+          "title": "原创命题记录 47",
+          "text": "地址块192.168.8.0/24分配给甲、乙、丙三部门，分别需100、50、20个普通主机地址，不使用/31。\n（1）按先大后小给出互不重叠子网、可用范围与广播地址。（6分）\n（2）TCP当前cwnd=10MSS、rwnd=8MSS、已发未确认3MSS且均在窗口内，最多还可发送多少？如收到确认使在途数据降为1MSS且两窗口不变，再可发送多少？（3分）"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "50b6ec00ed36b2917391ba42d77692222ca0dfeb3d61d9f183f905312f3b9b95"
+    }
+  ],
+  "sections": [
+    {
+      "id": "choice",
+      "title": "一、单项选择题",
+      "examPartId": "choice",
+      "instructions": "第1—40题，每题2分。每题只有一个正确答案。KiB=1024字节；其他单位按题设。",
+      "score": 80,
+      "questions": [
+        {
+          "id": "postgraduate-computing408-01-q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "执行：for i=1..n，j从1开始，每次乘2直到j>n，每轮执行常数工作。总时间复杂度为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "外层n次，内层⌊log₂n⌋+1次，故Θ(nlogn)。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q1-source",
+            "blockId": "postgraduate-computing408-01-q1-source-block",
+            "title": "原创命题记录 1",
+            "exact": "执行：for i=1..n，j从1开始，每次乘2直到j>n，每轮执行常数工作。总时间复杂度为"
+          },
+          "chapter": "数据结构·复杂度",
+          "tags": [
+            "数据结构·复杂度"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·复杂度"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；外层n次，内层⌊log₂n⌋+1次，故Θ(nlogn)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Θ(n)"
+            },
+            {
+              "id": "B",
+              "text": "Θ(n log n)"
+            },
+            {
+              "id": "C",
+              "text": "Θ(n²)"
+            },
+            {
+              "id": "D",
+              "text": "Θ(log n)"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "初始空栈依次push(1)、push(2)、pop、push(3)、pop、pop，弹出序列为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "逐步栈态[1]、[1,2]、[1]、[1,3]、[1]、[]。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q2-source",
+            "blockId": "postgraduate-computing408-01-q2-source-block",
+            "title": "原创命题记录 2",
+            "exact": "初始空栈依次push(1)、push(2)、pop、push(3)、pop、pop，弹出序列为"
+          },
+          "chapter": "数据结构·栈",
+          "tags": [
+            "数据结构·栈"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·栈"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；逐步栈态[1]、[1,2]、[1]、[1,3]、[1]、[]。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1,2,3"
+            },
+            {
+              "id": "B",
+              "text": "2,1,3"
+            },
+            {
+              "id": "C",
+              "text": "2,3,1"
+            },
+            {
+              "id": "D",
+              "text": "3,2,1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "二叉树先序为A B D E C，中序为D B E A C，其后序为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "根A，左子树根B子叶D/E，右子树C，后序DEBCA。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q3-source",
+            "blockId": "postgraduate-computing408-01-q3-source-block",
+            "title": "原创命题记录 3",
+            "exact": "二叉树先序为A B D E C，中序为D B E A C，其后序为"
+          },
+          "chapter": "数据结构·树遍历",
+          "tags": [
+            "数据结构·树遍历"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·树遍历"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；根A，左子树根B子叶D/E，右子树C，后序DEBCA。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "D E B C A"
+            },
+            {
+              "id": "B",
+              "text": "A B C D E"
+            },
+            {
+              "id": "C",
+              "text": "D B E C A"
+            },
+            {
+              "id": "D",
+              "text": "C E D B A"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "非空二叉树中，度为2的结点有8个，则叶结点个数为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "n₀=n₂+1=9，对一般二叉树成立。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q4-source",
+            "blockId": "postgraduate-computing408-01-q4-source-block",
+            "title": "原创命题记录 4",
+            "exact": "非空二叉树中，度为2的结点有8个，则叶结点个数为"
+          },
+          "chapter": "数据结构·树性质",
+          "tags": [
+            "数据结构·树性质"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·树性质"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；n₀=n₂+1=9，对一般二叉树成立。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "7"
+            },
+            {
+              "id": "B",
+              "text": "8"
+            },
+            {
+              "id": "C",
+              "text": "10"
+            },
+            {
+              "id": "D",
+              "text": "9"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q5",
+          "number": 5,
+          "type": "choice",
+          "prompt": "在关键字均不同的二叉搜索树中查找35，以下路径不可能的是",
+          "score": 2,
+          "solution": "D",
+          "explanation": "到50左子树后所有后继关键字应小于50，60违反祖先上界。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q5-source",
+            "blockId": "postgraduate-computing408-01-q5-source-block",
+            "title": "原创命题记录 5",
+            "exact": "在关键字均不同的二叉搜索树中查找35，以下路径不可能的是"
+          },
+          "chapter": "数据结构·搜索树",
+          "tags": [
+            "数据结构·搜索树"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·搜索树"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；到50左子树后所有后继关键字应小于50，60违反祖先上界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "50,20,40,35"
+            },
+            {
+              "id": "B",
+              "text": "40,20,30,35"
+            },
+            {
+              "id": "C",
+              "text": "20,50,30,40,35"
+            },
+            {
+              "id": "D",
+              "text": "50,20,60,35"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q6",
+          "number": 6,
+          "type": "choice",
+          "prompt": "AVL树某结点左子树高3、右子树高1，采用左高减右高定义平衡因子，则该结点",
+          "score": 2,
+          "solution": "B",
+          "explanation": "平衡因子3−1=2，绝对值大于1须调整。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q6-source",
+            "blockId": "postgraduate-computing408-01-q6-source-block",
+            "title": "原创命题记录 6",
+            "exact": "AVL树某结点左子树高3、右子树高1，采用左高减右高定义平衡因子，则该结点"
+          },
+          "chapter": "数据结构·AVL",
+          "tags": [
+            "数据结构·AVL"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·AVL"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；平衡因子3−1=2，绝对值大于1须调整。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "因子1且平衡"
+            },
+            {
+              "id": "B",
+              "text": "因子2且失衡"
+            },
+            {
+              "id": "C",
+              "text": "因子−2且平衡"
+            },
+            {
+              "id": "D",
+              "text": "因子0且平衡"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q7",
+          "number": 7,
+          "type": "choice",
+          "prompt": "含n≥2个顶点的连通无向简单图，最少有多少条边",
+          "score": 2,
+          "solution": "A",
+          "explanation": "生成树含n−1边，树达到下界。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q7-source",
+            "blockId": "postgraduate-computing408-01-q7-source-block",
+            "title": "原创命题记录 7",
+            "exact": "含n≥2个顶点的连通无向简单图，最少有多少条边"
+          },
+          "chapter": "数据结构·图",
+          "tags": [
+            "数据结构·图"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·图"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；生成树含n−1边，树达到下界。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "n−1"
+            },
+            {
+              "id": "B",
+              "text": "n"
+            },
+            {
+              "id": "C",
+              "text": "n+1"
+            },
+            {
+              "id": "D",
+              "text": "n(n−1)/2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q8",
+          "number": 8,
+          "type": "choice",
+          "prompt": "有向图边A→B=2、A→C=5、B→C=1、B→D=4、C→D=1。从A到D的最短距离为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "A-B-C-D长度2+1+1=4，小于ABD=6及ACD=6。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q8-source",
+            "blockId": "postgraduate-computing408-01-q8-source-block",
+            "title": "原创命题记录 8",
+            "exact": "有向图边A→B=2、A→C=5、B→C=1、B→D=4、C→D=1。从A到D的最短距离为"
+          },
+          "chapter": "数据结构·最短路",
+          "tags": [
+            "数据结构·最短路"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·最短路"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；A-B-C-D长度2+1+1=4，小于ABD=6及ACD=6。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "3"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "5"
+            },
+            {
+              "id": "D",
+              "text": "6"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q9",
+          "number": 9,
+          "type": "choice",
+          "prompt": "长度7散列表，h(k)=k mod 7，线性探测，初始空，依次插入10、17、24。24所在下标为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "10占3，17冲突占4，24再冲突占5。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q9-source",
+            "blockId": "postgraduate-computing408-01-q9-source-block",
+            "title": "原创命题记录 9",
+            "exact": "长度7散列表，h(k)=k mod 7，线性探测，初始空，依次插入10、17、24。24所在下标为"
+          },
+          "chapter": "数据结构·散列",
+          "tags": [
+            "数据结构·散列"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·散列"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；10占3，17冲突占4，24再冲突占5。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "3"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "5"
+            },
+            {
+              "id": "D",
+              "text": "6"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "快速排序每次以当前段首元素为枢轴，不采用随机化。对已升序且互异的n个元素，最坏时间为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "每次划分一边0、另一边n−1，比较数为1+…+(n−1)。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q10-source",
+            "blockId": "postgraduate-computing408-01-q10-source-block",
+            "title": "原创命题记录 10",
+            "exact": "快速排序每次以当前段首元素为枢轴，不采用随机化。对已升序且互异的n个元素，最坏时间为"
+          },
+          "chapter": "数据结构·排序",
+          "tags": [
+            "数据结构·排序"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·排序"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；每次划分一边0、另一边n−1，比较数为1+…+(n−1)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Θ(log n)"
+            },
+            {
+              "id": "B",
+              "text": "Θ(n)"
+            },
+            {
+              "id": "C",
+              "text": "Θ(n log n)"
+            },
+            {
+              "id": "D",
+              "text": "Θ(n²)"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q11",
+          "number": 11,
+          "type": "choice",
+          "prompt": "用自底向上逐结点下滤构建含n个元素的二叉堆，时间复杂度为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "按结点高度求和Σ n h/2^{h+1}=O(n)，读取所有元素需Ω(n)。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q11-source",
+            "blockId": "postgraduate-computing408-01-q11-source-block",
+            "title": "原创命题记录 11",
+            "exact": "用自底向上逐结点下滤构建含n个元素的二叉堆，时间复杂度为"
+          },
+          "chapter": "数据结构·堆",
+          "tags": [
+            "数据结构·堆"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·堆"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；按结点高度求和Σ n h/2^{h+1}=O(n)，读取所有元素需Ω(n)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Θ(n)"
+            },
+            {
+              "id": "B",
+              "text": "Θ(log n)"
+            },
+            {
+              "id": "C",
+              "text": "Θ(n log n)"
+            },
+            {
+              "id": "D",
+              "text": "Θ(n²)"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q12",
+          "number": 12,
+          "type": "choice",
+          "prompt": "8位补码表示的−5，其十六进制位型为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "256−5=251=0xFB；补码最高位权为−128。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q12-source",
+            "blockId": "postgraduate-computing408-01-q12-source-block",
+            "title": "原创命题记录 12",
+            "exact": "8位补码表示的−5，其十六进制位型为"
+          },
+          "chapter": "计算机组成·数制",
+          "tags": [
+            "计算机组成·数制"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·数制"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；256−5=251=0xFB；补码最高位权为−128。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "05"
+            },
+            {
+              "id": "B",
+              "text": "FA"
+            },
+            {
+              "id": "C",
+              "text": "FB"
+            },
+            {
+              "id": "D",
+              "text": "85"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q13",
+          "number": 13,
+          "type": "choice",
+          "prompt": "二进制数1.101₂的十进制值为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "1+1/2+0/4+1/8=1.625。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q13-source",
+            "blockId": "postgraduate-computing408-01-q13-source-block",
+            "title": "原创命题记录 13",
+            "exact": "二进制数1.101₂的十进制值为"
+          },
+          "chapter": "计算机组成·数制",
+          "tags": [
+            "计算机组成·数制"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·数制"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；1+1/2+0/4+1/8=1.625。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1.5"
+            },
+            {
+              "id": "B",
+              "text": "1.625"
+            },
+            {
+              "id": "C",
+              "text": "1.75"
+            },
+            {
+              "id": "D",
+              "text": "1.8125"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q14",
+          "number": 14,
+          "type": "choice",
+          "prompt": "32位数0x12345678按小端存放，最低地址字节为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "小端将最低有效字节0x78存于最低地址。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q14-source",
+            "blockId": "postgraduate-computing408-01-q14-source-block",
+            "title": "原创命题记录 14",
+            "exact": "32位数0x12345678按小端存放，最低地址字节为"
+          },
+          "chapter": "计算机组成·存储",
+          "tags": [
+            "计算机组成·存储"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·存储"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；小端将最低有效字节0x78存于最低地址。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "12"
+            },
+            {
+              "id": "B",
+              "text": "34"
+            },
+            {
+              "id": "C",
+              "text": "56"
+            },
+            {
+              "id": "D",
+              "text": "78"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q15",
+          "number": 15,
+          "type": "choice",
+          "prompt": "按字节编址且地址总线宽20位，最多直接寻址",
+          "score": 2,
+          "solution": "A",
+          "explanation": "2²⁰个字节为1MiB。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q15-source",
+            "blockId": "postgraduate-computing408-01-q15-source-block",
+            "title": "原创命题记录 15",
+            "exact": "按字节编址且地址总线宽20位，最多直接寻址"
+          },
+          "chapter": "计算机组成·地址",
+          "tags": [
+            "计算机组成·地址"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·地址"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；2²⁰个字节为1MiB。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1MiB"
+            },
+            {
+              "id": "B",
+              "text": "1KiB"
+            },
+            {
+              "id": "C",
+              "text": "20MiB"
+            },
+            {
+              "id": "D",
+              "text": "4MiB"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q16",
+          "number": 16,
+          "type": "choice",
+          "prompt": "直接映射Cache含64行，每行16字节，地址按字节编址。地址0x1234映射到的行号（从0起）为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "块号0x123=291，291 mod64=35，块内偏移4。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q16-source",
+            "blockId": "postgraduate-computing408-01-q16-source-block",
+            "title": "原创命题记录 16",
+            "exact": "直接映射Cache含64行，每行16字节，地址按字节编址。地址0x1234映射到的行号（从0起）为"
+          },
+          "chapter": "计算机组成·Cache",
+          "tags": [
+            "计算机组成·Cache"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·Cache"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；块号0x123=291，291 mod64=35，块内偏移4。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "4"
+            },
+            {
+              "id": "B",
+              "text": "18"
+            },
+            {
+              "id": "C",
+              "text": "35"
+            },
+            {
+              "id": "D",
+              "text": "52"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q17",
+          "number": 17,
+          "type": "choice",
+          "prompt": "Cache访问1ns，命中率90%，每次未命中另加100ns惩罚。平均访问时间为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "每次先付1ns，10%额外100ns，故11ns。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q17-source",
+            "blockId": "postgraduate-computing408-01-q17-source-block",
+            "title": "原创命题记录 17",
+            "exact": "Cache访问1ns，命中率90%，每次未命中另加100ns惩罚。平均访问时间为"
+          },
+          "chapter": "计算机组成·Cache",
+          "tags": [
+            "计算机组成·Cache"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·Cache"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；每次先付1ns，10%额外100ns，故11ns。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "10ns"
+            },
+            {
+              "id": "B",
+              "text": "11ns"
+            },
+            {
+              "id": "C",
+              "text": "90ns"
+            },
+            {
+              "id": "D",
+              "text": "101ns"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q18",
+          "number": 18,
+          "type": "choice",
+          "prompt": "理想5级流水线各级1周期，无停顿，执行10条指令需",
+          "score": 2,
+          "solution": "C",
+          "explanation": "填充排空4周期，加10条吞吐，合计14。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q18-source",
+            "blockId": "postgraduate-computing408-01-q18-source-block",
+            "title": "原创命题记录 18",
+            "exact": "理想5级流水线各级1周期，无停顿，执行10条指令需"
+          },
+          "chapter": "计算机组成·流水线",
+          "tags": [
+            "计算机组成·流水线"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·流水线"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；填充排空4周期，加10条吞吐，合计14。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "10周期"
+            },
+            {
+              "id": "B",
+              "text": "12周期"
+            },
+            {
+              "id": "C",
+              "text": "14周期"
+            },
+            {
+              "id": "D",
+              "text": "50周期"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q19",
+          "number": 19,
+          "type": "choice",
+          "prompt": "指令比例：50%的CPI为1，30%的CPI为2，20%的CPI为3。平均CPI为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "加权和0.5+0.6+0.6=1.7。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q19-source",
+            "blockId": "postgraduate-computing408-01-q19-source-block",
+            "title": "原创命题记录 19",
+            "exact": "指令比例：50%的CPI为1，30%的CPI为2，20%的CPI为3。平均CPI为"
+          },
+          "chapter": "计算机组成·性能",
+          "tags": [
+            "计算机组成·性能"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·性能"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；加权和0.5+0.6+0.6=1.7。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1.3"
+            },
+            {
+              "id": "B",
+              "text": "1.5"
+            },
+            {
+              "id": "C",
+              "text": "1.6"
+            },
+            {
+              "id": "D",
+              "text": "1.7"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q20",
+          "number": 20,
+          "type": "choice",
+          "prompt": "比较程序查询I/O与中断I/O，正确的是",
+          "score": 2,
+          "solution": "A",
+          "explanation": "中断允许事件通知，但仍有响应与服务开销；不能消除设备时间。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q20-source",
+            "blockId": "postgraduate-computing408-01-q20-source-block",
+            "title": "原创命题记录 20",
+            "exact": "比较程序查询I/O与中断I/O，正确的是"
+          },
+          "chapter": "计算机组成·I/O",
+          "tags": [
+            "计算机组成·I/O"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·I/O"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；中断允许事件通知，但仍有响应与服务开销；不能消除设备时间。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "中断I/O可使CPU不必持续轮询设备状态"
+            },
+            {
+              "id": "B",
+              "text": "中断I/O不需要任何CPU处理"
+            },
+            {
+              "id": "C",
+              "text": "查询I/O必定比所有中断方式快"
+            },
+            {
+              "id": "D",
+              "text": "中断能取消设备访问时间"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q21",
+          "number": 21,
+          "type": "choice",
+          "prompt": "8位加法器计算0x7F+0x01，按补码解释时",
+          "score": 2,
+          "solution": "B",
+          "explanation": "位型0x80，两个正数结果负，补码溢出；无第9位进位。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q21-source",
+            "blockId": "postgraduate-computing408-01-q21-source-block",
+            "title": "原创命题记录 21",
+            "exact": "8位加法器计算0x7F+0x01，按补码解释时"
+          },
+          "chapter": "计算机组成·溢出",
+          "tags": [
+            "计算机组成·溢出"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·溢出"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；位型0x80，两个正数结果负，补码溢出；无第9位进位。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "无溢出且进位1"
+            },
+            {
+              "id": "B",
+              "text": "溢出且最高位进位输出0"
+            },
+            {
+              "id": "C",
+              "text": "溢出且最高位进位输出1"
+            },
+            {
+              "id": "D",
+              "text": "结果为十进制128且可用8位补码表示"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q22",
+          "number": 22,
+          "type": "choice",
+          "prompt": "DRAM需要周期刷新主要是因为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "DRAM电容电荷泄漏，需要周期恢复；不是静态触发器存储。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q22-source",
+            "blockId": "postgraduate-computing408-01-q22-source-block",
+            "title": "原创命题记录 22",
+            "exact": "DRAM需要周期刷新主要是因为"
+          },
+          "chapter": "计算机组成·主存",
+          "tags": [
+            "计算机组成·主存"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·主存"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；DRAM电容电荷泄漏，需要周期恢复；不是静态触发器存储。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "地址总线过宽"
+            },
+            {
+              "id": "B",
+              "text": "所有读操作都来自Cache"
+            },
+            {
+              "id": "C",
+              "text": "存储电荷会逐渐泄漏"
+            },
+            {
+              "id": "D",
+              "text": "磁盘转速不稳定"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q23",
+          "number": 23,
+          "type": "choice",
+          "prompt": "进程等待磁盘I/O后进入阻塞态，I/O完成后通常先转入",
+          "score": 2,
+          "solution": "D",
+          "explanation": "事件满足后变就绪，仍需调度才进入运行态。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q23-source",
+            "blockId": "postgraduate-computing408-01-q23-source-block",
+            "title": "原创命题记录 23",
+            "exact": "进程等待磁盘I/O后进入阻塞态，I/O完成后通常先转入"
+          },
+          "chapter": "操作系统·状态转换",
+          "tags": [
+            "操作系统·状态转换"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·状态转换"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；事件满足后变就绪，仍需调度才进入运行态。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "运行态"
+            },
+            {
+              "id": "B",
+              "text": "结束态"
+            },
+            {
+              "id": "C",
+              "text": "新建态"
+            },
+            {
+              "id": "D",
+              "text": "就绪态"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q24",
+          "number": 24,
+          "type": "choice",
+          "prompt": "时间片轮转中将时间片从较大值减小，通常会",
+          "score": 2,
+          "solution": "A",
+          "explanation": "更频繁轮转缩短首次等待但提高切换比例，须权衡。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q24-source",
+            "blockId": "postgraduate-computing408-01-q24-source-block",
+            "title": "原创命题记录 24",
+            "exact": "时间片轮转中将时间片从较大值减小，通常会"
+          },
+          "chapter": "操作系统·调度",
+          "tags": [
+            "操作系统·调度"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·调度"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；更频繁轮转缩短首次等待但提高切换比例，须权衡。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "改善短交互请求响应但增加上下文切换开销"
+            },
+            {
+              "id": "B",
+              "text": "保证所有进程同时运行"
+            },
+            {
+              "id": "C",
+              "text": "消除所有调度开销"
+            },
+            {
+              "id": "D",
+              "text": "使长任务必然永不结束"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q25",
+          "number": 25,
+          "type": "choice",
+          "prompt": "互斥信号量初值1，采用P先减1、若负则阻塞；连续两个进程各执行一次P且无V。此时信号量及阻塞进程数为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "第一次P变0通过，第二次P变−1并阻塞1个进程。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q25-source",
+            "blockId": "postgraduate-computing408-01-q25-source-block",
+            "title": "原创命题记录 25",
+            "exact": "互斥信号量初值1，采用P先减1、若负则阻塞；连续两个进程各执行一次P且无V。此时信号量及阻塞进程数为"
+          },
+          "chapter": "操作系统·信号量",
+          "tags": [
+            "操作系统·信号量"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·信号量"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；第一次P变0通过，第二次P变−1并阻塞1个进程。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0,0"
+            },
+            {
+              "id": "B",
+              "text": "−1,1"
+            },
+            {
+              "id": "C",
+              "text": "−2,2"
+            },
+            {
+              "id": "D",
+              "text": "1,1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q26",
+          "number": 26,
+          "type": "choice",
+          "prompt": "为所有资源类型规定统一申请次序，可破坏死锁必要条件中的",
+          "score": 2,
+          "solution": "C",
+          "explanation": "全局有序申请排除资源等待环；不必取消互斥。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q26-source",
+            "blockId": "postgraduate-computing408-01-q26-source-block",
+            "title": "原创命题记录 26",
+            "exact": "为所有资源类型规定统一申请次序，可破坏死锁必要条件中的"
+          },
+          "chapter": "操作系统·死锁",
+          "tags": [
+            "操作系统·死锁"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·死锁"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；全局有序申请排除资源等待环；不必取消互斥。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "互斥"
+            },
+            {
+              "id": "B",
+              "text": "不可剥夺"
+            },
+            {
+              "id": "C",
+              "text": "循环等待"
+            },
+            {
+              "id": "D",
+              "text": "资源存在"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q27",
+          "number": 27,
+          "type": "choice",
+          "prompt": "32位虚拟地址，页面大小4KiB，页内偏移位数为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "4KiB=2¹²字节，偏移12位。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q27-source",
+            "blockId": "postgraduate-computing408-01-q27-source-block",
+            "title": "原创命题记录 27",
+            "exact": "32位虚拟地址，页面大小4KiB，页内偏移位数为"
+          },
+          "chapter": "操作系统·分页",
+          "tags": [
+            "操作系统·分页"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·分页"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；4KiB=2¹²字节，偏移12位。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "8"
+            },
+            {
+              "id": "B",
+              "text": "10"
+            },
+            {
+              "id": "C",
+              "text": "16"
+            },
+            {
+              "id": "D",
+              "text": "12"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q28",
+          "number": 28,
+          "type": "choice",
+          "prompt": "3个初始空页框，FIFO置换，引用串1,2,3,1,4,2,5。缺页次数为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "前三次缺页，1命中，4替换1，2命中，5替换2，共5次。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q28-source",
+            "blockId": "postgraduate-computing408-01-q28-source-block",
+            "title": "原创命题记录 28",
+            "exact": "3个初始空页框，FIFO置换，引用串1,2,3,1,4,2,5。缺页次数为"
+          },
+          "chapter": "操作系统·页置换",
+          "tags": [
+            "操作系统·页置换"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·页置换"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；前三次缺页，1命中，4替换1，2命中，5替换2，共5次。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "5"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "6"
+            },
+            {
+              "id": "D",
+              "text": "7"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q29",
+          "number": 29,
+          "type": "choice",
+          "prompt": "单级页表，TLB查找10ns、访存100ns；命中率90%，查找串行，未命中须一次页表访问再一次数据访问，无缺页。平均时间为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "命中110，未命中210；0.9×110+0.1×210=120ns。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q29-source",
+            "blockId": "postgraduate-computing408-01-q29-source-block",
+            "title": "原创命题记录 29",
+            "exact": "单级页表，TLB查找10ns、访存100ns；命中率90%，查找串行，未命中须一次页表访问再一次数据访问，无缺页。平均时间为"
+          },
+          "chapter": "操作系统·TLB",
+          "tags": [
+            "操作系统·TLB"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·TLB"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；命中110，未命中210；0.9×110+0.1×210=120ns。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "110ns"
+            },
+            {
+              "id": "B",
+              "text": "120ns"
+            },
+            {
+              "id": "C",
+              "text": "190ns"
+            },
+            {
+              "id": "D",
+              "text": "210ns"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q30",
+          "number": 30,
+          "type": "choice",
+          "prompt": "索引块1KiB，每指针4字节，一个一级间接索引块最多指向多少数据块",
+          "score": 2,
+          "solution": "C",
+          "explanation": "1024/4=256指针；只计算该一级索引覆盖的数据块。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q30-source",
+            "blockId": "postgraduate-computing408-01-q30-source-block",
+            "title": "原创命题记录 30",
+            "exact": "索引块1KiB，每指针4字节，一个一级间接索引块最多指向多少数据块"
+          },
+          "chapter": "操作系统·文件索引",
+          "tags": [
+            "操作系统·文件索引"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·文件索引"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；1024/4=256指针；只计算该一级索引覆盖的数据块。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "128"
+            },
+            {
+              "id": "B",
+              "text": "512"
+            },
+            {
+              "id": "C",
+              "text": "256"
+            },
+            {
+              "id": "D",
+              "text": "1024"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q31",
+          "number": 31,
+          "type": "choice",
+          "prompt": "磁头起始50，按FCFS服务82,170,43,140,24,16,190，移动总磁道数为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "依次位移32+88+127+97+116+8+174=642。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q31-source",
+            "blockId": "postgraduate-computing408-01-q31-source-block",
+            "title": "原创命题记录 31",
+            "exact": "磁头起始50，按FCFS服务82,170,43,140,24,16,190，移动总磁道数为"
+          },
+          "chapter": "操作系统·磁盘调度",
+          "tags": [
+            "操作系统·磁盘调度"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·磁盘调度"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；依次位移32+88+127+97+116+8+174=642。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "640"
+            },
+            {
+              "id": "B",
+              "text": "690"
+            },
+            {
+              "id": "C",
+              "text": "720"
+            },
+            {
+              "id": "D",
+              "text": "642"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q32",
+          "number": 32,
+          "type": "choice",
+          "prompt": "类UNIX权限640表示",
+          "score": 2,
+          "solution": "A",
+          "explanation": "6=4+2即rw，4即r，0无权限。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q32-source",
+            "blockId": "postgraduate-computing408-01-q32-source-block",
+            "title": "原创命题记录 32",
+            "exact": "类UNIX权限640表示"
+          },
+          "chapter": "操作系统·文件保护",
+          "tags": [
+            "操作系统·文件保护"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·文件保护"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；6=4+2即rw，4即r，0无权限。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "所有者读写、组读、其他无权限"
+            },
+            {
+              "id": "B",
+              "text": "所有者执行、组写、其他读"
+            },
+            {
+              "id": "C",
+              "text": "所有人读写"
+            },
+            {
+              "id": "D",
+              "text": "所有者只读、组读写、其他无权限"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q33",
+          "number": 33,
+          "type": "choice",
+          "prompt": "普通IPv4子网192.168.10.0/26，排除网络地址与广播地址，可用主机地址数为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "主机位6，共64，扣2得62。题设为普通子网，非/31例外。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q33-source",
+            "blockId": "postgraduate-computing408-01-q33-source-block",
+            "title": "原创命题记录 33",
+            "exact": "普通IPv4子网192.168.10.0/26，排除网络地址与广播地址，可用主机地址数为"
+          },
+          "chapter": "计算机网络·CIDR",
+          "tags": [
+            "计算机网络·CIDR"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·CIDR"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；主机位6，共64，扣2得62。题设为普通子网，非/31例外。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "30"
+            },
+            {
+              "id": "B",
+              "text": "62"
+            },
+            {
+              "id": "C",
+              "text": "64"
+            },
+            {
+              "id": "D",
+              "text": "126"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q34",
+          "number": 34,
+          "type": "choice",
+          "prompt": "路由表有192.168.1.0/24走R1、192.168.1.128/25走R2、默认走R3。目的192.168.1.200走",
+          "score": 2,
+          "solution": "C",
+          "explanation": "匹配/24及/25，选择更长/25前缀。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q34-source",
+            "blockId": "postgraduate-computing408-01-q34-source-block",
+            "title": "原创命题记录 34",
+            "exact": "路由表有192.168.1.0/24走R1、192.168.1.128/25走R2、默认走R3。目的192.168.1.200走"
+          },
+          "chapter": "计算机网络·路由",
+          "tags": [
+            "计算机网络·路由"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·路由"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；匹配/24及/25，选择更长/25前缀。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "R1"
+            },
+            {
+              "id": "B",
+              "text": "R3"
+            },
+            {
+              "id": "C",
+              "text": "R2"
+            },
+            {
+              "id": "D",
+              "text": "随机"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q35",
+          "number": 35,
+          "type": "choice",
+          "prompt": "模2除法，数据1101、生成多项式位串1011。附加3个0后除法所得CRC余数为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "1101000按异或长除1011，余数001；见执行验证。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q35-source",
+            "blockId": "postgraduate-computing408-01-q35-source-block",
+            "title": "原创命题记录 35",
+            "exact": "模2除法，数据1101、生成多项式位串1011。附加3个0后除法所得CRC余数为"
+          },
+          "chapter": "计算机网络·CRC",
+          "tags": [
+            "计算机网络·CRC"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·CRC"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；1101000按异或长除1011，余数001；见执行验证。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "000"
+            },
+            {
+              "id": "B",
+              "text": "010"
+            },
+            {
+              "id": "C",
+              "text": "011"
+            },
+            {
+              "id": "D",
+              "text": "001"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q36",
+          "number": 36,
+          "type": "choice",
+          "prompt": "忽略协议开销，以10Mbit/s发送1MB数据（1MB=10⁶字节），发送时延为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "8×10⁶bit/10⁷bit·s⁻¹=0.8s，不是传播时延。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q36-source",
+            "blockId": "postgraduate-computing408-01-q36-source-block",
+            "title": "原创命题记录 36",
+            "exact": "忽略协议开销，以10Mbit/s发送1MB数据（1MB=10⁶字节），发送时延为"
+          },
+          "chapter": "计算机网络·时延",
+          "tags": [
+            "计算机网络·时延"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·时延"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；8×10⁶bit/10⁷bit·s⁻¹=0.8s，不是传播时延。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0.8秒"
+            },
+            {
+              "id": "B",
+              "text": "0.1秒"
+            },
+            {
+              "id": "C",
+              "text": "1秒"
+            },
+            {
+              "id": "D",
+              "text": "8秒"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q37",
+          "number": 37,
+          "type": "choice",
+          "prompt": "停等协议，数据帧发送1ms，从最后一比特发出到ACK返回为9ms，ACK发送时延忽略。无差错时链路利用率为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "一个周期1+9=10ms，有效发送1ms，利用率10%。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q37-source",
+            "blockId": "postgraduate-computing408-01-q37-source-block",
+            "title": "原创命题记录 37",
+            "exact": "停等协议，数据帧发送1ms，从最后一比特发出到ACK返回为9ms，ACK发送时延忽略。无差错时链路利用率为"
+          },
+          "chapter": "计算机网络·停等",
+          "tags": [
+            "计算机网络·停等"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·停等"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；一个周期1+9=10ms，有效发送1ms，利用率10%。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "9%"
+            },
+            {
+              "id": "B",
+              "text": "10%"
+            },
+            {
+              "id": "C",
+              "text": "50%"
+            },
+            {
+              "id": "D",
+              "text": "90%"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q38",
+          "number": 38,
+          "type": "choice",
+          "prompt": "TCP发送方cwnd=12MSS，接收窗口rwnd=8MSS，当前无未确认数据。最多可再发送",
+          "score": 2,
+          "solution": "C",
+          "explanation": "可用发送上限min(cwnd,rwnd)−在途=8MSS。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q38-source",
+            "blockId": "postgraduate-computing408-01-q38-source-block",
+            "title": "原创命题记录 38",
+            "exact": "TCP发送方cwnd=12MSS，接收窗口rwnd=8MSS，当前无未确认数据。最多可再发送"
+          },
+          "chapter": "计算机网络·TCP",
+          "tags": [
+            "计算机网络·TCP"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·TCP"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；可用发送上限min(cwnd,rwnd)−在途=8MSS。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "4MSS"
+            },
+            {
+              "id": "B",
+              "text": "12MSS"
+            },
+            {
+              "id": "C",
+              "text": "8MSS"
+            },
+            {
+              "id": "D",
+              "text": "20MSS"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q39",
+          "number": 39,
+          "type": "choice",
+          "prompt": "RIP以跳数计量，跳数16通常表示",
+          "score": 2,
+          "solution": "D",
+          "explanation": "RIP将16设为无穷，最大可用15跳。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q39-source",
+            "blockId": "postgraduate-computing408-01-q39-source-block",
+            "title": "原创命题记录 39",
+            "exact": "RIP以跳数计量，跳数16通常表示"
+          },
+          "chapter": "计算机网络·路由",
+          "tags": [
+            "计算机网络·路由"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·路由"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；RIP将16设为无穷，最大可用15跳。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "直连"
+            },
+            {
+              "id": "B",
+              "text": "最佳路由"
+            },
+            {
+              "id": "C",
+              "text": "恰有16条等价路由"
+            },
+            {
+              "id": "D",
+              "text": "不可达"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-computing408-01-q40",
+          "number": 40,
+          "type": "choice",
+          "prompt": "关于DNS传输，正确的是",
+          "score": 2,
+          "solution": "A",
+          "explanation": "DNS常见查询用UDP，但TCP也用于多种场景，不能绝对化。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q40-source",
+            "blockId": "postgraduate-computing408-01-q40-source-block",
+            "title": "原创命题记录 40",
+            "exact": "关于DNS传输，正确的是"
+          },
+          "chapter": "计算机网络·DNS",
+          "tags": [
+            "计算机网络·DNS"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·DNS"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "按明确模型计算轨迹或逐项核对定义；DNS常见查询用UDP，但TCP也用于多种场景，不能绝对化。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "DNS可使用UDP，也可使用TCP，不能断言只用UDP"
+            },
+            {
+              "id": "B",
+              "text": "DNS永不使用TCP"
+            },
+            {
+              "id": "C",
+              "text": "DNS只运行于链路层"
+            },
+            {
+              "id": "D",
+              "text": "DNS把所有域名固定映射到同一地址"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "title": "二、综合应用题",
+      "examPartId": "response",
+      "instructions": "第41—47题，共70分。算法写出思路、伪代码及复杂度；计算题写出过程和单位。",
+      "score": 70,
+      "questions": [
+        {
+          "id": "postgraduate-computing408-01-q41",
+          "number": 41,
+          "type": "response",
+          "prompt": "向空二叉搜索树依次插入50,30,70,20,40,60,80。\n（1）写出中序与层序遍历。（3分）\n（2）删除50，采用右子树最小结点替代，写出删除后层序。（3分）\n（3）给出统计任意BST中落在闭区间[L,R]内关键字个数的递归算法，说明最坏时间。（4分）",
+          "score": 10,
+          "solution": "中序20,30,40,50,60,70,80；层序50,30,70,20,40,60,80。删除后以60替代50，并删除原60叶结点，层序60,30,70,20,40,80。算法count(v,L,R)：空结点返回0；若v.key<L，只递归右子树；若v.key>R，只递归左子树；否则返回1+count(left)+count(right)。最坏O(n)，递归栈O(h)。",
+          "explanation": "分问按列明步骤给分；算法等价实现须满足相同边界和复杂度。具体计算结果、状态轨迹和执行证据见本数据集 verify_computing.py。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q41-source",
+            "blockId": "postgraduate-computing408-01-q41-source-block",
+            "title": "原创命题记录 41",
+            "exact": "向空二叉搜索树依次插入50,30,70,20,40,60,80。\n（1）写出中序与层序遍历。（3分）\n（2）删除50，采用右子树最小结点替代，写出删除后层序。（3分）\n（3）给出统计任意BST中落在闭区间[L,R]内关键字个数的递归算法，说明最坏时间。（4分）"
+          },
+          "chapter": "数据结构·搜索树算法",
+          "tags": [
+            "数据结构·搜索树算法"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·搜索树算法"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "用独立Python状态机/图算法/地址与窗口计算执行复核；见 computing-verification.json。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "两个遍历各自正确",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "替换与删除原后继且层序正确",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "区间递归、剪枝与端点条件正确",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "最坏O(n)、栈O(h)",
+                "points": 1
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-computing408-01-q42",
+          "number": 42,
+          "type": "response",
+          "prompt": "无向连通图顶点A,B,C,D,E，边及权：AB=2,AC=3,BC=1,BD=4,CD=2,CE=5,DE=1。\n（1）用Kruskal求一棵最小生成树及总权。（5分）\n（2）用Dijkstra求A到各点最短距离，列出确定顶点顺序，距离相等时按字母序。（5分）\n（3）说明最小生成树与单源最短路的优化目标为何不同。（3分）",
+          "score": 13,
+          "solution": "Kruskal可选BC=1、DE=1、AB=2、CD=2，总权6。Dijkstra距离A0,B2,C3,D5,E6，确定顺序A,B,C,D,E；B→C可给同为3的替代路径。MST最小化连接全部顶点的边权总和，不要求任一根到各点路径最短；单源最短路分别最小化从给定源到各顶点的路径长度。",
+          "explanation": "分问按列明步骤给分；算法等价实现须满足相同边界和复杂度。具体计算结果、状态轨迹和执行证据见本数据集 verify_computing.py。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q42-source",
+            "blockId": "postgraduate-computing408-01-q42-source-block",
+            "title": "原创命题记录 42",
+            "exact": "无向连通图顶点A,B,C,D,E，边及权：AB=2,AC=3,BC=1,BD=4,CD=2,CE=5,DE=1。\n（1）用Kruskal求一棵最小生成树及总权。（5分）\n（2）用Dijkstra求A到各点最短距离，列出确定顶点顺序，距离相等时按字母序。（5分）\n（3）说明最小生成树与单源最短路的优化目标为何不同。（3分）"
+          },
+          "chapter": "数据结构·图算法",
+          "tags": [
+            "数据结构·图算法"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "数据结构·图算法"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "用独立Python状态机/图算法/地址与窗口计算执行复核；见 computing-verification.json。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "algorithms",
+                "blockId": "algorithms-block",
+                "title": "算法知识核对（作者概述）",
+                "exact": "数据结构问题以不变量、具体操作轨迹与复杂度分析核对；图算法须说明权重条件；遍历与查找须保留次序和树形结构。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "Kruskal按权加边且不成环",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "树和总权6",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "全部距离正确",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "确定顺序与松弛依据",
+                "points": 2
+              },
+              {
+                "id": "r5",
+                "description": "区分总边权和源点路径目标",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-computing408-01-q43",
+          "number": 43,
+          "type": "response",
+          "prompt": "Cache直接映射，4行，每行16字节，初始空，按字节编址，访问地址序列0,16,0,64,16,80,0,16。\n（1）列出各地址块号、行号及命中/失效。（6分）\n（2）求命中率；若Cache每次1ns，失效额外40ns，求平均访问时间。（4分）",
+          "score": 10,
+          "solution": "块号0,1,0,4,1,5,0,1；行号0,1,0,0,1,1,0,1；结果M,M,H,M,H,M,M,M。命中2/8=25%；AMAT=1+0.75×40=31ns。",
+          "explanation": "分问按列明步骤给分；算法等价实现须满足相同边界和复杂度。具体计算结果、状态轨迹和执行证据见本数据集 verify_computing.py。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q43-source",
+            "blockId": "postgraduate-computing408-01-q43-source-block",
+            "title": "原创命题记录 43",
+            "exact": "Cache直接映射，4行，每行16字节，初始空，按字节编址，访问地址序列0,16,0,64,16,80,0,16。\n（1）列出各地址块号、行号及命中/失效。（6分）\n（2）求命中率；若Cache每次1ns，失效额外40ns，求平均访问时间。（4分）"
+          },
+          "chapter": "计算机组成·Cache轨迹",
+          "tags": [
+            "计算机组成·Cache轨迹"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·Cache轨迹"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "用独立Python状态机/图算法/地址与窗口计算执行复核；见 computing-verification.json。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "块号、行号与标签更新正确",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "逐次命中轨迹",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "命中率25%",
+                "points": 2
+              },
+              {
+                "id": "r4",
+                "description": "31ns且额外惩罚口径正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-computing408-01-q44",
+          "number": 44,
+          "type": "response",
+          "prompt": "五级单发射顺序流水线IF/ID/EX/MEM/WB，各1周期。仅考虑RAW数据相关；有完整EX输入转发，load结果MEM结束可供下一周期EX使用。分支与资源冲突均无。指令依次为I1:LW R1,0(R2)；I2:ADD R3,R1,R4；I3:SUB R5,R3,R6；I4:ADD R7,R5,R8。\n（1）标明RAW相关。（3分）\n（2）有转发时说明停顿并列各指令EX/WB周期，IF首周期为1。（6分）\n（3）求总周期及相对于无流水、每条5周期的加速比。（4分）",
+          "score": 13,
+          "solution": "RAW有I1→I2(R1)、I2→I3(R3)、I3→I4(R5)。load-use导致I2延后1周期进入EX；其余ALU相关用转发无需停顿。EX周期I1=3,I2=5,I3=6,I4=7；WB周期I1=5,I2=7,I3=8,I4=9。总9周期；无流水20周期，加速比20/9。",
+          "explanation": "分问按列明步骤给分；算法等价实现须满足相同边界和复杂度。具体计算结果、状态轨迹和执行证据见本数据集 verify_computing.py。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q44-source",
+            "blockId": "postgraduate-computing408-01-q44-source-block",
+            "title": "原创命题记录 44",
+            "exact": "五级单发射顺序流水线IF/ID/EX/MEM/WB，各1周期。仅考虑RAW数据相关；有完整EX输入转发，load结果MEM结束可供下一周期EX使用。分支与资源冲突均无。指令依次为I1:LW R1,0(R2)；I2:ADD R3,R1,R4；I3:SUB R5,R3,R6；I4:ADD R7,R5,R8。\n（1）标明RAW相关。（3分）\n（2）有转发时说明停顿并列各指令EX/WB周期，IF首周期为1。（6分）\n（3）求总周期及相对于无流水、每条5周期的加速比。（4分）"
+          },
+          "chapter": "计算机组成·流水线冒险",
+          "tags": [
+            "计算机组成·流水线冒险"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机组成·流水线冒险"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "用独立Python状态机/图算法/地址与窗口计算执行复核；见 computing-verification.json。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "architecture",
+                "blockId": "architecture-block",
+                "title": "计算机组成命题约定（原创）",
+                "exact": "按字节编址，KiB=1024字节。Cache使用题目给定映射与替换规则；访问代价须明确是否包含失效后的额外惩罚。流水线计算区分理想吞吐与数据冒险停顿。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "三个RAW边及寄存器",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "load-use停1周期且其他转发",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "EX/WB时间表正确",
+                "points": 3
+              },
+              {
+                "id": "r4",
+                "description": "总9周期",
+                "points": 2
+              },
+              {
+                "id": "r5",
+                "description": "基线20及加速比20/9",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-computing408-01-q45",
+          "number": 45,
+          "type": "response",
+          "prompt": "三个进程P0、P1、P2，三类资源A/B/C。Allocation分别为(1,0,0)、(0,1,0)、(0,0,1)，Max分别为(2,1,0)、(1,2,1)、(1,0,2)，Available=(1,1,1)。\n（1）计算Need并给出安全序列。（4分）\n（2）P1请求(1,0,1)，判断是否超过Need/Available；试分配后是否安全，给出依据。（3分）",
+          "score": 7,
+          "solution": "Need依次(1,1,0)、(1,1,1)、(1,0,1)。原状态P0→P1→P2安全。请求不超过Need与Available。试分配后Available=(0,1,0)，P1 Allocation=(1,1,1)，Need=(0,1,0)；可先完成P1释放后Work=(1,2,1)，再P0、P2，故安全、可批准。",
+          "explanation": "分问按列明步骤给分；算法等价实现须满足相同边界和复杂度。具体计算结果、状态轨迹和执行证据见本数据集 verify_computing.py。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q45-source",
+            "blockId": "postgraduate-computing408-01-q45-source-block",
+            "title": "原创命题记录 45",
+            "exact": "三个进程P0、P1、P2，三类资源A/B/C。Allocation分别为(1,0,0)、(0,1,0)、(0,0,1)，Max分别为(2,1,0)、(1,2,1)、(1,0,2)，Available=(1,1,1)。\n（1）计算Need并给出安全序列。（4分）\n（2）P1请求(1,0,1)，判断是否超过Need/Available；试分配后是否安全，给出依据。（3分）"
+          },
+          "chapter": "操作系统·银行家算法",
+          "tags": [
+            "操作系统·银行家算法"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·银行家算法"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "用独立Python状态机/图算法/地址与窗口计算执行复核；见 computing-verification.json。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "Need正确",
+                "points": 2
+              },
+              {
+                "id": "r2",
+                "description": "原安全序列及Work变化",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "请求边界合法",
+                "points": 1
+              },
+              {
+                "id": "r4",
+                "description": "试分配后安全序列与资源释放",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-computing408-01-q46",
+          "number": 46,
+          "type": "response",
+          "prompt": "某进程有3个初始空页框，页引用串为1,2,3,1,4,2,5,1。\n（1）按LRU列出逐次命中/缺页、被替换页和缺页数。（5分）\n（2）若页面4KiB，虚拟地址0x1234且虚页1映射物理页框7，写出页号、页内偏移、物理地址。（3分）",
+          "score": 8,
+          "solution": "LRU结果M,M,M,H,M,M,M,M。第5次淘汰2，第6次淘汰3，第7次淘汰1，第8次淘汰4，缺页7次。地址页号1，偏移0x234，物理地址7×0x1000+0x234=0x7234。",
+          "explanation": "分问按列明步骤给分；算法等价实现须满足相同边界和复杂度。具体计算结果、状态轨迹和执行证据见本数据集 verify_computing.py。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q46-source",
+            "blockId": "postgraduate-computing408-01-q46-source-block",
+            "title": "原创命题记录 46",
+            "exact": "某进程有3个初始空页框，页引用串为1,2,3,1,4,2,5,1。\n（1）按LRU列出逐次命中/缺页、被替换页和缺页数。（5分）\n（2）若页面4KiB，虚拟地址0x1234且虚页1映射物理页框7，写出页号、页内偏移、物理地址。（3分）"
+          },
+          "chapter": "操作系统·页面轨迹与地址转换",
+          "tags": [
+            "操作系统·页面轨迹与地址转换"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "操作系统·页面轨迹与地址转换"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "用独立Python状态机/图算法/地址与窗口计算执行复核；见 computing-verification.json。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "operating-systems",
+                "blockId": "operating-systems-block",
+                "title": "操作系统知识核对（作者概述）",
+                "exact": "进程、并发、虚拟内存和持久化按明确模型分析；页面替换保留每次命中/缺页轨迹；安全序列须逐进程验证Need≤Work并释放Allocation。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "LRU逐次最近访问次序与替换页",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "命中轨迹及缺页7次",
+                "points": 2
+              },
+              {
+                "id": "r3",
+                "description": "页号1和偏移0x234",
+                "points": 1
+              },
+              {
+                "id": "r4",
+                "description": "物理地址0x7234",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        },
+        {
+          "id": "postgraduate-computing408-01-q47",
+          "number": 47,
+          "type": "response",
+          "prompt": "地址块192.168.8.0/24分配给甲、乙、丙三部门，分别需100、50、20个普通主机地址，不使用/31。\n（1）按先大后小给出互不重叠子网、可用范围与广播地址。（6分）\n（2）TCP当前cwnd=10MSS、rwnd=8MSS、已发未确认3MSS且均在窗口内，最多还可发送多少？如收到确认使在途数据降为1MSS且两窗口不变，再可发送多少？（3分）",
+          "score": 9,
+          "solution": "甲192.168.8.0/25，主机.1—.126，广播.127；乙192.168.8.128/26，主机.129—.190，广播.191；丙192.168.8.192/27，主机.193—.222，广播.223；剩余.224/27。可再发min(10,8)−3=5MSS；在途降1时可再发7MSS。",
+          "explanation": "分问按列明步骤给分；算法等价实现须满足相同边界和复杂度。具体计算结果、状态轨迹和执行证据见本数据集 verify_computing.py。",
+          "source": {
+            "materialId": "postgraduate-computing408-01-q47-source",
+            "blockId": "postgraduate-computing408-01-q47-source-block",
+            "title": "原创命题记录 47",
+            "exact": "地址块192.168.8.0/24分配给甲、乙、丙三部门，分别需100、50、20个普通主机地址，不使用/31。\n（1）按先大后小给出互不重叠子网、可用范围与广播地址。（6分）\n（2）TCP当前cwnd=10MSS、rwnd=8MSS、已发未确认3MSS且均在窗口内，最多还可发送多少？如收到确认使在途数据降为1MSS且两窗口不变，再可发送多少？（3分）"
+          },
+          "chapter": "计算机网络·子网与TCP窗口",
+          "tags": [
+            "计算机网络·子网与TCP窗口"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "计算机网络·子网与TCP窗口"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "用独立Python状态机/图算法/地址与窗口计算执行复核；见 computing-verification.json。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "networks",
+                "blockId": "networks-block",
+                "title": "网络协议核对（作者概述）",
+                "exact": "CIDR按前缀划分地址并采用最长前缀匹配；TCP是字节序号协议，发送受接收窗口与拥塞控制共同约束。计算题以题设简化模型为准。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "子网前缀、对齐且不重叠",
+                "points": 3
+              },
+              {
+                "id": "r2",
+                "description": "各可用范围与广播地址",
+                "points": 3
+              },
+              {
+                "id": "r3",
+                "description": "首次可发5MSS含窗口口径",
+                "points": 2
+              },
+              {
+                "id": "r4",
+                "description": "第二次7MSS",
+                "points": 1
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          }
+        }
+      ]
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "computing408-v7",
+    "sourceQuestionIds": [
+      "postgraduate-computing408-01-q1",
+      "postgraduate-computing408-01-q2",
+      "postgraduate-computing408-01-q3",
+      "postgraduate-computing408-01-q4",
+      "postgraduate-computing408-01-q5",
+      "postgraduate-computing408-01-q6",
+      "postgraduate-computing408-01-q7",
+      "postgraduate-computing408-01-q8",
+      "postgraduate-computing408-01-q9",
+      "postgraduate-computing408-01-q10",
+      "postgraduate-computing408-01-q11",
+      "postgraduate-computing408-01-q12",
+      "postgraduate-computing408-01-q13",
+      "postgraduate-computing408-01-q14",
+      "postgraduate-computing408-01-q15",
+      "postgraduate-computing408-01-q16",
+      "postgraduate-computing408-01-q17",
+      "postgraduate-computing408-01-q18",
+      "postgraduate-computing408-01-q19",
+      "postgraduate-computing408-01-q20",
+      "postgraduate-computing408-01-q21",
+      "postgraduate-computing408-01-q22",
+      "postgraduate-computing408-01-q23",
+      "postgraduate-computing408-01-q24",
+      "postgraduate-computing408-01-q25",
+      "postgraduate-computing408-01-q26",
+      "postgraduate-computing408-01-q27",
+      "postgraduate-computing408-01-q28",
+      "postgraduate-computing408-01-q29",
+      "postgraduate-computing408-01-q30",
+      "postgraduate-computing408-01-q31",
+      "postgraduate-computing408-01-q32",
+      "postgraduate-computing408-01-q33",
+      "postgraduate-computing408-01-q34",
+      "postgraduate-computing408-01-q35",
+      "postgraduate-computing408-01-q36",
+      "postgraduate-computing408-01-q37",
+      "postgraduate-computing408-01-q38",
+      "postgraduate-computing408-01-q39",
+      "postgraduate-computing408-01-q40",
+      "postgraduate-computing408-01-q41",
+      "postgraduate-computing408-01-q42",
+      "postgraduate-computing408-01-q43",
+      "postgraduate-computing408-01-q44",
+      "postgraduate-computing408-01-q45",
+      "postgraduate-computing408-01-q46",
+      "postgraduate-computing408-01-q47"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创完整练习基准，采用所列考试结构；不是任何年份的官方原卷。题文、参考答案和评分要点为项目原创，MIT。外部资料仅作结构与知识核对，权利分别保留。"
+  },
+  "exam": {
+    "specificationId": "postgraduate-computing408-blueprint",
+    "scope": "full",
+    "scoreScale": "卷面分",
+    "specification": {
+      "id": "postgraduate-computing408-blueprint",
+      "name": "计算机学科专业基础（408）完整练习结构",
+      "subject": "计算机学科专业基础（408）",
+      "level": "考研",
+      "durationMinutes": 180,
+      "totalScore": 150,
+      "scoreScale": "卷面分",
+      "source": {
+        "kind": "publisher-syllabus-summary",
+        "title": "清华大学出版社408教材前言与逐科分值",
+        "url": "https://www.tup.tsinghua.edu.cn/bookscenter/bookpreface?id=08987801",
+        "accessedAt": "2026-11-15",
+        "notes": "出版社前言核对150分、40选择80分、综合70分与45/45/35/25；7道综合及180分钟另与2026第三方大纲版式核对。",
+        "corroborationUrl": "https://www.kmxwd.com/uploads/images/20251015/68eef5daf0564.pdf"
+      },
+      "sections": [
+        {
+          "id": "choice",
+          "title": "单项选择题",
+          "count": 40,
+          "questionType": "choice",
+          "totalScore": 80,
+          "pointsPerQuestion": 2,
+          "displayStart": 1
+        },
+        {
+          "id": "response",
+          "title": "综合应用题",
+          "count": 7,
+          "questionType": "response",
+          "totalScore": 70,
+          "questionScores": [
+            10,
+            13,
+            10,
+            13,
+            7,
+            8,
+            9
+          ],
+          "displayStart": 41
+        }
+      ]
+    }
+  }
+}

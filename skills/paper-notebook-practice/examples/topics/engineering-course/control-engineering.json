@@ -1,0 +1,847 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "control-engineering-course-01",
+  "notebookId": "control-engineering-source",
+  "notebookRevision": 1,
+  "title": "自动控制原理与系统设计课程考试",
+  "subject": "自动控制原理与系统设计",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "自动控制原理与系统设计课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "control-engineering-scope",
+      "title": "MIT 2.004 Dynamics and Control II",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/2-004-dynamics-and-control-ii-spring-2008/",
+      "text": "Make quantitative estimates of model parameters from experimental measurements",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2008",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/2-004-dynamics-and-control-ii-spring-2008/"
+      }
+    },
+    {
+      "id": "control-engineering-q1-statement",
+      "title": "自动控制原理与系统设计第1题命题原稿",
+      "kind": "question-bank",
+      "text": "直线运动系统质量m=2 kg，黏性阻尼b=6 N·s/m，弹簧刚度k=8 N/m，外力u作用于质量块，位移y为输出。初值零。（1）建立微分方程和传递函数；（2）求极点、自然频率与阻尼比；（3）输入恒力4 N时求最终位移并解释它与静力平衡的关系。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "control-engineering-q2-statement",
+      "title": "自动控制原理与系统设计第2题命题原稿",
+      "kind": "question-bank",
+      "text": "单位负反馈系统开环传递函数为$L(s)=K/[s(s+1)(s+4)]$，K为实数。（1）写闭环特征多项式；（2）用Routh判据求渐近稳定的K范围；（3）求正增益稳定边界处的振荡频率；（4）说明边界能否包含在渐近稳定区间内。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "control-engineering-q3-statement",
+      "title": "自动控制原理与系统设计第3题命题原稿",
+      "kind": "question-bank",
+      "text": "单位负反馈开环为$L(s)=K/[s(s+2)]$，K>0。输入分别为单位阶跃与单位斜坡。（1）求闭环稳定性、系统型别与两种稳态误差；（2）若要求斜坡误差≤0.05，求K下限；（3）闭环为标准二阶系统，要求阻尼比≥0.5，求K上限；（4）判断仅调K能否同时满足，并提出一种需重新分析的补偿方向。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "control-engineering-q4-statement",
+      "title": "自动控制原理与系统设计第4题命题原稿",
+      "kind": "question-bank",
+      "text": "闭环传递函数$T(s)=16/(s^2+4s+16)$，输入单位阶跃、初值零。（1）求自然频率、阻尼比和阻尼振荡频率；（2）求百分比超调及峰值时间；（3）用2%包络近似$t_s\\approx4/(\\zeta\\omega_n)$估计调节时间；（4）解释该近似与“任意时刻都准确等于2秒”有何差别。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "control-engineering-q5-statement",
+      "title": "自动控制原理与系统设计第5题命题原稿",
+      "kind": "question-bank",
+      "text": "系统$\\dot x=Ax+Bu$，$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=(0,1)^T$，输出$y=x_1$。采用$u=-Kx+r$。（1）检验可控性；（2）配置闭环极点−4、−5，求K；（3）单位常值r下稳态y是多少；（4）若要求y最终等于r，应如何设置前置增益？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "control-engineering-q6-statement",
+      "title": "自动控制原理与系统设计第6题命题原稿",
+      "kind": "question-bank",
+      "text": "连续系统$\\dot y=-2y+2u$，采样周期T=0.2 s，输入经零阶保持器保持。（1）推导精确离散模型$y_{k+1}=ay_k+bu_k$；（2）从y0=0、单位阶跃输入出发，求y1、y5及稳态值；（3）前向Euler模型系数是什么；（4）求前向Euler保持渐近稳定的T范围，并说明精确离散化是否有相同限制。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "control-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "control-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "直线运动系统质量m=2 kg，黏性阻尼b=6 N·s/m，弹簧刚度k=8 N/m，外力u作用于质量块，位移y为输出。初值零。（1）建立微分方程和传递函数；（2）求极点、自然频率与阻尼比；（3）输入恒力4 N时求最终位移并解释它与静力平衡的关系。",
+          "score": 15,
+          "solution": "$2\\ddot y+6\\dot y+8y=u$，$G(s)=1/(2s^2+6s+8)$。极点$-1.5\\pm j\\sqrt7/2$，$\\omega_n=2$ rad/s，$\\zeta=0.75$；4 N阶跃稳态位移0.5 m。",
+          "explanation": "三种恢复项分别为惯性、阻尼、弹簧力，单位均N。传递函数在零初值下由Laplace变换求得；稳态时速度及加速度为零，故ky=u，与终值定理一致。传递函数增益具有m/N单位，不应默认无量纲。",
+          "source": {
+            "materialId": "control-engineering-q1-statement",
+            "blockId": "control-engineering-q1-statement",
+            "exact": "直线运动系统质量m=2 kg，黏性阻尼b=6 N·s/m，弹簧刚度k=8 N/m，外力u作用于质量块，位移y为输出。初值零。（1）建立微分方程和传递函数；（2）求极点、自然频率与阻尼比；（3）输入恒力4 N时求最终位移并解释它与静力平衡的关系。"
+          },
+          "chapter": "机电系统建模与量纲",
+          "tags": [
+            "自动控制原理与系统设计",
+            "机电系统建模与量纲",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "机电系统建模与量纲"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-engineering-scope",
+                "blockId": "control-engineering-scope",
+                "exact": "Make quantitative estimates of model parameters from experimental measurements"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "动力学方程及零初值传函正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "control-engineering-q1-statement",
+                    "blockId": "control-engineering-q1-statement",
+                    "exact": "直线运动系统质量m=2 kg，黏性阻尼b=6 N·s/m，弹簧刚度k=8 N/m，外力u作用于质量块，位移y为输出。初值零。（1）建立微分方程和传递函数；（2）求极点、自然频率与阻尼比；（3）输入恒力4 N时求最终位移并解释它与静力平衡的关系。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "极点及二阶参数正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "终值与静力关系正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "量纲说明正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "control-q1 pole residual abs",
+                "result": "pass",
+                "evidence": "{\"label\": \"control-q1 pole residual abs\", \"actual\": 0.0, \"expected\": 0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "control-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "单位负反馈系统开环传递函数为$L(s)=K/[s(s+1)(s+4)]$，K为实数。（1）写闭环特征多项式；（2）用Routh判据求渐近稳定的K范围；（3）求正增益稳定边界处的振荡频率；（4）说明边界能否包含在渐近稳定区间内。",
+          "score": 15,
+          "solution": "特征式$s^3+5s^2+4s+K$。Routh首列$1,5,(20-K)/5,K$，稳定范围0<K<20。K=20时$(s+5)(s^2+4)$，振荡频率2 rad/s；边界不能计为渐近稳定。",
+          "explanation": "渐近稳定要求Routh首列严格同号。K=0具有原点根，K=20具有虚轴根；都不使全部自由响应指数衰减。由s²行辅助多项式$5s^2+20$可求虚根，直接因式分解复核。",
+          "source": {
+            "materialId": "control-engineering-q2-statement",
+            "blockId": "control-engineering-q2-statement",
+            "exact": "单位负反馈系统开环传递函数为$L(s)=K/[s(s+1)(s+4)]$，K为实数。（1）写闭环特征多项式；（2）用Routh判据求渐近稳定的K范围；（3）求正增益稳定边界处的振荡频率；（4）说明边界能否包含在渐近稳定区间内。"
+          },
+          "chapter": "闭环稳定性与Routh边界",
+          "tags": [
+            "自动控制原理与系统设计",
+            "闭环稳定性与Routh边界",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "闭环稳定性与Routh边界"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-engineering-scope",
+                "blockId": "control-engineering-scope",
+                "exact": "Make quantitative estimates of model parameters from experimental measurements"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "闭环符号与多项式正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "control-engineering-q2-statement",
+                    "blockId": "control-engineering-q2-statement",
+                    "exact": "单位负反馈系统开环传递函数为$L(s)=K/[s(s+1)(s+4)]$，K为实数。（1）写闭环特征多项式；（2）用Routh判据求渐近稳定的K范围；（3）求正增益稳定边界处的振荡频率；（4）说明边界能否包含在渐近稳定区间内。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "Routh表及严格区间正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "边界因式和频率正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "说明渐近稳定排除边界",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "control-q2 boundary polynomial at j2",
+                "result": "pass",
+                "evidence": "{\"label\": \"control-q2 boundary polynomial at j2\", \"actual\": 0.0, \"expected\": 0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "control-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "单位负反馈开环为$L(s)=K/[s(s+2)]$，K>0。输入分别为单位阶跃与单位斜坡。（1）求闭环稳定性、系统型别与两种稳态误差；（2）若要求斜坡误差≤0.05，求K下限；（3）闭环为标准二阶系统，要求阻尼比≥0.5，求K上限；（4）判断仅调K能否同时满足，并提出一种需重新分析的补偿方向。",
+          "score": 15,
+          "solution": "特征式$s^2+2s+K$，K>0稳定；I型，阶跃误差0，$K_v=K/2$，斜坡误差2/K。误差要求K≥40；阻尼比$\\zeta=1/\\sqrt K$要求K≤4；仅调K无法同时满足。",
+          "explanation": "终值定理使用前应确认闭环稳定。开环含一个积分环节，但误差大小仍由速度常数决定。性能约束没有交集，不得随意选K=40并忽略阻尼条件。可考虑滞后/超前或速度反馈等结构修正，但须重新建立特征式和误差常数，不能据名称直接宣称达标。",
+          "source": {
+            "materialId": "control-engineering-q3-statement",
+            "blockId": "control-engineering-q3-statement",
+            "exact": "单位负反馈开环为$L(s)=K/[s(s+2)]$，K>0。输入分别为单位阶跃与单位斜坡。（1）求闭环稳定性、系统型别与两种稳态误差；（2）若要求斜坡误差≤0.05，求K下限；（3）闭环为标准二阶系统，要求阻尼比≥0.5，求K上限；（4）判断仅调K能否同时满足，并提出一种需重新分析的补偿方向。"
+          },
+          "chapter": "型别、稳态误差与不可兼得要求",
+          "tags": [
+            "自动控制原理与系统设计",
+            "型别、稳态误差与不可兼得要求",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "型别、稳态误差与不可兼得要求"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-engineering-scope",
+                "blockId": "control-engineering-scope",
+                "exact": "Make quantitative estimates of model parameters from experimental measurements"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "型别和稳定性正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "control-engineering-q3-statement",
+                    "blockId": "control-engineering-q3-statement",
+                    "exact": "单位负反馈开环为$L(s)=K/[s(s+2)]$，K>0。输入分别为单位阶跃与单位斜坡。（1）求闭环稳定性、系统型别与两种稳态误差；（2）若要求斜坡误差≤0.05，求K下限；（3）闭环为标准二阶系统，要求阻尼比≥0.5，求K上限；（4）判断仅调K能否同时满足，并提出一种需重新分析的补偿方向。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "误差常数、两种误差及K下限正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "阻尼关系及K上限正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "无交集和补偿需再分析清楚",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "control-q3 velocity constant limit sample",
+                "result": "pass",
+                "evidence": "{\"label\": \"control-q3 velocity constant limit sample\", \"actual\": 19.999990000004995, \"expected\": 20, \"tolerance\": 1e-06}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "control-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "闭环传递函数$T(s)=16/(s^2+4s+16)$，输入单位阶跃、初值零。（1）求自然频率、阻尼比和阻尼振荡频率；（2）求百分比超调及峰值时间；（3）用2%包络近似$t_s\\approx4/(\\zeta\\omega_n)$估计调节时间；（4）解释该近似与“任意时刻都准确等于2秒”有何差别。",
+          "score": 15,
+          "solution": "$\\omega_n=4$ rad/s，$\\zeta=0.5$，$\\omega_d=2\\sqrt3$ rad/s；超调16.303353%，峰值时间0.906900 s，2%包络近似调节时间2.0 s。",
+          "explanation": "欠阻尼标准形式分母为$s^2+2\\zeta\\omega_ns+\\omega_n^2$。$M_p=e^{-\\pi\\zeta/\\sqrt{1-\\zeta^2}}$，$t_p=\\pi/\\omega_d$。实际响应包含衰减振荡，相位与包络系数影响最后一次越界；4/(ζωn)是常用估算，不是精确求根结果。",
+          "source": {
+            "materialId": "control-engineering-q4-statement",
+            "blockId": "control-engineering-q4-statement",
+            "exact": "闭环传递函数$T(s)=16/(s^2+4s+16)$，输入单位阶跃、初值零。（1）求自然频率、阻尼比和阻尼振荡频率；（2）求百分比超调及峰值时间；（3）用2%包络近似$t_s\\approx4/(\\zeta\\omega_n)$估计调节时间；（4）解释该近似与“任意时刻都准确等于2秒”有何差别。"
+          },
+          "chapter": "二阶响应与时间指标",
+          "tags": [
+            "自动控制原理与系统设计",
+            "二阶响应与时间指标",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "二阶响应与时间指标"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-engineering-scope",
+                "blockId": "control-engineering-scope",
+                "exact": "Make quantitative estimates of model parameters from experimental measurements"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "二阶参数正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "control-engineering-q4-statement",
+                    "blockId": "control-engineering-q4-statement",
+                    "exact": "闭环传递函数$T(s)=16/(s^2+4s+16)$，输入单位阶跃、初值零。（1）求自然频率、阻尼比和阻尼振荡频率；（2）求百分比超调及峰值时间；（3）用2%包络近似$t_s\\approx4/(\\zeta\\omega_n)$估计调节时间；（4）解释该近似与“任意时刻都准确等于2秒”有何差别。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "超调及峰值时间正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "调节时间近似正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "包络与精确越界区别清楚",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "control-q4 stationary peak derivative",
+                "result": "pass",
+                "evidence": "{\"label\": \"control-q4 stationary peak derivative\", \"actual\": 1.2246467991473532e-16, \"expected\": 0, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "control-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "系统$\\dot x=Ax+Bu$，$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=(0,1)^T$，输出$y=x_1$。采用$u=-Kx+r$。（1）检验可控性；（2）配置闭环极点−4、−5，求K；（3）单位常值r下稳态y是多少；（4）若要求y最终等于r，应如何设置前置增益？",
+          "score": 20,
+          "solution": "可控矩阵$[B,AB]=\\begin{pmatrix}0&1\\\\1&-3\\end{pmatrix}$，行列式−1，完全可控。$K=(18,6)$；闭环特征式$s^2+9s+20$。r=1时稳态y=1/20；将输入改为$u=-Kx+20r$可实现常值单位增益。",
+          "explanation": "反馈后矩阵第二行为$(-2-k_1,-3-k_2)$。系数匹配给出k1=18、k2=6。极点配置只决定动态特征，不自动校正参考输入到输出的静态增益；稳态方程给出20x1=r，故前置放大20。此结论依赖模型准确及无持续扰动，不能替代积分抗扰分析。",
+          "source": {
+            "materialId": "control-engineering-q5-statement",
+            "blockId": "control-engineering-q5-statement",
+            "exact": "系统$\\dot x=Ax+Bu$，$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=(0,1)^T$，输出$y=x_1$。采用$u=-Kx+r$。（1）检验可控性；（2）配置闭环极点−4、−5，求K；（3）单位常值r下稳态y是多少；（4）若要求y最终等于r，应如何设置前置增益？"
+          },
+          "chapter": "状态反馈与可控性",
+          "tags": [
+            "自动控制原理与系统设计",
+            "状态反馈与可控性",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "状态反馈与可控性"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-engineering-scope",
+                "blockId": "control-engineering-scope",
+                "exact": "Make quantitative estimates of model parameters from experimental measurements"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "可控矩阵及秩判断正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "control-engineering-q5-statement",
+                    "blockId": "control-engineering-q5-statement",
+                    "exact": "系统$\\dot x=Ax+Bu$，$A=\\begin{pmatrix}0&1\\\\-2&-3\\end{pmatrix}$、$B=(0,1)^T$，输出$y=x_1$。采用$u=-Kx+r$。（1）检验可控性；（2）配置闭环极点−4、−5，求K；（3）单位常值r下稳态y是多少；（4）若要求y最终等于r，应如何设置前置增益？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "极点匹配和K正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "稳态输出及前置增益正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "动态与静态目标区分正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "control-q5 desired polynomial roots",
+                "result": "pass",
+                "evidence": "{\"label\": \"control-q5 desired polynomial roots\", \"actual\": [0, 0], \"expected\": [0, 0], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "control-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "连续系统$\\dot y=-2y+2u$，采样周期T=0.2 s，输入经零阶保持器保持。（1）推导精确离散模型$y_{k+1}=ay_k+bu_k$；（2）从y0=0、单位阶跃输入出发，求y1、y5及稳态值；（3）前向Euler模型系数是什么；（4）求前向Euler保持渐近稳定的T范围，并说明精确离散化是否有相同限制。",
+          "score": 20,
+          "solution": "$a=e^{-0.4}=0.67032005$，$b=1-e^{-0.4}=0.32967995$。$y_1=0.32967995$，$y_5=1-e^{-2}=0.86466472$，稳态1。Euler系数aE=1−2T、bE=2T；稳定范围0<T<1 s。精确模型a=e⁻²ᵀ对所有T>0均在单位圆内。",
+          "explanation": "对一个采样周期积分或求常输入解析解可得精确系数；递推解$y_k=1-a^k$。Euler是数值近似，要求$|1-2T|<1$。精确离散极点随T变小不会损害数学稳定性，但大的采样周期仍会丢失快动态信息，稳定不等于采样性能充分。",
+          "source": {
+            "materialId": "control-engineering-q6-statement",
+            "blockId": "control-engineering-q6-statement",
+            "exact": "连续系统$\\dot y=-2y+2u$，采样周期T=0.2 s，输入经零阶保持器保持。（1）推导精确离散模型$y_{k+1}=ay_k+bu_k$；（2）从y0=0、单位阶跃输入出发，求y1、y5及稳态值；（3）前向Euler模型系数是什么；（4）求前向Euler保持渐近稳定的T范围，并说明精确离散化是否有相同限制。"
+          },
+          "chapter": "离散化、采样稳定性与模型验证",
+          "tags": [
+            "自动控制原理与系统设计",
+            "离散化、采样稳定性与模型验证",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "离散化、采样稳定性与模型验证"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "control-engineering-scope",
+                "blockId": "control-engineering-scope",
+                "exact": "Make quantitative estimates of model parameters from experimental measurements"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "积分得到精确系数",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "control-engineering-q6-statement",
+                    "blockId": "control-engineering-q6-statement",
+                    "exact": "连续系统$\\dot y=-2y+2u$，采样周期T=0.2 s，输入经零阶保持器保持。（1）推导精确离散模型$y_{k+1}=ay_k+bu_k$；（2）从y0=0、单位阶跃输入出发，求y1、y5及稳态值；（3）前向Euler模型系数是什么；（4）求前向Euler保持渐近稳定的T范围，并说明精确离散化是否有相同限制。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "递推值及稳态正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "Euler关系及严格稳定区间正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "精确离散与采样性能区别正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "control-q6 recursive response",
+                "result": "pass",
+                "evidence": "{\"label\": \"control-q6 recursive response\", \"actual\": 0.8646647167633872, \"expected\": 0.8646647167633873, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "control-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "control-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "control-engineering-q1",
+        "knowledge": "机电系统建模与量纲",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "control-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "control-engineering-q2",
+        "knowledge": "闭环稳定性与Routh边界",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "control-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "control-engineering-q3",
+        "knowledge": "型别、稳态误差与不可兼得要求",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "control-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "control-engineering-q4",
+        "knowledge": "二阶响应与时间指标",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "control-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "control-engineering-q5",
+        "knowledge": "状态反馈与可控性",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "control-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "control-engineering-q6",
+        "knowledge": "离散化、采样稳定性与模型验证",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "control-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "control-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "control-engineering-course-blueprint",
+      "name": "自动控制原理与系统设计课程考试",
+      "subject": "自动控制原理与系统设计",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "control-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

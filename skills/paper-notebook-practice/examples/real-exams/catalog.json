@@ -1,0 +1,1033 @@
+{
+  "sources": [
+    {
+      "id": "neea-2024-math",
+      "title": "2024年高考综合改革适应性测试：数学试题及问卷调查",
+      "institution": "教育部教育考试院",
+      "year": 2024,
+      "subject": "数学",
+      "url": "https://www.neea.edu.cn/html1/report/2401/426-1.htm",
+      "format": "four published page images",
+      "pageCount": 4,
+      "sha256": "3cb3bf6e4a6750ce26b77339d4c9214c7192902dcadd80101d3c16bdae680e97",
+      "rights": "公开试题；官方网页未附开放内容许可证。代码MIT不覆盖试题原文。",
+      "scope": "19题完整数学卷的人工核对转录，配独立推导答案；A4尺寸为可编辑归一化版。"
+    },
+    {
+      "id": "neea-2024-chinese",
+      "title": "2024年高考综合改革适应性测试语文试题",
+      "institution": "教育部教育考试院",
+      "year": 2024,
+      "subject": "语文",
+      "url": "https://www.neea.edu.cn/xhtml1/report/2401/376-1.htm",
+      "format": "eleven published page images",
+      "pageCount": 11,
+      "sha256": "2fe44f07fac25b72e542da534ade378ecdb5a733c6b73342fb98417b1e412456",
+      "rights": "古代诗词原作已进入公有领域；试题原文保留出处，现代文材料未再分发。",
+      "scope": "完整原卷结构研究；案例保留原卷15—17题，含17题全部三组默写；范围记录在元数据。"
+    },
+    {
+      "id": "guangdong-2024-math",
+      "title": "2024年广东省初中学业水平考试·数学",
+      "institution": "广东省教育考试院命题；高考直通车公开扫描存档",
+      "year": 2024,
+      "subject": "数学",
+      "url": "https://imgs.app.gaokaozhitongche.com/resource/pdf/paper/202407/20240702080602_it4GXR.pdf",
+      "format": "A4 image PDF",
+      "pageCount": 6,
+      "sha256": "1c6e04a3f569acfe867701b9b34ed89e1caca427308a2cffcddad542c7f0001e",
+      "rights": "公开试题扫描，未附开放内容许可证；扫描水印、平台标志与答案排版不打包为MIT素材。",
+      "scope": "18页PDF前6页为原卷、后12页为参考解答；完整人工转录23题，按题面数据独立核对答案与配图。"
+    },
+    {
+      "id": "guangzhou-2023-math",
+      "title": "2023年广州市初中学业水平考试·数学",
+      "institution": "广州市考试命题；高考直通车公开扫描存档",
+      "year": 2023,
+      "subject": "数学",
+      "url": "https://imgs.app.gaokaozhitongche.com/resource/pdf/paper/202408/20240805100413_vfixLG.pdf",
+      "format": "A4 image PDF",
+      "pageCount": 7,
+      "sha256": "4fbf198ac0b0a1029ff1b7733a2f53b2aa85efa3d7a78b958b682eaa497e269f",
+      "rights": "公开试题扫描，未附开放内容许可证；保留原题出处，不对原卷主张MIT。",
+      "scope": "原卷版式差异研究；当前可编辑中考案例仅使用2024广东原卷，不混入本卷。"
+    },
+    {
+      "id": "github-henan-2019",
+      "title": "2019年河南省中考数学试卷·GitHub转录",
+      "institution": "higyg/middleschoolmath-ebook",
+      "year": 2019,
+      "subject": "数学",
+      "url": "https://github.com/higyg/middleschoolmath-ebook/blob/master/河南中考/2019年河南省中考数学试卷.tex",
+      "format": "LaTeX converted from Word",
+      "pageCount": null,
+      "sha256": "90ae61e456a546bead6c276ea979870f1ea38ad1b358e52e73d5484ac13c9451",
+      "rights": "仓库GPL-3.0；转换器版权头另列。不复制其代码到MIT运行时。",
+      "scope": "作为GitHub真实试卷研究样本；发现图形缺失、字符转换错误，未采用其转录作为本项目真题来源。"
+    },
+    {
+      "id": "pku-calculus-2013",
+      "institution": "北京大学信息学院",
+      "subject": "高等数学B（上）",
+      "year": 2013,
+      "title": "北京大学信息学院期末试题 · 2013—2014学年第一学期",
+      "url": "https://github.com/lib-pku/libpku/blob/master/%E4%B8%93%E4%B8%9A%E8%AF%BE/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6B/13%E4%BF%A1%E7%A7%91%E6%9C%9F%E6%9C%AB.pdf",
+      "downloadUrl": "https://raw.githubusercontent.com/lib-pku/libpku/master/%E4%B8%93%E4%B8%9A%E8%AF%BE/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6B/13%E4%BF%A1%E7%A7%91%E6%9C%AB.pdf",
+      "sha256": "39654af2bc9e1718c01d60e1bf1cb26d08adc0350a3b31592de6ee288264b479",
+      "pages": 1,
+      "widthPt": 612,
+      "heightPt": 792,
+      "rights": "原试卷由原作者保留权利；lib-pku 声明仅收集资料，未授予统一再许可。数学表达式与题目出处按原件记录，不适用代码 MIT 许可。",
+      "localFile": "output/research/university/pku-calculus-2013.pdf",
+      "referenceImage": "output/research/university/pku-calculus-1.png",
+      "observed": [
+        "US Letter 215.9 × 279.4 mm",
+        "黑体20.66pt标题、宋体11.95pt正文及Computer Modern数学",
+        "8道大题、100分；各大题内重新编号",
+        "无装订线、无通用须知、无页脚；前三道极限题并排"
+      ],
+      "coverage": "完整原卷：8道大题，14个可作答小题。"
+    },
+    {
+      "id": "ecnu-linear-2023",
+      "institution": "华东师范大学",
+      "subject": "线性代数A",
+      "year": 2023,
+      "title": "华东师范大学2023—2024学年第一学期期末试卷（A）",
+      "url": "https://ggsx.ecnu.edu.cn/2e/16/c44824a601622/page.htm",
+      "downloadUrl": "https://ggsx.ecnu.edu.cn/_upload/article/files/88/27/da869e6d4147917c4f7c115ed7f7/2b083b94-11eb-4dc9-8105-79ac2addc735.pdf",
+      "sha256": "b0cf4c2e5d2a0a2280e8e66577f5434e78587f9b7b98bb55d7c1756b4844fe19",
+      "pages": 5,
+      "widthPt": 595.276,
+      "heightPt": 841.89,
+      "rights": "学校公开教学材料，原作者保留权利；未标明开放许可。数学题保留原题号及学校链接，代码 MIT 许可不涵盖原试卷。",
+      "localFile": "output/research/university/ecnu-linear-2023.pdf",
+      "referenceImage": "output/research/university/ecnu-first.png",
+      "observed": [
+        "A4纵向",
+        "校名/期末试卷20.9pt宋体；学期10pt",
+        "双栏学生字段与两行评分表：一至八、总分、阅卷人签名",
+        "选择题矩阵与列向量保持数学排版；页脚仅页数"
+      ],
+      "coverage": "完整原卷：8道大题、19个小题、100分，保留全部原题和原选项次序。"
+    },
+    {
+      "id": "ustc-probstat-2023",
+      "institution": "中国科学技术大学",
+      "subject": "概率论与数理统计",
+      "year": 2023,
+      "title": "中国科学技术大学2022—2023学年第一学期概率论与数理统计",
+      "url": "https://icourse.club/uploads/files/9f996da48afc145c5158fc7f09153825a3177e41.pdf",
+      "downloadUrl": "https://icourse.club/uploads/files/9f996da48afc145c5158fc7f09153825a3177e41.pdf",
+      "sha256": "ee62bb65204cc7d3f6031c0ce9d9eaf77bc5888f9fe332964f0b03f788fc9b3c",
+      "pages": 4,
+      "widthPt": 595.276,
+      "heightPt": 841.89,
+      "rights": "公开流传的高校试卷及参考答案，原作者保留权利；未标明开放许可。数学题的出处和原题号单独保留，代码 MIT 许可不涵盖原试卷。",
+      "localFile": "output/research/university/ustc-probstat-2023.pdf",
+      "referenceImage": "output/research/university/ustc-probstat-1.png",
+      "observed": [
+        "A4；卷头15pt，宋体正文12pt",
+        "一大题混合填空与单选，共10题30分；并非按题型拆分",
+        "原二至五每道大题含多个分问，共70分",
+        "左侧点状装订线；页脚学期、科目、总页数、页码",
+        "原PDF前两页试题、后两页答案"
+      ],
+      "coverage": "完整原卷：5道大题、22个小题、100分，原PDF题目两页、参考答案两页。"
+    },
+    {
+      "id": "ustc-statistics-2024",
+      "institution": "中国科学技术大学",
+      "subject": "数理统计",
+      "year": 2024,
+      "title": "2024 数理统计期末考试 · 兰小红 · 2024.12.6",
+      "url": "https://ustcmathexam.github.io/ProbStat/",
+      "downloadUrl": "https://ustcmathexam.github.io/USTC/2024Mstatfinal.pdf",
+      "sha256": "dde14c0c04098e5e1f130389de98f90a03acfc6ab7ee05aae7d3334b3ba1caab",
+      "pages": 2,
+      "widthPt": 595.28,
+      "heightPt": 841.89,
+      "rights": "原作者保留权利；公开资料页未标明原试题开放许可。只收录版式研究和链接。",
+      "localFile": "output/research/university/ustc-statistics-2024.pdf",
+      "referenceImage": "output/research/university/ustc-statistics-first.png",
+      "observed": [
+        "LaTeX宋体/CM，标题20.7pt、教师及日期14.3pt",
+        "无学校通用卷头、无考生栏、无评分表、无密封线",
+        "问题1—6连排，(a)(b)(c)分问；前两题20分、后四题15分",
+        "原题6支持集印为x>0，应为0<x<1；不将未修正题直接加入题库"
+      ],
+      "coverage": "仅版式来源，不计作已制作完整案例。"
+    },
+    {
+      "id": "neea-cet4-2016",
+      "institution": "教育部考试中心／全国大学英语四、六级考试委员会",
+      "subject": "CET-4",
+      "year": 2016,
+      "title": "全国大学英语四、六级考试大纲（2016年修订版）· 四级笔试样卷",
+      "url": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+      "downloadUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+      "sha256": "9166d3c03b7bc43abd9d9df91bd2ef8085b4419286f1e5ca100dea68f3cfd1f1",
+      "pages": 215,
+      "widthPt": 549.8,
+      "heightPt": 754,
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "localFile": "output/research/language/sources/cet-outline-2016.pdf",
+      "referenceImage": "output/research/language/rendered/cet-2016-p161.png",
+      "fonts": [
+        "E-B4/E-B4X 9.7pt",
+        "FZSSK--GBK1-0 9.7pt",
+        "E-HZ headings"
+      ],
+      "observed": [
+        "原PDF为约194×266mm大纲书页，四级样卷PDF150—161；参考答案168页",
+        "Part I Writing 30min；Part II Listening 25min；Part III Reading 40min；Part IV Translation 30min",
+        "Part横条灰底，Part/题名/时间同列；Directions标签粗体、正文斜体",
+        "每题不印单独分值，原阅读题号26—55；原卷文字题只在答案卡作答"
+      ],
+      "coverage": "Part IV完整翻译任务、原Directions及官方参考译文；不含前面阅读题、听力和其他Part。"
+    },
+    {
+      "id": "neea-cet6-2016",
+      "institution": "教育部考试中心／全国大学英语四、六级考试委员会",
+      "subject": "CET-6",
+      "year": 2016,
+      "title": "全国大学英语四、六级考试大纲（2016年修订版）· 六级笔试样卷",
+      "url": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+      "downloadUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+      "sha256": "9166d3c03b7bc43abd9d9df91bd2ef8085b4419286f1e5ca100dea68f3cfd1f1",
+      "pages": 215,
+      "widthPt": 549.8,
+      "heightPt": 754,
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "localFile": "output/research/language/sources/cet-outline-2016.pdf",
+      "referenceImage": "output/research/language/rendered/cet-2016-p172.png",
+      "fonts": [
+        "E-B4/E-B4X 9.7pt",
+        "FZSSK--GBK1-0 9.7pt",
+        "E-HZ headings"
+      ],
+      "observed": [
+        "六级样卷PDF172—183；答案190—191页；约194×266mm",
+        "与四级同样4个Part，但听力为30min，总时间130min",
+        "2016结构中六级听力是长对话8题、听力篇章7题、讲话/报道/讲座10题；四级为短篇新闻7题、长对话8题、听力篇章10题",
+        "Writing150—200词；Translation中文原段比四级更长；灰底Part条和Section层级保留"
+      ],
+      "coverage": "Part I完整写作任务、Part IV完整翻译任务及官方参考译文；参考作文和练习评分要点为本项目自编。无听力和阅读。"
+    },
+    {
+      "id": "zju-english3-quiz-2016",
+      "institution": "浙江大学课程攻略共享计划收录；原照片未印学校全称",
+      "subject": "大学英语Ⅲ",
+      "year": 2016,
+      "title": "大学英语Ⅲ · Quiz 1 · Form F（2016-1目录）",
+      "url": "https://github.com/QSCTech/zju-icicles/blob/master/%E5%A4%A7%E5%AD%A6%E8%8B%B1%E8%AF%AD%E2%85%A2/quiz/2016-1/4.jpg",
+      "downloadUrl": "https://api.github.com/repos/QSCTech/zju-icicles/git/blobs/fe77cd482047424834f4ce2448c57505999d1347",
+      "sha256": "5642375b3f8d035d8ad9db5554a93c3301bb2b53692449a32e2c7a12874fa9fc",
+      "pages": 5,
+      "widthPt": null,
+      "heightPt": null,
+      "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+      "localFile": "output/research/language/sources/zju-english3-page4.jpg",
+      "referenceImage": "output/research/language/rendered/zju-english3-page4-upright.jpg",
+      "fonts": [
+        "照片视觉为Arial/Helvetica类无衬线，无法识别实际字体文件/字号"
+      ],
+      "observed": [
+        "照片页1为2268×4032px，页4/5为4032×2268px，72dpi EXIF是图像元数据，不能推断原纸物理大小",
+        "卷头Quiz 1、Form F、三级、试卷要收回、班级/姓名；日期仅来自仓库2016-1目录",
+        "Part I Spot Dictation；II Vocabulary and Structure；IV Spelling；V Reading In-depth；VI Reading Comprehension；VII Writing",
+        "原照片有手写作答，单词答案另有电脑屏幕照片answer3.jpg；印刷题文与答案已逐项区分"
+      ],
+      "answerSource": {
+        "url": "https://github.com/QSCTech/zju-icicles/blob/master/%E5%A4%A7%E5%AD%A6%E8%8B%B1%E8%AF%AD%E2%85%A2/quiz/2016-1/answer3.jpg",
+        "sha256": "66cc43be32ebd5deb7438c32350e41a8187c3cd9abcae5e30395c7910c93cbea",
+        "localFile": "output/research/language/sources/zju-english3-answer3.jpg"
+      },
+      "coverage": "Part IV Spelling 原14、16、20三道短题。按1分/题设置练习分；原照片该页未标题分。"
+    },
+    {
+      "id": "zju-marxism-final-2016",
+      "institution": "浙江大学马克思主义学院",
+      "subject": "马克思主义基本原理概论",
+      "year": 2016,
+      "title": "浙江大学2015—2016学年秋冬学期《马克思主义基本原理概论》期末A卷",
+      "url": "https://github.com/QSCTech/zju-icicles/blob/master/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98/15-16-%E7%A7%8B%E5%86%AC%E9%A9%AC%E5%8E%9F%E5%8D%B7.doc",
+      "downloadUrl": "https://api.github.com/repos/QSCTech/zju-icicles/git/blobs/6293b2e2edba3d670df87a13c510196125f94701",
+      "sha256": "1acc2d7ed2808454cc3c91e5d9e8e5b671c0cf0b26dfd9ba442ca7a3d7539e3a",
+      "pages": 8,
+      "widthPt": null,
+      "heightPt": null,
+      "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+      "localFile": "output/research/language/sources/zju-marxism-2016.doc",
+      "referenceImage": "output/research/language/rendered/zju-marxism-2016.doc.png",
+      "fonts": [
+        "macOS textutil导出正文10.5、标题15；Times/Times New Roman为导出映射，中文实际字体未能可靠恢复"
+      ],
+      "observed": [
+        "2016-01-15，课程021E0040，120分钟，闭卷",
+        "院校/学期/课名、开课学院、A/B卷、开闭卷、日期时间、考生字段依次排列",
+        "有题序/得分/评卷人表和40题答案汇总表；不采用通用竖排密封线",
+        "一单选40×1分；二、三、四分别20分，其中二三含长材料、四为经典阅读论述",
+        "QuickLook缩略图的“第8页共8页”为原DOC未更新域的显示状态，未据此冒充PDF测量"
+      ],
+      "answerSource": {
+        "url": "https://github.com/QSCTech/zju-icicles/blob/master/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/%E5%8E%86%E5%B9%B4%E7%9C%9F%E9%A2%98/15-16-%E7%A7%8B%E5%86%AC--%E9%A9%AC%E5%8E%9F%E5%8D%B7%E5%8F%82%E8%80%83%E7%AD%94%E6%A1%88.doc",
+        "sha256": "ae1a0a7ba82ecac3331131f0499f64254e10e0bf684f32d22824265ad4693e96",
+        "localFile": "output/research/language/sources/zju-marxism-2016-sol.doc"
+      },
+      "coverage": "原一、1/4/9三道单选，3分；不收录长材料和论述全文。"
+    },
+    {
+      "id": "neea-ethics-2024",
+      "institution": "全国高等教育自学考试指导委员会",
+      "subject": "思想道德与法治",
+      "year": 2024,
+      "title": "《思想道德与法治》自学考试大纲 · 附录参考样卷",
+      "url": "https://zikao.neea.edu.cn/xhtml1/report/2502/42-1.htm",
+      "downloadUrl": "https://www.neea.edu.cn/res/Home/2502/9bca2915c4f3cc7ce33a14b1603dd1e7.pdf",
+      "sha256": "e4e5e82dd358bd463381e3b86168dac375514f58848d76d6c51acf6895cabce0",
+      "pages": 23,
+      "widthPt": 595.3,
+      "heightPt": 841.9,
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "localFile": "output/research/language/sources/neea-ethics-2024.pdf",
+      "referenceImage": "output/research/language/rendered/neea-ethics-2024-p18.png",
+      "fonts": [
+        "SimSun 10.45pt正文",
+        "SimHei 14.05/15.95pt标题",
+        "TimesNewRomanPSMT页码"
+      ],
+      "observed": [
+        "大纲2024年8月；NEEA于2025-02-25公开，不能写成2025年某次真题",
+        "A4；附录/参考样卷两级标题；没有学校考生栏、密封线和评分表",
+        "25道单项选择、5简答、3论述中选2；大纲考试150分钟、100分，样题未标逐题分",
+        "选项随长度可两列或逐行；原26—33为连续题号"
+      ],
+      "coverage": "原1、2、27三题；按2+2+6分设置选编练习分；参考答案/解析自编核对。"
+    },
+    {
+      "id": "neea-mao-2024",
+      "institution": "全国高等教育自学考试指导委员会",
+      "subject": "毛泽东思想和中国特色社会主义理论体系概论",
+      "year": 2024,
+      "title": "《毛泽东思想和中国特色社会主义理论体系概论》自学考试大纲 · 附录参考样卷",
+      "url": "https://zikao.neea.edu.cn/xhtml1/report/2502/42-1.htm",
+      "downloadUrl": "https://www.neea.edu.cn/res/Home/2502/f6d87d01ba99dd23da2bdc0068b616bf.pdf",
+      "sha256": "57ee1f153ca9d8f123ebd7dc5479a5c06b887cd691efe4c61c06dbb17274566e",
+      "pages": 24,
+      "widthPt": 595.3,
+      "heightPt": 841.9,
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "localFile": "output/research/language/sources/neea-mao-2024.pdf",
+      "referenceImage": "output/research/language/rendered/neea-mao-2024-p20.png",
+      "fonts": [
+        "SimSun 10.45/12pt",
+        "SimHei 14.05/15.95pt标题"
+      ],
+      "observed": [
+        "2024年8月修订，2025-02-25公开；A4",
+        "附录参考样卷与思法样卷相似，但末大题是材料题而不是3选2论述",
+        "25单选、5简答、1材料；主题涉及原课教材历史表述，保留该版语境",
+        "未附官方答案，也未在样题旁标分；不能将自编练习分写成原官方题分"
+      ],
+      "coverage": "原3、4、28三题；按2+2+6分设置选编练习分；参考答案/解析自编核对。"
+    },
+    {
+      "id": "neea-marxism-2024",
+      "institution": "全国高等教育自学考试指导委员会",
+      "subject": "马克思主义基本原理",
+      "year": 2024,
+      "title": "《马克思主义基本原理》自学考试大纲 · 附录参考样卷",
+      "url": "https://zikao.neea.edu.cn/xhtml1/report/2502/42-1.htm",
+      "downloadUrl": "https://www.neea.edu.cn/res/Home/2502/0f32060029768566d32bd082ea1365f1.pdf",
+      "sha256": "be0c2c6de81f0c2e22cb538f6dc9a3c3a277a5c644b060862ab9583704f10196",
+      "pages": 25,
+      "widthPt": 595.3,
+      "heightPt": 841.9,
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "localFile": "output/research/language/sources/neea-marxism-2024.pdf",
+      "referenceImage": "output/research/language/rendered/neea-marxism-2024-p22.png",
+      "fonts": [
+        "SimSun 11.05pt样题正文",
+        "SimHei标题",
+        "TimesNewRomanPSMT题号"
+      ],
+      "observed": [
+        "附录PDF21起，具体选择题22页；A4",
+        "25单选、5简答、3论述中选2；连续编号1—33",
+        "与普通高校马原A卷的40单选+材料分析结构不同"
+      ],
+      "coverage": "版式比较来源；本组马原可作答案例采用有配套参考答案的浙大2016原题选编。"
+    },
+    {
+      "id": "mit-6006-final-2020",
+      "institution": "Massachusetts Institute of Technology",
+      "subject": "Introduction to Algorithms / 6.006",
+      "year": 2020,
+      "title": "6.006 Introduction to Algorithms · Spring 2020 Final",
+      "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_final/",
+      "downloadUrl": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/e03194e510866d81da1071da884876e3_MIT6_006S20_final.pdf",
+      "sha256": "91d236a292cb136f029963f0392530d192bc47ffa46de7b419d19bf270ca64d6",
+      "pages": 21,
+      "widthPt": 612,
+      "heightPt": 792,
+      "rights": "MIT OpenCourseWare，CC BY-NC-SA 4.0（https://creativecommons.org/licenses/by-nc-sa/4.0/）。署名Erik Demaine、Jason Ku、Justin Solomon及MIT OCW；本项目仅选编、公式转为LaTeX并以中文重写答案解析，改编素材继续按CC BY-NC-SA 4.0。代码MIT许可单独适用。",
+      "localFile": "output/research/language/sources/mit-6006-final-2020.pdf",
+      "referenceImage": "output/research/language/rendered/mit-6006-final-2020-p3.png",
+      "fonts": [
+        "NimbusRomNo9L-Regu / Medi / ReguItal 11.955pt",
+        "数学字体CMMI/CMSY系列"
+      ],
+      "observed": [
+        "US Letter 215.9×279.4mm，21页，180分钟180分",
+        "封面有10题分值/小问数表；正文页眉为6.006 Final、Name和页码",
+        "Problem 2四十分、10个判断分问；每问判断2分、简短理由2分，空白判卷另有1分规定",
+        "(a)(b)(c)小问、T F与公式同列；理由写进矩形空白区，不能仅当普通自动判断题"
+      ],
+      "answerSource": {
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/mit6_006s20_final_sol/",
+        "sha256": "246d3ca77282a58e08e4b17110f577d524c4f617f088bce08320436c51b96e95",
+        "localFile": "output/research/language/sources/mit-6006-final-2020-sol.pdf"
+      },
+      "coverage": "Problem 2(a)(c)(d)三问选编，共12分。以解答题保留判断+理由评分，不自动冒充原评分器。"
+    },
+    {
+      "id": "cet4-original-complete-01",
+      "title": "College English Test Band 4 — complete original practice",
+      "institution": "Paper Notebook Practice",
+      "year": 2026,
+      "subject": "CET4",
+      "kind": "original-practice",
+      "url": "https://github.com/BurntRoses/paper-notebook-practice",
+      "localFile": "tools/fixtures/full-cet4.mjs",
+      "sha256": "56c694bb5d1ca7d941b2348d5e6ff0f0d6997a9a6d1ff4c45836ea435116fa02",
+      "rights": "Original practice content written for Paper Notebook Practice. MIT License. This is an original mock paper, not an official or historical CET paper.",
+      "coverage": "Complete original practice: Writing 1; Listening 25 (7 news + 8 conversations + 10 passages); Reading 30 (10 words + 10 matching + 10 detailed); Translation 1.",
+      "fidelity": "Original full-length practice following the NEEA 2016 CET4 content structure, timing and percentage weights; not an official past examination or facsimile.",
+      "audioManifest": "tools/fixtures/audio/cet4/manifest.json",
+      "structureSourceIds": [
+        "neea-cet4-2016"
+      ],
+      "structureSource": {
+        "title": "全国大学英语四、六级考试大纲（2016年修订版）",
+        "url": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+        "pages": [
+          9,
+          10,
+          11
+        ],
+        "use": "Exam specification only; original NEEA test content is not incorporated into this original practice."
+      }
+    },
+    {
+      "id": "cet6-original-complete-01",
+      "institution": "Paper Notebook Practice",
+      "subject": "CET6",
+      "title": "College English Test Band 6 — complete original practice",
+      "year": 2026,
+      "coverage": "Complete original practice: Writing 1; Listening 25 (8 conversations + 7 passages + 10 talks); Reading 30 (10 words + 10 matching + 10 detailed); Translation 1.",
+      "rights": "Original Paper Notebook Practice materials, questions, model answers and rubrics; MIT License. Structure reference: NEEA CET syllabus (2016). This is an original practice test, not a past official examination.",
+      "fidelity": "Original full-length practice following the NEEA 2016 CET6 content structure, timing and percentage weights; not an official past examination or facsimile.",
+      "structureSource": {
+        "title": "全国大学英语四、六级考试大纲（2016年修订版）",
+        "url": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf",
+        "pages": [
+          9,
+          12,
+          13,
+          14
+        ],
+        "use": "Exam specification only; original NEEA test content is not incorporated into this original practice."
+      },
+      "kind": "original-practice",
+      "url": "https://github.com/BurntRoses/paper-notebook-practice",
+      "localFile": "tools/fixtures/full-cet6.mjs",
+      "sha256": "9e14a65e36cb049838418e8cb540a7b68cffff6981e9110b0c763432806c49ed",
+      "audioManifest": "tools/fixtures/audio/cet6/manifest.json",
+      "structureSourceIds": [
+        "neea-cet6-2016"
+      ]
+    }
+  ],
+  "caseInfo": [
+    {
+      "kind": "完整原卷转录",
+      "questionCount": 19,
+      "sourceIds": [
+        "neea-2024-math"
+      ],
+      "originalPages": 4,
+      "templateFidelity": "原卷题组、文字、题号、分值、浅灰NEEA水印和显式分页；字体与纸张为可编辑归一化版",
+      "practiceId": "neea-2024-math-full",
+      "label": "2024年高考综合改革适应性测试·数学",
+      "scope": "full",
+      "contentOrigin": "original",
+      "specificationId": "neea-2024-math",
+      "scoreScale": "source-paper-points",
+      "coverage": "完整原卷转录",
+      "fidelity": "原卷题组、文字、题号、分值、浅灰NEEA水印和显式分页；字体与纸张为可编辑归一化版",
+      "rights": "公开试题；官方网页未附开放内容许可证。代码MIT不覆盖试题原文。"
+    },
+    {
+      "kind": "完整原卷转录",
+      "questionCount": 23,
+      "sourceIds": [
+        "guangdong-2024-math"
+      ],
+      "originalPages": 6,
+      "originalNumbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23"
+      ],
+      "templateFidelity": "全部23题、120分及完整六页原件；保留真实标题、四条注意事项、机密标记、原题号，重绘全部数学配图",
+      "practiceId": "zhongkao-2023-2024-recombined",
+      "label": "2024年广东省初中学业水平考试·数学",
+      "scope": "full",
+      "contentOrigin": "original",
+      "specificationId": "guangdong-2024-math",
+      "scoreScale": "source-paper-points",
+      "coverage": "完整原卷转录",
+      "fidelity": "全部23题、120分及完整六页原件；保留真实标题、四条注意事项、机密标记、原题号，重绘全部数学配图",
+      "rights": "公开试题扫描，未附开放内容许可证；扫描水印、平台标志与答案排版不打包为MIT素材。"
+    },
+    {
+      "kind": "统计与概率原题",
+      "questionCount": 3,
+      "sourceIds": [
+        "neea-2024-math"
+      ],
+      "originalPages": [
+        1,
+        3
+      ],
+      "originalNumbers": [
+        "1",
+        "5",
+        "16"
+      ],
+      "templateFidelity": "原标题、原章说明、原题号、原页码；缺题位置留白，范围仅见目录",
+      "practiceId": "gaokao-2024-probability-selected",
+      "label": "2024年高考综合改革适应性测试·数学",
+      "scope": "subset",
+      "contentOrigin": "original",
+      "specificationId": "neea-2024-math",
+      "scoreScale": "source-paper-points",
+      "coverage": "统计与概率原题",
+      "fidelity": "原标题、原章说明、原题号、原页码；缺题位置留白，范围仅见目录",
+      "rights": "公开试题；官方网页未附开放内容许可证。代码MIT不覆盖试题原文。"
+    },
+    {
+      "kind": "原卷阅读与默写题组",
+      "questionCount": 3,
+      "sourceIds": [
+        "neea-2024-chinese"
+      ],
+      "originalPages": [
+        8,
+        9
+      ],
+      "originalNumbers": [
+        "15",
+        "16",
+        "17"
+      ],
+      "templateFidelity": "原诗词共享材料，15/16/17原题号，17题全部三组默写与6分原分值",
+      "practiceId": "gaokao-2024-chinese-poetry-selected",
+      "label": "2024年高考综合改革适应性测试·语文",
+      "scope": "subset",
+      "contentOrigin": "original",
+      "specificationId": "neea-2024-chinese",
+      "scoreScale": "source-paper-points",
+      "coverage": "原卷阅读与默写题组",
+      "fidelity": "原诗词共享材料，15/16/17原题号，17题全部三组默写与6分原分值",
+      "rights": "古代诗词原作已进入公有领域；试题原文保留出处，现代文材料未再分发。"
+    },
+    {
+      "practiceId": "real-pku-calculus-2013",
+      "label": "北大高数完整原卷",
+      "coverage": "全部8道大题、14小题、100分",
+      "sourceIds": [
+        "pku-calculus-2013"
+      ],
+      "fidelity": "完整题目与原分组；可编辑排版，字体依可用宋体/黑体回退，非像素复刻",
+      "rights": "原试卷由原作者保留权利；lib-pku 声明仅收集资料，未授予统一再许可。数学表达式与题目出处按原件记录，不适用代码 MIT 许可。",
+      "scope": "full",
+      "contentOrigin": "original",
+      "specificationId": "pku-calculus-2013",
+      "scoreScale": "source-paper-section-points"
+    },
+    {
+      "practiceId": "real-ecnu-linear-2023",
+      "label": "华东师大线代完整原卷",
+      "coverage": "全部8道大题、19小题、100分",
+      "sourceIds": [
+        "ecnu-linear-2023"
+      ],
+      "fidelity": "保留全部矩阵、原题号与选项；五页原分页及作答留白",
+      "rights": "学校公开教学材料，原作者保留权利；未标明开放许可。数学题保留原题号及学校链接，代码 MIT 许可不涵盖原试卷。",
+      "scope": "full",
+      "contentOrigin": "original",
+      "specificationId": "ecnu-linear-2023",
+      "scoreScale": "source-paper-section-points"
+    },
+    {
+      "practiceId": "real-ustc-probstat-2023",
+      "label": "中科大概统完整原卷",
+      "coverage": "全部5道大题、22小题、100分",
+      "sourceIds": [
+        "ustc-probstat-2023"
+      ],
+      "fidelity": "保留混合题型大题、全部共享条件与分问、统计表与附录；答案勘误已记录",
+      "rights": "公开流传的高校试卷及参考答案，原作者保留权利；未标明开放许可。数学题的出处和原题号单独保留，代码 MIT 许可不涵盖原试卷。",
+      "scope": "full",
+      "contentOrigin": "original",
+      "specificationId": "ustc-probstat-2023",
+      "scoreScale": "source-paper-section-points"
+    },
+    {
+      "practiceId": "real-cet4-translation-2016",
+      "label": "全国大学英语四级考试(笔试)样卷",
+      "sourceIds": [
+        "neea-cet4-2016"
+      ],
+      "coverage": "Part IV完整翻译任务、原Directions及官方参考译文；不含前面阅读题、听力和其他Part。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "scope": "subset",
+      "contentOrigin": "original",
+      "specificationId": "cet4",
+      "scoreScale": "practice-weighted-100"
+    },
+    {
+      "practiceId": "real-cet6-writing-translation-2016",
+      "label": "全国大学英语六级考试(笔试)样卷",
+      "sourceIds": [
+        "neea-cet6-2016"
+      ],
+      "coverage": "Part I完整写作任务、Part IV完整翻译任务及官方参考译文；参考作文和练习评分要点为本项目自编。无听力和阅读。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "scope": "subset",
+      "contentOrigin": "original",
+      "specificationId": "cet6",
+      "scoreScale": "practice-weighted-100"
+    },
+    {
+      "practiceId": "real-university-english3-2016",
+      "label": "Quiz 1",
+      "sourceIds": [
+        "zju-english3-quiz-2016"
+      ],
+      "coverage": "Part IV Spelling 原14、16、20三道短题。按1分/题设置练习分；原照片该页未标题分。",
+      "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "scope": "subset",
+      "contentOrigin": "original"
+    },
+    {
+      "practiceId": "real-zju-marxism-2016",
+      "label": "浙江大学2015－2016学年 秋冬 学期《马克思主义基本原理概论》课程期末考试试卷",
+      "sourceIds": [
+        "zju-marxism-final-2016"
+      ],
+      "coverage": "原一、1/4/9三道单选，3分；不收录长材料和论述全文。",
+      "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "scope": "subset",
+      "contentOrigin": "original"
+    },
+    {
+      "practiceId": "real-neea-ethics-2024",
+      "label": "参考样卷",
+      "sourceIds": [
+        "neea-ethics-2024"
+      ],
+      "coverage": "原1、2、27三题；按2+2+6分设置选编练习分；参考答案/解析自编核对。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "scope": "subset",
+      "contentOrigin": "original"
+    },
+    {
+      "practiceId": "real-neea-mao-2024",
+      "label": "参考样卷",
+      "sourceIds": [
+        "neea-mao-2024"
+      ],
+      "coverage": "原3、4、28三题；按2+2+6分设置选编练习分；参考答案/解析自编核对。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "scope": "subset",
+      "contentOrigin": "original"
+    },
+    {
+      "practiceId": "real-mit-6006-final-2020",
+      "label": "6.006 Final",
+      "sourceIds": [
+        "mit-6006-final-2020"
+      ],
+      "coverage": "Problem 2(a)(c)(d)三问选编，共12分。以解答题保留判断+理由评分，不自动冒充原评分器。",
+      "rights": "MIT OpenCourseWare，CC BY-NC-SA 4.0（https://creativecommons.org/licenses/by-nc-sa/4.0/）。署名Erik Demaine、Jason Ku、Justin Solomon及MIT OCW；本项目仅选编、公式转为LaTeX并以中文重写答案解析，改编素材继续按CC BY-NC-SA 4.0。代码MIT许可单独适用。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "scope": "subset",
+      "contentOrigin": "original",
+      "specificationId": "mit-6006-final-2020",
+      "scoreScale": "source-paper-points"
+    },
+    {
+      "practiceId": "complete-cet4-original-01",
+      "label": "College English Test Band 4 — original complete practice",
+      "scope": "full",
+      "contentOrigin": "generated",
+      "specificationId": "cet4",
+      "scoreScale": "practice-weighted-100",
+      "coverage": "Complete original practice: Writing 1; Listening 25 (7 news + 8 conversations + 10 passages); Reading 30 (10 words + 10 matching + 10 detailed); Translation 1.",
+      "fidelity": "Original full-length practice following the NEEA 2016 CET4 content structure, timing and percentage weights; not an official past examination or facsimile.",
+      "rights": "Original practice content written for Paper Notebook Practice. MIT License. This is an original mock paper, not an official or historical CET paper.",
+      "sourceIds": [
+        "cet4-original-complete-01"
+      ],
+      "structureSourceIds": [
+        "neea-cet4-2016"
+      ],
+      "audioManifest": "tools/fixtures/audio/cet4/manifest.json"
+    },
+    {
+      "practiceId": "full-cet6-original-01",
+      "label": "College English Test Band 6 — original complete practice",
+      "scope": "full",
+      "contentOrigin": "generated",
+      "specificationId": "cet6",
+      "scoreScale": "practice-weighted-100",
+      "coverage": "Complete original practice: Writing 1; Listening 25 (8 conversations + 7 passages + 10 talks); Reading 30 (10 words + 10 matching + 10 detailed); Translation 1.",
+      "fidelity": "Original full-length practice following the NEEA 2016 CET6 content structure, timing and percentage weights; not an official past examination or facsimile.",
+      "rights": "Original Paper Notebook Practice materials, questions, model answers and rubrics; MIT License. Structure reference: NEEA CET syllabus (2016). This is an original practice test, not a past official examination.",
+      "sourceIds": [
+        "cet6-original-complete-01"
+      ],
+      "structureSourceIds": [
+        "neea-cet6-2016"
+      ],
+      "audioManifest": "tools/fixtures/audio/cet6/manifest.json"
+    }
+  ],
+  "cases": [
+    {
+      "id": "neea-2024-math-full",
+      "title": "2024年高考综合改革适应性测试·数学",
+      "subject": "数学",
+      "level": "高中",
+      "questions": 19,
+      "score": 150,
+      "durationMinutes": 120,
+      "scope": "full",
+      "specificationId": "neea-2024-math",
+      "scoreScale": "source-paper-points",
+      "sourceIds": [
+        "neea-2024-math"
+      ],
+      "coverage": "完整原卷转录",
+      "fidelity": "原卷题组、文字、题号、分值、浅灰NEEA水印和显式分页；字体与纸张为可编辑归一化版",
+      "rights": "公开试题；官方网页未附开放内容许可证。代码MIT不覆盖试题原文。",
+      "file": "neea-2024-math-full.json"
+    },
+    {
+      "id": "zhongkao-2023-2024-recombined",
+      "title": "2024年广东省初中学业水平考试·数学",
+      "subject": "数学",
+      "level": "初中",
+      "questions": 23,
+      "score": 120,
+      "durationMinutes": 120,
+      "scope": "full",
+      "specificationId": "guangdong-2024-math",
+      "scoreScale": "source-paper-points",
+      "sourceIds": [
+        "guangdong-2024-math"
+      ],
+      "coverage": "完整原卷转录",
+      "fidelity": "全部23题、120分及完整六页原件；保留真实标题、四条注意事项、机密标记、原题号，重绘全部数学配图",
+      "rights": "公开试题扫描，未附开放内容许可证；扫描水印、平台标志与答案排版不打包为MIT素材。",
+      "file": "zhongkao-2023-2024-recombined.json"
+    },
+    {
+      "id": "gaokao-2024-probability-selected",
+      "title": "2024年高考综合改革适应性测试·数学",
+      "subject": "数学",
+      "level": "高中",
+      "questions": 3,
+      "score": 25,
+      "durationMinutes": 120,
+      "scope": "subset",
+      "specificationId": "neea-2024-math",
+      "scoreScale": "source-paper-points",
+      "sourceIds": [
+        "neea-2024-math"
+      ],
+      "coverage": "统计与概率原题",
+      "fidelity": "原标题、原章说明、原题号、原页码；缺题位置留白，范围仅见目录",
+      "rights": "公开试题；官方网页未附开放内容许可证。代码MIT不覆盖试题原文。",
+      "file": "gaokao-2024-probability-selected.json"
+    },
+    {
+      "id": "gaokao-2024-chinese-poetry-selected",
+      "title": "2024年高考综合改革适应性测试·语文",
+      "subject": "语文",
+      "level": "高中",
+      "questions": 3,
+      "score": 15,
+      "durationMinutes": 150,
+      "scope": "subset",
+      "specificationId": "neea-2024-chinese",
+      "scoreScale": "source-paper-points",
+      "sourceIds": [
+        "neea-2024-chinese"
+      ],
+      "coverage": "原卷阅读与默写题组",
+      "fidelity": "原诗词共享材料，15/16/17原题号，17题全部三组默写与6分原分值",
+      "rights": "古代诗词原作已进入公有领域；试题原文保留出处，现代文材料未再分发。",
+      "file": "gaokao-2024-chinese-poetry-selected.json"
+    },
+    {
+      "id": "real-pku-calculus-2013",
+      "title": "北京大学信息学院期末试题",
+      "subject": "高等数学B（上）",
+      "level": "大学",
+      "questions": 14,
+      "score": 100,
+      "durationMinutes": 120,
+      "scope": "full",
+      "specificationId": "pku-calculus-2013",
+      "scoreScale": "source-paper-section-points",
+      "sourceIds": [
+        "pku-calculus-2013"
+      ],
+      "coverage": "全部8道大题、14小题、100分",
+      "fidelity": "完整题目与原分组；可编辑排版，字体依可用宋体/黑体回退，非像素复刻",
+      "rights": "原试卷由原作者保留权利；lib-pku 声明仅收集资料，未授予统一再许可。数学表达式与题目出处按原件记录，不适用代码 MIT 许可。",
+      "file": "real-pku-calculus-2013.json"
+    },
+    {
+      "id": "real-ecnu-linear-2023",
+      "title": "华东师范大学期末试卷(A)",
+      "subject": "线性代数A",
+      "level": "大学",
+      "questions": 19,
+      "score": 100,
+      "durationMinutes": 120,
+      "scope": "full",
+      "specificationId": "ecnu-linear-2023",
+      "scoreScale": "source-paper-section-points",
+      "sourceIds": [
+        "ecnu-linear-2023"
+      ],
+      "coverage": "全部8道大题、19小题、100分",
+      "fidelity": "保留全部矩阵、原题号与选项；五页原分页及作答留白",
+      "rights": "学校公开教学材料，原作者保留权利；未标明开放许可。数学题保留原题号及学校链接，代码 MIT 许可不涵盖原试卷。",
+      "file": "real-ecnu-linear-2023.json"
+    },
+    {
+      "id": "real-ustc-probstat-2023",
+      "title": "中国科学技术大学2022—2023学年第一学期考试试卷",
+      "subject": "概率论与数理统计",
+      "level": "大学",
+      "questions": 22,
+      "score": 100,
+      "durationMinutes": 120,
+      "scope": "full",
+      "specificationId": "ustc-probstat-2023",
+      "scoreScale": "source-paper-section-points",
+      "sourceIds": [
+        "ustc-probstat-2023"
+      ],
+      "coverage": "全部5道大题、22小题、100分",
+      "fidelity": "保留混合题型大题、全部共享条件与分问、统计表与附录；答案勘误已记录",
+      "rights": "公开流传的高校试卷及参考答案，原作者保留权利；未标明开放许可。数学题的出处和原题号单独保留，代码 MIT 许可不涵盖原试卷。",
+      "file": "real-ustc-probstat-2023.json"
+    },
+    {
+      "id": "real-cet4-translation-2016",
+      "title": "全国大学英语四级考试(笔试)样卷",
+      "subject": "大学英语四级",
+      "level": "大学",
+      "questions": 1,
+      "score": 15,
+      "durationMinutes": 30,
+      "scope": "subset",
+      "specificationId": "cet4",
+      "scoreScale": "practice-weighted-100",
+      "sourceIds": [
+        "neea-cet4-2016"
+      ],
+      "coverage": "Part IV完整翻译任务、原Directions及官方参考译文；不含前面阅读题、听力和其他Part。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "file": "real-cet4-translation-2016.json"
+    },
+    {
+      "id": "real-cet6-writing-translation-2016",
+      "title": "全国大学英语六级考试(笔试)样卷",
+      "subject": "大学英语六级",
+      "level": "大学",
+      "questions": 2,
+      "score": 30,
+      "durationMinutes": 60,
+      "scope": "subset",
+      "specificationId": "cet6",
+      "scoreScale": "practice-weighted-100",
+      "sourceIds": [
+        "neea-cet6-2016"
+      ],
+      "coverage": "Part I完整写作任务、Part IV完整翻译任务及官方参考译文；参考作文和练习评分要点为本项目自编。无听力和阅读。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "file": "real-cet6-writing-translation-2016.json"
+    },
+    {
+      "id": "real-university-english3-2016",
+      "title": "Quiz 1",
+      "subject": "大学英语Ⅲ",
+      "level": "大学",
+      "questions": 3,
+      "score": 3,
+      "durationMinutes": 5,
+      "scope": "subset",
+      "sourceIds": [
+        "zju-english3-quiz-2016"
+      ],
+      "coverage": "Part IV Spelling 原14、16、20三道短题。按1分/题设置练习分；原照片该页未标题分。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+      "file": "real-university-english3-2016.json"
+    },
+    {
+      "id": "real-zju-marxism-2016",
+      "title": "浙江大学2015－2016学年 秋冬 学期《马克思主义基本原理概论》课程期末考试试卷",
+      "subject": "马克思主义基本原理概论",
+      "level": "大学",
+      "questions": 3,
+      "score": 3,
+      "durationMinutes": 5,
+      "scope": "subset",
+      "sourceIds": [
+        "zju-marxism-final-2016"
+      ],
+      "coverage": "原一、1/4/9三道单选，3分；不收录长材料和论述全文。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "rights": "QSCTech/zju-icicles的CC BY-NC-SA 4.0仅适用于贡献者编写部分，原试卷版权归原作者。原题仅作短题选编和版式研究，不将仓库许可扩展为试卷授权，不并入代码MIT许可。",
+      "file": "real-zju-marxism-2016.json"
+    },
+    {
+      "id": "real-neea-ethics-2024",
+      "title": "参考样卷",
+      "subject": "思想道德与法治",
+      "level": "大学",
+      "questions": 3,
+      "score": 10,
+      "durationMinutes": 15,
+      "scope": "subset",
+      "sourceIds": [
+        "neea-ethics-2024"
+      ],
+      "coverage": "原1、2、27三题；按2+2+6分设置选编练习分；参考答案/解析自编核对。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "file": "real-neea-ethics-2024.json"
+    },
+    {
+      "id": "real-neea-mao-2024",
+      "title": "参考样卷",
+      "subject": "毛泽东思想和中国特色社会主义理论体系概论",
+      "level": "大学",
+      "questions": 3,
+      "score": 10,
+      "durationMinutes": 15,
+      "scope": "subset",
+      "sourceIds": [
+        "neea-mao-2024"
+      ],
+      "coverage": "原3、4、28三题；按2+2+6分设置选编练习分；参考答案/解析自编核对。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "rights": "教育部教育考试院公开考试样卷；未标明开放内容许可。此处选录经核对的题目与翻译原段供版式和练习研究；原卷与题目权利归原权利人，代码MIT许可不覆盖该素材。",
+      "file": "real-neea-mao-2024.json"
+    },
+    {
+      "id": "real-mit-6006-final-2020",
+      "title": "6.006 Final",
+      "subject": "算法与数据结构",
+      "level": "大学",
+      "questions": 3,
+      "score": 12,
+      "durationMinutes": 15,
+      "scope": "subset",
+      "specificationId": "mit-6006-final-2020",
+      "scoreScale": "source-paper-points",
+      "sourceIds": [
+        "mit-6006-final-2020"
+      ],
+      "coverage": "Problem 2(a)(c)(d)三问选编，共12分。以解答题保留判断+理由评分，不自动冒充原评分器。",
+      "fidelity": "按原件核对题文、题号、标题、说明、页眉页脚和层级；仅含coverage所列内容，编辑字体与照片透视仍与原件有差异。",
+      "rights": "MIT OpenCourseWare，CC BY-NC-SA 4.0（https://creativecommons.org/licenses/by-nc-sa/4.0/）。署名Erik Demaine、Jason Ku、Justin Solomon及MIT OCW；本项目仅选编、公式转为LaTeX并以中文重写答案解析，改编素材继续按CC BY-NC-SA 4.0。代码MIT许可单独适用。",
+      "file": "real-mit-6006-final-2020.json"
+    },
+    {
+      "id": "complete-cet4-original-01",
+      "title": "College English Test Band 4",
+      "subject": "大学英语四级",
+      "level": "大学英语四级（CET-4）",
+      "questions": 57,
+      "score": 100,
+      "durationMinutes": 125,
+      "scope": "full",
+      "specificationId": "cet4",
+      "scoreScale": "practice-weighted-100",
+      "sourceIds": [
+        "cet4-original-complete-01"
+      ],
+      "coverage": "Complete original practice: Writing 1; Listening 25 (7 news + 8 conversations + 10 passages); Reading 30 (10 words + 10 matching + 10 detailed); Translation 1.",
+      "fidelity": "Original full-length practice following the NEEA 2016 CET4 content structure, timing and percentage weights; not an official past examination or facsimile.",
+      "rights": "Original practice content written for Paper Notebook Practice. MIT License. This is an original mock paper, not an official or historical CET paper.",
+      "file": "complete-cet4-original-01.json"
+    },
+    {
+      "id": "full-cet6-original-01",
+      "title": "College English Test Band 6",
+      "subject": "大学英语六级",
+      "level": "大学 · CET-6",
+      "questions": 57,
+      "score": 100,
+      "durationMinutes": 130,
+      "scope": "full",
+      "specificationId": "cet6",
+      "scoreScale": "practice-weighted-100",
+      "sourceIds": [
+        "cet6-original-complete-01"
+      ],
+      "coverage": "Complete original practice: Writing 1; Listening 25 (8 conversations + 7 passages + 10 talks); Reading 30 (10 words + 10 matching + 10 detailed); Translation 1.",
+      "fidelity": "Original full-length practice following the NEEA 2016 CET6 content structure, timing and percentage weights; not an official past examination or facsimile.",
+      "rights": "Original Paper Notebook Practice materials, questions, model answers and rubrics; MIT License. Structure reference: NEEA CET syllabus (2016). This is an original practice test, not a past official examination.",
+      "file": "full-cet6-original-01.json"
+    }
+  ]
+}

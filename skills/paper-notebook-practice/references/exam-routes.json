@@ -1,0 +1,1247 @@
+{
+  "version": 1,
+  "families": [
+    {
+      "id": "civil-service",
+      "name": "考公"
+    },
+    {
+      "id": "postgraduate",
+      "name": "考研"
+    },
+    {
+      "id": "engineering-course",
+      "name": "工程课程"
+    },
+    {
+      "id": "engineering-qualification",
+      "name": "工程资格"
+    }
+  ],
+  "routes": [
+    {
+      "id": "civil-aptitude",
+      "name": "考公 · 行测",
+      "family": "civil-service",
+      "aliases": [
+        "行政职业能力测验",
+        "行测",
+        "公务员能力测验"
+      ],
+      "subject": "行政职业能力测验",
+      "profileIds": [
+        "civil-aptitude",
+        "logic-reasoning",
+        "quantitative-data"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "civil-service-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先确认国考或省考、年度、地区、职位类别；从该年度官方大纲、完整原卷与勘误核定模块，资料分析保留统计表、图、口径与单位。"
+      ],
+      "checks": [
+        "依目标年度确认政治理论等模块，不将旧版五模块当作所有年份通则。",
+        "数量题独立列式；资料分析复算基期、现期、增长率、比重与量纲；逻辑选项逐一验证。",
+        "图形推理必须提供清晰可辨的实际图形，不能只以图形描述代替题面。"
+      ]
+    },
+    {
+      "id": "civil-essay",
+      "name": "考公 · 申论",
+      "family": "civil-service",
+      "aliases": [
+        "申论"
+      ],
+      "subject": "申论",
+      "profileIds": [
+        "civil-essay"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "civil-service-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先确认国考职位类别或省考A/B/C等分类和年度；整组给定资料、作答要求、字数、分值及材料编号同源保存。"
+      ],
+      "checks": [
+        "概括、分析、对策、贯彻执行和文章论述分别设计，不能把申论当作背政策名词。",
+        "每个参考要点映射给定资料的具体句段；自拟材料建立清晰人物、时间、问题与结果链。",
+        "按任务对象、文种、内容要点、材料依据、结构和表达给可操作评分；范文不能替代评分细则。"
+      ]
+    },
+    {
+      "id": "postgrad-math-1",
+      "name": "考研 · 数学一",
+      "family": "postgraduate",
+      "aliases": [
+        "数学一",
+        "数一",
+        "数学1",
+        "301"
+      ],
+      "subject": "考研数学一",
+      "profileIds": [
+        "calculus",
+        "linear-algebra",
+        "probability-statistics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先用目标年度考试大纲与用户指定教材核定范围；数一、数二、数三分别建蓝图，科目代码仅用于识别，不提供自动完整规格。"
+      ],
+      "checks": [
+        "真正要求计算、证明、参数讨论或建模；概念通过适用条件、反例和推导考查，不将定义回忆当作主体。",
+        "独立完整演算，检查定义域、端点、符号、参数分支与多解；可用符号或数值程序交叉验证，程序不代替证明。",
+        "数一与数三的微积分、线代及概率统计细目分别按当期大纲核定，不能只替换标题。"
+      ]
+    },
+    {
+      "id": "postgrad-math-2",
+      "name": "考研 · 数学二",
+      "family": "postgraduate",
+      "aliases": [
+        "数学二",
+        "数二",
+        "数学2",
+        "302"
+      ],
+      "subject": "考研数学二",
+      "profileIds": [
+        "calculus",
+        "linear-algebra"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先用目标年度考试大纲与用户指定教材核定范围；数一、数二、数三分别建蓝图，科目代码仅用于识别，不提供自动完整规格。"
+      ],
+      "checks": [
+        "真正要求计算、证明、参数讨论或建模；概念通过适用条件、反例和推导考查，不将定义回忆当作主体。",
+        "独立完整演算，检查定义域、端点、符号、参数分支与多解；可用符号或数值程序交叉验证，程序不代替证明。",
+        "数二蓝图不纳入概率论与数理统计；高数删取细目仍按目标年度大纲核定。"
+      ],
+      "exclusions": [
+        "数二不含概率统计"
+      ]
+    },
+    {
+      "id": "postgrad-math-3",
+      "name": "考研 · 数学三",
+      "family": "postgraduate",
+      "aliases": [
+        "数学三",
+        "数三",
+        "数学3",
+        "303"
+      ],
+      "subject": "考研数学三",
+      "profileIds": [
+        "calculus",
+        "linear-algebra",
+        "probability-statistics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "先用目标年度考试大纲与用户指定教材核定范围；数一、数二、数三分别建蓝图，科目代码仅用于识别，不提供自动完整规格。"
+      ],
+      "checks": [
+        "真正要求计算、证明、参数讨论或建模；概念通过适用条件、反例和推导考查，不将定义回忆当作主体。",
+        "独立完整演算，检查定义域、端点、符号、参数分支与多解；可用符号或数值程序交叉验证，程序不代替证明。",
+        "数一与数三的微积分、线代及概率统计细目分别按当期大纲核定，不能只替换标题。"
+      ]
+    },
+    {
+      "id": "postgrad-english-1",
+      "name": "考研 · 英语一",
+      "family": "postgraduate",
+      "aliases": [
+        "英语一",
+        "英一",
+        "英语1",
+        "201"
+      ],
+      "subject": "考研英语一",
+      "profileIds": [
+        "english-reading-writing"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "按目标年度英语一大纲及完整原卷核定完形、阅读、新题型、翻译和写作；文章与小题整组保存。"
+      ],
+      "checks": [
+        "答案回到文本证据，推断不得超出作者立场与限定范围；逐项解释干扰项的错误。",
+        "翻译按信息单元与自然表达评分，写作区分任务完成、内容组织和语言；英一英二任务与分值不互套。"
+      ],
+      "exclusions": [
+        "不套用CET听力、57题结构、125/130分钟或710分报道分"
+      ]
+    },
+    {
+      "id": "postgrad-english-2",
+      "name": "考研 · 英语二",
+      "family": "postgraduate",
+      "aliases": [
+        "英语二",
+        "英二",
+        "英语2",
+        "204"
+      ],
+      "subject": "考研英语二",
+      "profileIds": [
+        "english-reading-writing"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "按目标年度英语二大纲及完整原卷核定完形、阅读、新题型、翻译和写作；文章与小题整组保存。"
+      ],
+      "checks": [
+        "答案回到文本证据，推断不得超出作者立场与限定范围；逐项解释干扰项的错误。",
+        "翻译按信息单元与自然表达评分，写作区分任务完成、内容组织和语言；英一英二任务与分值不互套。"
+      ],
+      "exclusions": [
+        "不套用CET听力、57题结构、125/130分钟或710分报道分"
+      ]
+    },
+    {
+      "id": "postgrad-politics",
+      "name": "考研 · 政治",
+      "family": "postgraduate",
+      "aliases": [
+        "考研政治",
+        "思想政治理论",
+        "101"
+      ],
+      "subject": "考研思想政治理论",
+      "profileIds": [
+        "politics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用目标年度考试大纲与指定教材版本确定理论范围；时政事实保留发布日期，历史真题答案按其考试语境核对。"
+      ],
+      "checks": [
+        "单选、多选与分析题分别组织；分析题将原理、材料事实及推理连接，不能只堆概念。",
+        "多选逐项判真并检查限定词；时政及政策表述对照权威原文，区分历史版本与现行表述。"
+      ]
+    },
+    {
+      "id": "postgrad-management-199",
+      "name": "考研 · 199管理类综合",
+      "family": "postgraduate",
+      "aliases": [
+        "管理类综合能力",
+        "管理类联考",
+        "管理综合",
+        "管综",
+        "199"
+      ],
+      "subject": "管理类综合能力",
+      "profileIds": [
+        "mathematics",
+        "logic-reasoning",
+        "argumentative-writing"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "核定目标年度199大纲；数学基础、逻辑和写作分模块设能力与时间蓝图。"
+      ],
+      "checks": [
+        "数学基础按199范围设计真实计算与问题求解、条件充分性判断，不自动加入大学微积分。",
+        "条件充分性题分别验证条件一、条件二与联合条件，列反例辨别充分与必要。",
+        "论证有效性分析定位前提、结论及推理缺口；论说文建立论点与论据量表，二者分别评分。"
+      ],
+      "exclusions": [
+        "不以数一/数三课程替代199数学基础"
+      ]
+    },
+    {
+      "id": "postgrad-economics-396",
+      "name": "考研 · 396经济类综合",
+      "family": "postgraduate",
+      "aliases": [
+        "经济类综合能力",
+        "经济类联考",
+        "经济综合",
+        "经综",
+        "396"
+      ],
+      "subject": "经济类综合能力",
+      "profileIds": [
+        "calculus",
+        "linear-algebra",
+        "probability-statistics",
+        "logic-reasoning",
+        "argumentative-writing"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "核定目标年度396大纲的数学基础、逻辑及写作；各数学章节取舍不能直接复用数三。"
+      ],
+      "checks": [
+        "数学设计算、条件辨析及应用题，范围和比例以396当期大纲为准。",
+        "论证有效性分析和论说文分别形成参考要点与分档量表，逻辑逐项验证。"
+      ]
+    },
+    {
+      "id": "postgrad-computing-408",
+      "name": "考研 · 408计算机统考",
+      "family": "postgraduate",
+      "aliases": [
+        "计算机学科专业基础",
+        "计算机专业基础综合",
+        "计算机学科专业基础综合",
+        "计算机408",
+        "408"
+      ],
+      "subject": "计算机学科专业基础",
+      "profileIds": [
+        "programming",
+        "computer-systems"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "按目标年度408大纲核定数据结构、组成原理、操作系统、计算机网络；确认是否真为408而非院校自命题。"
+      ],
+      "checks": [
+        "算法题检查正确性、边界与复杂度；系统题明确字长、编址、大小端、页大小和替换策略。",
+        "网络题明确协议版本、计时单位与链路假设；存储、调度与流水线题给出可重算过程。"
+      ]
+    },
+    {
+      "id": "postgrad-specialist",
+      "name": "考研 · 院校专业课",
+      "family": "postgraduate",
+      "aliases": [
+        "院校专业课",
+        "考研专业课",
+        "自命题专业课",
+        "专业课自命题"
+      ],
+      "subject": "院校专业课",
+      "profileIds": [
+        "general"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "postgraduate-authoring.md"
+      ],
+      "sourceGuidance": [
+        "必须以目标院校、学院、专业、科目代码与年度招生目录/大纲为身份；同代码不同学校不可视为同一科目。"
+      ],
+      "checks": [
+        "结合具体学科叠加出题策略；保留指定参考书版本、考试范围和题型依据。",
+        "没有官方原题时区分回忆题和机构整理题；答案通过课程证据与独立求解建立。"
+      ]
+    },
+    {
+      "id": "theoretical-mechanics",
+      "name": "工程课程 · 理论力学",
+      "family": "engineering-course",
+      "aliases": [
+        "理论力学",
+        "theoretical mechanics"
+      ],
+      "subject": "理论力学",
+      "profileIds": [
+        "engineering-mechanics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "受力图、约束、参考系、自由度与正方向明确；静力、运动学与动力学分清对象。",
+        "用平衡、动量或能量关系复核；核对约束反力、运动方向与极限情形。"
+      ]
+    },
+    {
+      "id": "materials-mechanics",
+      "name": "工程课程 · 材料力学",
+      "family": "engineering-course",
+      "aliases": [
+        "材料力学",
+        "mechanics of materials"
+      ],
+      "subject": "材料力学",
+      "profileIds": [
+        "engineering-mechanics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "提供杆件、载荷、支承、截面、材料参数及单位；明确拉压、剪切、扭转、弯曲与组合变形。",
+        "内力图、应力、变形与强度/刚度/稳定判据分别核对；检查符号、边界与截面惯性矩。"
+      ]
+    },
+    {
+      "id": "structural-mechanics",
+      "name": "工程课程 · 结构力学",
+      "family": "engineering-course",
+      "aliases": [
+        "结构力学",
+        "structural mechanics"
+      ],
+      "subject": "结构力学",
+      "profileIds": [
+        "engineering-mechanics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "先确认结构几何、支座、连接、荷载与刚度；判断几何稳定与静定/超静定。",
+        "用位移协调、平衡、虚功或独立刚度计算复核，影响线、内力图与单位一致。"
+      ]
+    },
+    {
+      "id": "fluid-mechanics",
+      "name": "工程课程 · 流体力学与水力学",
+      "family": "engineering-course",
+      "aliases": [
+        "流体力学",
+        "水力学",
+        "fluid mechanics"
+      ],
+      "subject": "流体力学与水力学",
+      "profileIds": [
+        "fluid-thermal"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "明确控制体、基准面、表压/绝压、边界条件、流态及损失系数约定。",
+        "质量与能量守恒复核，检查雷诺数、量纲、压头、水头损失和流量数量级。"
+      ]
+    },
+    {
+      "id": "civil-engineering",
+      "name": "工程课程 · 土木工程",
+      "family": "engineering-course",
+      "aliases": [
+        "土木工程",
+        "混凝土结构",
+        "钢结构",
+        "基础工程",
+        "土力学",
+        "civil engineering"
+      ],
+      "subject": "土木工程",
+      "profileIds": [
+        "engineering-mechanics",
+        "engineering-design"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "将地基、结构、施工与设计分开按课程范围组织；给出荷载、材料、土层和必要图示。",
+        "设计题明确规范名称、版本、组合与安全系数，核对承载、变形与构造要求。"
+      ]
+    },
+    {
+      "id": "hydraulic-engineering",
+      "name": "工程课程 · 水利水电工程",
+      "family": "engineering-course",
+      "aliases": [
+        "水利水电",
+        "水利工程",
+        "水文水资源",
+        "水工建筑物",
+        "水文学"
+      ],
+      "subject": "水利水电工程",
+      "profileIds": [
+        "fluid-thermal",
+        "engineering-design"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "区分水文频率、产汇流、水工结构与水电计算；提供系列年限、频率定义、流量单位和调度约束。",
+        "频率与保证率不可混用；检查水量平衡、能量转换、边界水位与工程标准等级。"
+      ]
+    },
+    {
+      "id": "transport-engineering",
+      "name": "工程课程 · 交通与道路工程",
+      "family": "engineering-course",
+      "aliases": [
+        "交通工程",
+        "道路工程",
+        "公路工程",
+        "桥梁工程",
+        "交通运输工程"
+      ],
+      "subject": "交通与道路工程",
+      "profileIds": [
+        "engineering-design",
+        "engineering-mechanics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "道路、桥梁、交通流与规划按专业目标组织；提供设计速度、车型、荷载、地形与材料。",
+        "核对交通量口径、车道能力、道路几何、荷载组合和规范版本；结论回应服务或安全指标。"
+      ]
+    },
+    {
+      "id": "mechanical-engineering",
+      "name": "工程课程 · 机械工程",
+      "family": "engineering-course",
+      "aliases": [
+        "机械工程",
+        "机械设计",
+        "机械原理",
+        "机械制造"
+      ],
+      "subject": "机械工程",
+      "profileIds": [
+        "engineering-design",
+        "engineering-mechanics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "明确机构简图、运动副、传动、载荷谱、材料、工艺和公差基准。",
+        "检查自由度、功率流、传动比、疲劳与静强度；零件选型给出计算过程与适用条件。"
+      ]
+    },
+    {
+      "id": "electrical-engineering",
+      "name": "工程课程 · 电气工程",
+      "family": "engineering-course",
+      "aliases": [
+        "电气工程",
+        "电路分析",
+        "电路原理",
+        "电力系统",
+        "电机学"
+      ],
+      "subject": "电气工程",
+      "profileIds": [
+        "electrical-electronics"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "给出实际电路图、元件与参考方向；明确直流/交流、有效值/幅值、频率和等效假设。",
+        "用节点/回路、功率平衡或独立仿真交叉验证；三相制、接地与额定参数不得省略。"
+      ]
+    },
+    {
+      "id": "electronics-engineering",
+      "name": "工程课程 · 电子与通信工程",
+      "family": "engineering-course",
+      "aliases": [
+        "电子工程",
+        "模拟电子",
+        "数字电子",
+        "电子技术",
+        "通信原理",
+        "信号与系统"
+      ],
+      "subject": "电子与通信工程",
+      "profileIds": [
+        "electrical-electronics",
+        "control-systems"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "给出器件模型、供电、工作区、逻辑电平或采样条件；通信题明确调制与噪声模型。",
+        "检查工作点、饱和截止、增益带宽、时序、采样混叠与单位；逻辑功能可用真值表核对。"
+      ]
+    },
+    {
+      "id": "control-engineering",
+      "name": "工程课程 · 自动控制",
+      "family": "engineering-course",
+      "aliases": [
+        "自动控制",
+        "控制工程",
+        "控制理论",
+        "现代控制"
+      ],
+      "subject": "自动控制",
+      "profileIds": [
+        "control-systems"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "明确对象、输入输出、反馈符号、初始条件、连续/离散及采样周期。",
+        "传递函数、状态空间、稳定性与性能指标分别验证；检查闭环极点、可控可观和适用判据。"
+      ]
+    },
+    {
+      "id": "computer-engineering",
+      "name": "工程课程 · 计算机与软件工程",
+      "family": "engineering-course",
+      "aliases": [
+        "计算机工程",
+        "软件工程",
+        "操作系统",
+        "计算机网络",
+        "计算机组成"
+      ],
+      "subject": "计算机与软件工程",
+      "profileIds": [
+        "programming",
+        "computer-systems"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "按课程大纲选择算法、系统或软件工程任务；运行环境、接口、数据规模与交付物明确。",
+        "算法执行与复杂度核对，系统推演条件完整；软件设计按需求、边界、测试与可复现产物评分。"
+      ]
+    },
+    {
+      "id": "chemical-engineering",
+      "name": "工程课程 · 化学工程",
+      "family": "engineering-course",
+      "aliases": [
+        "化工原理",
+        "化学工程",
+        "化工热力学",
+        "反应工程"
+      ],
+      "subject": "化学工程",
+      "profileIds": [
+        "process-engineering",
+        "fluid-thermal"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "建立物料/能量衡算与流程图；组成基准、相态、反应计量、物性及操作条件完整。",
+        "传热传质与反应速率检查量纲、平衡限制和关联式适用区间；回收与循环流程闭合。"
+      ]
+    },
+    {
+      "id": "thermal-engineering",
+      "name": "工程课程 · 热能与动力工程",
+      "family": "engineering-course",
+      "aliases": [
+        "热能工程",
+        "热工",
+        "工程热力学",
+        "传热学",
+        "能源动力",
+        "热能动力"
+      ],
+      "subject": "热能与动力工程",
+      "profileIds": [
+        "fluid-thermal",
+        "process-engineering"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "明确系统或控制体、状态、过程、物性表版本、热功正负与损失模型。",
+        "热力循环复核第一/第二定律，传热检查边界、热阻与关联式范围；效率和温差量纲合理。"
+      ]
+    },
+    {
+      "id": "materials-engineering",
+      "name": "工程课程 · 材料科学与工程",
+      "family": "engineering-course",
+      "aliases": [
+        "材料科学",
+        "材料工程",
+        "材料物理",
+        "金属学"
+      ],
+      "subject": "材料科学与工程",
+      "profileIds": [
+        "materials-science"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "按成分—组织—工艺—性能关系设相图、热处理、扩散、结构和失效分析。",
+        "核对相区、杠杆法、扩散边界与温标；显微组织推断须有图像或数据依据。"
+      ]
+    },
+    {
+      "id": "environmental-engineering",
+      "name": "工程课程 · 环境工程",
+      "family": "engineering-course",
+      "aliases": [
+        "环境工程",
+        "水污染控制",
+        "大气污染控制",
+        "固体废物",
+        "环境监测"
+      ],
+      "subject": "环境工程",
+      "profileIds": [
+        "process-engineering",
+        "engineering-design"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "明确污染物、监测方法、流量、浓度基准、处理边界与适用排放标准版本。",
+        "物料平衡、去除率、污泥与水气量复算；区分干湿基、标况工况、总量和浓度。"
+      ]
+    },
+    {
+      "id": "safety-engineering",
+      "name": "工程课程 · 安全工程",
+      "family": "engineering-course",
+      "aliases": [
+        "安全工程",
+        "安全评价",
+        "安全系统工程"
+      ],
+      "subject": "安全工程",
+      "profileIds": [
+        "engineering-safety",
+        "engineering-design"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "围绕具体设施、工艺、作业、事故链与控制措施出题；法规及标准记录生效日期。",
+        "风险等级方法参数明确，措施对应具体危险源和失效路径；法条与技术依据分开核对。"
+      ]
+    },
+    {
+      "id": "surveying-engineering",
+      "name": "工程课程 · 测绘工程",
+      "family": "engineering-course",
+      "aliases": [
+        "测绘工程",
+        "测量学",
+        "工程测量",
+        "大地测量",
+        "摄影测量"
+      ],
+      "subject": "测绘工程",
+      "profileIds": [
+        "surveying-computation"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "明确坐标与高程基准、投影、角度单位、仪器精度和观测网示意。",
+        "检查闭合差、改正数、权、误差传播与有效位；角度方位和单位转换独立复算。"
+      ]
+    },
+    {
+      "id": "mining-engineering",
+      "name": "工程课程 · 矿业工程",
+      "family": "engineering-course",
+      "aliases": [
+        "矿业工程",
+        "采矿学",
+        "采矿工程",
+        "矿山通风",
+        "矿物加工"
+      ],
+      "subject": "矿业工程",
+      "profileIds": [
+        "engineering-safety",
+        "fluid-thermal",
+        "engineering-design"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "用户指定课程大纲、讲义、教材版本及考试进度优先；院校公开课程和原始技术资料只补充缺口，专业名称本身不构成统一考试规格。"
+      ],
+      "checks": [
+        "区分采掘、通风、选矿与岩层控制；矿体、巷道、设备、工况与计量基准完整。",
+        "通风网络、物料平衡、稳定性与安全限值分别复算，法规与技术标准须对应矿种和年度。"
+      ]
+    },
+    {
+      "id": "constructor-1",
+      "name": "工程资格 · 一级建造师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "一级建造师",
+        "一建"
+      ],
+      "subject": "一级建造师",
+      "profileIds": [
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认年度、公共科目或实务专业；专业实务按案例资料、施工过程、计算与管理决策设题。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "constructor-2",
+      "name": "工程资格 · 二级建造师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "二级建造师",
+        "二建"
+      ],
+      "subject": "二级建造师",
+      "profileIds": [
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认省份、年度、科目和实务专业；二建考试安排、题量及机考规则按当地当年通知核定。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "cost-engineer-1",
+      "name": "工程资格 · 一级造价工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "一级造价工程师",
+        "一造"
+      ],
+      "subject": "一级造价工程师",
+      "profileIds": [
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认土木建筑、交通、水利或安装专业与科目；清单计量、计价、税费、定额和案例按指定版本计算。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "cost-engineer-2",
+      "name": "工程资格 · 二级造价工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "二级造价工程师",
+        "二造"
+      ],
+      "subject": "二级造价工程师",
+      "profileIds": [
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认地区、年度、专业与当地大纲；费用取值、计量规则和案例条件不可直接复用一造。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "supervision-engineer",
+      "name": "工程资格 · 监理工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "监理工程师",
+        "监理考试"
+      ],
+      "subject": "监理工程师",
+      "profileIds": [
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认土建、交通或水利专业及科目；合同、质量、进度与投资控制给出完整事件链。",
+        "核对大纲现行状态，已标废止的2020版不得作为当前考试依据。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-safety-engineer",
+      "name": "工程资格 · 注册安全工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册安全工程师",
+        "注安",
+        "注册安全"
+      ],
+      "subject": "注册安全工程师",
+      "profileIds": [
+        "engineering-safety",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认初级或中级、科目及七类专业；法律法规、管理、技术基础与实务分开建蓝图。",
+        "专业实务案例中的危险源、事故原因、法规责任与整改措施逐条对应事实。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-structural-engineer",
+      "name": "工程资格 · 注册结构工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册结构工程师",
+        "注册结构",
+        "一级结构",
+        "二级结构"
+      ],
+      "subject": "注册结构工程师",
+      "profileIds": [
+        "engineering-mechanics",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认一级/二级及基础/专业；结构计算同时核对作用组合、材料、抗震等级与构造要求。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-geotechnical-engineer",
+      "name": "工程资格 · 注册土木工程师（岩土）",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册岩土工程师",
+        "注册岩土",
+        "岩土工程师",
+        "注册土木工程师（岩土）"
+      ],
+      "subject": "注册土木工程师（岩土）",
+      "profileIds": [
+        "engineering-mechanics",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认基础或专业、知识或案例；土层、地下水、试验指标和参数取值依据完整，地基与边坡计算可追溯。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-electrical-engineer",
+      "name": "工程资格 · 注册电气工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册电气工程师",
+        "注册电气",
+        "注电"
+      ],
+      "subject": "注册电气工程师",
+      "profileIds": [
+        "electrical-electronics",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认供配电或发输变电、基础或专业；电压等级、接地、负荷及保护整定条件充分。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-public-equipment-engineer",
+      "name": "工程资格 · 注册公用设备工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册公用设备工程师",
+        "注册公用设备",
+        "公用设备工程师"
+      ],
+      "subject": "注册公用设备工程师",
+      "profileIds": [
+        "fluid-thermal",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认暖通空调、给水排水或动力方向及基础/专业；系统图、设计工况、设备参数与规范版本齐全。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-chemical-engineer",
+      "name": "工程资格 · 注册化工工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册化工工程师",
+        "注册化工"
+      ],
+      "subject": "注册化工工程师",
+      "profileIds": [
+        "process-engineering",
+        "fluid-thermal",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认基础或专业及知识/案例；工艺条件、物性、衡算与设备选型给出可复核的完整依据。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-environmental-engineer",
+      "name": "工程资格 · 注册环保工程师",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册环保工程师",
+        "注册环保"
+      ],
+      "subject": "注册环保工程师",
+      "profileIds": [
+        "process-engineering",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认基础或专业及知识/案例；污染治理、监测与排放规则按考试指定标准版本核对。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-hydraulic-engineer",
+      "name": "工程资格 · 注册土木工程师（水利水电）",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册水利水电",
+        "注册水利",
+        "注册土木工程师（水利水电）"
+      ],
+      "subject": "注册土木工程师（水利水电）",
+      "profileIds": [
+        "fluid-thermal",
+        "engineering-mechanics",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认规划、水工结构、工程地质、移民或水土保持等专业方向及基础/专业，不能统套一个水利蓝图。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    },
+    {
+      "id": "registered-road-engineer",
+      "name": "工程资格 · 注册土木工程师（道路工程）",
+      "family": "engineering-qualification",
+      "aliases": [
+        "注册道路工程师",
+        "注册道路",
+        "注册土木工程师（道路工程）"
+      ],
+      "subject": "注册土木工程师（道路工程）",
+      "profileIds": [
+        "engineering-mechanics",
+        "engineering-design",
+        "engineering-regulations"
+      ],
+      "referenceFiles": [
+        "research-workflow.md",
+        "engineering-authoring.md"
+      ],
+      "sourceGuidance": [
+        "以主管部门、考试机构当年度通知、大纲、勘误和考试指定规范目录确定适用版本；题目来源与法规/规范依据分别记录。"
+      ],
+      "checks": [
+        "确认基础或专业及知识/案例；路线、路基路面、桥隧或交通工程范围按当期大纲，设计参数与规范一致。",
+        "参考答案写出计算步骤、单位、规范名称版本及具体条款；机构答案不自动等同官方答案。"
+      ]
+    }
+  ]
+}

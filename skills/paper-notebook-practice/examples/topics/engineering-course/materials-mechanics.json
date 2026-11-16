@@ -1,0 +1,877 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "materials-mechanics-course-01",
+  "notebookId": "materials-mechanics-source",
+  "notebookRevision": 1,
+  "title": "材料力学课程考试",
+  "subject": "材料力学",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "材料力学课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "materials-mechanics-scope",
+      "title": "MIT 2.001 Mechanics & Materials I",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/2-001-mechanics-materials-i-fall-2006/",
+      "text": "This course provides an introduction to the mechanics of solids with applications to science and engineering.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2006",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/2-001-mechanics-materials-i-fall-2006/"
+      }
+    },
+    {
+      "id": "materials-mechanics-q1-statement",
+      "title": "材料力学第1题命题原稿",
+      "kind": "question-bank",
+      "text": "两段同轴钢杆串联，材料弹性模量均为200 GPa。第一段长1 m、面积400 mm²，第二段长0.5 m、面积200 mm²。杆受40 kN轴向拉力，连接理想、忽略自重。（1）求各段轴向应力与总伸长；（2）若第二段面积增加到400 mm²，总伸长改变多少；（3）说明为何不能把两段面积相加后使用单杆公式。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-mechanics-q2-statement",
+      "title": "材料力学第2题命题原稿",
+      "kind": "question-bank",
+      "text": "圆形空心轴外径60 mm、内径40 mm、长1 m，剪切模量80 GPa，受恒定扭矩1.00 kN·m。已知$J=\\pi(D^4-d^4)/32$。本题设计要求为最大切应力不超过30 MPa，单位长度扭转角不超过0.010 rad/m。（1）计算最大切应力和扭转角；（2）分别检验两项要求；（3）在直径不变的条件下求满足两项要求的最大扭矩。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-mechanics-q3-statement",
+      "title": "材料力学第3题命题原稿",
+      "kind": "question-bank",
+      "text": "4 m长简支梁全跨受5 kN/m均布载荷，矩形截面宽80 mm、高160 mm，弹性模量200 GPa。使用Euler–Bernoulli小挠度梁模型。已知全跨均布载荷时$v_{\\max}=5qL^4/(384EI)$。本题要求最大正应力不超过40 MPa、最大挠度不超过$L/1000$。（1）求最大弯矩与正应力；（2）求跨中挠度；（3）若保持面积不变，将截面旋转90°，比较两项指标。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-mechanics-q4-statement",
+      "title": "材料力学第4题命题原稿",
+      "kind": "question-bank",
+      "text": "某薄板点处于平面应力状态：$\\sigma_x=80$ MPa、$\\sigma_y=20$ MPa、$\\tau_{xy}=30$ MPa。拉应力为正。（1）求面内主应力及主平面方向；（2）求三维最大切应力；（3）材料单轴屈服应力为100 MPa，用von Mises准则检验，并说明为何第三主应力仍需考虑。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-mechanics-q5-statement",
+      "title": "材料力学第5题命题原稿",
+      "kind": "question-bank",
+      "text": "直钢杆长2 m，弹性模量200 GPa，最小截面惯性矩$8\\times10^{-8}$ m⁴。原两端铰接，轴向压力20 kN。假定杆足够细长，Euler弹性屈曲适用。题目要求临界力与工作压力之比至少为2。（1）求原临界力与比值；（2）若通过理想支承使计算长度系数由1.0变为0.7，重新检验；（3）指出在实际杆件中仍需核定的两项条件。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "materials-mechanics-q6-statement",
+      "title": "材料力学第6题命题原稿",
+      "kind": "question-bank",
+      "text": "平面应力薄板上0°、45°、90°应变片分别测得$500\\,\\mu\\varepsilon$、$300\\,\\mu\\varepsilon$、$-100\\,\\mu\\varepsilon$。材料$E=210$ GPa、$\\nu=0.30$。取0°方向为x轴。（1）求$\\varepsilon_x,\\varepsilon_y,\\gamma_{xy}$；（2）反演$\\sigma_x,\\sigma_y,\\tau_{xy}$；（3）把反演值代回广义Hooke定律验证，说明把工程剪应变直接当作张量剪应变将造成何种错误。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "materials-mechanics-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "materials-mechanics-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "两段同轴钢杆串联，材料弹性模量均为200 GPa。第一段长1 m、面积400 mm²，第二段长0.5 m、面积200 mm²。杆受40 kN轴向拉力，连接理想、忽略自重。（1）求各段轴向应力与总伸长；（2）若第二段面积增加到400 mm²，总伸长改变多少；（3）说明为何不能把两段面积相加后使用单杆公式。",
+          "score": 15,
+          "solution": "原两段应力100、200 MPa，总伸长1.000 mm。增大第二段面积后，两段应力均100 MPa，总伸长0.750 mm，减少0.250 mm。",
+          "explanation": "串联系统各段内力相同，伸长相加。$\\delta=F[L_1/(EA_1)+L_2/(EA_2)]$。原两段分别伸长0.5 mm、0.5 mm；改造后第二段伸长0.25 mm。面积相加对应并联受力的某些情形，不对应本题的串联轴力路径。",
+          "source": {
+            "materialId": "materials-mechanics-q1-statement",
+            "blockId": "materials-mechanics-q1-statement",
+            "exact": "两段同轴钢杆串联，材料弹性模量均为200 GPa。第一段长1 m、面积400 mm²，第二段长0.5 m、面积200 mm²。杆受40 kN轴向拉力，连接理想、忽略自重。（1）求各段轴向应力与总伸长；（2）若第二段面积增加到400 mm²，总伸长改变多少；（3）说明为何不能把两段面积相加后使用单杆公式。"
+          },
+          "chapter": "阶梯杆拉伸",
+          "tags": [
+            "材料力学",
+            "阶梯杆拉伸",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "阶梯杆拉伸"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-mechanics-scope",
+                "blockId": "materials-mechanics-scope",
+                "exact": "This course provides an introduction to the mechanics of solids with applications to science and engineering."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "由串联条件确定两段内力",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "materials-mechanics-q1-statement",
+                    "blockId": "materials-mechanics-q1-statement",
+                    "exact": "两段同轴钢杆串联，材料弹性模量均为200 GPa。第一段长1 m、面积400 mm²，第二段长0.5 m、面积200 mm²。杆受40 kN轴向拉力，连接理想、忽略自重。（1）求各段轴向应力与总伸长；（2）若第二段面积增加到400 mm²，总伸长改变多少；（3）说明为何不能把两段面积相加后使用单杆公式。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两段应力正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "原总伸长正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "改造计算与模型解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q1 segment extensions mm",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q1 segment extensions mm\", \"actual\": [0.5, 0.5], \"expected\": [0.5, 0.5], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-mechanics-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "圆形空心轴外径60 mm、内径40 mm、长1 m，剪切模量80 GPa，受恒定扭矩1.00 kN·m。已知$J=\\pi(D^4-d^4)/32$。本题设计要求为最大切应力不超过30 MPa，单位长度扭转角不超过0.010 rad/m。（1）计算最大切应力和扭转角；（2）分别检验两项要求；（3）在直径不变的条件下求满足两项要求的最大扭矩。",
+          "score": 15,
+          "solution": "$J=1.0210176e-06$ m⁴，最大切应力29.38245 MPa、扭转角0.0122427 rad。应力满足，刚度不满足；最大允许扭矩0.816814 kN·m，由刚度控制。",
+          "explanation": "使用$\\tau_{\\max}=TR/J$及$\\varphi=TL/(GJ)$，保持m、N的一致单位。应力上限给出$T_\\tau=[\\tau]J/R$，刚度上限给出$T_\\varphi=0.010GJ$；设计扭矩取较小者。给定限制为本题条件，不能将其写成普遍规范值。",
+          "source": {
+            "materialId": "materials-mechanics-q2-statement",
+            "blockId": "materials-mechanics-q2-statement",
+            "exact": "圆形空心轴外径60 mm、内径40 mm、长1 m，剪切模量80 GPa，受恒定扭矩1.00 kN·m。已知$J=\\pi(D^4-d^4)/32$。本题设计要求为最大切应力不超过30 MPa，单位长度扭转角不超过0.010 rad/m。（1）计算最大切应力和扭转角；（2）分别检验两项要求；（3）在直径不变的条件下求满足两项要求的最大扭矩。"
+          },
+          "chapter": "空心轴扭转与双指标设计",
+          "tags": [
+            "材料力学",
+            "空心轴扭转与双指标设计",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "空心轴扭转与双指标设计"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-mechanics-scope",
+                "blockId": "materials-mechanics-scope",
+                "exact": "This course provides an introduction to the mechanics of solids with applications to science and engineering."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "截面极惯性矩和单位正确",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "materials-mechanics-q2-statement",
+                    "blockId": "materials-mechanics-q2-statement",
+                    "exact": "圆形空心轴外径60 mm、内径40 mm、长1 m，剪切模量80 GPa，受恒定扭矩1.00 kN·m。已知$J=\\pi(D^4-d^4)/32$。本题设计要求为最大切应力不超过30 MPa，单位长度扭转角不超过0.010 rad/m。（1）计算最大切应力和扭转角；（2）分别检验两项要求；（3）在直径不变的条件下求满足两项要求的最大扭矩。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "切应力与扭转角计算正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "分别作出强度、刚度判断",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "比较两允许扭矩并识别控制条件",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q2 numerical J",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q2 numerical J\", \"actual\": 1.0210176124166826e-06, \"expected\": 1.0210176124166826e-06, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q2 elastic torsion back-substitution",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q2 elastic torsion back-substitution\", \"actual\": 1000.0, \"expected\": 1000, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-mechanics-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "4 m长简支梁全跨受5 kN/m均布载荷，矩形截面宽80 mm、高160 mm，弹性模量200 GPa。使用Euler–Bernoulli小挠度梁模型。已知全跨均布载荷时$v_{\\max}=5qL^4/(384EI)$。本题要求最大正应力不超过40 MPa、最大挠度不超过$L/1000$。（1）求最大弯矩与正应力；（2）求跨中挠度；（3）若保持面积不变，将截面旋转90°，比较两项指标。",
+          "score": 15,
+          "solution": "原截面$M_{\\max}=10$ kN·m、$I=2.7306667e-05$ m⁴、$\\sigma_{\\max}=29.296875$ MPa、$v_{\\max}=3.051758$ mm，均满足。旋转后应力加倍为58.593750 MPa，挠度增至12.207031 mm，均不满足。",
+          "explanation": "$M_{\\max}=qL^2/8$，$W=bh^2/6$、$\\sigma=M/W$。旋转后高度减半、宽度加倍，使$I$变为原值1/4、$W$变为原值1/2。面积相同并不保证弯曲性能相同；中性轴方向与载荷平面必须一致。",
+          "source": {
+            "materialId": "materials-mechanics-q3-statement",
+            "blockId": "materials-mechanics-q3-statement",
+            "exact": "4 m长简支梁全跨受5 kN/m均布载荷，矩形截面宽80 mm、高160 mm，弹性模量200 GPa。使用Euler–Bernoulli小挠度梁模型。已知全跨均布载荷时$v_{\\max}=5qL^4/(384EI)$。本题要求最大正应力不超过40 MPa、最大挠度不超过$L/1000$。（1）求最大弯矩与正应力；（2）求跨中挠度；（3）若保持面积不变，将截面旋转90°，比较两项指标。"
+          },
+          "chapter": "梁弯曲强度与挠度",
+          "tags": [
+            "材料力学",
+            "梁弯曲强度与挠度",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "梁弯曲强度与挠度"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-mechanics-scope",
+                "blockId": "materials-mechanics-scope",
+                "exact": "This course provides an introduction to the mechanics of solids with applications to science and engineering."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "弯矩、惯性矩和截面系数正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "materials-mechanics-q3-statement",
+                    "blockId": "materials-mechanics-q3-statement",
+                    "exact": "4 m长简支梁全跨受5 kN/m均布载荷，矩形截面宽80 mm、高160 mm，弹性模量200 GPa。使用Euler–Bernoulli小挠度梁模型。已知全跨均布载荷时$v_{\\max}=5qL^4/(384EI)$。本题要求最大正应力不超过40 MPa、最大挠度不超过$L/1000$。（1）求最大弯矩与正应力；（2）求跨中挠度；（3）若保持面积不变，将截面旋转90°，比较两项指标。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "应力计算与判断正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "挠度计算与判断正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "旋转截面比例关系和新判断正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q3 stress MPa",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q3 stress MPa\", \"actual\": 29.296874999999996, \"expected\": 29.296875, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q3 deflection mm",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q3 deflection mm\", \"actual\": 3.0517578124999996, \"expected\": 3.0517578125, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-mechanics-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "某薄板点处于平面应力状态：$\\sigma_x=80$ MPa、$\\sigma_y=20$ MPa、$\\tau_{xy}=30$ MPa。拉应力为正。（1）求面内主应力及主平面方向；（2）求三维最大切应力；（3）材料单轴屈服应力为100 MPa，用von Mises准则检验，并说明为何第三主应力仍需考虑。",
+          "score": 15,
+          "solution": "面内主应力92.426407、7.573593 MPa，主方向$\\theta=22.5^\\circ$及其正交方向；第三主应力0。三维最大切应力46.213203 MPa；von Mises应力88.881944 MPa，小于100 MPa。",
+          "explanation": "面内Mohr圆圆心50 MPa、半径$\\sqrt{30^2+30^2}=30\\sqrt2$ MPa；$\\tan2\\theta=2\\tau/(\\sigma_x-\\sigma_y)=1$。面内最大切应力42.426 MPa与三维最大切应力不同：三个主应力中的最大、最小为92.426、0，故$\\tau_{\\max,3D}=46.213$ MPa。$\\sigma_{VM}=\\sqrt{\\sigma_x^2-\\sigma_x\\sigma_y+\\sigma_y^2+3\\tau^2}=\\sqrt{7900}$。本结论限于给定理想屈服准则与名义应力。",
+          "source": {
+            "materialId": "materials-mechanics-q4-statement",
+            "blockId": "materials-mechanics-q4-statement",
+            "exact": "某薄板点处于平面应力状态：$\\sigma_x=80$ MPa、$\\sigma_y=20$ MPa、$\\tau_{xy}=30$ MPa。拉应力为正。（1）求面内主应力及主平面方向；（2）求三维最大切应力；（3）材料单轴屈服应力为100 MPa，用von Mises准则检验，并说明为何第三主应力仍需考虑。"
+          },
+          "chapter": "平面应力与强度准则",
+          "tags": [
+            "材料力学",
+            "平面应力与强度准则",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "平面应力与强度准则"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-mechanics-scope",
+                "blockId": "materials-mechanics-scope",
+                "exact": "This course provides an introduction to the mechanics of solids with applications to science and engineering."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "主应力与方向正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "materials-mechanics-q4-statement",
+                    "blockId": "materials-mechanics-q4-statement",
+                    "exact": "某薄板点处于平面应力状态：$\\sigma_x=80$ MPa、$\\sigma_y=20$ MPa、$\\tau_{xy}=30$ MPa。拉应力为正。（1）求面内主应力及主平面方向；（2）求三维最大切应力；（3）材料单轴屈服应力为100 MPa，用von Mises准则检验，并说明为何第三主应力仍需考虑。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "明确第三主应力并求三维最大切应力",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "von Mises应力及判断正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "区分面内与三维极值",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q4 principal stress invariants",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q4 principal stress invariants\", \"actual\": [100.0, 699.9999999999999], \"expected\": [100, 700], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q4 von Mises squared",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q4 von Mises squared\", \"actual\": 7900.0, \"expected\": 7900, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-mechanics-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "直钢杆长2 m，弹性模量200 GPa，最小截面惯性矩$8\\times10^{-8}$ m⁴。原两端铰接，轴向压力20 kN。假定杆足够细长，Euler弹性屈曲适用。题目要求临界力与工作压力之比至少为2。（1）求原临界力与比值；（2）若通过理想支承使计算长度系数由1.0变为0.7，重新检验；（3）指出在实际杆件中仍需核定的两项条件。",
+          "score": 20,
+          "solution": "原$P_{cr}=39.478418$ kN，比值1.973921，略低于2。改造后临界力80.568199 kN，比值4.028410，满足题设要求。",
+          "explanation": "$P_{cr}=\\pi^2EI/(\\mu L)^2$。减小计算长度系数使临界力按$1/\\mu^2$放大。实际应用还需确认支承约束能否实现、材料是否仍弹性、初弯曲/偏心及局部屈曲影响等；仅凭Euler比值不能覆盖这些失效模式。",
+          "source": {
+            "materialId": "materials-mechanics-q5-statement",
+            "blockId": "materials-mechanics-q5-statement",
+            "exact": "直钢杆长2 m，弹性模量200 GPa，最小截面惯性矩$8\\times10^{-8}$ m⁴。原两端铰接，轴向压力20 kN。假定杆足够细长，Euler弹性屈曲适用。题目要求临界力与工作压力之比至少为2。（1）求原临界力与比值；（2）若通过理想支承使计算长度系数由1.0变为0.7，重新检验；（3）指出在实际杆件中仍需核定的两项条件。"
+          },
+          "chapter": "细长压杆稳定性",
+          "tags": [
+            "材料力学",
+            "细长压杆稳定性",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "细长压杆稳定性"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-mechanics-scope",
+                "blockId": "materials-mechanics-scope",
+                "exact": "This course provides an introduction to the mechanics of solids with applications to science and engineering."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "有效长度与Euler模型正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "materials-mechanics-q5-statement",
+                    "blockId": "materials-mechanics-q5-statement",
+                    "exact": "直钢杆长2 m，弹性模量200 GPa，最小截面惯性矩$8\\times10^{-8}$ m⁴。原两端铰接，轴向压力20 kN。假定杆足够细长，Euler弹性屈曲适用。题目要求临界力与工作压力之比至少为2。（1）求原临界力与比值；（2）若通过理想支承使计算长度系数由1.0变为0.7，重新检验；（3）指出在实际杆件中仍需核定的两项条件。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "原值及边界判断正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "改造后数值正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "提出两项具体适用条件并解释",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q5 original critical kN",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q5 original critical kN\", \"actual\": 39.47841760435743, \"expected\": 39.47841760435744, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q5 length sensitivity",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q5 length sensitivity\", \"actual\": 2.0408163265306123, \"expected\": 2.0408163265306123, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "materials-mechanics-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "平面应力薄板上0°、45°、90°应变片分别测得$500\\,\\mu\\varepsilon$、$300\\,\\mu\\varepsilon$、$-100\\,\\mu\\varepsilon$。材料$E=210$ GPa、$\\nu=0.30$。取0°方向为x轴。（1）求$\\varepsilon_x,\\varepsilon_y,\\gamma_{xy}$；（2）反演$\\sigma_x,\\sigma_y,\\tau_{xy}$；（3）把反演值代回广义Hooke定律验证，说明把工程剪应变直接当作张量剪应变将造成何种错误。",
+          "score": 20,
+          "solution": "$\\varepsilon_x=500\\,\\mu\\varepsilon$、$\\varepsilon_y=-100\\,\\mu\\varepsilon$、$\\gamma_{xy}=200\\,\\mu\\varepsilon$；$\\sigma_x=108.461538$ MPa、$\\sigma_y=11.538462$ MPa、$\\tau_{xy}=16.153846$ MPa。",
+          "explanation": "$\\varepsilon_{45}=(\\varepsilon_x+\\varepsilon_y)/2+\\gamma_{xy}/2$，故$\\gamma_{xy}=2\\varepsilon_{45}-\\varepsilon_0-\\varepsilon_{90}$。平面应力关系为$\\sigma_x=E(\\varepsilon_x+\\nu\\varepsilon_y)/(1-\\nu^2)$、$\\sigma_y=E(\\varepsilon_y+\\nu\\varepsilon_x)/(1-\\nu^2)$及$\\tau_{xy}=G\\gamma_{xy}$。张量分量$\\varepsilon_{xy}=\\gamma_{xy}/2$；误用系数会使剪应力相差一倍。",
+          "source": {
+            "materialId": "materials-mechanics-q6-statement",
+            "blockId": "materials-mechanics-q6-statement",
+            "exact": "平面应力薄板上0°、45°、90°应变片分别测得$500\\,\\mu\\varepsilon$、$300\\,\\mu\\varepsilon$、$-100\\,\\mu\\varepsilon$。材料$E=210$ GPa、$\\nu=0.30$。取0°方向为x轴。（1）求$\\varepsilon_x,\\varepsilon_y,\\gamma_{xy}$；（2）反演$\\sigma_x,\\sigma_y,\\tau_{xy}$；（3）把反演值代回广义Hooke定律验证，说明把工程剪应变直接当作张量剪应变将造成何种错误。"
+          },
+          "chapter": "应变花试验与应力反演",
+          "tags": [
+            "材料力学",
+            "应变花试验与应力反演",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "应变花试验与应力反演"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "materials-mechanics-scope",
+                "blockId": "materials-mechanics-scope",
+                "exact": "This course provides an introduction to the mechanics of solids with applications to science and engineering."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "应变变换、微应变单位及工程剪应变正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "materials-mechanics-q6-statement",
+                    "blockId": "materials-mechanics-q6-statement",
+                    "exact": "平面应力薄板上0°、45°、90°应变片分别测得$500\\,\\mu\\varepsilon$、$300\\,\\mu\\varepsilon$、$-100\\,\\mu\\varepsilon$。材料$E=210$ GPa、$\\nu=0.30$。取0°方向为x轴。（1）求$\\varepsilon_x,\\varepsilon_y,\\gamma_{xy}$；（2）反演$\\sigma_x,\\sigma_y,\\tau_{xy}$；（3）把反演值代回广义Hooke定律验证，说明把工程剪应变直接当作张量剪应变将造成何种错误。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两项正应力正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "剪应力正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "代回三读数并解释二倍关系",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q6 inverse Hooke check",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q6 inverse Hooke check\", \"actual\": [0.0005, -0.00010000000000000003, 0.0002], \"expected\": [0.0005, -0.0001, 0.0002], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "materials-q6 45 degree reconstruction",
+                "result": "pass",
+                "evidence": "{\"label\": \"materials-q6 45 degree reconstruction\", \"actual\": 0.00030000000000000003, \"expected\": 0.0003, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "materials-mechanics-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "materials-mechanics",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "materials-mechanics-q1",
+        "knowledge": "阶梯杆拉伸",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-mechanics-q1-statement"
+        ]
+      },
+      {
+        "id": "materials-mechanics-q2",
+        "knowledge": "空心轴扭转与双指标设计",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-mechanics-q2-statement"
+        ]
+      },
+      {
+        "id": "materials-mechanics-q3",
+        "knowledge": "梁弯曲强度与挠度",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-mechanics-q3-statement"
+        ]
+      },
+      {
+        "id": "materials-mechanics-q4",
+        "knowledge": "平面应力与强度准则",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-mechanics-q4-statement"
+        ]
+      },
+      {
+        "id": "materials-mechanics-q5",
+        "knowledge": "细长压杆稳定性",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-mechanics-q5-statement"
+        ]
+      },
+      {
+        "id": "materials-mechanics-q6",
+        "knowledge": "应变花试验与应力反演",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "materials-mechanics-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "materials-mechanics-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "materials-mechanics-course-blueprint",
+      "name": "材料力学课程考试",
+      "subject": "材料力学",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "materials-mechanics-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

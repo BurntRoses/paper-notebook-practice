@@ -1,0 +1,270 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "practice-growth-example",
+  "notebookId": "notebook-growth",
+  "notebookRevision": 7,
+  "title": "复利的递推关系单元测验",
+  "subject": "数学",
+  "level": "初中拓展",
+  "durationMinutes": 30,
+  "totalScore": 23,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "sealed": true
+  },
+  "materials": [
+    {
+      "id": "material-growth",
+      "title": "复利的递推关系 · 原文摘录",
+      "kind": "notebook",
+      "text": "账户初始有 100 元，每期增长 10%，不取出利息。第一期后是 110 元，第二期增长的基础变成了 110 元，因此增加 11 元。第三期再以121元为基础，增加12.1元；增长率相同，增长金额随基数扩大。\nP₀ 是初始值，r 是每期增长率，n 是期数。每一期的增长率相同，但增加的绝对数值不同。\n公式按每期增长率恒定、增长继续计入本金、期间没有额外存入或取出计算。若三期增长率分别为10%、5%、8%，终值按各期因子相乘：100 × 1.10 × 1.05 × 1.08 = 124.74。",
+      "blocks": [
+        {
+          "id": "growth-intro",
+          "title": "growth-intro",
+          "text": "账户初始有 100 元，每期增长 10%，不取出利息。第一期后是 110 元，第二期增长的基础变成了 110 元，因此增加 11 元。第三期再以121元为基础，增加12.1元；增长率相同，增长金额随基数扩大。",
+          "page": 1
+        },
+        {
+          "id": "growth-eq",
+          "title": "growth-eq",
+          "text": "P₀ 是初始值，r 是每期增长率，n 是期数。每一期的增长率相同，但增加的绝对数值不同。",
+          "page": 1
+        },
+        {
+          "id": "growth-bound",
+          "title": "growth-bound",
+          "text": "公式按每期增长率恒定、增长继续计入本金、期间没有额外存入或取出计算。若三期增长率分别为10%、5%、8%，终值按各期因子相乘：100 × 1.10 × 1.05 × 1.08 = 124.74。",
+          "page": 2
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-growth-choice",
+      "title": "选择题",
+      "instructions": "每题只有一个正确选项。",
+      "score": 8,
+      "questions": [
+        {
+          "id": "growth-choice-1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "账户初始有 100 元，每期增长 10%，第一期后的余额是多少元？",
+          "score": 2,
+          "solution": "A",
+          "explanation": "第一期余额为 $100\\times1.10=110$ 元。",
+          "source": {
+            "materialId": "material-growth",
+            "blockId": "growth-intro",
+            "page": 1,
+            "title": "复利递推",
+            "exact": "账户初始有 100 元，每期增长 10%，不取出利息。第一期后是 110 元，第二期增长的基础变成了 110 元，因此增加 11 元。第三期再以121元为基础，增加12.1元；增长率相同，增长金额随基数扩大。"
+          },
+          "chapter": "复利递推",
+          "tags": [
+            "复利"
+          ],
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "110"
+            },
+            {
+              "id": "B",
+              "text": "100"
+            },
+            {
+              "id": "C",
+              "text": "121"
+            },
+            {
+              "id": "D",
+              "text": "111"
+            }
+          ]
+        },
+        {
+          "id": "growth-choice-2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "第二期新增的利息是多少元？",
+          "score": 2,
+          "solution": "B",
+          "explanation": "第二期以 110 元为基数，新增 $110\\times0.10=11$ 元。",
+          "source": {
+            "materialId": "material-growth",
+            "blockId": "growth-intro",
+            "page": 1,
+            "title": "复利递推",
+            "exact": "账户初始有 100 元，每期增长 10%，不取出利息。第一期后是 110 元，第二期增长的基础变成了 110 元，因此增加 11 元。第三期再以121元为基础，增加12.1元；增长率相同，增长金额随基数扩大。"
+          },
+          "chapter": "复利递推",
+          "tags": [
+            "复利"
+          ],
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "10"
+            },
+            {
+              "id": "B",
+              "text": "11"
+            },
+            {
+              "id": "C",
+              "text": "12.1"
+            },
+            {
+              "id": "D",
+              "text": "21"
+            }
+          ]
+        },
+        {
+          "id": "growth-choice-3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "相同增长率下，各期新增的绝对金额怎样变化？",
+          "score": 2,
+          "solution": "C",
+          "explanation": "利息继续计入本金，基数扩大，所以增加额逐期扩大。",
+          "source": {
+            "materialId": "material-growth",
+            "blockId": "growth-intro",
+            "page": 1,
+            "title": "复利递推",
+            "exact": "账户初始有 100 元，每期增长 10%，不取出利息。第一期后是 110 元，第二期增长的基础变成了 110 元，因此增加 11 元。第三期再以121元为基础，增加12.1元；增长率相同，增长金额随基数扩大。"
+          },
+          "chapter": "复利递推",
+          "tags": [
+            "复利"
+          ],
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "保持相同"
+            },
+            {
+              "id": "B",
+              "text": "逐期减少"
+            },
+            {
+              "id": "C",
+              "text": "随基数扩大"
+            },
+            {
+              "id": "D",
+              "text": "只取决于初始值"
+            }
+          ]
+        },
+        {
+          "id": "growth-choice-4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "下列哪项符合笔记中恒定增长率公式的使用条件？",
+          "score": 2,
+          "solution": "D",
+          "explanation": "公式以每期增长率恒定、利息继续计入本金、没有额外存取为条件。",
+          "source": {
+            "materialId": "material-growth",
+            "blockId": "growth-bound",
+            "page": 2,
+            "title": "模型条件",
+            "exact": "公式按每期增长率恒定、增长继续计入本金、期间没有额外存入或取出计算。若三期增长率分别为10%、5%、8%，终值按各期因子相乘：100 × 1.10 × 1.05 × 1.08 = 124.74。"
+          },
+          "chapter": "复利递推",
+          "tags": [
+            "复利"
+          ],
+          "difficulty": "easy",
+          "options": [
+            {
+              "id": "A",
+              "text": "每期可以额外取出资金"
+            },
+            {
+              "id": "B",
+              "text": "各期增长率可以随意变化"
+            },
+            {
+              "id": "C",
+              "text": "利息每期全部取出"
+            },
+            {
+              "id": "D",
+              "text": "利息继续计入本金且无额外存取"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-growth-blank",
+      "title": "填空题",
+      "instructions": "在横线上填写计算结果。",
+      "score": 5,
+      "questions": [
+        {
+          "id": "growth-blank-5",
+          "number": 5,
+          "type": "blank",
+          "prompt": "三期增长率依次为 10%、5%、8%，初始值为 100 元，终值为 ______ 元。",
+          "score": 5,
+          "solution": [
+            "124.74"
+          ],
+          "explanation": "各期因子相乘：$100\\times1.10\\times1.05\\times1.08=124.74$ 元。",
+          "source": {
+            "materialId": "material-growth",
+            "blockId": "growth-bound",
+            "page": 2,
+            "title": "模型条件",
+            "exact": "公式按每期增长率恒定、增长继续计入本金、期间没有额外存入或取出计算。若三期增长率分别为10%、5%、8%，终值按各期因子相乘：100 × 1.10 × 1.05 × 1.08 = 124.74。"
+          },
+          "chapter": "复利递推",
+          "tags": [
+            "复利"
+          ],
+          "difficulty": "medium"
+        }
+      ]
+    },
+    {
+      "id": "section-growth-response",
+      "title": "解答题",
+      "instructions": "写出计算过程，并说明理由。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "growth-response-6",
+          "number": 6,
+          "type": "response",
+          "prompt": "结合笔记中第一期和第二期的余额，解释为什么相同增长率下，第二期的增长金额大于第一期；写出两期余额及新增利息。",
+          "score": 10,
+          "solution": "第一期余额 110 元，新增利息 10 元；第二期余额 121 元，新增利息 11 元。第二期以包含前一期利息的 110 元为基数，增长率仍为 10%，所以新增金额更大。",
+          "explanation": "参考评分：两期余额正确各 2 分，两期利息正确各 1 分，说明利息计入本金、基数扩大共 4 分。主观题由学习者对照要点自评。",
+          "source": {
+            "materialId": "material-growth",
+            "blockId": "growth-intro",
+            "page": 1,
+            "title": "复利递推",
+            "exact": "账户初始有 100 元，每期增长 10%，不取出利息。第一期后是 110 元，第二期增长的基础变成了 110 元，因此增加 11 元。第三期再以121元为基础，增加12.1元；增长率相同，增长金额随基数扩大。"
+          },
+          "chapter": "复利递推",
+          "tags": [
+            "复利"
+          ],
+          "difficulty": "medium"
+        }
+      ]
+    }
+  ]
+}

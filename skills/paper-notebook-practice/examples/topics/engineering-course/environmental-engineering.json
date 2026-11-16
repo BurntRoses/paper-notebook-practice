@@ -1,0 +1,874 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "environmental-engineering-course-01",
+  "notebookId": "environmental-engineering-source",
+  "notebookRevision": 1,
+  "title": "环境工程过程与系统分析课程考试",
+  "subject": "环境工程过程与系统分析",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "环境工程过程与系统分析课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "environmental-engineering-scope",
+      "title": "MIT 1.85 Water and Wastewater Treatment Engineering",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/1-85-water-and-wastewater-treatment-engineering-spring-2006/",
+      "text": "including sedimentation, filtration, biological treatment, disinfection, and sludge processing.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2006",
+        "accessedAt": "2026-11-16",
+        "url": "https://ocw.mit.edu/courses/1-85-water-and-wastewater-treatment-engineering-spring-2006/"
+      }
+    },
+    {
+      "id": "environmental-engineering-q1-statement",
+      "title": "环境工程过程与系统分析第1题命题原稿",
+      "kind": "question-bank",
+      "text": "河水流量2.0 m³/s、某保守污染物浓度10 mg/L；废水以0.20 m³/s、200 mg/L排入。假设瞬时完全混合，无损失。（1）求混合后浓度和日负荷；（2）混合水进入具有6 h名义停留时间的等容积调节池，求所需水容积；（3）如果取浓度算术平均105 mg/L，指出错误；（4）名义停留时间是否保证每一个水团恰好停留6 h？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "environmental-engineering-q2-statement",
+      "title": "环境工程过程与系统分析第2题命题原稿",
+      "kind": "question-bank",
+      "text": "理想矩形水平沉淀池处理Q=240 m³/h，表面积A=240 m²。悬浮固体分三类，质量分数0.20、0.50、0.30，沉速分别0.4、0.8、1.5 m/h。入口竖向浓度均匀，颗粒独立沉降，忽略絮凝。单组理想去除率为min(1,v/v0)，v0=Q/A。（1）求总去除率；（2）增大面积但保持Q，使去除率≥90%，求最小面积；（3）解释增大池深但面积不变是否改变该理想模型的去除率。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "environmental-engineering-q3-statement",
+      "title": "环境工程过程与系统分析第3题命题原稿",
+      "kind": "question-bank",
+      "text": "题给20°C条件下一阶BOD模型$BOD_t=L_0(1-e^{-kt})$，k=0.23 d⁻¹（自然指数基准），实测BOD5=200 mg/L。（1）求最终需氧量L0与第3天已消耗需氧量；（2）求5天后剩余需氧量；（3）达到最终量90%需要多久；（4）若改写为$L_0(1-10^{-k_{10}t})$，求k10，不能直接沿用0.23。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "environmental-engineering-q4-statement",
+      "title": "环境工程过程与系统分析第4题命题原稿",
+      "kind": "question-bank",
+      "text": "稳态生物处理系统，底物净去除200 kg/d，观测前的真实产率Y=0.50 kg固体/kg底物，衰减常数kd=0.05 d⁻¹，目标污泥龄θc=10 d。忽略进水固体及出水固体，排泥流失是唯一固体外排，池内固体总量M，完全混合固体浓度3.0 kg/m³，处理水量1000 m³/d。（1）由固体衡算求M、每日排泥干固体和池容；（2）求名义水力停留时间；（3）若错用θc=V/Q，解释为何把两类停留时间混淆。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "environmental-engineering-q5-statement",
+      "title": "环境工程过程与系统分析第5题命题原稿",
+      "kind": "question-bank",
+      "text": "实验室完全混合微生物悬液消毒，残余剂浓度$C(t)=2e^{-0.02t}$ mg/L，t以min计；实验拟合的十进制灭活关系$\\log_{10}(N_0/N)=0.10\\int_0^t C(u)du$。这只是本题实验模型，不引用饮用水规范。（1）30 min时求浓度、实际CT积分和灭活log数；（2）按该模型达到4-log需多久；（3）比较直接用初始浓度×时间的偏差，说明它能否直接证明真实装置全部水流都达标。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "environmental-engineering-q6-statement",
+      "title": "环境工程过程与系统分析第6题命题原稿",
+      "kind": "question-bank",
+      "text": "1000 L水初始污染物浓度50 mg/L，加入1000 g全新吸附剂，达到平衡；忽略水量变化、其他去除及初始吸附量。平衡等温式$q=100(0.1C)/(1+0.1C)$，C为mg/L、q为mg/g。（1）联立吸附和水相质量衡算求平衡C、q；（2）求去除率；（3）若目标出水C≤5 mg/L，求平衡模型的最小吸附剂用量；（4）解释最小平衡量能否直接作为流动床更换周期。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "environmental-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "environmental-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "河水流量2.0 m³/s、某保守污染物浓度10 mg/L；废水以0.20 m³/s、200 mg/L排入。假设瞬时完全混合，无损失。（1）求混合后浓度和日负荷；（2）混合水进入具有6 h名义停留时间的等容积调节池，求所需水容积；（3）如果取浓度算术平均105 mg/L，指出错误；（4）名义停留时间是否保证每一个水团恰好停留6 h？",
+          "score": 15,
+          "solution": "混合浓度$C=(2\\times10+0.2\\times200)/2.2=300/11=27.272727$ mg/L；总负荷5184 kg/d。池容2.2×6×3600=47520 m³。",
+          "explanation": "先按Q×C计算质量流率，因1 mg/L=1 g/m³，总60 g/s，乘86400再除1000得到kg/d。等量水流才可简单算术平均。停留时间V/Q为整体名义量，完全混合池出水具有停留时间分布；即使体积正确，也不代表每个水团的实际停留时间相同。",
+          "source": {
+            "materialId": "environmental-engineering-q1-statement",
+            "blockId": "environmental-engineering-q1-statement",
+            "exact": "河水流量2.0 m³/s、某保守污染物浓度10 mg/L；废水以0.20 m³/s、200 mg/L排入。假设瞬时完全混合，无损失。（1）求混合后浓度和日负荷；（2）混合水进入具有6 h名义停留时间的等容积调节池，求所需水容积；（3）如果取浓度算术平均105 mg/L，指出错误；（4）名义停留时间是否保证每一个水团恰好停留6 h？"
+          },
+          "chapter": "污染物混合、负荷与质量基准",
+          "tags": [
+            "环境工程过程与系统分析",
+            "污染物混合、负荷与质量基准",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "污染物混合、负荷与质量基准"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "environmental-engineering-scope",
+                "blockId": "environmental-engineering-scope",
+                "exact": "including sedimentation, filtration, biological treatment, disinfection, and sludge processing."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "按流量加权并换算浓度正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "environmental-engineering-q1-statement",
+                    "blockId": "environmental-engineering-q1-statement",
+                    "exact": "河水流量2.0 m³/s、某保守污染物浓度10 mg/L；废水以0.20 m³/s、200 mg/L排入。假设瞬时完全混合，无损失。（1）求混合后浓度和日负荷；（2）混合水进入具有6 h名义停留时间的等容积调节池，求所需水容积；（3）如果取浓度算术平均105 mg/L，指出错误；（4）名义停留时间是否保证每一个水团恰好停留6 h？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "质量流率及日负荷正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "池容及时间单位正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "平均错误和停留分布解释正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q1 conservative mass",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q1 conservative mass\", \"actual\": 60.00000000000001, \"expected\": 60.0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q1 daily load",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q1 daily load\", \"actual\": 5184.0, \"expected\": 5184, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q1 hydraulic time",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q1 hydraulic time\", \"actual\": 6.0, \"expected\": 6, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "environmental-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "理想矩形水平沉淀池处理Q=240 m³/h，表面积A=240 m²。悬浮固体分三类，质量分数0.20、0.50、0.30，沉速分别0.4、0.8、1.5 m/h。入口竖向浓度均匀，颗粒独立沉降，忽略絮凝。单组理想去除率为min(1,v/v0)，v0=Q/A。（1）求总去除率；（2）增大面积但保持Q，使去除率≥90%，求最小面积；（3）解释增大池深但面积不变是否改变该理想模型的去除率。",
+          "score": 15,
+          "solution": "初始v0=1 m/h，总去除率0.2×0.4+0.5×0.8+0.3×1=0.78。达到90%的边界v0=0.8 m/h，最小面积300 m²。仅加深不改变该理想模型的去除率。",
+          "explanation": "在0.4≤v0≤0.8区间，后两组全部去除，总率0.8+0.08/v0；令其为0.9得v0=0.8，与区间相容。对v0≥0.8，总率不高于0.9；对更小v0所需面积更大。深度同时改变可沉距离与停留时间，在理想水平流和均匀入流假设中相消，实际短流及污泥区则不由本式覆盖。",
+          "source": {
+            "materialId": "environmental-engineering-q2-statement",
+            "blockId": "environmental-engineering-q2-statement",
+            "exact": "理想矩形水平沉淀池处理Q=240 m³/h，表面积A=240 m²。悬浮固体分三类，质量分数0.20、0.50、0.30，沉速分别0.4、0.8、1.5 m/h。入口竖向浓度均匀，颗粒独立沉降，忽略絮凝。单组理想去除率为min(1,v/v0)，v0=Q/A。（1）求总去除率；（2）增大面积但保持Q，使去除率≥90%，求最小面积；（3）解释增大池深但面积不变是否改变该理想模型的去除率。"
+          },
+          "chapter": "理想沉淀池的粒径分组去除",
+          "tags": [
+            "环境工程过程与系统分析",
+            "理想沉淀池的粒径分组去除",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "理想沉淀池的粒径分组去除"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "environmental-engineering-scope",
+                "blockId": "environmental-engineering-scope",
+                "exact": "including sedimentation, filtration, biological treatment, disinfection, and sludge processing."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "表面负荷与分组去除正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "environmental-engineering-q2-statement",
+                    "blockId": "environmental-engineering-q2-statement",
+                    "exact": "理想矩形水平沉淀池处理Q=240 m³/h，表面积A=240 m²。悬浮固体分三类，质量分数0.20、0.50、0.30，沉速分别0.4、0.8、1.5 m/h。入口竖向浓度均匀，颗粒独立沉降，忽略絮凝。单组理想去除率为min(1,v/v0)，v0=Q/A。（1）求总去除率；（2）增大面积但保持Q，使去除率≥90%，求最小面积；（3）解释增大池深但面积不变是否改变该理想模型的去除率。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "分段边界与最小面积正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "面积/深度模型条件解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q2 initial removal",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q2 initial removal\", \"actual\": 0.78, \"expected\": 0.78, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q2 target boundary",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q2 target boundary\", \"actual\": 0.9, \"expected\": 0.9, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "environmental-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "题给20°C条件下一阶BOD模型$BOD_t=L_0(1-e^{-kt})$，k=0.23 d⁻¹（自然指数基准），实测BOD5=200 mg/L。（1）求最终需氧量L0与第3天已消耗需氧量；（2）求5天后剩余需氧量；（3）达到最终量90%需要多久；（4）若改写为$L_0(1-10^{-k_{10}t})$，求k10，不能直接沿用0.23。",
+          "score": 15,
+          "solution": "$L_0=292.670122$ mg/L，$BOD_3=145.873793$ mg/L。5天后剩余92.670122 mg/L；90%需时$\\ln10/0.23=10.011240$ d。$k_{10}=0.23/\\ln10=0.09988773$ d⁻¹。",
+          "explanation": "由实测点反求L0，剩余量为L0e⁻ᵏᵗ。两种底数应满足e⁻ᵏᵗ=10⁻ᵏ¹⁰ᵗ，故k=k10 ln10。BODt是到t时累计消耗量，不能与剩余需氧量混用，也不能把BOD5直接当作最终需氧量。",
+          "source": {
+            "materialId": "environmental-engineering-q3-statement",
+            "blockId": "environmental-engineering-q3-statement",
+            "exact": "题给20°C条件下一阶BOD模型$BOD_t=L_0(1-e^{-kt})$，k=0.23 d⁻¹（自然指数基准），实测BOD5=200 mg/L。（1）求最终需氧量L0与第3天已消耗需氧量；（2）求5天后剩余需氧量；（3）达到最终量90%需要多久；（4）若改写为$L_0(1-10^{-k_{10}t})$，求k10，不能直接沿用0.23。"
+          },
+          "chapter": "生化需氧量动力学与对数底",
+          "tags": [
+            "环境工程过程与系统分析",
+            "生化需氧量动力学与对数底",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "生化需氧量动力学与对数底"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "environmental-engineering-scope",
+                "blockId": "environmental-engineering-scope",
+                "exact": "including sedimentation, filtration, biological treatment, disinfection, and sludge processing."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "最终量/第三天量计算正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "environmental-engineering-q3-statement",
+                    "blockId": "environmental-engineering-q3-statement",
+                    "exact": "题给20°C条件下一阶BOD模型$BOD_t=L_0(1-e^{-kt})$，k=0.23 d⁻¹（自然指数基准），实测BOD5=200 mg/L。（1）求最终需氧量L0与第3天已消耗需氧量；（2）求5天后剩余需氧量；（3）达到最终量90%需要多久；（4）若改写为$L_0(1-10^{-k_{10}t})$，求k10，不能直接沿用0.23。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "剩余量与90%时间正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "两底数换算和量的定义正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q3 measured point",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q3 measured point\", \"actual\": 199.99999999999997, \"expected\": 200, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q3 logarithm conversion",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q3 logarithm conversion\", \"actual\": 0.3166367693790532, \"expected\": 0.31663676937905316, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "environmental-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "稳态生物处理系统，底物净去除200 kg/d，观测前的真实产率Y=0.50 kg固体/kg底物，衰减常数kd=0.05 d⁻¹，目标污泥龄θc=10 d。忽略进水固体及出水固体，排泥流失是唯一固体外排，池内固体总量M，完全混合固体浓度3.0 kg/m³，处理水量1000 m³/d。（1）由固体衡算求M、每日排泥干固体和池容；（2）求名义水力停留时间；（3）若错用θc=V/Q，解释为何把两类停留时间混淆。",
+          "score": 15,
+          "solution": "$YM_{removed}=k_dM+M/\\theta_c$，M=666.666667 kg；排泥66.666667 kg/d；池容222.222222 m³；HRT=0.222222 d=5.333333 h。",
+          "explanation": "总生成100 kg/d，衰减33.333333 kg/d，净外排66.666667 kg/d，三者闭合。污泥龄是系统固体库存/固体外排速率，水力停留时间是水容积/水流量；存在固液分离及回流时两者可以相差很大。题给产率为未扣内源衰减的Y，不能再当成已经扣减的表观产率重复解释。",
+          "source": {
+            "materialId": "environmental-engineering-q4-statement",
+            "blockId": "environmental-engineering-q4-statement",
+            "exact": "稳态生物处理系统，底物净去除200 kg/d，观测前的真实产率Y=0.50 kg固体/kg底物，衰减常数kd=0.05 d⁻¹，目标污泥龄θc=10 d。忽略进水固体及出水固体，排泥流失是唯一固体外排，池内固体总量M，完全混合固体浓度3.0 kg/m³，处理水量1000 m³/d。（1）由固体衡算求M、每日排泥干固体和池容；（2）求名义水力停留时间；（3）若错用θc=V/Q，解释为何把两类停留时间混淆。"
+          },
+          "chapter": "污泥龄与固体平衡",
+          "tags": [
+            "环境工程过程与系统分析",
+            "污泥龄与固体平衡",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "污泥龄与固体平衡"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "environmental-engineering-scope",
+                "blockId": "environmental-engineering-scope",
+                "exact": "including sedimentation, filtration, biological treatment, disinfection, and sludge processing."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "生成/衰减/外排衡算正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "environmental-engineering-q4-statement",
+                    "blockId": "environmental-engineering-q4-statement",
+                    "exact": "稳态生物处理系统，底物净去除200 kg/d，观测前的真实产率Y=0.50 kg固体/kg底物，衰减常数kd=0.05 d⁻¹，目标污泥龄θc=10 d。忽略进水固体及出水固体，排泥流失是唯一固体外排，池内固体总量M，完全混合固体浓度3.0 kg/m³，处理水量1000 m³/d。（1）由固体衡算求M、每日排泥干固体和池容；（2）求名义水力停留时间；（3）若错用θc=V/Q，解释为何把两类停留时间混淆。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "M、排泥与池容正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "HRT及两种停留时间解释正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q4 solid balance",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q4 solid balance\", \"actual\": 100.0, \"expected\": 100.0, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q4 HRT hours",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q4 HRT hours\", \"actual\": 5.333333333333334, \"expected\": 5.333333333333333, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "environmental-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "实验室完全混合微生物悬液消毒，残余剂浓度$C(t)=2e^{-0.02t}$ mg/L，t以min计；实验拟合的十进制灭活关系$\\log_{10}(N_0/N)=0.10\\int_0^t C(u)du$。这只是本题实验模型，不引用饮用水规范。（1）30 min时求浓度、实际CT积分和灭活log数；（2）按该模型达到4-log需多久；（3）比较直接用初始浓度×时间的偏差，说明它能否直接证明真实装置全部水流都达标。",
+          "score": 20,
+          "solution": "30 min浓度1.097623 mg/L，CT=$100(1-e^{-0.6})=45.118836$ mg·min/L，灭活4.511884 log。4-log对应CT=40，时间$-\\ln0.6/0.02=25.541281$ min。",
+          "explanation": "把随时间衰减的残余浓度逐时积分。初始浓度×30得到60而非45.118836，夸大接触积分；平均或末端浓度法只有另有依据时才可替代。实际流动装置还需停留时间分布、短流、微生物敏感性及工况验证，不能把单一批式拟合直接当成整个装置的通过证明。",
+          "source": {
+            "materialId": "environmental-engineering-q5-statement",
+            "blockId": "environmental-engineering-q5-statement",
+            "exact": "实验室完全混合微生物悬液消毒，残余剂浓度$C(t)=2e^{-0.02t}$ mg/L，t以min计；实验拟合的十进制灭活关系$\\log_{10}(N_0/N)=0.10\\int_0^t C(u)du$。这只是本题实验模型，不引用饮用水规范。（1）30 min时求浓度、实际CT积分和灭活log数；（2）按该模型达到4-log需多久；（3）比较直接用初始浓度×时间的偏差，说明它能否直接证明真实装置全部水流都达标。"
+          },
+          "chapter": "衰减消毒剂的接触积分",
+          "tags": [
+            "环境工程过程与系统分析",
+            "衰减消毒剂的接触积分",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "衰减消毒剂的接触积分"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "environmental-engineering-scope",
+                "blockId": "environmental-engineering-scope",
+                "exact": "including sedimentation, filtration, biological treatment, disinfection, and sludge processing."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "浓度积分与量纲正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "environmental-engineering-q5-statement",
+                    "blockId": "environmental-engineering-q5-statement",
+                    "exact": "实验室完全混合微生物悬液消毒，残余剂浓度$C(t)=2e^{-0.02t}$ mg/L，t以min计；实验拟合的十进制灭活关系$\\log_{10}(N_0/N)=0.10\\int_0^t C(u)du$。这只是本题实验模型，不引用饮用水规范。（1）30 min时求浓度、实际CT积分和灭活log数；（2）按该模型达到4-log需多久；（3）比较直接用初始浓度×时间的偏差，说明它能否直接证明真实装置全部水流都达标。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "30分钟三项结果正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "目标反求时间正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "错误近似及模型范围解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q5 target log",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q5 target log\", \"actual\": 4.0, \"expected\": 4, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q5 CT quadrature",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q5 CT quadrature\", \"actual\": 45.11883638382953, \"expected\": 45.11883639059736, \"tolerance\": 1e-07}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "environmental-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "1000 L水初始污染物浓度50 mg/L，加入1000 g全新吸附剂，达到平衡；忽略水量变化、其他去除及初始吸附量。平衡等温式$q=100(0.1C)/(1+0.1C)$，C为mg/L、q为mg/g。（1）联立吸附和水相质量衡算求平衡C、q；（2）求去除率；（3）若目标出水C≤5 mg/L，求平衡模型的最小吸附剂用量；（4）解释最小平衡量能否直接作为流动床更换周期。",
+          "score": 20,
+          "solution": "平衡方程$0.1C^2+6C-50=0$，非负根C=7.416574 mg/L，q=42.583426 mg/g；去除率85.166852%。目标5 mg/L时q=100/3 mg/g，最小量$1000(50-5)/(100/3)=1350$ g。",
+          "explanation": "液相损失V(C0−C)等于固相增量mq，求根后排除负浓度。目标浓度下降时平衡载量也随之下降，不能直接以最大容量100 mg/g除总需去除质量。流动床还受传质、竞争吸附、停留时间及突破曲线影响，平衡质量不能独自决定更换时点。",
+          "source": {
+            "materialId": "environmental-engineering-q6-statement",
+            "blockId": "environmental-engineering-q6-statement",
+            "exact": "1000 L水初始污染物浓度50 mg/L，加入1000 g全新吸附剂，达到平衡；忽略水量变化、其他去除及初始吸附量。平衡等温式$q=100(0.1C)/(1+0.1C)$，C为mg/L、q为mg/g。（1）联立吸附和水相质量衡算求平衡C、q；（2）求去除率；（3）若目标出水C≤5 mg/L，求平衡模型的最小吸附剂用量；（4）解释最小平衡量能否直接作为流动床更换周期。"
+          },
+          "chapter": "吸附平衡与用量衡算",
+          "tags": [
+            "环境工程过程与系统分析",
+            "吸附平衡与用量衡算",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "吸附平衡与用量衡算"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "environmental-engineering-scope",
+                "blockId": "environmental-engineering-scope",
+                "exact": "including sedimentation, filtration, biological treatment, disinfection, and sludge processing."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "等温式和总量方程正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "environmental-engineering-q6-statement",
+                    "blockId": "environmental-engineering-q6-statement",
+                    "exact": "1000 L水初始污染物浓度50 mg/L，加入1000 g全新吸附剂，达到平衡；忽略水量变化、其他去除及初始吸附量。平衡等温式$q=100(0.1C)/(1+0.1C)$，C为mg/L、q为mg/g。（1）联立吸附和水相质量衡算求平衡C、q；（2）求去除率；（3）若目标出水C≤5 mg/L，求平衡模型的最小吸附剂用量；（4）解释最小平衡量能否直接作为流动床更换周期。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "平衡根/载量及去除率正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "目标用量与可用容量正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "批式平衡与突破区别正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q6 total mass",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q6 total mass\", \"actual\": 50000.00000000001, \"expected\": 50000, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "environment-q6 target mass",
+                "result": "pass",
+                "evidence": "{\"label\": \"environment-q6 target mass\", \"actual\": 50000.0, \"expected\": 50000, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "environmental-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "environmental-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "environmental-engineering-q1",
+        "knowledge": "污染物混合、负荷与质量基准",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "environmental-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "environmental-engineering-q2",
+        "knowledge": "理想沉淀池的粒径分组去除",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "environmental-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "environmental-engineering-q3",
+        "knowledge": "生化需氧量动力学与对数底",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "environmental-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "environmental-engineering-q4",
+        "knowledge": "污泥龄与固体平衡",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "environmental-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "environmental-engineering-q5",
+        "knowledge": "衰减消毒剂的接触积分",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "environmental-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "environmental-engineering-q6",
+        "knowledge": "吸附平衡与用量衡算",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "environmental-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "environmental-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "environmental-engineering-course-blueprint",
+      "name": "环境工程过程与系统分析课程考试",
+      "subject": "环境工程过程与系统分析",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "environmental-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

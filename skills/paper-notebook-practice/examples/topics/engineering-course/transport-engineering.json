@@ -1,0 +1,843 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "transport-engineering-course-01",
+  "notebookId": "transport-engineering-source",
+  "notebookRevision": 1,
+  "title": "交通与道路工程课程考试",
+  "subject": "交通与道路工程",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "交通与道路工程课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "transport-engineering-scope",
+      "title": "MIT 2.003SC Engineering Dynamics",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/",
+      "text": "Newton's Laws, Vectors, and Reference Frames",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Fall 2011",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/"
+      }
+    },
+    {
+      "id": "transport-engineering-q1-statement",
+      "title": "交通与道路工程第1题命题原稿",
+      "kind": "question-bank",
+      "text": "汽车以72 km/h驶向障碍物，反应时间2.0 s，随后以恒定摩擦制动，题给路面纵向附着系数0.35，取g=9.81 m/s²。忽略空气阻力。（1）求平路停车距离；（2）在4%下坡上，按小坡角近似求停车距离；（3）现可用视距100 m，分别判断。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "transport-engineering-q2-statement",
+      "title": "交通与道路工程第2题命题原稿",
+      "kind": "question-bank",
+      "text": "道路设计车速60 km/h，超高横坡0.06，题给可用横向摩阻系数0.15。采用小坡角设计关系$R=v^2/[127(e+f)]$，v用km/h、R用m。（1）求所需最小半径；（2）现半径150 m时求所需摩阻并判断；（3）在该150 m曲线上把超高增至0.08，求同一摩阻上限下的速度上限。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "transport-engineering-q3-statement",
+      "title": "交通与道路工程第3题命题原稿",
+      "kind": "question-bank",
+      "text": "单车道交通流采用Greenshields模型$v=v_f(1-k/k_j)$，自由流速度90 km/h，堵塞密度150辆/km。（1）推导流量—密度关系与通行能力；（2）流量2700辆/h时求全部可能的密度和速度；（3）仅测得这一流量，能否判断车流为自由流还是拥挤流？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "transport-engineering-q4-statement",
+      "title": "交通与道路工程第4题命题原稿",
+      "kind": "question-bank",
+      "text": "两相位交叉口的关键车道流量分别600、450辆/h，相应饱和流率均1800辆/h。每周期总损失时间L=10 s。采用题给Webster式$C_0=(1.5L+5)/(1-Y)$，有效绿灯按关键流率比分配。（1）求Y与周期；（2）求两相位有效绿灯；（3）计算各相位能力及饱和度；（4）若实际周期取60 s而损失时间不变，重算有效绿灯。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "transport-engineering-q5-statement",
+      "title": "交通与道路工程第5题命题原稿",
+      "kind": "question-bank",
+      "text": "两个挖方区A、B可分别提供400、600 m³可用土，两个填方区C、D分别需500、500 m³；体积已统一为相同压实状态，无损耗。每m³运输费用为A→C 2元、A→D 7元、B→C 4元、B→D 3元。（1）建立运输分配模型；（2）求最小总费用及各流向土量；（3）若A→C道路限运300 m³，重新求最优解并解释新增成本。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "transport-engineering-q6-statement",
+      "title": "交通与道路工程第6题命题原稿",
+      "kind": "question-bank",
+      "text": "某简化路面材料的疲劳关系为$N=C\\varepsilon^{-4}$，应变以无量纲计。试验显示$\\varepsilon=200\\times10^{-6}$时允许次数$10^6$。使用Miner规则$D=\\sum n_i/N_i$，本题以D≤1作为合格。预计200微应变作用40万次、250微应变作用20万次。（1）求第二应变级允许次数；（2）求总损伤；（3）若加铺使两个应变级均降低10%，其他不变，重新评价，并说明该模型未处理的实际因素。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "transport-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "transport-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "汽车以72 km/h驶向障碍物，反应时间2.0 s，随后以恒定摩擦制动，题给路面纵向附着系数0.35，取g=9.81 m/s²。忽略空气阻力。（1）求平路停车距离；（2）在4%下坡上，按小坡角近似求停车距离；（3）现可用视距100 m，分别判断。",
+          "score": 15,
+          "solution": "速度20 m/s，反应距离40 m。平路制动距离58.249600 m，总距98.249600 m，满足100 m。下坡有效减速度$g(0.35-0.04)$，总距105.765677 m，不满足。",
+          "explanation": "坡面重力分量沿行驶方向，故下坡减小减速度。反应阶段按恒速计算，制动阶段用$v^2=2as$。若题目只给100 m，不能以平路结果代替下坡安全判断；附着系数是本题输入，不是所有路况的固定值。",
+          "source": {
+            "materialId": "transport-engineering-q1-statement",
+            "blockId": "transport-engineering-q1-statement",
+            "exact": "汽车以72 km/h驶向障碍物，反应时间2.0 s，随后以恒定摩擦制动，题给路面纵向附着系数0.35，取g=9.81 m/s²。忽略空气阻力。（1）求平路停车距离；（2）在4%下坡上，按小坡角近似求停车距离；（3）现可用视距100 m，分别判断。"
+          },
+          "chapter": "停车视距与坡度",
+          "tags": [
+            "交通与道路工程",
+            "停车视距与坡度",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "停车视距与坡度"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "transport-engineering-scope",
+                "blockId": "transport-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "速度换算及反应距离正确",
+                "points": 3,
+                "evidence": [
+                  {
+                    "materialId": "transport-engineering-q1-statement",
+                    "blockId": "transport-engineering-q1-statement",
+                    "exact": "汽车以72 km/h驶向障碍物，反应时间2.0 s，随后以恒定摩擦制动，题给路面纵向附着系数0.35，取g=9.81 m/s²。忽略空气阻力。（1）求平路停车距离；（2）在4%下坡上，按小坡角近似求停车距离；（3）现可用视距100 m，分别判断。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "平路制动与总距正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "下坡符号和总距正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "两种工况判定正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "transport-q1 work energy",
+                "result": "pass",
+                "evidence": "{\"label\": \"transport-q1 work energy\", \"actual\": 200.0, \"expected\": 200, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "transport-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "道路设计车速60 km/h，超高横坡0.06，题给可用横向摩阻系数0.15。采用小坡角设计关系$R=v^2/[127(e+f)]$，v用km/h、R用m。（1）求所需最小半径；（2）现半径150 m时求所需摩阻并判断；（3）在该150 m曲线上把超高增至0.08，求同一摩阻上限下的速度上限。",
+          "score": 15,
+          "solution": "最小半径134.983127 m；150 m曲线在60 km/h时所需$f=0.128976<0.15$。超高0.08时速度上限66.192900 km/h。",
+          "explanation": "先根据离心需求与超高、摩阻共同承担横向需求的近似式求解。已有半径时应反算摩阻而非只比较离心力。若摩阻或超高使理论速度提高，仍须核定视距、舒适性及其他设计要求，本题只检验给定横向平衡关系。",
+          "source": {
+            "materialId": "transport-engineering-q2-statement",
+            "blockId": "transport-engineering-q2-statement",
+            "exact": "道路设计车速60 km/h，超高横坡0.06，题给可用横向摩阻系数0.15。采用小坡角设计关系$R=v^2/[127(e+f)]$，v用km/h、R用m。（1）求所需最小半径；（2）现半径150 m时求所需摩阻并判断；（3）在该150 m曲线上把超高增至0.08，求同一摩阻上限下的速度上限。"
+          },
+          "chapter": "平曲线与横向平衡",
+          "tags": [
+            "交通与道路工程",
+            "平曲线与横向平衡",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "平曲线与横向平衡"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "transport-engineering-scope",
+                "blockId": "transport-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "公式单位及最小半径正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "transport-engineering-q2-statement",
+                    "blockId": "transport-engineering-q2-statement",
+                    "exact": "道路设计车速60 km/h，超高横坡0.06，题给可用横向摩阻系数0.15。采用小坡角设计关系$R=v^2/[127(e+f)]$，v用km/h、R用m。（1）求所需最小半径；（2）现半径150 m时求所需摩阻并判断；（3）在该150 m曲线上把超高增至0.08，求同一摩阻上限下的速度上限。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "反算摩阻并比较正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "改变超高后的速度上限正确",
+                "points": 5
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "transport-q2 reverse radius",
+                "result": "pass",
+                "evidence": "{\"label\": \"transport-q2 reverse radius\", \"actual\": 134.98312710911136, \"expected\": 134.98312710911136, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "transport-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "单车道交通流采用Greenshields模型$v=v_f(1-k/k_j)$，自由流速度90 km/h，堵塞密度150辆/km。（1）推导流量—密度关系与通行能力；（2）流量2700辆/h时求全部可能的密度和速度；（3）仅测得这一流量，能否判断车流为自由流还是拥挤流？",
+          "score": 15,
+          "solution": "$q=90k(1-k/150)$；能力3375辆/h，对应密度75辆/km、速度45 km/h。q=2700时密度$75\\pm15\\sqrt5$，即41.458980、108.541020辆/km；速度65.124612、24.875388 km/h。不能仅凭流量区分。",
+          "explanation": "对q(k)求导得临界密度$k_j/2$。目标流量化为$k^2-150k+4500=0$，存在两个物理根，分别位于临界密度两侧。需要车速、占有率或密度等额外测量识别支路，不能机械舍去较大的根。",
+          "source": {
+            "materialId": "transport-engineering-q3-statement",
+            "blockId": "transport-engineering-q3-statement",
+            "exact": "单车道交通流采用Greenshields模型$v=v_f(1-k/k_j)$，自由流速度90 km/h，堵塞密度150辆/km。（1）推导流量—密度关系与通行能力；（2）流量2700辆/h时求全部可能的密度和速度；（3）仅测得这一流量，能否判断车流为自由流还是拥挤流？"
+          },
+          "chapter": "交通流基本图",
+          "tags": [
+            "交通与道路工程",
+            "交通流基本图",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "交通流基本图"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "transport-engineering-scope",
+                "blockId": "transport-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "流量函数与能力求导正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "transport-engineering-q3-statement",
+                    "blockId": "transport-engineering-q3-statement",
+                    "exact": "单车道交通流采用Greenshields模型$v=v_f(1-k/k_j)$，自由流速度90 km/h，堵塞密度150辆/km。（1）推导流量—密度关系与通行能力；（2）流量2700辆/h时求全部可能的密度和速度；（3）仅测得这一流量，能否判断车流为自由流还是拥挤流？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两个密度根及速度正确",
+                "points": 6
+              },
+              {
+                "id": "step-3",
+                "description": "解释两根物理意义和测量需求",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "transport-q3 two flow roots",
+                "result": "pass",
+                "evidence": "{\"label\": \"transport-q3 two flow roots\", \"actual\": [2699.9999999999995, 2699.9999999999995], \"expected\": [2700, 2700], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "transport-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "两相位交叉口的关键车道流量分别600、450辆/h，相应饱和流率均1800辆/h。每周期总损失时间L=10 s。采用题给Webster式$C_0=(1.5L+5)/(1-Y)$，有效绿灯按关键流率比分配。（1）求Y与周期；（2）求两相位有效绿灯；（3）计算各相位能力及饱和度；（4）若实际周期取60 s而损失时间不变，重算有效绿灯。",
+          "score": 15,
+          "solution": "$Y=7/12$，理论周期48 s，有效绿灯总长38 s；$g_1=152/7=21.714286$ s、$g_2=114/7=16.285714$ s。能力分别814.285714、610.714286辆/h，饱和度均14/19=0.736842。60 s周期时绿灯分别200/7=28.571429、150/7=21.428571 s。",
+          "explanation": "关键流率比为1/3、1/4，以其比例4∶3分配C−L。能力$c_i=s_i g_i/C$。相同绿信比分配原则下两相位饱和度相等；有效绿灯不等于每相位显示绿灯，不能在缺少起步和清空细项时自行声称具体显示配时。",
+          "source": {
+            "materialId": "transport-engineering-q4-statement",
+            "blockId": "transport-engineering-q4-statement",
+            "exact": "两相位交叉口的关键车道流量分别600、450辆/h，相应饱和流率均1800辆/h。每周期总损失时间L=10 s。采用题给Webster式$C_0=(1.5L+5)/(1-Y)$，有效绿灯按关键流率比分配。（1）求Y与周期；（2）求两相位有效绿灯；（3）计算各相位能力及饱和度；（4）若实际周期取60 s而损失时间不变，重算有效绿灯。"
+          },
+          "chapter": "信号配时与饱和度",
+          "tags": [
+            "交通与道路工程",
+            "信号配时与饱和度",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "信号配时与饱和度"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "transport-engineering-scope",
+                "blockId": "transport-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "关键流率比、Y及周期正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "transport-engineering-q4-statement",
+                    "blockId": "transport-engineering-q4-statement",
+                    "exact": "两相位交叉口的关键车道流量分别600、450辆/h，相应饱和流率均1800辆/h。每周期总损失时间L=10 s。采用题给Webster式$C_0=(1.5L+5)/(1-Y)$，有效绿灯按关键流率比分配。（1）求Y与周期；（2）求两相位有效绿灯；（3）计算各相位能力及饱和度；（4）若实际周期取60 s而损失时间不变，重算有效绿灯。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "绿灯分配正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "能力与饱和度正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "新周期重算及有效/显示区别正确",
+                "points": 3
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "transport-q4 effective greens",
+                "result": "pass",
+                "evidence": "{\"label\": \"transport-q4 effective greens\", \"actual\": [38.0, 50.0], \"expected\": [38, 50], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "transport-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "两个挖方区A、B可分别提供400、600 m³可用土，两个填方区C、D分别需500、500 m³；体积已统一为相同压实状态，无损耗。每m³运输费用为A→C 2元、A→D 7元、B→C 4元、B→D 3元。（1）建立运输分配模型；（2）求最小总费用及各流向土量；（3）若A→C道路限运300 m³，重新求最优解并解释新增成本。",
+          "score": 20,
+          "solution": "原最优A→C400、A→D0、B→C100、B→D500 m³，费用2700元。限运后A→C300、A→D100、B→C200、B→D400 m³，费用3300元，增加600元。",
+          "explanation": "设x为A→C，流量平衡使其余三项为400−x、500−x、100+x，0≤x≤400。总费用$2x+7(400-x)+4(500-x)+3(100+x)=5100-6x$，随x增大而减小。约束上限改为300后取x=300；每减少1 m³该通道流量，成对调配代价增加6元。",
+          "source": {
+            "materialId": "transport-engineering-q5-statement",
+            "blockId": "transport-engineering-q5-statement",
+            "exact": "两个挖方区A、B可分别提供400、600 m³可用土，两个填方区C、D分别需500、500 m³；体积已统一为相同压实状态，无损耗。每m³运输费用为A→C 2元、A→D 7元、B→C 4元、B→D 3元。（1）建立运输分配模型；（2）求最小总费用及各流向土量；（3）若A→C道路限运300 m³，重新求最优解并解释新增成本。"
+          },
+          "chapter": "路基土方调配与最优流向",
+          "tags": [
+            "交通与道路工程",
+            "路基土方调配与最优流向",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "路基土方调配与最优流向"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "transport-engineering-scope",
+                "blockId": "transport-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "供应、需求平衡与变量界限正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "transport-engineering-q5-statement",
+                    "blockId": "transport-engineering-q5-statement",
+                    "exact": "两个挖方区A、B可分别提供400、600 m³可用土，两个填方区C、D分别需500、500 m³；体积已统一为相同压实状态，无损耗。每m³运输费用为A→C 2元、A→D 7元、B→C 4元、B→D 3元。（1）建立运输分配模型；（2）求最小总费用及各流向土量；（3）若A→C道路限运300 m³，重新求最优解并解释新增成本。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "化为一变量成本函数正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "两种最优流向和费用正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "边际成本解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "transport-q5 exhaustive original minimum",
+                "result": "pass",
+                "evidence": "{\"label\": \"transport-q5 exhaustive original minimum\", \"actual\": 2700, \"expected\": 2700, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "transport-q5 restricted minimum",
+                "result": "pass",
+                "evidence": "{\"label\": \"transport-q5 restricted minimum\", \"actual\": 3300, \"expected\": 3300, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "transport-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "某简化路面材料的疲劳关系为$N=C\\varepsilon^{-4}$，应变以无量纲计。试验显示$\\varepsilon=200\\times10^{-6}$时允许次数$10^6$。使用Miner规则$D=\\sum n_i/N_i$，本题以D≤1作为合格。预计200微应变作用40万次、250微应变作用20万次。（1）求第二应变级允许次数；（2）求总损伤；（3）若加铺使两个应变级均降低10%，其他不变，重新评价，并说明该模型未处理的实际因素。",
+          "score": 20,
+          "solution": "250微应变允许409600次；原损伤$D=0.4+200000/409600=0.88828125$，满足题给条件。应变全降10%后，损伤乘0.9⁴，得0.582801328125。",
+          "explanation": "同一材料C不变，$N_2/N_1=(200/250)^4$。降低应变使允许次数增大为原来的$1/0.9^4$，所以每项损伤按0.9⁴减小。Miner线性累积忽略荷载顺序、材料老化及温湿度等效应；不能把此练习参数说成所有路面材料的通用寿命常数。",
+          "source": {
+            "materialId": "transport-engineering-q6-statement",
+            "blockId": "transport-engineering-q6-statement",
+            "exact": "某简化路面材料的疲劳关系为$N=C\\varepsilon^{-4}$，应变以无量纲计。试验显示$\\varepsilon=200\\times10^{-6}$时允许次数$10^6$。使用Miner规则$D=\\sum n_i/N_i$，本题以D≤1作为合格。预计200微应变作用40万次、250微应变作用20万次。（1）求第二应变级允许次数；（2）求总损伤；（3）若加铺使两个应变级均降低10%，其他不变，重新评价，并说明该模型未处理的实际因素。"
+          },
+          "chapter": "路面疲劳累计损伤与方案比较",
+          "tags": [
+            "交通与道路工程",
+            "路面疲劳累计损伤与方案比较",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "路面疲劳累计损伤与方案比较"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "transport-engineering-scope",
+                "blockId": "transport-engineering-scope",
+                "exact": "Newton's Laws, Vectors, and Reference Frames"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "疲劳比例与第二允许次数正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "transport-engineering-q6-statement",
+                    "blockId": "transport-engineering-q6-statement",
+                    "exact": "某简化路面材料的疲劳关系为$N=C\\varepsilon^{-4}$，应变以无量纲计。试验显示$\\varepsilon=200\\times10^{-6}$时允许次数$10^6$。使用Miner规则$D=\\sum n_i/N_i$，本题以D≤1作为合格。预计200微应变作用40万次、250微应变作用20万次。（1）求第二应变级允许次数；（2）求总损伤；（3）若加铺使两个应变级均降低10%，其他不变，重新评价，并说明该模型未处理的实际因素。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "分级损伤和总损伤正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "加铺比例及新损伤正确",
+                "points": 6
+              },
+              {
+                "id": "step-4",
+                "description": "实际适用条件解释具体",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "transport-q6 original and improved damage",
+                "result": "pass",
+                "evidence": "{\"label\": \"transport-q6 original and improved damage\", \"actual\": [0.88828125, 0.5828013281250001], \"expected\": [0.88828125, 0.582801328125], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "transport-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "transport-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "transport-engineering-q1",
+        "knowledge": "停车视距与坡度",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "transport-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "transport-engineering-q2",
+        "knowledge": "平曲线与横向平衡",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "transport-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "transport-engineering-q3",
+        "knowledge": "交通流基本图",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "transport-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "transport-engineering-q4",
+        "knowledge": "信号配时与饱和度",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "transport-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "transport-engineering-q5",
+        "knowledge": "路基土方调配与最优流向",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "transport-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "transport-engineering-q6",
+        "knowledge": "路面疲劳累计损伤与方案比较",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "transport-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "transport-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "transport-engineering-course-blueprint",
+      "name": "交通与道路工程课程考试",
+      "subject": "交通与道路工程",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "transport-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

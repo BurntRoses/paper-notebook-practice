@@ -1,0 +1,252 @@
+{
+  "schemaVersion": "1.0.0",
+  "method": "Actual first physical page from buildPracticeHtml({preview:true}), Chromium screenshot, local browser canvas downsample",
+  "exampleLicense": "MIT",
+  "thumbnailMap": "src/practice/template-thumbnails.json",
+  "captureScript": "tools/capture-practice-templates.mjs",
+  "width": 400,
+  "totalPngBytes": 601270,
+  "mappingBytes": 802238,
+  "rendererSources": {
+    "src/practice/paper.ts": "62904e9957869d630499395bbd0a137fd9cf033372664a7da56e3021691625be",
+    "src/practice/paper.css": "947c445e76478795c3bda9c763a85ee2df5f8764b82d75aa3b179dbdff7efcd7",
+    "src/practice/session.ts": "59789acf07fdbb5f626712a00bbe25b572e4bade1a1791effd4ace486dd005c1",
+    "src/practice/templates.ts": "fed98f2724633d3583e8d4b3555914f00bf917c883cc69ccba1bc064354efb37",
+    "tools/fixtures/practice-template-previews.mjs": "ecead578759638ac3137c74d0ecbba1cc3bec6d469045f13116ee842824f6e44"
+  },
+  "networkRequests": [],
+  "pageErrors": [],
+  "files": [
+    {
+      "id": "standard",
+      "name": "通用学科试卷",
+      "title": "运动与能量 · 单元练习",
+      "subject": "物理",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 49900,
+      "sha256": "4977917eb8184307a8a02ad9c7634f268cf89f57e2ef4013e870303a194a2726",
+      "pages": 2,
+      "questionTypes": [
+        "choice",
+        "blank",
+        "response"
+      ],
+      "capture": "output/practice-template-captures/standard.png"
+    },
+    {
+      "id": "gaokao-math",
+      "name": "高考 · 数学",
+      "title": "2024 年普通高等学校招生全国统一考试（新课标Ⅰ卷）",
+      "subject": "数学",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 57621,
+      "sha256": "dc8396a4ae437771a8d68361af33173bfe5e273f93c4652d29385b4367ef0043",
+      "pages": 3,
+      "questionTypes": [
+        "choice",
+        "multiple",
+        "blank",
+        "response"
+      ],
+      "capture": "output/practice-template-captures/gaokao-math.png"
+    },
+    {
+      "id": "gaokao-chinese",
+      "name": "高考 · 语文",
+      "title": "普通高等学校招生考试 · 语文练习卷",
+      "subject": "语文",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 53666,
+      "sha256": "72dd4386e4460b792216b02b306e30277d13e7b6572f7094a41293962099e544",
+      "pages": 4,
+      "questionTypes": [
+        "response"
+      ],
+      "capture": "output/practice-template-captures/gaokao-chinese.png"
+    },
+    {
+      "id": "university-a4",
+      "name": "大学期末 · A4",
+      "title": "2026—2027 学年第一学期课程考核",
+      "subject": "高等数学",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 51173,
+      "sha256": "3e7b98664394c817d100c8c3f45e3be4d78900e0173ebf615c54e62f1b3791f5",
+      "pages": 3,
+      "questionTypes": [
+        "choice",
+        "response"
+      ],
+      "capture": "output/practice-template-captures/university-a4.png"
+    },
+    {
+      "id": "university-a3",
+      "name": "大学期末 · A3 双栏",
+      "title": "2026—2027 学年第一学期期末考试",
+      "subject": "高等数学",
+      "paper": "A3",
+      "orientation": "landscape",
+      "columns": 2,
+      "width": 400,
+      "height": 283,
+      "bytes": 30015,
+      "sha256": "b4aa138f81df52d2d11305a9412f3461a3819e460d36167b7495289cee39cf50",
+      "pages": 2,
+      "questionTypes": [
+        "choice",
+        "response"
+      ],
+      "capture": "output/practice-template-captures/university-a3.png"
+    },
+    {
+      "id": "cpa-accounting",
+      "name": "CPA · 会计练习",
+      "title": "注册会计师 · 会计专项练习",
+      "subject": "会计",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 53235,
+      "sha256": "7eba75d091fac5ff04377f9bb9776dc46054a4b3f358d57b2b029c7ccdbcf993",
+      "pages": 3,
+      "questionTypes": [
+        "choice",
+        "multiple",
+        "response"
+      ],
+      "capture": "output/practice-template-captures/cpa-accounting.png"
+    },
+    {
+      "id": "cpa-audit",
+      "name": "CPA · 审计案例",
+      "title": "注册会计师 · 审计案例练习",
+      "subject": "审计",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 46104,
+      "sha256": "8429407bb5c038997b00e72c1434752a0f62be8ad7add8dbbdb107d7fceca883",
+      "pages": 3,
+      "questionTypes": [
+        "choice",
+        "multiple",
+        "response"
+      ],
+      "capture": "output/practice-template-captures/cpa-audit.png"
+    },
+    {
+      "id": "ncre-python",
+      "name": "计算机二级 · Python",
+      "title": "全国计算机等级考试二级 · Python 练习",
+      "subject": "Python 语言程序设计",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 45596,
+      "sha256": "0c4f6fc89a25eb4b047e85c29e28c023367b29ed9cbf0541da118a92c44fc501",
+      "pages": 3,
+      "questionTypes": [
+        "choice",
+        "task"
+      ],
+      "capture": "output/practice-template-captures/ncre-python.png"
+    },
+    {
+      "id": "ncre-office",
+      "name": "计算机二级 · Office",
+      "title": "全国计算机等级考试二级 · Office 练习",
+      "subject": "办公软件高级应用",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 43588,
+      "sha256": "279af6c265b3e129212ca583e1e7e69d08843cbfb93030e03c4613c691f00858",
+      "pages": 3,
+      "questionTypes": [
+        "choice",
+        "task"
+      ],
+      "capture": "output/practice-template-captures/ncre-office.png"
+    },
+    {
+      "id": "ielts-reading",
+      "name": "IELTS · Academic Reading",
+      "title": "Academic Reading",
+      "subject": "IELTS Reading",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 65981,
+      "sha256": "8a1241df1d3cfceb4830ca3db46d90083e1f594018831fd0ec8fd5917102c21b",
+      "pages": 3,
+      "questionTypes": [
+        "response",
+        "truefalse",
+        "choice"
+      ],
+      "capture": "output/practice-template-captures/ielts-reading.png"
+    },
+    {
+      "id": "ielts-writing",
+      "name": "IELTS · Academic Writing",
+      "title": "Academic Writing",
+      "subject": "IELTS Writing",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 45059,
+      "sha256": "ca9df1a9480f101aea93886be166e51b7cc18218867037beac45faf30be41751",
+      "pages": 4,
+      "questionTypes": [
+        "response"
+      ],
+      "capture": "output/practice-template-captures/ielts-writing.png"
+    },
+    {
+      "id": "civil-service",
+      "name": "通用能力 · 客观题",
+      "title": "通用能力测评 · 客观题练习",
+      "subject": "行政职业能力",
+      "paper": "A4",
+      "orientation": "portrait",
+      "columns": 1,
+      "width": 400,
+      "height": 566,
+      "bytes": 59332,
+      "sha256": "25b059c6320c7595e1dbb9a8714762ab1ca59e82396f8b8cee1938b86ebd9fff",
+      "pages": 2,
+      "questionTypes": [
+        "choice"
+      ],
+      "capture": "output/practice-template-captures/civil-service.png"
+    }
+  ]
+}

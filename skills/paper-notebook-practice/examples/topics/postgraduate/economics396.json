@@ -1,0 +1,5639 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "postgraduate-economics396-01",
+  "notebookId": "postgraduate-economics396",
+  "notebookRevision": 1,
+  "title": "硕士研究生入学考试 经济类综合能力（396）",
+  "subject": "经济类综合能力（396）",
+  "level": "考研",
+  "durationMinutes": 180,
+  "totalScore": 150,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "sealed": true
+  },
+  "presentation": {
+    "titleLines": [
+      "硕士研究生入学考试",
+      "经济类综合能力（396）"
+    ],
+    "candidateFields": [
+      "姓名",
+      "准考证号",
+      "报考单位"
+    ],
+    "notices": [
+      "请在答题卡规定区域作答，写在试题上的答案无效。",
+      "选择题每题只有一个正确选项；多项选择题按题目说明作答。"
+    ],
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "经济类综合能力（396）",
+      "rule": true
+    },
+    "footerTemplate": "经济类综合能力（396）　第 {page} 页",
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "university",
+      "candidateDigits": 15
+    },
+    "questionScores": "show",
+    "sectionDetails": true,
+    "projectMark": false
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "authoring": {
+    "routeId": "postgrad-economics-396",
+    "examName": "经济类综合能力（396）",
+    "requireVerification": true
+  },
+  "materials": [
+    {
+      "id": "economics-math-methods",
+      "title": "经济类数学方法核对（作者概述）",
+      "kind": "knowledge",
+      "text": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。",
+      "blocks": [
+        {
+          "id": "economics-math-methods-block",
+          "title": "经济类数学方法核对（作者概述）",
+          "text": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a8e9c80679964ff4aeed4e52550e1f5e8ffbcc9bda1c60b39ffe23417bf4dcc0"
+    },
+    {
+      "id": "postgraduate-economics396-01-q1-source",
+      "title": "原创命题记录 1",
+      "kind": "question-bank",
+      "text": "$\\lim_{x\\to0}\\sin(3x)/x$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q1-source-block",
+          "title": "原创命题记录 1",
+          "text": "$\\lim_{x\\to0}\\sin(3x)/x$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "11eabdfea07e9010c691565345d3a76261799368194a4cb05b746f893e8c1c85"
+    },
+    {
+      "id": "postgraduate-economics396-01-q2-source",
+      "title": "原创命题记录 2",
+      "kind": "question-bank",
+      "text": "$\\lim_{x\\to0}(e^x-1-x)/x^2$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q2-source-block",
+          "title": "原创命题记录 2",
+          "text": "$\\lim_{x\\to0}(e^x-1-x)/x^2$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "79ffd8999b17b1631f45f9b857aa609813ef8e33e124ff58dd2c6afa84615880"
+    },
+    {
+      "id": "postgraduate-economics396-01-q3-source",
+      "title": "原创命题记录 3",
+      "kind": "question-bank",
+      "text": "$f(x)=\\ln(1+x^2)$，则f'(1)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q3-source-block",
+          "title": "原创命题记录 3",
+          "text": "$f(x)=\\ln(1+x^2)$，则f'(1)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b0a03af7235564e2283338e6e5e992cc6f62fc53f63be4aeab8d1614c75ab124"
+    },
+    {
+      "id": "postgraduate-economics396-01-q4-source",
+      "title": "原创命题记录 4",
+      "kind": "question-bank",
+      "text": "$f(x)=x^3-3x$ 的极小值为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q4-source-block",
+          "title": "原创命题记录 4",
+          "text": "$f(x)=x^3-3x$ 的极小值为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "eb734d643d0b378e47d91990c0febcf20fee57f8fc9d06d13ae71dd3e5f7e0a8"
+    },
+    {
+      "id": "postgraduate-economics396-01-q5-source",
+      "title": "原创命题记录 5",
+      "kind": "question-bank",
+      "text": "$\\int_0^1(2x+1)dx$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q5-source-block",
+          "title": "原创命题记录 5",
+          "text": "$\\int_0^1(2x+1)dx$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "5dc96f6449d8188ce175e601b55b7deaebb8725dcccb26ed6e128d353dab358d"
+    },
+    {
+      "id": "postgraduate-economics396-01-q6-source",
+      "title": "原创命题记录 6",
+      "kind": "question-bank",
+      "text": "$\\int_0^1x e^{x^2}dx$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q6-source-block",
+          "title": "原创命题记录 6",
+          "text": "$\\int_0^1x e^{x^2}dx$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7c8817493e2753ab9e1ed47fdb8167063f47c51851e7c5fad506e57bbf6aaa60"
+    },
+    {
+      "id": "postgraduate-economics396-01-q7-source",
+      "title": "原创命题记录 7",
+      "kind": "question-bank",
+      "text": "$\\int_1^e1/x\\,dx$ 为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q7-source-block",
+          "title": "原创命题记录 7",
+          "text": "$\\int_1^e1/x\\,dx$ 为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "3e4b68d999fe6a1d97cec563b22c8be7054c67d4cfa76405316df7d563bdd5af"
+    },
+    {
+      "id": "postgraduate-economics396-01-q8-source",
+      "title": "原创命题记录 8",
+      "kind": "question-bank",
+      "text": "$z=x^2y+e^y$，在(1,0)处z_y为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q8-source-block",
+          "title": "原创命题记录 8",
+          "text": "$z=x^2y+e^y$，在(1,0)处z_y为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "0bb6ee94635173ec442dc56d7251281e0dfc7a2b95df506ed311e057e5fe08ae"
+    },
+    {
+      "id": "postgraduate-economics396-01-q9-source",
+      "title": "原创命题记录 9",
+      "kind": "question-bank",
+      "text": "$f(x,y)=x^2+y^2-2x-4y$ 的最小点为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q9-source-block",
+          "title": "原创命题记录 9",
+          "text": "$f(x,y)=x^2+y^2-2x-4y$ 的最小点为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "1c3291e3d50278a20bb5d2eb71809ba69d33873ddd8ece7825a0a634a7da1af0"
+    },
+    {
+      "id": "postgraduate-economics396-01-q10-source",
+      "title": "原创命题记录 10",
+      "kind": "question-bank",
+      "text": "一项连续现金流在0≤t≤1期间的流入速率为r(t)=2t（万元/年）。不计利息，该期间总流入为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q10-source-block",
+          "title": "原创命题记录 10",
+          "text": "一项连续现金流在0≤t≤1期间的流入速率为r(t)=2t（万元/年）。不计利息，该期间总流入为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "11acd19825937abf63ea39fa19012e87551c7d2ecd5e85ce1096d451113e77cb"
+    },
+    {
+      "id": "postgraduate-economics396-01-q11-source",
+      "title": "原创命题记录 11",
+      "kind": "question-bank",
+      "text": "曲线$x^2+xy+y^2=3$在点(1,1)处的切线斜率为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q11-source-block",
+          "title": "原创命题记录 11",
+          "text": "曲线$x^2+xy+y^2=3$在点(1,1)处的切线斜率为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "cfc5924a7abcf324f74772eae5fd34c4d5c02969ac2fe853f4a71b6d7227d146"
+    },
+    {
+      "id": "postgraduate-economics396-01-q12-source",
+      "title": "原创命题记录 12",
+      "kind": "question-bank",
+      "text": "产品利润$\\Pi(q)=80q-2q^2-100$，产量范围0≤q≤50。使利润最大的产量为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q12-source-block",
+          "title": "原创命题记录 12",
+          "text": "产品利润$\\Pi(q)=80q-2q^2-100$，产量范围0≤q≤50。使利润最大的产量为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "7971cf047a343f35ad0c6356659cb047f3b0023d14464af8042b5f9297bcb1e2"
+    },
+    {
+      "id": "postgraduate-economics396-01-q13-source",
+      "title": "原创命题记录 13",
+      "kind": "question-bank",
+      "text": "收入 $R(q)=100q-q^2$ 的边际收入在q=20时为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q13-source-block",
+          "title": "原创命题记录 13",
+          "text": "收入 $R(q)=100q-q^2$ 的边际收入在q=20时为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "74ce31dd20af9c085f19c73350f4fea16eb8c633fe2b78c516bef72b22848488"
+    },
+    {
+      "id": "postgraduate-economics396-01-q14-source",
+      "title": "原创命题记录 14",
+      "kind": "question-bank",
+      "text": "成本 $C(q)=q^2+16$，q>0，平均成本最低的q为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q14-source-block",
+          "title": "原创命题记录 14",
+          "text": "成本 $C(q)=q^2+16$，q>0，平均成本最低的q为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "9d66b2b88a131ffe2b137dd0f83c57a2e3cb1a6597fdce561ed80591b3ece3bd"
+    },
+    {
+      "id": "postgraduate-economics396-01-q15-source",
+      "title": "原创命题记录 15",
+      "kind": "question-bank",
+      "text": "需求函数$Q(p)=120-2p$，0<p<60。定义需求价格弹性$E(p)=-pQ'(p)/Q(p)$，则E(20)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q15-source-block",
+          "title": "原创命题记录 15",
+          "text": "需求函数$Q(p)=120-2p$，0<p<60。定义需求价格弹性$E(p)=-pQ'(p)/Q(p)$，则E(20)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a45689386fe4499300c6139c76796270c3ecbcc916b23cc58900ba029c4ba79d"
+    },
+    {
+      "id": "postgraduate-economics396-01-q16-source",
+      "title": "原创命题记录 16",
+      "kind": "question-bank",
+      "text": "矩阵 $\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的行列式为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q16-source-block",
+          "title": "原创命题记录 16",
+          "text": "矩阵 $\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的行列式为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "d961a52d573721bcbf4f5950c2e0f86541f7de914b9d7cb7f51fa86ee3b9c3c7"
+    },
+    {
+      "id": "postgraduate-economics396-01-q17-source",
+      "title": "原创命题记录 17",
+      "kind": "question-bank",
+      "text": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的秩为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q17-source-block",
+          "title": "原创命题记录 17",
+          "text": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的秩为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c3a940f1311386fa168a02fae79300ce9718979eb07855d87cc110047f316596"
+    },
+    {
+      "id": "postgraduate-economics396-01-q18-source",
+      "title": "原创命题记录 18",
+      "kind": "question-bank",
+      "text": "方程组$x+y=3$、$2x-y=0$的解(x,y)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q18-source-block",
+          "title": "原创命题记录 18",
+          "text": "方程组$x+y=3$、$2x-y=0$的解(x,y)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f4d6f94d918d041848062cc00f90e98d2f7a3825065c03705ec031ae6a9276fb"
+    },
+    {
+      "id": "postgraduate-economics396-01-q19-source",
+      "title": "原创命题记录 19",
+      "kind": "question-bank",
+      "text": "三元齐次方程组系数矩阵秩为1，其解空间维数为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q19-source-block",
+          "title": "原创命题记录 19",
+          "text": "三元齐次方程组系数矩阵秩为1，其解空间维数为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "b60c86f77a02a52671e5bb3ff12700be380ccf19e01b993d51ac81b61e5daa24"
+    },
+    {
+      "id": "postgraduate-economics396-01-q20-source",
+      "title": "原创命题记录 20",
+      "kind": "question-bank",
+      "text": "若二阶可逆矩阵A满足detA=3，则det(2A)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q20-source-block",
+          "title": "原创命题记录 20",
+          "text": "若二阶可逆矩阵A满足detA=3，则det(2A)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ac851d688b22476db851db355befebd79488a07e51c15b65f91891db6f9e2db3"
+    },
+    {
+      "id": "postgraduate-economics396-01-q21-source",
+      "title": "原创命题记录 21",
+      "kind": "question-bank",
+      "text": "$A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$、$B=\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}$，则AB为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q21-source-block",
+          "title": "原创命题记录 21",
+          "text": "$A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$、$B=\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}$，则AB为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "987ad49aa147c743ee8b31869c0e1c06fb99eef107a36675511fdfb2280293b3"
+    },
+    {
+      "id": "postgraduate-economics396-01-q22-source",
+      "title": "原创命题记录 22",
+      "kind": "question-bank",
+      "text": "$A=\\operatorname{diag}(2,3)$，$A^{-1}$ 的迹为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q22-source-block",
+          "title": "原创命题记录 22",
+          "text": "$A=\\operatorname{diag}(2,3)$，$A^{-1}$ 的迹为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "09171dd6618fdee32f70af4ae2534b305c3f7ca7d8e539a036b69bfebde96d12"
+    },
+    {
+      "id": "postgraduate-economics396-01-q23-source",
+      "title": "原创命题记录 23",
+      "kind": "question-bank",
+      "text": "向量(1,0,1)、(0,1,1)、(1,1,2)的秩为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q23-source-block",
+          "title": "原创命题记录 23",
+          "text": "向量(1,0,1)、(0,1,1)、(1,1,2)的秩为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "87935843256b57882ffb312dfdfef79e94ce34c61d04dc803c5692d532ec3f2e"
+    },
+    {
+      "id": "postgraduate-economics396-01-q24-source",
+      "title": "原创命题记录 24",
+      "kind": "question-bank",
+      "text": "$X\\sim B(4,1/2)$，P(X=2)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q24-source-block",
+          "title": "原创命题记录 24",
+          "text": "$X\\sim B(4,1/2)$，P(X=2)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "89c51fe925f8e5a720c8ed13d26363423840a0570bf3bfecb9545fa1d753b192"
+    },
+    {
+      "id": "postgraduate-economics396-01-q25-source",
+      "title": "原创命题记录 25",
+      "kind": "question-bank",
+      "text": "$X\\sim P(2)$，P(X=0)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q25-source-block",
+          "title": "原创命题记录 25",
+          "text": "$X\\sim P(2)$，P(X=0)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "cdb17a032c4974b2301228f8782c9be710d6bb448516243f654c3861d168c889"
+    },
+    {
+      "id": "postgraduate-economics396-01-q26-source",
+      "title": "原创命题记录 26",
+      "kind": "question-bank",
+      "text": "$X\\sim U(0,2)$，D(X)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q26-source-block",
+          "title": "原创命题记录 26",
+          "text": "$X\\sim U(0,2)$，D(X)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "92e726ec4b6ba7d26ae5c34f577f435ddf56e41f676bf51ebe3536050e99778f"
+    },
+    {
+      "id": "postgraduate-economics396-01-q27-source",
+      "title": "原创命题记录 27",
+      "kind": "question-bank",
+      "text": "E(X)=2，D(X)=3，则E(X²)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q27-source-block",
+          "title": "原创命题记录 27",
+          "text": "E(X)=2，D(X)=3，则E(X²)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "bc05b5318d2587bba8cd5f0fd150e12c17c5180a2ea1b61f71a1d08df3ecb8bf"
+    },
+    {
+      "id": "postgraduate-economics396-01-q28-source",
+      "title": "原创命题记录 28",
+      "kind": "question-bank",
+      "text": "独立X、Y分别方差2、3，则D(2X−Y)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q28-source-block",
+          "title": "原创命题记录 28",
+          "text": "独立X、Y分别方差2、3，则D(2X−Y)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "96cc7ddc30c5aad7c102e9c36946d7be2417ac0c591ef6a3356311335821adf8"
+    },
+    {
+      "id": "postgraduate-economics396-01-q29-source",
+      "title": "原创命题记录 29",
+      "kind": "question-bank",
+      "text": "P(A)=0.4，P(B)=0.5，P(A∩B)=0.2，则P(A|B)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q29-source-block",
+          "title": "原创命题记录 29",
+          "text": "P(A)=0.4，P(B)=0.5，P(A∩B)=0.2，则P(A|B)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c92e18c508fd067bc2c9ab296bacd17bb49bfa9f4ad8787028a693f5119ec4d0"
+    },
+    {
+      "id": "postgraduate-economics396-01-q30-source",
+      "title": "原创命题记录 30",
+      "kind": "question-bank",
+      "text": "相互独立事件A、B的概率为0.3、0.4，则P(A∪B)为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q30-source-block",
+          "title": "原创命题记录 30",
+          "text": "相互独立事件A、B的概率为0.3、0.4，则P(A∪B)为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ab50b321ac65763a7f67fe74bb90f28017945d5b165c8cc38914f0357b5301dc"
+    },
+    {
+      "id": "postgraduate-economics396-01-q31-source",
+      "title": "原创命题记录 31",
+      "kind": "question-bank",
+      "text": "相互独立的$X_1,\\ldots,X_n$均有方差$\\sigma^2$，则$(X_1+\\cdots+X_n)/n$的方差为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q31-source-block",
+          "title": "原创命题记录 31",
+          "text": "相互独立的$X_1,\\ldots,X_n$均有方差$\\sigma^2$，则$(X_1+\\cdots+X_n)/n$的方差为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "319071ed7e377073aeb2c3d53da4b32ce6fc5356a6f1186bea6e7c9b0a678313"
+    },
+    {
+      "id": "postgraduate-economics396-01-q32-source",
+      "title": "原创命题记录 32",
+      "kind": "question-bank",
+      "text": "独立均匀骰子掷两次，至少一次为6的概率为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q32-source-block",
+          "title": "原创命题记录 32",
+          "text": "独立均匀骰子掷两次，至少一次为6的概率为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "50658cc49049367e4c5167e1798cc8d2c10e04ff510e5c39d33378bc2914e2ac"
+    },
+    {
+      "id": "postgraduate-economics396-01-q33-source",
+      "title": "原创命题记录 33",
+      "kind": "question-bank",
+      "text": "随机变量X的密度$f(x)=cx$（0<x<2），其余为0。归一化常数c为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q33-source-block",
+          "title": "原创命题记录 33",
+          "text": "随机变量X的密度$f(x)=cx$（0<x<2），其余为0。归一化常数c为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c36310eb4c43d4334e91ec76cf19bf39ae473666065101236e5549a50014903b"
+    },
+    {
+      "id": "postgraduate-economics396-01-q34-source",
+      "title": "原创命题记录 34",
+      "kind": "question-bank",
+      "text": "X的分布函数在0<x<1时为F(x)=x²，x≤0时为0、x≥1时为1。则$P(1/2<X\\le1)$为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q34-source-block",
+          "title": "原创命题记录 34",
+          "text": "X的分布函数在0<x<1时为F(x)=x²，x≤0时为0、x≥1时为1。则$P(1/2<X\\le1)$为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "86ef0a22559f5053938e84c8f5dfaa44fa9c9fcf6481042fbb19b4e6dcb33a77"
+    },
+    {
+      "id": "postgraduate-economics396-01-q35-source",
+      "title": "原创命题记录 35",
+      "kind": "question-bank",
+      "text": "X、Y独立且均值为1，则E[(X−1)(Y−1)]为",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q35-source-block",
+          "title": "原创命题记录 35",
+          "text": "X、Y独立且均值为1，则E[(X−1)(Y−1)]为"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "00d068e21d767f102018ddbb9cad4376e535688f1b0ab24f8ec87c2eafe035fa"
+    },
+    {
+      "id": "postgraduate-economics396-01-q36-source",
+      "title": "原创命题记录 36",
+      "kind": "question-bank",
+      "text": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q36-source-block",
+          "title": "原创命题记录 36",
+          "text": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "04d8c35417d1574bdf8f1509b7f790c561935d1b7e3c0ec76c4178975b1d4af4"
+    },
+    {
+      "id": "postgraduate-economics396-01-q37-source",
+      "title": "原创命题记录 37",
+      "kind": "question-bank",
+      "text": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q37-source-block",
+          "title": "原创命题记录 37",
+          "text": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ef9d88f47c9f3a195cacbeaa107430663ba458f9df0b8df6bb97707031fa3860"
+    },
+    {
+      "id": "postgraduate-economics396-01-q38-source",
+      "title": "原创命题记录 38",
+      "kind": "question-bank",
+      "text": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q38-source-block",
+          "title": "原创命题记录 38",
+          "text": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8e67a48f5e5033b418815bc3adeea52d19c4d805215398a39622fbf10bb340da"
+    },
+    {
+      "id": "postgraduate-economics396-01-q39-source",
+      "title": "原创命题记录 39",
+      "kind": "question-bank",
+      "text": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q39-source-block",
+          "title": "原创命题记录 39",
+          "text": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "962f8e124619c5ad284985eba92f43d54e77ceea144db189486d9674a0316bce"
+    },
+    {
+      "id": "postgraduate-economics396-01-q40-source",
+      "title": "原创命题记录 40",
+      "kind": "question-bank",
+      "text": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q40-source-block",
+          "title": "原创命题记录 40",
+          "text": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "fa9f535b4546703922ed1579158fceb62e8141ab711d5d6f721aecaaa077a217"
+    },
+    {
+      "id": "postgraduate-economics396-01-q41-source",
+      "title": "原创命题记录 41",
+      "kind": "question-bank",
+      "text": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q41-source-block",
+          "title": "原创命题记录 41",
+          "text": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "e86a64dbdad51f8fea336658c011c1e45a5e2d2ba49a7eaccd7febc1c95974ae"
+    },
+    {
+      "id": "postgraduate-economics396-01-q42-source",
+      "title": "原创命题记录 42",
+      "kind": "question-bank",
+      "text": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q42-source-block",
+          "title": "原创命题记录 42",
+          "text": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "ae92abb91d7e12f3106e893bb243d5b40dfc5473fdf0af132a22cab01775e0c4"
+    },
+    {
+      "id": "postgraduate-economics396-01-q43-source",
+      "title": "原创命题记录 43",
+      "kind": "question-bank",
+      "text": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q43-source-block",
+          "title": "原创命题记录 43",
+          "text": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a742e232c885d7328f4816ff7b62eeaacc65475c324b7a9d56778d52d7f295ca"
+    },
+    {
+      "id": "postgraduate-economics396-01-q44-source",
+      "title": "原创命题记录 44",
+      "kind": "question-bank",
+      "text": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q44-source-block",
+          "title": "原创命题记录 44",
+          "text": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c0e03be8e771b2480584f5300bd0587b3b9c34ec694043fc3713ddfdaac87e69"
+    },
+    {
+      "id": "postgraduate-economics396-01-q45-source",
+      "title": "原创命题记录 45",
+      "kind": "question-bank",
+      "text": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q45-source-block",
+          "title": "原创命题记录 45",
+          "text": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "64bc5d7a5a3fe07407ad60a572ab68818394776cdcd4c15f5769282f5f07a514"
+    },
+    {
+      "id": "postgraduate-economics396-01-q46-source",
+      "title": "原创命题记录 46",
+      "kind": "question-bank",
+      "text": "“如果今晚下雨，比赛就改期”的逻辑等价表述是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q46-source-block",
+          "title": "原创命题记录 46",
+          "text": "“如果今晚下雨，比赛就改期”的逻辑等价表述是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8e0c28b268ac10af08fa54dd3dca55fc013403eb30025d936f05445545b2edae"
+    },
+    {
+      "id": "postgraduate-economics396-01-q47-source",
+      "title": "原创命题记录 47",
+      "kind": "question-bank",
+      "text": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q47-source-block",
+          "title": "原创命题记录 47",
+          "text": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "8f392ea01e7183e32a4958db29a317f74514e38a4421cec7914a25b549d10f19"
+    },
+    {
+      "id": "postgraduate-economics396-01-q48-source",
+      "title": "原创命题记录 48",
+      "kind": "question-bank",
+      "text": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q48-source-block",
+          "title": "原创命题记录 48",
+          "text": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "a51e37d6877d339c3e7953c51cf0114e7f538d694f71ef6e905d401228ed68b2"
+    },
+    {
+      "id": "postgraduate-economics396-01-q49-source",
+      "title": "原创命题记录 49",
+      "kind": "question-bank",
+      "text": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q49-source-block",
+          "title": "原创命题记录 49",
+          "text": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "89bf90c8c0c911bf2f4162ac122dc8a028c72af61f7dca968a896248e827cc23"
+    },
+    {
+      "id": "postgraduate-economics396-01-q50-source",
+      "title": "原创命题记录 50",
+      "kind": "question-bank",
+      "text": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q50-source-block",
+          "title": "原创命题记录 50",
+          "text": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "f238cdb16dbd6d838086cba25f93405979749069236fbbdb1130baa543dad07f"
+    },
+    {
+      "id": "postgraduate-economics396-01-q51-source",
+      "title": "原创命题记录 51",
+      "kind": "question-bank",
+      "text": "若所有A都是B，所有B都是C，则以下关系必然成立：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q51-source-block",
+          "title": "原创命题记录 51",
+          "text": "若所有A都是B，所有B都是C，则以下关系必然成立："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "c005138d547bddc9ab34f2c49e17606253872ebf08a4ffcc681281efdee38e9e"
+    },
+    {
+      "id": "postgraduate-economics396-01-q52-source",
+      "title": "原创命题记录 52",
+      "kind": "question-bank",
+      "text": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q52-source-block",
+          "title": "原创命题记录 52",
+          "text": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "54c2493156b1758ecb22e7857f4c59c9c1eef88c70cb67a294728475bac97c59"
+    },
+    {
+      "id": "postgraduate-economics396-01-q53-source",
+      "title": "原创命题记录 53",
+      "kind": "question-bank",
+      "text": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q53-source-block",
+          "title": "原创命题记录 53",
+          "text": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "44e0fac917c7a4dc3bdad57a1bf705b6a83bb59f04606005b7be4f4a00a99473"
+    },
+    {
+      "id": "postgraduate-economics396-01-q54-source",
+      "title": "原创命题记录 54",
+      "kind": "question-bank",
+      "text": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q54-source-block",
+          "title": "原创命题记录 54",
+          "text": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "fb38290239ab168c9d08faca0baa61155421607ed492141e765bb6dfec83c416"
+    },
+    {
+      "id": "postgraduate-economics396-01-q55-source",
+      "title": "原创命题记录 55",
+      "kind": "question-bank",
+      "text": "有人把“可能发生”解释为“必定发生”。其推论错误在于：",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q55-source-block",
+          "title": "原创命题记录 55",
+          "text": "有人把“可能发生”解释为“必定发生”。其推论错误在于："
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "48dc0d57b1b3ea2e21a7e174cb878f0fbdd3bc88797574b68c64c8995bfc61d1"
+    },
+    {
+      "id": "argument-analysis-passage",
+      "title": "写作一、论证有效性分析材料",
+      "kind": "reference",
+      "text": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。",
+      "blocks": [
+        {
+          "id": "argument-analysis-passage-block",
+          "title": "写作一、论证有效性分析材料",
+          "text": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "24a441d285f5603a530d6270561ad3f91457ffc2659c2562050831b7858915bd"
+    },
+    {
+      "id": "postgraduate-economics396-01-q56-source",
+      "title": "原创命题记录 56",
+      "kind": "question-bank",
+      "text": "评论给定材料的论证有效性，写一篇约600字的文章。",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q56-source-block",
+          "title": "原创命题记录 56",
+          "text": "评论给定材料的论证有效性，写一篇约600字的文章。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "3fb123df5709d96b4fd8b90637226ed04c6ee21e30741d7ebfc91c608a81af31"
+    },
+    {
+      "id": "essay-passage",
+      "title": "写作二、论说文材料",
+      "kind": "reference",
+      "text": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。",
+      "blocks": [
+        {
+          "id": "essay-passage-block",
+          "title": "写作二、论说文材料",
+          "text": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "4b72561979c8eaf3336cb4d03e00a492a515b6b6163769545a4166f165e2c8dc"
+    },
+    {
+      "id": "postgraduate-economics396-01-q57-source",
+      "title": "原创命题记录 57",
+      "kind": "question-bank",
+      "text": "围绕给定材料自拟题目，写一篇约700字论说文。",
+      "blocks": [
+        {
+          "id": "postgraduate-economics396-01-q57-source-block",
+          "title": "原创命题记录 57",
+          "text": "围绕给定材料自拟题目，写一篇约700字论说文。"
+        }
+      ],
+      "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-15"
+      },
+      "sha256": "570b91c961307a7f476391447aaf9b9e995128a1e116ff3963f97e0b5d09572e"
+    }
+  ],
+  "sections": [
+    {
+      "id": "math",
+      "title": "一、数学基础",
+      "examPartId": "math",
+      "instructions": "第1—35题，每题2分。每题只有一个正确选项。",
+      "score": 70,
+      "questions": [
+        {
+          "id": "postgraduate-economics396-01-q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "$\\lim_{x\\to0}\\sin(3x)/x$ 为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "sin3x与3x等价，极限3。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q1-source",
+            "blockId": "postgraduate-economics396-01-q1-source-block",
+            "title": "原创命题记录 1",
+            "exact": "$\\lim_{x\\to0}\\sin(3x)/x$ 为"
+          },
+          "chapter": "微积分·极限",
+          "tags": [
+            "微积分·极限"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·极限"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；sin3x与3x等价，极限3。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "2"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            },
+            {
+              "id": "E",
+              "text": "不存在"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "$\\lim_{x\\to0}(e^x-1-x)/x^2$ 为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "泰勒展开二阶系数1/2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q2-source",
+            "blockId": "postgraduate-economics396-01-q2-source-block",
+            "title": "原创命题记录 2",
+            "exact": "$\\lim_{x\\to0}(e^x-1-x)/x^2$ 为"
+          },
+          "chapter": "微积分·极限",
+          "tags": [
+            "微积分·极限"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·极限"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；泰勒展开二阶系数1/2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "1"
+            },
+            {
+              "id": "D",
+              "text": "2"
+            },
+            {
+              "id": "E",
+              "text": "∞"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "$f(x)=\\ln(1+x^2)$，则f'(1)为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "f'=2x/(1+x²)，代1得1。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q3-source",
+            "blockId": "postgraduate-economics396-01-q3-source-block",
+            "title": "原创命题记录 3",
+            "exact": "$f(x)=\\ln(1+x^2)$，则f'(1)为"
+          },
+          "chapter": "微积分·导数",
+          "tags": [
+            "微积分·导数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·导数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；f'=2x/(1+x²)，代1得1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "2"
+            },
+            {
+              "id": "C",
+              "text": "0"
+            },
+            {
+              "id": "D",
+              "text": "$1/2$"
+            },
+            {
+              "id": "E",
+              "text": "−1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "$f(x)=x^3-3x$ 的极小值为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "驻点±1，f''(1)=6>0，f(1)=−2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q4-source",
+            "blockId": "postgraduate-economics396-01-q4-source-block",
+            "title": "原创命题记录 4",
+            "exact": "$f(x)=x^3-3x$ 的极小值为"
+          },
+          "chapter": "微积分·极值",
+          "tags": [
+            "微积分·极值"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·极值"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；驻点±1，f''(1)=6>0，f(1)=−2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "−3"
+            },
+            {
+              "id": "B",
+              "text": "0"
+            },
+            {
+              "id": "C",
+              "text": "2"
+            },
+            {
+              "id": "D",
+              "text": "−2"
+            },
+            {
+              "id": "E",
+              "text": "3"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q5",
+          "number": 5,
+          "type": "choice",
+          "prompt": "$\\int_0^1(2x+1)dx$ 为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "原函数x²+x，端点差2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q5-source",
+            "blockId": "postgraduate-economics396-01-q5-source-block",
+            "title": "原创命题记录 5",
+            "exact": "$\\int_0^1(2x+1)dx$ 为"
+          },
+          "chapter": "微积分·积分",
+          "tags": [
+            "微积分·积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；原函数x²+x，端点差2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1"
+            },
+            {
+              "id": "B",
+              "text": "$3/2$"
+            },
+            {
+              "id": "C",
+              "text": "2"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            },
+            {
+              "id": "E",
+              "text": "4"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q6",
+          "number": 6,
+          "type": "choice",
+          "prompt": "$\\int_0^1x e^{x^2}dx$ 为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "u=x²代换，dx因子给1/2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q6-source",
+            "blockId": "postgraduate-economics396-01-q6-source-block",
+            "title": "原创命题记录 6",
+            "exact": "$\\int_0^1x e^{x^2}dx$ 为"
+          },
+          "chapter": "微积分·积分",
+          "tags": [
+            "微积分·积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；u=x²代换，dx因子给1/2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$e-1$"
+            },
+            {
+              "id": "B",
+              "text": "$(e-1)/2$"
+            },
+            {
+              "id": "C",
+              "text": "$e/2$"
+            },
+            {
+              "id": "D",
+              "text": "1/2"
+            },
+            {
+              "id": "E",
+              "text": "e"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q7",
+          "number": 7,
+          "type": "choice",
+          "prompt": "$\\int_1^e1/x\\,dx$ 为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "ln e−ln1=1。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q7-source",
+            "blockId": "postgraduate-economics396-01-q7-source-block",
+            "title": "原创命题记录 7",
+            "exact": "$\\int_1^e1/x\\,dx$ 为"
+          },
+          "chapter": "微积分·积分",
+          "tags": [
+            "微积分·积分"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·积分"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；ln e−ln1=1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "e−1"
+            },
+            {
+              "id": "C",
+              "text": "e"
+            },
+            {
+              "id": "D",
+              "text": "1"
+            },
+            {
+              "id": "E",
+              "text": "2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q8",
+          "number": 8,
+          "type": "choice",
+          "prompt": "$z=x^2y+e^y$，在(1,0)处z_y为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "z_y=x²+e^y=2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q8-source",
+            "blockId": "postgraduate-economics396-01-q8-source-block",
+            "title": "原创命题记录 8",
+            "exact": "$z=x^2y+e^y$，在(1,0)处z_y为"
+          },
+          "chapter": "微积分·偏导数",
+          "tags": [
+            "微积分·偏导数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·偏导数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；z_y=x²+e^y=2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "2"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            },
+            {
+              "id": "E",
+              "text": "e"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q9",
+          "number": 9,
+          "type": "choice",
+          "prompt": "$f(x,y)=x^2+y^2-2x-4y$ 的最小点为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "配方为(x−1)²+(y−2)²−5。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q9-source",
+            "blockId": "postgraduate-economics396-01-q9-source-block",
+            "title": "原创命题记录 9",
+            "exact": "$f(x,y)=x^2+y^2-2x-4y$ 的最小点为"
+          },
+          "chapter": "微积分·多元极值",
+          "tags": [
+            "微积分·多元极值"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·多元极值"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；配方为(x−1)²+(y−2)²−5。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "(1,2)"
+            },
+            {
+              "id": "B",
+              "text": "(2,1)"
+            },
+            {
+              "id": "C",
+              "text": "(−1,−2)"
+            },
+            {
+              "id": "D",
+              "text": "(0,0)"
+            },
+            {
+              "id": "E",
+              "text": "不存在"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "一项连续现金流在0≤t≤1期间的流入速率为r(t)=2t（万元/年）。不计利息，该期间总流入为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "总流入为$\\int_0^1 2t\\,dt=1$万元；不能用期末速率2代替全年总量。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q10-source",
+            "blockId": "postgraduate-economics396-01-q10-source-block",
+            "title": "原创命题记录 10",
+            "exact": "一项连续现金流在0≤t≤1期间的流入速率为r(t)=2t（万元/年）。不计利息，该期间总流入为"
+          },
+          "chapter": "微积分·定积分应用",
+          "tags": [
+            "微积分·定积分应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·定积分应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；总流入为$\\int_0^1 2t\\,dt=1$万元；不能用期末速率2代替全年总量。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/2$"
+            },
+            {
+              "id": "C",
+              "text": "$2/3$"
+            },
+            {
+              "id": "D",
+              "text": "1万元"
+            },
+            {
+              "id": "E",
+              "text": "2万元"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q11",
+          "number": 11,
+          "type": "choice",
+          "prompt": "曲线$x^2+xy+y^2=3$在点(1,1)处的切线斜率为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "隐函数求导得$2x+y+(x+2y)y'=0$；(1,1)处x+2y=3非零，斜率−3/3=−1。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q11-source",
+            "blockId": "postgraduate-economics396-01-q11-source-block",
+            "title": "原创命题记录 11",
+            "exact": "曲线$x^2+xy+y^2=3$在点(1,1)处的切线斜率为"
+          },
+          "chapter": "微积分·隐函数求导",
+          "tags": [
+            "微积分·隐函数求导"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·隐函数求导"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；隐函数求导得$2x+y+(x+2y)y'=0$；(1,1)处x+2y=3非零，斜率−3/3=−1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "−1"
+            },
+            {
+              "id": "B",
+              "text": "0"
+            },
+            {
+              "id": "C",
+              "text": "1"
+            },
+            {
+              "id": "D",
+              "text": "2"
+            },
+            {
+              "id": "E",
+              "text": "−2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q12",
+          "number": 12,
+          "type": "choice",
+          "prompt": "产品利润$\\Pi(q)=80q-2q^2-100$，产量范围0≤q≤50。使利润最大的产量为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "$\\Pi'=80-4q$，驻点q=20在可行域内；$\\Pi''=-4<0$，为区间全局最大点。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q12-source",
+            "blockId": "postgraduate-economics396-01-q12-source-block",
+            "title": "原创命题记录 12",
+            "exact": "产品利润$\\Pi(q)=80q-2q^2-100$，产量范围0≤q≤50。使利润最大的产量为"
+          },
+          "chapter": "微积分·最优化应用",
+          "tags": [
+            "微积分·最优化应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·最优化应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；$\\Pi'=80-4q$，驻点q=20在可行域内；$\\Pi''=-4<0$，为区间全局最大点。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "10"
+            },
+            {
+              "id": "B",
+              "text": "15"
+            },
+            {
+              "id": "C",
+              "text": "20"
+            },
+            {
+              "id": "D",
+              "text": "30"
+            },
+            {
+              "id": "E",
+              "text": "40"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q13",
+          "number": 13,
+          "type": "choice",
+          "prompt": "收入 $R(q)=100q-q^2$ 的边际收入在q=20时为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "R'=100−2q=60。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q13-source",
+            "blockId": "postgraduate-economics396-01-q13-source-block",
+            "title": "原创命题记录 13",
+            "exact": "收入 $R(q)=100q-q^2$ 的边际收入在q=20时为"
+          },
+          "chapter": "微积分·经济应用",
+          "tags": [
+            "微积分·经济应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·经济应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；R'=100−2q=60。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "20"
+            },
+            {
+              "id": "B",
+              "text": "40"
+            },
+            {
+              "id": "C",
+              "text": "60"
+            },
+            {
+              "id": "D",
+              "text": "80"
+            },
+            {
+              "id": "E",
+              "text": "100"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q14",
+          "number": 14,
+          "type": "choice",
+          "prompt": "成本 $C(q)=q^2+16$，q>0，平均成本最低的q为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "AC=q+16/q，导数1−16/q²=0，q=4。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q14-source",
+            "blockId": "postgraduate-economics396-01-q14-source-block",
+            "title": "原创命题记录 14",
+            "exact": "成本 $C(q)=q^2+16$，q>0，平均成本最低的q为"
+          },
+          "chapter": "微积分·经济应用",
+          "tags": [
+            "微积分·经济应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·经济应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；AC=q+16/q，导数1−16/q²=0，q=4。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "2"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "8"
+            },
+            {
+              "id": "D",
+              "text": "16"
+            },
+            {
+              "id": "E",
+              "text": "32"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q15",
+          "number": 15,
+          "type": "choice",
+          "prompt": "需求函数$Q(p)=120-2p$，0<p<60。定义需求价格弹性$E(p)=-pQ'(p)/Q(p)$，则E(20)为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "Q(20)=80、Q'=-2，E(20)=40/80=1/2；采用题设的正号弹性定义。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q15-source",
+            "blockId": "postgraduate-economics396-01-q15-source-block",
+            "title": "原创命题记录 15",
+            "exact": "需求函数$Q(p)=120-2p$，0<p<60。定义需求价格弹性$E(p)=-pQ'(p)/Q(p)$，则E(20)为"
+          },
+          "chapter": "微积分·经济应用",
+          "tags": [
+            "微积分·经济应用"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "微积分·经济应用"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；Q(20)=80、Q'=-2，E(20)=40/80=1/2；采用题设的正号弹性定义。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/3$"
+            },
+            {
+              "id": "C",
+              "text": "$1/2$"
+            },
+            {
+              "id": "D",
+              "text": "1"
+            },
+            {
+              "id": "E",
+              "text": "2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q16",
+          "number": 16,
+          "type": "choice",
+          "prompt": "矩阵 $\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的行列式为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "1×4−2×3=−2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q16-source",
+            "blockId": "postgraduate-economics396-01-q16-source-block",
+            "title": "原创命题记录 16",
+            "exact": "矩阵 $\\begin{pmatrix}1&2\\\\3&4\\end{pmatrix}$ 的行列式为"
+          },
+          "chapter": "线性代数·行列式",
+          "tags": [
+            "线性代数·行列式"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·行列式"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；1×4−2×3=−2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "−2"
+            },
+            {
+              "id": "B",
+              "text": "2"
+            },
+            {
+              "id": "C",
+              "text": "10"
+            },
+            {
+              "id": "D",
+              "text": "−10"
+            },
+            {
+              "id": "E",
+              "text": "0"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q17",
+          "number": 17,
+          "type": "choice",
+          "prompt": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的秩为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "第二行是第一行两倍且第一行非零。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q17-source",
+            "blockId": "postgraduate-economics396-01-q17-source-block",
+            "title": "原创命题记录 17",
+            "exact": "$A=\\begin{pmatrix}1&2\\\\2&4\\end{pmatrix}$ 的秩为"
+          },
+          "chapter": "线性代数·秩",
+          "tags": [
+            "线性代数·秩"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·秩"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；第二行是第一行两倍且第一行非零。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "2"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            },
+            {
+              "id": "E",
+              "text": "无法确定"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q18",
+          "number": 18,
+          "type": "choice",
+          "prompt": "方程组$x+y=3$、$2x-y=0$的解(x,y)为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "相加得3x=3，x=1；代回得y=2，系数行列式−3非零故解唯一。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q18-source",
+            "blockId": "postgraduate-economics396-01-q18-source-block",
+            "title": "原创命题记录 18",
+            "exact": "方程组$x+y=3$、$2x-y=0$的解(x,y)为"
+          },
+          "chapter": "线性代数·方程组",
+          "tags": [
+            "线性代数·方程组"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·方程组"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；相加得3x=3，x=1；代回得y=2，系数行列式−3非零故解唯一。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "(0,3)"
+            },
+            {
+              "id": "B",
+              "text": "(2,1)"
+            },
+            {
+              "id": "C",
+              "text": "(1,2)"
+            },
+            {
+              "id": "D",
+              "text": "(3,0)"
+            },
+            {
+              "id": "E",
+              "text": "(−1,4)"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q19",
+          "number": 19,
+          "type": "choice",
+          "prompt": "三元齐次方程组系数矩阵秩为1，其解空间维数为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "秩−零度定理3−1=2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q19-source",
+            "blockId": "postgraduate-economics396-01-q19-source-block",
+            "title": "原创命题记录 19",
+            "exact": "三元齐次方程组系数矩阵秩为1，其解空间维数为"
+          },
+          "chapter": "线性代数·方程组",
+          "tags": [
+            "线性代数·方程组"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·方程组"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；秩−零度定理3−1=2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "2"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            },
+            {
+              "id": "E",
+              "text": "4"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q20",
+          "number": 20,
+          "type": "choice",
+          "prompt": "若二阶可逆矩阵A满足detA=3，则det(2A)为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "二阶整体乘2使行列式乘4。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q20-source",
+            "blockId": "postgraduate-economics396-01-q20-source-block",
+            "title": "原创命题记录 20",
+            "exact": "若二阶可逆矩阵A满足detA=3，则det(2A)为"
+          },
+          "chapter": "线性代数·行列式",
+          "tags": [
+            "线性代数·行列式"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·行列式"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；二阶整体乘2使行列式乘4。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "3"
+            },
+            {
+              "id": "B",
+              "text": "6"
+            },
+            {
+              "id": "C",
+              "text": "9"
+            },
+            {
+              "id": "D",
+              "text": "12"
+            },
+            {
+              "id": "E",
+              "text": "24"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q21",
+          "number": 21,
+          "type": "choice",
+          "prompt": "$A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$、$B=\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}$，则AB为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "按行乘列：首行(1×1+2×1,1×0+2×2)=(3,4)，次行(1,2)。矩阵乘法顺序固定为AB。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q21-source",
+            "blockId": "postgraduate-economics396-01-q21-source-block",
+            "title": "原创命题记录 21",
+            "exact": "$A=\\begin{pmatrix}1&2\\\\0&1\\end{pmatrix}$、$B=\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}$，则AB为"
+          },
+          "chapter": "线性代数·矩阵运算",
+          "tags": [
+            "线性代数·矩阵运算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·矩阵运算"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；按行乘列：首行(1×1+2×1,1×0+2×2)=(3,4)，次行(1,2)。矩阵乘法顺序固定为AB。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\begin{pmatrix}1&2\\\\1&4\\end{pmatrix}$"
+            },
+            {
+              "id": "B",
+              "text": "$\\begin{pmatrix}3&4\\\\1&2\\end{pmatrix}$"
+            },
+            {
+              "id": "C",
+              "text": "$\\begin{pmatrix}1&0\\\\1&2\\end{pmatrix}$"
+            },
+            {
+              "id": "D",
+              "text": "$\\begin{pmatrix}2&2\\\\1&3\\end{pmatrix}$"
+            },
+            {
+              "id": "E",
+              "text": "$\\begin{pmatrix}3&2\\\\1&2\\end{pmatrix}$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q22",
+          "number": 22,
+          "type": "choice",
+          "prompt": "$A=\\operatorname{diag}(2,3)$，$A^{-1}$ 的迹为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "逆矩阵对角元1/2,1/3，和5/6。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q22-source",
+            "blockId": "postgraduate-economics396-01-q22-source-block",
+            "title": "原创命题记录 22",
+            "exact": "$A=\\operatorname{diag}(2,3)$，$A^{-1}$ 的迹为"
+          },
+          "chapter": "线性代数·逆矩阵",
+          "tags": [
+            "线性代数·逆矩阵"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·逆矩阵"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；逆矩阵对角元1/2,1/3，和5/6。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/5$"
+            },
+            {
+              "id": "B",
+              "text": "$1/6$"
+            },
+            {
+              "id": "C",
+              "text": "$2/3$"
+            },
+            {
+              "id": "D",
+              "text": "$5/6$"
+            },
+            {
+              "id": "E",
+              "text": "5"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q23",
+          "number": 23,
+          "type": "choice",
+          "prompt": "向量(1,0,1)、(0,1,1)、(1,1,2)的秩为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "第三个是前两个之和，前两个独立。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q23-source",
+            "blockId": "postgraduate-economics396-01-q23-source-block",
+            "title": "原创命题记录 23",
+            "exact": "向量(1,0,1)、(0,1,1)、(1,1,2)的秩为"
+          },
+          "chapter": "线性代数·向量组",
+          "tags": [
+            "线性代数·向量组"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "线性代数·向量组"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；第三个是前两个之和，前两个独立。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0"
+            },
+            {
+              "id": "B",
+              "text": "1"
+            },
+            {
+              "id": "C",
+              "text": "2"
+            },
+            {
+              "id": "D",
+              "text": "3"
+            },
+            {
+              "id": "E",
+              "text": "4"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q24",
+          "number": 24,
+          "type": "choice",
+          "prompt": "$X\\sim B(4,1/2)$，P(X=2)为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "C(4,2)/16=6/16。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q24-source",
+            "blockId": "postgraduate-economics396-01-q24-source-block",
+            "title": "原创命题记录 24",
+            "exact": "$X\\sim B(4,1/2)$，P(X=2)为"
+          },
+          "chapter": "概率统计·离散分布",
+          "tags": [
+            "概率统计·离散分布"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·离散分布"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；C(4,2)/16=6/16。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/8$"
+            },
+            {
+              "id": "B",
+              "text": "$1/4$"
+            },
+            {
+              "id": "C",
+              "text": "$3/8$"
+            },
+            {
+              "id": "D",
+              "text": "$1/2$"
+            },
+            {
+              "id": "E",
+              "text": "$3/4$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q25",
+          "number": 25,
+          "type": "choice",
+          "prompt": "$X\\sim P(2)$，P(X=0)为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "Poisson概率λ⁰e^{-λ}/0!。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q25-source",
+            "blockId": "postgraduate-economics396-01-q25-source-block",
+            "title": "原创命题记录 25",
+            "exact": "$X\\sim P(2)$，P(X=0)为"
+          },
+          "chapter": "概率统计·离散分布",
+          "tags": [
+            "概率统计·离散分布"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·离散分布"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；Poisson概率λ⁰e^{-λ}/0!。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$e^{-2}$"
+            },
+            {
+              "id": "B",
+              "text": "$2e^{-2}$"
+            },
+            {
+              "id": "C",
+              "text": "$e^{-1}$"
+            },
+            {
+              "id": "D",
+              "text": "0"
+            },
+            {
+              "id": "E",
+              "text": "1/2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q26",
+          "number": 26,
+          "type": "choice",
+          "prompt": "$X\\sim U(0,2)$，D(X)为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "均匀分布方差(2−0)²/12=1/3。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q26-source",
+            "blockId": "postgraduate-economics396-01-q26-source-block",
+            "title": "原创命题记录 26",
+            "exact": "$X\\sim U(0,2)$，D(X)为"
+          },
+          "chapter": "概率统计·连续分布",
+          "tags": [
+            "概率统计·连续分布"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·连续分布"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；均匀分布方差(2−0)²/12=1/3。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/6$"
+            },
+            {
+              "id": "B",
+              "text": "$1/3$"
+            },
+            {
+              "id": "C",
+              "text": "$1/2$"
+            },
+            {
+              "id": "D",
+              "text": "1"
+            },
+            {
+              "id": "E",
+              "text": "2"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q27",
+          "number": 27,
+          "type": "choice",
+          "prompt": "E(X)=2，D(X)=3，则E(X²)为",
+          "score": 2,
+          "solution": "E",
+          "explanation": "E(X²)=D(X)+[E(X)]²=7。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q27-source",
+            "blockId": "postgraduate-economics396-01-q27-source-block",
+            "title": "原创命题记录 27",
+            "exact": "E(X)=2，D(X)=3，则E(X²)为"
+          },
+          "chapter": "概率统计·数字特征",
+          "tags": [
+            "概率统计·数字特征"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·数字特征"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；E(X²)=D(X)+[E(X)]²=7。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "3"
+            },
+            {
+              "id": "B",
+              "text": "4"
+            },
+            {
+              "id": "C",
+              "text": "5"
+            },
+            {
+              "id": "D",
+              "text": "6"
+            },
+            {
+              "id": "E",
+              "text": "7"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q28",
+          "number": 28,
+          "type": "choice",
+          "prompt": "独立X、Y分别方差2、3，则D(2X−Y)为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "4×2+3=11，独立令协方差为0。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q28-source",
+            "blockId": "postgraduate-economics396-01-q28-source-block",
+            "title": "原创命题记录 28",
+            "exact": "独立X、Y分别方差2、3，则D(2X−Y)为"
+          },
+          "chapter": "概率统计·数字特征",
+          "tags": [
+            "概率统计·数字特征"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·数字特征"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；4×2+3=11，独立令协方差为0。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "5"
+            },
+            {
+              "id": "B",
+              "text": "7"
+            },
+            {
+              "id": "C",
+              "text": "8"
+            },
+            {
+              "id": "D",
+              "text": "11"
+            },
+            {
+              "id": "E",
+              "text": "14"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q29",
+          "number": 29,
+          "type": "choice",
+          "prompt": "P(A)=0.4，P(B)=0.5，P(A∩B)=0.2，则P(A|B)为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "0.2/0.5=0.4。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q29-source",
+            "blockId": "postgraduate-economics396-01-q29-source-block",
+            "title": "原创命题记录 29",
+            "exact": "P(A)=0.4，P(B)=0.5，P(A∩B)=0.2，则P(A|B)为"
+          },
+          "chapter": "概率统计·条件概率",
+          "tags": [
+            "概率统计·条件概率"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·条件概率"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；0.2/0.5=0.4。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0.2"
+            },
+            {
+              "id": "B",
+              "text": "0.4"
+            },
+            {
+              "id": "C",
+              "text": "0.5"
+            },
+            {
+              "id": "D",
+              "text": "0.8"
+            },
+            {
+              "id": "E",
+              "text": "1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q30",
+          "number": 30,
+          "type": "choice",
+          "prompt": "相互独立事件A、B的概率为0.3、0.4，则P(A∪B)为",
+          "score": 2,
+          "solution": "C",
+          "explanation": "0.3+0.4−0.3×0.4=0.58。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q30-source",
+            "blockId": "postgraduate-economics396-01-q30-source-block",
+            "title": "原创命题记录 30",
+            "exact": "相互独立事件A、B的概率为0.3、0.4，则P(A∪B)为"
+          },
+          "chapter": "概率统计·事件运算",
+          "tags": [
+            "概率统计·事件运算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·事件运算"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；0.3+0.4−0.3×0.4=0.58。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0.12"
+            },
+            {
+              "id": "B",
+              "text": "0.28"
+            },
+            {
+              "id": "C",
+              "text": "0.58"
+            },
+            {
+              "id": "D",
+              "text": "0.7"
+            },
+            {
+              "id": "E",
+              "text": "1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q31",
+          "number": 31,
+          "type": "choice",
+          "prompt": "相互独立的$X_1,\\ldots,X_n$均有方差$\\sigma^2$，则$(X_1+\\cdots+X_n)/n$的方差为",
+          "score": 2,
+          "solution": "A",
+          "explanation": "独立随机变量和的方差nσ²，再按线性变换乘1/n²；本题不使用抽样分布定理。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q31-source",
+            "blockId": "postgraduate-economics396-01-q31-source-block",
+            "title": "原创命题记录 31",
+            "exact": "相互独立的$X_1,\\ldots,X_n$均有方差$\\sigma^2$，则$(X_1+\\cdots+X_n)/n$的方差为"
+          },
+          "chapter": "概率统计·数字特征",
+          "tags": [
+            "概率统计·数字特征"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·数字特征"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；独立随机变量和的方差nσ²，再按线性变换乘1/n²；本题不使用抽样分布定理。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$\\sigma^2/n$"
+            },
+            {
+              "id": "B",
+              "text": "$\\sigma^2/n^2$"
+            },
+            {
+              "id": "C",
+              "text": "$n\\sigma^2$"
+            },
+            {
+              "id": "D",
+              "text": "$\\sigma^2$"
+            },
+            {
+              "id": "E",
+              "text": "$\\sigma/\\sqrt n$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q32",
+          "number": 32,
+          "type": "choice",
+          "prompt": "独立均匀骰子掷两次，至少一次为6的概率为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "补事件两次均非6，1−(5/6)²=11/36。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q32-source",
+            "blockId": "postgraduate-economics396-01-q32-source-block",
+            "title": "原创命题记录 32",
+            "exact": "独立均匀骰子掷两次，至少一次为6的概率为"
+          },
+          "chapter": "概率统计·概率",
+          "tags": [
+            "概率统计·概率"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·概率"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；补事件两次均非6，1−(5/6)²=11/36。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/36$"
+            },
+            {
+              "id": "B",
+              "text": "$5/36$"
+            },
+            {
+              "id": "C",
+              "text": "$10/36$"
+            },
+            {
+              "id": "D",
+              "text": "$11/36$"
+            },
+            {
+              "id": "E",
+              "text": "$1/3$"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q33",
+          "number": 33,
+          "type": "choice",
+          "prompt": "随机变量X的密度$f(x)=cx$（0<x<2），其余为0。归一化常数c为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "概率密度总积分为1：$c\\int_0^2x\\,dx=2c=1$，故c=1/2。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q33-source",
+            "blockId": "postgraduate-economics396-01-q33-source-block",
+            "title": "原创命题记录 33",
+            "exact": "随机变量X的密度$f(x)=cx$（0<x<2），其余为0。归一化常数c为"
+          },
+          "chapter": "概率统计·连续分布",
+          "tags": [
+            "概率统计·连续分布"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·连续分布"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；概率密度总积分为1：$c\\int_0^2x\\,dx=2c=1$，故c=1/2。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "1/4"
+            },
+            {
+              "id": "B",
+              "text": "1/2"
+            },
+            {
+              "id": "C",
+              "text": "1"
+            },
+            {
+              "id": "D",
+              "text": "2"
+            },
+            {
+              "id": "E",
+              "text": "4"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q34",
+          "number": 34,
+          "type": "choice",
+          "prompt": "X的分布函数在0<x<1时为F(x)=x²，x≤0时为0、x≥1时为1。则$P(1/2<X\\le1)$为",
+          "score": 2,
+          "solution": "D",
+          "explanation": "$P(1/2<X\\le1)=F(1)-F(1/2)=1-1/4=3/4$。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q34-source",
+            "blockId": "postgraduate-economics396-01-q34-source-block",
+            "title": "原创命题记录 34",
+            "exact": "X的分布函数在0<x<1时为F(x)=x²，x≤0时为0、x≥1时为1。则$P(1/2<X\\le1)$为"
+          },
+          "chapter": "概率统计·分布函数",
+          "tags": [
+            "概率统计·分布函数"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·分布函数"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；$P(1/2<X\\le1)=F(1)-F(1/2)=1-1/4=3/4$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$1/4$"
+            },
+            {
+              "id": "B",
+              "text": "$1/3$"
+            },
+            {
+              "id": "C",
+              "text": "$1/2$"
+            },
+            {
+              "id": "D",
+              "text": "$3/4$"
+            },
+            {
+              "id": "E",
+              "text": "1"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q35",
+          "number": 35,
+          "type": "choice",
+          "prompt": "X、Y独立且均值为1，则E[(X−1)(Y−1)]为",
+          "score": 2,
+          "solution": "B",
+          "explanation": "独立时中心化积期望分解为0×0。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q35-source",
+            "blockId": "postgraduate-economics396-01-q35-source-block",
+            "title": "原创命题记录 35",
+            "exact": "X、Y独立且均值为1，则E[(X−1)(Y−1)]为"
+          },
+          "chapter": "概率统计·独立性",
+          "tags": [
+            "概率统计·独立性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "概率统计·独立性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "从定义或独立演算求值、逐项排除；独立时中心化积期望分解为0×0。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "−1"
+            },
+            {
+              "id": "B",
+              "text": "0"
+            },
+            {
+              "id": "C",
+              "text": "1"
+            },
+            {
+              "id": "D",
+              "text": "2"
+            },
+            {
+              "id": "E",
+              "text": "无法确定"
+            }
+          ],
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "economics-math-methods",
+                "blockId": "economics-math-methods-block",
+                "title": "经济类数学方法核对（作者概述）",
+                "exact": "范围限于一元微积分、多元偏导与极值、基础矩阵与方程组、概率分布和数字特征。定积分应用保留单位；经济题明确弹性和边际量定义；概率题核定归一化和独立性。不纳入重积分、微分方程、无穷级数、特征值、二次型或数理统计抽样定理。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "logic",
+      "title": "二、逻辑推理",
+      "examPartId": "logic",
+      "instructions": "第36—55题，每题2分。依据材料和逻辑规则选出最佳答案。",
+      "score": 40,
+      "questions": [
+        {
+          "id": "postgraduate-economics396-01-q36",
+          "number": 36,
+          "type": "choice",
+          "prompt": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "令本周设备为W、通过复核为R、可出库为D；R⊆D且W∩R非空，故W∩D非空。其余均反转或扩大全称。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q36-source",
+            "blockId": "postgraduate-economics396-01-q36-source-block",
+            "title": "原创命题记录 36",
+            "exact": "所有通过安全复核的设备都可以出库。有些本周生产的设备通过了安全复核。必然推出："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；令本周设备为W、通过复核为R、可出库为D；R⊆D且W∩R非空，故W∩D非空。其余均反转或扩大全称。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "有些本周生产的设备可以出库"
+            },
+            {
+              "id": "B",
+              "text": "所有可以出库的设备都在本周生产"
+            },
+            {
+              "id": "C",
+              "text": "没有本周设备未通过复核"
+            },
+            {
+              "id": "D",
+              "text": "所有本周设备都可以出库"
+            },
+            {
+              "id": "E",
+              "text": "所有未出库设备均不安全"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q37",
+          "number": 37,
+          "type": "choice",
+          "prompt": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "P→Q与¬Q推出¬P；未延期不等于提前，不能倒推。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q37-source",
+            "blockId": "postgraduate-economics396-01-q37-source-block",
+            "title": "原创命题记录 37",
+            "exact": "若项目延期，则必须增加预算。预算没有增加。以下必然为真的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；P→Q与¬Q推出¬P；未延期不等于提前，不能倒推。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "项目必定延期"
+            },
+            {
+              "id": "B",
+              "text": "项目没有延期"
+            },
+            {
+              "id": "C",
+              "text": "增加预算就会延期"
+            },
+            {
+              "id": "D",
+              "text": "所有项目均不延期"
+            },
+            {
+              "id": "E",
+              "text": "项目一定提前完成"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q38",
+          "number": 38,
+          "type": "choice",
+          "prompt": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "“只有A才B”表示B→A；由B可得A，不得反转。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q38-source",
+            "blockId": "postgraduate-economics396-01-q38-source-block",
+            "title": "原创命题记录 38",
+            "exact": "只有完成培训，才能独立上岗。小林已独立上岗。必然推出："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；“只有A才B”表示B→A；由B可得A，不得反转。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "小林没有完成培训"
+            },
+            {
+              "id": "B",
+              "text": "完成培训者都独立上岗"
+            },
+            {
+              "id": "C",
+              "text": "小林完成了培训"
+            },
+            {
+              "id": "D",
+              "text": "小林培训成绩最高"
+            },
+            {
+              "id": "E",
+              "text": "培训是上岗的充分条件"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q39",
+          "number": 39,
+          "type": "choice",
+          "prompt": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "甲与乙的两句话互否，必一真；要总计两真，丙的“乙值班”须真，故乙值班。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q39-source",
+            "blockId": "postgraduate-economics396-01-q39-source-block",
+            "title": "原创命题记录 39",
+            "exact": "甲、乙、丙三人恰有一人值班。甲说“我值班”，乙说“甲不值班”，丙说“乙值班”。三句话恰有两句为真。值班者是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；甲与乙的两句话互否，必一真；要总计两真，丙的“乙值班”须真，故乙值班。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "甲"
+            },
+            {
+              "id": "B",
+              "text": "丙"
+            },
+            {
+              "id": "C",
+              "text": "无法判断"
+            },
+            {
+              "id": "D",
+              "text": "乙"
+            },
+            {
+              "id": "E",
+              "text": "甲与乙"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q40",
+          "number": 40,
+          "type": "choice",
+          "prompt": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "相关不等于因果；学习动力可为共同原因，且观察群体均值不能保证每个人的干预效果。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q40-source",
+            "blockId": "postgraduate-economics396-01-q40-source-block",
+            "title": "原创命题记录 40",
+            "exact": "一项调查发现，经常使用图书馆的学生平均成绩较高，遂认为增加图书馆使用就能提高任何学生的成绩。最直接指出推论缺陷的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；相关不等于因果；学习动力可为共同原因，且观察群体均值不能保证每个人的干预效果。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "图书馆需要经费"
+            },
+            {
+              "id": "B",
+              "text": "学生有不同专业"
+            },
+            {
+              "id": "C",
+              "text": "原有学习动力可能同时影响图书馆使用与成绩"
+            },
+            {
+              "id": "D",
+              "text": "所有学校都设图书馆"
+            },
+            {
+              "id": "E",
+              "text": "成绩可以用分数记录"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q41",
+          "number": 41,
+          "type": "choice",
+          "prompt": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？",
+          "score": 2,
+          "solution": "D",
+          "explanation": "同期停产是能耗下降的强竞争解释，未控制生产强度无法归因。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q41-source",
+            "blockId": "postgraduate-economics396-01-q41-source-block",
+            "title": "原创命题记录 41",
+            "exact": "某公司更换照明后能耗下降，经理认为更换照明是原因。以下哪项最削弱这一判断？"
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；同期停产是能耗下降的强竞争解释，未控制生产强度无法归因。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "灯具可调光"
+            },
+            {
+              "id": "B",
+              "text": "员工喜欢新灯"
+            },
+            {
+              "id": "C",
+              "text": "照明占原能耗的30%"
+            },
+            {
+              "id": "D",
+              "text": "同一时期工厂停产一个月，而比较未调整产量与开工时间"
+            },
+            {
+              "id": "E",
+              "text": "经理保存了账单"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q42",
+          "number": 42,
+          "type": "choice",
+          "prompt": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？",
+          "score": 2,
+          "solution": "A",
+          "explanation": "有未满足的周末空间需求且被闭馆直接限制，连接延时与增加实际机会。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q42-source",
+            "blockId": "postgraduate-economics396-01-q42-source-block",
+            "title": "原创命题记录 42",
+            "exact": "学校将延长图书馆周末开放时间，理由是这会使更多学生获得学习空间。以下哪项最加强该理由？"
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；有未满足的周末空间需求且被闭馆直接限制，连接延时与增加实际机会。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "周末现有座位在闭馆前仍满员，且有学生因闭馆离开"
+            },
+            {
+              "id": "B",
+              "text": "图书馆墙面新近刷漆"
+            },
+            {
+              "id": "C",
+              "text": "教师平均年龄增加"
+            },
+            {
+              "id": "D",
+              "text": "某些学生不喜欢纸书"
+            },
+            {
+              "id": "E",
+              "text": "开放时间曾在十年前调整"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q43",
+          "number": 43,
+          "type": "choice",
+          "prompt": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "丙只能周二（需甲在前且非周四）；甲周一，丁周三，乙周四。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q43-source",
+            "blockId": "postgraduate-economics396-01-q43-source-block",
+            "title": "原创命题记录 43",
+            "exact": "甲、乙、丙、丁依次在周一至周四各作一次报告。甲早于丙，乙紧接丁之后，丙不在周四。周三作报告的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；丙只能周二（需甲在前且非周四）；甲周一，丁周三，乙周四。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "甲"
+            },
+            {
+              "id": "B",
+              "text": "乙"
+            },
+            {
+              "id": "C",
+              "text": "丙"
+            },
+            {
+              "id": "D",
+              "text": "丁"
+            },
+            {
+              "id": "E",
+              "text": "无法确定"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q44",
+          "number": 44,
+          "type": "choice",
+          "prompt": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "全称命题∀x(Q→B)的否定为∃x(Q且¬B)。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q44-source",
+            "blockId": "postgraduate-economics396-01-q44-source-block",
+            "title": "原创命题记录 44",
+            "exact": "某结论：“所有合格样品均为蓝色。”要否定该结论，只需证明："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；全称命题∀x(Q→B)的否定为∃x(Q且¬B)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "所有蓝色样品均合格"
+            },
+            {
+              "id": "B",
+              "text": "没有蓝色样品"
+            },
+            {
+              "id": "C",
+              "text": "至少有一个合格样品不是蓝色"
+            },
+            {
+              "id": "D",
+              "text": "有一个不合格样品是蓝色"
+            },
+            {
+              "id": "E",
+              "text": "有一个样品颜色未知"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q45",
+          "number": 45,
+          "type": "choice",
+          "prompt": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "自愿参加者可能更关注健康知识，选择偏差不能由扩大同类样本自动消除。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q45-source",
+            "blockId": "postgraduate-economics396-01-q45-source-block",
+            "title": "原创命题记录 45",
+            "exact": "某调查只访问主动到健康讲座签到的人，却据此估计全市居民的健康知识水平。首要问题是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；自愿参加者可能更关注健康知识，选择偏差不能由扩大同类样本自动消除。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "签到会耗费纸张"
+            },
+            {
+              "id": "B",
+              "text": "讲座不是每天举行"
+            },
+            {
+              "id": "C",
+              "text": "问卷可以打印"
+            },
+            {
+              "id": "D",
+              "text": "抽样框可能系统排除不关注健康讲座者"
+            },
+            {
+              "id": "E",
+              "text": "访问人数不是整数"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q46",
+          "number": 46,
+          "type": "choice",
+          "prompt": "“如果今晚下雨，比赛就改期”的逻辑等价表述是：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "P→Q等价¬P∨Q；不是逆命题。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q46-source",
+            "blockId": "postgraduate-economics396-01-q46-source-block",
+            "title": "原创命题记录 46",
+            "exact": "“如果今晚下雨，比赛就改期”的逻辑等价表述是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；P→Q等价¬P∨Q；不是逆命题。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "今晚不下雨或比赛改期"
+            },
+            {
+              "id": "B",
+              "text": "今晚下雨且比赛改期"
+            },
+            {
+              "id": "C",
+              "text": "比赛改期就下雨"
+            },
+            {
+              "id": "D",
+              "text": "今晚不下雨且比赛不改期"
+            },
+            {
+              "id": "E",
+              "text": "今晚下雨或比赛不改期"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q47",
+          "number": 47,
+          "type": "choice",
+          "prompt": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "乙与丙的语句互为否定，必一真；要总共一真，甲句须假，故乙获奖。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q47-source",
+            "blockId": "postgraduate-economics396-01-q47-source-block",
+            "title": "原创命题记录 47",
+            "exact": "甲乙丙三人各说一句。甲：“乙没有获奖。”乙：“丙获奖。”丙：“我没有获奖。”只有一人获奖，恰有一句为真。获奖者为："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；乙与丙的语句互为否定，必一真；要总共一真，甲句须假，故乙获奖。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "甲"
+            },
+            {
+              "id": "B",
+              "text": "乙"
+            },
+            {
+              "id": "C",
+              "text": "丙"
+            },
+            {
+              "id": "D",
+              "text": "甲或乙"
+            },
+            {
+              "id": "E",
+              "text": "无法确定"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q48",
+          "number": 48,
+          "type": "choice",
+          "prompt": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "随机分配降低组间混杂，结果须记录复诊率而非发送量或态度。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q48-source",
+            "blockId": "postgraduate-economics396-01-q48-source-block",
+            "title": "原创命题记录 48",
+            "exact": "研究者要检验“新提醒方式能提高按时复诊率”。以下设计最有助于因果判断："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；随机分配降低组间混杂，结果须记录复诊率而非发送量或态度。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "比较愿用提醒者与拒绝者"
+            },
+            {
+              "id": "B",
+              "text": "只访问按时复诊者"
+            },
+            {
+              "id": "C",
+              "text": "将符合条件者随机分组，除提醒方式外尽量保持一致"
+            },
+            {
+              "id": "D",
+              "text": "只记录提醒发送量"
+            },
+            {
+              "id": "E",
+              "text": "询问医生是否喜欢新系统"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q49",
+          "number": 49,
+          "type": "choice",
+          "prompt": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？",
+          "score": 2,
+          "solution": "D",
+          "explanation": "仅B满足A∨B、A→¬C、¬B→C；逐项代入其余选项均冲突。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q49-source",
+            "blockId": "postgraduate-economics396-01-q49-source-block",
+            "title": "原创命题记录 49",
+            "exact": "某仓库规定：A、B两类货至少选一类；选A就不选C；不选B就选C。以下哪种组合可行？"
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；仅B满足A∨B、A→¬C、¬B→C；逐项代入其余选项均冲突。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "仅A"
+            },
+            {
+              "id": "B",
+              "text": "仅C"
+            },
+            {
+              "id": "C",
+              "text": "A和C"
+            },
+            {
+              "id": "D",
+              "text": "仅B"
+            },
+            {
+              "id": "E",
+              "text": "A、B、C"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q50",
+          "number": 50,
+          "type": "choice",
+          "prompt": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "从投诉数推质量须排除渠道、意愿、服务量等可比性差异，不能用投诉少独立证明。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q50-source",
+            "blockId": "postgraduate-economics396-01-q50-source-block",
+            "title": "原创命题记录 50",
+            "exact": "论证：去年投诉少，所以去年服务质量一定比前年高。最关键的隐含前提是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；从投诉数推质量须排除渠道、意愿、服务量等可比性差异，不能用投诉少独立证明。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "投诉从来不存在情绪因素"
+            },
+            {
+              "id": "B",
+              "text": "两年的投诉渠道和投诉意愿等足以使投诉数可比"
+            },
+            {
+              "id": "C",
+              "text": "前年没有服务人员"
+            },
+            {
+              "id": "D",
+              "text": "服务质量不能改进"
+            },
+            {
+              "id": "E",
+              "text": "去年服务人数为零"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q51",
+          "number": 51,
+          "type": "choice",
+          "prompt": "若所有A都是B，所有B都是C，则以下关系必然成立：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "集合包含具有传递性；全称关系不额外承诺A非空。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q51-source",
+            "blockId": "postgraduate-economics396-01-q51-source-block",
+            "title": "原创命题记录 51",
+            "exact": "若所有A都是B，所有B都是C，则以下关系必然成立："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；集合包含具有传递性；全称关系不额外承诺A非空。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "所有C都是A"
+            },
+            {
+              "id": "B",
+              "text": "有些A不是C"
+            },
+            {
+              "id": "C",
+              "text": "所有A都是C"
+            },
+            {
+              "id": "D",
+              "text": "所有C都不是B"
+            },
+            {
+              "id": "E",
+              "text": "A必定存在"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q52",
+          "number": 52,
+          "type": "choice",
+          "prompt": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是：",
+          "score": 2,
+          "solution": "D",
+          "explanation": "选择性试点和少量社区不足支持全国逐社区同效的全称外推。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q52-source",
+            "blockId": "postgraduate-economics396-01-q52-source-block",
+            "title": "原创命题记录 52",
+            "exact": "一项政策先在三个自愿报名的社区试点，结果满意度上升。最应避免的结论是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；选择性试点和少量社区不足支持全国逐社区同效的全称外推。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "应查看满意度测量方式"
+            },
+            {
+              "id": "B",
+              "text": "应考虑报名社区的特点"
+            },
+            {
+              "id": "C",
+              "text": "可继续研究不同社区"
+            },
+            {
+              "id": "D",
+              "text": "政策必然在全国每个社区产生相同提升"
+            },
+            {
+              "id": "E",
+              "text": "可比较试点前后数据"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q53",
+          "number": 53,
+          "type": "choice",
+          "prompt": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是：",
+          "score": 2,
+          "solution": "A",
+          "explanation": "用析因/对照设计分离措施及交互作用；总前后变化不能区分。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q53-source",
+            "blockId": "postgraduate-economics396-01-q53-source-block",
+            "title": "原创命题记录 53",
+            "exact": "某店同时降低价格并延长营业时间，销售额上升。要区分两项措施的作用，最有帮助的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；用析因/对照设计分离措施及交互作用；总前后变化不能区分。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "设置只降价、只延时、两者皆无等可比组并观察变化"
+            },
+            {
+              "id": "B",
+              "text": "只问店主喜欢哪项"
+            },
+            {
+              "id": "C",
+              "text": "删除所有旧账单"
+            },
+            {
+              "id": "D",
+              "text": "只记录总销售额"
+            },
+            {
+              "id": "E",
+              "text": "将营业时间记为价格"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q54",
+          "number": 54,
+          "type": "choice",
+          "prompt": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是：",
+          "score": 2,
+          "solution": "C",
+          "explanation": "只有ABE同时满足E在、A→B、¬(C∧D)。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q54-source",
+            "blockId": "postgraduate-economics396-01-q54-source-block",
+            "title": "原创命题记录 54",
+            "exact": "五位候选人A、B、C、D、E中选三人。选A必须选B；C与D不能同时选；E必须入选。以下可行的是："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；只有ABE同时满足E在、A→B、¬(C∧D)。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "A、C、E"
+            },
+            {
+              "id": "B",
+              "text": "C、D、E"
+            },
+            {
+              "id": "C",
+              "text": "A、B、E"
+            },
+            {
+              "id": "D",
+              "text": "A、B、C"
+            },
+            {
+              "id": "E",
+              "text": "B、C、D"
+            }
+          ]
+        },
+        {
+          "id": "postgraduate-economics396-01-q55",
+          "number": 55,
+          "type": "choice",
+          "prompt": "有人把“可能发生”解释为“必定发生”。其推论错误在于：",
+          "score": 2,
+          "solution": "B",
+          "explanation": "◇P不能推出□P，须保留可能与必然的强度差别。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q55-source",
+            "blockId": "postgraduate-economics396-01-q55-source-block",
+            "title": "原创命题记录 55",
+            "exact": "有人把“可能发生”解释为“必定发生”。其推论错误在于："
+          },
+          "chapter": "逻辑推理",
+          "tags": [
+            "逻辑推理"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "逻辑推理"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "形式化条件或检查竞争解释；◇P不能推出□P，须保留可能与必然的强度差别。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "否定所有可能性"
+            },
+            {
+              "id": "B",
+              "text": "将模态可能性强化为必然性"
+            },
+            {
+              "id": "C",
+              "text": "对概念进行了定义"
+            },
+            {
+              "id": "D",
+              "text": "使用了条件命题"
+            },
+            {
+              "id": "E",
+              "text": "引用了统计样本"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "argument-analysis",
+      "title": "写作一、论证有效性分析",
+      "examPartId": "analysis",
+      "instructions": "分析下述论证中的缺陷，选择若干要点，写一篇约600字的文章，评论其论证有效性。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "postgraduate-economics396-01-q56",
+          "number": 56,
+          "type": "response",
+          "prompt": "评论给定材料的论证有效性，写一篇约600字的文章。",
+          "score": 20,
+          "solution": "这段广告在样本代表性、指标关系、类比条件及效果评价方面存在多处跳跃。第一，主动填写问卷的50人可能与未回复者不同；‘觉得有帮助’也不等于一次通过考试，90%的满意比例不能直接充当全体考生通过率。第二，报名人数受宣传、价格、考试热度等多因素影响，增长20%不能量化为教学质量提高20%。第三，另一机构直播后收入翻倍不能证明翻倍由直播引起，更不能保证本机构照搬后同效，两家机构的生源、定价、师资与同期变化都需比较。第四，样本仅含能看直播者，不能据此否认网络不稳定用户的需要，取消下载可能使需求者被排除。第五，只招基础好的学员改变了入学人群，即使通过率上升，也可能源于生源变化；评价新课程的增量效果需要可比学员、明确结果、合适对照与完整随访。若要估计通过率，至少应记录报名者的实际考试结果、缺考与失访情况，并交代调查覆盖和统计口径。\n广告中的三个变化也不宜拼接成同一条证据链。报名人数是需求指标，收入受人数和单价共同影响，通过率又以实际应考人数为分母；它们并非可以相互替换的教学效果指标。全改直播还涉及成本、互动质量与用户可达性，不能只因别人的收入变化就决定。\n最后，不能把排除困难学员当作改善教学的充分证据。若新旧课程面对不同基础、不同备考时间的学员，就需要在相近条件下比较进步，或采用合适的对照设计。评价不仅应问最后有多少人通过，还应问课程使原本相近的学员获得了多少额外帮助。\n因此，在作出教学与商业决策前，应扩大并说明调查覆盖，区分满意度、通过率和收入指标，控制可比条件并保留多种交付方式。材料可以提出值得试验的方案，却不足以支持对通过率和收入作必然保证。",
+          "explanation": "每点评分含‘指出具体前提/跳跃—解释为何不支持结论—说明需何证据’。只贴谬误名称而无材料分析，至多得该点的一半。可选择其他实质缺陷；不要求反对课程本身。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q56-source",
+            "blockId": "postgraduate-economics396-01-q56-source-block",
+            "title": "原创命题记录 56",
+            "exact": "评论给定材料的论证有效性，写一篇约600字的文章。"
+          },
+          "chapter": "写作·论证有效性",
+          "tags": [
+            "写作·论证有效性"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "写作·论证有效性"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "逐项重建论证的样本、指标、因果、类比与比较基线；参考答案未以相反断言取代证据。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "argument-analysis-passage",
+                "blockId": "argument-analysis-passage-block",
+                "title": "写作一、论证有效性分析材料",
+                "exact": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "识别满意度与通过率混同及自愿回访选择偏差，说明影响",
+                "points": 4
+              },
+              {
+                "id": "r2",
+                "description": "识别报名人数增长不能量化为质量提高，给竞争解释",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "指出直播类比与因果归因不足，说明可比条件",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "指出可联网样本不能代表被排除者及下载需求",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "指出生源筛选混杂，结构清晰并提出与缺陷对应的改进",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "minWords": 550,
+            "maxWords": 700,
+            "countUnit": "characters",
+            "answerStyle": "grid"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。",
+        "source": {
+          "materialId": "argument-analysis-passage",
+          "blockId": "argument-analysis-passage-block",
+          "title": "写作一、论证有效性分析材料",
+          "exact": "某培训机构在广告中写道：过去一个月，主动填写回访问卷的50名学员中，有45人表示课程很有帮助，可见我们的课程能使九成考生一次通过考试。去年报名人数比前年增加20%，这也证明教学质量提高了20%。本市另一家机构增加直播课后收入翻倍，因此我们只要把所有课程改成直播，收入也一定翻倍。有人担心偏远地区网络不稳定，但我们调查的学员都能观看直播，所以没有必要保留下载课程。为了提高通过率，下一步只录取基础较好的学员；如果通过率提高，就足以证明新课程比原课程更有效。"
+        }
+      }
+    },
+    {
+      "id": "essay",
+      "title": "写作二、论说文",
+      "examPartId": "essay",
+      "instructions": "根据材料自拟题目，写一篇约700字的论说文。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "postgraduate-economics396-01-q57",
+          "number": 57,
+          "type": "response",
+          "prompt": "围绕给定材料自拟题目，写一篇约700字论说文。",
+          "score": 20,
+          "solution": "让流程与判断形成闭环\n\n流程与个人判断常被看作彼此竞争的选择：依照流程似乎意味着放弃思考，鼓励判断又仿佛会削弱规则。实际上，有效组织需要两者承担不同任务，并通过责任机制相互补充。流程为常见情境提供可靠的起点，判断识别其适用边界，责任则使例外能够被说明、追踪和改进。\n\n流程首先降低了重复工作的风险。检查单、交接记录和操作顺序，把过去的经验转化为团队可以共同执行的步骤。新成员不必重新犯过所有错误，协作者也能知道前一环节完成了什么。这种共同语言有助于减少遗漏，避免工作质量完全取决于某个人当天的记忆和状态。因此，面对稳定而高频的任务，尊重流程是专业性的表现。\n\n但流程不能预先列出所有情况。环境、设备和需求不断变化，过去有效的步骤可能遇到新的条件。如果只问清单是否勾完，而不再观察现实，规则就可能偏离其原本保护的目标。例如工程质检人员完成常规项目后发现异常振动，即使清单没有这一条，也应保留证据、暂停交付并请求专业复核。继续观察异常不是任性，而是对流程目的负责。\n\n个人经验同样不能被神化。经验可能来自有限样本，也可能使人习惯于过去侥幸没有出事的做法。若任何人都能以“情况特殊”为由绕开程序，规则很快失去约束。因此，组织应规定谁有权作例外决定、达到什么风险阈值必须升级、需要记录哪些理由。让专业判断拥有空间，也让这种空间有清楚的边界。\n\n更重要的是把例外变成学习的入口。事后复盘不应只寻找承担责任的人，还应检视原有规则为何没有覆盖风险、哪些信号能更早出现，以及流程是否需要修订。合理的例外若反复发生，就提示共同规则应当更新；某种判断若持续失误，也需要训练和校正。\n\n可见，流程负责托底，判断负责应变，责任负责闭环。三者相连，组织才能既保持稳定，又不因机械执行而失去适应能力。真正可靠的工作方式，是让规则接受实践检验，让经验接受证据约束，并使每次改进留下下一次可以使用的知识。",
+          "explanation": "参考范文提供一种完整论证，不是唯一立意。与材料相关、论点明确且有充分论证的不同观点可按量表得分。以例代论、把流程或经验绝对化，应在相应论证项扣分。",
+          "source": {
+            "materialId": "postgraduate-economics396-01-q57-source",
+            "blockId": "postgraduate-economics396-01-q57-source-block",
+            "title": "原创命题记录 57",
+            "exact": "围绕给定材料自拟题目，写一篇约700字论说文。"
+          },
+          "chapter": "写作·论说文",
+          "tags": [
+            "写作·论说文"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "由命题者独立求解；方法与结论见解析及核对记录。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "写作·论说文"
+            ],
+            "ability": "应用与推理"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-15",
+            "checks": [
+              {
+                "method": "independent-solution",
+                "detail": "核对主张—理由—例证—反方—结论链条；评分标准评价可观察论证行为，未把固定结论作为唯一答案。",
+                "result": "pass"
+              }
+            ]
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "essay-passage",
+                "blockId": "essay-passage-block",
+                "title": "写作二、论说文材料",
+                "exact": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。"
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "立意准确并回应材料",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "论证有因果与条件",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "具体例证及边界讨论",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "结构连贯",
+                "points": 3
+              },
+              {
+                "id": "r5",
+                "description": "语言准确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "结论正确、条件完整的其他等价推导按相应步骤给分。"
+            ]
+          },
+          "responseConstraints": {
+            "minWords": 650,
+            "maxWords": 850,
+            "countUnit": "characters",
+            "answerStyle": "grid"
+          }
+        }
+      ],
+      "stimulus": {
+        "text": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。",
+        "source": {
+          "materialId": "essay-passage",
+          "blockId": "essay-passage-block",
+          "title": "写作二、论说文材料",
+          "exact": "一个团队在工作中发现：统一流程可以减少遗漏，但遇到异常情况时，机械执行流程也可能延误处理。有人主张完全依照流程，有人主张一切交给个人经验。请围绕流程、判断与责任展开论述。"
+        }
+      }
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "economics396-v7",
+    "sourceQuestionIds": [
+      "postgraduate-economics396-01-q1",
+      "postgraduate-economics396-01-q2",
+      "postgraduate-economics396-01-q3",
+      "postgraduate-economics396-01-q4",
+      "postgraduate-economics396-01-q5",
+      "postgraduate-economics396-01-q6",
+      "postgraduate-economics396-01-q7",
+      "postgraduate-economics396-01-q8",
+      "postgraduate-economics396-01-q9",
+      "postgraduate-economics396-01-q10",
+      "postgraduate-economics396-01-q11",
+      "postgraduate-economics396-01-q12",
+      "postgraduate-economics396-01-q13",
+      "postgraduate-economics396-01-q14",
+      "postgraduate-economics396-01-q15",
+      "postgraduate-economics396-01-q16",
+      "postgraduate-economics396-01-q17",
+      "postgraduate-economics396-01-q18",
+      "postgraduate-economics396-01-q19",
+      "postgraduate-economics396-01-q20",
+      "postgraduate-economics396-01-q21",
+      "postgraduate-economics396-01-q22",
+      "postgraduate-economics396-01-q23",
+      "postgraduate-economics396-01-q24",
+      "postgraduate-economics396-01-q25",
+      "postgraduate-economics396-01-q26",
+      "postgraduate-economics396-01-q27",
+      "postgraduate-economics396-01-q28",
+      "postgraduate-economics396-01-q29",
+      "postgraduate-economics396-01-q30",
+      "postgraduate-economics396-01-q31",
+      "postgraduate-economics396-01-q32",
+      "postgraduate-economics396-01-q33",
+      "postgraduate-economics396-01-q34",
+      "postgraduate-economics396-01-q35",
+      "postgraduate-economics396-01-q36",
+      "postgraduate-economics396-01-q37",
+      "postgraduate-economics396-01-q38",
+      "postgraduate-economics396-01-q39",
+      "postgraduate-economics396-01-q40",
+      "postgraduate-economics396-01-q41",
+      "postgraduate-economics396-01-q42",
+      "postgraduate-economics396-01-q43",
+      "postgraduate-economics396-01-q44",
+      "postgraduate-economics396-01-q45",
+      "postgraduate-economics396-01-q46",
+      "postgraduate-economics396-01-q47",
+      "postgraduate-economics396-01-q48",
+      "postgraduate-economics396-01-q49",
+      "postgraduate-economics396-01-q50",
+      "postgraduate-economics396-01-q51",
+      "postgraduate-economics396-01-q52",
+      "postgraduate-economics396-01-q53",
+      "postgraduate-economics396-01-q54",
+      "postgraduate-economics396-01-q55",
+      "postgraduate-economics396-01-q56",
+      "postgraduate-economics396-01-q57"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创完整练习基准，采用所列考试结构；不是任何年份的官方原卷。题文、参考答案和评分要点为项目原创，MIT。外部资料仅作结构与知识核对，权利分别保留。"
+  },
+  "exam": {
+    "specificationId": "postgraduate-economics396-blueprint",
+    "scope": "full",
+    "scoreScale": "卷面分",
+    "specification": {
+      "id": "postgraduate-economics396-blueprint",
+      "name": "经济类综合能力（396）完整练习结构",
+      "subject": "经济类综合能力（396）",
+      "level": "考研",
+      "durationMinutes": 180,
+      "totalScore": 150,
+      "scoreScale": "卷面分",
+      "source": {
+        "kind": "published-syllabus-summary",
+        "title": "2026经济类综合能力考试大纲解读转载",
+        "url": "https://kaoyan.xdf.cn/202511/15004196.html",
+        "accessedAt": "2026-11-15",
+        "notes": "转载材料，非官方原件；核对180分钟、150分、35数学/20逻辑/2写作与分值。"
+      },
+      "sections": [
+        {
+          "id": "math",
+          "title": "数学基础",
+          "count": 35,
+          "questionType": "choice",
+          "totalScore": 70,
+          "pointsPerQuestion": 2,
+          "displayStart": 1
+        },
+        {
+          "id": "logic",
+          "title": "逻辑推理",
+          "count": 20,
+          "questionType": "choice",
+          "totalScore": 40,
+          "pointsPerQuestion": 2,
+          "displayStart": 36
+        },
+        {
+          "id": "analysis",
+          "title": "论证有效性分析",
+          "count": 1,
+          "questionType": "response",
+          "totalScore": 20,
+          "displayStart": 56
+        },
+        {
+          "id": "essay",
+          "title": "论说文",
+          "count": 1,
+          "questionType": "response",
+          "totalScore": 20,
+          "displayStart": 57
+        }
+      ]
+    }
+  }
+}

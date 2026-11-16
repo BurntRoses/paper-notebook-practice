@@ -1,0 +1,800 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "registered-electrical-engineer-cases-01",
+  "notebookId": "registered-electrical-engineer-qualification-notebook",
+  "notebookRevision": 1,
+  "title": "注册电气工程师　专业案例",
+  "subject": "电气工程专业案例",
+  "level": "工程职业资格",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "注册电气工程师　专业案例",
+      "供配电·设备选择·继电保护"
+    ],
+    "titleLineSizesPt": [
+      17,
+      14
+    ],
+    "metaLines": [
+      "考试时间：150 分钟　满分：100 分"
+    ],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "本卷五道案例分析题，每题20分。请按题目给定的条件、合同约定和判定准则作答。",
+      "计算题写出模型、主要步骤与单位。未给定的法规、规范或取值不作为隐含条件。",
+      "各题独立作答；需要作工程判断时写明所依据的资料和适用条件。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "school",
+      "title": "注册电气工程师　专业案例答题卡"
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "电气工程专业案例",
+      "rule": true
+    },
+    "footerTemplate": "电气工程专业案例　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false
+  },
+  "authoring": {
+    "routeId": "registered-electrical-engineer",
+    "examName": "注册电气工程师　专业案例",
+    "specialty": "供配电·设备选择·继电保护",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "registered-electrical-engineer-cases-01-q1",
+        "knowledge": "无功补偿、功率因数、三相电流、分级投切",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-electrical-engineer-cases-01-q1-source"
+        ]
+      },
+      {
+        "id": "registered-electrical-engineer-cases-01-q2",
+        "knowledge": "变压器损耗、并列运行、运行优化、可靠性边界",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-electrical-engineer-cases-01-q2-source"
+        ]
+      },
+      {
+        "id": "registered-electrical-engineer-cases-01-q3",
+        "knowledge": "标幺制、短路计算、开断选择、耐受边界",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-electrical-engineer-cases-01-q3-source"
+        ]
+      },
+      {
+        "id": "registered-electrical-engineer-cases-01-q4",
+        "knowledge": "馈线电压降、载流量折减、独立约束",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-electrical-engineer-cases-01-q4-source"
+        ]
+      },
+      {
+        "id": "registered-electrical-engineer-cases-01-q5",
+        "knowledge": "反时限保护、选择性配合、最不利工况、模型范围",
+        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 27,
+        "sourceIds": [
+          "registered-electrical-engineer-cases-01-q5-source"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "materials": [
+    {
+      "id": "design-exam-2026",
+      "kind": "reference",
+      "title": "2026勘察设计注册专业与案例作答方式",
+      "text": "2026年湖北省勘察设计注册工程师考务通知列出电气、公用设备和化工等专业，并说明这些专业案例须在专用答题卡填涂答案选项、在指定编号位置填写计算过程。各专业的实际题量和作答范围应另据相应专业官方大纲。本项目五案例蓝图用于展示完整命题、演算、评分和答题区域；专业参数与控制值逐题给定。",
+      "blocks": [
+        {
+          "id": "design-exam-2026-block",
+          "title": "2026勘察设计注册专业与案例作答方式",
+          "text": "2026年湖北省勘察设计注册工程师考务通知列出电气、公用设备和化工等专业，并说明这些专业案例须在专用答题卡填涂答案选项、在指定编号位置填写计算过程。各专业的实际题量和作答范围应另据相应专业官方大纲。本项目五案例蓝图用于展示完整命题、演算、评分和答题区域；专业参数与控制值逐题给定。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "ce22026d52e5c51a56eea743a55da7dd3438eaaa2ff4015185b13749635e7dcb",
+      "provenance": {
+        "kind": "web",
+        "sourceType": "official",
+        "accessedAt": "2026-11-16",
+        "version": "2026年考务通知",
+        "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml",
+        "publisher": "湖北省人事考试院"
+      },
+      "url": "https://rst.hubei.gov.cn/hbrsksw/zyjslks/zyjsry/2026ks/2026kcsjzcgcs/202608/t20260804_5988526.shtml"
+    },
+    {
+      "id": "registered-electrical-engineer-cases-01-q1-source",
+      "kind": "reference",
+      "title": "案例1条件与任务",
+      "text": "三相平衡负荷有功功率300kW、线电压400V、原功率因数0.70（滞后）。题设要求补偿后功率因数不低于0.95且不超前，忽略电容损耗及电压变化。可选电容总容量200、220、240kvar。\n（1）计算原无功、达到0.95所需电容容量及补偿前后目标线电流。\n（2）从给定容量选择满足要求的最小方案并计算其实际功率因数，填选项并写过程。\n（3）夜间有功降为100kW而负荷原功率因数仍0.70，若220kvar全投，判断是否满足“不超前”，提出投切原则。",
+      "blocks": [
+        {
+          "id": "registered-electrical-engineer-cases-01-q1-source-block",
+          "title": "案例1条件与任务",
+          "text": "三相平衡负荷有功功率300kW、线电压400V、原功率因数0.70（滞后）。题设要求补偿后功率因数不低于0.95且不超前，忽略电容损耗及电压变化。可选电容总容量200、220、240kvar。\n（1）计算原无功、达到0.95所需电容容量及补偿前后目标线电流。\n（2）从给定容量选择满足要求的最小方案并计算其实际功率因数，填选项并写过程。\n（3）夜间有功降为100kW而负荷原功率因数仍0.70，若220kvar全投，判断是否满足“不超前”，提出投切原则。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "3fbd0171dea7a1a4ab8558aebf1310872f88487863a742b85b4b295b66a0ea01",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-electrical-engineer-cases-01-q2-source",
+      "kind": "reference",
+      "title": "案例2条件与任务",
+      "text": "两台相同变压器，每台额定500kVA、空载损耗1.2kW、额定铜耗6kW。单台运行损耗为P₁=1.2+6(S/500)²kW；两台并联均分总负荷时P₂=2.4+12(S/1000)²kW，退出机组完全停电无空载损耗。某日总负荷先200kVA持续12h、再400kVA持续12h，忽略切换损耗；只按有功损耗选择运行台数。\n（1）推导两方式损耗相等的总负荷。\n（2）计算各时段两方式损耗并给出最优切换方案和全天电量损耗。\n（3）与全天仅一台、全天两台方案比较。\n（4）指出该优化在重要负荷实际运行中需另纳入的条件。",
+      "blocks": [
+        {
+          "id": "registered-electrical-engineer-cases-01-q2-source-block",
+          "title": "案例2条件与任务",
+          "text": "两台相同变压器，每台额定500kVA、空载损耗1.2kW、额定铜耗6kW。单台运行损耗为P₁=1.2+6(S/500)²kW；两台并联均分总负荷时P₂=2.4+12(S/1000)²kW，退出机组完全停电无空载损耗。某日总负荷先200kVA持续12h、再400kVA持续12h，忽略切换损耗；只按有功损耗选择运行台数。\n（1）推导两方式损耗相等的总负荷。\n（2）计算各时段两方式损耗并给出最优切换方案和全天电量损耗。\n（3）与全天仅一台、全天两台方案比较。\n（4）指出该优化在重要负荷实际运行中需另纳入的条件。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "8ea5fde1eadf81e3cc51a8a85914331e2d23698082721f44ebd8ebd69b86fb21",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-electrical-engineer-cases-01-q3-source",
+      "kind": "reference",
+      "title": "案例3条件与任务",
+      "text": "10kV电源母线短路容量500MVA，连接一台1MVA、10/0.4kV变压器，短路阻抗u_k=6%。在1MVA统一基准上，电源等值标幺阻抗为S基/S短，变压器标幺阻抗0.06，两者视为纯电抗串联；忽略线路及电动机反馈。\n（1）求低压侧三相对称短路电流。\n（2）设备开断校核按题设电压系数1.10放大，候选断路器额定对称开断电流25、36、50kA，选满足本项的最小值。\n（3）如果直接以低压额定电流除0.06，误差方向如何？选出的开断值能否代替关合及短时耐受校核？",
+      "blocks": [
+        {
+          "id": "registered-electrical-engineer-cases-01-q3-source-block",
+          "title": "案例3条件与任务",
+          "text": "10kV电源母线短路容量500MVA，连接一台1MVA、10/0.4kV变压器，短路阻抗u_k=6%。在1MVA统一基准上，电源等值标幺阻抗为S基/S短，变压器标幺阻抗0.06，两者视为纯电抗串联；忽略线路及电动机反馈。\n（1）求低压侧三相对称短路电流。\n（2）设备开断校核按题设电压系数1.10放大，候选断路器额定对称开断电流25、36、50kA，选满足本项的最小值。\n（3）如果直接以低压额定电流除0.06，误差方向如何？选出的开断值能否代替关合及短时耐受校核？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "60d6e0fccafab5e4029d65a27972549f2d8fc111abc68c09a2a8a45547e931ec",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-electrical-engineer-cases-01-q4-source",
+      "kind": "reference",
+      "title": "案例4条件与任务",
+      "text": "三相馈线供120kW、400V、cosφ=0.85滞后负荷，长度200m为单程。候选A电缆每相R=0.125Ω/km、X=0.080Ω/km，表列载流量260A；环境与敷设系数分别0.85、0.90相乘。项目允许线电压降不大于额定3%。采用ΔU=√3 I L(Rcosφ+Xsinφ)，L以km。候选B电缆表列300A、R=0.100Ω/km、X同前，折减系数相同。\n（1）计算设计电流和A电压降。\n（2）同时校核A的载流量与电压降。\n（3）复核B并选择；说明为何只看3%会漏掉失败条件。",
+      "blocks": [
+        {
+          "id": "registered-electrical-engineer-cases-01-q4-source-block",
+          "title": "案例4条件与任务",
+          "text": "三相馈线供120kW、400V、cosφ=0.85滞后负荷，长度200m为单程。候选A电缆每相R=0.125Ω/km、X=0.080Ω/km，表列载流量260A；环境与敷设系数分别0.85、0.90相乘。项目允许线电压降不大于额定3%。采用ΔU=√3 I L(Rcosφ+Xsinφ)，L以km。候选B电缆表列300A、R=0.100Ω/km、X同前，折减系数相同。\n（1）计算设计电流和A电压降。\n（2）同时校核A的载流量与电压降。\n（3）复核B并选择；说明为何只看3%会漏掉失败条件。"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "2886b3459c9a7ede9b5948c7dd924e2d729476cc2b9aa5828f86eb9601c48e4e",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    },
+    {
+      "id": "registered-electrical-engineer-cases-01-q5-source",
+      "kind": "reference",
+      "title": "案例5条件与任务",
+      "text": "上下级保护在本项目练习中使用以下简化反时限关系（不是某一标准曲线编号）：下级t_D=0.10×10/(I/200−1)s，上级t_U=T×10/(I/400−1)s。下级断路器另需0.05s分断，上级动作时间相对下级完全清除故障至少留0.30s。只检验I=1000、2000、4000A三个给定点，T可按0.01递增。\n（1）分别求各点t_D及对T的下限。\n（2）选满足三个点的最小T并计算三个实际配合裕度。\n（3）解释为什么只检验1000A不够；本题离散校核能否自动证明整个故障范围及上级灵敏度？",
+      "blocks": [
+        {
+          "id": "registered-electrical-engineer-cases-01-q5-source-block",
+          "title": "案例5条件与任务",
+          "text": "上下级保护在本项目练习中使用以下简化反时限关系（不是某一标准曲线编号）：下级t_D=0.10×10/(I/200−1)s，上级t_U=T×10/(I/400−1)s。下级断路器另需0.05s分断，上级动作时间相对下级完全清除故障至少留0.30s。只检验I=1000、2000、4000A三个给定点，T可按0.01递增。\n（1）分别求各点t_D及对T的下限。\n（2）选满足三个点的最小T并计算三个实际配合裕度。\n（3）解释为什么只检验1000A不够；本题离散校核能否自动证明整个故障范围及上级灵敏度？"
+        }
+      ],
+      "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
+      "sha256": "172fe867ab2c3b480cf67003f47e36a4ec2afb9caf1954c629aeba345d51ecf6",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "accessedAt": "2026-11-16"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cases",
+      "title": "案例分析题",
+      "displayLabel": "",
+      "instructions": "",
+      "score": 100,
+      "questions": [
+        {
+          "id": "registered-electrical-engineer-cases-01-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "三相平衡负荷有功功率300kW、线电压400V、原功率因数0.70（滞后）。题设要求补偿后功率因数不低于0.95且不超前，忽略电容损耗及电压变化。可选电容总容量200、220、240kvar。\n（1）计算原无功、达到0.95所需电容容量及补偿前后目标线电流。\n（2）从给定容量选择满足要求的最小方案并计算其实际功率因数，填选项并写过程。\n（3）夜间有功降为100kW而负荷原功率因数仍0.70，若220kvar全投，判断是否满足“不超前”，提出投切原则。",
+          "score": 20,
+          "solution": "Q原=306.061218kvar；达到0.95需Qc=207.455987kvar。I原=618.589574A，目标I=455.802844A。选B（220kvar），余无功86.061218kvar滞后，实际功率因数0.961229766。夜间负荷无功102.020406kvar，全投后净无功-117.979594kvar，超前而不满足；应采用分级自动投切、以实时净无功和不超前约束设定投切，校验谐波及开关条件。",
+          "explanation": "Q=P tan(arccos cosφ)，线电流P/(√3 U cosφ)，kW与kV配套时得到A。不能按功率因数差线性乘P求无功。电容支路固定容量在负荷下降后可能过补，白天达标不代表全天达标。",
+          "source": {
+            "materialId": "registered-electrical-engineer-cases-01-q1-source",
+            "blockId": "registered-electrical-engineer-cases-01-q1-source-block",
+            "title": "案例1条件与任务",
+            "exact": "三相平衡负荷有功功率300kW、线电压400V、原功率因数0.70（滞后）。题设要求补偿后功率因数不低于0.95且不超前，忽略电容损耗及电压变化。可选电容总容量200、220、240kvar。\n（1）计算原无功、达到0.95所需电容容量及补偿前后目标线电流。\n（2）从给定容量选择满足要求的最小方案并计算其实际功率因数，填选项并写过程。\n（3）夜间有功降为100kW而负荷原功率因数仍0.70，若220kvar全投，判断是否满足“不超前”，提出投切原则。"
+          },
+          "chapter": "无功补偿",
+          "tags": [
+            "无功补偿",
+            "功率因数",
+            "三相电流",
+            "分级投切"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "无功补偿",
+              "功率因数",
+              "三相电流",
+              "分级投切"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "原无功与补偿需求",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "两目标电流",
+                "points": 4
+              },
+              {
+                "id": "r3",
+                "description": "选220并核算0.96123",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "夜间超前计算及投切原则",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "electrical-Q-required: independent Python calculation = 207.4559868; expected = 207.4559868; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-I-original: independent Python calculation = 618.5895741; expected = 618.5895741; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-pf220: independent Python calculation = 0.9612297665; expected = 0.9612297665; pass.",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "200kvar"
+            },
+            {
+              "id": "B",
+              "text": "220kvar"
+            },
+            {
+              "id": "C",
+              "text": "240kvar"
+            },
+            {
+              "id": "D",
+              "text": "三个方案均不满足"
+            }
+          ]
+        },
+        {
+          "id": "registered-electrical-engineer-cases-01-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "两台相同变压器，每台额定500kVA、空载损耗1.2kW、额定铜耗6kW。单台运行损耗为P₁=1.2+6(S/500)²kW；两台并联均分总负荷时P₂=2.4+12(S/1000)²kW，退出机组完全停电无空载损耗。某日总负荷先200kVA持续12h、再400kVA持续12h，忽略切换损耗；只按有功损耗选择运行台数。\n（1）推导两方式损耗相等的总负荷。\n（2）计算各时段两方式损耗并给出最优切换方案和全天电量损耗。\n（3）与全天仅一台、全天两台方案比较。\n（4）指出该优化在重要负荷实际运行中需另纳入的条件。",
+          "score": 20,
+          "solution": "相等时S=316.227766kVA。200时单台2.16kW、两台2.88kW；400时单台5.04kW、两台4.32kW。低段一台、高段两台，日损耗77.760000kWh；全天一台86.4、全天两台86.4kWh，均多8.64。需校核负荷等级与可靠性、N−1、切换/冲击、电压和分接头、并联条件、温升及备用可用性；损耗最小只是题设目标。",
+          "explanation": "铜耗随每台负载率的平方变化，不能把两台铜耗仍按总负荷除500再乘2。空载损耗则随带电台数变化，因而并联并非始终节能。",
+          "source": {
+            "materialId": "registered-electrical-engineer-cases-01-q2-source",
+            "blockId": "registered-electrical-engineer-cases-01-q2-source-block",
+            "title": "案例2条件与任务",
+            "exact": "两台相同变压器，每台额定500kVA、空载损耗1.2kW、额定铜耗6kW。单台运行损耗为P₁=1.2+6(S/500)²kW；两台并联均分总负荷时P₂=2.4+12(S/1000)²kW，退出机组完全停电无空载损耗。某日总负荷先200kVA持续12h、再400kVA持续12h，忽略切换损耗；只按有功损耗选择运行台数。\n（1）推导两方式损耗相等的总负荷。\n（2）计算各时段两方式损耗并给出最优切换方案和全天电量损耗。\n（3）与全天仅一台、全天两台方案比较。\n（4）指出该优化在重要负荷实际运行中需另纳入的条件。"
+          },
+          "chapter": "变压器损耗",
+          "tags": [
+            "变压器损耗",
+            "并列运行",
+            "运行优化",
+            "可靠性边界"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "变压器损耗",
+              "并列运行",
+              "运行优化",
+              "可靠性边界"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "交点方程与316.2278",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "四损耗与切换",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "77.76及两86.4对照",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "实际运行约束",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "electrical-transformer-cross: independent Python calculation = 316.227766; expected = 316.227766; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-optimal-energy: independent Python calculation = 77.76; expected = 77.76; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-cross-check: independent Python calculation = 3.6; expected = 3.6; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-electrical-engineer-cases-01-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "10kV电源母线短路容量500MVA，连接一台1MVA、10/0.4kV变压器，短路阻抗u_k=6%。在1MVA统一基准上，电源等值标幺阻抗为S基/S短，变压器标幺阻抗0.06，两者视为纯电抗串联；忽略线路及电动机反馈。\n（1）求低压侧三相对称短路电流。\n（2）设备开断校核按题设电压系数1.10放大，候选断路器额定对称开断电流25、36、50kA，选满足本项的最小值。\n（3）如果直接以低压额定电流除0.06，误差方向如何？选出的开断值能否代替关合及短时耐受校核？",
+          "score": 20,
+          "solution": "低压基准电流1443.375673A，电源标幺0.002，总0.062，Ik=23.280253kA。放大后25.608278kA，25不足，选择36kA。忽略电源阻抗会算成24.056261kA而偏大；36kA仅满足本题对称开断项，尚需非对称分量/峰值关合、短时热稳定、选择性及环境条件校核。",
+          "explanation": "所有阻抗先归到同一容量与对应电压基准。电源短路容量不是低压故障点的可用短路容量，必须与变压器阻抗串联；1.10乘电流而非把阻抗加0.10。",
+          "source": {
+            "materialId": "registered-electrical-engineer-cases-01-q3-source",
+            "blockId": "registered-electrical-engineer-cases-01-q3-source-block",
+            "title": "案例3条件与任务",
+            "exact": "10kV电源母线短路容量500MVA，连接一台1MVA、10/0.4kV变压器，短路阻抗u_k=6%。在1MVA统一基准上，电源等值标幺阻抗为S基/S短，变压器标幺阻抗0.06，两者视为纯电抗串联；忽略线路及电动机反馈。\n（1）求低压侧三相对称短路电流。\n（2）设备开断校核按题设电压系数1.10放大，候选断路器额定对称开断电流25、36、50kA，选满足本项的最小值。\n（3）如果直接以低压额定电流除0.06，误差方向如何？选出的开断值能否代替关合及短时耐受校核？"
+          },
+          "chapter": "标幺制",
+          "tags": [
+            "标幺制",
+            "短路计算",
+            "开断选择",
+            "耐受边界"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "标幺制",
+              "短路计算",
+              "开断选择",
+              "耐受边界"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "统一基准与0.062",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "23.28025及25.60828kA",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "36kA选择",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "忽略源阻抗误差与其他校核",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "electrical-short-circuit-kA: independent Python calculation = 23.28025279; expected = 23.28025279; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-short-circuit-factor: independent Python calculation = 25.60827807; expected = 25.60827807; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-electrical-engineer-cases-01-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "三相馈线供120kW、400V、cosφ=0.85滞后负荷，长度200m为单程。候选A电缆每相R=0.125Ω/km、X=0.080Ω/km，表列载流量260A；环境与敷设系数分别0.85、0.90相乘。项目允许线电压降不大于额定3%。采用ΔU=√3 I L(Rcosφ+Xsinφ)，L以km。候选B电缆表列300A、R=0.100Ω/km、X同前，折减系数相同。\n（1）计算设计电流和A电压降。\n（2）同时校核A的载流量与电压降。\n（3）复核B并选择；说明为何只看3%会漏掉失败条件。",
+          "score": 20,
+          "solution": "I=203.770683A。A压降10.474773V，即2.618693%，满足3%；但修正载流量198.9A小于I，不满足。B修正229.5A，压降8.974773V即2.243693%，两项均满足，选B。实际还应结合短路热稳定、保护配合、截面与端子、谐波等条件。",
+          "explanation": "已含√3的线电压公式使用单程长度，不再乘2；载流折减并非从计算电流中减去。A说明电压降与长期热负荷是独立约束。",
+          "source": {
+            "materialId": "registered-electrical-engineer-cases-01-q4-source",
+            "blockId": "registered-electrical-engineer-cases-01-q4-source-block",
+            "title": "案例4条件与任务",
+            "exact": "三相馈线供120kW、400V、cosφ=0.85滞后负荷，长度200m为单程。候选A电缆每相R=0.125Ω/km、X=0.080Ω/km，表列载流量260A；环境与敷设系数分别0.85、0.90相乘。项目允许线电压降不大于额定3%。采用ΔU=√3 I L(Rcosφ+Xsinφ)，L以km。候选B电缆表列300A、R=0.100Ω/km、X同前，折减系数相同。\n（1）计算设计电流和A电压降。\n（2）同时校核A的载流量与电压降。\n（3）复核B并选择；说明为何只看3%会漏掉失败条件。"
+          },
+          "chapter": "馈线电压降",
+          "tags": [
+            "馈线电压降",
+            "载流量折减",
+            "独立约束"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "馈线电压降",
+              "载流量折减",
+              "独立约束"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "203.77068A",
+                "points": 5
+              },
+              {
+                "id": "r2",
+                "description": "A压降与百分比",
+                "points": 5
+              },
+              {
+                "id": "r3",
+                "description": "A修正198.9及否决",
+                "points": 5
+              },
+              {
+                "id": "r4",
+                "description": "B229.5与8.97477V及选择",
+                "points": 5
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "electrical-feeder-current: independent Python calculation = 203.7706832; expected = 203.7706832; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-drop-A: independent Python calculation = 10.47477282; expected = 10.47477282; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-drop-B: independent Python calculation = 8.974772824; expected = 8.974772824; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "registered-electrical-engineer-cases-01-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "上下级保护在本项目练习中使用以下简化反时限关系（不是某一标准曲线编号）：下级t_D=0.10×10/(I/200−1)s，上级t_U=T×10/(I/400−1)s。下级断路器另需0.05s分断，上级动作时间相对下级完全清除故障至少留0.30s。只检验I=1000、2000、4000A三个给定点，T可按0.01递增。\n（1）分别求各点t_D及对T的下限。\n（2）选满足三个点的最小T并计算三个实际配合裕度。\n（3）解释为什么只检验1000A不够；本题离散校核能否自动证明整个故障范围及上级灵敏度？",
+          "score": 20,
+          "solution": "t_D依次为0.250000000、0.111111111、0.052631579s；T下限依次0.090000000、0.184444444、0.362368421。控制点4000A，选T=0.37。t_U依次2.466666667、0.925000000、0.411111111s，扣下级动作与0.05s后的裕度为2.166666667、0.763888889、0.308479532s，均≥0.30。仅1000A会选过小T；连续电流范围、误差带、最小故障灵敏度、最大切除时间及其他级保护需另检验。",
+          "explanation": "时间裕度基于完全清除故障，不是只减去继电器动作时间。下限由最大值控制，题给曲线随着电流变化不同速；离散样点通过只支持这三个样点。",
+          "source": {
+            "materialId": "registered-electrical-engineer-cases-01-q5-source",
+            "blockId": "registered-electrical-engineer-cases-01-q5-source-block",
+            "title": "案例5条件与任务",
+            "exact": "上下级保护在本项目练习中使用以下简化反时限关系（不是某一标准曲线编号）：下级t_D=0.10×10/(I/200−1)s，上级t_U=T×10/(I/400−1)s。下级断路器另需0.05s分断，上级动作时间相对下级完全清除故障至少留0.30s。只检验I=1000、2000、4000A三个给定点，T可按0.01递增。\n（1）分别求各点t_D及对T的下限。\n（2）选满足三个点的最小T并计算三个实际配合裕度。\n（3）解释为什么只检验1000A不够；本题离散校核能否自动证明整个故障范围及上级灵敏度？"
+          },
+          "chapter": "反时限保护",
+          "tags": [
+            "反时限保护",
+            "选择性配合",
+            "最不利工况",
+            "模型范围"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "反时限保护",
+              "选择性配合",
+              "最不利工况",
+              "模型范围"
+            ],
+            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "estimatedMinutes": 27,
+            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+          },
+          "answerRows": 25,
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "r1",
+                "description": "三tD与T不等式",
+                "points": 6
+              },
+              {
+                "id": "r2",
+                "description": "三下限及0.37",
+                "points": 6
+              },
+              {
+                "id": "r3",
+                "description": "三裕度均通过",
+                "points": 4
+              },
+              {
+                "id": "r4",
+                "description": "高电流控制与连续范围/灵敏度",
+                "points": 4
+              }
+            ],
+            "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
+            "equivalentMethods": [
+              "其他满足题设、计算与判断正确的等效方法，按对应步骤给分；前问算术错误但后续方法正确可给相应过程分。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-16",
+            "checks": [
+              {
+                "method": "independent-computation",
+                "detail": "electrical-relay-control-T: independent Python calculation = 0.3623684211; expected = 0.3623684211; pass.",
+                "result": "pass"
+              },
+              {
+                "method": "independent-computation",
+                "detail": "electrical-relay-min-margin: independent Python calculation = 0.3084795322; expected = 0.3084795322; pass.",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "exam": {
+    "specificationId": "registered-electrical-engineer-project-blueprint",
+    "scope": "full",
+    "scoreScale": "项目案例卷面分",
+    "specification": {
+      "id": "registered-electrical-engineer-project-blueprint",
+      "name": "电气工程专业案例案例能力蓝图",
+      "subject": "电气工程专业案例",
+      "level": "工程职业资格",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "项目案例卷面分",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "Paper Notebook 项目原创案例能力蓝图",
+        "notes": "5道案例、每题20分；用于展示完整命题、解答、评分与答题纸，不作为任何年度官方题量规格。"
+      },
+      "sections": [
+        {
+          "id": "cases",
+          "title": "案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 100,
+          "pointsPerQuestion": 20
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "registered-electrical-engineer-cases-v7",
+    "sourceQuestionIds": [
+      "registered-electrical-engineer-cases-01-q1",
+      "registered-electrical-engineer-cases-01-q2",
+      "registered-electrical-engineer-cases-01-q3",
+      "registered-electrical-engineer-cases-01-q4",
+      "registered-electrical-engineer-cases-01-q5"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "项目原创MIT案例能力基准；试题、设计条件、参考解答与评分量表为独立编制。采用5道案例100分的项目自定完整蓝图，不冒充官方当年原卷或官方题量。题设合同、项目控制值只适用于该题，不冒充国家强制规范。"
+  }
+}

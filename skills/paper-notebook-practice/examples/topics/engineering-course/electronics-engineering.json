@@ -1,0 +1,859 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "electronics-engineering-course-01",
+  "notebookId": "electronics-engineering-source",
+  "notebookRevision": 1,
+  "title": "电子电路与数字系统课程考试",
+  "subject": "电子电路与数字系统",
+  "level": "大学本科",
+  "durationMinutes": 150,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "standard",
+    "sealed": false,
+    "templateId": "engineering-course"
+  },
+  "presentation": {
+    "titleLines": [
+      "电子电路与数字系统课程考试"
+    ],
+    "metaLines": [
+      "考试时间：150分钟　满分：100分"
+    ],
+    "notices": [
+      "计算结果保留合理有效数字，列出模型、假设、公式及单位。",
+      "题目给定的验算指标用于本卷计算。"
+    ],
+    "footerTemplate": "{title}　第{page}页，共{pages}页",
+    "answerSpace": "blank"
+  },
+  "materials": [
+    {
+      "id": "electronics-engineering-scope",
+      "title": "MIT 6.002 Circuits and Electronics",
+      "kind": "reference",
+      "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+      "text": "The course introduces the fundamentals of the lumped circuit abstraction.",
+      "rights": "Institutional course-description excerpt; question content is original MIT-licensed work.",
+      "provenance": {
+        "kind": "web",
+        "publisher": "Massachusetts Institute of Technology",
+        "sourceType": "institution",
+        "version": "Spring 2007",
+        "accessedAt": "2026-11-15",
+        "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+      }
+    },
+    {
+      "id": "electronics-engineering-q1-statement",
+      "title": "电子电路与数字系统第1题命题原稿",
+      "kind": "question-bank",
+      "text": "理想反相放大器输入电阻10 kΩ、反馈电阻47 kΩ，同相端接地，输出电压受电源限制在±10 V。输入为1.5 V直流，随后改为3.0 V。（1）分别求输出，并判断虚短假设何时成立；（2）输入正弦信号峰值2.0 V时是否削顶；（3）求保证线性输出的输入绝对值上限。忽略输出电流限制与频率效应。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electronics-engineering-q2-statement",
+      "title": "电子电路与数字系统第2题命题原稿",
+      "kind": "question-bank",
+      "text": "NPN晶体管发射极接地，集电极经1 kΩ接5 V，基极经100 kΩ接3.3 V。题给导通时$V_{BE}=0.70$ V，放大区$\\beta=100$，饱和时$V_{CE}=0.20$ V。（1）求基极电流及按放大区预测的集电极电流；（2）判断实际区间并求输出；（3）若改用47 kΩ基极电阻，重作区间判断，说明为何不能直接把βIB当成实际集电极电流。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electronics-engineering-q3-statement",
+      "title": "电子电路与数字系统第3题命题原稿",
+      "kind": "question-bank",
+      "text": "无负载RC低通滤波器由串联R=10 kΩ和对地C=10 nF组成，输出取电容两端。（1）推导传递函数和截止频率；（2）输入频率等于截止频率、峰值1 V时，求输出幅值与相位；（3）输入频率10倍截止频率时重算；（4）若输出接10 kΩ电阻负载，重新推导直流增益和极点频率。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electronics-engineering-q4-statement",
+      "title": "电子电路与数字系统第4题命题原稿",
+      "kind": "question-bank",
+      "text": "三传感器A、B、C各输出0或1。至少两个传感器为1时报警F=1。（1）列按ABC=000至111排序的真值表；（2）求最简与或表达式并用二输入逻辑门实现；（3）有人删去BC项，声称F=AB+AC已足够，给出最小反例；（4）若三个输入同时变化，能否仅靠真值表保证输出绝无瞬态毛刺？",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electronics-engineering-q5-statement",
+      "title": "电子电路与数字系统第5题命题原稿",
+      "kind": "question-bank",
+      "text": "同步二进制计数器有两个D触发器，状态为Q1Q0，期望循环00→01→10→11→00，所有触发器在同一上升沿采样。（1）列状态表并求D1、D0逻辑；（2）从10开始写出接下来5次时钟边沿后的状态；（3）若Q0改由Q1输出边沿触发，是否仍是上述同步结构？（4）若组合逻辑最大延迟8 ns、触发器时钟至Q延迟2 ns、建立时间1 ns，忽略偏斜，求最小时钟周期。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    },
+    {
+      "id": "electronics-engineering-q6-statement",
+      "title": "电子电路与数字系统第6题命题原稿",
+      "kind": "question-bank",
+      "text": "12位单极性ADC量程[0,3.3) V，理想码按$k=\\lfloor4096V/3.3\\rfloor$。重构值取码区间中点。传感器输出为0.5 V直流与峰值0.8 V、最高频率300 Hz信号之和，已用模拟电路平移使ADC输入保持在量程内。拟以800 Sa/s采样。（1）求LSB；（2）输入1.65 V时求码与中点重构值；（3）说明800 Sa/s是否满足理想带限采样必要条件；（4）若另有700 Hz干扰，求混叠频率并提出采样前处理。",
+      "rights": "Original question, solution, rubric and figure: MIT License.",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "electronics-engineering-analysis",
+      "title": "分析、计算与设计",
+      "instructions": "写出主要推导过程，说明结论成立的条件。",
+      "score": 100,
+      "questions": [
+        {
+          "id": "electronics-engineering-q1",
+          "number": 1,
+          "type": "response",
+          "prompt": "理想反相放大器输入电阻10 kΩ、反馈电阻47 kΩ，同相端接地，输出电压受电源限制在±10 V。输入为1.5 V直流，随后改为3.0 V。（1）分别求输出，并判断虚短假设何时成立；（2）输入正弦信号峰值2.0 V时是否削顶；（3）求保证线性输出的输入绝对值上限。忽略输出电流限制与频率效应。",
+          "score": 15,
+          "solution": "1.5 V输入时输出−7.05 V，负反馈线性工作；3.0 V输入时理想线性预测−14.1 V越界，实际饱和于−10 V，不能再使用虚短。2.0 V峰值时输出9.4 V峰值，不削顶。线性输入范围$|v_i|\\le100/47=2.127660$ V。",
+          "explanation": "线性负反馈下$v_o=-(R_f/R_{in})v_i$，需先计算再检验电源范围。饱和时输出无法保持反相端零电位，故“虚短”是线性闭环模型结论而不是无条件规则。",
+          "source": {
+            "materialId": "electronics-engineering-q1-statement",
+            "blockId": "electronics-engineering-q1-statement",
+            "exact": "理想反相放大器输入电阻10 kΩ、反馈电阻47 kΩ，同相端接地，输出电压受电源限制在±10 V。输入为1.5 V直流，随后改为3.0 V。（1）分别求输出，并判断虚短假设何时成立；（2）输入正弦信号峰值2.0 V时是否削顶；（3）求保证线性输出的输入绝对值上限。忽略输出电流限制与频率效应。"
+          },
+          "chapter": "运算放大器的线性区与饱和",
+          "tags": [
+            "电子电路与数字系统",
+            "运算放大器的线性区与饱和",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "运算放大器的线性区与饱和"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electronics-engineering-scope",
+                "blockId": "electronics-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "闭环增益及第一工况正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "electronics-engineering-q1-statement",
+                    "blockId": "electronics-engineering-q1-statement",
+                    "exact": "理想反相放大器输入电阻10 kΩ、反馈电阻47 kΩ，同相端接地，输出电压受电源限制在±10 V。输入为1.5 V直流，随后改为3.0 V。（1）分别求输出，并判断虚短假设何时成立；（2）输入正弦信号峰值2.0 V时是否削顶；（3）求保证线性输出的输入绝对值上限。忽略输出电流限制与频率效应。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "第二工况饱和与假设判断正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "正弦峰值及输入界限正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "线性假设解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q1 boundary gain",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q1 boundary gain\", \"actual\": 10.0, \"expected\": 10, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electronics-engineering-q2",
+          "number": 2,
+          "type": "response",
+          "prompt": "NPN晶体管发射极接地，集电极经1 kΩ接5 V，基极经100 kΩ接3.3 V。题给导通时$V_{BE}=0.70$ V，放大区$\\beta=100$，饱和时$V_{CE}=0.20$ V。（1）求基极电流及按放大区预测的集电极电流；（2）判断实际区间并求输出；（3）若改用47 kΩ基极电阻，重作区间判断，说明为何不能直接把βIB当成实际集电极电流。",
+          "score": 15,
+          "solution": "100 kΩ时$ I_B=26$ μA，预测$I_C=2.6$ mA、$V_C=2.4$ V，处于放大区。47 kΩ时$I_B=55.319149$ μA，放大区预测5.531915 mA超过负载允许饱和电流4.8 mA；实际饱和，$V_C=0.20$ V、$I_C=4.8$ mA。",
+          "explanation": "先用基极回路求IB，再由负载线$V_C=5-1000I_C$检验放大区预测。饱和时集电极电流由电源、负载电阻和题给饱和压降限制，不再按固定β模型。该分段近似忽略Early效应和温度变化。",
+          "source": {
+            "materialId": "electronics-engineering-q2-statement",
+            "blockId": "electronics-engineering-q2-statement",
+            "exact": "NPN晶体管发射极接地，集电极经1 kΩ接5 V，基极经100 kΩ接3.3 V。题给导通时$V_{BE}=0.70$ V，放大区$\\beta=100$，饱和时$V_{CE}=0.20$ V。（1）求基极电流及按放大区预测的集电极电流；（2）判断实际区间并求输出；（3）若改用47 kΩ基极电阻，重作区间判断，说明为何不能直接把βIB当成实际集电极电流。"
+          },
+          "chapter": "晶体管偏置与饱和边界",
+          "tags": [
+            "电子电路与数字系统",
+            "晶体管偏置与饱和边界",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "晶体管偏置与饱和边界"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electronics-engineering-scope",
+                "blockId": "electronics-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "基极回路与原放大区计算正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electronics-engineering-q2-statement",
+                    "blockId": "electronics-engineering-q2-statement",
+                    "exact": "NPN晶体管发射极接地，集电极经1 kΩ接5 V，基极经100 kΩ接3.3 V。题给导通时$V_{BE}=0.70$ V，放大区$\\beta=100$，饱和时$V_{CE}=0.20$ V。（1）求基极电流及按放大区预测的集电极电流；（2）判断实际区间并求输出；（3）若改用47 kΩ基极电阻，重作区间判断，说明为何不能直接把βIB当成实际集电极电流。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "原工作点检验正确",
+                "points": 3
+              },
+              {
+                "id": "step-3",
+                "description": "新电阻条件与饱和电流正确",
+                "points": 5
+              },
+              {
+                "id": "step-4",
+                "description": "模型切换解释正确",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q2 load line",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q2 load line\", \"actual\": [2.4, 0.20000000000000018], \"expected\": [2.4, 0.2], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electronics-engineering-q3",
+          "number": 3,
+          "type": "response",
+          "prompt": "无负载RC低通滤波器由串联R=10 kΩ和对地C=10 nF组成，输出取电容两端。（1）推导传递函数和截止频率；（2）输入频率等于截止频率、峰值1 V时，求输出幅值与相位；（3）输入频率10倍截止频率时重算；（4）若输出接10 kΩ电阻负载，重新推导直流增益和极点频率。",
+          "score": 15,
+          "solution": "$H(s)=1/(1+sRC)$，$f_c=1591.549431$ Hz。截止点幅值$1/\\sqrt2$ V、相位−45°；10倍处幅值$1/\\sqrt{101}=0.099504$ V、相位−84.289407°。接10 kΩ负载后$H(s)=0.5/(1+s(R\\parallel R_L)C)$，直流增益0.5、极点频率3183.098862 Hz。",
+          "explanation": "用阻抗分压建立频率响应。并联负载同时改变直流分压和电容看到的等效电阻，不可只把R替换为并联值却保留单位直流增益。相位为$-\\arctan(\\omega RC)$，幅值为峰值之比，不额外换为有效值。",
+          "source": {
+            "materialId": "electronics-engineering-q3-statement",
+            "blockId": "electronics-engineering-q3-statement",
+            "exact": "无负载RC低通滤波器由串联R=10 kΩ和对地C=10 nF组成，输出取电容两端。（1）推导传递函数和截止频率；（2）输入频率等于截止频率、峰值1 V时，求输出幅值与相位；（3）输入频率10倍截止频率时重算；（4）若输出接10 kΩ电阻负载，重新推导直流增益和极点频率。"
+          },
+          "chapter": "一阶滤波器的频率响应",
+          "tags": [
+            "电子电路与数字系统",
+            "一阶滤波器的频率响应",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "一阶滤波器的频率响应"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electronics-engineering-scope",
+                "blockId": "electronics-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "无载传递函数和截止频率正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "electronics-engineering-q3-statement",
+                    "blockId": "electronics-engineering-q3-statement",
+                    "exact": "无负载RC低通滤波器由串联R=10 kΩ和对地C=10 nF组成，输出取电容两端。（1）推导传递函数和截止频率；（2）输入频率等于截止频率、峰值1 V时，求输出幅值与相位；（3）输入频率10倍截止频率时重算；（4）若输出接10 kΩ电阻负载，重新推导直流增益和极点频率。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "两频点幅相正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "有载增益与极点同时正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "量的约定清楚",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q3 loaded DC",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q3 loaded DC\", \"actual\": 0.5, \"expected\": 0.5, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electronics-engineering-q4",
+          "number": 4,
+          "type": "response",
+          "prompt": "三传感器A、B、C各输出0或1。至少两个传感器为1时报警F=1。（1）列按ABC=000至111排序的真值表；（2）求最简与或表达式并用二输入逻辑门实现；（3）有人删去BC项，声称F=AB+AC已足够，给出最小反例；（4）若三个输入同时变化，能否仅靠真值表保证输出绝无瞬态毛刺？",
+          "score": 15,
+          "solution": "输出序列0、0、0、1、0、1、1、1。最简与或式$F=AB+AC+BC$；三个二输入与门，结果用两级二输入或门合并。删BC的反例为ABC=011。不能仅据稳态真值表保证任意多输入切换下无毛刺。",
+          "explanation": "各乘积项对应一对为1，三项覆盖所有至少两票情形。ABC=011时目标为1而AB、AC都为0。真实门存在传播延迟且输入不同步；如001→010，中间暂经011可出现脉冲，需约束切换、同步采样或采用合适时序设计。稳态逻辑正确与瞬态行为是不同验证问题。",
+          "source": {
+            "materialId": "electronics-engineering-q4-statement",
+            "blockId": "electronics-engineering-q4-statement",
+            "exact": "三传感器A、B、C各输出0或1。至少两个传感器为1时报警F=1。（1）列按ABC=000至111排序的真值表；（2）求最简与或表达式并用二输入逻辑门实现；（3）有人删去BC项，声称F=AB+AC已足够，给出最小反例；（4）若三个输入同时变化，能否仅靠真值表保证输出绝无瞬态毛刺？"
+          },
+          "chapter": "组合逻辑设计与冒险识别",
+          "tags": [
+            "电子电路与数字系统",
+            "组合逻辑设计与冒险识别",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 10,
+          "assessment": {
+            "knowledgePoints": [
+              "组合逻辑设计与冒险识别"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electronics-engineering-scope",
+                "blockId": "electronics-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "真值表完整正确",
+                "points": 4,
+                "evidence": [
+                  {
+                    "materialId": "electronics-engineering-q4-statement",
+                    "blockId": "electronics-engineering-q4-statement",
+                    "exact": "三传感器A、B、C各输出0或1。至少两个传感器为1时报警F=1。（1）列按ABC=000至111排序的真值表；（2）求最简与或表达式并用二输入逻辑门实现；（3）有人删去BC项，声称F=AB+AC已足够，给出最小反例；（4）若三个输入同时变化，能否仅靠真值表保证输出绝无瞬态毛刺？"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "最简式及二输入门实现正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "反例正确",
+                "points": 3
+              },
+              {
+                "id": "step-4",
+                "description": "具体切换路径与毛刺解释正确",
+                "points": 4
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q4 majority enumeration",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q4 majority enumeration\", \"actual\": [0, 0, 0, 1, 0, 1, 1, 1], \"expected\": [0, 0, 0, 1, 0, 1, 1, 1], \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electronics-engineering-q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "同步二进制计数器有两个D触发器，状态为Q1Q0，期望循环00→01→10→11→00，所有触发器在同一上升沿采样。（1）列状态表并求D1、D0逻辑；（2）从10开始写出接下来5次时钟边沿后的状态；（3）若Q0改由Q1输出边沿触发，是否仍是上述同步结构？（4）若组合逻辑最大延迟8 ns、触发器时钟至Q延迟2 ns、建立时间1 ns，忽略偏斜，求最小时钟周期。",
+          "score": 20,
+          "solution": "$D_0=\\overline Q_0$，$D_1=Q_1\\oplus Q_0$。从10开始依次为11、00、01、10、11。更改时钟连接后成为其他时序结构，不能沿用同一同步转移分析。最小周期11 ns，对应最大频率约90.909091 MHz。",
+          "explanation": "每个D输入必须按边沿前的旧状态共同计算，不能先更新Q0再用新值计算D1。时序约束$T\\ge t_{cq}+t_{comb}+t_{setup}$；题未给最小延迟与保持时间，不能同时声称保持约束也已满足。",
+          "source": {
+            "materialId": "electronics-engineering-q5-statement",
+            "blockId": "electronics-engineering-q5-statement",
+            "exact": "同步二进制计数器有两个D触发器，状态为Q1Q0，期望循环00→01→10→11→00，所有触发器在同一上升沿采样。（1）列状态表并求D1、D0逻辑；（2）从10开始写出接下来5次时钟边沿后的状态；（3）若Q0改由Q1输出边沿触发，是否仍是上述同步结构？（4）若组合逻辑最大延迟8 ns、触发器时钟至Q延迟2 ns、建立时间1 ns，忽略偏斜，求最小时钟周期。"
+          },
+          "chapter": "同步时序电路与状态转移",
+          "tags": [
+            "电子电路与数字系统",
+            "同步时序电路与状态转移",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "同步时序电路与状态转移"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electronics-engineering-scope",
+                "blockId": "electronics-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "四状态转移及D逻辑正确",
+                "points": 6,
+                "evidence": [
+                  {
+                    "materialId": "electronics-engineering-q5-statement",
+                    "blockId": "electronics-engineering-q5-statement",
+                    "exact": "同步二进制计数器有两个D触发器，状态为Q1Q0，期望循环00→01→10→11→00，所有触发器在同一上升沿采样。（1）列状态表并求D1、D0逻辑；（2）从10开始写出接下来5次时钟边沿后的状态；（3）若Q0改由Q1输出边沿触发，是否仍是上述同步结构？（4）若组合逻辑最大延迟8 ns、触发器时钟至Q延迟2 ns、建立时间1 ns，忽略偏斜，求最小时钟周期。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "状态序列共同旧值更新正确",
+                "points": 4
+              },
+              {
+                "id": "step-3",
+                "description": "同步时钟条件解释正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "周期及未核定保持条件清楚",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q5 synchronous sequence",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q5 synchronous sequence\", \"actual\": [3, 0, 1, 2, 3], \"expected\": [3, 0, 1, 2, 3], \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q5 timing",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q5 timing\", \"actual\": 11, \"expected\": 11, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        },
+        {
+          "id": "electronics-engineering-q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "12位单极性ADC量程[0,3.3) V，理想码按$k=\\lfloor4096V/3.3\\rfloor$。重构值取码区间中点。传感器输出为0.5 V直流与峰值0.8 V、最高频率300 Hz信号之和，已用模拟电路平移使ADC输入保持在量程内。拟以800 Sa/s采样。（1）求LSB；（2）输入1.65 V时求码与中点重构值；（3）说明800 Sa/s是否满足理想带限采样必要条件；（4）若另有700 Hz干扰，求混叠频率并提出采样前处理。",
+          "score": 20,
+          "solution": "LSB=3.3/4096=0.0008056640625 V。1.65 V对应k=2048，重构1.65040283203125 V。800>2×300，满足所给理想带限信号的Nyquist条件；700 Hz在800 Sa/s下混叠为100 Hz，应在采样前用模拟抗混叠滤波器抑制。",
+          "explanation": "题给编码是截断码区间，故恰好半量程落在2048码左边界，不能按4095作除数。中点重构误差界为±LSB/2。采样后的数字滤波不能把已经落到100 Hz带内的混叠分量与真实100 Hz分量一般地区分开。量程平移已明确，不应把原未平移的负峰值直接当作本问输入。",
+          "source": {
+            "materialId": "electronics-engineering-q6-statement",
+            "blockId": "electronics-engineering-q6-statement",
+            "exact": "12位单极性ADC量程[0,3.3) V，理想码按$k=\\lfloor4096V/3.3\\rfloor$。重构值取码区间中点。传感器输出为0.5 V直流与峰值0.8 V、最高频率300 Hz信号之和，已用模拟电路平移使ADC输入保持在量程内。拟以800 Sa/s采样。（1）求LSB；（2）输入1.65 V时求码与中点重构值；（3）说明800 Sa/s是否满足理想带限采样必要条件；（4）若另有700 Hz干扰，求混叠频率并提出采样前处理。"
+          },
+          "chapter": "采样、量化与测量误差预算",
+          "tags": [
+            "电子电路与数字系统",
+            "采样、量化与测量误差预算",
+            "模型与计算"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerRows": 14,
+          "assessment": {
+            "knowledgePoints": [
+              "采样、量化与测量误差预算"
+            ],
+            "ability": "依据条件建立模型、完成推导并解释工程结论",
+            "estimatedMinutes": 23,
+            "difficultyRationale": "需要选择适用模型、处理给定数据并作量纲或边界检验。"
+          },
+          "supportingSources": [
+            {
+              "role": "knowledge",
+              "source": {
+                "materialId": "electronics-engineering-scope",
+                "blockId": "electronics-engineering-scope",
+                "exact": "The course introduces the fundamentals of the lumped circuit abstraction."
+              }
+            }
+          ],
+          "rubric": {
+            "criteria": [
+              {
+                "id": "step-1",
+                "description": "量化步长与编码约定正确",
+                "points": 5,
+                "evidence": [
+                  {
+                    "materialId": "electronics-engineering-q6-statement",
+                    "blockId": "electronics-engineering-q6-statement",
+                    "exact": "12位单极性ADC量程[0,3.3) V，理想码按$k=\\lfloor4096V/3.3\\rfloor$。重构值取码区间中点。传感器输出为0.5 V直流与峰值0.8 V、最高频率300 Hz信号之和，已用模拟电路平移使ADC输入保持在量程内。拟以800 Sa/s采样。（1）求LSB；（2）输入1.65 V时求码与中点重构值；（3）说明800 Sa/s是否满足理想带限采样必要条件；（4）若另有700 Hz干扰，求混叠频率并提出采样前处理。"
+                  }
+                ]
+              },
+              {
+                "id": "step-2",
+                "description": "码值及中点重构正确",
+                "points": 5
+              },
+              {
+                "id": "step-3",
+                "description": "理想采样条件与实际干扰区别正确",
+                "points": 4
+              },
+              {
+                "id": "step-4",
+                "description": "混叠频率与模拟滤波位置正确",
+                "points": 6
+              }
+            ],
+            "equivalentMethods": [
+              "采用与参考解一致的物理假设，使用其他正确的平衡、能量、数值或解析方法可获同等分数。"
+            ],
+            "tolerance": "数值结果相对误差不超过1%，单位和符号约定一致；等价解析形式同分。"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "本题独立建立方程求解；课程来源只界定知识范围，不作为官方答案。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "derivation-and-units",
+                "detail": "逐步推导已核对；边界、符号约定和量纲在解析中给出。",
+                "result": "pass"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q6 ADC code",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q6 ADC code\", \"actual\": 2048, \"expected\": 2048, \"tolerance\": 1e-08}"
+              },
+              {
+                "method": "executed-python-check",
+                "detail": "electronics-q6 alias",
+                "result": "pass",
+                "evidence": "{\"label\": \"electronics-q6 alias\", \"actual\": 100, \"expected\": 100, \"tolerance\": 1e-08}"
+              }
+            ],
+            "reviewedAt": "2026-11-15"
+          }
+        }
+      ],
+      "examPartId": "electronics-engineering-analysis"
+    }
+  ],
+  "authoring": {
+    "routeId": "electronics-engineering",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "electronics-engineering-q1",
+        "knowledge": "运算放大器的线性区与饱和",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electronics-engineering-q1-statement"
+        ]
+      },
+      {
+        "id": "electronics-engineering-q2",
+        "knowledge": "晶体管偏置与饱和边界",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electronics-engineering-q2-statement"
+        ]
+      },
+      {
+        "id": "electronics-engineering-q3",
+        "knowledge": "一阶滤波器的频率响应",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electronics-engineering-q3-statement"
+        ]
+      },
+      {
+        "id": "electronics-engineering-q4",
+        "knowledge": "组合逻辑设计与冒险识别",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 15,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electronics-engineering-q4-statement"
+        ]
+      },
+      {
+        "id": "electronics-engineering-q5",
+        "knowledge": "同步时序电路与状态转移",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electronics-engineering-q5-statement"
+        ]
+      },
+      {
+        "id": "electronics-engineering-q6",
+        "knowledge": "采样、量化与测量误差预算",
+        "ability": "依据条件建立模型、完成推导并解释工程结论",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 23,
+        "sourceIds": [
+          "electronics-engineering-q6-statement"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创课程标杆卷；院校课程页只用于范围定位，不声称来源为该校原题。100分、150分钟及题组为本项目完整练习蓝图。"
+  },
+  "exam": {
+    "specificationId": "electronics-engineering-course-blueprint",
+    "scope": "full",
+    "scoreScale": "user-points",
+    "specification": {
+      "id": "electronics-engineering-course-blueprint",
+      "name": "电子电路与数字系统课程考试",
+      "subject": "电子电路与数字系统",
+      "level": "大学本科",
+      "durationMinutes": 150,
+      "totalScore": 100,
+      "scoreScale": "user-points",
+      "source": {
+        "kind": "user-blueprint",
+        "title": "纸间原创课程完整考核蓝图"
+      },
+      "sections": [
+        {
+          "id": "electronics-engineering-analysis",
+          "title": "分析、计算与设计",
+          "count": 6,
+          "questionType": "response",
+          "totalScore": 100
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,612 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "math1-integral-trial",
+  "notebookId": "math1-integral-source",
+  "notebookRevision": 1,
+  "title": "考研数学（一）定积分及应用专题练习",
+  "subject": "数学（一）",
+  "level": "研究生入学考试",
+  "durationMinutes": 60,
+  "totalScore": 50,
+  "mode": "mock",
+  "style": {
+    "preset": "stem"
+  },
+  "materials": [
+    {
+      "id": "self-material",
+      "title": "自编定积分专题题库",
+      "kind": "question-bank",
+      "text": "设 $H(x)=\\int_0^{x^2}\\frac{dt}{1+t^2}$。下列判断正确的是（　　）。\n$\\int_0^2 |x-1|\\,dx=$（　　）。\n$\\int_0^\\pi x\\sin x\\,dx=$________。\n$\\int_0^1 x\\ln(1+x)\\,dx=$________。\n设 $F(a)=\\int_0^1\\frac{x}{1+a x^2}\\,dx$，其中 $a>-1$。（1）求 $F(a)$，包括 $a=0$ 的值；（2）证明 $F(a)$ 在 $(-1,+\\infty)$ 上严格递减。\n由曲线 $y=x$ 和 $y=x^2$ 围成的平面区域记为 $D$。（1）求 $D$ 的面积；（2）求 $D$ 绕 $x$ 轴旋转一周所得旋转体的体积。\n设 $f\\in C^2[0,1]$，且 $|f^{\\prime\\prime}(x)|\\le1$。（1）证明，对任意 $x\\in[0,1]$，$\\left|f(x)-(1-x)f(0)-xf(1)\\right|\\le\\frac{x(1-x)}2$；（2）证明 $\\left|\\int_0^1f(x)\\,dx-\\frac{f(0)+f(1)}2\\right|\\le\\frac1{12}$，并说明常数 $1/12$ 不能再减小。",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author"
+      },
+      "blocks": [
+        {
+          "id": "self-q1",
+          "text": "设 $H(x)=\\int_0^{x^2}\\frac{dt}{1+t^2}$。下列判断正确的是（　　）。"
+        },
+        {
+          "id": "self-q2",
+          "text": "$\\int_0^2 |x-1|\\,dx=$（　　）。"
+        },
+        {
+          "id": "self-q3",
+          "text": "$\\int_0^\\pi x\\sin x\\,dx=$________。"
+        },
+        {
+          "id": "self-q4",
+          "text": "$\\int_0^1 x\\ln(1+x)\\,dx=$________。"
+        },
+        {
+          "id": "self-q5",
+          "text": "设 $F(a)=\\int_0^1\\frac{x}{1+a x^2}\\,dx$，其中 $a>-1$。（1）求 $F(a)$，包括 $a=0$ 的值；（2）证明 $F(a)$ 在 $(-1,+\\infty)$ 上严格递减。"
+        },
+        {
+          "id": "self-q6",
+          "text": "由曲线 $y=x$ 和 $y=x^2$ 围成的平面区域记为 $D$。（1）求 $D$ 的面积；（2）求 $D$ 绕 $x$ 轴旋转一周所得旋转体的体积。"
+        },
+        {
+          "id": "self-q7",
+          "text": "设 $f\\in C^2[0,1]$，且 $|f^{\\prime\\prime}(x)|\\le1$。（1）证明，对任意 $x\\in[0,1]$，$\\left|f(x)-(1-x)f(0)-xf(1)\\right|\\le\\frac{x(1-x)}2$；（2）证明 $\\left|\\int_0^1f(x)\\,dx-\\frac{f(0)+f(1)}2\\right|\\le\\frac1{12}$，并说明常数 $1/12$ 不能再减小。"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "choice",
+      "title": "一、选择题",
+      "instructions": "每题 5 分，选出唯一正确答案。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "设 $H(x)=\\int_0^{x^2}\\frac{dt}{1+t^2}$。下列判断正确的是（　　）。",
+          "score": 5,
+          "solution": "B",
+          "explanation": "因 $(-x)^2=x^2$，故 $H(-x)=H(x)$。由微积分基本定理及链式法则，$H^{\\prime}(x)=2x/(1+x^4)$；例如 $H(1)=H(-1)=\\pi/4$，函数并非奇函数。",
+          "source": {
+            "materialId": "self-material",
+            "blockId": "self-q1",
+            "exact": "设 $H(x)=\\int_0^{x^2}\\frac{dt}{1+t^2}$。下列判断正确的是（　　）。"
+          },
+          "chapter": "变上限积分与链式法则",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "变上限积分与链式法则"
+            ],
+            "ability": "根据上下限确定奇偶性，并正确求导",
+            "estimatedMinutes": 4,
+            "difficultyRationale": "两个直接步骤，检验求导遗漏链式系数等误区。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "独立推导与计算核验",
+                "detail": "因 $(-x)^2=x^2$，故 $H(-x)=H(x)$。由微积分基本定理及链式法则，$H^{\\prime}(x)=2x/(1+x^4)$；例如 $H(1)=H(-1)=\\pi/4$，函数并非奇函数。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "H是奇函数，且$H^{\\prime}(x)=\\frac{2x}{1+x^4}$"
+            },
+            {
+              "id": "B",
+              "text": "H是偶函数，且$H^{\\prime}(x)=\\frac{2x}{1+x^4}$"
+            },
+            {
+              "id": "C",
+              "text": "H是偶函数，且$H^{\\prime}(x)=\\frac{1}{1+x^4}$"
+            },
+            {
+              "id": "D",
+              "text": "H是奇函数，且$H^{\\prime}(x)=\\frac{1}{1+x^2}$"
+            }
+          ]
+        },
+        {
+          "id": "q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "$\\int_0^2 |x-1|\\,dx=$（　　）。",
+          "score": 5,
+          "solution": "C",
+          "explanation": "在 $x=1$ 分段；两段各围成底和高均为 $1$ 的三角形，所以定积分为 $1$。直接积分 $\\int_0^1(1-x)dx+\\int_1^2(x-1)dx$ 得到同样结果。",
+          "source": {
+            "materialId": "self-material",
+            "blockId": "self-q2",
+            "exact": "$\\int_0^2 |x-1|\\,dx=$（　　）。"
+          },
+          "chapter": "定积分的几何意义",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "定积分的几何意义"
+            ],
+            "ability": "按被积函数的零点分段并解释几何面积",
+            "estimatedMinutes": 4,
+            "difficultyRationale": "分段位置直观，验证的是定积分意义。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "独立推导与计算核验",
+                "detail": "在 $x=1$ 分段；两段各围成底和高均为 $1$ 的三角形，所以定积分为 $1$。直接积分 $\\int_0^1(1-x)dx+\\int_1^2(x-1)dx$ 得到同样结果。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "$0$"
+            },
+            {
+              "id": "B",
+              "text": "$\\frac12$"
+            },
+            {
+              "id": "C",
+              "text": "$1$"
+            },
+            {
+              "id": "D",
+              "text": "$2$"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blank",
+      "title": "二、填空题",
+      "instructions": "每题 5 分。",
+      "score": 10,
+      "questions": [
+        {
+          "id": "q3",
+          "number": 3,
+          "type": "blank",
+          "prompt": "$\\int_0^\\pi x\\sin x\\,dx=$________。",
+          "score": 5,
+          "solution": [
+            "$\\pi$"
+          ],
+          "explanation": "利用 $x\\mapsto\\pi-x$，两式相加得 $2I=\\pi\\int_0^\\pi\\sin x\\,dx=2\\pi$。",
+          "source": {
+            "materialId": "self-material",
+            "blockId": "self-q3",
+            "exact": "$\\int_0^\\pi x\\sin x\\,dx=$________。"
+          },
+          "chapter": "定积分对称性",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "定积分对称性"
+            ],
+            "ability": "通过反射换元或分部积分计算",
+            "estimatedMinutes": 5,
+            "difficultyRationale": "识别互补形式或选择常规算法。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "独立推导与计算核验",
+                "detail": "利用 $x\\mapsto\\pi-x$，两式相加得 $2I=\\pi\\int_0^\\pi\\sin x\\,dx=2\\pi$。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "q4",
+          "number": 4,
+          "type": "blank",
+          "prompt": "$\\int_0^1 x\\ln(1+x)\\,dx=$________。",
+          "score": 5,
+          "solution": [
+            "$\\frac14$"
+          ],
+          "explanation": "分部积分得到 $I=\\frac12\\ln2-\\frac12\\int_0^1\\frac{x^2}{1+x}dx$；后者为 $\\ln2-\\frac12$，故 $I=\\frac14$。",
+          "source": {
+            "materialId": "self-material",
+            "blockId": "self-q4",
+            "exact": "$\\int_0^1 x\\ln(1+x)\\,dx=$________。"
+          },
+          "chapter": "分部积分",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "分部积分"
+            ],
+            "ability": "用分部积分并拆分被积有理式",
+            "estimatedMinutes": 7,
+            "difficultyRationale": "含两项运算和对数抵消。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "独立推导与计算核验",
+                "detail": "分部积分得到 $I=\\frac12\\ln2-\\frac12\\int_0^1\\frac{x^2}{1+x}dx$；后者为 $\\ln2-\\frac12$，故 $I=\\frac14$。",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "response",
+      "title": "三、解答题",
+      "instructions": "写出必要的推导过程，每题 10 分。",
+      "score": 30,
+      "questions": [
+        {
+          "id": "q5",
+          "number": 5,
+          "type": "response",
+          "prompt": "设 $F(a)=\\int_0^1\\frac{x}{1+a x^2}\\,dx$，其中 $a>-1$。（1）求 $F(a)$，包括 $a=0$ 的值；（2）证明 $F(a)$ 在 $(-1,+\\infty)$ 上严格递减。",
+          "score": 10,
+          "solution": "$F(a)=\\begin{cases}\\frac{\\ln(1+a)}{2a},&a\\ne0,\\\\\\frac12,&a=0.\\end{cases}$ 且严格递减。",
+          "explanation": "（1）$a\\ne0$ 时令 $u=1+ax^2$，得 $F(a)=\\frac{\\ln(1+a)}{2a}$；$a=0$ 时直接积分得 $1/2$。（2）对任意 $-1<a<b$ 及 $x\\in(0,1]$，有 $\\frac{x}{1+ax^2}>\\frac{x}{1+bx^2}$，积分得 $F(a)>F(b)$。",
+          "source": {
+            "materialId": "self-material",
+            "blockId": "self-q5",
+            "exact": "设 $F(a)=\\int_0^1\\frac{x}{1+a x^2}\\,dx$，其中 $a>-1$。（1）求 $F(a)$，包括 $a=0$ 的值；（2）证明 $F(a)$ 在 $(-1,+\\infty)$ 上严格递减。"
+          },
+          "chapter": "参数积分与单调性",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "参数积分与单调性"
+            ],
+            "ability": "求带参积分并在定义域上比较被积函数",
+            "estimatedMinutes": 13,
+            "difficultyRationale": "参数零点需要单独处理；单调性可不依赖显式表达式。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "独立推导与计算核验",
+                "detail": "（1）$a\\ne0$ 时令 $u=1+ax^2$，得 $F(a)=\\frac{\\ln(1+a)}{2a}$；$a=0$ 时直接积分得 $1/2$。（2）对任意 $-1<a<b$ 及 $x\\in(0,1]$，有 $\\frac{x}{1+ax^2}>\\frac{x}{1+bx^2}$，积分得 $F(a)>F(b)$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "1",
+                "description": "非零参数换元并得到表达式",
+                "points": 4
+              },
+              {
+                "id": "2",
+                "description": "单独求 $a=0$ 的值",
+                "points": 2
+              },
+              {
+                "id": "3",
+                "description": "建立严格大小关系并积分",
+                "points": 4
+              }
+            ]
+          },
+          "answerRows": 8
+        },
+        {
+          "id": "q6",
+          "number": 6,
+          "type": "response",
+          "prompt": "由曲线 $y=x$ 和 $y=x^2$ 围成的平面区域记为 $D$。（1）求 $D$ 的面积；（2）求 $D$ 绕 $x$ 轴旋转一周所得旋转体的体积。",
+          "score": 10,
+          "solution": "面积 $\\frac16$；体积 $\\frac{2\\pi}{15}$。",
+          "explanation": "两曲线交点横坐标为 $0,1$，在此区间 $x\\ge x^2$。面积为 $\\int_0^1(x-x^2)dx=1/6$。旋转截面外半径为 $x$、内半径为 $x^2$，故体积为 $\\pi\\int_0^1(x^2-x^4)dx=2\\pi/15$。",
+          "source": {
+            "materialId": "self-material",
+            "blockId": "self-q6",
+            "exact": "由曲线 $y=x$ 和 $y=x^2$ 围成的平面区域记为 $D$。（1）求 $D$ 的面积；（2）求 $D$ 绕 $x$ 轴旋转一周所得旋转体的体积。"
+          },
+          "chapter": "定积分几何应用",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "定积分几何应用"
+            ],
+            "ability": "确定积分区间、外内半径并建立两个模型",
+            "estimatedMinutes": 12,
+            "difficultyRationale": "从同一区域独立选择面积和旋转体体积模型。"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "独立推导与计算核验",
+                "detail": "两曲线交点横坐标为 $0,1$，在此区间 $x\\ge x^2$。面积为 $\\int_0^1(x-x^2)dx=1/6$。旋转截面外半径为 $x$、内半径为 $x^2$，故体积为 $\\pi\\int_0^1(x^2-x^4)dx=2\\pi/15$。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "1",
+                "description": "确定交点及上下曲线",
+                "points": 2
+              },
+              {
+                "id": "2",
+                "description": "列式并求面积",
+                "points": 3
+              },
+              {
+                "id": "3",
+                "description": "确定旋转截面内外半径",
+                "points": 2
+              },
+              {
+                "id": "4",
+                "description": "列体积积分并计算",
+                "points": 3
+              }
+            ]
+          },
+          "answerRows": 8
+        },
+        {
+          "id": "q7",
+          "number": 7,
+          "type": "response",
+          "prompt": "设 $f\\in C^2[0,1]$，且 $|f^{\\prime\\prime}(x)|\\le1$。（1）证明，对任意 $x\\in[0,1]$，$\\left|f(x)-(1-x)f(0)-xf(1)\\right|\\le\\frac{x(1-x)}2$；（2）证明 $\\left|\\int_0^1f(x)\\,dx-\\frac{f(0)+f(1)}2\\right|\\le\\frac1{12}$，并说明常数 $1/12$ 不能再减小。",
+          "score": 10,
+          "solution": "两式均成立，且 $f(x)=x^2/2$ 时第二式达到等号。",
+          "explanation": "记 $h(x)=f(x)-(1-x)f(0)-xf(1)$，$\\phi(x)=x(1-x)/2$，则 $h(0)=h(1)=\\phi(0)=\\phi(1)=0$。由于 $(h-\\phi)^{\\prime\\prime}=f^{\\prime\\prime}+1\\ge0$，函数 $h-\\phi$ 凸，故在区间内不超过端点连线零，即 $h\\le\\phi$；同理 $(h+\\phi)^{\\prime\\prime}=f^{\\prime\\prime}-1\\le0$，由凹性得 $h\\ge-\\phi$。所以 $|h|\\le\\phi$。积分并用三角不等式得 $|\\int_0^1h(x)dx|\\le\\int_0^1\\phi(x)dx=1/12$。取 $f(x)=x^2/2$，其二阶导数恒为 $1$，且 $\\int_0^1f(x)dx-[f(0)+f(1)]/2=1/6-1/4=-1/12$，达到等号，因此常数不能减小。",
+          "source": {
+            "materialId": "self-material",
+            "blockId": "self-q7",
+            "exact": "设 $f\\in C^2[0,1]$，且 $|f^{\\prime\\prime}(x)|\\le1$。（1）证明，对任意 $x\\in[0,1]$，$\\left|f(x)-(1-x)f(0)-xf(1)\\right|\\le\\frac{x(1-x)}2$；（2）证明 $\\left|\\int_0^1f(x)\\,dx-\\frac{f(0)+f(1)}2\\right|\\le\\frac1{12}$，并说明常数 $1/12$ 不能再减小。"
+          },
+          "chapter": "定积分估计与证明",
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "独立补足连续性条件并用凹凸性给出完整证明；参照 2024 数一 Q19 的能力要求，自编并增加最优常数问题。"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "定积分估计与证明"
+            ],
+            "ability": "构建两侧比较函数，积分并构造达到等号的函数",
+            "estimatedMinutes": 15,
+            "difficultyRationale": "需要双侧证明、全区间条件及最优性证据。"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "1",
+                "description": "构造 $h$ 与 $\\phi$ 并写出端点条件",
+                "points": 2
+              },
+              {
+                "id": "2",
+                "description": "由二阶导数符号推得上下界",
+                "points": 4
+              },
+              {
+                "id": "3",
+                "description": "积分证明误差界",
+                "points": 2
+              },
+              {
+                "id": "4",
+                "description": "构造合乎条件的等号函数并证明最优",
+                "points": 2
+              }
+            ]
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "独立解析证明",
+                "detail": "记 $h(x)=f(x)-(1-x)f(0)-xf(1)$，$\\phi(x)=x(1-x)/2$，则 $h(0)=h(1)=\\phi(0)=\\phi(1)=0$。由于 $(h-\\phi)^{\\prime\\prime}=f^{\\prime\\prime}+1\\ge0$，函数 $h-\\phi$ 凸，故在区间内不超过端点连线零，即 $h\\le\\phi$；同理 $(h+\\phi)^{\\prime\\prime}=f^{\\prime\\prime}-1\\le0$，由凹性得 $h\\ge-\\phi$。所以 $|h|\\le\\phi$。积分并用三角不等式得 $|\\int_0^1h(x)dx|\\le\\int_0^1\\phi(x)dx=1/12$。取 $f(x)=x^2/2$，其二阶导数恒为 $1$，且 $\\int_0^1f(x)dx-[f(0)+f(1)]/2=1/6-1/4=-1/12$，达到等号，因此常数不能减小。",
+                "result": "pass"
+              },
+              {
+                "method": "等号边界检验",
+                "detail": "f=x²/2 满足假设且误差绝对值为 1/12",
+                "result": "pass"
+              }
+            ]
+          },
+          "answerRows": 12
+        }
+      ]
+    }
+  ],
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "integral-trial",
+    "sourceQuestionIds": [
+      "q1",
+      "q2",
+      "q3",
+      "q4",
+      "q5",
+      "q6",
+      "q7"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "原创定积分专题练习。仅覆盖所列一元积分知识；真实考试资料用于命题对照，题文与评分独立编写。"
+  },
+  "authoring": {
+    "routeId": "postgrad-math-1",
+    "examName": "考研数学（一）",
+    "difficulty": "balanced",
+    "knowledge": "限一元定积分：基本定理、分段与换元、分部、参数、几何应用、积分估计。",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "q1",
+        "knowledge": "变上限积分与链式法则",
+        "ability": "根据上下限确定奇偶性，并正确求导",
+        "types": [
+          "choice"
+        ],
+        "count": 1,
+        "points": 5,
+        "estimatedMinutes": 4,
+        "sourceIds": [
+          "self-material"
+        ]
+      },
+      {
+        "id": "q2",
+        "knowledge": "定积分的几何意义",
+        "ability": "按被积函数的零点分段并解释几何面积",
+        "types": [
+          "choice"
+        ],
+        "count": 1,
+        "points": 5,
+        "estimatedMinutes": 4,
+        "sourceIds": [
+          "self-material"
+        ]
+      },
+      {
+        "id": "q3",
+        "knowledge": "定积分对称性",
+        "ability": "通过反射换元或分部积分计算",
+        "types": [
+          "blank"
+        ],
+        "count": 1,
+        "points": 5,
+        "estimatedMinutes": 5,
+        "sourceIds": [
+          "self-material"
+        ]
+      },
+      {
+        "id": "q4",
+        "knowledge": "分部积分",
+        "ability": "用分部积分并拆分被积有理式",
+        "types": [
+          "blank"
+        ],
+        "count": 1,
+        "points": 5,
+        "estimatedMinutes": 7,
+        "sourceIds": [
+          "self-material"
+        ]
+      },
+      {
+        "id": "q5",
+        "knowledge": "参数积分与单调性",
+        "ability": "求带参积分并在定义域上比较被积函数",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 10,
+        "estimatedMinutes": 13,
+        "sourceIds": [
+          "self-material"
+        ]
+      },
+      {
+        "id": "q6",
+        "knowledge": "定积分几何应用",
+        "ability": "确定积分区间、外内半径并建立两个模型",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 10,
+        "estimatedMinutes": 12,
+        "sourceIds": [
+          "self-material"
+        ]
+      },
+      {
+        "id": "q7",
+        "knowledge": "定积分估计与证明",
+        "ability": "构建两侧比较函数，积分并构造达到等号的函数",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 10,
+        "estimatedMinutes": 15,
+        "sourceIds": [
+          "self-material"
+        ]
+      }
+    ]
+  },
+  "presentation": {
+    "sourceLayout": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "ruled"
+    }
+  }
+}

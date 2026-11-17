@@ -212,3 +212,7 @@ node tools/practice.mjs plan work/sources/source-manifest.json --out work/job \
 “试卷与版式”按学段或考试用途分类，学科通过关键词筛选。版式卡的“查看样例”独立预览真实参考卷与可编辑示范；“应用版式”保留当前题目与标题，尚未打开试卷时进入定制。真实原卷按实际公开形态展示，答案与评分链接另列。
 
 命题时读取[真实样卷研究](../skills/paper-notebook-practice/references/reference-study.md)；命令 `node tools/practice.mjs sources postgraduate-math` 返回匹配集合，`plan` 附 `reference-study.json`。仅用上传资料时不从外部集合补知识或题目。
+
+### 逐页预览与外部原件
+
+在首页、版式预览和项目生成的试卷中，使用上一页、下一页或输入页码查看各页。首页和版式预览共享同一份原件的页码；题目卷、答案卷、答题卡各有自己的位置。在线无法读取第三方 PDF 时，先从来源打开原件，再用「读取本机 PDF」逐页查看。文件在当前页面中打开，不上传也不修改现有题库。打印和导出始终包含所选文档的全部页面。

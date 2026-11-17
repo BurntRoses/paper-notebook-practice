@@ -81,7 +81,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-standard",
@@ -119,7 +119,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-standard",
@@ -149,7 +149,7 @@
             "chapter": "填空题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-standard",
@@ -177,7 +177,7 @@
             "chapter": "解答题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-standard",
@@ -1133,7 +1133,7 @@
             "chapter": "现代文阅读",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-gaokao-chinese",
@@ -1161,7 +1161,7 @@
             "chapter": "古代诗文阅读",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-gaokao-chinese",
@@ -1189,7 +1189,7 @@
             "chapter": "语言文字运用",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-gaokao-chinese",
@@ -1217,7 +1217,7 @@
             "chapter": "写作",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-gaokao-chinese",
@@ -1332,7 +1332,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a4",
@@ -1370,7 +1370,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a4",
@@ -1408,7 +1408,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a4",
@@ -1446,7 +1446,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a4",
@@ -1474,7 +1474,7 @@
             "chapter": "简答题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a4",
@@ -1502,7 +1502,7 @@
             "chapter": "综合应用题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a4",
@@ -1644,7 +1644,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1682,7 +1682,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1720,7 +1720,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1758,7 +1758,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1796,7 +1796,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1834,7 +1834,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1872,7 +1872,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1910,7 +1910,7 @@
             "chapter": "选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1938,7 +1938,7 @@
             "chapter": "简答题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1958,7 +1958,7 @@
             "chapter": "简答题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -1986,7 +1986,7 @@
             "chapter": "综合题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-university-a3",
@@ -2103,7 +2103,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-accounting",
@@ -2141,7 +2141,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-accounting",
@@ -2191,7 +2191,7 @@
             "chapter": "多项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-accounting",
@@ -2219,7 +2219,7 @@
             "chapter": "计算分析题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-accounting",
@@ -2247,7 +2247,7 @@
             "chapter": "综合题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-accounting",
@@ -2358,7 +2358,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-audit",
@@ -2396,7 +2396,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-audit",
@@ -2446,7 +2446,7 @@
             "chapter": "多项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-audit",
@@ -2474,7 +2474,7 @@
             "chapter": "简答题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-audit",
@@ -2502,7 +2502,7 @@
             "chapter": "综合题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-cpa-audit",
@@ -2618,7 +2618,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-python",
@@ -2656,7 +2656,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-python",
@@ -2694,7 +2694,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-python",
@@ -2722,7 +2722,7 @@
             "chapter": "基本操作题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-python",
@@ -2750,7 +2750,7 @@
             "chapter": "简单应用题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-python",
@@ -2778,7 +2778,7 @@
             "chapter": "综合应用题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-python",
@@ -2890,7 +2890,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-office",
@@ -2928,7 +2928,7 @@
             "chapter": "单项选择题",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-office",
@@ -2956,7 +2956,7 @@
             "chapter": "文字处理",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-office",
@@ -2984,7 +2984,7 @@
             "chapter": "电子表格",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-office",
@@ -3012,7 +3012,7 @@
             "chapter": "演示文稿",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ncre-office",
@@ -3095,7 +3095,7 @@
             "chapter": "Reading passage 1",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ielts-reading",
@@ -3137,7 +3137,7 @@
             "chapter": "Reading passage 2",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ielts-reading",
@@ -3183,7 +3183,7 @@
             "chapter": "Reading passage 3",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ielts-reading",
@@ -3214,7 +3214,7 @@
     "subject": "IELTS Writing",
     "level": "IELTS Academic",
     "durationMinutes": 60,
-    "totalScore": 100,
+    "totalScore": 36,
     "mode": "mock",
     "style": {
       "preset": "language",
@@ -3238,7 +3238,11 @@
             "text": "Some people believe that cities should invest more in public transport than in new roads.\nTo what extent do you agree or disagree?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
             "title": "Writing task 2"
           }
-        ]
+        ],
+        "provenance": {
+          "kind": "authored",
+          "sourceType": "author"
+        }
       }
     ],
     "sections": [
@@ -3246,34 +3250,87 @@
         "id": "gallery-ielts-writing-section-0",
         "title": "Writing task 1",
         "instructions": "You should spend about 20 minutes on this task. Write at least 150 words.",
-        "score": 33,
+        "score": 12,
         "questions": [
           {
             "prompt": "The chart below shows the share of journeys made by bicycle in three cities in 2010 and 2020.\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant.",
-            "solution": "Cycling increased in all three cities; City B had the highest share in both years.",
-            "explanation": "Describe the overall trend, compare the cities, and use the figures accurately.",
+            "solution": "The chart compares the proportion of trips made by bicycle in three cities in 2010 and 2020.\n\nOverall, cycling accounted for a larger share of travel in two cities, but their rates of growth were very different. City A went from the lowest share to the highest, while City C was the only city where the share fell.\n\nIn 2010, City B led at 30%, followed by City C at 25%. By contrast, fewer than one in five journeys in City A were made by bicycle. Over the next ten years, City A’s share doubled from 18% to 36%. City B recorded a much smaller rise, of just two percentage points, and ended the period four points behind City A.\n\nCity C moved in the opposite direction, dropping six percentage points to 19%. As a result, the gap between the cities with the largest and smallest shares widened from 12 percentage points in 2010 to 17 in 2020.",
+            "explanation": "The model opens with a clear overview, then supports the changes in rank and the contrast in direction with figures. Other groupings can work if the figures and units remain correct.",
             "attachments": [
               {
                 "id": "cycling-chart",
-                "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgNjQwIDI2MCI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIyNjAiIGZpbGw9IndoaXRlIi8+PGcgZm9udC1mYW1pbHk9IkFyaWFsIiBmaWxsPSIjMjIyIj48dGV4dCB4PSIzMjAiIHk9IjIzIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LXNpemU9IjE2Ij5Kb3VybmV5cyBieSBiaWN5Y2xlIGluIHRocmVlIGNpdGllczwvdGV4dD48dGV4dCB4PSI0MCIgeT0iNDUiIGZvbnQtc2l6ZT0iMTEiPlNoYXJlIG9mIGFsbCBqb3VybmV5cyAoJSk8L3RleHQ+PGcgc3Ryb2tlPSIjY2NjIiBmaWxsPSJub25lIj48cGF0aCBkPSJNNjUgNjVINjA1TTY1IDEwNUg2MDVNNjUgMTQ1SDYwNU02NSAxODVINjA1Ii8+PC9nPjxwYXRoIGQ9Ik02NSA1NVYyMTVINjA1IiBzdHJva2U9IiMzMzMiIGZpbGw9Im5vbmUiLz48ZyBmb250LXNpemU9IjEyIj48dGV4dCB4PSIzNSIgeT0iNjkiPjQwPC90ZXh0Pjx0ZXh0IHg9IjM1IiB5PSIxMDkiPjMwPC90ZXh0Pjx0ZXh0IHg9IjM1IiB5PSIxNDkiPjIwPC90ZXh0Pjx0ZXh0IHg9IjM1IiB5PSIxODkiPjEwPC90ZXh0Pjx0ZXh0IHg9IjQ0IiB5PSIyMTkiPjA8L3RleHQ+PHRleHQgeD0iMTUxIiB5PSIyMzkiPkNpdHkgQTwvdGV4dD48dGV4dCB4PSIzMjEiIHk9IjIzOSI+Q2l0eSBCPC90ZXh0Pjx0ZXh0IHg9IjQ5MSIgeT0iMjM5Ij5DaXR5IEM8L3RleHQ+PC9nPjxnIGZpbGw9IiM2NTc4NmUiPjxyZWN0IHg9IjEyMiIgeT0iMTM1IiB3aWR0aD0iMzQiIGhlaWdodD0iODAiLz48cmVjdCB4PSIyOTIiIHk9Ijk1IiB3aWR0aD0iMzQiIGhlaWdodD0iMTIwIi8+PHJlY3QgeD0iNDYyIiB5PSIxNTUiIHdpZHRoPSIzNCIgaGVpZ2h0PSI2MCIvPjwvZz48ZyBmaWxsPSIjYWFiOGIwIj48cmVjdCB4PSIxNjAiIHk9Ijk1IiB3aWR0aD0iMzQiIGhlaWdodD0iMTIwIi8+PHJlY3QgeD0iMzMwIiB5PSI1NSIgd2lkdGg9IjM0IiBoZWlnaHQ9IjE2MCIvPjxyZWN0IHg9IjUwMCIgeT0iMTE1IiB3aWR0aD0iMzQiIGhlaWdodD0iMTAwIi8+PC9nPjxyZWN0IHg9IjQzNSIgeT0iMzIiIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMCIgZmlsbD0iIzY1Nzg2ZSIvPjx0ZXh0IHg9IjQ1MyIgeT0iNDEiIGZvbnQtc2l6ZT0iMTIiPjIwMTA8L3RleHQ+PHJlY3QgeD0iNTE1IiB5PSIzMiIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEwIiBmaWxsPSIjYWFiOGIwIi8+PHRleHQgeD0iNTMzIiB5PSI0MSIgZm9udC1zaXplPSIxMiI+MjAyMDwvdGV4dD48L2c+PC9zdmc+",
-                "alt": "Bicycle journeys: City A 20% to 30%, City B 30% to 40%, City C 15% to 25%.",
+                "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NDAiIGhlaWdodD0iMjc0IiB2aWV3Qm94PSIwIDAgNjQwIDI3NCI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIyNzQiIGZpbGw9IiNmZmYiLz48ZyBmaWxsPSIjMWQyYzI3IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyI+PHRleHQgeD0iMzIwIiB5PSIyMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxNyI+U2hhcmUgb2Ygam91cm5leXMgbWFkZSBieSBiaWN5Y2xlICglKTwvdGV4dD48cGF0aCBkPSJNODUgMjE1SDYwMiIgc3Ryb2tlPSIjZDBkN2QzIi8+PHRleHQgeD0iNzIiIHk9IjIxOSIgdGV4dC1hbmNob3I9ImVuZCI+MDwvdGV4dD48cGF0aCBkPSJNODUgMTc1SDYwMiIgc3Ryb2tlPSIjZDBkN2QzIi8+PHRleHQgeD0iNzIiIHk9IjE3OSIgdGV4dC1hbmNob3I9ImVuZCI+MTA8L3RleHQ+PHBhdGggZD0iTTg1IDEzNUg2MDIiIHN0cm9rZT0iI2QwZDdkMyIvPjx0ZXh0IHg9IjcyIiB5PSIxMzkiIHRleHQtYW5jaG9yPSJlbmQiPjIwPC90ZXh0PjxwYXRoIGQ9Ik04NSA5NUg2MDIiIHN0cm9rZT0iI2QwZDdkMyIvPjx0ZXh0IHg9IjcyIiB5PSI5OSIgdGV4dC1hbmNob3I9ImVuZCI+MzA8L3RleHQ+PHBhdGggZD0iTTg1IDU1SDYwMiIgc3Ryb2tlPSIjZDBkN2QzIi8+PHRleHQgeD0iNzIiIHk9IjU5IiB0ZXh0LWFuY2hvcj0iZW5kIj40MDwvdGV4dD48cGF0aCBkPSJNODUgNTVWMjE1SDYwMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNDU1NzRlIi8+PHJlY3QgeD0iMTMwIiB5PSIxNDMiIHdpZHRoPSIzNyIgaGVpZ2h0PSI3MiIgZmlsbD0iIzU1NzM2OSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE0OC41IiB5PSIxMzgiPjE4PC90ZXh0PjxyZWN0IHg9IjE3NyIgeT0iNzEiIHdpZHRoPSIzNyIgaGVpZ2h0PSIxNDQiIGZpbGw9IiM5YmIyYWEiLz48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB4PSIxOTUuNSIgeT0iNjYiPjM2PC90ZXh0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjE3MiIgeT0iMjM4Ij5DaXR5IEE8L3RleHQ+PHJlY3QgeD0iMjkwIiB5PSI5NSIgd2lkdGg9IjM3IiBoZWlnaHQ9IjEyMCIgZmlsbD0iIzU1NzM2OSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjMwOC41IiB5PSI5MCI+MzA8L3RleHQ+PHJlY3QgeD0iMzM3IiB5PSI4NyIgd2lkdGg9IjM3IiBoZWlnaHQ9IjEyOCIgZmlsbD0iIzliYjJhYSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjM1NS41IiB5PSI4MiI+MzI8L3RleHQ+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzMyIiB5PSIyMzgiPkNpdHkgQjwvdGV4dD48cmVjdCB4PSI0NTAiIHk9IjExNSIgd2lkdGg9IjM3IiBoZWlnaHQ9IjEwMCIgZmlsbD0iIzU1NzM2OSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ2OC41IiB5PSIxMTAiPjI1PC90ZXh0PjxyZWN0IHg9IjQ5NyIgeT0iMTM5IiB3aWR0aD0iMzciIGhlaWdodD0iNzYiIGZpbGw9IiM5YmIyYWEiLz48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB4PSI1MTUuNSIgeT0iMTM0Ij4xOTwvdGV4dD48dGV4dCB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB4PSI0OTIiIHk9IjIzOCI+Q2l0eSBDPC90ZXh0PjxyZWN0IHg9IjI0OSIgeT0iMjUzIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIGZpbGw9IiM1NTczNjkiLz48dGV4dCB4PSIyNjciIHk9IjI2MyI+MjAxMDwvdGV4dD48cmVjdCB4PSIzMzkiIHk9IjI1MyIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiBmaWxsPSIjOWJiMmFhIi8+PHRleHQgeD0iMzU3IiB5PSIyNjMiPjIwMjA8L3RleHQ+PC9nPjwvc3ZnPg==",
+                "alt": "Bicycle journeys as a percentage of all journeys: City A 18% to 36%, City B 30% to 32%, City C 25% to 19%.",
                 "widthMm": 155
               }
             ],
             "id": "gallery-ielts-writing-question-1",
             "number": 1,
             "type": "response",
-            "score": 33,
+            "score": 12,
             "chapter": "Writing task 1",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ielts-writing",
               "blockId": "gallery-ielts-writing-block-0-0",
               "title": "Paper Notebook gallery examples · MIT",
               "exact": "The chart below shows the share of journeys made by bicycle in three cities in 2010 and 2020.\nSummarise the information by selecting and reporting the main features, and make comparisons where relevant."
+            },
+            "responseConstraints": {
+              "minWords": 150,
+              "countUnit": "words",
+              "answerStyle": "ruled"
+            },
+            "assessment": {
+              "knowledgePoints": [
+                "visual data",
+                "comparative description"
+              ],
+              "ability": "Select and compare features in visual data",
+              "estimatedMinutes": 20,
+              "difficultyRationale": "Select and group contrasting trends without inferring causes."
+            },
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "task",
+                  "description": "Select the ranking reversal, City C’s decline and the contrasting sizes of the changes. Use accurate figures and distinguish percentages from percentage points.",
+                  "points": 3
+                },
+                {
+                  "id": "coherence",
+                  "description": "Group observations around an overview followed by a logical comparison. Link references to the correct cities and years.",
+                  "points": 3
+                },
+                {
+                  "id": "lexis",
+                  "description": "Use precise language for proportions, rankings and changes. Avoid unsupported causal claims and inaccurate substitutions.",
+                  "points": 3
+                },
+                {
+                  "id": "grammar",
+                  "description": "Use a mix of accurate sentence structures, agreement, tense and punctuation; errors should not obscure which city or year is meant.",
+                  "points": 3
+                }
+              ],
+              "tolerance": "Use these integer points for practice feedback only; consult the published IELTS descriptors for band judgments."
+            },
+            "answerProvenance": {
+              "kind": "independent",
+              "notes": "Original Paper Notebook teaching response; no official band assigned."
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "Task and response comparison",
+                  "detail": "158 words. Checked all six chart values and both computed ranges against the original chart data.",
+                  "result": "pass"
+                }
+              ]
             }
           }
         ]
@@ -3282,26 +3339,79 @@
         "id": "gallery-ielts-writing-section-1",
         "title": "Writing task 2",
         "instructions": "You should spend about 40 minutes on this task. Write at least 250 words.",
-        "score": 67,
+        "score": 24,
         "questions": [
           {
             "prompt": "Some people believe that cities should invest more in public transport than in new roads.\nTo what extent do you agree or disagree?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience.",
-            "solution": "A clear position supported by relevant reasoning and examples.",
-            "explanation": "Use a coherent argument, accurate language and appropriate paragraphing.",
+            "solution": "When choosing between new roads and better public transport, cities should generally give priority to buses and trains. That priority should guide investment in crowded areas, although particular road projects may still deserve funding.\n\nThe strongest reason for investing in public transport is that a city centre has limited space. A bus in a dedicated lane can carry dozens of people without requiring a separate lane or parking space for each traveller. Where buses are frequent enough that passengers need not plan their day around a timetable, some drivers may choose to leave their cars at home. This is why spending on reliable service can do more for everyday travel than adding another lane at a junction that will still be crowded at rush hour.\n\nPublic transport can also give people without cars more access to jobs and services. Consider a hospital where many employees finish work late. If the last train leaves before their shift ends, a larger road offers little help to staff who cannot afford a car. An evening bus linking the hospital with several neighbourhoods would address that problem directly. The value comes from where and when the service runs, not simply from buying more vehicles.\n\nNevertheless, some journeys cannot readily be made by public transport. In a district where freight lorries currently pass through a narrow residential street, a short bypass might improve safety more than an extra bus route. Cities should fund such projects when the intended benefit is specific and supported by local evidence.\n\nI therefore favour public transport as the main priority, with road investment reserved for problems that better transit would not solve.",
+            "explanation": "The model takes a qualified position, explains two reasons through distinct examples, and identifies when targeted road spending is justified. A well-supported opposing position is also valid.",
             "id": "gallery-ielts-writing-question-2",
             "number": 2,
             "type": "response",
-            "score": 67,
+            "score": 24,
             "chapter": "Writing task 2",
-            "difficulty": "medium",
+            "difficulty": "hard",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-ielts-writing",
               "blockId": "gallery-ielts-writing-block-1-0",
               "title": "Paper Notebook gallery examples · MIT",
               "exact": "Some people believe that cities should invest more in public transport than in new roads.\nTo what extent do you agree or disagree?\nGive reasons for your answer and include any relevant examples from your own knowledge or experience."
+            },
+            "responseConstraints": {
+              "minWords": 250,
+              "countUnit": "words",
+              "answerStyle": "ruled"
+            },
+            "assessment": {
+              "knowledgePoints": [
+                "argument development",
+                "relevant examples"
+              ],
+              "ability": "State and sustain a position on investment priorities",
+              "estimatedMinutes": 40,
+              "difficultyRationale": "Develop a position, reasons and support over a longer response."
+            },
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "task",
+                  "description": "State how far you agree with prioritising public transport over roads. Develop reasons for the priority and explain any exception with relevant examples; qualified or opposing positions are acceptable.",
+                  "points": 6
+                },
+                {
+                  "id": "coherence",
+                  "description": "Organise the argument so that the reasons and any qualification lead to the final position. Keep the focus of each paragraph clear.",
+                  "points": 6
+                },
+                {
+                  "id": "lexis",
+                  "description": "Use precise language for investment, access and trade-offs. Choose examples and terms that express the argument clearly.",
+                  "points": 6
+                },
+                {
+                  "id": "grammar",
+                  "description": "Control clause structure, agreement and punctuation. Use a range of structures to express reason, conditions and concessions.",
+                  "points": 6
+                }
+              ],
+              "tolerance": "Use these integer points for practice feedback only; consult the published IELTS descriptors for band judgments."
+            },
+            "answerProvenance": {
+              "kind": "independent",
+              "notes": "Original Paper Notebook teaching response; no official band assigned."
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "Task and response comparison",
+                  "detail": "272 words. Checked that the response states the extent of agreement, develops relevant examples and maintains the same position.",
+                  "result": "pass"
+                }
+              ]
             }
           }
         ]
@@ -3314,6 +3424,20 @@
         "gallery-ielts-writing-question-1",
         "gallery-ielts-writing-question-2"
       ]
+    },
+    "presentation": {
+      "language": "en",
+      "sourceLayout": false,
+      "questionScores": "hide",
+      "answerSpace": "none",
+      "answerCard": {
+        "template": "ruled"
+      },
+      "metaLines": [
+        "Time allowed: 60 minutes",
+        "Complete both tasks. Task 2 carries twice the weight of Task 1."
+      ],
+      "sectionDetails": false
     }
   },
   "civil-service": {
@@ -3418,7 +3542,7 @@
             "chapter": "言语理解与表达",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",
@@ -3456,7 +3580,7 @@
             "chapter": "言语理解与表达",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",
@@ -3502,7 +3626,7 @@
             "chapter": "数量关系",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",
@@ -3540,7 +3664,7 @@
             "chapter": "数量关系",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",
@@ -3586,7 +3710,7 @@
             "chapter": "判断推理",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",
@@ -3624,7 +3748,7 @@
             "chapter": "判断推理",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",
@@ -3670,7 +3794,7 @@
             "chapter": "资料分析",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",
@@ -3708,7 +3832,7 @@
             "chapter": "资料分析",
             "difficulty": "medium",
             "origin": {
-              "kind": "original"
+              "kind": "generated"
             },
             "source": {
               "materialId": "gallery-material-civil-service",

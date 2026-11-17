@@ -3,14 +3,26 @@ import pdfWorker from 'pdfjs-dist/build/pdf.worker.min.mjs?raw';
 import { stablePracticeId } from './materials';
 import type { PracticeMaterial, PracticeKind } from './model';
 let workerUrl:string|undefined;
-export async function extractPdfMaterial(buffer:ArrayBuffer,title:string,kind:PracticeKind):Promise<{material:PracticeMaterial;warnings:string[]}>{
+export async function openPdfDocument(source:ArrayBuffer,signal?:AbortSignal){
  if(!workerUrl){workerUrl=URL.createObjectURL(new Blob([pdfWorker],{type:'text/javascript'}));GlobalWorkerOptions.workerSrc=workerUrl;}
  // Safari disallows module Workers from an opaque local-file origin. Load the
  // same embedded PDF.js module directly so its supported main-thread handler
  // is available before getDocument, without a failed cross-origin attempt.
  if(location.protocol==='file:'&&/AppleWebKit\//.test(navigator.userAgent)&&!/Chrom(?:e|ium)\//.test(navigator.userAgent))await import(/* @vite-ignore */ workerUrl);
- const task=getDocument({data:new Uint8Array(buffer),useSystemFonts:true,isEvalSupported:false,disableFontFace:true});
- const pdf=await task.promise;const blocks:NonNullable<PracticeMaterial['blocks']>=[];const warnings:string[]=[];
+ signal?.throwIfAborted();
+ const task=getDocument({data:new Uint8Array(source),useSystemFonts:true,isEvalSupported:false,disableFontFace:true});
+ let abort:()=>void=()=>{};
+ try{
+  if(!signal)return await task.promise;
+  const canceled=new Promise<never>((_,reject)=>{
+   abort=()=>{reject(signal.reason);void task.destroy().catch(()=>{});};
+   signal.addEventListener('abort',abort,{once:true});
+  });
+  return await Promise.race([task.promise,canceled]);
+ }finally{signal?.removeEventListener('abort',abort);}
+}
+export async function extractPdfMaterial(buffer:ArrayBuffer,title:string,kind:PracticeKind):Promise<{material:PracticeMaterial;warnings:string[]}>{
+ const pdf=await openPdfDocument(buffer);const blocks:NonNullable<PracticeMaterial['blocks']>=[];const warnings:string[]=[];
  try{for(let number=1;number<=pdf.numPages;number++){const page=await pdf.getPage(number);const content=await page.getTextContent();let text='';let lastY:number|undefined;
   for(const item of content.items){if(!('str' in item))continue;const y=item.transform[5];if(text&&lastY!==undefined&&Math.abs(y-lastY)>3&&!text.endsWith('\n'))text+='\n';else if(text&&!text.endsWith('\n')&&!text.endsWith(' '))text+=' ';text+=item.str;if(item.hasEOL)text+='\n';lastY=y;}
   text=text.trim();blocks.push({id:`page-${number}`,title:`第 ${number} 页`,text,page:number});if(!text)warnings.push(`第 ${number} 页无可提取文字；若为扫描件，请先 OCR 并核对后导入。`);page.cleanup();

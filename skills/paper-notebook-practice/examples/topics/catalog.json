@@ -590,6 +590,20 @@
       "sha256": "5f18b046ff82b730c3f7ea57d11a6ccb696f2fd6768d49e60e7f52487f778d32"
     },
     {
+      "id": "math1-integral-trial",
+      "title": "考研数学（一）定积分及应用专题练习",
+      "subject": "数学（一）",
+      "level": "研究生入学考试",
+      "family": "postgraduate",
+      "routeId": "postgrad-math-1",
+      "file": "postgraduate/math1-integrals.json",
+      "questionCount": 7,
+      "mode": "mock",
+      "durationMinutes": 60,
+      "totalScore": 50,
+      "sha256": "67cc6d0902ed4ba3d4063435978953943f4fa856f95d421460a208266c5e4fe5"
+    },
+    {
       "id": "postgraduate-math1-01",
       "title": "硕士研究生入学考试 数学（一）",
       "subject": "数学（一）",

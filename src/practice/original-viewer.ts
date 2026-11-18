@@ -3,6 +3,9 @@ export interface OriginalDocument {
  id:string;
  title:string;
  url:string;
+ publisherUrl?:string;
+ /** Source-specific access verified from the publisher's PDF response. */
+ access?:'browser'|'publisher';
  pages?:number;
  images?:string[];
  cover?:string;
@@ -12,9 +15,10 @@ type Options={page?:number;file?:File;onPage?:(page:number)=>void;onFile?:(file:
 export interface OriginalViewer {goTo(page:number):void;getPage():number;dispose():void}
 const icon=(path:string)=>`<svg viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${path}"/></svg>`;
 export function mountOriginalViewer(stage:HTMLElement,controls:HTMLElement,source:OriginalDocument,options:Options={}):OriginalViewer {
- let disposed=false,page=Math.max(0,options.page??0),count=0,mode:'images'|'canvas'|'loading'|'external'='loading',revision=0;
+ let disposed=false,page=Math.max(0,options.page??0),count=0,mode:'images'|'canvas'|'browser'|'loading'|'external'='loading',revision=0;
  let pdf:Awaited<ReturnType<typeof import('./pdf')['openPdfDocument']>>|undefined;
  let task:{cancel():void}|undefined,loading:AbortController|undefined,localFile=options.file;
+ let nativeFrame:HTMLIFrameElement|undefined;
  const listeners=new AbortController(),signal=listeners.signal;
  stage.classList.add('original-document-stage');controls.classList.add('document-pagination');
  stage.setAttribute('aria-label',source.title);
@@ -34,19 +38,34 @@ export function mountOriginalViewer(stage:HTMLElement,controls:HTMLElement,sourc
  function image(url:string,alt:string){const element=document.createElement('img');element.src=url;element.alt=alt;element.decoding='async';return element;}
  function cover(){const img=source.cover?image(source.cover,'已收录的原件首页'):undefined;stage.replaceChildren(...img?[img]:[]);}
  function loadingNote(text:string){const hint=document.createElement('p');hint.className='original-loading';hint.textContent=text;return hint;}
- function external(message:string,allowLocal=source.kind==='pdf'){
-  mode='external';count=0;update();cover();state.textContent=message;
-  const panel=document.createElement('div');panel.className='original-document-fallback';
-  const note=document.createElement('p');note.textContent=message;panel.append(note);
+ function sourceActions(allowLocal:boolean){
   const actions=document.createElement('div');actions.className='original-document-actions';
-  const link=document.createElement('a');link.href=source.url;link.target='_blank';link.rel='noreferrer';link.className='button secondary small';link.textContent='打开来源原件';actions.append(link);
+  const anchor=(url:string,label:string)=>{const link=document.createElement('a');link.href=url;link.target='_blank';link.rel='noreferrer';link.className='button text small';link.textContent=label;actions.append(link);};
+  anchor(source.publisherUrl??source.url,'打开来源原件');
+  if(source.publisherUrl&&source.publisherUrl!==source.url)anchor(source.url,'直接打开 PDF');
   if(allowLocal){
    const fileInput=document.createElement('input');fileInput.type='file';fileInput.accept='application/pdf,.pdf';fileInput.hidden=true;
    const pick=document.createElement('button');pick.type='button';pick.className='button text small';pick.textContent='读取本机 PDF';pick.onclick=()=>fileInput.click();
-   fileInput.onchange=()=>{const file=fileInput.files?.[0];if(file){page=0;localFile=file;void loadPdf(file);}};
+   fileInput.onchange=()=>{const file=fileInput.files?.[0];if(file){page=0;localFile=file;options.onPage?.(0);void loadPdf(file);}};
    actions.append(pick,fileInput);
   }
+  return actions;
+ }
+ const toolbar=document.createElement('div');toolbar.className='original-native-toolbar';toolbar.append(sourceActions(true));controls.append(toolbar);
+ function external(message:string,allowLocal=source.kind==='pdf',retry=false){
+  mode='external';count=0;update();cover();state.textContent=message;
+  const panel=document.createElement('div');panel.className='original-document-fallback';
+  const note=document.createElement('p');note.textContent=message;panel.append(note);
+  const actions=sourceActions(allowLocal);
+  if(retry){const button=document.createElement('button');button.type='button';button.className='button text small';button.textContent='重试站内读取';button.onclick=()=>{void loadPdf();};actions.append(button);}
   panel.append(actions);stage.append(panel);
+ }
+ function browserPdf(){
+  if(!navigator.pdfViewerEnabled){external('此浏览器没有内置 PDF 阅读器。可打开原件，或选取下载的 PDF 在此翻页。');return;}
+  mode='browser';count=0;update();state.textContent='使用浏览器阅读原版 PDF';
+  const frame=document.createElement('iframe');nativeFrame=frame;frame.className='original-native-pdf';frame.title=source.title+' · 发布者原版 PDF';frame.referrerPolicy='no-referrer';
+  const url=new URL(source.url,location.href);url.hash='page='+(page+1)+'&view=FitH';frame.src=url.href;
+  stage.replaceChildren(frame);
  }
  async function draw(){
   if(disposed||!navigable())return;update();options.onPage?.(page);const drawId=++revision;
@@ -70,23 +89,21 @@ export function mountOriginalViewer(stage:HTMLElement,controls:HTMLElement,sourc
   }
  }
  async function loadPdf(file?:File){
-  task?.cancel();await pdf?.destroy().catch(()=>{});pdf=undefined;
+  nativeFrame?.remove();nativeFrame=undefined;task?.cancel();await pdf?.destroy().catch(()=>{});pdf=undefined;
   if(disposed)return;
   loading?.abort();const controller=new AbortController();loading=controller;
   mode='loading';count=0;update();cover();state.textContent='正在读取 PDF';stage.append(loadingNote('正在读取 PDF…'));
-  const timer=setTimeout(()=>controller.abort(),12000);
+  const timer=setTimeout(()=>controller.abort(),20000);
   try{
-   const {openPdfDocument}=await import('./pdf');
-   // Complete the cancellable network read before starting the PDF worker.
-   const buffer=file?await file.arrayBuffer():await fetch(source.url,{signal:controller.signal,credentials:'omit'}).then(response=>{
+   const [buffer,{openPdfDocument}]=await Promise.all([file?file.arrayBuffer():fetch(source.url,{signal:controller.signal,credentials:'omit'}).then(response=>{
     if(!response.ok)throw Error('原件无法读取');
     return response.arrayBuffer();
-   });
+   }),import('./pdf')]);
    const loaded=await openPdfDocument(buffer,controller.signal);
    if(disposed||loading!==controller){void loaded.destroy().catch(()=>{});return;}
    pdf=loaded;count=loaded.numPages;mode='canvas';if(file)options.onFile?.(file);void draw();
   }catch{
-   if(!disposed&&loading===controller){localFile=undefined;external(file?'无法读取所选 PDF，请重新选择。':`站内暂时无法读取原件${source.pages?`（${source.pages} 页）`:''}。`);}
+   if(!disposed&&loading===controller){localFile=undefined;external(file?'无法读取所选 PDF，请重新选择。':controller.signal.aborted?'来源读取超时。可重试、打开发布页或读取下载的原卷。':'无法从来源读取 PDF。可打开发布页，或选取下载的 PDF 在此翻页。',true,!file);}
   }finally{clearTimeout(timer);if(loading===controller)loading=undefined;}
  }
  function goTo(target:number){if(disposed||!navigable()||!Number.isFinite(target))return;const value=Math.max(0,Math.min(count-1,Math.round(target)));if(value!==page){page=value;void draw();}}
@@ -101,7 +118,9 @@ export function mountOriginalViewer(stage:HTMLElement,controls:HTMLElement,sourc
  const resize=new ResizeObserver(()=>{if(mode==='canvas')void draw();});resize.observe(stage);
  if(localFile)void loadPdf(localFile);
  else if(source.images?.length){mode='images';count=source.images.length;void draw();}
+ else if(source.kind==='pdf'&&source.access==='browser')browserPdf();
+ else if(source.kind==='pdf'&&source.access==='publisher')external('此来源需从发布页打开。将下载的 PDF 选入站内即可翻页。');
  else if(source.kind==='pdf')void loadPdf();
- else external('请在发布网站查看原件。',false);
- return {goTo,getPage:()=>page,dispose(){disposed=true;revision++;listeners.abort();loading?.abort();task?.cancel();void pdf?.destroy().catch(()=>{});resize.disconnect();stage.removeAttribute('tabindex');}};
+ else external('原件以网页发布，请到发布页查看。',false);
+ return {goTo,getPage:()=>page,dispose(){disposed=true;revision++;nativeFrame?.remove();listeners.abort();loading?.abort();task?.cancel();void pdf?.destroy().catch(()=>{});resize.disconnect();stage.removeAttribute('tabindex');}};
 }

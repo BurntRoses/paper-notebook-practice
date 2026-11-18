@@ -2,63 +2,78 @@
   "documents": {
     "act-guide": {
       "kind": "pdf",
-      "pages": 82
+      "pages": 82,
+      "access": "publisher"
     },
     "alevel-math-2020-p1": {
       "kind": "pdf",
-      "pages": 22
+      "pages": 22,
+      "access": "browser"
     },
     "alevel-math-2024-p11": {
       "kind": "pdf",
-      "pages": 20
+      "pages": 20,
+      "access": "browser"
     },
     "ap-art-history": {
       "kind": "pdf",
-      "pages": 10
+      "pages": 10,
+      "access": "browser"
     },
     "ap-calculus-2025": {
       "kind": "pdf",
-      "pages": 9
+      "pages": 9,
+      "access": "browser"
     },
     "australia-civics": {
       "kind": "pdf",
-      "pages": 50
+      "pages": 50,
+      "access": "publisher"
     },
     "biology-2024-p41": {
       "kind": "pdf",
-      "pages": 20
+      "pages": 20,
+      "access": "browser"
     },
     "cet4-official2016": {
       "kind": "pdf",
-      "pages": 215
+      "pages": 215,
+      "access": "publisher"
     },
     "cet6-official2016": {
       "kind": "pdf",
-      "pages": 215
+      "pages": 215,
+      "access": "publisher"
     },
     "civil24-1": {
       "kind": "pdf",
-      "pages": 6
+      "pages": 6,
+      "access": "browser"
     },
     "civil24-11": {
       "kind": "pdf",
-      "pages": 25
+      "pages": 25,
+      "access": "browser"
     },
     "civil24-3": {
       "kind": "pdf",
-      "pages": 6
+      "pages": 6,
+      "access": "browser"
     },
     "civil24-5": {
       "kind": "pdf",
-      "pages": 6
+      "pages": 6,
+      "access": "browser"
     },
     "civil24-7": {
       "kind": "pdf",
-      "pages": 26
+      "pages": 26,
+      "access": "browser"
     },
     "civil24-9": {
       "kind": "pdf",
-      "pages": 25
+      "pages": 25,
+      "access": "browser"
     },
     "constructor-mechanical24": {
       "kind": "pdf",
@@ -74,31 +89,38 @@
     },
     "delf-b1-candidate": {
       "kind": "pdf",
-      "pages": 12
+      "pages": 12,
+      "access": "publisher"
     },
     "design-full-portfolio": {
       "kind": "pdf",
-      "pages": 27
+      "pages": 27,
+      "access": "browser"
     },
     "ecnu-linear-2023": {
       "kind": "pdf",
-      "url": "https://ggsx.ecnu.edu.cn/_upload/article/files/88/27/da869e6d4147917c4f7c115ed7f7/2b083b94-11eb-4dc9-8105-79ac2addc735.pdf"
+      "url": "https://ggsx.ecnu.edu.cn/_upload/article/files/88/27/da869e6d4147917c4f7c115ed7f7/2b083b94-11eb-4dc9-8105-79ac2addc735.pdf",
+      "access": "publisher"
     },
     "eju-japanese": {
       "kind": "pdf",
-      "pages": 32
+      "pages": 32,
+      "access": "browser"
     },
     "eju-math": {
       "kind": "pdf",
-      "pages": 29
+      "pages": 29,
+      "access": "browser"
     },
     "geography-2024-p11": {
       "kind": "pdf",
-      "pages": 28
+      "pages": 28,
+      "access": "browser"
     },
     "goethe-b1-model": {
       "kind": "pdf",
-      "pages": 52
+      "pages": 52,
+      "access": "browser"
     },
     "guangdong-2024-math": {
       "kind": "pdf",
@@ -110,35 +132,43 @@
     },
     "hkeaa24-6CR1": {
       "kind": "pdf",
-      "pages": 12
+      "pages": 12,
+      "access": "browser"
     },
     "hkeaa24-6CR2": {
       "kind": "pdf",
-      "pages": 12
+      "pages": 12,
+      "access": "browser"
     },
     "hkeaa24-6CW1": {
       "kind": "pdf",
-      "pages": 8
+      "pages": 8,
+      "access": "browser"
     },
     "hkeaa24-6CW2": {
       "kind": "pdf",
-      "pages": 8
+      "pages": 8,
+      "access": "browser"
     },
     "hkeaa24-6ERW1": {
       "kind": "pdf",
-      "pages": 20
+      "pages": 20,
+      "access": "browser"
     },
     "hkeaa24-6ERW2": {
       "kind": "pdf",
-      "pages": 20
+      "pages": 20,
+      "access": "browser"
     },
     "hkeaa24-6MC1": {
       "kind": "pdf",
-      "pages": 20
+      "pages": 20,
+      "access": "browser"
     },
     "hkeaa24-6MC2": {
       "kind": "pdf",
-      "pages": 20
+      "pages": 20,
+      "access": "browser"
     },
     "hsk3": {
       "kind": "pdf",
@@ -146,55 +176,68 @@
     },
     "ib-math-aa": {
       "kind": "pdf",
-      "pages": 121
+      "pages": 121,
+      "access": "publisher"
     },
     "ielts-academic-reading-access-arrangement-modified-large-print-question-booklet": {
       "kind": "pdf",
-      "pages": 16
+      "pages": 16,
+      "access": "publisher"
     },
     "ielts-academic-writing-access-arrangement-modified-large-print-question-paper": {
       "kind": "pdf",
-      "pages": 16
+      "pages": 16,
+      "access": "publisher"
     },
     "igcse-art": {
       "kind": "pdf",
-      "pages": 4
+      "pages": 4,
+      "access": "browser"
     },
     "igcse-math-2025-p2": {
       "kind": "pdf",
-      "pages": 18
+      "pages": 18,
+      "access": "browser"
     },
     "jlpt-n2-g": {
       "kind": "pdf",
-      "pages": 6
+      "pages": 6,
+      "access": "browser"
     },
     "jlpt-n2-l": {
       "kind": "pdf",
-      "pages": 15
+      "pages": 15,
+      "access": "browser"
     },
     "jlpt-n2-r": {
       "kind": "pdf",
-      "pages": 20
+      "pages": 20,
+      "access": "browser"
     },
     "jlpt-n2-v": {
       "kind": "pdf",
-      "pages": 9
+      "pages": 9,
+      "access": "browser"
     },
     "jlpt-n5-g": {
       "kind": "pdf",
-      "pages": 9
+      "pages": 9,
+      "access": "browser"
     },
     "jlpt-n5-l": {
       "kind": "pdf",
-      "pages": 16
+      "pages": 16,
+      "access": "browser"
     },
     "jlpt-n5-r": {
       "kind": "pdf",
-      "pages": 8
+      "pages": 8,
+      "access": "browser"
     },
     "jlpt-n5-v": {
       "kind": "pdf",
-      "pages": 10
+      "pages": 10,
+      "access": "browser"
     },
     "mit-6006-final-2020": {
       "kind": "pdf",
@@ -202,39 +245,48 @@
     },
     "music-performance-spec": {
       "kind": "pdf",
-      "pages": 63
+      "pages": 63,
+      "access": "browser"
     },
     "music-theory-g5": {
       "kind": "pdf",
-      "pages": 11
+      "pages": 11,
+      "access": "browser"
     },
     "national-english24-1": {
       "kind": "pdf",
-      "pages": 14
+      "pages": 14,
+      "access": "browser"
     },
     "national-english24-2": {
       "kind": "pdf",
-      "pages": 14
+      "pages": 14,
+      "access": "browser"
     },
     "national-math24-1": {
       "kind": "pdf",
-      "pages": 5
+      "pages": 5,
+      "access": "browser"
     },
     "national-math24-2": {
       "kind": "pdf",
-      "pages": 9
+      "pages": 9,
+      "access": "browser"
     },
     "national-math24-3": {
       "kind": "pdf",
-      "pages": 15
+      "pages": 15,
+      "access": "browser"
     },
     "ncre-office25": {
       "kind": "pdf",
-      "pages": 8
+      "pages": 8,
+      "access": "publisher"
     },
     "ncre-python25": {
       "kind": "pdf",
-      "pages": 9
+      "pages": 9,
+      "access": "publisher"
     },
     "neea-2024-chinese": {
       "images": [
@@ -264,7 +316,8 @@
     },
     "nuaa-thermodynamics18": {
       "kind": "pdf",
-      "pages": 3
+      "pages": 3,
+      "access": "publisher"
     },
     "pku-calculus-2013": {
       "kind": "pdf",
@@ -272,51 +325,63 @@
     },
     "sat-4": {
       "kind": "pdf",
-      "pages": 56
+      "pages": 56,
+      "access": "browser"
     },
     "tongji-mechanics07-a": {
       "kind": "pdf",
-      "pages": 4
+      "pages": 4,
+      "access": "browser"
     },
     "tongji-mechanics07-b": {
       "kind": "pdf",
-      "pages": 4
+      "pages": 4,
+      "access": "browser"
     },
     "topik-83-listening-test-paper": {
       "kind": "pdf",
-      "pages": 14
+      "pages": 14,
+      "access": "browser"
     },
     "topik-83-reading-test-paper": {
       "kind": "pdf",
-      "pages": 25
+      "pages": 25,
+      "access": "browser"
     },
     "topik-83-writing-test-paper": {
       "kind": "pdf",
-      "pages": 2
+      "pages": 2,
+      "access": "browser"
     },
     "tw-accountant-accounting24": {
       "kind": "pdf",
-      "pages": 8
+      "pages": 8,
+      "access": "publisher"
     },
     "tw-accountant-audit24": {
       "kind": "pdf",
-      "pages": 5
+      "pages": 5,
+      "access": "publisher"
     },
     "tw-civil-structure24": {
       "kind": "pdf",
-      "pages": 2
+      "pages": 2,
+      "access": "publisher"
     },
     "tw-mechanical-mechanics24": {
       "kind": "pdf",
-      "pages": 3
+      "pages": 3,
+      "access": "publisher"
     },
     "tw-mechanical-thermo24": {
       "kind": "pdf",
-      "pages": 1
+      "pages": 1,
+      "access": "publisher"
     },
     "us-civics-2025": {
       "kind": "pdf",
-      "pages": 19
+      "pages": 19,
+      "access": "browser"
     },
     "ustc-probstat-2023": {
       "kind": "pdf"

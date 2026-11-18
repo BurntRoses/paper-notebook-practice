@@ -6,13 +6,16 @@ export interface BankFilter {search?:string;chapter?:string;type?:PracticeQuesti
 export interface AssembleOptions extends BankFilter {title:string;subject:string;level:string;count:number;durationMinutes:number;seed?:string;targetScore?:number;mode?:'mock'|'bank';notebookId?:string;notebookRevision?:number;materials:PracticeMaterial[];style?:PracticeStyle;sourceSections?:PracticeSection[];sourceDocument?:PracticeDocument;presentation?:PracticePresentation;balanceChoices?:boolean;sourcePolicy?:PracticeSourcePolicy;questionPreference?:'originals-first'|'balanced'|'generated-first'}
 
 /** Recomposition keeps source conditions and numbering, but replaces source-specific totals. */
-export function refreshPracticeMetadata(paper:PracticeDocument,reference:PracticeDocument):PracticeDocument{
- const sameQuestions=(left:PracticeQuestion[],right:PracticeQuestion[])=>left.length===right.length&&left.every((q,i)=>q.id===right[i].id&&q.score===right[i].score);
+type PaperMetadataReference=Pick<PracticeDocument,'title'|'subject'|'level'|'durationMinutes'|'mode'|'totalScore'|'style'|'presentation'>&{
+ sections:(Pick<PracticeSection,'id'|'title'>&{questions:Pick<PracticeQuestion,'id'|'score'>[]})[];
+};
+export function refreshPracticeMetadata(paper:PracticeDocument,reference:PaperMetadataReference):PracticeDocument{
+ const sameQuestions=(left:Pick<PracticeQuestion,'id'|'score'>[],right:typeof left)=>left.length===right.length&&left.every((q,i)=>q.id===right[i].id&&q.score===right[i].score);
  const current=paper.sections.flatMap(s=>s.questions),previous=reference.sections.flatMap(s=>s.questions);
  const actualTotal=paper.sections.reduce((total,s)=>total+s.questions.reduce((sum,q)=>sum+q.score,0),0);
- const sectionStructure=(sections:PracticeSection[])=>JSON.stringify(sections.map(s=>[s.id,s.title,s.questions.map(q=>q.id)]));
+ const sectionStructure=(sections:PaperMetadataReference['sections'])=>JSON.stringify(sections.map(s=>[s.id,s.title,s.questions.map(q=>q.id)]));
  const changed=paper.title!==reference.title||paper.subject!==reference.subject||paper.level!==reference.level||paper.durationMinutes!==reference.durationMinutes||paper.mode!==reference.mode||paper.totalScore!==reference.totalScore||Math.abs(actualTotal-paper.totalScore)>1e-7||!sameQuestions(current,previous)||sectionStructure(paper.sections)!==sectionStructure(reference.sections);
- const snapshotChanged=changed||JSON.stringify(paper.sections)!==JSON.stringify(reference.sections)||JSON.stringify(paper.style)!==JSON.stringify(reference.style)||JSON.stringify(paper.presentation)!==JSON.stringify(reference.presentation);
+ const snapshotChanged=paper.original&&(changed||JSON.stringify(paper.sections)!==JSON.stringify(reference.sections)||JSON.stringify(paper.style)!==JSON.stringify(reference.style)||JSON.stringify(paper.presentation)!==JSON.stringify(reference.presentation));
  if(!changed){if(snapshotChanged&&paper.original){const detached=structuredClone(paper);delete detached.original;return detached;}return paper;}
  const result=structuredClone(paper);delete result.original;if(result.exam&&(!sameQuestions(current,previous)||paper.durationMinutes!==reference.durationMinutes||Math.abs(actualTotal-reference.totalScore)>1e-7))result.exam.scope='subset';const english=result.presentation?.language==='en';
  const countsOrScores=/(?:\d+(?:\.\d+)?\s*(?:分|题|小题|道|points?\b|questions?\b)|第\s*[\d一二三四五六七八九十]+\s*(?:题|小题)|Questions?\s+\d)/i;

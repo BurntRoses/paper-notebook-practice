@@ -4,6 +4,10 @@
 
 [在线体验](https://burntroses.github.io/paper-notebook-practice/) · [下载离线工具](https://github.com/BurntRoses/paper-notebook-practice/releases/latest) · [使用说明](docs/practice.md)
 
+- **学生**：把讲义和错题整理成专题练习，做完再对答案。
+- **老师**：按教学进度组卷，下载 Word 改题、用 PDF 打印。
+- **家长**：按孩子学过的内容准备小练习，用独立答案一起核对。
+
 ## 开始使用
 
 - 智能体：`请读取 https://github.com/BurntRoses/paper-notebook-practice 的 AGENTS.md，按项目要求和我的资料、需求制作试卷或整理题库。`
@@ -16,7 +20,7 @@
 
 每类版式关联实际读取的真实参考卷或评估任务与评分依据，见[真实样卷研究](skills/paper-notebook-practice/references/reference-study.md)。查看样例与应用版式分别操作。示例可逐页翻阅，支持首末页、页码跳转和方向键。外部原件受站点限制时，可打开来源，或读取已取得的本机 PDF。试做与校准案例见[命题校准](skills/paper-notebook-practice/references/authoring-calibration.md)。
 
-试卷与版式采用单层考试方向分类，支持资源类型和关键词筛选。定制流程直接生成智能体或网页对话的个性化提示词。试卷使用正式标题与真实纸面比例，支持明暗预览和本机 HTML、PDF、Word、PNG 导出。支持彩印与灰度，色彩辨识任务保留彩色条件；日韩文字体随离线成品嵌入。上传内容保存在当前浏览器中。
+试卷与版式采用单层考试方向分类，支持资源类型和关键词筛选。定制流程直接生成智能体或网页对话的个性化提示词。试卷使用正式标题与真实纸面比例，支持明暗预览和本机 HTML、PDF、Word、PNG 导出。支持彩印与灰度，色彩辨识任务保留彩色条件；日韩文字体随离线成品嵌入。上传内容保存在当前浏览器中。Word 的文字可编辑，公式和图形保留为版面图；PDF 适合按预览版式打印。
 
 “打开文件”可恢复成品试卷/题库，或读取 PDF、DOCX、TXT 与笔记资料。普通资料在本机整理，下载出题资料包与个性化提示词后交给当前智能体或网页对话制作。
 

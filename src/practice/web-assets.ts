@@ -9,7 +9,9 @@ async function inlineFont(url:string):Promise<string>{
 export async function standalonePaperCSS(css:string):Promise<string>{
  const matches=[...css.matchAll(/url\(\s*["']?([^\s"')]+)["']?\s*\)/g)];
  const urls=[...new Set(matches.map(match=>match[1]).filter(url=>!url.startsWith('data:')&&/\.(?:otf|woff2?|ttf)(?:[?#]|$)/i.test(url)))];
- for(const url of urls)css=css.split(url).join(await inlineFont(url));
+ const inlined=await Promise.all(urls.map(async url=>[url,await inlineFont(url)] as const));
+ const replacements=new Map(inlined);
+ css=css.replace(/url\(\s*["']?([^\s"')]+)["']?\s*\)/g,(match,url)=>replacements.has(url)?'url('+replacements.get(url)+')':match);
  return css.replace(/url\(["'](data:font\/[^"']+)["']\)/g,'url($1)');
 }
 export async function standalonePaperHTML(html:string):Promise<string>{

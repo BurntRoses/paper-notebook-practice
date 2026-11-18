@@ -1,6 +1,6 @@
 import china from '../../skills/paper-notebook-practice/references/authentic-china-papers.json';
 import global from '../../skills/paper-notebook-practice/references/authentic-global-papers.json';
-import realCatalog from './real-cases.json';
+import {caseIndex} from './case-index';
 import {resolveExamRoute,getExamRoute,examRouteTemplateId} from './exam-routes';
 
 export interface ReferencePaper {
@@ -22,8 +22,8 @@ const baseTemplates:Record<string,string[]>={
  'mit-6006-final-2020':['engineering-course']
 };
 // Reuse the source identities already attached to inspected historical cases.
-const historical:ReferenceCollection[]=realCatalog.sources.filter(source=>!source.id.includes('original-complete')).flatMap(source=>{
- const cases=realCatalog.cases.filter(p=>p.materials.some(m=>m.url===source.url));
+const historical:ReferenceCollection[]=caseIndex.sources.filter(source=>!source.id.includes('original-complete')).flatMap(source=>{
+ const cases=caseIndex.cases.filter(p=>p.materials.some(m=>m.url===source.url));
  if(!cases.length)return [];
  return [{id:'historical-'+source.id,title:source.title,category:source.subject,
   templateIds:[...new Set([...baseTemplates[source.id]??[],...cases.map(p=>'source-'+p.practiceId)])],

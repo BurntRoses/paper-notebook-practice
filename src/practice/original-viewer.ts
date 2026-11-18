@@ -33,6 +33,7 @@ export function mountOriginalViewer(stage:HTMLElement,controls:HTMLElement,sourc
  }
  function image(url:string,alt:string){const element=document.createElement('img');element.src=url;element.alt=alt;element.decoding='async';return element;}
  function cover(){const img=source.cover?image(source.cover,'已收录的原件首页'):undefined;stage.replaceChildren(...img?[img]:[]);}
+ function loadingNote(text:string){const hint=document.createElement('p');hint.className='original-loading';hint.textContent=text;return hint;}
  function external(message:string,allowLocal=source.kind==='pdf'){
   mode='external';count=0;update();cover();state.textContent=message;
   const panel=document.createElement('div');panel.className='original-document-fallback';
@@ -52,9 +53,8 @@ export function mountOriginalViewer(stage:HTMLElement,controls:HTMLElement,sourc
   task?.cancel();task=undefined;
   const label=`${localFile?.name??source.title}，第 ${page+1} 页，共 ${count} 页`;
   if(mode==='images'){
-   const node=image(source.images![page],label);stage.replaceChildren(node);
-   node.onload=()=>{if(drawId===revision&&!disposed)state.textContent=label;};
-   node.onerror=()=>{if(disposed||drawId!==revision)return;node.remove();state.textContent='此页读取失败';const retry=document.createElement('button');retry.className='button secondary document-retry';retry.textContent='重试此页';retry.onclick=()=>{void draw();};stage.append(retry);};
+   const node=image(source.images![page],label),loading=loadingNote(`正在读取第 ${page+1} 页…`);stage.setAttribute('aria-busy','true');state.textContent=loading.textContent;stage.replaceChildren(node,loading);
+   void node.decode().then(()=>{if(drawId!==revision||disposed)return;loading.remove();stage.setAttribute('aria-busy','false');state.textContent=label;}).catch(()=>{if(disposed||drawId!==revision)return;node.remove();loading.remove();stage.setAttribute('aria-busy','false');state.textContent='此页读取失败';const retry=document.createElement('button');retry.className='button secondary document-retry';retry.textContent='重试此页';retry.onclick=()=>{void draw();};stage.append(retry);});
   }else if(pdf){
    try{
     const sheet=await pdf.getPage(page+1);if(disposed||drawId!==revision)return;
@@ -73,7 +73,7 @@ export function mountOriginalViewer(stage:HTMLElement,controls:HTMLElement,sourc
   task?.cancel();await pdf?.destroy().catch(()=>{});pdf=undefined;
   if(disposed)return;
   loading?.abort();const controller=new AbortController();loading=controller;
-  mode='loading';count=0;update();cover();state.textContent='正在读取 PDF';
+  mode='loading';count=0;update();cover();state.textContent='正在读取 PDF';stage.append(loadingNote('正在读取 PDF…'));
   const timer=setTimeout(()=>controller.abort(),12000);
   try{
    const {openPdfDocument}=await import('./pdf');

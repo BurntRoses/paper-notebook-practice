@@ -3,6 +3,7 @@ export interface PracticeWebDelivery {
  skillUrl:string;
  topicBaseUrl:string;
  caseBaseUrl?:string;
+ exampleBaseUrl?:string;
  downloadUrl?:string;
 }
 export function webDelivery():PracticeWebDelivery|undefined{
@@ -18,9 +19,12 @@ export async function fetchTopicBytes(file:string):Promise<Uint8Array|undefined>
  return new Uint8Array(await response.arrayBuffer());
 }
 
-export async function fetchCaseDocument(id:string):Promise<unknown|undefined>{
- const target=webDelivery();if(!target?.caseBaseUrl)return;
- const response=await fetch(new URL(encodeURIComponent(id)+'.json',new URL(target.caseBaseUrl,location.href)));
- if(!response.ok)throw Error('试卷资料暂时未能下载，请重试。');
- return response.json();
+export async function fetchPaperDocument(kind:'case'|'example',id:string):Promise<unknown|undefined>{
+ const target=webDelivery(),base=kind==='case'?target?.caseBaseUrl:target?.exampleBaseUrl;
+ if(!base)return;
+ try{
+  const response=await fetch(new URL(encodeURIComponent(id)+'.json',new URL(base,location.href)),{signal:AbortSignal.timeout(25000)});
+  if(response.ok)return await response.json();
+ }catch{/* Keep network and parsing errors actionable in the preview. */}
+ throw Error('试卷资料未能下载，请重试。');
 }

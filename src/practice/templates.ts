@@ -1,4 +1,4 @@
-import realCatalog from './real-cases.json';
+import {caseIndex} from './case-index';
 import globalTemplates from './global-templates.json';
 import {getExamSpecification} from './exam-specification';
 import {refreshPracticeMetadata} from './bank';
@@ -69,9 +69,9 @@ for(const id of ['cet4','cet6'] as const){
  if(existing>=0)PAPER_TEMPLATES[existing]=profile;else PAPER_TEMPLATES.push(profile);
 }
 /** Source templates carry the measured header and organization alongside physical geometry. */
-for(const paper of realCatalog.cases as unknown as PracticeDocument[]){
+for(const paper of caseIndex.cases){
  const reference=PAPER_TEMPLATES.find(t=>t.id===paper.style.templateId)??PAPER_TEMPLATES[0],material=paper.materials[0];
- PAPER_TEMPLATES.push({id:'source-'+paper.practiceId,caseId:paper.practiceId,name:paper.title,family:paper.level,description:'来自 '+material.title,subjects:[paper.subject],level:paper.level,presentation:structuredClone(paper.presentation),source:{title:material.title,url:material.url??reference.source.url,referenceYear:paper.sections.flatMap(s=>s.questions).find(q=>q.origin?.year)?.origin?.year??2026,kind:'researched-paper',observed:['按原件保留卷头信息、题组、原题号与分值位置','纸张与字阶见案例参数和原件研究记录'],scope:material.rights??'试题材料保留原发布者权利。'},layout:{...reference.layout,...paper.style.templateOverrides,...(paper.style.fontSize?{fontSize:paper.style.fontSize}:{}),...(paper.style.lineHeight?{lineHeight:paper.style.lineHeight}:{})},blueprint:{durationMinutes:paper.durationMinutes,totalScore:paper.totalScore,sections:paper.sections.map(s=>({title:s.title,instructions:s.instructions,count:s.questions.length,score:s.score,questionType:s.questions[0].type}))}});
+ PAPER_TEMPLATES.push({id:'source-'+paper.practiceId,caseId:paper.practiceId,name:paper.title,family:paper.level,description:'来自 '+material.title,subjects:[paper.subject],level:paper.level,presentation:structuredClone(paper.presentation),source:{title:material.title,url:material.url??reference.source.url,referenceYear:paper.referenceYear,kind:'researched-paper',observed:['按原件保留卷头信息、题组、原题号与分值位置','纸张与字阶见案例参数和原件研究记录'],scope:material.rights??'试题材料保留原发布者权利。'},layout:{...reference.layout,...paper.style.templateOverrides,...(paper.style.fontSize?{fontSize:paper.style.fontSize}:{}),...(paper.style.lineHeight?{lineHeight:paper.style.lineHeight}:{})},blueprint:{durationMinutes:paper.durationMinutes,totalScore:paper.totalScore,sections:paper.sections.map(s=>({title:s.title,instructions:s.instructions,count:s.questions.length,score:s.score,questionType:s.questions[0].type}))}});
 }
 export function getPaperTemplate(id='standard'):PaperTemplate {const found=PAPER_TEMPLATES.find(t=>t.id===id);if(!found)throw new Error(`Unknown paper template: ${id}`);return structuredClone(found);}
 export function resolvePaperTemplate(style:PracticeStyle):PaperTemplate {
@@ -88,6 +88,6 @@ export function applyPaperTemplate(practice:PracticeDocument,id:string):Practice
  }
  if(practice.presentation?.printColor)(copy.presentation??={}).printColor=practice.presentation.printColor;
  delete copy.original;
- copy.style={preset:template.layout.headerVariant==='ielts'||template.layout.headerVariant==='language'?'language':template.subjects.includes('数学')?'stem':practice.style.preset,templateId:id};const source=(realCatalog.cases as unknown as PracticeDocument[]).find(p=>p.practiceId===template.caseId);return source?refreshPracticeMetadata(copy,source):copy;
+ copy.style={preset:template.layout.headerVariant==='ielts'||template.layout.headerVariant==='language'?'language':template.subjects.includes('数学')?'stem':practice.style.preset,templateId:id};const source=caseIndex.cases.find(p=>p.practiceId===template.caseId);return source?refreshPracticeMetadata(copy,source):copy;
 }
 export function paperGeometry(layout:PaperTemplateLayout){const short=layout.paperSize==='A3'?297:210,long=layout.paperSize==='A3'?420:297;return {widthMm:layout.widthMm??(layout.orientation==='landscape'?long:short),heightMm:layout.heightMm??(layout.orientation==='landscape'?short:long)};}

@@ -4,10 +4,11 @@ import schema from '../../skills/paper-notebook-practice/schemas/practice.schema
 import {textOf,type NotebookDocument} from '../model/types';
 import {validateExamStructure} from './exam-specification';
 import {questionsOf,type PracticeDocument,type PracticeError} from './model';
-const validateSchema=new Ajv({allErrors:true,strict:false}).compile(schema);
+let schemaValidator:ReturnType<Ajv['compile']>|undefined;
 const close=(left:number,right:number)=>Math.abs(left-right)<1e-7;
 /** The schema validates structure; these checks bind scores and provenance to actual content. */
 export function validatePractice(value:unknown,source?:NotebookDocument):{valid:boolean;errors:PracticeError[]}{
+ const validateSchema=schemaValidator??=new Ajv({allErrors:true,strict:false}).compile(schema);
  const errors:PracticeError[]=[];
  if(!validateSchema(value)){for(const error of validateSchema.errors||[]){const tail=error.keyword==='required'?'/'+error.params.missingProperty:error.keyword==='additionalProperties'?'/'+error.params.additionalProperty:'';errors.push({path:(error.instancePath+tail)||'/',message:error.message||'Invalid field'});}return {valid:false,errors};}
  const practice=value as unknown as PracticeDocument,add=(path:string,message:string)=>errors.push({path,message});

@@ -148,13 +148,13 @@ function examinationPrompt(paper?:PracticeDocument,spec=specFor(paper),subset=fa
  return `${ENTRY_PROMPTS[entryMode].prompt}\n已确认要求：${JSON.stringify(choices)}`;
 }
 const featuredPapers=[
- {id:'neea-2024-math-full',label:'高考数学 · 适应性测试'},
- {id:'zhongkao-2023-2024-recombined',label:'广东中考 · 数学'},
- {id:'real-pku-calculus-2013',label:'北京大学 · 高等数学'},
- {id:'real-ecnu-linear-2023',label:'华东师范大学 · 线性代数'},
- {id:'complete-cet4-original-01',label:'大学英语四级 · 原创练习'},
- {id:'full-cet6-original-01',label:'大学英语六级 · 原创练习'},
- {id:'real-mit-6006-final-2020',label:'MIT 6.006 · 算法期末卷'},
+ {id:'neea-2024-math-full',label:'高考数学 · 适应性测试',short:'高考数学'},
+ {id:'zhongkao-2023-2024-recombined',label:'广东中考 · 数学',short:'广东中考数学'},
+ {id:'real-pku-calculus-2013',label:'北京大学 · 高等数学',short:'北大高等数学'},
+ {id:'real-ecnu-linear-2023',label:'华东师范大学 · 线性代数',short:'华师大线性代数'},
+ {id:'complete-cet4-original-01',label:'大学英语四级 · 原创练习',short:'大学英语四级'},
+ {id:'full-cet6-original-01',label:'大学英语六级 · 原创练习',short:'大学英语六级'},
+ {id:'real-mit-6006-final-2020',label:'MIT 6.006 · 算法期末卷',short:'MIT 算法'},
 ];
 const paperPages=new Map<string,number>();
 let showcaseIndex=0,entryMode:keyof typeof ENTRY_PROMPTS='agent';
@@ -203,11 +203,12 @@ function renderStart(){
  disposeView();disposeView=()=>{};
  disposeSetup();disposeSetup=()=>{};
  if(setupOpen){const templateId=setupTemplate;setupTemplate=undefined;disposeSetup=editor.mountPaperSetup(main,{templateId,css:editor.paperCSS,previewCss:editor.previewPaperCSS,previewHTML:restrictPreview,copy:copyPrompt,download,close:()=>{setupOpen=false;renderStart();main.querySelector<HTMLButtonElement>('#begin-setup')?.focus({preventScroll:true});},mode:entryMode,setMode:mode=>{entryMode=mode;try{localStorage.setItem('paper-notebook-practice-entry',mode);}catch{}}});return;}
- main.className='start-page';
+ main.className='start-page home-page';
  main.innerHTML=`<div class="start-content">
   <section class="practice-hero"><h1>从手头的资料，<br>做一份自己的试卷。</h1><p class="hero-description">整理往年卷、讲义和错题，按范围与分值组卷。题目、答案和答题卡可以分开导出。</p><div class="hero-actions"><button id="begin-setup" class="button primary">定制试卷 ${icon('arrow')}</button><button id="browse-templates" class="button text">查找现成试卷 ${icon('arrow')}</button></div></section>
-  <section class="entry-guide" aria-labelledby="entry-title"><h2 id="entry-title">已有资料？从出卷指令开始</h2><div class="entry-modes segmented" role="group" aria-label="出卷工具">${Object.entries(ENTRY_PROMPTS).map(([mode,item])=>`<button data-entry="${mode}" aria-pressed="${mode===entryMode}">${item.label}</button>`).join('')}</div><p id="entry-description" class="entry-description"></p><button id="copy-agent" class="button secondary">${icon('copy')}<span>复制指令</span></button></section>
- </div><section class="exam-showcase" aria-label="试卷样例"><div class="showcase-detail"><select id="showcase-select" aria-label="选择试卷样例">${featuredPapers.map((item,index)=>`<option value="${index}" ${index===showcaseIndex?'selected':''}>${escape(item.label)}</option>`).join('')}</select><button id="open-featured" class="icon-button" aria-label="放大试卷" title="放大试卷">${icon('external')}</button></div><div id="showcase-document" class="showcase-paper"><iframe title="试卷样例" sandbox="allow-scripts allow-same-origin"></iframe><button class="button secondary preview-message" id="showcase-retry" hidden></button></div><div id="showcase-pagination"></div></section>`;
+  <section class="showcase-picker" aria-labelledby="showcase-title"><h2 id="showcase-title">试卷样例</h2><div class="showcase-choices" role="group" aria-labelledby="showcase-title">${featuredPapers.map((item,index)=>`<button type="button" data-showcase="${index}" aria-label="${escape(item.label)}" title="${escape(item.label)}" aria-pressed="${index===showcaseIndex}" aria-controls="showcase-document"><span>${escape(item.short)}</span>${icon('check')}</button>`).join('')}</div></section>
+  <section class="entry-guide" aria-labelledby="entry-title"><h2 id="entry-title">已有资料？复制出卷指令</h2><div class="home-entry-actions"><div class="entry-modes segmented" role="group" aria-label="出卷工具">${Object.entries(ENTRY_PROMPTS).map(([mode,item])=>`<button data-entry="${mode}" aria-pressed="${mode===entryMode}">${item.label}</button>`).join('')}</div><button id="copy-agent" class="button secondary">${icon('copy')}<span>复制指令</span></button></div><p id="entry-description" class="entry-description"></p></section>
+ </div><section class="exam-showcase" aria-label="样卷卷面"><div id="showcase-document" class="showcase-paper"><iframe title="试卷样例" sandbox="allow-scripts allow-same-origin"></iframe><button class="button secondary preview-message" id="showcase-retry" hidden></button></div><div class="showcase-toolbar"><div id="showcase-pagination"></div><button id="open-featured" class="icon-button" aria-label="放大试卷" title="放大试卷">${icon('external')}</button></div></section>`;
  const begin=main.querySelector<HTMLButtonElement>('#begin-setup')!;
  begin.onclick=()=>void action(begin,async()=>{await readyEditor();if(!begin.isConnected)return;setupOpen=true;renderStart();main.querySelector<HTMLElement>('#setup-step-title')?.focus({preventScroll:true});},'已打开','正在打开…');
  main.querySelector<HTMLButtonElement>('#browse-templates')!.onclick=()=>navigate('templates');
@@ -218,7 +219,8 @@ function renderStart(){
  modeGroup.querySelectorAll('button').forEach(button=>button.onclick=()=>{entryMode=button.dataset.entry as typeof entryMode;try{localStorage.setItem('paper-notebook-practice-entry',entryMode);}catch{}showMode();});
  showMode();segmentedKeys(modeGroup);
  const frame=main.querySelector<HTMLIFrameElement>('.showcase-paper iframe')!,controls=main.querySelector<HTMLElement>('#showcase-pagination')!;
- const retry=main.querySelector<HTMLButtonElement>('#showcase-retry')!,select=main.querySelector<HTMLSelectElement>('#showcase-select')!,expand=main.querySelector<HTMLButtonElement>('#open-featured')!;
+ const retry=main.querySelector<HTMLButtonElement>('#showcase-retry')!,expand=main.querySelector<HTMLButtonElement>('#open-featured')!;
+ const choices=[...main.querySelectorAll<HTMLButtonElement>('[data-showcase]')];
  let generation=0,disposePaper=()=>{};
  const draw=async()=>{
   const current=featuredPapers[showcaseIndex],revision=++generation;
@@ -233,10 +235,12 @@ function renderStart(){
   }catch(error){if(revision===generation){retry.textContent=`${error instanceof Error?error.message:'试卷未能载入。'} 重试`;retry.disabled=false;retry.hidden=false;}}
   finally{clearTimeout(feedback);}
  };
- const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();void draw();}},{rootMargin:'180px'});
+ const observer=new IntersectionObserver(entries=>{if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();if(!generation)void draw();}},{rootMargin:'180px'});
  observer.observe(frame.parentElement!);
  retry.onclick=()=>void draw();
- select.onchange=()=>{observer.disconnect();showcaseIndex=Number(select.value);void draw();};
+ choices.forEach((button,index)=>button.onclick=()=>{
+  if(index!==showcaseIndex||!generation){observer.disconnect();showcaseIndex=index;choices.forEach((choice,position)=>choice.setAttribute('aria-pressed',String(position===index)));void draw();}
+ });
  expand.onclick=()=>{const item=featuredPapers[showcaseIndex];showSample(item.label,{kind:'case',id:item.id});};
  disposeView=()=>{generation++;observer.disconnect();disposePaper();};
 }

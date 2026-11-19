@@ -106,7 +106,19 @@ try{
  else if(command==='routes'){const result=input?getExamRoute(input):EXAM_ROUTES;if(!result)throw Error('Unknown exam route: '+input);if(option('--out')){await writeJson(resolve(option('--out')!),result);print({valid:true,output:resolve(option('--out')!)});}else print(result);}
  else if(command==='coverage'){const paper=assertPractice(await jsonFile(input)),spec=inferExamSpecification(paper),errors=validateExamStructure(paper,spec);print({complete:errors.length===0,specificationId:spec?.id??null,errors});if(errors.length)process.exitCode=1;}
  else if(command==='templates')print(input?getPaperTemplate(input):PAPER_TEMPLATES);
- else if(command==='examples'){const examples=templateExamples as unknown as Record<string,PracticeDocument>;if(input){const paper=examples[input];if(!paper)throw Error('Unknown template example: '+input);if(option('--out')){await writeJson(resolve(option('--out')!),paper);print({valid:true,output:resolve(option('--out')!)});}else print(paper);}else print(Object.entries(examples).map(([templateId,p])=>({templateId,id:p.practiceId,title:p.title,subject:p.subject,questions:questionsOf(p).length,totalScore:p.totalScore,scope:p.exam?.scope??'subset'})));}
+ else if(command==='examples'){
+  const examples=templateExamples as unknown as Record<string,PracticeDocument>;
+  if(input){
+   const topicId=PAPER_TEMPLATES.find(template=>template.id===input)?.topicId;
+   const paper=examples[input]??(topicId?await topicPractice(topicId):undefined);
+   if(!paper)throw Error('Unknown template example: '+input);
+   if(option('--out')){await writeJson(resolve(option('--out')!),paper);print({valid:true,output:resolve(option('--out')!)});}else print(paper);
+  }else{
+   const entries=Object.entries(examples);
+   for(const template of PAPER_TEMPLATES)if(template.topicId&&!examples[template.id])entries.push([template.id,await topicPractice(template.topicId)]);
+   print(entries.map(([templateId,p])=>({templateId,id:p.practiceId,title:p.title,subject:p.subject,questions:questionsOf(p).length,totalScore:p.totalScore,scope:p.exam?.scope??'subset'})));
+  }
+ }
  else if(command==='cases'){const cases=realCatalog.cases as unknown as PracticeDocument[];if(input){const paper=cases.find(p=>p.practiceId===input);if(!paper)throw Error('Unknown case: '+input);if(option('--out')){await writeJson(resolve(option('--out')!),paper);print({valid:true,output:resolve(option('--out')!)});}else print(paper);}else print(cases.map(p=>({id:p.practiceId,title:p.title,subject:p.subject,level:p.level,questions:questionsOf(p).length,totalScore:p.totalScore,templateId:'source-'+p.practiceId})));}
  else if(command==='topics'){if(input){const paper=await topicPractice(input);if(option('--out')){await writeJson(resolve(option('--out')!),paper);print({valid:true,output:resolve(option('--out')!)});}else print(paper);}else print(TOPIC_CASES.filter(item=>!option('--family')||item.family===option('--family')));}
  else if(command==='capabilities')print(await practiceIngestCapabilities());

@@ -3,20 +3,54 @@ import {resolvePaperTemplate} from './templates';
 
 const bounded=(value:number|undefined,min:number,max:number,fallback:number)=>Math.min(max,Math.max(min,value??fallback));
 
+function useCatalogLayout(paper:PracticeDocument,english:boolean){
+ const presentation=paper.presentation??{};
+ paper.style={preset:paper.style.preset,templateId:paper.style.templateId,sealed:false,fontSize:11,lineHeight:1.6,templateOverrides:{
+  widthMm:210,heightMm:297,paperSize:'A4',orientation:'portrait',columns:1,headerVariant:'standard',
+  fontFamily:english?'times':'song',fontSize:11,lineHeight:1.6,
+  marginTopMm:20,marginBottomMm:20,marginLeftMm:22,marginRightMm:22,showSeal:false,
+  headingNumbering:english?'arabic':'chinese',answerMode:'separate',institution:'',examCode:'',footerText:'',
+ }};
+ paper.presentation={
+  headerStyle:'generated',headerRule:true,sourceLayout:true,language:presentation.language??(english?'en':undefined),
+  titleLines:[paper.title],titleSizePt:17,titleLineSizesPt:[17],titleGapMm:2,sectionSizePt:11,questionGapMm:4,
+  candidateFields:english?['Name: ____________________','Candidate No.: ____________________']:['姓名：________________　　考号：________________'],
+  printColor:presentation.printColor,projectMark:presentation.projectMark,answerSpace:presentation.answerSpace,
+  notices:presentation.notices?.length&&presentation.answerSpace==='none'?[english?'Record your answers on the answer sheet.':'请在答题卡上作答。']:presentation.notices,
+  noticeLabel:presentation.noticeLabel,appendix:presentation.appendix,
+  answerCard:presentation.answerCard,integrityPledge:presentation.integrityPledge,
+ };
+ for(const section of paper.sections){
+  section.headingStyle='plain';section.headingWeight='bold';delete section.headingFont;
+  delete section.inlineFirstQuestion;delete section.inlineInstructions;delete section.inlineStimulus;
+  delete section.gapBeforeMm;delete section.breakBefore;delete section.questionColumns;delete section.questionColumnWeights;
+  for(const question of section.questions){
+   delete question.gapBeforeMm;delete question.gapAfterMm;delete question.breakBefore;delete question.pageBreakBeforeLines;
+   if(question.answerBoxMm)question.answerBoxMm=bounded(question.answerBoxMm,30,100,45);
+   for(const attachment of question.attachments??[]){
+    delete attachment.float;
+    if(attachment.widthMm)attachment.widthMm=Math.min(attachment.widthMm,140);
+   }
+  }
+ }
+ return paper;
+}
+
 /** Reflow a paper for reading and printing while retaining its real identity and content. */
-export function generatedPaper(paper:PracticeDocument):PracticeDocument {
+export function generatedPaper(paper:PracticeDocument,uniform=false):PracticeDocument {
  const copy=structuredClone(paper);
  delete copy.original;
  // The first pass removes source crop geometry; later passes retain the user's design edits.
- if(copy.presentation?.headerStyle==='generated')return copy;
+ if(copy.presentation?.headerStyle==='generated'&&!uniform)return copy;
  const source=resolvePaperTemplate(copy.style).layout;
  const presentation:PracticePresentation=copy.presentation??{};
+ const english=presentation.language==='en'||(!presentation.language&&['ielts','language'].includes(source.headerVariant));
+ if(uniform)return useCatalogLayout(copy,english);
  const securityRow=presentation.headerRows?.find(row=>row.cells.length===1&&/^(绝密|机密).*启用前/.test(row.cells[0]));
  if(securityRow&&!presentation.securityLine){
   presentation.securityLine={text:securityRow.cells[0]};
   presentation.headerRows=presentation.headerRows!.filter(row=>row!==securityRow);
  }
- const english=presentation.language==='en'||(!presentation.language&&['ielts','language'].includes(source.headerVariant));
  const school=/初中|高中|中考|高考/.test(copy.level+' '+copy.title);
  const margins={
   marginTopMm:bounded(source.marginTopMm,presentation.securityLine?35:25,35,25),
@@ -24,10 +58,10 @@ export function generatedPaper(paper:PracticeDocument):PracticeDocument {
   marginLeftMm:bounded(source.marginLeftMm,25,source.showSeal?38:30,25),
   marginRightMm:bounded(source.marginRightMm,25,30,25)
  };
- const fontSize=bounded(source.fontSize,10.5,12,11);
- copy.style={...copy.style,fontSize,lineHeight:bounded(source.lineHeight,english?1.45:1.55,1.8,1.6),templateOverrides:{
+ const fontSize=bounded(source.fontSize,10.5,12,11),lineHeight=bounded(source.lineHeight,english?1.45:1.55,1.8,1.6);
+ copy.style={...copy.style,fontSize,lineHeight,templateOverrides:{
   ...copy.style.templateOverrides,...margins,fontSize,
-  lineHeight:bounded(source.lineHeight,english?1.45:1.55,1.8,1.6),
+  lineHeight,
   fontFamily:english?'times':source.fontFamily,
   ...(english&&source.headerVariant==='standard'?{headerVariant:'language' as const}:{}),
   // Cropped handbook pages are not a useful physical size for a newly reflowed paper.

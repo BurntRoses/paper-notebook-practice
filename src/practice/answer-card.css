@@ -127,6 +127,8 @@ body[data-kind=answer-card] .school-card-heading+.card-section-title{margin-top:
 .boxed-card-choice,.boxed-card-blank{display:flex;align-items:center;gap:4mm;font:11pt/1.5 "Times New Roman",serif;margin:5mm 0}
 .boxed-card-choice>b,.boxed-card-blank>b{min-width:7mm;font-weight:400}
 .boxed-card-blank i{display:inline-block;flex:1;border-bottom:.2mm solid #000;height:7mm}
+.boxed-card-objective{grid-template-columns:repeat(var(--card-objective-columns,3),minmax(0,1fr))}
+.boxed-card-objective>b{grid-column:1/-1;font-size:10pt}
 
 /* Complete CET: the two physical cards each have a front and reverse A4 face. */
 .cet-complete-card{padding-right:9mm}

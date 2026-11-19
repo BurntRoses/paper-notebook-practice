@@ -22,14 +22,15 @@ entries['AGENTS.md']=new Uint8Array(await readFile(root+'AGENTS.md'));
 entries['README.txt']=strToU8('将 skills/paper-notebook-practice 安装到自己的 Agent 技能目录。命令行入口：node skills/paper-notebook-practice/scripts/practice.mjs help。sources 按版式或考试路线读取真实样卷与评分集合；routes 查看考试路线；topics 按需读取考公、考研、工程专题完整卷。基础组卷只需 Node.js 20.19+；扫描件 OCR 使用免费的本机 Python 与 Vision/Tesseract，安装方式见 Skill references/ocr-replica.md。MIT 免费开源。');
 const skillZip=zipSync(entries);
 await writeFile(out+'/paper-notebook-practice-skill.zip',skillZip);
+const topicArchive=zipSync(Object.fromEntries(Object.entries(entries).filter(([name])=>name.startsWith('skills/paper-notebook-practice/examples/topics/')&&name.endsWith('.json'))));
 const {loadPracticeStyles,buildPracticeHtml}=await tsImport('../src/practice/build.ts',import.meta.url);
 const paperCSS=await loadPracticeStyles();
 const {generatedPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
-const result=await build({entryPoints:[root+'src/practice/workspace.ts'],bundle:true,write:false,format:'iife',target:'es2022',minify:false,legalComments:'inline',plugins:[{
+const result=await build({entryPoints:[root+'src/practice/workspace.ts'],bundle:true,write:false,format:'iife',target:'es2022',minify:true,legalComments:'inline',plugins:[{
  name:'practice-offline',setup(api){
   api.onResolve({filter:/^practice-paper-styles$/},()=>({path:'styles',namespace:'practice'}));
-  api.onResolve({filter:/^practice-skill-package$/},()=>({path:'skill',namespace:'practice'}));
-  api.onLoad({filter:/.*/,namespace:'practice'},args=>({contents:`export default ${JSON.stringify(args.path==='skill'?Buffer.from(skillZip).toString('base64'):paperCSS)}`,loader:'js'}));
+  api.onResolve({filter:/^practice-offline-topics$/},()=>({path:'topics',namespace:'practice'}));
+  api.onLoad({filter:/.*/,namespace:'practice'},args=>({contents:args.path==='topics'?`export default ${JSON.stringify(Buffer.from(topicArchive).toString('base64'))}`:`export const previewPaperCSS=${JSON.stringify(paperCSS)}; export default previewPaperCSS;`,loader:'js'}));
   api.onResolve({filter:/\?raw$/},args=>({path:args.path.slice(0,-4),namespace:'practice-raw',pluginData:{resolveDir:args.resolveDir}}));
   api.onLoad({filter:/.*/,namespace:'practice-raw'},async args=>{
    const path=args.path.startsWith('.')?resolve(args.pluginData.resolveDir,args.path):fileURLToPath(import.meta.resolve(args.path));
@@ -59,7 +60,6 @@ const releaseFiles={
  '使用说明.md':new Uint8Array(await readFile(root+'docs/practice.md')),
  'LICENSE':new Uint8Array(await readFile(root+'LICENSE')),
  'THIRD_PARTY_NOTICES.txt':new Uint8Array(await readFile(root+'THIRD_PARTY_NOTICES.txt')),
- 'licenses/pdfjs-dist-LICENSE':new Uint8Array(await readFile(root+'licenses/pdfjs-dist-LICENSE')),
  'licenses/mui-MIT.txt':new Uint8Array(await readFile(root+'licenses/mui-MIT.txt')),
  'licenses/shadcn-MIT.txt':new Uint8Array(await readFile(root+'licenses/shadcn-MIT.txt')),
  'licenses/noto-cjk-OFL.txt':new Uint8Array(await readFile(root+'licenses/noto-cjk-OFL.txt')),
@@ -76,13 +76,14 @@ const topicCatalog=JSON.parse(await readFile(root+'src/practice/topic-catalog.js
 releaseFiles['paper-notebook-practice-topics.zip']=new Uint8Array(await readFile(out+'/paper-notebook-practice-topics.zip'));
 releaseFiles['topics/catalog.json']=strToU8(JSON.stringify(topicCatalog,null,2));
 releaseFiles['topics/manifest.json']=new Uint8Array(await readFile(out+'/topic-delivery-manifest.json'));
-await writeFile(out+`/paper-notebook-practice-v${version}.zip`,zipSync(releaseFiles));
-await writeFile(out+'/paper-notebook-practice.zip',zipSync(releaseFiles));
+const releaseZip=zipSync(releaseFiles);
+await writeFile(out+`/paper-notebook-practice-v${version}.zip`,releaseZip);
+await writeFile(out+'/paper-notebook-practice.zip',releaseZip);
 await writeFile(out+'/release.json',JSON.stringify({version,license:'MIT',referenceStudy:{collections:REFERENCE_COLLECTIONS.length,papers:REFERENCE_PAPERS.length,scopes:[...new Set(REFERENCE_PAPERS.map(p=>p.scope))]},sources:realCatalog.sources.length,cases:realCatalog.cases.length,questions:realCatalog.cases.reduce((n,p)=>n+p.sections.reduce((m,s)=>m+s.questions.length,0),0),topics:{papers:topicCatalog.topics.length,questions:topicCatalog.topics.reduce((n,p)=>n+p.questionCount,0),families:[...new Set(topicCatalog.topics.map(p=>p.family))]}},null,2));
 // Ready-to-open complete papers are a separate download alongside the Agent Skill.
 const completeFiles={'使用说明.md':strToU8('两套完整四六级卷。每套含题目卷、答案卷、四面答题卡和可编辑题库。打开题目卷即可本机作答并播放听力；交卷后导入对应答案卷查看解析。四级125分钟，六级130分钟；100分按官方比例练习计分。原创内容MIT许可，官方大纲仅用于结构。'),LICENSE:new Uint8Array(await readFile(root+'LICENSE'))};
 for(const paper of realCatalog.cases.filter(p=>['complete-cet4-original-01','full-cet6-original-01'].includes(p.practiceId))){
- const generated=generatedPaper(paper),folder=paper.exam.specificationId.toUpperCase();
+ const generated=generatedPaper(paper,true),folder=paper.exam.specificationId.toUpperCase();
  completeFiles[folder+'/practice.json']=strToU8(JSON.stringify(generated,null,2));
  for(const [kind,label] of [['exam','试卷'],['answers','答案卷'],['answer-card','答题卡']])completeFiles[folder+`/《${paper.title}》-${label}.html`]=strToU8(await buildPracticeHtml(generated,{kind}));
 }

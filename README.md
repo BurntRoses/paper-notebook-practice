@@ -4,9 +4,9 @@
 
 [在线体验](https://burntroses.github.io/paper-notebook-practice/) · [下载离线工具](https://github.com/BurntRoses/paper-notebook-practice/releases/latest) · [使用说明](docs/practice.md)
 
-- **学生**：把讲义和错题整理成专题练习，做完再对答案。
-- **老师**：按教学进度组卷，下载 Word 改题、用 PDF 打印。
-- **家长**：按孩子学过的内容准备小练习，用独立答案一起核对。
+- **找试卷**：按考试、学科或专题查看题目、答案和答题卡。
+- **整理资料**：把往年卷、讲义和错题录成可编辑题库。
+- **定制出卷**：按范围、题型和分值组卷，导出 Word 修改或 PDF 打印。
 
 ## 开始使用
 
@@ -14,15 +14,17 @@
 - 网页会话：同一句话，将入口换为 `WEB_CHAT.md`。
 - 本机预览：下载完整离线包，打开其中的“纸间-试卷预览.html”。
 
+在线版从上方“在线体验”进入，不需要在网址后加 `dist/index.html`。打不开在线版时，可使用离线工具；已保存在浏览器里的试卷不会自动同步到离线包。
+
 ## 资料与试卷
 
 支持小学、初中与中高考、大学课程、考公考研与工程，以及国际课程和海外升学、日语等语言考试、入籍公民知识、艺术设计与音乐。资料优先，原题优先；支持仅用指定资料、版本限制、材料题组、逐题解答与评分细则。专题案例附完整作者题库、题目卷、答案卷和答题纸。
 
-每类版式关联实际读取的真实参考卷或评估任务与评分依据，见[真实样卷研究](skills/paper-notebook-practice/references/reference-study.md)。查看样例与应用版式分别操作。示例可逐页翻阅，支持首末页、页码跳转和方向键。来源允许内嵌时，可用浏览器直接查看发布者的原版 PDF；限制内嵌的来源可打开发布页，或选取下载的 PDF 在站内翻页。试做与校准案例见[命题校准](skills/paper-notebook-practice/references/authoring-calibration.md)。
+目录卷采用统一的 A4 单栏版式，题目、公式、题图、答案和评分均由结构化题库生成。原卷和评分依据通过来源链接查阅，见[真实样卷研究](skills/paper-notebook-practice/references/reference-study.md)。打开样卷查看整套内容；应用版式只调整当前试卷的排版。
 
 试卷与版式采用单层考试方向分类，支持资源类型和关键词筛选。定制流程直接生成智能体或网页对话的个性化提示词。试卷使用正式标题与真实纸面比例，支持明暗预览和本机 HTML、PDF、Word、PNG 导出。支持彩印与灰度，色彩辨识任务保留彩色条件；日韩文字体随离线成品嵌入。上传内容保存在当前浏览器中。Word 的文字可编辑，公式和图形保留为版面图；PDF 适合按预览版式打印。
 
-“打开文件”可恢复成品试卷/题库，或读取 PDF、DOCX、TXT 与笔记资料。普通资料在本机整理，下载出题资料包与个性化提示词后交给当前智能体或网页对话制作。
+“打开文件”可恢复成品试卷/题库，或读取已经整理好的 DOCX、TXT、Markdown 与笔记资料。PDF、扫描件和原始页面先由本机 Skill/OCR 转为结构化题库；网页只展示纸间版式，不打开原始 PDF。
 
 ## 本地开发
 
@@ -33,7 +35,7 @@ npm run build
 npm run build:site
 ```
 
-离线成品位于 `dist/practice/`，静态站点位于 `dist/site/`。
+离线成品位于 `dist/practice/`，双击成品 HTML 即可打开。静态站点位于 `dist/site/`，需通过 HTTP 服务预览，不要直接双击站点的 `index.html`。
 
 ```sh
 node tools/practice.mjs sources postgraduate-math

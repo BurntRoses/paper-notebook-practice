@@ -16,6 +16,20 @@
       "sha256": "20085a6d510314552cc3f6b10bfe48985dfb1988a2c171ab9047709880aa21e5"
     },
     {
+      "id": "civil-essay-report-01",
+      "title": "申论·情况报告专项",
+      "subject": "申论",
+      "level": "公务员录用考试",
+      "family": "civil-service",
+      "routeId": "civil-essay",
+      "file": "civil-service/essay-situation-report.json",
+      "questionCount": 1,
+      "mode": "mock",
+      "durationMinutes": 25,
+      "totalScore": 20,
+      "sha256": "04bd795fceef8d3f09bc58a040be508381241f74e001ef64843465bc84257ca9"
+    },
+    {
       "id": "civil-essay-01",
       "title": "申论",
       "subject": "申论",
@@ -27,7 +41,7 @@
       "mode": "mock",
       "durationMinutes": 180,
       "totalScore": 100,
-      "sha256": "cb005b12aebf0a1cabb90cb2b0408f8e2b9fda4415a4455d40877c83a40f8e7b"
+      "sha256": "e5efc196ab5ec8c32b8b4f7036125eb862b1d30a765270dbe19a41e63ce8875f"
     },
     {
       "id": "civil-jiangsu-c-essay-01",
@@ -251,7 +265,7 @@
       "mode": "mock",
       "durationMinutes": 150,
       "totalScore": 100,
-      "sha256": "8762e0df379604ac4a16f2b6a4a32fdc35b957717283c29e4b08a10e07d28ce3"
+      "sha256": "535c0be44e44d1e3a145bcc044efcbe453711088e0452eeb0b94898d63c956bf"
     },
     {
       "id": "surveying-engineering-course-01",
@@ -324,8 +338,22 @@
       "sha256": "575fd2f02918c6b6d264ce44e56b9df6b7dcdd6bf96114075a38aad53d0a9b54"
     },
     {
+      "id": "constructor-1-architecture-mock-01",
+      "title": "一级建造师 建筑工程管理与实务·原创模拟一",
+      "subject": "建筑工程管理与实务",
+      "level": "工程职业资格",
+      "family": "engineering-qualification",
+      "routeId": "constructor-1",
+      "file": "engineering-qualification/constructor1-architecture-mock.json",
+      "questionCount": 35,
+      "mode": "mock",
+      "durationMinutes": 240,
+      "totalScore": 160,
+      "sha256": "2ba7eb127d253aa453ac967d636cb96f049ac96e5f84791540214a0385058527"
+    },
+    {
       "id": "constructor-1-cases-01",
-      "title": "一级建造师　建筑工程管理与实务",
+      "title": "一级建造师　建筑工程管理与实务·案例专项",
       "subject": "建筑工程管理与实务",
       "level": "工程职业资格",
       "family": "engineering-qualification",
@@ -335,7 +363,7 @@
       "mode": "mock",
       "durationMinutes": 150,
       "totalScore": 100,
-      "sha256": "8f0e5ff1f4f5389bcb97b55d73050e87cc6547e9a59041d35fac8f4243fe1532"
+      "sha256": "ba6802d4418036f2a2f14eef3761aa8bcfa66ef5dbbadea909a3040193cab05a"
     },
     {
       "id": "constructor-2-cases-01",
@@ -559,7 +587,7 @@
       "mode": "mock",
       "durationMinutes": 180,
       "totalScore": 100,
-      "sha256": "f1eba69ffc7bb1bd772a4c734538fcf9bf3b9bf1ec4181dc7263062f0369f524"
+      "sha256": "86b8d8549e299eba1ad9acc7508d1b4f66df3fc08887c1aac725a71d200872bc"
     },
     {
       "id": "postgraduate-english2-01",
@@ -573,7 +601,7 @@
       "mode": "mock",
       "durationMinutes": 180,
       "totalScore": 100,
-      "sha256": "d9a5d603eff8c874759aa97e1a40b9280416d1ceb74f20c2c2548ea570f506df"
+      "sha256": "4863367cb69473308f6a14619e6fb63119768cf5b2f173a72963a92c394bb0c4"
     },
     {
       "id": "postgraduate-management199-01",
@@ -601,7 +629,7 @@
       "mode": "mock",
       "durationMinutes": 60,
       "totalScore": 50,
-      "sha256": "67cc6d0902ed4ba3d4063435978953943f4fa856f95d421460a208266c5e4fe5"
+      "sha256": "e7e66b86a3bfbe65b0c53ce208fdf7243397c5191cca2bfbe846d35515861775"
     },
     {
       "id": "postgraduate-math1-01",

@@ -31,11 +31,10 @@ export function extractNotebookMaterial(value:unknown,title='学习笔记'):Mate
 }
 function notebookFromHtml(html:string){const scripts=[...html.matchAll(/<script\b[^>]*\btype=["']application\/json["'][^>]*>([\s\S]*?)<\/script>/gi)];for(const match of scripts){try{const value=JSON.parse(match[1]);if(value.notebook?.chapters)return value;}catch{ /* Other JSON scripts are not notebook data. */ }}throw new Error('HTML 中未找到 Paper Notebook 的嵌入原文。请导入笔记 JSON 或从阅读器导出的完整 HTML。');}
 export async function importPracticeFile(file:PracticeInputFile,options:MaterialImportOptions={}):Promise<MaterialImport>{
- const extension=file.name.toLowerCase().split('.').pop();const title=file.name.replace(/\.[^.]+$/,'');const kind=options.kind||'reference';let material:PracticeMaterial;let warnings:string[]=[];
- if(extension==='pdf'){
-  const {extractPdfMaterial}=await import('./pdf');const extracted=await extractPdfMaterial(await file.arrayBuffer(),title,kind);material=extracted.material;warnings=extracted.warnings;
- }else if(extension==='docx')material=materialFromText(extractDocx(await file.arrayBuffer()),title,kind);
- else if(extension==='doc')throw new Error('旧版 DOC 暂不能直接读取。请另存为 DOCX、PDF 或纯文字后导入。');
+ const extension=file.name.toLowerCase().split('.').pop();const title=file.name.replace(/\.[^.]+$/,'');const kind=options.kind||'reference';let material:PracticeMaterial;
+ if(extension==='pdf')throw new Error('请先用本机 Skill 将 PDF 整理成纸间题库，再导入。');
+ else if(extension==='docx')material=materialFromText(extractDocx(await file.arrayBuffer()),title,kind);
+ else if(extension==='doc')throw new Error('请将旧版 DOC 另存为 DOCX 或纯文字后导入。');
  else{
   const text=await file.text();if(extension==='html'||extension==='htm')return extractNotebookMaterial(notebookFromHtml(text),title);
   if(extension==='json'){
@@ -46,18 +45,18 @@ export async function importPracticeFile(file:PracticeInputFile,options:Material
    if(Array.isArray(value))throw new Error('题库 JSON 请使用 practice.json 协议，确保每题带原文出处、题型、分值和参考答案。也可导入编号的 TXT / Markdown 题库。');
    throw new Error('JSON 未包含 practice.json 题库或 Paper Notebook 笔记。');
   }
-  if(!['txt','md','markdown','csv',''].includes(extension||''))throw new Error(`暂不支持 .${extension}。可导入 PDF、DOCX、TXT、Markdown、笔记 HTML 和 practice.json。`);
+  if(!['txt','md','markdown','csv',''].includes(extension||''))throw new Error(`暂不支持 .${extension}。可导入 DOCX、TXT、Markdown、笔记 HTML 和 practice.json。`);
   material=materialFromText(text,title,kind);
  }
  material.provenance??={kind:'upload'};
- const parsed=parseQuestionText(material,{chapter:options.chapter,subject:options.subject});return {material,questions:parsed.questions,warnings:[...warnings,...parsed.warnings]};
+ const parsed=parseQuestionText(material,{chapter:options.chapter,subject:options.subject});return {material,...parsed};
 }
 
 /** Parse only explicit, numbered questions. An answer is never inferred from prose. */
 export function parseQuestionText(material:PracticeMaterial,options:{chapter?:string;subject?:string}={}):{questions:PracticeQuestion[];warnings:string[]}{
  const questions:PracticeQuestion[]=[];const warnings:string[]=[];let chapter=options.chapter||material.title;
- // PDF questions may continue on the next page. Parse their continuous extracted
- // text and retain the starting physical page, while citing the full material.
+ // Paged source material may continue across blocks; retain the starting page
+ // when an external OCR or local Skill has already supplied page metadata.
  const multiPage=(material.blocks?.length||0)>1&&material.blocks?.every(block=>typeof block.page==='number');
  const blocks=multiPage?[{id:material.id,text:material.text,title:material.title,page:1}]:material.blocks?.length?material.blocks:[{id:material.id,text:material.text,title:material.title}];
  for(const block of blocks){

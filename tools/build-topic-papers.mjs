@@ -36,7 +36,7 @@ for(const family of Object.keys(groups)){
  for(const entry of catalog.topics.filter(p=>p.family===family)){
   const raw=await readFile(root+'skills/paper-notebook-practice/examples/topics/'+entry.file);
   if(hash(raw)!==entry.sha256)throw Error('Stale topic catalog: '+entry.file);
-  const paper=generatedPaper(JSON.parse(raw));assertPractice(paper);
+  const paper=generatedPaper(JSON.parse(raw),true);assertPractice(paper);
   const folder=family+'/'+paper.practiceId,files={};
   await add(folder+'/practice.json',JSON.stringify(paper,null,2)+'\n');
   for(const [kind,label]of [['exam','试卷'],['answers','答案卷'],['answer-card','答题卡']]){

@@ -11,6 +11,7 @@
   "mode": "mock",
   "style": {
     "preset": "language",
+    "templateId": "postgraduate-english",
     "sealed": true
   },
   "presentation": {
@@ -35,8 +36,7 @@
     "footerTemplate": "英语（一）　第 {page} 页",
     "answerSpace": "none",
     "answerCard": {
-      "template": "university",
-      "candidateDigits": 15
+      "template": "ruled"
     },
     "questionScores": "show",
     "sectionDetails": true,
@@ -956,12 +956,12 @@
       "id": "reading-b-passage",
       "title": "Section II · Part B材料",
       "kind": "reference",
-      "text": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers.",
+      "text": "(41) Mira\nAt a tutoring charity I helped to evaluate two very different questions. The trustees wanted to decide whether to offer a second term; a university partner wanted to know why some children retained new vocabulary. Both could use test results, but only the trustees needed to know the cost and availability of tutors. The team was about to adopt the measures from an earlier project because the forms were ready. We stopped and wrote down what would count as a reason to renew this particular offer. That exercise changed what we asked the staff to record.\n\n(42) Dev\nThe returned questionnaires looked reassuring until we realised that every invitation had gone through the same advice portal. Residents who never managed to sign in could not tell us that the page was unusable. Sending another batch of invitations through the portal would have made the file larger without uncovering the problem. A librarian helped us reach people who sought advice elsewhere and pointed out that her visitors were not representative either. The comparison between those groups mattered more to me than the total number of replies.\n\n(43) Leah\nA course reported weak progress although its teaching method had worked in a pilot. The timetable showed that half the learners had missed the sessions in which the method was used. When the manager proposed scrapping the method, we could not tell her that it was effective; the evaluation had not established that. But accepting that the result was disappointing did not settle which part of the programme was at fault. An attendance record and a visit to a class helped us decide what a second trial would have to change.\n\n(44) Owen\nDuring a short trial, almost all the estimates suggested a benefit, but they told us very little about how large it might be or how long it would last. Some board members wanted an immediate permanent service; others read the same report as a reason to close it. I proposed extending the trial for one term within the existing budget and agreeing now what evidence the board would examine at the end. The question was not whether we could eliminate every uncertainty. It was how far the present evidence justified committing our resources.\n\n(45) Inez\nA year after a project ended, its summary tables were still on the shared drive. No one could explain why one school had been left out or why the measure had changed midway through the year. We could reproduce a calculation without knowing whether it was the right calculation to reproduce. For the next project I asked for a brief account of each material change, linked to the relevant version of the data. Personal records stayed protected, but the team taking over could understand the decisions instead of inheriting only the published totals.",
       "blocks": [
         {
           "id": "reading-b-passage-block",
           "title": "Section II · Part B材料",
-          "text": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers."
+          "text": "(41) Mira\nAt a tutoring charity I helped to evaluate two very different questions. The trustees wanted to decide whether to offer a second term; a university partner wanted to know why some children retained new vocabulary. Both could use test results, but only the trustees needed to know the cost and availability of tutors. The team was about to adopt the measures from an earlier project because the forms were ready. We stopped and wrote down what would count as a reason to renew this particular offer. That exercise changed what we asked the staff to record.\n\n(42) Dev\nThe returned questionnaires looked reassuring until we realised that every invitation had gone through the same advice portal. Residents who never managed to sign in could not tell us that the page was unusable. Sending another batch of invitations through the portal would have made the file larger without uncovering the problem. A librarian helped us reach people who sought advice elsewhere and pointed out that her visitors were not representative either. The comparison between those groups mattered more to me than the total number of replies.\n\n(43) Leah\nA course reported weak progress although its teaching method had worked in a pilot. The timetable showed that half the learners had missed the sessions in which the method was used. When the manager proposed scrapping the method, we could not tell her that it was effective; the evaluation had not established that. But accepting that the result was disappointing did not settle which part of the programme was at fault. An attendance record and a visit to a class helped us decide what a second trial would have to change.\n\n(44) Owen\nDuring a short trial, almost all the estimates suggested a benefit, but they told us very little about how large it might be or how long it would last. Some board members wanted an immediate permanent service; others read the same report as a reason to close it. I proposed extending the trial for one term within the existing budget and agreeing now what evidence the board would examine at the end. The question was not whether we could eliminate every uncertainty. It was how far the present evidence justified committing our resources.\n\n(45) Inez\nA year after a project ended, its summary tables were still on the shared drive. No one could explain why one school had been left out or why the measure had changed midway through the year. We could reproduce a calculation without knowing whether it was the right calculation to reproduce. For the next project I asked for a brief account of each material change, linked to the relevant version of the data. Personal records stayed protected, but the team taking over could understand the decisions instead of inheriting only the published totals."
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -970,18 +970,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "adb0d4b99238fdb2de3db80a3aac99cb7ab3fa9358b492dede9f0fabeedea612"
+      "sha256": "3c06f0534987328d5a8534c93a13e2a58e62b053e238fe94176d2aa6795828b7"
     },
     {
       "id": "postgraduate-english1-01-q41-source",
       "title": "原创命题记录 41",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 1.",
+      "text": "Mira",
       "blocks": [
         {
           "id": "postgraduate-english1-01-q41-source-block",
           "title": "原创命题记录 41",
-          "text": "Select the heading for Paragraph 1."
+          "text": "Mira"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -990,18 +990,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "5876a9bd6531ef0b8d363375a123be0770553091a94c0ec62c331a3683119a9e"
+      "sha256": "ef9ee12da914a3b038e4a49e4a4e6e8f5335ae5d3ef4c2182c0e3fd8189d0ee8"
     },
     {
       "id": "postgraduate-english1-01-q42-source",
       "title": "原创命题记录 42",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 2.",
+      "text": "Dev",
       "blocks": [
         {
           "id": "postgraduate-english1-01-q42-source-block",
           "title": "原创命题记录 42",
-          "text": "Select the heading for Paragraph 2."
+          "text": "Dev"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1010,18 +1010,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "b7ff3a7797071f243a2d62229f5e51741eda1c112243ccc793a5fada12b97ffb"
+      "sha256": "9c24f45a7ea9e4668ee31dc18bd0a9153f1413ceb3fad18b0a07e16e6a9bc587"
     },
     {
       "id": "postgraduate-english1-01-q43-source",
       "title": "原创命题记录 43",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 3.",
+      "text": "Leah",
       "blocks": [
         {
           "id": "postgraduate-english1-01-q43-source-block",
           "title": "原创命题记录 43",
-          "text": "Select the heading for Paragraph 3."
+          "text": "Leah"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1030,18 +1030,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "213dcb6b2d7119596cc4c3a1a4521d6943e92a2cbca43011c21b8c177b333115"
+      "sha256": "1373cf56c2484091640da4ab625726041f3548470ec8a6efbf0b2e01708d7a8c"
     },
     {
       "id": "postgraduate-english1-01-q44-source",
       "title": "原创命题记录 44",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 4.",
+      "text": "Owen",
       "blocks": [
         {
           "id": "postgraduate-english1-01-q44-source-block",
           "title": "原创命题记录 44",
-          "text": "Select the heading for Paragraph 4."
+          "text": "Owen"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1050,18 +1050,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "135ce242e778d06c61450f7a076630f818f327e3fe4aa731eeaf7d6e61fe8eb4"
+      "sha256": "baa31bcd2580deb3823403cdd39f418509af8ae9196817da3b493a7c3769c60f"
     },
     {
       "id": "postgraduate-english1-01-q45-source",
       "title": "原创命题记录 45",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 5.",
+      "text": "Inez",
       "blocks": [
         {
           "id": "postgraduate-english1-01-q45-source-block",
           "title": "原创命题记录 45",
-          "text": "Select the heading for Paragraph 5."
+          "text": "Inez"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1070,7 +1070,7 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "8e92cc636b5c5647ebb5c45f792e4cf5c31fd33ca6fe677d3249e1f6c0964822"
+      "sha256": "d593d9d8bee7d26bae7b7793c59704566e5bd880e662483d97e75bb864ba893a"
     },
     {
       "id": "translation-passage",
@@ -1239,7 +1239,7 @@
       "title": "Section I · Use of English",
       "examPartId": "cloze",
       "instructions": "Choose the best word or phrase for each numbered blank.",
-      "score": 10.0,
+      "score": 10,
       "questions": [
         {
           "id": "postgraduate-english1-01-q1",
@@ -4248,28 +4248,28 @@
       "id": "reading-b",
       "title": "Section II · Part B",
       "examPartId": "reading-b",
-      "instructions": "Choose the most suitable heading for each paragraph. There are two extra headings.",
+      "instructions": "Read the five comments on evaluating community programmes. Match each numbered speaker (41–45) with the statement (A–G) that best expresses their main point. Two statements are not used.",
       "score": 10,
       "questions": [
         {
           "id": "postgraduate-english1-01-q41",
           "number": 41,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 1.",
+          "prompt": "Mira",
           "score": 2,
-          "solution": "B",
-          "explanation": "本段围绕“Define the decision before collecting numbers”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "G",
+          "explanation": "两个使用者共有测试数据，但不同决定需要不同补充证据；C 倒置了目的与测量指标的关系。",
           "source": {
             "materialId": "postgraduate-english1-01-q41-source",
             "blockId": "postgraduate-english1-01-q41-source-block",
             "title": "原创命题记录 41",
-            "exact": "Select the heading for Paragraph 1."
+            "exact": "Mira"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
             "阅读理解·段落主旨"
           ],
-          "difficulty": "medium",
+          "difficulty": "easy",
           "origin": {
             "kind": "generated"
           },
@@ -4279,17 +4279,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "两个使用者共有测试数据，但不同决定需要不同补充证据；C 倒置了目的与测量指标的关系。",
                 "result": "pass"
               }
             ]
@@ -4297,31 +4297,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Make uncertainty part of the report"
+              "text": "An uncertain result may justify a limited commitment while more evidence is collected."
             },
             {
               "id": "B",
-              "text": "Define the decision before collecting numbers"
+              "text": "An unsatisfactory outcome does not show whether the approach or its delivery was at fault."
             },
             {
               "id": "C",
-              "text": "Preserve the evidence needed for the next decision"
+              "text": "Using the same outcome measures matters more than the purpose of the evaluation."
             },
             {
               "id": "D",
-              "text": "Include those whose experiences are easily missed"
+              "text": "A future evaluation team needs the reasons for changes, not just the final data."
             },
             {
               "id": "E",
-              "text": "Separate implementation failure from a weak idea"
+              "text": "More responses do not repair the exclusion of people the invitation never reaches."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "A project can remedy its sampling bias by increasing responses through the existing channel."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "The decision an evaluation must support determines what information it should collect."
             }
           ],
           "supportingSources": [
@@ -4331,7 +4331,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers."
+                "exact": "Both could use test results, but only the trustees needed to know the cost and availability of tutors."
               }
             }
           ]
@@ -4340,15 +4340,15 @@
           "id": "postgraduate-english1-01-q42",
           "number": 42,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 2.",
+          "prompt": "Dev",
           "score": 2,
-          "solution": "D",
-          "explanation": "本段围绕“Include those whose experiences are easily missed”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "E",
+          "explanation": "门户本身排除了登录失败者；F 把同一渠道的样本量增加误当作消除遗漏。",
           "source": {
             "materialId": "postgraduate-english1-01-q42-source",
             "blockId": "postgraduate-english1-01-q42-source-block",
             "title": "原创命题记录 42",
-            "exact": "Select the heading for Paragraph 2."
+            "exact": "Dev"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
@@ -4364,17 +4364,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "门户本身排除了登录失败者；F 把同一渠道的样本量增加误当作消除遗漏。",
                 "result": "pass"
               }
             ]
@@ -4382,31 +4382,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Make uncertainty part of the report"
+              "text": "An uncertain result may justify a limited commitment while more evidence is collected."
             },
             {
               "id": "B",
-              "text": "Define the decision before collecting numbers"
+              "text": "An unsatisfactory outcome does not show whether the approach or its delivery was at fault."
             },
             {
               "id": "C",
-              "text": "Preserve the evidence needed for the next decision"
+              "text": "Using the same outcome measures matters more than the purpose of the evaluation."
             },
             {
               "id": "D",
-              "text": "Include those whose experiences are easily missed"
+              "text": "A future evaluation team needs the reasons for changes, not just the final data."
             },
             {
               "id": "E",
-              "text": "Separate implementation failure from a weak idea"
+              "text": "More responses do not repair the exclusion of people the invitation never reaches."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "A project can remedy its sampling bias by increasing responses through the existing channel."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "The decision an evaluation must support determines what information it should collect."
             }
           ],
           "supportingSources": [
@@ -4416,7 +4416,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers."
+                "exact": "Sending another batch of invitations through the portal would have made the file larger without uncovering the problem."
               }
             }
           ]
@@ -4425,15 +4425,15 @@
           "id": "postgraduate-english1-01-q43",
           "number": 43,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 3.",
+          "prompt": "Leah",
           "score": 2,
-          "solution": "E",
-          "explanation": "本段围绕“Separate implementation failure from a weak idea”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "B",
+          "explanation": "方法有没有作用与方法有没有实际送达是两件事；A 涉及证据不确定时的投入承诺，本段没有作这项决定。",
           "source": {
             "materialId": "postgraduate-english1-01-q43-source",
             "blockId": "postgraduate-english1-01-q43-source-block",
             "title": "原创命题记录 43",
-            "exact": "Select the heading for Paragraph 3."
+            "exact": "Leah"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
@@ -4449,17 +4449,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "方法有没有作用与方法有没有实际送达是两件事；A 涉及证据不确定时的投入承诺，本段没有作这项决定。",
                 "result": "pass"
               }
             ]
@@ -4467,31 +4467,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Make uncertainty part of the report"
+              "text": "An uncertain result may justify a limited commitment while more evidence is collected."
             },
             {
               "id": "B",
-              "text": "Define the decision before collecting numbers"
+              "text": "An unsatisfactory outcome does not show whether the approach or its delivery was at fault."
             },
             {
               "id": "C",
-              "text": "Preserve the evidence needed for the next decision"
+              "text": "Using the same outcome measures matters more than the purpose of the evaluation."
             },
             {
               "id": "D",
-              "text": "Include those whose experiences are easily missed"
+              "text": "A future evaluation team needs the reasons for changes, not just the final data."
             },
             {
               "id": "E",
-              "text": "Separate implementation failure from a weak idea"
+              "text": "More responses do not repair the exclusion of people the invitation never reaches."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "A project can remedy its sampling bias by increasing responses through the existing channel."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "The decision an evaluation must support determines what information it should collect."
             }
           ],
           "supportingSources": [
@@ -4501,7 +4501,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers."
+                "exact": "But accepting that the result was disappointing did not settle which part of the programme was at fault."
               }
             }
           ]
@@ -4510,21 +4510,21 @@
           "id": "postgraduate-english1-01-q44",
           "number": 44,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 4.",
+          "prompt": "Owen",
           "score": 2,
           "solution": "A",
-          "explanation": "本段围绕“Make uncertainty part of the report”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "explanation": "既不永久扩张，也不立即退出，而是带复核条件有限续期；B 错把效应大小与持续性的未知归为执行失败。",
           "source": {
             "materialId": "postgraduate-english1-01-q44-source",
             "blockId": "postgraduate-english1-01-q44-source-block",
             "title": "原创命题记录 44",
-            "exact": "Select the heading for Paragraph 4."
+            "exact": "Owen"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
             "阅读理解·段落主旨"
           ],
-          "difficulty": "medium",
+          "difficulty": "hard",
           "origin": {
             "kind": "generated"
           },
@@ -4534,17 +4534,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "综合语篇信息并排除主题相近但结论不同的陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "既不永久扩张，也不立即退出，而是带复核条件有限续期；B 错把效应大小与持续性的未知归为执行失败。",
                 "result": "pass"
               }
             ]
@@ -4552,31 +4552,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Make uncertainty part of the report"
+              "text": "An uncertain result may justify a limited commitment while more evidence is collected."
             },
             {
               "id": "B",
-              "text": "Define the decision before collecting numbers"
+              "text": "An unsatisfactory outcome does not show whether the approach or its delivery was at fault."
             },
             {
               "id": "C",
-              "text": "Preserve the evidence needed for the next decision"
+              "text": "Using the same outcome measures matters more than the purpose of the evaluation."
             },
             {
               "id": "D",
-              "text": "Include those whose experiences are easily missed"
+              "text": "A future evaluation team needs the reasons for changes, not just the final data."
             },
             {
               "id": "E",
-              "text": "Separate implementation failure from a weak idea"
+              "text": "More responses do not repair the exclusion of people the invitation never reaches."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "A project can remedy its sampling bias by increasing responses through the existing channel."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "The decision an evaluation must support determines what information it should collect."
             }
           ],
           "supportingSources": [
@@ -4586,7 +4586,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers."
+                "exact": "I proposed extending the trial for one term within the existing budget and agreeing now what evidence the board would examine at the end."
               }
             }
           ]
@@ -4595,15 +4595,15 @@
           "id": "postgraduate-english1-01-q45",
           "number": 45,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 5.",
+          "prompt": "Inez",
           "score": 2,
-          "solution": "C",
-          "explanation": "本段围绕“Preserve the evidence needed for the next decision”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "D",
+          "explanation": "重点是交接时能重建排除和改指标的理由；G 关注启动时什么决定需要哪些证据，不是已完成项目的接续。",
           "source": {
             "materialId": "postgraduate-english1-01-q45-source",
             "blockId": "postgraduate-english1-01-q45-source-block",
             "title": "原创命题记录 45",
-            "exact": "Select the heading for Paragraph 5."
+            "exact": "Inez"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
@@ -4619,17 +4619,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "重点是交接时能重建排除和改指标的理由；G 关注启动时什么决定需要哪些证据，不是已完成项目的接续。",
                 "result": "pass"
               }
             ]
@@ -4637,31 +4637,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Make uncertainty part of the report"
+              "text": "An uncertain result may justify a limited commitment while more evidence is collected."
             },
             {
               "id": "B",
-              "text": "Define the decision before collecting numbers"
+              "text": "An unsatisfactory outcome does not show whether the approach or its delivery was at fault."
             },
             {
               "id": "C",
-              "text": "Preserve the evidence needed for the next decision"
+              "text": "Using the same outcome measures matters more than the purpose of the evaluation."
             },
             {
               "id": "D",
-              "text": "Include those whose experiences are easily missed"
+              "text": "A future evaluation team needs the reasons for changes, not just the final data."
             },
             {
               "id": "E",
-              "text": "Separate implementation failure from a weak idea"
+              "text": "More responses do not repair the exclusion of people the invitation never reaches."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "A project can remedy its sampling bias by increasing responses through the existing channel."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "The decision an evaluation must support determines what information it should collect."
             }
           ],
           "supportingSources": [
@@ -4671,21 +4671,52 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers."
+                "exact": "We could reproduce a calculation without knowing whether it was the right calculation to reproduce."
               }
             }
           ]
         }
       ],
       "stimulus": {
-        "text": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers.",
+        "text": "(41) Mira\nAt a tutoring charity I helped to evaluate two very different questions. The trustees wanted to decide whether to offer a second term; a university partner wanted to know why some children retained new vocabulary. Both could use test results, but only the trustees needed to know the cost and availability of tutors. The team was about to adopt the measures from an earlier project because the forms were ready. We stopped and wrote down what would count as a reason to renew this particular offer. That exercise changed what we asked the staff to record.\n\n(42) Dev\nThe returned questionnaires looked reassuring until we realised that every invitation had gone through the same advice portal. Residents who never managed to sign in could not tell us that the page was unusable. Sending another batch of invitations through the portal would have made the file larger without uncovering the problem. A librarian helped us reach people who sought advice elsewhere and pointed out that her visitors were not representative either. The comparison between those groups mattered more to me than the total number of replies.\n\n(43) Leah\nA course reported weak progress although its teaching method had worked in a pilot. The timetable showed that half the learners had missed the sessions in which the method was used. When the manager proposed scrapping the method, we could not tell her that it was effective; the evaluation had not established that. But accepting that the result was disappointing did not settle which part of the programme was at fault. An attendance record and a visit to a class helped us decide what a second trial would have to change.\n\n(44) Owen\nDuring a short trial, almost all the estimates suggested a benefit, but they told us very little about how large it might be or how long it would last. Some board members wanted an immediate permanent service; others read the same report as a reason to close it. I proposed extending the trial for one term within the existing budget and agreeing now what evidence the board would examine at the end. The question was not whether we could eliminate every uncertainty. It was how far the present evidence justified committing our resources.\n\n(45) Inez\nA year after a project ended, its summary tables were still on the shared drive. No one could explain why one school had been left out or why the measure had changed midway through the year. We could reproduce a calculation without knowing whether it was the right calculation to reproduce. For the next project I asked for a brief account of each material change, linked to the relevant version of the data. Personal records stayed protected, but the team taking over could understand the decisions instead of inheriting only the published totals.",
         "source": {
           "materialId": "reading-b-passage",
           "blockId": "reading-b-passage-block",
           "title": "Section II · Part B材料",
-          "exact": "Paragraph 1\nAn organisation planning an evaluation should begin with the decision it expects to make. A school deciding whether to extend a tutoring programme needs different evidence from a researcher investigating how children remember vocabulary. Both may collect test scores, but the scores answer different questions. Writing down the intended decision helps identify a relevant comparison and prevents an attractive dataset from silently determining the purpose of the study. It also helps staff explain why some information, although interesting, would not change what they plan to do. Evaluation becomes more manageable when its question has a clear relationship to an actual choice.\n\nParagraph 2\nThe people easiest to contact are not always the people most affected by a service. An online questionnaire about a digital advice system may reach its satisfied regular users while missing residents who could not enter the system at all. Evaluators can look for these missing experiences through telephone calls, paper forms, or trusted community groups. No method reaches everyone, and collecting more responses does not automatically repair a selective sample. What matters is understanding who is represented, who remains absent, and how that absence might change the conclusions an organisation is prepared to draw from the evidence it has gathered.\n\nParagraph 3\nA disappointing result can have more than one explanation. A training course may offer an ineffective teaching method, or a promising method may have been delivered in sessions that participants could rarely attend. Attendance records and observations of delivery help distinguish these possibilities. They do not excuse every failure, but they tell an organisation what would need to change before another attempt would be sensible. Without such information, abandoning the idea and repeating it unchanged may both be guesses. An evaluation should therefore examine what actually happened as well as whether the final outcome met expectations.\n\nParagraph 4\nReporting uncertainty is most useful when it identifies a specific limitation and its consequence. A small sample might leave the size of an effect unclear even when the direction appears consistent. A short follow-up might say little about whether improvement lasts. These limits should be connected to the decision under consideration. An organisation might reasonably continue a low-cost trial while gathering evidence, yet require stronger evidence before making a large permanent commitment. A report that makes these connections helps its readers act with proportionate confidence rather than treating uncertainty as a reason either to promise everything or to do nothing.\n\nParagraph 5\nEvaluation does not end when a report is approved. A later team may need to understand why a measure was selected, which data were excluded, or how a calculation was performed. Keeping a clear protocol, a versioned dataset, and an accessible account of changes reduces the need to reconstruct those choices from memory. Personal information still requires appropriate protection, and access should match the purpose of reuse. The aim is a usable record, not indiscriminate publication. Good documentation allows future decisions to benefit from what was learned instead of merely repeating a conclusion whose basis has become impossible to inspect. The record should remain understandable to its next readers."
+          "exact": "(41) Mira\nAt a tutoring charity I helped to evaluate two very different questions. The trustees wanted to decide whether to offer a second term; a university partner wanted to know why some children retained new vocabulary. Both could use test results, but only the trustees needed to know the cost and availability of tutors. The team was about to adopt the measures from an earlier project because the forms were ready. We stopped and wrote down what would count as a reason to renew this particular offer. That exercise changed what we asked the staff to record.\n\n(42) Dev\nThe returned questionnaires looked reassuring until we realised that every invitation had gone through the same advice portal. Residents who never managed to sign in could not tell us that the page was unusable. Sending another batch of invitations through the portal would have made the file larger without uncovering the problem. A librarian helped us reach people who sought advice elsewhere and pointed out that her visitors were not representative either. The comparison between those groups mattered more to me than the total number of replies.\n\n(43) Leah\nA course reported weak progress although its teaching method had worked in a pilot. The timetable showed that half the learners had missed the sessions in which the method was used. When the manager proposed scrapping the method, we could not tell her that it was effective; the evaluation had not established that. But accepting that the result was disappointing did not settle which part of the programme was at fault. An attendance record and a visit to a class helped us decide what a second trial would have to change.\n\n(44) Owen\nDuring a short trial, almost all the estimates suggested a benefit, but they told us very little about how large it might be or how long it would last. Some board members wanted an immediate permanent service; others read the same report as a reason to close it. I proposed extending the trial for one term within the existing budget and agreeing now what evidence the board would examine at the end. The question was not whether we could eliminate every uncertainty. It was how far the present evidence justified committing our resources.\n\n(45) Inez\nA year after a project ended, its summary tables were still on the shared drive. No one could explain why one school had been left out or why the measure had changed midway through the year. We could reproduce a calculation without knowing whether it was the right calculation to reproduce. For the next project I asked for a brief account of each material change, linked to the relevant version of the data. Personal records stayed protected, but the team taking over could understand the decisions instead of inheriting only the published totals."
         }
-      }
+      },
+      "format": "statement-matching",
+      "sharedOptions": [
+        {
+          "id": "A",
+          "text": "An uncertain result may justify a limited commitment while more evidence is collected."
+        },
+        {
+          "id": "B",
+          "text": "An unsatisfactory outcome does not show whether the approach or its delivery was at fault."
+        },
+        {
+          "id": "C",
+          "text": "Using the same outcome measures matters more than the purpose of the evaluation."
+        },
+        {
+          "id": "D",
+          "text": "A future evaluation team needs the reasons for changes, not just the final data."
+        },
+        {
+          "id": "E",
+          "text": "More responses do not repair the exclusion of people the invitation never reaches."
+        },
+        {
+          "id": "F",
+          "text": "A project can remedy its sampling bias by increasing responses through the existing channel."
+        },
+        {
+          "id": "G",
+          "text": "The decision an evaluation must support determines what information it should collect."
+        }
+      ]
     },
     {
       "id": "translation",

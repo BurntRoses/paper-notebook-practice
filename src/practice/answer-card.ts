@@ -88,10 +88,22 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
   }
  }else if(boxed){
   content=`<header class="paper-chunk boxed-card-heading"><h1>${e(config?.title??practice.title)}</h1><p>${labels[0]}</p>${candidateIdentityMarkup([labels[1],labels[2]],e,{digits:config?.candidateDigits,english:true})}${source.headerVariant==='ielts'?'<small>Instructions to candidates: Write your answers in the spaces provided.</small>':''}</header>`;
-  for(const q of all){
-   if(['choice','multiple','truefalse'].includes(q.type))content+=`<div class="paper-chunk boxed-card-choice" ${attributes(q)}><b>${label(q)}</b>${(q.options??[]).map(o=>bubble(o.id)).join('')}</div>`;
-   else if(q.type==='blank')content+=`<div class="paper-chunk boxed-card-blank" ${attributes(q)}><b>${label(q)}</b>${Array.from({length:Array.isArray(q.solution)?q.solution.length:1},()=>'<i></i>').join('')}</div>`;
-   else content+=`<article class="paper-chunk boxed-card-question" ${attributes(q)}><b>${label(q)}</b>${q.options?.length?`<div class="card-response-options">${q.options.map(o=>bubble(o.id)).join('')}</div>`:''}<div class="boxed-card-area" style="height:${q.answerBoxMm??Math.max(45,q.score*3)}mm"></div></article>`;
+  const objective=(q:PracticeQuestion)=>['choice','multiple','truefalse'].includes(q.type);
+  for(const section of practice.sections){
+   if(config?.groupObjective&&section.questions.every(objective)){
+    const columns=Array.from({length:Math.ceil(section.questions.length/5)},(_,index)=>`<div class="card-objective-column">${section.questions.slice(index*5,index*5+5).map(q=>`<div class="card-objective-row" ${attributes(q)}><b>${label(q)}</b>${(q.options??[]).map(o=>bubble(o.id)).join('')}</div>`).join('')}</div>`);
+    const limit=section.questions.every(q=>(q.options?.length??0)<=4)?4:3;
+    for(let index=0;index<columns.length;index+=limit){
+     const group=columns.slice(index,index+limit);
+     content+=`<div class="paper-chunk card-objective-grid boxed-card-objective" style="--card-objective-columns:${group.length}"><b>${e(section.title)}</b>${group.join('')}</div>`;
+    }
+    continue;
+   }
+   for(const q of section.questions){
+    if(objective(q))content+=`<div class="paper-chunk boxed-card-choice" ${attributes(q)}><b>${label(q)}</b>${(q.options??[]).map(o=>bubble(o.id)).join('')}</div>`;
+    else if(q.type==='blank')content+=`<div class="paper-chunk boxed-card-blank" ${attributes(q)}><b>${label(q)}</b>${Array.from({length:Array.isArray(q.solution)?q.solution.length:1},()=>'<i></i>').join('')}</div>`;
+    else content+=`<article class="paper-chunk boxed-card-question" ${attributes(q)}><b>${label(q)}</b>${q.options?.length?`<div class="card-response-options">${q.options.map(o=>bubble(o.id)).join('')}</div>`:''}<div class="boxed-card-area" style="height:${q.answerBoxMm??Math.max(45,q.score*3)}mm"></div></article>`;
+   }
   }
  }else if(university){
   const institution=practice.title.match(/^(.+?大学)/)?.[1]??source.institution;

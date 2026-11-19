@@ -1,0 +1,2946 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "constructor-1-architecture-mock-01",
+  "notebookId": "practice-bank-constructor-1-architecture",
+  "notebookRevision": 1,
+  "title": "一级建造师 建筑工程管理与实务·原创模拟一",
+  "subject": "建筑工程管理与实务",
+  "level": "工程职业资格",
+  "mode": "mock",
+  "durationMinutes": 240,
+  "totalScore": 160,
+  "style": {
+    "preset": "stem",
+    "templateId": "engineering-professional"
+  },
+  "presentation": {
+    "sourceLayout": true,
+    "titleLines": [
+      "一级建造师 建筑工程管理与实务",
+      "原创模拟一"
+    ],
+    "titleLineSizesPt": [
+      18,
+      16
+    ],
+    "metaLines": [],
+    "candidateFields": [
+      "姓名：________________　准考证号：________________________"
+    ],
+    "notices": [
+      "客观题按题号选择；案例题按分问作答。",
+      "项目规则与合同条件以各题给出的资料为准。"
+    ],
+    "headerRule": false,
+    "titleFont": "song",
+    "titleGapMm": 3,
+    "questionGapMm": 5,
+    "questionScores": "show",
+    "sectionDetails": false,
+    "answerSpace": "none",
+    "answerCard": {
+      "template": "boxed",
+      "title": "建筑工程管理与实务·原创模拟一",
+      "groupObjective": true
+    },
+    "runningHeader": {
+      "skipFirst": true,
+      "center": "建筑工程管理与实务",
+      "rule": true
+    },
+    "footerTemplate": "建筑工程管理与实务　第 {page} 页（共 {pages} 页）",
+    "endText": "",
+    "sealStyle": "none",
+    "projectMark": false,
+    "subtitle": "考试时间 240 分钟　满分 160 分"
+  },
+  "authoring": {
+    "routeId": "constructor-1",
+    "examName": "一级建造师　建筑工程管理与实务",
+    "specialty": "建筑工程",
+    "difficulty": "balanced",
+    "blueprint": [
+      {
+        "id": "single",
+        "knowledge": "结构体系、材料与检验、施工测量、地基基础、模板与混凝土、钢结构、防水施工、装配式施工、装饰装修、建筑节能、绿色建造、施工组织、进度管理、施工质量、施工安全、材料采购、成本管理、合同证据、现场试验、施工管理综合",
+        "ability": "识别基本原理、检验施工条件并判断干扰项",
+        "types": [
+          "choice"
+        ],
+        "count": 20,
+        "points": 20,
+        "estimatedMinutes": 16,
+        "sourceIds": [
+          "constructor-1-architecture-mock-01-source-1",
+          "constructor-1-architecture-mock-01-source-2",
+          "constructor-1-architecture-mock-01-source-3",
+          "constructor-1-architecture-mock-01-source-4",
+          "constructor-1-architecture-mock-01-source-5",
+          "constructor-1-architecture-mock-01-source-6",
+          "constructor-1-architecture-mock-01-source-7",
+          "constructor-1-architecture-mock-01-source-8",
+          "constructor-1-architecture-mock-01-source-9",
+          "constructor-1-architecture-mock-01-source-10",
+          "constructor-1-architecture-mock-01-source-11",
+          "constructor-1-architecture-mock-01-source-12",
+          "constructor-1-architecture-mock-01-source-13",
+          "constructor-1-architecture-mock-01-source-14",
+          "constructor-1-architecture-mock-01-source-15",
+          "constructor-1-architecture-mock-01-source-16",
+          "constructor-1-architecture-mock-01-source-17",
+          "constructor-1-architecture-mock-01-source-18",
+          "constructor-1-architecture-mock-01-source-19",
+          "constructor-1-architecture-mock-01-source-20"
+        ]
+      },
+      {
+        "id": "multiple",
+        "knowledge": "结构与变形、土方与基础、装配式施工、幕墙与围护、采购与检验、网络计划、试验与验收、施工风险、变更结算、绿色建造",
+        "ability": "识别基本原理、检验施工条件并判断干扰项",
+        "types": [
+          "multiple"
+        ],
+        "count": 10,
+        "points": 20,
+        "estimatedMinutes": 18,
+        "sourceIds": [
+          "constructor-1-architecture-mock-01-source-21",
+          "constructor-1-architecture-mock-01-source-22",
+          "constructor-1-architecture-mock-01-source-23",
+          "constructor-1-architecture-mock-01-source-24",
+          "constructor-1-architecture-mock-01-source-25",
+          "constructor-1-architecture-mock-01-source-26",
+          "constructor-1-architecture-mock-01-source-27",
+          "constructor-1-architecture-mock-01-source-28",
+          "constructor-1-architecture-mock-01-source-29",
+          "constructor-1-architecture-mock-01-source-30"
+        ]
+      },
+      {
+        "id": "constructor-1-architecture-mock-01-q31",
+        "knowledge": "混凝土施工、设备识读、绿色建造",
+        "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 31,
+        "sourceIds": [
+          "constructor-1-architecture-mock-01-source-31"
+        ]
+      },
+      {
+        "id": "constructor-1-architecture-mock-01-q32",
+        "knowledge": "网络计划、工期责任、资料追溯",
+        "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 34,
+        "sourceIds": [
+          "constructor-1-architecture-mock-01-source-32"
+        ]
+      },
+      {
+        "id": "constructor-1-architecture-mock-01-q33",
+        "knowledge": "装配式构件、隐蔽验收、幕墙与质量闭环",
+        "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 32,
+        "sourceIds": [
+          "constructor-1-architecture-mock-01-source-33"
+        ]
+      },
+      {
+        "id": "constructor-1-architecture-mock-01-q34",
+        "knowledge": "专项安全方案、作业放行、监测响应、试验计划",
+        "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 30,
+        "estimatedMinutes": 51,
+        "sourceIds": [
+          "constructor-1-architecture-mock-01-source-34"
+        ]
+      },
+      {
+        "id": "constructor-1-architecture-mock-01-q35",
+        "knowledge": "招标响应、专业分包、合同计价与付款",
+        "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 30,
+        "estimatedMinutes": 52,
+        "sourceIds": [
+          "constructor-1-architecture-mock-01-source-35"
+        ]
+      }
+    ]
+  },
+  "sourcePolicy": {
+    "mode": "open",
+    "questionPreference": "generated-first"
+  },
+  "exam": {
+    "specificationId": "constructor-1-architecture-2024-structure",
+    "scope": "full",
+    "scoreScale": "160 分卷面分",
+    "specification": {
+      "id": "constructor-1-architecture-2024-structure",
+      "name": "一级建造师·建筑工程管理与实务（2024 年版大纲结构）",
+      "subject": "建筑工程管理与实务",
+      "level": "工程职业资格",
+      "durationMinutes": 240,
+      "totalScore": 160,
+      "scoreScale": "160 分卷面分",
+      "source": {
+        "title": "住建部《一级建造师执业资格考试大纲》（2024 年版）",
+        "url": "https://www.mohurd.gov.cn/file/2023/20231208/190542aa-c295-429c-ac24-e3d2622c06be.pdf",
+        "locator": "第四节，印刷页 5；建筑实务专业考试大纲",
+        "notes": "官方大纲用于题型、题量、总分和时间。分项分值与多选规则参照机构回忆题库，案例细分评分为本卷原创。",
+        "relatedSources": [
+          "https://ks.233.com/tiku/exam/item/435827",
+          "https://www.233.com/jzs1/591/202508/05111612938659.html"
+        ]
+      },
+      "sections": [
+        {
+          "id": "single",
+          "title": "单项选择题",
+          "count": 20,
+          "questionType": "choice",
+          "totalScore": 20,
+          "pointsPerQuestion": 1
+        },
+        {
+          "id": "multiple",
+          "title": "多项选择题",
+          "count": 10,
+          "questionType": "multiple",
+          "totalScore": 20,
+          "pointsPerQuestion": 2
+        },
+        {
+          "id": "cases",
+          "title": "实务操作与案例分析题",
+          "count": 5,
+          "questionType": "response",
+          "totalScore": 120,
+          "questionScores": [
+            20,
+            20,
+            20,
+            30,
+            30
+          ]
+        }
+      ]
+    }
+  },
+  "assembly": {
+    "choiceOrder": "preserve",
+    "seed": "constructor-1-architecture-mock-01",
+    "sourceQuestionIds": [
+      "constructor-1-architecture-mock-01-q1",
+      "constructor-1-architecture-mock-01-q2",
+      "constructor-1-architecture-mock-01-q3",
+      "constructor-1-architecture-mock-01-q4",
+      "constructor-1-architecture-mock-01-q5",
+      "constructor-1-architecture-mock-01-q6",
+      "constructor-1-architecture-mock-01-q7",
+      "constructor-1-architecture-mock-01-q8",
+      "constructor-1-architecture-mock-01-q9",
+      "constructor-1-architecture-mock-01-q10",
+      "constructor-1-architecture-mock-01-q11",
+      "constructor-1-architecture-mock-01-q12",
+      "constructor-1-architecture-mock-01-q13",
+      "constructor-1-architecture-mock-01-q14",
+      "constructor-1-architecture-mock-01-q15",
+      "constructor-1-architecture-mock-01-q16",
+      "constructor-1-architecture-mock-01-q17",
+      "constructor-1-architecture-mock-01-q18",
+      "constructor-1-architecture-mock-01-q19",
+      "constructor-1-architecture-mock-01-q20",
+      "constructor-1-architecture-mock-01-q21",
+      "constructor-1-architecture-mock-01-q22",
+      "constructor-1-architecture-mock-01-q23",
+      "constructor-1-architecture-mock-01-q24",
+      "constructor-1-architecture-mock-01-q25",
+      "constructor-1-architecture-mock-01-q26",
+      "constructor-1-architecture-mock-01-q27",
+      "constructor-1-architecture-mock-01-q28",
+      "constructor-1-architecture-mock-01-q29",
+      "constructor-1-architecture-mock-01-q30",
+      "constructor-1-architecture-mock-01-q31",
+      "constructor-1-architecture-mock-01-q32",
+      "constructor-1-architecture-mock-01-q33",
+      "constructor-1-architecture-mock-01-q34",
+      "constructor-1-architecture-mock-01-q35"
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "依 2024 年版大纲框架原创。案例及选项均为新作；未使用机构回忆题原文或题图。"
+  },
+  "materials": [
+    {
+      "id": "constructor-1-architecture-mock-01-source-31",
+      "title": "案例 1：混凝土施工、设备识读、绿色建造",
+      "kind": "question-bank",
+      "text": "某社区活动中心组织地下室墙体连续浇筑。项目部用图 1 标记三处设备或作业点。A 将商品混凝土运到泵位，B 的料斗与输送管相连；浇筑人员在构件内使用 C。\n同一施工班组计划浇筑 72 m³，现场连续供料能力 24 m³/h，泵有效输送能力 30 m³/h，浇筑振捣能力 18 m³/h，三个工序稳定并行，已扣除转换损失。\n本项目碳核算仅计本班现场用能：泵与振捣机合计 96 kWh，现场照明 24 kWh，场外拌合站 62 kWh；采用 0.52 kgCO₂e/kWh。批准方案要求封闭检查面前留存供货及拌合物检查记录，发生超过允许时间的停歇时按经确认的施工缝方案处置。\n问题\n（1）识别图 1 的 A、B、C，并用字母写出作业先后。\n（2）找出班组的产能瓶颈，计算最短有效作业时长。\n（3）若只把泵提高到 36 m³/h，能否缩短时长？另给出一项有效调整，并用题中数据说明其产能上限。\n（4）列出计入及排除的用电项目，计算班次排放。\n（5）供料中断超出方案允许时间。说明当班如何处置，以及保留哪些质量证据。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-32",
+      "title": "案例 2：网络计划、工期责任、资料追溯",
+      "kind": "question-bank",
+      "text": "某医院改造项目围护施工，批准计划见图 2。所有约束为完成—开始、零时距，F 为完工工作，持续时间按整天计且资源充足。\n事件甲是业主临时增加 D 的工程量，使 D 延长 5 天。事件乙是承包人对 E 的工序组织失误，使 E 延长 2 天。两事件分别相对原计划独立分析。合同规定只补偿有签认依据的业主原因实际完工延误，不补承包人原因延误。\n项目规定：施工日志由施工员签填，监测报告由受业主委托的监测单位签发，变更计量由合同约定的双方代表签认。若监测记录超出项目预警值，先按预案停工撤离、隔离并报告，确认条件后按程序恢复。\n问题\n（1）求基准工期与关键线路，写出两条线路的长度。\n（2）计算 B 和 D 各自的总时差，并说明这两项时差能否在同一基准上叠加。\n（3）两事件分别如何影响完工？各可获几天顺延？\n（4）分别写出日志、监测报告和变更计量的签认主体；再给出甲工期主张需要的进度证据。\n（5）若超预警值但工期即将到节点，给出处置顺序和恢复条件。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-33",
+      "title": "案例 3：装配式构件、隐蔽验收、幕墙与质量闭环",
+      "kind": "question-bank",
+      "text": "某学校报告厅采用叠合板，入口为玻璃幕墙。项目批准的到场验收表规定，构件编号、主筋复核记录及吊点状态均合格方可起吊；未经复核的构件应标为待检并隔离。\n收货单显示：预制板 P01 三项齐全；P02 有编号、吊点合格，但无主筋复核记录；P03 三项齐全，但实物吊点可见损伤，记录还写着合格。P01 安装后，接缝内钢筋连接待检，班组拟直接封闭。\n幕墙喷淋复核中，水从一处横竖框交界的室内侧出现；同批次面板的气密报告合格。该项目要求隐蔽部位在自检、互检、专检与监理验收后方可封闭。\n问题\n（1）分别判断 P01、P02、P03 能否进入起吊工序并说明理由。\n（2）P01 接缝封闭前，列出施工方的三道检查及最终放行环节。\n（3）拟追溯 P02 后续验收。写出从收货到安装位置的记录要素。\n（4）幕墙气密合格能否作为本次水密缺陷关闭依据？说明应怎样定位与复验。\n（5）若板号、记录齐备但实测不合格，写出质量问题闭环的四个步骤。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-34",
+      "title": "案例 4：专项安全方案、作业放行、监测响应、试验计划",
+      "kind": "question-bank",
+      "text": "某档案馆进行地下室结构与外脚手架施工。项目作业卡规定：监测位移累计达到 18 mm 或单日增量达到 3 mm 时，停止该风险区作业、撤离并报告；脚手架验收应同时满足连墙件齐全、作业面封闭防护有效、卸料平台与架体独立。\nP1 点复测累计为 17.6 mm，单日增量 3.2 mm；P2 点累计 17.9 mm，单日增量 2.7 mm。巡查发现东立面少一组连墙件，平台有杆件搭接到架体，封闭防护已验查。班组提出只减少平台堆料，先保留使用。\n混凝土试验计划规定：A、B 两个结构区分别按每 100 m³ 或不足 100 m³ 取一组标准养护试件，次日另一次浇筑单独统计。A 区首日 175 m³，B 区首日 65 m³，A 区次日 35 m³。试验计划还要求每组记录区域、浇筑批次、取样人、养护方式与送检编号。\n项目另对两项措施进行优选：方案 X 预计窗口 10 小时、直接费 36 千元，可全程保持经核验的防护；方案 Y 预计窗口 8 小时、直接费 31 千元，但其中 1 小时没有等效防护。合同窗口最多 11 小时，任何时段不得失去经核验的防护。\n问题\n（1）分别判断 P1、P2 是否触发处理条件；写出 P1 的先期动作。\n（2）判断班组建议，并为现场验收列出须处理的具体问题和恢复使用条件。\n（3）算出各批标准养护组数和合计。若 A 区次日试件被贴为首日，应该怎样处理？\n（4）选定可实施方案，并判断若 Y 能增加全时段防护、但因此改为 12 小时，是否有资格进入费用比较。\n（5）列出本次停、改、复用的时间链证据，使另一名管理人员可以复核决策。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-35",
+      "title": "案例 5：招标响应、专业分包、合同计价与付款",
+      "kind": "question-bank",
+      "text": "某文化中心招标文件把范围、工期及主要质量指标列为实质性条款，规定投标报价须含设备试运行。投标文件甲写明试运行另行报价；乙保留招标范围及要求，随投标文件提交不改变承诺的备选施工组织。合同约定专业分包须经审批，承包方须具有相应资质，不得再分包所承专业工程的非劳务部分。拟选分包单位提交了资质，另表示拟把专业工程的设备安装整体交由第三方。\n结算以万元计。原分部分项费 4 800 万元，新增独立分项 1 500 m²，确认综合单价 360 元/m²。措施费按分部分项费的 8%重算。合同专业工程暂估价 200 万元，以确认的 176 万元替代；总包服务费按该确认价的 4%重算。另有暂列款 80 万元，仅以独立、已签认的 46 万元变更计入。该 46 万元不含新增分项或专业工程金额，不计入措施费取费基数。其他费用为零。规费按上述各项小计的 1.5%计，税额按含规费的税前金额计 9%。\n付款记录：已付预付款 430 万元和互不重叠的净进度款 5 080 万元；结算时均全额抵扣、不扣保留金。自行施工费用控制表另给定税前计价 4 800 万元、目标利润为该金额的 8%。仅最终金额四舍五入保留两位小数。\n问题\n（1）判定甲、乙是否就题中所述条款作出实质性响应；给出审查所用资料。\n（2）拟选的分包安排能否直接获批？说明审查意见和改正要求。\n（3）分项计算分部分项费、措施费和其他项目费。\n（4）计算含税结算总价与还应支付的金额。\n（5）计算自行施工目标成本。给出两份能避免专业工程或变更重复入账的独立对账证据。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-1",
+      "title": "结构体系",
+      "kind": "question-bank",
+      "text": "钢筋混凝土框架房屋，楼板竖向荷载经次梁和主梁传至基础。正确的主要传力顺序是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-2",
+      "title": "材料与检验",
+      "kind": "question-bank",
+      "text": "同配合条件下，某批新拌混凝土坍落度合格。仅据这一结果可判断其（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-3",
+      "title": "施工测量",
+      "kind": "question-bank",
+      "text": "已知水准点高程 23.480 m，后视读数 1.365 m，前视读数 1.725 m。待测点高程为（　）m。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-4",
+      "title": "地基基础",
+      "kind": "question-bank",
+      "text": "槽底局部被挖低 180 mm，设计未给出超挖处理详图。项目部首先应（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-5",
+      "title": "模板与混凝土",
+      "kind": "question-bank",
+      "text": "施工方案规定以同条件养护试件强度作为底模拆除依据。可用于提出拆模申请的证据是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-6",
+      "title": "钢结构",
+      "kind": "question-bank",
+      "text": "构件安装发现部分高强螺栓孔不能自由穿栓。班组拟直接火焰扩孔。现场工程师应（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-7",
+      "title": "防水施工",
+      "kind": "question-bank",
+      "text": "项目要求屋面穿管节点先做附加防水层，再做大面防水。发现附加层未施工、大面尚未覆盖时，应（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-8",
+      "title": "装配式施工",
+      "kind": "question-bank",
+      "text": "预制墙板就位后，批准的安装方案要求临时支撑检查合格后方可松钩。因此松钩前必须确认（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-9",
+      "title": "装饰装修",
+      "kind": "question-bank",
+      "text": "吊顶封板前，上方管线完成安装，现场缺隐蔽验收签认。正确的安排是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-10",
+      "title": "建筑节能",
+      "kind": "question-bank",
+      "text": "外窗样品的气密性能检测主要针对（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-11",
+      "title": "绿色建造",
+      "kind": "question-bank",
+      "text": "项目按批准的边界统计现场用电。现场泵机消耗 600 kWh，场外加工厂消耗 800 kWh，场内临时办公室消耗 100 kWh。若系数为 0.50 kgCO₂e/kWh，则项目计入的排放为（　）kgCO₂e。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-12",
+      "title": "施工组织",
+      "kind": "question-bank",
+      "text": "比较两项施工工作：机械可以共用，但一项必须等另一项混凝土达到方案规定的强度才可开始。此先后约束主要源于（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-13",
+      "title": "进度管理",
+      "kind": "question-bank",
+      "text": "一项工作总时差为 3 天，其他工作持续时间和网络逻辑不变。若该工作持续时间增加 5 天，项目最早完工日期比原计划推迟（　）天。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-14",
+      "title": "施工质量",
+      "kind": "question-bank",
+      "text": "巡检发现检验批不合格。项目部建立闭环管理时，不能省略的最后一步是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-15",
+      "title": "施工安全",
+      "kind": "question-bank",
+      "text": "临边防护因材料运输被临时拆除，运输作业结束后人员已开始进入该区。现场首先应（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-16",
+      "title": "材料采购",
+      "kind": "question-bank",
+      "text": "两批同规格钢材到场，批次标识不同且需按批准计划分别检验。最能保证追溯的收料方式是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-17",
+      "title": "成本管理",
+      "kind": "question-bank",
+      "text": "某项工作预算单价 120 元/m²，实际已完成 420 m²，已发生成本 54 600 元。该工作的成本偏差（挣值减实际成本）是（　）元。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-18",
+      "title": "合同证据",
+      "kind": "question-bank",
+      "text": "题设合同要求变更计价须保留指令、完成量和费率依据。下列证据组合最完整的是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-19",
+      "title": "现场试验",
+      "kind": "question-bank",
+      "text": "严禁合批的两个结构部位分别送检。试件标签脱落且不能确认所属部位。最合适的处理是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-20",
+      "title": "施工管理综合",
+      "kind": "question-bank",
+      "text": "东区封板尚待 2 天接口试验，试验期间不能封闭检查面。西区已完成交接，可以独立施工。同一班组东、西各需 2 天，今天开工，不允许拆分班组。满足放行与最短完工时间的方案是（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-21",
+      "title": "结构与变形",
+      "kind": "question-bank",
+      "text": "下列做法能为变形缝按设计自由变形保留条件的有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-22",
+      "title": "土方与基础",
+      "kind": "question-bank",
+      "text": "基坑监测记录出现失稳预警，题设预案要求超限立即停工撤离并报告。此时应采取的措施有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-23",
+      "title": "装配式施工",
+      "kind": "question-bank",
+      "text": "项目要求记录套筒灌浆的作业可追溯性。可关联到具体构件的记录有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-24",
+      "title": "幕墙与围护",
+      "kind": "question-bank",
+      "text": "原动态淋水试验已记录漏水的位置和试验条件。整改后，用于验证原渗漏缺陷是否闭合的直接证据有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-25",
+      "title": "采购与检验",
+      "kind": "question-bank",
+      "text": "下列措施有助于隔离待检或不合格到货的有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-26",
+      "title": "网络计划",
+      "kind": "question-bank",
+      "text": "两条并行路线从同一开始点至同一结束点，工期分别为 12 天和 10 天，无其他线路。可根据当前计划判断的有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-27",
+      "title": "试验与验收",
+      "kind": "question-bank",
+      "text": "项目指定两种互不替代的试验：构件强度与接口严密性。属于有效验收证据组织的有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-28",
+      "title": "施工风险",
+      "kind": "question-bank",
+      "text": "拟开工的高处作业遇现场环境突然变化。应作为当班复核输入的有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-29",
+      "title": "变更结算",
+      "kind": "question-bank",
+      "text": "题设规定暂列金额按批准变更实际发生额计入，专业工程暂估价以确认价替代，总包服务费随确认价按率调整。结算时正确做法有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    },
+    {
+      "id": "constructor-1-architecture-mock-01-source-30",
+      "title": "绿色建造",
+      "kind": "question-bank",
+      "text": "拟比较两种施工组织方案的单位合格工程量现场碳排放。使结果可比较、可复算的措施有（　）。",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "sourceType": "author",
+        "publisher": "Paper Notebook Practice"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "single",
+      "examPartId": "single",
+      "title": "单项选择题",
+      "instructions": "共20题，每题1分。每题只有1个选项最符合题意。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "constructor-1-architecture-mock-01-q1",
+          "number": 1,
+          "type": "choice",
+          "prompt": "钢筋混凝土框架房屋，楼板竖向荷载经次梁和主梁传至基础。正确的主要传力顺序是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "楼板→柱→次梁→主梁→基础"
+            },
+            {
+              "id": "B",
+              "text": "楼板→次梁→主梁→柱→基础"
+            },
+            {
+              "id": "C",
+              "text": "楼板→基础→主梁→柱"
+            },
+            {
+              "id": "D",
+              "text": "楼板→填充墙→次梁→基础"
+            }
+          ],
+          "solution": "B",
+          "explanation": "楼板先把荷载传给次梁，次梁支承于主梁，主梁由柱支承；填充墙不是这一路径的支承构件。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-1",
+            "blockId": "constructor-1-architecture-mock-01-source-1",
+            "title": "结构体系",
+            "exact": "钢筋混凝土框架房屋，楼板竖向荷载经次梁和主梁传至基础。正确的主要传力顺序是（　）。"
+          },
+          "chapter": "结构体系",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "结构体系"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q2",
+          "number": 2,
+          "type": "choice",
+          "prompt": "同配合条件下，某批新拌混凝土坍落度合格。仅据这一结果可判断其（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "测试时的流动性指标符合要求"
+            },
+            {
+              "id": "B",
+              "text": "硬化后的抗渗等级符合要求"
+            },
+            {
+              "id": "C",
+              "text": "现场养护后的强度符合要求"
+            },
+            {
+              "id": "D",
+              "text": "每车拌合物均无离析"
+            }
+          ],
+          "solution": "A",
+          "explanation": "坍落度反映被测新拌混凝土的流动性，不能代替硬化性能、每车状态或其他工作性判定。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-2",
+            "blockId": "constructor-1-architecture-mock-01-source-2",
+            "title": "材料与检验",
+            "exact": "同配合条件下，某批新拌混凝土坍落度合格。仅据这一结果可判断其（　）。"
+          },
+          "chapter": "材料与检验",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "材料与检验"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q3",
+          "number": 3,
+          "type": "choice",
+          "prompt": "已知水准点高程 23.480 m，后视读数 1.365 m，前视读数 1.725 m。待测点高程为（　）m。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "23.840"
+            },
+            {
+              "id": "B",
+              "text": "25.205"
+            },
+            {
+              "id": "C",
+              "text": "23.120"
+            },
+            {
+              "id": "D",
+              "text": "24.845"
+            }
+          ],
+          "solution": "C",
+          "explanation": "视线高 23.480＋1.365＝24.845 m；待测点高程 24.845－1.725＝23.120 m。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-3",
+            "blockId": "constructor-1-architecture-mock-01-source-3",
+            "title": "施工测量",
+            "exact": "已知水准点高程 23.480 m，后视读数 1.365 m，前视读数 1.725 m。待测点高程为（　）m。"
+          },
+          "chapter": "施工测量",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工测量"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q4",
+          "number": 4,
+          "type": "choice",
+          "prompt": "槽底局部被挖低 180 mm，设计未给出超挖处理详图。项目部首先应（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "用现场虚土回填，边铺垫层边压实"
+            },
+            {
+              "id": "B",
+              "text": "直接加厚垫层，完工后补记录"
+            },
+            {
+              "id": "C",
+              "text": "继续挖低相邻未扰动槽底，便于统一标高"
+            },
+            {
+              "id": "D",
+              "text": "保留现场、测量范围与深度，报验并按确认方案处理"
+            }
+          ],
+          "solution": "D",
+          "explanation": "先记录并保留验查条件，取得确认的处理方案后处置；自行回填、扩大超挖或事后补手续都不能代替确认。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-4",
+            "blockId": "constructor-1-architecture-mock-01-source-4",
+            "title": "地基基础",
+            "exact": "槽底局部被挖低 180 mm，设计未给出超挖处理详图。项目部首先应（　）。"
+          },
+          "chapter": "地基基础",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "地基基础"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q5",
+          "number": 5,
+          "type": "choice",
+          "prompt": "施工方案规定以同条件养护试件强度作为底模拆除依据。可用于提出拆模申请的证据是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "对应部位同条件试件报告达到要求"
+            },
+            {
+              "id": "B",
+              "text": "日历龄期达到计划天数"
+            },
+            {
+              "id": "C",
+              "text": "相邻楼层施工进度达到计划"
+            },
+            {
+              "id": "D",
+              "text": "相同配合比的标准养护报告达到要求"
+            }
+          ],
+          "solution": "A",
+          "explanation": "题设要求对应部位同条件养护的强度证据；计时、相邻层或标准养护证据不能替代。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-5",
+            "blockId": "constructor-1-architecture-mock-01-source-5",
+            "title": "模板与混凝土",
+            "exact": "施工方案规定以同条件养护试件强度作为底模拆除依据。可用于提出拆模申请的证据是（　）。"
+          },
+          "chapter": "模板与混凝土",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "模板与混凝土"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q6",
+          "number": 6,
+          "type": "choice",
+          "prompt": "构件安装发现部分高强螺栓孔不能自由穿栓。班组拟直接火焰扩孔。现场工程师应（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "改用直径更小的螺栓"
+            },
+            {
+              "id": "B",
+              "text": "停止该处安装并复测，按确认的技术方案处置"
+            },
+            {
+              "id": "C",
+              "text": "将螺栓敲入，省去返修"
+            },
+            {
+              "id": "D",
+              "text": "趁节点未受力立即按班组方法扩孔"
+            }
+          ],
+          "solution": "B",
+          "explanation": "应先查明孔位偏差及影响，按确认方案处理，不得自行改变连接件或扩孔工艺。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-6",
+            "blockId": "constructor-1-architecture-mock-01-source-6",
+            "title": "钢结构",
+            "exact": "构件安装发现部分高强螺栓孔不能自由穿栓。班组拟直接火焰扩孔。现场工程师应（　）。"
+          },
+          "chapter": "钢结构",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "钢结构"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q7",
+          "number": 7,
+          "type": "choice",
+          "prompt": "项目要求屋面穿管节点先做附加防水层，再做大面防水。发现附加层未施工、大面尚未覆盖时，应（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "等成品积水后再找漏点"
+            },
+            {
+              "id": "B",
+              "text": "交由下道工序从管内补做"
+            },
+            {
+              "id": "C",
+              "text": "按节点详图补齐附加层，检查后再覆盖"
+            },
+            {
+              "id": "D",
+              "text": "仅加宽其他位置的搭接缝"
+            }
+          ],
+          "solution": "C",
+          "explanation": "穿管根部是节点防水的检查部位，要在遮蔽前完成规定附加层并验查。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-7",
+            "blockId": "constructor-1-architecture-mock-01-source-7",
+            "title": "防水施工",
+            "exact": "项目要求屋面穿管节点先做附加防水层，再做大面防水。发现附加层未施工、大面尚未覆盖时，应（　）。"
+          },
+          "chapter": "防水施工",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "防水施工"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q8",
+          "number": 8,
+          "type": "choice",
+          "prompt": "预制墙板就位后，批准的安装方案要求临时支撑检查合格后方可松钩。因此松钩前必须确认（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "吊车可立即去吊下一件"
+            },
+            {
+              "id": "B",
+              "text": "灌浆拌合物已运到楼层"
+            },
+            {
+              "id": "C",
+              "text": "施工员已经填报日报"
+            },
+            {
+              "id": "D",
+              "text": "支撑、连接和墙板位置满足方案并已检查"
+            }
+          ],
+          "solution": "D",
+          "explanation": "松钩前要证实构件处于安装方案要求的稳定状态，人员材料到位不是放行依据。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-8",
+            "blockId": "constructor-1-architecture-mock-01-source-8",
+            "title": "装配式施工",
+            "exact": "预制墙板就位后，批准的安装方案要求临时支撑检查合格后方可松钩。因此松钩前必须确认（　）。"
+          },
+          "chapter": "装配式施工",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "装配式施工"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q9",
+          "number": 9,
+          "type": "choice",
+          "prompt": "吊顶封板前，上方管线完成安装，现场缺隐蔽验收签认。正确的安排是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "保留检查面，安排验收及应完成的试验后再封板"
+            },
+            {
+              "id": "B",
+              "text": "先封板，选择一处检修口代替全部验收"
+            },
+            {
+              "id": "C",
+              "text": "先拍照存档即可封板"
+            },
+            {
+              "id": "D",
+              "text": "让安装班组口头确认后封板"
+            }
+          ],
+          "solution": "A",
+          "explanation": "隐蔽前检查并留存签认记录；照片和口头承诺都不能替代规定验收。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-9",
+            "blockId": "constructor-1-architecture-mock-01-source-9",
+            "title": "装饰装修",
+            "exact": "吊顶封板前，上方管线完成安装，现场缺隐蔽验收签认。正确的安排是（　）。"
+          },
+          "chapter": "装饰装修",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "装饰装修"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "外窗样品的气密性能检测主要针对（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "雨水渗入"
+            },
+            {
+              "id": "B",
+              "text": "受风荷载后的变形"
+            },
+            {
+              "id": "C",
+              "text": "压差作用下的空气渗透"
+            },
+            {
+              "id": "D",
+              "text": "玻璃的太阳辐射透射"
+            }
+          ],
+          "solution": "C",
+          "explanation": "气密是空气渗透；雨水、抗风压和太阳辐射属于不同性能。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-10",
+            "blockId": "constructor-1-architecture-mock-01-source-10",
+            "title": "建筑节能",
+            "exact": "外窗样品的气密性能检测主要针对（　）。"
+          },
+          "chapter": "建筑节能",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "建筑节能"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q11",
+          "number": 11,
+          "type": "choice",
+          "prompt": "项目按批准的边界统计现场用电。现场泵机消耗 600 kWh，场外加工厂消耗 800 kWh，场内临时办公室消耗 100 kWh。若系数为 0.50 kgCO₂e/kWh，则项目计入的排放为（　）kgCO₂e。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "300"
+            },
+            {
+              "id": "B",
+              "text": "350"
+            },
+            {
+              "id": "C",
+              "text": "400"
+            },
+            {
+              "id": "D",
+              "text": "750"
+            }
+          ],
+          "solution": "B",
+          "explanation": "现场用电含泵机和办公室，不含场外加工；(600＋100)×0.50＝350。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-11",
+            "blockId": "constructor-1-architecture-mock-01-source-11",
+            "title": "绿色建造",
+            "exact": "项目按批准的边界统计现场用电。现场泵机消耗 600 kWh，场外加工厂消耗 800 kWh，场内临时办公室消耗 100 kWh。若系数为 0.50 kgCO₂e/kWh，则项目计入的排放为（　）kgCO₂e。"
+          },
+          "chapter": "绿色建造",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "绿色建造"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q12",
+          "number": 12,
+          "type": "choice",
+          "prompt": "比较两项施工工作：机械可以共用，但一项必须等另一项混凝土达到方案规定的强度才可开始。此先后约束主要源于（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "节约现场加工成本"
+            },
+            {
+              "id": "B",
+              "text": "改善资金支付节奏"
+            },
+            {
+              "id": "C",
+              "text": "提高平面布置利用率"
+            },
+            {
+              "id": "D",
+              "text": "施工工艺条件"
+            }
+          ],
+          "solution": "D",
+          "explanation": "先达到强度才能进入下道工序，属于工艺约束，共用机械是另一个资源问题。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-12",
+            "blockId": "constructor-1-architecture-mock-01-source-12",
+            "title": "施工组织",
+            "exact": "比较两项施工工作：机械可以共用，但一项必须等另一项混凝土达到方案规定的强度才可开始。此先后约束主要源于（　）。"
+          },
+          "chapter": "施工组织",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工组织"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q13",
+          "number": 13,
+          "type": "choice",
+          "prompt": "一项工作总时差为 3 天，其他工作持续时间和网络逻辑不变。若该工作持续时间增加 5 天，项目最早完工日期比原计划推迟（　）天。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "2"
+            },
+            {
+              "id": "B",
+              "text": "3"
+            },
+            {
+              "id": "C",
+              "text": "5"
+            },
+            {
+              "id": "D",
+              "text": "8"
+            }
+          ],
+          "solution": "A",
+          "explanation": "先消耗 3 天总时差，超出的 2 天影响原计划完工；这是进度结果，不自动代表合同可顺延。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-13",
+            "blockId": "constructor-1-architecture-mock-01-source-13",
+            "title": "进度管理",
+            "exact": "一项工作总时差为 3 天，其他工作持续时间和网络逻辑不变。若该工作持续时间增加 5 天，项目最早完工日期比原计划推迟（　）天。"
+          },
+          "chapter": "进度管理",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "进度管理"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q14",
+          "number": 14,
+          "type": "choice",
+          "prompt": "巡检发现检验批不合格。项目部建立闭环管理时，不能省略的最后一步是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "将问题写入班前教育稿"
+            },
+            {
+              "id": "B",
+              "text": "把计划整改日期改为完成日期"
+            },
+            {
+              "id": "C",
+              "text": "按要求复验并记录处置结果"
+            },
+            {
+              "id": "D",
+              "text": "先把问题从台账中删除"
+            }
+          ],
+          "solution": "C",
+          "explanation": "处置完成后仍需用复验证据确认符合并留痕，才能闭环。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-14",
+            "blockId": "constructor-1-architecture-mock-01-source-14",
+            "title": "施工质量",
+            "exact": "巡检发现检验批不合格。项目部建立闭环管理时，不能省略的最后一步是（　）。"
+          },
+          "chapter": "施工质量",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工质量"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q15",
+          "number": 15,
+          "type": "choice",
+          "prompt": "临边防护因材料运输被临时拆除，运输作业结束后人员已开始进入该区。现场首先应（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "继续开放，等班后统一恢复"
+            },
+            {
+              "id": "B",
+              "text": "隔离危险区并停止暴露作业，恢复验查后开放"
+            },
+            {
+              "id": "C",
+              "text": "仅在班组群提醒经过时小心"
+            },
+            {
+              "id": "D",
+              "text": "在未隔离的情况下先统计拆除用时"
+            }
+          ],
+          "solution": "B",
+          "explanation": "先让人员脱离暴露并隔离，恢复防护、确认后再开放；告知不代替隔离。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-15",
+            "blockId": "constructor-1-architecture-mock-01-source-15",
+            "title": "施工安全",
+            "exact": "临边防护因材料运输被临时拆除，运输作业结束后人员已开始进入该区。现场首先应（　）。"
+          },
+          "chapter": "施工安全",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工安全"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q16",
+          "number": 16,
+          "type": "choice",
+          "prompt": "两批同规格钢材到场，批次标识不同且需按批准计划分别检验。最能保证追溯的收料方式是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "合并堆放，记总重量"
+            },
+            {
+              "id": "B",
+              "text": "先分发到楼层，后补收货编号"
+            },
+            {
+              "id": "C",
+              "text": "仅保留供货单位的月度汇总"
+            },
+            {
+              "id": "D",
+              "text": "分批标识并保持进场记录、取样编号和使用部位对应"
+            }
+          ],
+          "solution": "D",
+          "explanation": "追溯依赖批次与检验和使用部位的连续对应，规格相同不能抹掉批次。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-16",
+            "blockId": "constructor-1-architecture-mock-01-source-16",
+            "title": "材料采购",
+            "exact": "两批同规格钢材到场，批次标识不同且需按批准计划分别检验。最能保证追溯的收料方式是（　）。"
+          },
+          "chapter": "材料采购",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "材料采购"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q17",
+          "number": 17,
+          "type": "choice",
+          "prompt": "某项工作预算单价 120 元/m²，实际已完成 420 m²，已发生成本 54 600 元。该工作的成本偏差（挣值减实际成本）是（　）元。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "＋4 200"
+            },
+            {
+              "id": "B",
+              "text": "－54 600"
+            },
+            {
+              "id": "C",
+              "text": "－4 200"
+            },
+            {
+              "id": "D",
+              "text": "＋50 400"
+            }
+          ],
+          "solution": "C",
+          "explanation": "挣值 420×120＝50 400 元，减实际成本 54 600 元得－4 200 元。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-17",
+            "blockId": "constructor-1-architecture-mock-01-source-17",
+            "title": "成本管理",
+            "exact": "某项工作预算单价 120 元/m²，实际已完成 420 m²，已发生成本 54 600 元。该工作的成本偏差（挣值减实际成本）是（　）元。"
+          },
+          "chapter": "成本管理",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "成本管理"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q18",
+          "number": 18,
+          "type": "choice",
+          "prompt": "题设合同要求变更计价须保留指令、完成量和费率依据。下列证据组合最完整的是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "签发变更指令、签认计量记录、适用合同价目或确认的单价"
+            },
+            {
+              "id": "B",
+              "text": "会议照片、班组工资单、工期进度表"
+            },
+            {
+              "id": "C",
+              "text": "承包人报价截图、采购支付凭证、完工照片"
+            },
+            {
+              "id": "D",
+              "text": "修改图纸及材料到货时间记录"
+            }
+          ],
+          "solution": "A",
+          "explanation": "A 同时证明计价授权、可计数量和适用单价；其余组合缺至少一类必要证据。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-18",
+            "blockId": "constructor-1-architecture-mock-01-source-18",
+            "title": "合同证据",
+            "exact": "题设合同要求变更计价须保留指令、完成量和费率依据。下列证据组合最完整的是（　）。"
+          },
+          "chapter": "合同证据",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "合同证据"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q19",
+          "number": 19,
+          "type": "choice",
+          "prompt": "严禁合批的两个结构部位分别送检。试件标签脱落且不能确认所属部位。最合适的处理是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "按送检时间猜测对应关系"
+            },
+            {
+              "id": "B",
+              "text": "将两个部位平均分配到两份结果"
+            },
+            {
+              "id": "C",
+              "text": "用较大值代表较重要的部位"
+            },
+            {
+              "id": "D",
+              "text": "报告样品失去可追溯性，按批准的补证方案复核"
+            }
+          ],
+          "solution": "D",
+          "explanation": "无法追溯的结果不能直接证明某一部位，必须报告并按批准方案补证。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-19",
+            "blockId": "constructor-1-architecture-mock-01-source-19",
+            "title": "现场试验",
+            "exact": "严禁合批的两个结构部位分别送检。试件标签脱落且不能确认所属部位。最合适的处理是（　）。"
+          },
+          "chapter": "现场试验",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "现场试验"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q20",
+          "number": 20,
+          "type": "choice",
+          "prompt": "东区封板尚待 2 天接口试验，试验期间不能封闭检查面。西区已完成交接，可以独立施工。同一班组东、西各需 2 天，今天开工，不允许拆分班组。满足放行与最短完工时间的方案是（　）。",
+          "score": 1,
+          "options": [
+            {
+              "id": "A",
+              "text": "本班组先封板东区，两天后转西区"
+            },
+            {
+              "id": "B",
+              "text": "试验与西区封板并行，试验合格后转东区，总工期 4 天"
+            },
+            {
+              "id": "C",
+              "text": "试验期间等待，之后先东后西，总工期 4 天"
+            },
+            {
+              "id": "D",
+              "text": "西区封板完成后再做东区接口试验并封板，总工期 6 天"
+            }
+          ],
+          "solution": "B",
+          "explanation": "东区最早第 3 天开工，最早第 4 天结束。前两天完成已放行的西区，无须拆班。A 违反放行；C 实为 6 天，D 可行但多用 2 天。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-20",
+            "blockId": "constructor-1-architecture-mock-01-source-20",
+            "title": "施工管理综合",
+            "exact": "东区封板尚待 2 天接口试验，试验期间不能封闭检查面。西区已完成交接，可以独立施工。同一班组东、西各需 2 天，今天开工，不允许拆分班组。满足放行与最短完工时间的方案是（　）。"
+          },
+          "chapter": "施工管理综合",
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工管理综合"
+            ],
+            "ability": "识别原则或按给定条件计算",
+            "estimatedMinutes": 0.8
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "multiple",
+      "examPartId": "multiple",
+      "title": "多项选择题",
+      "instructions": "共10题，每题2分。每题有2个或以上正确选项。全对得2分；选错得0分；少选且无错选，每个正确选项得0.5分。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "constructor-1-architecture-mock-01-q21",
+          "number": 21,
+          "type": "multiple",
+          "prompt": "下列做法能为变形缝按设计自由变形保留条件的有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "用刚性砂浆填死变形空间"
+            },
+            {
+              "id": "B",
+              "text": "检查缝宽及通畅性"
+            },
+            {
+              "id": "C",
+              "text": "按详图采用能适应位移的盖缝构造"
+            },
+            {
+              "id": "D",
+              "text": "把两侧构件任意焊为一体"
+            },
+            {
+              "id": "E",
+              "text": "对可能跨缝的管线核对其柔性连接"
+            }
+          ],
+          "solution": [
+            "B",
+            "C",
+            "E"
+          ],
+          "explanation": "通畅、适应位移的盖缝和柔性跨缝是目的相符的做法；刚性封死和擅自焊接会限制变形。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-21",
+            "blockId": "constructor-1-architecture-mock-01-source-21",
+            "title": "结构与变形",
+            "exact": "下列做法能为变形缝按设计自由变形保留条件的有（　）。"
+          },
+          "chapter": "结构与变形",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "结构与变形"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q22",
+          "number": 22,
+          "type": "multiple",
+          "prompt": "基坑监测记录出现失稳预警，题设预案要求超限立即停工撤离并报告。此时应采取的措施有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "按预案撤离风险区域人员"
+            },
+            {
+              "id": "B",
+              "text": "把预警值记为一般提醒，待周会处理"
+            },
+            {
+              "id": "C",
+              "text": "通知预案中的责任人并保留原始数据"
+            },
+            {
+              "id": "D",
+              "text": "让设备继续开挖以便腾出空间"
+            },
+            {
+              "id": "E",
+              "text": "隔离风险区，等处置与复核确认后再恢复"
+            }
+          ],
+          "solution": [
+            "A",
+            "C",
+            "E"
+          ],
+          "explanation": "撤离、报告与留痕、隔离与复核属于预案响应；继续开挖或延迟处置与题设冲突。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-22",
+            "blockId": "constructor-1-architecture-mock-01-source-22",
+            "title": "土方与基础",
+            "exact": "基坑监测记录出现失稳预警，题设预案要求超限立即停工撤离并报告。此时应采取的措施有（　）。"
+          },
+          "chapter": "土方与基础",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "土方与基础"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q23",
+          "number": 23,
+          "type": "multiple",
+          "prompt": "项目要求记录套筒灌浆的作业可追溯性。可关联到具体构件的记录有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "只写项目全年的灌浆总量"
+            },
+            {
+              "id": "B",
+              "text": "构件编号和作业部位"
+            },
+            {
+              "id": "C",
+              "text": "施工日期、操作人员及灌浆料批次"
+            },
+            {
+              "id": "D",
+              "text": "施工段温度与按方案留存的质量记录"
+            },
+            {
+              "id": "E",
+              "text": "与本工程无关的相似构件照片"
+            }
+          ],
+          "solution": [
+            "B",
+            "C",
+            "D"
+          ],
+          "explanation": "B、C、D 将构件、材料、人员和工况相连；总量和无关照片不能追到该构件。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-23",
+            "blockId": "constructor-1-architecture-mock-01-source-23",
+            "title": "装配式施工",
+            "exact": "项目要求记录套筒灌浆的作业可追溯性。可关联到具体构件的记录有（　）。"
+          },
+          "chapter": "装配式施工",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "装配式施工"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q24",
+          "number": 24,
+          "type": "multiple",
+          "prompt": "原动态淋水试验已记录漏水的位置和试验条件。整改后，用于验证原渗漏缺陷是否闭合的直接证据有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "同等条件下的淋水复验结果"
+            },
+            {
+              "id": "B",
+              "text": "密封胶出厂检验报告"
+            },
+            {
+              "id": "C",
+              "text": "整改前的漏点记录"
+            },
+            {
+              "id": "D",
+              "text": "整改部位的开查记录显示缺失密封层已连续恢复"
+            },
+            {
+              "id": "E",
+              "text": "同批次构件的抗风压报告"
+            }
+          ],
+          "solution": [
+            "A",
+            "D"
+          ],
+          "explanation": "可比较的淋水复验验证表现，开查验证该处缺陷已改正。出厂报告、原缺陷记录和抗风压报告不能直接验证整改。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-24",
+            "blockId": "constructor-1-architecture-mock-01-source-24",
+            "title": "幕墙与围护",
+            "exact": "原动态淋水试验已记录漏水的位置和试验条件。整改后，用于验证原渗漏缺陷是否闭合的直接证据有（　）。"
+          },
+          "chapter": "幕墙与围护",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "幕墙与围护"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q25",
+          "number": 25,
+          "type": "multiple",
+          "prompt": "下列措施有助于隔离待检或不合格到货的有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "未检先发并在月末补记录"
+            },
+            {
+              "id": "B",
+              "text": "设置可识别且可控制领用的待检区"
+            },
+            {
+              "id": "C",
+              "text": "拆除原批次标签便于混放"
+            },
+            {
+              "id": "D",
+              "text": "将检验状态与批次编码关联"
+            },
+            {
+              "id": "E",
+              "text": "不合格物料按确认的退货或处置流程留痕"
+            }
+          ],
+          "solution": [
+            "B",
+            "D",
+            "E"
+          ],
+          "explanation": "空间与状态标识、控制领用和可记录处置构成隔离链；先发或去标签破坏它。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-25",
+            "blockId": "constructor-1-architecture-mock-01-source-25",
+            "title": "采购与检验",
+            "exact": "下列措施有助于隔离待检或不合格到货的有（　）。"
+          },
+          "chapter": "采购与检验",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "采购与检验"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q26",
+          "number": 26,
+          "type": "multiple",
+          "prompt": "两条并行路线从同一开始点至同一结束点，工期分别为 12 天和 10 天，无其他线路。可根据当前计划判断的有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "计划工期为 12 天"
+            },
+            {
+              "id": "B",
+              "text": "短路线中每项工作都有可同时使用 2 天的独立总时差"
+            },
+            {
+              "id": "C",
+              "text": "仅缩短长路线 3 天后，工期为 10 天"
+            },
+            {
+              "id": "D",
+              "text": "短路线延长 3 天时原关键路线必仍唯一关键"
+            },
+            {
+              "id": "E",
+              "text": "仅缩短短路线不会使 12 天工期提前"
+            }
+          ],
+          "solution": [
+            "A",
+            "C",
+            "E"
+          ],
+          "explanation": "两线取最大。缩长线后为 max(9,10)＝10；短线延长到 13 会控制工期，短线时差不能供同一路线各工作重复使用。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-26",
+            "blockId": "constructor-1-architecture-mock-01-source-26",
+            "title": "网络计划",
+            "exact": "两条并行路线从同一开始点至同一结束点，工期分别为 12 天和 10 天，无其他线路。可根据当前计划判断的有（　）。"
+          },
+          "chapter": "网络计划",
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "网络计划"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q27",
+          "number": 27,
+          "type": "multiple",
+          "prompt": "项目指定两种互不替代的试验：构件强度与接口严密性。属于有效验收证据组织的有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "两种试验均采用符合规定的可追溯报告"
+            },
+            {
+              "id": "B",
+              "text": "只保留高分的试验报告"
+            },
+            {
+              "id": "C",
+              "text": "按验收对象记录试验对应关系"
+            },
+            {
+              "id": "D",
+              "text": "以供应商口头通报替代两份正式报告"
+            },
+            {
+              "id": "E",
+              "text": "两类要求分别符合后再作放行签认"
+            }
+          ],
+          "solution": [
+            "A",
+            "C",
+            "E"
+          ],
+          "explanation": "各试验各自满足并连接到验收对象，之后放行；删取报告或口头通报不能证明两个指标。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-27",
+            "blockId": "constructor-1-architecture-mock-01-source-27",
+            "title": "试验与验收",
+            "exact": "项目指定两种互不替代的试验：构件强度与接口严密性。属于有效验收证据组织的有（　）。"
+          },
+          "chapter": "试验与验收",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "试验与验收"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q28",
+          "number": 28,
+          "type": "multiple",
+          "prompt": "拟开工的高处作业遇现场环境突然变化。应作为当班复核输入的有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "现场实际风况与批准的停工条件"
+            },
+            {
+              "id": "B",
+              "text": "施工班组上一年度产值"
+            },
+            {
+              "id": "C",
+              "text": "作业平台、防护与人员撤离条件"
+            },
+            {
+              "id": "D",
+              "text": "上报并重新交底后形成的确认记录"
+            },
+            {
+              "id": "E",
+              "text": "用上周气象周报替代现场观测"
+            }
+          ],
+          "solution": [
+            "A",
+            "C",
+            "D"
+          ],
+          "explanation": "要比较现场条件和批准的规则，同时核实防护和恢复确认；产值无关，历史周报不能代替当班条件。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-28",
+            "blockId": "constructor-1-architecture-mock-01-source-28",
+            "title": "施工风险",
+            "exact": "拟开工的高处作业遇现场环境突然变化。应作为当班复核输入的有（　）。"
+          },
+          "chapter": "施工风险",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "施工风险"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q29",
+          "number": 29,
+          "type": "multiple",
+          "prompt": "题设规定暂列金额按批准变更实际发生额计入，专业工程暂估价以确认价替代，总包服务费随确认价按率调整。结算时正确做法有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "暂列金额原值与批准变更全额叠加"
+            },
+            {
+              "id": "B",
+              "text": "用确认价替换原专业工程暂估价"
+            },
+            {
+              "id": "C",
+              "text": "把未获批准的内部估算自动计入"
+            },
+            {
+              "id": "D",
+              "text": "按确认价重算服务费"
+            },
+            {
+              "id": "E",
+              "text": "对已并入确认价的项目停止重复计取"
+            }
+          ],
+          "solution": [
+            "B",
+            "D",
+            "E"
+          ],
+          "explanation": "替换、重算、去重；暂列款不能与对应已确认实际额重复，也不能据内部估算自动加价。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-29",
+            "blockId": "constructor-1-architecture-mock-01-source-29",
+            "title": "变更结算",
+            "exact": "题设规定暂列金额按批准变更实际发生额计入，专业工程暂估价以确认价替代，总包服务费随确认价按率调整。结算时正确做法有（　）。"
+          },
+          "chapter": "变更结算",
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "变更结算"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q30",
+          "number": 30,
+          "type": "multiple",
+          "prompt": "拟比较两种施工组织方案的单位合格工程量现场碳排放。使结果可比较、可复算的措施有（　）。",
+          "score": 2,
+          "options": [
+            {
+              "id": "A",
+              "text": "采用同一类工序边界和等效统计阶段"
+            },
+            {
+              "id": "B",
+              "text": "统一排放因子口径和用量单位"
+            },
+            {
+              "id": "C",
+              "text": "对其中一案排除临时用电而另一案计入"
+            },
+            {
+              "id": "D",
+              "text": "分别留存活动数据和排放系数"
+            },
+            {
+              "id": "E",
+              "text": "把排放折算到相同定义的合格工程量"
+            }
+          ],
+          "solution": [
+            "A",
+            "B",
+            "D",
+            "E"
+          ],
+          "explanation": "A、B、E 统一边界、计算口径和比较基准，D 保证可复算；C 造成系统性偏差。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-30",
+            "blockId": "constructor-1-architecture-mock-01-source-30",
+            "title": "绿色建造",
+            "exact": "拟比较两种施工组织方案的单位合格工程量现场碳排放。使结果可比较、可复算的措施有（　）。"
+          },
+          "chapter": "绿色建造",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "绿色建造"
+            ],
+            "ability": "分别判断各选项的适用条件",
+            "estimatedMinutes": 1.8
+          },
+          "multiSelectScoring": {
+            "partialPerCorrect": 0.5,
+            "wrongSelection": 0
+          },
+          "answerProvenance": {
+            "kind": "independent"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cases",
+      "examPartId": "cases",
+      "title": "实务操作与案例分析题",
+      "instructions": "共5题，前3题每题20分，后2题每题30分。写明核算过程、单位和工程判断依据。",
+      "score": 120,
+      "questions": [
+        {
+          "id": "constructor-1-architecture-mock-01-q31",
+          "number": 31,
+          "type": "response",
+          "prompt": "某社区活动中心组织地下室墙体连续浇筑。项目部用图 1 标记三处设备或作业点。A 将商品混凝土运到泵位，B 的料斗与输送管相连；浇筑人员在构件内使用 C。\n同一施工班组计划浇筑 72 m³，现场连续供料能力 24 m³/h，泵有效输送能力 30 m³/h，浇筑振捣能力 18 m³/h，三个工序稳定并行，已扣除转换损失。\n本项目碳核算仅计本班现场用能：泵与振捣机合计 96 kWh，现场照明 24 kWh，场外拌合站 62 kWh；采用 0.52 kgCO₂e/kWh。批准方案要求封闭检查面前留存供货及拌合物检查记录，发生超过允许时间的停歇时按经确认的施工缝方案处置。\n问题\n（1）识别图 1 的 A、B、C，并用字母写出作业先后。\n（2）找出班组的产能瓶颈，计算最短有效作业时长。\n（3）若只把泵提高到 36 m³/h，能否缩短时长？另给出一项有效调整，并用题中数据说明其产能上限。\n（4）列出计入及排除的用电项目，计算班次排放。\n（5）供料中断超出方案允许时间。说明当班如何处置，以及保留哪些质量证据。",
+          "score": 20,
+          "answerRows": 22,
+          "solution": "（1）A 为混凝土搅拌运输车，B 为固定式混凝土泵，C 为插入式振捣器；A→B→C。\n（2）取三道工序产能最小值 18 m³/h，瓶颈是浇筑振捣；72÷18＝4 h。\n（3）不能，振捣仍限于 18。可在施工方案允许、人员与作业面满足时将振捣能力提高至 24 m³/h，此时供料成为 24 m³/h 的上限（最低有效作业时间 3 h）。\n（4）计泵、振捣及照明；拌合站在场外，排除。120×0.52＝62.40 kgCO₂e。\n（5）停止按连续浇筑情形覆盖停歇界面，报告技术负责人并按确认的施工缝方案处理，复核后再继续；保留供货单与到场检查、停歇起止及处理、复核记录。",
+          "explanation": "按分问列示依据、计算与处置步骤；采用题设的项目规则与合同约定。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-31",
+            "blockId": "constructor-1-architecture-mock-01-source-31",
+            "title": "案例 1：混凝土施工、设备识读、绿色建造",
+            "exact": "某社区活动中心组织地下室墙体连续浇筑。项目部用图 1 标记三处设备或作业点。A 将商品混凝土运到泵位，B 的料斗与输送管相连；浇筑人员在构件内使用 C。\n同一施工班组计划浇筑 72 m³，现场连续供料能力 24 m³/h，泵有效输送能力 30 m³/h，浇筑振捣能力 18 m³/h，三个工序稳定并行，已扣除转换损失。\n本项目碳核算仅计本班现场用能：泵与振捣机合计 96 kWh，现场照明 24 kWh，场外拌合站 62 kWh；采用 0.52 kgCO₂e/kWh。批准方案要求封闭检查面前留存供货及拌合物检查记录，发生超过允许时间的停歇时按经确认的施工缝方案处置。\n问题\n（1）识别图 1 的 A、B、C，并用字母写出作业先后。\n（2）找出班组的产能瓶颈，计算最短有效作业时长。\n（3）若只把泵提高到 36 m³/h，能否缩短时长？另给出一项有效调整，并用题中数据说明其产能上限。\n（4）列出计入及排除的用电项目，计算班次排放。\n（5）供料中断超出方案允许时间。说明当班如何处置，以及保留哪些质量证据。"
+          },
+          "chapter": "混凝土施工",
+          "tags": [
+            "混凝土施工",
+            "设备识读",
+            "绿色建造"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "混凝土施工",
+              "设备识读",
+              "绿色建造"
+            ],
+            "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+            "estimatedMinutes": 31
+          },
+          "attachments": [
+            {
+              "id": "constructor-1-architecture-mock-01-pour",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iMTkwIiB2aWV3Qm94PSIwIDAgNzIwIDE5MCI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSIxOTAiIGZpbGw9IndoaXRlIi8+PGRlZnM+PG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSI5IiBtYXJrZXJIZWlnaHQ9IjgiIHJlZlg9IjciIHJlZlk9IjQiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMEw4IDRMMCA4WiIgZmlsbD0iIzMwMzAzMCIvPjwvbWFya2VyPjwvZGVmcz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiMzMDMwMzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIzNCIgeT0iMzIiIHdpZHRoPSIxNzAiIGhlaWdodD0iMTE2IiByeD0iNiIvPjxyZWN0IHg9IjI3NSIgeT0iMzIiIHdpZHRoPSIxNzAiIGhlaWdodD0iMTE2IiByeD0iNiIvPjxyZWN0IHg9IjUxNiIgeT0iMzIiIHdpZHRoPSIxNzAiIGhlaWdodD0iMTE2IiByeD0iNiIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBkPSJNMjE5IDkwSDI1OCIvPjxwYXRoIG1hcmtlci1lbmQ9InVybCgjYXJyb3cpIiBkPSJNNDYwIDkwSDQ5OSIvPjxwYXRoIGQ9Ik01NSAxMDNIMTUwVjc4SDE3M0wxODkgOThWMTE2SDU1WiBNMTU4IDg0SDE3MUwxODEgOThIMTU4WiBNNjIgOTRMNzggOTIgTTY2IDkwTDU4IDgwIE0xMjMgOTZMMTMzIDEwMiBNMjk1IDExNUg0MTkgTTMwNCAxMTRWODhIMzU4TDM3MyAxMDNIMzkwVjExNCBNMzAxIDc3SDMzM0wzMjYgODhIMzA5WiBNMzc3IDEwNEg0MDJWNzRINDI0IE00MDIgNjRINDI0Vjc0IE0zMDkgMTAwSDM0MyBNNTQyIDExN0g2NjEgTTU1NSAxMTdWOTFINjQ5VjExNyBNNTU3IDEwMFE1NjggOTYgNTc5IDEwMFQ2MDEgMTAwVDYyMyAxMDBUNjQ1IDEwMCBNNjEzIDEwOVY3OVE2MTMgNjUgNjI0IDY0SDYzNlY1M0g2MjZRNjA0IDUzIDYwNCA3N1YxMDlaIE01ODkgOTJMNTg1IDg4IE02MjkgOTFMNjMyIDg2Ii8+PGVsbGlwc2UgY3g9IjEwNCIgY3k9Ijc5IiByeD0iMzMiIHJ5PSIxOSIgdHJhbnNmb3JtPSJyb3RhdGUoMjEgMTA0IDc5KSIvPjxwYXRoIGQ9Ik05MiA2MVExMDcgNzAgMTA4IDk3IE0xMDUgNjJRMTE5IDc2IDEyMSA5NiIvPjxjaXJjbGUgY3g9Ijc5IiBjeT0iMTE2IiByPSI5IiBmaWxsPSJ3aGl0ZSIvPjxjaXJjbGUgY3g9IjEwNSIgY3k9IjExNiIgcj0iOSIgZmlsbD0id2hpdGUiLz48Y2lyY2xlIGN4PSIxNjciIGN5PSIxMTYiIHI9IjkiIGZpbGw9IndoaXRlIi8+PHBhdGggZD0iTTMxOCAxMTVWMTI3SDMxMSBNMzg4IDExNVYxMjdIMzk1Ii8+PGcgZmlsbD0iIzExMSIgc3Ryb2tlPSJub25lIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNyIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PHRleHQgeD0iMTE5IiB5PSIxNzMiPkE8L3RleHQ+PHRleHQgeD0iMzYwIiB5PSIxNzMiPkI8L3RleHQ+PHRleHQgeD0iNjAxIiB5PSIxNzMiPkM8L3RleHQ+PC9nPjwvZz48L3N2Zz4=",
+              "alt": "图从左至右为 A→B→C。A 的车架有斜置椭圆筒；B 的底座有料斗和上翻输送管；C 的软管连接插入新浇混凝土的棒体。",
+              "caption": "图 1　浇筑机具与作业顺序示意",
+              "afterLine": 1,
+              "widthMm": 150
+            }
+          ],
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1-1",
+                "description": "（1）A 识别正确",
+                "points": 1
+              },
+              {
+                "id": "p1-2",
+                "description": "（1）B 识别正确",
+                "points": 1
+              },
+              {
+                "id": "p1-3",
+                "description": "（1）C 识别正确",
+                "points": 1
+              },
+              {
+                "id": "p1-4",
+                "description": "（1）顺序 A→B→C",
+                "points": 1
+              },
+              {
+                "id": "p2-1",
+                "description": "（2）按串接工序取最小值并写出 18 m³/h",
+                "points": 2
+              },
+              {
+                "id": "p2-2",
+                "description": "（2）4 h，列式与单位正确",
+                "points": 2
+              },
+              {
+                "id": "p3-1",
+                "description": "（3）说明单提泵能力不改变瓶颈",
+                "points": 2
+              },
+              {
+                "id": "p3-2",
+                "description": "（3）提出提升浇筑振捣；以供料 24 m³/h 为上限",
+                "points": 2
+              },
+              {
+                "id": "p4-1",
+                "description": "（4）纳入和排除均正确",
+                "points": 2
+              },
+              {
+                "id": "p4-2",
+                "description": "（4）用量 120 kWh 与排放 62.40 kgCO₂e",
+                "points": 2
+              },
+              {
+                "id": "p5-1",
+                "description": "（5）报告并按确认的施工缝方案处理后复核",
+                "points": 2
+              },
+              {
+                "id": "p5-2",
+                "description": "（5）供货/拌合物检查、停歇与处置记录各 1 分",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值按题设精度；前问数值算错、后问方法正确且未重复计分时，保留对应步骤分。",
+            "equivalentMethods": [
+              "接受满足题设且证据充分的等效算法或处置表述。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "原创参考解答与分步评分。"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q32",
+          "number": 32,
+          "type": "response",
+          "prompt": "某医院改造项目围护施工，批准计划见图 2。所有约束为完成—开始、零时距，F 为完工工作，持续时间按整天计且资源充足。\n事件甲是业主临时增加 D 的工程量，使 D 延长 5 天。事件乙是承包人对 E 的工序组织失误，使 E 延长 2 天。两事件分别相对原计划独立分析。合同规定只补偿有签认依据的业主原因实际完工延误，不补承包人原因延误。\n项目规定：施工日志由施工员签填，监测报告由受业主委托的监测单位签发，变更计量由合同约定的双方代表签认。若监测记录超出项目预警值，先按预案停工撤离、隔离并报告，确认条件后按程序恢复。\n问题\n（1）求基准工期与关键线路，写出两条线路的长度。\n（2）计算 B 和 D 各自的总时差，并说明这两项时差能否在同一基准上叠加。\n（3）两事件分别如何影响完工？各可获几天顺延？\n（4）分别写出日志、监测报告和变更计量的签认主体；再给出甲工期主张需要的进度证据。\n（5）若超预警值但工期即将到节点，给出处置顺序和恢复条件。",
+          "score": 20,
+          "answerRows": 22,
+          "solution": "（1）A—B—D—F＝3＋4＋3＋2＝12 天；A—C—E—F＝3＋6＋5＋2＝16 天。工期 16 天，后者关键。\n（2）B、D 各有 16－12＝4 天总时差，属于同一路线的共享余量，不能叠加为 8 天。\n（3）甲：短线变成 17 天并接管，实际延误 1 天，签认齐备时可顺延 1 天。乙：长线变为 18 天，实际延误 2 天，但承包人原因顺延 0 天。\n（4）施工员；受业主委托的监测单位；双方约定的代表。还需基准计划与含变更的重算计划或等效的关键线路影响记录。\n（5）立即停工撤离、隔离危险区并报告；按预案处置，复核监测及现场条件、获确认之后恢复。节点临近不改变放行条件。",
+          "explanation": "按分问列示依据、计算与处置步骤；采用题设的项目规则与合同约定。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-32",
+            "blockId": "constructor-1-architecture-mock-01-source-32",
+            "title": "案例 2：网络计划、工期责任、资料追溯",
+            "exact": "某医院改造项目围护施工，批准计划见图 2。所有约束为完成—开始、零时距，F 为完工工作，持续时间按整天计且资源充足。\n事件甲是业主临时增加 D 的工程量，使 D 延长 5 天。事件乙是承包人对 E 的工序组织失误，使 E 延长 2 天。两事件分别相对原计划独立分析。合同规定只补偿有签认依据的业主原因实际完工延误，不补承包人原因延误。\n项目规定：施工日志由施工员签填，监测报告由受业主委托的监测单位签发，变更计量由合同约定的双方代表签认。若监测记录超出项目预警值，先按预案停工撤离、隔离并报告，确认条件后按程序恢复。\n问题\n（1）求基准工期与关键线路，写出两条线路的长度。\n（2）计算 B 和 D 各自的总时差，并说明这两项时差能否在同一基准上叠加。\n（3）两事件分别如何影响完工？各可获几天顺延？\n（4）分别写出日志、监测报告和变更计量的签认主体；再给出甲工期主张需要的进度证据。\n（5）若超预警值但工期即将到节点，给出处置顺序和恢复条件。"
+          },
+          "chapter": "网络计划",
+          "tags": [
+            "网络计划",
+            "工期责任",
+            "资料追溯"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "网络计划",
+              "工期责任",
+              "资料追溯"
+            ],
+            "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+            "estimatedMinutes": 34
+          },
+          "attachments": [
+            {
+              "id": "constructor-1-architecture-mock-01-network",
+              "dataUrl": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MjAiIGhlaWdodD0iMjExIiB2aWV3Qm94PSIwIDAgNzIwIDIxMSI+PHJlY3Qgd2lkdGg9IjcyMCIgaGVpZ2h0PSIyMTEiIGZpbGw9IndoaXRlIi8+PGRlZnM+PG1hcmtlciBpZD0iYXJyb3ciIG1hcmtlcldpZHRoPSI5IiBtYXJrZXJIZWlnaHQ9IjgiIHJlZlg9IjciIHJlZlk9IjQiIG9yaWVudD0iYXV0byI+PHBhdGggZD0iTTAgMEw4IDRMMCA4WiIgZmlsbD0iIzMwMzAzMCIvPjwvbWFya2VyPjwvZGVmcz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiMzMDMwMzAiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48ZyBtYXJrZXItZW5kPSJ1cmwoI2Fycm93KSI+PHBhdGggZD0iTTEwMyAxMDFMMTgyIDU0Ii8+PHBhdGggZD0iTTEwMyAxMTFMMTgyIDE2MCIvPjxwYXRoIGQ9Ik0yNzggNDlIMzU2Ii8+PHBhdGggZD0iTTI3OCAxNjVIMzU2Ii8+PHBhdGggZD0iTTQ1MyA1NEw1NDAgMTAxIi8+PHBhdGggZD0iTTQ1MyAxNjBMNTQwIDExMiIvPjxwYXRoIGQ9Ik02MzIgMTA3SDY5MSIvPjwvZz48cmVjdCB4PSIxNSIgeT0iODYiIHdpZHRoPSI4NiIgaGVpZ2h0PSI0MiIgcng9IjUiLz48cmVjdCB4PSIxODQiIHk9IjI4IiB3aWR0aD0iOTMiIGhlaWdodD0iNDIiIHJ4PSI1Ii8+PHJlY3QgeD0iMTg0IiB5PSIxNDQiIHdpZHRoPSI5MyIgaGVpZ2h0PSI0MiIgcng9IjUiLz48cmVjdCB4PSIzNTgiIHk9IjI4IiB3aWR0aD0iOTMiIGhlaWdodD0iNDIiIHJ4PSI1Ii8+PHJlY3QgeD0iMzU4IiB5PSIxNDQiIHdpZHRoPSI5MyIgaGVpZ2h0PSI0MiIgcng9IjUiLz48cmVjdCB4PSI1NDIiIHk9Ijg2IiB3aWR0aD0iODkiIGhlaWdodD0iNDIiIHJ4PSI1Ii8+PGcgZmlsbD0iIzExMSIgc3Ryb2tlPSJub25lIiBmb250LWZhbWlseT0ic2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+PHRleHQgeD0iNTgiIHk9IjExNCI+QSDCtyAzPC90ZXh0Pjx0ZXh0IHg9IjIzMCIgeT0iNTYiPkIgwrcgNDwvdGV4dD48dGV4dCB4PSIyMzAiIHk9IjE3MiI+QyDCtyA2PC90ZXh0Pjx0ZXh0IHg9IjQwNCIgeT0iNTYiPkQgwrcgMzwvdGV4dD48dGV4dCB4PSI0MDQiIHk9IjE3MiI+RSDCtyA1PC90ZXh0Pjx0ZXh0IHg9IjU4NiIgeT0iMTE0Ij5GIMK3IDI8L3RleHQ+PC9nPjwvZz48L3N2Zz4=",
+              "alt": "A(3)→B(4)→D(3)→F(2)；A(3)→C(6)→E(5)→F(2)。工作框内数字为持续时间，单位为天。",
+              "caption": "图 2　工作逻辑与持续时间（天）",
+              "afterLine": 1,
+              "widthMm": 150
+            }
+          ],
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1-1",
+                "description": "（1）两路长度各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p1-2",
+                "description": "（1）工期和关键线路各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p2-1",
+                "description": "（2）两项总时差各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p2-2",
+                "description": "（2）说明共享且不能叠加",
+                "points": 2
+              },
+              {
+                "id": "p3-1",
+                "description": "（3）甲完工 17 天、可顺延 1 天各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p3-2",
+                "description": "（3）乙完工 18 天、顺延 0 天各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p4-1",
+                "description": "（4）三个主体各 1 分",
+                "points": 3
+              },
+              {
+                "id": "p4-2",
+                "description": "（4）提供可比较的计划或关键路径影响记录",
+                "points": 1
+              },
+              {
+                "id": "p5-1",
+                "description": "（5）停工撤离 1 分、隔离并报告 1 分",
+                "points": 2
+              },
+              {
+                "id": "p5-2",
+                "description": "（5）处置后复核 1 分、确认后恢复 1 分",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值按题设精度；前问数值算错、后问方法正确且未重复计分时，保留对应步骤分。",
+            "equivalentMethods": [
+              "接受满足题设且证据充分的等效算法或处置表述。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "原创参考解答与分步评分。"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q33",
+          "number": 33,
+          "type": "response",
+          "prompt": "某学校报告厅采用叠合板，入口为玻璃幕墙。项目批准的到场验收表规定，构件编号、主筋复核记录及吊点状态均合格方可起吊；未经复核的构件应标为待检并隔离。\n收货单显示：预制板 P01 三项齐全；P02 有编号、吊点合格，但无主筋复核记录；P03 三项齐全，但实物吊点可见损伤，记录还写着合格。P01 安装后，接缝内钢筋连接待检，班组拟直接封闭。\n幕墙喷淋复核中，水从一处横竖框交界的室内侧出现；同批次面板的气密报告合格。该项目要求隐蔽部位在自检、互检、专检与监理验收后方可封闭。\n问题\n（1）分别判断 P01、P02、P03 能否进入起吊工序并说明理由。\n（2）P01 接缝封闭前，列出施工方的三道检查及最终放行环节。\n（3）拟追溯 P02 后续验收。写出从收货到安装位置的记录要素。\n（4）幕墙气密合格能否作为本次水密缺陷关闭依据？说明应怎样定位与复验。\n（5）若板号、记录齐备但实测不合格，写出质量问题闭环的四个步骤。",
+          "score": 20,
+          "answerRows": 22,
+          "solution": "（1）P01 可进入；P02 缺主筋复核证据，待检隔离；P03 实物吊点损伤与记录矛盾，不得起吊，隔离并报告复核处置。\n（2）班组自检、工序或班组互检、专职质量检查，提交监理验收签认后才可封闭。\n（3）保留构件唯一编号和到场批次、待检隔离状态、补验结果、放行签认及实际安装位置。\n（4）不能，气密不验证渗水。对应原条件复现渗点，开查框交界的密封连续性与排水构造，按确认措施整改，再在可比条件下复验水密并记录。\n（5）标识记录并停止放行；评估/报批处置；按确认方案执行；按规定复验签认并更新台账。",
+          "explanation": "按分问列示依据、计算与处置步骤；采用题设的项目规则与合同约定。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-33",
+            "blockId": "constructor-1-architecture-mock-01-source-33",
+            "title": "案例 3：装配式构件、隐蔽验收、幕墙与质量闭环",
+            "exact": "某学校报告厅采用叠合板，入口为玻璃幕墙。项目批准的到场验收表规定，构件编号、主筋复核记录及吊点状态均合格方可起吊；未经复核的构件应标为待检并隔离。\n收货单显示：预制板 P01 三项齐全；P02 有编号、吊点合格，但无主筋复核记录；P03 三项齐全，但实物吊点可见损伤，记录还写着合格。P01 安装后，接缝内钢筋连接待检，班组拟直接封闭。\n幕墙喷淋复核中，水从一处横竖框交界的室内侧出现；同批次面板的气密报告合格。该项目要求隐蔽部位在自检、互检、专检与监理验收后方可封闭。\n问题\n（1）分别判断 P01、P02、P03 能否进入起吊工序并说明理由。\n（2）P01 接缝封闭前，列出施工方的三道检查及最终放行环节。\n（3）拟追溯 P02 后续验收。写出从收货到安装位置的记录要素。\n（4）幕墙气密合格能否作为本次水密缺陷关闭依据？说明应怎样定位与复验。\n（5）若板号、记录齐备但实测不合格，写出质量问题闭环的四个步骤。"
+          },
+          "chapter": "装配式构件",
+          "tags": [
+            "装配式构件",
+            "隐蔽验收",
+            "幕墙与质量闭环"
+          ],
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "装配式构件",
+              "隐蔽验收",
+              "幕墙与质量闭环"
+            ],
+            "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+            "estimatedMinutes": 32
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1-1",
+                "description": "（1）P01 判定正确",
+                "points": 1
+              },
+              {
+                "id": "p1-2",
+                "description": "（1）P02 判定及原因正确",
+                "points": 1
+              },
+              {
+                "id": "p1-3",
+                "description": "（1）P03 拒绝起吊并说明实物优先与隔离复核",
+                "points": 2
+              },
+              {
+                "id": "p2-1",
+                "description": "（2）三检名称各 1 分",
+                "points": 3
+              },
+              {
+                "id": "p2-2",
+                "description": "（2）监理验收签认后封闭",
+                "points": 1
+              },
+              {
+                "id": "p3-1",
+                "description": "（3）编号及到场批次",
+                "points": 1
+              },
+              {
+                "id": "p3-2",
+                "description": "（3）待检隔离状态",
+                "points": 1
+              },
+              {
+                "id": "p3-3",
+                "description": "（3）补验和放行签认",
+                "points": 1
+              },
+              {
+                "id": "p3-4",
+                "description": "（3）安装位置",
+                "points": 1
+              },
+              {
+                "id": "p4-1",
+                "description": "（4）区分气密与水密",
+                "points": 1
+              },
+              {
+                "id": "p4-2",
+                "description": "（4）复现或标记渗点",
+                "points": 1
+              },
+              {
+                "id": "p4-3",
+                "description": "（4）检查适合该位置的密封/排水节点并整改",
+                "points": 1
+              },
+              {
+                "id": "p4-4",
+                "description": "（4）同等条件水密复验及记录",
+                "points": 1
+              },
+              {
+                "id": "p5-1",
+                "description": "（5）隔离与记录",
+                "points": 1
+              },
+              {
+                "id": "p5-2",
+                "description": "（5）分析并确认处置方案",
+                "points": 1
+              },
+              {
+                "id": "p5-3",
+                "description": "（5）按方案实施",
+                "points": 1
+              },
+              {
+                "id": "p5-4",
+                "description": "（5）复验签认与台账关闭",
+                "points": 1
+              }
+            ],
+            "tolerance": "数值按题设精度；前问数值算错、后问方法正确且未重复计分时，保留对应步骤分。",
+            "equivalentMethods": [
+              "接受满足题设且证据充分的等效算法或处置表述。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "原创参考解答与分步评分。"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q34",
+          "number": 34,
+          "type": "response",
+          "prompt": "某档案馆进行地下室结构与外脚手架施工。项目作业卡规定：监测位移累计达到 18 mm 或单日增量达到 3 mm 时，停止该风险区作业、撤离并报告；脚手架验收应同时满足连墙件齐全、作业面封闭防护有效、卸料平台与架体独立。\nP1 点复测累计为 17.6 mm，单日增量 3.2 mm；P2 点累计 17.9 mm，单日增量 2.7 mm。巡查发现东立面少一组连墙件，平台有杆件搭接到架体，封闭防护已验查。班组提出只减少平台堆料，先保留使用。\n混凝土试验计划规定：A、B 两个结构区分别按每 100 m³ 或不足 100 m³ 取一组标准养护试件，次日另一次浇筑单独统计。A 区首日 175 m³，B 区首日 65 m³，A 区次日 35 m³。试验计划还要求每组记录区域、浇筑批次、取样人、养护方式与送检编号。\n项目另对两项措施进行优选：方案 X 预计窗口 10 小时、直接费 36 千元，可全程保持经核验的防护；方案 Y 预计窗口 8 小时、直接费 31 千元，但其中 1 小时没有等效防护。合同窗口最多 11 小时，任何时段不得失去经核验的防护。\n问题\n（1）分别判断 P1、P2 是否触发处理条件；写出 P1 的先期动作。\n（2）判断班组建议，并为现场验收列出须处理的具体问题和恢复使用条件。\n（3）算出各批标准养护组数和合计。若 A 区次日试件被贴为首日，应该怎样处理？\n（4）选定可实施方案，并判断若 Y 能增加全时段防护、但因此改为 12 小时，是否有资格进入费用比较。\n（5）列出本次停、改、复用的时间链证据，使另一名管理人员可以复核决策。",
+          "score": 30,
+          "answerRows": 27,
+          "solution": "（1）P1 的日增 3.2≥3，触发；P2 两项均低于门槛，不触发并继续监测。P1 立即停工、撤离、隔离、报告。\n（2）不同意。补回经方案核验的连墙件；撤除平台与架体的搭接、确认平台独立；防护、连接、平台三项复验签认后恢复。限载不能代替构造条件。\n（3）A 首日 2、B 首日 1、A 次日 1，共 4 组。暂停使用该证据，查取样及送检原始记录；无法恢复可信关联时按确认方案补证，不猜测归属。\n（4）当前只有 X 同时满足防护和时间；Y 未满足持续防护。加防护后 12＞11，仍不满足时间约束，不能因节省费用入选。\n（5）保留带时间的原始预警数据；停工撤离与告警记录；架体和平台问题的部位记录；确认的整改方案与签认；整改完成后监测及验收记录；授权复用时间。",
+          "explanation": "按分问列示依据、计算与处置步骤；采用题设的项目规则与合同约定。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-34",
+            "blockId": "constructor-1-architecture-mock-01-source-34",
+            "title": "案例 4：专项安全方案、作业放行、监测响应、试验计划",
+            "exact": "某档案馆进行地下室结构与外脚手架施工。项目作业卡规定：监测位移累计达到 18 mm 或单日增量达到 3 mm 时，停止该风险区作业、撤离并报告；脚手架验收应同时满足连墙件齐全、作业面封闭防护有效、卸料平台与架体独立。\nP1 点复测累计为 17.6 mm，单日增量 3.2 mm；P2 点累计 17.9 mm，单日增量 2.7 mm。巡查发现东立面少一组连墙件，平台有杆件搭接到架体，封闭防护已验查。班组提出只减少平台堆料，先保留使用。\n混凝土试验计划规定：A、B 两个结构区分别按每 100 m³ 或不足 100 m³ 取一组标准养护试件，次日另一次浇筑单独统计。A 区首日 175 m³，B 区首日 65 m³，A 区次日 35 m³。试验计划还要求每组记录区域、浇筑批次、取样人、养护方式与送检编号。\n项目另对两项措施进行优选：方案 X 预计窗口 10 小时、直接费 36 千元，可全程保持经核验的防护；方案 Y 预计窗口 8 小时、直接费 31 千元，但其中 1 小时没有等效防护。合同窗口最多 11 小时，任何时段不得失去经核验的防护。\n问题\n（1）分别判断 P1、P2 是否触发处理条件；写出 P1 的先期动作。\n（2）判断班组建议，并为现场验收列出须处理的具体问题和恢复使用条件。\n（3）算出各批标准养护组数和合计。若 A 区次日试件被贴为首日，应该怎样处理？\n（4）选定可实施方案，并判断若 Y 能增加全时段防护、但因此改为 12 小时，是否有资格进入费用比较。\n（5）列出本次停、改、复用的时间链证据，使另一名管理人员可以复核决策。"
+          },
+          "chapter": "专项安全方案",
+          "tags": [
+            "专项安全方案",
+            "作业放行",
+            "监测响应",
+            "试验计划"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "专项安全方案",
+              "作业放行",
+              "监测响应",
+              "试验计划"
+            ],
+            "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+            "estimatedMinutes": 51
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1-1",
+                "description": "（1）P1 按日增量触发、P2 不触发，各 2 分",
+                "points": 4
+              },
+              {
+                "id": "p1-2",
+                "description": "（1）先停工撤离且隔离报告",
+                "points": 2
+              },
+              {
+                "id": "p2-1",
+                "description": "（2）否定只减堆料继续作业",
+                "points": 1
+              },
+              {
+                "id": "p2-2",
+                "description": "（2）连墙件处置",
+                "points": 2
+              },
+              {
+                "id": "p2-3",
+                "description": "（2）平台独立处置",
+                "points": 2
+              },
+              {
+                "id": "p2-4",
+                "description": "（2）三项复验签认后使用",
+                "points": 1
+              },
+              {
+                "id": "p3-1",
+                "description": "（3）三批组数各 1 分",
+                "points": 3
+              },
+              {
+                "id": "p3-2",
+                "description": "（3）合计 4 组",
+                "points": 1
+              },
+              {
+                "id": "p3-3",
+                "description": "（3）隔离证据并核查；不能追溯则按确认方案补证",
+                "points": 2
+              },
+              {
+                "id": "p4-1",
+                "description": "（4）正确选 X，列出 10≤11",
+                "points": 2
+              },
+              {
+                "id": "p4-2",
+                "description": "（4）Y 原方案违反防护",
+                "points": 2
+              },
+              {
+                "id": "p4-3",
+                "description": "（4）改造后违反窗口，不能进入比较",
+                "points": 2
+              },
+              {
+                "id": "p5-1",
+                "description": "（5）时间化原始监测",
+                "points": 1
+              },
+              {
+                "id": "p5-2",
+                "description": "（5）停工与报告记录",
+                "points": 1
+              },
+              {
+                "id": "p5-3",
+                "description": "（5）问题部位记录",
+                "points": 1
+              },
+              {
+                "id": "p5-4",
+                "description": "（5）批准处置与完成记录",
+                "points": 1
+              },
+              {
+                "id": "p5-5",
+                "description": "（5）监测/验收复核",
+                "points": 1
+              },
+              {
+                "id": "p5-6",
+                "description": "（5）复用签认与时间",
+                "points": 1
+              }
+            ],
+            "tolerance": "数值按题设精度；前问数值算错、后问方法正确且未重复计分时，保留对应步骤分。",
+            "equivalentMethods": [
+              "接受满足题设且证据充分的等效算法或处置表述。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "原创参考解答与分步评分。"
+          }
+        },
+        {
+          "id": "constructor-1-architecture-mock-01-q35",
+          "number": 35,
+          "type": "response",
+          "prompt": "某文化中心招标文件把范围、工期及主要质量指标列为实质性条款，规定投标报价须含设备试运行。投标文件甲写明试运行另行报价；乙保留招标范围及要求，随投标文件提交不改变承诺的备选施工组织。合同约定专业分包须经审批，承包方须具有相应资质，不得再分包所承专业工程的非劳务部分。拟选分包单位提交了资质，另表示拟把专业工程的设备安装整体交由第三方。\n结算以万元计。原分部分项费 4 800 万元，新增独立分项 1 500 m²，确认综合单价 360 元/m²。措施费按分部分项费的 8%重算。合同专业工程暂估价 200 万元，以确认的 176 万元替代；总包服务费按该确认价的 4%重算。另有暂列款 80 万元，仅以独立、已签认的 46 万元变更计入。该 46 万元不含新增分项或专业工程金额，不计入措施费取费基数。其他费用为零。规费按上述各项小计的 1.5%计，税额按含规费的税前金额计 9%。\n付款记录：已付预付款 430 万元和互不重叠的净进度款 5 080 万元；结算时均全额抵扣、不扣保留金。自行施工费用控制表另给定税前计价 4 800 万元、目标利润为该金额的 8%。仅最终金额四舍五入保留两位小数。\n问题\n（1）判定甲、乙是否就题中所述条款作出实质性响应；给出审查所用资料。\n（2）拟选的分包安排能否直接获批？说明审查意见和改正要求。\n（3）分项计算分部分项费、措施费和其他项目费。\n（4）计算含税结算总价与还应支付的金额。\n（5）计算自行施工目标成本。给出两份能避免专业工程或变更重复入账的独立对账证据。",
+          "score": 30,
+          "answerRows": 27,
+          "solution": "（1）甲未响应，试运行另行报价改变了须纳入的范围；乙备选方案不改变承诺，所述事项符合。逐条比对招标条款、报价组成、投标承诺及备选说明。\n（2）不能直接批准；具备资质仅满足一项前提，整体交第三方涉及禁止的非劳务部分再分包。按合同审批分包范围和单位，并由该单位履行专业工程，不得按所提方案转交。\n（3）新增分项 1 500×360÷10 000＝54 万元；分部分项费 4 854 万元，措施费 388.32 万元。其他为 176＋176×4%＋46＝229.04 万元。\n（4）小计 5 471.36 万元，计规费 82.0704 万元，税前 5 553.4304 万元，含税总价 6 053.24 万元；扣 430 和 5 080 万元后还应付 543.24 万元。\n（5）目标成本 4 800×(1－8%)＝4 416 万元。用专业工程确认结算单对照暂估价替换及服务费，用变更台账与签证计量分项对照 46 是否已计入其他费用。",
+          "explanation": "按分问列示依据、计算与处置步骤；采用题设的项目规则与合同约定。",
+          "source": {
+            "materialId": "constructor-1-architecture-mock-01-source-35",
+            "blockId": "constructor-1-architecture-mock-01-source-35",
+            "title": "案例 5：招标响应、专业分包、合同计价与付款",
+            "exact": "某文化中心招标文件把范围、工期及主要质量指标列为实质性条款，规定投标报价须含设备试运行。投标文件甲写明试运行另行报价；乙保留招标范围及要求，随投标文件提交不改变承诺的备选施工组织。合同约定专业分包须经审批，承包方须具有相应资质，不得再分包所承专业工程的非劳务部分。拟选分包单位提交了资质，另表示拟把专业工程的设备安装整体交由第三方。\n结算以万元计。原分部分项费 4 800 万元，新增独立分项 1 500 m²，确认综合单价 360 元/m²。措施费按分部分项费的 8%重算。合同专业工程暂估价 200 万元，以确认的 176 万元替代；总包服务费按该确认价的 4%重算。另有暂列款 80 万元，仅以独立、已签认的 46 万元变更计入。该 46 万元不含新增分项或专业工程金额，不计入措施费取费基数。其他费用为零。规费按上述各项小计的 1.5%计，税额按含规费的税前金额计 9%。\n付款记录：已付预付款 430 万元和互不重叠的净进度款 5 080 万元；结算时均全额抵扣、不扣保留金。自行施工费用控制表另给定税前计价 4 800 万元、目标利润为该金额的 8%。仅最终金额四舍五入保留两位小数。\n问题\n（1）判定甲、乙是否就题中所述条款作出实质性响应；给出审查所用资料。\n（2）拟选的分包安排能否直接获批？说明审查意见和改正要求。\n（3）分项计算分部分项费、措施费和其他项目费。\n（4）计算含税结算总价与还应支付的金额。\n（5）计算自行施工目标成本。给出两份能避免专业工程或变更重复入账的独立对账证据。"
+          },
+          "chapter": "招标响应",
+          "tags": [
+            "招标响应",
+            "专业分包",
+            "合同计价与付款"
+          ],
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "assessment": {
+            "knowledgePoints": [
+              "招标响应",
+              "专业分包",
+              "合同计价与付款"
+            ],
+            "ability": "从项目情境中提取条件、论证工程判断并形成可检查记录",
+            "estimatedMinutes": 52
+          },
+          "responseConstraints": {
+            "answerStyle": "blank"
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1-1",
+                "description": "（1）甲判定与原因各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p1-2",
+                "description": "（1）乙判定与原因各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p1-3",
+                "description": "（1）给出招标条款及报价/承诺的对照证据",
+                "points": 2
+              },
+              {
+                "id": "p2-1",
+                "description": "（2）不能直接批准",
+                "points": 1
+              },
+              {
+                "id": "p2-2",
+                "description": "（2）识别非劳务部分再分包",
+                "points": 2
+              },
+              {
+                "id": "p2-3",
+                "description": "（2）审查资质、范围、取得审批各 1 分",
+                "points": 3
+              },
+              {
+                "id": "p3-1",
+                "description": "（3）新增 54、分部分项 4 854 各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p3-2",
+                "description": "（3）措施费 388.32",
+                "points": 1
+              },
+              {
+                "id": "p3-3",
+                "description": "（3）专业工程替换为 176、服务费 7.04、批准变更 46 各 1 分",
+                "points": 3
+              },
+              {
+                "id": "p4-1",
+                "description": "（4）小计正确",
+                "points": 1
+              },
+              {
+                "id": "p4-2",
+                "description": "（4）规费方法与税前金额正确",
+                "points": 1
+              },
+              {
+                "id": "p4-3",
+                "description": "（4）含税计法与结果各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p4-4",
+                "description": "（4）抵扣项目与尾款各 1 分",
+                "points": 2
+              },
+              {
+                "id": "p5-1",
+                "description": "（5）利润率基数与扣减方法",
+                "points": 2
+              },
+              {
+                "id": "p5-2",
+                "description": "（5）目标成本数值与万元单位",
+                "points": 2
+              },
+              {
+                "id": "p5-3",
+                "description": "（5）两份对账证据及各自用途，各 1 分",
+                "points": 2
+              }
+            ],
+            "tolerance": "数值按题设精度；前问数值算错、后问方法正确且未重复计分时，保留对应步骤分。",
+            "equivalentMethods": [
+              "接受满足题设且证据充分的等效算法或处置表述。"
+            ]
+          },
+          "answerProvenance": {
+            "kind": "independent",
+            "notes": "原创参考解答与分步评分。"
+          }
+        }
+      ]
+    }
+  ]
+}

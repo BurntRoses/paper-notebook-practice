@@ -11,6 +11,7 @@
   "mode": "mock",
   "style": {
     "preset": "humanities",
+    "templateId": "shenlun",
     "sealed": true,
     "templateOverrides": {
       "marginTopMm": 23,

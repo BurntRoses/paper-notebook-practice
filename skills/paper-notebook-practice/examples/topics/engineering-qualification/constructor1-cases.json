@@ -3,7 +3,7 @@
   "practiceId": "constructor-1-cases-01",
   "notebookId": "constructor-1-qualification-notebook",
   "notebookRevision": 1,
-  "title": "一级建造师　建筑工程管理与实务",
+  "title": "一级建造师　建筑工程管理与实务·案例专项",
   "subject": "建筑工程管理与实务",
   "level": "工程职业资格",
   "durationMinutes": 150,
@@ -16,7 +16,7 @@
   "presentation": {
     "sourceLayout": true,
     "titleLines": [
-      "一级建造师　建筑工程管理与实务",
+      "一级建造师　建筑工程管理与实务·案例专项",
       "建筑工程·施工组织与项目控制"
     ],
     "titleLineSizesPt": [
@@ -43,7 +43,7 @@
     "answerSpace": "none",
     "answerCard": {
       "template": "school",
-      "title": "一级建造师　建筑工程管理与实务答题卡"
+      "title": "一建建筑实务案例专项·答题卡"
     },
     "runningHeader": {
       "skipFirst": true,
@@ -64,8 +64,8 @@
     "blueprint": [
       {
         "id": "constructor-1-cases-01-q1",
-        "knowledge": "网络计划、关键线路转换、工期费用优化",
-        "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+        "knowledge": "网络计划、总时差、关键线路转换、工期索赔、工期费用优化",
+        "ability": "从紧前关系重建网络，独立重排两种延误，依据合同判定顺延，并比较压缩方案。",
         "types": [
           "response"
         ],
@@ -73,7 +73,8 @@
         "points": 20,
         "estimatedMinutes": 27,
         "sourceIds": [
-          "constructor-1-cases-01-q1-source"
+          "constructor-1-cases-01-q1-source",
+          "mohurd-2024-constructor1-syllabus"
         ]
       },
       {
@@ -143,20 +144,20 @@
       "id": "constructor-1-cases-01-q1-source",
       "kind": "reference",
       "title": "案例1条件与任务",
-      "text": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。",
+      "text": "某教学楼改造工程的网络计划见下列工作清单。各关系均为完成—开始、零时距，资源充足，A为唯一开工工作，F完成即为项目完工。\n工作｜紧前工作｜持续时间（天）\nA｜—｜2；B｜A｜4；C｜A｜6；\nD｜B｜4；E｜C｜3；F｜D、E｜3。\n（1）求计划工期、关键线路及B、D的总时差。\n（2）分别独立考察两种事件：①业主设计变更使C延长2天；②承包人设备故障使D延长2天。合同约定只有业主原因造成的实际完工延误可获工期顺延。分别求完工时间、顺延天数，并指出事件②后的关键线路。\n（3）回到基准计划。B、C、F最多分别压缩1、2、2天，每压缩1天分别增费5、8、12千元，其他工作不可压缩。按整天压缩，求12天完工的最低增费方案；说明仅压缩C两天为何不足。",
       "blocks": [
         {
           "id": "constructor-1-cases-01-q1-source-block",
           "title": "案例1条件与任务",
-          "text": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。"
+          "text": "某教学楼改造工程的网络计划见下列工作清单。各关系均为完成—开始、零时距，资源充足，A为唯一开工工作，F完成即为项目完工。\n工作｜紧前工作｜持续时间（天）\nA｜—｜2；B｜A｜4；C｜A｜6；\nD｜B｜4；E｜C｜3；F｜D、E｜3。\n（1）求计划工期、关键线路及B、D的总时差。\n（2）分别独立考察两种事件：①业主设计变更使C延长2天；②承包人设备故障使D延长2天。合同约定只有业主原因造成的实际完工延误可获工期顺延。分别求完工时间、顺延天数，并指出事件②后的关键线路。\n（3）回到基准计划。B、C、F最多分别压缩1、2、2天，每压缩1天分别增费5、8、12千元，其他工作不可压缩。按整天压缩，求12天完工的最低增费方案；说明仅压缩C两天为何不足。"
         }
       ],
       "rights": "题文与作者概述MIT；链接的第三方文件保留其原许可。",
-      "sha256": "413ef9ad985438287d211dcccd91a0c0a0f388be327aaccb15117f14857d1a37",
+      "sha256": "eace03fa808d5482386cc4fcd3260c403370a8cbcbed3d7d35db93f07b1f760a",
       "provenance": {
         "kind": "authored",
         "sourceType": "author",
-        "accessedAt": "2026-11-15"
+        "accessedAt": "2026-11-19"
       }
     },
     {
@@ -238,6 +239,29 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       }
+    },
+    {
+      "id": "mohurd-2024-constructor1-syllabus",
+      "kind": "reference",
+      "title": "一级建造师执业资格考试大纲（2024年版）· 建筑工程",
+      "text": "1.流水施工计划横道图\n2.网络计划技术",
+      "blocks": [
+        {
+          "id": "mohurd-2024-constructor1-progress",
+          "title": "施工进度管理",
+          "text": "1.流水施工计划横道图\n2.网络计划技术",
+          "page": 31
+        }
+      ],
+      "url": "https://www.mohurd.gov.cn/file/2023/20231208/190542aa-c295-429c-ac24-e3d2622c06be.pdf",
+      "rights": "只收录定位所需条目；原文件按来源使用。",
+      "provenance": {
+        "kind": "web",
+        "publisher": "住房和城乡建设部",
+        "version": "2024年版",
+        "sourceType": "official",
+        "accessedAt": "2026-11-19"
+      }
     }
   ],
   "sections": [
@@ -252,35 +276,39 @@
           "id": "constructor-1-cases-01-q1",
           "number": 1,
           "type": "response",
-          "prompt": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。",
+          "prompt": "某教学楼改造工程的网络计划见下列工作清单。各关系均为完成—开始、零时距，资源充足，A为唯一开工工作，F完成即为项目完工。\n工作｜紧前工作｜持续时间（天）\nA｜—｜2；B｜A｜4；C｜A｜6；\nD｜B｜4；E｜C｜3；F｜D、E｜3。\n（1）求计划工期、关键线路及B、D的总时差。\n（2）分别独立考察两种事件：①业主设计变更使C延长2天；②承包人设备故障使D延长2天。合同约定只有业主原因造成的实际完工延误可获工期顺延。分别求完工时间、顺延天数，并指出事件②后的关键线路。\n（3）回到基准计划。B、C、F最多分别压缩1、2、2天，每压缩1天分别增费5、8、12千元，其他工作不可压缩。按整天压缩，求12天完工的最低增费方案；说明仅压缩C两天为何不足。",
           "score": 20,
-          "solution": "正常工期16天，关键线路A—C—D—E；B总时差1天。最低成本为C压缩1天、D压缩1天，增量20千元，工期14天。只把C从5天压到3天，B的4天成为控制支路，总工期仍为15天。",
-          "explanation": "A完成时刻3，B/C最早完成7/8，D完成14，E完成16。压缩1天C后B/C同为4天；再压缩C不缩短汇合时刻。枚举B∈{0,1}、C/D∈{0,1,2}的全部18个方案，满足14天的最小费用为20千元。",
+          "solution": "（1）14天；关键线路A—C—E—F；B、D总时差均为1天。\n（2）①第16天完工，顺延2天；②第15天完工，关键线路变为A—B—D—F，因承包人原因，顺延0天。\n（3）C与F各压缩1天，12天完工，增费20千元。只压缩C两天时B—D支路接管，仍需13天。",
+          "explanation": "两个基准路径分别是2+4+4+3=13天与2+6+3+3=14天，B、D所在路径距控制路径差1天，故各有1天总时差，两者不是可累计的2天。C延长2天后关键路径为16天；D延长2天后B—D路径为15天，净延期1天，但不满足合同的顺延条件。若F不压缩，须同时压缩B1天、C2天，最低21千元；若F压缩1天，须再压缩C至少1天，最低20千元；若F压缩2天，至少24千元。分三类比较证明最优。",
           "source": {
             "materialId": "constructor-1-cases-01-q1-source",
             "blockId": "constructor-1-cases-01-q1-source-block",
             "title": "案例1条件与任务",
-            "exact": "某项目采用双代号逻辑的等价工作关系：A工期3天；B、C均在A后开始，分别4天、5天；D在B、C均完成后开始，6天；E在D后开始，2天。各关系均为完成—开始、零时距，资源充足。\n（1）计算总工期、关键线路和B的总时差。\n（2）需将工期缩短到14天。B最多压缩1天、每压缩1天增加5千元；C最多压缩2天、单价8千元/天；D最多压缩2天、单价12千元/天；A、E不可压缩。压缩量按整天计，求最低增量成本方案，并说明为何只压缩C两天不能达到目标。"
+            "exact": "某教学楼改造工程的网络计划见下列工作清单。各关系均为完成—开始、零时距，资源充足，A为唯一开工工作，F完成即为项目完工。\n工作｜紧前工作｜持续时间（天）\nA｜—｜2；B｜A｜4；C｜A｜6；\nD｜B｜4；E｜C｜3；F｜D、E｜3。\n（1）求计划工期、关键线路及B、D的总时差。\n（2）分别独立考察两种事件：①业主设计变更使C延长2天；②承包人设备故障使D延长2天。合同约定只有业主原因造成的实际完工延误可获工期顺延。分别求完工时间、顺延天数，并指出事件②后的关键线路。\n（3）回到基准计划。B、C、F最多分别压缩1、2、2天，每压缩1天分别增费5、8、12千元，其他工作不可压缩。按整天压缩，求12天完工的最低增费方案；说明仅压缩C两天为何不足。"
           },
           "chapter": "网络计划",
           "tags": [
             "网络计划",
+            "总时差",
             "关键线路转换",
+            "工期索赔",
             "工期费用优化"
           ],
-          "difficulty": "medium",
+          "difficulty": "hard",
           "origin": {
             "kind": "generated"
           },
           "assessment": {
             "knowledgePoints": [
               "网络计划",
+              "总时差",
               "关键线路转换",
+              "工期索赔",
               "工期费用优化"
             ],
-            "ability": "依据工程条件建立模型、计算、校核并作出可解释的工程决策",
+            "ability": "从紧前关系重建网络，独立重排两种延误，依据合同判定顺延，并比较压缩方案。",
             "estimatedMinutes": 27,
-            "difficultyRationale": "含多个相互关联的分问，须保留单位、边界条件和工程判定依据。"
+            "difficultyRationale": "命题估计：需要区分计划时差、实际延期、合同顺延，并比较关键线路切换前后的方案。"
           },
           "answerRows": 25,
           "responseConstraints": {
@@ -290,23 +318,33 @@
             "criteria": [
               {
                 "id": "r1",
-                "description": "计算正常工期16天及关键线路",
-                "points": 5
+                "description": "计划工期14天与关键线路均正确",
+                "points": 3
               },
               {
                 "id": "r2",
-                "description": "B总时差1天",
+                "description": "B、D总时差各1天",
                 "points": 3
               },
               {
                 "id": "r3",
-                "description": "识别支路转换并给出C1+D1方案",
-                "points": 6
+                "description": "业主变更重算16天，按合同顺延2天",
+                "points": 3
               },
               {
                 "id": "r4",
-                "description": "比较可行组合，证明20千元为最低成本",
-                "points": 6
+                "description": "设备故障重算15天，识别变更后的关键线路及顺延0天",
+                "points": 4
+              },
+              {
+                "id": "r5",
+                "description": "给出C1+F1、工期12天及增费20千元",
+                "points": 3
+              },
+              {
+                "id": "r6",
+                "description": "证明最低费用，并解释仅压缩C时B—D路径控制",
+                "points": 4
               }
             ],
             "tolerance": "数值结果允许末位四舍五入差异；模型、单位与判定条件须正确。",
@@ -316,29 +354,36 @@
           },
           "answerProvenance": {
             "kind": "independent",
-            "notes": "作者独立推导并以所列程序或逐项材料对照复核；不是官方参考答案。"
+            "notes": "独立手算并用前推后推与整数枚举复算，按本练习自编量表评分。"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-19",
             "checks": [
               {
                 "method": "independent-computation",
-                "detail": "constructor1-network-normal: independent Python calculation = 16; expected = 16; pass.",
+                "detail": "前推后推得基准14天、B/D总时差各1天；两种独立扰动得16/15天，后者关键路径A—B—D—F。",
                 "result": "pass"
               },
               {
                 "method": "independent-computation",
-                "detail": "constructor1-crash-mincost: independent Python calculation = 20; expected = 20; pass.",
-                "result": "pass"
-              },
-              {
-                "method": "independent-computation",
-                "detail": "constructor1-crash-duration: independent Python calculation = 14; expected = 14; pass.",
+                "detail": "枚举18种整数压缩组合；12天目标最优解为C1、F1，20千元；仅C2为13天。",
                 "result": "pass"
               }
             ]
-          }
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "mohurd-2024-constructor1-syllabus",
+                "blockId": "mohurd-2024-constructor1-progress",
+                "title": "住建部《一级建造师执业资格考试大纲》（2024年版）",
+                "page": 31,
+                "exact": "1.流水施工计划横道图\n2.网络计划技术"
+              }
+            }
+          ]
         },
         {
           "id": "constructor-1-cases-01-q2",
@@ -738,7 +783,7 @@
   ],
   "exam": {
     "specificationId": "constructor-1-project-blueprint",
-    "scope": "full",
+    "scope": "subset",
     "scoreScale": "项目案例卷面分",
     "specification": {
       "id": "constructor-1-project-blueprint",

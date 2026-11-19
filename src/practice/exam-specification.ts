@@ -1,5 +1,6 @@
 import registry from './exam-specifications.json';
 import type {PracticeDocument,PracticeQuestionType,PracticeError} from './model';
+import {isSiteAudio} from './model';
 
 export interface ExamPartSpecification {id:string;title:string;label?:string;count:number;questionType:PracticeQuestionType|'mixed';questionTypes?:PracticeQuestionType[];totalScore:number;pointsPerQuestion?:number;questionScores?:number[];sourceQuestionNumbers?:string[];displayStart?:number;format?:string;timingGroupId?:string;stimulusKind?:string;groups?:{count:number;optionsCount?:number}[];[key:string]:unknown}
 export interface ExamSpecification {id:string;name:string;subject:string;level:string;durationMinutes:number|null;practiceDurationMinutes?:number;totalScore:number;scoreScale:string;sections:ExamPartSpecification[];sourcePracticeIds?:string[];templateIds?:string[];timingGroups?:{id:string;title:string;minutes:number;sectionIds?:string[]}[];[key:string]:unknown}
@@ -31,7 +32,7 @@ export function examPartId(paper:PracticeDocument,sectionIndex:number,spec:ExamS
  return undefined;
 }
 /** Completeness is a content property, not a title suffix or a total-question-count shortcut. */
-export function validateExamStructure(paper:PracticeDocument,spec=inferExamSpecification(paper),requireAudio=true):PracticeError[]{
+export function validateExamStructure(paper:PracticeDocument,spec=inferExamSpecification(paper),requireAudio=true,siteAudio=false):PracticeError[]{
  const errors:PracticeError[]=[],add=(path:string,message:string)=>errors.push({path,message});if(!spec){add('/exam/specificationId','An authoritative examination specification is required for a full paper');return errors;}
  if(paper.sections.reduce((n,s)=>n+s.questions.length,0)!==examQuestionCount(spec))add('/exam/count',`${spec.name} requires ${examQuestionCount(spec)} answerable tasks`);
  if(Math.abs(paper.totalScore-spec.totalScore)>1e-7)add('/exam/totalScore',`Expected ${spec.totalScore} (${spec.scoreScale})`);
@@ -48,7 +49,7 @@ export function validateExamStructure(paper:PracticeDocument,spec=inferExamSpeci
   if(part.questionScores&&questions.some((q,i)=>Math.abs(q.score-part.questionScores![i])>1e-7))add(path+'/questionScores','Question scores differ from the source allocation');
   if(part.displayStart!==undefined&&questions.some((q,i)=>(part.sourceQuestionNumbers?String(q.number):printedQuestionNumber(q.displayNumber??q.number))!==String(part.displayStart!+i)))add(path+'/numbering',`Retain examination numbers ${part.displayStart}–${part.displayStart+part.count-1}`);
   if(part.groups){const expected=part.groups.map(g=>g.count).sort((a,b)=>a-b),actual=groups.map(g=>g.questions.length).sort((a,b)=>a-b);if(JSON.stringify(expected)!==JSON.stringify(actual))add(path+'/groups',`${part.title} requires whole question groups of ${expected.join(', ')} tasks`);}
-  if(requireAudio&&part.stimulusKind==='audio')for(const group of groups)if(!group.stimulus?.audio?.dataUrl)add('/sections/'+group.id+'/stimulus/audio','A complete listening paper requires embedded local audio for every listening group');
+  if(requireAudio&&part.stimulusKind==='audio')for(const group of groups){const audio=group.stimulus?.audio;if(!audio?.dataUrl&&!(siteAudio&&audio&&isSiteAudio(audio)))add('/sections/'+group.id+'/stimulus/audio','A complete listening paper requires embedded local audio for every listening group');}
  }
  return errors;
 }

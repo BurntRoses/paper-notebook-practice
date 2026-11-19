@@ -35,8 +35,7 @@
     "footerTemplate": "英语（二）　第 {page} 页",
     "answerSpace": "none",
     "answerCard": {
-      "template": "university",
-      "candidateDigits": 15
+      "template": "ruled"
     },
     "questionScores": "show",
     "sectionDetails": true,
@@ -956,12 +955,12 @@
       "id": "reading-b-passage",
       "title": "Section II · Part B材料",
       "kind": "reference",
-      "text": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up.",
+      "text": "A neighbourhood repair group wanted to offer a weekly workshop as soon as it found a room. Nadia Ruiz, who helps community groups plan services, asked the organisers to list the people who could reliably attend rather than everyone who had signed up. That left only two dates in the first month. Ruiz thought the limited schedule was useful: it gave visitors a dependable service and let volunteers find out how long each job really took before adding dates.\n\nGetting a service started does not mean that the first visit is easy. Martin Cole described entering a community workshop where he could see the equipment but did not know whether to touch it or who could help. He now asks groups to tell first-time visitors what to bring and to make one person visibly responsible for welcoming them. Once visitors have started a task, they can learn the remaining rules as needed.\n\nPriya Shah agrees that a named contact can help, but she uses lists for a different purpose. At one workshop the same volunteer held the key, contacted visitors, checked the equipment and stayed to lock up. The work was invisible to other members until that person took a holiday. Shah recommends making routine duties visible and reviewing who can take each one; the intention is to enable a handover, not to keep jobs assigned to the same people indefinitely.\n\nWhat if people stop coming after the first month? Attendance records establish that someone left, says Evan Brooks, but they cannot separate a bus timetable change from dissatisfaction with the workshop. He recommends asking former participants quietly about what made it difficult to return. A difficulty mentioned repeatedly may merit a practical change. Other departures may have nothing to do with the service, so a lower attendance figure is not, on its own, a verdict on quality.\n\nGrace Liu works with groups after they have been running for a term. Some organisers, she says, write an account of decisions before speaking to the volunteers who carry them out. Liu prefers a review in which those volunteers compare the plan with what happens in practice. A meeting is worthwhile if it produces one manageable change and identifies someone to check its effect. An expanding list of general promises is rarely as helpful.",
       "blocks": [
         {
           "id": "reading-b-passage-block",
           "title": "Section II · Part B材料",
-          "text": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up."
+          "text": "A neighbourhood repair group wanted to offer a weekly workshop as soon as it found a room. Nadia Ruiz, who helps community groups plan services, asked the organisers to list the people who could reliably attend rather than everyone who had signed up. That left only two dates in the first month. Ruiz thought the limited schedule was useful: it gave visitors a dependable service and let volunteers find out how long each job really took before adding dates.\n\nGetting a service started does not mean that the first visit is easy. Martin Cole described entering a community workshop where he could see the equipment but did not know whether to touch it or who could help. He now asks groups to tell first-time visitors what to bring and to make one person visibly responsible for welcoming them. Once visitors have started a task, they can learn the remaining rules as needed.\n\nPriya Shah agrees that a named contact can help, but she uses lists for a different purpose. At one workshop the same volunteer held the key, contacted visitors, checked the equipment and stayed to lock up. The work was invisible to other members until that person took a holiday. Shah recommends making routine duties visible and reviewing who can take each one; the intention is to enable a handover, not to keep jobs assigned to the same people indefinitely.\n\nWhat if people stop coming after the first month? Attendance records establish that someone left, says Evan Brooks, but they cannot separate a bus timetable change from dissatisfaction with the workshop. He recommends asking former participants quietly about what made it difficult to return. A difficulty mentioned repeatedly may merit a practical change. Other departures may have nothing to do with the service, so a lower attendance figure is not, on its own, a verdict on quality.\n\nGrace Liu works with groups after they have been running for a term. Some organisers, she says, write an account of decisions before speaking to the volunteers who carry them out. Liu prefers a review in which those volunteers compare the plan with what happens in practice. A meeting is worthwhile if it produces one manageable change and identifies someone to check its effect. An expanding list of general promises is rarely as helpful."
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -970,18 +969,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "3a26a6235be9af36179e2f7eecae759827ab9c7cf57c0de6c8df0bc90b748d88"
+      "sha256": "a6f65984b7f379da9a00f4bb4a6c2a496c84ef136306c2aefa43e2bb9fa8e3cc"
     },
     {
       "id": "postgraduate-english2-01-q41-source",
       "title": "原创命题记录 41",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 1.",
+      "text": "Nadia Ruiz",
       "blocks": [
         {
           "id": "postgraduate-english2-01-q41-source-block",
           "title": "原创命题记录 41",
-          "text": "Select the heading for Paragraph 1."
+          "text": "Nadia Ruiz"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -990,18 +989,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "5876a9bd6531ef0b8d363375a123be0770553091a94c0ec62c331a3683119a9e"
+      "sha256": "d4c1d70a557d632064e548d3d6f03c84c186b6e632496eb322a81634e6c66e6e"
     },
     {
       "id": "postgraduate-english2-01-q42-source",
       "title": "原创命题记录 42",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 2.",
+      "text": "Martin Cole",
       "blocks": [
         {
           "id": "postgraduate-english2-01-q42-source-block",
           "title": "原创命题记录 42",
-          "text": "Select the heading for Paragraph 2."
+          "text": "Martin Cole"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1010,18 +1009,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "b7ff3a7797071f243a2d62229f5e51741eda1c112243ccc793a5fada12b97ffb"
+      "sha256": "0543ce376e079759f954d4b155f7c042726d7970b714420666e5166b49912d1b"
     },
     {
       "id": "postgraduate-english2-01-q43-source",
       "title": "原创命题记录 43",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 3.",
+      "text": "Priya Shah",
       "blocks": [
         {
           "id": "postgraduate-english2-01-q43-source-block",
           "title": "原创命题记录 43",
-          "text": "Select the heading for Paragraph 3."
+          "text": "Priya Shah"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1030,18 +1029,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "213dcb6b2d7119596cc4c3a1a4521d6943e92a2cbca43011c21b8c177b333115"
+      "sha256": "89255238148ce971b74de939f03e1f0710c9df27d2fa70c2b1331091d4d73c70"
     },
     {
       "id": "postgraduate-english2-01-q44-source",
       "title": "原创命题记录 44",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 4.",
+      "text": "Evan Brooks",
       "blocks": [
         {
           "id": "postgraduate-english2-01-q44-source-block",
           "title": "原创命题记录 44",
-          "text": "Select the heading for Paragraph 4."
+          "text": "Evan Brooks"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1050,18 +1049,18 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "135ce242e778d06c61450f7a076630f818f327e3fe4aa731eeaf7d6e61fe8eb4"
+      "sha256": "a8a76a37bc115c1307c3990513642b67a6d3745219af0aadc44e666953037de6"
     },
     {
       "id": "postgraduate-english2-01-q45-source",
       "title": "原创命题记录 45",
       "kind": "question-bank",
-      "text": "Select the heading for Paragraph 5.",
+      "text": "Grace Liu",
       "blocks": [
         {
           "id": "postgraduate-english2-01-q45-source-block",
           "title": "原创命题记录 45",
-          "text": "Select the heading for Paragraph 5."
+          "text": "Grace Liu"
         }
       ],
       "rights": "项目原创概述与题文：MIT；所链接外部资料保留其原许可。",
@@ -1070,7 +1069,7 @@
         "sourceType": "author",
         "accessedAt": "2026-11-15"
       },
-      "sha256": "8e92cc636b5c5647ebb5c45f792e4cf5c31fd33ca6fe677d3249e1f6c0964822"
+      "sha256": "55a4ce72d7845ad6b4cfcfea3db209d544065bb440286c018d4e016a4150231e"
     },
     {
       "id": "translation-passage",
@@ -1159,7 +1158,7 @@
       "title": "Section I · Use of English",
       "examPartId": "cloze",
       "instructions": "Choose the best word or phrase for each numbered blank.",
-      "score": 10.0,
+      "score": 10,
       "questions": [
         {
           "id": "postgraduate-english2-01-q1",
@@ -4168,22 +4167,22 @@
       "id": "reading-b",
       "title": "Section II · Part B",
       "examPartId": "reading-b",
-      "instructions": "Choose the most suitable heading for each paragraph. There are two extra headings.",
+      "instructions": "Read the article about volunteer-run services. Match each person (41–45) with the statement (A–G) that best reflects the advice attributed to them. Two statements are not used.",
       "score": 10,
       "questions": [
         {
           "id": "postgraduate-english2-01-q41",
           "number": 41,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 1.",
+          "prompt": "Nadia Ruiz",
           "score": 2,
-          "solution": "B",
-          "explanation": "本段围绕“Start with an achievable commitment”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "E",
+          "explanation": "Ruiz 保留有把握做到的两场，之后再依据经验扩展；C 则要等能开满才开始。",
           "source": {
             "materialId": "postgraduate-english2-01-q41-source",
             "blockId": "postgraduate-english2-01-q41-source-block",
             "title": "原创命题记录 41",
-            "exact": "Select the heading for Paragraph 1."
+            "exact": "Nadia Ruiz"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
@@ -4199,17 +4198,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "Ruiz 保留有把握做到的两场，之后再依据经验扩展；C 则要等能开满才开始。",
                 "result": "pass"
               }
             ]
@@ -4217,31 +4216,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Ask why people stop attending"
+              "text": "Make routine duties visible so that someone else can take them over."
             },
             {
               "id": "B",
-              "text": "Start with an achievable commitment"
+              "text": "Reduce the practical uncertainties a person faces on a first visit."
             },
             {
               "id": "C",
-              "text": "Review the plan with the people doing the work"
+              "text": "Postpone the first service until enough people can deliver the full schedule."
             },
             {
               "id": "D",
-              "text": "Make the first visit easy"
+              "text": "Treat a drop in recorded attendance as evidence of a decline in service quality."
             },
             {
               "id": "E",
-              "text": "Share responsibilities visibly"
+              "text": "Start with a schedule the group can keep and expand when experience supports it."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "Involve the people who do the work in choosing a change they can review."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "Ask people who left what happened rather than inferring their motives from the count."
             }
           ],
           "supportingSources": [
@@ -4251,7 +4250,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up."
+                "exact": "That left only two dates in the first month."
               }
             }
           ]
@@ -4260,21 +4259,21 @@
           "id": "postgraduate-english2-01-q42",
           "number": 42,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 2.",
+          "prompt": "Martin Cole",
           "score": 2,
-          "solution": "D",
-          "explanation": "本段围绕“Make the first visit easy”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "B",
+          "explanation": "Cole 解决首次到场的不确定性；A 也涉及明确人选，却把迎新误换成常规任务交接。",
           "source": {
             "materialId": "postgraduate-english2-01-q42-source",
             "blockId": "postgraduate-english2-01-q42-source-block",
             "title": "原创命题记录 42",
-            "exact": "Select the heading for Paragraph 2."
+            "exact": "Martin Cole"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
             "阅读理解·段落主旨"
           ],
-          "difficulty": "medium",
+          "difficulty": "easy",
           "origin": {
             "kind": "generated"
           },
@@ -4284,17 +4283,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "Cole 解决首次到场的不确定性；A 也涉及明确人选，却把迎新误换成常规任务交接。",
                 "result": "pass"
               }
             ]
@@ -4302,31 +4301,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Ask why people stop attending"
+              "text": "Make routine duties visible so that someone else can take them over."
             },
             {
               "id": "B",
-              "text": "Start with an achievable commitment"
+              "text": "Reduce the practical uncertainties a person faces on a first visit."
             },
             {
               "id": "C",
-              "text": "Review the plan with the people doing the work"
+              "text": "Postpone the first service until enough people can deliver the full schedule."
             },
             {
               "id": "D",
-              "text": "Make the first visit easy"
+              "text": "Treat a drop in recorded attendance as evidence of a decline in service quality."
             },
             {
               "id": "E",
-              "text": "Share responsibilities visibly"
+              "text": "Start with a schedule the group can keep and expand when experience supports it."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "Involve the people who do the work in choosing a change they can review."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "Ask people who left what happened rather than inferring their motives from the count."
             }
           ],
           "supportingSources": [
@@ -4336,7 +4335,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up."
+                "exact": "He now asks groups to tell first-time visitors what to bring and to make one person visibly responsible for welcoming them."
               }
             }
           ]
@@ -4345,21 +4344,21 @@
           "id": "postgraduate-english2-01-q43",
           "number": 43,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 3.",
+          "prompt": "Priya Shah",
           "score": 2,
-          "solution": "E",
-          "explanation": "本段围绕“Share responsibilities visibly”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "A",
+          "explanation": "Shah 承认迎新联系人有用，但其建议针对任务集中和交接；B 把她同意的细节当成了自己的主张。",
           "source": {
             "materialId": "postgraduate-english2-01-q43-source",
             "blockId": "postgraduate-english2-01-q43-source-block",
             "title": "原创命题记录 43",
-            "exact": "Select the heading for Paragraph 3."
+            "exact": "Priya Shah"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
             "阅读理解·段落主旨"
           ],
-          "difficulty": "medium",
+          "difficulty": "hard",
           "origin": {
             "kind": "generated"
           },
@@ -4369,17 +4368,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "辨认说话人让步与自己的主张"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "Shah 承认迎新联系人有用，但其建议针对任务集中和交接；B 把她同意的细节当成了自己的主张。",
                 "result": "pass"
               }
             ]
@@ -4387,31 +4386,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Ask why people stop attending"
+              "text": "Make routine duties visible so that someone else can take them over."
             },
             {
               "id": "B",
-              "text": "Start with an achievable commitment"
+              "text": "Reduce the practical uncertainties a person faces on a first visit."
             },
             {
               "id": "C",
-              "text": "Review the plan with the people doing the work"
+              "text": "Postpone the first service until enough people can deliver the full schedule."
             },
             {
               "id": "D",
-              "text": "Make the first visit easy"
+              "text": "Treat a drop in recorded attendance as evidence of a decline in service quality."
             },
             {
               "id": "E",
-              "text": "Share responsibilities visibly"
+              "text": "Start with a schedule the group can keep and expand when experience supports it."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "Involve the people who do the work in choosing a change they can review."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "Ask people who left what happened rather than inferring their motives from the count."
             }
           ],
           "supportingSources": [
@@ -4421,7 +4420,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up."
+                "exact": "Shah recommends making routine duties visible and reviewing who can take each one; the intention is to enable a handover, not to keep jobs assigned to the same people indefinitely."
               }
             }
           ]
@@ -4430,15 +4429,15 @@
           "id": "postgraduate-english2-01-q44",
           "number": 44,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 4.",
+          "prompt": "Evan Brooks",
           "score": 2,
-          "solution": "A",
-          "explanation": "本段围绕“Ask why people stop attending”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "G",
+          "explanation": "Brooks 需要离开者给出的因果线索；D 将出席记录的变化直接等同于服务质量变化。",
           "source": {
             "materialId": "postgraduate-english2-01-q44-source",
             "blockId": "postgraduate-english2-01-q44-source-block",
             "title": "原创命题记录 44",
-            "exact": "Select the heading for Paragraph 4."
+            "exact": "Evan Brooks"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
@@ -4454,17 +4453,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "Brooks 需要离开者给出的因果线索；D 将出席记录的变化直接等同于服务质量变化。",
                 "result": "pass"
               }
             ]
@@ -4472,31 +4471,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Ask why people stop attending"
+              "text": "Make routine duties visible so that someone else can take them over."
             },
             {
               "id": "B",
-              "text": "Start with an achievable commitment"
+              "text": "Reduce the practical uncertainties a person faces on a first visit."
             },
             {
               "id": "C",
-              "text": "Review the plan with the people doing the work"
+              "text": "Postpone the first service until enough people can deliver the full schedule."
             },
             {
               "id": "D",
-              "text": "Make the first visit easy"
+              "text": "Treat a drop in recorded attendance as evidence of a decline in service quality."
             },
             {
               "id": "E",
-              "text": "Share responsibilities visibly"
+              "text": "Start with a schedule the group can keep and expand when experience supports it."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "Involve the people who do the work in choosing a change they can review."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "Ask people who left what happened rather than inferring their motives from the count."
             }
           ],
           "supportingSources": [
@@ -4506,7 +4505,7 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up."
+                "exact": "He recommends asking former participants quietly about what made it difficult to return."
               }
             }
           ]
@@ -4515,15 +4514,15 @@
           "id": "postgraduate-english2-01-q45",
           "number": 45,
           "type": "choice",
-          "prompt": "Select the heading for Paragraph 5.",
+          "prompt": "Grace Liu",
           "score": 2,
-          "solution": "C",
-          "explanation": "本段围绕“Review the plan with the people doing the work”展开。主题句、例子和结尾保持该中心；其他标题或属于别段、或与本段主张冲突。",
+          "solution": "F",
+          "explanation": "Liu 让一线志愿者对照计划和执行，选一项能落实并复查的改动；A 针对任务交接，不包含这种复查。",
           "source": {
             "materialId": "postgraduate-english2-01-q45-source",
             "blockId": "postgraduate-english2-01-q45-source-block",
             "title": "原创命题记录 45",
-            "exact": "Select the heading for Paragraph 5."
+            "exact": "Grace Liu"
           },
           "chapter": "阅读理解·段落主旨",
           "tags": [
@@ -4539,17 +4538,17 @@
           },
           "assessment": {
             "knowledgePoints": [
-              "阅读理解·段落主旨"
+              "阅读理解·人物观点与陈述匹配"
             ],
-            "ability": "应用与推理"
+            "ability": "确定话语对象并匹配同义陈述"
           },
           "verification": {
             "status": "verified",
-            "reviewedAt": "2026-11-15",
+            "reviewedAt": "2026-11-18",
             "checks": [
               {
-                "method": "independent-solution",
-                "detail": "逐段概括中心并与七个标题排他匹配；五个正确标题各用一次，两干扰项均与材料相反。",
+                "method": "independent-evidence-match",
+                "detail": "Liu 让一线志愿者对照计划和执行，选一项能落实并复查的改动；A 针对任务交接，不包含这种复查。",
                 "result": "pass"
               }
             ]
@@ -4557,31 +4556,31 @@
           "options": [
             {
               "id": "A",
-              "text": "Ask why people stop attending"
+              "text": "Make routine duties visible so that someone else can take them over."
             },
             {
               "id": "B",
-              "text": "Start with an achievable commitment"
+              "text": "Reduce the practical uncertainties a person faces on a first visit."
             },
             {
               "id": "C",
-              "text": "Review the plan with the people doing the work"
+              "text": "Postpone the first service until enough people can deliver the full schedule."
             },
             {
               "id": "D",
-              "text": "Make the first visit easy"
+              "text": "Treat a drop in recorded attendance as evidence of a decline in service quality."
             },
             {
               "id": "E",
-              "text": "Share responsibilities visibly"
+              "text": "Start with a schedule the group can keep and expand when experience supports it."
             },
             {
               "id": "F",
-              "text": "Replace every record with personal impressions"
+              "text": "Involve the people who do the work in choosing a change they can review."
             },
             {
               "id": "G",
-              "text": "Adopt the same solution in every situation"
+              "text": "Ask people who left what happened rather than inferring their motives from the count."
             }
           ],
           "supportingSources": [
@@ -4591,21 +4590,52 @@
                 "materialId": "reading-b-passage",
                 "blockId": "reading-b-passage-block",
                 "title": "Section II · Part B材料",
-                "exact": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up."
+                "exact": "A meeting is worthwhile if it produces one manageable change and identifies someone to check its effect."
               }
             }
           ]
         }
       ],
       "stimulus": {
-        "text": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up.",
+        "text": "A neighbourhood repair group wanted to offer a weekly workshop as soon as it found a room. Nadia Ruiz, who helps community groups plan services, asked the organisers to list the people who could reliably attend rather than everyone who had signed up. That left only two dates in the first month. Ruiz thought the limited schedule was useful: it gave visitors a dependable service and let volunteers find out how long each job really took before adding dates.\n\nGetting a service started does not mean that the first visit is easy. Martin Cole described entering a community workshop where he could see the equipment but did not know whether to touch it or who could help. He now asks groups to tell first-time visitors what to bring and to make one person visibly responsible for welcoming them. Once visitors have started a task, they can learn the remaining rules as needed.\n\nPriya Shah agrees that a named contact can help, but she uses lists for a different purpose. At one workshop the same volunteer held the key, contacted visitors, checked the equipment and stayed to lock up. The work was invisible to other members until that person took a holiday. Shah recommends making routine duties visible and reviewing who can take each one; the intention is to enable a handover, not to keep jobs assigned to the same people indefinitely.\n\nWhat if people stop coming after the first month? Attendance records establish that someone left, says Evan Brooks, but they cannot separate a bus timetable change from dissatisfaction with the workshop. He recommends asking former participants quietly about what made it difficult to return. A difficulty mentioned repeatedly may merit a practical change. Other departures may have nothing to do with the service, so a lower attendance figure is not, on its own, a verdict on quality.\n\nGrace Liu works with groups after they have been running for a term. Some organisers, she says, write an account of decisions before speaking to the volunteers who carry them out. Liu prefers a review in which those volunteers compare the plan with what happens in practice. A meeting is worthwhile if it produces one manageable change and identifies someone to check its effect. An expanding list of general promises is rarely as helpful.",
         "source": {
           "materialId": "reading-b-passage",
           "blockId": "reading-b-passage-block",
           "title": "Section II · Part B材料",
-          "exact": "Paragraph 1\nA volunteer group can lose energy by promising more than its members can deliver. Before announcing a weekly service, organisers should check how many people can attend reliably and what happens when someone is absent. Starting with a smaller commitment is not necessarily a lack of ambition. It creates a schedule that visitors can trust and gives volunteers time to learn. Once the group understands the work involved, it can expand on the basis of experience rather than enthusiasm alone. A clear promise that is kept is often more valuable than a broad promise that repeatedly changes.\n\nParagraph 2\nNew participants may hesitate because they do not know where to go, what to bring, or whether they need experience. A short welcome message can answer these practical questions before they become reasons to stay away. On the day, a named person should be available to greet visitors and explain the next step. The aim is not to describe every rule at once. It is to provide enough guidance for someone to begin comfortably, while making clear where further help can be found. Small uncertainties can otherwise create a surprisingly large barrier to joining.\n\nParagraph 3\nWhen duties are understood only by long-standing members, a group becomes dependent on a few people. Writing down regular tasks makes it easier for others to contribute and helps newcomers see work that might otherwise go unnoticed. A simple list can identify who opens the room, checks equipment, contacts participants, and clears the space afterward. It should be discussed and updated rather than treated as permanent. Clear responsibilities reduce confusion without preventing members from helping one another. They also make it easier to notice when one person's contribution has become too large to sustain.\n\nParagraph 4\nAttendance records show who returns, but they rarely explain why someone leaves. A brief, respectful conversation can reveal problems with timing, transport, accessibility, or the activity itself. Organisers should avoid assuming that silence means satisfaction or that every departure indicates failure. People's circumstances change. Still, a repeated practical difficulty is useful evidence for improving the service. Offering a way to comment privately may help people speak more openly. The purpose is to understand patterns and consider feasible changes, rather than to persuade every former participant to defend the decision to leave.\n\nParagraph 5\nA regular review gives volunteers a chance to compare the original plan with daily experience. They can discuss which tasks take longer than expected, which resources are missing, and what participants seem to value. Keeping a short record of decisions prevents the same question from being debated repeatedly without resolution. A review should end with a manageable change or a clear reason to continue the present arrangement. It should also name who will check the result. Learning becomes part of the group's routine when discussion leads to an action that someone can follow up."
+          "exact": "A neighbourhood repair group wanted to offer a weekly workshop as soon as it found a room. Nadia Ruiz, who helps community groups plan services, asked the organisers to list the people who could reliably attend rather than everyone who had signed up. That left only two dates in the first month. Ruiz thought the limited schedule was useful: it gave visitors a dependable service and let volunteers find out how long each job really took before adding dates.\n\nGetting a service started does not mean that the first visit is easy. Martin Cole described entering a community workshop where he could see the equipment but did not know whether to touch it or who could help. He now asks groups to tell first-time visitors what to bring and to make one person visibly responsible for welcoming them. Once visitors have started a task, they can learn the remaining rules as needed.\n\nPriya Shah agrees that a named contact can help, but she uses lists for a different purpose. At one workshop the same volunteer held the key, contacted visitors, checked the equipment and stayed to lock up. The work was invisible to other members until that person took a holiday. Shah recommends making routine duties visible and reviewing who can take each one; the intention is to enable a handover, not to keep jobs assigned to the same people indefinitely.\n\nWhat if people stop coming after the first month? Attendance records establish that someone left, says Evan Brooks, but they cannot separate a bus timetable change from dissatisfaction with the workshop. He recommends asking former participants quietly about what made it difficult to return. A difficulty mentioned repeatedly may merit a practical change. Other departures may have nothing to do with the service, so a lower attendance figure is not, on its own, a verdict on quality.\n\nGrace Liu works with groups after they have been running for a term. Some organisers, she says, write an account of decisions before speaking to the volunteers who carry them out. Liu prefers a review in which those volunteers compare the plan with what happens in practice. A meeting is worthwhile if it produces one manageable change and identifies someone to check its effect. An expanding list of general promises is rarely as helpful."
         }
-      }
+      },
+      "format": "statement-matching",
+      "sharedOptions": [
+        {
+          "id": "A",
+          "text": "Make routine duties visible so that someone else can take them over."
+        },
+        {
+          "id": "B",
+          "text": "Reduce the practical uncertainties a person faces on a first visit."
+        },
+        {
+          "id": "C",
+          "text": "Postpone the first service until enough people can deliver the full schedule."
+        },
+        {
+          "id": "D",
+          "text": "Treat a drop in recorded attendance as evidence of a decline in service quality."
+        },
+        {
+          "id": "E",
+          "text": "Start with a schedule the group can keep and expand when experience supports it."
+        },
+        {
+          "id": "F",
+          "text": "Involve the people who do the work in choosing a change they can review."
+        },
+        {
+          "id": "G",
+          "text": "Ask people who left what happened rather than inferring their motives from the count."
+        }
+      ]
     },
     {
       "id": "translation",

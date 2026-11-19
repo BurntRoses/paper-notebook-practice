@@ -5066,16 +5066,426 @@
       ]
     }
   },
+  "primary-math": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "gallery-ks2-arithmetic-practice",
+    "notebookId": "gallery-ks2-arithmetic-source",
+    "notebookRevision": 1,
+    "title": "Key Stage 2 Mathematics · Arithmetic Practice",
+    "subject": "Mathematics",
+    "level": "小学高年级 · England KS2",
+    "durationMinutes": 12,
+    "totalScore": 12,
+    "mode": "mock",
+    "style": {"preset": "standard", "templateId": "primary-math", "lineHeight": 1.55, "templateOverrides": {"fontFamily": "times"}},
+    "presentation": {
+      "language": "en",
+      "headerStyle": "generated",
+      "sourceLayout": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "titleLines": ["Key Stage 2 Mathematics", "Arithmetic Practice"],
+      "titleLineSizesPt": [18, 14],
+      "titleFont": "times",
+      "sectionDetails": false,
+      "candidateFields": ["Name: __________________________"],
+      "footerTemplate": "Page {page} of {pages}",
+      "metaLines": ["Time: 12 minutes     Total: 12 marks"],
+      "notices": ["Do not use a calculator. Give exact answers. Show your working for questions 9 and 10."],
+      "answerSpace": "ruled",
+      "answerCard": {"template": "boxed"},
+      "questionScores": "show",
+      "printColor": "grayscale"
+    },
+    "materials": [
+      {
+        "id": "ks2-practice-material",
+        "title": "Paper Notebook original KS2 arithmetic practice · MIT",
+        "kind": "reference",
+        "rights": "MIT · Original questions. The 2024 STA arithmetic paper and mark scheme serve as benchmarks only.",
+        "provenance": {"kind": "authored", "sourceType": "author"},
+        "text": "Calculate $784+57$.\nCalculate $864\\div8$.\nCalculate $12.608+4.79$.\nCalculate $6.73\\div100$.\nCalculate $84-48\\div6$.\nCalculate $\\frac56-\\frac7{18}$.\nCalculate $\\frac58\\div4$.\nFind 37% of 700.\nCalculate $426\\times38$. Show your working.\nCalculate $3444\\div42$. Show your working.",
+        "blocks": [
+          {"id": "ks2-block-1", "text": "Calculate $784+57$."},
+          {"id": "ks2-block-2", "text": "Calculate $864\\div8$."},
+          {"id": "ks2-block-3", "text": "Calculate $12.608+4.79$."},
+          {"id": "ks2-block-4", "text": "Calculate $6.73\\div100$."},
+          {"id": "ks2-block-5", "text": "Calculate $84-48\\div6$."},
+          {"id": "ks2-block-6", "text": "Calculate $\\frac56-\\frac7{18}$."},
+          {"id": "ks2-block-7", "text": "Calculate $\\frac58\\div4$."},
+          {"id": "ks2-block-8", "text": "Find 37% of 700."},
+          {"id": "ks2-block-9", "text": "Calculate $426\\times38$. Show your working."},
+          {"id": "ks2-block-10", "text": "Calculate $3444\\div42$. Show your working."}
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "ks2-integers", "title": "Whole numbers", "instructions": "Write your answers in the spaces provided.", "displayLabel": "", "headingFont": "times", "score": 2,
+        "questions": [
+          {
+            "id": "ks2-q1", "number": 1, "type": "blank", "difficulty": "easy", "chapter": "Whole numbers", "score": 1,
+            "prompt": "Calculate $784+57$.", "solution": ["841"], "explanation": "Add 60 and subtract 3: $844-3=841$.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-1", "exact": "Calculate $784+57$."}
+          },
+          {
+            "id": "ks2-q2", "number": 2, "type": "blank", "difficulty": "easy", "chapter": "Whole numbers", "score": 1,
+            "prompt": "Calculate $864\\div8$.", "solution": ["108"], "explanation": "Split 864 into 800 and 64; the two quotients are 100 and 8.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-2", "exact": "Calculate $864\\div8$."}
+          }
+        ]
+      },
+      {
+        "id": "ks2-place-value", "title": "Place value and order of operations", "instructions": "Write exact answers.", "displayLabel": "", "headingFont": "times", "score": 3,
+        "questions": [
+          {
+            "id": "ks2-q3", "number": 3, "type": "blank", "difficulty": "medium", "chapter": "Decimal place value", "score": 1,
+            "prompt": "Calculate $12.608+4.79$.", "solution": ["17.398"], "explanation": "Align the decimal points: $12.608+4.790=17.398$.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-3", "exact": "Calculate $12.608+4.79$."}
+          },
+          {
+            "id": "ks2-q4", "number": 4, "type": "blank", "difficulty": "easy", "chapter": "Decimal place value", "score": 1,
+            "prompt": "Calculate $6.73\\div100$.", "solution": ["0.0673"], "explanation": "Each digit moves two place-value positions to the right. Check: $0.0673\\times100=6.73$.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-4", "exact": "Calculate $6.73\\div100$."}
+          },
+          {
+            "id": "ks2-q5", "number": 5, "type": "blank", "difficulty": "medium", "chapter": "Order of operations", "score": 1,
+            "prompt": "Calculate $84-48\\div6$.", "solution": ["76"], "explanation": "Divide first: $48\\div6=8$. Then $84-8=76$.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-5", "exact": "Calculate $84-48\\div6$."}
+          }
+        ]
+      },
+      {
+        "id": "ks2-fractions", "title": "Fractions and percentages", "instructions": "Equivalent exact fractions are accepted.", "displayLabel": "", "headingFont": "times", "score": 3, "breakBefore": true,
+        "questions": [
+          {
+            "id": "ks2-q6", "number": 6, "type": "response", "difficulty": "medium", "chapter": "Fraction subtraction", "score": 1, "answerBoxMm": 10,
+            "prompt": "Calculate $\\frac56-\\frac7{18}$.", "solution": "$\\frac49$", "explanation": "$\\frac{15}{18}-\\frac7{18}=\\frac8{18}=\\frac49$. Accept any exact equivalent.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-6", "exact": "Calculate $\\frac56-\\frac7{18}$."}
+          },
+          {
+            "id": "ks2-q7", "number": 7, "type": "response", "difficulty": "medium", "chapter": "Fraction division", "score": 1, "answerBoxMm": 10,
+            "prompt": "Calculate $\\frac58\\div4$.", "solution": "$\\frac5{32}$", "explanation": "One eighth shared into four equal parts gives one thirty-second per part; five eighths give five thirty-seconds. Accept any exact equivalent, including 0.15625.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-7", "exact": "Calculate $\\frac58\\div4$."}
+          },
+          {
+            "id": "ks2-q8", "number": 8, "type": "blank", "difficulty": "medium", "chapter": "Percentage of a quantity", "score": 1,
+            "prompt": "Find 37% of 700.", "solution": ["259"], "explanation": "1% of 700 is 7, so $37\\times7=259$. The answer is a quantity, not 259%.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-8", "exact": "Find 37% of 700."}
+          }
+        ]
+      },
+      {
+        "id": "ks2-written-methods", "title": "Written calculations", "instructions": "Show your working and give a final answer.", "displayLabel": "", "headingFont": "times", "score": 4,
+        "questions": [
+          {
+            "id": "ks2-q9", "number": 9, "type": "response", "difficulty": "hard", "chapter": "Long multiplication", "score": 2, "answerBoxMm": 28,
+            "prompt": "Calculate $426\\times38$. Show your working.", "solution": "16,188", "explanation": "Multiply by 8 to get 3,408, and by 30 to get 12,780. Adding gives 16,188. Check by $426\\times(40-2)=17,040-852=16,188$.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-9", "exact": "Calculate $426\\times38$. Show your working."},
+            "rubric": {"criteria": [
+              {"id": "route-or-result", "description": "Correct answer, or complete long multiplication with at most one arithmetic slip and correct place values.", "points": 1},
+              {"id": "correct-result", "description": "Correct answer earns the second mark.", "points": 1}
+            ]}
+          },
+          {
+            "id": "ks2-q10", "number": 10, "type": "response", "difficulty": "hard", "chapter": "Formal division", "score": 2, "answerBoxMm": 28,
+            "prompt": "Calculate $3444\\div42$. Show your working.", "solution": "82", "explanation": "Subtract $80\\times42=3360$ from 3444. The remaining 84 is $2\\times42$; the quotient is $80+2=82$, with no remainder.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
+            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-10", "exact": "Calculate $3444\\div42$. Show your working."},
+            "rubric": {"criteria": [
+              {"id": "route-or-result", "description": "Correct answer, or complete formal division with a final quotient, correct place values and at most one arithmetic slip.", "points": 1},
+              {"id": "correct-result", "description": "Correct answer earns the second mark.", "points": 1}
+            ]}
+          }
+        ]
+      }
+    ],
+    "generation": {
+      "intent": "generate", "ocrReviewed": true, "unresolved": [],
+      "notes": "Subset of the arithmetic domain only. Original 12-minute practice benchmarked against England 2024 KS2 Paper 1 and its mark scheme. Reasoning papers and remaining arithmetic skills are outside the scope. Difficulty and timing are design estimates."
+    },
+    "authoring": {
+      "examName": "Key Stage 2 mathematics · Arithmetic practice subset",
+      "knowledge": "Whole numbers, decimal place value, operation order, fractions, percentages and written algorithms",
+      "difficulty": "balanced",
+      "blueprint": [
+        {"id": "whole-number-fluency", "knowledge": "Whole numbers", "ability": "Calculate with carrying or regrouping.", "types": ["blank"], "count": 2, "points": 2, "estimatedMinutes": 2},
+        {"id": "place-value-and-order", "knowledge": "Decimals and operation order", "ability": "Align place values, scale by 100 and use the correct order of operations.", "types": ["blank"], "count": 3, "points": 3, "estimatedMinutes": 3},
+        {"id": "fraction-percent", "knowledge": "Fractions and percentages", "ability": "Find a common denominator, divide a fraction and calculate a percentage of a quantity.", "types": ["response", "blank"], "count": 3, "points": 3, "estimatedMinutes": 3},
+        {"id": "formal-methods", "knowledge": "Long multiplication and division", "ability": "Show a complete method including correct place value.", "types": ["response"], "count": 2, "points": 4, "estimatedMinutes": 4}
+      ]
+    }
+  },
+  "primary-chinese": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "gallery-p6-chinese-reading-note",
+    "notebookId": "gallery-p6-chinese-source",
+    "notebookRevision": 1,
+    "title": "小學六年級中國語文 · 閱讀與便條練習",
+    "subject": "中國語文",
+    "level": "小學六年級 · 香港",
+    "durationMinutes": 20,
+    "totalScore": 10,
+    "mode": "mock",
+    "style": {"preset": "standard", "templateId": "primary-chinese", "lineHeight": 1.35, "templateOverrides": {"marginTopMm": 19, "marginBottomMm": 20, "marginLeftMm": 19, "marginRightMm": 19}},
+    "presentation": {
+      "language": "zh", "headerStyle": "generated", "sourceLayout": true, "sealStyle": "none", "scoreTable": false,
+      "titleLines": ["小學六年級中國語文", "閱讀與便條練習"], "titleLineSizesPt": [18, 14], "titleFont": "hei",
+      "candidateFields": ["姓名：__________________________　班別：__________"], "metaLines": ["建議作答時間：20 分鐘　滿分：10 分"],
+      "notices": [], "footerTemplate": "第 {page} 頁，共 {pages} 頁", "sectionDetails": false, "answerSpace": "ruled",
+      "answerCard": {"template": "boxed"}, "questionScores": "show", "questionGapMm": 1.2, "printColor": "grayscale"
+    },
+    "materials": [
+      {
+        "id": "p6-chi-source", "title": "原創語篇及情境 · MIT", "kind": "reference",
+        "rights": "MIT。閱讀文章和便條情境為原創；香港考試及評核局資料只供校準。",
+        "provenance": {"kind": "authored", "sourceType": "author"},
+        "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。\n\n五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。",
+        "blocks": [
+          {"id": "paper-bridge", "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。"},
+          {"id": "note-cues", "text": "五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。"}
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "p6-chi-reading", "title": "一、閱讀", "instructions": "讀下面的文章。選擇題每題只選一項；短答題寫在答題格內。", "displayLabel": "", "score": 6,
+        "stimulus": {
+          "title": "一座紙橋",
+          "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。",
+          "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "我第一次在圖書館帶領低年級同學做紙橋。"}
+        },
+        "questions": [
+          {
+            "id": "p6-chi-q1", "number": 1, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "閱讀 · 開篇信息", "optionColumns": 2,
+            "prompt": "第一段以甚麼為重點？",
+            "options": [{"id": "A", "text": "圖書館怎樣準備材料"}, {"id": "B", "text": "「我」為何緊張"}, {"id": "C", "text": "紙橋怎樣托住橡皮"}, {"id": "D", "text": "低年級同學怎樣分工"}],
+            "solution": "B", "explanation": "初次帶領活動、在家三次失敗及手心出汗都指向「我」的緊張。材料整齊只是對照。",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。"}
+          },
+          {
+            "id": "p6-chi-q2", "number": 2, "type": "response", "score": 1, "difficulty": "easy", "chapter": "閱讀 · 按語境取詞", "answerRows": 1, "answerBoxMm": 10,
+            "prompt": "從第一段抄出一個四字詞語，形容剪刀和紙擺放得怎樣。",
+            "solution": "整整齊齊", "explanation": "寫出「整整齊齊」或「整整齐齐」得 1 分。",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "桌上的材料擺得整整齊齊"}
+          },
+          {
+            "id": "p6-chi-q3", "number": 3, "type": "response", "score": 1, "difficulty": "easy", "chapter": "閱讀 · 關鍵細節", "answerRows": 1, "answerBoxMm": 10,
+            "prompt": "阿朗把紙橋的兩端做成甚麼形狀？",
+            "solution": "三角形。", "explanation": "答「三角形」或意思相同的說法得 1 分；只答「折了兩端」未說明形狀，不得分。",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "他把兩端折成三角形。"}
+          },
+          {
+            "id": "p6-chi-q4", "number": 4, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "閱讀 · 推斷行動原因", "optionColumns": 2,
+            "prompt": "第二段中，「我」為甚麼沒有叫阿朗照自己的方法做？",
+            "options": [{"id": "A", "text": "其他同學正要圍過來"}, {"id": "B", "text": "阿朗已照着「我」的方法做"}, {"id": "C", "text": "「我」想讓阿朗先把紙疊厚"}, {"id": "D", "text": "「我」看見阿朗的方法有效"}],
+            "solution": "D", "explanation": "阿朗的橋托住三塊橡皮後，「我」先不要求他改用自己的做法，反而請他示範。其他同學圍過來在後。",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範"}
+          },
+          {
+            "id": "p6-chi-q5", "number": 5, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "閱讀 · 字詞表達效果", "optionColumns": 2,
+            "prompt": "「紙橋竟托住了三塊橡皮」中的「竟」表達「我」怎樣的感受？",
+            "options": [{"id": "A", "text": "意外，沒有料到它能承重"}, {"id": "B", "text": "不滿，認為它應托住更多"}, {"id": "C", "text": "安心，結果與預計相同"}, {"id": "D", "text": "為難，不知道怎麼數橡皮"}],
+            "solution": "A", "explanation": "「竟」提示結果出乎意料，並與前面三次失敗形成對照。",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "紙橋竟托住了三塊橡皮。"}
+          },
+          {
+            "id": "p6-chi-q6", "number": 6, "type": "choice", "score": 1, "difficulty": "hard", "chapter": "閱讀 · 統整主旨", "optionColumns": 2,
+            "prompt": "哪一項最能概括全文的主要意思？",
+            "options": [{"id": "A", "text": "比較紙橋的承重能力，需要反覆試驗。"}, {"id": "B", "text": "帶領同學做活動前，應該先多練習。"}, {"id": "C", "text": "帶領活動的人也能向參加者學習。"}, {"id": "D", "text": "展示成果能鼓勵同學參加活動。"}],
+            "solution": "C", "explanation": "「我」從想糾正阿朗，變成邀請他示範，最後還把他的折法記在自己的筆記裏。試驗、準備與展示都只能解釋個別段落。",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。"}
+          }
+        ]
+      },
+      {
+        "id": "p6-chi-note", "title": "二、實用寫作", "instructions": "按情境寫一則便條。", "displayLabel": "", "score": 4, "breakBefore": true,
+        "questions": [
+          {
+            "id": "p6-chi-q7", "number": 7, "type": "response", "score": 4, "difficulty": "hard", "chapter": "實用寫作 · 便條", "answerRows": 9,
+            "prompt": "五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。",
+            "solution": "梁老師：\n　　今天午息，我把圖書館的一盒彩色紙弄濕了，對不起。我已把濕紙和乾紙分開，明天會帶一盒彩色紙來補回。\n學生　陳樂\n五月十二日",
+            "explanation": "本練習以 0–4 分記錄，並非官方等級換算。內容、格式和語氣按下列整體判分；格式三要素為上款、署名和日期／時間。不把單個不礙理解的錯字當成格式或內容缺漏。",
+            "rubric": {"criteria": [
+              {"id": "note-band", "points": 4, "description": "4 分：交代彩紙弄濕、可行補救與歉意三項，稱謂／署名／日期或時間齊全，語氣得體。3 分：三項齊全，但缺一項格式或用語欠妥。2 分：寫出兩項主要信息，格式至少有兩項；或寫出三項但格式只有一項。1 分：可辨為便條但未達前述要求。0 分：空白、只抄題或內容無關。"}
+            ], "equivalentMethods": ["接受合乎情況的補救，例如補回同量彩紙、詢問老師如何補領。規範簡化字不影響得分。"]},
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "note-cues", "exact": "說明出了甚麼事、你打算怎樣補救，並表示歉意。"}
+          }
+        ]
+      }
+    ],
+    "generation": {
+      "intent": "generate", "ocrReviewed": true, "unresolved": [],
+      "notes": "原創閱讀與便條練習，對照 2024 香港小六 6CR1 與 6CW1 的部分能力。不是官方整卷，未涵蓋長篇寫作、聆聽、視聽資訊與說話。"
+    },
+    "authoring": {
+      "examName": "香港小六中國語文 · 原創閱讀與便條專題", "knowledge": "敘事閱讀、語境取詞、推斷與主旨、便條信息與格式", "difficulty": "balanced",
+      "blueprint": [
+        {"id": "reading", "knowledge": "校園敘事", "ability": "按段定位信息、取詞、讀出人物行動與字詞效果，再統整主旨。", "types": ["choice", "response"], "count": 6, "points": 6, "estimatedMinutes": 12},
+        {"id": "note", "knowledge": "便條", "ability": "針對收件人有禮地交代事情、補救與歉意，使用完整便條格式。", "types": ["response"], "count": 1, "points": 4, "estimatedMinutes": 8}
+      ]
+    }
+  },
+  "primary-english": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "gallery-p6-english-reading-writing",
+    "notebookId": "gallery-p6-english-source",
+    "notebookRevision": 1,
+    "title": "Primary 6 English · Reading and Writing Practice",
+    "subject": "English Language",
+    "level": "小学六年级 · Hong Kong Primary 6",
+    "durationMinutes": 25,
+    "totalScore": 15,
+    "mode": "mock",
+    "style": {"preset": "standard", "templateId": "primary-english", "lineHeight": 1.45, "templateOverrides": {"fontFamily": "times"}},
+    "presentation": {
+      "language": "en", "headerStyle": "generated", "sourceLayout": true, "sealStyle": "none", "scoreTable": false,
+      "titleLines": ["Primary 6 English", "Reading and Writing Practice"], "titleLineSizesPt": [18, 14], "titleFont": "times",
+      "candidateFields": ["Name: __________________________"], "metaLines": ["Time: 25 minutes     Total: 15 marks"],
+      "notices": [],
+      "footerTemplate": "Page {page} of {pages}", "sectionDetails": false, "answerSpace": "ruled", "answerCard": {"template": "boxed"},
+      "questionScores": "show", "questionGapMm": 2, "printColor": "grayscale"
+    },
+    "materials": [
+      {
+        "id": "p6-english-material", "title": "Paper Notebook original P6 reading and writing materials · MIT", "kind": "reference",
+        "rights": "MIT · Original reading texts and writing cues. HKEAA materials are benchmarks only.",
+        "provenance": {"kind": "authored", "sourceType": "author"},
+        "text": "Kite Day\nMake a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book.\n\nAcross the Puddle\nNora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’\n\nAt the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?",
+        "blocks": [
+          {"id": "p6-notice", "text": "Make a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book."},
+          {"id": "p6-story", "text": "Nora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’"},
+          {"id": "p6-writing-cues", "text": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?"}
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "p6-reading-notice", "title": "Part A · Reading a notice", "instructions": "Read the notice. Choose one answer for each question.", "displayLabel": "", "headingFont": "times", "score": 4,
+        "stimulus": {
+          "title": "Kite Day",
+          "text": "Make a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book.",
+          "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Make a kite in the Art Room"}
+        },
+        "questions": [
+          {
+            "id": "p6-q1", "number": 1, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "Reading notices · locating details", "optionColumns": 2,
+            "prompt": "What should children bring to the morning session?",
+            "options": [{"id": "A", "text": "A finished kite"}, {"id": "B", "text": "A ruler"}, {"id": "C", "text": "Coloured paper"}, {"id": "D", "text": "Scissors"}],
+            "solution": "B", "explanation": "The notice says to bring a ruler. Scissors are lent and paper is given out. Children make the kite there.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Bring a ruler. We will lend you scissors and give you coloured paper."}
+          },
+          {
+            "id": "p6-q2", "number": 2, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "Reading notices · instructions", "optionColumns": 2,
+            "prompt": "How can a child book a place?",
+            "options": [{"id": "A", "text": "Sign up in the Art Room on 8 May."}, {"id": "B", "text": "Phone the Art Room by 6 May."}, {"id": "C", "text": "Go to the Sports Hall at 3 p.m."}, {"id": "D", "text": "Sign up at the library by 6 May."}],
+            "solution": "D", "explanation": "The last paragraph gives both the place and the deadline. The Sports Hall is the meeting point, not the booking desk.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Sign up at the library desk by Thursday 6 May."}
+          },
+          {
+            "id": "p6-q3", "number": 3, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading notices · linking conditions", "optionColumns": 2,
+            "prompt": "It rains on Saturday afternoon. Where and when should the children go for the display?",
+            "options": [{"id": "A", "text": "Sports Hall at 3 p.m."}, {"id": "B", "text": "School yard at 3 p.m."}, {"id": "C", "text": "Sports Hall at 10 a.m."}, {"id": "D", "text": "Art Room at 10 a.m."}],
+            "solution": "A", "explanation": "Rain changes the activity to an indoor display at the Sports Hall. ‘At the same time’ refers to 3 p.m., not the morning session.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Try your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display."}
+          },
+          {
+            "id": "p6-q4", "number": 4, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading notices · dictionary cues", "optionColumns": 2,
+            "prompt": "Which dictionary meaning of ‘left’ fits ‘if there are any places left’?",
+            "options": [{"id": "A", "text": "Opposite to right"}, {"id": "B", "text": "Went away from a place"}, {"id": "C", "text": "Still available to use"}, {"id": "D", "text": "Forgot to take something"}],
+            "solution": "C", "explanation": "The desk can tell you whether some of the twelve places are still available. The other meanings do not fit the booking context.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "There are only twelve places. Ask at the desk if there are any places left."}
+          }
+        ]
+      },
+      {
+        "id": "p6-reading-story", "title": "Part B · Reading a story", "instructions": "Read the story and answer Questions 5–8.", "displayLabel": "", "headingFont": "times", "score": 4, "breakBefore": true,
+        "stimulus": {
+          "title": "Across the Puddle",
+          "text": "Nora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’",
+          "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Nora carried a box of young plants towards the school garden."}
+        },
+        "questions": [
+          {
+            "id": "p6-q5", "number": 5, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "Reading stories · identifying the problem", "optionColumns": 2,
+            "prompt": "What stopped Nora on the path?",
+            "options": [{"id": "A", "text": "A locked gate"}, {"id": "B", "text": "A fallen board"}, {"id": "C", "text": "A wide puddle"}, {"id": "D", "text": "A heavy shower"}],
+            "solution": "C", "explanation": "The rain had already stopped. Water left across the path is what makes Nora put the box down.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Rain had stopped, but a wide puddle covered the path."}
+          },
+          {
+            "id": "p6-q6", "number": 6, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading stories · figurative language", "optionColumns": 2,
+            "prompt": "What does ‘Her heart was a drum’ tell us about Nora?",
+            "options": [{"id": "A", "text": "She was nervous."}, {"id": "B", "text": "She heard music."}, {"id": "C", "text": "She was angry."}, {"id": "D", "text": "She felt sleepy."}],
+            "solution": "A", "explanation": "A drum suggests loud or fast heartbeats. The feeling lasts until Nora reaches dry ground, which supports nervousness about crossing.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Her heart was a drum until both feet were on dry ground."}
+          },
+          {
+            "id": "p6-q7", "number": 7, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading stories · inferring purpose", "optionColumns": 2,
+            "prompt": "Why did Jay hold one end of the board?",
+            "options": [{"id": "A", "text": "To help lift the box"}, {"id": "B", "text": "To move the loose stone"}, {"id": "C", "text": "To return the board"}, {"id": "D", "text": "To keep the board steady"}],
+            "solution": "D", "explanation": "The loose stone showed that an unsteady surface was unsafe. Jay held the board flat during the crossing; he did not lift the box, move the stone or return the board at that moment.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Jay held one end flat while Nora walked across."}
+          },
+          {
+            "id": "p6-q8", "number": 8, "type": "choice", "score": 1, "difficulty": "hard", "chapter": "Reading stories · ordering events", "optionColumns": 2,
+            "prompt": "Put the events in order.\n1. Nora put the plants in the garden.\n2. Jay tried stepping on a stone.\n3. Nora called to Jay.\n4. Nora asked to borrow the board.",
+            "options": [{"id": "A", "text": "2 → 3 → 4 → 1"}, {"id": "B", "text": "3 → 2 → 4 → 1"}, {"id": "C", "text": "3 → 4 → 2 → 1"}, {"id": "D", "text": "3 → 2 → 1 → 4"}],
+            "solution": "B", "explanation": "Nora called Jay first. After Jay tested the stone, Nora asked for the board. She delivered the plants after crossing on it.",
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "She put the box down and called to Jay"}
+          }
+        ]
+      },
+      {
+        "id": "p6-guided-writing", "title": "Part C · Writing a story", "instructions": "Use the ideas below to write a story in about 80 words.", "displayLabel": "", "headingFont": "times", "score": 7, "breakBefore": true,
+        "questions": [
+          {
+            "id": "p6-q9", "number": 9, "type": "response", "score": 7, "difficulty": "hard", "chapter": "Writing · guided narrative", "answerRows": 11,
+            "prompt": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?",
+            "solution": "Mia opened her envelope as the teacher called her name. Her story cards were still on the desk where she had practised that morning. ‘Tell it to me first,’ whispered Ben. Mia remembered the beginning, so she took a breath and walked to the microphone. When she forgot a line, she described what the fox did next. The children laughed at the ending and clapped. Afterwards, Mia found the cards and gave Ben one as a thank-you note.",
+            "explanation": "An example, not a required plot. Score content and language separately. Under 40 words, cap each score at 2. Content 0 normally implies language 0.",
+            "responseConstraints": {"countUnit": "words", "answerStyle": "ruled"},
+            "rubric": {"criteria": [
+              {"id": "content", "points": 4, "description": "4: A clear, connected story with developed details and a fitting ending. 3: A clear account with details and an ending, or a well-developed account without an ending. 2: Some relevant ideas, briefly developed or unevenly linked. 1: Very little relevant information or disconnected ideas. 0: Irrelevant or undeveloped. Under 40 words: maximum 2."},
+              {"id": "language", "points": 3, "description": "3: Appropriate range of words, sentence patterns, links and verb forms; errors do not obscure meaning. 2: Limited range, but the story is mostly understandable. 1: Very limited range or frequent errors that sometimes obscure meaning. 0: Errors prevent understanding. Under 40 words: maximum 2."}
+            ], "equivalentMethods": ["Accept any coherent ending and sensible choices for how Mia remembers or retells the story."]},
+            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-writing-cues", "exact": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty."}
+          }
+        ]
+      }
+    ],
+    "generation": {
+      "intent": "generate", "ocrReviewed": true, "unresolved": [],
+      "notes": "Original reading and writing subset benchmarked against 2024 Hong Kong P6 6ERW1 Parts 1, 4 and 5. Not a full official paper. No listening or speaking. Difficulty, coverage and timing are author estimates."
+    },
+    "authoring": {
+      "examName": "Hong Kong Primary 6 English · Reading and writing practice subset", "knowledge": "Functional reading, fiction and guided narrative", "difficulty": "balanced",
+      "blueprint": [
+        {"id": "notice", "knowledge": "Functional notice", "ability": "Locate a detail, follow booking instructions, link location and time, and select a dictionary sense in context.", "types": ["choice"], "count": 4, "points": 4, "estimatedMinutes": 5},
+        {"id": "story", "knowledge": "Short fiction", "ability": "Identify the problem, interpret figurative language, infer purpose and sequence events.", "types": ["choice"], "count": 4, "points": 4, "estimatedMinutes": 7},
+        {"id": "writing", "knowledge": "Guided narrative", "ability": "Develop a problem, response and ending in about 80 words using coherent links and controlled language.", "types": ["response"], "count": 1, "points": 7, "estimatedMinutes": 13}
+      ]
+    }
+  },
   "ap-calculus": {
     "schemaVersion": "1.0.0",
     "practiceId": "gallery-global-ap-calculus",
     "notebookId": "gallery-global-ap-calculus-source",
-    "notebookRevision": 1,
-    "title": "AP Calculus AB",
+    "notebookRevision": 2,
+    "title": "AP Calculus AB · Free-Response Practice",
     "subject": "Calculus",
     "level": "AP",
     "durationMinutes": 30,
-    "totalScore": 15,
+    "totalScore": 18,
     "mode": "mock",
     "style": {
       "preset": "language",
@@ -5102,7 +5512,7 @@
       "questionGapMm": 5,
       "titleLines": [
         "AP Calculus AB",
-        "Calculus"
+        "Free-Response Practice · Calculator Required"
       ],
       "titleLineSizesPt": [
         17,
@@ -5110,7 +5520,7 @@
       ],
       "projectMark": true,
       "metaLines": [
-        "Time allowed: 30 minutes     Total: 15 marks"
+        "Time allowed: 30 minutes     Total: 18 points"
       ],
       "headerStyle": "generated",
       "subtitle": "",
@@ -5118,14 +5528,14 @@
       "noticeLabel": "Instructions",
       "notices": [
         "Write your name and candidate number above.",
-        "Read each task carefully and answer in the spaces provided.",
-        "Show the necessary working and follow any stated response limits."
+        "A graphing calculator is required. Use radian mode.",
+        "Show your equations or integrals. Give exact answers or round to three decimal places. Include units where applicable."
       ]
     },
     "materials": [
       {
         "id": "gallery-global-ap-calculus-material",
-        "title": "Paper Notebook original task examples · MIT",
+        "title": "Paper Notebook original free-response practice · MIT",
         "kind": "reference",
         "rights": "MIT · Paper Notebook 原创题型展示。官方资料仅用于确认任务与版式范围，未复制官方题文。",
         "provenance": {
@@ -5133,155 +5543,245 @@
           "sourceType": "author",
           "accessedAt": "2026-11-16"
         },
-        "text": "If $f(x)=\\sin x$, what is $f\\prime(\\pi/3)$?\n\nA tank receives water at $r(t)=3t^2$ litres per minute for $0\\le t\\le2$. It initially contains 5 litres and has no outflow. Find the volume after 2 minutes and justify your calculation.\n\nFor $f(x)=x^3-6x$, find the critical numbers and classify the extrema.",
+        "text": "An irrigation tank initially holds 30 liters of water. For $0\\le t\\le6$ minutes, water enters at $I(t)=8+5\\sin(\\pi t/6)$ and leaves at $O(t)=3+3t$, both in liters per minute. Let $V(t)$ denote water volume.\n(a) Find $V(6)$. Show the definite integral you use.\n(b) Find the average inflow rate over the interval. Show the setup.\n(c) Find $V''(4)$ and explain its meaning in this context.\n(d) At what time on $[0,6]$ is the volume greatest? Justify your answer over the entire interval.\n\nLet R be the region enclosed by the graphs of $f(x)=\\sqrt{x}$ and $g(x)=x^2/8$ on $0\\le x\\le4$.\n(a) Find the area of R. Show the definite integral.\n(b) A solid has base R and square cross sections perpendicular to the $x$-axis. Find its volume. Show the setup.\n(c) Write, but do not evaluate, an integral for the volume generated by rotating R about $y=-1$.\n(d) At what $x$ is the vertical distance between the curves greatest? Justify the maximum.",
         "blocks": [
           {
             "id": "gallery-global-ap-calculus-block-1",
-            "title": "Multiple choice",
-            "text": "If $f(x)=\\sin x$, what is $f\\prime(\\pi/3)$?"
+            "title": "Rates and accumulation",
+            "text": "An irrigation tank initially holds 30 liters of water. For $0\\le t\\le6$ minutes, water enters at $I(t)=8+5\\sin(\\pi t/6)$ and leaves at $O(t)=3+3t$, both in liters per minute. Let $V(t)$ denote water volume.\n(a) Find $V(6)$. Show the definite integral you use.\n(b) Find the average inflow rate over the interval. Show the setup.\n(c) Find $V''(4)$ and explain its meaning in this context.\n(d) At what time on $[0,6]$ is the volume greatest? Justify your answer over the entire interval."
           },
           {
             "id": "gallery-global-ap-calculus-block-2",
-            "title": "Free response",
-            "text": "A tank receives water at $r(t)=3t^2$ litres per minute for $0\\le t\\le2$. It initially contains 5 litres and has no outflow. Find the volume after 2 minutes and justify your calculation."
-          },
-          {
-            "id": "gallery-global-ap-calculus-block-3",
-            "title": "Free response",
-            "text": "For $f(x)=x^3-6x$, find the critical numbers and classify the extrema."
+            "title": "Area and volume",
+            "text": "Let R be the region enclosed by the graphs of $f(x)=\\sqrt{x}$ and $g(x)=x^2/8$ on $0\\le x\\le4$.\n(a) Find the area of R. Show the definite integral.\n(b) A solid has base R and square cross sections perpendicular to the $x$-axis. Find its volume. Show the setup.\n(c) Write, but do not evaluate, an integral for the volume generated by rotating R about $y=-1$.\n(d) At what $x$ is the vertical distance between the curves greatest? Justify the maximum."
           }
         ]
       }
     ],
     "sections": [
       {
-        "title": "Multiple choice",
+        "id": "gallery-global-ap-calculus-section-1",
+        "title": "Rates and accumulation",
+        "instructions": "Show the reasoning that supports each answer.",
+        "score": 9,
         "questions": [
           {
-            "type": "choice",
-            "prompt": "If $f(x)=\\sin x$, what is $f\\prime(\\pi/3)$?",
-            "options": [
-              {
-                "id": "A",
-                "text": "$1/2$"
-              },
-              {
-                "id": "B",
-                "text": "1"
-              },
-              {
-                "id": "C",
-                "text": "$\\sqrt3/2$"
-              },
-              {
-                "id": "D",
-                "text": "0"
-              }
-            ],
-            "solution": "A",
-            "explanation": "The derivative is cos x; cos(π/3)=1/2.",
-            "score": 2,
             "id": "gallery-global-ap-calculus-question-1",
             "number": 1,
-            "chapter": "Multiple choice",
+            "type": "response",
+            "chapter": "Rates and accumulation",
             "difficulty": "medium",
+            "prompt": "An irrigation tank initially holds 30 liters of water. For $0\\le t\\le6$ minutes, water enters at $I(t)=8+5\\sin(\\pi t/6)$ and leaves at $O(t)=3+3t$, both in liters per minute. Let $V(t)$ denote water volume.\n(a) Find $V(6)$. Show the definite integral you use.\n(b) Find the average inflow rate over the interval. Show the setup.\n(c) Find $V''(4)$ and explain its meaning in this context.\n(d) At what time on $[0,6]$ is the volume greatest? Justify your answer over the entire interval.",
+            "solution": "(a) 25.099 L. (b) 11.183 L/min. (c) −4.309 L/min²; the net rate of change of volume is decreasing at that rate. (d) $t\\approx3.311$ min.",
+            "explanation": "(a) $V(6)=30+\\int_0^6(I-O)\\,dt=30+30-54+60/\\pi$.\n(b) $\\frac16\\int_0^6 I(t)\\,dt=8+10/\\pi$.\n(c) $V''(t)=(5\\pi/6)\\cos(\\pi t/6)-3$; substitute 4.\n(d) Solve $5+5\\sin(\\pi t/6)-3t=0$. Since $V''(t)\\le 5\\pi/6-3<0$, the net rate strictly decreases from 5 to −13. The unique root is a global maximum by the positive-to-negative sign change.",
+            "score": 9,
+            "answerRows": 10,
             "origin": {
               "kind": "generated"
             },
             "source": {
               "materialId": "gallery-global-ap-calculus-material",
               "blockId": "gallery-global-ap-calculus-block-1",
-              "title": "Paper Notebook original task examples · MIT",
-              "exact": "If $f(x)=\\sin x$, what is $f\\prime(\\pi/3)$?"
-            }
-          }
-        ],
-        "id": "gallery-global-ap-calculus-section-1",
-        "instructions": "Select one answer; calculator use follows the section notice.",
-        "score": 2
-      },
-      {
-        "title": "Free response",
-        "questions": [
-          {
-            "type": "response",
-            "prompt": "A tank receives water at $r(t)=3t^2$ litres per minute for $0\\le t\\le2$. It initially contains 5 litres and has no outflow. Find the volume after 2 minutes and justify your calculation.",
-            "solution": "13 litres",
-            "explanation": "Accumulated inflow is ∫₀²3t²dt = [t³]₀²=8 L. Adding the initial5 L gives13 L.",
-            "score": 7,
-            "answerRows": 5,
-            "rubric": {
-              "criteria": [
+              "exact": "An irrigation tank initially holds 30 liters of water. For $0\\le t\\le6$ minutes, water enters at $I(t)=8+5\\sin(\\pi t/6)$ and leaves at $O(t)=3+3t$, both in liters per minute. Let $V(t)$ denote water volume.\n(a) Find $V(6)$. Show the definite integral you use.\n(b) Find the average inflow rate over the interval. Show the setup.\n(c) Find $V''(4)$ and explain its meaning in this context.\n(d) At what time on $[0,6]$ is the volume greatest? Justify your answer over the entire interval."
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
                 {
-                  "id": "answer-evidence",
-                  "description": "13 litres",
-                  "points": 7
+                  "method": "Independent solution",
+                  "detail": "Integrated the two rates and verified the critical time by bisection on [3,4].",
+                  "result": "pass"
                 }
               ]
             },
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "a-setup",
+                  "description": "(a) Adds the definite integral of inflow minus outflow over [0,6] to 30.",
+                  "points": 1
+                },
+                {
+                  "id": "a-value",
+                  "description": "(a) Computes 25.099 L or an exact equivalent.",
+                  "points": 1
+                },
+                {
+                  "id": "b-setup",
+                  "description": "(b) Divides the integral of inflow alone by the interval length.",
+                  "points": 1
+                },
+                {
+                  "id": "b-value",
+                  "description": "(b) Computes 11.183 L/min or an exact equivalent.",
+                  "points": 1
+                },
+                {
+                  "id": "c-value",
+                  "description": "(c) Computes −4.309 L/min² or an exact equivalent.",
+                  "points": 1
+                },
+                {
+                  "id": "c-context",
+                  "description": "(c) Interprets the sign as decrease in the net rate, not necessarily in volume.",
+                  "points": 1
+                },
+                {
+                  "id": "d-equation",
+                  "description": "(d) Sets the net rate to zero.",
+                  "points": 1
+                },
+                {
+                  "id": "d-value",
+                  "description": "(d) Locates the critical time at 3.311 minutes.",
+                  "points": 1
+                },
+                {
+                  "id": "d-global",
+                  "description": "(d) Justifies the global maximum with signs, or compares all critical and endpoint values.",
+                  "points": 1
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "gallery-global-ap-calculus-section-2",
+        "title": "Area and volume",
+        "instructions": "Show the reasoning that supports each answer.",
+        "score": 9,
+        "breakBefore": true,
+        "questions": [
+          {
             "id": "gallery-global-ap-calculus-question-2",
             "number": 2,
-            "chapter": "Free response",
-            "difficulty": "medium",
+            "type": "response",
+            "chapter": "Area and volume",
+            "difficulty": "hard",
+            "prompt": "Let R be the region enclosed by the graphs of $f(x)=\\sqrt{x}$ and $g(x)=x^2/8$ on $0\\le x\\le4$.\n(a) Find the area of R. Show the definite integral.\n(b) A solid has base R and square cross sections perpendicular to the $x$-axis. Find its volume. Show the setup.\n(c) Write, but do not evaluate, an integral for the volume generated by rotating R about $y=-1$.\n(d) At what $x$ is the vertical distance between the curves greatest? Justify the maximum.",
+            "solution": "(a) $8/3$ square units. (b) $72/35$ cubic units. (c) $\\pi\\int_0^4[(\\sqrt{x}+1)^2-(x^2/8+1)^2]\\,dx$. (d) $x=2^{2/3}\\approx1.587$.",
+            "explanation": "On $[0,4]$, $f\\ge g$. (a) Integrate $f-g$.\n(b) Each square has side $f-g$, giving $\\int_0^4(x-x^{5/2}/4+x^4/64)\\,dx=8-64/7+16/5=72/35$.\n(c) The outer and inner radii are $f+1$ and $g+1$.\n(d) The width derivative is $1/(2\\sqrt{x})-x/4$. Its sign changes from positive to negative at the unique solution of $x^{3/2}=2$; the width is zero at both endpoints.",
+            "score": 9,
+            "answerRows": 10,
             "origin": {
               "kind": "generated"
             },
             "source": {
               "materialId": "gallery-global-ap-calculus-material",
               "blockId": "gallery-global-ap-calculus-block-2",
-              "title": "Paper Notebook original task examples · MIT",
-              "exact": "A tank receives water at $r(t)=3t^2$ litres per minute for $0\\le t\\le2$. It initially contains 5 litres and has no outflow. Find the volume after 2 minutes and justify your calculation."
-            }
-          },
-          {
-            "type": "response",
-            "prompt": "For $f(x)=x^3-6x$, find the critical numbers and classify the extrema.",
-            "solution": "x=−√2: local maximum; x=√2: local minimum.",
-            "explanation": "f′=3x²−6=0 gives ±√2; f″=6x determines the classifications.",
-            "score": 6,
-            "answerRows": 5,
-            "rubric": {
-              "criteria": [
+              "exact": "Let R be the region enclosed by the graphs of $f(x)=\\sqrt{x}$ and $g(x)=x^2/8$ on $0\\le x\\le4$.\n(a) Find the area of R. Show the definite integral.\n(b) A solid has base R and square cross sections perpendicular to the $x$-axis. Find its volume. Show the setup.\n(c) Write, but do not evaluate, an integral for the volume generated by rotating R about $y=-1$.\n(d) At what $x$ is the vertical distance between the curves greatest? Justify the maximum."
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
                 {
-                  "id": "answer-evidence",
-                  "description": "x=−√2: local maximum; x=√2: local minimum.",
-                  "points": 6
+                  "method": "Independent solution",
+                  "detail": "Integrated the width and its square exactly; verified the radii and the sign change of the width derivative.",
+                  "result": "pass"
                 }
               ]
             },
-            "id": "gallery-global-ap-calculus-question-3",
-            "number": 3,
-            "chapter": "Free response",
-            "difficulty": "medium",
-            "origin": {
-              "kind": "generated"
-            },
-            "source": {
-              "materialId": "gallery-global-ap-calculus-material",
-              "blockId": "gallery-global-ap-calculus-block-3",
-              "title": "Paper Notebook original task examples · MIT",
-              "exact": "For $f(x)=x^3-6x$, find the critical numbers and classify the extrema."
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "a-setup",
+                  "description": "(a) Integrates upper curve minus lower curve over [0,4].",
+                  "points": 1
+                },
+                {
+                  "id": "a-value",
+                  "description": "(a) Computes 8/3 or an equivalent decimal.",
+                  "points": 1
+                },
+                {
+                  "id": "b-setup",
+                  "description": "(b) Integrates the square of the vertical width.",
+                  "points": 1
+                },
+                {
+                  "id": "b-value",
+                  "description": "(b) Computes 72/35 or an equivalent decimal.",
+                  "points": 1
+                },
+                {
+                  "id": "c-radii",
+                  "description": "(c) Measures both radii from the shifted axis.",
+                  "points": 1
+                },
+                {
+                  "id": "c-shape",
+                  "description": "(c) Uses outer radius squared minus inner radius squared.",
+                  "points": 1
+                },
+                {
+                  "id": "c-integral",
+                  "description": "(c) Includes the factor π, bounds [0,4] and dx.",
+                  "points": 1
+                },
+                {
+                  "id": "d-equation",
+                  "description": "(d) Sets the derivative of the width to zero.",
+                  "points": 1
+                },
+                {
+                  "id": "d-global",
+                  "description": "(d) Gives x = 2^(2/3) or 1.587 and justifies the global maximum.",
+                  "points": 1
+                }
+              ]
             }
           }
-        ],
-        "id": "gallery-global-ap-calculus-section-2",
-        "instructions": "Show the analysis leading to your answer and include units.",
-        "score": 13
+        ]
       }
     ],
     "generation": {
       "intent": "generate",
       "ocrReviewed": true,
       "unresolved": [],
-      "notes": "原创局部题型展示，非完整官方考试。答案由题目条件独立求解；开放任务使用评价标准，不指定唯一作品。"
+      "notes": "原创 Section II Part A 配套练习；对照 2025 AP Calculus AB 官方 Q1–Q2 的作答动作与评分证据。未覆盖 Part B、选择题或其余课程范围。"
     },
     "assembly": {
-      "choiceOrder": "balanced",
+      "choiceOrder": "preserve",
       "seed": "ap-calculus",
       "sourceQuestionIds": [
         "gallery-global-ap-calculus-question-1",
-        "gallery-global-ap-calculus-question-2",
-        "gallery-global-ap-calculus-question-3"
+        "gallery-global-ap-calculus-question-2"
+      ]
+    },
+    "authoring": {
+      "examName": "AP Calculus AB",
+      "knowledge": "Definite integrals, rates of change, volumes and extrema",
+      "difficulty": "balanced",
+      "blueprint": [
+        {
+          "id": "net-accumulation",
+          "knowledge": "Rates and accumulation",
+          "ability": "Set up net accumulation, interpret a derivative and justify a global maximum.",
+          "types": [
+            "response"
+          ],
+          "count": 1,
+          "points": 9,
+          "estimatedMinutes": 15
+        },
+        {
+          "id": "area-volume",
+          "knowledge": "Area and volume",
+          "ability": "Build geometric integrands and justify a maximum.",
+          "types": [
+            "response"
+          ],
+          "count": 1,
+          "points": 9,
+          "estimatedMinutes": 15
+        }
       ]
     }
   },

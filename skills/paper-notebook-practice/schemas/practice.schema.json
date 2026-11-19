@@ -1118,7 +1118,6 @@
                 "type": "object",
                 "additionalProperties": false,
                 "required": [
-                  "dataUrl",
                   "mimeType",
                   "title"
                 ],
@@ -1126,6 +1125,10 @@
                   "dataUrl": {
                     "type": "string",
                     "pattern": "^data:audio/(mp4|mpeg|wav|x-wav|ogg|aac|webm);base64,[A-Za-z0-9+/=]+$"
+                  },
+                  "url": {
+                    "type": "string",
+                    "pattern": "^assets/[a-f0-9]{20}\\.(m4a|mp3|wav|ogg|aac|webm)$"
                   },
                   "mimeType": {
                     "type": "string",
@@ -1155,7 +1158,11 @@
                       }
                     }
                   }
-                }
+                },
+                "oneOf": [
+                  {"required": ["dataUrl"]},
+                  {"required": ["url"]}
+                ]
               }
             },
             "required": [
@@ -1225,7 +1232,8 @@
           "format": {
             "enum": [
               "word-bank",
-              "paragraph-matching"
+              "paragraph-matching",
+              "statement-matching"
             ]
           },
           "listeningOnly": {
@@ -1747,6 +1755,9 @@
               "type": "integer",
               "minimum": 1,
               "maximum": 3
+            },
+            "groupObjective": {
+              "type": "boolean"
             },
             "pages": {
               "type": "integer",

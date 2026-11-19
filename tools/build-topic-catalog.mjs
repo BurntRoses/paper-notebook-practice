@@ -11,6 +11,7 @@ async function scan(folder=''){
  for(const item of (await readdir(base+folder,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){
   const file=folder+item.name;if(item.isDirectory()){await scan(file+'/');continue;}if(!file.endsWith('.json'))continue;
   const bytes=await readFile(base+file),raw=JSON.parse(bytes);if(!raw?.practiceId)continue;
+  if(raw.original)throw Error(`Topic ${file} must not bundle original pages`);
   const paper=assertPractice(raw),route=resolveExamRoute({subject:paper.subject,...paper.authoring});
   topics.push({id:paper.practiceId,title:paper.title,subject:paper.subject,level:paper.level,family:file.split('/')[0],...(route?{routeId:route.id}:{}),file,questionCount:paper.sections.reduce((n,s)=>n+s.questions.length,0),mode:paper.mode,durationMinutes:paper.durationMinutes,totalScore:paper.totalScore,sha256:createHash('sha256').update(bytes).digest('hex')});
  }

@@ -7,6 +7,8 @@ export interface PaperPagerState {
 export interface PaperPagerOptions {
  initialPage?:number;
  preservePage?:boolean;
+ compact?:boolean;
+ fitWidth?:boolean;
  label?:string;
  onChange?:(state:PaperPagerState)=>void;
 }
@@ -29,6 +31,10 @@ const pagerStyle=`
  html[data-paper-pager] #paper-root>.paper-page-frame{width:calc(var(--paper-width,210mm)*var(--paper-pager-zoom,1))!important;height:calc(var(--paper-height,297mm)*var(--paper-pager-zoom,1))!important}
  html[data-paper-pager] #paper-root>.exam-page{zoom:1!important;transform:scale(var(--paper-pager-zoom,1))!important;transform-origin:center!important}
  html[data-paper-pager] .exam-page{box-shadow:0 3px 16px #0002}
+ html[data-paper-pager=width]{overflow:auto!important;scrollbar-gutter:stable}
+ html[data-paper-pager=width] body{height:auto!important;overflow:visible!important}
+ html[data-paper-pager=width] #paper-root{position:static!important;display:block!important;width:auto!important;height:auto!important;min-height:100vh;overflow:visible!important;padding:8px 0 14px!important;box-sizing:border-box}
+ html[data-paper-pager=width] #paper-root>.paper-page-frame{margin-inline:auto!important;overflow:hidden;box-shadow:0 2px 12px #0002}
 }
 `;
 const pageIcon=(direction:'first'|'prev'|'next'|'last')=>{
@@ -47,7 +53,7 @@ export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElem
  let childDocument:Document|null=null,childWindow:Window|null=null,paperRoot:HTMLElement|null=null,style:HTMLStyleElement|null=null;
  let observeDocument:MutationObserver|null=null,observePages:MutationObserver|null=null,resize:ResizeObserver|null=null,scheduled=0,timeout=0;
  const abort=new AbortController();
- controls.classList.add('paper-pager');controls.setAttribute('role','group');controls.setAttribute('aria-label',options.label??'试卷翻页');
+ controls.classList.add('paper-pager');controls.classList.toggle('paper-pager-compact',Boolean(options.compact));controls.setAttribute('role','group');controls.setAttribute('aria-label',options.label??'试卷翻页');
  controls.innerHTML=`<button type="button" class="icon-button" data-paper-page="first" aria-label="第一页" title="第一页">${pageIcon('first')}</button><button type="button" class="icon-button" data-paper-page="prev" aria-label="上一页" title="上一页">${pageIcon('prev')}</button><label class="paper-pager-position"><span class="paper-pager-prefix">第</span><input data-paper-page-input type="number" inputmode="numeric" min="1" value="1" aria-label="跳转到页码"><span data-paper-page-count>/ — 页</span></label><button type="button" class="icon-button" data-paper-page="next" aria-label="下一页" title="下一页">${pageIcon('next')}</button><button type="button" class="icon-button" data-paper-page="last" aria-label="最后一页" title="最后一页">${pageIcon('last')}</button><output class="paper-pager-status" data-paper-page-status role="status" aria-live="polite"></output>`;
  const input=controls.querySelector<HTMLInputElement>('[data-paper-page-input]')!;
  const count=controls.querySelector<HTMLElement>('[data-paper-page-count]')!;
@@ -71,17 +77,18 @@ export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElem
   const page=Math.max(0,Math.min(Math.trunc(requestedPage),pages.length-1));requestedPage=page;
   const sheet=pages[page].matches('.exam-page')?pages[page]:pages[page].querySelector<HTMLElement>('.exam-page');
   if(!sheet){changeState({page:0,pages:0,status:'empty'});return;}
+  const changedPage=!pages[page].hasAttribute('data-pager-current');
+  if(changedPage){paperRoot.querySelector('[data-pager-current]')?.removeAttribute('data-pager-current');pages[page].setAttribute('data-pager-current','');}
   // offset dimensions retain the physical page size even when screen-scaled.
   const computed=childWindow.getComputedStyle(sheet),width=sheet.offsetWidth||parseFloat(computed.width),height=sheet.offsetHeight||parseFloat(computed.height);
   if(!width||!height)return;
   const availableWidth=childDocument.documentElement.clientWidth,availableHeight=childDocument.documentElement.clientHeight;
-  const zoom=Math.max(.01,Math.min(1,(availableWidth-24)/width,(availableHeight-20)/height));
+  const zoom=Math.max(.01,Math.min(1,(availableWidth-(options.fitWidth?12:24))/width,options.fitWidth?1:(availableHeight-20)/height));
   paperRoot.style.setProperty('--paper-pager-zoom',String(zoom));
   const background=getComputedStyle(frame).getPropertyValue('--preview-surround').trim();
   if(background)childDocument.documentElement.style.setProperty('--paper-pager-background',background);
-  pages.forEach((item,index)=>item.toggleAttribute('data-pager-current',index===page));
-  childDocument.documentElement.dataset.paperPager='true';
-  childWindow.scrollTo(0,0);clearTimeout(timeout);
+  childDocument.documentElement.dataset.paperPager=options.fitWidth?'width':'true';
+  if(changedPage)childWindow.scrollTo(0,0);clearTimeout(timeout);
   changeState({page,pages:pages.length,status:'ready'});
  };
  const schedule=()=>{if(!disposed&&!scheduled)scheduled=requestAnimationFrame(fit);};

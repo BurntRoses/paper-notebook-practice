@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "civil-essay-report-01",
+  "notebookId": "civil-essay-report",
+  "notebookRevision": 1,
+  "title": "申论·情况报告专项",
+  "subject": "申论",
+  "level": "公务员录用考试",
+  "durationMinutes": 25,
+  "totalScore": 20,
+  "mode": "mock",
+  "style": { "preset": "humanities", "templateId": "shenlun", "sealed": false,
+    "templateOverrides": { "marginBottomMm": 22, "lineHeight": 1.6 }
+  },
+  "presentation": {
+    "titleLines": ["申论·情况报告专项"],
+    "candidateFields": ["姓名", "准考证号"],
+    "projectMark": false,
+    "notices": ["请在答题纸规定区域内作答，不超过400字。"],
+    "runningHeader": { "skipFirst": true, "center": "申论·情况报告专项", "rule": true },
+    "footerTemplate": "申论　第 {page} 页",
+    "endText": "",
+    "sectionDetails": false,
+    "questionScores": "show",
+    "answerSpace": "none",
+    "answerCard": { "template": "essay-grid", "candidateDigits": 15 }
+  },
+  "sourcePolicy": { "mode": "open", "questionPreference": "generated-first" },
+  "authoring": {
+    "routeId": "civil-essay",
+    "examName": "申论",
+    "region": "国考",
+    "specialty": "行政执法类",
+    "requireVerification": true,
+    "difficulty": "balanced",
+    "blueprint": [
+      { "id": "report", "knowledge": "情况报告：成效、不足和建议", "ability": "归纳多方证据，辨析统计口径，提出对应措施", "types": ["response"], "count": 1, "points": 20, "estimatedMinutes": 25, "sourceIds": ["trial-meeting"] }
+    ]
+  },
+  "materials": [
+    {
+      "id": "trial-meeting",
+      "title": "给定资料：定时交运试点座谈纪要",
+      "kind": "reference",
+      "rights": "原创虚构材料、题目与答案采用 MIT 许可。",
+      "provenance": { "kind": "authored", "sourceType": "author" },
+      "text": "① 清河区在两个街区开展为期六周的餐厨废弃物定时交运试点。过去各店把桶放在路边等车，常因说不清何时交接而互相找人。试点给每个交运点排定时段，收运员在同一份表内登记到桶时间和接收情况，异常可以查到对应点位和班次。区城市管理部门在试点结束后召集各方座谈。\n\n② 保洁班长说，试点首两周与末两周，巡查员在相同路线、相同时段登记到的长时间滞桶点分别是18处、7处。末两周降雨少，外摆和客流情况也有变化，单凭这两轮走访还说不清下降有多少来自试点。\n\n③ 步行街餐馆经营者说，补交点设立后，晚收摊商户不用拖着满桶绕行到主路。不过有些店结束营业时最后一班车已过；即使赶上，也遇到过补交线路与相邻片区共用车辆、车到本站已满的情况。调度员说，周末有一辆可临时调配的备用车，是否调用仍按白天预报安排，未结合各店实际收摊时间。\n\n④ 试点月报显示，进入交运点台账的桶中，96%有接收签字。社区网格员走访发现，有几家漏交的商户根本没有进入这张表。居民反映街角积桶后，平台显示已转派，但第二天桶还在。核对后台发现，部分事项一转派就被列进月报的办结数。\n\n⑤ 有居民提出把补交点全部并回主路。无障碍观察员实测，一处补点放在广场出口拐角，会与轮椅、婴儿车抢道；另有一处在背街装卸带，集桶后不堵出口，但目前无人负责恢复现场卫生。商户说搬桶距离太长，可能又有人提前把桶留在路边。街道已具备调整点位和短期复核的条件，未决定是否在其他片区推行。"
+    },
+    {
+      "id": "report-task",
+      "title": "原创作答要求",
+      "kind": "reference",
+      "provenance": { "kind": "authored", "sourceType": "author" },
+      "text": "假如你是清河区城市管理部门的工作人员，请依据给定资料，围绕餐厨废弃物定时交运试点的成效、不足和改进建议，撰写一份情况报告。要求：事实准确、要点清楚、建议具体，不超过400字。"
+    }
+  ],
+  "sections": [
+    {
+      "id": "report",
+      "title": "给定资料",
+      "examPartId": "report",
+      "instructions": "",
+      "score": 20,
+      "stimulus": {
+        "text": "① 清河区在两个街区开展为期六周的餐厨废弃物定时交运试点。过去各店把桶放在路边等车，常因说不清何时交接而互相找人。试点给每个交运点排定时段，收运员在同一份表内登记到桶时间和接收情况，异常可以查到对应点位和班次。区城市管理部门在试点结束后召集各方座谈。\n\n② 保洁班长说，试点首两周与末两周，巡查员在相同路线、相同时段登记到的长时间滞桶点分别是18处、7处。末两周降雨少，外摆和客流情况也有变化，单凭这两轮走访还说不清下降有多少来自试点。\n\n③ 步行街餐馆经营者说，补交点设立后，晚收摊商户不用拖着满桶绕行到主路。不过有些店结束营业时最后一班车已过；即使赶上，也遇到过补交线路与相邻片区共用车辆、车到本站已满的情况。调度员说，周末有一辆可临时调配的备用车，是否调用仍按白天预报安排，未结合各店实际收摊时间。\n\n④ 试点月报显示，进入交运点台账的桶中，96%有接收签字。社区网格员走访发现，有几家漏交的商户根本没有进入这张表。居民反映街角积桶后，平台显示已转派，但第二天桶还在。核对后台发现，部分事项一转派就被列进月报的办结数。\n\n⑤ 有居民提出把补交点全部并回主路。无障碍观察员实测，一处补点放在广场出口拐角，会与轮椅、婴儿车抢道；另有一处在背街装卸带，集桶后不堵出口，但目前无人负责恢复现场卫生。商户说搬桶距离太长，可能又有人提前把桶留在路边。街道已具备调整点位和短期复核的条件，未决定是否在其他片区推行。"
+      },
+      "questions": [
+        {
+          "id": "civil-essay-report-01-q1",
+          "number": 1,
+          "type": "response",
+          "score": 20,
+          "prompt": "假如你是清河区城市管理部门的工作人员，请依据给定资料，围绕餐厨废弃物定时交运试点的成效、不足和改进建议，撰写一份情况报告。要求：事实准确、要点清楚、建议具体，不超过400字。",
+          "chapter": "贯彻执行·情况报告",
+          "tags": ["情况报告", "多方证据", "统计口径", "对策对应"],
+          "difficulty": "medium",
+          "source": { "materialId": "report-task", "blockId": "report-task", "exact": "假如你是清河区城市管理部门的工作人员，请依据给定资料，围绕餐厨废弃物定时交运试点的成效、不足和改进建议，撰写一份情况报告。要求：事实准确、要点清楚、建议具体，不超过400字。" },
+          "origin": { "kind": "generated" },
+          "responseConstraints": { "countUnit": "characters", "maxWords": 400, "answerStyle": "grid" },
+          "assessment": {
+            "knowledgePoints": ["归纳成效", "诊断不足", "对策取舍", "报告写作"],
+            "ability": "区分变化和归因、签收和交运、转派和办结，并将多方诉求转化为可执行的建议。",
+            "estimatedMinutes": 25,
+            "difficultyRationale": "显性成效可直接归纳；统计口径、运力和点位冲突需综合两方以上证据，难度为命题预期。"
+          },
+          "solution": "清河区餐厨废弃物定时交运试点情况报告\n\n一、成效。统一交接，记录到桶时间和接收情况，可追踪异常。首末两周走访中，长时间滞桶点由18处减至7处，末两周少雨，暂不能将变化全归因于试点。增加步行街补交点后，收摊较晚商户不必绕到主路。\n\n二、不足。部分晚收摊商户赶不上班次；补交线路与相邻片区共用车辆，存在到站满载现象。签收率只反映到点的桶，漏交未计，转派也可能被当成办结。并回主路会增加搬运距离，广场拐角的补点又阻碍通行。\n\n三、建议。按收摊时段调整班次，调度备用车辆保障高峰。将未交运商户纳入台账；转派后以实际清运和现场复查销号。保留经核验确有需要的补点，避开出入口并明确保洁责任，试行后复核占道和使用情况。",
+          "explanation": "落笔顺序：①②③提炼机制、巡查变化和商户便利；②的条件变化限制归因，不能把18处减至7处换算成试点贡献。③④⑤分别指向调度、监督和布点，应一一回应。96%是已到点桶的签收比例，不是所有商户交运率，转派也不等于清运。补点应按使用需要与通行条件取舍，而非一律拆除或保留。",
+          "rubric": {
+            "criteria": [
+              { "id": "achievement-handover", "points": 2, "description": "成效①：统一交接时段或点位1分；同表记录使班次及异常可追踪1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "试点给每个交运点排定时段，收运员在同一份表内登记到桶时间和接收情况，异常可以查到对应点位和班次。" }] },
+              { "id": "achievement-observation", "points": 2, "description": "成效②：报告长时间滞桶点减少1分，不强制写出具体数字；明确天气、客流等差异限制归因1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "末两周降雨少，外摆和客流情况也有变化，单凭这两轮走访还说不清下降有多少来自试点。" }] },
+              { "id": "achievement-access", "points": 2, "description": "成效③：识别补交点提供额外交运渠道1分；具体指出该渠道便利晚收摊或缩短搬运距离1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "补交点设立后，晚收摊商户不用拖着满桶绕行到主路。" }] },
+              { "id": "gap-dispatch", "points": 2, "description": "不足③：班次与收摊时间不匹配1分；车辆共用、到站满载或应急运力安排没有结合需求1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "不过有些店结束营业时最后一班车已过；即使赶上，也遇到过补交线路与相邻片区共用车辆、车到本站已满的情况。" }] },
+              { "id": "gap-metrics", "points": 2, "description": "不足④：签收比例分母不含未到点的商户或桶1分；转派记成办结，实际可能未清运1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "有几家漏交的商户根本没有进入这张表。" }, { "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "部分事项一转派就被列进月报的办结数。" }] },
+              { "id": "gap-location", "points": 2, "description": "不足⑤：补点布置可能妨碍通行或缺少保洁责任1分；并回主路会增加运距或诱发提前滞桶1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "一处补点放在广场出口拐角，会与轮椅、婴儿车抢道" }, { "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "搬桶距离太长，可能又有人提前把桶留在路边。" }] },
+              { "id": "action-dispatch", "points": 2, "description": "建议③：按实际收摊时点重排班次或设置后一班1分；高峰期调备用车或为补交线路预留运量1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "周末有一辆可临时调配的备用车，是否调用仍按白天预报安排，未结合各店实际收摊时间。" }] },
+              { "id": "action-metrics", "points": 2, "description": "建议④：纳入漏交情况或用应交运对象校准分母1分；以实际清运、经复查后销号1分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "居民反映街角积桶后，平台显示已转派，但第二天桶还在。" }] },
+              { "id": "action-location", "points": 2, "description": "建议⑤：避开出口或给点位划定不占通道的交接空间1分；按运距和需求有条件地保留或迁移补点，并明确保洁或试行复核1分。一律撤并不得后一分。", "evidence": [{ "materialId": "trial-meeting", "blockId": "trial-meeting", "exact": "另有一处在背街装卸带，集桶后不堵出口，但目前无人负责恢复现场卫生。" }] },
+              { "id": "form", "points": 2, "description": "报告题名切题且正文按成效、不足、建议形成清晰层次1分；标题与正文合计不超过400字（标点算格、换行不计）1分。不要求特定小标题、称谓或落款。" }
+            ],
+            "equivalentMethods": ["同义表述、合理归并和材料能支持的等效措施均可给分；不因未抄示例数字而扣分。", "同一个点重复表述只计一次；明确的现象、原因或措施各按对应条目计分。不把无根据的全区推广结论或处罚条款当成材料证据。"]
+          },
+          "answerProvenance": { "kind": "independent", "notes": "项目作者独立作答并制定逐点评分；非官方评分。" },
+          "verification": {
+            "status": "verified",
+            "reviewedAt": "2026-11-19",
+            "checks": [
+              { "method": "independent-reasoning", "detail": "仅据座谈材料分别写完整稿与仅用显性信息的作答，自评20/20、8/20。将观察变化和归因限度拆为两个分点；核对96%的分母、转派的含义和点位取舍。", "result": "pass" }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "assembly": { "choiceOrder": "preserve", "seed": "civil-essay-report-01", "sourceQuestionIds": ["civil-essay-report-01-q1"] },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": true,
+    "unresolved": [],
+    "notes": "独立原创行政执法类应用写作专项。素材、题目及评分采用 MIT。结构对照郑州工商学院转载的2024年国考行政执法回忆整理第5页第3题；不转载原题，不使用其名义标示本练习。"
+  },
+  "exam": {
+    "specificationId": "civil-essay-report-practice",
+    "scope": "subset",
+    "scoreScale": "20分专项原创评分",
+    "specification": {
+      "id": "civil-essay-report-practice",
+      "name": "申论情况报告专项",
+      "subject": "申论",
+      "level": "公务员录用考试",
+      "durationMinutes": 25,
+      "totalScore": 20,
+      "scoreScale": "20分专项原创评分",
+      "source": {
+        "structureRecollection": "https://xxgcxy.ztbu.edu.cn/2024_11/05_17/content-58247.html",
+        "notes": "郑州工商学院转载，回忆整理第5页第3题：情况报告、20分、400字以内。25分钟为练习建议，不是官方分题用时。"
+      },
+      "sections": [{ "id": "report", "title": "情况报告", "count": 1, "questionType": "response", "totalScore": 20, "pointsPerQuestion": 20, "displayStart": 1 }]
+    }
+  }
+}

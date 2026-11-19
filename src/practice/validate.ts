@@ -3,11 +3,11 @@ import Ajv from 'ajv';
 import schema from '../../skills/paper-notebook-practice/schemas/practice.schema.json';
 import {textOf,type NotebookDocument} from '../model/types';
 import {validateExamStructure} from './exam-specification';
-import {questionsOf,type PracticeDocument,type PracticeError} from './model';
+import {isSiteAudio,questionsOf,type PracticeDocument,type PracticeError} from './model';
 let schemaValidator:ReturnType<Ajv['compile']>|undefined;
 const close=(left:number,right:number)=>Math.abs(left-right)<1e-7;
 /** The schema validates structure; these checks bind scores and provenance to actual content. */
-export function validatePractice(value:unknown,source?:NotebookDocument):{valid:boolean;errors:PracticeError[]}{
+export function validatePractice(value:unknown,source?:NotebookDocument,siteAudio=false):{valid:boolean;errors:PracticeError[]}{
  const validateSchema=schemaValidator??=new Ajv({allErrors:true,strict:false}).compile(schema);
  const errors:PracticeError[]=[];
  if(!validateSchema(value)){for(const error of validateSchema.errors||[]){const tail=error.keyword==='required'?'/'+error.params.missingProperty:error.keyword==='additionalProperties'?'/'+error.params.additionalProperty:'';errors.push({path:(error.instancePath+tail)||'/',message:error.message||'Invalid field'});}return {valid:false,errors};}
@@ -31,7 +31,12 @@ export function validatePractice(value:unknown,source?:NotebookDocument):{valid:
   if(section.stimulus?.source)checkNotebookEvidence(section.stimulus.source,base+'/stimulus/source');
   if(section.stimulus?.source){const citation=section.stimulus.source,material=materialMap.get(citation.materialId??''),body=citation.blockId===material?.id?material.text:material?.blocks?.find(b=>b.id===citation.blockId)?.text;if(!body?.includes(citation.exact))add(base+'/stimulus/source/exact','Shared passage must be an exact substring of its cited material block');}
   if(section.stimulus?.audio?.transcriptSource){const ref=section.stimulus.audio.transcriptSource;if(!materialMap.get(ref.materialId)?.blocks?.some(b=>b.id===ref.blockId))add(base+'/stimulus/audio/transcriptSource','Listening transcript block is missing');}
+  if(section.stimulus?.audio?.url&&!(siteAudio&&isSiteAudio(section.stimulus.audio)))add(base+'/stimulus/audio/url','Listening asset references are only supported in the hosted catalog');
   if(section.sharedOptions){const ids=section.sharedOptions.map(o=>o.id);if(new Set(ids).size!==ids.length)add(base+'/sharedOptions','Shared option IDs must be unique');for(const q of section.questions)if(q.options&&JSON.stringify(q.options.map(o=>o.id))!==JSON.stringify(ids))add(base+'/sharedOptions','Question option codes must match the shared option bank');}
+  if(section.format==='statement-matching'){
+   if(!section.sharedOptions?.length)add(base+'/sharedOptions','Statement matching requires shared statements');
+   else for(const [index,question] of section.questions.entries())if(question.type!=='choice'||question.options?.length!==section.sharedOptions.length||!section.sharedOptions.every((option,position)=>question.options?.[position]?.id===option.id&&question.options[position].text===option.text))add(base+'/questions/'+index+'/options','Each matching question must use the same statement texts and codes');
+  }
   for(const [q,question] of section.questions.entries()){
    const path=base+`/questions/${q}`;unique(question.id,path+'/id');questionTotal+=question.score;
    for(const [i,e]of(question.supportingSources??[]).entries())checkNotebookEvidence(e.source,path+`/supportingSources/${i}/source`);
@@ -73,7 +78,7 @@ export function validatePractice(value:unknown,source?:NotebookDocument):{valid:
  for(const key of Object.keys(practice.review||{}))if(!questionIds.has(key))add('/review/'+key,'Review refers to an unknown question');
  for(const key of Object.keys(practice.userState?.practiceAnswers||{}))if(!questionIds.has(key))add('/userState/practiceAnswers/'+key,'Answer refers to an unknown question');
  for(const [index,key] of (practice.userState?.practiceMistakes||[]).entries())if(!questionIds.has(key))add('/userState/practiceMistakes/'+index,'Mistake refers to an unknown question');
- if(practice.exam?.scope==='full')errors.push(...validateExamStructure(practice));
+ if(practice.exam?.scope==='full')errors.push(...validateExamStructure(practice,undefined,true,siteAudio));
  return {valid:errors.length===0,errors};
 }
 export function assertPractice(value:unknown,source?:NotebookDocument):PracticeDocument{const result=validatePractice(value,source);if(!result.valid)throw new Error(result.errors.map(error=>error.path+': '+error.message).join('\n'));return value as PracticeDocument;}

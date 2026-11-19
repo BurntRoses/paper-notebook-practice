@@ -10,7 +10,8 @@
   "totalScore": 50,
   "mode": "mock",
   "style": {
-    "preset": "stem"
+    "preset": "stem",
+    "templateId": "postgraduate-math"
   },
   "materials": [
     {

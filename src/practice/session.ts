@@ -23,7 +23,8 @@ export function practiceSession(digest:typeof practiceDigest,normalize:typeof no
  const zipFiles=(files:{name:string;text:string}[])=>{const encoder=new TextEncoder(),table=Array.from({length:256},(_,i)=>{let c=i;for(let j=0;j<8;j++)c=c&1?0xedb88320^(c>>>1):c>>>1;return c>>>0;}),local:Uint8Array[]=[],central:Uint8Array[]=[];let offset=0;for(const file of files){const name=encoder.encode(file.name),bytes=encoder.encode(file.text);let crc=0xffffffff;for(const b of bytes)crc=table[(crc^b)&255]^(crc>>>8);crc=(crc^0xffffffff)>>>0;const header=new Uint8Array(30+name.length),h=new DataView(header.buffer);h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint32(14,crc,true);h.setUint32(18,bytes.length,true);h.setUint32(22,bytes.length,true);h.setUint16(26,name.length,true);header.set(name,30);local.push(header,bytes);const directory=new Uint8Array(46+name.length),d=new DataView(directory.buffer);d.setUint32(0,0x02014b50,true);d.setUint16(4,20,true);d.setUint16(6,20,true);d.setUint16(8,0x0800,true);d.setUint32(16,crc,true);d.setUint32(20,bytes.length,true);d.setUint32(24,bytes.length,true);d.setUint16(28,name.length,true);d.setUint32(42,offset,true);directory.set(name,46);central.push(directory);offset+=header.length+bytes.length;}const centralSize=central.reduce((n,p)=>n+p.length,0),end=new Uint8Array(22),view=new DataView(end.buffer);view.setUint32(0,0x06054b50,true);view.setUint16(8,files.length,true);view.setUint16(10,files.length,true);view.setUint32(12,centralSize,true);view.setUint32(16,offset,true);const parts=[...local,...central,end],result=new Uint8Array(offset+centralSize+22);let at=0;for(const part of parts){result.set(part,at);at+=part.length;}return result;};
  const valueOf=(q:any)=>state.userState.practiceAnswers[q.id]?.value??(q.type==='blank'?Array(q.blankCount||1).fill(''):['response','task','multiple'].includes(q.type)?[]:'');
  const answered=(q:any)=>{const v=valueOf(q);return Array.isArray(v)?(q.type==='blank'?v.length>0&&v.every(x=>String(x).trim()):v.some(x=>String(x).trim())):Boolean(String(v).trim());};
- function restoreInputs(){root.querySelectorAll<HTMLAudioElement>('audio[data-section-audio]').forEach(audio=>{audio.dataset.enabled=String(kind!=='exam'||Boolean(state.startedAt)&&!state.submitted);});root.querySelectorAll<HTMLInputElement|HTMLTextAreaElement>('[data-qid]').forEach(input=>{const q=byId.get(input.dataset.qid!),v=valueOf(q);if(input instanceof HTMLInputElement&&['radio','checkbox'].includes(input.type))input.checked=input.type==='checkbox'?Array.isArray(v)&&v.includes(input.value):v===input.value;else if(input.dataset.blank!==undefined)input.value=v[Number(input.dataset.blank)]||'';else if(input.dataset.part!==undefined)input.value=Array.isArray(v)?v[Number(input.dataset.part)]||'':Number(input.dataset.part)===0?v:'';input.disabled=Boolean(data.preview)||kind!=='exam'||!state.startedAt||state.submitted;});}
+ function restoreInputs(){const listeningEnabled=!state.preview&&(kind!=='exam'||Boolean(state.startedAt)&&!state.submitted);root.querySelectorAll<HTMLAudioElement>('audio[data-section-audio]').forEach(audio=>{audio.dataset.enabled=String(listeningEnabled);audio.inert=!listeningEnabled;});root.querySelectorAll<HTMLButtonElement>('[data-play-listening]').forEach(button=>button.disabled=!listeningEnabled);root.querySelectorAll<HTMLInputElement|HTMLTextAreaElement>('[data-qid]').forEach(input=>{const q=byId.get(input.dataset.qid!),v=valueOf(q);if(input instanceof HTMLInputElement&&['radio','checkbox'].includes(input.type))input.checked=input.type==='checkbox'?Array.isArray(v)&&v.includes(input.value):v===input.value;else if(input.dataset.blank!==undefined)input.value=v[Number(input.dataset.blank)]||'';else if(input.dataset.part!==undefined)input.value=Array.isArray(v)?v[Number(input.dataset.part)]||'':Number(input.dataset.part)===0?v:'';input.disabled=Boolean(data.preview)||kind!=='exam'||!state.startedAt||state.submitted;});}
+ function rememberAudio(audio:HTMLAudioElement){if(!audio.readyState)return;state.audioPositions??={};state.audioPositions[audio.dataset.sectionAudio!]=audio.currentTime;}
  function splitRich(element:HTMLElement,limit=260):HTMLElement[]{
   const tokens:{node:Node;path:HTMLElement[];text?:string}[]=[];
   const walk=(node:Node,path:HTMLElement[])=>{if(node.nodeType===Node.TEXT_NODE){if(node.textContent)tokens.push({node,path,text:node.textContent});return;}if(!(node instanceof HTMLElement))return;if(node.matches('.katex,svg,img,input,textarea,button,br')||!node.childNodes.length){tokens.push({node,path});return;}for(const child of Array.from(node.childNodes))walk(child,[...path,node]);};
@@ -62,15 +63,37 @@ export function practiceSession(digest:typeof practiceDigest,normalize:typeof no
    else if(child.classList.contains('paper-options')&&child.textContent!.length>300){for(const option of Array.from(child.children) as HTMLElement[]){const input=option.querySelector<HTMLInputElement>('input'),value=input?.value;splitRich(option).forEach((part,i)=>{const group=child.cloneNode(false) as HTMLElement;group.style.setProperty('--option-columns','1');if(i&&value){part.dataset.selectChoice=chunk.dataset.question+'|'+value;const prefix=document.createElement('b');prefix.className='option-continuation-letter';prefix.textContent=value+(data.paperLanguage==='en'?' (continued)':'（续）');part.prepend(prefix);}group.append(part);add(group);});}}
    else if(child.classList.contains('question-feedback')&&(child.hidden||state.preview))continue;
    else if(child.tagName==='TEXTAREA'||child.textContent!.length<=300)add(child);
+   else if(child.classList.contains('answer-rubric')){
+    const list=child.querySelector<HTMLOListElement>(':scope > ol');
+    if(!list?.children.length){add(child);continue;}
+    const heading=child.querySelector(':scope > h3');
+    Array.from(list.children).forEach((criterion,index)=>{
+     const section=child.cloneNode(false) as HTMLElement,numbered=list.cloneNode(false) as HTMLOListElement;
+     numbered.start=list.start+index;
+     numbered.append(criterion.cloneNode(true));
+     if(index===0&&heading)section.append(heading.cloneNode(true));
+     else section.classList.add('rich-continuation');
+     section.append(numbered);
+     add(section);
+    });
+    for(const detail of Array.from(child.children).filter(element=>element!==heading&&element!==list)){
+     for(const part of splitRich(detail as HTMLElement)){
+      const section=child.cloneNode(false) as HTMLElement;
+      section.classList.add('rich-continuation');
+      section.append(part);
+      add(section);
+     }
+    }
+   }
    else for(const part of splitRich(child))add(part);
   }
   return expanded.length?expanded:[chunk];
  }
  function paginate(){
   // Pagination uses full physical dimensions; screen zoom only scales the finished pages.
-  root.querySelectorAll<HTMLAudioElement>('audio[data-section-audio]').forEach(audio=>{state.audioPositions??={};state.audioPositions[audio.dataset.sectionAudio!]=audio.currentTime;audio.pause();});
+  root.querySelectorAll<HTMLAudioElement>('audio[data-section-audio]').forEach(audio=>{rememberAudio(audio);audio.pause();});
   const previousZoom=root.style.getPropertyValue('--paper-zoom');root.style.setProperty('--paper-zoom','1');
-  const fragment=template.content.cloneNode(true) as DocumentFragment,chunks:HTMLElement[]=[];renderFeedback(fragment);
+  const fragment=data.screenOnly?template.content:template.content.cloneNode(true) as DocumentFragment,chunks:HTMLElement[]=[];renderFeedback(fragment);
   let measuringPage:HTMLElement|undefined;
   if(kind==='exam'&&data.presentation?.headerStyle==='generated'){
    measuringPage=document.createElement('div');measuringPage.className='exam-page';measuringPage.style.cssText='position:fixed;left:-100000px;top:0;visibility:hidden;zoom:1;height:auto;overflow:visible;margin:0';
@@ -97,8 +120,25 @@ export function practiceSession(digest:typeof practiceDigest,normalize:typeof no
    p.querySelector('footer')!.textContent=kind==='answer-card'?`${i+1} / ${pages.length}`:data.presentation?.footerTemplate!==undefined?replace(data.presentation.footerTemplate):(data.paperLanguage==='en'?`Page ${pageNumber} of ${pageCount}`:`第 ${pageNumber} 页，共 ${pageCount} 页`)+(data.paperLayout?.footerText?' · '+data.paperLayout.footerText:'');
    const headerValues=pageNumber%2===0?{...data.presentation?.runningHeader,...data.presentation?.runningHeader?.even}:data.presentation?.runningHeader;
    p.querySelectorAll<HTMLElement>('[data-page-label]').forEach((el,j)=>el.textContent=replace(headerValues?.[['left','center','right'][j]]??el.textContent??''));
-  });root.style.setProperty('--paper-zoom',previousZoom||'1');restoreInputs();
-  if(!state.preview)root.querySelectorAll<HTMLAudioElement>('audio[data-section-audio]').forEach(audio=>{const section=data.sections.find((s:any)=>s.id===audio.dataset.sectionAudio);if(!section?.stimulus?.audio)return;audio.src=section.stimulus.audio.dataUrl;const restore=()=>{const time=state.audioPositions?.[audio.dataset.sectionAudio!]??0;if(time>0&&time<audio.duration)audio.currentTime=time;};if(audio.readyState)restore();else audio.addEventListener('loadedmetadata',restore,{once:true});});
+  });root.style.setProperty('--paper-zoom',previousZoom||'1');
+  if(data.screenOnly){root.querySelectorAll<HTMLElement>('input,textarea').forEach(input=>input.inert=true);return;}
+  restoreInputs();
+  if(!state.preview)root.querySelectorAll<HTMLAudioElement>('audio[data-section-audio]').forEach(audio=>{
+   const recording=data.sections.find((s:any)=>s.id===audio.dataset.sectionAudio)?.stimulus?.audio;
+   if(!recording)return;
+   audio.addEventListener('loadedmetadata',()=>{const time=state.audioPositions?.[audio.dataset.sectionAudio!]??0;if(time>0&&time<audio.duration)audio.currentTime=time;});
+   audio.addEventListener('pause',()=>{rememberAudio(audio);save();});
+   if(recording.dataUrl){audio.src=recording.dataUrl;return;}
+   const play=audio.parentElement?.querySelector<HTMLButtonElement>('[data-play-listening]');
+   if(!play||!data.audioBaseUrl||!/^assets\/[a-f0-9]{20}\.(m4a|mp3|wav|ogg|aac|webm)$/.test(recording.url??''))return;
+   play.onclick=async()=>{
+    if(play.disabled)return;
+    const source=new URL(recording.url,data.audioBaseUrl);
+    if(source.origin!==location.origin)return;
+    audio.src=source.href;audio.hidden=false;play.hidden=true;
+    try{await audio.play();}catch{audio.removeAttribute('src');audio.hidden=true;play.hidden=false;say('录音未能播放，请重试。');}
+   };
+  });
  }
  function controls(){
   const exam=kind==='exam';$('start-exam')?.toggleAttribute('hidden',Boolean(state.startedAt));$('submit-exam')?.toggleAttribute('hidden',!state.startedAt||state.submitted);$('section-navigation').hidden=!exam||state.submitted||state.preview;
@@ -158,9 +198,20 @@ export function practiceSession(digest:typeof practiceDigest,normalize:typeof no
   }else say('错题本已导出；导入答案卷后，可同时导出对应答案。');
   download(zipFiles(exportedFiles),'《'+payload.title+'》.zip','application/zip');
  }
- const fit=()=>{const width=(data.paperGeometry?.widthMm||210)*96/25.4,rootStyle=getComputedStyle(root),available=Math.max(50,Math.min(root.clientWidth,window.innerWidth)-parseFloat(rootStyle.paddingLeft)-parseFloat(rootStyle.paddingRight));root.style.setProperty('--paper-zoom',String(Math.max(.05,Math.min(1,available/width))));};fit();window.addEventListener('resize',fit);
+ const fit=()=>{const width=(data.paperGeometry?.widthMm||210)*96/25.4,rootStyle=getComputedStyle(root),available=Math.max(50,Math.min(root.clientWidth,window.innerWidth)-parseFloat(rootStyle.paddingLeft)-parseFloat(rootStyle.paddingRight));root.style.setProperty('--paper-zoom',String(Math.max(.05,Math.min(1,available/width))));};
+ if(data.screenOnly){
+  const content=root.querySelector('.page-content')!;
+  void content.getBoundingClientRect();
+  const images=Array.from(content.querySelectorAll('img'));
+  void Promise.all([document.fonts.ready,...images.map(image=>image.decode().catch(()=>{}))]).then(()=>{
+   template.content.append(...Array.from(content.childNodes));paginate();document.body.dataset.ready='true';
+  });
+  return;
+ }
+ fit();window.addEventListener('resize',fit);
  const assetsReady=Promise.all([document.fonts.ready,...all.flatMap(q=>(q.attachments||[]).map((attachment:any)=>{const image=new Image();image.src=attachment.dataUrl;return image.decode().catch(()=>{});} ))]);
  if(data.preview){void assetsReady.then(()=>{paginate();fit();document.body.dataset.ready='true';});return;}
+ window.addEventListener('pagehide',()=>{root.querySelectorAll<HTMLAudioElement>('audio[data-section-audio]').forEach(rememberAudio);save();});
  root.addEventListener('play',event=>{const audio=event.target;if(audio instanceof HTMLAudioElement){if(kind==='exam'&&(!state.startedAt||state.submitted)){audio.pause();return;}root.querySelectorAll<HTMLAudioElement>('audio').forEach(other=>{if(other!==audio)other.pause();});}},true);
  root.addEventListener('input',event=>{const input=event.target as HTMLInputElement|HTMLTextAreaElement;if(input.dataset.selfScore){const q=byId.get(input.dataset.selfScore),value=Number(input.value);if(input.value===''||!Number.isFinite(value)||value<0||value>q.score)return;const a=state.userState.practiceAnswers[q.id];a.score=value;a.correct=value===q.score;schedule(q.id,a.correct);state.userState.practiceMistakes=all.filter(q=>state.userState.practiceAnswers[q.id]?.correct===false).map(q=>q.id);save();const feedback=root.querySelector('[data-feedback="'+CSS.escape(q.id)+'"]>b');if(feedback)feedback.textContent=(a.correct?'正确':'错误')+' · '+a.score+' / '+q.score+' 分';results();return;}if(!input.dataset.qid||state.submitted||!state.startedAt)return;const q=byId.get(input.dataset.qid);let value:any;if(input instanceof HTMLInputElement&&input.type==='radio')value=input.value;else if(input instanceof HTMLInputElement&&input.type==='checkbox'){const selected=new Set(Array.isArray(valueOf(q))?valueOf(q):[]);if(input.checked)selected.add(input.value);else selected.delete(input.value);value=[...selected].sort();}else if(input.dataset.blank!==undefined||input.dataset.part!==undefined){value=[...(Array.isArray(valueOf(q))?valueOf(q):[])];value[Number(input.dataset.blank??input.dataset.part)]=input.value;}else value=input.value;state.userState.practiceAnswers[q.id]={value};save();});
  function showAnswerEvidence(id:string){

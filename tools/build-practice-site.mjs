@@ -80,7 +80,11 @@ const shellBytes=fileBytes(shellFiles);
 const shelfEntry=Object.entries(result.metafile.outputs).find(([,info])=>info.entryPoint==='public-shelf:./catalog-shelf')?.[0];
 if(!shelfEntry)throw Error('The site must load its catalog separately from the editor.');
 const shelfBytes=fileBytes(staticImports(shelfEntry).filter(path=>!shellFiles.includes(path)));
-const modulePreloads=[...shellFiles].map(path=>`<link rel="modulepreload" href="./${path.slice(path.lastIndexOf('/assets/')+1)}">`).join('');
+const previewEntry=Object.entries(result.metafile.outputs).find(([,info])=>info.entryPoint?.endsWith('/preview-tools.ts'))?.[0];
+if(!previewEntry)throw Error('The site must load its preview separately from the editor.');
+const previewFiles=staticImports(previewEntry);
+const preloadFiles=new Set([...shellFiles,...previewFiles]);
+const modulePreloads=[...preloadFiles].map(path=>`<link rel="modulepreload" href="./${path.slice(path.lastIndexOf('/assets/')+1)}">`).join('');
 
 if(shellBytes>250_000)throw Error('Homepage JavaScript exceeded the 250 KB build budget: '+shellBytes+' B.');
 if(shelfBytes>75_000)throw Error('Catalog JavaScript exceeded the 75 KB build budget: '+shelfBytes+' B.');

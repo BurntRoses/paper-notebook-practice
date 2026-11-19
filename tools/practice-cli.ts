@@ -95,8 +95,9 @@ async function preparePlan(path:string,out:string){
  await mkdir(out,{recursive:true});if(job.examId)await writeJson(join(out,'exam-specification.json'),job.specification??getExamSpecification(job.examId));await writeJson(join(out,'job.json'),job);await writeJson(join(out,'materials.json'),materials);await writeJson(join(out,'practice.schema.json'),practiceSchema);await writeJson(join(out,'practice-job.schema.json'),jobSchema);
  const bankName=bank?'bank.json':'draft-bank.json';await writeJson(join(out,bankName),bank||{schemaVersion:'1.0.0',kind:'practice-draft-bank',materials,questions:[],pending:materials.map(material=>({materialId:material.id,title:material.title,status:'agent-authoring-required'}))});
  await writeJson(join(out,'reference-study.json'),referenceStudy(job));
- await writeFile(join(out,'authoring.md'),authoringBrief(job,'materials.json',bankName));await writeJson(join(out,'extraction-findings.json'),{status:unresolved.length?'needs-agent-review':'ready-to-compose',warnings,source:actual,questionsReady:bank?questionsOf(bank).length:0,materials:materials.length});
- return {output:out,job:join(out,'job.json'),bank:join(out,bankName),brief:join(out,'authoring.md'),referenceStudy:join(out,'reference-study.json'),status:unresolved.length?'needs-agent-review':'ready-to-compose',questions:bank?questionsOf(bank).length:0,warnings};
+ const status=job.quality.unresolved.length||job.ingestion&&!job.quality.ocrReviewed?'needs-agent-review':'ready-to-compose';
+ await writeFile(join(out,'authoring.md'),authoringBrief(job,'materials.json',bankName));await writeJson(join(out,'extraction-findings.json'),{status,unresolved:job.quality.unresolved,warnings,source:actual,questionsReady:bank?questionsOf(bank).length:0,materials:materials.length});
+ return {output:out,job:join(out,'job.json'),bank:join(out,bankName),brief:join(out,'authoring.md'),referenceStudy:join(out,'reference-study.json'),status,questions:bank?questionsOf(bank).length:0,warnings};
 }
 
 try{

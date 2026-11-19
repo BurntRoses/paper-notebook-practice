@@ -50,7 +50,7 @@ export const questionsOf=(practice:Pick<PracticeDocument,'sections'>)=>practice.
 export function createReview(previous:{stage:number;due:string}|undefined,correct:boolean,now=new Date()){const stage=correct?Math.min(5,(previous?.stage??-1)+1):0;const next=new Date(now);next.setDate(next.getDate()+REVIEW_DAYS[stage]);return {stage,due:next.toISOString().slice(0,10)};}
 /** Candidate data uses an explicit field set; author evidence stays in the answer paper. */
 export function questionOnly(practice:PracticeDocument){
- const {schemaVersion,practiceId,notebookId,notebookRevision,title,subject,level,durationMinutes,totalScore,mode,presentation,style,exam,assembly}=structuredClone(practice);
+ const {schemaVersion,practiceId,notebookId,notebookRevision,title,subject,level,durationMinutes,totalScore,mode,presentation,style,exam,assembly}=practice;
  const publicSource=({materialId,blockId,page,title}:PracticeSource)=>({materialId,blockId,page,title});
  const visibleMaterials=new Set<string>();
  const sections=practice.sections.map(section=>{

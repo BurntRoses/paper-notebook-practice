@@ -57,14 +57,17 @@ export async function ingestPractice(inputPath,options={}){
  if(!['auto','always','never'].includes(ocr))throw Error('ocr must be auto, always or never');if(!Number.isInteger(dpi)||dpi<72||dpi>600)throw Error('dpi must be an integer between 72 and 600');
  const inputs=await filesIn(input,out);if(!inputs.length)throw Error('No supported source files found. Supply PDF, DOCX, images, TXT, Markdown, notebook HTML or JSON.');
  await mkdir(out,{recursive:true});for(const dir of ['originals','pages','raw','assets'])await mkdir(join(out,dir),{recursive:true});
- const adapter=await pythonAdapter(),sources=[],materials=[],seen=new Set(),duplicates=[];
+ const isDirectory=(await stat(input)).isDirectory();
+ let adapter;
+ const sources=[],materials=[],seen=new Set(),duplicates=[];
  for(const file of inputs){
   const bytes=await readFile(file),sha256=digest(bytes);if(seen.has(sha256)){duplicates.push({name:basename(file),sha256});continue;}seen.add(sha256);
-  const id='source-'+sha256.slice(0,20),ext=extname(file).toLowerCase(),source={id,name:basename(file),sha256,byteLength:bytes.length,originalFile:`originals/${id}${ext}`,relativeInput:(await stat(input)).isDirectory()?relative(input,file):basename(file),status:'ready',pages:[],warnings:[],corrections:[],glossary:[]};
-  await copyFile(file,join(out,source.originalFile));
+  const id='source-'+sha256.slice(0,20),ext=extname(file).toLowerCase(),source={id,name:basename(file),sha256,byteLength:bytes.length,originalFile:`originals/${id}${ext}`,relativeInput:isDirectory?relative(input,file):basename(file),status:'ready',pages:[],warnings:[],corrections:[],glossary:[]};
+  await writeFile(join(out,source.originalFile),bytes);
   try{
    let extracted;
    if(['.pdf','.png','.jpg','.jpeg','.webp','.tif','.tiff','.bmp'].includes(ext)){
+    adapter??=await pythonAdapter();
     if(!adapter.available)throw Error(adapter.error);
     const target=join(out,'pages',id);await mkdir(target,{recursive:true});
     const {stdout}=await run(adapter.executable,[adapter.script,file,'--out',target,'--ocr',ocr,'--dpi',String(dpi),'--swift',join(here,'practice-ocr.swift')],{timeout:Math.max(300000,Number(options.timeout||300000)),maxBuffer:128*1024*1024});
@@ -83,14 +86,14 @@ export async function ingestPractice(inputPath,options={}){
    source.rawTextFile=`raw/${id}.txt`;await writeFile(join(out,source.rawTextFile),rawText);
    const blocks=source.documentBlocks||source.pages.map(page=>({id:`${id}-page-${page.page}`,title:`${source.name} · 第 ${page.page} 页`,text:page.rawText,page:page.page}));
    if(rawText.trim())materials.push({id,title:basename(file,ext),kind:options.kind||'reference',text:rawText,blocks,sha256,provenance:{kind:'upload'}});
-   source.status=source.pages.some(page=>page.status==='needs-ocr')?'needs-ocr':source.pages.some(page=>page.status==='needs-review')?'needs-review':'ready';
+   source.status=source.pages.some(page=>page.status==='needs-ocr')?'needs-ocr':!rawText.trim()||source.pages.some(page=>page.status==='needs-review')?'needs-review':'ready';
   }catch(error){source.status='needs-extraction';source.warnings.push(error.message);}
   sources.push(source);
  }
  const physical=sources.filter(source=>source.pages.some(page=>page.widthPt&&page.heightPt));
  const layout={schemaVersion:'1.0.0',coordinateSystem:'pdf-points-top-left',sources:physical.map(source=>({sourceId:source.id,name:source.name,sha256:source.sha256,pages:source.pages.filter(page=>page.widthPt).map(({imageFile,imageSha256,rawText,method,uncertain,ocrReviewRequired,warnings,extractionCapabilities,...page})=>page)}))};
  const captured={schemaVersion:'1.0.0',kind:'captured-paper-layout',coordinateSystem:'pdf-points-top-left',status:'needs-agent-review',sources:physical.map(source=>({sourceId:source.id,name:source.name,sha256:source.sha256,pages:source.pages.filter(page=>page.widthPt).map(capturedPage)}))};
- const manifest={schemaVersion:'1.0.0',kind:'practice-sources',createdAt:new Date().toISOString(),status:sources.some(source=>['needs-ocr','needs-extraction'].includes(source.status))?'needs-ocr':sources.some(source=>source.status==='needs-review')?'needs-review':'ready',sources,materials,duplicates,layoutFile:'layout.json',capturedTemplateFile:'captured-template.json',handoffFile:'agent-handoff.md',rawCorrectionsPolicy:'rawText is immutable evidence; corrections and glossary are separate, source-linked records.',capabilities:{basic:true,visual:adapter.available,ocr:adapter.available?adapter.capabilities:undefined}};
+ const manifest={schemaVersion:'1.0.0',kind:'practice-sources',createdAt:new Date().toISOString(),status:sources.some(source=>['needs-ocr','needs-extraction'].includes(source.status))?'needs-ocr':sources.some(source=>source.status==='needs-review')?'needs-review':'ready',sources,materials,duplicates,layoutFile:'layout.json',capturedTemplateFile:'captured-template.json',handoffFile:'agent-handoff.md',rawCorrectionsPolicy:'rawText is immutable evidence; corrections and glossary are separate, source-linked records.',capabilities:{basic:true,visual:adapter?.available??null,ocr:adapter?.available?adapter.capabilities:undefined}};
  const handoff=`# Agent 材料交接\n\n1. 读取 source-manifest.json、layout.json 与 captured-template.json，并查看 originals/ 与 pages/ 的实际页面。\n2. 每份资料按学科、层级、章节、知识点、题型和难度标准化。保留 source ID、原页码、原题号和完整原文；没有答案的原题保留为待解题草稿，由当前 Agent 依据资料求解核对。\n3. 检查 OCR 的 uncertain、ocrReviewRequired 与 warnings；公式、单位、正负号、选项字母、图表和多栏顺序逐页核对。rawText 不改写；更正写到 source.corrections 中，标明 page、original、corrected、reason 与 reviewedBy。\n4. 按用户目标生成 sourced practice.json；solution/explanation 与引用准确，题目卷不嵌入答案。\n5. 原卷 1:1 复刻使用 replicate 命令，图像与原始 PDF 字节校验保持一致；可编辑新卷使用 captured-template 的实测尺寸与区域，Agent 识别标题、题组、材料、图表与作答区角色，并与原卷逐页比较。仅凭 OCR 文本不能宣称版式一致。\n6. build、verify 后，打开实际成品检查模板、跨页、图形、作答区、答案隔离和打印。默认交付成品与可复用题库；浏览器仅用于预览、人工选题和修订。\n\n本次资料状态：${manifest.status}。${sources.length} 份资料，${materials.length} 份全文可用，${physical.length} 份有实测页版。\n`;
  await Promise.all([writeFile(join(out,'source-manifest.json'),JSON.stringify(manifest,null,2)+'\n'),writeFile(join(out,'layout.json'),JSON.stringify(layout,null,2)+'\n'),writeFile(join(out,'captured-template.json'),JSON.stringify(captured,null,2)+'\n'),writeFile(join(out,'agent-handoff.md'),handoff)]);
  return {manifest:join(out,'source-manifest.json'),layout:join(out,'layout.json'),capturedTemplate:join(out,'captured-template.json'),status:manifest.status,sources:sources.length,pages:sources.reduce((n,source)=>n+source.pages.length,0),materials:materials.length,duplicates:duplicates.length};

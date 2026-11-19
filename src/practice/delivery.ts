@@ -21,15 +21,33 @@ export async function embedSiteAudio(paper:PracticeDocument):Promise<PracticeDoc
  const recordings=copy.sections.flatMap(section=>section.stimulus?.audio?.url?[section.stimulus.audio]:[]);
  for(let index=0;index<recordings.length;index+=2)await Promise.all(recordings.slice(index,index+2).map(async audio=>{
   if(!base||!audio.url||!isSiteAudio(audio))throw Error('听力资源地址无效。');
-  try{
-   const response=await fetch(new URL(audio.url,base),{redirect:'error',signal:AbortSignal.timeout(30000)});
-   if(!response.ok)throw Error(String(response.status));
-   const blob=new Blob([await response.arrayBuffer()],{type:audio.mimeType});
-   audio.dataUrl=await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(reader.error);reader.readAsDataURL(blob);});
-   delete audio.url;
-  }catch{throw Error(`未能下载「${audio.title}」，请重试或从 GitHub 发布页下载四六级离线包。`);}
+  const url=new URL(audio.url,base).href;
+  try{audio.dataUrl=await fetchRecording(url,audio.mimeType);delete audio.url;}
+  catch{throw Error(`未能下载「${audio.title}」，请重试或从 GitHub 发布页下载四六级离线包。`);}
  }));
  return copy;
+}
+const recordingsCache=new Map<string,Promise<string>>();
+function fetchRecording(url:string,mimeType:string){
+ let pending=recordingsCache.get(url);
+ if(!pending){
+  pending=(async()=>{
+   for(let attempt=0;attempt<2;attempt++){
+    try{
+     const response=await fetch(url,{redirect:'error',signal:AbortSignal.timeout(20000)});
+     if(!response.ok||!response.headers.get('content-type')?.match(/^(audio\/|application\/octet-stream\b)/i))throw Error('Unexpected audio response');
+     const bytes=await response.arrayBuffer();if(!bytes.byteLength)throw Error('Empty audio response');
+     const blob=new Blob([bytes],{type:mimeType});
+     return await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(reader.error);reader.readAsDataURL(blob);});
+    }catch(error){if(attempt)throw error;}
+   }
+   throw Error('Unable to download recording');
+  })();
+  const request=pending;pending.catch(()=>{if(recordingsCache.get(url)===request)recordingsCache.delete(url);});
+ }
+ recordingsCache.delete(url);recordingsCache.set(url,pending);
+ if(recordingsCache.size>16)recordingsCache.delete(recordingsCache.keys().next().value!);
+ return pending;
 }
 export function downloadWebFile(url:string,name:string){
  const anchor=document.createElement('a');anchor.href=new URL(url,location.href).href;anchor.download=name;anchor.rel='noopener';document.body.append(anchor);anchor.click();anchor.remove();

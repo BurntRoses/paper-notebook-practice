@@ -7,17 +7,17 @@ export interface AssembleOptions extends BankFilter {title:string;subject:string
 
 /** Recomposition keeps source conditions and numbering, but replaces source-specific totals. */
 type PaperMetadataReference=Pick<PracticeDocument,'title'|'subject'|'level'|'durationMinutes'|'mode'|'totalScore'|'style'|'presentation'>&{
- sections:(Pick<PracticeSection,'id'|'title'>&{questions:Pick<PracticeQuestion,'id'|'score'>[]})[];
+ sections:(Pick<PracticeSection,'id'|'title'>&{questions:Pick<PracticeQuestion,'id'|'score'|'type'>[]})[];
 };
 export function refreshPracticeMetadata(paper:PracticeDocument,reference:PaperMetadataReference):PracticeDocument{
- const sameQuestions=(left:Pick<PracticeQuestion,'id'|'score'>[],right:typeof left)=>left.length===right.length&&left.every((q,i)=>q.id===right[i].id&&q.score===right[i].score);
+ const sameQuestions=(left:PaperMetadataReference['sections'][number]['questions'],right:typeof left)=>left.length===right.length&&left.every((q,i)=>q.id===right[i].id&&q.score===right[i].score&&q.type===right[i].type);
  const current=paper.sections.flatMap(s=>s.questions),previous=reference.sections.flatMap(s=>s.questions);
  const actualTotal=paper.sections.reduce((total,s)=>total+s.questions.reduce((sum,q)=>sum+q.score,0),0);
  const sectionStructure=(sections:PaperMetadataReference['sections'])=>JSON.stringify(sections.map(s=>[s.id,s.title,s.questions.map(q=>q.id)]));
  const changed=paper.title!==reference.title||paper.subject!==reference.subject||paper.level!==reference.level||paper.durationMinutes!==reference.durationMinutes||paper.mode!==reference.mode||paper.totalScore!==reference.totalScore||Math.abs(actualTotal-paper.totalScore)>1e-7||!sameQuestions(current,previous)||sectionStructure(paper.sections)!==sectionStructure(reference.sections);
  const snapshotChanged=paper.original&&(changed||JSON.stringify(paper.sections)!==JSON.stringify(reference.sections)||JSON.stringify(paper.style)!==JSON.stringify(reference.style)||JSON.stringify(paper.presentation)!==JSON.stringify(reference.presentation));
  if(!changed){if(snapshotChanged&&paper.original){const detached=structuredClone(paper);delete detached.original;return detached;}return paper;}
- const result=structuredClone(paper);delete result.original;if(result.exam&&(!sameQuestions(current,previous)||paper.durationMinutes!==reference.durationMinutes||Math.abs(actualTotal-reference.totalScore)>1e-7))result.exam.scope='subset';const english=result.presentation?.language==='en';
+ const result=structuredClone(paper);delete result.original;if(result.exam&&(paper.mode==='bank'||!sameQuestions(current,previous)||sectionStructure(paper.sections)!==sectionStructure(reference.sections)||paper.durationMinutes!==reference.durationMinutes||Math.abs(actualTotal-reference.totalScore)>1e-7))result.exam.scope='subset';const english=result.presentation?.language==='en';
  const countsOrScores=/(?:\d+(?:\.\d+)?\s*(?:分|题|小题|道|points?\b|questions?\b)|第\s*[\d一二三四五六七八九十]+\s*(?:题|小题)|Questions?\s+\d)/i;
  const sectionInstructions=(section:PracticeSection)=>{
   const types=new Set(section.questions.map(q=>q.type));
@@ -29,15 +29,15 @@ export function refreshPracticeMetadata(paper:PracticeDocument,reference:PaperMe
  const oldQuestions=new Map(previous.map(q=>[q.id,q]));let sectionChanged=false;
  for(const section of result.sections){
   const original=reference.sections.find(s=>s.id===section.id),altered=!original||section.title!==original.title||!sameQuestions(section.questions,original.questions);
-  section.score=Math.round(section.questions.reduce((sum,q)=>sum+q.score,0)*100)/100;
+  section.score=section.questions.reduce((sum,q)=>sum+q.score,0);
   for(const q of section.questions){const old=oldQuestions.get(q.id);if(!old||q.score!==old.score)delete q.scoreLabel;}
   if(!altered)continue;
   sectionChanged=true;delete section.scoreLabel;
   // Some original papers put their counts in the heading rather than scoreLabel.
   section.title=section.title.replace(/[（(]([^（）()]*)[）)]/g,(whole,inside:string)=>countsOrScores.test(inside)?'':whole).trim()||([...new Set(section.questions.map(q=>PRACTICE_TYPE_NAMES[q.type]))].join('与'));
-  if(countsOrScores.test(section.instructions))section.instructions=sectionInstructions(section);
+  if(countsOrScores.test(section.instructions)&&!section.stimulus&&!section.format&&!section.listeningOnly)section.instructions=sectionInstructions(section);
  }
- result.totalScore=Math.round(result.sections.reduce((sum,s)=>sum+s.score,0)*100)/100;
+ result.totalScore=result.sections.reduce((sum,s)=>sum+s.score,0);
  if(result.presentation){
   const p=result.presentation;p.titleLines=[result.title];delete p.headerRows;delete p.scoreColumns;
   p.subtitle='';
@@ -52,14 +52,19 @@ export function refreshPracticeMetadata(paper:PracticeDocument,reference:PaperMe
 export function filterQuestionBank(questions:PracticeQuestion[],filter:BankFilter={}):PracticeQuestion[]{
  const search=filter.search?.trim().toLocaleLowerCase();return questions.filter(question=>(!filter.chapter||question.chapter===filter.chapter)&&(!filter.type||question.type===filter.type)&&(!filter.difficulty||question.difficulty===filter.difficulty)&&(!filter.tags?.length||filter.tags.every(tag=>question.tags?.includes(tag)))&&(!search||[question.prompt,question.chapter,...(question.tags||[])].join('\n').toLocaleLowerCase().includes(search)));
 }
-export function deduplicateQuestions(questions:PracticeQuestion[]):{questions:PracticeQuestion[];duplicates:PracticeQuestion[]}{
+export function deduplicateQuestions(questions:PracticeQuestion[],contexts:ReadonlyMap<string,string>=new Map()):{questions:PracticeQuestion[];duplicates:PracticeQuestion[]}{
  const seen=new Set<string>(),ids=new Set<string>();const unique:PracticeQuestion[]=[],duplicates:PracticeQuestion[]=[];
- for(const question of questions){const key=question.type+'|'+question.prompt.replace(/\s+/g,' ').trim()+'|'+(question.options||[]).map(option=>option.text.trim()).sort().join('|');if(seen.has(key)||ids.has(question.id))duplicates.push(question);else{seen.add(key);ids.add(question.id);unique.push(question);}}return {questions:unique,duplicates};
+ for(const question of questions){
+  const key=JSON.stringify([question.type,question.prompt.replace(/\s+/g,' ').trim(),question.options,question.solution,question.score,contexts.get(question.id),question.attachments?.map(attachment=>attachment.dataUrl)]);
+  if(seen.has(key)||ids.has(question.id))duplicates.push(question);else{seen.add(key);ids.add(question.id);unique.push(question);}
+ }
+ return {questions:unique,duplicates};
 }
 function seededRandom(seed:string){let value=2166136261;for(const char of seed)value=Math.imul(value^char.charCodeAt(0),16777619);return ()=>{value+=0x6D2B79F5;let t=Math.imul(value^value>>>15,1|value);t^=t+Math.imul(t^t>>>7,61|t);return ((t^t>>>14)>>>0)/4294967296;};}
 function shuffled<T>(items:T[],random:()=>number){const copy=[...items];for(let i=copy.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[copy[i],copy[j]]=[copy[j],copy[i]];}return copy;}
 function chooseConstrained(candidates:PracticeQuestion[],count:number,target:number|undefined,preference:AssembleOptions['questionPreference'],required:string[]=[],evidence=new Map<string,Set<string>>()):PracticeQuestion[]{
  if(target!==undefined&&(!Number.isFinite(target)||target<=0))throw new Error('目标总分必须大于 0。');
+ if(target!==undefined&&Math.abs(target*100-Math.round(target*100))>1e-7)throw new Error('目标总分最多保留两位小数。');
  if(target!==undefined&&candidates.some(question=>Math.abs(question.score*100-Math.round(question.score*100))>1e-7))throw new Error('题目分值最多保留两位小数。');
  const prefer=preference&&preference!=='balanced';
  const preferenceCost=(indices:number[])=>indices.reduce((sum,index)=>{const kind=candidates[index].origin?.kind;const preferred=preference==='generated-first'?'generated':'original';return sum+(kind===preferred?0:count+1)+(kind==='adapted'?0:kind===preferred?0:1);},0);
@@ -100,8 +105,11 @@ export function balanceChoiceAnswers(questions:PracticeQuestion[],seed='paper-no
 export function assembleMock(questions:PracticeQuestion[],options:AssembleOptions):PracticeDocument{
  if(!Number.isInteger(options.count)||options.count<1)throw new Error('题数必须是大于 0 的整数。');if(!Number.isFinite(options.durationMinutes)||options.durationMinutes<=0)throw new Error('考试时长必须大于 0。');
  const mode=options.mode||'mock';
- const evidence=new Map(questions.map(q=>[q.id,questionEvidenceIds(q,options.materials,options.sourceSections?.find(s=>s.questions.some(item=>item.id===q.id))?.stimulus)]));
- const available=deduplicateQuestions(filterQuestionBank(questions,options).filter(q=>evidenceAllowed(evidence.get(q.id)!,options.materials,options.sourcePolicy))).questions;const count=mode==='bank'?available.length:options.count;
+ const sourceGroups=new Map(options.sourceSections?.flatMap(section=>section.questions.map(question=>[question.id,section] as const)));
+ const contexts=new Map([...sourceGroups].filter(([,section])=>section.stimulus||section.format||section.listeningOnly).map(([id,section])=>[id,section.id]));
+ const evidence=new Map(questions.map(q=>[q.id,questionEvidenceIds(q,options.materials,sourceGroups.get(q.id)?.stimulus)]));
+ const filtered=filterQuestionBank(questions,options).filter(q=>evidenceAllowed(evidence.get(q.id)!,options.materials,options.sourcePolicy));
+ const available=mode==='bank'?[...new Map(filtered.map(q=>[q.id,q])).values()]:deduplicateQuestions(filtered,contexts).questions;const count=mode==='bank'?available.length:options.count;
  if(!available.length)throw new Error('当前筛选没有可用题目。');if(count>available.length)throw new Error(`当前筛选只有 ${available.length} 道题，无法抽取 ${count} 道。`);
  const seed=options.seed||'paper-notebook';const candidates=mode==='bank'?available:shuffled(available,seededRandom(seed));
  if(mode!=='bank'&&options.questionPreference&&options.questionPreference!=='balanced'){const preferred=options.questionPreference==='generated-first'?'generated':'original';const rank=(q:PracticeQuestion)=>q.origin?.kind===preferred?0:q.origin?.kind==='adapted'?1:2;candidates.sort((a,b)=>rank(a)-rank(b));}
@@ -109,9 +117,14 @@ export function assembleMock(questions:PracticeQuestion[],options:AssembleOption
  if(mode==='mock'&&options.balanceChoices!==false)selected=balanceChoiceAnswers(selected,seed);else selected=structuredClone(selected);
  const types:PracticeQuestion['type'][]=['choice','multiple','truefalse','blank','response','task'];const labels=PRACTICE_TYPE_NAMES;const instructions:Record<PracticeQuestion['type'],string>={choice:'每题只有一个正确选项，请选择相应字母。',multiple:'选择所有符合题意的选项。',truefalse:'根据题意与材料选择对应判断。',blank:'将答案填写在对应横线上。',response:'写出必要的推理、计算或论述过程。',task:'按任务要求完成操作，并记录关键步骤与结果。'};let number=0;
  let sections:PracticeSection[]=types.flatMap(type=>{const group=selected.filter(question=>question.type===type).map(question=>({...question,number:++number}));return group.length?[{id:`section-${type}`,title:labels[type],instructions:instructions[type],score:group.reduce((sum,question)=>sum+question.score,0),questions:group}]:[];});
- if(options.sourceSections?.length){number=0;const chosen=new Map(selected.map(q=>[q.id,q]));sections=options.sourceSections.flatMap(original=>{const group=original.questions.filter(q=>chosen.has(q.id)).map(q=>{const next={...chosen.get(q.id)!,number:++number};delete next.breakBefore;return next;});if(!group.length)return [];const section={...structuredClone(original),questions:group,score:group.reduce((n,q)=>n+q.score,0)};delete section.breakBefore;if(group.length!==original.questions.length)delete section.scoreLabel;return [section];});}
- const signature=selected.map(question=>question.id).join('|')+'|'+seed+'|'+options.title+'|'+mode;
- const paper:PracticeDocument={schemaVersion:'1.0.0',practiceId:stablePracticeId('practice',signature),notebookId:options.notebookId||stablePracticeId('notebook',options.materials.map(material=>material.id).join('|')),notebookRevision:options.notebookRevision||1,title:options.title,subject:options.subject,level:options.level,durationMinutes:options.durationMinutes,totalScore:Math.round(sections.reduce((sum,section)=>sum+section.score,0)*100)/100,mode,...(options.sourcePolicy?{sourcePolicy:structuredClone(options.sourcePolicy)}:{}),...(options.presentation?{presentation:structuredClone(options.presentation)}:{}),assembly:{choiceOrder:mode==='mock'&&options.balanceChoices!==false?'balanced':'preserve',seed,sourceQuestionIds:selected.map(question=>question.id)},style:options.style||{preset:'standard',sealed:true},materials:structuredClone(options.materials),sections};
+ if(options.sourceSections?.length){
+  number=0;const chosen=new Map(selected.map(q=>[q.id,q])),ids=new Set(options.sourceSections.map(section=>section.id));
+  const grouped=options.sourceSections.flatMap(original=>{const group=original.questions.flatMap(question=>{const next=chosen.get(question.id);if(!next)return [];chosen.delete(question.id);delete next.breakBefore;return [next];});if(!group.length)return [];const section={...structuredClone(original),questions:group,score:group.reduce((sum,q)=>sum+q.score,0)};delete section.breakBefore;if(group.length!==original.questions.length)delete section.scoreLabel;return [section];});
+  for(const section of sections){const remaining=section.questions.filter(question=>chosen.has(question.id));if(remaining.length){let id=section.id;while(ids.has(id))id+='-new';ids.add(id);grouped.push({...section,id,questions:remaining,score:remaining.reduce((sum,question)=>sum+question.score,0)});}}
+  sections=grouped.map(section=>({...section,questions:section.questions.map(question=>({...question,number:++number}))}));
+ }
+ const signature=JSON.stringify([sections.map(section=>section.questions.map(question=>[question.id,question.prompt,question.options,question.solution,question.score])),seed,options.title,mode,options.durationMinutes,options.notebookRevision]);
+ const paper:PracticeDocument={schemaVersion:'1.0.0',practiceId:stablePracticeId('practice',signature),notebookId:options.notebookId||stablePracticeId('notebook',options.materials.map(material=>material.id).join('|')),notebookRevision:options.notebookRevision||1,title:options.title,subject:options.subject,level:options.level,durationMinutes:options.durationMinutes,totalScore:sections.reduce((sum,section)=>sum+section.score,0),mode,...(options.sourcePolicy?{sourcePolicy:structuredClone(options.sourcePolicy)}:{}),...(options.presentation?{presentation:structuredClone(options.presentation)}:{}),assembly:{choiceOrder:mode==='mock'&&options.balanceChoices!==false?'balanced':'preserve',seed,sourceQuestionIds:sections.flatMap(section=>section.questions.map(question=>question.id))},style:structuredClone(options.style||{preset:'standard',sealed:true}),materials:structuredClone(options.materials),sections};
  const reference=options.sourceDocument??(options.sourceSections?{...paper,sections:options.sourceSections,totalScore:options.sourceSections.reduce((sum,s)=>sum+s.score,0)}:undefined);
  return reference?refreshPracticeMetadata(paper,reference):paper;
 }

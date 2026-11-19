@@ -2,7 +2,7 @@ import {validatePracticeEvidence} from './evidence';
 import Ajv from 'ajv';
 import schema from '../../skills/paper-notebook-practice/schemas/practice.schema.json';
 import {textOf,type NotebookDocument} from '../model/types';
-import {validateExamStructure} from './exam-specification';
+import {validateExamSpecification,validateExamStructure} from './exam-specification';
 import {isSiteAudio,questionsOf,type PracticeDocument,type PracticeError} from './model';
 let schemaValidator:ReturnType<Ajv['compile']>|undefined;
 const close=(left:number,right:number)=>Math.abs(left-right)<1e-7;
@@ -29,9 +29,9 @@ export function validatePractice(value:unknown,source?:NotebookDocument,siteAudi
  for(const [s,section] of practice.sections.entries()){
   const base=`/sections/${s}`;unique(section.id,base+'/id');let questionTotal=0;
   if(section.stimulus?.source)checkNotebookEvidence(section.stimulus.source,base+'/stimulus/source');
-  if(section.stimulus?.source){const citation=section.stimulus.source,material=materialMap.get(citation.materialId??''),body=citation.blockId===material?.id?material.text:material?.blocks?.find(b=>b.id===citation.blockId)?.text;if(!body?.includes(citation.exact))add(base+'/stimulus/source/exact','Shared passage must be an exact substring of its cited material block');}
   if(section.stimulus?.audio?.transcriptSource){const ref=section.stimulus.audio.transcriptSource;if(!materialMap.get(ref.materialId)?.blocks?.some(b=>b.id===ref.blockId))add(base+'/stimulus/audio/transcriptSource','Listening transcript block is missing');}
   if(section.stimulus?.audio?.url&&!(siteAudio&&isSiteAudio(section.stimulus.audio)))add(base+'/stimulus/audio/url','Listening asset references are only supported in the hosted catalog');
+  if(section.stimulus?.audio?.url&&section.stimulus.audio.dataUrl)add(base+'/stimulus/audio','Choose one audio source, not both URL and embedded audio');
   if(section.sharedOptions){const ids=section.sharedOptions.map(o=>o.id);if(new Set(ids).size!==ids.length)add(base+'/sharedOptions','Shared option IDs must be unique');for(const q of section.questions)if(q.options&&JSON.stringify(q.options.map(o=>o.id))!==JSON.stringify(ids))add(base+'/sharedOptions','Question option codes must match the shared option bank');}
   if(section.format==='statement-matching'){
    if(!section.sharedOptions?.length)add(base+'/sharedOptions','Statement matching requires shared statements');
@@ -48,7 +48,9 @@ export function validatePractice(value:unknown,source?:NotebookDocument,siteAudi
    if(question.source.materialId){const material=materialMap.get(question.source.materialId);if(!material)add(path+'/source/materialId','Unknown material ID');else if(question.source.blockId===material.id)body=material.text;else body=material.blocks?.find(block=>block.id===question.source.blockId)?.text;}
    else body=notebookBlocks.get(question.source.blockId);
    if(body===undefined)add(path+'/source/blockId','Source block not found; supply --source or an embedded source material');
-   else if(!body.includes(question.source.exact))add(path+'/source/exact','Must be an exact, nonempty substring of the cited block body');
+   else if(!question.source.materialId&&(!question.source.exact.trim()||!body.includes(question.source.exact)))add(path+'/source/exact','Must be an exact, nonempty substring of the cited block body');
+   if(!question.prompt.trim())add(path+'/prompt','Question text cannot be blank');
+   if(question.type!=='choice'&&question.type!=='multiple'&&question.type!=='truefalse'&&(Array.isArray(question.solution)?question.solution:[question.solution]).some(answer=>!answer.trim()))add(path+'/solution','Answer text cannot be blank');
    if(source&&question.source.materialId&&materialMap.get(question.source.materialId)?.kind==='notebook'){if(!notebookBlocks.has(question.source.blockId))add(path+'/source/blockId','Cited notebook block does not exist in the supplied original');else if(!notebookBlocks.get(question.source.blockId)!.includes(question.source.exact))add(path+'/source/exact','Embedded notebook excerpt differs from the supplied original block');}
    if(['choice','multiple','truefalse'].includes(question.type)){
     const options=question.options||[],ids=options.map(option=>option.id);
@@ -79,6 +81,11 @@ export function validatePractice(value:unknown,source?:NotebookDocument,siteAudi
  for(const key of Object.keys(practice.userState?.practiceAnswers||{}))if(!questionIds.has(key))add('/userState/practiceAnswers/'+key,'Answer refers to an unknown question');
  for(const [index,key] of (practice.userState?.practiceMistakes||[]).entries())if(!questionIds.has(key))add('/userState/practiceMistakes/'+index,'Mistake refers to an unknown question');
  if(practice.exam?.scope==='full')errors.push(...validateExamStructure(practice,undefined,true,siteAudio));
+ else if(practice.exam?.specification){
+  errors.push(...validateExamSpecification(practice.exam.specification));
+  if(practice.exam.specification.id!==practice.exam.specificationId)add('/exam/specificationId','Does not match the attached specification ID');
+  if(practice.exam.specification.scoreScale!==practice.exam.scoreScale)add('/exam/scoreScale','Does not match the specification score scale');
+ }
  return {valid:errors.length===0,errors};
 }
 export function assertPractice(value:unknown,source?:NotebookDocument):PracticeDocument{const result=validatePractice(value,source);if(!result.valid)throw new Error(result.errors.map(error=>error.path+': '+error.message).join('\n'));return value as PracticeDocument;}

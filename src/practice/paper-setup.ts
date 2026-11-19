@@ -95,11 +95,16 @@ export function mountPaperSetup(host:HTMLElement,options:SetupOptions){
  }
  function validThrough(last:number){
   if(!valid())return false;
-  if(last>=1&&draft.intent==='generate'&&draft.blueprintMode==='custom'&&(draft.questionGroups.reduce((n,g)=>n+g.count,0)>5000||blueprintTotal(draft.questionGroups)>10000)){if(step!==1)go(1);host.querySelector('#blueprint-error')!.textContent='题量最多 5000 题，总分最多 10000 分。';return false;}
+  const custom=draft.intent==='generate'&&draft.blueprintMode==='custom';
+  if(last>=1&&custom){
+   const groups=draft.questionGroups;
+   const message=!groups.length?'请至少添加一个题组。':groups.length>30?'最多设置 30 个题组。':groups.some(group=>!group.title.trim()||!Number.isInteger(group.count)||group.count<1||!Number.isFinite(group.pointsPerQuestion)||group.pointsPerQuestion<=0||group.pointsPerQuestion>1000||Math.abs(group.pointsPerQuestion*100-Math.round(group.pointsPerQuestion*100))>1e-7)?'每组需有名称、正整数题量及有效分值（最多两位小数）。':groups.reduce((count,group)=>count+group.count,0)>5000||blueprintTotal(groups)>10000?'题量最多 5000 题，总分最多 10000 分。':'';
+   if(message){if(step!==1)go(1);host.querySelector('#blueprint-error')!.textContent=message;return false;}
+  }
   const issues:{step:number;field:string}[]=[];
   for(const key of ['title','subject','level'] as const)if(!draft[key].trim())issues.push({step:0,field:key});
-  if(!Number.isInteger(draft.durationMinutes)||draft.durationMinutes<1||draft.durationMinutes>1440)issues.push({step:0,field:'durationMinutes'});
-  if(!Number.isFinite(draft.totalScore)||draft.totalScore<1||draft.totalScore>10000||draft.totalScore*2%1)issues.push({step:0,field:'totalScore'});
+  if(draft.intent==='generate'&&(!Number.isInteger(draft.durationMinutes)||draft.durationMinutes<1||draft.durationMinutes>1440))issues.push({step:0,field:'durationMinutes'});
+  if(draft.intent==='generate'&&!custom&&(!Number.isFinite(draft.totalScore)||draft.totalScore<1||draft.totalScore>10000||draft.totalScore*2%1))issues.push({step:0,field:'totalScore'});
   if(draft.scope==='subset'&&!draft.subset.trim())issues.push({step:1,field:'subset'});
   for(const [choice,text] of [['watermark','watermarkText'],['security','securityText'],['integrity','integrityText']] as const)if(draft.customization[choice]==='custom'&&!draft.customization[text]?.trim())issues.push({step:2,field:text});
   const issue=issues.find(issue=>issue.step<=last);if(!issue)return true;

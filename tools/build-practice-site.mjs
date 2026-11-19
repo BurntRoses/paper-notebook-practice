@@ -2,12 +2,16 @@
 /** Build the public, static Intro without embedding the offline installation ZIP. */
 import {build} from 'esbuild';
 import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
-import {resolve,dirname,extname} from 'node:path';
+import {resolve,dirname,extname,relative,isAbsolute,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
 import {tsImport} from 'tsx/esm/api';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const out=resolve(process.argv[2]||root+'dist/site');
+const fromOutput=relative(out,root);
+const fromRoot=relative(root,out);
+const insideRoot=fromRoot&&!isAbsolute(fromRoot)&&fromRoot!=='..'&&!fromRoot.startsWith('..'+sep);
+if(!fromOutput||!isAbsolute(fromOutput)&&fromOutput!=='..'&&!fromOutput.startsWith('..'+sep)||insideRoot&&!fromRoot.startsWith('dist'+sep))throw Error('Choose a dedicated site output directory under dist/ or outside the repository.');
 await rm(out,{recursive:true,force:true});await mkdir(out+'/assets',{recursive:true});
 const hash=b=>createHash('sha256').update(b).digest('hex').slice(0,20);
 const assetNames=new Set();
@@ -44,7 +48,14 @@ for(const [id,paper] of Object.entries(examples)){
  await writeFile(out+'/examples/'+id+'.json',JSON.stringify(paper));
 }
 const topics=JSON.parse(await readFile(root+'src/practice/topic-catalog.json','utf8'));
-for(const entry of topics.topics){const target=out+'/topics/'+entry.file;await mkdir(dirname(target),{recursive:true});await cp(root+'skills/paper-notebook-practice/examples/topics/'+entry.file,target);}
+for(const entry of topics.topics){
+ if(!/^[a-z0-9-]+\/[a-z0-9-]+\.json$/.test(entry.file))throw Error('Invalid topic path: '+entry.file);
+ const bytes=await readFile(root+'skills/paper-notebook-practice/examples/topics/'+entry.file);
+ if(createHash('sha256').update(bytes).digest('hex')!==entry.sha256)throw Error('Stale topic catalog: '+entry.file);
+ const paper=JSON.parse(bytes.toString('utf8'));if(paper.practiceId!==entry.id)throw Error('Topic ID mismatch: '+entry.file);
+ validatePaper(entry.id,paper);
+ const target=out+'/topics/'+entry.file;await mkdir(dirname(target),{recursive:true});await writeFile(target,bytes);
+}
 const license=await readFile(root+'licenses/noto-cjk-OFL.txt','utf8');
 let printFonts='/* Noto CJK embedded font license\n'+license.replace(/\*\//g,'* /')+'\n*/\n';
 for(const [family,name]of [['Noto Serif SC','NotoSerifSC-Regular.otf'],['Noto Sans SC','NotoSansSC-Regular.otf'],['Noto Sans JP','NotoSansJP-Regular.otf'],['Noto Sans KR','NotoSansKR-Regular.otf']]){const url=await asset(await readFile(root+'assets/practice-fonts/'+name),'.otf');printFonts+=`@font-face{font-family:"${family}";src:url("${url}");font-style:normal;font-weight:400;font-display:swap}\n`;}
@@ -84,9 +95,11 @@ const previewEntry=Object.entries(result.metafile.outputs).find(([,info])=>info.
 if(!previewEntry)throw Error('The site must load its preview separately from the editor.');
 const previewFiles=staticImports(previewEntry);
 const preloadFiles=new Set([...shellFiles,...previewFiles]);
+const initialBytes=fileBytes([...preloadFiles]);
 const modulePreloads=[...preloadFiles].map(path=>`<link rel="modulepreload" href="./${path.slice(path.lastIndexOf('/assets/')+1)}">`).join('');
 
 if(shellBytes>250_000)throw Error('Homepage JavaScript exceeded the 250 KB build budget: '+shellBytes+' B.');
+if(initialBytes>1_050_000)throw Error('Homepage and first-paper JavaScript exceeded the build budget: '+initialBytes+' B.');
 if(shelfBytes>75_000)throw Error('Catalog JavaScript exceeded the 75 KB build budget: '+shelfBytes+' B.');
 const project='https://github.com/BurntRoses/paper-notebook-practice';
 const site='https://burntroses.github.io/paper-notebook-practice/';
@@ -100,4 +113,4 @@ await writeFile(out+'/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" view
 await writeFile(out+'/.nojekyll','');
 await cp(root+'LICENSE',out+'/LICENSE.txt');await cp(root+'THIRD_PARTY_NOTICES.txt',out+'/THIRD_PARTY_NOTICES.txt');
 await writeFile(out+'/robots.txt','User-agent: *\nAllow: /\n');
-console.log(`Public Intro: ${out}; ${assetNames.size} shared assets, ${topics.topics.length} lazy topic papers; ${shellBytes} B startup JS, ${shelfBytes} B extra catalog JS.`);
+console.log(`Public Intro: ${out}; ${assetNames.size} shared assets, ${topics.topics.length} lazy topic papers; ${shellBytes} B shell JS, ${initialBytes} B including first-paper JS, ${shelfBytes} B extra catalog JS.`);

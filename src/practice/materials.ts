@@ -40,7 +40,7 @@ export async function importPracticeFile(file:PracticeInputFile,options:Material
   if(extension==='json'){
    let value:unknown;try{value=JSON.parse(text);}catch{throw new Error('JSON 语法无效，请检查引号、逗号和文件是否完整。');}
    const data=value as PracticeDocument;
-   if(data.practiceId&&Array.isArray(data.sections)){return {material:materialFromText(text,title,'question-bank'),questions:data.sections.flatMap(section=>section.questions),warnings:[],practice:data};}
+   if(data?.practiceId&&Array.isArray(data.sections)){return {material:materialFromText(text,title,'question-bank'),questions:data.sections.flatMap(section=>Array.isArray(section?.questions)?section.questions:[]),warnings:[],practice:data};}
    if((value as NotebookDocument)?.notebook?.chapters)return extractNotebookMaterial(value,title);
    if(Array.isArray(value))throw new Error('题库 JSON 请使用 practice.json 协议，确保每题带原文出处、题型、分值和参考答案。也可导入编号的 TXT / Markdown 题库。');
    throw new Error('JSON 未包含 practice.json 题库或 Paper Notebook 笔记。');
@@ -67,7 +67,8 @@ export function parseQuestionText(material:PracticeMaterial,options:{chapter?:st
    const first=starts[i].line;const end=i+1<starts.length?starts[i+1].line:lines.length;const raw=block.text.slice(offsets[first],end<lines.length?offsets[end]:block.text.length).trimEnd();
    const numbered=raw.replace(/^\s*(?:\*\*)?(?:第\s*)?\d+\s*(?:[.．、)）]|题[：:])\s*/, '').replace(/^\*\*/,'');
    const answerMatch=numbered.match(/(?:^|\n)\s*(?:\*\*)?(?:参考答案|正确答案|答案|Answer)\s*(?:\*\*)?[：:]\s*([^\n]+)/i);
-   if(!answerMatch){warnings.push(`${block.title||material.title}：第 ${questions.length+1} 个编号题缺少“答案：”，已保留原文，未收入可判分题库。`);continue;}
+   const sourceNumber=raw.match(/^\s*(?:\*\*)?(?:第\s*)?(\d+)/)?.[1]??String(i+1);
+   if(!answerMatch){warnings.push(`${block.title||material.title}：第 ${sourceNumber} 题缺少“答案：”，已保留原文，待核对。`);continue;}
    const body=numbered.slice(0,answerMatch.index).trim();const answer=answerMatch[1].replace(/\*\*/g,'').trim();
    const explanationMatch=numbered.slice((answerMatch.index||0)+answerMatch[0].length).match(/(?:^|\n)\s*(?:\*\*)?(?:解析|解答|Explanation)\s*(?:\*\*)?[：:]\s*([\s\S]+)/i);
    const explanation=explanationMatch?.[1].replace(/\n\s*#{1,6}\s[\s\S]*$/,'').trim()||'参考答案来自导入资料；请结合原题条件核对。';
@@ -83,12 +84,14 @@ export function parseQuestionText(material:PracticeMaterial,options:{chapter?:st
    }else if(/_{2,}|（\s*）|\(\s*\)|\[\s*\]/.test(body)){type='blank';solution=answer.split(/\s*[；;]\s*/).filter(Boolean);}
    else if(/^(?:TRUE|FALSE|NOT[ _]GIVEN|正确|错误|对|错)$/i.test(answer)){type='truefalse';const normalized=answer.toUpperCase().replace(/ /g,'_');solution=/^(?:TRUE|正确|对)$/.test(normalized)?'TRUE':/^(?:FALSE|错误|错)$/.test(normalized)?'FALSE':'NOT_GIVEN';questionOptions=[{id:'TRUE',text:'TRUE / 正确'},{id:'FALSE',text:'FALSE / 错误'},...(solution==='NOT_GIVEN'?[{id:'NOT_GIVEN',text:'NOT GIVEN / 未提及'}]:[])];}
    else if(/^(?:【(?:操作题|编程题|任务题)】|\[(?:task|操作题|编程题)\])/i.test(body))type='task';
-   const scoreMatch=prompt.match(/[（(]\s*(\d+(?:\.\d+)?)\s*分\s*[）)]/);const tags=[...prompt.matchAll(/#([\p{L}\p{N}_-]+)/gu)].map(match=>match[1]);const difficulty=/\[困难\]|【困难】/.test(prompt)?'hard':/\[简单\]|【简单】/.test(prompt)?'easy':'medium';
+   const scoreMatch=prompt.match(/[（(]\s*(\d+(?:\.\d+)?)\s*分\s*[）)]/),cleanPrompt=prompt.replace(/[（(]\s*\d+(?:\.\d+)?\s*分\s*[）)]/,'').trim();
+   if(!cleanPrompt||questionOptions?.some(option=>!option.text)||!(Array.isArray(solution)?solution.length&&solution.every(item=>item.trim()):solution.trim())||scoreMatch&&!(Number(scoreMatch[1])>0&&Number(scoreMatch[1])<=10000)){warnings.push(`${block.title||material.title}：第 ${sourceNumber} 题的题干、选项、答案或分值不完整，已保留原文待核对。`);continue;}
+   const tags=[...prompt.matchAll(/#([\p{L}\p{N}_-]+)/gu)].map(match=>match[1]);const difficulty=/\[困难\]|【困难】/.test(prompt)?'hard':/\[简单\]|【简单】/.test(prompt)?'easy':'medium';
    let sourcePage=block.page;if(multiPage){let offset=0;for(const page of material.blocks!){if(offsets[first]<offset+page.text.length+2){sourcePage=page.page;break;}offset+=page.text.length+2;}}
    questions.push({id:stablePracticeId('question',material.id+'|'+block.id+'|'+raw),number:questions.length+1,type,prompt:prompt.replace(/[（(]\s*\d+(?:\.\d+)?\s*分\s*[）)]/,'').trim(),score:scoreMatch?Number(scoreMatch[1]):['choice','multiple','truefalse'].includes(type)?2:type==='blank'?3:5,options:questionOptions,solution,explanation,source:{materialId:material.id,blockId:block.id,page:sourcePage,title:block.title||material.title,exact:raw},origin:{kind:'original',number:raw.match(/^\s*(?:\*\*)?(?:第\s*)?(\d+)/)?.[1]||String(questions.length+1)},chapter:starts[i].heading,tags:[...(options.subject?[options.subject]:[]),...tags],difficulty});
   }
  }
- if(!questions.length)warnings.push('原文已完整保存。可导出出题任务交给自己的 AI，或选取确切原句制作填空题。');return {questions,warnings};
+ return {questions,warnings};
 }
 
 export function createClozeQuestion(material:PracticeMaterial,exact:string,answer:string,options:{chapter?:string;score?:number;explanation?:string;blockId?:string}={}):PracticeQuestion{

@@ -18,15 +18,16 @@ export function siteAudioBase(){
 export async function embedSiteAudio(paper:PracticeDocument):Promise<PracticeDocument>{
  if(!paper.sections.some(section=>section.stimulus?.audio?.url))return paper;
  const copy=structuredClone(paper),base=siteAudioBase();
- await Promise.all(copy.sections.map(async section=>{
-  const audio=section.stimulus?.audio;
-  if(!audio?.url)return;
-  if(!base||!isSiteAudio(audio))throw Error('听力资源地址无效。');
-  const response=await fetch(new URL(audio.url,base),{redirect:'error',signal:AbortSignal.timeout(30000)});
-  if(!response.ok)throw Error('听力下载失败，请重试。');
-  const blob=new Blob([await response.arrayBuffer()],{type:audio.mimeType});
-  audio.dataUrl=await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(Error('无法读取听力文件。'));reader.readAsDataURL(blob);});
-  delete audio.url;
+ const recordings=copy.sections.flatMap(section=>section.stimulus?.audio?.url?[section.stimulus.audio]:[]);
+ for(let index=0;index<recordings.length;index+=2)await Promise.all(recordings.slice(index,index+2).map(async audio=>{
+  if(!base||!audio.url||!isSiteAudio(audio))throw Error('听力资源地址无效。');
+  try{
+   const response=await fetch(new URL(audio.url,base),{redirect:'error',signal:AbortSignal.timeout(30000)});
+   if(!response.ok)throw Error(String(response.status));
+   const blob=new Blob([await response.arrayBuffer()],{type:audio.mimeType});
+   audio.dataUrl=await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(reader.error);reader.readAsDataURL(blob);});
+   delete audio.url;
+  }catch{throw Error(`未能下载「${audio.title}」，请重试或从 GitHub 发布页下载四六级离线包。`);}
  }));
  return copy;
 }

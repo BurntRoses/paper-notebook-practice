@@ -29,7 +29,6 @@ export interface PaperDraft {
 
 /** Editable profiles only. CET profiles use their specification, never their attached example bank. */
 export const DRAFT_TEMPLATES:PaperTemplate[]=PAPER_TEMPLATES
- .filter(t=>!t.id.startsWith('source-')&&(!t.caseId||t.id==='cet4'||t.id==='cet6'))
  .map(({caseId:_caseId,...template})=>structuredClone(template));
 const draftTemplate=(id:unknown)=>DRAFT_TEMPLATES.find(t=>t.id===id)??DRAFT_TEMPLATES.find(t=>t.id==='gaokao-math')!;
 const sourceChoices=():PaperCustomization=>({projectMark:true,watermark:'source',integrity:'source',security:'source',candidateFields:'source',binding:'source',scoreTable:'source',paperSize:'source',printColor:'source'});
@@ -165,23 +164,42 @@ export function paperDraftPrompt(value:PaperDraft,mode:'agent'|'chat'):string {
  const d=restorePaperDraft(value),original=d.intent==='original',bank=d.intent==='bank';
  const customTitle=original&&d.titleOrigin==='custom';
  const editedOriginal=original&&(customTitle||hasVisualCustomization(d.customization));
- const customization=Object.fromEntries(Object.entries(d.customization).filter(([,v])=>v!==undefined&&v!==''&&v!=='source'));
- const customGroups=d.intent==='generate'&&d.blueprintMode==='custom'?d.questionGroups.map(g=>({title:g.title,type:g.type,count:g.count,pointsPerQuestion:g.pointsPerQuestion})):undefined;
- const choices={
-  intent:original?(editedOriginal?'adapt':'original'):bank?'bank':'generate',scope:d.scope,
-  ...(!original||customTitle?{title:d.title}:{}),subject:d.subject,level:d.level,
-  ...(d.grade?{grade:d.grade}:{}),templateId:d.templateId,
-  ...(!original&&!bank?{durationMinutes:d.durationMinutes,totalScore:d.totalScore}:{}),
-  ...(d.scope==='subset'?{subset:d.subset||'结合资料确认'}:{}),
-  ...(d.coverage?{coverage:d.coverage}:{}),difficulty:d.difficulty,
-  ...(d.routeId?{routeId:d.routeId}:{}),...(d.examName?{examName:d.examName}:{}),
-  ...(d.examCode?{examCode:d.examCode}:{}),...(d.year?{year:d.year}:{}),
-  ...(d.region?{region:d.region}:{}),...(d.specialty?{specialty:d.specialty}:{}),
-  sourceMode:d.sourceMode,questionPreference:d.questionPreference,
-  ...(d.materialInstructions?{materialInstructions:d.materialInstructions}:{}),
-  ...(customGroups?{questionGroups:customGroups}:{}),
-  ...(Object.keys(customization).length?{customization}:{}),
-  ...(original?{designReference:{title:d.title,titleOrigin:d.titleOrigin,durationMinutes:d.durationMinutes,totalScore:d.totalScore}}:{})
- };
- return `${ENTRY_PROMPTS[mode].prompt}\n已确认要求（未填项结合资料决定）：${JSON.stringify(choices)}`;
+ const c=d.customization;
+ const modeName=original?(editedOriginal?'按原卷改编':'按原卷复刻'):bank?'整理全量题库':'制作试卷';
+ const lines=[
+  '制作目标 · '+modeName, '范围 · '+(d.scope==='full'?'完整范围':d.subset||'按资料确定选编范围'),
+  ...(!original||customTitle?['试卷标题 · '+d.title]:[]),
+  '科目与层级 · '+[d.subject,d.level,d.grade].filter(Boolean).join(' / '),
+  '版式 · '+draftTemplate(d.templateId).name,
+  ...(!original&&!bank?['时长与满分 · '+d.durationMinutes+' 分钟 / '+d.totalScore+' 分']:[]),
+  ...(d.coverage?['内容范围 · '+d.coverage]:[]),
+  '难度 · '+({source:'按资料确定',easy:'基础',balanced:'难度均衡',hard:'提升'} as const)[d.difficulty],
+  ...([d.examName||getExamRoute(d.routeId)?.name,d.examCode,d.year,d.region,d.specialty].some(Boolean)?
+   ['考试及适用范围 · '+[d.examName||getExamRoute(d.routeId)?.name,d.examCode,d.year,d.region,d.specialty].filter(Boolean).join(' / ')]:[]),
+  '资料范围 · '+({ 'uploads-only':'仅用上传资料','uploads-first':'优先用上传资料，缺项可补充公开来源',open:'可使用上传材料与公开资料'} as const)[d.sourceMode],
+  '选题偏好 · '+({'originals-first':'原题优先',balanced:'原题与原创均衡','generated-first':'原创优先'} as const)[d.questionPreference],
+  ...(d.materialInstructions?['资料要求 · '+d.materialInstructions]:[]),
+  ...(d.intent==='generate'&&d.blueprintMode==='custom'?d.questionGroups.map(g=>'题组 · '+g.title+' / '+DRAFT_QUESTION_TYPES[g.type]+' / '+g.count+' 题，每题 '+g.pointsPerQuestion+' 分'):[]),
+  ...(original?['版式参考 · '+d.title+' / '+d.durationMinutes+' 分钟 / '+d.totalScore+' 分']:[]),
+  '项目署名 · '+(c.projectMark===false?'隐藏':'显示'),
+ ];
+ if(c.watermark==='none')lines.push('水印 · 移除');
+ if(c.watermark==='custom')lines.push('水印 · '+c.watermarkText);
+ if(c.integrity==='none')lines.push('诚信承诺 · 移除');
+ if(c.integrity==='standard')lines.push('诚信承诺 · 使用项目通用文案');
+ if(c.integrity==='custom')lines.push('诚信承诺 · '+c.integrityText);
+ if(c.security==='none')lines.push('密级标记 · 移除');
+ if(c.security==='custom')lines.push('密级标记 · '+c.securityText);
+ if(c.candidateFields==='none')lines.push('身份栏 · 隐藏');
+ if(c.candidateFields==='standard')lines.push('身份栏 · 通用信息栏');
+ if(c.binding==='binding')lines.push('装订线 · 显示');
+ if(c.binding==='none')lines.push('装订线 · 隐藏');
+ if(c.scoreTable==='show')lines.push('计分表 · 显示');
+ if(c.scoreTable==='hide')lines.push('计分表 · 隐藏');
+ if(c.paperSize&&c.paperSize!=='source')lines.push('纸张 · '+c.paperSize);
+ if(c.printColor&&c.printColor!=='source')lines.push('打印颜色 · '+(c.printColor==='color'?'彩印':'黑白灰度'));
+ if(c.institution)lines.push('机构 · '+c.institution);
+ if(c.courseCode)lines.push('课程代码 · '+c.courseCode);
+ if(c.notes)lines.push('补充版式要求 · '+c.notes);
+ return ENTRY_PROMPTS[mode].prompt+'\n\n已确认的出卷要求（未填项结合资料决定）\n'+lines.map(line=>'- '+line).join('\n');
 }

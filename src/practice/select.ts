@@ -47,7 +47,7 @@ export function mountSelectControls(root:HTMLElement):()=>void{
   panel.onpointerdown=e=>e.preventDefault();panel.onclick=e=>{const item=(e.target as Element).closest<HTMLElement>('[data-index]');if(item)choose(Number(item.dataset.index));};
   source.addEventListener('change',c.sync);source.addEventListener('input',c.sync);source.addEventListener('invalid',()=>trigger.focus());controls.set(source,c);c.sync();
  }
- const scan=()=>{for(const [source,c] of controls)if(!root.contains(source)){c.dispose();controls.delete(source);}root.querySelectorAll<HTMLSelectElement>('select:not([multiple])').forEach(enhance);};
+ const scan=()=>{for(const [source,c] of controls)if(!root.contains(source)){c.dispose();controls.delete(source);}root.querySelectorAll<HTMLSelectElement>('select:not([multiple]):not([data-native-select])').forEach(enhance);};
  const observer=new MutationObserver(records=>{let scanNeeded=false;for(const record of records){if(record.type==='attributes'&&record.target instanceof HTMLSelectElement)controls.get(record.target)?.sync();else if(record.type==='childList'){const target=record.target as Element;if(target instanceof HTMLSelectElement)controls.get(target)?.sync();if([...record.addedNodes,...record.removedNodes].some(node=>node instanceof Element&&(node.matches('select')||node.querySelector('select'))))scanNeeded=true;}}if(scanNeeded)scan();});
  const pointer=(event:PointerEvent)=>{if(active&&!active.wrapper.contains(event.target as Node)&&!active.panel.contains(event.target as Node))close();};
  const reposition=()=>{if(active)position(active);};

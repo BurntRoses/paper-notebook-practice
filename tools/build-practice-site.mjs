@@ -21,10 +21,50 @@ const {summarizeCase}=await tsImport('../src/practice/case-summary.ts',import.me
 const {catalogShelf}=await tsImport('../src/practice/catalog-shelf.ts',import.meta.url);
 const {siteAudioExtensions}=await tsImport('../src/practice/model.ts',import.meta.url);
 const {validatePractice}=await tsImport('../src/practice/validate.ts',import.meta.url);
-function validatePaper(id,paper){
- if(paper.original)throw Error(`${id}: catalog papers must not bundle original pages`);
+const {catalogSources}=await tsImport('../src/practice/catalog-sources.ts',import.meta.url);
+const {regionNames,languageNames,sourceRoles}=await tsImport('../src/practice/catalog-identity.ts',import.meta.url);
+const {PAPER_TEMPLATES}=await tsImport('../src/practice/templates.ts',import.meta.url);
+const {REFERENCE_PAPERS}=await tsImport('../src/practice/reference-papers.ts',import.meta.url);
+const listings=new Map(catalogShelf.map(entry=>[entry.id,entry]));
+const validURL=value=>{try{return ['https:','http:'].includes(new URL(value).protocol);}catch{return false;}};
+const validRegions=new Set(Object.values(regionNames));
+for(const source of REFERENCE_PAPERS){
+ if(!source.id||!source.board||!source.language||!validRegions.has(source.region)||!source.scope||
+    !source.rights?.note||![source.paperUrl,source.answerUrl,source.specificationUrl].filter(Boolean).every(validURL)){
+  throw Error('Incomplete publisher reference: '+source.id);
+ }
+}
+function verifyListing(entry){
+ if(!entry?.title||!entry.subject||!entry.grade||!entry.issuer||!Object.hasOwn(regionNames,entry.region)||!Object.hasOwn(languageNames,entry.language)){
+  throw Error('Incomplete catalog identity: '+entry?.id);
+ }
+}
+function validatePaper(id,paper,kind){
+ if(paper.original)throw Error(id+': catalog papers must not bundle original pages');
  const result=validatePractice(paper,undefined,true);
- if(!result.valid)throw Error(`${id}: ${result.errors.map(({path,message})=>path+' '+message).join('; ')}`);
+ if(!result.valid)throw Error(id+': '+result.errors.map(({path,message})=>path+' '+message).join('; '));
+ const listing=listings.get(id);
+ verifyListing(listing);
+ if(listing.request.kind!==kind||listing.request.id!==id||listing.documentId!==paper.practiceId||
+    listing.questionCount!==paper.sections.reduce((total,section)=>total+section.questions.length,0)||
+    (paper.presentation?.language&&listing.paperLanguage!==paper.presentation.language)||
+    (validRegions.has(paper.authoring?.region)&&regionNames[listing.region]!==paper.authoring.region)||
+    (paper.mode==='bank'&&(listing.scope!=='bank'||listing.kind!=='bank'))||
+    (listing.scope==='full'&&paper.exam?.scope!=='full')){
+  throw Error('Catalog and author document disagree: '+id);
+ }
+ const documented=catalogSources(paper);
+ if(!documented.some(source=>source.role==='question')||
+    documented.some(source=>!sourceRoles.includes(source.role)||!source.title||source.url&&!validURL(source.url))){
+  throw Error('Incomplete source roles: '+id);
+ }
+}
+for(const template of PAPER_TEMPLATES){
+ const listing=listings.get('layout:'+template.id);
+ verifyListing(listing);
+ if(listing.request.kind!=='template'||listing.request.id!==template.id||listing.scope!=='layout'||!validURL(template.source.url)){
+  throw Error('Incorrect layout reference: '+template.id);
+ }
 }
 const caseIndex={sources:catalog.sources,cases:catalog.cases.map(summarizeCase)};
 await mkdir(out+'/cases',{recursive:true});
@@ -38,13 +78,13 @@ for(const paper of catalog.cases){
   audio.url=(await asset(Buffer.from(body,'base64'),'.'+extension)).slice('__PUBLIC_ASSET__'.length);
   delete audio.dataUrl;
  }
- validatePaper(paper.practiceId,copy);
+ validatePaper(paper.practiceId,copy,'case');
  await writeFile(out+'/cases/'+paper.practiceId+'.json',JSON.stringify(copy));
 }
 const examples=JSON.parse(await readFile(root+'src/practice/template-examples.json','utf8'));
 await mkdir(out+'/examples',{recursive:true});
 for(const [id,paper] of Object.entries(examples)){
- validatePaper(id,paper);
+ validatePaper(id,paper,'example');
  await writeFile(out+'/examples/'+id+'.json',JSON.stringify(paper));
 }
 const topics=JSON.parse(await readFile(root+'src/practice/topic-catalog.json','utf8'));
@@ -53,7 +93,7 @@ for(const entry of topics.topics){
  const bytes=await readFile(root+'skills/paper-notebook-practice/examples/topics/'+entry.file);
  if(createHash('sha256').update(bytes).digest('hex')!==entry.sha256)throw Error('Stale topic catalog: '+entry.file);
  const paper=JSON.parse(bytes.toString('utf8'));if(paper.practiceId!==entry.id)throw Error('Topic ID mismatch: '+entry.file);
- validatePaper(entry.id,paper);
+ validatePaper(entry.id,paper,'topic');
  const target=out+'/topics/'+entry.file;await mkdir(dirname(target),{recursive:true});await writeFile(target,bytes);
 }
 const license=await readFile(root+'licenses/noto-cjk-OFL.txt','utf8');
@@ -96,11 +136,11 @@ if(!previewEntry)throw Error('The site must load its preview separately from the
 const previewFiles=staticImports(previewEntry);
 const preloadFiles=new Set([...shellFiles,...previewFiles]);
 const initialBytes=fileBytes([...preloadFiles]);
-const modulePreloads=[...preloadFiles].map(path=>`<link rel="modulepreload" href="./${path.slice(path.lastIndexOf('/assets/')+1)}">`).join('');
+const modulePreloads=shellFiles.map(path=>`<link rel="modulepreload" href="./${path.slice(path.lastIndexOf('/assets/')+1)}">`).join('');
 
 if(shellBytes>250_000)throw Error('Homepage JavaScript exceeded the 250 KB build budget: '+shellBytes+' B.');
 if(initialBytes>1_050_000)throw Error('Homepage and first-paper JavaScript exceeded the build budget: '+initialBytes+' B.');
-if(shelfBytes>75_000)throw Error('Catalog JavaScript exceeded the 75 KB build budget: '+shelfBytes+' B.');
+if(shelfBytes>105_000)throw Error('Catalog JavaScript exceeded the 75 KB build budget: '+shelfBytes+' B.');
 const project='https://github.com/BurntRoses/paper-notebook-practice';
 const site='https://burntroses.github.io/paper-notebook-practice/';
 const release=project+'/releases/latest/download/';

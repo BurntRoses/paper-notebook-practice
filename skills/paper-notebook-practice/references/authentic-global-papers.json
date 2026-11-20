@@ -39,7 +39,8 @@
             "url": "https://www.cambridgeinternational.org/Images/663672-2025-specimen-paper-2-mark-scheme.pdf",
             "pages": 10,
             "sha256": "f363fa3db96af0cd6b07abff575c53d22bbfa358976761cab6b77cc7860867dc"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": []
@@ -79,7 +80,8 @@
             "url": "https://www.cambridgeinternational.org/Images/567738-june-2024-mark-scheme-paper-11.pdf",
             "pages": 18,
             "sha256": "e85474937a9560c6485020eee375593f006d888f8d1e321575744e6f6e4e7a01"
-          }
+          },
+          "region": "国际考试体系"
         },
         {
           "id": "alevel-math-2020-p1",
@@ -107,7 +109,8 @@
             "url": "https://www.cambridgeinternational.org/Images/751735-2020-specimen-mark-scheme-paper-1.pdf",
             "pages": 10,
             "sha256": "13aec2f97fe93ab1c1d903432f3f1114963b146a3b4d692b35932154bf504742"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": []
@@ -148,7 +151,8 @@
             "url": "https://www.act.org/content/dam/act/unsecured/documents/Preparing-for-the-ACT-e.pdf",
             "pages": 82,
             "sha256": "0010be68548a3429c44265a4749d0a0cc353dfd75033101959584b63d89a029a"
-          }
+          },
+          "region": "美国"
         }
       ],
       "gaps": []
@@ -189,7 +193,8 @@
             "url": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-calculus-ab.pdf",
             "pages": 27,
             "sha256": "a6e619eeb5e6ba0acbcf77ad9fc0da046a58d82eab5f13568b2f76613d941e12"
-          }
+          },
+          "region": "美国"
         }
       ],
       "gaps": [
@@ -231,7 +236,8 @@
             "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
             "pages": 2,
             "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
-          }
+          },
+          "region": "日本"
         },
         {
           "id": "jlpt-n5-g",
@@ -260,7 +266,8 @@
             "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
             "pages": 2,
             "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
-          }
+          },
+          "region": "日本"
         },
         {
           "id": "jlpt-n5-r",
@@ -289,7 +296,8 @@
             "url": "https://www.jlpt.jp/samples/sample2018/pdf/N5answer.pdf",
             "pages": 2,
             "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
-          }
+          },
+          "region": "日本"
         },
         {
           "id": "jlpt-n5-l",
@@ -319,7 +327,8 @@
             "pages": 2,
             "sha256": "7cf913bf1ed87c90ed7120319a171ca79cf4ab164a3b1aff74c461f9aa7857c4"
           },
-          "audioUrl": "https://www.jlpt.jp/samples/sample2018/mp3/N5Q1.mp3"
+          "audioUrl": "https://www.jlpt.jp/samples/sample2018/mp3/N5Q1.mp3",
+          "region": "日本"
         }
       ],
       "gaps": [
@@ -361,7 +370,8 @@
             "url": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
             "pages": 2,
             "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
-          }
+          },
+          "region": "日本"
         },
         {
           "id": "jlpt-n2-g",
@@ -390,7 +400,8 @@
             "url": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
             "pages": 2,
             "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
-          }
+          },
+          "region": "日本"
         },
         {
           "id": "jlpt-n2-r",
@@ -419,7 +430,8 @@
             "url": "https://www.jlpt.jp/samples/sample2018/pdf/N2answer.pdf",
             "pages": 2,
             "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
-          }
+          },
+          "region": "日本"
         },
         {
           "id": "jlpt-n2-l",
@@ -449,7 +461,8 @@
             "pages": 2,
             "sha256": "68265ccb1d63179c77809e4d89d787ccaea1bd083e02e1d6e780d2fb92b67cf8"
           },
-          "audioUrl": "https://www.jlpt.jp/samples/sample2018/mp3/N2Q1.mp3"
+          "audioUrl": "https://www.jlpt.jp/samples/sample2018/mp3/N2Q1.mp3",
+          "region": "日本"
         }
       ],
       "gaps": [
@@ -492,7 +505,8 @@
             "url": "https://www.france-education-international.fr/document/delf-b1-tp-correcteur-coll-exemple1",
             "pages": 3,
             "sha256": "1c6b5cc121fec21d5f6e89391a50151ab37f52ef9c7c6058bef10bef69bb3c9b"
-          }
+          },
+          "region": "法国"
         }
       ],
       "gaps": []
@@ -533,7 +547,8 @@
             "url": "https://www.goethe.de/pro/relaunch/prf/materialien/B1/b1_modellsatz_erwachsene.pdf",
             "pages": 52,
             "sha256": "9eed7caad7c61a8ab5fb6fb1e129275ab4965002f2c4ec1e3276f8082b0b0f42"
-          }
+          },
+          "region": "德国／奥地利"
         }
       ],
       "gaps": []
@@ -553,7 +568,7 @@
           "board": "USCIS",
           "paperUrl": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
           "answerUrl": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
-          "specificationUrl": "https://www.uscis.gov/citizenship/2025test",
+          "specificationUrl": "https://my.uscis.gov/citizenship/what_to_expect",
           "language": "en",
           "scope": "official-bank",
           "readNotes": [
@@ -574,7 +589,8 @@
             "url": "https://www.uscis.gov/sites/default/files/document/questions-and-answers/2025-Civics-Test-128-Questions-and-Answers.pdf",
             "pages": 19,
             "sha256": "f280608c0fb6dc1eba344b4746a7ba52d02fe411fba30cedd4371819f0abe11c"
-          }
+          },
+          "region": "美国"
         }
       ],
       "gaps": [
@@ -617,7 +633,8 @@
             "url": "https://www.cambridgeinternational.org/Images/664588-2025-syllabus.pdf",
             "pages": 26,
             "sha256": "032c4885b35d05cfc34f5d3fe877511cdcefc562c6f1115d1378767c77b53f58"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": [
@@ -660,7 +677,8 @@
             "url": "https://www.abrsm.org/sites/default/files/2024-06/Piano%202025%20%26%202026%20Prac%20syllabus%2020240524_access.pdf",
             "pages": 63,
             "sha256": "f1ddae1140a12ee22599e11cce2837f2d3622d58acc3ca738328cc1a5f86e04b"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": [
@@ -698,7 +716,8 @@
             "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
           },
           "pages": 121,
-          "evidenceMode": "official-pdf-read-online"
+          "evidenceMode": "official-pdf-read-online",
+          "region": "国际考试体系"
         }
       ],
       "gaps": [
@@ -741,7 +760,8 @@
             "url": "https://satsuite.collegeboard.org/media/pdf/sat-practice-test-4-answers-digital.pdf",
             "pages": 53,
             "sha256": "ee2ed6b3a5d77994b6e6ad460137f6959c5b142695ae20e0bb28089171649b56"
-          }
+          },
+          "region": "美国"
         }
       ],
       "gaps": [
@@ -783,7 +803,8 @@
           "answerEvidence": {
             "url": "https://www.jpf.go.jp/jft-basic/sample/common/script/test.js",
             "sha256": "0c5f75e68f59240b2f53323717c43abba51acc22bb985f139e22ebba35063dfc"
-          }
+          },
+          "region": "日本"
         }
       ],
       "gaps": [
@@ -827,7 +848,8 @@
             "url": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2026/10/23/2018_1answer_e.pdf",
             "pages": 4,
             "sha256": "e1c1a24e9a98efbec3e58a79eae337853959a2fe8b15987c56044c2ab90b8431"
-          }
+          },
+          "region": "日本"
         },
         {
           "id": "eju-japanese",
@@ -856,7 +878,8 @@
             "url": "https://www.jasso.go.jp/en/ryugaku/eju/examinee/pastpaper_sample/__icsFiles/afieldfile/2026/10/23/2018_1answer_e.pdf",
             "pages": 4,
             "sha256": "e1c1a24e9a98efbec3e58a79eae337853959a2fe8b15987c56044c2ab90b8431"
-          }
+          },
+          "region": "日本"
         }
       ],
       "gaps": [
@@ -878,7 +901,6 @@
           "board": "National Institute for International Education (NIIED)",
           "paperUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Reading-Test-Paper.pdf",
           "answerUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Reading-Answers.pdf",
-          "specificationUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
           "language": "ko",
           "scope": "component",
           "readNotes": [
@@ -901,7 +923,8 @@
             "sha256": "77994a042317bee33c13135898f49f87174516ccd8247f4f7330f9457041efbf"
           },
           "sourceAccess": "publisher-released-paper-via-mirror",
-          "officialArchiveUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do"
+          "region": "韩国",
+          "accessNote": "2026-11-21 复查时，官方历届试题入口未能从本机打开。这里保留有明确年份和题组的题本与评分索引。"
         },
         {
           "id": "topik-83-listening-test-paper",
@@ -910,7 +933,6 @@
           "board": "National Institute for International Education (NIIED)",
           "paperUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Listening-Test-Paper.pdf",
           "answerUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Listening-Answers.pdf",
-          "specificationUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
           "language": "ko",
           "scope": "component",
           "readNotes": [
@@ -933,8 +955,9 @@
             "sha256": "89cefea7250d27f5ce246c97c39b055e51cf61a3d34d33fd3b4ae375dffb35ec"
           },
           "sourceAccess": "publisher-released-paper-via-mirror",
-          "officialArchiveUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
-          "audioUrl": "https://files.topikguide.com/listening/83-TOPIK-II-Listening-Audio-File.mp3"
+          "audioUrl": "https://files.topikguide.com/listening/83-TOPIK-II-Listening-Audio-File.mp3",
+          "region": "韩国",
+          "accessNote": "2026-11-21 复查时，官方历届试题入口未能从本机打开。这里保留有明确年份和题组的题本与评分索引。"
         },
         {
           "id": "topik-83-writing-test-paper",
@@ -943,7 +966,6 @@
           "board": "National Institute for International Education (NIIED)",
           "paperUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Writing-Test-Paper.pdf",
           "answerUrl": "https://files.topikguide.com/test-papers/83rd-TOPIK-II-Writing-Answers.pdf",
-          "specificationUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do",
           "language": "ko",
           "scope": "component",
           "readNotes": [
@@ -966,7 +988,8 @@
             "sha256": "15d145629af21b32b9d22e523363d8cd75b489f83c9e227fed6e761f1b8f36a9"
           },
           "sourceAccess": "publisher-released-paper-via-mirror",
-          "officialArchiveUrl": "https://www.topik.go.kr/TWSTDY/TWSTDY0080M.do"
+          "region": "韩国",
+          "accessNote": "2026-11-21 复查时，官方历届试题入口未能从本机打开。这里保留有明确年份和题组的题本与评分索引。"
         }
       ],
       "gaps": [
@@ -1009,7 +1032,8 @@
             "url": "https://admin.chinesetest.cn/userfiles/file/HSK/level3/H31001.pdf",
             "pages": 22,
             "sha256": "fafdab23a1a63a7f571bf44fb8dd0df8907f7c20d4b0c0840fac1c2b8ac3194f"
-          }
+          },
+          "region": "中国大陆"
         }
       ],
       "gaps": [
@@ -1046,7 +1070,8 @@
             "redistribute": false,
             "note": "版权归原发布机构；此处提供官方链接与独立编写的结构学习笔记，不分发原卷文件。"
           },
-          "sha256": "2bb9d33037b564a58d005f65d04c5b8ebc172e04942d1af161fc9ce7afce25eb"
+          "sha256": "2bb9d33037b564a58d005f65d04c5b8ebc172e04942d1af161fc9ce7afce25eb",
+          "region": "英国"
         }
       ],
       "gaps": [
@@ -1087,7 +1112,8 @@
           "answerEvidence": {
             "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/discover-canada/read-online/study-questions.html",
             "sha256": "1e106514931b265034fba0b7320dd20afac9009c436dd8c003073ce990e4edfb"
-          }
+          },
+          "region": "加拿大"
         }
       ],
       "gaps": [
@@ -1132,7 +1158,8 @@
             "sha256": "e9e78f2caaea810dddc279e8c3f696507c3df10e090059e7d18b6834b67832c9",
             "itemCount": 20,
             "answerCount": 20
-          }
+          },
+          "region": "澳大利亚"
         }
       ],
       "gaps": [
@@ -1175,7 +1202,8 @@
             "url": "https://apcentral.collegeboard.org/media/pdf/ap25-sg-art-history.pdf",
             "pages": 22,
             "sha256": "19e37ca4e6f3316b46dae52193a7957ed891e17fac048f8ec290361922232d2f"
-          }
+          },
+          "region": "美国"
         }
       ],
       "gaps": [
@@ -1218,7 +1246,8 @@
             "url": "https://www.abrsm.org/sites/default/files/2023-09/music-theory-grade-5-sample-model-answers.pdf",
             "pages": 5,
             "sha256": "217bbe6639e721fb8e25f28881d7abd885c7b1b2e954042c296a4cf7dfd1fe9b"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": []
@@ -1260,7 +1289,8 @@
             "pages": 6,
             "sha256": "f9fda753536ba2677ce4f6f38835d0d09ca0c3a1490cf1cd8da9b83ff580bb7d"
           },
-          "scoredSampleUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-2d-art-and-design-selected-works-score-5.pdf"
+          "scoredSampleUrl": "https://apcentral.collegeboard.org/media/pdf/ap25-2d-art-and-design-selected-works-score-5.pdf",
+          "region": "美国"
         }
       ],
       "gaps": [
@@ -1308,7 +1338,8 @@
           "resourceEvidence": {
             "pages": 8,
             "sha256": "985a1ee690e738f1649660331304a71e74c9c29b559bd0a9a5b320c04a4817af"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": [
@@ -1350,7 +1381,8 @@
             "url": "https://www.cambridgeinternational.org/Images/649816-june-2024-mark-scheme-paper-41.pdf",
             "pages": 15,
             "sha256": "7c91a864ecb01a1ca3c90143090075980ff9c473aad8cfc0ad35a8fb0a552118"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": [
@@ -1398,7 +1430,8 @@
           "textEvidence": {
             "pages": 16,
             "sha256": "2ba2d0da08ff8b8230872044358ab4cf221916df276f11c5a7c52f08b3ca29ef"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": [
@@ -1441,11 +1474,42 @@
             "url": "https://ielts.org/cdn/Guides/ielts-writing-band-descriptors.pdf",
             "pages": 9,
             "sha256": "e3c88943ef92d98988ce4db454fd7fa8d8435f0b25e9ec667e3720a5c1168d1b"
-          }
+          },
+          "region": "国际考试体系"
         }
       ],
       "gaps": [
         "写作不存在唯一答案；当前样卷未提供官方对应范文，官方量表作为评分依据。"
+      ]
+    },
+    {
+      "id": "england-ks2-math-2024",
+      "title": "英格兰 KS2 数学 · 试题与评分材料",
+      "category": "小学",
+      "templateIds": [
+        "england-ks2-math"
+      ],
+      "papers": [
+        {
+          "id": "sta-england-ks2-math-2024",
+          "title": "2024 Key Stage 2 mathematics test materials",
+          "year": 2024,
+          "board": "Standards and Testing Agency",
+          "region": "英格兰",
+          "language": "en",
+          "paperUrl": "https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials",
+          "scope": "官方资料目录，含 Paper 1 运算及 Paper 2、3 推理、评分材料。",
+          "readNotes": [
+            "运算练习对照 Paper 1 的书面算法与算式形式。"
+          ],
+          "authoringLessons": [
+            "保留运算与推理的题组边界。独立核算运算题与评分。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "原件见发布方许可及单独版权报告。"
+          }
+        }
       ]
     }
   ]

@@ -205,7 +205,7 @@
     "practiceId": "gallery-practice-gaokao-math",
     "notebookId": "gallery-source-gaokao-math",
     "notebookRevision": 1,
-    "title": "2024 年普通高等学校招生全国统一考试（新课标Ⅰ卷）",
+    "title": "高考数学 · 原创样题",
     "subject": "数学",
     "level": "高中",
     "durationMinutes": 120,
@@ -220,8 +220,8 @@
         "fontSizePt": 14
       },
       "titleLines": [
-        "2024 年普通高等学校招生全国统一考试（新课标Ⅰ卷）",
-        "数　学"
+        "高考数学",
+        "原创样题"
       ],
       "titleLineSizesPt": [
         16,
@@ -3458,7 +3458,7 @@
     "materials": [
       {
         "id": "gallery-material-civil-service",
-        "title": "Original gallery teaching examples · MIT",
+        "title": "纸间原创能力测评样题",
         "kind": "reference",
         "rights": "MIT · Paper Notebook 原创模板展示题。",
         "text": "依次填入句中横线处最恰当的一项是：调查需要 ______ 事实，讨论需要 ______ 证据。\n\n下列句子中，没有语病的一项是\n\n某项工作，甲单独完成需要 6 天，乙单独完成需要 3 天。两人合作完成需要多少天？\n\n数列 2、4、8、16 的下一项为\n\n所有志愿者都参加培训，小林是志愿者。由此可以推出\n\n如果下雨，则活动移入室内。今天活动没有移入室内。据此可以推出\n\n某单位 2025 年培训人数为 120 人，2026 年为 150 人。2026 年培训人数同比增长率为\n\n某市图书馆第一、二季度借阅量分别为 8 万册、10 万册。上半年借阅量合计为",
@@ -3857,6 +3857,9 @@
         "gallery-civil-service-question-7",
         "gallery-civil-service-question-8"
       ]
+    },
+    "presentation": {
+      "language": "zh"
     }
   },
   "cambridge-igcse-math": {
@@ -5063,416 +5066,6 @@
         "gallery-global-act-question-2",
         "gallery-global-act-question-3",
         "gallery-global-act-question-4"
-      ]
-    }
-  },
-  "primary-math": {
-    "schemaVersion": "1.0.0",
-    "practiceId": "gallery-ks2-arithmetic-practice",
-    "notebookId": "gallery-ks2-arithmetic-source",
-    "notebookRevision": 1,
-    "title": "Key Stage 2 Mathematics · Arithmetic Practice",
-    "subject": "Mathematics",
-    "level": "小学高年级 · England KS2",
-    "durationMinutes": 12,
-    "totalScore": 12,
-    "mode": "mock",
-    "style": {"preset": "standard", "templateId": "primary-math", "lineHeight": 1.55, "templateOverrides": {"fontFamily": "times"}},
-    "presentation": {
-      "language": "en",
-      "headerStyle": "generated",
-      "sourceLayout": true,
-      "sealStyle": "none",
-      "scoreTable": false,
-      "titleLines": ["Key Stage 2 Mathematics", "Arithmetic Practice"],
-      "titleLineSizesPt": [18, 14],
-      "titleFont": "times",
-      "sectionDetails": false,
-      "candidateFields": ["Name: __________________________"],
-      "footerTemplate": "Page {page} of {pages}",
-      "metaLines": ["Time: 12 minutes     Total: 12 marks"],
-      "notices": ["Do not use a calculator. Give exact answers. Show your working for questions 9 and 10."],
-      "answerSpace": "ruled",
-      "answerCard": {"template": "boxed"},
-      "questionScores": "show",
-      "printColor": "grayscale"
-    },
-    "materials": [
-      {
-        "id": "ks2-practice-material",
-        "title": "Paper Notebook original KS2 arithmetic practice · MIT",
-        "kind": "reference",
-        "rights": "MIT · Original questions. The 2024 STA arithmetic paper and mark scheme serve as benchmarks only.",
-        "provenance": {"kind": "authored", "sourceType": "author"},
-        "text": "Calculate $784+57$.\nCalculate $864\\div8$.\nCalculate $12.608+4.79$.\nCalculate $6.73\\div100$.\nCalculate $84-48\\div6$.\nCalculate $\\frac56-\\frac7{18}$.\nCalculate $\\frac58\\div4$.\nFind 37% of 700.\nCalculate $426\\times38$. Show your working.\nCalculate $3444\\div42$. Show your working.",
-        "blocks": [
-          {"id": "ks2-block-1", "text": "Calculate $784+57$."},
-          {"id": "ks2-block-2", "text": "Calculate $864\\div8$."},
-          {"id": "ks2-block-3", "text": "Calculate $12.608+4.79$."},
-          {"id": "ks2-block-4", "text": "Calculate $6.73\\div100$."},
-          {"id": "ks2-block-5", "text": "Calculate $84-48\\div6$."},
-          {"id": "ks2-block-6", "text": "Calculate $\\frac56-\\frac7{18}$."},
-          {"id": "ks2-block-7", "text": "Calculate $\\frac58\\div4$."},
-          {"id": "ks2-block-8", "text": "Find 37% of 700."},
-          {"id": "ks2-block-9", "text": "Calculate $426\\times38$. Show your working."},
-          {"id": "ks2-block-10", "text": "Calculate $3444\\div42$. Show your working."}
-        ]
-      }
-    ],
-    "sections": [
-      {
-        "id": "ks2-integers", "title": "Whole numbers", "instructions": "Write your answers in the spaces provided.", "displayLabel": "", "headingFont": "times", "score": 2,
-        "questions": [
-          {
-            "id": "ks2-q1", "number": 1, "type": "blank", "difficulty": "easy", "chapter": "Whole numbers", "score": 1,
-            "prompt": "Calculate $784+57$.", "solution": ["841"], "explanation": "Add 60 and subtract 3: $844-3=841$.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-1", "exact": "Calculate $784+57$."}
-          },
-          {
-            "id": "ks2-q2", "number": 2, "type": "blank", "difficulty": "easy", "chapter": "Whole numbers", "score": 1,
-            "prompt": "Calculate $864\\div8$.", "solution": ["108"], "explanation": "Split 864 into 800 and 64; the two quotients are 100 and 8.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-2", "exact": "Calculate $864\\div8$."}
-          }
-        ]
-      },
-      {
-        "id": "ks2-place-value", "title": "Place value and order of operations", "instructions": "Write exact answers.", "displayLabel": "", "headingFont": "times", "score": 3,
-        "questions": [
-          {
-            "id": "ks2-q3", "number": 3, "type": "blank", "difficulty": "medium", "chapter": "Decimal place value", "score": 1,
-            "prompt": "Calculate $12.608+4.79$.", "solution": ["17.398"], "explanation": "Align the decimal points: $12.608+4.790=17.398$.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-3", "exact": "Calculate $12.608+4.79$."}
-          },
-          {
-            "id": "ks2-q4", "number": 4, "type": "blank", "difficulty": "easy", "chapter": "Decimal place value", "score": 1,
-            "prompt": "Calculate $6.73\\div100$.", "solution": ["0.0673"], "explanation": "Each digit moves two place-value positions to the right. Check: $0.0673\\times100=6.73$.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-4", "exact": "Calculate $6.73\\div100$."}
-          },
-          {
-            "id": "ks2-q5", "number": 5, "type": "blank", "difficulty": "medium", "chapter": "Order of operations", "score": 1,
-            "prompt": "Calculate $84-48\\div6$.", "solution": ["76"], "explanation": "Divide first: $48\\div6=8$. Then $84-8=76$.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-5", "exact": "Calculate $84-48\\div6$."}
-          }
-        ]
-      },
-      {
-        "id": "ks2-fractions", "title": "Fractions and percentages", "instructions": "Equivalent exact fractions are accepted.", "displayLabel": "", "headingFont": "times", "score": 3, "breakBefore": true,
-        "questions": [
-          {
-            "id": "ks2-q6", "number": 6, "type": "response", "difficulty": "medium", "chapter": "Fraction subtraction", "score": 1, "answerBoxMm": 10,
-            "prompt": "Calculate $\\frac56-\\frac7{18}$.", "solution": "$\\frac49$", "explanation": "$\\frac{15}{18}-\\frac7{18}=\\frac8{18}=\\frac49$. Accept any exact equivalent.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-6", "exact": "Calculate $\\frac56-\\frac7{18}$."}
-          },
-          {
-            "id": "ks2-q7", "number": 7, "type": "response", "difficulty": "medium", "chapter": "Fraction division", "score": 1, "answerBoxMm": 10,
-            "prompt": "Calculate $\\frac58\\div4$.", "solution": "$\\frac5{32}$", "explanation": "One eighth shared into four equal parts gives one thirty-second per part; five eighths give five thirty-seconds. Accept any exact equivalent, including 0.15625.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-7", "exact": "Calculate $\\frac58\\div4$."}
-          },
-          {
-            "id": "ks2-q8", "number": 8, "type": "blank", "difficulty": "medium", "chapter": "Percentage of a quantity", "score": 1,
-            "prompt": "Find 37% of 700.", "solution": ["259"], "explanation": "1% of 700 is 7, so $37\\times7=259$. The answer is a quantity, not 259%.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-8", "exact": "Find 37% of 700."}
-          }
-        ]
-      },
-      {
-        "id": "ks2-written-methods", "title": "Written calculations", "instructions": "Show your working and give a final answer.", "displayLabel": "", "headingFont": "times", "score": 4,
-        "questions": [
-          {
-            "id": "ks2-q9", "number": 9, "type": "response", "difficulty": "hard", "chapter": "Long multiplication", "score": 2, "answerBoxMm": 28,
-            "prompt": "Calculate $426\\times38$. Show your working.", "solution": "16,188", "explanation": "Multiply by 8 to get 3,408, and by 30 to get 12,780. Adding gives 16,188. Check by $426\\times(40-2)=17,040-852=16,188$.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-9", "exact": "Calculate $426\\times38$. Show your working."},
-            "rubric": {"criteria": [
-              {"id": "route-or-result", "description": "Correct answer, or complete long multiplication with at most one arithmetic slip and correct place values.", "points": 1},
-              {"id": "correct-result", "description": "Correct answer earns the second mark.", "points": 1}
-            ]}
-          },
-          {
-            "id": "ks2-q10", "number": 10, "type": "response", "difficulty": "hard", "chapter": "Formal division", "score": 2, "answerBoxMm": 28,
-            "prompt": "Calculate $3444\\div42$. Show your working.", "solution": "82", "explanation": "Subtract $80\\times42=3360$ from 3444. The remaining 84 is $2\\times42$; the quotient is $80+2=82$, with no remainder.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"},
-            "source": {"materialId": "ks2-practice-material", "blockId": "ks2-block-10", "exact": "Calculate $3444\\div42$. Show your working."},
-            "rubric": {"criteria": [
-              {"id": "route-or-result", "description": "Correct answer, or complete formal division with a final quotient, correct place values and at most one arithmetic slip.", "points": 1},
-              {"id": "correct-result", "description": "Correct answer earns the second mark.", "points": 1}
-            ]}
-          }
-        ]
-      }
-    ],
-    "generation": {
-      "intent": "generate", "ocrReviewed": true, "unresolved": [],
-      "notes": "Subset of the arithmetic domain only. Original 12-minute practice benchmarked against England 2024 KS2 Paper 1 and its mark scheme. Reasoning papers and remaining arithmetic skills are outside the scope. Difficulty and timing are design estimates."
-    },
-    "authoring": {
-      "examName": "Key Stage 2 mathematics · Arithmetic practice subset",
-      "knowledge": "Whole numbers, decimal place value, operation order, fractions, percentages and written algorithms",
-      "difficulty": "balanced",
-      "blueprint": [
-        {"id": "whole-number-fluency", "knowledge": "Whole numbers", "ability": "Calculate with carrying or regrouping.", "types": ["blank"], "count": 2, "points": 2, "estimatedMinutes": 2},
-        {"id": "place-value-and-order", "knowledge": "Decimals and operation order", "ability": "Align place values, scale by 100 and use the correct order of operations.", "types": ["blank"], "count": 3, "points": 3, "estimatedMinutes": 3},
-        {"id": "fraction-percent", "knowledge": "Fractions and percentages", "ability": "Find a common denominator, divide a fraction and calculate a percentage of a quantity.", "types": ["response", "blank"], "count": 3, "points": 3, "estimatedMinutes": 3},
-        {"id": "formal-methods", "knowledge": "Long multiplication and division", "ability": "Show a complete method including correct place value.", "types": ["response"], "count": 2, "points": 4, "estimatedMinutes": 4}
-      ]
-    }
-  },
-  "primary-chinese": {
-    "schemaVersion": "1.0.0",
-    "practiceId": "gallery-p6-chinese-reading-note",
-    "notebookId": "gallery-p6-chinese-source",
-    "notebookRevision": 1,
-    "title": "小學六年級中國語文 · 閱讀與便條練習",
-    "subject": "中國語文",
-    "level": "小學六年級 · 香港",
-    "durationMinutes": 20,
-    "totalScore": 10,
-    "mode": "mock",
-    "style": {"preset": "standard", "templateId": "primary-chinese", "lineHeight": 1.35, "templateOverrides": {"marginTopMm": 19, "marginBottomMm": 20, "marginLeftMm": 19, "marginRightMm": 19}},
-    "presentation": {
-      "language": "zh", "headerStyle": "generated", "sourceLayout": true, "sealStyle": "none", "scoreTable": false,
-      "titleLines": ["小學六年級中國語文", "閱讀與便條練習"], "titleLineSizesPt": [18, 14], "titleFont": "hei",
-      "candidateFields": ["姓名：__________________________　班別：__________"], "metaLines": ["建議作答時間：20 分鐘　滿分：10 分"],
-      "notices": [], "footerTemplate": "第 {page} 頁，共 {pages} 頁", "sectionDetails": false, "answerSpace": "ruled",
-      "answerCard": {"template": "boxed"}, "questionScores": "show", "questionGapMm": 1.2, "printColor": "grayscale"
-    },
-    "materials": [
-      {
-        "id": "p6-chi-source", "title": "原創語篇及情境 · MIT", "kind": "reference",
-        "rights": "MIT。閱讀文章和便條情境為原創；香港考試及評核局資料只供校準。",
-        "provenance": {"kind": "authored", "sourceType": "author"},
-        "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。\n\n五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。",
-        "blocks": [
-          {"id": "paper-bridge", "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。"},
-          {"id": "note-cues", "text": "五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。"}
-        ]
-      }
-    ],
-    "sections": [
-      {
-        "id": "p6-chi-reading", "title": "一、閱讀", "instructions": "讀下面的文章。選擇題每題只選一項；短答題寫在答題格內。", "displayLabel": "", "score": 6,
-        "stimulus": {
-          "title": "一座紙橋",
-          "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。",
-          "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "我第一次在圖書館帶領低年級同學做紙橋。"}
-        },
-        "questions": [
-          {
-            "id": "p6-chi-q1", "number": 1, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "閱讀 · 開篇信息", "optionColumns": 2,
-            "prompt": "第一段以甚麼為重點？",
-            "options": [{"id": "A", "text": "圖書館怎樣準備材料"}, {"id": "B", "text": "「我」為何緊張"}, {"id": "C", "text": "紙橋怎樣托住橡皮"}, {"id": "D", "text": "低年級同學怎樣分工"}],
-            "solution": "B", "explanation": "初次帶領活動、在家三次失敗及手心出汗都指向「我」的緊張。材料整齊只是對照。",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。"}
-          },
-          {
-            "id": "p6-chi-q2", "number": 2, "type": "response", "score": 1, "difficulty": "easy", "chapter": "閱讀 · 按語境取詞", "answerRows": 1, "answerBoxMm": 10,
-            "prompt": "從第一段抄出一個四字詞語，形容剪刀和紙擺放得怎樣。",
-            "solution": "整整齊齊", "explanation": "寫出「整整齊齊」或「整整齐齐」得 1 分。",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "桌上的材料擺得整整齊齊"}
-          },
-          {
-            "id": "p6-chi-q3", "number": 3, "type": "response", "score": 1, "difficulty": "easy", "chapter": "閱讀 · 關鍵細節", "answerRows": 1, "answerBoxMm": 10,
-            "prompt": "阿朗把紙橋的兩端做成甚麼形狀？",
-            "solution": "三角形。", "explanation": "答「三角形」或意思相同的說法得 1 分；只答「折了兩端」未說明形狀，不得分。",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "他把兩端折成三角形。"}
-          },
-          {
-            "id": "p6-chi-q4", "number": 4, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "閱讀 · 推斷行動原因", "optionColumns": 2,
-            "prompt": "第二段中，「我」為甚麼沒有叫阿朗照自己的方法做？",
-            "options": [{"id": "A", "text": "其他同學正要圍過來"}, {"id": "B", "text": "阿朗已照着「我」的方法做"}, {"id": "C", "text": "「我」想讓阿朗先把紙疊厚"}, {"id": "D", "text": "「我」看見阿朗的方法有效"}],
-            "solution": "D", "explanation": "阿朗的橋托住三塊橡皮後，「我」先不要求他改用自己的做法，反而請他示範。其他同學圍過來在後。",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範"}
-          },
-          {
-            "id": "p6-chi-q5", "number": 5, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "閱讀 · 字詞表達效果", "optionColumns": 2,
-            "prompt": "「紙橋竟托住了三塊橡皮」中的「竟」表達「我」怎樣的感受？",
-            "options": [{"id": "A", "text": "意外，沒有料到它能承重"}, {"id": "B", "text": "不滿，認為它應托住更多"}, {"id": "C", "text": "安心，結果與預計相同"}, {"id": "D", "text": "為難，不知道怎麼數橡皮"}],
-            "solution": "A", "explanation": "「竟」提示結果出乎意料，並與前面三次失敗形成對照。",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "紙橋竟托住了三塊橡皮。"}
-          },
-          {
-            "id": "p6-chi-q6", "number": 6, "type": "choice", "score": 1, "difficulty": "hard", "chapter": "閱讀 · 統整主旨", "optionColumns": 2,
-            "prompt": "哪一項最能概括全文的主要意思？",
-            "options": [{"id": "A", "text": "比較紙橋的承重能力，需要反覆試驗。"}, {"id": "B", "text": "帶領同學做活動前，應該先多練習。"}, {"id": "C", "text": "帶領活動的人也能向參加者學習。"}, {"id": "D", "text": "展示成果能鼓勵同學參加活動。"}],
-            "solution": "C", "explanation": "「我」從想糾正阿朗，變成邀請他示範，最後還把他的折法記在自己的筆記裏。試驗、準備與展示都只能解釋個別段落。",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "paper-bridge", "exact": "我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。"}
-          }
-        ]
-      },
-      {
-        "id": "p6-chi-note", "title": "二、實用寫作", "instructions": "按情境寫一則便條。", "displayLabel": "", "score": 4, "breakBefore": true,
-        "questions": [
-          {
-            "id": "p6-chi-q7", "number": 7, "type": "response", "score": 4, "difficulty": "hard", "chapter": "實用寫作 · 便條", "answerRows": 9,
-            "prompt": "五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。",
-            "solution": "梁老師：\n　　今天午息，我把圖書館的一盒彩色紙弄濕了，對不起。我已把濕紙和乾紙分開，明天會帶一盒彩色紙來補回。\n學生　陳樂\n五月十二日",
-            "explanation": "本練習以 0–4 分記錄，並非官方等級換算。內容、格式和語氣按下列整體判分；格式三要素為上款、署名和日期／時間。不把單個不礙理解的錯字當成格式或內容缺漏。",
-            "rubric": {"criteria": [
-              {"id": "note-band", "points": 4, "description": "4 分：交代彩紙弄濕、可行補救與歉意三項，稱謂／署名／日期或時間齊全，語氣得體。3 分：三項齊全，但缺一項格式或用語欠妥。2 分：寫出兩項主要信息，格式至少有兩項；或寫出三項但格式只有一項。1 分：可辨為便條但未達前述要求。0 分：空白、只抄題或內容無關。"}
-            ], "equivalentMethods": ["接受合乎情況的補救，例如補回同量彩紙、詢問老師如何補領。規範簡化字不影響得分。"]},
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-chi-source", "blockId": "note-cues", "exact": "說明出了甚麼事、你打算怎樣補救，並表示歉意。"}
-          }
-        ]
-      }
-    ],
-    "generation": {
-      "intent": "generate", "ocrReviewed": true, "unresolved": [],
-      "notes": "原創閱讀與便條練習，對照 2024 香港小六 6CR1 與 6CW1 的部分能力。不是官方整卷，未涵蓋長篇寫作、聆聽、視聽資訊與說話。"
-    },
-    "authoring": {
-      "examName": "香港小六中國語文 · 原創閱讀與便條專題", "knowledge": "敘事閱讀、語境取詞、推斷與主旨、便條信息與格式", "difficulty": "balanced",
-      "blueprint": [
-        {"id": "reading", "knowledge": "校園敘事", "ability": "按段定位信息、取詞、讀出人物行動與字詞效果，再統整主旨。", "types": ["choice", "response"], "count": 6, "points": 6, "estimatedMinutes": 12},
-        {"id": "note", "knowledge": "便條", "ability": "針對收件人有禮地交代事情、補救與歉意，使用完整便條格式。", "types": ["response"], "count": 1, "points": 4, "estimatedMinutes": 8}
-      ]
-    }
-  },
-  "primary-english": {
-    "schemaVersion": "1.0.0",
-    "practiceId": "gallery-p6-english-reading-writing",
-    "notebookId": "gallery-p6-english-source",
-    "notebookRevision": 1,
-    "title": "Primary 6 English · Reading and Writing Practice",
-    "subject": "English Language",
-    "level": "小学六年级 · Hong Kong Primary 6",
-    "durationMinutes": 25,
-    "totalScore": 15,
-    "mode": "mock",
-    "style": {"preset": "standard", "templateId": "primary-english", "lineHeight": 1.45, "templateOverrides": {"fontFamily": "times"}},
-    "presentation": {
-      "language": "en", "headerStyle": "generated", "sourceLayout": true, "sealStyle": "none", "scoreTable": false,
-      "titleLines": ["Primary 6 English", "Reading and Writing Practice"], "titleLineSizesPt": [18, 14], "titleFont": "times",
-      "candidateFields": ["Name: __________________________"], "metaLines": ["Time: 25 minutes     Total: 15 marks"],
-      "notices": [],
-      "footerTemplate": "Page {page} of {pages}", "sectionDetails": false, "answerSpace": "ruled", "answerCard": {"template": "boxed"},
-      "questionScores": "show", "questionGapMm": 2, "printColor": "grayscale"
-    },
-    "materials": [
-      {
-        "id": "p6-english-material", "title": "Paper Notebook original P6 reading and writing materials · MIT", "kind": "reference",
-        "rights": "MIT · Original reading texts and writing cues. HKEAA materials are benchmarks only.",
-        "provenance": {"kind": "authored", "sourceType": "author"},
-        "text": "Kite Day\nMake a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book.\n\nAcross the Puddle\nNora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’\n\nAt the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?",
-        "blocks": [
-          {"id": "p6-notice", "text": "Make a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book."},
-          {"id": "p6-story", "text": "Nora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’"},
-          {"id": "p6-writing-cues", "text": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?"}
-        ]
-      }
-    ],
-    "sections": [
-      {
-        "id": "p6-reading-notice", "title": "Part A · Reading a notice", "instructions": "Read the notice. Choose one answer for each question.", "displayLabel": "", "headingFont": "times", "score": 4,
-        "stimulus": {
-          "title": "Kite Day",
-          "text": "Make a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book.",
-          "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Make a kite in the Art Room"}
-        },
-        "questions": [
-          {
-            "id": "p6-q1", "number": 1, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "Reading notices · locating details", "optionColumns": 2,
-            "prompt": "What should children bring to the morning session?",
-            "options": [{"id": "A", "text": "A finished kite"}, {"id": "B", "text": "A ruler"}, {"id": "C", "text": "Coloured paper"}, {"id": "D", "text": "Scissors"}],
-            "solution": "B", "explanation": "The notice says to bring a ruler. Scissors are lent and paper is given out. Children make the kite there.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Bring a ruler. We will lend you scissors and give you coloured paper."}
-          },
-          {
-            "id": "p6-q2", "number": 2, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "Reading notices · instructions", "optionColumns": 2,
-            "prompt": "How can a child book a place?",
-            "options": [{"id": "A", "text": "Sign up in the Art Room on 8 May."}, {"id": "B", "text": "Phone the Art Room by 6 May."}, {"id": "C", "text": "Go to the Sports Hall at 3 p.m."}, {"id": "D", "text": "Sign up at the library by 6 May."}],
-            "solution": "D", "explanation": "The last paragraph gives both the place and the deadline. The Sports Hall is the meeting point, not the booking desk.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Sign up at the library desk by Thursday 6 May."}
-          },
-          {
-            "id": "p6-q3", "number": 3, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading notices · linking conditions", "optionColumns": 2,
-            "prompt": "It rains on Saturday afternoon. Where and when should the children go for the display?",
-            "options": [{"id": "A", "text": "Sports Hall at 3 p.m."}, {"id": "B", "text": "School yard at 3 p.m."}, {"id": "C", "text": "Sports Hall at 10 a.m."}, {"id": "D", "text": "Art Room at 10 a.m."}],
-            "solution": "A", "explanation": "Rain changes the activity to an indoor display at the Sports Hall. ‘At the same time’ refers to 3 p.m., not the morning session.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "Try your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display."}
-          },
-          {
-            "id": "p6-q4", "number": 4, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading notices · dictionary cues", "optionColumns": 2,
-            "prompt": "Which dictionary meaning of ‘left’ fits ‘if there are any places left’?",
-            "options": [{"id": "A", "text": "Opposite to right"}, {"id": "B", "text": "Went away from a place"}, {"id": "C", "text": "Still available to use"}, {"id": "D", "text": "Forgot to take something"}],
-            "solution": "C", "explanation": "The desk can tell you whether some of the twelve places are still available. The other meanings do not fit the booking context.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-notice", "exact": "There are only twelve places. Ask at the desk if there are any places left."}
-          }
-        ]
-      },
-      {
-        "id": "p6-reading-story", "title": "Part B · Reading a story", "instructions": "Read the story and answer Questions 5–8.", "displayLabel": "", "headingFont": "times", "score": 4, "breakBefore": true,
-        "stimulus": {
-          "title": "Across the Puddle",
-          "text": "Nora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’",
-          "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Nora carried a box of young plants towards the school garden."}
-        },
-        "questions": [
-          {
-            "id": "p6-q5", "number": 5, "type": "choice", "score": 1, "difficulty": "easy", "chapter": "Reading stories · identifying the problem", "optionColumns": 2,
-            "prompt": "What stopped Nora on the path?",
-            "options": [{"id": "A", "text": "A locked gate"}, {"id": "B", "text": "A fallen board"}, {"id": "C", "text": "A wide puddle"}, {"id": "D", "text": "A heavy shower"}],
-            "solution": "C", "explanation": "The rain had already stopped. Water left across the path is what makes Nora put the box down.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Rain had stopped, but a wide puddle covered the path."}
-          },
-          {
-            "id": "p6-q6", "number": 6, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading stories · figurative language", "optionColumns": 2,
-            "prompt": "What does ‘Her heart was a drum’ tell us about Nora?",
-            "options": [{"id": "A", "text": "She was nervous."}, {"id": "B", "text": "She heard music."}, {"id": "C", "text": "She was angry."}, {"id": "D", "text": "She felt sleepy."}],
-            "solution": "A", "explanation": "A drum suggests loud or fast heartbeats. The feeling lasts until Nora reaches dry ground, which supports nervousness about crossing.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Her heart was a drum until both feet were on dry ground."}
-          },
-          {
-            "id": "p6-q7", "number": 7, "type": "choice", "score": 1, "difficulty": "medium", "chapter": "Reading stories · inferring purpose", "optionColumns": 2,
-            "prompt": "Why did Jay hold one end of the board?",
-            "options": [{"id": "A", "text": "To help lift the box"}, {"id": "B", "text": "To move the loose stone"}, {"id": "C", "text": "To return the board"}, {"id": "D", "text": "To keep the board steady"}],
-            "solution": "D", "explanation": "The loose stone showed that an unsteady surface was unsafe. Jay held the board flat during the crossing; he did not lift the box, move the stone or return the board at that moment.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "Jay held one end flat while Nora walked across."}
-          },
-          {
-            "id": "p6-q8", "number": 8, "type": "choice", "score": 1, "difficulty": "hard", "chapter": "Reading stories · ordering events", "optionColumns": 2,
-            "prompt": "Put the events in order.\n1. Nora put the plants in the garden.\n2. Jay tried stepping on a stone.\n3. Nora called to Jay.\n4. Nora asked to borrow the board.",
-            "options": [{"id": "A", "text": "2 → 3 → 4 → 1"}, {"id": "B", "text": "3 → 2 → 4 → 1"}, {"id": "C", "text": "3 → 4 → 2 → 1"}, {"id": "D", "text": "3 → 2 → 1 → 4"}],
-            "solution": "B", "explanation": "Nora called Jay first. After Jay tested the stone, Nora asked for the board. She delivered the plants after crossing on it.",
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-story", "exact": "She put the box down and called to Jay"}
-          }
-        ]
-      },
-      {
-        "id": "p6-guided-writing", "title": "Part C · Writing a story", "instructions": "Use the ideas below to write a story in about 80 words.", "displayLabel": "", "headingFont": "times", "score": 7, "breakBefore": true,
-        "questions": [
-          {
-            "id": "p6-q9", "number": 9, "type": "response", "score": 7, "difficulty": "hard", "chapter": "Writing · guided narrative", "answerRows": 11,
-            "prompt": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?",
-            "solution": "Mia opened her envelope as the teacher called her name. Her story cards were still on the desk where she had practised that morning. ‘Tell it to me first,’ whispered Ben. Mia remembered the beginning, so she took a breath and walked to the microphone. When she forgot a line, she described what the fox did next. The children laughed at the ending and clapped. Afterwards, Mia found the cards and gave Ben one as a thank-you note.",
-            "explanation": "An example, not a required plot. Score content and language separately. Under 40 words, cap each score at 2. Content 0 normally implies language 0.",
-            "responseConstraints": {"countUnit": "words", "answerStyle": "ruled"},
-            "rubric": {"criteria": [
-              {"id": "content", "points": 4, "description": "4: A clear, connected story with developed details and a fitting ending. 3: A clear account with details and an ending, or a well-developed account without an ending. 2: Some relevant ideas, briefly developed or unevenly linked. 1: Very little relevant information or disconnected ideas. 0: Irrelevant or undeveloped. Under 40 words: maximum 2."},
-              {"id": "language", "points": 3, "description": "3: Appropriate range of words, sentence patterns, links and verb forms; errors do not obscure meaning. 2: Limited range, but the story is mostly understandable. 1: Very limited range or frequent errors that sometimes obscure meaning. 0: Errors prevent understanding. Under 40 words: maximum 2."}
-            ], "equivalentMethods": ["Accept any coherent ending and sensible choices for how Mia remembers or retells the story."]},
-            "origin": {"kind": "generated"}, "answerProvenance": {"kind": "independent"}, "source": {"materialId": "p6-english-material", "blockId": "p6-writing-cues", "exact": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty."}
-          }
-        ]
-      }
-    ],
-    "generation": {
-      "intent": "generate", "ocrReviewed": true, "unresolved": [],
-      "notes": "Original reading and writing subset benchmarked against 2024 Hong Kong P6 6ERW1 Parts 1, 4 and 5. Not a full official paper. No listening or speaking. Difficulty, coverage and timing are author estimates."
-    },
-    "authoring": {
-      "examName": "Hong Kong Primary 6 English · Reading and writing practice subset", "knowledge": "Functional reading, fiction and guided narrative", "difficulty": "balanced",
-      "blueprint": [
-        {"id": "notice", "knowledge": "Functional notice", "ability": "Locate a detail, follow booking instructions, link location and time, and select a dictionary sense in context.", "types": ["choice"], "count": 4, "points": 4, "estimatedMinutes": 5},
-        {"id": "story", "knowledge": "Short fiction", "ability": "Identify the problem, interpret figurative language, infer purpose and sequence events.", "types": ["choice"], "count": 4, "points": 4, "estimatedMinutes": 7},
-        {"id": "writing", "knowledge": "Guided narrative", "ability": "Develop a problem, response and ending in about 80 words using coherent links and controlled language.", "types": ["response"], "count": 1, "points": 7, "estimatedMinutes": 13}
       ]
     }
   },
@@ -10204,6 +9797,3088 @@
         "gallery-global-biology-visual-question-2",
         "gallery-global-biology-visual-question-3"
       ]
+    }
+  },
+  "england-ks2-math": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "gallery-ks2-arithmetic-practice",
+    "notebookId": "gallery-ks2-arithmetic-source",
+    "notebookRevision": 1,
+    "title": "Key Stage 2 Mathematics · Arithmetic Practice",
+    "subject": "Mathematics",
+    "level": "小学高年级 · England KS2",
+    "durationMinutes": 12,
+    "totalScore": 12,
+    "mode": "mock",
+    "style": {
+      "preset": "standard",
+      "templateId": "primary-math",
+      "lineHeight": 1.55,
+      "templateOverrides": {
+        "fontFamily": "times"
+      }
+    },
+    "presentation": {
+      "language": "en",
+      "headerStyle": "generated",
+      "sourceLayout": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "titleLines": [
+        "Key Stage 2 Mathematics",
+        "Arithmetic Practice"
+      ],
+      "titleLineSizesPt": [
+        18,
+        14
+      ],
+      "titleFont": "times",
+      "sectionDetails": false,
+      "candidateFields": [
+        "Name: __________________________"
+      ],
+      "footerTemplate": "Page {page} of {pages}",
+      "metaLines": [
+        "Time: 12 minutes     Total: 12 marks"
+      ],
+      "notices": [
+        "Do not use a calculator. Give exact answers. Show your working for questions 9 and 10."
+      ],
+      "answerSpace": "ruled",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "questionScores": "show",
+      "printColor": "grayscale"
+    },
+    "materials": [
+      {
+        "id": "ks2-practice-material",
+        "title": "Paper Notebook original KS2 arithmetic practice · MIT",
+        "kind": "reference",
+        "rights": "MIT · Original questions. The 2024 STA arithmetic paper and mark scheme serve as benchmarks only.",
+        "provenance": {
+          "kind": "authored",
+          "sourceType": "author"
+        },
+        "text": "Calculate $784+57$.\nCalculate $864\\div8$.\nCalculate $12.608+4.79$.\nCalculate $6.73\\div100$.\nCalculate $84-48\\div6$.\nCalculate $\\frac56-\\frac7{18}$.\nCalculate $\\frac58\\div4$.\nFind 37% of 700.\nCalculate $426\\times38$. Show your working.\nCalculate $3444\\div42$. Show your working.",
+        "blocks": [
+          {
+            "id": "ks2-block-1",
+            "text": "Calculate $784+57$."
+          },
+          {
+            "id": "ks2-block-2",
+            "text": "Calculate $864\\div8$."
+          },
+          {
+            "id": "ks2-block-3",
+            "text": "Calculate $12.608+4.79$."
+          },
+          {
+            "id": "ks2-block-4",
+            "text": "Calculate $6.73\\div100$."
+          },
+          {
+            "id": "ks2-block-5",
+            "text": "Calculate $84-48\\div6$."
+          },
+          {
+            "id": "ks2-block-6",
+            "text": "Calculate $\\frac56-\\frac7{18}$."
+          },
+          {
+            "id": "ks2-block-7",
+            "text": "Calculate $\\frac58\\div4$."
+          },
+          {
+            "id": "ks2-block-8",
+            "text": "Find 37% of 700."
+          },
+          {
+            "id": "ks2-block-9",
+            "text": "Calculate $426\\times38$. Show your working."
+          },
+          {
+            "id": "ks2-block-10",
+            "text": "Calculate $3444\\div42$. Show your working."
+          }
+        ]
+      },
+      {
+        "id": "england-ks2-math-benchmark",
+        "title": "英格兰 2024 KS2 数学试题与评分材料",
+        "kind": "reference",
+        "url": "https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials",
+        "text": "对照 Paper 1 的运算题型与书面算法要求。",
+        "blocks": [
+          {
+            "id": "england-ks2-math-benchmark-scope",
+            "text": "对照 Paper 1 的运算题型与书面算法要求。"
+          }
+        ],
+        "provenance": {
+          "kind": "web",
+          "publisher": "Standards and Testing Agency",
+          "version": "2024",
+          "url": "https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials",
+          "sourceType": "official",
+          "accessedAt": "2026-11-21"
+        }
+      }
+    ],
+    "sections": [
+      {
+        "id": "ks2-integers",
+        "title": "Whole numbers",
+        "instructions": "Write your answers in the spaces provided.",
+        "displayLabel": "",
+        "headingFont": "times",
+        "score": 2,
+        "questions": [
+          {
+            "id": "ks2-q1",
+            "number": 1,
+            "type": "blank",
+            "difficulty": "easy",
+            "chapter": "Whole numbers",
+            "score": 1,
+            "prompt": "Calculate $784+57$.",
+            "solution": [
+              "841"
+            ],
+            "explanation": "Add 60 and subtract 3: $844-3=841$.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-1",
+              "exact": "Calculate $784+57$."
+            }
+          },
+          {
+            "id": "ks2-q2",
+            "number": 2,
+            "type": "blank",
+            "difficulty": "easy",
+            "chapter": "Whole numbers",
+            "score": 1,
+            "prompt": "Calculate $864\\div8$.",
+            "solution": [
+              "108"
+            ],
+            "explanation": "Split 864 into 800 and 64; the two quotients are 100 and 8.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-2",
+              "exact": "Calculate $864\\div8$."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ks2-place-value",
+        "title": "Place value and order of operations",
+        "instructions": "Write exact answers.",
+        "displayLabel": "",
+        "headingFont": "times",
+        "score": 3,
+        "questions": [
+          {
+            "id": "ks2-q3",
+            "number": 3,
+            "type": "blank",
+            "difficulty": "medium",
+            "chapter": "Decimal place value",
+            "score": 1,
+            "prompt": "Calculate $12.608+4.79$.",
+            "solution": [
+              "17.398"
+            ],
+            "explanation": "Align the decimal points: $12.608+4.790=17.398$.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-3",
+              "exact": "Calculate $12.608+4.79$."
+            }
+          },
+          {
+            "id": "ks2-q4",
+            "number": 4,
+            "type": "blank",
+            "difficulty": "easy",
+            "chapter": "Decimal place value",
+            "score": 1,
+            "prompt": "Calculate $6.73\\div100$.",
+            "solution": [
+              "0.0673"
+            ],
+            "explanation": "Each digit moves two place-value positions to the right. Check: $0.0673\\times100=6.73$.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-4",
+              "exact": "Calculate $6.73\\div100$."
+            }
+          },
+          {
+            "id": "ks2-q5",
+            "number": 5,
+            "type": "blank",
+            "difficulty": "medium",
+            "chapter": "Order of operations",
+            "score": 1,
+            "prompt": "Calculate $84-48\\div6$.",
+            "solution": [
+              "76"
+            ],
+            "explanation": "Divide first: $48\\div6=8$. Then $84-8=76$.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-5",
+              "exact": "Calculate $84-48\\div6$."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ks2-fractions",
+        "title": "Fractions and percentages",
+        "instructions": "Equivalent exact fractions are accepted.",
+        "displayLabel": "",
+        "headingFont": "times",
+        "score": 3,
+        "breakBefore": true,
+        "questions": [
+          {
+            "id": "ks2-q6",
+            "number": 6,
+            "type": "response",
+            "difficulty": "medium",
+            "chapter": "Fraction subtraction",
+            "score": 1,
+            "answerBoxMm": 10,
+            "prompt": "Calculate $\\frac56-\\frac7{18}$.",
+            "solution": "$\\frac49$",
+            "explanation": "$\\frac{15}{18}-\\frac7{18}=\\frac8{18}=\\frac49$. Accept any exact equivalent.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-6",
+              "exact": "Calculate $\\frac56-\\frac7{18}$."
+            }
+          },
+          {
+            "id": "ks2-q7",
+            "number": 7,
+            "type": "response",
+            "difficulty": "medium",
+            "chapter": "Fraction division",
+            "score": 1,
+            "answerBoxMm": 10,
+            "prompt": "Calculate $\\frac58\\div4$.",
+            "solution": "$\\frac5{32}$",
+            "explanation": "One eighth shared into four equal parts gives one thirty-second per part; five eighths give five thirty-seconds. Accept any exact equivalent, including 0.15625.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-7",
+              "exact": "Calculate $\\frac58\\div4$."
+            }
+          },
+          {
+            "id": "ks2-q8",
+            "number": 8,
+            "type": "blank",
+            "difficulty": "medium",
+            "chapter": "Percentage of a quantity",
+            "score": 1,
+            "prompt": "Find 37% of 700.",
+            "solution": [
+              "259"
+            ],
+            "explanation": "1% of 700 is 7, so $37\\times7=259$. The answer is a quantity, not 259%.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-8",
+              "exact": "Find 37% of 700."
+            }
+          }
+        ]
+      },
+      {
+        "id": "ks2-written-methods",
+        "title": "Written calculations",
+        "instructions": "Show your working and give a final answer.",
+        "displayLabel": "",
+        "headingFont": "times",
+        "score": 4,
+        "questions": [
+          {
+            "id": "ks2-q9",
+            "number": 9,
+            "type": "response",
+            "difficulty": "hard",
+            "chapter": "Long multiplication",
+            "score": 2,
+            "answerBoxMm": 28,
+            "prompt": "Calculate $426\\times38$. Show your working.",
+            "solution": "16,188",
+            "explanation": "Multiply by 8 to get 3,408, and by 30 to get 12,780. Adding gives 16,188. Check by $426\\times(40-2)=17,040-852=16,188$.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-9",
+              "exact": "Calculate $426\\times38$. Show your working."
+            },
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "route-or-result",
+                  "description": "Correct answer, or complete long multiplication with at most one arithmetic slip and correct place values.",
+                  "points": 1
+                },
+                {
+                  "id": "correct-result",
+                  "description": "Correct answer earns the second mark.",
+                  "points": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "ks2-q10",
+            "number": 10,
+            "type": "response",
+            "difficulty": "hard",
+            "chapter": "Formal division",
+            "score": 2,
+            "answerBoxMm": 28,
+            "prompt": "Calculate $3444\\div42$. Show your working.",
+            "solution": "82",
+            "explanation": "Subtract $80\\times42=3360$ from 3444. The remaining 84 is $2\\times42$; the quotient is $80+2=82$, with no remainder.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "ks2-practice-material",
+              "blockId": "ks2-block-10",
+              "exact": "Calculate $3444\\div42$. Show your working."
+            },
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "route-or-result",
+                  "description": "Correct answer, or complete formal division with a final quotient, correct place values and at most one arithmetic slip.",
+                  "points": 1
+                },
+                {
+                  "id": "correct-result",
+                  "description": "Correct answer earns the second mark.",
+                  "points": 1
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "generation": {
+      "intent": "generate",
+      "ocrReviewed": true,
+      "unresolved": [],
+      "notes": "Subset of the arithmetic domain only. Original 12-minute practice benchmarked against England 2024 KS2 Paper 1 and its mark scheme. Reasoning papers and remaining arithmetic skills are outside the scope. Difficulty and timing are design estimates."
+    },
+    "authoring": {
+      "examName": "Key Stage 2 mathematics · Arithmetic practice subset",
+      "knowledge": "Whole numbers, decimal place value, operation order, fractions, percentages and written algorithms",
+      "difficulty": "balanced",
+      "blueprint": [
+        {
+          "id": "whole-number-fluency",
+          "knowledge": "Whole numbers",
+          "ability": "Calculate with carrying or regrouping.",
+          "types": [
+            "blank"
+          ],
+          "count": 2,
+          "points": 2,
+          "estimatedMinutes": 2,
+          "sourceIds": [
+            "england-ks2-math-benchmark"
+          ]
+        },
+        {
+          "id": "place-value-and-order",
+          "knowledge": "Decimals and operation order",
+          "ability": "Align place values, scale by 100 and use the correct order of operations.",
+          "types": [
+            "blank"
+          ],
+          "count": 3,
+          "points": 3,
+          "estimatedMinutes": 3,
+          "sourceIds": [
+            "england-ks2-math-benchmark"
+          ]
+        },
+        {
+          "id": "fraction-percent",
+          "knowledge": "Fractions and percentages",
+          "ability": "Find a common denominator, divide a fraction and calculate a percentage of a quantity.",
+          "types": [
+            "response",
+            "blank"
+          ],
+          "count": 3,
+          "points": 3,
+          "estimatedMinutes": 3,
+          "sourceIds": [
+            "england-ks2-math-benchmark"
+          ]
+        },
+        {
+          "id": "formal-methods",
+          "knowledge": "Long multiplication and division",
+          "ability": "Show a complete method including correct place value.",
+          "types": [
+            "response"
+          ],
+          "count": 2,
+          "points": 4,
+          "estimatedMinutes": 4,
+          "sourceIds": [
+            "england-ks2-math-benchmark"
+          ]
+        }
+      ],
+      "region": "英格兰",
+      "grade": "KS2"
+    }
+  },
+  "hk-p6-chinese": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "gallery-p6-chinese-reading-note",
+    "notebookId": "gallery-p6-chinese-source",
+    "notebookRevision": 1,
+    "title": "小學六年級中國語文 · 閱讀與便條練習",
+    "subject": "中國語文",
+    "level": "小學六年級 · 香港",
+    "durationMinutes": 20,
+    "totalScore": 10,
+    "mode": "mock",
+    "style": {
+      "preset": "standard",
+      "templateId": "primary-chinese",
+      "lineHeight": 1.35,
+      "templateOverrides": {
+        "marginTopMm": 19,
+        "marginBottomMm": 20,
+        "marginLeftMm": 19,
+        "marginRightMm": 19
+      }
+    },
+    "presentation": {
+      "language": "zh",
+      "headerStyle": "generated",
+      "sourceLayout": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "titleLines": [
+        "小學六年級中國語文",
+        "閱讀與便條練習"
+      ],
+      "titleLineSizesPt": [
+        18,
+        14
+      ],
+      "titleFont": "hei",
+      "candidateFields": [
+        "姓名：__________________________　班別：__________"
+      ],
+      "metaLines": [
+        "建議作答時間：20 分鐘　滿分：10 分"
+      ],
+      "notices": [],
+      "footerTemplate": "第 {page} 頁，共 {pages} 頁",
+      "sectionDetails": false,
+      "answerSpace": "ruled",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "questionScores": "show",
+      "questionGapMm": 1.2,
+      "printColor": "grayscale"
+    },
+    "materials": [
+      {
+        "id": "p6-chi-source",
+        "title": "原創語篇及情境 · MIT",
+        "kind": "reference",
+        "rights": "MIT。閱讀文章和便條情境為原創；香港考試及評核局資料只供校準。",
+        "provenance": {
+          "kind": "authored",
+          "sourceType": "author"
+        },
+        "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。\n\n五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。",
+        "blocks": [
+          {
+            "id": "paper-bridge",
+            "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。"
+          },
+          {
+            "id": "note-cues",
+            "text": "五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。"
+          }
+        ]
+      },
+      {
+        "id": "hk-p6-chinese-benchmark",
+        "title": "香港考評局 2024 小六中國語文試題（6CR1、6CW1）",
+        "kind": "reference",
+        "url": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html",
+        "text": "對照 6CR1 閱讀和 6CW1 寫作任務。",
+        "blocks": [
+          {
+            "id": "hk-p6-chinese-benchmark-scope",
+            "text": "對照 6CR1 閱讀和 6CW1 寫作任務。"
+          }
+        ],
+        "provenance": {
+          "kind": "web",
+          "publisher": "香港考試及評核局",
+          "version": "2024",
+          "url": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html",
+          "sourceType": "official",
+          "accessedAt": "2026-11-21"
+        }
+      }
+    ],
+    "sections": [
+      {
+        "id": "p6-chi-reading",
+        "title": "一、閱讀",
+        "instructions": "讀下面的文章。選擇題每題只選一項；短答題寫在答題格內。",
+        "displayLabel": "",
+        "score": 6,
+        "stimulus": {
+          "title": "一座紙橋",
+          "text": "第一段　星期五午息，我第一次在圖書館帶領低年級同學做紙橋。桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。\n\n第二段　活動開始後，阿朗把紙疊成厚厚一團。我正想叫他照我的方法做，卻看見他把兩端折成三角形。紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範，其他同學也圍過來看。\n\n第三段　原來我在家只顧把橋面疊厚，沒試過改變橋腳的形狀。我請大家一次只改一處，再看看哪座橋能托住最多橡皮。離開圖書館前，我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。",
+          "source": {
+            "materialId": "p6-chi-source",
+            "blockId": "paper-bridge",
+            "exact": "我第一次在圖書館帶領低年級同學做紙橋。"
+          }
+        },
+        "questions": [
+          {
+            "id": "p6-chi-q1",
+            "number": 1,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "easy",
+            "chapter": "閱讀 · 開篇信息",
+            "optionColumns": 2,
+            "prompt": "第一段以甚麼為重點？",
+            "options": [
+              {
+                "id": "A",
+                "text": "圖書館怎樣準備材料"
+              },
+              {
+                "id": "B",
+                "text": "「我」為何緊張"
+              },
+              {
+                "id": "C",
+                "text": "紙橋怎樣托住橡皮"
+              },
+              {
+                "id": "D",
+                "text": "低年級同學怎樣分工"
+              }
+            ],
+            "solution": "B",
+            "explanation": "初次帶領活動、在家三次失敗及手心出汗都指向「我」的緊張。材料整齊只是對照。",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-chi-source",
+              "blockId": "paper-bridge",
+              "exact": "桌上的材料擺得整整齊齊，我的手心卻全是汗。前一天，我在家試了三遍，紙橋每次都塌下來。"
+            }
+          },
+          {
+            "id": "p6-chi-q2",
+            "number": 2,
+            "type": "response",
+            "score": 1,
+            "difficulty": "easy",
+            "chapter": "閱讀 · 按語境取詞",
+            "answerRows": 1,
+            "answerBoxMm": 10,
+            "prompt": "從第一段抄出一個四字詞語，形容剪刀和紙擺放得怎樣。",
+            "solution": "整整齊齊",
+            "explanation": "寫出「整整齊齊」或「整整齐齐」得 1 分。",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-chi-source",
+              "blockId": "paper-bridge",
+              "exact": "桌上的材料擺得整整齊齊"
+            }
+          },
+          {
+            "id": "p6-chi-q3",
+            "number": 3,
+            "type": "response",
+            "score": 1,
+            "difficulty": "easy",
+            "chapter": "閱讀 · 關鍵細節",
+            "answerRows": 1,
+            "answerBoxMm": 10,
+            "prompt": "阿朗把紙橋的兩端做成甚麼形狀？",
+            "solution": "三角形。",
+            "explanation": "答「三角形」或意思相同的說法得 1 分；只答「折了兩端」未說明形狀，不得分。",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-chi-source",
+              "blockId": "paper-bridge",
+              "exact": "他把兩端折成三角形。"
+            }
+          },
+          {
+            "id": "p6-chi-q4",
+            "number": 4,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "medium",
+            "chapter": "閱讀 · 推斷行動原因",
+            "optionColumns": 2,
+            "prompt": "第二段中，「我」為甚麼沒有叫阿朗照自己的方法做？",
+            "options": [
+              {
+                "id": "A",
+                "text": "其他同學正要圍過來"
+              },
+              {
+                "id": "B",
+                "text": "阿朗已照着「我」的方法做"
+              },
+              {
+                "id": "C",
+                "text": "「我」想讓阿朗先把紙疊厚"
+              },
+              {
+                "id": "D",
+                "text": "「我」看見阿朗的方法有效"
+              }
+            ],
+            "solution": "D",
+            "explanation": "阿朗的橋托住三塊橡皮後，「我」先不要求他改用自己的做法，反而請他示範。其他同學圍過來在後。",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-chi-source",
+              "blockId": "paper-bridge",
+              "exact": "紙橋竟托住了三塊橡皮。我把快要出口的話收了回去，請他示範"
+            }
+          },
+          {
+            "id": "p6-chi-q5",
+            "number": 5,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "medium",
+            "chapter": "閱讀 · 字詞表達效果",
+            "optionColumns": 2,
+            "prompt": "「紙橋竟托住了三塊橡皮」中的「竟」表達「我」怎樣的感受？",
+            "options": [
+              {
+                "id": "A",
+                "text": "意外，沒有料到它能承重"
+              },
+              {
+                "id": "B",
+                "text": "不滿，認為它應托住更多"
+              },
+              {
+                "id": "C",
+                "text": "安心，結果與預計相同"
+              },
+              {
+                "id": "D",
+                "text": "為難，不知道怎麼數橡皮"
+              }
+            ],
+            "solution": "A",
+            "explanation": "「竟」提示結果出乎意料，並與前面三次失敗形成對照。",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-chi-source",
+              "blockId": "paper-bridge",
+              "exact": "紙橋竟托住了三塊橡皮。"
+            }
+          },
+          {
+            "id": "p6-chi-q6",
+            "number": 6,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "hard",
+            "chapter": "閱讀 · 統整主旨",
+            "optionColumns": 2,
+            "prompt": "哪一項最能概括全文的主要意思？",
+            "options": [
+              {
+                "id": "A",
+                "text": "比較紙橋的承重能力，需要反覆試驗。"
+              },
+              {
+                "id": "B",
+                "text": "帶領同學做活動前，應該先多練習。"
+              },
+              {
+                "id": "C",
+                "text": "帶領活動的人也能向參加者學習。"
+              },
+              {
+                "id": "D",
+                "text": "展示成果能鼓勵同學參加活動。"
+              }
+            ],
+            "solution": "C",
+            "explanation": "「我」從想糾正阿朗，變成邀請他示範，最後還把他的折法記在自己的筆記裏。試驗、準備與展示都只能解釋個別段落。",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-chi-source",
+              "blockId": "paper-bridge",
+              "exact": "我把阿朗的紙橋放在展示桌正中，並在自己的活動筆記上畫了兩個三角形。"
+            }
+          }
+        ]
+      },
+      {
+        "id": "p6-chi-note",
+        "title": "二、實用寫作",
+        "instructions": "按情境寫一則便條。",
+        "displayLabel": "",
+        "score": 4,
+        "breakBefore": true,
+        "questions": [
+          {
+            "id": "p6-chi-q7",
+            "number": 7,
+            "type": "response",
+            "score": 4,
+            "difficulty": "hard",
+            "chapter": "實用寫作 · 便條",
+            "answerRows": 9,
+            "prompt": "五月十二日午息，你借用圖書館的紙張和橡皮時，把一盒彩色紙弄濕了。梁老師當時不在。請以學生陳樂的身分寫一則便條給梁老師，說明出了甚麼事、你打算怎樣補救，並表示歉意。",
+            "solution": "梁老師：\n　　今天午息，我把圖書館的一盒彩色紙弄濕了，對不起。我已把濕紙和乾紙分開，明天會帶一盒彩色紙來補回。\n學生　陳樂\n五月十二日",
+            "explanation": "本練習以 0–4 分記錄，並非官方等級換算。內容、格式和語氣按下列整體判分；格式三要素為上款、署名和日期／時間。不把單個不礙理解的錯字當成格式或內容缺漏。",
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "note-band",
+                  "points": 4,
+                  "description": "4 分：交代彩紙弄濕、可行補救與歉意三項，稱謂／署名／日期或時間齊全，語氣得體。3 分：三項齊全，但缺一項格式或用語欠妥。2 分：寫出兩項主要信息，格式至少有兩項；或寫出三項但格式只有一項。1 分：可辨為便條但未達前述要求。0 分：空白、只抄題或內容無關。"
+                }
+              ],
+              "equivalentMethods": [
+                "接受合乎情況的補救，例如補回同量彩紙、詢問老師如何補領。規範簡化字不影響得分。"
+              ]
+            },
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-chi-source",
+              "blockId": "note-cues",
+              "exact": "說明出了甚麼事、你打算怎樣補救，並表示歉意。"
+            }
+          }
+        ]
+      }
+    ],
+    "generation": {
+      "intent": "generate",
+      "ocrReviewed": true,
+      "unresolved": [],
+      "notes": "原創閱讀與便條練習，對照 2024 香港小六 6CR1 與 6CW1 的部分能力。不是官方整卷，未涵蓋長篇寫作、聆聽、視聽資訊與說話。"
+    },
+    "authoring": {
+      "examName": "香港小六中國語文 · 原創閱讀與便條專題",
+      "knowledge": "敘事閱讀、語境取詞、推斷與主旨、便條信息與格式",
+      "difficulty": "balanced",
+      "blueprint": [
+        {
+          "id": "reading",
+          "knowledge": "校園敘事",
+          "ability": "按段定位信息、取詞、讀出人物行動與字詞效果，再統整主旨。",
+          "types": [
+            "choice",
+            "response"
+          ],
+          "count": 6,
+          "points": 6,
+          "estimatedMinutes": 12,
+          "sourceIds": [
+            "hk-p6-chinese-benchmark"
+          ]
+        },
+        {
+          "id": "note",
+          "knowledge": "便條",
+          "ability": "針對收件人有禮地交代事情、補救與歉意，使用完整便條格式。",
+          "types": [
+            "response"
+          ],
+          "count": 1,
+          "points": 4,
+          "estimatedMinutes": 8,
+          "sourceIds": [
+            "hk-p6-chinese-benchmark"
+          ]
+        }
+      ],
+      "region": "中国香港",
+      "grade": "小六"
+    }
+  },
+  "hk-p6-english": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "gallery-p6-english-reading-writing",
+    "notebookId": "gallery-p6-english-source",
+    "notebookRevision": 1,
+    "title": "Primary 6 English · Reading and Writing Practice",
+    "subject": "English Language",
+    "level": "小学六年级 · Hong Kong Primary 6",
+    "durationMinutes": 25,
+    "totalScore": 15,
+    "mode": "mock",
+    "style": {
+      "preset": "standard",
+      "templateId": "primary-english",
+      "lineHeight": 1.45,
+      "templateOverrides": {
+        "fontFamily": "times"
+      }
+    },
+    "presentation": {
+      "language": "en",
+      "headerStyle": "generated",
+      "sourceLayout": true,
+      "sealStyle": "none",
+      "scoreTable": false,
+      "titleLines": [
+        "Primary 6 English",
+        "Reading and Writing Practice"
+      ],
+      "titleLineSizesPt": [
+        18,
+        14
+      ],
+      "titleFont": "times",
+      "candidateFields": [
+        "Name: __________________________"
+      ],
+      "metaLines": [
+        "Time: 25 minutes     Total: 15 marks"
+      ],
+      "notices": [],
+      "footerTemplate": "Page {page} of {pages}",
+      "sectionDetails": false,
+      "answerSpace": "ruled",
+      "answerCard": {
+        "template": "boxed"
+      },
+      "questionScores": "show",
+      "questionGapMm": 2,
+      "printColor": "grayscale"
+    },
+    "materials": [
+      {
+        "id": "p6-english-material",
+        "title": "Paper Notebook original P6 reading and writing materials · MIT",
+        "kind": "reference",
+        "rights": "MIT · Original reading texts and writing cues. HKEAA materials are benchmarks only.",
+        "provenance": {
+          "kind": "authored",
+          "sourceType": "author"
+        },
+        "text": "Kite Day\nMake a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book.\n\nAcross the Puddle\nNora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’\n\nAt the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?",
+        "blocks": [
+          {
+            "id": "p6-notice",
+            "text": "Make a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book."
+          },
+          {
+            "id": "p6-story",
+            "text": "Nora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’"
+          },
+          {
+            "id": "p6-writing-cues",
+            "text": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?"
+          }
+        ]
+      },
+      {
+        "id": "hk-p6-english-benchmark",
+        "title": "香港考评局 2024 小六英语试题（6ERW1）",
+        "kind": "reference",
+        "url": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html",
+        "text": "对照 6ERW1 的阅读与写作部分。",
+        "blocks": [
+          {
+            "id": "hk-p6-english-benchmark-scope",
+            "text": "对照 6ERW1 的阅读与写作部分。"
+          }
+        ],
+        "provenance": {
+          "kind": "web",
+          "publisher": "香港考試及評核局",
+          "version": "2024",
+          "url": "https://www.bca.hkeaa.edu.hk/web/TSA/en/2024priPaper/PriIndex.html",
+          "sourceType": "official",
+          "accessedAt": "2026-11-21"
+        }
+      }
+    ],
+    "sections": [
+      {
+        "id": "p6-reading-notice",
+        "title": "Part A · Reading a notice",
+        "instructions": "Read the notice. Choose one answer for each question.",
+        "displayLabel": "",
+        "headingFont": "times",
+        "score": 4,
+        "stimulus": {
+          "title": "Kite Day",
+          "text": "Make a kite in the Art Room from 10 to 11 a.m. on Saturday 8 May. The session is open to children aged 9 to 12. Bring a ruler. We will lend you scissors and give you coloured paper.\n\nTry your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display.\n\nSign up at the library desk by Thursday 6 May. There are only twelve places. Ask at the desk if there are any places left. Do not call the Art Room to book.",
+          "source": {
+            "materialId": "p6-english-material",
+            "blockId": "p6-notice",
+            "exact": "Make a kite in the Art Room"
+          }
+        },
+        "questions": [
+          {
+            "id": "p6-q1",
+            "number": 1,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "easy",
+            "chapter": "Reading notices · locating details",
+            "optionColumns": 2,
+            "prompt": "What should children bring to the morning session?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A finished kite"
+              },
+              {
+                "id": "B",
+                "text": "A ruler"
+              },
+              {
+                "id": "C",
+                "text": "Coloured paper"
+              },
+              {
+                "id": "D",
+                "text": "Scissors"
+              }
+            ],
+            "solution": "B",
+            "explanation": "The notice says to bring a ruler. Scissors are lent and paper is given out. Children make the kite there.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-notice",
+              "exact": "Bring a ruler. We will lend you scissors and give you coloured paper."
+            }
+          },
+          {
+            "id": "p6-q2",
+            "number": 2,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "easy",
+            "chapter": "Reading notices · instructions",
+            "optionColumns": 2,
+            "prompt": "How can a child book a place?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Sign up in the Art Room on 8 May."
+              },
+              {
+                "id": "B",
+                "text": "Phone the Art Room by 6 May."
+              },
+              {
+                "id": "C",
+                "text": "Go to the Sports Hall at 3 p.m."
+              },
+              {
+                "id": "D",
+                "text": "Sign up at the library by 6 May."
+              }
+            ],
+            "solution": "D",
+            "explanation": "The last paragraph gives both the place and the deadline. The Sports Hall is the meeting point, not the booking desk.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-notice",
+              "exact": "Sign up at the library desk by Thursday 6 May."
+            }
+          },
+          {
+            "id": "p6-q3",
+            "number": 3,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "medium",
+            "chapter": "Reading notices · linking conditions",
+            "optionColumns": 2,
+            "prompt": "It rains on Saturday afternoon. Where and when should the children go for the display?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Sports Hall at 3 p.m."
+              },
+              {
+                "id": "B",
+                "text": "School yard at 3 p.m."
+              },
+              {
+                "id": "C",
+                "text": "Sports Hall at 10 a.m."
+              },
+              {
+                "id": "D",
+                "text": "Art Room at 10 a.m."
+              }
+            ],
+            "solution": "A",
+            "explanation": "Rain changes the activity to an indoor display at the Sports Hall. ‘At the same time’ refers to 3 p.m., not the morning session.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-notice",
+              "exact": "Try your kite in the school yard at 3 p.m. on the same day. Meet at the Sports Hall first so we can check that your kite is safe. If it rains, come to the Sports Hall at the same time for an indoor kite display."
+            }
+          },
+          {
+            "id": "p6-q4",
+            "number": 4,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "medium",
+            "chapter": "Reading notices · dictionary cues",
+            "optionColumns": 2,
+            "prompt": "Which dictionary meaning of ‘left’ fits ‘if there are any places left’?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Opposite to right"
+              },
+              {
+                "id": "B",
+                "text": "Went away from a place"
+              },
+              {
+                "id": "C",
+                "text": "Still available to use"
+              },
+              {
+                "id": "D",
+                "text": "Forgot to take something"
+              }
+            ],
+            "solution": "C",
+            "explanation": "The desk can tell you whether some of the twelve places are still available. The other meanings do not fit the booking context.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-notice",
+              "exact": "There are only twelve places. Ask at the desk if there are any places left."
+            }
+          }
+        ]
+      },
+      {
+        "id": "p6-reading-story",
+        "title": "Part B · Reading a story",
+        "instructions": "Read the story and answer Questions 5–8.",
+        "displayLabel": "",
+        "headingFont": "times",
+        "score": 4,
+        "breakBefore": true,
+        "stimulus": {
+          "title": "Across the Puddle",
+          "text": "Nora carried a box of young plants towards the school garden. Rain had stopped, but a wide puddle covered the path. She put the box down and called to Jay, who was sweeping by the gate.\n\nJay stepped onto a flat stone in the puddle. The stone rocked under his shoe. He jumped back and said, ‘That won't hold us.’ Nora looked through the classroom window and saw a long board beside the bookcase. She asked their teacher if they could borrow it.\n\nThey laid the board across the puddle. Jay held one end flat while Nora walked across. Her heart was a drum until both feet were on dry ground. Then she put the plants in the garden. On the way back, she heard Jay laugh. ‘Next time,’ he said, ‘let's check the path before we bring the plants out.’",
+          "source": {
+            "materialId": "p6-english-material",
+            "blockId": "p6-story",
+            "exact": "Nora carried a box of young plants towards the school garden."
+          }
+        },
+        "questions": [
+          {
+            "id": "p6-q5",
+            "number": 5,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "easy",
+            "chapter": "Reading stories · identifying the problem",
+            "optionColumns": 2,
+            "prompt": "What stopped Nora on the path?",
+            "options": [
+              {
+                "id": "A",
+                "text": "A locked gate"
+              },
+              {
+                "id": "B",
+                "text": "A fallen board"
+              },
+              {
+                "id": "C",
+                "text": "A wide puddle"
+              },
+              {
+                "id": "D",
+                "text": "A heavy shower"
+              }
+            ],
+            "solution": "C",
+            "explanation": "The rain had already stopped. Water left across the path is what makes Nora put the box down.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-story",
+              "exact": "Rain had stopped, but a wide puddle covered the path."
+            }
+          },
+          {
+            "id": "p6-q6",
+            "number": 6,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "medium",
+            "chapter": "Reading stories · figurative language",
+            "optionColumns": 2,
+            "prompt": "What does ‘Her heart was a drum’ tell us about Nora?",
+            "options": [
+              {
+                "id": "A",
+                "text": "She was nervous."
+              },
+              {
+                "id": "B",
+                "text": "She heard music."
+              },
+              {
+                "id": "C",
+                "text": "She was angry."
+              },
+              {
+                "id": "D",
+                "text": "She felt sleepy."
+              }
+            ],
+            "solution": "A",
+            "explanation": "A drum suggests loud or fast heartbeats. The feeling lasts until Nora reaches dry ground, which supports nervousness about crossing.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-story",
+              "exact": "Her heart was a drum until both feet were on dry ground."
+            }
+          },
+          {
+            "id": "p6-q7",
+            "number": 7,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "medium",
+            "chapter": "Reading stories · inferring purpose",
+            "optionColumns": 2,
+            "prompt": "Why did Jay hold one end of the board?",
+            "options": [
+              {
+                "id": "A",
+                "text": "To help lift the box"
+              },
+              {
+                "id": "B",
+                "text": "To move the loose stone"
+              },
+              {
+                "id": "C",
+                "text": "To return the board"
+              },
+              {
+                "id": "D",
+                "text": "To keep the board steady"
+              }
+            ],
+            "solution": "D",
+            "explanation": "The loose stone showed that an unsteady surface was unsafe. Jay held the board flat during the crossing; he did not lift the box, move the stone or return the board at that moment.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-story",
+              "exact": "Jay held one end flat while Nora walked across."
+            }
+          },
+          {
+            "id": "p6-q8",
+            "number": 8,
+            "type": "choice",
+            "score": 1,
+            "difficulty": "hard",
+            "chapter": "Reading stories · ordering events",
+            "optionColumns": 2,
+            "prompt": "Put the events in order.\n1. Nora put the plants in the garden.\n2. Jay tried stepping on a stone.\n3. Nora called to Jay.\n4. Nora asked to borrow the board.",
+            "options": [
+              {
+                "id": "A",
+                "text": "2 → 3 → 4 → 1"
+              },
+              {
+                "id": "B",
+                "text": "3 → 2 → 4 → 1"
+              },
+              {
+                "id": "C",
+                "text": "3 → 4 → 2 → 1"
+              },
+              {
+                "id": "D",
+                "text": "3 → 2 → 1 → 4"
+              }
+            ],
+            "solution": "B",
+            "explanation": "Nora called Jay first. After Jay tested the stone, Nora asked for the board. She delivered the plants after crossing on it.",
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-story",
+              "exact": "She put the box down and called to Jay"
+            }
+          }
+        ]
+      },
+      {
+        "id": "p6-guided-writing",
+        "title": "Part C · Writing a story",
+        "instructions": "Use the ideas below to write a story in about 80 words.",
+        "displayLabel": "",
+        "headingFont": "times",
+        "score": 7,
+        "breakBefore": true,
+        "questions": [
+          {
+            "id": "p6-q9",
+            "number": 9,
+            "type": "response",
+            "score": 7,
+            "difficulty": "hard",
+            "chapter": "Writing · guided narrative",
+            "answerRows": 11,
+            "prompt": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty.\n\nBefore her turn: Where had Mia last used the cards? What did a friend suggest?\n\nAt the microphone: How did Mia tell the story without the cards? How did the listeners react?\n\nAfterwards: What happened in the end?",
+            "solution": "Mia opened her envelope as the teacher called her name. Her story cards were still on the desk where she had practised that morning. ‘Tell it to me first,’ whispered Ben. Mia remembered the beginning, so she took a breath and walked to the microphone. When she forgot a line, she described what the fox did next. The children laughed at the ending and clapped. Afterwards, Mia found the cards and gave Ben one as a thank-you note.",
+            "explanation": "An example, not a required plot. Score content and language separately. Under 40 words, cap each score at 2. Content 0 normally implies language 0.",
+            "responseConstraints": {
+              "countUnit": "words",
+              "answerStyle": "ruled"
+            },
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "content",
+                  "points": 4,
+                  "description": "4: A clear, connected story with developed details and a fitting ending. 3: A clear account with details and an ending, or a well-developed account without an ending. 2: Some relevant ideas, briefly developed or unevenly linked. 1: Very little relevant information or disconnected ideas. 0: Irrelevant or undeveloped. Under 40 words: maximum 2."
+                },
+                {
+                  "id": "language",
+                  "points": 3,
+                  "description": "3: Appropriate range of words, sentence patterns, links and verb forms; errors do not obscure meaning. 2: Limited range, but the story is mostly understandable. 1: Very limited range or frequent errors that sometimes obscure meaning. 0: Errors prevent understanding. Under 40 words: maximum 2."
+                }
+              ],
+              "equivalentMethods": [
+                "Accept any coherent ending and sensible choices for how Mia remembers or retells the story."
+              ]
+            },
+            "origin": {
+              "kind": "generated"
+            },
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "source": {
+              "materialId": "p6-english-material",
+              "blockId": "p6-writing-cues",
+              "exact": "At the school reading day, Mia opened the envelope that should have held her story cards. It was empty."
+            }
+          }
+        ]
+      }
+    ],
+    "generation": {
+      "intent": "generate",
+      "ocrReviewed": true,
+      "unresolved": [],
+      "notes": "Original reading and writing subset benchmarked against 2024 Hong Kong P6 6ERW1 Parts 1, 4 and 5. Not a full official paper. No listening or speaking. Difficulty, coverage and timing are author estimates."
+    },
+    "authoring": {
+      "examName": "Hong Kong Primary 6 English · Reading and writing practice subset",
+      "knowledge": "Functional reading, fiction and guided narrative",
+      "difficulty": "balanced",
+      "blueprint": [
+        {
+          "id": "notice",
+          "knowledge": "Functional notice",
+          "ability": "Locate a detail, follow booking instructions, link location and time, and select a dictionary sense in context.",
+          "types": [
+            "choice"
+          ],
+          "count": 4,
+          "points": 4,
+          "estimatedMinutes": 5,
+          "sourceIds": [
+            "hk-p6-english-benchmark"
+          ]
+        },
+        {
+          "id": "story",
+          "knowledge": "Short fiction",
+          "ability": "Identify the problem, interpret figurative language, infer purpose and sequence events.",
+          "types": [
+            "choice"
+          ],
+          "count": 4,
+          "points": 4,
+          "estimatedMinutes": 7,
+          "sourceIds": [
+            "hk-p6-english-benchmark"
+          ]
+        },
+        {
+          "id": "writing",
+          "knowledge": "Guided narrative",
+          "ability": "Develop a problem, response and ending in about 80 words using coherent links and controlled language.",
+          "types": [
+            "response"
+          ],
+          "count": 1,
+          "points": 7,
+          "estimatedMinutes": 13,
+          "sourceIds": [
+            "hk-p6-english-benchmark"
+          ]
+        }
+      ],
+      "region": "中国香港",
+      "grade": "小六"
+    }
+  },
+  "primary-math": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "cn-p6-math",
+    "notebookId": "notebook-cn-p6-math",
+    "notebookRevision": 1,
+    "title": "六年级数学 · 练习样题",
+    "subject": "数学",
+    "level": "小学六年级",
+    "durationMinutes": 25,
+    "totalScore": 17,
+    "mode": "mock",
+    "style": {
+      "templateId": "primary-math",
+      "preset": "stem"
+    },
+    "presentation": {
+      "language": "zh",
+      "notices": [
+        "按各题要求作答。"
+      ],
+      "candidateFields": [
+        "姓名：________________",
+        "班级：________________"
+      ]
+    },
+    "materials": [
+      {
+        "id": "cn-p6-math-original",
+        "title": "纸间原创六年级数学样题与语篇",
+        "kind": "reference",
+        "rights": "MIT",
+        "provenance": {
+          "kind": "authored",
+          "publisher": "纸间 Practice",
+          "sourceType": "author"
+        },
+        "blocks": [
+          {
+            "id": "cn-p6-math-b1",
+            "text": "计算 $\\frac34-\\frac5{12}$。结果用最简分数表示。"
+          },
+          {
+            "id": "cn-p6-math-b2",
+            "text": "计算 $2.4\\div0.6+1.25$。"
+          },
+          {
+            "id": "cn-p6-math-b3",
+            "text": "一个长方形长 8 厘米、宽 5 厘米，周长是多少厘米？"
+          },
+          {
+            "id": "cn-p6-math-b4",
+            "text": "一个长方体盒子内部长 12 厘米、宽 8 厘米、高 5 厘米，容积是多少立方厘米？"
+          },
+          {
+            "id": "cn-p6-math-b5",
+            "text": "社区图书角共有 240 本书。科普书占 35%，本周借出了 26 本科普书。科普书还剩多少本？"
+          },
+          {
+            "id": "cn-p6-math-b6",
+            "text": "同一种纸有两种包装。A 每包 24 张，售价 6 元。B 每包 40 张，售价 9 元。至少买 72 张，只能选同一种包装并整包购买。选哪一种花钱少？说明理由。"
+          }
+        ],
+        "text": "计算 $\\frac34-\\frac5{12}$。结果用最简分数表示。\n\n计算 $2.4\\div0.6+1.25$。\n\n一个长方形长 8 厘米、宽 5 厘米，周长是多少厘米？\n\n一个长方体盒子内部长 12 厘米、宽 8 厘米、高 5 厘米，容积是多少立方厘米？\n\n社区图书角共有 240 本书。科普书占 35%，本周借出了 26 本科普书。科普书还剩多少本？\n\n同一种纸有两种包装。A 每包 24 张，售价 6 元。B 每包 40 张，售价 9 元。至少买 72 张，只能选同一种包装并整包购买。选哪一种花钱少？说明理由。"
+      },
+      {
+        "id": "cn-p6-math-standard",
+        "title": "教育部《义务教育数学课程标准（2022年版）》",
+        "kind": "reference",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf",
+        "text": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。",
+        "blocks": [
+          {
+            "id": "cn-p6-math-standard-scope",
+            "text": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+          }
+        ],
+        "provenance": {
+          "kind": "web",
+          "publisher": "中华人民共和国教育部",
+          "version": "2022",
+          "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf",
+          "sourceType": "official",
+          "accessedAt": "2026-11-21"
+        }
+      }
+    ],
+    "sections": [
+      {
+        "id": "cn-p6-math-part-1",
+        "title": "数与运算",
+        "instructions": "写出结果。",
+        "score": 4,
+        "questions": [
+          {
+            "type": "blank",
+            "prompt": "计算 $\\frac34-\\frac5{12}$。结果用最简分数表示。",
+            "solution": [
+              "1/3"
+            ],
+            "explanation": "通分得 9/12−5/12=4/12=1/3。",
+            "score": 2,
+            "id": "cn-p6-math-q1",
+            "number": 1,
+            "difficulty": "medium",
+            "chapter": "数与运算",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-math-original",
+              "blockId": "cn-p6-math-b1",
+              "exact": "计算 $\\frac34-\\frac5{12}$。结果用最简分数表示。"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-math-standard",
+                  "blockId": "cn-p6-math-standard-scope",
+                  "exact": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "通分得 9/12−5/12=4/12=1/3。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "blank",
+            "prompt": "计算 $2.4\\div0.6+1.25$。",
+            "solution": [
+              "5.25"
+            ],
+            "explanation": "将被除数和除数同时扩大 10 倍，24÷6=4；4+1.25=5.25。",
+            "score": 2,
+            "id": "cn-p6-math-q2",
+            "number": 2,
+            "difficulty": "medium",
+            "chapter": "数与运算",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-math-original",
+              "blockId": "cn-p6-math-b2",
+              "exact": "计算 $2.4\\div0.6+1.25$。"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-math-standard",
+                  "blockId": "cn-p6-math-standard-scope",
+                  "exact": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "将被除数和除数同时扩大 10 倍，24÷6=4；4+1.25=5.25。",
+                  "result": "pass"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-p6-math-part-2",
+        "title": "图形与测量",
+        "instructions": "按题目给出的单位填写数值。",
+        "score": 4,
+        "questions": [
+          {
+            "type": "blank",
+            "prompt": "一个长方形长 8 厘米、宽 5 厘米，周长是多少厘米？",
+            "solution": [
+              "26"
+            ],
+            "explanation": "相邻两边共 13 厘米，两组共 26 厘米。",
+            "score": 2,
+            "id": "cn-p6-math-q3",
+            "number": 3,
+            "difficulty": "medium",
+            "chapter": "图形与测量",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-math-original",
+              "blockId": "cn-p6-math-b3",
+              "exact": "一个长方形长 8 厘米、宽 5 厘米，周长是多少厘米？"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-math-standard",
+                  "blockId": "cn-p6-math-standard-scope",
+                  "exact": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "相邻两边共 13 厘米，两组共 26 厘米。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "blank",
+            "prompt": "一个长方体盒子内部长 12 厘米、宽 8 厘米、高 5 厘米，容积是多少立方厘米？",
+            "solution": [
+              "480"
+            ],
+            "explanation": "底面积为 12×8=96 平方厘米，乘高 5，得 480 立方厘米。",
+            "score": 2,
+            "id": "cn-p6-math-q4",
+            "number": 4,
+            "difficulty": "medium",
+            "chapter": "图形与测量",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-math-original",
+              "blockId": "cn-p6-math-b4",
+              "exact": "一个长方体盒子内部长 12 厘米、宽 8 厘米、高 5 厘米，容积是多少立方厘米？"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-math-standard",
+                  "blockId": "cn-p6-math-standard-scope",
+                  "exact": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "底面积为 12×8=96 平方厘米，乘高 5，得 480 立方厘米。",
+                  "result": "pass"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-p6-math-part-3",
+        "title": "解决问题",
+        "instructions": "列式并写出必要的计算过程。",
+        "score": 9,
+        "questions": [
+          {
+            "type": "response",
+            "prompt": "社区图书角共有 240 本书。科普书占 35%，本周借出了 26 本科普书。科普书还剩多少本？",
+            "solution": "58 本。",
+            "explanation": "科普书共 240×0.35=84 本。借出后 84−26=58 本。",
+            "score": 4,
+            "answerRows": 3,
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "criterion-1",
+                  "description": "求出原有 84 本科普书。",
+                  "points": 2
+                },
+                {
+                  "id": "criterion-2",
+                  "description": "求出剩余 58 本并写明单位。",
+                  "points": 2
+                }
+              ]
+            },
+            "id": "cn-p6-math-q5",
+            "number": 5,
+            "difficulty": "medium",
+            "chapter": "解决问题",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-math-original",
+              "blockId": "cn-p6-math-b5",
+              "exact": "社区图书角共有 240 本书。科普书占 35%，本周借出了 26 本科普书。科普书还剩多少本？"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-math-standard",
+                  "blockId": "cn-p6-math-standard-scope",
+                  "exact": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "科普书共 240×0.35=84 本。借出后 84−26=58 本。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "response",
+            "prompt": "同一种纸有两种包装。A 每包 24 张，售价 6 元。B 每包 40 张，售价 9 元。至少买 72 张，只能选同一种包装并整包购买。选哪一种花钱少？说明理由。",
+            "solution": "选任意一种，花费一样，都是 18 元。",
+            "explanation": "A 买 3 包正好 72 张，付 18 元。B 买 2 包得到 80 张，付 18 元。",
+            "score": 5,
+            "answerRows": 3,
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "criterion-1",
+                  "description": "正确求出 A 的最少包数和费用。",
+                  "points": 2
+                },
+                {
+                  "id": "criterion-2",
+                  "description": "正确求出 B 的最少包数和费用。",
+                  "points": 2
+                },
+                {
+                  "id": "criterion-3",
+                  "description": "指出两种包装同价。",
+                  "points": 1
+                }
+              ]
+            },
+            "id": "cn-p6-math-q6",
+            "number": 6,
+            "difficulty": "medium",
+            "chapter": "解决问题",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-math-original",
+              "blockId": "cn-p6-math-b6",
+              "exact": "同一种纸有两种包装。A 每包 24 张，售价 6 元。B 每包 40 张，售价 9 元。至少买 72 张，只能选同一种包装并整包购买。选哪一种花钱少？说明理由。"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-math-standard",
+                  "blockId": "cn-p6-math-standard-scope",
+                  "exact": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "A 买 3 包正好 72 张，付 18 元。B 买 2 包得到 80 张，付 18 元。",
+                  "result": "pass"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "sourcePolicy": {
+      "mode": "open",
+      "questionPreference": "generated-first"
+    },
+    "authoring": {
+      "routeId": "primary-math",
+      "region": "中国大陆",
+      "grade": "六年级",
+      "examName": "义务教育数学 · 六年级练习样题",
+      "difficulty": "balanced",
+      "knowledge": "第三学段（五至六年级）的数与运算、图形与几何及问题解决。",
+      "blueprint": [
+        {
+          "id": "cn-p6-math-part-1",
+          "knowledge": "数与运算",
+          "ability": "完成分数和小数计算。",
+          "types": [
+            "blank"
+          ],
+          "count": 2,
+          "points": 4,
+          "sourceIds": [
+            "cn-p6-math-standard"
+          ]
+        },
+        {
+          "id": "cn-p6-math-part-2",
+          "knowledge": "图形与测量",
+          "ability": "用周长和体积公式处理给定尺寸。",
+          "types": [
+            "blank"
+          ],
+          "count": 2,
+          "points": 4,
+          "sourceIds": [
+            "cn-p6-math-standard"
+          ]
+        },
+        {
+          "id": "cn-p6-math-part-3",
+          "knowledge": "解决问题",
+          "ability": "根据比例和数量关系解释实际决策。",
+          "types": [
+            "response"
+          ],
+          "count": 2,
+          "points": 9,
+          "sourceIds": [
+            "cn-p6-math-standard"
+          ]
+        }
+      ]
+    },
+    "generation": {
+      "intent": "generate",
+      "ocrReviewed": true,
+      "unresolved": [],
+      "notes": "纸间原创样题，按义务教育课程标准选取部分目标。题文及参考答案采用 MIT 许可。"
+    }
+  },
+  "primary-chinese": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "cn-p6-chinese",
+    "notebookId": "notebook-cn-p6-chinese",
+    "notebookRevision": 1,
+    "title": "六年级语文 · 练习样题",
+    "subject": "语文",
+    "level": "小学六年级",
+    "durationMinutes": 35,
+    "totalScore": 19,
+    "mode": "mock",
+    "style": {
+      "templateId": "primary-chinese",
+      "preset": "humanities"
+    },
+    "presentation": {
+      "language": "zh",
+      "notices": [
+        "按各题要求作答。"
+      ],
+      "candidateFields": [
+        "姓名：________________",
+        "班级：________________"
+      ]
+    },
+    "materials": [
+      {
+        "id": "cn-p6-chinese-original",
+        "title": "纸间原创六年级语文样题与语篇",
+        "kind": "reference",
+        "rights": "MIT",
+        "provenance": {
+          "kind": "authored",
+          "publisher": "纸间 Practice",
+          "sourceType": "author"
+        },
+        "blocks": [
+          {
+            "id": "cn-p6-chinese-b1",
+            "text": "雨已经停了，放学路上____听得到屋檐滴水。"
+          },
+          {
+            "id": "cn-p6-chinese-b2",
+            "text": "下列句子中，表达最清楚的一项是"
+          },
+          {
+            "id": "cn-p6-chinese-b3",
+            "text": "傍晚，雨停了。许禾去关教室的窗。屋檐的水滴被风吹进来，窗台上的纸一角不断翻动。她低头一看，借书登记册已经掉到窗台下面，边缘湿了一圈。\n她先关紧窗，再拿毛巾擦窗台。值日同学把登记册摊在干桌上，指着还看得清的编号说：“这三本书借到谁手里，我们按号码就能去问。”\n许禾笑了：“我刚才只看见了湿纸，原来它还是一张路线图。”"
+          },
+          {
+            "id": "cn-p6-chinese-b4",
+            "text": "雨后，许禾在哪里发现了借书登记册？"
+          },
+          {
+            "id": "cn-p6-chinese-b5",
+            "text": "为什么许禾先把窗户关上，再拿毛巾擦窗台？"
+          },
+          {
+            "id": "cn-p6-chinese-b6",
+            "text": "从“我只看见了湿纸”到“原来它还是一张路线图”，许禾对登记册的认识发生了什么变化？"
+          },
+          {
+            "id": "cn-p6-chinese-b7",
+            "text": "写一次你在学校发现一个小问题并想办法解决的经历。交代事情的起因、你采取的行动和结果，至少写一个具体动作或细节。建议 150—220 字。"
+          }
+        ],
+        "text": "雨已经停了，放学路上____听得到屋檐滴水。\n\n下列句子中，表达最清楚的一项是\n\n傍晚，雨停了。许禾去关教室的窗。屋檐的水滴被风吹进来，窗台上的纸一角不断翻动。她低头一看，借书登记册已经掉到窗台下面，边缘湿了一圈。\n她先关紧窗，再拿毛巾擦窗台。值日同学把登记册摊在干桌上，指着还看得清的编号说：“这三本书借到谁手里，我们按号码就能去问。”\n许禾笑了：“我刚才只看见了湿纸，原来它还是一张路线图。”\n\n雨后，许禾在哪里发现了借书登记册？\n\n为什么许禾先把窗户关上，再拿毛巾擦窗台？\n\n从“我只看见了湿纸”到“原来它还是一张路线图”，许禾对登记册的认识发生了什么变化？\n\n写一次你在学校发现一个小问题并想办法解决的经历。交代事情的起因、你采取的行动和结果，至少写一个具体动作或细节。建议 150—220 字。"
+      },
+      {
+        "id": "cn-p6-chinese-standard",
+        "title": "教育部《义务教育语文课程标准（2022年版）》",
+        "kind": "reference",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582344386456.pdf",
+        "text": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。",
+        "blocks": [
+          {
+            "id": "cn-p6-chinese-standard-scope",
+            "text": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。"
+          }
+        ],
+        "provenance": {
+          "kind": "web",
+          "publisher": "中华人民共和国教育部",
+          "version": "2022",
+          "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582344386456.pdf",
+          "sourceType": "official",
+          "accessedAt": "2026-11-21"
+        }
+      },
+      {
+        "id": "cn-p6-public-chinese",
+        "title": "公开六年级语文练习资料",
+        "kind": "reference",
+        "url": "https://tyj.gd.gov.cn/attachment/0/417/417596/1949201.pdf",
+        "text": "校准语言运用、阅读与写作的组合。资料的命题机构和再发布许可未核实，本卷题文独立编写。",
+        "blocks": [
+          {
+            "id": "cn-p6-public-chinese-scope",
+            "text": "校准语言运用、阅读与写作的组合。资料的命题机构和再发布许可未核实，本卷题文独立编写。"
+          }
+        ],
+        "provenance": {
+          "kind": "web",
+          "publisher": "广东省体育局网站公开附件",
+          "url": "https://tyj.gd.gov.cn/attachment/0/417/417596/1949201.pdf",
+          "sourceType": "institution",
+          "accessedAt": "2026-11-21"
+        }
+      }
+    ],
+    "sections": [
+      {
+        "id": "cn-p6-chinese-part-1",
+        "title": "语言运用",
+        "instructions": "选择最恰当的答案。",
+        "score": 4,
+        "questions": [
+          {
+            "type": "choice",
+            "prompt": "雨已经停了，放学路上____听得到屋檐滴水。",
+            "options": [
+              {
+                "id": "A",
+                "text": "一向"
+              },
+              {
+                "id": "B",
+                "text": "仍然"
+              },
+              {
+                "id": "C",
+                "text": "起初"
+              },
+              {
+                "id": "D",
+                "text": "从来"
+              }
+            ],
+            "solution": "B",
+            "explanation": "前后表示雨停了但滴水声还在，应选“仍然”。",
+            "score": 2,
+            "id": "cn-p6-chinese-q1",
+            "number": 1,
+            "difficulty": "medium",
+            "chapter": "语言运用",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-chinese-original",
+              "blockId": "cn-p6-chinese-b1",
+              "exact": "雨已经停了，放学路上____听得到屋檐滴水。"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-chinese-standard",
+                  "blockId": "cn-p6-chinese-standard-scope",
+                  "exact": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "前后表示雨停了但滴水声还在，应选“仍然”。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "choice",
+            "prompt": "下列句子中，表达最清楚的一项是",
+            "options": [
+              {
+                "id": "A",
+                "text": "通过整理图书，使书架干净了。"
+              },
+              {
+                "id": "B",
+                "text": "我大约用了十分钟左右。"
+              },
+              {
+                "id": "C",
+                "text": "我们先给书分类，再贴上标签。"
+              },
+              {
+                "id": "D",
+                "text": "大家纷纷陆续同时到齐了。"
+              }
+            ],
+            "solution": "C",
+            "explanation": "C 主语明确，步骤清楚。A 缺少主语，B 的“大约”和“左右”重复，D 的“陆续”和“同时”矛盾。",
+            "score": 2,
+            "id": "cn-p6-chinese-q2",
+            "number": 2,
+            "difficulty": "medium",
+            "chapter": "语言运用",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-chinese-original",
+              "blockId": "cn-p6-chinese-b2",
+              "exact": "下列句子中，表达最清楚的一项是"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-chinese-standard",
+                  "blockId": "cn-p6-chinese-standard-scope",
+                  "exact": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "C 主语明确，步骤清楚。A 缺少主语，B 的“大约”和“左右”重复，D 的“陆续”和“同时”矛盾。",
+                  "result": "pass"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-p6-chinese-part-2",
+        "title": "阅读理解",
+        "instructions": "阅读短文后作答。",
+        "score": 8,
+        "questions": [
+          {
+            "type": "blank",
+            "prompt": "雨后，许禾在哪里发现了借书登记册？",
+            "solution": [
+              "窗台下面"
+            ],
+            "explanation": "第一段写明，许禾在窗台下面发现了登记册。",
+            "score": 2,
+            "id": "cn-p6-chinese-q3",
+            "number": 3,
+            "difficulty": "medium",
+            "chapter": "阅读理解",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-chinese-original",
+              "blockId": "cn-p6-chinese-b4",
+              "exact": "雨后，许禾在哪里发现了借书登记册？"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-chinese-standard",
+                  "blockId": "cn-p6-chinese-standard-scope",
+                  "exact": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "第一段写明，许禾在窗台下面发现了登记册。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "response",
+            "prompt": "为什么许禾先把窗户关上，再拿毛巾擦窗台？",
+            "solution": "先关窗，防止风把新的雨滴吹进来或把纸吹走，再擦干窗台。",
+            "explanation": "雨停后风仍把屋檐水滴吹进窗里，窗台上的纸被吹得翻动。先处理进水和风，再擦已积的水。",
+            "score": 3,
+            "answerRows": 4,
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "criterion-1",
+                  "description": "说出关窗可阻止继续进水或纸张被吹走。",
+                  "points": 2
+                },
+                {
+                  "id": "criterion-2",
+                  "description": "说明用毛巾擦窗台是为了处理已经积下的水，或说明这个顺序有助于保持干燥。",
+                  "points": 1
+                }
+              ]
+            },
+            "id": "cn-p6-chinese-q4",
+            "number": 4,
+            "difficulty": "medium",
+            "chapter": "阅读理解",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-chinese-original",
+              "blockId": "cn-p6-chinese-b5",
+              "exact": "为什么许禾先把窗户关上，再拿毛巾擦窗台？"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-chinese-standard",
+                  "blockId": "cn-p6-chinese-standard-scope",
+                  "exact": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "雨停后风仍把屋檐水滴吹进窗里，窗台上的纸被吹得翻动。先处理进水和风，再擦已积的水。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "response",
+            "prompt": "从“我只看见了湿纸”到“原来它还是一张路线图”，许禾对登记册的认识发生了什么变化？",
+            "solution": "起初她只关心纸被弄湿。后来听同学按编号核对，明白了登记册能帮助追踪书去了哪里。",
+            "explanation": "末段的借阅编号和同学找书的行动给出了比喻“路线图”的具体含义。",
+            "score": 3,
+            "answerRows": 4,
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "criterion-1",
+                  "description": "指出初看为受损的纸张。",
+                  "points": 1
+                },
+                {
+                  "id": "criterion-2",
+                  "description": "说明登记册可按编号核对、追踪借阅去向。",
+                  "points": 2
+                }
+              ]
+            },
+            "id": "cn-p6-chinese-q5",
+            "number": 5,
+            "difficulty": "medium",
+            "chapter": "阅读理解",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-chinese-original",
+              "blockId": "cn-p6-chinese-b6",
+              "exact": "从“我只看见了湿纸”到“原来它还是一张路线图”，许禾对登记册的认识发生了什么变化？"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-chinese-standard",
+                  "blockId": "cn-p6-chinese-standard-scope",
+                  "exact": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "末段的借阅编号和同学找书的行动给出了比喻“路线图”的具体含义。",
+                  "result": "pass"
+                }
+              ]
+            }
+          }
+        ],
+        "stimulus": {
+          "text": "傍晚，雨停了。许禾去关教室的窗。屋檐的水滴被风吹进来，窗台上的纸一角不断翻动。她低头一看，借书登记册已经掉到窗台下面，边缘湿了一圈。\n她先关紧窗，再拿毛巾擦窗台。值日同学把登记册摊在干桌上，指着还看得清的编号说：“这三本书借到谁手里，我们按号码就能去问。”\n许禾笑了：“我刚才只看见了湿纸，原来它还是一张路线图。”",
+          "source": {
+            "materialId": "cn-p6-chinese-original",
+            "blockId": "cn-p6-chinese-b3",
+            "exact": "傍晚，雨停了。许禾去关教室的窗。屋檐的水滴被风吹进来，窗台上的纸一角不断翻动。她低头一看，借书登记册已经掉到窗台下面，边缘湿了一圈。\n她先关紧窗，再拿毛巾擦窗台。值日同学把登记册摊在干桌上，指着还看得清的编号说：“这三本书借到谁手里，我们按号码就能去问。”\n许禾笑了：“我刚才只看见了湿纸，原来它还是一张路线图。”"
+          }
+        }
+      },
+      {
+        "id": "cn-p6-chinese-part-3",
+        "title": "习作",
+        "instructions": "按要求写一个有具体细节的片段。",
+        "score": 7,
+        "questions": [
+          {
+            "type": "response",
+            "prompt": "写一次你在学校发现一个小问题并想办法解决的经历。交代事情的起因、你采取的行动和结果，至少写一个具体动作或细节。建议 150—220 字。",
+            "solution": "示例思路：看到雨后地面有积水，提醒经过的同学，和同伴拿拖把处理，再用纸牌提示注意湿滑。",
+            "explanation": "评分看清晰程度和文本证据，真实或合理虚构的同类经历均可。",
+            "score": 7,
+            "answerRows": 12,
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "criterion-1",
+                  "description": "起因、行动和结果清楚。",
+                  "points": 3
+                },
+                {
+                  "id": "criterion-2",
+                  "description": "至少有一处具体动作或观察细节。",
+                  "points": 2
+                },
+                {
+                  "id": "criterion-3",
+                  "description": "语句连贯，顺序清楚。",
+                  "points": 2
+                }
+              ]
+            },
+            "id": "cn-p6-chinese-q6",
+            "number": 6,
+            "difficulty": "medium",
+            "chapter": "习作",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-chinese-original",
+              "blockId": "cn-p6-chinese-b7",
+              "exact": "写一次你在学校发现一个小问题并想办法解决的经历。交代事情的起因、你采取的行动和结果，至少写一个具体动作或细节。建议 150—220 字。"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-chinese-standard",
+                  "blockId": "cn-p6-chinese-standard-scope",
+                  "exact": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "评分看清晰程度和文本证据，真实或合理虚构的同类经历均可。",
+                  "result": "pass"
+                }
+              ]
+            },
+            "responseConstraints": {
+              "minWords": 150,
+              "maxWords": 220,
+              "countUnit": "characters",
+              "answerStyle": "ruled"
+            }
+          }
+        ]
+      }
+    ],
+    "sourcePolicy": {
+      "mode": "open",
+      "questionPreference": "generated-first"
+    },
+    "authoring": {
+      "routeId": "primary-chinese",
+      "region": "中国大陆",
+      "grade": "六年级",
+      "examName": "义务教育语文 · 六年级练习样题",
+      "difficulty": "balanced",
+      "knowledge": "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和书面表达。",
+      "blueprint": [
+        {
+          "id": "cn-p6-chinese-part-1",
+          "knowledge": "语言运用",
+          "ability": "选择贴合语境的词语和通顺的表达。",
+          "types": [
+            "choice"
+          ],
+          "count": 2,
+          "points": 4,
+          "sourceIds": [
+            "cn-p6-chinese-standard",
+            "cn-p6-public-chinese"
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-part-2",
+          "knowledge": "阅读理解",
+          "ability": "从叙事细节中提取信息，推断行动原因。",
+          "types": [
+            "blank",
+            "response"
+          ],
+          "count": 3,
+          "points": 8,
+          "sourceIds": [
+            "cn-p6-chinese-standard",
+            "cn-p6-public-chinese"
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-part-3",
+          "knowledge": "习作",
+          "ability": "用有条理的叙事表现一个发现。",
+          "types": [
+            "response"
+          ],
+          "count": 1,
+          "points": 7,
+          "sourceIds": [
+            "cn-p6-chinese-standard",
+            "cn-p6-public-chinese"
+          ]
+        }
+      ]
+    },
+    "generation": {
+      "intent": "generate",
+      "ocrReviewed": true,
+      "unresolved": [],
+      "notes": "纸间原创样题，按义务教育课程标准选取部分目标。题文及参考答案采用 MIT 许可。"
+    }
+  },
+  "primary-english": {
+    "schemaVersion": "1.0.0",
+    "practiceId": "cn-p6-english",
+    "notebookId": "notebook-cn-p6-english",
+    "notebookRevision": 1,
+    "title": "六年级英语 · 练习样题",
+    "subject": "英语",
+    "level": "小学六年级",
+    "durationMinutes": 25,
+    "totalScore": 16,
+    "mode": "mock",
+    "style": {
+      "templateId": "primary-english",
+      "preset": "language"
+    },
+    "presentation": {
+      "language": "zh",
+      "notices": [
+        "按各题要求作答。"
+      ],
+      "candidateFields": [
+        "姓名：________________",
+        "班级：________________"
+      ]
+    },
+    "materials": [
+      {
+        "id": "cn-p6-english-original",
+        "title": "纸间原创六年级英语样题与语篇",
+        "kind": "reference",
+        "rights": "MIT",
+        "provenance": {
+          "kind": "authored",
+          "publisher": "纸间 Practice",
+          "sourceType": "author"
+        },
+        "blocks": [
+          {
+            "id": "cn-p6-english-b1",
+            "text": "Yesterday, Lin ____ two books to the school library."
+          },
+          {
+            "id": "cn-p6-english-b2",
+            "text": "A: May I use your ruler? B: ____"
+          },
+          {
+            "id": "cn-p6-english-b3",
+            "text": "Book Swap\nCome to the school garden this Friday from 2:00 to 3:00 p.m. Bring one book that is still in good condition. You can take home one book that another student brings. If it rains, we will meet in Room 2."
+          },
+          {
+            "id": "cn-p6-english-b4",
+            "text": "When does the book swap end?"
+          },
+          {
+            "id": "cn-p6-english-b5",
+            "text": "Where will the book swap take place if it rains?"
+          },
+          {
+            "id": "cn-p6-english-b6",
+            "text": "What should you bring to the book swap?"
+          },
+          {
+            "id": "cn-p6-english-b7",
+            "text": "你想邀请同学参加一次课后阅读活动。用 35—50 个英文单词写一则留言，说明活动时间、地点、要做的事，以及同学可以带什么。"
+          }
+        ],
+        "text": "Yesterday, Lin ____ two books to the school library.\n\nA: May I use your ruler? B: ____\n\nBook Swap\nCome to the school garden this Friday from 2:00 to 3:00 p.m. Bring one book that is still in good condition. You can take home one book that another student brings. If it rains, we will meet in Room 2.\n\nWhen does the book swap end?\n\nWhere will the book swap take place if it rains?\n\nWhat should you bring to the book swap?\n\n你想邀请同学参加一次课后阅读活动。用 35—50 个英文单词写一则留言，说明活动时间、地点、要做的事，以及同学可以带什么。"
+      },
+      {
+        "id": "cn-p6-english-standard",
+        "title": "教育部《义务教育英语课程标准（2022年版）》",
+        "kind": "reference",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf",
+        "text": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。",
+        "blocks": [
+          {
+            "id": "cn-p6-english-standard-scope",
+            "text": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。"
+          }
+        ],
+        "provenance": {
+          "kind": "web",
+          "publisher": "中华人民共和国教育部",
+          "version": "2022",
+          "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf",
+          "sourceType": "official",
+          "accessedAt": "2026-11-21"
+        }
+      }
+    ],
+    "sections": [
+      {
+        "id": "cn-p6-english-part-1",
+        "title": "语言运用",
+        "instructions": "选择能完成句子或对话的一项。",
+        "score": 4,
+        "questions": [
+          {
+            "type": "choice",
+            "prompt": "Yesterday, Lin ____ two books to the school library.",
+            "options": [
+              {
+                "id": "A",
+                "text": "take"
+              },
+              {
+                "id": "B",
+                "text": "takes"
+              },
+              {
+                "id": "C",
+                "text": "took"
+              },
+              {
+                "id": "D",
+                "text": "taking"
+              }
+            ],
+            "solution": "C",
+            "explanation": "Yesterday 表示过去，take 的过去式是 took。",
+            "score": 2,
+            "id": "cn-p6-english-q1",
+            "number": 1,
+            "difficulty": "medium",
+            "chapter": "语言运用",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-english-original",
+              "blockId": "cn-p6-english-b1",
+              "exact": "Yesterday, Lin ____ two books to the school library."
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-english-standard",
+                  "blockId": "cn-p6-english-standard-scope",
+                  "exact": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "Yesterday 表示过去，take 的过去式是 took。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "choice",
+            "prompt": "A: May I use your ruler? B: ____",
+            "options": [
+              {
+                "id": "A",
+                "text": "Sure. Here you are."
+              },
+              {
+                "id": "B",
+                "text": "It is behind the door."
+              },
+              {
+                "id": "C",
+                "text": "No, I do not like maths."
+              },
+              {
+                "id": "D",
+                "text": "I have lunch at noon."
+              }
+            ],
+            "solution": "A",
+            "explanation": "A 直接回应借用尺子的请求，并表示把尺子递过去。",
+            "score": 2,
+            "id": "cn-p6-english-q2",
+            "number": 2,
+            "difficulty": "medium",
+            "chapter": "语言运用",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-english-original",
+              "blockId": "cn-p6-english-b2",
+              "exact": "A: May I use your ruler? B: ____"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-english-standard",
+                  "blockId": "cn-p6-english-standard-scope",
+                  "exact": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "A 直接回应借用尺子的请求，并表示把尺子递过去。",
+                  "result": "pass"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "cn-p6-english-part-2",
+        "title": "阅读理解",
+        "instructions": "阅读通知，选择最恰当的答案。",
+        "score": 6,
+        "questions": [
+          {
+            "type": "choice",
+            "prompt": "When does the book swap end?",
+            "options": [
+              {
+                "id": "A",
+                "text": "At 1:00 p.m."
+              },
+              {
+                "id": "B",
+                "text": "At 2:00 p.m."
+              },
+              {
+                "id": "C",
+                "text": "At 4:00 p.m."
+              },
+              {
+                "id": "D",
+                "text": "At 3:00 p.m."
+              }
+            ],
+            "solution": "D",
+            "explanation": "通知明确写了 from 2:00 to 3:00 p.m.，因此结束时间为下午三点。",
+            "score": 2,
+            "id": "cn-p6-english-q3",
+            "number": 3,
+            "difficulty": "medium",
+            "chapter": "阅读理解",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-english-original",
+              "blockId": "cn-p6-english-b4",
+              "exact": "When does the book swap end?"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-english-standard",
+                  "blockId": "cn-p6-english-standard-scope",
+                  "exact": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "通知明确写了 from 2:00 to 3:00 p.m.，因此结束时间为下午三点。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "choice",
+            "prompt": "Where will the book swap take place if it rains?",
+            "options": [
+              {
+                "id": "A",
+                "text": "At the school gate."
+              },
+              {
+                "id": "B",
+                "text": "In Room 2."
+              },
+              {
+                "id": "C",
+                "text": "In the garden."
+              },
+              {
+                "id": "D",
+                "text": "At home."
+              }
+            ],
+            "solution": "B",
+            "explanation": "If it rains, we will meet in Room 2. 明确指出雨天地点。",
+            "score": 2,
+            "id": "cn-p6-english-q4",
+            "number": 4,
+            "difficulty": "medium",
+            "chapter": "阅读理解",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-english-original",
+              "blockId": "cn-p6-english-b5",
+              "exact": "Where will the book swap take place if it rains?"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-english-standard",
+                  "blockId": "cn-p6-english-standard-scope",
+                  "exact": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "If it rains, we will meet in Room 2. 明确指出雨天地点。",
+                  "result": "pass"
+                }
+              ]
+            }
+          },
+          {
+            "type": "choice",
+            "prompt": "What should you bring to the book swap?",
+            "options": [
+              {
+                "id": "A",
+                "text": "Two new notebooks."
+              },
+              {
+                "id": "B",
+                "text": "A pen and a ruler."
+              },
+              {
+                "id": "C",
+                "text": "One book in good condition."
+              },
+              {
+                "id": "D",
+                "text": "A bag of old magazines."
+              }
+            ],
+            "solution": "C",
+            "explanation": "通知要求带一本仍适合他人阅读的书，对应 C。",
+            "score": 2,
+            "id": "cn-p6-english-q5",
+            "number": 5,
+            "difficulty": "medium",
+            "chapter": "阅读理解",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-english-original",
+              "blockId": "cn-p6-english-b6",
+              "exact": "What should you bring to the book swap?"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-english-standard",
+                  "blockId": "cn-p6-english-standard-scope",
+                  "exact": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "通知要求带一本仍适合他人阅读的书，对应 C。",
+                  "result": "pass"
+                }
+              ]
+            }
+          }
+        ],
+        "stimulus": {
+          "text": "Book Swap\nCome to the school garden this Friday from 2:00 to 3:00 p.m. Bring one book that is still in good condition. You can take home one book that another student brings. If it rains, we will meet in Room 2.",
+          "source": {
+            "materialId": "cn-p6-english-original",
+            "blockId": "cn-p6-english-b3",
+            "exact": "Book Swap\nCome to the school garden this Friday from 2:00 to 3:00 p.m. Bring one book that is still in good condition. You can take home one book that another student brings. If it rains, we will meet in Room 2."
+          }
+        }
+      },
+      {
+        "id": "cn-p6-english-part-3",
+        "title": "书面表达",
+        "instructions": "用英文写一则简短留言。",
+        "score": 6,
+        "questions": [
+          {
+            "type": "response",
+            "prompt": "你想邀请同学参加一次课后阅读活动。用 35—50 个英文单词写一则留言，说明活动时间、地点、要做的事，以及同学可以带什么。",
+            "solution": "Hi, Amy! Would you like to join our reading club on Tuesday at four? We will meet in the school library and talk about our favourite stories. Please bring a book that you would like to share. See you there!",
+            "explanation": "示例包含时间、地点、活动内容与携带物品，共约 40 个英文单词。其他语义完整的邀请也可得分。",
+            "score": 6,
+            "answerRows": 7,
+            "rubric": {
+              "criteria": [
+                {
+                  "id": "criterion-1",
+                  "description": "时间和地点明确。",
+                  "points": 2
+                },
+                {
+                  "id": "criterion-2",
+                  "description": "写清活动与携带物品。",
+                  "points": 2
+                },
+                {
+                  "id": "criterion-3",
+                  "description": "语句易懂，符合邀请场景。",
+                  "points": 2
+                }
+              ]
+            },
+            "id": "cn-p6-english-q6",
+            "number": 6,
+            "difficulty": "medium",
+            "chapter": "书面表达",
+            "origin": {
+              "kind": "generated"
+            },
+            "source": {
+              "materialId": "cn-p6-english-original",
+              "blockId": "cn-p6-english-b7",
+              "exact": "你想邀请同学参加一次课后阅读活动。用 35—50 个英文单词写一则留言，说明活动时间、地点、要做的事，以及同学可以带什么。"
+            },
+            "supportingSources": [
+              {
+                "role": "standard",
+                "source": {
+                  "materialId": "cn-p6-english-standard",
+                  "blockId": "cn-p6-english-standard-scope",
+                  "exact": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。"
+                }
+              }
+            ],
+            "answerProvenance": {
+              "kind": "independent"
+            },
+            "verification": {
+              "status": "verified",
+              "checks": [
+                {
+                  "method": "独立求解与评分复核",
+                  "detail": "示例包含时间、地点、活动内容与携带物品，共约 40 个英文单词。其他语义完整的邀请也可得分。",
+                  "result": "pass"
+                }
+              ]
+            },
+            "responseConstraints": {
+              "minWords": 35,
+              "maxWords": 50,
+              "countUnit": "words",
+              "answerStyle": "ruled"
+            }
+          }
+        ]
+      }
+    ],
+    "sourcePolicy": {
+      "mode": "open",
+      "questionPreference": "generated-first"
+    },
+    "authoring": {
+      "routeId": "primary-english",
+      "region": "中国大陆",
+      "grade": "六年级",
+      "examName": "义务教育英语 · 六年级练习样题",
+      "difficulty": "balanced",
+      "knowledge": "第二级（五至六年级）的常用语言、短文理解和简短书面表达。",
+      "blueprint": [
+        {
+          "id": "cn-p6-english-part-1",
+          "knowledge": "语言运用",
+          "ability": "用常用语法和句型完成日常交际。",
+          "types": [
+            "choice"
+          ],
+          "count": 2,
+          "points": 4,
+          "sourceIds": [
+            "cn-p6-english-standard"
+          ]
+        },
+        {
+          "id": "cn-p6-english-part-2",
+          "knowledge": "阅读理解",
+          "ability": "从简短通知提取时间、地点与规则。",
+          "types": [
+            "choice"
+          ],
+          "count": 3,
+          "points": 6,
+          "sourceIds": [
+            "cn-p6-english-standard"
+          ]
+        },
+        {
+          "id": "cn-p6-english-part-3",
+          "knowledge": "书面表达",
+          "ability": "在日常场景中清楚说明时间、地点和活动。",
+          "types": [
+            "response"
+          ],
+          "count": 1,
+          "points": 6,
+          "sourceIds": [
+            "cn-p6-english-standard"
+          ]
+        }
+      ]
+    },
+    "generation": {
+      "intent": "generate",
+      "ocrReviewed": true,
+      "unresolved": [],
+      "notes": "纸间原创样题，按义务教育课程标准选取部分目标。题文及参考答案采用 MIT 许可。"
     }
   }
 }

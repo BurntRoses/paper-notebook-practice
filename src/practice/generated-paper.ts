@@ -1,27 +1,30 @@
 import type {PracticeDocument,PracticePresentation} from './model';
 import {resolvePaperTemplate} from './templates';
 import {EXAM_SPECIFICATIONS} from './exam-specification';
+import {paperInfoLine,paperLabels,paperLocale} from './paper-labels';
 
 const bounded=(value:number|undefined,min:number,max:number,fallback:number)=>Math.min(max,Math.max(min,value??fallback));
 
 function useCatalogLayout(paper:PracticeDocument,english:boolean){
- const presentation=paper.presentation??{};
+ const presentation=paper.presentation??{},locale=paperLocale(paper,english?'en':'zh'),labels=paperLabels[locale];
+ const cjk=['zh','zh-HK','ja','ko'].includes(locale);
  const specification=paper.exam?.specification??EXAM_SPECIFICATIONS.find(item=>item.id===paper.exam?.specificationId);
- const practiceTime=specification?.durationMinutes===null,weightedScore=paper.exam?.scoreScale==='practice-weighted-100';
+ const practiceTime=specification?.durationMinutes===null||paper.generation?.intent==='generate'&&paper.exam?.scope!=='full',weightedScore=paper.exam?.scoreScale==='practice-weighted-100';
  paper.style={preset:paper.style.preset,templateId:paper.style.templateId,sealed:false,fontSize:11,lineHeight:1.6,templateOverrides:{
   widthMm:210,heightMm:297,paperSize:'A4',orientation:'portrait',columns:1,headerVariant:'standard',
-  fontFamily:english?'times':'song',fontSize:11,lineHeight:1.6,
-  marginTopMm:20,marginBottomMm:20,marginLeftMm:22,marginRightMm:22,showSeal:false,
-  headingNumbering:english?'arabic':'chinese',answerMode:'separate',institution:'',examCode:'',footerText:'',
+  fontFamily:cjk?'song':'times',fontSize:11,lineHeight:1.6,
+  marginTopMm:17,marginBottomMm:20,marginLeftMm:22,marginRightMm:22,showSeal:false,
+  headingNumbering:locale==='zh'||locale==='zh-HK'?'chinese':'arabic',answerMode:'separate',institution:'',examCode:'',footerText:'',
  }};
  paper.presentation={
-  headerStyle:'generated',headerRule:true,sourceLayout:true,language:presentation.language??(english?'en':undefined),
+  headerStyle:'generated',headerRule:true,sourceLayout:true,language:presentation.language??(english?'en':'zh'),
   titleLines:[paper.title],titleSizePt:17,titleLineSizesPt:[17],titleGapMm:2,sectionSizePt:11,questionGapMm:4,
-  metaLines:[english?`${practiceTime?'Practice time':'Time allowed'}: ${paper.durationMinutes} minutes　${weightedScore?'Practice score':'Total'}: ${paper.totalScore} points`:`${practiceTime?'建议练习':'考试时间'}：${paper.durationMinutes} 分钟　${weightedScore?'练习权重':'满分'}：${paper.totalScore} 分`],
-  candidateFields:english?['Name: ____________________','Candidate No.: ____________________']:['姓名：________________　　考号：________________'],
+  metaLines:[paperInfoLine(locale,paper.durationMinutes,paper.totalScore,practiceTime,weightedScore)],
+  candidateFields:presentation.candidateFields??[labels.name+'：________________',labels.candidate+'：________________'],
+  footerTemplate:presentation.footerTemplate??labels.page,
   printColor:presentation.printColor,projectMark:presentation.projectMark,answerSpace:presentation.answerSpace,
-  notices:presentation.notices?.length&&presentation.answerSpace==='none'?[english?'Record your answers on the answer sheet.':'请在答题卡上作答。']:presentation.notices,
-  noticeLabel:presentation.noticeLabel,appendix:presentation.appendix,
+  notices:presentation.notices,
+  noticeLabel:presentation.noticeLabel,sectionDetails:presentation.sectionDetails,appendix:presentation.appendix,
   answerCard:presentation.answerCard,integrityPledge:presentation.integrityPledge,
  };
  for(const section of paper.sections){

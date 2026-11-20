@@ -6,6 +6,7 @@ import {tsImport} from 'tsx/esm/api';
 const root=fileURLToPath(new URL('../',import.meta.url)),base=root+'skills/paper-notebook-practice/examples/topics/';
 const {resolveExamRoute}=await tsImport('../src/practice/exam-routes.ts',import.meta.url);
 const {assertPractice}=await tsImport('../src/practice/validate.ts',import.meta.url);
+const {topicIdentity}=await tsImport('../src/practice/catalog-identity.ts',import.meta.url);
 const topics=[];
 async function scan(folder=''){
  for(const item of (await readdir(base+folder,{withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name))){
@@ -13,7 +14,7 @@ async function scan(folder=''){
   const bytes=await readFile(base+file),raw=JSON.parse(bytes);if(!raw?.practiceId)continue;
   if(raw.original)throw Error(`Topic ${file} must not bundle original pages`);
   const paper=assertPractice(raw),route=resolveExamRoute({subject:paper.subject,...paper.authoring});
-  topics.push({id:paper.practiceId,title:paper.title,subject:paper.subject,level:paper.level,family:file.split('/')[0],...(route?{routeId:route.id}:{}),file,questionCount:paper.sections.reduce((n,s)=>n+s.questions.length,0),mode:paper.mode,durationMinutes:paper.durationMinutes,totalScore:paper.totalScore,sha256:createHash('sha256').update(bytes).digest('hex')});
+  topics.push({id:paper.practiceId,title:paper.title,subject:paper.subject,level:paper.level,family:file.split('/')[0],catalog:topicIdentity(paper,file.split('/')[0]),...(route?{routeId:route.id}:{}),file,questionCount:paper.sections.reduce((n,s)=>n+s.questions.length,0),mode:paper.mode,durationMinutes:paper.durationMinutes,totalScore:paper.totalScore,sha256:createHash('sha256').update(bytes).digest('hex')});
  }
 }
 await scan();

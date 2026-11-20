@@ -5,7 +5,7 @@ import {resolveExamRoute,getExamRoute,examRouteTemplateId} from './exam-routes';
 
 export interface ReferencePaper {
  id:string;title:string;year?:number|null;board:string;paperUrl:string;answerUrl?:string;specificationUrl?:string;
- language:string;pages?:number;sha256?:string;scope:string;readNotes:string[];authoringLessons:string[];
+ region:string;language:string;accessNote?:string;pages?:number;sha256?:string;scope:string;readNotes:string[];authoringLessons:string[];
  rights:{redistribute:boolean;note:string};collectionId:string;collectionTitle:string;templateIds:string[];
 }
 export interface ReferenceCollection {
@@ -18,8 +18,7 @@ const baseTemplates:Record<string,string[]>={
  'guangdong-2024-math':['standard'], 'pku-calculus-2013':['university-a4','university-a3'],
  'ecnu-linear-2023':['university-a4','university-a3'], 'ustc-probstat-2023':['university-a4','university-a3'],
  'neea-cet4-2016':['cet4','source-complete-cet4-original-01'],
- 'neea-cet6-2016':['cet6','source-full-cet6-original-01'],
- 'mit-6006-final-2020':['engineering-course']
+ 'neea-cet6-2016':['cet6','source-full-cet6-original-01']
 };
 // Reuse the source identities already attached to inspected historical cases.
 const historical:ReferenceCollection[]=caseIndex.sources.filter(source=>!source.id.includes('original-complete')).flatMap(source=>{
@@ -28,7 +27,7 @@ const historical:ReferenceCollection[]=caseIndex.sources.filter(source=>!source.
  return [{id:'historical-'+source.id,title:source.title,category:source.subject,
   templateIds:[...new Set([...baseTemplates[source.id]??[],...cases.map(p=>'source-'+p.practiceId)])],
   papers:[{id:source.id,title:source.title,year:source.year,board:source.institution,paperUrl:source.url,
-   language:source.id.startsWith('mit-')||source.id.includes('english')||source.id.includes('cet')?'en':'zh',
+   region:source.id.startsWith('mit-')?'美国':'中国大陆',language:source.id.startsWith('mit-')||source.id.includes('english')||source.id.includes('cet')?'en':'zh',
    pages:source.pageCount??undefined,sha256:source.sha256,scope:source.scope??'历史原文件，案例收入范围另记',
    readNotes:[source.scope??'保留来源身份与实际收入范围',`发布形态：${source.format}`],
    authoringLessons:[source.subject.includes('数学')?'逐题核对运算、条件与证明；从完整原卷确认题组和分数，不能把所选小题的范围套作整卷。':'保留原卷任务顺序、共享材料与实际题号；从完整原件区分公开样卷、题目节选和完整考试。',

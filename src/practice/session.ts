@@ -54,7 +54,7 @@ export function practiceSession(digest:typeof practiceDigest,normalize:typeof no
   if(chunk.classList.contains('section-stimulus'))return Array.from(chunk.children).flatMap(child=>splitRich(child as HTMLElement,650)).map(child=>{const shell=chunk.cloneNode(false) as HTMLElement;shell.append(child);return shell;});
   if(!chunk.classList.contains('question')||(chunk.textContent!.length<500&&!chunk.querySelector('.question-attachment')))return [chunk];
   const expanded:HTMLElement[]=[],number=chunk.dataset.number;
-  const add=(child:HTMLElement)=>{const shell=chunk.cloneNode(false) as HTMLElement;if(expanded.length)delete shell.dataset.breakBefore;shell.classList.add('fragmented-question');shell.classList.remove('question-continuation');if(expanded.length){const label=document.createElement('div');label.className='fragment-continuation-label';label.textContent=data.paperLanguage==='en'?'Question '+number+' (continued)':'第 '+number+' 题（续）';shell.append(label);}shell.append(child);expanded.push(shell);};
+  const add=(child:HTMLElement)=>{const shell=chunk.cloneNode(false) as HTMLElement;if(expanded.length)delete shell.dataset.breakBefore;shell.classList.add('fragmented-question');shell.classList.remove('question-continuation');if(expanded.length){const label=document.createElement('div');label.className='fragment-continuation-label';label.textContent=(data.paperContinuation??'第 {n} 题（续）').replace('{n}',String(number));shell.append(label);}shell.append(child);expanded.push(shell);};
   for(const child of Array.from(chunk.children) as HTMLElement[]){
    if(state.preview&&child.matches('.screen-answer,.screen-media'))continue;
    // Keep the short answer footer with the preceding solution or marking criteria.

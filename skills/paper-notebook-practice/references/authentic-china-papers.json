@@ -8,7 +8,7 @@
       "title": "小学数学 · 香港官方六年级评估",
       "category": "小学",
       "templateIds": [
-        "primary-math"
+        "hk-p6-math"
       ],
       "papers": [
         {
@@ -82,7 +82,7 @@
       "title": "小学语文 · 香港官方阅读与写作评估",
       "category": "小学",
       "templateIds": [
-        "primary-chinese"
+        "hk-p6-chinese"
       ],
       "papers": [
         {
@@ -212,7 +212,7 @@
       "title": "小学英语 · 香港官方阅读写作整卷",
       "category": "小学",
       "templateIds": [
-        "primary-english"
+        "hk-p6-english"
       ],
       "papers": [
         {
@@ -1397,6 +1397,96 @@
           "sourceType": "official-specimen",
           "pageRange": "172-191",
           "answerUrl": "https://www.neea.edu.cn/res/Home/1704/55b02330ac17274664f06d9d3db8249d.pdf"
+        }
+      ]
+    },
+    {
+      "id": "mainland-primary-math-2022",
+      "title": "中国大陆小学数学 · 课程标准",
+      "category": "小学",
+      "templateIds": [
+        "primary-math"
+      ],
+      "papers": [
+        {
+          "id": "moe-2022-primary-math",
+          "title": "义务教育数学课程标准（2022年版）",
+          "year": 2022,
+          "board": "中华人民共和国教育部",
+          "region": "中国大陆",
+          "language": "zh",
+          "paperUrl": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf",
+          "scope": "课程标准 · 第三学段（五至六年级）的数与运算、图形与几何及问题解决。",
+          "readNotes": [
+            "第三学段（五至六年级）的数与运算、图形与几何及问题解决。"
+          ],
+          "authoringLessons": [
+            "按课标选定题型、材料和认知负荷，再校核题目与评分。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "项目记录出处与课标范围，提供发布方链接。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mainland-primary-chinese-2022",
+      "title": "中国大陆小学语文 · 课程标准",
+      "category": "小学",
+      "templateIds": [
+        "primary-chinese"
+      ],
+      "papers": [
+        {
+          "id": "moe-2022-primary-chinese",
+          "title": "义务教育语文课程标准（2022年版）",
+          "year": 2022,
+          "board": "中华人民共和国教育部",
+          "region": "中国大陆",
+          "language": "zh",
+          "paperUrl": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582344386456.pdf",
+          "scope": "课程标准 · 第三学段（五至六年级）的语言文字积累与梳理、阅读理解和表达。",
+          "readNotes": [
+            "第三学段（五至六年级）的语言文字积累与梳理、阅读理解和表达。"
+          ],
+          "authoringLessons": [
+            "按课标选定题型、材料和认知负荷，再校核题目与评分。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "项目记录出处与课标范围，提供发布方链接。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "mainland-primary-english-2022",
+      "title": "中国大陆小学英语 · 课程标准",
+      "category": "小学",
+      "templateIds": [
+        "primary-english"
+      ],
+      "papers": [
+        {
+          "id": "moe-2022-primary-english",
+          "title": "义务教育英语课程标准（2022年版）",
+          "year": 2022,
+          "board": "中华人民共和国教育部",
+          "region": "中国大陆",
+          "language": "zh",
+          "paperUrl": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf",
+          "scope": "课程标准 · 第二级（五至六年级）的常用语言、短文理解与书面表达。",
+          "readNotes": [
+            "第二级（五至六年级）的常用语言、短文理解与书面表达。"
+          ],
+          "authoringLessons": [
+            "按课标选定题型、材料和认知负荷，再校核题目与评分。"
+          ],
+          "rights": {
+            "redistribute": false,
+            "note": "项目记录出处与课标范围，提供发布方链接。"
+          }
         }
       ]
     }

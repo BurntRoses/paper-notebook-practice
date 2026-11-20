@@ -23,7 +23,15 @@ function readyEditor(){
 let previewTools:typeof import('./preview-tools');
 let previewRequest:Promise<typeof previewTools>|undefined;
 function readyPreview(){
- return previewRequest??=import('./preview-tools').then(module=>previewTools=module).catch(()=>{previewRequest=undefined;throw Error('卷面排版未能载入，请重试。');});
+ if(previewRequest)return previewRequest;
+ for(const href of webDelivery()?.previewPreloads??[]){
+  if(document.head.querySelector('link[rel=modulepreload][href='+CSS.escape(href)+']'))continue;
+  const link=document.createElement('link');
+  link.rel='modulepreload';link.href=href;
+  document.head.append(link);
+ }
+ previewRequest=import('./preview-tools').then(module=>previewTools=module).catch(()=>{previewRequest=undefined;throw Error('卷面排版未能载入，请重试。');});
+ return previewRequest;
 }
 let catalogShelf:CatalogEntry[]|undefined;
 let catalogRequest:Promise<void>|undefined;

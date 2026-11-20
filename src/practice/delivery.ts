@@ -5,6 +5,7 @@ export interface PracticeWebDelivery {
  topicBaseUrl:string;
  caseBaseUrl?:string;
  exampleBaseUrl?:string;
+ previewPreloads?:string[];
 }
 export function webDelivery():PracticeWebDelivery|undefined{
  return (globalThis as typeof globalThis&{__PRACTICE_WEB__?:PracticeWebDelivery}).__PRACTICE_WEB__;

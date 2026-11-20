@@ -20,7 +20,7 @@ const facetLabels={region:'地区',subject:'科目',language:'卷面语言'};
 const facetName=(key:Facet,value:string)=>key==='region'?regionNames[value as CatalogRegion]??value:key==='language'?languageNames[value as CatalogLanguage]??value:value;
 const fallbackRegion=(category:string)=>category==='小学'?'mainland':'all';
 const byCategory=(a:string,b:string)=>CATALOG_CATEGORIES.indexOf(a as CatalogCategory)-CATALOG_CATEGORIES.indexOf(b as CatalogCategory);
-const priority=(entry:CatalogEntry)=>entry.scope==='full'?0:entry.identity==='original'?1:2;
+const priority=(entry:CatalogEntry)=>entry.id==='civil-aptitude-01'?0:entry.scope==='full'?1:entry.identity==='original'?2:3;
 
 interface CatalogBrowserOptions {
  mountPreview(host:HTMLElement,entry:CatalogEntry,openRelated:(id:string)=>void):()=>void;

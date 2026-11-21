@@ -314,7 +314,7 @@ export function mountWorkbenchDemo(host:HTMLElement,controls:HTMLElement,taskId:
    if(!disposed){
     reserve=alternatives;
     paper=assembly&&reserve?assembly.assembleWorkbenchPaper(reference,reserve):reference;
-    title.textContent=paper.title;
+    title.textContent=paper.title+' · 原创演示';
     draw();
    }
   }catch{

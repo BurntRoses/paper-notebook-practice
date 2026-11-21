@@ -19,3 +19,9 @@ Paper Notebook Practice 的代码、渲染器、原创模板参数，以及两�
 `skills/paper-notebook-practice/references/authentic-*-papers.json` 保存参考试卷、题库和评估任务的来源、公开范围及命题记录。站点展示从题库重新排版的卷面，原件只保留发布者链接。第三方题文和题图沿用来源许可；MIT 适用于项目代码与原创内容。完整卷、单项组件、口试与作品任务分别标识。
 
 大学转载的全国统考卷、机构回忆整理与官方原卷分开标注；独立求解、机构参考答案和官方评分分开记录。具体缺页、缺图、答案疑错与年度适用性写在各集合中，出卷时继续解决，不因来源名称而自动采纳。
+
+## 2024 英格兰 KS2 数学
+
+Standards and Testing Agency 于 2024 年 5 月发布的 Year 6 数学套卷包含运算卷 20 页、两份推理卷各 24 页和评分册 40 页。本站在统一翻页界面呈现保留原页尺寸的 SVG 矢量及可选文字层，按许可排除机构标识，不代理或内嵌 PDF。三份原题本提供卷内作答区，对应在线套卷提供三份题本及一份官方评分册。原题本、核验用 SHA-256 及各页标识位置见 `src/practice/ks2-2024.json`。
+
+Contains material developed by the Standards and Testing Agency for 2024 national curriculum assessments and licensed under [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). [发布页](https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials) · [版权说明](https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials/2024-copyright-ownership-key-stage-2-national-curriculum-tests)

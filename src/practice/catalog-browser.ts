@@ -27,7 +27,7 @@ type Facet='region'|'language'|'subject';
 const facets:Facet[]=['region','subject','language'];
 const facetLabels={region:'地区',subject:'科目',language:'卷面语言'};
 const facetName=(key:Facet,value:string)=>key==='region'?regionNames[value as CatalogRegion]??value:key==='language'?languageNames[value as CatalogLanguage]??value:value;
-const fallbackRegion=(category:string)=>category==='小学'?'mainland':'all';
+
 const byCategory=(a:string,b:string)=>CATALOG_CATEGORIES.indexOf(a as CatalogCategory)-CATALOG_CATEGORIES.indexOf(b as CatalogCategory);
 const priority=(entry:CatalogEntry)=>entry.id===catalogGuides[entry.category].sample?0:entry.scope==='full'?1:entry.identity==='original'?2:3;
 const mark='<svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 3 3 7-7"/></svg>';
@@ -57,13 +57,13 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
  const state:Filters={
   category:redirected&&initial?initial.category:categories.has(categoryAlias as CatalogCategory)?categoryAlias:'',
   region:redirected&&initial?initial.region:params.has('region')&&Object.hasOwn(regionNames,params.get('region')??'')?params.get('region')!:
-   params.has('region')?'all':categoryAlias==='小学'&&initial?.category==='小学'?initial.region:fallbackRegion(categoryAlias),
+   'all',
   subject:redirected?'':params.get('subject')??'',language:!redirected&&Object.hasOwn(languageNames,params.get('lang')??'')?params.get('lang')!:'',
   query:redirected?'':params.get('q')??'',tags:redirected?[]:params.getAll('tag').filter(tag=>Object.hasOwn(legacyTags,tag)),
   item:initial?.id??'',
  };
  const legacyPage=Math.max(1,Math.trunc(Number(params.get('page')))||1);
- let explicitRegion=params.has('region')||Boolean(initial&&initial.region!==fallbackRegion(state.category)&&state.category==='小学');
+
 
  let showUnavailable=Boolean(requested&&!initial);
  let current='',modal='',disposed=false,composing=false,previewTimer=0,previewFrame=0,searchTimer=0;
@@ -107,7 +107,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
  function setURL(){
   const url=new URLSearchParams();
   if(state.category||state.item)url.set('category',state.category);
-  if(explicitRegion||state.region!==fallbackRegion(state.category))url.set('region',state.region);
+  if(state.region!=='all')url.set('region',state.region);
   if(state.subject)url.set('subject',state.subject);
   if(state.language)url.set('lang',state.language);
   if(state.query)url.set('q',state.query);
@@ -255,11 +255,9 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
  }
  category.onchange=()=>{
   state.category=category.value;
-  if(!explicitRegion)state.region=fallbackRegion(state.category);
   change(false);
  };
  function setFacet(key:Facet,value:string){
-  if(key==='region')explicitRegion=true;
   state[key]=value;change();
  }
  for(const {key,select} of facetControls)select.onchange=()=>setFacet(key,select.value);
@@ -280,7 +278,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
   if(clearFacet){setFacet(clearFacet as Facet,clearFacet==='region'?'all':'');more.focus({preventScroll:true});}
   if(clearTag){state.tags=state.tags.filter(tag=>tag!==clearTag);change();more.focus({preventScroll:true});}
   if(button.id==='catalog-clear-filters'||button.hasAttribute('data-reset-catalog')){
-   state.category='';syncCategory();explicitRegion=false;state.query='';state.region='all';state.subject='';state.language='';state.tags=[];search.value='';change(false);showFilters(false);search.focus({preventScroll:true});
+   state.category='';syncCategory();state.query='';state.region='all';state.subject='';state.language='';state.tags=[];search.value='';change(false);showFilters(false);search.focus({preventScroll:true});
   }
  };
  const onViewport=()=>{

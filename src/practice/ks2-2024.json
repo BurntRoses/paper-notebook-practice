@@ -1,0 +1,35 @@
+{
+  "id": "england-2024-ks2-maths",
+  "title": "英格兰六年级 · 2024 KS2 数学",
+  "publisher": "Standards and Testing Agency",
+  "publication": "https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials",
+  "copyrightReport": "https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials/2024-copyright-ownership-key-stage-2-national-curriculum-tests",
+  "licence": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "attribution": "Contains material developed by the Standards and Testing Agency for 2024 national curriculum assessments and licensed under Open Government Licence v3.0.",
+  "volumes": [
+    {
+      "id": "arithmetic", "code": "8817", "label": "运算卷", "title": "Paper 1: arithmetic", "pages": 20,
+      "url": "https://assets.publishing.service.gov.uk/media/664dc7a9bd01f5ed32794027/STA248817e_2024_ks2_mathematics_Paper1_arithmetic.pdf",
+      "sha256": "8cc46d7b6d38447b3e0aa45e662da3153b2cb05e1df2d6e3de74722c0c4d8382",
+      "logoMasks": {"20": [[432, 48, 546, 159], [493, 579, 556, 609]]}
+    },
+    {
+      "id": "reasoning-one", "code": "8818", "label": "推理卷一", "title": "Paper 2: reasoning", "pages": 24,
+      "url": "https://assets.publishing.service.gov.uk/media/664dc7b6f34f9b5a56adcc33/STA248818e_2024_ks2_mathematics_Paper2_reasoning.pdf",
+      "sha256": "e2e79e9812878b3c8321deb91e786a1b3c7dbc30c38e8d77efc53e619035e121",
+      "logoMasks": {"24": [[432, 48, 546, 159], [493, 579, 556, 609]]}
+    },
+    {
+      "id": "reasoning-two", "code": "8819", "label": "推理卷二", "title": "Paper 3: reasoning", "pages": 24,
+      "url": "https://assets.publishing.service.gov.uk/media/664dc7c14f29e1d07fadcc6f/STA248819e_2024_ks2_mathematics_Paper3_reasoning.pdf",
+      "sha256": "96decab0f678ba32785b5d296ef20f1fd5d7a645d4822c6e28c2b512617aec20",
+      "logoMasks": {"24": [[432, 48, 546, 159], [493, 579, 556, 609]]}
+    },
+    {
+      "id": "scoring", "code": "8820", "label": "官方评分", "title": "Official mark schemes", "pages": 40,
+      "url": "https://assets.publishing.service.gov.uk/media/664dc7cdbd01f5ed3279402a/STA248820e_2024_ks2_mathematics_Mark_schemes.pdf",
+      "sha256": "58aa325361b97e6e83aa21cf98cff1140d73f0c03adc7b0d90ef64d1f143f6fc",
+      "logoMasks": {"1": [[450, 620, 557, 724]], "40": [[432, 48, 546, 159], [493, 561, 556, 592]]}
+    }
+  ]
+}

@@ -13,6 +13,7 @@ export type PaperLanguage=NonNullable<PracticePresentation['language']>;
 export type ResourceKind='paper'|'bank'|'layout';
 export type SourceRole='question'|'benchmark'|'scoring';
 export type TopicRequest={kind:'topic';id:string;file:string;sha256:string};
+export type SourcePaperRequest={kind:'source';id:string};
 export type PaperRequest={kind:'case'|'example';id:string}|TopicRequest;
 export const resourceNames={paper:'试卷',bank:'题库',layout:'版式'} as const;
 export const sourceRoleNames={question:'题目出处',benchmark:'命题与版式依据',scoring:'评分依据'} as const;
@@ -36,7 +37,7 @@ export interface CatalogEntry extends CatalogIdentity {
  id:string;
  title:string;
  kind:ResourceKind;
- request:PaperRequest|{kind:'template';id:string};
+ request:PaperRequest|SourcePaperRequest|{kind:'template';id:string};
  documentId?:string;
  questionCount?:number;
  sampleId?:string;

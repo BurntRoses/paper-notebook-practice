@@ -1,8 +1,9 @@
+import ks2 from './ks2-2024.json';
 import cases from './real-cases.json';
 import examples from './template-examples.json';
 import {PAPER_TEMPLATES,type PaperTemplate} from './templates';
 import {TOPIC_CASES} from './topics';
-import {paperLanguageFor,type CatalogEntry,type CatalogIdentity,type CatalogLanguage,type CatalogRegion,type PaperRequest} from './catalog-identity';
+import {paperLanguageFor,type CatalogEntry,type CatalogIdentity,type CatalogLanguage,type CatalogRegion,type PaperRequest,type SourcePaperRequest} from './catalog-identity';
 import type {CatalogCategory} from './catalog-categories';
 import type {PracticeDocument} from './model';
 
@@ -114,7 +115,12 @@ function layoutEntry(t:PaperTemplate):CatalogEntry {
 const topics:CatalogEntry[]=TOPIC_CASES.map(t=>({
  ...t.catalog,id:t.id,title:t.title,kind:t.mode==='bank'?'bank':'paper',request:{kind:'topic',id:t.id,file:t.file,sha256:t.sha256},documentId:t.id,questionCount:t.questionCount,
 }));
-export const catalogShelf:CatalogEntry[]=[...caseCatalog,...topics,...exampleCatalog,...PAPER_TEMPLATES.map(layoutEntry)];
+const ks2Set:CatalogEntry={
+ id:ks2.id,title:ks2.title,kind:'paper',scope:'full',identity:'authentic',request:{kind:'source',id:ks2.id},
+ category:'小学',region:'england',language:'en',paperLanguage:'en',subject:'数学',grade:'英格兰 Year 6',
+ issuer:ks2.publisher,year:2024,system:'KS2',aliases:['小学六年级','六年级数学','小学数学','Year 6','Key Stage 2'],
+};
+export const catalogShelf:CatalogEntry[]=[ks2Set,...caseCatalog,...topics,...exampleCatalog,...PAPER_TEMPLATES.map(layoutEntry)];
 
 const indexed=new Map(catalogShelf.map(entry=>[entry.id,entry]));
 if(indexed.size!==catalogShelf.length)throw Error('Duplicate catalog IDs');
@@ -126,10 +132,10 @@ for(const entry of catalogShelf)if(entry.sampleId){
  }
 }
 
-export type CatalogPaperSet=CatalogEntry & {kind:'paper';scope:'full';request:PaperRequest};
+export type CatalogPaperSet=CatalogEntry & {kind:'paper';scope:'full';request:PaperRequest|SourcePaperRequest};
 
 function isCatalogPaperSet(entry:CatalogEntry):entry is CatalogPaperSet {
- return entry.kind==='paper'&&entry.scope==='full'&&entry.request.kind!=='template';
+ return entry.kind==='paper'&&entry.scope==='full'&&entry.identity==='authentic'&&entry.request.kind!=='template';
 }
 
 export const publicPaperSets=catalogShelf.filter(isCatalogPaperSet);

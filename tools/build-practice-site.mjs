@@ -5,6 +5,7 @@ import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
 import {resolve,dirname,extname,relative,isAbsolute,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
+import {inflateSync} from 'node:zlib';
 import {tsImport} from 'tsx/esm/api';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const out=resolve(process.argv[2]||root+'dist/site');
@@ -16,10 +17,11 @@ await rm(out,{recursive:true,force:true});await mkdir(out+'/assets',{recursive:t
 const hash=b=>createHash('sha256').update(b).digest('hex').slice(0,20);
 const assetNames=new Set();
 async function asset(bytes,extension){const name=hash(bytes)+extension;if(!assetNames.has(name)){assetNames.add(name);await writeFile(out+'/assets/'+name,bytes);}return '__PUBLIC_ASSET__assets/'+name;}
+const ks2=JSON.parse(await readFile(root+'src/practice/ks2-2024.json','utf8'));
 const catalog=JSON.parse(await readFile(root+'src/practice/real-cases.json','utf8'));
 const {summarizeCase}=await tsImport('../src/practice/case-summary.ts',import.meta.url);
 const {catalogShelf,publicPaperSets,legacyCatalogLayouts}=await tsImport('../src/practice/catalog-shelf.ts',import.meta.url);
-const {siteAudioExtensions}=await tsImport('../src/practice/model.ts',import.meta.url);
+const {siteAudioExtensions,hasSeparateAnswerCard}=await tsImport('../src/practice/model.ts',import.meta.url);
 const {validatePractice}=await tsImport('../src/practice/validate.ts',import.meta.url);
 const {catalogSources}=await tsImport('../src/practice/catalog-sources.ts',import.meta.url);
 const {regionNames,languageNames,sourceRoles}=await tsImport('../src/practice/catalog-identity.ts',import.meta.url);
@@ -42,11 +44,10 @@ for(const [category,guide] of Object.entries(catalogGuides)){
 if(new Set(homePapers.map(paper=>paper.id)).size!==homePapers.length)throw Error('Duplicate featured paper');
 for(const paper of homePapers){
  const listing=listings.get(paper.id);
- if(!publicIds.has(paper.id)||listing?.scope!=='full'||listing.request.kind!==paper.kind||
-    (listing.request.kind==='topic'&&listing.request.file!==paper.file))throw Error('Featured paper must link to a complete author document: '+paper.id);
+ if(!publicIds.has(paper.id)||listing?.scope!=='full'||listing.request.kind!==paper.kind)throw Error('Featured paper must link to a complete source: '+paper.id);
 }
 for(const task of Object.values(workbenchTasks)){
- if(!homePapers.some(sample=>sample.id===task.exampleId)||task.supplementaryId&&!listings.has(task.supplementaryId)){
+ if(listings.get(task.exampleId)?.scope!=='full'||task.supplementaryId&&!listings.has(task.supplementaryId)){
   throw Error('Workbench example does not match the catalog: '+task.exampleId);
  }
 }
@@ -57,6 +58,21 @@ if(scanEvidence.paperId!==workbenchTasks.scan.exampleId||scanEvidence.page!==1||
 }
 
 const validURL=value=>{try{return ['https:','http:'].includes(new URL(value).protocol);}catch{return false;}};
+const ks2Listing=listings.get(ks2.id);
+if(!publicIds.has(ks2.id)||ks2Listing?.request.kind!=='source'||ks2Listing.region!=='england'||
+   ![ks2.publication,ks2.copyrightReport,ks2.licence].every(validURL)||
+   new Set(ks2.volumes.map(part=>part.id)).size!==4){
+ throw Error('Incomplete provenance for the published KS2 set');
+}
+for(const part of ks2.volumes){
+ if(!validURL(part.url)||!/^[a-f0-9]{64}$/.test(part.sha256))throw Error('Missing source for '+part.id);
+ const packed=await readFile(root+'assets/ks2-2024/'+part.id+'.b64','utf8');
+ const {width,height,pages}=JSON.parse(inflateSync(Buffer.from(packed,'base64')).toString('utf8'));
+ if(!Number.isFinite(width)||!Number.isFinite(height)||width<=0||height<=0||pages.length!==part.pages||
+    pages.some(([image,spans])=>!Buffer.from(image,'base64').toString('utf8').startsWith('<svg ')||!spans.length)){
+  throw Error('Invalid original-page geometry or content for '+part.id);
+ }
+}
 const validRegions=new Set(Object.values(regionNames));
 for(const source of REFERENCE_PAPERS){
  if(!source.id||!source.board||!source.language||!validRegions.has(source.region)||!source.scope||
@@ -90,7 +106,7 @@ function validatePaper(id,paper,kind){
   if(!spec||paper.exam?.scope!=='full'||paper.generation?.unresolved?.length||
      publishedQualification&&spec.source?.kind==='user-blueprint')throw Error('Incomplete published paper set: '+id);
   const display=catalogPaper(paper);
-  for(const volume of ['exam','answers','answer-card']){
+  for(const volume of hasSeparateAnswerCard(paper)?['exam','answers','answer-card']:['exam','answers']){
    const html=renderPractice(display,{kind:volume,runtime:''});
    const check=verifyPracticeHtml(html,display);
    if(!check.valid)throw Error(id+' '+volume+': '+check.errors.map(({path,message})=>path+' '+message).join('; '));
@@ -166,7 +182,7 @@ const virtual={name:'public-practice-assets',setup(api){
  api.onLoad({filter:/.*/,namespace:'public-raw'},async args=>{const file=args.path.startsWith('.')?resolve(args.pluginData.resolveDir,args.path):fileURLToPath(import.meta.resolve(args.path));return{contents:await readFile(file,'utf8'),loader:'text'};});
  api.onResolve({filter:/^\.\/catalog-shelf$/},args=>({path:args.path,namespace:'public-shelf'}));
  api.onLoad({filter:/.*/,namespace:'public-shelf'},()=>{
-  const demoIds=new Set(Object.values(workbenchTasks).flatMap(task=>task.supplementaryId?[task.supplementaryId]:[]));
+  const demoIds=new Set(Object.values(workbenchTasks).flatMap(task=>[task.exampleId,task.supplementaryId]));
   const demoEntries=catalogShelf.filter(entry=>demoIds.has(entry.id)&&!publicIds.has(entry.id));
   return {contents:`export const publicPaperSets=${JSON.stringify(publicPaperSets)};export const catalogShelf=[...publicPaperSets,...${JSON.stringify(demoEntries)}];export const legacyCatalogLayouts=new Map(${JSON.stringify([...legacyCatalogLayouts])});`,loader:'js'};
  });

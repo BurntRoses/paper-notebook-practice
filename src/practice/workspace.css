@@ -275,10 +275,11 @@ button[aria-pressed=true]>.selection-mark {visibility:visible}
  grid-template-columns:clamp(300px,29vw,410px) minmax(0,1fr);
 }
 .home-library {
- min-width:0;min-height:0;display:flex;flex-direction:column;gap:16px;
- padding:clamp(24px,5.4dvh,46px) clamp(18px,2vw,28px) 20px;overflow:auto;
+ min-width:0;min-height:0;display:flex;flex-direction:column;
+ padding:clamp(30px,5.7dvh,52px) clamp(18px,2vw,28px);overflow:auto;
  border-inline-end:1px solid var(--line);
 }
+.home-library-content {display:grid;gap:18px;margin:auto 0}
 .home-library-heading {display:flex;align-items:center;justify-content:space-between;gap:8px}
 .home-library-heading h1,.workflow-header h1 {font-size:clamp(21px,2.1vw,28px);font-weight:680;letter-spacing:0}
 .home-library-heading>.button {min-height:34px;padding:4px 7px;color:var(--accent)}
@@ -300,7 +301,7 @@ button[aria-pressed=true]>.selection-mark {visibility:visible}
 .copy-control {position:relative}
 .copy-label {display:inline-flex;align-items:center;gap:5px}
 .copy-feedback {position:absolute;inset:0;display:grid;place-items:center;padding:0 5px}
-#open-workflow {min-height:38px;padding:4px 8px;justify-content:space-between;margin-top:auto;font-size:14px;color:var(--accent);flex:none}
+#open-workflow {min-height:38px;padding:4px 8px;justify-content:space-between;font-size:14px;color:var(--accent);flex:none}
 .home-stage {display:flex;flex-direction:column;min-width:0;min-height:0;overflow:hidden}
 .home-stage>.catalog-sample .sample-tools {background:var(--bg)}
 .home-stage .catalog-frame-stage {background:var(--preview-surround)}
@@ -400,10 +401,11 @@ button[aria-pressed=true]>.selection-mark {visibility:visible}
 }
 @media(max-width:760px) {
  .home-page.start-page {display:flex;flex-direction:column;gap:0;padding:0}
- .home-library {border-inline-end:0;border-bottom:1px solid var(--line);padding:24px 14px 14px;gap:10px}
+ .home-library {border-inline-end:0;border-bottom:1px solid var(--line);padding:32px 14px 23px}
+ .home-library-content {gap:12px}
  .home-copy {padding-top:10px}
  .home-stage {min-height:clamp(430px,68dvh,610px)}
- #open-workflow {align-self:flex-start;gap:12px;padding-inline:0}
+ #open-workflow {justify-self:start;gap:12px;padding-inline:0}
  .workflow-page {gap:10px;padding-block:12px}
  .workflow-workspace {display:flex;flex-direction:column;gap:14px}
  .workflow-rail {overflow:visible;padding:0}

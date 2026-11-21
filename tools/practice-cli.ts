@@ -1,3 +1,4 @@
+import {hasSeparateAnswerCard} from '../src/practice/model';
 import {REFERENCE_COLLECTIONS,referenceCollectionsFor,referenceStudy} from '../src/practice/reference-papers';
 import {EXAM_ROUTES,getExamRoute} from '../src/practice/exam-routes';
 import {TOPIC_CASES,getTopicCase} from '../src/practice/topics';
@@ -42,7 +43,7 @@ const print=(value:unknown)=>console.log(JSON.stringify(value,null,2));
 async function writeJson(path:string,value:unknown){await mkdir(dirname(resolve(path)),{recursive:true});await writeFile(resolve(path),JSON.stringify(value,null,2)+'\n');}
 async function deliver(practice:PracticeDocument,out:string,source?:NotebookDocument){
  const title=practice.title.replace(/[<>:"/\\|?*\u0000-\u001f]/g,'').slice(0,120)||'练习',files:Record<string,string>={},proofs:Record<string,unknown>={};
- for(const [kind,label]of[['exam',practice.mode==='bank'?'全量题库':'试卷'],['answers','答案卷'],['answer-card','答题卡']] as const){const filename=`《${title}》-${label}.html`,html=await buildPracticeHtml(practice,{kind}),proof=verifyPracticeHtml(html,practice,source);if(!proof.valid)throw Error(proof.errors.map(error=>error.path+': '+error.message).join('\n'));files[filename]=html;proofs[filename]=proof;}
+ for(const [kind,label]of[['exam',practice.mode==='bank'?'全量题库':'试卷'],['answers','答案卷'],['answer-card','答题卡']] as const){if(kind==='answer-card'&&!hasSeparateAnswerCard(practice))continue;const filename=`《${title}》-${label}.html`,html=await buildPracticeHtml(practice,{kind}),proof=verifyPracticeHtml(html,practice,source);if(!proof.valid)throw Error(proof.errors.map(error=>error.path+': '+error.message).join('\n'));files[filename]=html;proofs[filename]=proof;}
  if(practice.original){
   for(const source of practice.original.sources)for(const page of source.pages){const actual=createHash('sha256').update(Buffer.from(page.imageData.split(',')[1],'base64')).digest('hex');if(actual!==page.imageSha256)throw Error(`Original image checksum differs: ${source.id} page ${page.page}`);}
   const filename=`《${title}》-原卷.html`;files[filename]=renderReplica(practice.original);proofs[filename]={valid:true,kind:'original-page-facsimile',pages:practice.original.sources.flatMap(s=>s.pages.map(p=>({source:s.id,page:p.page,imageSha256:p.imageSha256,widthPt:p.widthPt,heightPt:p.heightPt,physicalSizeAssumed:p.physicalSizeAssumed??false})))};

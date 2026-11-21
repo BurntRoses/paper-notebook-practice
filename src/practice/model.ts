@@ -46,6 +46,8 @@ export interface PracticeAnswer {value:string|string[];submitted?:boolean;correc
 export interface PracticeDocument {authoring?:PracticeAuthoring;sourcePolicy?:PracticeSourcePolicy;original?:ReplicaDocument;exam?:{specificationId:string;scope:'full'|'subset';scoreScale:string;specification?:ExamSpecification};schemaVersion:'1.0.0';practiceId:string;notebookId:string;notebookRevision:number;title:string;subject:string;level:string;durationMinutes:number;totalScore:number;mode:'mock'|'bank';presentation?:PracticePresentation;style:PracticeStyle;materials:PracticeMaterial[];sections:PracticeSection[];assembly?:{choiceOrder:'preserve'|'balanced';seed:string;sourceQuestionIds:string[]};generation?:{intent:'generate'|'original'|'adapt';sourceManifest?:string;ocrReviewed:boolean;unresolved:string[];notes?:string};review?:Record<string,{stage:number;due:string}>;userState?:{practiceAnswers:Record<string,PracticeAnswer>;practiceMistakes:string[]}}
 export interface PracticeError {path:string;message:string}
 export const REVIEW_DAYS=[1,2,4,7,15,30] as const;
+export const hasSeparateAnswerCard=(practice:PracticeDocument)=>
+ practice.generation?.intent!=='original'||Boolean(practice.presentation?.answerCard);
 export const questionsOf=(practice:Pick<PracticeDocument,'sections'>)=>practice.sections.flatMap(section=>section.questions);
 export function createReview(previous:{stage:number;due:string}|undefined,correct:boolean,now=new Date()){const stage=correct?Math.min(5,(previous?.stage??-1)+1):0;const next=new Date(now);next.setDate(next.getDate()+REVIEW_DAYS[stage]);return {stage,due:next.toISOString().slice(0,10)};}
 /** Candidate data uses an explicit field set; author evidence stays in the answer paper. */

@@ -1,7 +1,7 @@
 import {catalogGuides} from './catalog-guides';
 import type {CatalogPaperSet} from './catalog-shelf';
 import {CATALOG_CATEGORIES,CATEGORY_ALIASES,type CatalogCategory} from './catalog-categories';
-import {languageNames,regionNames,regionOrder,type CatalogEntry,type CatalogLanguage,type CatalogRegion} from './catalog-identity';
+import {languageNames,paperEditionLabels,regionNames,regionOrder,type CatalogEntry,type CatalogLanguage,type CatalogRegion,type PaperEdition} from './catalog-identity';
 
 const LEGACY_PAGE_SIZE=18;
 const normalize=(value:string)=>value.normalize('NFKC').toLowerCase();
@@ -22,14 +22,14 @@ const legacyTags:Record<string,string[]>={
  经济管理:['经济','会计','审计','管理','金融','accounting','business'],公民知识:['入籍','公民','civics','citizen'],
  艺术创作:['艺术','音乐','设计','作品集','art','music','design'],日语:['日语','日文','日本語','jlpt'],
 };
-type Filters={category:string;region:string;language:string;subject:string;query:string;tags:string[];item:string};
+type Filters={edition:PaperEdition;category:string;region:string;language:string;subject:string;query:string;tags:string[];item:string};
 type Facet='region'|'language'|'subject';
 const facets:Facet[]=['region','subject','language'];
 const facetLabels={region:'地区',subject:'科目',language:'卷面语言'};
 const facetName=(key:Facet,value:string)=>key==='region'?regionNames[value as CatalogRegion]??value:key==='language'?languageNames[value as CatalogLanguage]??value:value;
 
 const byCategory=(a:string,b:string)=>CATALOG_CATEGORIES.indexOf(a as CatalogCategory)-CATALOG_CATEGORIES.indexOf(b as CatalogCategory);
-const priority=(entry:CatalogEntry)=>entry.id===catalogGuides[entry.category].sample?0:entry.scope==='full'?1:entry.identity==='original'?2:3;
+const priority=(entry:CatalogEntry)=>entry.id===catalogGuides[entry.category].sample?0:1;
 const mark='<svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 3 3 7-7"/></svg>';
 
 interface CatalogBrowserOptions {
@@ -41,11 +41,11 @@ interface CatalogBrowserOptions {
 export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],legacyLayouts:ReadonlyMap<string,string>,options:CatalogBrowserOptions){
  const viewport=matchMedia('(min-width: 1024px)');
  const indexed=new Map(shelf.map(entry=>[entry.id,entry]));
- const sorted=shelf.slice().sort((a,b)=>regionOrder.indexOf(a.region)-regionOrder.indexOf(b.region)||
+ const sorted=shelf.slice().sort((a,b)=>Number(b.identity==='authentic')-Number(a.identity==='authentic')||regionOrder.indexOf(a.region)-regionOrder.indexOf(b.region)||
   byCategory(a.category,b.category)||priority(a)-priority(b)||collator.compare(a.title,b.title));
  const searchIndex=new Map(sorted.map(entry=>[entry.id,normalize([
   entry.title,entry.subject,entry.category,shortDirection(entry.category),shortDirection(entry.category)+entry.subject,entry.grade,entry.issuer,regionNames[entry.region],
-  languageNames[entry.language],entry.system,entry.year,...entry.aliases??[],
+  languageNames[entry.language],entry.identity==='authentic'?'真题 原卷':'原创 模拟 练习',entry.system,entry.year,...entry.aliases??[],
  ].filter(Boolean).join(' '))]));
  const params=new URLSearchParams(location.hash.split('?')[1]??'');
  const requested=params.get('item')??'';
@@ -54,7 +54,9 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
  const categories=new Set(shelf.map(entry=>entry.category));
  const rawCategory=params.get('category')??(initial?.category??'');
  const categoryAlias=CATEGORY_ALIASES[rawCategory]??rawCategory;
+ const rawEdition=params.get('edition')??'';
  const state:Filters={
+  edition:!redirected&&Object.hasOwn(paperEditionLabels,rawEdition)?rawEdition as PaperEdition:'all',
   category:redirected&&initial?initial.category:categories.has(categoryAlias as CatalogCategory)?categoryAlias:'',
   region:redirected&&initial?initial.region:params.has('region')&&Object.hasOwn(regionNames,params.get('region')??'')?params.get('region')!:
    'all',
@@ -82,7 +84,9 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
   '</div><div id="catalog-facets" class="catalog-facets" hidden>'+
   facets.map(key=>'<div class="catalog-facet" data-filter="'+key+'"><span>'+facetLabels[key]+'</span><div class="inline-options" role="group" aria-label="'+facetLabels[key]+'"></div><select aria-label="'+facetLabels[key]+'"></select></div>').join('')+
   '</div><div id="catalog-selection" hidden class="catalog-selection"></div>'+
-  '<div class="catalog-results-heading"><output id="catalog-count" aria-live="polite"></output><button type="button" id="catalog-clear-filters" hidden>重置筛选</button></div>'+
+  '<div class="catalog-results-heading"><div class="catalog-editions inline-options" role="group" aria-label="试卷性质">'+
+  Object.entries(paperEditionLabels).map(([id,label])=>'<button type="button" data-edition="'+id+'" aria-pressed="false">'+label+'</button>').join('')+
+  '</div><output id="catalog-count" aria-live="polite"></output><button type="button" id="catalog-clear-filters" hidden>重置筛选</button></div>'+
   '<p class="catalog-link-status" role="status" hidden>这条旧链接指向的资料未收录为完整试卷。</p>'+
   '<div class="catalog-results" id="catalog-results" role="group" aria-label="筛选结果"></div></section>'+
   '<section id="catalog-paper" class="catalog-paper" aria-label="卷面预览"></section></div>';
@@ -107,6 +111,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
  function setURL(){
   const url=new URLSearchParams();
   if(state.category||state.item)url.set('category',state.category);
+  if(state.edition!=='all')url.set('edition',state.edition);
   if(state.region!=='all')url.set('region',state.region);
   if(state.subject)url.set('subject',state.subject);
   if(state.language)url.set('lang',state.language);
@@ -117,6 +122,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
   if(location.hash!==hash)history.replaceState(null,'',hash);
  }
  function match(entry:CatalogEntry,skip?:Facet){
+  if(state.edition!=='all'&&entry.identity!==state.edition)return false;
   if(state.category&&entry.category!==state.category)return false;
   if(skip!=='region'&&state.region!=='all'&&entry.region!==state.region)return false;
   if(skip!=='subject'&&state.subject&&entry.subject!==state.subject)return false;
@@ -160,7 +166,8 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
   selection.innerHTML=active.map(key=>'<button type="button" data-clear-facet="'+key+'" aria-label="清除'+facetLabels[key]+'筛选">'+e(facetName(key,state[key]))+' <span aria-hidden="true">×</span></button>').join('')+
    state.tags.map(tag=>'<button type="button" data-clear-tag="'+e(tag)+'" aria-label="清除 '+e(tag)+'">'+e(tag)+' <span aria-hidden="true">×</span></button>').join('');
   clearSearch.hidden=!search.value;
-  reset.hidden=!state.category&&!state.query&&!extra;
+  for(const button of host.querySelectorAll<HTMLButtonElement>('[data-edition]'))button.setAttribute('aria-pressed',String(button.dataset.edition===state.edition));
+  reset.hidden=!state.category&&!state.query&&!extra&&state.edition==='all';
  }
  function markCurrent(){
   const buttons=[...results.querySelectorAll<HTMLButtonElement>('[data-item]')];
@@ -204,15 +211,17 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
   const entries=sorted.filter(entry=>match(entry));
   if(!entries.some(entry=>entry.id===state.item))state.item='';
   linkStatus.hidden=!showUnavailable;
-  count.textContent=entries.length+' 套完整试卷';
+  count.textContent=entries.length+' 套';
   const groupByRegion=state.region==='all'&&new Set(entries.map(entry=>entry.region)).size>1;
-  let lastRegion='';
+  let lastRegion='',lastEdition='';
   results.innerHTML=entries.map(entry=>{
-   const pinned=entry.id===catalogGuides[entry.category].sample;
+   const edition=entry.identity==='authentic'?'authentic':'original';
    const region=groupByRegion?entry.region:'';
-   const header=region!==lastRegion?'<h2 class="catalog-region">'+e(regionNames[entry.region])+'</h2>':'';
-   lastRegion=region;
-   return header+row(entry,pinned?catalogGuides[entry.category].name:entry.title);
+   const header=edition!==lastEdition||region!==lastRegion?
+    '<h2 class="catalog-region">'+[e(paperEditionLabels[edition]),region?e(regionNames[entry.region]):''].filter(Boolean).join(' · ')+'</h2>':'';
+   lastEdition=edition;lastRegion=region;
+   const guide=catalogGuides[entry.category];
+   return header+row(entry,entry.id===guide.sample?guide.name:entry.title);
   }).join('')||'<div class="catalog-empty"><p>没有符合条件的完整试卷</p><button type="button" class="button secondary" data-reset-catalog>重置筛选</button></div>';
   if(resetScroll)results.scrollTop=0;
   showFacets();markCurrent();
@@ -272,13 +281,14 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],leg
  host.onclick=event=>{
   const button=(event.target as HTMLElement).closest<HTMLButtonElement>('button');
   if(!button)return;
-  const {item,clearFacet,clearTag,facetChoice,value}=button.dataset;
+  const {item,edition,clearFacet,clearTag,facetChoice,value}=button.dataset;
   if(item)choose(item);
+  if(edition){state.edition=edition as PaperEdition;change();}
   if(facetChoice&&value!==undefined)setFacet(facetChoice as Facet,value);
   if(clearFacet){setFacet(clearFacet as Facet,clearFacet==='region'?'all':'');more.focus({preventScroll:true});}
   if(clearTag){state.tags=state.tags.filter(tag=>tag!==clearTag);change();more.focus({preventScroll:true});}
   if(button.id==='catalog-clear-filters'||button.hasAttribute('data-reset-catalog')){
-   state.category='';syncCategory();state.query='';state.region='all';state.subject='';state.language='';state.tags=[];search.value='';change(false);showFilters(false);search.focus({preventScroll:true});
+   state.edition='all';state.category='';syncCategory();state.query='';state.region='all';state.subject='';state.language='';state.tags=[];search.value='';change(false);showFilters(false);search.focus({preventScroll:true});
   }
  };
  const onViewport=()=>{

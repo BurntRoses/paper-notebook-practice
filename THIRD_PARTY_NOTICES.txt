@@ -3,6 +3,16 @@ Paper Notebook Practice — third-party notices
 Software and original project content: MIT (see LICENSE).
 Historical exam materials retain their documented rights (docs/exam-materials.md).
 
+Standards and Testing Agency, 2024 Key Stage 2 mathematics and English grammar,
+punctuation and spelling materials: Open Government Licence v3.0.
+https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+
+Massachusetts Institute of Technology OpenCourseWare, 6.006 Spring 2020,
+14.01 Fall 2010, 5.111 Fall 2014 and 8.012 Fall 2008 exams and solutions:
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+Course and publisher attribution accompanies every archived volume.
+
 ================================================================
 ajv-LICENSE.txt
 ================================================================

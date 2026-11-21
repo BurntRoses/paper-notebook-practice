@@ -3620,7 +3620,7 @@
           "url": "https://github.com/lib-pku/libpku/blob/master/%E4%B8%93%E4%B8%9A%E8%AF%BE/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6B/13%E4%BF%A1%E7%A7%91%E6%9C%9F%E6%9C%AB.pdf",
           "rights": "原试卷由原作者保留权利；lib-pku 声明仅收集资料，未授予统一再许可。数学表达式与题目出处按原件记录，不适用代码 MIT 许可。",
           "sha256": "39654af2bc9e1718c01d60e1bf1cb26d08adc0350a3b31592de6ee288264b479",
-          "text": "$\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{e^x+e^y}{\\cos x+\\sin y}$.\n\n$\\lim\\limits_{n\\to\\infty}n^3\\ln(1+\\frac1n)(1-\\cos\\frac1n)$.\n\n$\\lim\\limits_{x\\to0+}(\\sin x)^{\\tan x}$.\n\n$\\displaystyle\\int_0^1\\textstyle\\ln(1+\\sqrt{x})\\,dx$.\n\n$\\displaystyle\\int_{-\\pi/2}^{\\pi/2}\\textstyle\\sqrt{\\cos x-\\cos^3x}\\,dx$.\n\n$\\displaystyle\\int\\textstyle\\dfrac{x}{x^4+2x^2+2}\\,dx$.\n\n一段曲线的极坐标方程为 $r=2(1+\\cos\\theta)$，$0\\le\\theta\\le\\pi$，求它的弧长。\n\n$z=x+(y^2-1)\\arcsin\\sqrt{\\frac yx}$，求 $\\left.\\frac{\\partial z}{\\partial x}\\right|_{(1,1)}$。\n\n$z=\\sqrt{xy+\\frac xy}$，求 $\\left.dz\\right|_{(2,1)}$。\n\n求点 $P(3,-1,2)$ 到直线 $\\begin{cases}x+y-z+1=0\\\\2x-y+z-4=0\\end{cases}$ 的距离。\n\n设一平面经过原点及 $(6,-3,2)$，且与平面 $4x-y+2z=8$ 垂直，求该平面的方程。\n\n设 $f(x)=\\ln(x^2+1)$，求 $f(x)$ 在 $x=0$ 点的带 Peano 余项的泰勒公式，并求 $f^{(n)}(0)$。\n\n定义 $\\mathbb R^2$ 上的函数 $f(x,y)=\\begin{cases}\\dfrac{xy}{\\sqrt{x^2+y^2}},&x^2+y^2\\ne0\\\\0,&x^2+y^2=0\\end{cases}$。讨论函数 $f(x,y)$ 在原点处的连续性和可微性，以及原点处方向导数的存在性。\n\n设 $f(x)$ 在 $[0,\\pi]$ 上连续，且 $\\int_0^\\pi f(x)\\,dx=0$，$\\int_0^\\pi f(x)\\cos x\\,dx=0$。证明在 $(0,\\pi)$ 内存在两点 $c_1,c_2$，使得 $f(c_1)=f(c_2)=0$。\n\n",
+          "text": "$\\lim\\limits_{(x,y)\\to(0,0)}\\dfrac{e^x+e^y}{\\cos x+\\sin y}$.\n\n$\\lim\\limits_{n\\to\\infty}n^3\\ln\\bigl(1+\\dfrac1n\\bigr)\\bigl(1-\\cos\\dfrac1n\\bigr)$.\n\n$\\lim\\limits_{x\\to0+0}(\\sin x)^{\\tan x}$.\n\n$\\displaystyle\\int_0^1\\textstyle\\ln(1+\\sqrt{x})\\,dx$.\n\n$\\displaystyle\\int_{-\\pi/2}^{\\pi/2}\\textstyle\\sqrt{\\cos x-\\cos^3x}\\,dx$.\n\n$\\displaystyle\\int\\textstyle\\dfrac{x}{x^4+2x^2+2}\\,dx$.\n\n一段曲线的极坐标方程为 $r=2(1+\\cos\\theta)$，$0\\le\\theta\\le\\pi$，求它的弧长。\n\n$z=x+(y^2-1)\\arcsin\\sqrt{\\frac yx}$，求 $\\left.\\frac{\\partial z}{\\partial x}\\right|_{(1,1)}$。\n\n$z=\\sqrt{xy+\\frac xy}$，求 $\\left.dz\\right|_{(2,1)}$。\n\n求点 $P(3,-1,2)$ 到直线 $\\begin{cases}x+y-z+1=0\\\\2x-y+z-4=0\\end{cases}$ 的距离。\n\n设一平面经过原点及 $(6,-3,2)$，且与平面 $4x-y+2z=8$ 垂直，求该平面的方程。\n\n设 $f(x)=\\ln(x^2+1)$，求 $f(x)$ 在 $x=0$ 点的带 Peano 余项的泰勒公式，并求 $f^{(n)}(0)$。\n\n定义 $\\mathbb R^2$ 上的函数 $f(x,y)=\\begin{cases}\\dfrac{xy}{\\sqrt{x^2+y^2}},&x^2+y^2\\ne0\\\\0,&x^2+y^2=0\\end{cases}$。讨论函数 $f(x,y)$ 在原点处的连续性和可微性，以及原点处方向导数的存在性。\n\n设 $f(x)$ 在 $[0,\\pi]$ 上连续，且 $\\int_0^\\pi f(x)\\,dx=0$，$\\int_0^\\pi f(x)\\cos x\\,dx=0$。证明在 $(0,\\pi)$ 内存在两点 $c_1,c_2$，使得 $f(c_1)=f(c_2)=0$。\n\n",
           "blocks": [
             {
               "id": "real-pku-calculus-2013-q1-source",
@@ -3631,13 +3631,13 @@
             {
               "id": "real-pku-calculus-2013-q2-source",
               "title": "原题 一、2",
-              "text": "$\\lim\\limits_{n\\to\\infty}n^3\\ln(1+\\frac1n)(1-\\cos\\frac1n)$.",
+              "text": "$\\lim\\limits_{n\\to\\infty}n^3\\ln\\bigl(1+\\dfrac1n\\bigr)\\bigl(1-\\cos\\dfrac1n\\bigr)$.",
               "page": 1
             },
             {
               "id": "real-pku-calculus-2013-q3-source",
               "title": "原题 一、3",
-              "text": "$\\lim\\limits_{x\\to0+}(\\sin x)^{\\tan x}$.",
+              "text": "$\\lim\\limits_{x\\to0+0}(\\sin x)^{\\tan x}$.",
               "page": 1
             },
             {
@@ -3753,7 +3753,7 @@
               "number": 2,
               "displayNumber": "2.",
               "type": "response",
-              "prompt": "$\\lim\\limits_{n\\to\\infty}n^3\\ln(1+\\frac1n)(1-\\cos\\frac1n)$.",
+              "prompt": "$\\lim\\limits_{n\\to\\infty}n^3\\ln\\bigl(1+\\dfrac1n\\bigr)\\bigl(1-\\cos\\dfrac1n\\bigr)$.",
               "score": 4,
               "scoreLabel": "",
               "solution": "$\\frac12$",
@@ -3762,7 +3762,7 @@
                 "materialId": "material-pku-calculus-2013",
                 "blockId": "real-pku-calculus-2013-q2-source",
                 "title": "北京大学信息学院期末试题 · 2013—2014学年第一学期 · 原题一、2",
-                "exact": "$\\lim\\limits_{n\\to\\infty}n^3\\ln(1+\\frac1n)(1-\\cos\\frac1n)$.",
+                "exact": "$\\lim\\limits_{n\\to\\infty}n^3\\ln\\bigl(1+\\dfrac1n\\bigr)\\bigl(1-\\cos\\dfrac1n\\bigr)$.",
                 "page": 1
               },
               "chapter": "求极限（12分）",
@@ -3783,7 +3783,7 @@
               "number": 3,
               "displayNumber": "3.",
               "type": "response",
-              "prompt": "$\\lim\\limits_{x\\to0+}(\\sin x)^{\\tan x}$.",
+              "prompt": "$\\lim\\limits_{x\\to0+0}(\\sin x)^{\\tan x}$.",
               "score": 4,
               "scoreLabel": "",
               "solution": "1",
@@ -3792,7 +3792,7 @@
                 "materialId": "material-pku-calculus-2013",
                 "blockId": "real-pku-calculus-2013-q3-source",
                 "title": "北京大学信息学院期末试题 · 2013—2014学年第一学期 · 原题一、3",
-                "exact": "$\\lim\\limits_{x\\to0+}(\\sin x)^{\\tan x}$.",
+                "exact": "$\\lim\\limits_{x\\to0+0}(\\sin x)^{\\tan x}$.",
                 "page": 1
               },
               "chapter": "求极限（12分）",
@@ -3813,9 +3813,9 @@
           "headingWeight": "normal",
           "questionColumns": 3,
           "questionColumnWeights": [
-            166,
+            143,
             179,
-            110
+            107
           ]
         },
         {
@@ -3921,9 +3921,9 @@
           "headingWeight": "normal",
           "questionColumns": 3,
           "questionColumnWeights": [
-            148,
+            125,
             146,
-            161
+            158
           ]
         },
         {

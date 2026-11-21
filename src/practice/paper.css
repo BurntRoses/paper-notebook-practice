@@ -135,20 +135,10 @@ body[data-source-layout=true] .section-heading[data-heading-weight=normal] h2,[d
 .question-heading:has(.inline-section-label){display:block!important}
 .question-heading:has(.inline-section-label)>.question-prompt{display:inline}
 .question-heading:has(.inline-section-label)>.question-number:empty,.question-heading:has(.inline-section-label)>.question-points:empty{display:none}
-body[data-source-header=pku-2013] .source-heading{margin-bottom:8mm}
-body[data-source-header=pku-2013] .source-heading>.exam-kind{font-size:12pt;font-family:"Times New Roman","Heiti SC","Noto Sans SC",sans-serif;font-weight:400}
-body[data-source-header=pku-2013] .exam-header-row{font-family:"Times New Roman","Heiti SC","Noto Sans SC",sans-serif}
 body[data-source-layout=true][data-preset=stem] .katex{font-size:1em}
 body[data-source-layout=true] .option-letter{display:inline-block;white-space:nowrap;min-width:1.1em;flex-shrink:0}
 body[data-source-layout=true] .paper-option{align-items:baseline}
 body[data-source-layout=true] .paper-option>span:last-child{min-width:0}
-body[data-source-header=pku-2013] .source-heading h1{line-height:1.35}
-body[data-source-header=pku-2013] .section-heading h2{line-height:1.25;padding-left:5.5pt}
-body[data-source-header=pku-2013] .inline-section-label{padding-left:5.5pt}
-body[data-source-header=pku-2013] .question-heading{padding-left:23.3pt}
-body[data-source-header=pku-2013] .question-row-grid>.question:not(:first-child) .question-heading{padding-left:0}
-body[data-source-header=pku-2013] .question-heading:has(.inline-section-label){padding-left:0}
-body[data-source-header=pku-2013] .question-row-grid{gap:3mm}
 .section-heading[data-heading-style=part] h2{gap:12px}
 .section-heading[data-heading-style=part] .part-title{margin-right:auto}
 .question-prompt>.attachment-float{margin:0 0 2mm 4mm;max-width:44%;clear:none}

@@ -418,7 +418,7 @@ button[aria-pressed=true]>.selection-mark {visibility:visible}
  .demo-steps>button {min-height:36px;font-size:13px;padding-inline:7px}
 }
 @media(min-width:365px) and (max-width:760px) {
- .home-papers {grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+ .home-papers {grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
  .home-papers>button {padding-inline:8px;gap:3px}
 }
 @media(pointer:coarse) {
@@ -453,6 +453,7 @@ button[aria-pressed=true]>.selection-mark {visibility:visible}
 .catalog-page [hidden],.catalog-sample [hidden] {display:none!important}
 .catalog-workspace,.catalog-list,.catalog-paper {min-height:0;min-width:0}
 .catalog-list,.catalog-paper {display:flex;flex-direction:column}
+.catalog-editions {flex:none;margin-right:auto}
 .catalog-facets {
  display:grid;gap:6px;margin:0 16px 6px;padding:7px 9px;flex:none;
  background:var(--soft);border-radius:8px;
@@ -473,7 +474,8 @@ button[aria-pressed=true]>.selection-mark {visibility:visible}
  min-height:27px;padding:3px 9px;color:var(--ink);font-size:13px;
 }
 .catalog-selection button:hover {background:var(--selected)}
-.catalog-results-heading {display:flex;justify-content:space-between;align-items:center;min-height:24px;padding:0 17px;gap:4px;flex:none;color:var(--muted);font-size:12px}
+.catalog-results-heading {display:flex;align-items:center;min-height:24px;padding:0 17px 5px;gap:6px;flex:none;color:var(--muted);font-size:12px}
+#catalog-count,#catalog-clear-filters {white-space:nowrap}
 #catalog-clear-filters {min-height:28px;padding:1px 5px;border-radius:5px;color:var(--accent);font-size:12px}
 #catalog-clear-filters:hover {background:var(--soft)}
 .catalog-results {flex:1;min-height:0;padding:2px 11px 8px}
@@ -497,7 +499,7 @@ button[aria-pressed=true]>.selection-mark {visibility:visible}
 }
 @media(max-width:650px) {
  .catalog-page.templates-page {padding:2px 7px 18px}
- .catalog-toolbar {padding:6px 7px 4px}
+ .catalog-toolbar {padding:4px 7px 3px;gap:4px}
  .catalog-facets {margin-inline:7px}
  .catalog-selection {padding-inline:7px}
  .catalog-results-heading {padding-inline:9px}

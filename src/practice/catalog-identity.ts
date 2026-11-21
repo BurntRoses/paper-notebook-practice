@@ -19,6 +19,9 @@ export const resourceNames={paper:'试卷',bank:'题库',layout:'版式'} as con
 export const sourceRoleNames={question:'题目出处',benchmark:'命题与版式依据',scoring:'评分依据'} as const;
 export const identityNames={original:'原创练习',adapted:'改编练习',authentic:'真题整理',specimen:'公开样卷整理',layout:'版式示意'} as const;
 
+export const paperEditionLabels={all:'全部',authentic:'真题',original:'原创模拟'} as const;
+export type PaperEdition=keyof typeof paperEditionLabels;
+
 export interface CatalogIdentity {
  category:CatalogCategory;
  region:CatalogRegion;

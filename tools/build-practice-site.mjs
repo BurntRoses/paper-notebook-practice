@@ -17,7 +17,7 @@ await rm(out,{recursive:true,force:true});await mkdir(out+'/assets',{recursive:t
 const hash=b=>createHash('sha256').update(b).digest('hex').slice(0,20);
 const assetNames=new Set();
 async function asset(bytes,extension){const name=hash(bytes)+extension;if(!assetNames.has(name)){assetNames.add(name);await writeFile(out+'/assets/'+name,bytes);}return '__PUBLIC_ASSET__assets/'+name;}
-const ks2=JSON.parse(await readFile(root+'src/practice/ks2-2024.json','utf8'));
+const {sourceEditions}=await tsImport('../src/practice/source-editions.ts',import.meta.url);
 const catalog=JSON.parse(await readFile(root+'src/practice/real-cases.json','utf8'));
 const {summarizeCase}=await tsImport('../src/practice/case-summary.ts',import.meta.url);
 const {catalogShelf,publicPaperSets,legacyCatalogLayouts}=await tsImport('../src/practice/catalog-shelf.ts',import.meta.url);
@@ -58,19 +58,33 @@ if(scanEvidence.paperId!==workbenchTasks.scan.exampleId||scanEvidence.page!==1||
 }
 
 const validURL=value=>{try{return ['https:','http:'].includes(new URL(value).protocol);}catch{return false;}};
-const ks2Listing=listings.get(ks2.id);
-if(!publicIds.has(ks2.id)||ks2Listing?.request.kind!=='source'||ks2Listing.region!=='england'||
-   ![ks2.publication,ks2.copyrightReport,ks2.licence].every(validURL)||
-   new Set(ks2.volumes.map(part=>part.id)).size!==4){
- throw Error('Incomplete provenance for the published KS2 set');
-}
-for(const part of ks2.volumes){
- if(!validURL(part.url)||!/^[a-f0-9]{64}$/.test(part.sha256))throw Error('Missing source for '+part.id);
- const packed=await readFile(root+'assets/ks2-2024/'+part.id+'.b64','utf8');
- const {width,height,pages}=JSON.parse(inflateSync(Buffer.from(packed,'base64')).toString('utf8'));
- if(!Number.isFinite(width)||!Number.isFinite(height)||width<=0||height<=0||pages.length!==part.pages||
-    pages.some(([image,spans])=>!Buffer.from(image,'base64').toString('utf8').startsWith('<svg ')||!spans.length)){
-  throw Error('Invalid original-page geometry or content for '+part.id);
+const pathToken=/^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+for(const edition of sourceEditions){
+ const listing=listings.get(edition.id);
+ verifyListing(listing);
+ const {volumes}=edition;
+ if(!publicIds.has(edition.id)||listing.request.kind!=='source'||!pathToken.test(edition.assetDirectory)||
+    !edition.attribution||![edition.publication,edition.copyrightReport,edition.licence].every(validURL)||
+    new Set(volumes.map(part=>part.id)).size!==volumes.length||volumes[0]?.role!=='exam'||!volumes.some(part=>part.role==='answers')){
+  throw Error('Incomplete publisher set: '+edition.id);
+ }
+ for(const part of volumes){
+  if(!pathToken.test(part.id)||!part.label||!part.title||!validURL(part.url)||!/^[a-f0-9]{64}$/.test(part.sha256)||
+     !Number.isInteger(part.pages)||part.pages<1||part.openingPage!==undefined&&(!Number.isInteger(part.openingPage)||part.openingPage<1||part.openingPage>part.pages)){
+   throw Error('Missing source for '+edition.id+'/'+part.id);
+  }
+  const packed=await readFile(root+'assets/'+edition.assetDirectory+'/'+part.id+'.b64','utf8');
+  const {width,height,pages}=JSON.parse(inflateSync(Buffer.from(packed,'base64')).toString('utf8'));
+  const rasterPages=new Set(part.rasterPages);
+  if([...rasterPages].some(page=>!Number.isInteger(page)||page<1||page>part.pages)||
+     !Number.isFinite(width)||!Number.isFinite(height)||width<=0||height<=0||pages.length!==part.pages||
+     pages.some(([image,spans],index)=>{
+      const data=Buffer.from(image,'base64');
+      const validImage=rasterPages.has(index+1)?data.toString('ascii',8,12)==='WEBP':data.toString('utf8',0,5)==='<svg ';
+      return !validImage||!Array.isArray(spans);
+     })){
+   throw Error('Invalid original-page geometry or content for '+edition.id+'/'+part.id);
+  }
  }
 }
 const validRegions=new Set(Object.values(regionNames));
@@ -191,7 +205,7 @@ const virtual={name:'public-practice-assets',setup(api){
   `export const caseIndex=${JSON.stringify(caseIndex)};`:
   `const ids=new Set(${JSON.stringify(Object.keys(examples))});export const hasEmbeddedTemplate=id=>ids.has(id);export const embeddedCase=()=>undefined;export const embeddedTemplate=()=>undefined;`,loader:'js'}));
 }};
-const result=await build({entryPoints:[root+'src/practice/workspace.ts'],outdir:out+'/assets',entryNames:'practice-[hash]',chunkNames:'part-[hash]',bundle:true,format:'esm',splitting:true,target:'es2022',minify:true,legalComments:'linked',metafile:true,plugins:[virtual]});
+const result=await build({entryPoints:[root+'src/practice/workspace.ts'],outdir:out+'/assets',entryNames:'practice-[hash]',chunkNames:'part-[hash]',bundle:true,format:'esm',splitting:true,target:'es2022',minify:true,legalComments:'linked',metafile:true,loader:{'.b64':'text'},plugins:[virtual]});
 const entry=Object.entries(result.metafile.outputs).find(([,info])=>info.entryPoint?.endsWith('workspace.ts'))[0];
 const entryPath=entry.slice(entry.lastIndexOf('/assets/')+1);
 function staticImports(entry){

@@ -26,7 +26,7 @@ const topicArchive=zipSync(Object.fromEntries(Object.entries(entries).filter(([n
 const {loadPracticeStyles,buildPracticeHtml}=await tsImport('../src/practice/build.ts',import.meta.url);
 const paperCSS=await loadPracticeStyles();
 const {catalogPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
-const result=await build({entryPoints:[root+'src/practice/workspace.ts'],bundle:true,write:false,format:'iife',target:'es2022',minify:true,legalComments:'inline',plugins:[{
+const result=await build({entryPoints:[root+'src/practice/workspace.ts'],bundle:true,write:false,format:'iife',target:'es2022',minify:true,legalComments:'inline',loader:{'.b64':'text'},plugins:[{
  name:'practice-offline',setup(api){
   api.onResolve({filter:/^practice-paper-styles$/},()=>({path:'styles',namespace:'practice'}));
   api.onResolve({filter:/^practice-offline-topics$/},()=>({path:'topics',namespace:'practice'}));

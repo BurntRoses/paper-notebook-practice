@@ -1,4 +1,4 @@
-import ks2 from './ks2-2024.json';
+import {sourceEdition} from './source-editions';
 import {catalogGuides,type CatalogGuide} from './catalog-guides';
 import {identityNames,languageNames,regionNames,scopeNames,sourceRoles,sourceRoleNames,type CatalogEntry,type PaperRequest,type SourcePaperRequest,type TopicRequest} from './catalog-identity';
 import {catalogSources} from './catalog-sources';
@@ -285,7 +285,7 @@ function samplePrompt(mode:keyof typeof ENTRY_PROMPTS){
  const reference=homePaperAsset(homePaper),command=mode==='agent'?homePaperCommand(homePaper):undefined;
  return [
   ENTRY_PROMPTS[mode].instructions,
-  '参考原卷与来源：'+reference+'。'+(command?' 可运行 '+command+' 取得参考作者数据。':''),
+  '参考样卷：'+reference+'。'+(command?' 可运行 '+command+' 取得参考作者数据。':''),
   '请结合我附上的资料与要求，自己确定命题和核验步骤，参考样卷的考试规格、题组与版式，制作同类完整试卷。只有我明确要求小练习或选编时才缩减题量。请直接给我题目卷和答案卷。如原卷另配答题卡或我明确需要，请同时提供相应答题卡。',
   EDITABLE_DELIVERY,
  ].join('\n\n');
@@ -374,7 +374,7 @@ interface SampleOptions {
  showTitle?:boolean;
 }
 function mountSample(host:HTMLElement,{title,request,entry,inDialog,showTitle=true}:SampleOptions){
- const edition=request.kind==='source'&&request.id===ks2.id?ks2:undefined;
+ const edition=request.kind==='source'?sourceEdition(request.id):undefined;
  const kinds=edition?edition.volumes.map(part=>[part.id,part.label] as const):entry?.identity==='authentic'?originalKinds:paperKinds;
  let kind:string=kinds[0][0],paper:PracticeDocument|undefined,sourceHTML:string|undefined;
  let active=true,disposePaper=()=>{},loadRevision=0;
@@ -386,7 +386,7 @@ function mountSample(host:HTMLElement,{title,request,entry,inDialog,showTitle=tr
   '<div class="segmented" role="group" aria-label="查看卷面">'+kinds.map(([value,label])=>'<button type="button" data-sample-kind="'+value+'" aria-pressed="'+(value===kind)+'" disabled>'+label+'</button>').join('')+'</div>'+
   '<div class="catalog-preview-actions"><details class="catalog-listening" hidden><summary>听力</summary><div class="catalog-recordings"></div></details>'+
   '<details class="catalog-source"><summary>来源</summary><div id="sample-source"></div></details>'+
-  (catalog?'<button type="button" id="paper-fit" aria-pressed="false" hidden>整页</button><button type="button" id="focus-paper" aria-pressed="false">沉浸阅读</button>':'')+
+  (catalog?'<button type="button" id="paper-fit" aria-pressed="false">整页</button><button type="button" id="focus-paper" aria-pressed="false">沉浸阅读</button>':'')+
   '<button type="button" id="open-template-sample" class="sample-action" disabled>'+(edition?'下载当前卷':'打开试卷')+'</button>'+
   '</div></div><div class="catalog-frame-stage"><iframe id="template-preview" title="'+escape(title)+'" sandbox="allow-scripts allow-same-origin"></iframe>'+
   '<div class="catalog-preview-status"><p role="status"></p><button type="button" class="button secondary" id="template-retry" hidden>重试</button></div></div>'+
@@ -405,10 +405,6 @@ function mountSample(host:HTMLElement,{title,request,entry,inDialog,showTitle=tr
   catalog?.classList.toggle('catalog-focused',enabled);
   focusButton?.setAttribute('aria-pressed',String(enabled));
   if(focusButton)focusButton.textContent=enabled?'退出沉浸':'沉浸阅读';
-  if(fitButton){
-   fitButton.hidden=!enabled;
-   if(!enabled&&!fitWidth){fitWidth=true;applyFit(true);fitButton.textContent='整页';fitButton.setAttribute('aria-pressed','false');}
-  }
  }
  const dismissFocus=(event:KeyboardEvent)=>{if(event.key==='Escape'&&catalog?.classList.contains('catalog-focused'))focusPaper(false);};
  if(focusButton){
@@ -437,7 +433,8 @@ function mountSample(host:HTMLElement,{title,request,entry,inDialog,showTitle=tr
     paperPages.set(key,state.page);showMessage('');
    }else if(state.status==='error'||state.status==='empty')showMessage('卷面未能排版。',true);
   };
-  const options={fitWidth,initialPage:paperPages.get(key),onChange};
+  const openingPage=edition?.volumes.find(part=>part.id===kind)?.openingPage??1;
+  const options={fitWidth,initialPage:paperPages.get(key)??openingPage-1,onChange};
   if(sourceHTML){
    const pager=createIframePaperPager(frame,controls,{...options,compact:true});
    disposePaper=pager.dispose;applyFit=pager.setFitWidth;frame.srcdoc=restrictPreview(sourceHTML);
@@ -470,10 +467,11 @@ function mountSample(host:HTMLElement,{title,request,entry,inDialog,showTitle=tr
   if(!source.open||sourceDrawn)return;
   if(edition){
    sourceDrawn=true;
-   sources.innerHTML=`<p class="catalog-source-identity">英格兰 · Year 6 · 2024 · 英语</p>
-    <p><a href="${edition.publication}" target="_blank" rel="noopener noreferrer">英格兰标准与测试局发布页 ${icon('external')}</a></p>
-    <ul>${edition.volumes.map(part=>`<li><a href="${part.url}" target="_blank" rel="noopener noreferrer">${part.label} · 原件 ${icon('external')}</a></li>`).join('')}</ul>
-    <p>${escape(edition.attribution)}</p><p><a href="${edition.copyrightReport}" target="_blank" rel="noopener noreferrer">再利用许可</a> · 已按许可移除标识</p>`;
+   const {region,grade,year,language}=edition.identity;
+   sources.innerHTML=`<p class="catalog-source-identity">${escape([regionNames[region],grade,year,languageNames[language]].filter(Boolean).join(' · '))}</p>
+    <p><a href="${escape(edition.publication)}" target="_blank" rel="noopener noreferrer">${escape(edition.publisher)} ${icon('external')}</a></p>
+    <ul>${edition.volumes.map(part=>`<li><a href="${escape(part.url)}" target="_blank" rel="noopener noreferrer">${escape(part.label)} · 原件 ${icon('external')}</a></li>`).join('')}</ul>
+    <p>${escape(edition.attribution)}</p><p><a href="${escape(edition.copyrightReport)}" target="_blank" rel="noopener noreferrer">再利用许可</a>${edition.notice?' · '+escape(edition.notice):''}</p>`;
    return;
   }
   if(!paper){sources.textContent='卷面载入后显示出处。';return;}
@@ -498,7 +496,7 @@ function mountSample(host:HTMLElement,{title,request,entry,inDialog,showTitle=tr
   try{
    if(request.kind==='source'){
     const {sourcePaperHTML}=await import('./source-paper');
-    const html=await sourcePaperHTML(kind);
+    const html=await sourcePaperHTML(request.id,kind);
     if(!active||revision!==loadRevision)return;
     sourceHTML=html;
    }else{

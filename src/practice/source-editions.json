@@ -1,0 +1,411 @@
+[
+  {
+    "id": "england-2024-ks2-grammar",
+    "title": "英格兰六年级 · 2024 KS2 英语语法与拼写",
+    "assetDirectory": "england-2024-ks2-grammar",
+    "publisher": "Standards and Testing Agency",
+    "publication": "https://www.gov.uk/government/publications/key-stage-2-tests-2024-english-grammar-punctuation-and-spelling-test-materials",
+    "copyrightReport": "https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials/2024-copyright-ownership-key-stage-2-national-curriculum-tests",
+    "licence": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains material developed by the Standards and Testing Agency for 2024 national curriculum assessments and licensed under Open Government Licence v3.0.",
+    "notice": "按发布许可移除机构标识。",
+    "identity": {
+      "category": "小学",
+      "region": "england",
+      "language": "en",
+      "paperLanguage": "en",
+      "subject": "英语",
+      "grade": "英格兰 Year 6",
+      "year": 2024,
+      "system": "KS2",
+      "aliases": [
+        "小学六年级",
+        "小学英语",
+        "六年级英语",
+        "Year 6",
+        "Key Stage 2",
+        "GPS",
+        "SPaG",
+        "听写"
+      ]
+    },
+    "volumes": [
+      {
+        "id": "grammar",
+        "role": "exam",
+        "code": "8814",
+        "label": "语法卷",
+        "title": "Paper 1: questions",
+        "pages": 32,
+        "url": "https://assets.publishing.service.gov.uk/media/664dbfb8bd01f5ed32794010/STA248814e_2024_ks2_English_GPS_Paper1_questions.pdf",
+        "sha256": "ddf008a0c76a73ce9e250d09c0c43ac884f9a03fc8ec7ad6bf6951c46c24d42c",
+        "logoMasks": {
+          "32": [
+            [
+              432,
+              48,
+              546,
+              159
+            ],
+            [
+              493,
+              579,
+              556,
+              609
+            ]
+          ]
+        }
+      },
+      {
+        "id": "spelling",
+        "role": "exam",
+        "code": "8815",
+        "label": "拼写卷",
+        "title": "Paper 2: spelling",
+        "pages": 4,
+        "url": "https://assets.publishing.service.gov.uk/media/664dbfd84f29e1d07fadcc58/STA248815e_2024_ks2_English_GPS_Paper2_spelling.pdf",
+        "sha256": "4f858cbb22875fd21b92efb23cb8acc97ca11e1d533203f2859c3ffc9ba68375",
+        "logoMasks": {
+          "4": [
+            [
+              432,
+              48,
+              546,
+              159
+            ],
+            [
+              493,
+              579,
+              556,
+              609
+            ]
+          ]
+        }
+      },
+      {
+        "id": "scoring",
+        "role": "answers",
+        "code": "8816",
+        "label": "官方评分",
+        "title": "Official mark schemes",
+        "pages": 20,
+        "url": "https://assets.publishing.service.gov.uk/media/664dc027993111924d9d397b/STA248816e_2024_ks2_English_GPS_Mark_schemes.pdf",
+        "sha256": "d0b2c82e1ca2b888bd278d0634d00071544c17352a93dfb2637a90d2160e0a11",
+        "logoMasks": {
+          "1": [
+            [
+              450,
+              620,
+              557,
+              724
+            ]
+          ],
+          "20": [
+            [
+              432,
+              48,
+              546,
+              159
+            ],
+            [
+              493,
+              561,
+              556,
+              592
+            ]
+          ]
+        }
+      },
+      {
+        "id": "spelling-script",
+        "role": "administration",
+        "code": "8829",
+        "label": "听写口令",
+        "title": "Administering Paper 2: spelling",
+        "pages": 8,
+        "url": "https://assets.publishing.service.gov.uk/media/664dc010b7249a4c6e9d3924/STA248829e_2024_ks2_English_GPS_Administering_Paper2_spelling.pdf",
+        "sha256": "9882190d7f098b462430e3293823567fe2be0951d4144803443e096a5b552b81",
+        "logoMasks": {
+          "8": [
+            [
+              432,
+              48,
+              546,
+              159
+            ],
+            [
+              493,
+              561,
+              556,
+              592
+            ]
+          ]
+        }
+      },
+      {
+        "id": "grammar-instructions",
+        "role": "administration",
+        "code": "8828",
+        "label": "监考须知",
+        "title": "Administering Paper 1: questions",
+        "pages": 8,
+        "url": "https://assets.publishing.service.gov.uk/media/664dbff6b7249a4c6e9d3923/STA248828e_2024_ks2_English_GPS_Administering_Paper1_questions.pdf",
+        "sha256": "dd02566cfb142f3b61d40cd4ca85070ab68e28d86af69101c219dec67b01eb13",
+        "logoMasks": {
+          "8": [
+            [
+              432,
+              48,
+              546,
+              159
+            ],
+            [
+              493,
+              561,
+              556,
+              592
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "mit-6006-final-2020",
+    "title": "MIT · 2020 算法导论期末试题",
+    "assetDirectory": "mit-6006-final-2020",
+    "publisher": "MIT OpenCourseWare",
+    "publication": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/exams/",
+    "copyrightReport": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+    "licence": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Erik Demaine, Jason Ku and Justin Solomon · 6.006 Introduction to Algorithms (Spring 2020) · MIT OpenCourseWare. Original exam and solutions converted to web pages under CC BY-NC-SA 4.0.",
+    "identity": {
+      "category": "大学课程",
+      "region": "us",
+      "language": "en",
+      "paperLanguage": "en",
+      "subject": "算法与数据结构",
+      "grade": "6.006",
+      "year": 2020,
+      "aliases": [
+        "MIT",
+        "计算机",
+        "数据结构",
+        "Introduction to Algorithms"
+      ]
+    },
+    "volumes": [
+      {
+        "id": "exam",
+        "role": "exam",
+        "code": "algo",
+        "label": "题目卷",
+        "title": "Final exam",
+        "pages": 21,
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/e03194e510866d81da1071da884876e3_MIT6_006S20_final.pdf",
+        "sha256": "91d236a292cb136f029963f0392530d192bc47ffa46de7b419d19bf270ca64d6",
+        "logoMasks": {}
+      },
+      {
+        "id": "solutions",
+        "role": "answers",
+        "code": "algo-key",
+        "label": "官方解答",
+        "title": "Final exam solutions",
+        "pages": 21,
+        "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/e882f34a3f46aa9862953616f6de1c57_MIT6_006S20_final_sol.pdf",
+        "sha256": "246d3ca77282a58e08e4b17110f577d524c4f617f088bce08320436c51b96e95",
+        "logoMasks": {}
+      }
+    ]
+  },
+  {
+    "id": "mit-microeconomics-final-2010",
+    "title": "MIT · 2010 微观经济学期末试题",
+    "assetDirectory": "mit-microeconomics-final-2010",
+    "publisher": "MIT OpenCourseWare",
+    "publication": "https://ocw.mit.edu/courses/14-01sc-principles-of-microeconomics-fall-2011/resources/exams/",
+    "copyrightReport": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+    "licence": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "MIT Department of Economics · 14.01 Final Exam (Fall 2010), published in Jonathan Gruber’s 14.01SC course (Fall 2011) · MIT OpenCourseWare. Original exam and solutions converted to web pages under CC BY-NC-SA 4.0.",
+    "identity": {
+      "category": "大学课程",
+      "region": "us",
+      "language": "en",
+      "paperLanguage": "en",
+      "subject": "微观经济学",
+      "grade": "14.01",
+      "year": 2010,
+      "aliases": [
+        "MIT",
+        "经济学",
+        "Principles of Microeconomics"
+      ]
+    },
+    "volumes": [
+      {
+        "id": "exam",
+        "role": "exam",
+        "code": "econ",
+        "label": "题目卷",
+        "title": "Final exam",
+        "pages": 23,
+        "url": "https://ocw.mit.edu/courses/14-01sc-principles-of-microeconomics-fall-2011/44154f5290ccede02ea16124f8905bea_MIT14_01SCF11_final.pdf",
+        "sha256": "6c212c8066b32b1b51ea2d8795364b38b07e1e2dc27775bd06bbffd53327615b",
+        "logoMasks": {},
+        "rasterPages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      {
+        "id": "solutions",
+        "role": "answers",
+        "code": "econ-key",
+        "label": "官方解答",
+        "title": "Final exam solutions",
+        "pages": 12,
+        "url": "https://ocw.mit.edu/courses/14-01sc-principles-of-microeconomics-fall-2011/6c60e9cb452492f849f1d95210e28bf3_MIT14_01SCF11_final_soln.pdf",
+        "sha256": "e68df9d2801fc50a2b2af994dce2137f850637b364801ab6985b4b4fe0e7d770",
+        "logoMasks": {},
+        "rasterPages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mit-chemical-science-final-2014",
+    "title": "MIT · 2014 化学原理期末试题",
+    "assetDirectory": "mit-chemical-science-final-2014",
+    "publisher": "MIT OpenCourseWare",
+    "publication": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/pages/exams/",
+    "copyrightReport": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+    "licence": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Catherine Drennan · 5.111 Principles of Chemical Science (Fall 2014) · MIT OpenCourseWare. Original exam and solutions converted to web pages under CC BY-NC-SA 4.0.",
+    "identity": {
+      "category": "大学课程",
+      "region": "us",
+      "language": "en",
+      "paperLanguage": "en",
+      "subject": "化学",
+      "grade": "5.111",
+      "year": 2014,
+      "aliases": [
+        "MIT",
+        "普通化学",
+        "Principles of Chemical Science"
+      ]
+    },
+    "volumes": [
+      {
+        "id": "exam",
+        "role": "exam",
+        "code": "chem",
+        "label": "题目卷",
+        "title": "Final exam",
+        "pages": 17,
+        "url": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/41aeba6556669a385d30f5d1ee44d39b_MIT5_111F14_FinalExam.pdf",
+        "sha256": "2b9a4ff493acd7993888f9aed8e3dcee07e5405e12cb774925b9191c9b51fa7a",
+        "logoMasks": {}
+      },
+      {
+        "id": "solutions",
+        "role": "answers",
+        "code": "chem-key",
+        "label": "官方解答",
+        "title": "Final exam solutions",
+        "pages": 17,
+        "url": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/6ab19c33fab442ae034b455dcb970144_MIT5_111F14_FinalExamSol.pdf",
+        "sha256": "a194340fca3313b05eab7139f76ef072f5ecf13de453c43b35daaa363185479e",
+        "logoMasks": {},
+        "rasterPages": [
+          10
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mit-classical-mechanics-final-2008",
+    "title": "MIT · 2008 经典力学期末试题",
+    "assetDirectory": "mit-classical-mechanics-final-2008",
+    "publisher": "MIT OpenCourseWare",
+    "publication": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/resources/exams/",
+    "copyrightReport": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+    "licence": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "attribution": "Adam Burgasser · 8.012 Physics I: Classical Mechanics (Fall 2008) · MIT OpenCourseWare. Original exam and solutions converted to web pages under CC BY-NC-SA 4.0.",
+    "identity": {
+      "category": "大学课程",
+      "region": "us",
+      "language": "en",
+      "paperLanguage": "en",
+      "subject": "物理",
+      "grade": "8.012",
+      "year": 2008,
+      "aliases": [
+        "MIT",
+        "物理学",
+        "理论力学",
+        "Classical Mechanics"
+      ]
+    },
+    "volumes": [
+      {
+        "id": "exam",
+        "role": "exam",
+        "code": "mech",
+        "label": "题目卷",
+        "title": "Final exam",
+        "pages": 13,
+        "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/15cdb14e63ed07c47115ce18c73917bf_final.pdf",
+        "sha256": "a04160631ea64499bd17488ecfca8a98e3424bc6d60a5f012d141d6937cd071e",
+        "logoMasks": {},
+        "openingPage": 2,
+        "rasterPages": [
+          6,
+          7
+        ]
+      },
+      {
+        "id": "solutions",
+        "role": "answers",
+        "code": "mech-key",
+        "label": "官方解答",
+        "title": "Final exam solutions",
+        "pages": 26,
+        "url": "https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/d81322125af1816e7adc21bf498701bc_final_sol.pdf",
+        "sha256": "94069c35e15bae2aa835aca38a08c5ad08e3946f9e870f20d3c923f298b20756",
+        "logoMasks": {},
+        "openingPage": 2,
+        "rasterPages": [
+          6,
+          9
+        ]
+      }
+    ]
+  }
+]

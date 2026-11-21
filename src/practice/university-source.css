@@ -28,3 +28,21 @@ body[data-source-header=ustc-2023] .exam-appendix{margin-top:4mm;margin-bottom:1
 body[data-source-header=ustc-2023] .exam-appendix h3{font-size:12pt;font-weight:400;margin:0 0 4mm}
 body[data-source-header=ustc-2023] .paper-end{margin-top:5mm;font-size:12pt}
 body[data-source-header=ustc-2023] .exam-page footer{font-size:10pt;bottom:9mm}
+
+
+/* The 2013 Peking University exam uses one Letter page and two rows of formulas. */
+body[data-source-header=pku-2013] .source-heading{margin-bottom:8.5mm;padding-bottom:0}
+body[data-source-header=pku-2013] .source-heading h1{line-height:1.22;font-weight:400}
+body[data-source-header=pku-2013] .source-heading>.exam-kind{font:400 12pt/1.55 "Times New Roman","Heiti SC","Noto Sans SC",sans-serif}
+body[data-source-header=pku-2013] .exam-header-row{font:400 12pt/1.8 "Times New Roman","Heiti SC","Noto Sans SC",sans-serif}
+body[data-source-header=pku-2013] .exam-header-row[style*="--header-cells:2"]{grid-template-columns:39.5% 1fr;column-gap:0}
+body[data-source-header=pku-2013][data-kind=exam] #paper-root{--pku-group-inset:5.5pt;--pku-question-inset:23.3pt}
+body[data-source-header=pku-2013][data-kind=exam] .section-heading{margin:0 0 1.4mm}
+body[data-source-header=pku-2013][data-kind=exam] .section-heading h2{line-height:1.25;margin:0;padding-left:var(--pku-group-inset)}
+body[data-source-header=pku-2013][data-kind=exam] .question-heading{grid-template-columns:auto minmax(0,1fr);column-gap:.35em;padding-left:var(--pku-question-inset)}
+body[data-source-header=pku-2013][data-kind=exam] .question-points:empty{display:none}
+body[data-source-header=pku-2013][data-kind=exam] .question-row-grid{align-items:baseline;margin:0 0 3mm;padding-left:var(--pku-question-inset);column-gap:3mm}
+body[data-source-header=pku-2013][data-kind=exam] .question-row-grid .question-heading{grid-template-columns:auto minmax(0,1fr)!important;column-gap:.35em!important;padding-left:0}
+body[data-source-header=pku-2013][data-kind=exam] .question-heading:has(.inline-section-label){padding-left:var(--pku-question-inset);text-indent:calc(var(--pku-group-inset) - var(--pku-question-inset))}
+body[data-source-header=pku-2013][data-kind=exam] :is(.inline-section-label,.question-row-grid .question-prompt){white-space:nowrap;overflow-wrap:normal}
+body[data-source-header=pku-2013][data-kind=exam] .question:has(.inline-section-label){margin-top:1.5mm}

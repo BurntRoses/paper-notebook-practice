@@ -65,13 +65,15 @@ export function topicIdentity(paper:PracticeDocument,family:string):CatalogIdent
  if(!category)throw Error('Unclassified topic: '+paper.practiceId);
  const english=['postgraduate-english1-01','postgraduate-english2-01','cn-p6-english-full'].includes(paper.practiceId);
  const language=english?'mixed':paper.presentation?.language??'zh';
+ const basis=paper.exam?.specification?.source;
+ const caseExercise=family==='engineering-qualification'&&basis&&typeof basis==='object'&&'kind' in basis&&basis.kind==='user-blueprint';
  const aliases=paper.practiceId==='civil-aptitude-01'?['考公','行测','国考','公务员'] :
   family==='civil-service'?['考公','公务员','申论'] : family==='postgraduate'?['考研','研究生'] :
   family==='primary-school'?['小六','六年级','小学六年级','P6']:undefined;
  return {
   category,region:'mainland',language,paperLanguage:paperLanguageFor(language),subject:english?'英语':paper.subject,
   grade:paper.authoring?.grade??paper.level,issuer:'纸间 Practice',year:paper.authoring?.year,
-  system:paper.authoring?.region,scope:paper.mode==='bank'?'bank':paper.exam?.scope??'subset',
+  system:paper.authoring?.region,scope:paper.mode==='bank'?'bank':caseExercise?'subset':paper.exam?.scope??'subset',
   identity:paper.generation?.intent==='adapt'?'adapted':paper.generation?.intent==='original'?'authentic':'original',aliases,
  };
 }

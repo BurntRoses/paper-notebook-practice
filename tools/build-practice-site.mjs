@@ -18,7 +18,7 @@ const assetNames=new Set();
 async function asset(bytes,extension){const name=hash(bytes)+extension;if(!assetNames.has(name)){assetNames.add(name);await writeFile(out+'/assets/'+name,bytes);}return '__PUBLIC_ASSET__assets/'+name;}
 const catalog=JSON.parse(await readFile(root+'src/practice/real-cases.json','utf8'));
 const {summarizeCase}=await tsImport('../src/practice/case-summary.ts',import.meta.url);
-const {catalogShelf}=await tsImport('../src/practice/catalog-shelf.ts',import.meta.url);
+const {catalogShelf,publicPaperSets,legacyCatalogLayouts}=await tsImport('../src/practice/catalog-shelf.ts',import.meta.url);
 const {siteAudioExtensions}=await tsImport('../src/practice/model.ts',import.meta.url);
 const {validatePractice}=await tsImport('../src/practice/validate.ts',import.meta.url);
 const {catalogSources}=await tsImport('../src/practice/catalog-sources.ts',import.meta.url);
@@ -26,6 +26,11 @@ const {regionNames,languageNames,sourceRoles}=await tsImport('../src/practice/ca
 const {PAPER_TEMPLATES}=await tsImport('../src/practice/templates.ts',import.meta.url);
 const {REFERENCE_PAPERS}=await tsImport('../src/practice/reference-papers.ts',import.meta.url);
 const listings=new Map(catalogShelf.map(entry=>[entry.id,entry]));
+const publicIds=new Set(publicPaperSets.map(entry=>entry.id));
+const {inferExamSpecification}=await tsImport('../src/practice/exam-specification.ts',import.meta.url);
+const {verifyPracticeHtml}=await tsImport('../src/practice/build.ts',import.meta.url);
+const {escapePaper,renderPractice}=await tsImport('../src/practice/paper.ts',import.meta.url);
+const {catalogPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
 const {catalogGuides}=await tsImport('../src/practice/catalog-guides.ts',import.meta.url);
 const {homePapers}=await tsImport('../src/practice/home-papers.ts',import.meta.url);
 const {workbenchTasks}=await tsImport('../src/practice/workbench-tasks.ts',import.meta.url);
@@ -37,7 +42,7 @@ for(const [category,guide] of Object.entries(catalogGuides)){
 if(new Set(homePapers.map(paper=>paper.id)).size!==homePapers.length)throw Error('Duplicate featured paper');
 for(const paper of homePapers){
  const listing=listings.get(paper.id);
- if(listing?.scope!=='full'||listing.request.kind!==paper.kind||
+ if(!publicIds.has(paper.id)||listing?.scope!=='full'||listing.request.kind!==paper.kind||
     (listing.request.kind==='topic'&&listing.request.file!==paper.file))throw Error('Featured paper must link to a complete author document: '+paper.id);
 }
 for(const task of Object.values(workbenchTasks)){
@@ -79,6 +84,27 @@ function validatePaper(id,paper,kind){
   throw Error('Catalog and author document disagree: '+id);
  }
  const documented=catalogSources(paper);
+ if(publicIds.has(id)){
+  const spec=inferExamSpecification(paper);
+  const publishedQualification=listing.category==='职业资格';
+  if(!spec||paper.exam?.scope!=='full'||paper.generation?.unresolved?.length||
+     publishedQualification&&spec.source?.kind==='user-blueprint')throw Error('Incomplete published paper set: '+id);
+  const display=catalogPaper(paper);
+  for(const volume of ['exam','answers','answer-card']){
+   const html=renderPractice(display,{kind:volume,runtime:''});
+   const check=verifyPracticeHtml(html,display);
+   if(!check.valid)throw Error(id+' '+volume+': '+check.errors.map(({path,message})=>path+' '+message).join('; '));
+   if(volume==='answer-card'){
+    const markup=html.match(/<template id="paper-template">([\s\S]*?)<\/template>/)?.[1]??'';
+    const slots=[...markup.matchAll(/<[a-z][^<>]*\sdata-question="([^"]+)"[^<>]*>/g)]
+     .filter(([tag])=>!(/\shidden(?:\s|=|>)/.test(tag))).map(([,question])=>question);
+    const expected=display.sections.flatMap(section=>section.questions.map(question=>escapePaper(question.id)));
+    if(slots.length!==expected.length||slots.some((slot,index)=>slot!==expected[index])){
+     throw Error(id+': answer card must have a visible response slot for every question in paper order');
+    }
+   }
+  }
+ }
  if(id===scanEvidence.paperId&&scanEvidence.lines.some(line=>!paper.sections[0].questions.some(question=>question.number===line.question))){
   throw Error('OCR demonstration refers to a missing question: '+id);
  }
@@ -139,7 +165,11 @@ const virtual={name:'public-practice-assets',setup(api){
  api.onResolve({filter:/\?raw$/},args=>({path:args.path.slice(0,-4),namespace:'public-raw',pluginData:{resolveDir:args.resolveDir}}));
  api.onLoad({filter:/.*/,namespace:'public-raw'},async args=>{const file=args.path.startsWith('.')?resolve(args.pluginData.resolveDir,args.path):fileURLToPath(import.meta.resolve(args.path));return{contents:await readFile(file,'utf8'),loader:'text'};});
  api.onResolve({filter:/^\.\/catalog-shelf$/},args=>({path:args.path,namespace:'public-shelf'}));
- api.onLoad({filter:/.*/,namespace:'public-shelf'},()=>({contents:`export const catalogShelf=${JSON.stringify(catalogShelf)};`,loader:'js'}));
+ api.onLoad({filter:/.*/,namespace:'public-shelf'},()=>{
+  const demoIds=new Set(Object.values(workbenchTasks).flatMap(task=>task.supplementaryId?[task.supplementaryId]:[]));
+  const demoEntries=catalogShelf.filter(entry=>demoIds.has(entry.id)&&!publicIds.has(entry.id));
+  return {contents:`export const publicPaperSets=${JSON.stringify(publicPaperSets)};export const catalogShelf=[...publicPaperSets,...${JSON.stringify(demoEntries)}];export const legacyCatalogLayouts=new Map(${JSON.stringify([...legacyCatalogLayouts])});`,loader:'js'};
+ });
  api.onResolve({filter:/^\.\/(?:case-index|embedded-examples)$/},args=>({path:args.path,namespace:'public-case-index'}));
  api.onLoad({filter:/.*/,namespace:'public-case-index'},args=>({contents:args.path.endsWith('case-index')?
   `export const caseIndex=${JSON.stringify(caseIndex)};`:

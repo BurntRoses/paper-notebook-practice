@@ -618,7 +618,7 @@
         "subject": "化工工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-chemical-engineer",
@@ -693,7 +693,7 @@
         "subject": "建筑工程管理与实务",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "constructor-2",
@@ -718,7 +718,7 @@
         "subject": "建设工程造价案例分析",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "cost-engineer-1",
@@ -743,7 +743,7 @@
         "subject": "建设工程计量与计价实务",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "cost-engineer-2",
@@ -777,7 +777,7 @@
       "mode": "mock",
       "durationMinutes": 120,
       "totalScore": 100,
-      "sha256": "4ba4262b9f60c93253a97eed41791d285c8d02051bfa9431748555c6415fad6d"
+      "sha256": "476439205c696b267e4c303f207facafe41c04c34501f0acdaba20514dd0c818"
     },
     {
       "id": "registered-electrical-engineer-cases-01",
@@ -793,7 +793,7 @@
         "subject": "电气工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-electrical-engineer",
@@ -818,7 +818,7 @@
         "subject": "环保工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-environmental-engineer",
@@ -843,7 +843,7 @@
         "subject": "岩土工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-geotechnical-engineer",
@@ -868,7 +868,7 @@
         "subject": "水利水电工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-hydraulic-engineer",
@@ -893,7 +893,7 @@
         "subject": "道路工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-road-engineer",
@@ -918,7 +918,7 @@
         "subject": "安全生产专业实务",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-safety-engineer",
@@ -943,7 +943,7 @@
         "subject": "结构工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-structural-engineer",
@@ -968,7 +968,7 @@
         "subject": "建设工程监理案例分析",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "supervision-engineer",
@@ -993,7 +993,7 @@
         "subject": "公用设备工程专业案例",
         "grade": "工程职业资格",
         "issuer": "纸间 Practice",
-        "scope": "full",
+        "scope": "subset",
         "identity": "original"
       },
       "routeId": "registered-public-equipment-engineer",
@@ -1354,7 +1354,7 @@
       "mode": "mock",
       "durationMinutes": 100,
       "totalScore": 100,
-      "sha256": "12d2327e73eed099c828a04de25e11d8ccf4554633c2b2495510854b81d21660"
+      "sha256": "12501d3281ebb90b6a89c7d5bea3ae8242433950ef852cea0ec63015ebf4f3d3"
     },
     {
       "id": "cn-p6-english-full",

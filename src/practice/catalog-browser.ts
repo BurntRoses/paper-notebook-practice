@@ -1,13 +1,12 @@
 import {catalogGuides} from './catalog-guides';
+import type {CatalogPaperSet} from './catalog-shelf';
 import {CATALOG_CATEGORIES,CATEGORY_ALIASES,type CatalogCategory} from './catalog-categories';
-import {languageNames,regionNames,regionOrder,resourceNames,type CatalogEntry,type CatalogLanguage,type CatalogRegion} from './catalog-identity';
+import {languageNames,regionNames,regionOrder,type CatalogEntry,type CatalogLanguage,type CatalogRegion} from './catalog-identity';
 
 const LEGACY_PAGE_SIZE=18;
 const normalize=(value:string)=>value.normalize('NFKC').toLowerCase();
 const e=(value:unknown)=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 const collator=new Intl.Collator('zh-CN',{numeric:true});
-const tabNames={all:'全部',paper:resourceNames.paper,exercise:'练习',bank:resourceNames.bank,layout:resourceNames.layout} as const;
-type CatalogTab=keyof typeof tabNames;
 const directions=[
  ['学校课程','小学','初中与中考','高中与高考','大学课程'],
  ['升学与招录','研究生考试','公务员与招聘','职业资格'],
@@ -16,8 +15,6 @@ const directions=[
 ] as const;
 const directionName:Partial<Record<CatalogCategory,string>>={'初中与中考':'初中／中考','高中与高考':'高中／高考','研究生考试':'考研','公务员与招聘':'考公／招聘','国际课程与升学':'国际课程／留学'};
 const shortDirection=(name:CatalogCategory)=>directionName[name]??name;
-const kinds=Object.keys(tabNames) as CatalogTab[];
-const tabFor=(entry:CatalogEntry):CatalogTab=>entry.kind==='paper'&&entry.scope!=='full'?'exercise':entry.kind;
 const legacyTags:Record<string,string[]>={
  数学:['高数','代数','概率','统计','微积分','数学','math','calculus'],语文:['语文','中國語文','古詩','古诗','文言'],
  英语:['英語','英语','英文','cet','ielts','english'],阅读写作:['阅读','閱讀','写作','寫作','申论','翻译','reading','writing','essay'],
@@ -25,7 +22,7 @@ const legacyTags:Record<string,string[]>={
  经济管理:['经济','会计','审计','管理','金融','accounting','business'],公民知识:['入籍','公民','civics','citizen'],
  艺术创作:['艺术','音乐','设计','作品集','art','music','design'],日语:['日语','日文','日本語','jlpt'],
 };
-type Filters={type:CatalogTab;category:string;region:string;language:string;subject:string;query:string;tags:string[];item:string};
+type Filters={category:string;region:string;language:string;subject:string;query:string;tags:string[];item:string};
 type Facet='region'|'language'|'subject';
 const facets:Facet[]=['region','subject','language'];
 const facetLabels={region:'地区',subject:'科目',language:'卷面语言'};
@@ -36,12 +33,12 @@ const priority=(entry:CatalogEntry)=>entry.id===catalogGuides[entry.category].sa
 const mark='<svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 8 3 3 7-7"/></svg>';
 
 interface CatalogBrowserOptions {
- mountPreview(host:HTMLElement,entry:CatalogEntry,openRelated:(id:string)=>void):()=>void;
- openPreview(entry:CatalogEntry,openRelated:(id:string)=>void,onClose:()=>void):void;
+ mountPreview(host:HTMLElement,entry:CatalogPaperSet):()=>void;
+ openPreview(entry:CatalogPaperSet,onClose:()=>void):void;
  closePreview:()=>void;
 }
 
-export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],options:CatalogBrowserOptions){
+export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogPaperSet[],legacyLayouts:ReadonlyMap<string,string>,options:CatalogBrowserOptions){
  const viewport=matchMedia('(min-width: 1024px)');
  const indexed=new Map(shelf.map(entry=>[entry.id,entry]));
  const sorted=shelf.slice().sort((a,b)=>regionOrder.indexOf(a.region)-regionOrder.indexOf(b.region)||
@@ -51,40 +48,42 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   languageNames[entry.language],entry.system,entry.year,...entry.aliases??[],
  ].filter(Boolean).join(' '))]));
  const params=new URLSearchParams(location.hash.split('?')[1]??'');
- const initial=indexed.get(params.get('item')??'');
+ const requested=params.get('item')??'';
+ const redirected=legacyLayouts.get(requested);
+ const initial=indexed.get(redirected??requested);
+ const categories=new Set(shelf.map(entry=>entry.category));
  const rawCategory=params.get('category')??(initial?.category??'');
  const categoryAlias=CATEGORY_ALIASES[rawCategory]??rawCategory;
- const type=params.get('type');
- const inferred=initial?tabFor(initial):params.has('tag')?'all':'paper';
  const state:Filters={
-  type:initial&&type==='paper'?inferred:type==='all'||kinds.includes(type as CatalogTab)?type as Filters['type']:inferred,
-  category:CATALOG_CATEGORIES.includes(categoryAlias as CatalogCategory)?categoryAlias:'',
-  region:params.has('region')&&Object.hasOwn(regionNames,params.get('region')??'')?params.get('region')!:
+  category:redirected&&initial?initial.category:categories.has(categoryAlias as CatalogCategory)?categoryAlias:'',
+  region:redirected&&initial?initial.region:params.has('region')&&Object.hasOwn(regionNames,params.get('region')??'')?params.get('region')!:
    params.has('region')?'all':categoryAlias==='小学'&&initial?.category==='小学'?initial.region:fallbackRegion(categoryAlias),
-  subject:params.get('subject')??'',language:Object.hasOwn(languageNames,params.get('lang')??'')?params.get('lang')!:'',
-  query:params.get('q')??'',tags:params.getAll('tag').filter(tag=>Object.hasOwn(legacyTags,tag)),
+  subject:redirected?'':params.get('subject')??'',language:!redirected&&Object.hasOwn(languageNames,params.get('lang')??'')?params.get('lang')!:'',
+  query:redirected?'':params.get('q')??'',tags:redirected?[]:params.getAll('tag').filter(tag=>Object.hasOwn(legacyTags,tag)),
   item:initial?.id??'',
  };
  const legacyPage=Math.max(1,Math.trunc(Number(params.get('page')))||1);
  let explicitRegion=params.has('region')||Boolean(initial&&initial.region!==fallbackRegion(state.category)&&state.category==='小学');
- const directionHasType=()=>state.type==='all'||!state.category||sorted.some(entry=>entry.category===state.category&&tabFor(entry)===state.type);
- if(!initial&&!type&&!directionHasType())state.type='all';
+
+ let showUnavailable=Boolean(requested&&!initial);
  let current='',modal='',disposed=false,composing=false,previewTimer=0,previewFrame=0,searchTimer=0;
  let disposePreview=()=>{};
  host.className='templates-page catalog-page';
  host.innerHTML='<div class="catalog-workspace"><section class="catalog-list" aria-label="试卷目录">'+
-  '<div class="catalog-toolbar" role="group" aria-label="查找试卷与版式">'+
+  '<div class="catalog-toolbar" role="group" aria-label="查找完整试卷">'+
   '<div class="catalog-search"><svg viewBox="0 0 20 20" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="8.5" cy="8.5" r="4.5"/><path d="m12 12 4 4"/></svg>'+
   '<input id="case-search" type="search" aria-label="搜索试卷、考试或科目" placeholder="搜索卷名、考试、科目">'+
   '<button id="catalog-clear-search" type="button" aria-label="清空搜索" hidden>×</button></div>'+
-  '<div class="catalog-resource-tabs" role="group" aria-label="资源类型">'+kinds.map(kind=>'<button type="button" data-resource="'+kind+'">'+tabNames[kind]+'</button>').join('')+'</div>'+
-  '<select id="catalog-category" aria-label="考试方向"><option value="">所有方向</option>'+directions.map(([group,...names])=>
-   '<optgroup label="'+e(group)+'">'+names.map(name=>'<option value="'+e(name)+'">'+e(shortDirection(name))+'</option>').join('')+'</optgroup>').join('')+'</select>'+
+  '<select id="catalog-category" aria-label="考试方向"><option value="">所有方向</option>'+directions.map(([group,...names])=>{
+   const available=names.filter(name=>categories.has(name));
+   return available.length?'<optgroup label="'+e(group)+'">'+available.map(name=>'<option value="'+e(name)+'">'+e(shortDirection(name))+'</option>').join('')+'</optgroup>':'';
+  }).join('')+'</select>'+
   '<button type="button" id="catalog-more" aria-controls="catalog-facets" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 4h12M4 8h8m-6 4h4"/></svg>筛选<span hidden></span></button>'+
   '</div><div id="catalog-facets" class="catalog-facets" hidden>'+
   facets.map(key=>'<div class="catalog-facet" data-filter="'+key+'"><span>'+facetLabels[key]+'</span><div class="inline-options" role="group" aria-label="'+facetLabels[key]+'"></div><select aria-label="'+facetLabels[key]+'"></select></div>').join('')+
   '</div><div id="catalog-selection" hidden class="catalog-selection"></div>'+
   '<div class="catalog-results-heading"><output id="catalog-count" aria-live="polite"></output><button type="button" id="catalog-clear-filters" hidden>重置筛选</button></div>'+
+  '<p class="catalog-link-status" role="status" hidden>这条旧链接指向的资料未收录为完整试卷。</p>'+
   '<div class="catalog-results" id="catalog-results" role="group" aria-label="筛选结果"></div></section>'+
   '<section id="catalog-paper" class="catalog-paper" aria-label="卷面预览"></section></div>';
  const search=host.querySelector<HTMLInputElement>('#case-search')!;
@@ -96,6 +95,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  const results=host.querySelector<HTMLElement>('#catalog-results')!;
  const count=host.querySelector<HTMLOutputElement>('#catalog-count')!;
  const reset=host.querySelector<HTMLButtonElement>('#catalog-clear-filters')!;
+ const linkStatus=host.querySelector<HTMLElement>('.catalog-link-status')!;
  const preview=host.querySelector<HTMLElement>('#catalog-paper')!;
  search.value=state.query;
  category.value=state.category;
@@ -106,7 +106,6 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
 
  function setURL(){
   const url=new URLSearchParams();
-  if(state.type!=='paper')url.set('type',state.type);
   if(state.category||state.item)url.set('category',state.category);
   if(explicitRegion||state.region!==fallbackRegion(state.category))url.set('region',state.region);
   if(state.subject)url.set('subject',state.subject);
@@ -117,8 +116,8 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   const hash='#templates'+(url.size?'?'+url.toString():'');
   if(location.hash!==hash)history.replaceState(null,'',hash);
  }
- function match(entry:CatalogEntry,skip?:Facet,type=state.type){
-  if(type!=='all'&&tabFor(entry)!==type||state.category&&entry.category!==state.category)return false;
+ function match(entry:CatalogEntry,skip?:Facet){
+  if(state.category&&entry.category!==state.category)return false;
   if(skip!=='region'&&state.region!=='all'&&entry.region!==state.region)return false;
   if(skip!=='subject'&&state.subject&&entry.subject!==state.subject)return false;
   if(skip!=='language'&&state.language&&entry.language!==state.language&&!(entry.language==='mixed'&&['zh','en'].includes(state.language)))return false;
@@ -173,18 +172,18 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   }
  }
  function stopScheduledPreview(){cancelAnimationFrame(previewFrame);clearTimeout(previewTimer);}
- function reveal(entry:CatalogEntry,explicit:boolean){
+ function reveal(entry:CatalogPaperSet,explicit:boolean){
   stopScheduledPreview();
   if(viewport.matches){
    if(current!==entry.id){
     disposePreview();current=entry.id;
-    disposePreview=options.mountPreview(preview,entry,follow);
+    disposePreview=options.mountPreview(preview,entry);
    }
    markCurrent();
   }else if(explicit){
    modal=entry.id;
    markCurrent();
-   options.openPreview(entry,follow,()=>{
+   options.openPreview(entry,()=>{
     if(disposed||modal!==entry.id)return;
     modal='';state.item='';setURL();markCurrent();
     results.querySelector<HTMLButtonElement>('[data-item="'+CSS.escape(entry.id)+'"]')?.focus({preventScroll:true});
@@ -194,29 +193,18 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  function choose(id:string){
   const entry=indexed.get(id);
   if(!entry)return;
-  state.item=id;setURL();reveal(entry,true);
- }
- function follow(id:string){
-  const entry=indexed.get(id);
-  if(!entry)return;
-  state.type=tabFor(entry);state.category=entry.category;state.region=entry.region;
-  state.item=id;state.subject='';state.language='';state.query='';state.tags=[];explicitRegion=true;
-  search.value='';syncCategory();
-  draw(true,true);setURL();
+  showUnavailable=false;linkStatus.hidden=true;state.item=id;setURL();reveal(entry,true);
  }
  function row(entry:CatalogEntry,name=entry.title){
   return '<button type="button" class="catalog-result" data-item="'+e(entry.id)+'" data-'+entry.request.kind+'="'+e(entry.request.id)+'" aria-pressed="false">'+
    '<span class="catalog-result-title">'+e(name)+'</span>'+
-   (state.type==='all'?'<span class="catalog-result-kind">'+tabNames[tabFor(entry)]+'</span>':'')+
    '<span class="selection-mark">'+mark+'</span></button>';
  }
  function draw(resetScroll=false,explicit=false){
   const entries=sorted.filter(entry=>match(entry));
   if(!entries.some(entry=>entry.id===state.item))state.item='';
-  for(const tab of host.querySelectorAll<HTMLButtonElement>('.catalog-resource-tabs [data-resource]')){
-   tab.setAttribute('aria-pressed',String(tab.dataset.resource===state.type));
-  }
-  count.textContent=entries.length+' 项结果';
+  linkStatus.hidden=!showUnavailable;
+  count.textContent=entries.length+' 套完整试卷';
   const groupByRegion=state.region==='all'&&new Set(entries.map(entry=>entry.region)).size>1;
   let lastRegion='';
   results.innerHTML=entries.map(entry=>{
@@ -225,9 +213,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
    const header=region!==lastRegion?'<h2 class="catalog-region">'+e(regionNames[entry.region])+'</h2>':'';
    lastRegion=region;
    return header+row(entry,pinned?catalogGuides[entry.category].name:entry.title);
-  }).join('')||'<div class="catalog-empty"><p>没有符合条件的'+(state.type==='all'?'资源':tabNames[state.type])+'</p>'+
-   (state.type!=='all'&&sorted.some(entry=>match(entry,undefined,'all'))?'<button type="button" class="button secondary" data-resource="all">搜索全部资源</button>':
-    '<button type="button" class="button secondary" data-reset-catalog>重置筛选</button>')+'</div>';
+  }).join('')||'<div class="catalog-empty"><p>没有符合条件的完整试卷</p><button type="button" class="button secondary" data-reset-catalog>重置筛选</button></div>';
   if(resetScroll)results.scrollTop=0;
   showFacets();markCurrent();
   if(viewport.matches){
@@ -243,7 +229,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   }
  }
  function change(keepItem=true){
-  clearTimeout(searchTimer);
+  clearTimeout(searchTimer);showUnavailable=false;
   if(!composing)state.query=search.value;
   if(!keepItem)state.item='';
   draw(true);setURL();
@@ -270,7 +256,6 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  category.onchange=()=>{
   state.category=category.value;
   if(!explicitRegion)state.region=fallbackRegion(state.category);
-  if(!directionHasType())state.type='all';
   change(false);
  };
  function setFacet(key:Facet,value:string){
@@ -289,13 +274,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  host.onclick=event=>{
   const button=(event.target as HTMLElement).closest<HTMLButtonElement>('button');
   if(!button)return;
-  const {resource,item,clearFacet,clearTag,facetChoice,value}=button.dataset;
-  if(resource&&state.type!==resource){
-   state.type=resource as CatalogTab;
-   const fromEmpty=button.closest('.catalog-empty');
-   change(false);
-   if(fromEmpty)host.querySelector<HTMLButtonElement>('.catalog-resource-tabs [data-resource="'+resource+'"]')?.focus({preventScroll:true});
-  }
+  const {item,clearFacet,clearTag,facetChoice,value}=button.dataset;
   if(item)choose(item);
   if(facetChoice&&value!==undefined)setFacet(facetChoice as Facet,value);
   if(clearFacet){setFacet(clearFacet as Facet,clearFacet==='region'?'all':'');more.focus({preventScroll:true});}

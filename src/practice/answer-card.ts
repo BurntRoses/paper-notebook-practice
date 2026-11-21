@@ -32,15 +32,18 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
  const boxed=config?.template==='boxed'||(!cet&&english&&!['university','essay-grid'].includes(config?.template??''));
  const essayGrid=config?.template==='essay-grid';
  const university=config?.template==='university'||(!config&&!cet&&!boxed&&(source.headerVariant==='university'||/^real-(pku|ecnu|ustc|zju)/.test(practice.practiceId)));
- const style=cet?'cet':boxed?'boxed':university?'university':config?.template??'school';
- const layout:PaperTemplateLayout={...source,widthMm:boxed?source.widthMm:undefined,heightMm:boxed?source.heightMm:undefined,paperSize:university?'A3':'A4',orientation:university?'landscape':'portrait',columns:1,marginTopMm:boxed?25.4:university?10:essayGrid?17:12,marginBottomMm:boxed?25.4:university?10:essayGrid?17:12,marginLeftMm:boxed?25.4:university?12:essayGrid?12:14,marginRightMm:boxed?25.4:university?12:essayGrid?12:14,showSeal:false,fontSize:10.5,lineHeight:1.5};
+ const postgraduate=practice.practiceId.startsWith('postgraduate-')||/硕士研究生/.test(practice.level+' '+practice.title);
+ const numberedUniversity=university&&practice.exam?.scope==='full';
+ const looseUniversity=university&&!numberedUniversity;
+ const style=cet?'cet':boxed?'boxed':looseUniversity?'university':numberedUniversity?'school':config?.template??'school';
+ const layout:PaperTemplateLayout={...source,widthMm:boxed?source.widthMm:undefined,heightMm:boxed?source.heightMm:undefined,paperSize:looseUniversity?'A3':'A4',orientation:looseUniversity?'landscape':'portrait',columns:1,marginTopMm:boxed?25.4:looseUniversity?10:essayGrid?17:12,marginBottomMm:boxed?25.4:looseUniversity?10:essayGrid?17:12,marginLeftMm:boxed?25.4:looseUniversity?12:essayGrid?12:14,marginRightMm:boxed?25.4:looseUniversity?12:essayGrid?12:14,showSeal:false,fontSize:10.5,lineHeight:1.5};
  const all=practice.sections.flatMap(s=>s.questions);
  const attributes=(q:PracticeQuestion)=>`data-question="${e(q.id)}" data-number="${q.number}" data-score="${q.score}"`;
  const anchors=(questions:PracticeQuestion[])=>questions.map(q=>`<span class="card-question-anchor" hidden ${attributes(q)}></span>`).join('');
  const label=(q:PracticeQuestion)=>e(q.displayNumber||q.origin?.number||q.number);
  const constraints=(q:PracticeQuestion)=>{const r=q.responseConstraints;if(!r)return '';const unit=r.countUnit==='words'?'词':'字';return r.minWords&&r.maxWords?`${r.minWords}—${r.maxWords} ${unit}`:r.maxWords?`不超过 ${r.maxWords} ${unit}`:r.minWords?`不少于 ${r.minWords} ${unit}`:'';};
  const responseLineCount=(q:PracticeQuestion)=>q.answerRows??(q.responseConstraints?.countUnit==='words'&&q.responseConstraints.maxWords?Math.max(10,Math.ceil(q.responseConstraints.maxWords/8)):Math.max(5,Math.ceil(q.score*.75)));
- const digits=config?.candidateDigits??(cet?15:14);
+ const digits=config?.candidateDigits??(cet||postgraduate?15:14);
  const bubble=(text:string)=>`<span class="bubble">${e(text)}</span>`;
  const idGrid=(title='准考证号',count=digits)=>`<div class="card-id-grid" data-card-id-type="${e(title)}" style="--id-digits:${count}"><b>${e(title)}</b><div class="id-writing">${Array.from({length:count},()=>'<span></span>').join('')}</div><div class="id-bubbles">${Array.from({length:count},()=>`<div>${Array.from({length:10},(_,i)=>bubble(String(i))).join('')}</div>`).join('')}</div></div>`;
  const marks='<div class="card-registration registration-top"></div><div class="card-registration registration-right"></div>';
@@ -117,7 +120,7 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
    }
    }
   }
- }else if(university){
+ }else if(looseUniversity){
   const institution=practice.title.match(/^(.+?大学)/)?.[1]??source.institution;
   const title=config?.title??`${institution||'本科生'}${institution?'本科生':''}考试答题纸`;
   const pages=config?.pages??2;
@@ -126,16 +129,26 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
   content=Array.from({length:pages},(_,i)=>`<article class="paper-chunk answer-card-page university-card" data-break-before="${i>0}">${i===0?anchors(all):''}<div class="university-card-seal"><span>专业：________________　班级：________________　学号：________________　姓名：________________</span><b>装　订　线</b><small>请勿在密封线内答题</small></div><div class="university-card-halves"><section class="university-card-half">${i===0?`<h1>${e(title)}</h1>${table}<div class="university-card-instructions"><div><b>注意事项</b><ol><li>考生须在试题指定的答题纸上作答。</li><li>在答题纸上写清试卷题号及答案。</li><li>用黑色或蓝色字迹的钢笔、签字笔作答。</li><li>答案不得超过装订线及答题纸边框。</li><li>考试结束后，将试卷和答题纸一并交回。</li></ol></div><p>课程代码：__________________<br><br>课程名称：__________________</p></div>`:''}<div class="university-blank-area"></div><p class="university-card-footer">第 ${i*2+1} 页，共 ${pages*2} 页</p></section><section class="university-card-half"><div class="university-blank-area"></div><p class="university-card-footer">第 ${i*2+2} 页，共 ${pages*2} 页</p></section></div></article>`).join('');
  }else{
   const title=config?.title??practice.title;
-  const examIdentity=civil||national||provincial;
+  const examIdentity=civil||national||provincial||postgraduate;
   const fields=(examIdentity?['姓名','准考证号','考场号','座位号']:['学校','姓名','考场','座位号']).map(name=>`<div class="school-card-field" data-candidate-field="${name}"><span>${name}：</span><i aria-hidden="true"></i></div>`).join('');
-  content=classroom
+  content=numberedUniversity&&!postgraduate
+   ?`<header class="paper-chunk school-card-heading classroom-card"><h1>${e(title)}</h1><h2>答题纸</h2>${candidateIdentityMarkup(['专业','班级','学号','姓名'],e)}<p>按题号在对应位置作答。</p></header>`
+   :classroom
    ?`<header class="paper-chunk school-card-heading classroom-card"><h1>${e(title)}</h1><h2>答题卡</h2>${candidateIdentityMarkup(['学校','班级','姓名'],e)}<p>按题号作答，选择题按题意填涂。</p></header>`
    :`<header class="paper-chunk school-card-heading"><h1>${e(title)}</h1><h2>答题卡</h2><div class="school-card-info"><div class="school-card-fields">${fields}</div>${examIdentity&&!provincial?'':'<div class="school-card-barcode">条形码粘贴区</div>'}</div><div class="school-card-notices"><b>注意事项</b><ol><li>${examIdentity?'填写姓名、准考证号、考场号和座位号，并在下方填涂对应号码。':'填写学校、姓名、考场和座位号，并按监考要求填写个人信息。'}</li><li>选择题及号码栏用2B铅笔填涂；非选择题用黑色字迹签字笔在指定区域内作答。</li><li>${examIdentity?'保持答题卡平整、清洁，请勿折叠。':'保持答题卡平整、清洁，请勿折叠。缺考标记由监考员填涂。'}</li></ol></div><div class="school-card-mark-examples"><span><b>填涂样例</b>　正确填涂 <i class="filled-bubble"></i></span>${examIdentity?'':'<span>缺考标记 □　<small>（由监考员填涂）</small></span>'}</div><div class="school-card-identification">${idGrid()}${idGrid('考场号',config?.roomDigits??3)}${idGrid('座位号',config?.seatDigits??2)}</div></header>`;
   for(const section of practice.sections){
-   content+=`<div class="paper-chunk card-section-title"><b>${e(section.displayLabel??'')}${e(section.title)}</b><span>（${section.score}分）</span></div>`;
-   const objective=section.questions.filter(q=>['choice','multiple','truefalse'].includes(q.type));
-   if(objective.length)content+=`<div class="paper-chunk card-objective-grid">${Array.from({length:Math.ceil(objective.length/5)},(_,i)=>`<div class="card-objective-column">${objective.slice(i*5,i*5+5).map(q=>`<div class="card-objective-row" ${attributes(q)}><b>${label(q)}</b>${(q.options??[]).map(o=>bubble(q.type==='truefalse'?(o.id==='TRUE'?'T':o.id==='FALSE'?'F':o.id):o.id)).join('')}</div>`).join('')}</div>`).join('')}</div>`;
-   for(const q of section.questions.filter(q=>!['choice','multiple','truefalse'].includes(q.type))){
+   const heading=section.title.replace(/[,，。\s]*答案可以直接写在试卷上[.。]?$/,'').trim();
+   const statesScore=heading.match(/\d+(?:\.\d+)?(?=\s*分)/g)?.some(score=>Number(score)===section.score);
+   content+=`<div class="paper-chunk card-section-title"><b>${e(section.displayLabel??'')}${e(heading)}</b>${statesScore?'':`<span>（${section.score}分）</span>`}</div>`;
+   const objective:PracticeQuestion[]=[];
+   const flushObjective=()=>{
+    if(!objective.length)return;
+    content+=`<div class="paper-chunk card-objective-grid">${Array.from({length:Math.ceil(objective.length/5)},(_,i)=>`<div class="card-objective-column">${objective.slice(i*5,i*5+5).map(q=>`<div class="card-objective-row" ${attributes(q)}><b>${label(q)}</b>${(q.options??[]).map(o=>bubble(q.type==='truefalse'?(o.id==='TRUE'?'T':o.id==='FALSE'?'F':o.id):o.id)).join('')}</div>`).join('')}</div>`).join('')}</div>`;
+    objective.length=0;
+   };
+   for(const q of section.questions){
+    if(['choice','multiple','truefalse'].includes(q.type)){objective.push(q);continue;}
+    flushObjective();
     if(q.type==='blank'){
      const count=Array.isArray(q.solution)?q.solution.length:1;
      const numbers=[...q.prompt.matchAll(/(?:^|\n)\s*[（(](\d+)[）)]/g)].map(m=>m[1]);
@@ -158,6 +171,7 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
      for(let i=0;i<rows;i++)content+=`<div class="paper-chunk card-response-question${ruled||classroom?' card-response-ruled':''}" ${i?`data-question-continuation="${e(q.id)}"`:attributes(q)}><b>${label(q)}${i?'（续）':''}</b>${!i&&constraints(q)?`<span class="card-response-limit">${e(constraints(q))}</span>`:''}${!i&&q.options?.length?`<div class="card-response-options">${q.options.map(o=>bubble(o.id)).join('')}</div>`:''}<div class="card-response-area"${classroom?` style="height:${Math.min(5,responseLineCount(q)-i*5)*7}mm"`:''}></div></div>`;
     }
    }
+   flushObjective();
   }
  content+=classroom?'<p class="paper-chunk card-end-note">答题区结束</p>':'<p class="paper-chunk card-end-note">请在各题目的答题区域内作答，超出黑色矩形边框限定区域的答案无效。</p>';
  }

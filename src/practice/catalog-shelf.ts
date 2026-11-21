@@ -2,7 +2,7 @@ import cases from './real-cases.json';
 import examples from './template-examples.json';
 import {PAPER_TEMPLATES,type PaperTemplate} from './templates';
 import {TOPIC_CASES} from './topics';
-import {paperLanguageFor,type CatalogEntry,type CatalogIdentity,type CatalogLanguage,type CatalogRegion} from './catalog-identity';
+import {paperLanguageFor,type CatalogEntry,type CatalogIdentity,type CatalogLanguage,type CatalogRegion,type PaperRequest} from './catalog-identity';
 import type {CatalogCategory} from './catalog-categories';
 import type {PracticeDocument} from './model';
 
@@ -125,3 +125,15 @@ for(const entry of catalogShelf)if(entry.sampleId){
   throw Error('Incorrect catalog sample binding: '+entry.id+' → '+entry.sampleId);
  }
 }
+
+export type CatalogPaperSet=CatalogEntry & {kind:'paper';scope:'full';request:PaperRequest};
+
+function isCatalogPaperSet(entry:CatalogEntry):entry is CatalogPaperSet {
+ return entry.kind==='paper'&&entry.scope==='full'&&entry.request.kind!=='template';
+}
+
+export const publicPaperSets=catalogShelf.filter(isCatalogPaperSet);
+const publicIds=new Set(publicPaperSets.map(entry=>entry.id));
+export const legacyCatalogLayouts=new Map(catalogShelf.flatMap(entry=>
+ entry.kind==='layout'&&entry.sampleId&&publicIds.has(entry.sampleId)?[[entry.id,entry.sampleId] as const]:[],
+));

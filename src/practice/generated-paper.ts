@@ -14,6 +14,10 @@ export function catalogPaper(paper:PracticeDocument):PracticeDocument {
  presentation.language??=['ielts','language'].includes(layout.headerVariant)?'en':'zh';
  presentation.sourceLayout=true;
  if(!presentation.titleLines?.length)presentation.titleLines=[copy.title];
+ if(copy.exam?.scope==='full'&&copy.generation?.intent==='generate'&&!presentation.subtitle&&
+    !/原创|练习|课程考试|综合笔试/.test(copy.title)){
+  presentation.subtitle=presentation.language==='en'?'Original Practice Paper':'原创模拟卷';
+ }
  const printPageCount=presentation.sourcePageCount;
  // Output pagination follows the editable HTML, even if the source had a fixed folio.
  delete presentation.sourcePageNumbers;

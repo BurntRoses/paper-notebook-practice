@@ -2607,7 +2607,7 @@
             }
           ],
           "solution": "A",
-          "explanation": "B−A为期初多投40、两年末各多流入25，增量NPV=−40+25/1.1+25/1.1²=3.388430>0，故选B。不能仅比较投资大小或不折现的收益率。",
+          "explanation": "B−A为期初多投40、两年末各多流入25，增量NPV=−40+25/1.1+25/1.1²=3.388430>0，因此应选方案B，对应选项A。不能仅比较投资大小或不折现的收益率。",
           "source": {
             "materialId": "constructor-1-economics-full-01-q10-source",
             "blockId": "constructor-1-economics-full-01-q10-source-block",
@@ -2667,7 +2667,7 @@
               },
               {
                 "method": "option-evidence-review",
-                "detail": "B−A为期初多投40、两年末各多流入25，增量NPV=−40+25/1.1+25/1.1²=3.388430>0，故选B。不能仅比较投资大小或不折现的收益率。",
+                "detail": "B−A为期初多投40、两年末各多流入25，增量NPV=−40+25/1.1+25/1.1²=3.388430>0，因此应选方案B，对应选项A。不能仅比较投资大小或不折现的收益率。",
                 "result": "pass"
               }
             ]

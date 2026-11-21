@@ -27,9 +27,28 @@ const {PAPER_TEMPLATES}=await tsImport('../src/practice/templates.ts',import.met
 const {REFERENCE_PAPERS}=await tsImport('../src/practice/reference-papers.ts',import.meta.url);
 const listings=new Map(catalogShelf.map(entry=>[entry.id,entry]));
 const {catalogGuides}=await tsImport('../src/practice/catalog-guides.ts',import.meta.url);
+const {homePapers}=await tsImport('../src/practice/home-papers.ts',import.meta.url);
+const {workbenchTasks}=await tsImport('../src/practice/workbench-tasks.ts',import.meta.url);
+const scanEvidence=JSON.parse(await readFile(root+'src/practice/workbench-scan.json','utf8'));
 for(const [category,guide] of Object.entries(catalogGuides)){
  const sample=listings.get(guide.sample);
  if(sample?.category!==category||sample.kind!=='paper')throw Error('Invalid category representative: '+category);
+}
+if(new Set(homePapers.map(paper=>paper.id)).size!==homePapers.length)throw Error('Duplicate featured paper');
+for(const paper of homePapers){
+ const listing=listings.get(paper.id);
+ if(listing?.scope!=='full'||listing.request.kind!==paper.kind||
+    (listing.request.kind==='topic'&&listing.request.file!==paper.file))throw Error('Featured paper must link to a complete author document: '+paper.id);
+}
+for(const task of Object.values(workbenchTasks)){
+ if(!homePapers.some(sample=>sample.id===task.exampleId)||task.supplementaryId&&!listings.has(task.supplementaryId)){
+  throw Error('Workbench example does not match the catalog: '+task.exampleId);
+ }
+}
+if(scanEvidence.paperId!==workbenchTasks.scan.exampleId||scanEvidence.page!==1||!scanEvidence.lines.length||
+   scanEvidence.lines.some(line=>!line.raw||line.confidence<0||line.confidence>1||line.bounds.length!==4||
+    line.bounds.some(value=>!Number.isFinite(value)||value<0||value>1))){
+ throw Error('OCR demonstration evidence must match the source page');
 }
 
 const validURL=value=>{try{return ['https:','http:'].includes(new URL(value).protocol);}catch{return false;}};
@@ -60,6 +79,9 @@ function validatePaper(id,paper,kind){
   throw Error('Catalog and author document disagree: '+id);
  }
  const documented=catalogSources(paper);
+ if(id===scanEvidence.paperId&&scanEvidence.lines.some(line=>!paper.sections[0].questions.some(question=>question.number===line.question))){
+  throw Error('OCR demonstration refers to a missing question: '+id);
+ }
  if(!documented.some(source=>source.role==='question')||
     documented.some(source=>!sourceRoles.includes(source.role)||!source.title||source.url&&!validURL(source.url))){
   throw Error('Incomplete source roles: '+id);

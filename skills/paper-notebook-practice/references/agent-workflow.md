@@ -105,6 +105,8 @@ CET-4/CET-6各57项、125/130分钟，写作15、听力35、阅读35、翻译15�
 
 ## 直接出卷
 
+用户以仓库内置卷作参照时，用 `topics <id> --out work/reference.json` 或 `cases <id> --out work/reference.json` 读取结构化作者源。先确认 `coverage` 和收录范围，比较题组、篇章、分值及版式，再按用户资料编写或选题。六年级数学、语文、英语笔试的参考 ID 分别为 `cn-p6-math-full`、`cn-p6-chinese-full`、`cn-p6-english-full`，三份均为项目自拟的 100 分卷。
+
 Agent 完成 bank 与 job 后运行：
 
 ```sh

@@ -183,3 +183,11 @@ body[data-kind=answer-card] .cet-listening-grid .bubble{width:3.6mm;height:2.2mm
 .boxed-card-heading>.candidate-identity{margin:4mm 0;line-height:1.5}
 .school-card-field{align-items:baseline;min-height:8mm}
 .school-card-field>span{width:16mm;text-align:left;text-align-last:left}
+
+.classroom-card>p {margin:2mm 0;font-size:10pt;text-align:center}
+.classroom-card .candidate-identity {margin:0 auto;max-width:157mm;grid-template-columns:repeat(3,minmax(0,1fr))}
+.classroom-card .candidate-field-wide {grid-column:auto}
+.school-writing-chunk .essay-character-grid {margin:2mm 0 1mm;width:140mm}
+.school-writing-chunk .essay-grid-row {width:140mm}
+.school-writing-chunk .essay-grid-count {left:142mm}
+.card-response-ruled .boxed-card-area {background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(7mm - .15mm),#aaa calc(7mm - .15mm),#aaa 7mm)}

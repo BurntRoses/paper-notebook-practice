@@ -1,0 +1,2047 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "cn-p6-math-full",
+  "notebookId": "cn-p6-math-full-source",
+  "notebookRevision": 1,
+  "title": "六年级数学综合练习卷",
+  "subject": "数学",
+  "level": "小学六年级",
+  "durationMinutes": 90,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "preset": "stem",
+    "templateId": "primary-math"
+  },
+  "presentation": {
+    "language": "zh",
+    "questionGapMm": 2.4,
+    "metaLines": [
+      "考试时间 90 分钟　满分 100 分"
+    ],
+    "candidateFields": [
+      "学校：____________　班级：______　姓名：____________"
+    ],
+    "notices": [
+      "选择题每题只选一项。计算与解答题写出主要步骤，涉及测量的结果写明单位。"
+    ],
+    "answerCard": {
+      "template": "school",
+      "groupObjective": true
+    }
+  },
+  "materials": [
+    {
+      "id": "cn-p6-math-full-authored",
+      "title": "纸间原创六年级数学综合练习",
+      "kind": "reference",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "publisher": "纸间 Practice",
+        "sourceType": "author"
+      },
+      "blocks": [
+        {
+          "id": "cn-p6-math-full-q01-source",
+          "text": "把 0.375 化成最简分数。"
+        },
+        {
+          "id": "cn-p6-math-full-q02-source",
+          "text": "在比例式 7∶12＝21∶□ 中，方框内应填多少？"
+        },
+        {
+          "id": "cn-p6-math-full-q03-source",
+          "text": "3.6 平方米等于多少平方分米？"
+        },
+        {
+          "id": "cn-p6-math-full-q04-source",
+          "text": "一根绳子长 3 米。剪去全长的 40% 后，还剩多少米？"
+        },
+        {
+          "id": "cn-p6-math-full-q05-source",
+          "text": "同一温度计上，−2 ℃ 到 5 ℃ 相差多少摄氏度？"
+        },
+        {
+          "id": "cn-p6-math-full-q06-source",
+          "text": "某天四个小组回收纸张 16、22、18、24 千克，平均每组回收多少千克？"
+        },
+        {
+          "id": "cn-p6-math-full-q07-source",
+          "text": "用比例尺 1∶2500 绘图，图上 6 厘米对应实际多少米？"
+        },
+        {
+          "id": "cn-p6-math-full-q08-source",
+          "text": "一个长方体学具盒的内部尺寸为 20 厘米、12 厘米、5 厘米，容积是多少毫升？"
+        },
+        {
+          "id": "cn-p6-math-full-q09-source",
+          "text": "从 1 到 9 中任取一个整数，取到 3 的倍数的可能性是多少？用最简分数表示。"
+        },
+        {
+          "id": "cn-p6-math-full-q10-source",
+          "text": "每本练习本 4.8 元。购买 n 本并支付 2 元包装费，用含 n 的式子表示总价（单位：元）。"
+        },
+        {
+          "id": "cn-p6-math-full-q11-source",
+          "text": "下列各数中最小的是哪一个？"
+        },
+        {
+          "id": "cn-p6-math-full-q12-source",
+          "text": "在同一张比例尺固定的地图上，图上距离与实际距离属于哪种关系？"
+        },
+        {
+          "id": "cn-p6-math-full-q13-source",
+          "text": "把一个半径为 2 厘米的圆的半径扩大到原来的 2 倍，圆的面积变为原来的多少倍？"
+        },
+        {
+          "id": "cn-p6-math-full-q14-source",
+          "text": "一件原价 80 元的商品优惠 25%。另一件商品优惠后是 80 元，优惠幅度也是 25%。两件商品的原价相差多少元？"
+        },
+        {
+          "id": "cn-p6-math-full-q15-source",
+          "text": "书架上故事书与科普书本数的比是 5∶3。取走 5 本故事书和 3 本科普书后，两类书均有剩余。此时故事书与科普书本数的比是多少？"
+        },
+        {
+          "id": "cn-p6-math-full-q16-source",
+          "text": "班级运动项目调查中，每人只选一项。跳绳占全班人数的 30%。扇形统计图中表示跳绳的扇形圆心角是多少？"
+        },
+        {
+          "id": "cn-p6-math-full-q17-source",
+          "text": "$5.7-1.28-2.72$。"
+        },
+        {
+          "id": "cn-p6-math-full-q18-source",
+          "text": "$\\frac78-\\left(\\frac16+\\frac38\\right)$。"
+        },
+        {
+          "id": "cn-p6-math-full-q19-source",
+          "text": "$\\frac59\\times\\frac34+\\frac49\\times\\frac34$。"
+        },
+        {
+          "id": "cn-p6-math-full-q20-source",
+          "text": "$\\left(1-35\\%\\right)\\div\\frac{13}{20}$。"
+        },
+        {
+          "id": "cn-p6-math-full-q21-source",
+          "text": "解方程 $0.4x+1.8=5.4$。"
+        },
+        {
+          "id": "cn-p6-math-full-q22-source",
+          "text": "一块长方形草坪长 18 米、宽 12 米。草坪内沿四条边铺设等宽 1 米的步道，中央仍种草。步道共有多少平方米？"
+        },
+        {
+          "id": "cn-p6-math-full-q23-source",
+          "text": "一只直壁长方体水箱内底长 40 厘米、宽 25 厘米，现有水深 18 厘米。在不溢水的条件下，把体积为 2000 立方厘米的实心金属块完全浸没。水面升高多少厘米？升高后水深是多少厘米？"
+        },
+        {
+          "id": "cn-p6-math-full-q24-source",
+          "text": "公益义卖计划筹集 800 元。上午筹到计划的 45%，下午比上午多筹到 120 元。全天达到目标了吗？超出或相差多少元？"
+        },
+        {
+          "id": "cn-p6-math-full-q25-source",
+          "text": "班级准备 108 张手工纸，按红、黄、蓝 3∶2∶4 分配。实际操作前从蓝纸中调出 8 张换成同样数量的红纸。换完后三色各多少张？"
+        },
+        {
+          "id": "cn-p6-math-full-q26-source",
+          "text": "两组同学同时在一段长 960 米的步道两端出发，相向匀速步行。甲每分钟走 70 米，乙每分钟走 50 米。几分钟后相遇？此时乙走了多少米？"
+        },
+        {
+          "id": "cn-p6-math-full-q27-source",
+          "text": "调查 40 名同学周末练习跳绳的次数，没人漏报。0 次有 4 人，1 次有 10 人，2 次有 18 人，3 次有 8 人。求平均每人练习次数，并判断练习 2 次及以上的人数是否超过 60%。"
+        },
+        {
+          "id": "cn-p6-math-full-q28-source",
+          "text": "校运会需制作 76 张号码牌。甲店每张 2.5 元，另收 20 元设计费。乙店每张 2.8 元，满 200 元减 15 元，免设计费。两家质量相同且不计其他费用，选哪家更省？能省多少元？"
+        },
+        {
+          "id": "cn-p6-math-full-q29-source",
+          "text": "科学小组为花坛浇水。第一次浇去水桶中原有水量的 1/3，第二次用掉剩余水量的 1/4。桶里还剩 18 升水。起初有多少升水？两次各用了多少升？"
+        }
+      ],
+      "text": "把 0.375 化成最简分数。\n\n在比例式 7∶12＝21∶□ 中，方框内应填多少？\n\n3.6 平方米等于多少平方分米？\n\n一根绳子长 3 米。剪去全长的 40% 后，还剩多少米？\n\n同一温度计上，−2 ℃ 到 5 ℃ 相差多少摄氏度？\n\n某天四个小组回收纸张 16、22、18、24 千克，平均每组回收多少千克？\n\n用比例尺 1∶2500 绘图，图上 6 厘米对应实际多少米？\n\n一个长方体学具盒的内部尺寸为 20 厘米、12 厘米、5 厘米，容积是多少毫升？\n\n从 1 到 9 中任取一个整数，取到 3 的倍数的可能性是多少？用最简分数表示。\n\n每本练习本 4.8 元。购买 n 本并支付 2 元包装费，用含 n 的式子表示总价（单位：元）。\n\n下列各数中最小的是哪一个？\n\n在同一张比例尺固定的地图上，图上距离与实际距离属于哪种关系？\n\n把一个半径为 2 厘米的圆的半径扩大到原来的 2 倍，圆的面积变为原来的多少倍？\n\n一件原价 80 元的商品优惠 25%。另一件商品优惠后是 80 元，优惠幅度也是 25%。两件商品的原价相差多少元？\n\n书架上故事书与科普书本数的比是 5∶3。取走 5 本故事书和 3 本科普书后，两类书均有剩余。此时故事书与科普书本数的比是多少？\n\n班级运动项目调查中，每人只选一项。跳绳占全班人数的 30%。扇形统计图中表示跳绳的扇形圆心角是多少？\n\n$5.7-1.28-2.72$。\n\n$\\frac78-\\left(\\frac16+\\frac38\\right)$。\n\n$\\frac59\\times\\frac34+\\frac49\\times\\frac34$。\n\n$\\left(1-35\\%\\right)\\div\\frac{13}{20}$。\n\n解方程 $0.4x+1.8=5.4$。\n\n一块长方形草坪长 18 米、宽 12 米。草坪内沿四条边铺设等宽 1 米的步道，中央仍种草。步道共有多少平方米？\n\n一只直壁长方体水箱内底长 40 厘米、宽 25 厘米，现有水深 18 厘米。在不溢水的条件下，把体积为 2000 立方厘米的实心金属块完全浸没。水面升高多少厘米？升高后水深是多少厘米？\n\n公益义卖计划筹集 800 元。上午筹到计划的 45%，下午比上午多筹到 120 元。全天达到目标了吗？超出或相差多少元？\n\n班级准备 108 张手工纸，按红、黄、蓝 3∶2∶4 分配。实际操作前从蓝纸中调出 8 张换成同样数量的红纸。换完后三色各多少张？\n\n两组同学同时在一段长 960 米的步道两端出发，相向匀速步行。甲每分钟走 70 米，乙每分钟走 50 米。几分钟后相遇？此时乙走了多少米？\n\n调查 40 名同学周末练习跳绳的次数，没人漏报。0 次有 4 人，1 次有 10 人，2 次有 18 人，3 次有 8 人。求平均每人练习次数，并判断练习 2 次及以上的人数是否超过 60%。\n\n校运会需制作 76 张号码牌。甲店每张 2.5 元，另收 20 元设计费。乙店每张 2.8 元，满 200 元减 15 元，免设计费。两家质量相同且不计其他费用，选哪家更省？能省多少元？\n\n科学小组为花坛浇水。第一次浇去水桶中原有水量的 1/3，第二次用掉剩余水量的 1/4。桶里还剩 18 升水。起初有多少升水？两次各用了多少升？"
+    },
+    {
+      "id": "cn-p6-math-full-standard",
+      "title": "教育部《义务教育数学课程标准（2022年版）》第三学段",
+      "kind": "reference",
+      "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf",
+      "text": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。",
+      "blocks": [
+        {
+          "id": "cn-p6-math-full-standard-b",
+          "text": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+        }
+      ],
+      "provenance": {
+        "kind": "web",
+        "publisher": "中华人民共和国教育部",
+        "version": "2022",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf",
+        "sourceType": "official",
+        "accessedAt": "2026-11-21"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "cn-p6-math-full-fill",
+      "examPartId": "fill",
+      "title": "填空",
+      "instructions": "在横线上写出结果。题中已经给出单位的，只填数值。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "cn-p6-math-full-q01",
+          "number": 1,
+          "type": "blank",
+          "prompt": "把 0.375 化成最简分数。",
+          "solution": [
+            "3/8"
+          ],
+          "explanation": "0.375＝375/1000，分子分母同时除以 125，得 3/8。",
+          "score": 2,
+          "chapter": "分数与小数",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q01-source",
+            "exact": "把 0.375 化成最简分数。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "0.375＝375/1000，分子分母同时除以 125，得 3/8。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q02",
+          "number": 2,
+          "type": "blank",
+          "prompt": "在比例式 7∶12＝21∶□ 中，方框内应填多少？",
+          "solution": [
+            "36"
+          ],
+          "explanation": "前项扩大到 3 倍，后项也扩大到 3 倍，即 12×3＝36。",
+          "score": 2,
+          "chapter": "比与比例",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q02-source",
+            "exact": "在比例式 7∶12＝21∶□ 中，方框内应填多少？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "前项扩大到 3 倍，后项也扩大到 3 倍，即 12×3＝36。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q03",
+          "number": 3,
+          "type": "blank",
+          "prompt": "3.6 平方米等于多少平方分米？",
+          "solution": [
+            "360"
+          ],
+          "explanation": "1 平方米等于 100 平方分米。",
+          "score": 2,
+          "chapter": "面积单位",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q03-source",
+            "exact": "3.6 平方米等于多少平方分米？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "1 平方米等于 100 平方分米。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q04",
+          "number": 4,
+          "type": "blank",
+          "prompt": "一根绳子长 3 米。剪去全长的 40% 后，还剩多少米？",
+          "solution": [
+            "1.8"
+          ],
+          "explanation": "余下 60%，3×0.6＝1.8 米。",
+          "score": 2,
+          "chapter": "百分数",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q04-source",
+            "exact": "一根绳子长 3 米。剪去全长的 40% 后，还剩多少米？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "余下 60%，3×0.6＝1.8 米。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q05",
+          "number": 5,
+          "type": "blank",
+          "prompt": "同一温度计上，−2 ℃ 到 5 ℃ 相差多少摄氏度？",
+          "solution": [
+            "7"
+          ],
+          "explanation": "跨过 0 ℃，先上升 2 ℃ 再上升 5 ℃，共相差 7 ℃。",
+          "score": 2,
+          "chapter": "数轴",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q05-source",
+            "exact": "同一温度计上，−2 ℃ 到 5 ℃ 相差多少摄氏度？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "跨过 0 ℃，先上升 2 ℃ 再上升 5 ℃，共相差 7 ℃。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q06",
+          "number": 6,
+          "type": "blank",
+          "prompt": "某天四个小组回收纸张 16、22、18、24 千克，平均每组回收多少千克？",
+          "solution": [
+            "20"
+          ],
+          "explanation": "(16＋22＋18＋24)÷4＝20。",
+          "score": 2,
+          "chapter": "平均数",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q06-source",
+            "exact": "某天四个小组回收纸张 16、22、18、24 千克，平均每组回收多少千克？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "(16＋22＋18＋24)÷4＝20。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q07",
+          "number": 7,
+          "type": "blank",
+          "prompt": "用比例尺 1∶2500 绘图，图上 6 厘米对应实际多少米？",
+          "solution": [
+            "150"
+          ],
+          "explanation": "6×2500＝15000 厘米，等于 150 米。",
+          "score": 2,
+          "chapter": "比例尺",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q07-source",
+            "exact": "用比例尺 1∶2500 绘图，图上 6 厘米对应实际多少米？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "6×2500＝15000 厘米，等于 150 米。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q08",
+          "number": 8,
+          "type": "blank",
+          "prompt": "一个长方体学具盒的内部尺寸为 20 厘米、12 厘米、5 厘米，容积是多少毫升？",
+          "solution": [
+            "1200"
+          ],
+          "explanation": "20×12×5＝1200 立方厘米，1 立方厘米等于 1 毫升。",
+          "score": 2,
+          "chapter": "容积",
+          "difficulty": "easy",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q08-source",
+            "exact": "一个长方体学具盒的内部尺寸为 20 厘米、12 厘米、5 厘米，容积是多少毫升？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "20×12×5＝1200 立方厘米，1 立方厘米等于 1 毫升。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q09",
+          "number": 9,
+          "type": "blank",
+          "prompt": "从 1 到 9 中任取一个整数，取到 3 的倍数的可能性是多少？用最简分数表示。",
+          "solution": [
+            "1/3"
+          ],
+          "explanation": "符合的是 3、6、9，共 3 个，占 9 个等可能结果的 1/3。",
+          "score": 2,
+          "chapter": "可能性",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q09-source",
+            "exact": "从 1 到 9 中任取一个整数，取到 3 的倍数的可能性是多少？用最简分数表示。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "符合的是 3、6、9，共 3 个，占 9 个等可能结果的 1/3。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-math-full-q10",
+          "number": 10,
+          "type": "blank",
+          "prompt": "每本练习本 4.8 元。购买 n 本并支付 2 元包装费，用含 n 的式子表示总价（单位：元）。",
+          "solution": [
+            "4.8n+2"
+          ],
+          "explanation": "练习本共 4.8n 元，包装费只加一次。",
+          "score": 2,
+          "chapter": "用字母表示数",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q10-source",
+            "exact": "每本练习本 4.8 元。购买 n 本并支付 2 元包装费，用含 n 的式子表示总价（单位：元）。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "练习本共 4.8n 元，包装费只加一次。",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-math-full-choice",
+      "examPartId": "choice",
+      "title": "选择",
+      "instructions": "每题只有一个选项符合题意。",
+      "score": 12,
+      "questions": [
+        {
+          "id": "cn-p6-math-full-q11",
+          "number": 11,
+          "type": "choice",
+          "prompt": "下列各数中最小的是哪一个？",
+          "solution": "C",
+          "explanation": "四个数分别是 0.71、0.72、0.70、0.705，0.70 最小。",
+          "score": 2,
+          "chapter": "大小比较",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q11-source",
+            "exact": "下列各数中最小的是哪一个？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "四个数分别是 0.71、0.72、0.70、0.705，0.70 最小。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "0.71"
+            },
+            {
+              "id": "B",
+              "text": "72%"
+            },
+            {
+              "id": "C",
+              "text": "$\\frac{7}{10}$"
+            },
+            {
+              "id": "D",
+              "text": "0.705"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-math-full-q12",
+          "number": 12,
+          "type": "choice",
+          "prompt": "在同一张比例尺固定的地图上，图上距离与实际距离属于哪种关系？",
+          "solution": "A",
+          "explanation": "实际距离除以图上距离所得的比值一定，因此成正比例。",
+          "score": 2,
+          "chapter": "正比例",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q12-source",
+            "exact": "在同一张比例尺固定的地图上，图上距离与实际距离属于哪种关系？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "实际距离除以图上距离所得的比值一定，因此成正比例。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "成正比例"
+            },
+            {
+              "id": "B",
+              "text": "成反比例"
+            },
+            {
+              "id": "C",
+              "text": "两种比例都成"
+            },
+            {
+              "id": "D",
+              "text": "两种比例都不成"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-math-full-q13",
+          "number": 13,
+          "type": "choice",
+          "prompt": "把一个半径为 2 厘米的圆的半径扩大到原来的 2 倍，圆的面积变为原来的多少倍？",
+          "solution": "D",
+          "explanation": "半径的平方变为原来的 4 倍，面积随之变为原来的 4 倍。",
+          "score": 2,
+          "chapter": "圆的面积",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q13-source",
+            "exact": "把一个半径为 2 厘米的圆的半径扩大到原来的 2 倍，圆的面积变为原来的多少倍？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "半径的平方变为原来的 4 倍，面积随之变为原来的 4 倍。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "2 倍"
+            },
+            {
+              "id": "B",
+              "text": "8 倍"
+            },
+            {
+              "id": "C",
+              "text": "16 倍"
+            },
+            {
+              "id": "D",
+              "text": "4 倍"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-math-full-q14",
+          "number": 14,
+          "type": "choice",
+          "prompt": "一件原价 80 元的商品优惠 25%。另一件商品优惠后是 80 元，优惠幅度也是 25%。两件商品的原价相差多少元？",
+          "solution": "B",
+          "explanation": "另一件商品原价为 80÷(3/4)＝320/3 元，相差 320/3−80＝80/3 元。",
+          "score": 2,
+          "chapter": "折扣",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q14-source",
+            "exact": "一件原价 80 元的商品优惠 25%。另一件商品优惠后是 80 元，优惠幅度也是 25%。两件商品的原价相差多少元？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "另一件商品原价为 80÷(3/4)＝320/3 元，相差 320/3−80＝80/3 元。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "20 元"
+            },
+            {
+              "id": "B",
+              "text": "$26\\frac{2}{3}$ 元"
+            },
+            {
+              "id": "C",
+              "text": "$6\\frac{2}{3}$ 元"
+            },
+            {
+              "id": "D",
+              "text": "25 元"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-math-full-q15",
+          "number": 15,
+          "type": "choice",
+          "prompt": "书架上故事书与科普书本数的比是 5∶3。取走 5 本故事书和 3 本科普书后，两类书均有剩余。此时故事书与科普书本数的比是多少？",
+          "solution": "A",
+          "explanation": "原来可表示为 5k 和 3k，取走后为 5(k−1) 和 3(k−1)，k＞1，最简比为 5∶3。",
+          "score": 2,
+          "chapter": "比的基本性质",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q15-source",
+            "exact": "书架上故事书与科普书本数的比是 5∶3。取走 5 本故事书和 3 本科普书后，两类书均有剩余。此时故事书与科普书本数的比是多少？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "原来可表示为 5k 和 3k，取走后为 5(k−1) 和 3(k−1)，k＞1，最简比为 5∶3。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "5∶3"
+            },
+            {
+              "id": "B",
+              "text": "3∶5"
+            },
+            {
+              "id": "C",
+              "text": "10∶6 后仍需知道原来的本数"
+            },
+            {
+              "id": "D",
+              "text": "两类书本数相等"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-math-full-q16",
+          "number": 16,
+          "type": "choice",
+          "prompt": "班级运动项目调查中，每人只选一项。跳绳占全班人数的 30%。扇形统计图中表示跳绳的扇形圆心角是多少？",
+          "solution": "C",
+          "explanation": "圆周 360° 的 30% 是 108°。",
+          "score": 2,
+          "chapter": "扇形统计图",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q16-source",
+            "exact": "班级运动项目调查中，每人只选一项。跳绳占全班人数的 30%。扇形统计图中表示跳绳的扇形圆心角是多少？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "圆周 360° 的 30% 是 108°。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "30°"
+            },
+            {
+              "id": "B",
+              "text": "90°"
+            },
+            {
+              "id": "C",
+              "text": "108°"
+            },
+            {
+              "id": "D",
+              "text": "120°"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-math-full-compute",
+      "examPartId": "compute",
+      "title": "计算",
+      "instructions": "写出主要步骤，能简算时可用简算。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "cn-p6-math-full-q17",
+          "number": 17,
+          "type": "response",
+          "prompt": "$5.7-1.28-2.72$。",
+          "solution": "1.7。先算 1.28＋2.72＝4，再算 5.7−4＝1.7。",
+          "explanation": "1.7。先算 1.28＋2.72＝4，再算 5.7−4＝1.7。",
+          "score": 4,
+          "chapter": "小数运算",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q17-source",
+            "exact": "$5.7-1.28-2.72$。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "1.7。先算 1.28＋2.72＝4，再算 5.7−4＝1.7。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "正确计算 1.28＋2.72，或用等价的逐次相减步骤。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "得 1.7。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-math-full-q18",
+          "number": 18,
+          "type": "response",
+          "prompt": "$\\frac78-\\left(\\frac16+\\frac38\\right)$。",
+          "solution": "1/3。先把 7/8 与 3/8 作差得 1/2，再减 1/6，得 1/3。",
+          "explanation": "1/3。先把 7/8 与 3/8 作差得 1/2，再减 1/6，得 1/3。",
+          "score": 4,
+          "chapter": "分数运算",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q18-source",
+            "exact": "$\\frac78-\\left(\\frac16+\\frac38\\right)$。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "1/3。先把 7/8 与 3/8 作差得 1/2，再减 1/6，得 1/3。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "依照括号与减法性质将式子化简，或正确通分。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "得最简分数 1/3。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-math-full-q19",
+          "number": 19,
+          "type": "response",
+          "prompt": "$\\frac59\\times\\frac34+\\frac49\\times\\frac34$。",
+          "solution": "3/4。用乘法分配律，提取 3/4，括号内 5/9＋4/9＝1。",
+          "explanation": "3/4。用乘法分配律，提取 3/4，括号内 5/9＋4/9＝1。",
+          "score": 4,
+          "chapter": "运算律",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q19-source",
+            "exact": "$\\frac59\\times\\frac34+\\frac49\\times\\frac34$。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "3/4。用乘法分配律，提取 3/4，括号内 5/9＋4/9＝1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "正确提取公因数或分别化得正确的两项。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "得最简分数 3/4。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-math-full-q20",
+          "number": 20,
+          "type": "response",
+          "prompt": "$\\left(1-35\\%\\right)\\div\\frac{13}{20}$。",
+          "solution": "1。1−35%＝65%＝13/20，同一个非零数相除为 1。",
+          "explanation": "1。1−35%＝65%＝13/20，同一个非零数相除为 1。",
+          "score": 4,
+          "chapter": "百分数运算",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q20-source",
+            "exact": "$\\left(1-35\\%\\right)\\div\\frac{13}{20}$。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "1。1−35%＝65%＝13/20，同一个非零数相除为 1。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "将 1−35% 正确化为 13/20。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "得 1。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-math-full-q21",
+          "number": 21,
+          "type": "response",
+          "prompt": "解方程 $0.4x+1.8=5.4$。",
+          "solution": "x＝9。两边减 1.8 得 0.4x＝3.6，再除以 0.4 得 x＝9。代入验证：0.4×9＋1.8＝5.4。",
+          "explanation": "x＝9。两边减 1.8 得 0.4x＝3.6，再除以 0.4 得 x＝9。代入验证：0.4×9＋1.8＝5.4。",
+          "score": 4,
+          "chapter": "方程",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q21-source",
+            "exact": "解方程 $0.4x+1.8=5.4$。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "x＝9。两边减 1.8 得 0.4x＝3.6，再除以 0.4 得 x＝9。代入验证：0.4×9＋1.8＝5.4。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "得到 0.4x＝3.6 或等价式。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "得 x＝9。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 3
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-math-full-geometry",
+      "examPartId": "geometry",
+      "title": "图形与测量",
+      "instructions": "按题意列式并写出单位。",
+      "score": 12,
+      "questions": [
+        {
+          "id": "cn-p6-math-full-q22",
+          "number": 22,
+          "type": "response",
+          "prompt": "一块长方形草坪长 18 米、宽 12 米。草坪内沿四条边铺设等宽 1 米的步道，中央仍种草。步道共有多少平方米？",
+          "solution": "56 平方米。中央种草区域长 18−2＝16 米，宽 12−2＝10 米。步道面积 18×12−16×10＝216−160＝56 平方米。",
+          "explanation": "56 平方米。中央种草区域长 18−2＝16 米，宽 12−2＝10 米。步道面积 18×12−16×10＝216−160＝56 平方米。",
+          "score": 6,
+          "chapter": "组合图形",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q22-source",
+            "exact": "一块长方形草坪长 18 米、宽 12 米。草坪内沿四条边铺设等宽 1 米的步道，中央仍种草。步道共有多少平方米？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "56 平方米。中央种草区域长 18−2＝16 米，宽 12−2＝10 米。步道面积 18×12−16×10＝216−160＝56 平方米。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "判断中央长、宽各减 2 米，写出 16 米与 10 米。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "正确列出外部与内部面积的差。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "结果 56 平方米，单位正确。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4,
+          "attachments": [
+            {
+              "id": "cn-p6-math-full-q22-diagram",
+              "dataUrl": "data:image/png;base64,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",
+              "alt": "长方形草坪平面图，外长18米、宽12米。沿四边有一圈等宽1米的步道，用斜线标示。",
+              "caption": "斜线部分为步道。",
+              "widthMm": 105
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-math-full-q23",
+          "number": 23,
+          "type": "response",
+          "prompt": "一只直壁长方体水箱内底长 40 厘米、宽 25 厘米，现有水深 18 厘米。在不溢水的条件下，把体积为 2000 立方厘米的实心金属块完全浸没。水面升高多少厘米？升高后水深是多少厘米？",
+          "solution": "升高 2 厘米，水深变为 20 厘米。排开的水的体积等于完全浸没金属块的体积。2000÷(40×25)＝2 厘米；18＋2＝20 厘米。",
+          "explanation": "升高 2 厘米，水深变为 20 厘米。排开的水的体积等于完全浸没金属块的体积。2000÷(40×25)＝2 厘米；18＋2＝20 厘米。",
+          "score": 6,
+          "chapter": "体积与排水",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q23-source",
+            "exact": "一只直壁长方体水箱内底长 40 厘米、宽 25 厘米，现有水深 18 厘米。在不溢水的条件下，把体积为 2000 立方厘米的实心金属块完全浸没。水面升高多少厘米？升高后水深是多少厘米？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "升高 2 厘米，水深变为 20 厘米。排开的水的体积等于完全浸没金属块的体积。2000÷(40×25)＝2 厘米；18＋2＝20 厘米。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "用金属块体积作为排水体积，求出底面积 1000 平方厘米。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "求得水面升高 2 厘米。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "求得最终水深 20 厘米。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-math-full-apply",
+      "examPartId": "apply",
+      "title": "解决问题",
+      "instructions": "写出所用的数量关系、主要计算步骤和结论。",
+      "score": 36,
+      "questions": [
+        {
+          "id": "cn-p6-math-full-q24",
+          "number": 24,
+          "type": "response",
+          "prompt": "公益义卖计划筹集 800 元。上午筹到计划的 45%，下午比上午多筹到 120 元。全天达到目标了吗？超出或相差多少元？",
+          "solution": "达到，超出 40 元。上午 800×0.45＝360 元，下午 360＋120＝480 元，全天 840 元，840−800＝40 元。",
+          "explanation": "达到，超出 40 元。上午 800×0.45＝360 元，下午 360＋120＝480 元，全天 840 元，840−800＝40 元。",
+          "score": 6,
+          "chapter": "百分数应用",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q24-source",
+            "exact": "公益义卖计划筹集 800 元。上午筹到计划的 45%，下午比上午多筹到 120 元。全天达到目标了吗？超出或相差多少元？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "达到，超出 40 元。上午 800×0.45＝360 元，下午 360＋120＝480 元，全天 840 元，840−800＝40 元。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "求出上午筹款 360 元。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "求出下午 480 元和全天 840 元。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "比较目标并得超出 40 元。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-math-full-q25",
+          "number": 25,
+          "type": "response",
+          "prompt": "班级准备 108 张手工纸，按红、黄、蓝 3∶2∶4 分配。实际操作前从蓝纸中调出 8 张换成同样数量的红纸。换完后三色各多少张？",
+          "solution": "红 44 张，黄 24 张，蓝 40 张。原来每份 108÷9＝12 张，三色为 36、24、48 张。蓝减 8，红增 8，黄不变。",
+          "explanation": "红 44 张，黄 24 张，蓝 40 张。原来每份 108÷9＝12 张，三色为 36、24、48 张。蓝减 8，红增 8，黄不变。",
+          "score": 6,
+          "chapter": "按比分配",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q25-source",
+            "exact": "班级准备 108 张手工纸，按红、黄、蓝 3∶2∶4 分配。实际操作前从蓝纸中调出 8 张换成同样数量的红纸。换完后三色各多少张？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "红 44 张，黄 24 张，蓝 40 张。原来每份 108÷9＝12 张，三色为 36、24、48 张。蓝减 8，红增 8，黄不变。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "求出一份 12 张。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "得到原来的 36、24、48 张。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "得到换后 44、24、40 张。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-math-full-q26",
+          "number": 26,
+          "type": "response",
+          "prompt": "两组同学同时在一段长 960 米的步道两端出发，相向匀速步行。甲每分钟走 70 米，乙每分钟走 50 米。几分钟后相遇？此时乙走了多少米？",
+          "solution": "8 分钟后相遇，乙走 400 米。每分钟距离缩短 120 米，960÷120＝8 分钟，乙走 50×8＝400 米。",
+          "explanation": "8 分钟后相遇，乙走 400 米。每分钟距离缩短 120 米，960÷120＝8 分钟，乙走 50×8＝400 米。",
+          "score": 6,
+          "chapter": "相遇问题",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q26-source",
+            "exact": "两组同学同时在一段长 960 米的步道两端出发，相向匀速步行。甲每分钟走 70 米，乙每分钟走 50 米。几分钟后相遇？此时乙走了多少米？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "8 分钟后相遇，乙走 400 米。每分钟距离缩短 120 米，960÷120＝8 分钟，乙走 50×8＝400 米。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "用两组速度的和 120 米/分。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "相遇时长为 8 分钟。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "乙走 400 米。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-math-full-q27",
+          "number": 27,
+          "type": "response",
+          "prompt": "调查 40 名同学周末练习跳绳的次数，没人漏报。0 次有 4 人，1 次有 10 人，2 次有 18 人，3 次有 8 人。求平均每人练习次数，并判断练习 2 次及以上的人数是否超过 60%。",
+          "solution": "平均 1.75 次，超过 60%。总次数是 0×4＋1×10＋2×18＋3×8＝70 次，70÷40＝1.75；2 次及以上有 26 人，26÷40＝65%＞60%。",
+          "explanation": "平均 1.75 次，超过 60%。总次数是 0×4＋1×10＋2×18＋3×8＝70 次，70÷40＝1.75；2 次及以上有 26 人，26÷40＝65%＞60%。",
+          "score": 6,
+          "chapter": "统计量与比例",
+          "difficulty": "medium",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q27-source",
+            "exact": "调查 40 名同学周末练习跳绳的次数，没人漏报。0 次有 4 人，1 次有 10 人，2 次有 18 人，3 次有 8 人。求平均每人练习次数，并判断练习 2 次及以上的人数是否超过 60%。"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "平均 1.75 次，超过 60%。总次数是 0×4＋1×10＋2×18＋3×8＝70 次，70÷40＝1.75；2 次及以上有 26 人，26÷40＝65%＞60%。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "按次数加权求总次数 70。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "求出平均 1.75 次。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "求出 65% 并与 60% 正确比较。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-math-full-q28",
+          "number": 28,
+          "type": "response",
+          "prompt": "校运会需制作 76 张号码牌。甲店每张 2.5 元，另收 20 元设计费。乙店每张 2.8 元，满 200 元减 15 元，免设计费。两家质量相同且不计其他费用，选哪家更省？能省多少元？",
+          "solution": "乙店更省，省 12.2 元。甲店 76×2.5＋20＝210 元。乙店原价 212.8 元，满足优惠后 197.8 元。210−197.8＝12.2 元。",
+          "explanation": "乙店更省，省 12.2 元。甲店 76×2.5＋20＝210 元。乙店原价 212.8 元，满足优惠后 197.8 元。210−197.8＝12.2 元。",
+          "score": 6,
+          "chapter": "小数和费用比较",
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q28-source",
+            "exact": "校运会需制作 76 张号码牌。甲店每张 2.5 元，另收 20 元设计费。乙店每张 2.8 元，满 200 元减 15 元，免设计费。两家质量相同且不计其他费用，选哪家更省？能省多少元？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "乙店更省，省 12.2 元。甲店 76×2.5＋20＝210 元。乙店原价 212.8 元，满足优惠后 197.8 元。210−197.8＝12.2 元。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "算出甲店总价 210 元。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "判断乙店满减适用，得 197.8 元。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "选择乙店并求得差额 12.2 元。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-math-full-q29",
+          "number": 29,
+          "type": "response",
+          "prompt": "科学小组为花坛浇水。第一次浇去水桶中原有水量的 1/3，第二次用掉剩余水量的 1/4。桶里还剩 18 升水。起初有多少升水？两次各用了多少升？",
+          "solution": "原来 36 升，第一次用 12 升，第二次用 6 升。第一次剩原来的 2/3，第二次后剩其中的 3/4，即原来的 1/2。18÷(1/2)＝36。第二次用 (36−12)÷4＝6 升。",
+          "explanation": "原来 36 升，第一次用 12 升，第二次用 6 升。第一次剩原来的 2/3，第二次后剩其中的 3/4，即原来的 1/2。18÷(1/2)＝36。第二次用 (36−12)÷4＝6 升。",
+          "score": 6,
+          "chapter": "分数综合",
+          "difficulty": "hard",
+          "origin": {
+            "kind": "generated"
+          },
+          "source": {
+            "materialId": "cn-p6-math-full-authored",
+            "blockId": "cn-p6-math-full-q29-source",
+            "exact": "科学小组为花坛浇水。第一次浇去水桶中原有水量的 1/3，第二次用掉剩余水量的 1/4。桶里还剩 18 升水。起初有多少升水？两次各用了多少升？"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-math-full-standard",
+                "blockId": "cn-p6-math-full-standard-b",
+                "exact": "第三学段有关数与运算、数量关系、图形与几何、数据分类和统计的内容要求。本卷是本项目设计的综合练习，题型、时长和分值由本项目设定。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "验算与评分点复核",
+                "detail": "原来 36 升，第一次用 12 升，第二次用 6 升。第一次剩原来的 2/3，第二次后剩其中的 3/4，即原来的 1/2。18÷(1/2)＝36。第二次用 (36−12)÷4＝6 升。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "说明两次后剩原总量的 (2/3)×(3/4)＝1/2，或正确逆推剩余量。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "求得原水量 36 升。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "分清第二次分率的基准，得到 12 升与 6 升。",
+                "points": 2
+              }
+            ],
+            "equivalentMethods": [
+              "步骤与结论等价的正确解法按同样的得分点给分。"
+            ]
+          },
+          "answerRows": 4
+        }
+      ]
+    }
+  ],
+  "authoring": {
+    "routeId": "primary-math",
+    "region": "中国大陆",
+    "grade": "六年级",
+    "examName": "六年级数学综合练习",
+    "difficulty": "balanced",
+    "knowledge": "第三学段数与运算、数量关系、图形与测量、统计与概率。",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "cn-p6-math-full-fill",
+        "knowledge": "分数与小数、比与比例、面积单位、百分数、数轴、平均数、比例尺、容积、可能性、用字母表示数",
+        "ability": "理解分数、比例、测量和统计量，并在一个步骤内转换或求值。",
+        "types": [
+          "blank"
+        ],
+        "count": 10,
+        "points": 20,
+        "estimatedMinutes": 12,
+        "sourceIds": [
+          "cn-p6-math-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-math-full-choice",
+        "knowledge": "大小比较、正比例、圆的面积、折扣、比的基本性质、扇形统计图",
+        "ability": "辨析数值比较、成正比例的条件和几何不变量。",
+        "types": [
+          "choice"
+        ],
+        "count": 6,
+        "points": 12,
+        "estimatedMinutes": 10,
+        "sourceIds": [
+          "cn-p6-math-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-math-full-compute",
+        "knowledge": "小数运算、分数运算、运算律、百分数运算、方程",
+        "ability": "准确完成四则运算、分数与百分数转换、分配律以及简单方程。",
+        "types": [
+          "response"
+        ],
+        "count": 5,
+        "points": 20,
+        "estimatedMinutes": 15,
+        "sourceIds": [
+          "cn-p6-math-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-math-full-geometry",
+        "knowledge": "组合图形、体积与排水",
+        "ability": "利用面积关系与体积守恒解决图形组合和容器中的问题。",
+        "types": [
+          "response"
+        ],
+        "count": 2,
+        "points": 12,
+        "estimatedMinutes": 12,
+        "sourceIds": [
+          "cn-p6-math-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-math-full-apply",
+        "knowledge": "百分数应用、按比分配、相遇问题、统计量与比例、小数和费用比较、分数综合",
+        "ability": "在真实约束下用单位量、比、统计和费用模型比较方案，并说明理由。",
+        "types": [
+          "response"
+        ],
+        "count": 6,
+        "points": 36,
+        "estimatedMinutes": 34,
+        "sourceIds": [
+          "cn-p6-math-full-standard"
+        ]
+      }
+    ]
+  },
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": false,
+    "unresolved": []
+  },
+  "exam": {
+    "specificationId": "primary-six-math-practice",
+    "scope": "full",
+    "scoreScale": "100分练习卷",
+    "specification": {
+      "id": "primary-six-math-practice",
+      "name": "六年级数学综合练习",
+      "subject": "数学",
+      "level": "小学六年级",
+      "durationMinutes": 90,
+      "totalScore": 100,
+      "scoreScale": "100分练习卷",
+      "source": {
+        "title": "纸间原创整卷蓝图（课程依据：义务教育数学课程标准第三学段）",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220510531636118932.pdf"
+      },
+      "sections": [
+        {
+          "id": "fill",
+          "title": "填空",
+          "questionType": "blank",
+          "count": 10,
+          "questionScores": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "displayStart": 1,
+          "totalScore": 20
+        },
+        {
+          "id": "choice",
+          "title": "选择",
+          "questionType": "choice",
+          "count": 6,
+          "questionScores": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "displayStart": 11,
+          "totalScore": 12
+        },
+        {
+          "id": "compute",
+          "title": "计算",
+          "questionType": "response",
+          "count": 5,
+          "questionScores": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "displayStart": 17,
+          "totalScore": 20
+        },
+        {
+          "id": "geometry",
+          "title": "图形与测量",
+          "questionType": "response",
+          "count": 2,
+          "questionScores": [
+            6,
+            6
+          ],
+          "displayStart": 22,
+          "totalScore": 12
+        },
+        {
+          "id": "apply",
+          "title": "解决问题",
+          "questionType": "response",
+          "count": 6,
+          "questionScores": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "displayStart": 24,
+          "totalScore": 36
+        }
+      ]
+    }
+  }
+}

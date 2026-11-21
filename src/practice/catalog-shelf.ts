@@ -78,6 +78,9 @@ const primarySubjects:Record<string,string>={
  'england-ks2-math':'数学','hk-p6-chinese':'语文','hk-p6-english':'英语',
 };
 const primaryAliases=['小六','六年级','小学六年级','P6'];
+const primaryFullPapers:Record<string,string>={
+ 'primary-math':'cn-p6-math-full','primary-chinese':'cn-p6-chinese-full','primary-english':'cn-p6-english-full',
+};
 const sampleByTemplate=new Map<string,string>();
 const exampleCatalog:CatalogEntry[]=originalExamples.map(([id,paper])=>{
  const display=identityOf(id);
@@ -104,7 +107,7 @@ function layoutEntry(t:PaperTemplate):CatalogEntry {
   kind:'layout',request:{kind:'template',id:t.id},identity:'layout',scope:'layout',
   subject:primarySubjects[t.id]??source?.subject??t.subjects[0],grade:t.level,issuer:'纸间 Practice',
   details:[t.layout.paperSize,t.layout.orientation==='landscape'?'横向':'纵向',t.layout.columns===2?'双栏':'单栏'].join(' · '),
-  sampleId:sampleByTemplate.get(t.id)??t.caseId??t.topicId,
+  sampleId:primaryFullPapers[t.id]??sampleByTemplate.get(t.id)??t.caseId??t.topicId,
   aliases:t.subjects,
  };
 }

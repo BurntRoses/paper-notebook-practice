@@ -1,0 +1,1800 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "cn-p6-chinese-full",
+  "notebookId": "cn-p6-chinese-full-source",
+  "notebookRevision": 1,
+  "title": "六年级语文综合练习卷",
+  "subject": "语文",
+  "level": "小学六年级",
+  "durationMinutes": 100,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "templateId": "primary-chinese",
+    "preset": "humanities"
+  },
+  "exam": {
+    "specificationId": "primary-six-chinese-practice",
+    "specification": {
+      "id": "primary-six-chinese-practice",
+      "name": "六年级语文综合练习卷",
+      "subject": "语文",
+      "level": "小学六年级",
+      "durationMinutes": 100,
+      "totalScore": 100,
+      "scoreScale": "100分练习卷",
+      "source": {
+        "title": "纸间原创整卷蓝图与学段课程标准",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582344386456.pdf"
+      },
+      "sections": [
+        {
+          "id": "language",
+          "title": "积累与运用",
+          "count": 12,
+          "questionType": "mixed",
+          "questionTypes": [
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "blank",
+            "blank",
+            "response",
+            "response"
+          ],
+          "questionScores": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            5,
+            5
+          ],
+          "totalScore": 30,
+          "displayStart": 1
+        },
+        {
+          "id": "literary",
+          "title": "阅读一　展板上的纸箭头",
+          "count": 5,
+          "questionType": "response",
+          "questionTypes": [
+            "response",
+            "response",
+            "response",
+            "response",
+            "response"
+          ],
+          "questionScores": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "totalScore": 20,
+          "displayStart": 13,
+          "stimulusKind": "reading-passage"
+        },
+        {
+          "id": "nonfiction",
+          "title": "阅读二　雨水花园怎样工作",
+          "count": 5,
+          "questionType": "response",
+          "questionTypes": [
+            "response",
+            "response",
+            "response",
+            "response",
+            "response"
+          ],
+          "questionScores": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "totalScore": 20,
+          "displayStart": 18,
+          "stimulusKind": "reading-passage"
+        },
+        {
+          "id": "writing",
+          "title": "习作",
+          "count": 1,
+          "questionType": "response",
+          "questionTypes": [
+            "response"
+          ],
+          "questionScores": [
+            30
+          ],
+          "totalScore": 30,
+          "displayStart": 23
+        }
+      ]
+    },
+    "scope": "full",
+    "scoreScale": "100分练习卷"
+  },
+  "presentation": {
+    "language": "zh",
+    "metaLines": [
+      "考试时间 100 分钟　满分 100 分"
+    ],
+    "candidateFields": [
+      "学校：____________　班级：______　姓名：____________"
+    ],
+    "notices": [
+      "阅读题请依据各篇材料作答。习作另有答题区域。"
+    ],
+    "answerCard": {
+      "template": "school",
+      "groupObjective": true
+    }
+  },
+  "authoring": {
+    "routeId": "primary-chinese",
+    "region": "中国大陆",
+    "grade": "六年级",
+    "examName": "六年级语文综合练习卷",
+    "knowledge": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "cn-p6-chinese-full-language",
+        "knowledge": "语言文字积累与梳理、实用性表达",
+        "ability": "在具体语境中选用词语、标点和句式，准确传达活动信息。",
+        "types": [
+          "choice",
+          "blank",
+          "response"
+        ],
+        "count": 12,
+        "points": 30,
+        "estimatedMinutes": 22,
+        "sourceIds": [
+          "cn-p6-chinese-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-chinese-full-literary",
+        "knowledge": "文学阅读、叙事线索、人物心理和互助主题",
+        "ability": "提取细节，解释叙述者改变讲法的原因，结合词句推断人物想法。",
+        "types": [
+          "response"
+        ],
+        "count": 5,
+        "points": 20,
+        "estimatedMinutes": 18,
+        "sourceIds": [
+          "cn-p6-chinese-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-chinese-full-nonfiction",
+        "knowledge": "实用性阅读、说明顺序、对比实验",
+        "ability": "从说明文提取条件和过程，区分观测结果与超出证据的判断。",
+        "types": [
+          "response"
+        ],
+        "count": 5,
+        "points": 20,
+        "estimatedMinutes": 18,
+        "sourceIds": [
+          "cn-p6-chinese-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-chinese-full-writing",
+        "knowledge": "写实习作、细节与叙事组织",
+        "ability": "围绕中心讲述具体经历，通过行动和细节呈现观察或理解的变化。",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 30,
+        "estimatedMinutes": 36,
+        "sourceIds": [
+          "cn-p6-chinese-full-standard"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "cn-p6-chinese-full-language",
+      "examPartId": "language",
+      "title": "积累与运用",
+      "instructions": "选择题每题只有一个选项符合题意。其余题按题意作答。",
+      "score": 30,
+      "questions": [
+        {
+          "id": "cn-p6-chinese-full-q01",
+          "number": 1,
+          "type": "choice",
+          "prompt": "下列词语的书写全部正确的是哪一项？",
+          "solution": "A",
+          "explanation": "A 三词书写正确。B“清淅”应为“清晰”，C“辩别”应为“辨别”，D“顷听”应为“倾听”。",
+          "score": 2,
+          "chapter": "字形辨析",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-01",
+            "title": "题 1",
+            "exact": "下列词语的书写全部正确的是哪一项？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "A 三词书写正确。B“清淅”应为“清晰”，C“辩别”应为“辨别”，D“顷听”应为“倾听”。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "妥帖　眷恋　清晰"
+            },
+            {
+              "id": "B",
+              "text": "清淅　喧闹　谨慎"
+            },
+            {
+              "id": "C",
+              "text": "辩别　明朗　记录"
+            },
+            {
+              "id": "D",
+              "text": "沮丧　顷听　郑重"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q02",
+          "number": 2,
+          "type": "choice",
+          "prompt": "“第一次试讲的时候，我本来有些紧张。轮到熟悉的实验步骤，语气却渐渐（　　）下来。”填入哪项最恰当？",
+          "solution": "D",
+          "explanation": "“渐渐平稳下来”符合紧张缓解时语气的变化。",
+          "score": 2,
+          "chapter": "语境选词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-02",
+            "title": "题 2",
+            "exact": "“第一次试讲的时候，我本来有些紧张。轮到熟悉的实验步骤，语气却渐渐（　　）下来。”填入哪项最恰当？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "“渐渐平稳下来”符合紧张缓解时语气的变化。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "急促"
+            },
+            {
+              "id": "B",
+              "text": "模糊"
+            },
+            {
+              "id": "C",
+              "text": "热烈"
+            },
+            {
+              "id": "D",
+              "text": "平稳"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q03",
+          "number": 3,
+          "type": "choice",
+          "prompt": "下面哪一句标点使用正确？",
+          "solution": "C",
+          "explanation": "C 是完整直接引语。A 引出列举应用冒号，B 问句应用问号，D 引语被插入语分隔，前半句的逗号应在引号内。",
+          "score": 2,
+          "chapter": "标点使用",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-03",
+            "title": "题 3",
+            "exact": "下面哪一句标点使用正确？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "C 是完整直接引语。A 引出列举应用冒号，B 问句应用问号，D 引语被插入语分隔，前半句的逗号应在引号内。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "同学们带来了三样东西，纸盒、细绳和剪刀。"
+            },
+            {
+              "id": "B",
+              "text": "请问今天的图书角开放吗。"
+            },
+            {
+              "id": "C",
+              "text": "班长说：“请把归还的书放在右边。”"
+            },
+            {
+              "id": "D",
+              "text": "“先记下数据”，老师提醒，“再核对单位。”"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q04",
+          "number": 4,
+          "type": "choice",
+          "prompt": "下列句子没有语病的是哪项？",
+          "solution": "D",
+          "explanation": "A 应先听取再讨论，B 缺主语，C 两面对一面，D 顺序与结构正确。",
+          "score": 2,
+          "chapter": "辨析病句",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-04",
+            "title": "题 4",
+            "exact": "下列句子没有语病的是哪项？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "A 应先听取再讨论，B 缺主语，C 两面对一面，D 顺序与结构正确。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "我们讨论并听取了同学们的建议。"
+            },
+            {
+              "id": "B",
+              "text": "通过这次合作，使我学会了记录分工。"
+            },
+            {
+              "id": "C",
+              "text": "是否坚持阅读，是提高理解能力的重要途径。"
+            },
+            {
+              "id": "D",
+              "text": "我们听取建议后，重新整理了活动方案。"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q05",
+          "number": 5,
+          "type": "choice",
+          "prompt": "“黄昏时，远处一盏盏灯亮了，像有人沿河岸放下了一串小小的星星。”主要运用了什么修辞？",
+          "solution": "B",
+          "explanation": "把沿河灯光比作一串小星星，突出点点发亮。",
+          "score": 2,
+          "chapter": "修辞辨析",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-05",
+            "title": "题 5",
+            "exact": "“黄昏时，远处一盏盏灯亮了，像有人沿河岸放下了一串小小的星星。”主要运用了什么修辞？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "把沿河灯光比作一串小星星，突出点点发亮。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "排比"
+            },
+            {
+              "id": "B",
+              "text": "比喻"
+            },
+            {
+              "id": "C",
+              "text": "反问"
+            },
+            {
+              "id": "D",
+              "text": "夸张"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q06",
+          "number": 6,
+          "type": "choice",
+          "prompt": "把下面三句排成连贯的文字。①水慢慢渗入泥土。②我先用手指在土里压出一个小坑，再把种子放进去。③最后，我把土轻轻盖上，沿花盆边浇水。",
+          "solution": "A",
+          "explanation": "先播种，接着覆土浇水，最后才有水渗入泥土。",
+          "score": 2,
+          "chapter": "句序",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-06",
+            "title": "题 6",
+            "exact": "把下面三句排成连贯的文字。①水慢慢渗入泥土。②我先用手指在土里压出一个小坑，再把种子放进去。③最后，我把土轻轻盖上，沿花盆边浇水。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "先播种，接着覆土浇水，最后才有水渗入泥土。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "②③①"
+            },
+            {
+              "id": "B",
+              "text": "①②③"
+            },
+            {
+              "id": "C",
+              "text": "③①②"
+            },
+            {
+              "id": "D",
+              "text": "②①③"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q07",
+          "number": 7,
+          "type": "choice",
+          "prompt": "学校广播站需要招募一位能准时到岗、读音准确的播音员。“能胜任”中的“胜”与下列哪个“胜”的意义最接近？",
+          "solution": "B",
+          "explanation": "“胜任”与“不胜其任”的“胜”都表示能承担、能担任。",
+          "score": 2,
+          "chapter": "多义词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-07",
+            "title": "题 7",
+            "exact": "学校广播站需要招募一位能准时到岗、读音准确的播音员。“能胜任”中的“胜”与下列哪个“胜”的意义最接近？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "“胜任”与“不胜其任”的“胜”都表示能承担、能担任。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "名胜古迹"
+            },
+            {
+              "id": "B",
+              "text": "不胜其任"
+            },
+            {
+              "id": "C",
+              "text": "旗开得胜"
+            },
+            {
+              "id": "D",
+              "text": "以少胜多"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q08",
+          "number": 8,
+          "type": "choice",
+          "prompt": "下列哪条借阅提醒交代得最清楚？",
+          "solution": "C",
+          "explanation": "C 同时交代了归还的时间、对象、地点和方式。",
+          "score": 2,
+          "chapter": "实用交际",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-08",
+            "title": "题 8",
+            "exact": "下列哪条借阅提醒交代得最清楚？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "C 同时交代了归还的时间、对象、地点和方式。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "书看完了就还吧。"
+            },
+            {
+              "id": "B",
+              "text": "最近请大家尽量把书还回来。"
+            },
+            {
+              "id": "C",
+              "text": "请在本周五放学前，把借阅的图书放在教室门口的归还箱里。"
+            },
+            {
+              "id": "D",
+              "text": "这周记得找老师，别忘了图书。"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-chinese-full-q09",
+          "number": 9,
+          "type": "blank",
+          "prompt": "补写《登鹳雀楼》中的下一句。欲穷千里目，________。",
+          "solution": [
+            "更上一层楼"
+          ],
+          "explanation": "王之涣《登鹳雀楼》末句为“更上一层楼”。",
+          "score": 2,
+          "chapter": "古诗积累",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-09",
+            "title": "题 9",
+            "exact": "补写《登鹳雀楼》中的下一句。欲穷千里目，________。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "王之涣《登鹳雀楼》末句为“更上一层楼”。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-chinese-full-q10",
+          "number": 10,
+          "type": "blank",
+          "prompt": "“人固有一死，或重于泰山，或轻于鸿毛”中，第二个“或”解释为什么？",
+          "solution": [
+            "有的人"
+          ],
+          "explanation": "句中的“或”代指“有的人”，分别引出两类人的选择与价值。",
+          "score": 2,
+          "chapter": "文言词语",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-10",
+            "title": "题 10",
+            "exact": "“人固有一死，或重于泰山，或轻于鸿毛”中，第二个“或”解释为什么？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "句中的“或”代指“有的人”，分别引出两类人的选择与价值。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-chinese-full-q11",
+          "number": 11,
+          "type": "response",
+          "prompt": "把这句话改写为转述句：小言对我说：“周五我会把你的参观记录带来。”两人的关系与信息保持原意。",
+          "solution": "小言对我说，周五他（她）会把我的参观记录带来。小言是原引语中的“我”，“你”指听话的我。",
+          "explanation": "小言对我说，周五他（她）会把我的参观记录带来。小言是原引语中的“我”，“你”指听话的我。",
+          "score": 5,
+          "chapter": "直接引语与转述",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-11",
+            "title": "题 11",
+            "exact": "把这句话改写为转述句：小言对我说：“周五我会把你的参观记录带来。”两人的关系与信息保持原意。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "小言对我说，周五他（她）会把我的参观记录带来。小言是原引语中的“我”，“你”指听话的我。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "保留说话对象和时间、事情。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "“我会”改为“他（她）会”，“你的”改为“我的”。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "引号和冒号改作恰当标点。",
+                "points": 1
+              }
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-chinese-full-q12",
+          "number": 12,
+          "type": "response",
+          "prompt": "班级读书会改到周四中午十二点四十分，在图书室举行，原定分享的同学要带上自己的推荐卡。请拟一条给分享同学的通知。",
+          "solution": "示例：各位参加读书会分享的同学，本次读书会改在周四中午十二点四十分于图书室举行，请带上自己的推荐卡。",
+          "explanation": "示例：各位参加读书会分享的同学，本次读书会改在周四中午十二点四十分于图书室举行，请带上自己的推荐卡。",
+          "score": 5,
+          "chapter": "实用通知",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-12",
+            "title": "题 12",
+            "exact": "班级读书会改到周四中午十二点四十分，在图书室举行，原定分享的同学要带上自己的推荐卡。请拟一条给分享同学的通知。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "示例：各位参加读书会分享的同学，本次读书会改在周四中午十二点四十分于图书室举行，请带上自己的推荐卡。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "点明对象并写清活动调整。",
+                "points": 1
+              },
+              {
+                "id": "p2",
+                "description": "写出周四、十二点四十分和图书室。",
+                "points": 3
+              },
+              {
+                "id": "p3",
+                "description": "提醒带自己的推荐卡，表达清楚。",
+                "points": 1
+              }
+            ]
+          },
+          "answerRows": 3
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-chinese-full-literary",
+      "examPartId": "literary",
+      "title": "阅读一　展板上的纸箭头",
+      "instructions": "阅读文章，再回答问题。答案结合文章内容。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "cn-p6-chinese-full-q13",
+          "number": 13,
+          "type": "response",
+          "prompt": "舟舟第一次听试讲后，为什么问那座桥在哪儿？从地图上找出两个直接原因。",
+          "solution": "两条河的颜色太接近，细浅的河线与街巷混在一起。标在图下的河名又被图钉挡住一半，听者不容易定位。",
+          "explanation": "两条河的颜色太接近，细浅的河线与街巷混在一起。标在图下的河名又被图钉挡住一半，听者不容易定位。",
+          "score": 4,
+          "chapter": "提取信息",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-14",
+            "title": "题 13",
+            "exact": "舟舟第一次听试讲后，为什么问那座桥在哪儿？从地图上找出两个直接原因。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "两条河的颜色太接近，细浅的河线与街巷混在一起。标在图下的河名又被图钉挡住一半，听者不容易定位。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "指出河线/颜色不易区分。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "指出河名被图钉挡住。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-chinese-full-q14",
+          "number": 14,
+          "type": "response",
+          "prompt": "舟舟为什么把展示板立到走廊，并叫“我”站到三步外看？",
+          "solution": "他想让“我”在听众会站的位置实际看一次。距离拉开后河线看不清，能发现只重复讲稿解决不了图面定位的问题。",
+          "explanation": "他想让“我”在听众会站的位置实际看一次。距离拉开后河线看不清，能发现只重复讲稿解决不了图面定位的问题。",
+          "score": 4,
+          "chapter": "人物行动推断",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-15",
+            "title": "题 14",
+            "exact": "舟舟为什么把展示板立到走廊，并叫“我”站到三步外看？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "他想让“我”在听众会站的位置实际看一次。距离拉开后河线看不清，能发现只重复讲稿解决不了图面定位的问题。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "结合走廊和三步外说明是在模拟听众位置。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "说明此举能让“我”发现展示板的实际识读问题。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-chinese-full-q15",
+          "number": 15,
+          "type": "response",
+          "prompt": "正式试讲时，“我”的开场与原先相比有什么变化？这种变化怎样帮助大家理解旧地图？",
+          "solution": "原来先报表示年代的数字，正式试讲先提出从校门到菜场的路线问题，让大家沿箭头在地图上找到桥，再结合已找到的位置讲地图年份和新旧桥的变化。",
+          "explanation": "原来先报表示年代的数字，正式试讲先提出从校门到菜场的路线问题，让大家沿箭头在地图上找到桥，再结合已找到的位置讲地图年份和新旧桥的变化。",
+          "score": 4,
+          "chapter": "梳理叙事",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-16",
+            "title": "题 15",
+            "exact": "正式试讲时，“我”的开场与原先相比有什么变化？这种变化怎样帮助大家理解旧地图？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "原来先报表示年代的数字，正式试讲先提出从校门到菜场的路线问题，让大家沿箭头在地图上找到桥，再结合已找到的位置讲地图年份和新旧桥的变化。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "说清两种不同的开场。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "结合沿箭头找桥、先有空间印象再理解年份或变化说明效果。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-chinese-full-q16",
+          "number": 16,
+          "type": "response",
+          "prompt": "“舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。”从这句话能看出舟舟怎样帮助同伴？",
+          "solution": "他先提供可用的工具（纸箭头），耐心等待，仍把内容和开场的决定留给“我”。这是一种有实际帮助、尊重同伴主动性的做法。",
+          "explanation": "他先提供可用的工具（纸箭头），耐心等待，仍把内容和开场的决定留给“我”。这是一种有实际帮助、尊重同伴主动性的做法。",
+          "score": 4,
+          "chapter": "体会人物",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-17",
+            "title": "题 16",
+            "exact": "“舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。”从这句话能看出舟舟怎样帮助同伴？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "他先提供可用的工具（纸箭头），耐心等待，仍把内容和开场的决定留给“我”。这是一种有实际帮助、尊重同伴主动性的做法。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "结合折箭头说明实际帮助。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "依据“没有催”“等我决定”说明耐心或尊重。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-chinese-full-q17",
+          "number": 17,
+          "type": "response",
+          "prompt": "末段中，“我”为什么没有把翘起的箭头再按平？结尾与前文试讲有什么联系？",
+          "solution": "翘起的一角方便后来参观的同学拿起并移动箭头。前文箭头帮第一批同学找到桥，结尾“我”用同一种工具给下一位同学留下主动探索的机会，也把舟舟的做法传了下去。",
+          "explanation": "翘起的一角方便后来参观的同学拿起并移动箭头。前文箭头帮第一批同学找到桥，结尾“我”用同一种工具给下一位同学留下主动探索的机会，也把舟舟的做法传了下去。",
+          "score": 4,
+          "chapter": "联系全文",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-18",
+            "title": "题 17",
+            "exact": "末段中，“我”为什么没有把翘起的箭头再按平？结尾与前文试讲有什么联系？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "翘起的一角方便后来参观的同学拿起并移动箭头。前文箭头帮第一批同学找到桥，结尾“我”用同一种工具给下一位同学留下主动探索的机会，也把舟舟的做法传了下去。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "说出实际用途：下一位同学能拿起并移动。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "准确联系前文箭头的作用或舟舟帮助而不代替的行为。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 5
+        }
+      ],
+      "stimulus": {
+        "title": "展板上的纸箭头",
+        "text": "周四下午，我们小组要试讲“社区的旧地图”。我负责开场，准备好一段背得很熟的话，第一句就有三个表示年代的数字。放学前，我把图纸贴上展示板，请同桌舟舟先听一遍。\n\n我讲得很快，讲完抬起头，舟舟还看着板子的左下角。他问：“你刚才说的那座桥在哪儿？”我指向一段又细又浅的蓝线：“就在这里，我第二句讲过呀。”他没辩解，把夹在耳后的铅笔抽出来，轻轻点在另一处。我顺着看过去，发现两条河的颜色太接近，标在图下的河名还被图钉挡住了一半。\n\n我原想把讲稿里桥的位置再念一遍。舟舟去走廊把展示板立起来，招呼我走到门口。我站到三步外，方才信心十足的那一小段蓝线果然消失在灰色的街巷中。我拿来深蓝笔描河，又抄写了两行更大的河名。舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。\n\n正式试讲时，我没有开口报那些数字。我问大家：“如果从校门出发，想赶到对岸的菜场，你会怎么走？”有同学走近地图，沿着纸箭头找到桥。她用手指比划着说：“先沿河走，再过桥！”这时，我提起旧地图的年份，告诉大家地图上为什么还没有现在的步行桥。\n\n整理展板时，我把原来的讲稿折好收进袋子。箭头留在板上，尖端稍微翘起来。我按了两次没有按平，便松了手。明天还有另一个班来参观，我想，那一点翘起来的地方正好方便下一位同学伸手移动它。",
+        "source": {
+          "materialId": "cn-p6-chinese-full-original",
+          "blockId": "cn-p6-chinese-full-source-13",
+          "title": "展板上的纸箭头",
+          "exact": "周四下午，我们小组要试讲“社区的旧地图”。我负责开场，准备好一段背得很熟的话，第一句就有三个表示年代的数字。放学前，我把图纸贴上展示板，请同桌舟舟先听一遍。\n\n我讲得很快，讲完抬起头，舟舟还看着板子的左下角。他问：“你刚才说的那座桥在哪儿？”我指向一段又细又浅的蓝线：“就在这里，我第二句讲过呀。”他没辩解，把夹在耳后的铅笔抽出来，轻轻点在另一处。我顺着看过去，发现两条河的颜色太接近，标在图下的河名还被图钉挡住了一半。\n\n我原想把讲稿里桥的位置再念一遍。舟舟去走廊把展示板立起来，招呼我走到门口。我站到三步外，方才信心十足的那一小段蓝线果然消失在灰色的街巷中。我拿来深蓝笔描河，又抄写了两行更大的河名。舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。\n\n正式试讲时，我没有开口报那些数字。我问大家：“如果从校门出发，想赶到对岸的菜场，你会怎么走？”有同学走近地图，沿着纸箭头找到桥。她用手指比划着说：“先沿河走，再过桥！”这时，我提起旧地图的年份，告诉大家地图上为什么还没有现在的步行桥。\n\n整理展板时，我把原来的讲稿折好收进袋子。箭头留在板上，尖端稍微翘起来。我按了两次没有按平，便松了手。明天还有另一个班来参观，我想，那一点翘起来的地方正好方便下一位同学伸手移动它。"
+        }
+      }
+    },
+    {
+      "id": "cn-p6-chinese-full-nonfiction",
+      "examPartId": "nonfiction",
+      "title": "阅读二　雨水花园怎样工作",
+      "instructions": "阅读说明文。比较对象或说明实验结论时要写出依据。",
+      "score": 20,
+      "questions": [
+        {
+          "id": "cn-p6-chinese-full-q18",
+          "number": 18,
+          "type": "response",
+          "prompt": "雨水从花园表面向下的过程中，依次经过哪三层？其中哪一层可以暂时存水？",
+          "solution": "植物层、土层、碎石层，按此顺序。碎石之间有缝隙，碎石层能暂时存水。",
+          "explanation": "植物层、土层、碎石层，按此顺序。碎石之间有缝隙，碎石层能暂时存水。",
+          "score": 4,
+          "chapter": "说明顺序",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-20",
+            "title": "题 18",
+            "exact": "雨水从花园表面向下的过程中，依次经过哪三层？其中哪一层可以暂时存水？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "植物层、土层、碎石层，按此顺序。碎石之间有缝隙，碎石层能暂时存水。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "按序答出植物层、土层、碎石层，各 1 分。",
+                "points": 3
+              },
+              {
+                "id": "p2",
+                "description": "指出碎石层暂时存水。",
+                "points": 1
+              }
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-chinese-full-q19",
+          "number": 19,
+          "type": "response",
+          "prompt": "为什么溢水口设在比花园底高的位置？结合小雨和大雨分别说明。",
+          "solution": "小雨时水位低，在花园内下渗或缓慢排走，不会直接进入溢水口。大雨导致水位升到溢水口时，多余的水能沿管排走，避免冲坏土或漫到走道。",
+          "explanation": "小雨时水位低，在花园内下渗或缓慢排走，不会直接进入溢水口。大雨导致水位升到溢水口时，多余的水能沿管排走，避免冲坏土或漫到走道。",
+          "score": 4,
+          "chapter": "说明原因",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-21",
+            "title": "题 19",
+            "exact": "为什么溢水口设在比花园底高的位置？结合小雨和大雨分别说明。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "小雨时水位低，在花园内下渗或缓慢排走，不会直接进入溢水口。大雨导致水位升到溢水口时，多余的水能沿管排走，避免冲坏土或漫到走道。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "说出小雨下渗而不会直接溢出。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "说出大雨时超量水从溢口排走的作用。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-chinese-full-q20",
+          "number": 20,
+          "type": "response",
+          "prompt": "托盘试验中，选择相同大小、相近坡度以及相同喷洒条件的目的是什么？改变的主要条件是什么？",
+          "solution": "让两个托盘在受水量、坡度等方面尽量可比较，把流出时间的差别与主要改变的表面覆盖方式联系起来。一个铺硬板，另一个填带植物的土。",
+          "explanation": "让两个托盘在受水量、坡度等方面尽量可比较，把流出时间的差别与主要改变的表面覆盖方式联系起来。一个铺硬板，另一个填带植物的土。",
+          "score": 4,
+          "chapter": "阅读实验设计",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-22",
+            "title": "题 20",
+            "exact": "托盘试验中，选择相同大小、相近坡度以及相同喷洒条件的目的是什么？改变的主要条件是什么？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "让两个托盘在受水量、坡度等方面尽量可比较，把流出时间的差别与主要改变的表面覆盖方式联系起来。一个铺硬板，另一个填带植物的土。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "说明控制其他条件使比较公平。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "指出主要改变的是表面覆盖方式并给出两种条件。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-chinese-full-q21",
+          "number": 21,
+          "type": "response",
+          "prompt": "同学根据托盘试验说：“这种花园一定能把我们校园的排水量减少一半。”这句话有哪些超出试验证据的地方？",
+          "solution": "试验直接展示的是两个托盘出水早晚，并未报告总出水量。托盘实验规模与整个校园环境不同，不能据此推出校园的一半，也不能说“一定”。",
+          "explanation": "试验直接展示的是两个托盘出水早晚，并未报告总出水量。托盘实验规模与整个校园环境不同，不能据此推出校园的一半，也不能说“一定”。",
+          "score": 4,
+          "chapter": "限定结论",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-23",
+            "title": "题 21",
+            "exact": "同学根据托盘试验说：“这种花园一定能把我们校园的排水量减少一半。”这句话有哪些超出试验证据的地方？"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "试验直接展示的是两个托盘出水早晚，并未报告总出水量。托盘实验规模与整个校园环境不同，不能据此推出校园的一半，也不能说“一定”。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "指出观测量是流出时间，而非排水总量。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "指出托盘结果不能直接外推到校园或不能得出“一半”的定量结论。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 4
+        },
+        {
+          "id": "cn-p6-chinese-full-q22",
+          "number": 22,
+          "type": "response",
+          "prompt": "依据文章，给雨水花园做一块面向低年级同学的说明牌。用一两句话写清它平时怎样接雨、遇到暴雨又怎样处理多余的水。",
+          "solution": "示例：这是一块能接住雨水的小花园，草和土让雨水慢慢往下走。雨下得太多时，多余的水会从较高的溢水口流进排水管。",
+          "explanation": "示例：这是一块能接住雨水的小花园，草和土让雨水慢慢往下走。雨下得太多时，多余的水会从较高的溢水口流进排水管。",
+          "score": 4,
+          "chapter": "实用表达",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-24",
+            "title": "题 22",
+            "exact": "依据文章，给雨水花园做一块面向低年级同学的说明牌。用一两句话写清它平时怎样接雨、遇到暴雨又怎样处理多余的水。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "示例：这是一块能接住雨水的小花园，草和土让雨水慢慢往下走。雨下得太多时，多余的水会从较高的溢水口流进排水管。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "说明平时收集雨水并慢慢下渗。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "说明暴雨时多余的水进入溢水口排走，语言易懂。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 4
+        }
+      ],
+      "stimulus": {
+        "title": "雨水花园怎样工作",
+        "text": "学校西边的操场旁新做了一座小雨水花园。大雨过后，雨水流过草地、花园和校门口的道路。普通铺装路面很难渗水，雨水容易汇到一处，短时间内把排水口冲得很急。雨水花园开口略低，先接住部分来自屋顶、步道的雨水，再让它慢慢下渗或排走。\n\n花园的植物层能减慢水流，拦住石子和一些落叶。植物下面是拌有沙质材料的土层。细小颗粒随水往下走时，一部分会在土层里被截留。下面的碎石层之间有缝隙，能暂时存下一些水。这样，进入排水网的水量和速度都可能减少。\n\n这座花园还有一个溢水口。雨下得太猛，流入的水比花园能接纳的多，水面就会升到溢水口，多余的水沿排水管流走。如果硬把所有雨水都留在花园里，边缘的泥土可能被冲坏，还可能让走道进水。溢水口的位置高于花园底，平常的小雨不会直接流入。\n\n学校科学小组分别在两个大小相同、坡度相近的托盘上做测试。一个托盘铺硬板，另一个填入带植物的土。两次都用同样的喷壶、同样的水量和时间。铺硬板的托盘很快流出水，带土的托盘开始流出水更晚。这个实验说明覆盖表面的方式会影响流出时间，还不能直接用来计算整个校园能少排多少水。",
+        "source": {
+          "materialId": "cn-p6-chinese-full-original",
+          "blockId": "cn-p6-chinese-full-source-19",
+          "title": "雨水花园怎样工作",
+          "exact": "学校西边的操场旁新做了一座小雨水花园。大雨过后，雨水流过草地、花园和校门口的道路。普通铺装路面很难渗水，雨水容易汇到一处，短时间内把排水口冲得很急。雨水花园开口略低，先接住部分来自屋顶、步道的雨水，再让它慢慢下渗或排走。\n\n花园的植物层能减慢水流，拦住石子和一些落叶。植物下面是拌有沙质材料的土层。细小颗粒随水往下走时，一部分会在土层里被截留。下面的碎石层之间有缝隙，能暂时存下一些水。这样，进入排水网的水量和速度都可能减少。\n\n这座花园还有一个溢水口。雨下得太猛，流入的水比花园能接纳的多，水面就会升到溢水口，多余的水沿排水管流走。如果硬把所有雨水都留在花园里，边缘的泥土可能被冲坏，还可能让走道进水。溢水口的位置高于花园底，平常的小雨不会直接流入。\n\n学校科学小组分别在两个大小相同、坡度相近的托盘上做测试。一个托盘铺硬板，另一个填入带植物的土。两次都用同样的喷壶、同样的水量和时间。铺硬板的托盘很快流出水，带土的托盘开始流出水更晚。这个实验说明覆盖表面的方式会影响流出时间，还不能直接用来计算整个校园能少排多少水。"
+        }
+      }
+    },
+    {
+      "id": "cn-p6-chinese-full-writing",
+      "examPartId": "writing",
+      "title": "习作",
+      "instructions": "独立成文，字迹清楚。",
+      "score": 30,
+      "questions": [
+        {
+          "id": "cn-p6-chinese-full-q23",
+          "number": 23,
+          "type": "response",
+          "prompt": "以“再看一眼”为主题，写一件你亲身经历或仔细观察过的事。写清第一次看到或理解了什么，再看一眼后发现了什么，以及这一变化怎样影响后来的做法。自拟题目，不少于 350 字，建议 400 字左右。",
+          "solution": "评分参考：可写重新观察景物、复查资料、听完同伴解释等具体经历。叙事应有可辨认的前后观察、促成变化的可见细节，以及对应的行动变化。体裁为记叙文，内容真实或可信；允许自然生动的个人表达。",
+          "explanation": "评分参考：可写重新观察景物、复查资料、听完同伴解释等具体经历。叙事应有可辨认的前后观察、促成变化的可见细节，以及对应的行动变化。体裁为记叙文，内容真实或可信；允许自然生动的个人表达。",
+          "score": 30,
+          "chapter": "写实叙事",
+          "difficulty": "hard",
+          "source": {
+            "materialId": "cn-p6-chinese-full-original",
+            "blockId": "cn-p6-chinese-full-source-25",
+            "title": "题 23",
+            "exact": "以“再看一眼”为主题，写一件你亲身经历或仔细观察过的事。写清第一次看到或理解了什么，再看一眼后发现了什么，以及这一变化怎样影响后来的做法。自拟题目，不少于 350 字，建议 400 字左右。"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-chinese-full-standard",
+                "blockId": "cn-p6-chinese-full-standard-scope",
+                "exact": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "评分参考：可写重新观察景物、复查资料、听完同伴解释等具体经历。叙事应有可辨认的前后观察、促成变化的可见细节，以及对应的行动变化。体裁为记叙文，内容真实或可信；允许自然生动的个人表达。",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "切题，交代初看与再看，写清后续影响。完整 10 分，缺一处 7–8 分，只有泛泛感想 1–4 分，偏题 0 分。",
+                "points": 10
+              },
+              {
+                "id": "p2",
+                "description": "事件发展具体，至少有一处可见细节支撑变化。充分 8 分，情节清楚但细节一般 5–6 分，零散或空泛 1–3 分。",
+                "points": 8
+              },
+              {
+                "id": "p3",
+                "description": "段落与线索清楚，前后承接自然。清晰 6 分，基本可辨 3–5 分，次序混乱 0–2 分。",
+                "points": 6
+              },
+              {
+                "id": "p4",
+                "description": "用词得体、句意通顺、常用字与标点基本正确。表现充分 6 分，基本通顺有少量错漏 4–5 分，错漏明显 1–3 分。",
+                "points": 6
+              }
+            ]
+          },
+          "answerRows": 22,
+          "responseConstraints": {
+            "answerStyle": "grid",
+            "countUnit": "characters",
+            "minWords": 350,
+            "maxWords": 500
+          }
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "cn-p6-chinese-full-original",
+      "title": "纸间原创题目与材料",
+      "kind": "reference",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "publisher": "纸间 Practice",
+        "sourceType": "author"
+      },
+      "blocks": [
+        {
+          "id": "cn-p6-chinese-full-source-01",
+          "title": "题 1",
+          "text": "下列词语的书写全部正确的是哪一项？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-02",
+          "title": "题 2",
+          "text": "“第一次试讲的时候，我本来有些紧张。轮到熟悉的实验步骤，语气却渐渐（　　）下来。”填入哪项最恰当？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-03",
+          "title": "题 3",
+          "text": "下面哪一句标点使用正确？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-04",
+          "title": "题 4",
+          "text": "下列句子没有语病的是哪项？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-05",
+          "title": "题 5",
+          "text": "“黄昏时，远处一盏盏灯亮了，像有人沿河岸放下了一串小小的星星。”主要运用了什么修辞？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-06",
+          "title": "题 6",
+          "text": "把下面三句排成连贯的文字。①水慢慢渗入泥土。②我先用手指在土里压出一个小坑，再把种子放进去。③最后，我把土轻轻盖上，沿花盆边浇水。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-07",
+          "title": "题 7",
+          "text": "学校广播站需要招募一位能准时到岗、读音准确的播音员。“能胜任”中的“胜”与下列哪个“胜”的意义最接近？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-08",
+          "title": "题 8",
+          "text": "下列哪条借阅提醒交代得最清楚？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-09",
+          "title": "题 9",
+          "text": "补写《登鹳雀楼》中的下一句。欲穷千里目，________。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-10",
+          "title": "题 10",
+          "text": "“人固有一死，或重于泰山，或轻于鸿毛”中，第二个“或”解释为什么？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-11",
+          "title": "题 11",
+          "text": "把这句话改写为转述句：小言对我说：“周五我会把你的参观记录带来。”两人的关系与信息保持原意。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-12",
+          "title": "题 12",
+          "text": "班级读书会改到周四中午十二点四十分，在图书室举行，原定分享的同学要带上自己的推荐卡。请拟一条给分享同学的通知。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-13",
+          "title": "展板上的纸箭头",
+          "text": "周四下午，我们小组要试讲“社区的旧地图”。我负责开场，准备好一段背得很熟的话，第一句就有三个表示年代的数字。放学前，我把图纸贴上展示板，请同桌舟舟先听一遍。\n\n我讲得很快，讲完抬起头，舟舟还看着板子的左下角。他问：“你刚才说的那座桥在哪儿？”我指向一段又细又浅的蓝线：“就在这里，我第二句讲过呀。”他没辩解，把夹在耳后的铅笔抽出来，轻轻点在另一处。我顺着看过去，发现两条河的颜色太接近，标在图下的河名还被图钉挡住了一半。\n\n我原想把讲稿里桥的位置再念一遍。舟舟去走廊把展示板立起来，招呼我走到门口。我站到三步外，方才信心十足的那一小段蓝线果然消失在灰色的街巷中。我拿来深蓝笔描河，又抄写了两行更大的河名。舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。\n\n正式试讲时，我没有开口报那些数字。我问大家：“如果从校门出发，想赶到对岸的菜场，你会怎么走？”有同学走近地图，沿着纸箭头找到桥。她用手指比划着说：“先沿河走，再过桥！”这时，我提起旧地图的年份，告诉大家地图上为什么还没有现在的步行桥。\n\n整理展板时，我把原来的讲稿折好收进袋子。箭头留在板上，尖端稍微翘起来。我按了两次没有按平，便松了手。明天还有另一个班来参观，我想，那一点翘起来的地方正好方便下一位同学伸手移动它。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-14",
+          "title": "题 13",
+          "text": "舟舟第一次听试讲后，为什么问那座桥在哪儿？从地图上找出两个直接原因。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-15",
+          "title": "题 14",
+          "text": "舟舟为什么把展示板立到走廊，并叫“我”站到三步外看？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-16",
+          "title": "题 15",
+          "text": "正式试讲时，“我”的开场与原先相比有什么变化？这种变化怎样帮助大家理解旧地图？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-17",
+          "title": "题 16",
+          "text": "“舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。”从这句话能看出舟舟怎样帮助同伴？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-18",
+          "title": "题 17",
+          "text": "末段中，“我”为什么没有把翘起的箭头再按平？结尾与前文试讲有什么联系？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-19",
+          "title": "雨水花园怎样工作",
+          "text": "学校西边的操场旁新做了一座小雨水花园。大雨过后，雨水流过草地、花园和校门口的道路。普通铺装路面很难渗水，雨水容易汇到一处，短时间内把排水口冲得很急。雨水花园开口略低，先接住部分来自屋顶、步道的雨水，再让它慢慢下渗或排走。\n\n花园的植物层能减慢水流，拦住石子和一些落叶。植物下面是拌有沙质材料的土层。细小颗粒随水往下走时，一部分会在土层里被截留。下面的碎石层之间有缝隙，能暂时存下一些水。这样，进入排水网的水量和速度都可能减少。\n\n这座花园还有一个溢水口。雨下得太猛，流入的水比花园能接纳的多，水面就会升到溢水口，多余的水沿排水管流走。如果硬把所有雨水都留在花园里，边缘的泥土可能被冲坏，还可能让走道进水。溢水口的位置高于花园底，平常的小雨不会直接流入。\n\n学校科学小组分别在两个大小相同、坡度相近的托盘上做测试。一个托盘铺硬板，另一个填入带植物的土。两次都用同样的喷壶、同样的水量和时间。铺硬板的托盘很快流出水，带土的托盘开始流出水更晚。这个实验说明覆盖表面的方式会影响流出时间，还不能直接用来计算整个校园能少排多少水。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-20",
+          "title": "题 18",
+          "text": "雨水从花园表面向下的过程中，依次经过哪三层？其中哪一层可以暂时存水？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-21",
+          "title": "题 19",
+          "text": "为什么溢水口设在比花园底高的位置？结合小雨和大雨分别说明。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-22",
+          "title": "题 20",
+          "text": "托盘试验中，选择相同大小、相近坡度以及相同喷洒条件的目的是什么？改变的主要条件是什么？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-23",
+          "title": "题 21",
+          "text": "同学根据托盘试验说：“这种花园一定能把我们校园的排水量减少一半。”这句话有哪些超出试验证据的地方？"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-24",
+          "title": "题 22",
+          "text": "依据文章，给雨水花园做一块面向低年级同学的说明牌。用一两句话写清它平时怎样接雨、遇到暴雨又怎样处理多余的水。"
+        },
+        {
+          "id": "cn-p6-chinese-full-source-25",
+          "title": "题 23",
+          "text": "以“再看一眼”为主题，写一件你亲身经历或仔细观察过的事。写清第一次看到或理解了什么，再看一眼后发现了什么，以及这一变化怎样影响后来的做法。自拟题目，不少于 350 字，建议 400 字左右。"
+        }
+      ],
+      "text": "下列词语的书写全部正确的是哪一项？\n\n“第一次试讲的时候，我本来有些紧张。轮到熟悉的实验步骤，语气却渐渐（　　）下来。”填入哪项最恰当？\n\n下面哪一句标点使用正确？\n\n下列句子没有语病的是哪项？\n\n“黄昏时，远处一盏盏灯亮了，像有人沿河岸放下了一串小小的星星。”主要运用了什么修辞？\n\n把下面三句排成连贯的文字。①水慢慢渗入泥土。②我先用手指在土里压出一个小坑，再把种子放进去。③最后，我把土轻轻盖上，沿花盆边浇水。\n\n学校广播站需要招募一位能准时到岗、读音准确的播音员。“能胜任”中的“胜”与下列哪个“胜”的意义最接近？\n\n下列哪条借阅提醒交代得最清楚？\n\n补写《登鹳雀楼》中的下一句。欲穷千里目，________。\n\n“人固有一死，或重于泰山，或轻于鸿毛”中，第二个“或”解释为什么？\n\n把这句话改写为转述句：小言对我说：“周五我会把你的参观记录带来。”两人的关系与信息保持原意。\n\n班级读书会改到周四中午十二点四十分，在图书室举行，原定分享的同学要带上自己的推荐卡。请拟一条给分享同学的通知。\n\n周四下午，我们小组要试讲“社区的旧地图”。我负责开场，准备好一段背得很熟的话，第一句就有三个表示年代的数字。放学前，我把图纸贴上展示板，请同桌舟舟先听一遍。\n\n我讲得很快，讲完抬起头，舟舟还看着板子的左下角。他问：“你刚才说的那座桥在哪儿？”我指向一段又细又浅的蓝线：“就在这里，我第二句讲过呀。”他没辩解，把夹在耳后的铅笔抽出来，轻轻点在另一处。我顺着看过去，发现两条河的颜色太接近，标在图下的河名还被图钉挡住了一半。\n\n我原想把讲稿里桥的位置再念一遍。舟舟去走廊把展示板立起来，招呼我走到门口。我站到三步外，方才信心十足的那一小段蓝线果然消失在灰色的街巷中。我拿来深蓝笔描河，又抄写了两行更大的河名。舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。\n\n正式试讲时，我没有开口报那些数字。我问大家：“如果从校门出发，想赶到对岸的菜场，你会怎么走？”有同学走近地图，沿着纸箭头找到桥。她用手指比划着说：“先沿河走，再过桥！”这时，我提起旧地图的年份，告诉大家地图上为什么还没有现在的步行桥。\n\n整理展板时，我把原来的讲稿折好收进袋子。箭头留在板上，尖端稍微翘起来。我按了两次没有按平，便松了手。明天还有另一个班来参观，我想，那一点翘起来的地方正好方便下一位同学伸手移动它。\n\n舟舟第一次听试讲后，为什么问那座桥在哪儿？从地图上找出两个直接原因。\n\n舟舟为什么把展示板立到走廊，并叫“我”站到三步外看？\n\n正式试讲时，“我”的开场与原先相比有什么变化？这种变化怎样帮助大家理解旧地图？\n\n“舟舟没有催我。他把一条纸带折成箭头，等我决定从哪里开始讲。”从这句话能看出舟舟怎样帮助同伴？\n\n末段中，“我”为什么没有把翘起的箭头再按平？结尾与前文试讲有什么联系？\n\n学校西边的操场旁新做了一座小雨水花园。大雨过后，雨水流过草地、花园和校门口的道路。普通铺装路面很难渗水，雨水容易汇到一处，短时间内把排水口冲得很急。雨水花园开口略低，先接住部分来自屋顶、步道的雨水，再让它慢慢下渗或排走。\n\n花园的植物层能减慢水流，拦住石子和一些落叶。植物下面是拌有沙质材料的土层。细小颗粒随水往下走时，一部分会在土层里被截留。下面的碎石层之间有缝隙，能暂时存下一些水。这样，进入排水网的水量和速度都可能减少。\n\n这座花园还有一个溢水口。雨下得太猛，流入的水比花园能接纳的多，水面就会升到溢水口，多余的水沿排水管流走。如果硬把所有雨水都留在花园里，边缘的泥土可能被冲坏，还可能让走道进水。溢水口的位置高于花园底，平常的小雨不会直接流入。\n\n学校科学小组分别在两个大小相同、坡度相近的托盘上做测试。一个托盘铺硬板，另一个填入带植物的土。两次都用同样的喷壶、同样的水量和时间。铺硬板的托盘很快流出水，带土的托盘开始流出水更晚。这个实验说明覆盖表面的方式会影响流出时间，还不能直接用来计算整个校园能少排多少水。\n\n雨水从花园表面向下的过程中，依次经过哪三层？其中哪一层可以暂时存水？\n\n为什么溢水口设在比花园底高的位置？结合小雨和大雨分别说明。\n\n托盘试验中，选择相同大小、相近坡度以及相同喷洒条件的目的是什么？改变的主要条件是什么？\n\n同学根据托盘试验说：“这种花园一定能把我们校园的排水量减少一半。”这句话有哪些超出试验证据的地方？\n\n依据文章，给雨水花园做一块面向低年级同学的说明牌。用一两句话写清它平时怎样接雨、遇到暴雨又怎样处理多余的水。\n\n以“再看一眼”为主题，写一件你亲身经历或仔细观察过的事。写清第一次看到或理解了什么，再看一眼后发现了什么，以及这一变化怎样影响后来的做法。自拟题目，不少于 350 字，建议 400 字左右。"
+    },
+    {
+      "id": "cn-p6-chinese-full-standard",
+      "title": "教育部《义务教育语文课程标准（2022年版）》",
+      "kind": "reference",
+      "text": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。",
+      "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582344386456.pdf",
+      "provenance": {
+        "kind": "web",
+        "publisher": "中华人民共和国教育部",
+        "accessedAt": "2026-11-21",
+        "version": "2022",
+        "sourceType": "official",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582344386456.pdf"
+      },
+      "blocks": [
+        {
+          "id": "cn-p6-chinese-full-standard-scope",
+          "text": "第三学段的语言文字积累与梳理、实用性阅读与交流、文学阅读与创意表达。材料、试卷蓝图及评分规则为项目原创设计。"
+        }
+      ]
+    }
+  ],
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": false,
+    "unresolved": []
+  }
+}

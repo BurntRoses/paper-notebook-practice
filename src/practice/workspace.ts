@@ -12,8 +12,9 @@ import styles from './workspace.css?raw';
 import themeCSS from './theme.css?raw';
 import {mountThemeControl} from './theme';
 import {mountSelectControls} from './select';
-import {ENTRY_PROMPTS,PROJECT_URL} from './entry-prompts';
+import {EDITABLE_DELIVERY,ENTRY_PROMPTS,PROJECT_URL} from './entry-prompts';
 import {workbenchPrompt,workbenchTasks,type WorkbenchTaskId} from './workbench-tasks';
+import {homePaperAsset,homePaperCommand,homePapers} from './home-papers';
 
 type PreviewKind=PaperKind;
 let editor:typeof import('./editor-tools');
@@ -37,6 +38,12 @@ function readyPreview(){
 let catalogShelf:CatalogEntry[]|undefined;
 let catalogRequest:Promise<void>|undefined;
 const readyCatalog=()=>catalogRequest??=import('./catalog-shelf').then(module=>{catalogShelf=module.catalogShelf;}).catch(()=>{catalogRequest=undefined;throw Error('试卷目录未能载入，请重试。');});
+async function catalogEntry(id:string){
+ await readyCatalog();
+ const entry=catalogShelf!.find(item=>item.id===id);
+ if(!entry)throw Error('目录中找不到该试卷。');
+ return entry;
+}
 let restoreRequest:Promise<void>|undefined;
 const readyWorkspace=()=>restoreRequest??=Promise.all([restore(),readyPreview()]).then(()=>{}).catch(error=>{restoreRequest=undefined;throw error;});
 
@@ -171,7 +178,7 @@ function examinationPrompt(paper?:PracticeDocument,spec=specFor(paper),subset=fa
  return ENTRY_PROMPTS[entryMode].prompt+'\n\n已确认的出卷要求\n'+lines.map(line=>'- '+line).join('\n');
 }
 const paperPages=new Map<string,number>();
-let workbenchTask:WorkbenchTaskId='author',entryMode:keyof typeof ENTRY_PROMPTS='agent';
+let homePaper=homePapers[0],homeMode:'paper'|WorkbenchTaskId='paper',entryMode:keyof typeof ENTRY_PROMPTS='agent';
 try{if(localStorage.getItem('paper-notebook-practice-entry')==='chat')entryMode='chat';}catch{}
 const documentCache=new Map<string,Promise<PracticeDocument>>();
 let offlineTopicArchive:Uint8Array|undefined;
@@ -216,65 +223,86 @@ function renderStart(){
  disposeSetup();disposeSetup=()=>{};
  if(setupOpen){const templateId=setupTemplate;setupTemplate=undefined;disposeSetup=editor.mountPaperSetup(main,{templateId,css:editor.paperCSS,previewCss:editor.previewPaperCSS,previewHTML:restrictPreview,copy:copyPrompt,download,close:()=>{setupOpen=false;renderStart();main.querySelector<HTMLButtonElement>('#begin-setup')?.focus({preventScroll:true});},mode:entryMode,setMode:mode=>{entryMode=mode;try{localStorage.setItem('paper-notebook-practice-entry',mode);}catch{}}});return;}
  main.className='start-page home-page';
- const taskIcons={author:'book',scan:'file',assemble:'settings'} as const;
- main.innerHTML=`<section class="workbench-flow" aria-labelledby="workbench-title">
-  <header class="workbench-heading"><h1 id="workbench-title">制作试卷</h1><button id="browse-templates" class="button text">浏览样卷 ${icon('arrow')}</button></header>
-  <div class="workbench-tasks" role="group" aria-label="制作方式">${Object.entries(workbenchTasks).map(([id,task])=>`<button type="button" data-task="${id}" aria-pressed="${id===workbenchTask}" aria-controls="workbench-demo">${icon(taskIcons[id as WorkbenchTaskId])}<span>${task.label}</span><span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
-  <ol class="workbench-steps">
-   <li><div class="step-label">准备指令</div><div class="step-actions"><button id="copy-agent" class="button secondary" aria-live="polite">${icon('copy')}复制指令</button><button id="begin-setup" class="button text">先定出卷要求</button></div></li>
-   <li><div class="step-label">交给 Agent 制作</div><div id="task-attachment" class="workbench-attachment"></div></li>
-   <li><div class="step-label">导入后调整版式与导出</div><div class="step-actions"><button id="import-workbench" class="button primary">${icon('upload')} 导入 practice.json</button></div></li>
-  </ol></section>
-  <section id="workbench-demo" class="workbench-demo" aria-label="制作过程演示"><p class="demo-status" role="status">正在载入示例</p></section>`;
+ main.innerHTML=`<section class="home-library" aria-labelledby="home-library-title">
+  <header class="home-library-heading"><h1 id="home-library-title">试卷样例</h1><button id="browse-templates" class="button text">全部资源 ${icon('arrow')}</button></header>
+  <div class="home-papers" role="group" aria-label="选择完整样卷">${homePapers.map(paper=>`<button type="button" data-home-paper="${paper.id}" aria-pressed="false" aria-controls="home-stage"><span class="home-paper-group">${paper.group}</span><span>${paper.title}</span><span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
+  <div class="home-resources"><button id="begin-setup" class="button text">${icon('settings')} 定制出卷要求</button><button id="import-workbench" class="button text">${icon('upload')} 导入成品</button></div></section>
+  <section class="home-output" aria-label="样卷和 Agent 制作过程">
+   <div class="home-output-tools"><div class="home-modes segmented" role="group" aria-label="样卷与处理过程"><button type="button" data-home-mode="paper" aria-controls="home-stage">卷面</button>
+   ${Object.entries(workbenchTasks).map(([id,task])=>`<button type="button" data-home-mode="${id}" aria-controls="home-stage">${task.label}</button>`).join('')}</div>
+   <button id="copy-agent" class="button secondary" aria-live="polite">${icon('copy')}<span>复制 Agent 指令</span></button></div>
+   <div id="home-stage" class="home-stage"></div>
+  </section>`;
  const begin=main.querySelector<HTMLButtonElement>('#begin-setup')!;
  begin.onclick=()=>void action(begin,async()=>{await readyEditor();if(!begin.isConnected)return;setupOpen=true;renderStart();main.querySelector<HTMLElement>('#setup-step-title')?.focus({preventScroll:true});},'已打开','正在打开…');
  main.querySelector<HTMLButtonElement>('#browse-templates')!.onclick=()=>{navigate('templates');main.focus({preventScroll:true});};
- main.querySelector<HTMLButtonElement>('#import-workbench')!.onclick=()=>openFiles('open','.json');
+ main.querySelector<HTMLButtonElement>('#import-workbench')!.onclick=()=>openFiles();
  const copy=main.querySelector<HTMLButtonElement>('#copy-agent')!;
- copy.onclick=()=>void copyPrompt(copy,workbenchPrompt(workbenchTasks[workbenchTask],ENTRY_PROMPTS.agent.instructions));
- const taskGroup=main.querySelector<HTMLElement>('.workbench-tasks')!;
- const buttons=[...taskGroup.querySelectorAll<HTMLButtonElement>('button')];
- const attachment=main.querySelector<HTMLElement>('#task-attachment')!;
- const host=main.querySelector<HTMLElement>('#workbench-demo')!;
- let demo:ReturnType<typeof import('./workbench-demo').mountWorkbenchDemo>|undefined;
- function showTask(){
-  attachment.textContent='随指令附上'+workbenchTasks[workbenchTask].attachment;
-  for(const button of buttons){
-   const active=button.dataset.task===workbenchTask;
+ copy.onclick=()=>void copyPrompt(copy,homeMode==='paper'
+  ?[ENTRY_PROMPTS.agent.instructions,'请读取仓库自带样卷 '+homePaperAsset(homePaper)+'。可以运行 '+homePaperCommand(homePaper)+' 取得完整的参考作者数据。用它的规格、题组和版式作为参考，按我给的范围和资料编写同类完整试卷，独立核验题目与评分。仅在我要求专项练习时缩减范围。','生成并检查卷面，直接交付题目卷、答案卷、答题卡和验收记录。',EDITABLE_DELIVERY].join('\n\n')
+  :workbenchPrompt(workbenchTasks[homeMode],ENTRY_PROMPTS.agent.instructions));
+ const paperGroup=main.querySelector('.home-papers')!,modeGroup=main.querySelector('.home-modes')!;
+ const papers=[...paperGroup.querySelectorAll<HTMLButtonElement>('button')];
+ const modes=[...modeGroup.querySelectorAll<HTMLButtonElement>('button')];
+ const host=main.querySelector<HTMLElement>('#home-stage')!;
+ let generation=0,disposeStage=()=>{};
+ function syncButtons(){
+  for(const button of [...papers,...modes]){
+   const active=button.dataset.homePaper===homePaper.id||button.dataset.homeMode===homeMode;
    button.setAttribute('aria-pressed',String(active));button.tabIndex=active?0:-1;
   }
  }
- for(const button of buttons)button.onclick=()=>{
-  const id=button.dataset.task as WorkbenchTaskId;
-  if(id!==workbenchTask){workbenchTask=id;showTask();promptResets.get(copy)?.();void demo?.select(id,true);}
- };
- showTask();segmentedKeys(taskGroup,true);
- async function loadDemo(){
+ async function draw(){
+  const current=++generation,mode=homeMode;
+  disposeStage();disposeStage=()=>{};syncButtons();promptResets.get(copy)?.();
+  host.classList.toggle('workbench-demo',mode!=='paper');
+  host.innerHTML='<p class="demo-status" role="status">正在载入…</p>';
   try{
+   if(mode==='paper'){
+    // Start the print renderer in parallel with the catalog lookup for this sample.
+    const [entry]=await Promise.all([catalogEntry(homePaper.id),readyPreview()]);
+    if(current!==generation)return;
+    host.replaceChildren();
+    disposeStage=mountSample(host,{title:homePaper.title,request:entry.request,entry,showTitle:false});
+    return;
+   }
    const {mountWorkbenchDemo}=await import('./workbench-demo');
-   if(!host.isConnected)return;
-   demo=mountWorkbenchDemo(host,{
-    load:readPaper,
+   if(current!==generation)return;
+   disposeStage=mountWorkbenchDemo(host,mode,{
+    load:async id=>{
+     const entry=await catalogEntry(id);
+     if(entry.request.kind==='template')throw Error('此示例需要试卷数据。');
+     return readPaper(entry.request);
+    },
     markup:text=>previewTools.paperText(text),
-    open:(title,request)=>showSample(title,request,undefined,undefined,()=>host.querySelector<HTMLButtonElement>('#demo-open')?.focus({preventScroll:true})),
-    mount:(frame,controls,paper,onError)=>{
+    open:(id,button)=>{
+     void catalogEntry(id).then(entry=>{if(current===generation)showSample(entry.title,entry.request,entry,undefined,()=>button.focus({preventScroll:true}));})
+      .catch(()=>{if(current===generation)status('试卷未能打开，请重试。',true);});
+    },
+    download:(button,paper)=>void action(button,()=>downloadPaperBundle(paper),'已下载','正在打包…'),
+    downloadSource:(button,paper)=>void action(button,()=>downloadPracticeJSON('practice.json',paper),'已下载'),
+    mount:(frame,controls,paper,kind,onError)=>{
      const preview=mountPaperPreview(frame,controls,{onChange:state=>{if(state.status==='error'||state.status==='empty')onError();}});
-     try{preview.setPaper(paper);}catch{preview.dispose();queueMicrotask(onError);}
+     try{preview.setPaper(paper,kind);}catch{preview.dispose();queueMicrotask(onError);}
      return preview.dispose;
     },
    });
-   void demo.select(workbenchTask);
   }catch{
-   if(!host.isConnected)return;
-   host.innerHTML='<p class="demo-status" role="status">示例未能载入 <button type="button" class="button secondary">重试</button></p>';
-   host.querySelector('button')!.onclick=()=>void loadDemo();
+   if(current!==generation)return;
+   host.innerHTML='<p class="demo-status" role="status">未能载入 <button type="button" class="button secondary">重试</button></p>';
+   host.querySelector('button')!.onclick=()=>void draw();
   }
  }
- const observer=new IntersectionObserver(entries=>{
-  if(entries.some(entry=>entry.isIntersecting)){observer.disconnect();void loadDemo();}
+ papers.forEach((button,index)=>button.onclick=event=>{
+  if(homePaper!==homePapers[index]||homeMode!=='paper'){homePaper=homePapers[index];homeMode='paper';void draw();}
+  if(event.detail&&matchMedia('(max-width: 760px)').matches)host.closest('.home-output')?.scrollIntoView({block:'start'});
  });
- observer.observe(host);
- disposeView=()=>{observer.disconnect();demo?.dispose();promptResets.get(copy)?.();};
+ modes.forEach(button=>button.onclick=()=>{
+  if(homeMode!==button.dataset.homeMode){homeMode=button.dataset.homeMode as typeof homeMode;void draw();}
+ });
+ syncButtons();segmentedKeys(paperGroup,true);segmentedKeys(modeGroup);
+ void draw();
+ disposeView=()=>{generation++;disposeStage();promptResets.get(copy)?.();};
 }
 
 function renderTemplates(shelf:CatalogEntry[]){
@@ -293,16 +321,18 @@ interface SampleOptions {
  entry?:CatalogEntry;
  openRelated?:(id:string)=>void;
  inDialog?:boolean;
+ showTitle?:boolean;
 }
-function mountSample(host:HTMLElement,{title,request,entry,openRelated,inDialog}:SampleOptions){
+function mountSample(host:HTMLElement,{title,request,entry,openRelated,inDialog,showTitle=true}:SampleOptions){
  const outline=request.kind==='template';
  let kind:PaperKind='exam',paper:PracticeDocument|undefined,template:ReturnType<typeof editor.getPaperTemplate>|undefined;
  let active=true,disposePaper=()=>{},loadRevision=0;
  const guide:CatalogGuide|undefined=entry&&catalogGuides[entry.category].sample===entry.id?catalogGuides[entry.category]:undefined;
  const catalog=entry?host.closest<HTMLElement>('.catalog-page'):null;
- if(!inDialog)host.innerHTML='<header class="catalog-paper-heading"><h2>'+escape(guide?.name??title)+'</h2></header>';
+ if(!inDialog)host.replaceChildren();
  host.insertAdjacentHTML('beforeend','<div class="sample-paper-panel catalog-sample">'+
-  '<div class="sample-tools">'+(outline?'<span class="sample-outline-label">版式设计稿</span>':
+  '<div class="sample-tools">'+(!inDialog&&showTitle?'<h2 class="sample-caption">'+escape(guide?.name??title)+'</h2>':'')+
+  (outline?'<span class="sample-outline-label">版式设计稿</span>':
    '<div class="segmented" role="group" aria-label="查看卷面">'+paperKinds.map(([value,label])=>'<button type="button" data-sample-kind="'+value+'" aria-pressed="'+(value==='exam')+'" disabled>'+label+'</button>').join('')+'</div>')+
   '<div class="catalog-preview-actions"><details class="catalog-listening" hidden><summary>听力</summary><div class="catalog-recordings"></div></details>'+
   '<details class="catalog-source"><summary>来源</summary><div id="sample-source"></div></details>'+
@@ -517,9 +547,27 @@ function bindInspector(){
  main.querySelector('#compose-subset')!.addEventListener('click',()=>{try{const count=Number(main.querySelector<HTMLInputElement>('#compose-count')!.value),score=Number(main.querySelector<HTMLInputElement>('#compose-score')!.value),seed=main.querySelector<HTMLInputElement>('#compose-seed')!.value;if(!library)library=structuredClone(data);const next=editor.assembleMock(bankQuestions(),{title:data!.title,subject:data!.subject,level:data!.level,durationMinutes:data!.durationMinutes,materials:data!.materials,sourceDocument:library??data!,sourceSections:(library??data)!.sections,presentation:data!.presentation,balanceChoices:false,count,targetScore:score||undefined,seed,notebookId:data!.notebookId,notebookRevision:data!.notebookRevision,style:data!.style});data=next;requestedSubset=true;void persist();renderPreview();status('模拟卷已生成，全量题库已保留，可重新选题或保存。');}catch(e){main.querySelector('#inspector-error')!.textContent=e instanceof Error?e.message:String(e);}});
 }
 function selectedHTML(){if(!data)throw Error('尚未打开试卷');return editor.renderPractice(data,{kind:paperKind,css:editor.paperCSS,audioBaseUrl:siteAudioBase()});}
-async function downloadPracticeJSON(name:string,paper:PracticeDocument){await download(name,JSON.stringify(await embedSiteAudio(paper),null,2));}
+async function downloadPracticeJSON(name:string,paper:PracticeDocument){
+ await download(name,JSON.stringify(await embedSiteAudio(paper),null,2));
+}
 async function downloadCurrent(){if(data&&!documentQuestions().length)throw Error('题库中还没有题目，请先添加题目。');if(artifact){await download(artifact.name,artifact.html,'text/html');return;}if(!data)throw Error('尚未打开试卷。');const paper=data,kind=paperKind,portable=kind==='answer-card'?paper:await embedSiteAudio(paper);await download(`《${safeTitle(paper.title)}》-${kind==='exam'?'试卷':kind==='answers'?'答案卷':'答题卡'}.html`,editor.renderPractice(portable,{kind,css:editor.paperCSS}),'text/html');}
-async function exportPackage(){if(artifact){await downloadCurrent();return;}if(!data)return;const portable=await embedSiteAudio(data),check=editor.validatePractice(portable);if(!check.valid)throw Error(check.errors.map(e=>`${e.path}: ${e.message}`).join('\n'));const standaloneCSS=await editor.standalonePaperCSS(editor.paperCSS),generated=editor.generatedPaper(portable),files:Record<string,Uint8Array>={'practice.json':editor.strToU8(JSON.stringify(generated,null,2))};for(const [kind,label] of [['exam','试卷'],['answers','答案卷'],['answer-card','答题卡']] as const)files[`《${safeTitle(data.title)}》-${label}.html`]=editor.strToU8(editor.renderPractice(generated,{kind,css:standaloneCSS}));await download(`《${safeTitle(data.title)}》-试卷包.zip`,editor.zipSync(files),'application/zip');}
+async function exportPackage(){
+ if(artifact){await downloadCurrent();return;}
+ if(data)await downloadPaperBundle(data);
+}
+async function downloadPaperBundle(paper:PracticeDocument){
+ await readyEditor();
+ const portable=await embedSiteAudio(paper),check=editor.validatePractice(portable);
+ if(!check.valid)throw Error(check.errors.map(error=>error.path+'：'+error.message).join('\n'));
+ const generated=editor.generatedPaper(portable),title='《'+safeTitle(paper.title)+'》';
+ const files:Record<string,Uint8Array>={'practice.json':editor.strToU8(JSON.stringify(generated,null,2))};
+ for(const [kind,label] of paperKinds){
+  const filename=kind==='exam'?'试卷':label;
+  const html=editor.renderPractice(generated,{kind,css:editor.paperCSS});
+  files[title+'-'+filename+'.html']=editor.strToU8(await editor.standalonePaperHTML(html));
+ }
+ await download(title+'-试卷包.zip',editor.zipSync(files),'application/zip');
+}
 function bankWith(questions:PracticeQuestion[],base:PracticeDocument=data??structuredClone(editor.sample) as PracticeDocument,extraSections:PracticeDocument['sections']=[]):PracticeDocument{
  const remaining=new Map(questions.map(q=>[q.id,structuredClone(q)]));
  const idsInUse=new Set([...questions.map(question=>question.id),...base.materials.map(material=>material.id),base.practiceId,base.notebookId]);

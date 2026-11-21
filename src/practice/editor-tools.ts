@@ -17,5 +17,5 @@ export {referencePapersForTemplate} from './reference-papers';
 export {createIframePaperPager} from './paper-pagination';
 export {default as schema} from '../../skills/paper-notebook-practice/schemas/practice.schema.json';
 export {mountPaperSetup} from './paper-setup';
-export {standalonePaperCSS,standalonePaperHTML} from './web-assets';
+export {standalonePaperHTML} from './web-assets';
 export {default as paperCSS,previewPaperCSS} from 'practice-paper-styles';

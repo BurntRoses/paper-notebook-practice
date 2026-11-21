@@ -1323,6 +1323,102 @@
       "durationMinutes": 180,
       "totalScore": 150,
       "sha256": "179854d989dffc94ccdb24e056c9e817207113b95f5fa5dfc2bb7f2ec61a2564"
+    },
+    {
+      "id": "cn-p6-chinese-full",
+      "title": "六年级语文综合练习卷",
+      "subject": "语文",
+      "level": "小学六年级",
+      "family": "primary-school",
+      "catalog": {
+        "category": "小学",
+        "region": "mainland",
+        "language": "zh",
+        "paperLanguage": "zh",
+        "subject": "语文",
+        "grade": "六年级",
+        "issuer": "纸间 Practice",
+        "system": "中国大陆",
+        "scope": "full",
+        "identity": "original",
+        "aliases": [
+          "小六",
+          "六年级",
+          "小学六年级",
+          "P6"
+        ]
+      },
+      "routeId": "primary-chinese",
+      "file": "primary-school/grade6-chinese.json",
+      "questionCount": 23,
+      "mode": "mock",
+      "durationMinutes": 100,
+      "totalScore": 100,
+      "sha256": "12d2327e73eed099c828a04de25e11d8ccf4554633c2b2495510854b81d21660"
+    },
+    {
+      "id": "cn-p6-english-full",
+      "title": "六年级英语综合笔试",
+      "subject": "英语",
+      "level": "小学六年级",
+      "family": "primary-school",
+      "catalog": {
+        "category": "小学",
+        "region": "mainland",
+        "language": "mixed",
+        "paperLanguage": "zh",
+        "subject": "英语",
+        "grade": "六年级",
+        "issuer": "纸间 Practice",
+        "system": "中国大陆",
+        "scope": "full",
+        "identity": "original",
+        "aliases": [
+          "小六",
+          "六年级",
+          "小学六年级",
+          "P6"
+        ]
+      },
+      "routeId": "primary-english",
+      "file": "primary-school/grade6-english.json",
+      "questionCount": 30,
+      "mode": "mock",
+      "durationMinutes": 70,
+      "totalScore": 100,
+      "sha256": "be934f494b7ed72defeee128b1601c6793eba023e176cb6548846cb1e7cf95b8"
+    },
+    {
+      "id": "cn-p6-math-full",
+      "title": "六年级数学综合练习卷",
+      "subject": "数学",
+      "level": "小学六年级",
+      "family": "primary-school",
+      "catalog": {
+        "category": "小学",
+        "region": "mainland",
+        "language": "zh",
+        "paperLanguage": "zh",
+        "subject": "数学",
+        "grade": "六年级",
+        "issuer": "纸间 Practice",
+        "system": "中国大陆",
+        "scope": "full",
+        "identity": "original",
+        "aliases": [
+          "小六",
+          "六年级",
+          "小学六年级",
+          "P6"
+        ]
+      },
+      "routeId": "primary-math",
+      "file": "primary-school/grade6-math.json",
+      "questionCount": 29,
+      "mode": "mock",
+      "durationMinutes": 90,
+      "totalScore": 100,
+      "sha256": "5d081fc93de7c69264cffa4603e90fe2703fea533884bf9a6f6e7dc4ef91bb09"
     }
   ]
 }

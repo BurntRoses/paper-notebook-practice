@@ -2,7 +2,7 @@ import type {CatalogIdentity} from './catalog-identity';
 import catalog from './topic-catalog.json';
 export interface TopicCase {
  id:string;title:string;subject:string;level:string;
- family:'civil-service'|'postgraduate'|'engineering-course'|'engineering-qualification';
+ family:'civil-service'|'postgraduate'|'engineering-course'|'engineering-qualification'|'primary-school';
  routeId?:string;description?:string;file:string;questionCount:number;
  catalog:CatalogIdentity;mode:'mock'|'bank';durationMinutes:number;totalScore:number;sha256:string;
 }

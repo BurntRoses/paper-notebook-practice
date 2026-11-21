@@ -10,9 +10,9 @@
 
 ## 开始使用
 
-- 智能体：`请读取 https://github.com/BurntRoses/paper-notebook-practice 的 AGENTS.md，按项目要求和我的资料、需求制作试卷或整理题库。`
+- 智能体：从首页选一份完整样卷，复制对应指令并附上自己的资料。Agent 可从 GitHub 读取同源作者数据，参考题组、规格与版式，直接交付题目卷、答案卷、答题卡及 `practice.json`。
 - 网页会话：同一句话，将入口换为 `WEB_CHAT.md`。
-- 本机预览：下载完整离线包，打开其中的“纸间-试卷预览.html”。
+- 成品需要修改时，把 `practice.json` 导入在线版，调整版式或转换格式。也可在离线包中打开“纸间-试卷预览.html”。
 
 在线版从上方“在线体验”进入，不需要在网址后加 `dist/index.html`。打不开在线版时，可使用离线工具；已保存在浏览器里的试卷不会自动同步到离线包。
 
@@ -20,7 +20,9 @@
 
 支持小学、初中与中高考、大学课程、考公考研与工程，以及国际课程和海外升学、日语等语言考试、入籍公民知识、艺术设计与音乐。资料优先，原题优先；支持仅用指定资料、版本限制、材料题组、逐题解答与评分细则。专题案例附完整作者题库、题目卷、答案卷和答题纸。
 
-目录卷采用统一的 A4 单栏版式，题目、公式、题图、答案和评分均由结构化题库生成。原卷和评分依据通过来源链接查阅，见[真实样卷研究](skills/paper-notebook-practice/references/reference-study.md)。打开样卷查看整套内容；应用版式只调整当前试卷的排版。
+目录卷由统一的 HTML 渲染器生成，按数据中的纸型、分栏、题组和作答要求排版。完整卷、专题练习、题库和版式各有入口。原卷和评分依据通过来源链接查阅，见[真实样卷研究](skills/paper-notebook-practice/references/reference-study.md)。
+
+六年级原创综合卷包含数学、语文和英语笔试。每卷满分 100 分，配套答案与评分细则。项目内置的以少量题目演示题型的资料仍可在「练习」中查阅。
 
 试卷与版式采用单层考试方向分类，支持资源类型和关键词筛选。定制流程直接生成智能体或网页对话的个性化提示词。试卷使用正式标题与真实纸面比例，支持明暗预览和本机 HTML、PDF、Word、PNG 导出。支持彩印与灰度，色彩辨识任务保留彩色条件；日韩文字体随离线成品嵌入。上传内容保存在当前浏览器中。Word 的文字可编辑，公式和图形保留为版面图；PDF 适合按预览版式打印。
 
@@ -45,6 +47,9 @@ node tools/practice.mjs examples
 node tools/practice.mjs examples jlpt-n5 --out japanese.json
 node tools/practice.mjs topics postgraduate-math1-01 --out math1.json
 node tools/practice.mjs build math1.json --out papers
+node tools/practice.mjs topics --family primary-school
+node tools/practice.mjs topics cn-p6-math-full --out grade6-math.json
+node tools/practice.mjs coverage grade6-math.json
 ```
 
 [Paper Notebook](https://burntroses.github.io/paper-notebook/) 是本项目的孪生项目，用于从资料制作离线学习笔记。

@@ -59,14 +59,15 @@ export const paperLanguageFor=(language:CatalogLanguage):PaperLanguage=>language
 export function topicIdentity(paper:PracticeDocument,family:string):CatalogIdentity {
  const categories:Record<string,CatalogCategory>={
   'civil-service':'公务员与招聘',postgraduate:'研究生考试',
-  'engineering-course':'大学课程','engineering-qualification':'职业资格',
+  'engineering-course':'大学课程','engineering-qualification':'职业资格','primary-school':'小学',
  };
  const category=categories[family];
  if(!category)throw Error('Unclassified topic: '+paper.practiceId);
- const english=['postgraduate-english1-01','postgraduate-english2-01'].includes(paper.practiceId);
+ const english=['postgraduate-english1-01','postgraduate-english2-01','cn-p6-english-full'].includes(paper.practiceId);
  const language=english?'mixed':paper.presentation?.language??'zh';
  const aliases=paper.practiceId==='civil-aptitude-01'?['考公','行测','国考','公务员'] :
-  family==='civil-service'?['考公','公务员','申论'] : family==='postgraduate'?['考研','研究生'] : undefined;
+  family==='civil-service'?['考公','公务员','申论'] : family==='postgraduate'?['考研','研究生'] :
+  family==='primary-school'?['小六','六年级','小学六年级','P6']:undefined;
  return {
   category,region:'mainland',language,paperLanguage:paperLanguageFor(language),subject:english?'英语':paper.subject,
   grade:paper.authoring?.grade??paper.level,issuer:'纸间 Practice',year:paper.authoring?.year,

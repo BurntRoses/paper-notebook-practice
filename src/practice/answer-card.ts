@@ -27,6 +27,7 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
  const provincial=/zhongkao|广东省初中学业|中考/.test(practice.practiceId+' '+practice.title+' '+practice.level);
  const national=/neea-2024-math-full|neea-2024-chinese|高考综合改革适应性测试/.test(practice.practiceId+' '+practice.title);
  const language=paperLocale(practice,['ielts','language'].includes(source.headerVariant)?'en':'zh'),english=language!=='zh';
+ const classroom=/小学/.test(practice.level)&&!provincial;
  const labels=({zh:['答题卡','姓名','考号'],en:['Answer Sheet','Name','Candidate number'],ja:['解答用紙','氏名','受験番号'],ko:['답안지','이름','수험번호'],'zh-HK':['答題紙','姓名','考生編號'],fr:['Feuille de réponses','Nom','Numéro de candidat'],de:['Antwortbogen','Name','Prüfungsnummer']} as const)[language];
  const boxed=config?.template==='boxed'||(!cet&&english&&!['university','essay-grid'].includes(config?.template??''));
  const essayGrid=config?.template==='essay-grid';
@@ -109,7 +110,11 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
    for(const q of section.questions){
     if(objective(q))content+=`<div class="paper-chunk boxed-card-choice" ${attributes(q)}><b>${label(q)}</b>${(q.options??[]).map(o=>bubble(o.id)).join('')}</div>`;
     else if(q.type==='blank')content+=`<div class="paper-chunk boxed-card-blank" ${attributes(q)}><b>${label(q)}</b>${Array.from({length:Array.isArray(q.solution)?q.solution.length:1},()=>'<i></i>').join('')}</div>`;
-    else content+=`<article class="paper-chunk boxed-card-question" ${attributes(q)}><b>${label(q)}</b>${q.options?.length?`<div class="card-response-options">${q.options.map(o=>bubble(o.id)).join('')}</div>`:''}<div class="boxed-card-area" style="height:${q.answerBoxMm??Math.max(45,q.score*3)}mm"></div></article>`;
+   else {
+    const ruled=q.responseConstraints?.answerStyle==='ruled'||q.responseConstraints?.countUnit==='words';
+    const height=q.answerBoxMm??(classroom&&q.answerRows?Math.max(21,q.answerRows*7):Math.max(45,q.score*3));
+    content+=`<article class="paper-chunk boxed-card-question${ruled?' card-response-ruled':''}" ${attributes(q)}><b>${label(q)}</b>${q.options?.length?`<div class="card-response-options">${q.options.map(o=>bubble(o.id)).join('')}</div>`:''}<div class="boxed-card-area" style="height:${height}mm"></div></article>`;
+   }
    }
   }
  }else if(university){
@@ -123,7 +128,9 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
   const title=config?.title??practice.title;
   const examIdentity=civil||national||provincial;
   const fields=(examIdentity?['姓名','准考证号','考场号','座位号']:['学校','姓名','考场','座位号']).map(name=>`<div class="school-card-field" data-candidate-field="${name}"><span>${name}：</span><i aria-hidden="true"></i></div>`).join('');
-  content=`<header class="paper-chunk school-card-heading"><h1>${e(title)}</h1><h2>答题卡</h2><div class="school-card-info"><div class="school-card-fields">${fields}</div>${examIdentity&&!provincial?'':'<div class="school-card-barcode">条形码粘贴区</div>'}</div><div class="school-card-notices"><b>注意事项</b><ol><li>${examIdentity?'填写姓名、准考证号、考场号和座位号，并在下方填涂对应号码。':'填写学校、姓名、考场和座位号，并按监考要求填写个人信息。'}</li><li>选择题及号码栏用2B铅笔填涂；非选择题用黑色字迹签字笔在指定区域内作答。</li><li>${examIdentity?'保持答题卡平整、清洁，请勿折叠。':'保持答题卡平整、清洁，请勿折叠。缺考标记由监考员填涂。'}</li></ol></div><div class="school-card-mark-examples"><span><b>填涂样例</b>　正确填涂 <i class="filled-bubble"></i></span>${examIdentity?'':'<span>缺考标记 □　<small>（由监考员填涂）</small></span>'}</div><div class="school-card-identification">${idGrid()}${idGrid('考场号',config?.roomDigits??3)}${idGrid('座位号',config?.seatDigits??2)}</div></header>`;
+  content=classroom
+   ?`<header class="paper-chunk school-card-heading classroom-card"><h1>${e(title)}</h1><h2>答题卡</h2>${candidateIdentityMarkup(['学校','班级','姓名'],e)}<p>按题号作答，选择题按题意填涂。</p></header>`
+   :`<header class="paper-chunk school-card-heading"><h1>${e(title)}</h1><h2>答题卡</h2><div class="school-card-info"><div class="school-card-fields">${fields}</div>${examIdentity&&!provincial?'':'<div class="school-card-barcode">条形码粘贴区</div>'}</div><div class="school-card-notices"><b>注意事项</b><ol><li>${examIdentity?'填写姓名、准考证号、考场号和座位号，并在下方填涂对应号码。':'填写学校、姓名、考场和座位号，并按监考要求填写个人信息。'}</li><li>选择题及号码栏用2B铅笔填涂；非选择题用黑色字迹签字笔在指定区域内作答。</li><li>${examIdentity?'保持答题卡平整、清洁，请勿折叠。':'保持答题卡平整、清洁，请勿折叠。缺考标记由监考员填涂。'}</li></ol></div><div class="school-card-mark-examples"><span><b>填涂样例</b>　正确填涂 <i class="filled-bubble"></i></span>${examIdentity?'':'<span>缺考标记 □　<small>（由监考员填涂）</small></span>'}</div><div class="school-card-identification">${idGrid()}${idGrid('考场号',config?.roomDigits??3)}${idGrid('座位号',config?.seatDigits??2)}</div></header>`;
   for(const section of practice.sections){
    content+=`<div class="paper-chunk card-section-title"><b>${e(section.displayLabel??'')}${e(section.title)}</b><span>（${section.score}分）</span></div>`;
    const objective=section.questions.filter(q=>['choice','multiple','truefalse'].includes(q.type));
@@ -135,13 +142,24 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
      const grouped=numbers.length>0&&count%numbers.length===0;
      const blanks=grouped?numbers.map(n=>`<span>（${e(n)}）${Array.from({length:count/numbers.length},()=>'<i></i>').join('')}</span>`).join(''):Array.from({length:count},()=>'<span><i></i></span>').join('');
      content+=`<div class="paper-chunk card-blank-question" ${attributes(q)}><b>${label(q)}</b><div>${blanks}</div></div>`;
+    }else if(q.responseConstraints?.answerStyle==='grid'){
+     const columns=20,capacity=q.responseConstraints.maxWords??columns*responseLineCount(q);
+     const rows=Math.ceil(capacity/columns);
+     for(let offset=0;offset<rows;offset+=5){
+      const end=Math.min(rows,offset+5);
+      const grid=Array.from({length:end-offset},(_,index)=>{
+       const start=(index+offset)*columns,cells=Math.min(columns,capacity-start);
+       return `<div class="essay-grid-row">${Array.from({length:cells},()=>'<span class="essay-grid-cell"></span>').join('')}<span class="essay-grid-count">${start+cells}</span></div>`;
+      }).join('');
+      content+=`<div class="paper-chunk card-response-question school-writing-chunk" ${offset?`data-question-continuation="${e(q.id)}"`:attributes(q)}><b>${label(q)}${offset?'（续）':''}</b><div class="essay-character-grid" data-capacity="${Math.min((end-offset)*columns,capacity-offset*columns)}">${grid}</div></div>`;
+     }
     }else{
      const rows=Math.max(1,Math.ceil(responseLineCount(q)/5)),ruled=q.responseConstraints?.answerStyle==='ruled'||q.responseConstraints?.countUnit==='words'||style==='ruled';
-     for(let i=0;i<rows;i++)content+=`<div class="paper-chunk card-response-question${ruled?' card-response-ruled':''}" ${i?`data-question-continuation="${e(q.id)}"`:attributes(q)}><b>${label(q)}${i?'（续）':''}</b>${!i&&constraints(q)?`<span class="card-response-limit">${e(constraints(q))}</span>`:''}${!i&&q.options?.length?`<div class="card-response-options">${q.options.map(o=>bubble(o.id)).join('')}</div>`:''}<div class="card-response-area"></div></div>`;
+     for(let i=0;i<rows;i++)content+=`<div class="paper-chunk card-response-question${ruled||classroom?' card-response-ruled':''}" ${i?`data-question-continuation="${e(q.id)}"`:attributes(q)}><b>${label(q)}${i?'（续）':''}</b>${!i&&constraints(q)?`<span class="card-response-limit">${e(constraints(q))}</span>`:''}${!i&&q.options?.length?`<div class="card-response-options">${q.options.map(o=>bubble(o.id)).join('')}</div>`:''}<div class="card-response-area"${classroom?` style="height:${Math.min(5,responseLineCount(q)-i*5)*7}mm"`:''}></div></div>`;
     }
    }
   }
-  content+='<p class="paper-chunk card-end-note">请在各题目的答题区域内作答，超出黑色矩形边框限定区域的答案无效。</p>';
+ content+=classroom?'<p class="paper-chunk card-end-note">答题区结束</p>':'<p class="paper-chunk card-end-note">请在各题目的答题区域内作答，超出黑色矩形边框限定区域的答案无效。</p>';
  }
  return {content,layout,style};
 }

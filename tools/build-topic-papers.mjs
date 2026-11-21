@@ -27,9 +27,10 @@ await add('LICENSE',await readFile(root+'LICENSE'));
 await add('licenses/noto-cjk-OFL.txt',await readFile(root+'licenses/noto-cjk-OFL.txt'));
 await add('THIRD_PARTY_NOTICES.txt',await readFile(root+'THIRD_PARTY_NOTICES.txt'));
 await add('catalog.json',JSON.stringify(catalog,null,2)+'\n');
-const groups={'civil-service':'考公','postgraduate':'考研','engineering-course':'工程课程','engineering-qualification':'工程资格'};
+const groups={'primary-school':'小学','civil-service':'考公','postgraduate':'考研','engineering-course':'工程课程','engineering-qualification':'工程资格'};
 const manifest={version:'1.0.0',license:'MIT',layout:'local-shared-assets',papers:[],files:{}};
 let links='';
+for(const {family} of catalog.topics)if(!Object.hasOwn(groups,family))throw Error('Unknown offline topic group: '+family);
 const e=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 for(const family of Object.keys(groups)){
  links+=`<section><h2>${groups[family]}</h2><ul>`;
@@ -51,7 +52,7 @@ for(const family of Object.keys(groups)){
  }
  links+='</ul></section>';
 }
-await add('index.html',`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>纸间 · 专题试卷</title><style>body{max-width:960px;margin:48px auto;padding:0 24px;background:#f8f9f6;color:#212b27;font:16px/1.65 system-ui}h1{font-size:32px}h2{margin-top:40px;font-size:22px}ul{padding:0;list-style:none}li{padding:14px 0;border-bottom:1px solid #dde2dc;display:flex;gap:20px;justify-content:space-between}span{display:flex;gap:16px;flex-shrink:0}a{color:#1b624d;text-underline-offset:3px}a:focus-visible{outline:none;background:#d7e9de;color:#123d2e}a:hover{color:#123d2e}a:active{background:#cde1d5}@media(max-width:700px){li{display:block}span{flex-wrap:wrap;gap:12px}}</style><h1>考公、考研与工程试卷</h1><p>按专题打开试卷、答案与评分细则、答题纸。完整目录可离线使用，PDF、Word 和 PNG 在本机导出。</p>${links}<footer><p>MIT 免费项目 · <a href="https://github.com/BurntRoses/paper-notebook-practice">GitHub</a></p></footer></html>`);
+await add('index.html',`<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>纸间 · 专题试卷</title><style>body{max-width:960px;margin:48px auto;padding:0 24px;background:#f8f9f6;color:#212b27;font:16px/1.65 system-ui}h1{font-size:32px}h2{margin-top:40px;font-size:22px}ul{padding:0;list-style:none}li{padding:14px 0;border-bottom:1px solid #dde2dc;display:flex;gap:20px;justify-content:space-between}span{display:flex;gap:16px;flex-shrink:0}a{color:#1b624d;text-underline-offset:3px}a:focus-visible{outline:none;background:#d7e9de;color:#123d2e}a:hover{color:#123d2e}a:active{background:#cde1d5}@media(max-width:700px){li{display:block}span{flex-wrap:wrap;gap:12px}}</style><h1>纸间专题试卷</h1><p>按专题打开试卷、答案与评分细则、答题纸。完整目录可离线使用，PDF、Word 和 PNG 在本机导出。</p>${links}<footer><p>MIT 免费项目 · <a href="https://github.com/BurntRoses/paper-notebook-practice">GitHub</a></p></footer></html>`);
 await add('使用说明.md',`# 纸间专题试卷\n\n解压后打开 index.html。请保留 assets 与各专题子目录的相对位置；全部试卷、字体、公式、图表和运行脚本均在本地，不需要服务器或网络。\n\n每卷包含试卷、答案与评分、答题纸、完整作者题库。试卷和答题纸不含答案及评分依据；practice.json 与答案卷包含完整内容。导入对应答案卷后查看解析与少选部分分。\n\n本包使用共享本地字体与运行文件，避免逐卷重复字体。需要可单独移动的 HTML 时，将 practice.json 导入预览台下载整套文件，或用 Skill 的 build 命令生成自包含 HTML。\n\n新编卷均以真实任务求解，来源与生成身份保存在作者题库。官方结构、作者蓝图、指定年度与规范版本分别记录；自定义课程和资格案例不冒充特定年份官方原卷。资格案例中的题设比较指标不代替实际法规。\n\n免费 MIT 代码与原创题目；来源页短引文仅用于范围和证据，第三方权利见各材料记录。\n`);
 for(const [name,bytes]of Object.entries(entries))manifest.files[name]={bytes:bytes.length,sha256:hash(bytes)};
 await add('manifest.json',JSON.stringify(manifest,null,2)+'\n');

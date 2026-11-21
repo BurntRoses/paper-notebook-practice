@@ -81,6 +81,8 @@ node scripts/practice.mjs validate-layout work/sources/layout.json
 
 ## 使用真实案例
 
+用 `topics --family primary-school` 查找小学整卷参考。六年级数学、语文和英语笔试都提供完整的作者数据、项目设计的卷面规格、参考答案及评分要点。使用 `topics cn-p6-math-full --out work/reference.json` 可读取其中一份。Agent 可参考完整样卷的题组和版式，按用户的年级和范围编写新题，完成核验后直接交付题目卷、答案卷、答题卡及 `practice.json`。
+
 ```sh
 node scripts/practice.mjs cases
 node scripts/practice.mjs cases complete-cet4-original-01 --out work/cet4.json

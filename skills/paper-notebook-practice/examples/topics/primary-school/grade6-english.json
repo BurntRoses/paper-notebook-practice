@@ -1,0 +1,2331 @@
+{
+  "schemaVersion": "1.0.0",
+  "practiceId": "cn-p6-english-full",
+  "notebookId": "cn-p6-english-full-source",
+  "notebookRevision": 1,
+  "title": "六年级英语综合笔试",
+  "subject": "英语",
+  "level": "小学六年级",
+  "durationMinutes": 70,
+  "totalScore": 100,
+  "mode": "mock",
+  "style": {
+    "templateId": "primary-english",
+    "preset": "language"
+  },
+  "exam": {
+    "specificationId": "primary-six-english-practice",
+    "specification": {
+      "id": "primary-six-english-practice",
+      "name": "六年级英语综合笔试",
+      "subject": "英语",
+      "level": "小学六年级",
+      "durationMinutes": 70,
+      "totalScore": 100,
+      "scoreScale": "100分练习卷",
+      "source": {
+        "title": "纸间原创整卷蓝图与学段课程标准",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf"
+      },
+      "sections": [
+        {
+          "id": "use",
+          "title": "Part A　Language in context",
+          "count": 10,
+          "questionType": "choice",
+          "questionTypes": [
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice"
+          ],
+          "questionScores": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "totalScore": 20,
+          "displayStart": 1
+        },
+        {
+          "id": "reading-notice",
+          "title": "Part B1　Read a notice",
+          "count": 5,
+          "questionType": "choice",
+          "questionTypes": [
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice"
+          ],
+          "questionScores": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "totalScore": 15,
+          "displayStart": 11,
+          "stimulusKind": "reading-passage"
+        },
+        {
+          "id": "reading-story",
+          "title": "Part B2　Read a story",
+          "count": 5,
+          "questionType": "choice",
+          "questionTypes": [
+            "choice",
+            "choice",
+            "choice",
+            "choice",
+            "choice"
+          ],
+          "questionScores": [
+            3,
+            3,
+            3,
+            3,
+            3
+          ],
+          "totalScore": 15,
+          "displayStart": 16,
+          "stimulusKind": "reading-passage"
+        },
+        {
+          "id": "complete",
+          "title": "Part C　Complete the message",
+          "count": 5,
+          "questionType": "blank",
+          "questionTypes": [
+            "blank",
+            "blank",
+            "blank",
+            "blank",
+            "blank"
+          ],
+          "questionScores": [
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "totalScore": 10,
+          "displayStart": 21
+        },
+        {
+          "id": "situations",
+          "title": "Part D　Write short answers",
+          "count": 4,
+          "questionType": "response",
+          "questionTypes": [
+            "response",
+            "response",
+            "response",
+            "response"
+          ],
+          "questionScores": [
+            5,
+            5,
+            5,
+            5
+          ],
+          "totalScore": 20,
+          "displayStart": 26
+        },
+        {
+          "id": "writing",
+          "title": "Part E　Writing",
+          "count": 1,
+          "questionType": "response",
+          "questionTypes": [
+            "response"
+          ],
+          "questionScores": [
+            20
+          ],
+          "totalScore": 20,
+          "displayStart": 30
+        }
+      ]
+    },
+    "scope": "full",
+    "scoreScale": "100分练习卷"
+  },
+  "presentation": {
+    "language": "zh",
+    "metaLines": [
+      "考试时间 70 分钟　满分 100 分"
+    ],
+    "candidateFields": [
+      "学校：____________　班级：______　姓名：____________"
+    ],
+    "notices": [
+      "本卷为书面考试。阅读材料、选择题和表达任务均在卷内。",
+      "按题号作答，书面表达使用英语。"
+    ],
+    "answerCard": {
+      "template": "school",
+      "groupObjective": true
+    }
+  },
+  "authoring": {
+    "routeId": "primary-english",
+    "region": "中国大陆",
+    "grade": "六年级",
+    "examName": "六年级英语综合笔试",
+    "knowledge": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。",
+    "difficulty": "balanced",
+    "requireVerification": true,
+    "blueprint": [
+      {
+        "id": "cn-p6-english-full-use",
+        "knowledge": "表示时间、数量、上学经历和日常计划",
+        "ability": "在可理解的对话或句子中选择正确语义与语法表达。",
+        "types": [
+          "choice"
+        ],
+        "count": 10,
+        "points": 20,
+        "estimatedMinutes": 10,
+        "sourceIds": [
+          "cn-p6-english-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-english-full-reading-notice",
+        "knowledge": "时间、地点、物品及条件说明",
+        "ability": "从活动通知定位信息，并区分固定安排与恶劣天气时的替代计划。",
+        "types": [
+          "choice"
+        ],
+        "count": 5,
+        "points": 15,
+        "estimatedMinutes": 11,
+        "sourceIds": [
+          "cn-p6-english-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-english-full-reading-story",
+        "knowledge": "叙事顺序、原因和语境推断",
+        "ability": "从人物行为和谈话中推断问题成因，理解解决方案的效果。",
+        "types": [
+          "choice"
+        ],
+        "count": 5,
+        "points": 15,
+        "estimatedMinutes": 12,
+        "sourceIds": [
+          "cn-p6-english-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-english-full-complete",
+        "knowledge": "语篇连贯、时态和常用介词",
+        "ability": "根据上下文与括号提示补全活动信息。",
+        "types": [
+          "blank"
+        ],
+        "count": 5,
+        "points": 10,
+        "estimatedMinutes": 6,
+        "sourceIds": [
+          "cn-p6-english-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-english-full-situations",
+        "knowledge": "日常交际、路线说明、计划变更和建议",
+        "ability": "以完整、清楚的语句完成有具体限制的交流任务。",
+        "types": [
+          "response"
+        ],
+        "count": 4,
+        "points": 20,
+        "estimatedMinutes": 12,
+        "sourceIds": [
+          "cn-p6-english-full-standard"
+        ]
+      },
+      {
+        "id": "cn-p6-english-full-writing",
+        "knowledge": "有受众的短文与活动邀请",
+        "ability": "围绕真实交际目标组织地点、时间、活动和回应方式。",
+        "types": [
+          "response"
+        ],
+        "count": 1,
+        "points": 20,
+        "estimatedMinutes": 16,
+        "sourceIds": [
+          "cn-p6-english-full-standard"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "id": "cn-p6-english-full-use",
+      "examPartId": "use",
+      "title": "Part A　Language in context",
+      "instructions": "Choose the best answer.",
+      "score": 20,
+      "questions": [
+        {
+          "id": "cn-p6-english-full-q01",
+          "number": 1,
+          "type": "choice",
+          "prompt": "“When does the library close?” “It closes ____ six o’clock.”",
+          "solution": "A",
+          "explanation": "at 用于具体钟点；题干询问何时关闭。",
+          "score": 2,
+          "chapter": "时间介词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-01",
+            "title": "题 1",
+            "exact": "“When does the library close?” “It closes ____ six o’clock.”"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "at 用于具体钟点；题干询问何时关闭。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "at"
+            },
+            {
+              "id": "B",
+              "text": "on"
+            },
+            {
+              "id": "C",
+              "text": "in"
+            },
+            {
+              "id": "D",
+              "text": "from"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q02",
+          "number": 2,
+          "type": "choice",
+          "prompt": "The art room is next to our classroom. Let’s meet ____ after lunch.",
+          "solution": "B",
+          "explanation": "there 指代已确定的地点，可作 meet 的地点状语。",
+          "score": 2,
+          "chapter": "地点指代",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-02",
+            "title": "题 2",
+            "exact": "The art room is next to our classroom. Let’s meet ____ after lunch."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "there 指代已确定的地点，可作 meet 的地点状语。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "who"
+            },
+            {
+              "id": "B",
+              "text": "there"
+            },
+            {
+              "id": "C",
+              "text": "often"
+            },
+            {
+              "id": "D",
+              "text": "yesterday"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q03",
+          "number": 3,
+          "type": "choice",
+          "prompt": "“How ____ notebooks are in your bag?” “There are three.”",
+          "solution": "D",
+          "explanation": "notebooks 是可数名词复数，询问个数用 how many。",
+          "score": 2,
+          "chapter": "询问数量",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-03",
+            "title": "题 3",
+            "exact": "“How ____ notebooks are in your bag?” “There are three.”"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "notebooks 是可数名词复数，询问个数用 how many。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "much"
+            },
+            {
+              "id": "B",
+              "text": "long"
+            },
+            {
+              "id": "C",
+              "text": "often"
+            },
+            {
+              "id": "D",
+              "text": "many"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q04",
+          "number": 4,
+          "type": "choice",
+          "prompt": "Last Saturday, my cousin and I ____ two trees in the school garden.",
+          "solution": "B",
+          "explanation": "Last Saturday 是过去时间，动词用 planted。",
+          "score": 2,
+          "chapter": "一般过去时",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-04",
+            "title": "题 4",
+            "exact": "Last Saturday, my cousin and I ____ two trees in the school garden."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Last Saturday 是过去时间，动词用 planted。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "plant"
+            },
+            {
+              "id": "B",
+              "text": "planted"
+            },
+            {
+              "id": "C",
+              "text": "plants"
+            },
+            {
+              "id": "D",
+              "text": "will plant"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q05",
+          "number": 5,
+          "type": "choice",
+          "prompt": "Our old classroom was small. This one is ____ than the old one.",
+          "solution": "C",
+          "explanation": "than 引出比较对象，big 的比较级双写 g 后加 -er。",
+          "score": 2,
+          "chapter": "比较级",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-05",
+            "title": "题 5",
+            "exact": "Our old classroom was small. This one is ____ than the old one."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "than 引出比较对象，big 的比较级双写 g 后加 -er。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "big"
+            },
+            {
+              "id": "B",
+              "text": "biggest"
+            },
+            {
+              "id": "C",
+              "text": "bigger"
+            },
+            {
+              "id": "D",
+              "text": "the big"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q06",
+          "number": 6,
+          "type": "choice",
+          "prompt": "I can bring the camera, ____ I don’t know how to use it well.",
+          "solution": "B",
+          "explanation": "前句说可以带来，后句指出困难，用 but 表示转折。",
+          "score": 2,
+          "chapter": "并列连词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-06",
+            "title": "题 6",
+            "exact": "I can bring the camera, ____ I don’t know how to use it well."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "前句说可以带来，后句指出困难，用 but 表示转折。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "or"
+            },
+            {
+              "id": "B",
+              "text": "but"
+            },
+            {
+              "id": "C",
+              "text": "so"
+            },
+            {
+              "id": "D",
+              "text": "because"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q07",
+          "number": 7,
+          "type": "choice",
+          "prompt": "“May I borrow your ruler?” “____ Here you are.”",
+          "solution": "C",
+          "explanation": "Here you are 表明说话人同意借出。",
+          "score": 2,
+          "chapter": "礼貌请求",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-07",
+            "title": "题 7",
+            "exact": "“May I borrow your ruler?” “____ Here you are.”"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Here you are 表明说话人同意借出。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "I’m not sure."
+            },
+            {
+              "id": "B",
+              "text": "It’s too far."
+            },
+            {
+              "id": "C",
+              "text": "Of course."
+            },
+            {
+              "id": "D",
+              "text": "Good night."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q08",
+          "number": 8,
+          "type": "choice",
+          "prompt": "Listen! The children ____ a song in the music room.",
+          "solution": "D",
+          "explanation": "Listen! 表示动作正在发生，主语复数，应用 are singing。",
+          "score": 2,
+          "chapter": "现在进行时",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-08",
+            "title": "题 8",
+            "exact": "Listen! The children ____ a song in the music room."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Listen! 表示动作正在发生，主语复数，应用 are singing。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "sang"
+            },
+            {
+              "id": "B",
+              "text": "will sing"
+            },
+            {
+              "id": "C",
+              "text": "sings"
+            },
+            {
+              "id": "D",
+              "text": "are singing"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q09",
+          "number": 9,
+          "type": "choice",
+          "prompt": "“This bottle is not mine. ____ is blue.” “Then it may be Leo’s.”",
+          "solution": "C",
+          "explanation": "此空指“我的瓶子”，需用名词性物主代词 Mine 独立作主语。",
+          "score": 2,
+          "chapter": "物主代词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-09",
+            "title": "题 9",
+            "exact": "“This bottle is not mine. ____ is blue.” “Then it may be Leo’s.”"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "此空指“我的瓶子”，需用名词性物主代词 Mine 独立作主语。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Me"
+            },
+            {
+              "id": "B",
+              "text": "My"
+            },
+            {
+              "id": "C",
+              "text": "Mine"
+            },
+            {
+              "id": "D",
+              "text": "I"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q10",
+          "number": 10,
+          "type": "choice",
+          "prompt": "We ____ take the bus tomorrow if it rains. It is part of our plan.",
+          "solution": "B",
+          "explanation": "tomorrow 和 plan 表示将来的安排，if 从句用一般现在时，主句用 will。",
+          "score": 2,
+          "chapter": "将来计划",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-10",
+            "title": "题 10",
+            "exact": "We ____ take the bus tomorrow if it rains. It is part of our plan."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "tomorrow 和 plan 表示将来的安排，if 从句用一般现在时，主句用 will。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "did"
+            },
+            {
+              "id": "B",
+              "text": "will"
+            },
+            {
+              "id": "C",
+              "text": "are"
+            },
+            {
+              "id": "D",
+              "text": "were"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-english-full-reading-notice",
+      "examPartId": "reading-notice",
+      "title": "Part B1　Read a notice",
+      "instructions": "Read the notice and choose the best answer.",
+      "score": 15,
+      "questions": [
+        {
+          "id": "cn-p6-english-full-q11",
+          "number": 11,
+          "type": "choice",
+          "prompt": "Where should the group meet?",
+          "solution": "D",
+          "explanation": "首段直接写 Meet at the south gate。",
+          "score": 3,
+          "chapter": "活动信息定位",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-12",
+            "title": "题 11",
+            "exact": "Where should the group meet?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "首段直接写 Meet at the south gate。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Near the lake."
+            },
+            {
+              "id": "B",
+              "text": "At the classroom door."
+            },
+            {
+              "id": "C",
+              "text": "By the loan desk inside the classroom."
+            },
+            {
+              "id": "D",
+              "text": "At the south gate."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q12",
+          "number": 12,
+          "type": "choice",
+          "prompt": "How long is the bird walk on a dry day?",
+          "solution": "A",
+          "explanation": "活动从 9:00 到 10:30，共 90 分钟，8:40 是集合时间。",
+          "score": 3,
+          "chapter": "时间计算",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-13",
+            "title": "题 12",
+            "exact": "How long is the bird walk on a dry day?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "活动从 9:00 到 10:30，共 90 分钟，8:40 是集合时间。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "One hour and thirty minutes."
+            },
+            {
+              "id": "B",
+              "text": "One hour."
+            },
+            {
+              "id": "C",
+              "text": "One hour and fifty minutes."
+            },
+            {
+              "id": "D",
+              "text": "Two hours."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q13",
+          "number": 13,
+          "type": "choice",
+          "prompt": "What must a visitor do to borrow binoculars?",
+          "solution": "A",
+          "explanation": "第二段要求在借用名单写名字并归还。四个选项中只此项符合。",
+          "score": 3,
+          "chapter": "流程信息定位",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-14",
+            "title": "题 13",
+            "exact": "What must a visitor do to borrow binoculars?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "第二段要求在借用名单写名字并归还。四个选项中只此项符合。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Write their name on the loan list."
+            },
+            {
+              "id": "B",
+              "text": "Bring a photograph."
+            },
+            {
+              "id": "C",
+              "text": "Pay the guide before the walk."
+            },
+            {
+              "id": "D",
+              "text": "Bring two notebooks."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q14",
+          "number": 14,
+          "type": "choice",
+          "prompt": "Which note is the best example of what the guide wants?",
+          "solution": "C",
+          "explanation": "符合地点 by the lake 与动作 was picking up food 两个条件。",
+          "score": 3,
+          "chapter": "应用文本规则",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-15",
+            "title": "题 14",
+            "exact": "Which note is the best example of what the guide wants?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "符合地点 by the lake 与动作 was picking up food 两个条件。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "“I liked the day very much.”"
+            },
+            {
+              "id": "B",
+              "text": "“I forgot to take a picture.”"
+            },
+            {
+              "id": "C",
+              "text": "“By the lake, a small bird was picking up food.”"
+            },
+            {
+              "id": "D",
+              "text": "“A bird! A bird!”"
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q15",
+          "number": 15,
+          "type": "choice",
+          "prompt": "What will change if it rains hard?",
+          "solution": "D",
+          "explanation": "集合时间和地点不变，活动由公园步行变为室内看图、听录音。",
+          "score": 3,
+          "chapter": "比较条件计划",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-16",
+            "title": "题 15",
+            "exact": "What will change if it rains hard?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "集合时间和地点不变，活动由公园步行变为室内看图、听录音。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "The meeting gate."
+            },
+            {
+              "id": "B",
+              "text": "The meeting time."
+            },
+            {
+              "id": "C",
+              "text": "The need to read the notice."
+            },
+            {
+              "id": "D",
+              "text": "The bird activities after the group meets."
+            }
+          ]
+        }
+      ],
+      "stimulus": {
+        "title": "River Park Bird Walk",
+        "text": "RIVER PARK BIRD WALK — Saturday, May 16\n\nMeet at the south gate at 8:40 a.m. The walk starts at 9:00 and ends at 10:30. A guide will show us how to look for birds without making them fly away.\n\nBring a water bottle, a pencil and a small notebook. You can borrow a pair of binoculars at the gate. Please write your name on the loan list and give them back before you leave.\n\nDuring the walk, stay on the path. Speak quietly near the lake. You do not need to take photos. A useful note says where you saw a bird and what it was doing.\n\nIf it rains hard, the walk will move to the park classroom. The meeting time and place will stay the same. We will look at bird pictures and listen to recorded calls. Check the park notice before you leave home.",
+        "source": {
+          "materialId": "cn-p6-english-full-original",
+          "blockId": "cn-p6-english-full-source-11",
+          "title": "River Park Bird Walk",
+          "exact": "RIVER PARK BIRD WALK — Saturday, May 16\n\nMeet at the south gate at 8:40 a.m. The walk starts at 9:00 and ends at 10:30. A guide will show us how to look for birds without making them fly away.\n\nBring a water bottle, a pencil and a small notebook. You can borrow a pair of binoculars at the gate. Please write your name on the loan list and give them back before you leave.\n\nDuring the walk, stay on the path. Speak quietly near the lake. You do not need to take photos. A useful note says where you saw a bird and what it was doing.\n\nIf it rains hard, the walk will move to the park classroom. The meeting time and place will stay the same. We will look at bird pictures and listen to recorded calls. Check the park notice before you leave home."
+        }
+      }
+    },
+    {
+      "id": "cn-p6-english-full-reading-story",
+      "examPartId": "reading-story",
+      "title": "Part B2　Read a story",
+      "instructions": "Read the story and choose the best answer.",
+      "score": 15,
+      "questions": [
+        {
+          "id": "cn-p6-english-full-q16",
+          "number": 16,
+          "type": "choice",
+          "prompt": "What happened by Thursday?",
+          "solution": "C",
+          "explanation": "第一段 crowded 和 waited 说明在同一桌上选书出现拥挤。",
+          "score": 3,
+          "chapter": "情节定位",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-18",
+            "title": "题 16",
+            "exact": "What happened by Thursday?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "第一段 crowded 和 waited 说明在同一桌上选书出现拥挤。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "The teacher moved the books away."
+            },
+            {
+              "id": "B",
+              "text": "No one wanted to read before lessons."
+            },
+            {
+              "id": "C",
+              "text": "Too many children were trying to use the table at once."
+            },
+            {
+              "id": "D",
+              "text": "Most books were already missing."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q17",
+          "number": 17,
+          "type": "choice",
+          "prompt": "What did Eli think about doing first?",
+          "solution": "D",
+          "explanation": "第二段第一句明确是 ask the teacher for more books。",
+          "score": 3,
+          "chapter": "辨认先后顺序",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-19",
+            "title": "题 17",
+            "exact": "What did Eli think about doing first?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "第二段第一句明确是 ask the teacher for more books。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "Making three baskets."
+            },
+            {
+              "id": "B",
+              "text": "Writing a bee story."
+            },
+            {
+              "id": "C",
+              "text": "Moving the table into the hall."
+            },
+            {
+              "id": "D",
+              "text": "Asking for more books."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q18",
+          "number": 18,
+          "type": "choice",
+          "prompt": "What made it difficult to choose books?",
+          "solution": "A",
+          "explanation": "第二段给出拿多本再还以及薄封面书名看不清两条观察。",
+          "score": 3,
+          "chapter": "综合两条证据",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-20",
+            "title": "题 18",
+            "exact": "What made it difficult to choose books?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "第二段给出拿多本再还以及薄封面书名看不清两条观察。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "The book names were hard to see, and children handled several books before choosing."
+            },
+            {
+              "id": "B",
+              "text": "Children could only choose books about animals."
+            },
+            {
+              "id": "C",
+              "text": "All books were too long to finish."
+            },
+            {
+              "id": "D",
+              "text": "The teacher told children not to open the books."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q19",
+          "number": 19,
+          "type": "choice",
+          "prompt": "What does the sentence “There were no new books on the table” help the reader understand?",
+          "solution": "B",
+          "explanation": "实际改善发生在没有增加图书的情况下，突出分类和推荐卡减少选择时间。",
+          "score": 3,
+          "chapter": "解读补充信息",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-21",
+            "title": "题 19",
+            "exact": "What does the sentence “There were no new books on the table” help the reader understand?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "实际改善发生在没有增加图书的情况下，突出分类和推荐卡减少选择时间。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "The school had lost all its books."
+            },
+            {
+              "id": "B",
+              "text": "The way the books were arranged made a difference."
+            },
+            {
+              "id": "C",
+              "text": "The class had decided to stop reading."
+            },
+            {
+              "id": "D",
+              "text": "Eli needed to ask for a new table."
+            }
+          ]
+        },
+        {
+          "id": "cn-p6-english-full-q20",
+          "number": 20,
+          "type": "choice",
+          "prompt": "Why does Nia suggest changing the cards next week?",
+          "solution": "A",
+          "explanation": "末句 so children can see books they missed 指向此前未被注意到的书。",
+          "score": 3,
+          "chapter": "推断建议目的",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-22",
+            "title": "题 20",
+            "exact": "Why does Nia suggest changing the cards next week?"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "末句 so children can see books they missed 指向此前未被注意到的书。",
+                "result": "pass"
+              }
+            ]
+          },
+          "options": [
+            {
+              "id": "A",
+              "text": "To help children notice other books."
+            },
+            {
+              "id": "B",
+              "text": "To make the names on the baskets shorter."
+            },
+            {
+              "id": "C",
+              "text": "To ask everyone to read a book about bees."
+            },
+            {
+              "id": "D",
+              "text": "To move the stories into the Animals basket."
+            }
+          ]
+        }
+      ],
+      "stimulus": {
+        "title": "The Quiet Corner",
+        "text": "On Tuesday, Eli’s class started a “quiet corner” where children could read before lessons. Their teacher put some books on a low table. Eli liked the idea, but by Thursday the table was always crowded. Some children waited for a book and left when the bell rang.\n\nEli first planned to ask the teacher for more books. Then he watched for a few minutes. Most children picked up three or four books and had to return them one by one before they could sit down. Others could not see the names on the thin book covers.\n\nEli and his friend Nia made labels for three baskets: “Short Stories”, “Animals” and “Make Something”. They put a card by each basket with the names of two books children could start with. The next morning, Eli saw a child read a small book about bees for ten minutes. There were no new books on the table.\n\nAt the class meeting, the teacher asked what had helped. Eli said, “Now it takes less time to find a book.” Nia added, “Let’s change the cards next week, so children can see books they missed.”",
+        "source": {
+          "materialId": "cn-p6-english-full-original",
+          "blockId": "cn-p6-english-full-source-17",
+          "title": "The Quiet Corner",
+          "exact": "On Tuesday, Eli’s class started a “quiet corner” where children could read before lessons. Their teacher put some books on a low table. Eli liked the idea, but by Thursday the table was always crowded. Some children waited for a book and left when the bell rang.\n\nEli first planned to ask the teacher for more books. Then he watched for a few minutes. Most children picked up three or four books and had to return them one by one before they could sit down. Others could not see the names on the thin book covers.\n\nEli and his friend Nia made labels for three baskets: “Short Stories”, “Animals” and “Make Something”. They put a card by each basket with the names of two books children could start with. The next morning, Eli saw a child read a small book about bees for ten minutes. There were no new books on the table.\n\nAt the class meeting, the teacher asked what had helped. Eli said, “Now it takes less time to find a book.” Nia added, “Let’s change the cards next week, so children can see books they missed.”"
+        }
+      }
+    },
+    {
+      "id": "cn-p6-english-full-complete",
+      "examPartId": "complete",
+      "title": "Part C　Complete the message",
+      "instructions": "Write one word in each blank. Use the word in brackets if one is given.",
+      "score": 10,
+      "questions": [
+        {
+          "id": "cn-p6-english-full-q21",
+          "number": 21,
+          "type": "blank",
+          "prompt": "Yesterday we ___ (visit) the town library with our class.",
+          "solution": [
+            "visited"
+          ],
+          "explanation": "Yesterday 要求一般过去时，visit 加 -ed。",
+          "score": 2,
+          "chapter": "过去时",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-23",
+            "title": "题 21",
+            "exact": "Yesterday we ___ (visit) the town library with our class."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Yesterday 要求一般过去时，visit 加 -ed。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-english-full-q22",
+          "number": 22,
+          "type": "blank",
+          "prompt": "The reading room was quiet, so we spoke ___ (quiet).",
+          "solution": [
+            "quietly"
+          ],
+          "explanation": "修饰 spoke 要用副词 quietly。",
+          "score": 2,
+          "chapter": "副词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-24",
+            "title": "题 22",
+            "exact": "The reading room was quiet, so we spoke ___ (quiet)."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "修饰 spoke 要用副词 quietly。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-english-full-q23",
+          "number": 23,
+          "type": "blank",
+          "prompt": "Tia has two story books. The first one is about friendship and the ___ (two) one is about animals.",
+          "solution": [
+            "second"
+          ],
+          "explanation": "与 the first one 对应，two 的序数词是 second。",
+          "score": 2,
+          "chapter": "序数词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-25",
+            "title": "题 23",
+            "exact": "Tia has two story books. The first one is about friendship and the ___ (two) one is about animals."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "与 the first one 对应，two 的序数词是 second。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-english-full-q24",
+          "number": 24,
+          "type": "blank",
+          "prompt": "My friend and I booked two seats. We will go there again ___ Friday.",
+          "solution": [
+            "on"
+          ],
+          "explanation": "Friday 是具体星期几，用介词 on。",
+          "score": 2,
+          "chapter": "日期介词",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-26",
+            "title": "题 24",
+            "exact": "My friend and I booked two seats. We will go there again ___ Friday."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Friday 是具体星期几，用介词 on。",
+                "result": "pass"
+              }
+            ]
+          }
+        },
+        {
+          "id": "cn-p6-english-full-q25",
+          "number": 25,
+          "type": "blank",
+          "prompt": "Please bring your library card. Don’t ___ (forget) it!",
+          "solution": [
+            "forget"
+          ],
+          "explanation": "祈使句否定形式 Don’t 后接动词原形。",
+          "score": 2,
+          "chapter": "祈使句",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-27",
+            "title": "题 25",
+            "exact": "Please bring your library card. Don’t ___ (forget) it!"
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "祈使句否定形式 Don’t 后接动词原形。",
+                "result": "pass"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-english-full-situations",
+      "examPartId": "situations",
+      "title": "Part D　Write short answers",
+      "instructions": "Write one or two complete sentences for each situation.",
+      "score": 20,
+      "questions": [
+        {
+          "id": "cn-p6-english-full-q26",
+          "number": 26,
+          "type": "response",
+          "prompt": "You are at the school gate. The music room is upstairs, on the left side of the second floor. A visitor asks, “How do I get to the music room?” Write directions.",
+          "solution": "Example: Go upstairs to the second floor, then turn left. The music room is on your left.",
+          "explanation": "Example: Go upstairs to the second floor, then turn left. The music room is on your left.",
+          "score": 5,
+          "chapter": "给出路线",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-28",
+            "title": "题 26",
+            "exact": "You are at the school gate. The music room is upstairs, on the left side of the second floor. A visitor asks, “How do I get to the music room?” Write directions."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Example: Go upstairs to the second floor, then turn left. The music room is on your left.",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "交代上楼到二楼。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "明确指出向左或在左侧。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "句子清楚，意思可理解。",
+                "points": 1
+              }
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-english-full-q27",
+          "number": 27,
+          "type": "response",
+          "prompt": "Your friend invites you to a game at 3:00 on Sunday. You have a swimming lesson then, but you are free at 4:00. Write a friendly reply.",
+          "solution": "Example: Thanks for asking! I have a swimming lesson at three. Can we play at four?",
+          "explanation": "Example: Thanks for asking! I have a swimming lesson at three. Can we play at four?",
+          "score": 5,
+          "chapter": "回复邀请",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-29",
+            "title": "题 27",
+            "exact": "Your friend invites you to a game at 3:00 on Sunday. You have a swimming lesson then, but you are free at 4:00. Write a friendly reply."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Example: Thanks for asking! I have a swimming lesson at three. Can we play at four?",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "友好回应邀请。",
+                "points": 1
+              },
+              {
+                "id": "p2",
+                "description": "说明三点有游泳课。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "提出四点这一替代时段。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-english-full-q28",
+          "number": 28,
+          "type": "response",
+          "prompt": "Last Sunday your family went to Green Lake. You took a bus and had lunch by the water. Write one sentence about your trip.",
+          "solution": "Example: Last Sunday, my family took a bus to Green Lake and had lunch by the water.",
+          "explanation": "Example: Last Sunday, my family took a bus to Green Lake and had lunch by the water.",
+          "score": 5,
+          "chapter": "写过去经历",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-30",
+            "title": "题 28",
+            "exact": "Last Sunday your family went to Green Lake. You took a bus and had lunch by the water. Write one sentence about your trip."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Example: Last Sunday, my family took a bus to Green Lake and had lunch by the water.",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "交代过去的时间与地点。",
+                "points": 2
+              },
+              {
+                "id": "p2",
+                "description": "写出乘公交与在水边午餐的活动。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "使用适合过去经历的动词形式。",
+                "points": 1
+              }
+            ]
+          },
+          "answerRows": 3
+        },
+        {
+          "id": "cn-p6-english-full-q29",
+          "number": 29,
+          "type": "response",
+          "prompt": "The class wants to keep its reading corner tidy. A student has just finished a book. Write one clear instruction telling the student where and when to return it.",
+          "solution": "Example: Put the book back in the right basket before the first lesson. Other reasonable, specific places and times are acceptable.",
+          "explanation": "Example: Put the book back in the right basket before the first lesson. Other reasonable, specific places and times are acceptable.",
+          "score": 5,
+          "chapter": "写简短指引",
+          "difficulty": "medium",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-31",
+            "title": "题 29",
+            "exact": "The class wants to keep its reading corner tidy. A student has just finished a book. Write one clear instruction telling the student where and when to return it."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Example: Put the book back in the right basket before the first lesson. Other reasonable, specific places and times are acceptable.",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "写出明确的归还动作。",
+                "points": 1
+              },
+              {
+                "id": "p2",
+                "description": "提供明确且合理的归还地点。",
+                "points": 2
+              },
+              {
+                "id": "p3",
+                "description": "提供明确且合理的归还时间。",
+                "points": 2
+              }
+            ]
+          },
+          "answerRows": 3
+        }
+      ]
+    },
+    {
+      "id": "cn-p6-english-full-writing",
+      "examPartId": "writing",
+      "title": "Part E　Writing",
+      "instructions": "Write an email in English. Do not use your real name.",
+      "score": 20,
+      "questions": [
+        {
+          "id": "cn-p6-english-full-q30",
+          "number": 30,
+          "type": "response",
+          "prompt": "You are Sam. Invite your friend Alex to a class book swap. The book swap is next Wednesday at 4:15 p.m. in Room 6. Everyone should bring one book they have finished and be ready to say why they like it. Ask Alex to reply by Monday. Write about 45–65 words.",
+          "solution": "Example: Hi Alex,\nWould you like to come to our class book swap? It is next Wednesday at 4:15 p.m. in Room 6. Please bring one book you have finished. Be ready to tell us why you like it. Could you let me know by Monday? I hope you can come!\nSam",
+          "explanation": "Example: Hi Alex,\nWould you like to come to our class book swap? It is next Wednesday at 4:15 p.m. in Room 6. Please bring one book you have finished. Be ready to tell us why you like it. Could you let me know by Monday? I hope you can come!\nSam",
+          "score": 20,
+          "chapter": "邮件写作",
+          "difficulty": "hard",
+          "source": {
+            "materialId": "cn-p6-english-full-original",
+            "blockId": "cn-p6-english-full-source-32",
+            "title": "题 30",
+            "exact": "You are Sam. Invite your friend Alex to a class book swap. The book swap is next Wednesday at 4:15 p.m. in Room 6. Everyone should bring one book they have finished and be ready to say why they like it. Ask Alex to reply by Monday. Write about 45–65 words."
+          },
+          "origin": {
+            "kind": "generated"
+          },
+          "supportingSources": [
+            {
+              "role": "standard",
+              "source": {
+                "materialId": "cn-p6-english-full-standard",
+                "blockId": "cn-p6-english-full-standard-scope",
+                "exact": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+              }
+            }
+          ],
+          "answerProvenance": {
+            "kind": "independent"
+          },
+          "verification": {
+            "status": "verified",
+            "checks": [
+              {
+                "method": "答题与评分复核",
+                "detail": "Example: Hi Alex,\nWould you like to come to our class book swap? It is next Wednesday at 4:15 p.m. in Room 6. Please bring one book you have finished. Be ready to tell us why you like it. Could you let me know by Monday? I hope you can come!\nSam",
+                "result": "pass"
+              }
+            ]
+          },
+          "rubric": {
+            "criteria": [
+              {
+                "id": "p1",
+                "description": "邀请对象及活动明确（2 分），时间和地点准确（4 分）。",
+                "points": 6
+              },
+              {
+                "id": "p2",
+                "description": "说明携带一本读完的书（2 分）、准备说明喜欢的原因（2 分）以及周一前回复（2 分）。",
+                "points": 6
+              },
+              {
+                "id": "p3",
+                "description": "有合适的称呼、落款，顺序清楚。",
+                "points": 3
+              },
+              {
+                "id": "p4",
+                "description": "句意连贯、常用语法与拼写准确。可理解的小错酌情扣分。",
+                "points": 5
+              }
+            ]
+          },
+          "answerRows": 11,
+          "responseConstraints": {
+            "answerStyle": "ruled",
+            "countUnit": "words",
+            "minWords": 45,
+            "maxWords": 65
+          }
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": "cn-p6-english-full-original",
+      "title": "纸间原创题目与材料",
+      "kind": "reference",
+      "rights": "MIT",
+      "provenance": {
+        "kind": "authored",
+        "publisher": "纸间 Practice",
+        "sourceType": "author"
+      },
+      "blocks": [
+        {
+          "id": "cn-p6-english-full-source-01",
+          "title": "题 1",
+          "text": "“When does the library close?” “It closes ____ six o’clock.”"
+        },
+        {
+          "id": "cn-p6-english-full-source-02",
+          "title": "题 2",
+          "text": "The art room is next to our classroom. Let’s meet ____ after lunch."
+        },
+        {
+          "id": "cn-p6-english-full-source-03",
+          "title": "题 3",
+          "text": "“How ____ notebooks are in your bag?” “There are three.”"
+        },
+        {
+          "id": "cn-p6-english-full-source-04",
+          "title": "题 4",
+          "text": "Last Saturday, my cousin and I ____ two trees in the school garden."
+        },
+        {
+          "id": "cn-p6-english-full-source-05",
+          "title": "题 5",
+          "text": "Our old classroom was small. This one is ____ than the old one."
+        },
+        {
+          "id": "cn-p6-english-full-source-06",
+          "title": "题 6",
+          "text": "I can bring the camera, ____ I don’t know how to use it well."
+        },
+        {
+          "id": "cn-p6-english-full-source-07",
+          "title": "题 7",
+          "text": "“May I borrow your ruler?” “____ Here you are.”"
+        },
+        {
+          "id": "cn-p6-english-full-source-08",
+          "title": "题 8",
+          "text": "Listen! The children ____ a song in the music room."
+        },
+        {
+          "id": "cn-p6-english-full-source-09",
+          "title": "题 9",
+          "text": "“This bottle is not mine. ____ is blue.” “Then it may be Leo’s.”"
+        },
+        {
+          "id": "cn-p6-english-full-source-10",
+          "title": "题 10",
+          "text": "We ____ take the bus tomorrow if it rains. It is part of our plan."
+        },
+        {
+          "id": "cn-p6-english-full-source-11",
+          "title": "River Park Bird Walk",
+          "text": "RIVER PARK BIRD WALK — Saturday, May 16\n\nMeet at the south gate at 8:40 a.m. The walk starts at 9:00 and ends at 10:30. A guide will show us how to look for birds without making them fly away.\n\nBring a water bottle, a pencil and a small notebook. You can borrow a pair of binoculars at the gate. Please write your name on the loan list and give them back before you leave.\n\nDuring the walk, stay on the path. Speak quietly near the lake. You do not need to take photos. A useful note says where you saw a bird and what it was doing.\n\nIf it rains hard, the walk will move to the park classroom. The meeting time and place will stay the same. We will look at bird pictures and listen to recorded calls. Check the park notice before you leave home."
+        },
+        {
+          "id": "cn-p6-english-full-source-12",
+          "title": "题 11",
+          "text": "Where should the group meet?"
+        },
+        {
+          "id": "cn-p6-english-full-source-13",
+          "title": "题 12",
+          "text": "How long is the bird walk on a dry day?"
+        },
+        {
+          "id": "cn-p6-english-full-source-14",
+          "title": "题 13",
+          "text": "What must a visitor do to borrow binoculars?"
+        },
+        {
+          "id": "cn-p6-english-full-source-15",
+          "title": "题 14",
+          "text": "Which note is the best example of what the guide wants?"
+        },
+        {
+          "id": "cn-p6-english-full-source-16",
+          "title": "题 15",
+          "text": "What will change if it rains hard?"
+        },
+        {
+          "id": "cn-p6-english-full-source-17",
+          "title": "The Quiet Corner",
+          "text": "On Tuesday, Eli’s class started a “quiet corner” where children could read before lessons. Their teacher put some books on a low table. Eli liked the idea, but by Thursday the table was always crowded. Some children waited for a book and left when the bell rang.\n\nEli first planned to ask the teacher for more books. Then he watched for a few minutes. Most children picked up three or four books and had to return them one by one before they could sit down. Others could not see the names on the thin book covers.\n\nEli and his friend Nia made labels for three baskets: “Short Stories”, “Animals” and “Make Something”. They put a card by each basket with the names of two books children could start with. The next morning, Eli saw a child read a small book about bees for ten minutes. There were no new books on the table.\n\nAt the class meeting, the teacher asked what had helped. Eli said, “Now it takes less time to find a book.” Nia added, “Let’s change the cards next week, so children can see books they missed.”"
+        },
+        {
+          "id": "cn-p6-english-full-source-18",
+          "title": "题 16",
+          "text": "What happened by Thursday?"
+        },
+        {
+          "id": "cn-p6-english-full-source-19",
+          "title": "题 17",
+          "text": "What did Eli think about doing first?"
+        },
+        {
+          "id": "cn-p6-english-full-source-20",
+          "title": "题 18",
+          "text": "What made it difficult to choose books?"
+        },
+        {
+          "id": "cn-p6-english-full-source-21",
+          "title": "题 19",
+          "text": "What does the sentence “There were no new books on the table” help the reader understand?"
+        },
+        {
+          "id": "cn-p6-english-full-source-22",
+          "title": "题 20",
+          "text": "Why does Nia suggest changing the cards next week?"
+        },
+        {
+          "id": "cn-p6-english-full-source-23",
+          "title": "题 21",
+          "text": "Yesterday we ___ (visit) the town library with our class."
+        },
+        {
+          "id": "cn-p6-english-full-source-24",
+          "title": "题 22",
+          "text": "The reading room was quiet, so we spoke ___ (quiet)."
+        },
+        {
+          "id": "cn-p6-english-full-source-25",
+          "title": "题 23",
+          "text": "Tia has two story books. The first one is about friendship and the ___ (two) one is about animals."
+        },
+        {
+          "id": "cn-p6-english-full-source-26",
+          "title": "题 24",
+          "text": "My friend and I booked two seats. We will go there again ___ Friday."
+        },
+        {
+          "id": "cn-p6-english-full-source-27",
+          "title": "题 25",
+          "text": "Please bring your library card. Don’t ___ (forget) it!"
+        },
+        {
+          "id": "cn-p6-english-full-source-28",
+          "title": "题 26",
+          "text": "You are at the school gate. The music room is upstairs, on the left side of the second floor. A visitor asks, “How do I get to the music room?” Write directions."
+        },
+        {
+          "id": "cn-p6-english-full-source-29",
+          "title": "题 27",
+          "text": "Your friend invites you to a game at 3:00 on Sunday. You have a swimming lesson then, but you are free at 4:00. Write a friendly reply."
+        },
+        {
+          "id": "cn-p6-english-full-source-30",
+          "title": "题 28",
+          "text": "Last Sunday your family went to Green Lake. You took a bus and had lunch by the water. Write one sentence about your trip."
+        },
+        {
+          "id": "cn-p6-english-full-source-31",
+          "title": "题 29",
+          "text": "The class wants to keep its reading corner tidy. A student has just finished a book. Write one clear instruction telling the student where and when to return it."
+        },
+        {
+          "id": "cn-p6-english-full-source-32",
+          "title": "题 30",
+          "text": "You are Sam. Invite your friend Alex to a class book swap. The book swap is next Wednesday at 4:15 p.m. in Room 6. Everyone should bring one book they have finished and be ready to say why they like it. Ask Alex to reply by Monday. Write about 45–65 words."
+        }
+      ],
+      "text": "“When does the library close?” “It closes ____ six o’clock.”\n\nThe art room is next to our classroom. Let’s meet ____ after lunch.\n\n“How ____ notebooks are in your bag?” “There are three.”\n\nLast Saturday, my cousin and I ____ two trees in the school garden.\n\nOur old classroom was small. This one is ____ than the old one.\n\nI can bring the camera, ____ I don’t know how to use it well.\n\n“May I borrow your ruler?” “____ Here you are.”\n\nListen! The children ____ a song in the music room.\n\n“This bottle is not mine. ____ is blue.” “Then it may be Leo’s.”\n\nWe ____ take the bus tomorrow if it rains. It is part of our plan.\n\nRIVER PARK BIRD WALK — Saturday, May 16\n\nMeet at the south gate at 8:40 a.m. The walk starts at 9:00 and ends at 10:30. A guide will show us how to look for birds without making them fly away.\n\nBring a water bottle, a pencil and a small notebook. You can borrow a pair of binoculars at the gate. Please write your name on the loan list and give them back before you leave.\n\nDuring the walk, stay on the path. Speak quietly near the lake. You do not need to take photos. A useful note says where you saw a bird and what it was doing.\n\nIf it rains hard, the walk will move to the park classroom. The meeting time and place will stay the same. We will look at bird pictures and listen to recorded calls. Check the park notice before you leave home.\n\nWhere should the group meet?\n\nHow long is the bird walk on a dry day?\n\nWhat must a visitor do to borrow binoculars?\n\nWhich note is the best example of what the guide wants?\n\nWhat will change if it rains hard?\n\nOn Tuesday, Eli’s class started a “quiet corner” where children could read before lessons. Their teacher put some books on a low table. Eli liked the idea, but by Thursday the table was always crowded. Some children waited for a book and left when the bell rang.\n\nEli first planned to ask the teacher for more books. Then he watched for a few minutes. Most children picked up three or four books and had to return them one by one before they could sit down. Others could not see the names on the thin book covers.\n\nEli and his friend Nia made labels for three baskets: “Short Stories”, “Animals” and “Make Something”. They put a card by each basket with the names of two books children could start with. The next morning, Eli saw a child read a small book about bees for ten minutes. There were no new books on the table.\n\nAt the class meeting, the teacher asked what had helped. Eli said, “Now it takes less time to find a book.” Nia added, “Let’s change the cards next week, so children can see books they missed.”\n\nWhat happened by Thursday?\n\nWhat did Eli think about doing first?\n\nWhat made it difficult to choose books?\n\nWhat does the sentence “There were no new books on the table” help the reader understand?\n\nWhy does Nia suggest changing the cards next week?\n\nYesterday we ___ (visit) the town library with our class.\n\nThe reading room was quiet, so we spoke ___ (quiet).\n\nTia has two story books. The first one is about friendship and the ___ (two) one is about animals.\n\nMy friend and I booked two seats. We will go there again ___ Friday.\n\nPlease bring your library card. Don’t ___ (forget) it!\n\nYou are at the school gate. The music room is upstairs, on the left side of the second floor. A visitor asks, “How do I get to the music room?” Write directions.\n\nYour friend invites you to a game at 3:00 on Sunday. You have a swimming lesson then, but you are free at 4:00. Write a friendly reply.\n\nLast Sunday your family went to Green Lake. You took a bus and had lunch by the water. Write one sentence about your trip.\n\nThe class wants to keep its reading corner tidy. A student has just finished a book. Write one clear instruction telling the student where and when to return it.\n\nYou are Sam. Invite your friend Alex to a class book swap. The book swap is next Wednesday at 4:15 p.m. in Room 6. Everyone should bring one book they have finished and be ready to say why they like it. Ask Alex to reply by Monday. Write about 45–65 words."
+    },
+    {
+      "id": "cn-p6-english-full-standard",
+      "title": "教育部《义务教育英语课程标准（2022年版）》",
+      "kind": "reference",
+      "text": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。",
+      "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf",
+      "provenance": {
+        "kind": "web",
+        "publisher": "中华人民共和国教育部",
+        "accessedAt": "2026-11-21",
+        "version": "2022",
+        "sourceType": "official",
+        "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582349487953.pdf"
+      },
+      "blocks": [
+        {
+          "id": "cn-p6-english-full-standard-scope",
+          "text": "义务教育英语课程标准第二级的语言运用、语篇理解和书面表达。本项目原创综合笔试自定时长与评分。"
+        }
+      ]
+    }
+  ],
+  "generation": {
+    "intent": "generate",
+    "ocrReviewed": false,
+    "unresolved": []
+  }
+}

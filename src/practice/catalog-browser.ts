@@ -1,12 +1,15 @@
 import {catalogGuides} from './catalog-guides';
 import {CATALOG_CATEGORIES,CATEGORY_ALIASES,type CatalogCategory} from './catalog-categories';
-import {languageNames,regionNames,regionOrder,resourceNames,type CatalogEntry,type CatalogLanguage,type CatalogRegion,type ResourceKind} from './catalog-identity';
+import {languageNames,regionNames,regionOrder,resourceNames,type CatalogEntry,type CatalogLanguage,type CatalogRegion} from './catalog-identity';
 
 const PAGE_SIZE=18;
 const normalize=(value:string)=>value.normalize('NFKC').toLowerCase();
 const e=(value:unknown)=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]!));
 const collator=new Intl.Collator('zh-CN',{numeric:true});
-const kinds=Object.keys(resourceNames) as ResourceKind[];
+const tabNames={paper:resourceNames.paper,exercise:'练习',bank:resourceNames.bank,layout:resourceNames.layout} as const;
+type CatalogTab=keyof typeof tabNames;
+const kinds=Object.keys(tabNames) as CatalogTab[];
+const tabFor=(entry:CatalogEntry):CatalogTab=>entry.kind==='paper'&&entry.scope!=='full'?'exercise':entry.kind;
 const legacyTags:Record<string,string[]>={
  数学:['高数','代数','概率','统计','微积分','数学','math','calculus'],语文:['语文','中國語文','古詩','古诗','文言'],
  英语:['英語','英语','英文','cet','ielts','english'],阅读写作:['阅读','閱讀','写作','寫作','申论','翻译','reading','writing','essay'],
@@ -14,7 +17,7 @@ const legacyTags:Record<string,string[]>={
  经济管理:['经济','会计','审计','管理','金融','accounting','business'],公民知识:['入籍','公民','civics','citizen'],
  艺术创作:['艺术','音乐','设计','作品集','art','music','design'],日语:['日语','日文','日本語','jlpt'],
 };
-type Filters={type:ResourceKind|'all';category:string;region:string;language:string;subject:string;query:string;tags:string[];page:number;item:string};
+type Filters={type:CatalogTab|'all';category:string;region:string;language:string;subject:string;query:string;tags:string[];page:number;item:string};
 type Facet='region'|'language'|'subject';
 const facets:Facet[]=['region','subject','language'];
 const facetLabels={region:'地区',subject:'科目',language:'卷面语言'};
@@ -44,8 +47,9 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  const rawCategory=params.get('category')??(initial&&initial.id!==catalogGuides[initial.category].sample?initial.category:'');
  const categoryAlias=CATEGORY_ALIASES[rawCategory]??rawCategory;
  const type=params.get('type');
+ const inferred=initial?tabFor(initial):params.has('tag')?'all':'paper';
  const state:Filters={
-  type:type==='all'||kinds.includes(type as ResourceKind)?type as Filters['type']:initial?.kind??(params.has('tag')?'all':'paper'),
+  type:initial&&type==='paper'?inferred:type==='all'||kinds.includes(type as CatalogTab)?type as Filters['type']:inferred,
   category:CATALOG_CATEGORIES.includes(categoryAlias as CatalogCategory)?categoryAlias:'',
   region:params.has('region')&&Object.hasOwn(regionNames,params.get('region')??'')?params.get('region')!:
    params.has('region')?'all':categoryAlias==='小学'&&initial?.category==='小学'?initial.region:fallbackRegion(categoryAlias),
@@ -53,12 +57,14 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   query:params.get('q')??'',tags:params.getAll('tag').filter(tag=>Object.hasOwn(legacyTags,tag)),
   page:Math.max(1,Math.trunc(Number(params.get('page')))||1),item:initial?.id??'',
  };
+ if(!initial&&!type&&state.type==='paper'&&state.category&&!sorted.some(entry=>
+  entry.category===state.category&&tabFor(entry)==='paper'&&(state.region==='all'||entry.region===state.region)))state.type='exercise';
  let current='',modal='',disposed=false,composing=false,previewTimer=0,previewFrame=0,searchTimer=0;
  let disposePreview=()=>{};
  host.className='templates-page catalog-page';
  host.innerHTML='<div class="catalog-workspace"><section class="catalog-list" aria-label="试卷目录">'+
   '<div class="catalog-toolbar" role="group" aria-label="查找试卷与版式">'+
-  '<div class="catalog-resource-tabs" role="group" aria-label="资源类型">'+kinds.map(kind=>'<button type="button" data-resource="'+kind+'">'+resourceNames[kind]+'</button>').join('')+'</div>'+
+  '<div class="catalog-resource-tabs" role="group" aria-label="资源类型">'+kinds.map(kind=>'<button type="button" data-resource="'+kind+'">'+tabNames[kind]+'</button>').join('')+'</div>'+
   '<input id="case-search" type="search" aria-label="搜索考试、科目或试卷" placeholder="搜索考试、科目或试卷">'+
   '<button type="button" id="catalog-more" aria-controls="catalog-facets" aria-expanded="false"><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2 4h12M4 8h8m-6 4h4"/></svg>筛选</button>'+
   '</div><div id="catalog-facets" class="catalog-facets" hidden>'+
@@ -100,8 +106,8 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   const hash='#templates'+(url.size?'?'+url.toString():'');
   if(location.hash!==hash)history[push?'pushState':'replaceState'](null,'',hash);
  }
- function match(entry:CatalogEntry,skip?:Facet){
-  if(state.type!=='all'&&entry.kind!==state.type||state.category&&entry.category!==state.category)return false;
+ function match(entry:CatalogEntry,skip?:Facet,type=state.type){
+  if(type!=='all'&&tabFor(entry)!==type||state.category&&entry.category!==state.category)return false;
   if(skip!=='region'&&state.region!=='all'&&entry.region!==state.region)return false;
   if(skip!=='subject'&&state.subject&&entry.subject!==state.subject)return false;
   if(skip!=='language'&&state.language&&entry.language!==state.language&&!(entry.language==='mixed'&&['zh','en'].includes(state.language)))return false;
@@ -159,7 +165,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  function follow(id:string){
   const entry=indexed.get(id);
   if(!entry)return;
-  state.type=entry.kind;state.category=entry.category;state.region=entry.region;
+  state.type=tabFor(entry);state.category=entry.category;state.region=entry.region;
   state.item=id;state.subject='';state.language='';state.query='';state.tags=[];state.page=1;
   search.value='';category.value=state.category;
   draw(true,true);setURL(true);
@@ -200,7 +206,9 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
     const header=group!==lastGroup?'<h2 class="catalog-region">'+e(group)+'</h2>':'';
     lastGroup=group;
     return header+row(entry,pinned?catalogGuides[entry.category].name:entry.title);
-   }).join('')||'<div class="catalog-empty"><p>没有符合当前条件的'+(state.type==='all'?'条目':resourceNames[state.type])+'</p><button type="button" class="button secondary" data-reset-catalog>清除筛选</button></div>';
+   }).join('')||'<div class="catalog-empty"><p>没有符合当前条件的'+(state.type==='all'?'条目':tabNames[state.type])+'</p>'+
+    (state.type==='paper'&&sorted.some(entry=>match(entry,undefined,'exercise'))?'<button type="button" class="button secondary" data-resource="exercise">查看相关练习</button>':
+     '<button type="button" class="button secondary" data-reset-catalog>清除筛选</button>')+'</div>';
   }
   if(resetScroll)results.scrollTop=0;
   pagination.hidden=pages===1;
@@ -249,7 +257,13 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   const button=(event.target as HTMLElement).closest<HTMLButtonElement>('button');
   if(!button)return;
   const {resource,item,step,clearFacet,clearTag,categoryGo}=button.dataset;
-  if(resource){if(state.type!==resource){state.type=resource as ResourceKind;state.subject='';change(true,false);}}
+  if(resource&&state.type!==resource){
+   state.type=resource as CatalogTab;
+   const fromEmpty=button.closest('.catalog-empty');
+   if(!fromEmpty)state.subject='';
+   change(true,false);
+   if(fromEmpty)host.querySelector<HTMLButtonElement>('.catalog-resource-tabs [data-resource="'+resource+'"]')?.focus({preventScroll:true});
+  }
   if(categoryGo){goCategory(categoryGo);results.querySelector<HTMLButtonElement>('.catalog-result')?.focus({preventScroll:true});}
   if(item)choose(item);
   if(step){state.item='';state.page+=Number(step);draw(true);setURL(true);results.querySelector('button')?.focus({preventScroll:true});}

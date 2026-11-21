@@ -7,7 +7,7 @@ export interface CatalogGuide {
 }
 
 export const catalogGuides={
- '小学':{sample:'primary-math',name:'六年级 · 数学'},
+ '小学':{sample:'cn-p6-math-full',name:'六年级数学综合练习卷'},
  '初中与中考':{sample:'zhongkao-2023-2024-recombined',name:'广东中考 · 数学'},
  '高中与高考':{sample:'neea-2024-math-full',name:'高考适应性测试 · 数学'},
  '大学课程':{sample:'real-ecnu-linear-2023',name:'华东师大期末 · 线性代数'},

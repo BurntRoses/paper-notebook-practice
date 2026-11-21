@@ -522,19 +522,23 @@ function mountSample(host:HTMLElement,{title,request,entry,inDialog,showTitle=tr
   const next=button.dataset.sampleKind!;
   if(next===kind)return;
   kind=next;buttons.forEach(b=>{b.setAttribute('aria-pressed',String(b===button));b.tabIndex=b===button?0:-1;});
-  if(edition){sourceHTML=undefined;open.disabled=true;void load();}else draw();
+  if(edition){
+   sourceHTML=undefined;open.disabled=true;
+   disposePaper();disposePaper=()=>{};controls.dataset.status='loading';
+   void load();
+  }else draw();
  });
  const segmented=host.querySelector('.segmented');
  if(segmented)segmentedKeys(segmented);
  open.addEventListener('click',()=>void action(open,async()=>{
   const snapshot=sourceHTML,volume=kind;
-  await readyEditor();
   if(edition&&snapshot){
    const label=edition.volumes.find(part=>part.id===volume)?.label??'原卷';
-   await download(safeTitle(title)+'-'+label+'.html',snapshot,'text/html');
+   const printable=snapshot.replaceAll(' loading="lazy"','');
+   await download(safeTitle(title)+'-'+label+'.html',new TextEncoder().encode(printable),'text/html');
    return;
   }
-  await readyWorkspace();
+  await readyEditor();await readyWorkspace();
   if(!active||!paper)return;
   data=structuredClone(paper);library=null;artifact=null;
   requestedSubset=entry?entry.scope==='subset':data.exam?.scope==='subset';paperKind=kind as PaperKind;

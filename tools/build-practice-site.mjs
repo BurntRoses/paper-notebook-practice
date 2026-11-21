@@ -29,7 +29,7 @@ const listings=new Map(catalogShelf.map(entry=>[entry.id,entry]));
 const {catalogGuides}=await tsImport('../src/practice/catalog-guides.ts',import.meta.url);
 for(const [category,guide] of Object.entries(catalogGuides)){
  const sample=listings.get(guide.sample);
- if(sample?.category!==category||sample.kind!=='paper'||!guide.structure)throw Error('Invalid category representative: '+category);
+ if(sample?.category!==category||sample.kind!=='paper')throw Error('Invalid category representative: '+category);
 }
 
 const validURL=value=>{try{return ['https:','http:'].includes(new URL(value).protocol);}catch{return false;}};

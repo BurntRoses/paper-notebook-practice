@@ -1,5 +1,5 @@
 import {applyPaperCustomization,type PaperCustomization} from './customization';
-import {ENTRY_PROMPTS} from './entry-prompts';
+import {EDITABLE_DELIVERY,ENTRY_PROMPTS} from './entry-prompts';
 import {EXAM_SPECIFICATIONS,type ExamSpecification} from './exam-specification';
 import type {PracticeDocument,PracticePresentation,PracticeAuthoring,PracticeSourcePolicy} from './model';
 import {PAPER_TEMPLATES,type PaperTemplate} from './templates';
@@ -201,5 +201,5 @@ export function paperDraftPrompt(value:PaperDraft,mode:'agent'|'chat'):string {
  if(c.institution)lines.push('机构 · '+c.institution);
  if(c.courseCode)lines.push('课程代码 · '+c.courseCode);
  if(c.notes)lines.push('补充版式要求 · '+c.notes);
- return ENTRY_PROMPTS[mode].prompt+'\n\n已确认的出卷要求（未填项结合资料决定）\n'+lines.map(line=>'- '+line).join('\n');
+ return ENTRY_PROMPTS[mode].prompt+'\n\n已确认的出卷要求（未填项结合资料决定）\n'+lines.map(line=>'- '+line).join('\n')+'\n\n'+EDITABLE_DELIVERY;
 }

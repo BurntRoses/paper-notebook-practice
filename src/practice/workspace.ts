@@ -13,7 +13,7 @@ import themeCSS from './theme.css?raw';
 import {mountThemeControl} from './theme';
 import {mountSelectControls} from './select';
 import {EDITABLE_DELIVERY,ENTRY_PROMPTS,PROJECT_URL} from './entry-prompts';
-import {workbenchPrompt,workbenchTasks,type WorkbenchTaskId} from './workbench-tasks';
+import {workbenchTasks,type WorkbenchTaskId} from './workbench-tasks';
 import {homePaperAsset,homePaperCommand,homePapers} from './home-papers';
 
 type PreviewKind=PaperKind;
@@ -64,7 +64,7 @@ let saveQueue=Promise.resolve(),saveFailed=false;
 let requestedSubset=false;
 let exportFormat:PracticeExportFormat|'html'|'zip'='pdf';
 const root=document.querySelector<HTMLElement>('#practice-app')!;
-root.innerHTML=`<a class="skip" href="#main" tabindex="0">跳到内容</a><header class="site-header"><div class="header-inner"><a class="brand" href="#start" aria-label="纸间首页">${icon('book')}<span>纸间</span><span class="brand-sub">Practice</span></a><nav aria-label="主导航"><button data-view="start">开始使用</button><button data-view="templates">试卷与版式</button><button data-view="preview">我的试卷</button></nav><div id="theme-control"></div><button id="import-top" class="button secondary">${icon('upload')}<span>导入试卷</span></button></div></header><div id="global-status" role="status" aria-live="polite"></div><main id="main" tabindex="-1"></main><footer class="site-footer"><span>MIT · 免费开源 · 离线使用</span><a class="related-project" href="https://burntroses.github.io/paper-notebook/" target="_blank" rel="noreferrer">Paper Notebook · 孪生项目 ${icon('arrow')}</a><a class="github-star" href="${PROJECT_URL}" target="_blank" rel="noreferrer" aria-label="在 GitHub 为 Paper Notebook Practice 点 Star">GitHub Star ${icon('external')}</a><button id="footer-skill">下载 Skill ${icon('download')}</button></footer><input id="file-input" type="file" multiple hidden accept=".json,.html,.htm,.txt,.md,.markdown,.docx"><dialog id="detail" class="modal"></dialog>`;
+root.innerHTML=`<a class="skip" href="#main" tabindex="0">跳到内容</a><header class="site-header"><div class="header-inner"><a class="brand" href="#start" aria-label="纸间首页"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M9 9.5h4a3 3 0 0 1 3 3v11a3 3 0 0 0-3-2.5H9zm14 0h-4a3 3 0 0 0-3 3v11a3 3 0 0 1 3-2.5h4zM11.5 13.5h2m-2 3h2m5-3h2m-2 3h2" stroke="var(--on-accent)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg><span>纸间</span></a><nav aria-label="主导航"><button data-view="start">开始使用</button><button data-view="templates">试卷与版式</button><button data-view="preview">我的试卷</button></nav><div id="theme-control"></div><button id="import-top" class="button secondary">${icon('upload')}<span>导入试卷</span></button></div></header><div id="global-status" role="status" aria-live="polite"></div><main id="main" tabindex="-1"></main><footer class="site-footer"><span>MIT · 免费开源 · 离线使用</span><a class="related-project" href="https://burntroses.github.io/paper-notebook/" target="_blank" rel="noreferrer">Paper Notebook · 孪生项目 ${icon('arrow')}</a><a class="github-star" href="${PROJECT_URL}" target="_blank" rel="noreferrer" aria-label="在 GitHub 为 Paper Notebook Practice 点 Star">GitHub Star ${icon('external')}</a><button id="footer-skill">下载 Skill ${icon('download')}</button></footer><input id="file-input" type="file" multiple hidden accept=".json,.html,.htm,.txt,.md,.markdown,.docx"><dialog id="detail" class="modal"></dialog>`;
 mountThemeControl(root.querySelector<HTMLElement>('#theme-control')!);
 mountSelectControls(root);
 const main=root.querySelector<HTMLElement>('main')!,dialog=root.querySelector<HTMLDialogElement>('dialog')!,fileInput=root.querySelector<HTMLInputElement>('#file-input')!;
@@ -240,7 +240,7 @@ function renderStart(){
   <section class="home-copy" aria-labelledby="home-copy-title"><h2 id="home-copy-title">出卷指令</h2>
    <div>${(['agent','chat'] as const).map(mode=>`<button id="copy-${mode}" class="button secondary" aria-live="polite">${icon('copy')}<span>${mode==='agent'?'复制 Agent 指令':'复制对话模型指令'}</span></button>`).join('')}</div>
   </section>
-  <button id="open-workflow" class="button text">出卷流程演示 ${icon('arrow')}</button>
+  <button id="open-workflow" class="button text"><span>出卷流程演示</span> ${icon('arrow')}</button>
  </section>
  <section id="home-stage" class="home-stage" aria-label="样卷预览"></section>`;
  main.querySelector<HTMLButtonElement>('#browse-templates')!.onclick=()=>navigate('templates');
@@ -292,16 +292,20 @@ function renderWorkflow(){
  disposeView();
  main.className='workflow-page';
  main.innerHTML=`<header class="workflow-header"><h1 tabindex="-1">出卷流程演示</h1><button type="button" id="workflow-back" class="button text">返回试卷样例</button></header>
-  <div class="workflow-choices"><div class="segmented" role="group" aria-label="演示项目">${Object.entries(workbenchTasks).map(([id,task])=>`<button type="button" data-workflow-task="${id}" aria-controls="workflow-stage">${task.label}</button>`).join('')}</div><button type="button" id="workflow-copy" class="button secondary" aria-live="polite">${icon('copy')}<span>复制 Agent 指令</span></button></div>
-  <section id="workflow-stage" class="workbench-demo" aria-label="处理过程"></section>`;
+  <div class="workflow-workspace">
+   <aside class="workflow-rail">
+    <h2>制作方式</h2>
+    <div class="workflow-choices" role="group" aria-label="制作方式">${Object.entries(workbenchTasks).map(([id,task])=>`<button type="button" data-workflow-task="${id}" aria-controls="workflow-stage">${task.label}<span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
+    <div id="workflow-steps"></div>
+   </aside>
+   <section id="workflow-stage" class="workbench-demo" aria-label="处理过程"></section>
+  </div>`;
  main.querySelector<HTMLButtonElement>('#workflow-back')!.onclick=()=>{
-  navigate('start');main.querySelector<HTMLElement>('[data-home-paper][aria-pressed=true]')?.focus({preventScroll:true});
+  navigate('start');main.querySelector<HTMLElement>('#open-workflow')?.focus({preventScroll:true});
  };
- const group=main.querySelector('.workflow-choices .segmented')!,buttons=[...group.querySelectorAll<HTMLButtonElement>('button')];
- const copy=main.querySelector<HTMLButtonElement>('#workflow-copy')!;
- const host=main.querySelector<HTMLElement>('#workflow-stage')!;
+ const group=main.querySelector('.workflow-choices')!,buttons=[...group.querySelectorAll<HTMLButtonElement>('button')];
+ const controls=main.querySelector<HTMLElement>('#workflow-steps')!,host=main.querySelector<HTMLElement>('#workflow-stage')!;
  let generation=0,disposeStage=()=>{};
- copy.onclick=()=>void copyPrompt(copy,workbenchPrompt(workbenchTasks[workflowTask],ENTRY_PROMPTS.agent.instructions));
  function sync(){
   buttons.forEach(button=>{
    const active=button.dataset.workflowTask===workflowTask;
@@ -310,12 +314,12 @@ function renderWorkflow(){
  }
  async function draw(){
   const current=++generation;
-  disposeStage();disposeStage=()=>{};sync();promptResets.get(copy)?.();
+  disposeStage();disposeStage=()=>{};sync();controls.replaceChildren();
   host.innerHTML='<p class="demo-status" role="status">正在载入示例…</p>';
   try{
    const {mountWorkbenchDemo}=await import('./workbench-demo');
    if(current!==generation)return;
-   disposeStage=mountWorkbenchDemo(host,workflowTask,{
+   disposeStage=mountWorkbenchDemo(host,controls,workflowTask,{
     load:async id=>{
      const entry=await catalogEntry(id);
      if(entry.request.kind==='template')throw Error('此示例需要试卷数据。');
@@ -344,8 +348,8 @@ function renderWorkflow(){
   const next=button.dataset.workflowTask as WorkbenchTaskId;
   if(workflowTask!==next){workflowTask=next;void draw();}
  });
- sync();segmentedKeys(group);void draw();
- disposeView=()=>{generation++;disposeStage();promptResets.get(copy)?.();};
+ sync();segmentedKeys(group,true);void draw();
+ disposeView=()=>{generation++;disposeStage();};
 }
 
 function renderTemplates(shelf:CatalogEntry[]){
@@ -555,7 +559,7 @@ function renderPreview(){
  main.className='preview-page';
  if(!data&&!artifact){main.innerHTML=`<div class="preview-empty"><span class="empty-icon">${icon('file')}</span><h1>我的试卷</h1><div class="hero-actions"><button id="open-delivery" class="button primary">${icon('upload')}打开试卷</button><button id="load-sample" class="button secondary">查看样卷</button></div><button id="empty-agent" class="button text">开始制作试卷 ${icon('arrow')}</button></div>`;main.querySelector('#open-delivery')!.addEventListener('click',openFileDialog);main.querySelector<HTMLButtonElement>('#load-sample')!.onclick=()=>navigate('templates');main.querySelector<HTMLButtonElement>('#empty-agent')!.onclick=()=>{navigate('start');};return;}
  const title=data?.title??artifact!.name;
- main.innerHTML=`<div class="preview-heading"><div><h1>${escape(title)}</h1></div><div class="preview-actions">${data?`<button id="toggle-manual" class="button secondary" aria-expanded="${manual}">${icon('settings')}版式调整</button>`:''}${data?`<select id="export-format" aria-label="导出格式">${[['pdf','PDF'],['docx','Word .docx'],['png','PNG 图片'],['html','离线 HTML'],['zip','整套 HTML + 题库']].map(([value,label])=>`<option value="${value}" ${exportFormat===value?'selected':''}>${label}</option>`).join('')}</select>`:''}<button id="export-package" class="button primary">${icon('download')}导出${data?'试卷':'文件'}</button></div></div><div class="preview-controls"><div class="segmented" role="group" aria-label="预览文件">${data?([['exam','题目卷'] as const,['answers','答案卷'] as const,['answer-card','答题卡'] as const]).map(([kind,name])=>`<button data-kind="${kind}" aria-pressed="${paperKind===kind}">${name}</button>`).join(''):'<span class="artifact-label">HTML 试卷</span>'}</div><div class="preview-tools">${data?`<select id="print-color" aria-label="打印颜色"><option value="color" ${data.presentation?.printColor!=='grayscale'?'selected':''}>彩印 · 保留原色</option><option value="grayscale" ${data.presentation?.printColor==='grayscale'?'selected':''}>黑白 · 灰度</option></select>`:''}${artifact?'':`<button id="open-paper" class="icon-button" aria-label="单独打开试卷" title="单独打开试卷">${icon('external')}</button>`}<button id="download-paper" class="icon-button" aria-label="下载当前预览" title="下载当前预览">${icon('download')}</button></div></div><div class="preview-layout ${manual&&data?'has-inspector':''}"><div class="paper-stage"><iframe id="paper-preview" title="试卷成品预览" sandbox="allow-scripts allow-downloads allow-modals${data&&!artifact&&documentQuestions().length?' allow-same-origin':''}"></iframe></div>${manual&&data?inspectorMarkup():''}</div><p id="preview-error" class="inline-error" role="alert"></p>`;
+ main.innerHTML=`<div class="preview-heading"><div><h1>${escape(title)}</h1></div><div class="preview-actions">${data?`<button id="toggle-manual" class="button secondary" aria-expanded="${manual}">${icon('settings')}版式调整</button>`:''}${data?`<select id="export-format" aria-label="导出格式">${[['pdf','PDF'],['docx','Word .docx'],['png','PNG 图片'],['html','离线 HTML'],['zip','整套 HTML + 题库']].map(([value,label])=>`<option value="${value}" ${exportFormat===value?'selected':''}>${label}</option>`).join('')}</select>`:''}<button id="export-package" class="button primary">${icon('download')}导出${data?'试卷':'文件'}</button></div></div><div class="preview-controls"><div class="segmented" role="group" aria-label="预览文件">${data?([['exam','题目卷'] as const,['answers','答案卷'] as const,['answer-card','答题卡'] as const]).map(([kind,name])=>`<button data-kind="${kind}" aria-pressed="${paperKind===kind}">${name}</button>`).join(''):'<span class="artifact-label">HTML 试卷</span>'}</div><div class="preview-tools">${data?`<div id="print-color" class="inline-options" role="group" aria-label="打印颜色">${([['color','彩色'],['grayscale','黑白']] as const).map(([value,label])=>`<button type="button" data-print-color="${value}" aria-pressed="${(data!.presentation?.printColor??'color')===value}">${label}</button>`).join('')}</div>`:''}${artifact?'':`<button id="open-paper" class="icon-button" aria-label="单独打开试卷" title="单独打开试卷">${icon('external')}</button>`}<button id="download-paper" class="icon-button" aria-label="下载当前预览" title="下载当前预览">${icon('download')}</button></div></div><div class="preview-layout ${manual&&data?'has-inspector':''}"><div class="paper-stage"><iframe id="paper-preview" title="试卷成品预览" sandbox="allow-scripts allow-downloads allow-modals${data&&!artifact&&documentQuestions().length?' allow-same-origin':''}"></iframe></div>${manual&&data?inspectorMarkup():''}</div><p id="preview-error" class="inline-error" role="alert"></p>`;
  redrawWorkspacePaper();
  main.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(button=>button.onclick=()=>{
   if(paperKind===button.dataset.kind)return;
@@ -566,7 +570,18 @@ function renderPreview(){
  segmentedKeys(main.querySelector('.segmented')!);
  main.querySelector('#toggle-manual')?.addEventListener('click',()=>{manual=!manual;renderPreview();main.querySelector<HTMLElement>('#toggle-manual')?.focus({preventScroll:true});});
  main.querySelector<HTMLSelectElement>('#export-format')?.addEventListener('change',event=>exportFormat=(event.target as HTMLSelectElement).value as typeof exportFormat);
- main.querySelector<HTMLSelectElement>('#print-color')?.addEventListener('change',event=>{if(!data)return;const input=event.target as HTMLSelectElement,before=structuredClone(data);try{data.presentation??={};data.presentation.printColor=input.value==='grayscale'?'grayscale':'color';editor.renderPractice(data,{kind:paperKind,screenOnly:true});artifact=null;void persist();redrawWorkspacePaper();}catch(error){data=before;input.value=before.presentation?.printColor??'color';input.dispatchEvent(new Event('input'));main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}});
+ const printColors=[...main.querySelectorAll<HTMLButtonElement>('[data-print-color]')];
+ printColors.forEach(button=>button.onclick=()=>{
+  if(!data||button.getAttribute('aria-pressed')==='true')return;
+  const before=structuredClone(data);
+  try{
+   data.presentation??={};
+   data.presentation.printColor=button.dataset.printColor==='grayscale'?'grayscale':'color';
+   editor.renderPractice(data,{kind:paperKind,screenOnly:true});
+   printColors.forEach(option=>option.setAttribute('aria-pressed',String(option===button)));
+   artifact=null;void persist();redrawWorkspacePaper();
+  }catch(error){data=before;main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}
+ });
  main.querySelector<HTMLButtonElement>('#export-package')!.onclick=function(){const button=this as HTMLButtonElement;void action(button,async()=>{if(!data||exportFormat==='html'){await downloadCurrent();return;}if(exportFormat==='zip'){await exportPackage();return;}if(!documentQuestions().length)throw Error('题库中还没有题目，请先添加题目。');const paper=data,format=exportFormat,kind=paperKind;button.textContent='正在准备导出…';const {exportPracticeFiles}=await import('./exports');const result=await exportPracticeFiles(paper,{format,kind,css:editor.paperCSS,onProgress:message=>{button.textContent=message;}});await download(result.name,result.bytes,result.mime);},'已下载','正在准备导出…');};main.querySelector('#download-paper')!.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,downloadCurrent,'已下载');});main.querySelector('#open-paper')?.addEventListener('click',()=>{const html=selectedHTML();const url=URL.createObjectURL(new Blob([html],{type:'text/html'}));window.open(url,'_blank','noopener');setTimeout(()=>URL.revokeObjectURL(url),60000);});
  if(manual&&data)bindInspector();
 }
@@ -593,11 +608,11 @@ function segmentedKeys(group:Element,vertical=false){
  buttons.forEach(button=>button.tabIndex=button.getAttribute('aria-pressed')==='true'?0:-1);
  group.addEventListener('keydown',event=>{
   const key=event as KeyboardEvent;
-  const previous=vertical?'ArrowUp':'ArrowLeft',next=vertical?'ArrowDown':'ArrowRight';
-  if(key.isComposing||key.altKey||key.metaKey||key.ctrlKey||![previous,next,'Home','End'].includes(key.key)||!buttons.length)return;
+  const forward=key.key==='ArrowRight'||vertical&&key.key==='ArrowDown',backward=key.key==='ArrowLeft'||vertical&&key.key==='ArrowUp';
+  if(key.isComposing||key.altKey||key.metaKey||key.ctrlKey||!buttons.length||!(forward||backward||['Home','End'].includes(key.key)))return;
   key.preventDefault();
   const at=buttons.indexOf(document.activeElement as HTMLButtonElement);
-  const index=key.key==='Home'?0:key.key==='End'?buttons.length-1:(at+(key.key===next?1:-1)+buttons.length)%buttons.length;
+  const index=key.key==='Home'?0:key.key==='End'?buttons.length-1:(at+(forward?1:-1)+buttons.length)%buttons.length;
   buttons[index].click();
   (buttons[index].isConnected?buttons[index]:main.querySelectorAll<HTMLButtonElement>('.segmented button')[index])?.focus();
  });

@@ -23,11 +23,12 @@ export function mountSelectControls(root:HTMLElement):()=>void{
   const rect=c.trigger.getBoundingClientRect();
   const margin=8,gap=5,below=win.innerHeight-rect.bottom-margin-gap,above=rect.top-margin-gap;
   if(rect.bottom<0||rect.top>win.innerHeight){close();return;}
-  const minWidth=c.source.id==='catalog-category'?306:192;
+  const isDirection=c.source.id==='catalog-category';
+  const minWidth=isDirection?306:192;
   const width=Math.min(Math.max(rect.width,minWidth),win.innerWidth-margin*2);
   const down=below>=Math.min(240,above);
   Object.assign(c.panel.style,{
-   width:width+'px',maxHeight:Math.max(0,Math.min(340,down?below:above))+'px',
+   width:width+'px',maxHeight:Math.max(0,Math.min(isDirection?440:340,down?below:above))+'px',
    left:Math.max(margin,Math.min(rect.left,win.innerWidth-width-margin))+'px',
    top:down?rect.bottom+gap+'px':'auto',bottom:down?'auto':win.innerHeight-rect.top+gap+'px',
   });

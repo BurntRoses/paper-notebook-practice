@@ -46,9 +46,23 @@ function table(parent:HTMLElement,headers:string[],items:string[][]){
 }
 
 function choose(parent:HTMLElement,label:string,options:string[],initial:number,update:(value:number)=>void){
- const control=add(parent,'label');control.className='demo-select';
- add(control,'span',label);
- const select=add(control,'select');select.dataset.nativeSelect='';
+ if(options.length<2)return;
+ if(options.length===2){
+  const group=add(parent,'div');group.className='inline-options demo-options';group.role='group';group.ariaLabel=label;
+  const buttons=options.map((option,index)=>{
+   const button=add(group,'button',option);button.type='button';
+   button.setAttribute('aria-pressed',String(index===initial));
+   button.onclick=()=>{
+    buttons.forEach((item,i)=>item.setAttribute('aria-pressed',String(i===index)));
+    update(index);
+   };
+   return button;
+  });
+  return;
+ }
+ const control=add(parent,'div');control.className='demo-select';
+ const title=add(control,'span',label);title.ariaHidden='true';
+ const select=add(control,'select');select.ariaLabel=label;
  for(const [index,option] of options.entries())add(select,'option',option).value=String(index);
  select.value=String(initial);select.onchange=()=>update(Number(select.value));
 }
@@ -163,14 +177,13 @@ function assembleStage(parent:HTMLElement,paper:PracticeDocument,reserve:Practic
  const selected=questionsOf(paper),extra=questionsOf(reserve);
  if(phase===0){
   add(parent,'h3','本次候选题库');
-  facts(parent,[['候选',count(selected.length+extra.length)],['入卷',count(selected.length)],['留在题库',count(extra.length)]]);
   const panel=document.createElement('div');
-  choose(parent,'查看候选', ['本次入卷','未入卷'],0,show);
+  choose(parent,'查看候选', ['本次入卷 · '+count(selected.length),'未入卷 · '+count(extra.length)],0,show);
   parent.append(panel);show(0);
   function show(index:number){
    panel.replaceChildren();
    const source=index?reserve:paper;
-   add(panel,'p',source.title+(index?' · 本轮未指定这些题号':''));
+   add(panel,'p',source.title).className='demo-table-caption';
    table(panel,['原题号','知识点','题型','原分'],(index?extra:selected).map(q=>[String(q.number),q.chapter,PRACTICE_TYPE_NAMES[q.type],points(q.score)]));
   }
  }else if(phase===1){
@@ -188,16 +201,20 @@ function assembleStage(parent:HTMLElement,paper:PracticeDocument,reserve:Practic
  }
 }
 
-export function mountWorkbenchDemo(host:HTMLElement,taskId:WorkbenchTaskId,options:DemoOptions){
+export function mountWorkbenchDemo(host:HTMLElement,controls:HTMLElement,taskId:WorkbenchTaskId,options:DemoOptions){
  const task=workbenchTasks[taskId];
- host.innerHTML='<div class="demo-heading"><h2>Agent 制作示例</h2><button type="button" id="demo-play" disabled>播放过程</button></div>'+
-  '<div class="demo-steps segmented" role="group" aria-label="演示步骤"></div><div class="demo-stage"><div class="demo-content"></div></div>';
- const play=host.querySelector<HTMLButtonElement>('#demo-play')!;
- const title=host.querySelector('h2')!;
+ controls.innerHTML='<div class="demo-steps-heading"><h2>处理步骤</h2><button type="button" id="demo-play" disabled><span></span></button></div>'+
+  '<div class="demo-steps" role="group" aria-label="处理步骤"></div>';
+ host.innerHTML='<div class="demo-heading"><h2></h2></div><div class="demo-stage"><div class="demo-content"></div></div>';
+ const play=controls.querySelector<HTMLButtonElement>('#demo-play')!;
+ const playText=play.querySelector('span')!,title=host.querySelector('h2')!;
  const stage=host.querySelector<HTMLElement>('.demo-content')!;
- const stepGroup=host.querySelector<HTMLElement>('.demo-steps')!;
+ const stepGroup=controls.querySelector<HTMLElement>('.demo-steps')!;
  const steps=task.stages.map((label,index)=>{
-  const button=add(stepGroup,'button',label);button.type='button';button.onclick=()=>jump(index);return button;
+  const button=add(stepGroup,'button');button.type='button';button.onclick=()=>jump(index);
+  add(button,'span',String(index+1)).className='demo-step-index';
+  add(button,'span',label);
+  return button;
  });
  const motion=matchMedia('(prefers-reduced-motion: reduce)');
  let paper:PracticeDocument|undefined,reserve:PracticeDocument|undefined;
@@ -209,7 +226,7 @@ export function mountWorkbenchDemo(host:HTMLElement,taskId:WorkbenchTaskId,optio
  }
  function syncControls(){
   steps.forEach((step,index)=>{step.setAttribute('aria-pressed',String(index===phase));step.tabIndex=index===phase?0:-1;});
-  play.textContent=motion.matches?'下一步':playing?'暂停':phase===last?'重播':'播放过程';
+  playText.textContent=motion.matches?'下一步':playing?'暂停':phase===last?'重播':'播放';
   play.disabled=!paper;
  }
  function finish(){
@@ -271,14 +288,14 @@ export function mountWorkbenchDemo(host:HTMLElement,taskId:WorkbenchTaskId,optio
  play.onclick=()=>{
   if(playing){pause();return;}
   if(motion.matches){jump((phase+1)%(last+1));return;}
-  if(phase===last)phase=0;
-  playing=true;draw();
+  playing=true;
+  if(phase===last){phase=0;draw();}else{syncControls();schedule();}
  };
  stage.addEventListener('focusin',event=>{if(playing&&(event.target as HTMLElement).matches('a,button,select,summary'))pause();});
  stepGroup.addEventListener('keydown',event=>{
-  if(event.isComposing||event.altKey||event.ctrlKey||event.metaKey||!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;
+  if(event.isComposing||event.altKey||event.ctrlKey||event.metaKey||!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','End'].includes(event.key))return;
   event.preventDefault();
-  const next=event.key==='Home'?0:event.key==='End'?last:(phase+(event.key==='ArrowRight'?1:last))%(last+1);
+  const next=event.key==='Home'?0:event.key==='End'?last:(phase+(['ArrowRight','ArrowDown'].includes(event.key)?1:last))%(last+1);
   jump(next);steps[next].focus();
  });
  const motionChanged=()=>{if(motion.matches&&playing)pause();};
@@ -297,7 +314,7 @@ export function mountWorkbenchDemo(host:HTMLElement,taskId:WorkbenchTaskId,optio
    if(!disposed){
     reserve=alternatives;
     paper=assembly&&reserve?assembly.assembleWorkbenchPaper(reference,reserve):reference;
-    title.textContent=paper.title+' · 制作示例';
+    title.textContent=paper.title;
     draw();
    }
   }catch{

@@ -16,6 +16,5 @@ export {caseIndex} from './case-index';
 export {referencePapersForTemplate} from './reference-papers';
 export {createIframePaperPager} from './paper-pagination';
 export {default as schema} from '../../skills/paper-notebook-practice/schemas/practice.schema.json';
-export {mountPaperSetup} from './paper-setup';
 export {standalonePaperHTML} from './web-assets';
 export {default as paperCSS,previewPaperCSS} from 'practice-paper-styles';

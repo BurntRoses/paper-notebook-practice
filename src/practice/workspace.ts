@@ -58,16 +58,17 @@ const icon=(name:keyof typeof symbols)=>`<svg viewBox="0 0 24 24" width="18" hei
 
 let library:PracticeDocument|null=null;
 let data:PracticeDocument|null=null,artifact:{html:string;name:string}|null=null;
-let view:'start'|'templates'|'preview'='start',paperKind:PreviewKind='exam',manual=false,restored=false,importMode:'open'|'append'='open';
+let view:'start'|'templates'|'preview'|'workflow'='start',paperKind:PreviewKind='exam',manual=false,restored=false,importMode:'open'|'append'='open';
 let selected=new Set<string>(),search='',chapter='',questionType='',page=0,materialKind:PracticeKind='reference';
 let saveQueue=Promise.resolve(),saveFailed=false;
 let requestedSubset=false;
 let exportFormat:PracticeExportFormat|'html'|'zip'='pdf';
 const root=document.querySelector<HTMLElement>('#practice-app')!;
-root.innerHTML=`<a class="skip" href="#main" tabindex="0">跳到内容</a><header class="site-header"><div class="header-inner"><a class="brand" href="#start" aria-label="纸间首页">${icon('book')}<span>纸间</span><span class="brand-sub">Practice</span></a><nav aria-label="主导航"><button data-view="start">开始使用</button><button data-view="templates">试卷与版式</button><button data-view="preview">我的试卷</button></nav><div id="theme-control"></div><button id="import-top" class="button secondary">${icon('upload')}<span>打开文件</span></button></div></header><div id="global-status" role="status" aria-live="polite"></div><main id="main" tabindex="-1"></main><footer class="site-footer"><span>MIT · 免费开源 · 离线使用</span><a class="related-project" href="https://burntroses.github.io/paper-notebook/" target="_blank" rel="noreferrer">Paper Notebook · 孪生项目 ${icon('arrow')}</a><a class="github-star" href="${PROJECT_URL}" target="_blank" rel="noreferrer" aria-label="在 GitHub 为 Paper Notebook Practice 点 Star">GitHub Star ${icon('external')}</a><button id="footer-skill">下载 Skill ${icon('download')}</button></footer><input id="file-input" type="file" multiple hidden accept=".json,.html,.htm,.txt,.md,.markdown,.docx"><dialog id="detail" class="modal"></dialog>`;
+root.innerHTML=`<a class="skip" href="#main" tabindex="0">跳到内容</a><header class="site-header"><div class="header-inner"><a class="brand" href="#start" aria-label="纸间首页">${icon('book')}<span>纸间</span><span class="brand-sub">Practice</span></a><nav aria-label="主导航"><button data-view="start">开始使用</button><button data-view="templates">试卷与版式</button><button data-view="preview">我的试卷</button></nav><div id="theme-control"></div><button id="import-top" class="button secondary">${icon('upload')}<span>导入试卷</span></button></div></header><div id="global-status" role="status" aria-live="polite"></div><main id="main" tabindex="-1"></main><footer class="site-footer"><span>MIT · 免费开源 · 离线使用</span><a class="related-project" href="https://burntroses.github.io/paper-notebook/" target="_blank" rel="noreferrer">Paper Notebook · 孪生项目 ${icon('arrow')}</a><a class="github-star" href="${PROJECT_URL}" target="_blank" rel="noreferrer" aria-label="在 GitHub 为 Paper Notebook Practice 点 Star">GitHub Star ${icon('external')}</a><button id="footer-skill">下载 Skill ${icon('download')}</button></footer><input id="file-input" type="file" multiple hidden accept=".json,.html,.htm,.txt,.md,.markdown,.docx"><dialog id="detail" class="modal"></dialog>`;
 mountThemeControl(root.querySelector<HTMLElement>('#theme-control')!);
 mountSelectControls(root);
 const main=root.querySelector<HTMLElement>('main')!,dialog=root.querySelector<HTMLDialogElement>('dialog')!,fileInput=root.querySelector<HTMLInputElement>('#file-input')!;
+root.querySelector<HTMLAnchorElement>('.brand')!.onclick=event=>{event.preventDefault();if(view!=='start')navigate('start');};
 root.querySelector('.skip')!.addEventListener('click',event=>{event.preventDefault();main.focus();main.scrollIntoView({block:'start'});});
 const status=(message:string,error=false)=>{const el=root.querySelector<HTMLElement>('#global-status')!;el.textContent=message;el.classList.toggle('error',error);};
 const documentQuestions=()=>data?questionsOf(data):[];
@@ -119,11 +120,21 @@ async function restore(){
  }catch(error){status(error instanceof Error?error.message:'无法恢复本机文件',true);}
  finally{db?.close();restored=true;}
 }
-function navigate(next:typeof view){if(location.hash!=='#'+next)history.pushState(null,'','#'+next);view=next;if(!root.querySelector('#global-status')?.classList.contains('error'))status('');render();window.scrollTo({top:0,behavior:'instant'});}
-let setupOpen=false,setupTemplate:string|undefined,disposeSetup=()=>{};
+let catalogRoute='#templates';
+function navigate(next:typeof view){
+ const switching=view!==next;
+ if(switching&&view==='templates')catalogRoute=location.hash;
+ const hash=next==='templates'?catalogRoute:'#'+next;
+ if(switching&&location.hash!==hash)history.pushState(null,'',hash);
+ view=next;
+ if(!root.querySelector('#global-status')?.classList.contains('error'))status('');
+ render();
+ if(switching)window.scrollTo({top:0,behavior:'instant'});
+}
 let disposeView=()=>{},disposeSample=()=>{},sampleClosed:(()=>void)|undefined;
 dialog.addEventListener('close',()=>{if(!dialog.open){disposeSample();disposeSample=()=>{};const callback=sampleClosed;sampleClosed=undefined;callback?.();}});
-function render(){disposeSetup();disposeSetup=()=>{};root.dataset.view=view;root.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>{b.setAttribute('aria-current',String(b.dataset.view===view));});if(view==='start')renderStart();
+function render(){root.dataset.view=view;root.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>{b.setAttribute('aria-current',String(b.dataset.view===view));});if(view==='start')renderStart();
+ else if(view==='workflow')renderWorkflow();
  else if(view==='templates'&&catalogShelf)renderTemplates(catalogShelf);
  else if(view==='preview'&&editor&&previewTools&&restored)renderPreview();
  else {
@@ -142,13 +153,16 @@ function render(){disposeSetup();disposeSetup=()=>{};root.dataset.view=view;root
 }
 function installSkill(button:HTMLButtonElement){void action(button,async()=>downloadWebFile(webDelivery()?.skillUrl??'./paper-notebook-practice-skill.zip','paper-notebook-practice-skill.zip'),'已开始下载');}
 const promptResets=new WeakMap<HTMLButtonElement,()=>void>();
-async function copyPrompt(button:HTMLButtonElement,prompt=ENTRY_PROMPTS[entryMode].instructions){
+async function copyPrompt(button:HTMLButtonElement,prompt=ENTRY_PROMPTS.agent.instructions){
  if(button.disabled||button.getAttribute('aria-disabled')==='true')return;
- const original=button.innerHTML;
  let timer=0;
+ const original=document.createElement('span');original.className='copy-label';
+ original.append(...button.childNodes);
+ const feedback=document.createElement('span');feedback.className='copy-feedback';
+ button.classList.add('copy-control');button.append(original,feedback);
  function reset(){
   clearTimeout(timer);promptResets.delete(button);
-  button.innerHTML=original;button.removeAttribute('aria-disabled');
+  button.classList.remove('copy-control');button.replaceChildren(...original.childNodes);button.removeAttribute('aria-disabled');
  }
  promptResets.set(button,reset);button.setAttribute('aria-disabled','true');
  let copied=false;
@@ -159,13 +173,13 @@ async function copyPrompt(button:HTMLButtonElement,prompt=ENTRY_PROMPTS[entryMod
   button.focus({preventScroll:true});
  }
  if(promptResets.get(button)!==reset)return;
- button.textContent=copied?'已复制':'复制失败';if(!copied)status('复制失败，请重试。',true);
+ original.style.visibility='hidden';feedback.textContent=copied?'已复制':'复制失败，请重试';
  timer=window.setTimeout(reset,1600);
 }
 function specFor(paper?:PracticeDocument,templateId?:string){try{return editor.inferExamSpecification(paper,templateId);}catch{return undefined;}}
 function isCompleteCase(paper:PracticeDocument){const spec=specFor(paper);return Boolean(paper.exam?.scope!=='subset'&&spec&&editor.validateExamStructure(paper,spec,true,Boolean(siteAudioBase())).length===0);}
 function examinationPrompt(paper?:PracticeDocument,spec=specFor(paper),subset=false){
- if(!paper&&!spec)return ENTRY_PROMPTS[entryMode].prompt;
+ if(!paper&&!spec)return ENTRY_PROMPTS.agent.prompt;
  const lines:string[]=[];
  if(paper){
   lines.push('试卷 · '+[paper.title,paper.subject,paper.level].join(' / '));
@@ -175,11 +189,10 @@ function examinationPrompt(paper?:PracticeDocument,spec=specFor(paper),subset=fa
  lines.push('范围 · '+(subset||paper?.mode==='bank'?'选编':'完整卷'));
  if(spec)lines.push('考试规格 · '+spec.title);
  if(subset&&paper)lines.push('选定题目编号 · '+questionsOf(paper).map(q=>q.id).join('、'));
- return ENTRY_PROMPTS[entryMode].prompt+'\n\n已确认的出卷要求\n'+lines.map(line=>'- '+line).join('\n');
+ return ENTRY_PROMPTS.agent.prompt+'\n\n已确认的出卷要求\n'+lines.map(line=>'- '+line).join('\n');
 }
 const paperPages=new Map<string,number>();
-let homePaper=homePapers[0],homeMode:'paper'|WorkbenchTaskId='paper',entryMode:keyof typeof ENTRY_PROMPTS='agent';
-try{if(localStorage.getItem('paper-notebook-practice-entry')==='chat')entryMode='chat';}catch{}
+let homePaper=homePapers[0],workflowTask:WorkbenchTaskId='author';
 const documentCache=new Map<string,Promise<PracticeDocument>>();
 let offlineTopicArchive:Uint8Array|undefined;
 async function readOfflineTopic(key:string){
@@ -219,56 +232,90 @@ function mountPaperPreview(frame:HTMLIFrameElement,controls:HTMLElement,options:
  },dispose:()=>pager.dispose()};
 }
 function renderStart(){
- disposeView();disposeView=()=>{};
- disposeSetup();disposeSetup=()=>{};
- if(setupOpen){const templateId=setupTemplate;setupTemplate=undefined;disposeSetup=editor.mountPaperSetup(main,{templateId,css:editor.paperCSS,previewCss:editor.previewPaperCSS,previewHTML:restrictPreview,copy:copyPrompt,download,close:()=>{setupOpen=false;renderStart();main.querySelector<HTMLButtonElement>('#begin-setup')?.focus({preventScroll:true});},mode:entryMode,setMode:mode=>{entryMode=mode;try{localStorage.setItem('paper-notebook-practice-entry',mode);}catch{}}});return;}
+ disposeView();
  main.className='start-page home-page';
  main.innerHTML=`<section class="home-library" aria-labelledby="home-library-title">
-  <header class="home-library-heading"><h1 id="home-library-title">试卷样例</h1><button id="browse-templates" class="button text">全部资源 ${icon('arrow')}</button></header>
-  <div class="home-papers" role="group" aria-label="选择完整样卷">${homePapers.map(paper=>`<button type="button" data-home-paper="${paper.id}" aria-pressed="false" aria-controls="home-stage"><span class="home-paper-group">${paper.group}</span><span>${paper.title}</span><span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
-  <div class="home-resources"><button id="begin-setup" class="button text">${icon('settings')} 定制出卷要求</button><button id="import-workbench" class="button text">${icon('upload')} 导入成品</button></div></section>
-  <section class="home-output" aria-label="样卷和 Agent 制作过程">
-   <div class="home-output-tools"><div class="home-modes segmented" role="group" aria-label="样卷与处理过程"><button type="button" data-home-mode="paper" aria-controls="home-stage">卷面</button>
-   ${Object.entries(workbenchTasks).map(([id,task])=>`<button type="button" data-home-mode="${id}" aria-controls="home-stage">${task.label}</button>`).join('')}</div>
-   <button id="copy-agent" class="button secondary" aria-live="polite">${icon('copy')}<span>复制 Agent 指令</span></button></div>
-   <div id="home-stage" class="home-stage"></div>
-  </section>`;
- const begin=main.querySelector<HTMLButtonElement>('#begin-setup')!;
- begin.onclick=()=>void action(begin,async()=>{await readyEditor();if(!begin.isConnected)return;setupOpen=true;renderStart();main.querySelector<HTMLElement>('#setup-step-title')?.focus({preventScroll:true});},'已打开','正在打开…');
- main.querySelector<HTMLButtonElement>('#browse-templates')!.onclick=()=>{navigate('templates');main.focus({preventScroll:true});};
- main.querySelector<HTMLButtonElement>('#import-workbench')!.onclick=()=>openFiles();
- const copy=main.querySelector<HTMLButtonElement>('#copy-agent')!;
- copy.onclick=()=>void copyPrompt(copy,homeMode==='paper'
-  ?[ENTRY_PROMPTS.agent.instructions,'请读取仓库自带样卷 '+homePaperAsset(homePaper)+'。可以运行 '+homePaperCommand(homePaper)+' 取得完整的参考作者数据。用它的规格、题组和版式作为参考，按我给的范围和资料编写同类完整试卷，独立核验题目与评分。仅在我要求专项练习时缩减范围。','生成并检查卷面，直接交付题目卷、答案卷、答题卡和验收记录。',EDITABLE_DELIVERY].join('\n\n')
-  :workbenchPrompt(workbenchTasks[homeMode],ENTRY_PROMPTS.agent.instructions));
- const paperGroup=main.querySelector('.home-papers')!,modeGroup=main.querySelector('.home-modes')!;
- const papers=[...paperGroup.querySelectorAll<HTMLButtonElement>('button')];
- const modes=[...modeGroup.querySelectorAll<HTMLButtonElement>('button')];
+  <header class="home-library-heading"><h1 id="home-library-title">试卷样例</h1><button id="browse-templates" class="button text">全部试卷 ${icon('arrow')}</button></header>
+  <div class="home-papers" role="group" aria-label="选择完整样卷">${homePapers.map(paper=>`<button type="button" data-home-paper="${paper.id}" aria-label="${escape(paper.title)}" aria-pressed="false" aria-controls="home-stage">${escape(paper.label)}<span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
+  <section class="home-copy" aria-labelledby="home-copy-title"><h2 id="home-copy-title">出卷指令</h2>
+   <div>${(['agent','chat'] as const).map(mode=>`<button id="copy-${mode}" class="button secondary" aria-live="polite">${icon('copy')}<span>${mode==='agent'?'复制 Agent 指令':'复制对话模型指令'}</span></button>`).join('')}</div>
+  </section>
+  <button id="open-workflow" class="button text">出卷流程演示 ${icon('arrow')}</button>
+ </section>
+ <section id="home-stage" class="home-stage" aria-label="样卷预览"></section>`;
+ main.querySelector<HTMLButtonElement>('#browse-templates')!.onclick=()=>navigate('templates');
+ main.querySelector<HTMLButtonElement>('#open-workflow')!.onclick=()=>{navigate('workflow');main.querySelector('h1')?.focus({preventScroll:true});};
+ const copyButtons=(['agent','chat'] as const).map(mode=>{
+  const button=main.querySelector<HTMLButtonElement>('#copy-'+mode)!;
+  button.onclick=()=>void copyPrompt(button,samplePrompt(mode));
+  return button;
+ });
+ const group=main.querySelector('.home-papers')!,buttons=[...group.querySelectorAll<HTMLButtonElement>('button')];
  const host=main.querySelector<HTMLElement>('#home-stage')!;
  let generation=0,disposeStage=()=>{};
  function syncButtons(){
-  for(const button of [...papers,...modes]){
-   const active=button.dataset.homePaper===homePaper.id||button.dataset.homeMode===homeMode;
+  buttons.forEach(button=>{
+   const active=button.dataset.homePaper===homePaper.id;
    button.setAttribute('aria-pressed',String(active));button.tabIndex=active?0:-1;
-  }
+  });
  }
  async function draw(){
-  const current=++generation,mode=homeMode;
-  disposeStage();disposeStage=()=>{};syncButtons();promptResets.get(copy)?.();
-  host.classList.toggle('workbench-demo',mode!=='paper');
-  host.innerHTML='<p class="demo-status" role="status">正在载入…</p>';
+  const paper=homePaper,current=++generation;
+  disposeStage();disposeStage=()=>{};syncButtons();copyButtons.forEach(button=>promptResets.get(button)?.());
+  host.innerHTML='<p class="demo-status" role="status">正在打开试卷…</p>';
   try{
-   if(mode==='paper'){
-    // Start the print renderer in parallel with the catalog lookup for this sample.
-    const [entry]=await Promise.all([catalogEntry(homePaper.id),readyPreview()]);
-    if(current!==generation)return;
-    host.replaceChildren();
-    disposeStage=mountSample(host,{title:homePaper.title,request:entry.request,entry,showTitle:false});
-    return;
-   }
+   const [entry]=await Promise.all([catalogEntry(paper.id),readyPreview()]);
+   if(current===generation)disposeStage=mountSample(host,{title:paper.title,request:entry.request,entry,showTitle:false});
+  }catch{
+   if(current!==generation)return;
+   host.innerHTML='<p class="demo-status" role="status">试卷未能载入 <button type="button" class="button secondary">重试</button></p>';
+   host.querySelector('button')!.onclick=()=>void draw();
+  }
+ }
+ buttons.forEach((button,index)=>button.onclick=()=>{
+  if(homePaper!==homePapers[index]){homePaper=homePapers[index];void draw();}
+ });
+ syncButtons();segmentedKeys(group);
+ void draw();
+ disposeView=()=>{generation++;disposeStage();copyButtons.forEach(button=>promptResets.get(button)?.());};
+}
+function samplePrompt(mode:keyof typeof ENTRY_PROMPTS){
+ const reference=homePaperAsset(homePaper),command=mode==='agent'?' 可运行 '+homePaperCommand(homePaper)+' 取得参考作者数据。':'';
+ return [
+  ENTRY_PROMPTS[mode].instructions,
+  '参考仓库里的样卷：'+reference+'。'+command,
+  '请结合我附上的资料与要求，自己确定命题和核验步骤，参考样卷的考试规格、题组与版式，制作同类完整试卷。只有我明确要求小练习或选编时才缩减题量。请直接给我题目卷、答案卷和答题卡。',
+  EDITABLE_DELIVERY,
+ ].join('\n\n');
+}
+function renderWorkflow(){
+ disposeView();
+ main.className='workflow-page';
+ main.innerHTML=`<header class="workflow-header"><h1 tabindex="-1">出卷流程演示</h1><button type="button" id="workflow-back" class="button text">返回试卷样例</button></header>
+  <div class="workflow-choices"><div class="segmented" role="group" aria-label="演示项目">${Object.entries(workbenchTasks).map(([id,task])=>`<button type="button" data-workflow-task="${id}" aria-controls="workflow-stage">${task.label}</button>`).join('')}</div><button type="button" id="workflow-copy" class="button secondary" aria-live="polite">${icon('copy')}<span>复制 Agent 指令</span></button></div>
+  <section id="workflow-stage" class="workbench-demo" aria-label="处理过程"></section>`;
+ main.querySelector<HTMLButtonElement>('#workflow-back')!.onclick=()=>{
+  navigate('start');main.querySelector<HTMLElement>('[data-home-paper][aria-pressed=true]')?.focus({preventScroll:true});
+ };
+ const group=main.querySelector('.workflow-choices .segmented')!,buttons=[...group.querySelectorAll<HTMLButtonElement>('button')];
+ const copy=main.querySelector<HTMLButtonElement>('#workflow-copy')!;
+ const host=main.querySelector<HTMLElement>('#workflow-stage')!;
+ let generation=0,disposeStage=()=>{};
+ copy.onclick=()=>void copyPrompt(copy,workbenchPrompt(workbenchTasks[workflowTask],ENTRY_PROMPTS.agent.instructions));
+ function sync(){
+  buttons.forEach(button=>{
+   const active=button.dataset.workflowTask===workflowTask;
+   button.setAttribute('aria-pressed',String(active));button.tabIndex=active?0:-1;
+  });
+ }
+ async function draw(){
+  const current=++generation;
+  disposeStage();disposeStage=()=>{};sync();promptResets.get(copy)?.();
+  host.innerHTML='<p class="demo-status" role="status">正在载入示例…</p>';
+  try{
    const {mountWorkbenchDemo}=await import('./workbench-demo');
    if(current!==generation)return;
-   disposeStage=mountWorkbenchDemo(host,mode,{
+   disposeStage=mountWorkbenchDemo(host,workflowTask,{
     load:async id=>{
      const entry=await catalogEntry(id);
      if(entry.request.kind==='template')throw Error('此示例需要试卷数据。');
@@ -289,19 +336,15 @@ function renderStart(){
    });
   }catch{
    if(current!==generation)return;
-   host.innerHTML='<p class="demo-status" role="status">未能载入 <button type="button" class="button secondary">重试</button></p>';
+   host.innerHTML='<p class="demo-status" role="status">示例未能载入 <button type="button" class="button secondary">重试</button></p>';
    host.querySelector('button')!.onclick=()=>void draw();
   }
  }
- papers.forEach((button,index)=>button.onclick=event=>{
-  if(homePaper!==homePapers[index]||homeMode!=='paper'){homePaper=homePapers[index];homeMode='paper';void draw();}
-  if(event.detail&&matchMedia('(max-width: 760px)').matches)host.closest('.home-output')?.scrollIntoView({block:'start'});
+ buttons.forEach(button=>button.onclick=()=>{
+  const next=button.dataset.workflowTask as WorkbenchTaskId;
+  if(workflowTask!==next){workflowTask=next;void draw();}
  });
- modes.forEach(button=>button.onclick=()=>{
-  if(homeMode!==button.dataset.homeMode){homeMode=button.dataset.homeMode as typeof homeMode;void draw();}
- });
- syncButtons();segmentedKeys(paperGroup,true);segmentedKeys(modeGroup);
- void draw();
+ sync();segmentedKeys(group);void draw();
  disposeView=()=>{generation++;disposeStage();promptResets.get(copy)?.();};
 }
 
@@ -448,7 +491,10 @@ function mountSample(host:HTMLElement,{title,request,entry,openRelated,inDialog,
    if(!recordings.hasChildNodes())updateRecordings();draw();showSources();
    buttons.forEach(button=>button.disabled=false);
    if(open)open.disabled=false;
-   if(use)use.disabled=false;
+   if(use&&template){
+    if(!restored)await readyWorkspace();
+    if(active&&revision===loadRevision){use.textContent=data?'应用版式':'复制版式指令';use.disabled=false;}
+   }
   }catch(error){
    if(active&&revision===loadRevision)showMessage(error instanceof Error?error.message:'卷面未能载入。',true);
   }finally{clearTimeout(slow);}
@@ -470,13 +516,17 @@ function mountSample(host:HTMLElement,{title,request,entry,openRelated,inDialog,
   if(inDialog)dialog.close();
   void persist();navigate('preview');
  },'已打开','正在打开…'));
- use?.addEventListener('click',()=>void action(use,async()=>{
+ use?.addEventListener('click',()=>{
+  if(!data&&restored&&template){
+   void copyPrompt(use,[ENTRY_PROMPTS.agent.instructions,'请参考仓库内置版式「'+template.name+'」（'+template.id+'），按我附上的资料完成试卷。',EDITABLE_DELIVERY].join('\n\n'));return;
+  }
+  void action(use,async()=>{
   await readyEditor();await readyWorkspace();
   if(!active)return;
-  if(inDialog)dialog.close();
-  if(!data){setupTemplate=request.id;setupOpen=true;navigate('start');return;}
-  data=editor.applyPaperTemplate(data,request.id);artifact=null;void persist();navigate('preview');status('版式已应用。');
- },'已应用'));
+  if(!data)return;
+  data=editor.applyPaperTemplate(data,request.id);artifact=null;void persist();
+  },'已应用');
+ });
  void load();
  return ()=>{
   active=false;window.removeEventListener('keydown',dismissFocus);focusPaper(false);disposePaper();frame.removeAttribute('srcdoc');
@@ -503,26 +553,41 @@ function previewHTML(html:string){
 function renderPreview(){
  disposeView();disposeView=()=>{};
  main.className='preview-page';
- if(!data&&!artifact){main.innerHTML=`<div class="preview-empty"><span class="empty-icon">${icon('file')}</span><h1>我的试卷</h1><div class="hero-actions"><button id="open-delivery" class="button primary">${icon('upload')}打开试卷</button><button id="load-sample" class="button secondary">查看样卷</button></div><button id="empty-agent" class="button text">开始制作试卷 ${icon('arrow')}</button></div>`;main.querySelector('#open-delivery')!.addEventListener('click',openFileDialog);main.querySelector<HTMLButtonElement>('#load-sample')!.onclick=()=>navigate('templates');main.querySelector<HTMLButtonElement>('#empty-agent')!.onclick=()=>{setupOpen=false;navigate('start');};return;}
- const title=data?.title??artifact!.name;const t=data?.style.templateId?editor.PAPER_TEMPLATES.find(t=>t.id===data!.style.templateId):null;
- main.innerHTML=`<div class="preview-heading"><div><h1>${escape(title)}</h1></div><div class="preview-actions">${data?`<button id="toggle-manual" class="button secondary" aria-expanded="${manual}">${icon('settings')}版式调整</button>`:''}${data?`<select id="export-format" aria-label="导出格式">${[['pdf','PDF'],['docx','Word .docx'],['png','PNG 图片'],['html','离线 HTML'],['zip','整套 HTML + 题库']].map(([value,label])=>`<option value="${value}" ${exportFormat===value?'selected':''}>${label}</option>`).join('')}</select>`:''}<button id="export-package" class="button primary">${icon('download')}导出${data?'试卷':'文件'}</button></div></div><div class="preview-controls"><div class="segmented" role="group" aria-label="预览文件">${data?([['exam','题目卷'] as const,['answers','答案卷'] as const,['answer-card','答题卡'] as const]).map(([kind,name])=>`<button data-kind="${kind}" aria-pressed="${paperKind===kind}">${name}</button>`).join(''):'<span class="artifact-label">HTML 试卷</span>'}</div><div class="preview-tools">${data?`<select id="print-color" aria-label="打印颜色"><option value="color" ${data.presentation?.printColor!=='grayscale'?'selected':''}>彩印 · 保留原色</option><option value="grayscale" ${data.presentation?.printColor==='grayscale'?'selected':''}>黑白 · 灰度</option></select>`:''}<span>${t?escape(t.name):''}</span>${artifact?'':`<button id="open-paper" class="icon-button" aria-label="单独打开试卷" title="单独打开试卷">${icon('external')}</button>`}<button id="download-paper" class="icon-button" aria-label="下载当前预览" title="下载当前预览">${icon('download')}</button></div></div><div class="preview-layout ${manual&&data?'has-inspector':''}"><div class="paper-stage"><iframe id="paper-preview" title="试卷成品预览" sandbox="allow-scripts allow-downloads allow-modals${data&&!artifact&&documentQuestions().length?' allow-same-origin':''}"></iframe></div>${manual&&data?inspectorMarkup():''}</div><p id="preview-error" class="inline-error" role="alert"></p>`;
- const frame=main.querySelector<HTMLIFrameElement>('#paper-preview')!;
- try{
-  if(artifact)frame.srcdoc=previewHTML(artifact.html);
-  else if(data&&documentQuestions().length){
-   const controls=document.createElement('div');frame.after(controls);
-   const key=data.practiceId+':'+paperKind;
-   const preview=mountPaperPreview(frame,controls,{initialPage:paperPages.get(key),onChange:state=>{if(state.status==='ready')paperPages.set(key,state.page);}});
-   disposeView=preview.dispose;preview.setPaper(data,paperKind);
-  }else frame.srcdoc='<!doctype html><html lang="zh-CN"><meta charset="utf-8"><body style="font:15px/1.8 system-ui;text-align:center;padding:100px 24px">题库暂无题目</body></html>';
- }catch(error){disposeView();main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}
- main.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(b=>b.onclick=()=>{if(paperKind!==b.dataset.kind){paperKind=b.dataset.kind as PreviewKind;void persist();renderPreview();main.querySelector<HTMLButtonElement>('[data-kind="'+paperKind+'"]')?.focus({preventScroll:true});}});segmentedKeys(main.querySelector('.segmented')!);
+ if(!data&&!artifact){main.innerHTML=`<div class="preview-empty"><span class="empty-icon">${icon('file')}</span><h1>我的试卷</h1><div class="hero-actions"><button id="open-delivery" class="button primary">${icon('upload')}打开试卷</button><button id="load-sample" class="button secondary">查看样卷</button></div><button id="empty-agent" class="button text">开始制作试卷 ${icon('arrow')}</button></div>`;main.querySelector('#open-delivery')!.addEventListener('click',openFileDialog);main.querySelector<HTMLButtonElement>('#load-sample')!.onclick=()=>navigate('templates');main.querySelector<HTMLButtonElement>('#empty-agent')!.onclick=()=>{navigate('start');};return;}
+ const title=data?.title??artifact!.name;
+ main.innerHTML=`<div class="preview-heading"><div><h1>${escape(title)}</h1></div><div class="preview-actions">${data?`<button id="toggle-manual" class="button secondary" aria-expanded="${manual}">${icon('settings')}版式调整</button>`:''}${data?`<select id="export-format" aria-label="导出格式">${[['pdf','PDF'],['docx','Word .docx'],['png','PNG 图片'],['html','离线 HTML'],['zip','整套 HTML + 题库']].map(([value,label])=>`<option value="${value}" ${exportFormat===value?'selected':''}>${label}</option>`).join('')}</select>`:''}<button id="export-package" class="button primary">${icon('download')}导出${data?'试卷':'文件'}</button></div></div><div class="preview-controls"><div class="segmented" role="group" aria-label="预览文件">${data?([['exam','题目卷'] as const,['answers','答案卷'] as const,['answer-card','答题卡'] as const]).map(([kind,name])=>`<button data-kind="${kind}" aria-pressed="${paperKind===kind}">${name}</button>`).join(''):'<span class="artifact-label">HTML 试卷</span>'}</div><div class="preview-tools">${data?`<select id="print-color" aria-label="打印颜色"><option value="color" ${data.presentation?.printColor!=='grayscale'?'selected':''}>彩印 · 保留原色</option><option value="grayscale" ${data.presentation?.printColor==='grayscale'?'selected':''}>黑白 · 灰度</option></select>`:''}${artifact?'':`<button id="open-paper" class="icon-button" aria-label="单独打开试卷" title="单独打开试卷">${icon('external')}</button>`}<button id="download-paper" class="icon-button" aria-label="下载当前预览" title="下载当前预览">${icon('download')}</button></div></div><div class="preview-layout ${manual&&data?'has-inspector':''}"><div class="paper-stage"><iframe id="paper-preview" title="试卷成品预览" sandbox="allow-scripts allow-downloads allow-modals${data&&!artifact&&documentQuestions().length?' allow-same-origin':''}"></iframe></div>${manual&&data?inspectorMarkup():''}</div><p id="preview-error" class="inline-error" role="alert"></p>`;
+ redrawWorkspacePaper();
+ main.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(button=>button.onclick=()=>{
+  if(paperKind===button.dataset.kind)return;
+  paperKind=button.dataset.kind as PreviewKind;void persist();
+  main.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(tab=>{const active=tab===button;tab.setAttribute('aria-pressed',String(active));tab.tabIndex=active?0:-1;});
+  redrawWorkspacePaper();
+ });
+ segmentedKeys(main.querySelector('.segmented')!);
  main.querySelector('#toggle-manual')?.addEventListener('click',()=>{manual=!manual;renderPreview();main.querySelector<HTMLElement>('#toggle-manual')?.focus({preventScroll:true});});
  main.querySelector<HTMLSelectElement>('#export-format')?.addEventListener('change',event=>exportFormat=(event.target as HTMLSelectElement).value as typeof exportFormat);
- main.querySelector<HTMLSelectElement>('#print-color')?.addEventListener('change',event=>{if(!data)return;const input=event.target as HTMLSelectElement,before=structuredClone(data);try{data.presentation??={};data.presentation.printColor=input.value==='grayscale'?'grayscale':'color';editor.renderPractice(data,{kind:paperKind,screenOnly:true});artifact=null;void persist();renderPreview();}catch(error){data=before;input.value=before.presentation?.printColor??'color';input.dispatchEvent(new Event('input'));main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}});
+ main.querySelector<HTMLSelectElement>('#print-color')?.addEventListener('change',event=>{if(!data)return;const input=event.target as HTMLSelectElement,before=structuredClone(data);try{data.presentation??={};data.presentation.printColor=input.value==='grayscale'?'grayscale':'color';editor.renderPractice(data,{kind:paperKind,screenOnly:true});artifact=null;void persist();redrawWorkspacePaper();}catch(error){data=before;input.value=before.presentation?.printColor??'color';input.dispatchEvent(new Event('input'));main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}});
  main.querySelector<HTMLButtonElement>('#export-package')!.onclick=function(){const button=this as HTMLButtonElement;void action(button,async()=>{if(!data||exportFormat==='html'){await downloadCurrent();return;}if(exportFormat==='zip'){await exportPackage();return;}if(!documentQuestions().length)throw Error('题库中还没有题目，请先添加题目。');const paper=data,format=exportFormat,kind=paperKind;button.textContent='正在准备导出…';const {exportPracticeFiles}=await import('./exports');const result=await exportPracticeFiles(paper,{format,kind,css:editor.paperCSS,onProgress:message=>{button.textContent=message;}});await download(result.name,result.bytes,result.mime);},'已下载','正在准备导出…');};main.querySelector('#download-paper')!.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,downloadCurrent,'已下载');});main.querySelector('#open-paper')?.addEventListener('click',()=>{const html=selectedHTML();const url=URL.createObjectURL(new Blob([html],{type:'text/html'}));window.open(url,'_blank','noopener');setTimeout(()=>URL.revokeObjectURL(url),60000);});
  if(manual&&data)bindInspector();
 }
+function redrawWorkspacePaper(){
+ disposeView();disposeView=()=>{};
+ const previous=main.querySelector<HTMLIFrameElement>('#paper-preview')!;
+ const frame=previous.cloneNode() as HTMLIFrameElement;
+ frame.removeAttribute('srcdoc');previous.replaceWith(frame);
+ main.querySelector('#preview-error')!.textContent='';
+ try{
+  if(artifact)frame.srcdoc=previewHTML(artifact.html);
+  else if(data&&documentQuestions().length){
+   const controls=frame.parentElement!.querySelector<HTMLElement>('.paper-pager')??document.createElement('div');
+   if(!controls.isConnected)frame.after(controls);
+   const key=data.practiceId+':'+paperKind;
+   const preview=mountPaperPreview(frame,controls,{initialPage:paperPages.get(key),onChange:state=>{if(state.status==='ready')paperPages.set(key,state.page);}});
+   disposeView=preview.dispose;preview.setPaper(data,paperKind);
+  }else {frame.parentElement!.querySelector('.paper-pager')?.remove();frame.srcdoc='<!doctype html><html lang="zh-CN"><meta charset="utf-8"><body style="font:15px/1.8 system-ui;text-align:center;padding:100px 24px">题库暂无题目</body></html>';}
+ }catch(error){disposeView();main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}
+}
+
 function segmentedKeys(group:Element,vertical=false){
  const buttons=[...group.querySelectorAll<HTMLButtonElement>('button')];
  buttons.forEach(button=>button.tabIndex=button.getAttribute('aria-pressed')==='true'?0:-1);
@@ -539,10 +604,16 @@ function segmentedKeys(group:Element,vertical=false){
 }
 function inspectorMarkup(){let layout;try{layout=editor.resolvePaperTemplate(data!.style).layout;}catch{layout=editor.getPaperTemplate().layout;}return `<aside class="inspector" aria-label="人工调整"><div class="inspector-heading"><h2>版式调整</h2></div><div class="field"><label for="paper-title">试卷名称</label><input id="paper-title" value="${escape(data!.title)}"></div><div class="fields-two"><div class="field"><label for="paper-subject">科目</label><input id="paper-subject" value="${escape(data!.subject)}"></div><div class="field"><label for="paper-level">层级</label><input id="paper-level" value="${escape(data!.level)}"></div></div><div class="field"><label for="paper-duration">考试时间 / 分钟</label><input id="paper-duration" type="number" min="1" max="1440" value="${data!.durationMinutes}"></div><div class="field"><label for="paper-template">试卷模板</label><select id="paper-template"><option value="">标准试卷</option>${editor.PAPER_TEMPLATES.filter(t=>t.id!=='standard').map(t=>`<option value="${escape(t.id)}" ${data!.style.templateId===t.id?'selected':''}>${escape(t.name)}</option>`).join('')}</select></div><button id="select-questions" class="inspector-action">选择题目 <span>${documentQuestions().length} / ${bankQuestions().length} ${icon('arrow')}</span></button><button id="source-materials" class="inspector-action">查看资料与出处 <span>${data!.materials.length} ${icon('arrow')}</span></button><details class="advanced-settings"><summary>排版与组卷</summary><div class="fields-two"><div class="field"><label for="paper-font">字号 / pt</label><input id="paper-font" type="number" min="9" max="20" step="0.5" value="${layout.fontSize}"></div><div class="field"><label for="paper-leading">行距</label><input id="paper-leading" type="number" min="1.2" max="2.2" step="0.1" value="${layout.lineHeight}"></div></div><label class="checkbox-label"><input id="paper-project-mark" type="checkbox" ${data!.presentation?.projectMark!==false?'checked':''}> GitHub 项目标志与链接</label><label class="checkbox-label"><input id="paper-sealed" type="checkbox" ${layout.showSeal?'checked':''}> 密封线</label><div class="divider"></div><div class="field"><label for="compose-count">抽取题数</label><input id="compose-count" type="number" min="1" max="${bankQuestions().length}" value="${documentQuestions().length}"></div><div class="field"><label for="compose-score">目标分数 / 0 为不限</label><input id="compose-score" type="number" min="0" value="0"></div><div class="field"><label for="compose-seed">组卷种子</label><input id="compose-seed" value="paper-1"></div><button id="compose-subset" class="button secondary">生成模拟卷</button></details><p id="inspector-error" class="inline-error" role="alert"></p><div class="inspector-bottom"><button id="export-json" class="button text">保存可编辑文件 ${icon('download')}</button>${library?`<button id="export-bank" class="button text">保存全量题库 ${icon('download')}</button>`:''}<button id="new-bank" class="button text">新建题库</button></div></aside>`;}
 function bindInspector(){
- main.querySelector<HTMLInputElement>('#paper-project-mark')!.addEventListener('change',event=>{data!.presentation??={};data!.presentation.projectMark=(event.target as HTMLInputElement).checked;artifact=null;void persist();renderPreview();});
- const change=(id:string,fn:(value:string)=>void)=>main.querySelector('#'+id)!.addEventListener('change',e=>{const before=structuredClone(data);try{fn((e.target as HTMLInputElement).value);data=editor.refreshPracticeMetadata(data!,before!);const check=validateEditable(data);if(!check.valid)throw Error(check.errors.map(e=>`${e.path}：${e.message}`).join('\n'));artifact=null;void persist();renderPreview();}catch(error){data=before;main.querySelector('#inspector-error')!.textContent=error instanceof Error?error.message:String(error);}});
- change('paper-title',value=>{data!.title=value;if(data!.presentation)data!.presentation.titleLines=[value];});change('paper-subject',value=>data!.subject=value);change('paper-level',value=>data!.level=value);change('paper-duration',value=>data!.durationMinutes=Number(value));change('paper-font',value=>{data!.style.fontSize=Number(value);if(data!.style.templateOverrides)delete data!.style.templateOverrides.fontSize;});change('paper-leading',value=>{data!.style.lineHeight=Number(value);if(data!.style.templateOverrides)delete data!.style.templateOverrides.lineHeight;});change('paper-template',value=>{if(value)data=editor.applyPaperTemplate(data!,value);else delete data!.style.templateId;});
- main.querySelector('#paper-sealed')!.addEventListener('change',e=>{data!.style.sealed=(e.target as HTMLInputElement).checked;delete data!.original;if(data!.style.templateOverrides)delete data!.style.templateOverrides.showSeal;void persist();renderPreview();});
+ main.querySelector<HTMLInputElement>('#paper-project-mark')!.addEventListener('change',event=>{data!.presentation??={};data!.presentation.projectMark=(event.target as HTMLInputElement).checked;artifact=null;void persist();redrawWorkspacePaper();});
+ const change=(id:string,fn:(value:string)=>void)=>main.querySelector('#'+id)!.addEventListener('change',e=>{const before=structuredClone(data);try{fn((e.target as HTMLInputElement).value);data=editor.refreshPracticeMetadata(data!,before!);const check=validateEditable(data);if(!check.valid)throw Error(check.errors.map(e=>`${e.path}：${e.message}`).join('\n'));artifact=null;void persist();main.querySelector('.preview-heading h1')!.textContent=data!.title;
+ redrawWorkspacePaper();main.querySelector('#inspector-error')!.textContent='';}catch(error){data=before;main.querySelector('#inspector-error')!.textContent=error instanceof Error?error.message:String(error);}});
+ change('paper-title',value=>{data!.title=value;if(data!.presentation)data!.presentation.titleLines=[value];});change('paper-subject',value=>data!.subject=value);change('paper-level',value=>data!.level=value);change('paper-duration',value=>data!.durationMinutes=Number(value));change('paper-font',value=>{data!.style.fontSize=Number(value);if(data!.style.templateOverrides)delete data!.style.templateOverrides.fontSize;});change('paper-leading',value=>{data!.style.lineHeight=Number(value);if(data!.style.templateOverrides)delete data!.style.templateOverrides.lineHeight;});change('paper-template',value=>{if(value)data=editor.applyPaperTemplate(data!,value);else delete data!.style.templateId;
+ const layout=editor.resolvePaperTemplate(data!.style).layout;
+ (main.querySelector('#paper-font') as HTMLInputElement).value=String(layout.fontSize);
+ (main.querySelector('#paper-leading') as HTMLInputElement).value=String(layout.lineHeight);
+ (main.querySelector('#paper-sealed') as HTMLInputElement).checked=layout.showSeal;
+ });
+ main.querySelector('#paper-sealed')!.addEventListener('change',e=>{data!.style.sealed=(e.target as HTMLInputElement).checked;delete data!.original;if(data!.style.templateOverrides)delete data!.style.templateOverrides.showSeal;void persist();redrawWorkspacePaper();});
  main.querySelector('#select-questions')!.addEventListener('click',()=>showQuestionBank());main.querySelector('#source-materials')!.addEventListener('click',showMaterials);main.querySelector('#export-json')!.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,()=>downloadPracticeJSON('practice.json',data!),'已下载');});main.querySelector('#new-bank')!.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,newBank,'已创建');});main.querySelector('#export-bank')?.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,()=>downloadPracticeJSON('question-bank.json',library!),'已下载');});
  main.querySelector('#compose-subset')!.addEventListener('click',()=>{try{const count=Number(main.querySelector<HTMLInputElement>('#compose-count')!.value),score=Number(main.querySelector<HTMLInputElement>('#compose-score')!.value),seed=main.querySelector<HTMLInputElement>('#compose-seed')!.value;if(!library)library=structuredClone(data);const next=editor.assembleMock(bankQuestions(),{title:data!.title,subject:data!.subject,level:data!.level,durationMinutes:data!.durationMinutes,materials:data!.materials,sourceDocument:library??data!,sourceSections:(library??data)!.sections,presentation:data!.presentation,balanceChoices:false,count,targetScore:score||undefined,seed,notebookId:data!.notebookId,notebookRevision:data!.notebookRevision,style:data!.style});data=next;requestedSubset=true;void persist();renderPreview();status('模拟卷已生成，全量题库已保留，可重新选题或保存。');}catch(e){main.querySelector('#inspector-error')!.textContent=e instanceof Error?e.message:String(e);}});
 }
@@ -588,7 +659,7 @@ function drawQuestionList(){if(!data)return;const all=bankQuestions().filter(q=>
  const bind=(id:string,set:(v:string)=>void,event='change')=>body.querySelector('#'+id)!.addEventListener(event,e=>{const input=e.target as HTMLInputElement;const position=input.selectionStart;set(input.value);page=0;drawQuestionList();if(id==='search'){const next=body.querySelector<HTMLInputElement>('#search')!;next.focus();try{next.setSelectionRange(position,position);}catch{}}});bind('search',v=>search=v,'input');bind('chapter',v=>chapter=v);bind('type',v=>questionType=v);
  body.querySelectorAll<HTMLInputElement>('[data-select]').forEach(input=>input.onchange=()=>{if(input.checked)selected.add(input.dataset.select!);else selected.delete(input.dataset.select!);dialog.querySelector('#selection-count')!.textContent=`已选 ${selected.size} / ${bankQuestions().length} 题`;});body.querySelector('#select-all')!.addEventListener('click',()=>{all.forEach(q=>selected.add(q.id));drawQuestionList();});body.querySelector('#clear-selected')!.addEventListener('click',()=>{selected.clear();drawQuestionList();});body.querySelector('#prev-page')!.addEventListener('click',()=>{page--;drawQuestionList();});body.querySelector('#next-page')!.addEventListener('click',()=>{page++;drawQuestionList();});body.querySelectorAll<HTMLButtonElement>('[data-question],[data-edit]').forEach(b=>b.onclick=()=>editQuestion(bankQuestions().find(q=>q.id===(b.dataset.question??b.dataset.edit))!));body.querySelector('#add-question')!.addEventListener('click',()=>editQuestion());
 }
-function showMaterials(){if(!data)return;const needsQuestions=!documentQuestions().length;openDialog(needsQuestions?'资料已就绪，准备出卷':'资料与出处',`${needsQuestions?`<div class="material-next-step"><h3>下载资料包，交给你使用的对话工具</h3><p>资料原文与出题指令会打包保存。将资料包和原文件发给智能体或网页对话，按定制需求获得试卷、答案与题库，再打开生成的 HTML 或 JSON。</p><button id="customize-material-task" class="button secondary small">定制出卷提示词 ${icon('arrow')}</button></div>`:''}<div class="material-list">${data.materials.map(m=>`<article class="material-row"><div>${icon('file')}<div><strong>${escape(m.title)}</strong><p>${kindNames[m.kind]} · ${m.text.length.toLocaleString()} 字符</p></div></div><button data-material="${escape(m.id)}" class="button text small">查看原文 ${icon('arrow')}</button></article>`).join('')||'<p class="empty-list">尚无资料。</p>'}</div><div class="material-tools"><select id="material-kind" aria-label="资料类型">${Object.entries(kindNames).map(([v,n])=>`<option value="${v}" ${v===materialKind?'selected':''}>${n}</option>`).join('')}</select><button id="append-material" class="button secondary">添加参考资料</button></div><p class="muted">浏览器提取文件文字，保存原文与出处。题目、答案和考试结构由你使用的智能体或网页对话组织。</p>`,`<button id="export-ai" class="button ${needsQuestions?'primary':'secondary'}">下载出题资料包 ${icon('download')}</button>`);dialog.querySelector<HTMLSelectElement>('#material-kind')!.onchange=e=>materialKind=(e.target as HTMLSelectElement).value as PracticeKind;dialog.querySelector('#append-material')!.addEventListener('click',()=>openFiles('append'));dialog.querySelector('#customize-material-task')?.addEventListener('click',()=>{dialog.close();setupOpen=true;navigate('start');main.querySelector<HTMLElement>('#setup-step-title')?.focus({preventScroll:true});});dialog.querySelectorAll<HTMLButtonElement>('[data-material]').forEach(b=>b.onclick=()=>{const m=data!.materials.find(m=>m.id===b.dataset.material)!;openDialog(escape(m.title),`<pre class="source-text">${escape(m.text)}</pre>`,'<button id="back-materials" class="button secondary">返回资料</button>');dialog.querySelector('#back-materials')!.addEventListener('click',showMaterials);});dialog.querySelector<HTMLButtonElement>('#export-ai')!.onclick=function(){void action(this as HTMLButtonElement,async()=>{const spec=specFor(data!),task=editor.buildGenerationTask(data!.materials,{subject:data!.subject,level:data!.level,count:spec&&!requestedSubset?editor.examQuestionCount(spec):documentQuestions().length,durationMinutes:spec&&!requestedSubset?spec.durationMinutes??data!.durationMinutes:data!.durationMinutes,mode:spec&&!requestedSubset?'mock':data!.mode,notebookId:data!.notebookId,notebookRevision:data!.notebookRevision,instructions:examinationPrompt(data!,spec,requestedSubset)});await download('纸间-出题资料包.zip',editor.zipSync({'agent-task.md':editor.strToU8(task),'practice.schema.json':editor.strToU8(JSON.stringify(editor.schema,null,2)),'practice.json':editor.strToU8(JSON.stringify(await embedSiteAudio(data!),null,2))}),'application/zip');},'已下载');};}
+function showMaterials(){if(!data)return;const needsQuestions=!documentQuestions().length;openDialog(needsQuestions?'资料已就绪，准备出卷':'资料与出处',`${needsQuestions?`<div class="material-next-step"><h3>下载资料包，交给你使用的对话工具</h3><p>资料原文与出题指令会打包保存。将资料包和原文件发给智能体或网页对话，按定制需求获得试卷、答案与题库，再打开生成的 HTML 或 JSON。</p><button id="customize-material-task" class="button secondary small">复制 Agent 指令 ${icon('copy')}</button></div>`:''}<div class="material-list">${data.materials.map(m=>`<article class="material-row"><div>${icon('file')}<div><strong>${escape(m.title)}</strong><p>${kindNames[m.kind]} · ${m.text.length.toLocaleString()} 字符</p></div></div><button data-material="${escape(m.id)}" class="button text small">查看原文 ${icon('arrow')}</button></article>`).join('')||'<p class="empty-list">尚无资料。</p>'}</div><div class="material-tools"><select id="material-kind" aria-label="资料类型">${Object.entries(kindNames).map(([v,n])=>`<option value="${v}" ${v===materialKind?'selected':''}>${n}</option>`).join('')}</select><button id="append-material" class="button secondary">添加参考资料</button></div><p class="muted">浏览器提取文件文字，保存原文与出处。题目、答案和考试结构由你使用的智能体或网页对话组织。</p>`,`<button id="export-ai" class="button ${needsQuestions?'primary':'secondary'}">下载出题资料包 ${icon('download')}</button>`);dialog.querySelector<HTMLSelectElement>('#material-kind')!.onchange=e=>materialKind=(e.target as HTMLSelectElement).value as PracticeKind;dialog.querySelector('#append-material')!.addEventListener('click',()=>openFiles('append'));dialog.querySelector<HTMLButtonElement>('#customize-material-task')?.addEventListener('click',event=>void copyPrompt(event.currentTarget as HTMLButtonElement,examinationPrompt(data!)));dialog.querySelectorAll<HTMLButtonElement>('[data-material]').forEach(b=>b.onclick=()=>{const m=data!.materials.find(m=>m.id===b.dataset.material)!;openDialog(escape(m.title),`<pre class="source-text">${escape(m.text)}</pre>`,'<button id="back-materials" class="button secondary">返回资料</button>');dialog.querySelector('#back-materials')!.addEventListener('click',showMaterials);});dialog.querySelector<HTMLButtonElement>('#export-ai')!.onclick=function(){void action(this as HTMLButtonElement,async()=>{const spec=specFor(data!),task=editor.buildGenerationTask(data!.materials,{subject:data!.subject,level:data!.level,count:spec&&!requestedSubset?editor.examQuestionCount(spec):documentQuestions().length,durationMinutes:spec&&!requestedSubset?spec.durationMinutes??data!.durationMinutes:data!.durationMinutes,mode:spec&&!requestedSubset?'mock':data!.mode,notebookId:data!.notebookId,notebookRevision:data!.notebookRevision,instructions:examinationPrompt(data!,spec,requestedSubset)});await download('纸间-出题资料包.zip',editor.zipSync({'agent-task.md':editor.strToU8(task),'practice.schema.json':editor.strToU8(JSON.stringify(editor.schema,null,2)),'practice.json':editor.strToU8(JSON.stringify(await embedSiteAudio(data!),null,2))}),'application/zip');},'已下载');};}
 
 function editQuestion(question?:PracticeQuestion){
  if(!data)return;
@@ -694,12 +765,13 @@ async function importFiles(files:File[]){
  finally{fileInput.value='';button.disabled=false;button.removeAttribute('aria-busy');}
 }
 async function newBank(){if(data)await downloadPracticeJSON('纸间-题库备份.json',library??data);library=null;requestedSubset=false;data={...structuredClone(editor.sample) as PracticeDocument,practiceId:'bank-'+Date.now().toString(36),notebookId:'source-'+Date.now().toString(36),title:'我的题库',materials:[],sections:[],totalScore:0,mode:'bank'};artifact=null;void persist();renderPreview();showMaterials();status('新题库已创建。可追加资料，或交给 Agent 读取并组织。');}
-root.querySelector<HTMLButtonElement>('#import-top')!.onclick=openFileDialog;fileInput.onchange=()=>{if(fileInput.files)void importFiles([...fileInput.files]);};root.querySelector<HTMLButtonElement>('#footer-skill')!.onclick=function(){installSkill(this as HTMLButtonElement);};root.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>b.onclick=()=>navigate(b.dataset.view as typeof view));
+root.querySelector<HTMLButtonElement>('#import-top')!.onclick=()=>openFiles();fileInput.onchange=()=>{if(fileInput.files)void importFiles([...fileInput.files]);};root.querySelector<HTMLButtonElement>('#footer-skill')!.onclick=function(){installSkill(this as HTMLButtonElement);};root.querySelectorAll<HTMLButtonElement>('[data-view]').forEach(b=>b.onclick=()=>{const target=b.dataset.view as typeof view;if(target!==view)navigate(target);});
 dialog.addEventListener('close',()=>dialog.classList.remove('wide'));
 function restoreViewFromURL(){
  let next=location.hash.slice(1).split('?')[0]||'start';
  if(['bank','materials','compose'].includes(next)){next='preview';manual=true;}
- view=next==='templates'||next==='preview'?next:'start';
+ view=next==='templates'||next==='preview'||next==='workflow'?next:'start';
+ if(view==='templates')catalogRoute=location.hash;
 }
 window.addEventListener('hashchange',()=>{restoreViewFromURL();if(dialog.open)dialog.close();render();});
 restoreViewFromURL();

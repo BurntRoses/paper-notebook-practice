@@ -232,20 +232,23 @@ function renderStart(){
  const showMode=()=>{description.textContent=entryMode==='agent'?'在支持 Skill 的工具中粘贴指令，再添加资料。':'在网页对话中粘贴指令，再添加资料。';modeGroup.querySelectorAll('button').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.entry===entryMode)));};
  modeGroup.querySelectorAll('button').forEach(button=>button.onclick=()=>{entryMode=button.dataset.entry as typeof entryMode;try{localStorage.setItem('paper-notebook-practice-entry',entryMode);}catch{}showMode();});
  showMode();segmentedKeys(modeGroup);
- const frame=main.querySelector<HTMLIFrameElement>('.showcase-paper iframe')!,controls=main.querySelector<HTMLElement>('#showcase-pagination')!;
+ let frame=main.querySelector<HTMLIFrameElement>('.showcase-paper iframe')!;
+ const controls=main.querySelector<HTMLElement>('#showcase-pagination')!;
  const retry=main.querySelector<HTMLButtonElement>('#showcase-retry')!,expand=main.querySelector<HTMLButtonElement>('#open-featured')!;
  const choices=[...main.querySelectorAll<HTMLButtonElement>('[data-showcase]')];
  let generation=0,disposePaper=()=>{};
  const draw=async()=>{
   const current=featuredPapers[showcaseIndex],revision=++generation;
-  disposePaper();frame.removeAttribute('srcdoc');frame.hidden=true;retry.hidden=true;retry.disabled=true;
+  disposePaper();controls.dataset.status='loading';frame.hidden=true;retry.hidden=true;retry.disabled=true;
   const feedback=setTimeout(()=>{if(revision===generation){retry.textContent='正在打开试卷…';retry.hidden=false;}},350);
   try{
    const entry=await readPaper(current);
    if(revision!==generation)return;
-   frame.title=current.label;frame.hidden=false;retry.hidden=true;
-   const key=current.id+':exam',preview=mountPaperPreview(frame,controls,{initialPage:paperPages.get(key),onChange:state=>{if(state.status==='ready')paperPages.set(key,state.page);}});
+   const nextFrame=document.createElement('iframe');
+   nextFrame.title=current.label;nextFrame.sandbox.value='allow-scripts allow-same-origin';
+   const key=current.id+':exam',preview=mountPaperPreview(nextFrame,controls,{initialPage:paperPages.get(key),onChange:state=>{if(state.status==='ready')paperPages.set(key,state.page);}});
    disposePaper=preview.dispose;preview.setPaper(entry);
+   frame.replaceWith(nextFrame);frame=nextFrame;retry.hidden=true;
   }catch(error){if(revision===generation){retry.textContent=`${error instanceof Error?error.message:'试卷未能载入。'} 重试`;retry.disabled=false;retry.hidden=false;}}
   finally{clearTimeout(feedback);}
  };

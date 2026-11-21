@@ -1,3 +1,4 @@
+import {catalogGuides} from './catalog-guides';
 import {CATALOG_CATEGORIES,CATEGORY_ALIASES,type CatalogCategory} from './catalog-categories';
 import {identityNames,languageNames,regionNames,regionOrder,resourceNames,scopeNames,type CatalogEntry,type CatalogLanguage,type CatalogRegion,type ResourceKind} from './catalog-identity';
 
@@ -20,7 +21,7 @@ const facetLabels={region:'地区',subject:'科目',language:'卷面语言'};
 const facetName=(key:Facet,value:string)=>key==='region'?regionNames[value as CatalogRegion]??value:key==='language'?languageNames[value as CatalogLanguage]??value:value;
 const fallbackRegion=(category:string)=>category==='小学'?'mainland':'all';
 const byCategory=(a:string,b:string)=>CATALOG_CATEGORIES.indexOf(a as CatalogCategory)-CATALOG_CATEGORIES.indexOf(b as CatalogCategory);
-const priority=(entry:CatalogEntry)=>entry.id==='civil-aptitude-01'?0:entry.scope==='full'?1:entry.identity==='original'?2:3;
+const priority=(entry:CatalogEntry)=>entry.id===catalogGuides[entry.category].sample?0:entry.scope==='full'?1:entry.identity==='original'?2:3;
 
 interface CatalogBrowserOptions {
  mountPreview(host:HTMLElement,entry:CatalogEntry,openRelated:(id:string)=>void):()=>void;
@@ -39,7 +40,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  ].filter(Boolean).join(' '))]));
  const params=new URLSearchParams(location.hash.split('?')[1]??'');
  const initial=indexed.get(params.get('item')??'');
- const rawCategory=params.get('category')??'';
+ const rawCategory=params.get('category')??(initial&&initial.id!==catalogGuides[initial.category].sample?initial.category:'');
  const categoryAlias=CATEGORY_ALIASES[rawCategory]??rawCategory;
  const type=params.get('type');
  const state:Filters={
@@ -60,7 +61,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   '<div class="catalog-resource-tabs" role="group" aria-label="资源类型">'+kinds.map(kind=>'<button type="button" data-resource="'+kind+'">'+resourceNames[kind]+'</button>').join('')+'</div>'+
   '<button type="button" id="catalog-more" aria-controls="catalog-facets" aria-expanded="false">筛选</button>'+
   '</section><div id="catalog-facets" class="catalog-facets" hidden></div><div id="catalog-selection" hidden class="catalog-selection"></div>'+
-  '<div class="catalog-workspace"><section class="catalog-list" aria-label="目录结果"><header class="catalog-list-heading"><output id="catalog-count" aria-live="polite"></output></header>'+
+  '<div class="catalog-workspace"><section class="catalog-list" aria-label="试卷分类"><header class="catalog-list-heading"><button type="button" id="catalog-up" hidden>‹ 全部分类</button><output id="catalog-count" aria-live="polite"></output></header>'+
   '<div class="catalog-results" id="catalog-results"></div><div class="catalog-list-pagination" id="catalog-list-pagination"></div></section>'+
   '<section id="catalog-paper" class="catalog-paper" aria-label="卷面预览"></section></div>';
  const search=host.querySelector<HTMLInputElement>('#case-search')!;
@@ -70,6 +71,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
  const selection=host.querySelector<HTMLElement>('#catalog-selection')!;
  const results=host.querySelector<HTMLElement>('#catalog-results')!;
  const count=host.querySelector<HTMLOutputElement>('#catalog-count')!;
+ const up=host.querySelector<HTMLButtonElement>('#catalog-up')!;
  const pagination=host.querySelector<HTMLElement>('#catalog-list-pagination')!;
  const preview=host.querySelector<HTMLElement>('#catalog-paper')!;
  search.value=state.query;
@@ -137,7 +139,7 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
    markCurrent();
    options.openPreview(entry,follow,()=>{
     if(disposed||modal!==entry.id)return;
-    modal='';state.item='';setURL();markCurrent();
+    modal='';setURL();markCurrent();
     results.querySelector<HTMLButtonElement>('[data-item="'+CSS.escape(entry.id)+'"]')?.focus({preventScroll:true});
    });
   }
@@ -155,30 +157,54 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   search.value='';category.value=state.category;
   draw(true,true);setURL(true);
  }
+ function row(entry:CatalogEntry,name=entry.title){
+  const scope=entry.kind==='layout'?entry.details:[identityNames[entry.identity],scopeNames[entry.scope],entry.questionCount+' 题'].join(' · ');
+  return '<button type="button" class="catalog-result" data-item="'+e(entry.id)+'" data-'+entry.request.kind+'="'+e(entry.request.id)+'" aria-pressed="false">'+
+   '<span class="catalog-result-title">'+e(name)+'</span><span class="catalog-result-meta">'+e([regionNames[entry.region],languageNames[entry.language],scope].join(' · '))+'</span></button>';
+ }
  function draw(resetScroll=false,explicit=false){
-  const entries=sorted.filter(entry=>match(entry));
+  const matching=sorted.filter(entry=>match(entry));
+  const categoryGuide=state.category?catalogGuides[state.category as CatalogCategory]:undefined;
+  const lead=categoryGuide?matching.find(entry=>entry.id===categoryGuide.sample):undefined;
+  const entries=lead?[lead,...matching.filter(entry=>entry!==lead)]:matching;
   const selected=entries.findIndex(entry=>entry.id===state.item);
   if(selected<0)state.item='';
-  else state.page=Math.floor(selected/PAGE_SIZE)+1;
-  const pages=Math.max(1,Math.ceil(entries.length/PAGE_SIZE));
+  const overview=!state.category&&!state.query.trim()&&!state.tags.length&&!state.subject&&!state.language&&state.region==='all';
+  if(!overview&&selected>=0)state.page=Math.floor(selected/PAGE_SIZE)+1;
+  const pages=overview?1:Math.max(1,Math.ceil(entries.length/PAGE_SIZE));
   state.page=Math.min(state.page,pages);
   for(const tab of host.querySelectorAll<HTMLButtonElement>('[data-resource]'))tab.setAttribute('aria-pressed',String(tab.dataset.resource===state.type));
-  const visible=entries.slice((state.page-1)*PAGE_SIZE,state.page*PAGE_SIZE);
-  count.textContent=entries.length+' '+(state.type==='layout'?'种版式':state.type==='bank'?'份题库':'项结果');
-  let lastRegion:CatalogRegion|undefined;
-  results.innerHTML=visible.length?visible.map(entry=>{
-   const group=state.region==='all'&&lastRegion!==entry.region?'<h2 class="catalog-region">'+regionNames[entry.region]+'</h2>':'';
-   lastRegion=entry.region;
-   const detail=entry.kind==='layout'?entry.details:[identityNames[entry.identity],scopeNames[entry.scope],entry.questionCount+' 题'].join(' · ');
-   return group+'<button type="button" class="catalog-result" data-item="'+e(entry.id)+'" data-'+entry.request.kind+'="'+e(entry.request.id)+'" aria-pressed="false">'+
-    '<span class="catalog-result-title">'+e(entry.title)+'</span><span class="catalog-result-meta">'+e([entry.subject,languageNames[entry.language],detail].join(' · '))+'</span></button>';
-  }).join(''):'<div class="catalog-empty"><p>没有符合当前条件的'+(state.type==='all'?'条目':resourceNames[state.type])+'</p><button type="button" class="button secondary" data-reset-catalog>清除筛选</button></div>';
+  const groups=overview?CATALOG_CATEGORIES.flatMap(key=>{
+   const items=entries.filter(entry=>entry.category===key);
+   if(!items.length)return [];
+   const guide=catalogGuides[key];
+   const featured=items.find(entry=>entry.id===guide.sample)??items[0];
+   return [{key,items,featured}];
+  }):[];
+  const visible=overview?groups.map(group=>group.featured):entries.slice((state.page-1)*PAGE_SIZE,state.page*PAGE_SIZE);
+  count.textContent=overview?groups.length+' 个分类':(state.category?state.category+' · ':'')+entries.length+' '+(state.type==='layout'?'种版式':state.type==='bank'?'份题库':'项结果');
+  up.hidden=!state.category;
+  results.classList.toggle('catalog-overview',overview);
+  if(overview){
+   results.innerHTML=groups.map(({key,items,featured})=>'<section class="catalog-guide"><h2>'+e(key)+'</h2>'+
+    row(featured,featured.id===catalogGuides[key].sample?catalogGuides[key].name:featured.title)+
+    '<button type="button" class="catalog-guide-more" data-category-go="'+e(key)+'" aria-label="查看'+e(key)+'全部'+items.length+'项">查看同类 '+items.length+' 项 <span aria-hidden="true">›</span></button></section>').join('');
+  }else{
+   let lastGroup='';
+   results.innerHTML=visible.map(entry=>{
+    const pinned=entry.id===catalogGuides[entry.category].sample;
+    const group=(state.category?'':entry.category+' · ')+regionNames[entry.region];
+    const header=group!==lastGroup?'<h2 class="catalog-region">'+e(group)+'</h2>':'';
+    lastGroup=group;
+    return header+row(entry,pinned?catalogGuides[entry.category].name:entry.title);
+   }).join('')||'<div class="catalog-empty"><p>没有符合当前条件的'+(state.type==='all'?'条目':resourceNames[state.type])+'</p><button type="button" class="button secondary" data-reset-catalog>清除筛选</button></div>';
+  }
   if(resetScroll)results.scrollTop=0;
   pagination.hidden=pages===1;
   pagination.innerHTML=pages>1?'<button type="button" data-step="-1" '+(state.page===1?'disabled':'')+'>上一页</button><span>'+state.page+' / '+pages+'</span><button type="button" data-step="1" '+(state.page===pages?'disabled':'')+'>下一页</button>':'';
   showFacets();markCurrent();
   if(viewport.matches){
-   const next=visible.find(entry=>entry.id===state.item)??visible.find(entry=>entry.id===current)??visible[0];
+   const next=entries.find(entry=>entry.id===state.item)??visible.find(entry=>entry.id===current)??(overview?visible.find(entry=>entry.category==='高中与高考')??visible[0]:visible[0]);
    stopScheduledPreview();
    if(current&&next?.id!==current){
     disposePreview();disposePreview=()=>{};current='';preview.replaceChildren();
@@ -201,15 +227,18 @@ export function mountCatalogBrowser(host:HTMLElement,shelf:CatalogEntry[],option
   clearTimeout(searchTimer);
   searchTimer=window.setTimeout(()=>{state.query=search.value;change(false);},150);
  };
- category.onchange=()=>{
-  state.category=category.value;state.region=fallbackRegion(state.category);state.subject='';state.tags=[];change();
- };
+ function goCategory(value:string){
+  state.category=value;category.value=value;state.region=fallbackRegion(value);state.subject='';state.tags=[];change();
+ }
+ category.onchange=()=>goCategory(category.value);
+ up.onclick=()=>{goCategory('');category.focus({preventScroll:true});};
  for(const [key,control] of selects)control.onchange=()=>{state[key]=control.value;change();};
  host.onclick=event=>{
   const button=(event.target as HTMLElement).closest<HTMLButtonElement>('button');
   if(!button)return;
-  const {resource,item,step,clearFacet,clearTag}=button.dataset;
+  const {resource,item,step,clearFacet,clearTag,categoryGo}=button.dataset;
   if(resource){if(state.type!==resource){state.type=resource as ResourceKind;state.subject='';change();}}
+  if(categoryGo){goCategory(categoryGo);results.querySelector<HTMLButtonElement>('.catalog-result')?.focus({preventScroll:true});}
   if(item)choose(item);
   if(step){state.item='';state.page+=Number(step);draw(true);setURL(true);results.querySelector('button')?.focus({preventScroll:true});}
   if(clearFacet){const key=clearFacet as Facet;state[key]=key==='region'?'all':'';change();more.focus({preventScroll:true});}

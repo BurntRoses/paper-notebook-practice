@@ -5,54 +5,86 @@ import {paperInfoLine,paperLabels,paperLocale} from './paper-labels';
 
 const bounded=(value:number|undefined,min:number,max:number,fallback:number)=>Math.min(max,Math.max(min,value??fallback));
 
-function useCatalogLayout(paper:PracticeDocument,english:boolean){
- const presentation=paper.presentation??{},locale=paperLocale(paper,english?'en':'zh'),labels=paperLabels[locale];
- const cjk=['zh','zh-HK','ja','ko'].includes(locale);
- const specification=paper.exam?.specification??EXAM_SPECIFICATIONS.find(item=>item.id===paper.exam?.specificationId);
- const practiceTime=specification?.durationMinutes===null||paper.generation?.intent==='generate'&&paper.exam?.scope!=='full',weightedScore=paper.exam?.scoreScale==='practice-weighted-100';
- paper.style={preset:paper.style.preset,templateId:paper.style.templateId,sealed:false,fontSize:11,lineHeight:1.6,templateOverrides:{
-  widthMm:210,heightMm:297,paperSize:'A4',orientation:'portrait',columns:1,headerVariant:'standard',
-  fontFamily:cjk?'song':'times',fontSize:11,lineHeight:1.6,
-  marginTopMm:17,marginBottomMm:20,marginLeftMm:22,marginRightMm:22,showSeal:false,
-  headingNumbering:locale==='zh'||locale==='zh-HK'?'chinese':'arabic',answerMode:'separate',institution:'',examCode:'',footerText:'',
- }};
- paper.presentation={
-  headerStyle:'generated',headerRule:true,sourceLayout:true,language:presentation.language??(english?'en':'zh'),
-  titleLines:[paper.title],titleSizePt:17,titleLineSizesPt:[17],titleGapMm:2,sectionSizePt:11,questionGapMm:4,
-  metaLines:[paperInfoLine(locale,paper.durationMinutes,paper.totalScore,practiceTime,weightedScore)],
-  candidateFields:presentation.candidateFields??[labels.name+'：________________',labels.candidate+'：________________'],
-  footerTemplate:presentation.footerTemplate??labels.page,
-  printColor:presentation.printColor,projectMark:presentation.projectMark,answerSpace:presentation.answerSpace,
-  notices:presentation.notices,
-  noticeLabel:presentation.noticeLabel,sectionDetails:presentation.sectionDetails,appendix:presentation.appendix,
-  answerCard:presentation.answerCard,integrityPledge:presentation.integrityPledge,
- };
- for(const section of paper.sections){
-  section.headingStyle='plain';section.headingWeight='bold';delete section.headingFont;
-  delete section.inlineFirstQuestion;delete section.inlineInstructions;delete section.inlineStimulus;
-  delete section.gapBeforeMm;delete section.breakBefore;delete section.questionColumns;delete section.questionColumnWeights;
-  for(const question of section.questions){
-   delete question.gapBeforeMm;delete question.gapAfterMm;delete question.breakBefore;delete question.pageBreakBeforeLines;
-   if(question.answerBoxMm)question.answerBoxMm=bounded(question.answerBoxMm,30,100,45);
-   for(const attachment of question.attachments??[]){
-    delete attachment.float;
-    if(attachment.widthMm)attachment.widthMm=Math.min(attachment.widthMm,140);
+/** Catalog papers share the HTML renderer and retain the material's own page design. */
+export function catalogPaper(paper:PracticeDocument):PracticeDocument {
+ const copy=structuredClone(paper);
+ delete copy.original;
+ const presentation=copy.presentation??={};
+ const layout=resolvePaperTemplate(copy.style).layout;
+ presentation.language??=['ielts','language'].includes(layout.headerVariant)?'en':'zh';
+ presentation.sourceLayout=true;
+ if(!presentation.titleLines?.length)presentation.titleLines=[copy.title];
+ const printPageCount=presentation.sourcePageCount;
+ // Output pagination follows the editable HTML, even if the source had a fixed folio.
+ delete presentation.sourcePageNumbers;
+ delete presentation.sourcePageCount;
+ if(presentation.footerTemplate&&printPageCount){
+  presentation.footerTemplate=presentation.footerTemplate.replace(/共\s*\d+\s*页/g,'共{pages}页');
+ }
+ if(presentation.metaLines){
+  presentation.metaLines=presentation.metaLines.map(line=>line.replace(/共\s*\d+\s*页[，,、\s]*/g,''));
+ }
+ const specification=copy.exam?.specification??EXAM_SPECIFICATIONS.find(item=>item.id===copy.exam?.specificationId);
+ const practiceTime=specification?.durationMinutes===null||copy.generation?.intent==='generate'&&copy.exam?.scope!=='full';
+ if(!presentation.metaLines?.length&&copy.generation?.intent==='generate'){
+  presentation.metaLines=[paperInfoLine(paperLocale(copy),copy.durationMinutes,copy.totalScore,practiceTime,copy.exam?.scoreScale==='practice-weighted-100')];
+ }
+ const locale=paperLabels[paperLocale(copy)];
+ presentation.candidateFields??=[locale.name+'：________________',locale.candidate+'：________________'];
+ if(presentation.headerStyle==='neea-math-2024'){
+  presentation.titleLines=['数　学'];
+  presentation.titleSizePt=27;
+  presentation.titleGapMm=8;
+  // The published paper uses a compact single-column text block with a subject-only heading.
+  copy.style.templateOverrides={...copy.style.templateOverrides,marginTopMm:13,marginBottomMm:12,
+   marginLeftMm:8,marginRightMm:8,fontSize:12.75,lineHeight:1.55};
+  copy.style.fontSize=12.75;
+  presentation.sectionSizePt=12;
+  if(copy.exam?.scope==='subset'){
+   for(const section of copy.sections)for(const question of section.questions){
+    delete question.gapBeforeMm;
+    delete question.gapAfterMm;
    }
   }
  }
- return paper;
+ if(presentation.headerStyle==='guangdong-2024'){
+  presentation.titleLineSizesPt=[18,18];
+  presentation.titleGapMm=2;
+  presentation.questionGapMm=2.5;
+  copy.style.templateOverrides={...copy.style.templateOverrides,marginTopMm:20,marginBottomMm:18,
+   marginLeftMm:27,marginRightMm:25,fontSize:11.25,lineHeight:1.5};
+  copy.style.fontSize=11.25;
+ }
+ if(copy.style.templateId==='cambridge-igcse-math'){
+  presentation.headerStyle='igcse-maths-practice';
+  presentation.titleLines=['Cambridge IGCSE Mathematics'];
+  presentation.candidateFields=['Name: ____________________','Candidate number: ____________________'];
+  presentation.headerRows=[{cells:['MATHEMATICS','0580/02 · Paper 2 style']},{cells:['Non-calculator practice','Original practice questions']}];
+  presentation.headerRule=true;
+ }
+ if(copy.style.templateId==='cambridge-art'){
+  presentation.headerStyle='igcse-art-practice';
+  presentation.titleLines=['Art & Design'];
+  presentation.headerRows=[{cells:['Externally Set Assignment · practice','0400/02 · task format']}];
+  presentation.headerRule=true;
+ }
+ if(copy.style.templateId==='us-civics'){
+  presentation.headerStyle='civics-interview';
+  presentation.titleLines=['U.S. Naturalization · Civics Practice'];
+  presentation.headerRule=true;
+ }
+ return copy;
 }
 
 /** Reflow a paper for reading and printing while retaining its real identity and content. */
-export function generatedPaper(paper:PracticeDocument,uniform=false):PracticeDocument {
+export function generatedPaper(paper:PracticeDocument):PracticeDocument {
  const copy=structuredClone(paper);
  delete copy.original;
  // The first pass removes source crop geometry; later passes retain the user's design edits.
- if(copy.presentation?.headerStyle==='generated'&&!uniform)return copy;
+ if(copy.presentation?.sourceLayout===true||copy.presentation?.headerStyle==='generated')return copy;
  const source=resolvePaperTemplate(copy.style).layout;
  const presentation:PracticePresentation=copy.presentation??{};
  const english=presentation.language==='en'||(!presentation.language&&['ielts','language'].includes(source.headerVariant));
- if(uniform)return useCatalogLayout(copy,english);
  const securityRow=presentation.headerRows?.find(row=>row.cells.length===1&&/^(绝密|机密).*启用前/.test(row.cells[0]));
  if(securityRow&&!presentation.securityLine){
   presentation.securityLine={text:securityRow.cells[0]};

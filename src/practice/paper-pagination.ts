@@ -14,6 +14,7 @@ export interface PaperPagerOptions {
 }
 export interface PaperPager {
  setPage:(page:number)=>void;
+ setFitWidth:(fit:boolean)=>void;
  reset:()=>void;
  refresh:()=>void;
  dispose:()=>void;
@@ -49,6 +50,7 @@ const isTextEntry=(target:EventTarget|null)=>{
 /** Only use with the application's own renderPractice srcdoc, never uploaded HTML. */
 export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElement,options:PaperPagerOptions={}):PaperPager {
  const initialPage=Math.max(0,Math.trunc(options.initialPage??0));
+ let fitWidth=Boolean(options.fitWidth);
  let requestedPage=initialPage,state:PaperPagerState={page:0,pages:0,status:'loading'},disposed=false;
  let childDocument:Document|null=null,childWindow:Window|null=null,paperRoot:HTMLElement|null=null,style:HTMLStyleElement|null=null;
  let observeDocument:MutationObserver|null=null,observePages:MutationObserver|null=null,resize:ResizeObserver|null=null,scheduled=0,timeout=0;
@@ -83,11 +85,11 @@ export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElem
   const computed=childWindow.getComputedStyle(sheet),width=sheet.offsetWidth||parseFloat(computed.width),height=sheet.offsetHeight||parseFloat(computed.height);
   if(!width||!height)return;
   const availableWidth=childDocument.documentElement.clientWidth,availableHeight=childDocument.documentElement.clientHeight;
-  const zoom=Math.max(.01,Math.min(1,(availableWidth-(options.fitWidth?12:24))/width,options.fitWidth?1:(availableHeight-20)/height));
+  const zoom=Math.max(.01,Math.min(1,(availableWidth-(fitWidth?12:24))/width,fitWidth?1:(availableHeight-20)/height));
   paperRoot.style.setProperty('--paper-pager-zoom',String(zoom));
   const background=getComputedStyle(frame).getPropertyValue('--preview-surround').trim();
   if(background)childDocument.documentElement.style.setProperty('--paper-pager-background',background);
-  childDocument.documentElement.dataset.paperPager=options.fitWidth?'width':'true';
+  childDocument.documentElement.dataset.paperPager=fitWidth?'width':'true';
   if(changedPage)childWindow.scrollTo(0,0);clearTimeout(timeout);
   changeState({page,pages:pages.length,status:'ready'});
  };
@@ -130,7 +132,7 @@ export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElem
  resize=new ResizeObserver(schedule);resize.observe(frame);
  const themeObserver=new MutationObserver(schedule);themeObserver.observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
  publish();
- return {setPage,reset:()=>setPage(0),refresh:schedule,dispose:()=>{if(disposed)return;disposed=true;abort.abort();resize?.disconnect();themeObserver.disconnect();detach();controls.replaceChildren();controls.removeAttribute('aria-busy');},get state(){return {...state};}};
+ return {setPage,setFitWidth(fit){if(fitWidth!==fit){fitWidth=fit;childWindow?.scrollTo(0,0);schedule();}},reset:()=>setPage(0),refresh:schedule,dispose:()=>{if(disposed)return;disposed=true;abort.abort();resize?.disconnect();themeObserver.disconnect();detach();controls.replaceChildren();controls.removeAttribute('aria-busy');},get state(){return {...state};}};
 }
 
 export function mountPaperPager(frame:HTMLIFrameElement,controls:HTMLElement,options:PaperPagerOptions={}){

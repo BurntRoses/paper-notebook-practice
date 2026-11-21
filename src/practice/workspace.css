@@ -379,3 +379,40 @@ body{background:var(--bg);color:var(--ink)}
  #practice-app[data-view=templates] .header-inner :is([data-view],#import-top) {min-height:36px;padding-block:6px}
  .catalog-paper-heading {padding-top:6px;padding-bottom:4px}
 }
+
+.catalog-guide {
+ display:grid;grid-template-columns:minmax(0,1fr);gap:0;
+ padding:8px 8px 7px;border-bottom:1px solid var(--line);
+}
+.catalog-guide:last-child {border-bottom:0}
+.catalog-guide h2 {margin:0 0 2px;padding-inline:8px;color:var(--muted);font-size:12px;font-weight:650}
+.catalog-guide .catalog-result {min-height:0;padding-block:6px}
+.catalog-guide-more {
+ width:max-content;max-width:100%;padding:4px 8px;color:var(--accent);
+ font-size:11px;line-height:1.35;text-align:left;border-radius:4px
+}
+.catalog-guide-more:hover,#catalog-up:hover {background:var(--soft)}
+.catalog-list-heading:has(#catalog-up:not([hidden])) {display:flex;align-items:center;gap:8px;padding-block:4px}
+#catalog-up {padding:4px 5px;border-radius:4px;color:var(--accent);font-size:12px;white-space:nowrap}
+.catalog-paper-heading .catalog-guide-structure {width:100%;font-size:12px;line-height:1.45}
+@media(min-width:1024px) {
+ .catalog-page.catalog-focused {max-width:none;padding:0}
+ #practice-app:has(>.catalog-focused)>:is(.site-header,.site-footer,#global-status),
+ .catalog-focused>:not(.catalog-workspace),.catalog-focused .catalog-list,
+ .catalog-focused .catalog-guide-structure {display:none}
+ .catalog-focused .catalog-workspace {grid-template-columns:minmax(0,1fr)}
+ .catalog-focused .catalog-paper {border:0;border-radius:0}
+ .catalog-focused .catalog-paper-heading {padding-inline:14px}
+}
+.catalog-overview {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:7px;padding:7px}
+.catalog-overview .catalog-guide {
+ border:1px solid var(--line);border-radius:7px;padding:7px;align-content:start;min-width:0;
+}
+.catalog-overview .catalog-guide h2 {padding:0 4px}
+.catalog-overview .catalog-result {padding:4px;gap:2px;flex:1}
+.catalog-overview .catalog-result-title {font-size:13px;line-height:1.4}
+.catalog-overview .catalog-result-meta {
+ display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-size:10px;line-height:1.4
+}
+.catalog-overview .catalog-guide-more {align-self:end;padding:4px}
+.catalog-overview .catalog-guide:last-child {border-bottom:1px solid var(--line)}

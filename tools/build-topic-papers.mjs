@@ -14,7 +14,7 @@ const library=resolve(out,'topics');
 const catalog=JSON.parse(await readFile(root+'src/practice/topic-catalog.json','utf8'));
 const {loadPracticeStyles,buildPracticeHtml,verifyPracticeHtml}=await tsImport('../src/practice/build.ts',import.meta.url);
 const {assertPractice}=await tsImport('../src/practice/validate.ts',import.meta.url);
-const {generatedPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
+const {catalogPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
 const css=await loadPracticeStyles();
 const runtime=(await build({stdin:{contents:"import {practiceSession,practiceDigest,normalizePracticeAnswer} from './src/practice/session.ts';import {paperExportRuntime} from './src/practice/export-runtime.ts';practiceSession(practiceDigest,normalizePracticeAnswer);paperExportRuntime();",resolveDir:root,loader:'ts'},bundle:true,platform:'browser',format:'iife',target:'es2022',minify:true,write:false})).outputFiles[0].text;
 const entries={};
@@ -36,7 +36,7 @@ for(const family of Object.keys(groups)){
  for(const entry of catalog.topics.filter(p=>p.family===family)){
   const raw=await readFile(root+'skills/paper-notebook-practice/examples/topics/'+entry.file);
   if(hash(raw)!==entry.sha256)throw Error('Stale topic catalog: '+entry.file);
-  const paper=generatedPaper(JSON.parse(raw),true);assertPractice(paper);
+  const paper=catalogPaper(JSON.parse(raw));assertPractice(paper);
   const folder=family+'/'+paper.practiceId,files={};
   await add(folder+'/practice.json',JSON.stringify(paper,null,2)+'\n');
   for(const [kind,label]of [['exam','试卷'],['answers','答案卷'],['answer-card','答题卡']]){

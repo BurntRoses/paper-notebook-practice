@@ -238,3 +238,19 @@ html:lang(ko) .exam-page{--paper-font:"Noto Sans KR","Noto Sans SC",sans-serif}
 
 html:lang(ja) .exam-heading h1,html:lang(ja) .section-heading h2,html:lang(ja) .boxed-card-heading h1{font-family:"Noto Sans JP","Noto Sans SC",sans-serif}
 html:lang(ko) .exam-heading h1,html:lang(ko) .section-heading h2,html:lang(ko) .boxed-card-heading h1{font-family:"Noto Sans KR","Noto Sans SC",sans-serif}
+
+/* Editable headers whose type and organization come from the represented exam. */
+body[data-kind=exam][data-source-header=guangdong-2024] .source-heading {padding-top:8mm}
+body[data-kind=exam][data-source-header=guangdong-2024] .source-heading .exam-header-row {top:0}
+body[data-kind=exam][data-source-header=guangdong-2024] .exam-meta {text-align:left}
+body[data-kind=exam]:is([data-source-header=igcse-maths-practice],[data-source-header=igcse-art-practice]) .source-heading h1 {
+ font:700 17pt/1.2 Arial,sans-serif;text-align:left;
+}
+body[data-kind=exam]:is([data-source-header=igcse-maths-practice],[data-source-header=igcse-art-practice]) .exam-header-row {
+ font:700 10pt/1.5 Arial,sans-serif;padding:1.4mm 0;border-top:.2mm solid #222;
+}
+body[data-kind=exam]:is([data-source-header=igcse-maths-practice],[data-source-header=igcse-art-practice]) .exam-header-row>span:last-child {text-align:right}
+body[data-kind=exam][data-source-header=civics-interview] .source-heading {border-top:1mm double #222;padding-top:4mm}
+body[data-kind=exam][data-source-header=civics-interview] .section-heading h2 {
+ text-transform:uppercase;letter-spacing:.035em;border-bottom:.2mm solid #222;padding-bottom:1mm;
+}

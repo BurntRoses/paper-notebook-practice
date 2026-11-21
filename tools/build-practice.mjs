@@ -25,7 +25,7 @@ await writeFile(out+'/paper-notebook-practice-skill.zip',skillZip);
 const topicArchive=zipSync(Object.fromEntries(Object.entries(entries).filter(([name])=>name.startsWith('skills/paper-notebook-practice/examples/topics/')&&name.endsWith('.json'))));
 const {loadPracticeStyles,buildPracticeHtml}=await tsImport('../src/practice/build.ts',import.meta.url);
 const paperCSS=await loadPracticeStyles();
-const {generatedPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
+const {catalogPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
 const result=await build({entryPoints:[root+'src/practice/workspace.ts'],bundle:true,write:false,format:'iife',target:'es2022',minify:true,legalComments:'inline',plugins:[{
  name:'practice-offline',setup(api){
   api.onResolve({filter:/^practice-paper-styles$/},()=>({path:'styles',namespace:'practice'}));
@@ -83,7 +83,7 @@ await writeFile(out+'/release.json',JSON.stringify({version,license:'MIT',refere
 // Ready-to-open complete papers are a separate download alongside the Agent Skill.
 const completeFiles={'使用说明.md':strToU8('两套完整四六级卷。每套含题目卷、答案卷、四面答题卡和可编辑题库。打开题目卷即可本机作答并播放听力；交卷后导入对应答案卷查看解析。四级125分钟，六级130分钟；100分按官方比例练习计分。原创内容MIT许可，官方大纲仅用于结构。'),LICENSE:new Uint8Array(await readFile(root+'LICENSE'))};
 for(const paper of realCatalog.cases.filter(p=>['complete-cet4-original-01','full-cet6-original-01'].includes(p.practiceId))){
- const generated=generatedPaper(paper,true),folder=paper.exam.specificationId.toUpperCase();
+ const generated=catalogPaper(paper),folder=paper.exam.specificationId.toUpperCase();
  completeFiles[folder+'/practice.json']=strToU8(JSON.stringify(generated,null,2));
  for(const [kind,label] of [['exam','试卷'],['answers','答案卷'],['answer-card','答题卡']])completeFiles[folder+`/《${paper.title}》-${label}.html`]=strToU8(await buildPracticeHtml(generated,{kind}));
 }

@@ -7,6 +7,7 @@ import type {PracticeDocument,PracticeQuestion,PracticeKind} from './model';
 import {hasSeparateAnswerCard,isSiteAudio,questionsOf} from './model';
 import type {PaperKind} from './paper';
 import type {PracticeExportFormat} from './exports';
+import type {PaperTemplateLayout} from './templates';
 import {webDelivery,downloadWebFile,fetchTopicBytes,fetchPaperDocument,siteAudioBase,embedSiteAudio} from './delivery';
 import {createIframePaperPager,type PaperPagerOptions} from './paper-pagination';
 import styles from './workspace.css?raw';
@@ -59,11 +60,12 @@ const icon=(name:keyof typeof symbols)=>`<svg viewBox="0 0 24 24" width="18" hei
 
 let library:PracticeDocument|null=null;
 let data:PracticeDocument|null=null,artifact:{html:string;name:string}|null=null;
-let view:'start'|'templates'|'preview'|'workflow'='start',paperKind:PreviewKind='exam',manual=false,restored=false,importMode:'open'|'append'='open';
+let view:'start'|'templates'|'preview'|'workflow'='start',paperKind:PreviewKind='exam',settingsOpen=false,restored=false,importMode:'open'|'append'='open';
 let selected=new Set<string>(),search='',chapter='',questionType='',page=0,materialKind:PracticeKind='reference';
 let saveQueue=Promise.resolve(),saveFailed=false;
 let requestedSubset=false;
-let exportFormat:PracticeExportFormat|'html'|'zip'='pdf';
+let settingsSection:'layout'|'content'='layout';
+let disposeWorkspacePaper=()=>{};
 const root=document.querySelector<HTMLElement>('#practice-app')!;
 root.innerHTML=`<a class="skip" href="#main" tabindex="0">跳到内容</a><header class="site-header"><div class="header-inner"><a class="brand" href="#start" aria-label="纸间首页"><svg viewBox="0 0 32 32" width="32" height="32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="9" fill="currentColor"/><path d="M9 9.5h4a3 3 0 0 1 3 3v11a3 3 0 0 0-3-2.5H9zm14 0h-4a3 3 0 0 0-3 3v11a3 3 0 0 1 3-2.5h4zM11.5 13.5h2m-2 3h2m5-3h2m-2 3h2" stroke="var(--on-accent)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg><span>纸间</span></a><nav aria-label="主导航"><button data-view="start">开始使用</button><button data-view="templates">完整试卷</button><button data-view="preview">我的试卷</button></nav><div id="theme-control"></div><button id="import-top" class="button secondary">${icon('upload')}<span>导入试卷</span></button></div></header><div id="global-status" role="status" aria-live="polite"></div><main id="main" tabindex="-1"></main><footer class="site-footer"><span>MIT · 免费开源 · 离线使用</span><a class="related-project" href="https://burntroses.github.io/paper-notebook/" target="_blank" rel="noreferrer">Paper Notebook · 孪生项目 ${icon('arrow')}</a><a class="github-star" href="${PROJECT_URL}" target="_blank" rel="noreferrer" aria-label="在 GitHub 为 Paper Notebook Practice 点 Star">GitHub Star ${icon('external')}</a><button id="footer-skill">下载 Skill ${icon('download')}</button></footer><input id="file-input" type="file" multiple hidden accept=".json,.html,.htm,.txt,.md,.markdown,.docx"><dialog id="detail" class="modal"></dialog>`;
 mountThemeControl(root.querySelector<HTMLElement>('#theme-control')!);
@@ -572,35 +574,63 @@ function renderPreview(){
  if(!data&&!artifact){main.innerHTML=`<div class="preview-empty"><span class="empty-icon">${icon('file')}</span><h1>我的试卷</h1><div class="hero-actions"><button id="open-delivery" class="button primary">${icon('upload')}打开试卷</button><button id="load-sample" class="button secondary">查看样卷</button></div><button id="empty-agent" class="button text">开始制作试卷 ${icon('arrow')}</button></div>`;main.querySelector('#open-delivery')!.addEventListener('click',openFileDialog);main.querySelector<HTMLButtonElement>('#load-sample')!.onclick=()=>navigate('templates');main.querySelector<HTMLButtonElement>('#empty-agent')!.onclick=()=>{navigate('start');};return;}
  const volumes=data?availableKinds(data):[];
  if(data&&!volumes.some(([kind])=>kind===paperKind))paperKind='exam';
+ main.classList.add('preview-workbench');
  const title=data?.title??artifact!.name;
- main.innerHTML=`<div class="preview-heading"><div><h1>${escape(title)}</h1></div><div class="preview-actions">${data?`<button id="toggle-manual" class="button secondary" aria-expanded="${manual}">${icon('settings')}版式调整</button>`:''}${data?`<select id="export-format" aria-label="导出格式">${[['pdf','PDF'],['docx','Word .docx'],['png','PNG 图片'],['html','离线 HTML'],['zip','整套 HTML + 题库']].map(([value,label])=>`<option value="${value}" ${exportFormat===value?'selected':''}>${label}</option>`).join('')}</select>`:''}<button id="export-package" class="button primary">${icon('download')}导出${data?'试卷':'文件'}</button></div></div><div class="preview-controls"><div class="segmented" role="group" aria-label="预览文件">${data?volumes.map(([kind,name])=>`<button data-kind="${kind}" aria-pressed="${paperKind===kind}">${name}</button>`).join(''):'<span class="artifact-label">HTML 试卷</span>'}</div><div class="preview-tools">${data?`<div id="print-color" class="inline-options" role="group" aria-label="打印颜色">${([['color','彩色'],['grayscale','黑白']] as const).map(([value,label])=>`<button type="button" data-print-color="${value}" aria-pressed="${(data!.presentation?.printColor??'color')===value}">${label}</button>`).join('')}</div>`:''}${artifact?'':`<button id="open-paper" class="icon-button" aria-label="单独打开试卷" title="单独打开试卷">${icon('external')}</button>`}<button id="download-paper" class="icon-button" aria-label="下载当前预览" title="下载当前预览">${icon('download')}</button></div></div><div class="preview-layout ${manual&&data?'has-inspector':''}"><div class="paper-stage"><iframe id="paper-preview" title="试卷成品预览" sandbox="allow-scripts allow-downloads allow-modals${data&&!artifact&&documentQuestions().length?' allow-same-origin':''}"></iframe></div>${manual&&data?inspectorMarkup():''}</div><p id="preview-error" class="inline-error" role="alert"></p>`;
- redrawWorkspacePaper();
- main.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(button=>button.onclick=()=>{
+ main.innerHTML=`<header class="preview-heading">
+  <h1 title="${escape(title)}">${escape(title)}</h1>
+  <button id="export-package" class="button primary" ${data?'aria-haspopup="dialog"':''}>${icon('download')}导出${data?'试卷':'文件'}</button>
+ </header>
+ <div class="preview-layout ${data?'has-inspector':''}">
+  ${data?inspectorMarkup():''}
+  <div class="paper-stage" aria-label="试卷预览">
+   <div class="preview-controls">
+    ${data?`<button id="toggle-manual" class="button secondary" aria-controls="paper-inspector" aria-expanded="false">${icon('settings')}版式</button>
+     <div class="segmented" role="group" aria-label="预览文件">${volumes.map(([kind,name])=>`<button type="button" data-kind="${kind}" aria-pressed="${paperKind===kind}">${name}</button>`).join('')}</div>`:'<span>HTML 试卷</span>'}
+   </div>
+   <iframe id="paper-preview" title="试卷成品预览" sandbox="allow-scripts allow-downloads allow-modals${data&&!artifact&&documentQuestions().length?' allow-same-origin':''}"></iframe>
+   <p id="preview-error" class="inline-error" role="alert"></p>
+  </div>
+ </div>`;
+ const controller=new AbortController();
+ const {signal}=controller;
+ disposeView=()=>{controller.abort();disposeWorkspacePaper();disposeWorkspacePaper=()=>{};};
+ const volumeGroup=main.querySelector<HTMLElement>('.preview-controls .segmented');
+ volumeGroup?.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(button=>button.onclick=()=>{
   if(paperKind===button.dataset.kind)return;
   paperKind=button.dataset.kind as PreviewKind;void persist();
-  main.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(tab=>{const active=tab===button;tab.setAttribute('aria-pressed',String(active));tab.tabIndex=active?0:-1;});
+  volumeGroup.querySelectorAll<HTMLButtonElement>('[data-kind]').forEach(tab=>{
+   const active=tab===button;tab.setAttribute('aria-pressed',String(active));tab.tabIndex=active?0:-1;
+  });
   redrawWorkspacePaper();
  });
- segmentedKeys(main.querySelector('.segmented')!);
- main.querySelector('#toggle-manual')?.addEventListener('click',()=>{manual=!manual;renderPreview();main.querySelector<HTMLElement>('#toggle-manual')?.focus({preventScroll:true});});
- main.querySelector<HTMLSelectElement>('#export-format')?.addEventListener('change',event=>exportFormat=(event.target as HTMLSelectElement).value as typeof exportFormat);
- const printColors=[...main.querySelectorAll<HTMLButtonElement>('[data-print-color]')];
- printColors.forEach(button=>button.onclick=()=>{
-  if(!data||button.getAttribute('aria-pressed')==='true')return;
-  const before=structuredClone(data);
-  try{
-   data.presentation??={};
-   data.presentation.printColor=button.dataset.printColor==='grayscale'?'grayscale':'color';
-   editor.renderPractice(data,{kind:paperKind,screenOnly:true});
-   printColors.forEach(option=>option.setAttribute('aria-pressed',String(option===button)));
-   artifact=null;void persist();redrawWorkspacePaper();
-  }catch(error){data=before;main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}
- });
- main.querySelector<HTMLButtonElement>('#export-package')!.onclick=function(){const button=this as HTMLButtonElement;void action(button,async()=>{if(!data||exportFormat==='html'){await downloadCurrent();return;}if(exportFormat==='zip'){await exportPackage();return;}if(!documentQuestions().length)throw Error('题库中还没有题目，请先添加题目。');const paper=data,format=exportFormat,kind=paperKind;button.textContent='正在准备导出…';const {exportPracticeFiles}=await import('./exports');const result=await exportPracticeFiles(paper,{format,kind,css:editor.paperCSS,onProgress:message=>{button.textContent=message;}});await download(result.name,result.bytes,result.mime);},'已下载','正在准备导出…');};main.querySelector('#download-paper')!.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,downloadCurrent,'已下载');});main.querySelector('#open-paper')?.addEventListener('click',()=>{const html=selectedHTML();const url=URL.createObjectURL(new Blob([html],{type:'text/html'}));window.open(url,'_blank','noopener');setTimeout(()=>URL.revokeObjectURL(url),60000);});
- if(manual&&data)bindInspector();
+ if(volumeGroup)segmentedKeys(volumeGroup);
+ const exportButton=main.querySelector<HTMLButtonElement>('#export-package')!;
+ exportButton.onclick=()=>data?showPaperExports():void action(exportButton,downloadCurrent,'已下载','正在导出…');
+ if(data){
+  const narrow=matchMedia('(max-width:760px)');
+  const inspector=main.querySelector<HTMLElement>('#paper-inspector')!;
+  const stage=main.querySelector<HTMLElement>('.paper-stage')!;
+  const toggle=main.querySelector<HTMLButtonElement>('#toggle-manual')!;
+  const close=main.querySelector<HTMLButtonElement>('#close-inspector')!;
+  function syncPanel(){
+   const open=narrow.matches&&settingsOpen;
+   inspector.hidden=narrow.matches&&!open;stage.inert=open;
+   toggle.setAttribute('aria-expanded',String(open));
+  }
+  function closePanel(){
+   if(!narrow.matches||!settingsOpen)return;
+   settingsOpen=false;syncPanel();toggle.focus({preventScroll:true});
+  }
+  narrow.addEventListener('change',syncPanel,{signal});syncPanel();
+  toggle.onclick=()=>{settingsOpen=true;syncPanel();close.focus({preventScroll:true});};
+  close.onclick=closePanel;
+  inspector.addEventListener('keydown',event=>{if(event.key==='Escape'&&!event.defaultPrevented)closePanel();},{signal});
+  bindInspector(closePanel);
+ }
+ redrawWorkspacePaper();
 }
 function redrawWorkspacePaper(){
- disposeView();disposeView=()=>{};
+ disposeWorkspacePaper();disposeWorkspacePaper=()=>{};
  const previous=main.querySelector<HTMLIFrameElement>('#paper-preview')!;
  const frame=previous.cloneNode() as HTMLIFrameElement;
  frame.removeAttribute('srcdoc');previous.replaceWith(frame);
@@ -612,9 +642,9 @@ function redrawWorkspacePaper(){
    if(!controls.isConnected)frame.after(controls);
    const key=data.practiceId+':'+paperKind;
    const preview=mountPaperPreview(frame,controls,{initialPage:paperPages.get(key),onChange:state=>{if(state.status==='ready')paperPages.set(key,state.page);}});
-   disposeView=preview.dispose;preview.setPaper(data,paperKind);
+   disposeWorkspacePaper=preview.dispose;preview.setPaper(data,paperKind);
   }else {frame.parentElement!.querySelector('.paper-pager')?.remove();frame.srcdoc='<!doctype html><html lang="zh-CN"><meta charset="utf-8"><body style="font:15px/1.8 system-ui;text-align:center;padding:100px 24px">题库暂无题目</body></html>';}
- }catch(error){disposeView();main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}
+ }catch(error){disposeWorkspacePaper();main.querySelector('#preview-error')!.textContent=error instanceof Error?error.message:String(error);}
 }
 
 function segmentedKeys(group:Element,vertical=false){
@@ -632,30 +662,263 @@ function segmentedKeys(group:Element,vertical=false){
   (choices[index].isConnected?choices[index]:main.querySelectorAll<HTMLButtonElement>('.segmented button')[index])?.focus();
  });
 }
-function inspectorMarkup(){let layout;try{layout=editor.resolvePaperTemplate(data!.style).layout;}catch{layout=editor.getPaperTemplate().layout;}return `<aside class="inspector" aria-label="人工调整"><div class="inspector-heading"><h2>版式调整</h2></div><div class="field"><label for="paper-title">试卷名称</label><input id="paper-title" value="${escape(data!.title)}"></div><div class="fields-two"><div class="field"><label for="paper-subject">科目</label><input id="paper-subject" value="${escape(data!.subject)}"></div><div class="field"><label for="paper-level">层级</label><input id="paper-level" value="${escape(data!.level)}"></div></div><div class="field"><label for="paper-duration">考试时间 / 分钟</label><input id="paper-duration" type="number" min="1" max="1440" value="${data!.durationMinutes}"></div><div class="field"><label for="paper-template">试卷模板</label><select id="paper-template"><option value="">标准试卷</option>${editor.PAPER_TEMPLATES.filter(t=>t.id!=='standard').map(t=>`<option value="${escape(t.id)}" ${data!.style.templateId===t.id?'selected':''}>${escape(t.name)}</option>`).join('')}</select></div><button id="select-questions" class="inspector-action">选择题目 <span>${documentQuestions().length} / ${bankQuestions().length} ${icon('arrow')}</span></button><button id="source-materials" class="inspector-action">查看资料与出处 <span>${data!.materials.length} ${icon('arrow')}</span></button><details class="advanced-settings"><summary>排版与组卷</summary><div class="fields-two"><div class="field"><label for="paper-font">字号 / pt</label><input id="paper-font" type="number" min="9" max="20" step="0.5" value="${layout.fontSize}"></div><div class="field"><label for="paper-leading">行距</label><input id="paper-leading" type="number" min="1.2" max="2.2" step="0.1" value="${layout.lineHeight}"></div></div><label class="checkbox-label"><input id="paper-project-mark" type="checkbox" ${data!.presentation?.projectMark!==false?'checked':''}> GitHub 项目标志与链接</label><label class="checkbox-label"><input id="paper-sealed" type="checkbox" ${layout.showSeal?'checked':''}> 密封线</label><div class="divider"></div><div class="field"><label for="compose-count">抽取题数</label><input id="compose-count" type="number" min="1" max="${bankQuestions().length}" value="${documentQuestions().length}"></div><div class="field"><label for="compose-score">目标分数 / 0 为不限</label><input id="compose-score" type="number" min="0" value="0"></div><div class="field"><label for="compose-seed">组卷种子</label><input id="compose-seed" value="paper-1"></div><button id="compose-subset" class="button secondary">生成模拟卷</button></details><p id="inspector-error" class="inline-error" role="alert"></p><div class="inspector-bottom"><button id="export-json" class="button text">保存可编辑文件 ${icon('download')}</button>${library?`<button id="export-bank" class="button text">保存全量题库 ${icon('download')}</button>`:''}<button id="new-bank" class="button text">新建题库</button></div></aside>`;}
-function bindInspector(){
- main.querySelector<HTMLInputElement>('#paper-project-mark')!.addEventListener('change',event=>{data!.presentation??={};data!.presentation.projectMark=(event.target as HTMLInputElement).checked;artifact=null;void persist();redrawWorkspacePaper();});
- const change=(id:string,fn:(value:string)=>void)=>main.querySelector('#'+id)!.addEventListener('change',e=>{const before=structuredClone(data);try{fn((e.target as HTMLInputElement).value);data=editor.refreshPracticeMetadata(data!,before!);const check=validateEditable(data);if(!check.valid)throw Error(check.errors.map(e=>`${e.path}：${e.message}`).join('\n'));artifact=null;void persist();main.querySelector('.preview-heading h1')!.textContent=data!.title;
- redrawWorkspacePaper();main.querySelector('#inspector-error')!.textContent='';}catch(error){data=before;main.querySelector('#inspector-error')!.textContent=error instanceof Error?error.message:String(error);}});
- change('paper-title',value=>{data!.title=value;if(data!.presentation)data!.presentation.titleLines=[value];});change('paper-subject',value=>data!.subject=value);change('paper-level',value=>data!.level=value);change('paper-duration',value=>data!.durationMinutes=Number(value));change('paper-font',value=>{data!.style.fontSize=Number(value);if(data!.style.templateOverrides)delete data!.style.templateOverrides.fontSize;});change('paper-leading',value=>{data!.style.lineHeight=Number(value);if(data!.style.templateOverrides)delete data!.style.templateOverrides.lineHeight;});change('paper-template',value=>{if(value)data=editor.applyPaperTemplate(data!,value);else delete data!.style.templateId;
- const layout=editor.resolvePaperTemplate(data!.style).layout;
- (main.querySelector('#paper-font') as HTMLInputElement).value=String(layout.fontSize);
- (main.querySelector('#paper-leading') as HTMLInputElement).value=String(layout.lineHeight);
- (main.querySelector('#paper-sealed') as HTMLInputElement).checked=layout.showSeal;
- });
- main.querySelector('#paper-sealed')!.addEventListener('change',e=>{data!.style.sealed=(e.target as HTMLInputElement).checked;delete data!.original;if(data!.style.templateOverrides)delete data!.style.templateOverrides.showSeal;void persist();redrawWorkspacePaper();});
- main.querySelector('#select-questions')!.addEventListener('click',()=>showQuestionBank());main.querySelector('#source-materials')!.addEventListener('click',showMaterials);main.querySelector('#export-json')!.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,()=>downloadPracticeJSON('practice.json',data!),'已下载');});main.querySelector('#new-bank')!.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,newBank,'已创建');});main.querySelector('#export-bank')?.addEventListener('click',event=>{void action(event.currentTarget as HTMLButtonElement,()=>downloadPracticeJSON('question-bank.json',library!),'已下载');});
- main.querySelector('#compose-subset')!.addEventListener('click',()=>{try{const count=Number(main.querySelector<HTMLInputElement>('#compose-count')!.value),score=Number(main.querySelector<HTMLInputElement>('#compose-score')!.value),seed=main.querySelector<HTMLInputElement>('#compose-seed')!.value;if(!library)library=structuredClone(data);const next=editor.assembleMock(bankQuestions(),{title:data!.title,subject:data!.subject,level:data!.level,durationMinutes:data!.durationMinutes,materials:data!.materials,sourceDocument:library??data!,sourceSections:(library??data)!.sections,presentation:data!.presentation,balanceChoices:false,count,targetScore:score||undefined,seed,notebookId:data!.notebookId,notebookRevision:data!.notebookRevision,style:data!.style});data=next;requestedSubset=true;void persist();renderPreview();status('模拟卷已生成，全量题库已保留，可重新选题或保存。');}catch(e){main.querySelector('#inspector-error')!.textContent=e instanceof Error?e.message:String(e);}});
+const layoutNumbers=[
+ ['fontSize','字号（pt）',8,22],['lineHeight','行距',1.1,2.5],
+ ['marginTopMm','上（mm）',0,70],['marginBottomMm','下（mm）',0,70],['marginLeftMm','左（mm）',0,70],['marginRightMm','右（mm）',0,70],
+] as const;
+const layoutChoices={
+ paperSize:[['A4','A4'],['A3','A3'],['custom','原卷尺寸']],
+ orientation:[['portrait','纵向'],['landscape','横向']],
+ columns:[['1','单栏'],['2','双栏']],
+ fontFamily:[['song','宋体'],['sans','黑体'],['times','西文衬线']],
+} as const;
+function inspectorMarkup(){
+ const number=(name:string,label:string,min:number,max:number,step='any')=>
+  `<div class="field"><label for="setting-${name}">${label}</label><input id="setting-${name}" name="${name}" type="number" min="${min}" max="${max}" step="${step}" inputmode="decimal" required></div>`;
+ const options=(name:keyof typeof layoutChoices,label:string)=>
+  `<fieldset class="settings-choice"><legend>${label}</legend><div>${layoutChoices[name].map(([value,text])=>
+   `<label><input type="radio" name="${name}" value="${value}"><span>${text}</span></label>`).join('')}</div></fieldset>`;
+ const groups=new Map<string,string[]>();
+ for(const template of editor.PAPER_TEMPLATES){
+  const options=groups.get(template.family)??[];
+  options.push(`<option value="${escape(template.id)}">${escape(template.name)}</option>`);
+  groups.set(template.family,options);
+ }
+ return `<aside id="paper-inspector" class="inspector" aria-labelledby="settings-title">
+  <div class="inspector-heading"><h2 id="settings-title">版式调整</h2><button type="button" id="close-inspector" class="icon-button" aria-label="关闭版式设置">${icon('close')}</button></div>
+  <div id="settings-tabs" class="segmented" role="group" aria-label="设置类别">
+   <button type="button" data-settings-tab="layout" aria-controls="layout-settings">页面</button>
+   <button type="button" data-settings-tab="content" aria-controls="content-settings">内容</button>
+  </div>
+  <form id="paper-settings" novalidate>
+   <div class="inspector-body">
+    <section id="layout-settings" data-settings-pane="layout" aria-label="页面">
+     <div class="settings-block">${options('paperSize','纸型')}${options('orientation','方向')}${options('columns','栏数')}</div>
+     <div class="settings-block"><h3>正文</h3>${options('fontFamily','字体')}
+      <div class="fields-two">${layoutNumbers.slice(0,2).map(([key,label,min,max])=>number(key,label,min,max)).join('')}</div>
+      ${number('questionGapMm','题间距（mm）',0,40)}
+     </div>
+     <div class="settings-block"><h3>页边距</h3><div class="fields-two">${layoutNumbers.slice(2).map(([key,label,min,max])=>number(key,label,min,max)).join('')}</div></div>
+     <details class="advanced-settings"><summary>模板与标记</summary>
+      <div class="field"><label for="paper-template">版式模板</label><select id="paper-template" name="template">
+       ${[...groups].map(([group,options])=>`<optgroup label="${escape(group)}">${options.join('')}</optgroup>`).join('')}
+      </select></div>
+      <label class="checkbox-label"><input name="showSeal" type="checkbox"> 密封线</label>
+      <label class="checkbox-label"><input name="projectMark" type="checkbox"> 项目标志</label>
+     </details>
+    </section>
+    <section id="content-settings" data-settings-pane="content" aria-label="内容" hidden>
+     <div class="settings-block">
+      <div class="field"><label for="paper-title">试卷名称</label><input id="paper-title" name="title" required></div>
+      <div class="fields-two">
+       <div class="field"><label for="paper-subject">科目</label><input id="paper-subject" name="subject" required></div>
+       <div class="field"><label for="paper-level">年级或层级</label><input id="paper-level" name="level" required></div>
+      </div>
+      ${number('durationMinutes','考试时间（分钟）',1,1440,'1')}
+     </div>
+     <button type="button" id="select-questions" class="inspector-action">选择题目 <span>${documentQuestions().length} / ${bankQuestions().length} ${icon('arrow')}</span></button>
+     <button type="button" id="source-materials" class="inspector-action">资料与出处 <span>${data!.materials.length} ${icon('arrow')}</span></button>
+     <details class="advanced-settings"><summary>抽题组卷</summary>
+      ${number('composeCount','抽取题数',1,Math.max(1,bankQuestions().length),'1')}
+      ${number('composeScore','目标分数（0 为不限）',0,10000)}
+      <div class="field"><label for="compose-seed">组卷种子</label><input id="compose-seed" value="paper-1"></div>
+      <button type="button" id="compose-subset" class="button secondary" ${bankQuestions().length?'':'disabled'}>生成模拟卷</button>
+     </details>
+     <button type="button" id="new-bank" class="inspector-action">新建题库 ${icon('arrow')}</button>
+    </section>
+   </div>
+   <footer class="inspector-bottom">
+    <p id="inspector-error" class="inline-error" role="alert"></p>
+    <div><button type="button" id="reset-settings" class="button text" disabled>撤销修改</button><button id="apply-settings" type="submit" class="button primary" disabled>应用设置</button></div>
+   </footer>
+  </form>
+ </aside>`;
 }
-function selectedHTML(){if(!data)throw Error('尚未打开试卷');return editor.renderPractice(data,{kind:paperKind,css:editor.paperCSS,audioBaseUrl:siteAudioBase()});}
+function bindInspector(onApply:()=>void){
+ const form=main.querySelector<HTMLFormElement>('#paper-settings')!;
+ const input=(name:string)=>form.elements.namedItem(name) as HTMLInputElement;
+ const choice=(name:keyof typeof layoutChoices)=>form.elements.namedItem(name) as RadioNodeList;
+ const template=form.querySelector<HTMLSelectElement>('#paper-template')!;
+ const apply=form.querySelector<HTMLButtonElement>('#apply-settings')!;
+ const reset=form.querySelector<HTMLButtonElement>('#reset-settings')!;
+ const error=form.querySelector<HTMLElement>('#inspector-error')!;
+ const tabs=main.querySelector<HTMLElement>('#settings-tabs')!;
+ let preset=data!,saved='';
+ const settingValues=()=>[...new FormData(form)].filter(([name])=>!name.startsWith('compose'));
+ const snapshot=()=>JSON.stringify(settingValues());
+ const refreshButtons=()=>{apply.disabled=reset.disabled=snapshot()===saved;};
+ function section(name:typeof settingsSection){
+  settingsSection=name;
+  for(const button of tabs.querySelectorAll<HTMLButtonElement>('button')){
+   const active=button.dataset.settingsTab===name;button.tabIndex=active?0:-1;button.setAttribute('aria-pressed',String(active));
+  }
+  for(const panel of form.querySelectorAll<HTMLElement>('[data-settings-pane]'))panel.hidden=panel.dataset.settingsPane!==name;
+ }
+ function questionGap(paper:PracticeDocument){
+  return paper.presentation?.questionGapMm??(paper.presentation&&paper.presentation.sourceLayout!==false?4:5);
+ }
+ function hasCustomSize(layout:PaperTemplateLayout){
+  const actual=editor.paperGeometry(layout),standard=editor.paperGeometry({paperSize:layout.paperSize,orientation:layout.orientation});
+  return actual.widthMm!==standard.widthMm||actual.heightMm!==standard.heightMm;
+ }
+ function showLayout(paper:PracticeDocument){
+  const layout=editor.resolvePaperTemplate(paper.style).layout;
+  const custom=hasCustomSize(layout),geometry=editor.paperGeometry(layout);
+  const customLabel=form.querySelector<HTMLInputElement>('[name="paperSize"][value="custom"]')!.parentElement!;
+  customLabel.hidden=!custom;
+  customLabel.querySelector('span')!.title=geometry.widthMm+' × '+geometry.heightMm+' mm';
+  choice('paperSize').value=custom?'custom':layout.paperSize;
+  choice('orientation').value=custom?(geometry.widthMm>geometry.heightMm?'landscape':'portrait'):layout.orientation;
+  choice('columns').value=String(layout.columns);
+  choice('fontFamily').value=layout.fontFamily;
+  for(const [key] of layoutNumbers)input(key).value=String(layout[key]);
+  input('questionGapMm').value=String(questionGap(paper));
+  const seal=paper.presentation?.sealStyle;
+  input('showSeal').checked=seal==='none'?false:seal==='binding'||seal==='candidate'||layout.showSeal;
+  input('projectMark').checked=paper.presentation?.projectMark!==false;
+ }
+ function showSaved(){
+  preset=data!;
+  template.value=preset.style.templateId??'standard';
+  template.dispatchEvent(new Event('input'));
+  for(const key of ['title','subject','level','durationMinutes'] as const)input(key).value=String(preset[key]);
+  showLayout(preset);
+  saved=snapshot();error.textContent='';refreshButtons();
+ }
+ tabs.querySelectorAll<HTMLButtonElement>('button').forEach(button=>button.onclick=()=>section(button.dataset.settingsTab as typeof settingsSection));
+ section(settingsSection);segmentedKeys(tabs);
+ showSaved();
+ template.onchange=()=>{
+  const mark=input('projectMark').checked;
+  preset=template.value===(data!.style.templateId??'standard')?data!:editor.generatedPaper(editor.applyPaperTemplate(data!,template.value));
+  showLayout(preset);input('projectMark').checked=mark;refreshButtons();
+ };
+ form.addEventListener('input',()=>{error.textContent='';refreshButtons();});
+ form.addEventListener('change',refreshButtons);
+ reset.onclick=showSaved;
+ form.onsubmit=event=>{
+  event.preventDefault();
+  if(apply.disabled)return;
+  const invalid=[...form.querySelectorAll<HTMLInputElement>('input[name]:not([name^="compose"])')].find(field=>!field.validity.valid);
+  if(invalid){
+   const pane=invalid.closest<HTMLElement>('[data-settings-pane]')!;
+   section(pane.dataset.settingsPane as typeof settingsSection);
+   invalid.reportValidity();return;
+  }
+  try{
+   const next=structuredClone(preset),layout=editor.resolvePaperTemplate(next.style).layout;
+   const patch:Partial<PaperTemplateLayout>={};
+   for(const [key] of layoutNumbers){
+    const value=input(key).valueAsNumber;
+    if(value!==layout[key])patch[key]=value;
+   }
+   const orientation=choice('orientation').value as PaperTemplateLayout['orientation'];
+   const paperSize=choice('paperSize').value;
+   if(paperSize==='custom'){
+    const geometry=editor.paperGeometry(layout);
+    if((geometry.widthMm>geometry.heightMm)!==(orientation==='landscape')){
+     patch.widthMm=geometry.heightMm;patch.heightMm=geometry.widthMm;patch.orientation=orientation;
+    }
+   }else{
+    if((layout.widthMm!==undefined||layout.heightMm!==undefined)&&(hasCustomSize(layout)||paperSize!==layout.paperSize||orientation!==layout.orientation)){
+     // A template can also supply a custom geometry. Explicit ISO dimensions override both sources.
+     const geometry=editor.paperGeometry({paperSize:paperSize as PaperTemplateLayout['paperSize'],orientation});
+     Object.assign(patch,geometry);
+    }
+    if(paperSize!==layout.paperSize)patch.paperSize=paperSize as PaperTemplateLayout['paperSize'];
+    if(orientation!==layout.orientation)patch.orientation=orientation;
+   }
+   const columns=Number(choice('columns').value) as PaperTemplateLayout['columns'];
+   if(columns!==layout.columns)patch.columns=columns;
+   const family=choice('fontFamily').value as PaperTemplateLayout['fontFamily'];
+   if(family!==layout.fontFamily)patch.fontFamily=family;
+   if(Object.keys(patch).length)next.style.templateOverrides={...next.style.templateOverrides,...patch};
+   const resulting=editor.resolvePaperTemplate(next.style).layout;
+   const {widthMm,heightMm}=editor.paperGeometry(resulting);
+   if(widthMm-resulting.marginLeftMm-resulting.marginRightMm<42*columns||heightMm-resulting.marginTopMm-resulting.marginBottomMm<65){
+    throw Error('页边距过大，正文空间不足。请缩小页边距或改用更大的纸张。');
+   }
+   const seal=next.presentation?.sealStyle;
+   const wasSealed=seal==='none'?false:seal==='binding'||seal==='candidate'||layout.showSeal;
+   if(input('showSeal').checked!==wasSealed){
+    (next.style.templateOverrides??={}).showSeal=input('showSeal').checked;
+    if(seal)delete next.presentation!.sealStyle;
+   }
+   const gap=input('questionGapMm').valueAsNumber;
+   if(gap!==questionGap(preset))(next.presentation??={sourceLayout:false}).questionGapMm=gap;
+   if(input('projectMark').checked!==(preset.presentation?.projectMark!==false))(next.presentation??={sourceLayout:false}).projectMark=input('projectMark').checked;
+   for(const key of ['title','subject','level'] as const){
+    next[key]=input(key).value.trim();
+    if(!next[key])throw Error('请填写试卷名称、科目和层级。');
+   }
+   next.durationMinutes=input('durationMinutes').valueAsNumber;
+   const updated=editor.refreshPracticeMetadata(next,data!);
+   const check=validateEditable(updated);
+   if(!check.valid)throw Error(check.errors[0]?.message??'请检查试卷设置。');
+   if(documentQuestions().length)editor.renderPractice(updated,{kind:paperKind,screenOnly:true});
+   data=updated;artifact=null;void persist();
+   const title=main.querySelector<HTMLElement>('.preview-heading h1')!;
+   title.textContent=title.title=data.title;
+   redrawWorkspacePaper();showSaved();onApply();
+  }catch(cause){error.textContent=cause instanceof Error?cause.message:String(cause);}
+ };
+ form.querySelector<HTMLButtonElement>('#select-questions')!.onclick=showQuestionBank;
+ form.querySelector<HTMLButtonElement>('#source-materials')!.onclick=showMaterials;
+ form.querySelector<HTMLButtonElement>('#new-bank')!.onclick=event=>void action(event.currentTarget as HTMLButtonElement,newBank,'已创建');
+ form.querySelector<HTMLButtonElement>('#compose-subset')!.onclick=()=>{
+  const count=input('composeCount'),score=input('composeScore');
+  if(!count.reportValidity()||!score.reportValidity())return;
+  try{
+   const source=library??data!;
+   const seed=form.querySelector<HTMLInputElement>('#compose-seed')!.value;
+   const next=editor.assembleMock(bankQuestions(),{title:data!.title,subject:data!.subject,level:data!.level,
+    durationMinutes:data!.durationMinutes,materials:data!.materials,sourceDocument:source,sourceSections:source.sections,
+    presentation:data!.presentation,balanceChoices:false,count:count.valueAsNumber,targetScore:score.valueAsNumber||undefined,
+    seed,notebookId:data!.notebookId,notebookRevision:data!.notebookRevision,style:data!.style});
+   library??=structuredClone(data!);data=next;requestedSubset=true;void persist();
+   settingsOpen=false;renderPreview();status('模拟卷已生成。');
+  }catch(cause){error.textContent=cause instanceof Error?cause.message:String(cause);}
+ };
+ input('composeCount').value=String(documentQuestions().length);
+ input('composeScore').value='0';
+}
+function showPaperExports(){
+ const paper=data!,kind=paperKind;
+ const formats:readonly (readonly [PracticeExportFormat|'html'|'zip'|'json'|'bank',string])[]=[
+  ...(documentQuestions().length?([['pdf','PDF'],['docx','Word'],['png','PNG 图片'],['html','离线 HTML'],['zip','整套试卷包']] as const):[]),
+  ['json','可编辑文件'],
+  ...(library?([['bank','全量题库']] as const):[]),
+ ];
+ const bank=library;
+ const volume=availableKinds(paper).find(([value])=>value===kind)?.[1];
+ openDialog('导出试卷',`<div class="paper-export-options" role="group" aria-label="${escape(volume??'导出格式')}">${formats.map(([value,label])=>
+  `<button type="button" class="button secondary" data-export-format="${value}">${escape(label)} ${icon('download')}</button>`).join('')}</div><p class="paper-export-status" role="status"></p>`);
+ const feedback=dialog.querySelector<HTMLElement>('.paper-export-status')!;
+ const buttons=[...dialog.querySelectorAll<HTMLButtonElement>('[data-export-format]')];
+ for(const button of buttons)button.onclick=async()=>{
+  const format=button.dataset.exportFormat as typeof formats[number][0];
+  buttons.forEach(option=>option.disabled=true);
+  feedback.classList.remove('inline-error');feedback.textContent='正在准备导出…';
+  try{
+   if(format==='html')await downloadCurrent();
+   else if(format==='zip')await downloadPaperBundle(paper);
+   else if(format==='json'||format==='bank')await downloadPracticeJSON(format==='bank'?'question-bank.json':'practice.json',format==='bank'?bank!:paper);
+   else{
+    const {exportPracticeFiles}=await import('./exports');
+    const result=await exportPracticeFiles(paper,{format,kind,css:editor.paperCSS,onProgress:message=>{feedback.textContent=message;}});
+    await download(result.name,result.bytes,result.mime);
+   }
+   if(feedback.isConnected){dialog.close();status('已下载。');}
+  }catch(cause){
+   feedback.classList.add('inline-error');feedback.textContent=cause instanceof Error?cause.message:String(cause);
+   buttons.forEach(option=>option.disabled=false);button.focus({preventScroll:true});
+  }
+ };
+}
 async function downloadPracticeJSON(name:string,paper:PracticeDocument){
  await download(name,JSON.stringify(await embedSiteAudio(paper),null,2));
 }
 async function downloadCurrent(){if(data&&!documentQuestions().length)throw Error('题库中还没有题目，请先添加题目。');if(artifact){await download(artifact.name,artifact.html,'text/html');return;}if(!data)throw Error('尚未打开试卷。');const paper=data,kind=paperKind,portable=kind==='answer-card'?paper:await embedSiteAudio(paper);await download(`《${safeTitle(paper.title)}》-${kind==='exam'?'试卷':kind==='answers'?'答案卷':'答题卡'}.html`,editor.renderPractice(portable,{kind,css:editor.paperCSS}),'text/html');}
-async function exportPackage(){
- if(artifact){await downloadCurrent();return;}
- if(data)await downloadPaperBundle(data);
-}
 async function downloadPaperBundle(paper:PracticeDocument){
  await readyEditor();
  const portable=await embedSiteAudio(paper),check=editor.validatePractice(portable);
@@ -785,9 +1048,9 @@ async function importFiles(files:File[]){
   data=next;library=nextLibrary;materialsAdded+=added;appended+=incoming.length;warnings.push(...result.warnings);
  }catch(error){failures.push(`${file.name}：${error instanceof Error?error.message:String(error)}`);}}
  if(loaded||appended||materialsAdded){
-  if(loaded)manual=Boolean(data);
+  if(loaded){settingsOpen=false;settingsSection='layout';}
   await persist();if(dialog.open)dialog.close();navigate('preview');
-  if(loaded)main.querySelector<HTMLElement>('#toggle-manual,#export-package')?.focus({preventScroll:true});
+  if(loaded)main.querySelector<HTMLElement>('#export-package')?.focus({preventScroll:true});
   if(data&&!documentQuestions().length&&data.materials.length)showMaterials();
  }
  status([loaded?'已打开试卷。':'',materialsAdded?'已添加 '+materialsAdded+' 份资料。':'',appended?'已添加 '+appended+' 道题目。':'',...warnings,...failures,saveFailed?'请下载备份保存。':''].filter(Boolean).join('\n'),failures.length>0||saveFailed);
@@ -799,7 +1062,7 @@ root.querySelector<HTMLButtonElement>('#import-top')!.onclick=()=>openFiles();fi
 dialog.addEventListener('close',()=>dialog.classList.remove('wide'));
 function restoreViewFromURL(){
  let next=location.hash.slice(1).split('?')[0]||'start';
- if(['bank','materials','compose'].includes(next)){next='preview';manual=true;}
+ if(['bank','materials','compose'].includes(next)){next='preview';settingsOpen=true;settingsSection='content';}
  view=next==='templates'||next==='preview'||next==='workflow'?next:'start';
  if(view==='templates')catalogRoute=location.hash;
 }

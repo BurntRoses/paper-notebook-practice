@@ -3,7 +3,7 @@ export {importPracticeFile,buildGenerationTask} from './materials';
 export {assembleMock,refreshPracticeMetadata} from './bank';
 export {renderPractice} from './paper';
 export {generatedPaper} from './generated-paper';
-export {PAPER_TEMPLATES,getPaperTemplate,applyPaperTemplate,resolvePaperTemplate} from './templates';
+export {PAPER_TEMPLATES,getPaperTemplate,applyPaperTemplate,resolvePaperTemplate,paperGeometry} from './templates';
 export {examQuestionCount,inferExamSpecification,validateExamStructure} from './exam-specification';
 export {formulaHTML} from '../ui/math';
 export {zipSync,strToU8,strFromU8,unzipSync} from 'fflate';

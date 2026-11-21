@@ -90,4 +90,4 @@ export function applyPaperTemplate(practice:PracticeDocument,id:string):Practice
  delete copy.original;
  copy.style={preset:template.layout.headerVariant==='ielts'||template.layout.headerVariant==='language'?'language':template.subjects.includes('数学')?'stem':practice.style.preset,templateId:id};const source=caseIndex.cases.find(p=>p.practiceId===template.caseId);return source?refreshPracticeMetadata(copy,source):copy;
 }
-export function paperGeometry(layout:PaperTemplateLayout){const short=layout.paperSize==='A3'?297:210,long=layout.paperSize==='A3'?420:297;return {widthMm:layout.widthMm??(layout.orientation==='landscape'?long:short),heightMm:layout.heightMm??(layout.orientation==='landscape'?short:long)};}
+export function paperGeometry(layout:Pick<PaperTemplateLayout,'paperSize'|'orientation'|'widthMm'|'heightMm'>){const short=layout.paperSize==='A3'?297:210,long=layout.paperSize==='A3'?420:297;return {widthMm:layout.widthMm??(layout.orientation==='landscape'?long:short),heightMm:layout.heightMm??(layout.orientation==='landscape'?short:long)};}

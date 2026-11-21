@@ -29,7 +29,7 @@ export function refreshPracticeMetadata(paper:PracticeDocument,reference:PaperMe
  const oldQuestions=new Map(previous.map(q=>[q.id,q]));let sectionChanged=false;
  for(const section of result.sections){
   const original=reference.sections.find(s=>s.id===section.id),altered=!original||section.title!==original.title||!sameQuestions(section.questions,original.questions);
-  section.score=section.questions.reduce((sum,q)=>sum+q.score,0);
+  section.score=Number(section.questions.reduce((sum,q)=>sum+q.score,0).toPrecision(14));
   for(const q of section.questions){const old=oldQuestions.get(q.id);if(!old||q.score!==old.score)delete q.scoreLabel;}
   if(!altered)continue;
   sectionChanged=true;delete section.scoreLabel;
@@ -37,7 +37,7 @@ export function refreshPracticeMetadata(paper:PracticeDocument,reference:PaperMe
   section.title=section.title.replace(/[（(]([^（）()]*)[）)]/g,(whole,inside:string)=>countsOrScores.test(inside)?'':whole).trim()||([...new Set(section.questions.map(q=>PRACTICE_TYPE_NAMES[q.type]))].join('与'));
   if(countsOrScores.test(section.instructions)&&!section.stimulus&&!section.format&&!section.listeningOnly)section.instructions=sectionInstructions(section);
  }
- result.totalScore=result.sections.reduce((sum,s)=>sum+s.score,0);
+ result.totalScore=Number(result.sections.reduce((sum,s)=>sum+s.score,0).toPrecision(14));
  if(result.presentation){
   const p=result.presentation;p.titleLines=[result.title];delete p.headerRows;delete p.scoreColumns;
   p.subtitle='';

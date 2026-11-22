@@ -41,6 +41,7 @@ for(const [category,guide] of Object.entries(catalogGuides)){
  const sample=listings.get(guide.sample);
  if(sample?.category!==category||sample.kind!=='paper')throw Error('Invalid category representative: '+category);
 }
+if(!homePapers.length||homePapers.length%2)throw Error('Featured papers must fill both columns');
 if(new Set(homePapers.map(paper=>paper.id)).size!==homePapers.length)throw Error('Duplicate featured paper');
 for(const paper of homePapers){
  const listing=listings.get(paper.id);
@@ -124,8 +125,11 @@ function validatePaper(id,paper,kind){
    const html=renderPractice(display,{kind:volume,runtime:''});
    const check=verifyPracticeHtml(html,display);
    if(!check.valid)throw Error(id+' '+volume+': '+check.errors.map(({path,message})=>path+' '+message).join('; '));
+   const markup=html.match(/<template id="paper-template">([\s\S]*?)<\/template>/)?.[1]??'';
+   if(/\bclass="(?:source-citation|answer-provenance)\b|\bdata-answer-evidence=/.test(markup)){
+    throw Error(id+' '+volume+': question citations must not appear in the paper');
+   }
    if(volume==='answer-card'){
-    const markup=html.match(/<template id="paper-template">([\s\S]*?)<\/template>/)?.[1]??'';
     const slots=[...markup.matchAll(/<[a-z][^<>]*\sdata-question="([^"]+)"[^<>]*>/g)]
      .filter(([tag])=>!(/\shidden(?:\s|=|>)/.test(tag))).map(([,question])=>question);
     const expected=display.sections.flatMap(section=>section.questions.map(question=>escapePaper(question.id)));

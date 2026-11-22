@@ -67,6 +67,7 @@ body[data-card-style=university] .exam-page>footer{display:none}
 .school-card-heading h1{text-align:center;font:bold 16pt/1.5 "Songti SC",SimSun,serif}
 .school-card-heading h2{text-align:center;font:bold 14pt/1.7 "Heiti SC",SimHei,sans-serif;letter-spacing:4mm;margin-bottom:3mm!important}
 .school-card-info{display:grid;grid-template-columns:minmax(0,1fr) 42mm;gap:7mm;align-items:center;font-size:10pt;margin:2mm 0 3mm}
+.school-card-info:not(:has(.school-card-barcode)){grid-template-columns:minmax(0,1fr)}
 .school-card-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3mm 5mm;min-width:0}
 .school-card-field{display:flex;align-items:baseline;min-width:0;min-height:9mm;gap:1mm}
 .school-card-field>span{flex:none;width:15mm;white-space:nowrap;text-align:justify;text-align-last:justify}

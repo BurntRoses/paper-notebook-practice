@@ -239,7 +239,7 @@ function renderStart(){
  main.className='start-page home-page';
  main.innerHTML=`<section class="home-library" aria-labelledby="home-library-title">
   <div class="home-library-content"><header class="home-library-heading"><h1 id="home-library-title">试卷样例</h1><button id="browse-templates" class="button text">全部试卷 ${icon('arrow')}</button></header>
-  <div class="home-papers" role="group" aria-label="选择完整样卷">${homePapers.map(paper=>`<button type="button" data-home-paper="${paper.id}" aria-label="${escape(paper.title)}" aria-pressed="false" aria-controls="home-stage">${escape(paper.label)}<span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
+  <div class="home-papers" role="group" aria-label="选择完整样卷">${homePapers.map(paper=>`<button type="button" data-home-paper="${paper.id}" aria-label="${escape(paper.title)}" aria-pressed="false" aria-controls="home-stage"><span class="home-paper-label">${escape(paper.label)}</span><span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
   <section class="home-copy" aria-labelledby="home-copy-title"><h2 id="home-copy-title">出卷指令</h2>
    <div>${(['agent','chat'] as const).map(mode=>`<button id="copy-${mode}" class="button secondary" aria-live="polite">${icon('copy')}<span>${mode==='agent'?'复制 Agent 指令':'复制对话模型指令'}</span></button>`).join('')}</div>
   </section>

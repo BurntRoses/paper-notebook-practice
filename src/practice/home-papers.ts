@@ -10,9 +10,10 @@ type HomePaper={
 export const homePapers:readonly HomePaper[]=[
  {id:'zhongkao-2023-2024-recombined',label:'广东中考数学',title:'广东中考数学',kind:'case'},
  {id:'cn-p6-chinese-full',label:'小学语文 · 模拟',title:'六年级语文综合练习卷',kind:'topic'},
- {id:'england-2024-ks2-grammar',label:'英格兰六年级英语',title:'英格兰六年级 · 2024 KS2 英语语法与拼写',kind:'source'},
+ {id:'england-2024-ks2-grammar',label:'英格兰小六英语',title:'英格兰六年级 · 2024 KS2 英语语法与拼写',kind:'source'},
+ {id:'neea-2024-math-full',label:'高考适应性数学',title:'2024 年高考综合改革适应性测试数学',kind:'case'},
  {id:'complete-cet4-original-01',label:'英语四级 · 模拟',title:'大学英语四级模拟卷（含听力）',kind:'case'},
- {id:'real-ecnu-linear-2023',label:'华东师大线性代数',title:'华东师范大学线性代数 A 期末试卷',kind:'case'},
+ {id:'real-ecnu-linear-2023',label:'华东师大线代',title:'华东师范大学线性代数 A 期末试卷',kind:'case'},
  {id:'real-ustc-probstat-2023',label:'中国科大概率统计',title:'中国科学技术大学概率论与数理统计期末试卷',kind:'case'},
  {id:'mit-chemical-science-final-2014',label:'MIT 化学',title:'MIT · 化学原理期末试题',kind:'source'},
  {id:'civil-aptitude-01',label:'行测 · 模拟',title:'行政职业能力测验模拟卷',kind:'topic'},

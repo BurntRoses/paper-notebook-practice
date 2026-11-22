@@ -6,3 +6,11 @@ export function paperBlankText(text:string,escape:(value:string)=>string){
   return `<span class="paper-blank-line" style="--blank-length:${length}ch" aria-hidden="true"></span>`;
  }).join('');
 }
+
+export function paperHeaderField(text:string,escape:(value:string)=>string){
+ const field=/^((?:[\p{Script=Han}、]{2,12}|[A-Za-z][A-Za-z .]{1,24})[:：])[ \t　]*([_＿]{2,}(?:[ \t　]+[_＿]+)*)$/u.exec(text.trim());
+ if(!field)return;
+ const [,label,blank]=field;
+ const units=Array.from(blank).reduce((width,character)=>width+(character==='＿'?1.7:1),0);
+ return `<span class="exam-header-field" style="--header-blank:${Math.ceil(units*1.15)}ch"><span>${escape(label)}</span><i aria-hidden="true"></i></span>`;
+}

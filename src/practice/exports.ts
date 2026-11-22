@@ -3,6 +3,7 @@ import {renderPractice,type PaperKind} from './paper';
 import {standalonePaperHTML} from './web-assets';
 import {zipSync} from 'fflate';
 import {nativeWordFile} from './word-export';
+import {exportFont} from './export-fonts';
 
 export type PracticeExportFormat='png'|'pdf'|'docx';
 export interface PracticeExportOptions {format:PracticeExportFormat;kind?:PaperKind;css:string;onProgress?:(message:string)=>void}
@@ -12,7 +13,7 @@ export async function exportPracticeFiles(paper:PracticeDocument,options:Practic
  if(options.format==='docx'){
   options.onProgress?.('正在生成可编辑的 Word 文档');
   const source=renderPractice(paper,{kind:options.kind??'exam',runtime:'',preview:true});
-  return nativeWordFile(new DOMParser().parseFromString(source,'text/html'),zipSync,options.css);
+  return nativeWordFile(new DOMParser().parseFromString(source,'text/html'),zipSync,options.css,(url,family)=>exportFont(url,family,options.onProgress));
  }
  const html=await standalonePaperHTML(renderPractice(paper,{kind:options.kind??'exam',css:options.css,preview:true}));
  const frame=document.createElement('iframe');frame.setAttribute('aria-hidden','true');frame.tabIndex=-1;frame.style.cssText='position:fixed;left:-100000px;top:0;width:1800px;height:1400px;border:0;pointer-events:none;';

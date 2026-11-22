@@ -5,7 +5,7 @@ import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
 import {resolve,dirname,extname,relative,isAbsolute,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
-import {inflateSync} from 'node:zlib';
+import {gzipSync,inflateSync} from 'node:zlib';
 import {tsImport} from 'tsx/esm/api';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const out=resolve(process.argv[2]||root+'dist/site');
@@ -186,7 +186,12 @@ for(const entry of topics.topics){
 }
 const license=await readFile(root+'licenses/noto-cjk-OFL.txt','utf8');
 let printFonts='/* Noto CJK embedded font license\n'+license.replace(/\*\//g,'* /')+'\n*/\n';
-for(const [family,name]of [['Noto Serif SC','NotoSerifSC-Regular.otf'],['Noto Sans SC','NotoSansSC-Regular.otf'],['Noto Sans JP','NotoSansJP-Regular.otf'],['Noto Sans KR','NotoSansKR-Regular.otf']]){const url=await asset(await readFile(root+'assets/practice-fonts/'+name),'.otf');printFonts+=`@font-face{font-family:"${family}";src:url("${url}");font-style:normal;font-weight:400;font-display:swap}\n`;}
+for(const [family,name]of [['Noto Serif SC','NotoSerifSC-Regular.otf'],['Noto Sans SC','NotoSansSC-Regular.otf'],['Noto Sans JP','NotoSansJP-Regular.otf'],['Noto Sans KR','NotoSansKR-Regular.otf']]){
+ const font=await readFile(root+'assets/practice-fonts/'+name),url=await asset(font,'.otf'),base=out+'/assets/'+hash(font)+'.font',partSize=384*1024;
+ for(let start=0;start<font.length;start+=partSize)await writeFile(`${base}-${start/partSize}.bin`,gzipSync(font.subarray(start,start+partSize)));
+ await writeFile(base+'.json',JSON.stringify({size:font.length,partSize,sha256:createHash('sha256').update(font).digest('hex')}));
+ printFonts+=`@font-face{font-family:"${family}";src:url("${url}");font-style:normal;font-weight:400;font-display:swap}\n`;
+}
 let css='';
 for(const file of ['paper.css','university-source.css','answer-card.css'])css+=await readFile(root+'src/practice/'+file,'utf8')+'\n';
 let math=await readFile(root+'node_modules/katex/dist/katex.min.css','utf8');

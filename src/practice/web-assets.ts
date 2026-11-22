@@ -3,7 +3,13 @@ const embedded=new Map<string,Promise<string>>();
 async function inlineFont(url:string):Promise<string>{
  const absolute=new URL(url,location.href).href;
  let pending=embedded.get(absolute);
- if(!pending){pending=(async()=>{try{const response=await fetch(absolute,{signal:AbortSignal.timeout(30000)});if(!response.ok)throw Error(String(response.status));const extension=new URL(absolute).pathname.split('.').pop(),type=extension==='otf'?'font/otf':extension==='ttf'?'font/ttf':extension==='woff'?'font/woff':'font/woff2',blob=new Blob([await response.arrayBuffer()],{type});return await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(reader.error);reader.readAsDataURL(blob);});}catch{throw Error('字体未能下载，请重试或使用离线工具导出。');}})();embedded.set(absolute,pending);pending.catch(()=>embedded.delete(absolute));}
+ if(!pending){pending=(async()=>{try{
+  const address=new URL(absolute),extension=address.pathname.split('.').pop(),type=extension==='otf'?'font/otf':extension==='ttf'?'font/ttf':extension==='woff'?'font/woff':'font/woff2';
+  let binary:ArrayBuffer;
+  if(extension==='otf')binary=(await (await import('./export-fonts')).exportFont(address)).buffer;
+  else{const response=await fetch(address,{signal:AbortSignal.timeout(30000)});if(!response.ok)throw Error(String(response.status));binary=await response.arrayBuffer();}
+  return await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(reader.error);reader.readAsDataURL(new Blob([binary],{type}));});
+ }catch{throw Error('字体未能下载，请重试或使用离线工具导出。');}})();embedded.set(absolute,pending);pending.catch(()=>embedded.delete(absolute));}
  return pending;
 }
 export async function standalonePaperCSS(css:string):Promise<string>{

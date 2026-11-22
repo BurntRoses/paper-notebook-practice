@@ -1,0 +1,38 @@
+name: Publish offline downloads
+on:
+  push:
+    tags: ['v*.*.*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  release:
+    if: github.ref_type == 'tag'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: test "$GITHUB_REF_NAME" = "v$(node -p 'require("./package.json").version')"
+      - run: npm ci
+      - run: npm run check && node tools/build-topic-catalog.mjs --check
+      - run: npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=5120
+      - name: Publish verified downloads
+        working-directory: dist/practice
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sha256sum -c SHA256SUMS.txt
+          if gh release view "$GITHUB_REF_NAME" --json isDraft > "$RUNNER_TEMP/release.json"; then
+            test "$(jq -r .isDraft "$RUNNER_TEMP/release.json")" = true
+          else
+            gh release create "$GITHUB_REF_NAME" --verify-tag --draft --title "$GITHUB_REF_NAME" --generate-notes
+          fi
+          gh release upload "$GITHUB_REF_NAME" --clobber SHA256SUMS.txt paper-notebook-practice{,-skill,-topics,-complete-cet}.zip paper-notebook-practice-preview.html
+          gh release edit "$GITHUB_REF_NAME" --draft=false --latest

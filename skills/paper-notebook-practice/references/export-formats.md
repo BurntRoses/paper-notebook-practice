@@ -8,7 +8,7 @@
 | --- | --- |
 | HTML | 单文件，内嵌题目与所需资源，可离线作答、打印和再次导出；答案卷独立 |
 | PDF | 固定纸型与物理分页，保留页面字形、公式和图形；项目链接可点击 |
-| Word `.docx` | 真正的 OOXML 文档，保留物理页版式与可编辑文字，公式和图形保留实际渲染结果 |
+| Word `.docx` | 用正文段落、编号、公式和表格继续编辑。改题后自动换行、分页；题图随文字移动。需要固定原页位置时选 PDF |
 | PNG | 按物理页导出清晰图片，多页放入 ZIP，文件名包含页序 |
 
 先读取资料和环境能力，再在首轮需求确认中收集所需格式。不要承诺当前环境不能生成的文件，也不要要求用户承担当前会话能完成的导出步骤。
@@ -36,7 +36,7 @@ await file.saveAs(resolve('output', file.suggestedFilename()));
 await browser.close();
 ```
 
-同一能力也由页面内 `window.paperExports.run('pdf' | 'docx' | 'png')` 暴露，返回实际 `name`、`mime`、`bytes` 和 `pages`。网页会话可用其自身已有的浏览器执行环境操作，不能以一个未运行的脚本代替最终文件。
+同一能力也由页面内 `window.paperExports.run('pdf' | 'docx' | 'png')` 暴露，返回 `name`、`mime`、`bytes` 和 `pages`。PDF 和 PNG 返回固定页数；Word 返回 `pages: null`，页数由打开文档的编辑器计算。
 
 ## 标志、水印与验证
 

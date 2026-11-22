@@ -1,31 +1,24 @@
-/** Self-contained so the same offline exporter ships inside every paper HTML. */
-export function paperExportRuntime(){
- const w=window as typeof window&{paperExports?:{run:(format:string,onProgress?:(value:string)=>void)=>Promise<{name:string;mime:string;bytes:Uint8Array;pages:number}>}};
+import {nativeWordFile} from './word-export';
+
+/** The standalone HTML passes its serialized Word writer explicitly. */
+export function paperExportRuntime(writeWord=nativeWordFile){
+ const w=window as typeof window&{paperExports?:{run:(format:string,onProgress?:(value:string)=>void)=>Promise<{name:string;mime:string;bytes:Uint8Array;pages:number|null}>}};
  if(w.paperExports)return;
- const encoder=new TextEncoder(),xml=(s:unknown)=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]!));
+ const encoder=new TextEncoder();
  const bytes=(s:string)=>encoder.encode(s),join=(parts:Uint8Array[])=>{const out=new Uint8Array(parts.reduce((n,p)=>n+p.length,0));let at=0;for(const p of parts){out.set(p,at);at+=p.length;}return out;};
  const zip=(files:Record<string,Uint8Array>)=>{const table=Array.from({length:256},(_,i)=>{let c=i;for(let j=0;j<8;j++)c=c&1?0xedb88320^(c>>>1):c>>>1;return c>>>0;}),local:Uint8Array[]=[],central:Uint8Array[]=[];let offset=0;for(const [file,content]of Object.entries(files)){const name=bytes(file);let crc=0xffffffff;for(const b of content)crc=table[(crc^b)&255]^(crc>>>8);crc=(crc^0xffffffff)>>>0;const head=new Uint8Array(30+name.length),h=new DataView(head.buffer);h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint32(14,crc,true);h.setUint32(18,content.length,true);h.setUint32(22,content.length,true);h.setUint16(26,name.length,true);head.set(name,30);local.push(head,content);const dir=new Uint8Array(46+name.length),d=new DataView(dir.buffer);d.setUint32(0,0x02014b50,true);d.setUint16(4,20,true);d.setUint16(6,20,true);d.setUint16(8,0x0800,true);d.setUint32(16,crc,true);d.setUint32(20,content.length,true);d.setUint32(24,content.length,true);d.setUint16(28,name.length,true);d.setUint32(42,offset,true);dir.set(name,46);central.push(dir);offset+=head.length+content.length;}const size=central.reduce((n,p)=>n+p.length,0),end=new Uint8Array(22),e=new DataView(end.buffer);e.setUint32(0,0x06054b50,true);e.setUint16(8,central.length,true);e.setUint16(10,central.length,true);e.setUint32(12,size,true);e.setUint32(16,offset,true);return join([...local,...central,end]);};
- const visible=(el:Element)=>{const s=getComputedStyle(el);return s.display!=='none'&&s.visibility!=='hidden'&&el.getClientRects().length>0&&!el.closest('[hidden],.katex-mathml,.screen-answer,.screen-media,.question-feedback');};
  const lang=document.documentElement.lang;
  const paperCSS=()=>Array.from(document.querySelectorAll('style')).map(e=>e.textContent??'').join('\n');
- function rasterCSS(css:string,textFree:boolean){
-  // Japanese and Korean faces are selected only by the corresponding paper language.
+ function rasterCSS(css:string){
   return css.replace(/@font-face\{font-family:"Noto Sans (JP|KR)";[^}]*\}/g,(rule,locale)=>locale.toLowerCase()===lang?rule:'')
-   .replace(/html:lang\(/g,'.export-body:lang(').replace(/\bbody(?=[\s\[.#:{>])/g,'.export-body')+
-   (textFree?'\n.export-body .option-letter::after{visibility:hidden!important}':'');
+   .replace(/html:lang\(/g,'.export-body:lang(').replace(/\bbody(?=[\s\[.#:{>])/g,'.export-body');
  }
- async function raster(page:HTMLElement,css:string,textFree=false,scale=2.5){
+ async function raster(page:HTMLElement,css:string,scale=2.5){
   // A4 is fractional in CSS pixels. Rounding its layout width can change line breaks.
   const pageStyle=getComputedStyle(page),width=parseFloat(pageStyle.width),height=parseFloat(pageStyle.height),clone=page.cloneNode(true) as HTMLElement;
   clone.style.cssText+=';position:relative!important;left:0!important;top:0!important;transform:none!important;zoom:1!important;margin:0!important;box-shadow:none!important;width:'+width+'px!important;height:'+height+'px!important;';
   clone.querySelectorAll('script,audio,button,.screen-media,.screen-answer,.question-feedback').forEach(e=>e.remove());
   clone.querySelectorAll('textarea,input').forEach(e=>{if(e instanceof HTMLTextAreaElement)e.textContent='';if(e instanceof HTMLInputElement){e.value='';e.removeAttribute('checked');}});
-  if(textFree){
-   // Mask text nodes only: parent paint properties also hide CSS list markers.
-   // Keep whitespace nodes intact so source-specific sibling selectors still match.
-   const walker=document.createTreeWalker(clone,NodeFilter.SHOW_TEXT),nodes:Text[]=[];while(walker.nextNode())nodes.push(walker.currentNode as Text);
-   for(const node of nodes)if(node.textContent?.trim()&&!node.parentElement?.closest('.katex,svg,.source-watermark,.seal')){const span=document.createElement('span');span.style.setProperty('color','transparent','important');span.style.setProperty('text-shadow','none','important');span.textContent=node.textContent;node.replaceWith(span);}
-  }
   const body=document.createElement('div');body.lang=lang;for(const attr of Array.from(document.body.attributes))body.setAttribute(attr.name,attr.value);body.style.cssText=document.body.style.cssText+';margin:0!important;padding:0!important;background:white!important;width:'+width+'px!important;height:'+height+'px!important;overflow:hidden;';body.append(clone);
   body.classList.add('export-body','print-preview');
   const source='<svg xmlns="http://www.w3.org/2000/svg" width="'+width+'" height="'+height+'" viewBox="0 0 '+width+' '+height+'"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml"><style>'+css.replace(/&/g,'&amp;').replace(/</g,'&lt;')+'</style>'+new XMLSerializer().serializeToString(body)+'</div></foreignObject></svg>';
@@ -50,66 +43,9 @@ export function paperExportRuntime(){
   }objects[1]=bytes('<< /Type /Pages /Count '+refs.length+' /Kids ['+refs.map(r=>r+' 0 R').join(' ')+'] >>');
   const parts=[bytes('%PDF-1.4\n%\xE2\xE3\xCF\xD3\n')],offsets=[0];let offset=parts[0].length;objects.forEach((obj,i)=>{offsets.push(offset);const part=join([bytes((i+1)+' 0 obj\n'),obj,bytes('\nendobj\n')]);parts.push(part);offset+=part.length;});parts.push(bytes('xref\n0 '+(objects.length+1)+'\n0000000000 65535 f'+String.fromCharCode(32,10)+offsets.slice(1).map(n=>String(n).padStart(10,'0')+' 00000 n'+String.fromCharCode(32,10)).join('')+'trailer\n<< /Size '+(objects.length+1)+' /Root 1 0 R >>\nstartxref\n'+offset+'\n%%EOF\n'));return join(parts);
  }
- type Line={text:string;x:number;y:number;width:number;height:number;font:string;size:number;bold:boolean;italic:boolean;color:string;spacing:number;link:boolean;beforeMath?:boolean};
- function textLines(page:HTMLElement):Line[]{
-  const pageRect=page.getBoundingClientRect(),lines:Line[]=[],walker=document.createTreeWalker(page,NodeFilter.SHOW_TEXT);while(walker.nextNode()){
-   const node=walker.currentNode as Text,parent=node.parentElement;if(!parent||!visible(parent)||parent.closest('.katex,svg,textarea,button,.source-watermark,.seal'))continue;
-   const text=node.textContent??'';if(!text.trim())continue;const style=getComputedStyle(parent),range=document.createRange();let at=0,line:Line|undefined;
-   for(const ch of text){range.setStart(node,at);range.setEnd(node,at+ch.length);at+=ch.length;const r=range.getBoundingClientRect();if(r.width<.01||r.height<.01)continue;const x=(r.left-pageRect.left)*.75,y=(r.top-pageRect.top)*.75,width=r.width*.75,height=r.height*.75;
-    if(!line||Math.abs(line.y-y)>.8||Math.abs(line.x+line.width-x)>3){line={text:ch,x,y,width,height,font:style.fontFamily,size:parseFloat(style.fontSize)*.75,bold:Number(style.fontWeight)>=600||style.fontWeight==='bold',italic:style.fontStyle==='italic',color:(style.color.match(/\d+/g)??['0','0','0']).slice(0,3).map(v=>Number(v).toString(16).padStart(2,'0')).join(''),spacing:parseFloat(style.letterSpacing)*.75||0,link:Boolean(parent.closest('.project-credit'))};lines.push(line);}else{line.text+=ch;line.width=x+width-line.x;}
-   }
-   // Export each option label and its generated full stop in the same editable run.
-   // Mixing a rasterized stop with Word's Latin glyph metrics shifts their baselines.
-   if(line&&parent.matches('.option-letter')&&getComputedStyle(parent,'::after').content==='"."'){line.text+='.';line.width=Math.max(line.width,(parent.getBoundingClientRect().right-pageRect.left)*.75-line.x);}
-   if(line&&node.nextSibling instanceof Element&&(node.nextSibling.matches('.katex')||node.nextSibling.querySelector('.katex')))line.beforeMath=true;range.detach();
-  }return lines;
- }
- async function docx(pages:HTMLElement[],width:number,height:number,mark:boolean,fontCSS:string,onProgress:(s:string)=>void){
-  const files:Record<string,Uint8Array>={},parts:string[]=[];let shape=0;
-  const relationships=mark?['<Relationship Id="rProject" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink" Target="https://github.com/BurntRoses/paper-notebook-practice" TargetMode="External"/>']:[];
-  const fontDefinitions:string[]=[],fontRelationships:string[]=[],css=rasterCSS(fontCSS,true);
-  const fontLicense=fontCSS.match(/\/\* Noto CJK embedded font license\n([\s\S]*?)\n\*\//)?.[1];
-  if(fontLicense)files['word/fonts/OFL.txt']=bytes(fontLicense);
-  const fontNames=['Noto Serif SC','Noto Sans SC',...(lang==='ja'?['Noto Sans JP']:lang==='ko'?['Noto Sans KR']:[])];
-  for(const [i,name]of fontNames.entries()){
-   const encoded=fontCSS.match(new RegExp('font-family:"'+name+'";src:url\\(data:font/otf;base64,([^\\)]+)\\)'))?.[1];if(!encoded)continue;
-   const key=['589A46F0-E438-4C52-9A26-1382B10D40E7','2CA7EA58-ADFE-4BC4-839A-60C2D8119E3B','C8E748F7-F6D8-4CDB-B358-AD0341BA5F1A'][i],keyBytes=key.replace(/-/g,'').match(/../g)!.map(v=>parseInt(v,16)).reverse(),font=Uint8Array.from(atob(encoded),c=>c.charCodeAt(0));
-   for(let j=0;j<32;j++)font[j]^=keyBytes[j%16];files['word/fonts/font'+i+'.odttf']=font;
-   fontDefinitions.push('<w:font w:name="'+name+'"><w:family w:val="'+(i?'swiss':'roman')+'"/><w:embedRegular r:id="rFont'+i+'" w:fontKey="{'+key+'}" w:subsetted="0"/></w:font>');
-   fontRelationships.push('<Relationship Id="rFont'+i+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/font" Target="fonts/font'+i+'.odttf"/>');
-  }
-  await Promise.all(fontNames.map(name=>document.fonts.load('16px "'+name+'"')));
-  const measure=document.createElement('canvas').getContext('2d')!;
-  const nativeWidth=(line:Line,east:string,ascii:string)=>{
-   const size=Math.round(line.size*2)/2,groups=line.text.match(/[\x00-\x7f]+|[^\x00-\x7f]+/g)??[];let width=0;
-   for(const group of groups){measure.font=(line.italic?'italic ':'')+(line.bold?'bold ':'')+(size/0.75)+'px "'+(/^[\x00-\x7f]/.test(group)?ascii:east)+'"';width+=measure.measureText(group).width*.75;}
-   // Word adds script-boundary spacing in VML text even with autoSpaceDE disabled.
-   const boundaries=line.text.match(/[\u2e80-\u9fff][A-Za-z0-9]|[A-Za-z0-9][\u2e80-\u9fff]/g)?.length??0;
-   return width+boundaries*size*.2+Math.max(0,Array.from(line.text).length-1)*line.spacing;
-  };
-  for(let i=0;i<pages.length;i++){
-   onProgress('正在导出 Word '+(i+1)+' / '+pages.length);const page=pages[i],lines=textLines(page),background=await raster(page,css,true);files['word/media/page-'+(i+1)+'.png']=await encode(background,'image/png');
-   relationships.push('<Relationship Id="rImage'+i+'" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="media/page-'+(i+1)+'.png"/>');
-   const backgroundXML='<w:r><w:pict>'+(i?'':'<v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe"><v:stroke joinstyle="miter"/><v:path gradientshapeok="t" o:connecttype="rect"/></v:shapetype>')+'<v:shape id="Background'+i+'" type="#_x0000_t75" style="position:absolute;margin-left:0pt;margin-top:0pt;width:'+width+'pt;height:'+height+'pt;z-index:-251654144;mso-position-horizontal-relative:page;mso-position-vertical-relative:page" stroked="f" filled="f"><v:imagedata r:id="rImage'+i+'" o:title="纸面线框与图形"/><w10:wrap type="none"/></v:shape></w:pict></w:r>';
-   const textXML=lines.map(line=>{if(document.body.dataset.printColor==='grayscale'){const rgb=line.color.match(/../g)!.map(v=>parseInt(v,16)),gray=Math.round(.2126*rgb[0]+.7152*rgb[1]+.0722*rgb[2]).toString(16).padStart(2,'0');line.color=gray.repeat(3);}const id=++shape,east=document.documentElement.lang==='ko'?'Noto Sans KR':document.documentElement.lang==='ja'?'Noto Sans JP':/sans|hei|heiti|雅黑|黑体|Arial|monospace|Mono|Consolas|Courier/i.test(line.font)?'Noto Sans SC':'Noto Serif SC',ascii=/monospace|Mono|Consolas|Courier/i.test(line.font)?'Courier New':/Arial|sans/i.test(line.font)?'Arial':'Times New Roman',scale=Math.max(1,Math.min(600,Math.floor((line.width-(line.beforeMath ? .8 : 0))/Math.max(.1,nativeWidth(line,east,ascii))*100+.001))),run='<w:r><w:rPr><w:rFonts w:ascii="'+ascii+'" w:hAnsi="'+ascii+'" w:eastAsia="'+east+'"/><w:sz w:val="'+Math.round(line.size*2)+'"/><w:szCs w:val="'+Math.round(line.size*2)+'"/><w:w w:val="'+scale+'"/>'+(line.bold?'<w:b/><w:bCs/>':'')+(line.italic?'<w:i/>':'')+'<w:color w:val="'+line.color+'"/><w:spacing w:val="'+Math.round(line.spacing*20)+'"/><w:lang w:val="en-US" w:eastAsia="'+(document.documentElement.lang==='ko'?'ko-KR':document.documentElement.lang==='ja'?'ja-JP':'zh-CN')+'"/></w:rPr><w:t xml:space="preserve">'+xml(line.text)+'</w:t></w:r>';
-    return '<w:r><w:pict><v:shape id="Text'+id+'" type="#_x0000_t202" o:insetmode="custom" style="position:absolute;margin-left:'+line.x.toFixed(2)+'pt;margin-top:'+line.y.toFixed(2)+'pt;width:'+(line.width+12).toFixed(2)+'pt;height:'+(line.height+8).toFixed(2)+'pt;z-index:'+id+';mso-position-horizontal-relative:page;mso-position-vertical-relative:page;mso-wrap-style:none" stroked="f" filled="f"><v:textbox inset="0pt,0pt,0pt,0pt" style="mso-fit-shape-to-text:f"><w:txbxContent><w:p><w:pPr><w:spacing w:before="0" w:after="0" w:line="'+Math.round(line.height*20)+'" w:lineRule="exact"/><w:ind w:left="0" w:right="0" w:firstLine="0"/><w:autoSpaceDE w:val="0"/><w:autoSpaceDN w:val="0"/><w:snapToGrid w:val="0"/><w:jc w:val="left"/></w:pPr>'+(line.link&&mark?'<w:hyperlink r:id="rProject">'+run+'</w:hyperlink>':run)+'</w:p></w:txbxContent></v:textbox><w10:wrap type="none"/></v:shape></w:pict></w:r>';
-   }).join('');
-   parts.push('<w:p><w:pPr>'+(i?'<w:pageBreakBefore/>':'')+'<w:spacing w:before="0" w:after="0" w:line="1" w:lineRule="exact"/></w:pPr>'+backgroundXML+textXML+'</w:p>');
-  }
-  const header='<?xml version="1.0" encoding="UTF-8" standalone="yes"?>';
-  files['[Content_Types].xml']=bytes(header+'<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Default Extension="txt" ContentType="text/plain"/><Default Extension="png" ContentType="image/png"/><Default Extension="odttf" ContentType="application/vnd.openxmlformats-officedocument.obfuscatedFont"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/word/fontTable.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.fontTable+xml"/><Override PartName="/word/settings.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml"/></Types>');
-  files['_rels/.rels']=bytes(header+'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rDocument" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/></Relationships>');
-  relationships.push('<Relationship Id="rStyles" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/>');
-  relationships.push('<Relationship Id="rFontTable" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/fontTable" Target="fontTable.xml"/>','<Relationship Id="rSettings" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/settings" Target="settings.xml"/>');
-  files['word/fontTable.xml']=bytes(header+'<w:fonts xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">'+fontDefinitions.join('')+'</w:fonts>');
-  files['word/_rels/fontTable.xml.rels']=bytes(header+'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'+fontRelationships.join('')+'</Relationships>');
-  files['word/settings.xml']=bytes(header+'<w:settings xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:embedTrueTypeFonts/><w:embedSystemFonts/></w:settings>');
-  files['word/_rels/document.xml.rels']=bytes(header+'<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">'+relationships.join('')+'</Relationships>');
-  files['word/styles.xml']=bytes(header+'<w:styles xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:docDefaults><w:rPrDefault><w:rPr><w:rFonts w:ascii="Times New Roman" w:hAnsi="Times New Roman" w:eastAsia="Noto Serif SC"/><w:sz w:val="21"/></w:rPr></w:rPrDefault><w:pPrDefault><w:pPr><w:spacing w:before="0" w:after="0"/></w:pPr></w:pPrDefault></w:docDefaults><w:style w:type="paragraph" w:default="1" w:styleId="Normal"><w:name w:val="Normal"/></w:style></w:styles>');
-  files['word/document.xml']=bytes(header+'<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w10="urn:schemas-microsoft-com:office:word"><w:body>'+parts.join('')+'<w:sectPr><w:pgSz w:w="'+Math.round(width*20)+'" w:h="'+Math.round(height*20)+'"'+(width>height?' w:orient="landscape"':'')+'/><w:pgMar w:top="0" w:bottom="0" w:left="0" w:right="0" w:header="0" w:footer="0" w:gutter="0"/></w:sectPr></w:body></w:document>');return zip(files);
- }
  async function run(format:string,onProgress:(s:string)=>void=()=>{}){
   if(!['png','pdf','docx'].includes(format))throw Error('不支持的导出格式。');
+  if(format==='docx'){onProgress('正在生成可编辑的 Word 文档');return writeWord(document,zip);}
   const wasPreview=document.body.classList.contains('print-preview');if(!wasPreview)document.getElementById('preview-print')?.click();
   try{
    await document.fonts.ready;
@@ -119,8 +55,7 @@ export function paperExportRuntime(){
    const root=document.getElementById('paper-root')!,zoom=root.style.getPropertyValue('--paper-zoom');root.style.setProperty('--paper-zoom','1');
    try{const pages=Array.from(root.querySelectorAll<HTMLElement>('.exam-page'));if(!pages.length)throw Error('没有可导出的试卷页面。');const page=pages[0],payload=JSON.parse(document.getElementById('practice-data')!.textContent??'{}'),width=(payload.paperGeometry?.widthMm??page.offsetWidth*25.4/96)*72/25.4,height=(payload.paperGeometry?.heightMm??page.offsetHeight*25.4/96)*72/25.4,mark=payload.presentation?.projectMark!==false,title=String(payload.title||'试卷').replace(/[<>:"/\\|?*\u0000-\u001f]/g,'').slice(0,120),tag={exam:'试卷',answers:'答案卷','answer-card':'答题卡'}[payload.paperKind as string]??'试卷',base='《'+title+'》-'+tag;
     const style=paperCSS();
-    if(format==='docx')return {name:base+'.docx',mime:'application/vnd.openxmlformats-officedocument.wordprocessingml.document',bytes:await docx(pages,width,height,mark,style,onProgress),pages:pages.length};
-    const images:PDFImage[]=[],files:Record<string,Uint8Array>={},css=rasterCSS(style,false);
+    const images:PDFImage[]=[],files:Record<string,Uint8Array>={},css=rasterCSS(style);
     for(let i=0;i<pages.length;i++){
      onProgress('正在导出 '+format.toUpperCase()+' '+(i+1)+' / '+pages.length);
      const canvas=await raster(pages[i],css);

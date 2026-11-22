@@ -1,12 +1,19 @@
 import type {PracticeDocument} from './model';
 import {renderPractice,type PaperKind} from './paper';
 import {standalonePaperHTML} from './web-assets';
+import {zipSync} from 'fflate';
+import {nativeWordFile} from './word-export';
 
 export type PracticeExportFormat='png'|'pdf'|'docx';
 export interface PracticeExportOptions {format:PracticeExportFormat;kind?:PaperKind;css:string;onProgress?:(message:string)=>void}
-export interface PracticeExportResult {name:string;mime:string;bytes:Uint8Array;pages:number}
+export interface PracticeExportResult {name:string;mime:string;bytes:Uint8Array;pages:number|null}
 /** Only the shared renderer's trusted HTML is executed; imported user HTML never enters this frame. */
 export async function exportPracticeFiles(paper:PracticeDocument,options:PracticeExportOptions):Promise<PracticeExportResult>{
+ if(options.format==='docx'){
+  options.onProgress?.('正在生成可编辑的 Word 文档');
+  const source=renderPractice(paper,{kind:options.kind??'exam',runtime:'',preview:true});
+  return nativeWordFile(new DOMParser().parseFromString(source,'text/html'),zipSync,options.css);
+ }
  const html=await standalonePaperHTML(renderPractice(paper,{kind:options.kind??'exam',css:options.css,preview:true}));
  const frame=document.createElement('iframe');frame.setAttribute('aria-hidden','true');frame.tabIndex=-1;frame.style.cssText='position:fixed;left:-100000px;top:0;width:1800px;height:1400px;border:0;pointer-events:none;';
  frame.srcdoc=html;

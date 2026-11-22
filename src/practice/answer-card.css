@@ -135,10 +135,18 @@ body[data-kind=answer-card] .school-card-heading+.card-section-title{margin-top:
 .cet-complete-card .card-candidate{flex:none;margin:2mm 0 3mm}
 .cet-complete-card .card-part{flex:none}
 .cet-complete-card .card-bottom-code{flex:none;margin-top:3mm}
-.cet-complete-card .card-ruled-area{border-color:#333}
+.cet-complete-card .card-ruled-area{border-color:#a14360}
+body[data-print-color=grayscale] .cet-complete-card .card-ruled-area{border-color:#333}
 .cet-complete-card .card-area-watermark{color:#d6d6d6;opacity:.85}
 .cet-complete-card .card-writing-start{font-size:10pt;top:3mm}
-.cet-complete-card .card-rule-lines>span{border-top:.15mm dashed #777}
+.cet-complete-card .card-rule-lines>span{border-top:.15mm solid #999}
+.card-person>.candidate-identity{grid-template-columns:1fr;gap:0;padding:0;border:0}
+.card-person .candidate-field{grid-column:auto;gap:1mm;padding:0 1.6mm;min-height:9mm;border-bottom:.2mm solid #333;font-size:9pt}
+.card-person .candidate-field-label{min-width:0}
+.card-person .candidate-field-line{min-height:5mm}
+.cet-reading-candidate .card-person{display:flex}
+.cet-reading-candidate .card-person>.candidate-identity{display:grid;align-items:stretch;padding:0}
+.cet-reading-candidate .card-person .candidate-field:last-child{border-bottom:0}
 .cet-continue-notice{font:8pt/6mm "Songti SC",SimSun,serif;text-align:right;color:#777;flex:none}
 .registration-bottom{height:1.5mm;left:5mm;right:5mm;bottom:1mm;background:repeating-linear-gradient(90deg,#111 0,#111 3mm,transparent 3mm,transparent 5mm)}
 .registration-left{width:4.5mm;left:0;top:5mm;bottom:5mm;background:repeating-linear-gradient(180deg,#000 0,#000 1.7mm,transparent 1.7mm,transparent 4.7mm);border-right:1mm solid #fff}
@@ -183,6 +191,7 @@ body[data-kind=answer-card] .cet-listening-grid .bubble{width:3.6mm;height:2.2mm
 .boxed-card-heading>.candidate-identity{margin:4mm 0;line-height:1.5}
 .school-card-field{align-items:baseline;min-height:8mm}
 .school-card-field>span{width:16mm;text-align:left;text-align-last:left}
+.school-card-field-wide{grid-column:1/-1}
 
 .classroom-card>p {margin:2mm 0;font-size:10pt;text-align:center}
 .classroom-card .candidate-identity {margin:0 auto;max-width:157mm;grid-template-columns:repeat(3,minmax(0,1fr))}

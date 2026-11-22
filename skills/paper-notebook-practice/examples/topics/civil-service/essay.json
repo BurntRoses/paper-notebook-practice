@@ -24,9 +24,12 @@
   },
   "presentation": {
     "titleLines": [
-      "公务员能力测试",
+      "公务员录用考试模拟试卷",
       "申论"
     ],
+    "headerAlign": "center",
+    "titleLineSizesPt": [15, 21],
+    "titleGapMm": 4,
     "candidateFields": [
       "姓名",
       "准考证号"

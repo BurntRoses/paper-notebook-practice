@@ -1,19 +1,20 @@
 import {paperLocale} from './paper-labels';
+import {paperBlankText} from './paper-fields';
 import type {PracticeDocument,PracticeQuestion} from './model';
 import type {PaperTemplateLayout} from './templates';
 
 /** Blank identity labels become measured writing fields; literal source rows remain intact. */
 export function candidateIdentityMarkup(fields:string[],e:(value:unknown)=>string,options:{digits?:number;english?:boolean}={}){
- const known=/^(?:氏名|受験番号|이름|성명|수험번호|Nom|Numéro de candidat|Prüfungsnummer|Teilnehmernummer|姓名|考生編號|学校|班级|学号|考号|准考证号|报考单位|报考专业|报考院校|考点|考场|考场号|座号|座位号|专业|单位|Name|Candidate name|Candidate number|Candidate No\.?|Student (?:ID|number)|Class|School|Institution|Course|Registration (?:No\.?|number))$/i;
+ const known=/^(?:氏名|受験番号|이름|성명|수험번호|Nom|Numéro de candidat|Prüfungsnummer|Teilnehmernummer|(?:考生|学生)?姓名|考生編號|学校|班级|班別|学号|考号|准考证号|报考单位|报考专业|报考院校|考点|考场|考场号|座号|座位号|专业|单位|院系|所在院系|年级|Name|Candidate name|Candidate number|Candidate No\.?|Student (?:ID|number)|Class|School|Institution|Course|Registration (?:No\.?|number))$/i;
  const entries=fields.flatMap<{label:string}|{raw:string}>(line=>{
-  const trimmed=line.trim();
+  const trimmed=line.trim().replace(/[:：]\s*$/,'');
   if(known.test(trimmed))return [{label:trimmed}];
   const matches=[...line.matchAll(/([^_＿:：\n]+?)[:：]\s*[_＿]{2,}/g)];
   if(matches.length&&line.replace(/([^_＿:：\n]+?)[:：]\s*[_＿]{2,}/g,'').trim()===''&&matches.every(m=>known.test(m[1].trim())))return matches.map(m=>({label:m[1].trim()}));
   return [{raw:line}];
  });
  return `<div class="candidate-identity${options.english?' candidate-identity-latin':''}">${entries.map(entry=>{
-  if('raw'in entry)return `<div class="candidate-identity-original">${e(entry.raw)}</div>`;
+  if('raw'in entry)return `<div class="candidate-identity-original">${paperBlankText(entry.raw,e)}</div>`;
   const label=entry.label,number=/受験番号|수험번호|Teilnehmernummer|Numéro de candidat|Prüfungsnummer|准考证号|考生編號|考号|Candidate (?:number|No\.?)|Registration (?:No\.?|number)/i.test(label),wide=/单位|院校|学校|专业|School|Institution|Course/i.test(label),digits=number&&options.digits;
   return `<div class="candidate-field${wide?' candidate-field-wide':''}${digits?' candidate-field-number':''}" data-candidate-field="${e(label)}"><span class="candidate-field-label">${e(label)}${options.english?':':'：'}</span>${digits?`<span class="candidate-number-cells" style="--candidate-digits:${digits}" aria-hidden="true">${Array.from({length:digits},()=>'<i></i>').join('')}</span>`:'<span class="candidate-field-line" aria-hidden="true"></span>'}</div>`;
  }).join('')}</div>`;
@@ -47,7 +48,8 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
  const bubble=(text:string)=>`<span class="bubble">${e(text)}</span>`;
  const idGrid=(title='准考证号',count=digits)=>`<div class="card-id-grid" data-card-id-type="${e(title)}" style="--id-digits:${count}"><b>${e(title)}</b><div class="id-writing">${Array.from({length:count},()=>'<span></span>').join('')}</div><div class="id-bubbles">${Array.from({length:count},()=>`<div>${Array.from({length:10},(_,i)=>bubble(String(i))).join('')}</div>`).join('')}</div></div>`;
  const marks='<div class="card-registration registration-top"></div><div class="card-registration registration-right"></div>';
- const candidate=()=>`<div class="card-candidate"><div class="card-person"><div>学校：</div><div>姓名：</div><div class="card-fill-example"><b>填涂<br>要求</b><span>正确填涂方式<br><i class="filled-bubble"></i><br>错误填涂方式<br>×　√　／　○</span></div></div><div class="card-barcode"><p>请将试题册背面条形码粘贴条<br>揭下后粘贴到以下框内</p><div>条形码粘贴区<br>请勿在框内涂写</div></div>${idGrid()}</div>`;
+ const personFields=()=>candidateIdentityMarkup(['学校','姓名'],e);
+ const candidate=()=>`<div class="card-candidate"><div class="card-person">${personFields()}<div class="card-fill-example"><b>填涂<br>要求</b><span>正确填涂方式<br><i class="filled-bubble"></i><br>错误填涂方式<br>×　√　／　○</span></div></div><div class="card-barcode"><p>将试题册封底的条形码粘贴条<br>揭下后贴在此处</p><div>条形码粘贴框<br>请勿在框内涂写</div></div>${idGrid()}</div>`;
  let content='';
  if(cet){
   const original=practice.generation?.intent==='generate';
@@ -62,14 +64,14 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
    const questionAttributes=(q:PracticeQuestion)=>`${attributes(q)} data-question-id="${e(q.id)}"`;
    const fullMarks=(back:boolean)=>`<div class="card-registration registration-top"></div><div class="card-registration registration-${back?'left':'right'}"></div><div class="card-registration registration-bottom"></div>`;
    const part=(part:string,name:string,minutes:number)=>`<h2 class="card-part"><span>Part ${part}</span><b>${name}</b><span>(${minutes} minutes)</span></h2>`;
-   const penNote=(name:string)=>`<p class="card-pen-note">必须使用黑色字迹签字笔书写。非${name}答题内容或超出以下红色矩形边框限定区域的作答均为无效。</p>`;
+   const penNote=(name:string)=>`<p class="card-pen-note">请用黑色签字笔在下方边框内作答。写错区域或超出边框的${name}作答无效。</p>`;
    const ruled=(name:string,start:string,extraClass='')=>`<div class="card-ruled-area${extraClass?' '+extraClass:''}"><div class="card-rule-lines">${Array.from({length:40},()=>'<span></span>').join('')}</div><span class="card-area-watermark">${name}</span>${start?`<span class="card-writing-start">${start}</span>`:''}</div>`;
    const title=original?'大学英语'+band+'级 · 原创练习答题卡1':'全国大学英语'+band+'级考试答题卡1';
    const bottom=(card:number,side:string)=>`<div class="card-bottom-code">${credit}<span>答题卡 ${card} · ${side}</span></div>`;
    const page=(side:string,back:boolean,body:string,q?:PracticeQuestion)=>`<article class="paper-chunk answer-card-page cet-card cet-complete-card${back?' cet-card-back':''}${side==='card-2-back'?' cet-translation-card':''}" data-cet-side="${side}" data-break-before="${side!=='card-1-front'}"${q?' '+questionAttributes(q):''}>${fullMarks(back)}${body}</article>`;
    const choiceRow=(q:PracticeQuestion)=>`<div class="cet-choice-row" ${questionAttributes(q)}><b>${label(q).replace(/[.．]$/,'')}</b>${(q.options??[]).map(o=>bubble(o.id)).join('')}</div>`;
    const columns=(qs:PracticeQuestion[],className:string)=>`<div class="${className}">${Array.from({length:Math.ceil(qs.length/5)},(_,i)=>`<div class="cet-choice-column">${qs.slice(i*5,i*5+5).map(choiceRow).join('')}</div>`).join('')}</div>`;
-   const readingCandidate=()=>`<div class="card-candidate cet-reading-candidate"><div class="card-person"><div>学校：</div><div>姓名：</div></div><div class="cet-reading-fill"><b>填涂要求</b><span>正确填涂方式</span><i class="filled-bubble"></i><span>错误填涂方式</span><small>×　√　／　○</small></div>${idGrid()}</div>`;
+   const readingCandidate=()=>`<div class="card-candidate cet-reading-candidate"><div class="card-person">${personFields()}</div><div class="cet-reading-fill"><b>填涂要求</b><span>正确填涂方式</span><i class="filled-bubble"></i><span>错误填涂方式</span><small>×　√　／　○</small></div>${idGrid()}</div>`;
    const words=practice.sections.filter(s=>s.format==='word-bank'||/reading-words/.test(s.examPartId??'')).flatMap(s=>s.questions);
    const matching=practice.sections.filter(s=>s.format==='paragraph-matching'||/reading-matching/.test(s.examPartId??'')).flatMap(s=>s.questions);
    const detail=reading.filter(q=>!words.includes(q)&&!matching.includes(q));
@@ -126,11 +128,14 @@ export function makeAnswerCard(practice:PracticeDocument,source:PaperTemplateLay
   const pages=config?.pages??2;
   const cells=practice.sections.map(s=>s.displayLabel?.replace(/[、.\s]/g,'')||s.title);
   const table=`<table class="university-card-score"><tbody><tr><th>题目</th>${cells.map(s=>`<td>${e(s)}</td>`).join('')}<td>总分</td></tr><tr><th>得分</th>${cells.map(()=>'<td></td>').join('')}<td></td></tr><tr><th>阅卷人</th>${cells.map(()=>'<td></td>').join('')}<td></td></tr></tbody></table>`;
-  content=Array.from({length:pages},(_,i)=>`<article class="paper-chunk answer-card-page university-card" data-break-before="${i>0}">${i===0?anchors(all):''}<div class="university-card-seal"><span>专业：________________　班级：________________　学号：________________　姓名：________________</span><b>装　订　线</b><small>请勿在密封线内答题</small></div><div class="university-card-halves"><section class="university-card-half">${i===0?`<h1>${e(title)}</h1>${table}<div class="university-card-instructions"><div><b>注意事项</b><ol><li>考生须在试题指定的答题纸上作答。</li><li>在答题纸上写清试卷题号及答案。</li><li>用黑色或蓝色字迹的钢笔、签字笔作答。</li><li>答案不得超过装订线及答题纸边框。</li><li>考试结束后，将试卷和答题纸一并交回。</li></ol></div><p>课程代码：__________________<br><br>课程名称：__________________</p></div>`:''}<div class="university-blank-area"></div><p class="university-card-footer">第 ${i*2+1} 页，共 ${pages*2} 页</p></section><section class="university-card-half"><div class="university-blank-area"></div><p class="university-card-footer">第 ${i*2+2} 页，共 ${pages*2} 页</p></section></div></article>`).join('');
+  const identity=paperBlankText('专业：________________　班级：________________　学号：________________　姓名：________________',e);
+  const courseFields=['课程代码','课程名称'].map(field=>paperBlankText(field+'：__________________',e)).join('<br><br>');
+  content=Array.from({length:pages},(_,i)=>`<article class="paper-chunk answer-card-page university-card" data-break-before="${i>0}">${i===0?anchors(all):''}<div class="university-card-seal"><span>${identity}</span><b>装　订　线</b><small>请勿在密封线内答题</small></div><div class="university-card-halves"><section class="university-card-half">${i===0?`<h1>${e(title)}</h1>${table}<div class="university-card-instructions"><div><b>注意事项</b><ol><li>考生须在试题指定的答题纸上作答。</li><li>在答题纸上写清试卷题号及答案。</li><li>用黑色或蓝色字迹的钢笔、签字笔作答。</li><li>答案不得超过装订线及答题纸边框。</li><li>考试结束后，将试卷和答题纸一并交回。</li></ol></div><p>${courseFields}</p></div>`:''}<div class="university-blank-area"></div><p class="university-card-footer">第 ${i*2+1} 页，共 ${pages*2} 页</p></section><section class="university-card-half"><div class="university-blank-area"></div><p class="university-card-footer">第 ${i*2+2} 页，共 ${pages*2} 页</p></section></div></article>`).join('');
  }else{
   const title=config?.title??practice.title;
   const examIdentity=civil||national||provincial||postgraduate;
-  const fields=(examIdentity?['姓名','准考证号','考场号','座位号']:['学校','姓名','考场','座位号']).map(name=>`<div class="school-card-field" data-candidate-field="${name}"><span>${name}：</span><i aria-hidden="true"></i></div>`).join('');
+  const applicationFields=postgraduate?(practice.presentation?.candidateFields??[]).filter(name=>['报考单位','报考院校','报考专业'].includes(name)):[];
+  const fields=[...(examIdentity?['姓名','准考证号','考场号','座位号']:['学校','姓名','考场','座位号']),...applicationFields].map(name=>`<div class="school-card-field${applicationFields.includes(name)?' school-card-field-wide':''}" data-candidate-field="${name}"><span>${name}：</span><i aria-hidden="true"></i></div>`).join('');
   content=numberedUniversity&&!postgraduate
    ?`<header class="paper-chunk school-card-heading classroom-card"><h1>${e(title)}</h1><h2>答题纸</h2>${candidateIdentityMarkup(['专业','班级','学号','姓名'],e)}<p>按题号在对应位置作答。</p></header>`
    :classroom

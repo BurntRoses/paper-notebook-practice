@@ -142,8 +142,8 @@ function render(){root.dataset.view=view;root.querySelectorAll<HTMLButtonElement
  else if(view==='preview'&&editor&&previewTools&&restored)renderPreview();
  else {
   disposeView();disposeView=()=>{};main.className='preview-page';
-  const target=view,description=target==='templates'?'打开试卷目录':'恢复本机试卷';
-  main.innerHTML=`<div class="preview-empty"><p role="status">正在${description}…</p><button class="button secondary" hidden>重新加载页面</button></div>`;
+  const target=view,description=target==='templates'?'打开试卷目录':'打开我的试卷';
+  main.innerHTML=`<div class="preview-empty"><p role="status">${target==='templates'?'正在打开试卷目录…':''}</p><button class="button secondary" hidden>重新加载页面</button></div>`;
   const loading=main.firstChild,message=main.querySelector<HTMLElement>('[role="status"]')!,reload=main.querySelector('button')!;
   const active=()=>view===target&&main.firstChild===loading;
   const showRetry=(text:string)=>{if(active()){message.textContent=text;reload.hidden=false;}};

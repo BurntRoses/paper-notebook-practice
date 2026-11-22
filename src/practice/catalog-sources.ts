@@ -52,5 +52,9 @@ export function catalogSources(document:PracticeDocument,template?:PaperTemplate
    sources.push({role,title:material.title,issuer:material.provenance?.publisher,url,note:!url?'公开出处未核实':undefined});
   }
  }
+ if(document.exam?.scope==='full'&&['cet4','cet6'].includes(document.exam.specificationId))sources.push({
+  role:'benchmark',title:'四六级考务：试题册封底、条形码和答题卡',issuer:'哈尔滨工业大学本科生院',
+  url:'https://hituc.hit.edu.cn/2026/0609/c17860a393827/page.htm',note:'仅作卷面与答题流程参考，题目为原创模拟。',
+ });
  return sources;
 }

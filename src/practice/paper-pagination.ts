@@ -61,6 +61,9 @@ export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElem
  const count=controls.querySelector<HTMLElement>('[data-paper-page-count]')!;
  const status=controls.querySelector<HTMLElement>('[data-paper-page-status]')!;
  const buttons=[...controls.querySelectorAll<HTMLButtonElement>('[data-paper-page]')];
+ const writing=controls.appendChild(document.createElement('button'));
+ writing.type='button';writing.className='paper-writing-jump';writing.textContent='写作题';writing.hidden=true;
+ const writingPage=()=>selectables().findIndex(page=>page.querySelector('[data-paper-writing-cover]'));
  const publish=()=>{
   controls.dataset.status=state.status;controls.setAttribute('aria-busy',String(state.status==='loading'));
   input.disabled=state.status!=='ready';input.max=String(Math.max(1,state.pages));
@@ -68,6 +71,8 @@ export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElem
   count.textContent=state.status==='ready'?`/ ${state.pages} 页`:'/ — 页';
   status.textContent=state.status==='ready'?`第 ${state.page+1} 页，共 ${state.pages} 页`:state.status==='loading'?'正在排版…':state.status==='empty'?'没有可预览的页面':'预览未能完成，请重新打开试卷。';
   buttons.forEach(button=>button.disabled=state.status!=='ready'||(['first','prev'].includes(button.dataset.paperPage!)?state.page===0:state.page===state.pages-1));
+  const cover=state.status==='ready'?writingPage():-1;
+  writing.hidden=cover<0;writing.setAttribute('aria-pressed',String(cover>=0&&state.page===cover));
   options.onChange?.({...state});
  };
  const changeState=(next:PaperPagerState)=>{if(next.page!==state.page||next.pages!==state.pages||next.status!==state.status){state=next;publish();}};
@@ -125,6 +130,7 @@ export function createIframePaperPager(frame:HTMLIFrameElement,controls:HTMLElem
  };
  function setPage(page:number){if(!Number.isFinite(page))return;requestedPage=Math.max(0,Math.min(Math.trunc(page),Math.max(0,state.pages-1)));input.value=String(requestedPage+1);schedule();}
  controls.addEventListener('click',event=>{const button=(event.target as Element).closest<HTMLButtonElement>('[data-paper-page]');if(!button||button.disabled)return;const action=button.dataset.paperPage;setPage(action==='first'?0:action==='last'?state.pages-1:requestedPage+(action==='next'?1:-1));},{signal:abort.signal});
+ writing.addEventListener('click',()=>{const cover=writingPage();if(cover>=0)setPage(cover);},{signal:abort.signal});
  const jump=()=>{const next=Number(input.value);if(Number.isInteger(next)&&next>=1&&next<=state.pages)setPage(next-1);else input.value=String(state.page+1);};
  input.addEventListener('change',jump,{signal:abort.signal});input.addEventListener('keydown',event=>{if(event.key==='Enter'){event.preventDefault();jump();input.select();}else if(event.key==='Escape'){input.value=String(state.page+1);input.blur();}},{signal:abort.signal});
  controls.addEventListener('keydown',onKey,{signal:abort.signal});

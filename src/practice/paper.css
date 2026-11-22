@@ -219,6 +219,22 @@ body[data-source-header=gaokao-national] .exam-notices{font-size:10.5pt;line-hei
 .candidate-identity-latin{column-gap:7mm;font-size:10pt}
 .candidate-identity-latin .candidate-field-label{min-width:0}
 .candidate-identity-latin .candidate-field-line{min-height:6mm}
+.paper-blank-line{display:inline-block;inline-size:var(--blank-length);max-inline-size:100%;block-size:1em;border-block-end:.2mm solid currentColor;vertical-align:-.12em}
+.paper-spaced-blank{white-space:pre}
+.cet-writing-location{font-size:10pt;margin:2mm 0 0}
+.cet-writing-cover{min-height:calc(var(--paper-content-height) - 1mm);display:flex;flex-direction:column;gap:5mm;margin:0;border:.25mm solid #555}
+.cet-writing-lead p,.cet-writing-lead h2{margin:0;padding:1.5mm 3mm;text-align:center}
+.cet-writing-lead p{font-size:10pt;font-weight:bold;border-bottom:.2mm solid #777}
+.cet-writing-lead h2{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center;background:#e8e8e8;font-size:12pt}
+.cet-writing-lead h2 span:first-child{text-align:left}.cet-writing-lead h2 span:last-child{text-align:right;font-weight:normal}
+.cet-writing-prompt{padding:3mm 6mm;flex:1;min-height:0}
+.cet-writing-prompt>p{margin:0 0 4mm}
+.cet-writing-prompt .question{margin-bottom:0}
+.cet-writing-prompt .question-heading{display:block}
+.cet-writing-prompt .question-number,.cet-writing-prompt .question-points{display:none}
+.cet-cover-identity{display:grid;grid-template-columns:minmax(0,1fr) 35mm;gap:5mm;align-items:stretch;align-content:center;min-height:calc(var(--paper-content-height) * .26);padding:5mm 6mm;border-top:.25mm solid #555}
+.cet-cover-identity .candidate-identity{grid-template-columns:1fr}
+.cet-cover-barcode{display:grid;place-content:center;text-align:center;border:.25mm dashed #555;font-size:9pt;line-height:1.6}
 
 /* Output color is independent of the application's light/dark appearance. */
 body[data-print-color=grayscale] .exam-page{filter:grayscale(1)}

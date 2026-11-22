@@ -6,7 +6,7 @@ async function inlineFont(url:string):Promise<string>{
  if(!pending){pending=(async()=>{try{
   const address=new URL(absolute),extension=address.pathname.split('.').pop(),type=extension==='otf'?'font/otf':extension==='ttf'?'font/ttf':extension==='woff'?'font/woff':'font/woff2';
   let binary:ArrayBuffer;
-  if(extension==='otf')binary=(await (await import('./export-fonts')).exportFont(address)).buffer;
+  if(extension==='otf')binary=(await (await import('./export-fonts')).exportFont(address)).bytes.buffer;
   else{const response=await fetch(address,{signal:AbortSignal.timeout(30000)});if(!response.ok)throw Error(String(response.status));binary=await response.arrayBuffer();}
   return await new Promise<string>((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result));reader.onerror=()=>reject(reader.error);reader.readAsDataURL(new Blob([binary],{type}));});
  }catch{throw Error('字体未能下载，请重试或使用离线工具导出。');}})();embedded.set(absolute,pending);pending.catch(()=>embedded.delete(absolute));}

@@ -1,6 +1,6 @@
 {
   "name": "paper-notebook-practice",
-  "version": "1.4.14",
+  "version": "1.4.15",
   "private": false,
   "type": "module",
   "description": "Free, local-first question banks, exam papers, answer keys and answer sheets.",
@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "esbuild": "^0.28.2",
+    "subset-font": "2.9.0",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }

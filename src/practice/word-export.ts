@@ -1,7 +1,7 @@
 import type {PracticePresentation} from './model';
 import type {PaperTemplateLayout} from './templates';
 
-export async function nativeWordFile(doc:Document, archive:(parts:Record<string,Uint8Array>)=>Uint8Array, fontCSS?:string,loadFont?:(url:URL,family:string)=>Promise<Uint8Array>){
+export async function nativeWordFile(doc:Document, archive:(parts:Record<string,Uint8Array>)=>Uint8Array, fontCSS?:string,loadFont?:(url:URL,family:string,text:string)=>Promise<{bytes:Uint8Array;subset:boolean}|undefined>){
  const template=doc.querySelector<HTMLTemplateElement>('#paper-template')?.content;
  if(!template?.childElementCount)throw Error('没有可编辑的试卷正文。');
  const data=JSON.parse(doc.getElementById('practice-data')!.textContent!) as {title:string;paperKind:string;paperLayout:PaperTemplateLayout;paperGeometry:{widthMm:number;heightMm:number};presentation:PracticePresentation};
@@ -13,21 +13,26 @@ export async function nativeWordFile(doc:Document, archive:(parts:Record<string,
  const relItem=(id:string,type:string,target:string,external=false)=>`<Relationship Id="${id}" Type="${rel}/${type}" Target="${xml(target)}"${external?' TargetMode="External"':''}/>`;
  const rels=(items:string[])=>`<Relationships xmlns="${pack}/relationships">${items.join('')}</Relationships>`;
  const width=mm(geometry.widthMm-layout.marginLeftMm-layout.marginRightMm),columns=layout.columns,bodyWidth=(width-(columns-1)*mm(8))/columns;
- const font=layout.fontFamily==='sans'?'Arial':'Times New Roman',east=lang==='ja'?'Noto Sans JP':lang==='ko'?'Noto Sans KR':layout.fontFamily==='sans'?'Noto Sans SC':'Noto Serif SC';
- const titleEast=design.titleFont==='hei'&&east==='Noto Serif SC'?'Noto Sans SC':east;
+ const font=layout.fontFamily==='sans'?'Arial':'Times New Roman';let east=lang==='ja'?'Noto Sans JP':lang==='ko'?'Noto Sans KR':layout.fontFamily==='sans'?'Noto Sans SC':'Noto Serif SC';
+ let titleEast=design.titleFont==='hei'&&east==='Noto Serif SC'?'Noto Sans SC':east;
  const fontDefs:string[]=[],fontRels:string[]=[];
- if(/[\p{Script=Han}\p{Script=Katakana}\p{Script=Hiragana}\p{Script=Hangul}]/u.test((template.textContent??'')+(design.footerTemplate??''))){
+ const fontText=(template.textContent??'')+JSON.stringify(design.runningHeader??'')+(design.footerTemplate??'')+(design.watermark?.text??'');
+ if(/[\p{Script=Han}\p{Script=Katakana}\p{Script=Hiragana}\p{Script=Hangul}]/u.test(fontText)){
   const css=fontCSS??Array.from(doc.querySelectorAll('style'),sheet=>sheet.textContent).join('\n');
   for(const family of new Set([east,titleEast])){
    const source=css.match(new RegExp('@font-face\\s*\\{\\s*font-family:["\']'+family+'["\'];\\s*src:url\\(["\']?([^"\')]+)'))?.[1];if(!source)continue;
    const url=new URL(source,location.href);if(!/^data:font\/otf;base64,/i.test(source)&&(url.origin!==location.origin||!/^https?:$/.test(url.protocol)))throw Error('无法读取试卷字体：'+family);
-   let binary:Uint8Array;
-   if(loadFont&&url.protocol!=='data:')binary=(await loadFont(url,family)).slice();
+   let binary:Uint8Array,subset=false;
+   if(loadFont&&url.protocol!=='data:'){
+    const loaded=await loadFont(url,family,fontText);
+    if(!loaded){const local=family.endsWith('JP')?'Yu Gothic':family.endsWith('KR')?'Malgun Gothic':family.includes('Serif')?'SimSun':'Microsoft YaHei';if(east===family)east=local;if(titleEast===family)titleEast=local;continue;}
+    binary=loaded.bytes.slice();subset=loaded.subset;
+   }
    else{const response=await fetch(url,{signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error('试卷字体下载失败，请重试。');binary=new Uint8Array(await response.arrayBuffer());}
    const key='589A46F0-E438-4C52-9A26-1382B10D40E7',mask=key.replace(/-/g,'').match(/../g)!.reverse().map(pair=>parseInt(pair,16));
    for(let index=0;index<32;index++)binary[index]^=mask[index%16];
    const id='font'+(fontDefs.length+1),path='fonts/'+id+'.odttf';files['word/'+path]=binary;fontRels.push(relItem(id,'font',path));
-   fontDefs.push(`<w:font w:name="${family}">${val('family',family.includes('Serif')?'roman':'swiss')}<w:embedRegular r:id="${id}" w:fontKey="{${key}}" w:subsetted="0"/></w:font>`);
+   fontDefs.push(`<w:font w:name="${family}">${val('family',family.includes('Serif')?'roman':'swiss')}<w:embedRegular r:id="${id}" w:fontKey="{${key}}" w:subsetted="${subset?1:0}"/></w:font>`);
   }
   if(fontDefs.length){
    const license=css.match(/\/\* Noto CJK embedded font license\n([\s\S]*?)\n\*\//)?.[1];if(license)files['word/fonts/OFL.txt']=new TextEncoder().encode(license);

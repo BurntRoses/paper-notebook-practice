@@ -5,7 +5,8 @@ import {readFile,writeFile,mkdir,cp,rm} from 'node:fs/promises';
 import {resolve,dirname,extname,relative,isAbsolute,sep} from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {createHash} from 'node:crypto';
-import {gzipSync,inflateSync} from 'node:zlib';
+import {inflateSync} from 'node:zlib';
+import {recordGlyphs,writeExportFonts} from './build-export-fonts.mjs';
 import {tsImport} from 'tsx/esm/api';
 const root=fileURLToPath(new URL('../',import.meta.url));
 const out=resolve(process.argv[2]||root+'dist/site');
@@ -100,10 +101,12 @@ function verifyListing(entry){
   throw Error('Incomplete catalog identity: '+entry?.id);
  }
 }
+const fontProfiles=new Set();
 function validatePaper(id,paper,kind){
  if(paper.original)throw Error(id+': catalog papers must not bundle original pages');
  const result=validatePractice(paper,undefined,true);
  if(!result.valid)throw Error(id+': '+result.errors.map(({path,message})=>path+' '+message).join('; '));
+ recordGlyphs(paper,renderPractice,hasSeparateAnswerCard(paper),fontProfiles);
  const listing=listings.get(id);
  verifyListing(listing);
  if(listing.request.kind!==kind||listing.request.id!==id||listing.documentId!==paper.practiceId||
@@ -187,9 +190,8 @@ for(const entry of topics.topics){
 const license=await readFile(root+'licenses/noto-cjk-OFL.txt','utf8');
 let printFonts='/* Noto CJK embedded font license\n'+license.replace(/\*\//g,'* /')+'\n*/\n';
 for(const [family,name]of [['Noto Serif SC','NotoSerifSC-Regular.otf'],['Noto Sans SC','NotoSansSC-Regular.otf'],['Noto Sans JP','NotoSansJP-Regular.otf'],['Noto Sans KR','NotoSansKR-Regular.otf']]){
- const font=await readFile(root+'assets/practice-fonts/'+name),url=await asset(font,'.otf'),base=out+'/assets/'+hash(font)+'.font',partSize=384*1024;
- for(let start=0;start<font.length;start+=partSize)await writeFile(`${base}-${start/partSize}.bin`,gzipSync(font.subarray(start,start+partSize)));
- await writeFile(base+'.json',JSON.stringify({size:font.length,partSize,sha256:createHash('sha256').update(font).digest('hex')}));
+ const font=await readFile(root+'assets/practice-fonts/'+name),url=await asset(font,'.otf');
+ await writeExportFonts(out+'/assets',font,family,fontProfiles);
  printFonts+=`@font-face{font-family:"${family}";src:url("${url}");font-style:normal;font-weight:400;font-display:swap}\n`;
 }
 let css='';

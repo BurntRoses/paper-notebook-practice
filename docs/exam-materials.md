@@ -28,7 +28,7 @@ Standards and Testing Agency 于 2024 年 5 月发布的 Year 6 数学套卷包�
 
 Contains material developed by the Standards and Testing Agency for 2024 national curriculum assessments and licensed under [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). [发布页](https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials) · [版权说明](https://www.gov.uk/government/publications/key-stage-2-tests-2024-mathematics-test-materials/2024-copyright-ownership-key-stage-2-national-curriculum-tests)
 
-## 新增完整发布本
+## 英格兰 KS2 英语与 MIT 期末试卷
 
 - 英格兰 2024 KS2 英语语法与拼写有两份考生题本（32、4 页）、官方评分册（20 页）、听写口令和语法卷监考须知（各 8 页）。与同年数学卷使用同一再利用许可和归属声明。 [发布页](https://www.gov.uk/government/publications/key-stage-2-tests-2024-english-grammar-punctuation-and-spelling-test-materials)
 - MIT 6.006 算法导论 2020 年春季期末考试提供题本和官方解答（各 21 页），保留原有运算图表和草稿页。 [发布页](https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/resources/exams/)
@@ -36,4 +36,4 @@ Contains material developed by the Standards and Testing Agency for 2024 nationa
 - MIT 5.111 化学原理 2014 年秋季期末考试提供题本和官方解答（各 17 页），包括原卷的图表和作图位置。 [发布页](https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/pages/exams/)
 - MIT 8.012 经典力学 2008 年秋季期末考试提供题本（13 页）和官方解答（26 页），含原卷的公式表。预览从试题首页开始，仍可回翻到发布说明。 [发布页](https://ocw.mit.edu/courses/8-012-physics-i-classical-mechanics-fall-2008/resources/exams/)
 
-MIT 各卷随页标明出版者、课程和 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可。新增套卷的分册角色、原件链接、页数、校验值、标识处理坐标和光栅页号记录在 `src/practice/source-editions.json`，使用 240 dpi 图层保留矢量转换会损伤的字形和图案，并保留可选文字。可用 `python tools/build-ks2-pages.py <原件目录> <套卷ID>` 重建卷面数据。完整试卷目录收录已完成的真题和原创模拟，每套一条，题库、节选和独立版式仍可通过 Skill 查找。
+MIT 各卷随页标明出版者、课程和 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可。原件链接、页数和再利用说明见 `src/practice/source-editions.json`。

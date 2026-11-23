@@ -36,8 +36,6 @@ const {escapePaper,renderPractice}=await tsImport('../src/practice/paper.ts',imp
 const {catalogPaper}=await tsImport('../src/practice/generated-paper.ts',import.meta.url);
 const {catalogGuides}=await tsImport('../src/practice/catalog-guides.ts',import.meta.url);
 const {homePapers}=await tsImport('../src/practice/home-papers.ts',import.meta.url);
-const {workbenchTasks}=await tsImport('../src/practice/workbench-tasks.ts',import.meta.url);
-const scanEvidence=JSON.parse(await readFile(root+'src/practice/workbench-scan.json','utf8'));
 for(const [category,guide] of Object.entries(catalogGuides)){
  const sample=listings.get(guide.sample);
  if(sample?.category!==category||sample.kind!=='paper')throw Error('Invalid category representative: '+category);
@@ -47,16 +45,6 @@ if(new Set(homePapers.map(paper=>paper.id)).size!==homePapers.length)throw Error
 for(const paper of homePapers){
  const listing=listings.get(paper.id);
  if(!publicIds.has(paper.id)||listing?.scope!=='full'||listing.request.kind!==paper.kind)throw Error('Featured paper must link to a complete source: '+paper.id);
-}
-for(const task of Object.values(workbenchTasks)){
- if(listings.get(task.exampleId)?.scope!=='full'||task.supplementaryId&&!listings.has(task.supplementaryId)){
-  throw Error('Workbench example does not match the catalog: '+task.exampleId);
- }
-}
-if(scanEvidence.paperId!==workbenchTasks.scan.exampleId||scanEvidence.page!==1||!scanEvidence.lines.length||
-   scanEvidence.lines.some(line=>!line.raw||line.confidence<0||line.confidence>1||line.bounds.length!==4||
-    line.bounds.some(value=>!Number.isFinite(value)||value<0||value>1))){
- throw Error('OCR demonstration evidence must match the source page');
 }
 
 const validURL=value=>{try{return ['https:','http:'].includes(new URL(value).protocol);}catch{return false;}};
@@ -142,9 +130,6 @@ function validatePaper(id,paper,kind){
    }
   }
  }
- if(id===scanEvidence.paperId&&scanEvidence.lines.some(line=>!paper.sections[0].questions.some(question=>question.number===line.question))){
-  throw Error('OCR demonstration refers to a missing question: '+id);
- }
  if(!documented.some(source=>source.role==='question')||
     documented.some(source=>!sourceRoles.includes(source.role)||!source.title||source.url&&!validURL(source.url))){
   throw Error('Incomplete source roles: '+id);
@@ -206,11 +191,7 @@ const virtual={name:'public-practice-assets',setup(api){
  api.onResolve({filter:/\?raw$/},args=>({path:args.path.slice(0,-4),namespace:'public-raw',pluginData:{resolveDir:args.resolveDir}}));
  api.onLoad({filter:/.*/,namespace:'public-raw'},async args=>{const file=args.path.startsWith('.')?resolve(args.pluginData.resolveDir,args.path):fileURLToPath(import.meta.resolve(args.path));return{contents:await readFile(file,'utf8'),loader:'text'};});
  api.onResolve({filter:/^\.\/catalog-shelf$/},args=>({path:args.path,namespace:'public-shelf'}));
- api.onLoad({filter:/.*/,namespace:'public-shelf'},()=>{
-  const demoIds=new Set(Object.values(workbenchTasks).flatMap(task=>[task.exampleId,task.supplementaryId]));
-  const demoEntries=catalogShelf.filter(entry=>demoIds.has(entry.id)&&!publicIds.has(entry.id));
-  return {contents:`export const publicPaperSets=${JSON.stringify(publicPaperSets)};export const catalogShelf=[...publicPaperSets,...${JSON.stringify(demoEntries)}];export const legacyCatalogLayouts=new Map(${JSON.stringify([...legacyCatalogLayouts])});`,loader:'js'};
- });
+ api.onLoad({filter:/.*/,namespace:'public-shelf'},()=>({contents:`export const publicPaperSets=${JSON.stringify(publicPaperSets)};export {publicPaperSets as catalogShelf};export const legacyCatalogLayouts=new Map(${JSON.stringify([...legacyCatalogLayouts])});`,loader:'js'}));
  api.onResolve({filter:/^\.\/(?:case-index|embedded-examples)$/},args=>({path:args.path,namespace:'public-case-index'}));
  api.onLoad({filter:/.*/,namespace:'public-case-index'},args=>({contents:args.path.endsWith('case-index')?
   `export const caseIndex=${JSON.stringify(caseIndex)};`:
@@ -249,7 +230,7 @@ const release=project+'/releases/latest/download/';
 const config={skillUrl:release+'paper-notebook-practice-skill.zip',topicBaseUrl:'./topics/',caseBaseUrl:'./cases/',exampleBaseUrl:'./examples/',previewPreloads:previewFiles.filter(path=>!shellFiles.includes(path)).map(publicPath)};
 const startupCSS='html,body{margin:0;background:#f8f9f6;color:#263b30;font-family:system-ui,sans-serif}.initial{display:grid;place-content:center;min-height:100svh;padding:0 20px;gap:14px;text-align:center}.initial strong{font-size:28px}.initial p{font-size:15px;color:#506057}.initial a{color:inherit}.initial button{font:inherit;padding:8px 12px;justify-self:center}';
 const startupLinks=`<a href="${release}paper-notebook-practice.zip">下载离线工具</a><a href="${project}">GitHub 项目</a>`;
-await writeFile(out+'/index.html',`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${modulePreloads}${catalogPreloads}<meta name="theme-color" content="#f8f9f6"><meta name="description" content="上传往年卷、讲义和知识点，整理题库，制作试卷、答案与答题纸。覆盖小学、中高考、考公考研、国际课程、语言、入籍与艺术，免费开源。"><meta property="og:title" content="纸间 Practice · 从资料到整套试卷"><meta property="og:description" content="整理题库，制作可作答、可编辑的整套试卷。免费开源，本机导出。"><title>纸间 Practice · 从资料到整套试卷</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><style>${startupCSS}</style><noscript><style>#startup-message{display:none}</style></noscript><script>window.__PRACTICE_WEB__=${JSON.stringify(config)};</script></head><body><div id="practice-app"><div class="initial"><strong>纸间 Practice</strong><p id="startup-message" role="status">正在打开工作台…</p><noscript>请启用 JavaScript 查看试卷，或下载离线工具。</noscript><button id="startup-reload" hidden>重新加载页面</button>${startupLinks}</div></div><script>(()=>{const message=document.getElementById('startup-message'),reload=document.getElementById('startup-reload');const show=text=>{if(message.isConnected){message.textContent=text;reload.hidden=false;}};reload.onclick=()=>location.reload();const timer=setTimeout(()=>show('加载比平时久，可继续等待、重新加载或使用离线工具。'),10000);window.addEventListener('error',event=>{if(event.target===window||event.target.id==='practice-entry'){clearTimeout(timer);show('工作台资源未能载入，请重新加载或使用离线工具。');}},true);})();</script><script id="practice-entry" type="module" src="./${entryPath}"></script></body></html>`);
+await writeFile(out+'/index.html',`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">${modulePreloads}${catalogPreloads}<meta name="theme-color" content="#f8f9f6"><meta name="description" content="查看完整试卷，调整版式，导出 Word 或 PDF。免费开源，可离线使用。"><meta property="og:title" content="纸间 Practice · 从资料到整套试卷"><meta property="og:description" content="查看完整试卷，调整版式，导出 Word 或 PDF。"><title>纸间 Practice · 从资料到整套试卷</title><link rel="icon" href="./favicon.svg" type="image/svg+xml"><style>${startupCSS}</style><noscript><style>#startup-message{display:none}</style></noscript><script>window.__PRACTICE_WEB__=${JSON.stringify(config)};</script></head><body><div id="practice-app"><div class="initial"><strong>纸间 Practice</strong><p id="startup-message" role="status">正在打开工作台…</p><noscript>请启用 JavaScript 查看试卷，或下载离线工具。</noscript><button id="startup-reload" hidden>重新加载页面</button>${startupLinks}</div></div><script>(()=>{const message=document.getElementById('startup-message'),reload=document.getElementById('startup-reload');const show=text=>{if(message.isConnected){message.textContent=text;reload.hidden=false;}};reload.onclick=()=>location.reload();const timer=setTimeout(()=>show('加载比平时久，可继续等待、重新加载或使用离线工具。'),10000);window.addEventListener('error',event=>{if(event.target===window||event.target.id==='practice-entry'){clearTimeout(timer);show('工作台资源未能载入，请重新加载或使用离线工具。');}},true);})();</script><script id="practice-entry" type="module" src="./${entryPath}"></script></body></html>`);
 await writeFile(out+'/404.html',`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>页面不存在 · 纸间 Practice</title><style>${startupCSS}</style></head><body><main class="initial"><strong>页面不存在</strong><p>这个地址不是纸间 Practice 的有效页面。</p><a href="${site}">返回纸间 Practice 首页</a>${startupLinks}</main></body></html>`);
 await writeFile(out+'/favicon.svg','<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#f1f4ed"/><path d="M12 14h16l4 4 4-4h16v36H36l-4 4-4-4H12zm20 4v36" fill="none" stroke="#315648" stroke-width="3" stroke-linejoin="round"/></svg>');
 await writeFile(out+'/.nojekyll','');

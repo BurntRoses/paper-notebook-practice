@@ -39,7 +39,7 @@ const result=await build({entryPoints:[root+'src/practice/workspace.ts'],bundle:
  }
 }]});
 const script=result.outputFiles[0].text.replace(/<\/script/gi,'<\\/script');
-const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f9f6"><meta name="description" content="智能体与网页对话，一句话从资料制作整套试卷。MIT 免费开源。"><title>纸间 · 试卷预览</title></head><body><div id="practice-app"></div><script>${script}</script></body></html>`;
+const html=`<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f8f9f6"><meta name="description" content="查看完整试卷，调整版式，导出 Word 或 PDF。免费开源，可离线使用。"><title>纸间 · 试卷预览</title></head><body><div id="practice-app"></div><script>${script}</script></body></html>`;
 await writeFile(out+'/纸间-试卷预览.html',html);
 await writeFile(out+'/paper-notebook-practice-preview.html',html);
 await writeFile(out+'/纸间-刷题工作台.html',html);

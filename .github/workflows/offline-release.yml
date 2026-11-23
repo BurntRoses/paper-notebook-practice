@@ -32,7 +32,7 @@ jobs:
           if gh release view "$GITHUB_REF_NAME" --json isDraft > "$RUNNER_TEMP/release.json"; then
             test "$(jq -r .isDraft "$RUNNER_TEMP/release.json")" = true
           else
-            gh release create "$GITHUB_REF_NAME" --verify-tag --draft --title "$GITHUB_REF_NAME" --generate-notes
+            gh release create "$GITHUB_REF_NAME" --verify-tag --draft --title "$GITHUB_REF_NAME" --notes '下载完整离线包、独立预览页或 Skill。完整离线包内含使用说明。'
           fi
           gh release upload "$GITHUB_REF_NAME" --clobber SHA256SUMS.txt paper-notebook-practice{,-skill,-topics,-complete-cet}.zip paper-notebook-practice-preview.html
           gh release edit "$GITHUB_REF_NAME" --draft=false --latest

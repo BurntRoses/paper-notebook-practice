@@ -15,7 +15,7 @@ description: Create sourced exams, answer keys, scoring rubrics, answer sheets a
 
 开始前读[两轮需求与版式收集](references/design-intake.md)、[Agent 工作流](references/agent-workflow.md)、[学科与年级出题策略](references/exam-authoring.md)、[数据协议](references/practice-contract.md)、[模板目录](references/template-catalog.md)与[OCR / 原卷复刻](references/ocr-replica.md)。正式作者源以 [practice.schema.json](schemas/practice.schema.json) 为准，组卷任务以 [practice-job.schema.json](schemas/practice-job.schema.json) 为准。
 
-两类一句话入口随包提供：[智能体](prompts/coding-agent.txt)适用于 Codex、Claude Code、DeepSeek Harness、WorkBuddy；[网页会话](prompts/conversation-model.txt)适用于 ChatGPT、DeepSeek 等附件对话。两者分别从仓库 `AGENTS.md` 与 `WEB_CHAT.md` 进入，共用出题策略、数据协议与渲染器。
+两类出卷提示词随包提供：[智能体](prompts/coding-agent.txt)适用于 Codex、Claude Code、DeepSeek Harness、WorkBuddy；[网页会话](prompts/conversation-model.txt)适用于 ChatGPT、DeepSeek 等附件对话。两者分别从仓库 `AGENTS.md` 与 `WEB_CHAT.md` 进入，共用出题策略、数据协议与渲染器。
 
 
 ## 研究型出卷：识别、检索、命题与核验

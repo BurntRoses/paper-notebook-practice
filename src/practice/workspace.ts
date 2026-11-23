@@ -14,8 +14,8 @@ import styles from './workspace.css?raw';
 import themeCSS from './theme.css?raw';
 import {mountThemeControl} from './theme';
 import {mountSelectControls} from './select';
-import {EDITABLE_DELIVERY,ENTRY_PROMPTS,PROJECT_URL} from './entry-prompts';
-import {homePaperAsset,homePaperCommand,homePapers} from './home-papers';
+import {ENTRY_PROMPTS,PROJECT_URL} from './entry-prompts';
+import {homePapers} from './home-papers';
 
 type PreviewKind=PaperKind;
 let editor:typeof import('./editor-tools');
@@ -154,7 +154,7 @@ function render(){root.dataset.view=view;root.querySelectorAll<HTMLButtonElement
 }
 function installSkill(button:HTMLButtonElement){void action(button,async()=>downloadWebFile(webDelivery()?.skillUrl??'./paper-notebook-practice-skill.zip','paper-notebook-practice-skill.zip'),'已开始下载');}
 const promptResets=new WeakMap<HTMLButtonElement,()=>void>();
-async function copyPrompt(button:HTMLButtonElement,prompt=ENTRY_PROMPTS.agent.instructions){
+async function copyPrompt(button:HTMLButtonElement,prompt:string){
  if(button.disabled||button.getAttribute('aria-disabled')==='true')return;
  let timer=0;
  const original=document.createElement('span');original.className='copy-label';
@@ -236,17 +236,22 @@ function renderStart(){
  disposeView();
  main.className='start-page home-page';
  main.innerHTML=`<section class="home-library" aria-labelledby="home-library-title">
-  <div class="home-library-content"><header class="home-library-heading"><h1 id="home-library-title">试卷样例</h1><button id="browse-templates" class="button text">全部试卷 ${icon('arrow')}</button></header>
-  <div class="home-papers" role="group" aria-label="选择完整样卷">${homePapers.map(paper=>`<button type="button" data-home-paper="${paper.id}" aria-label="${escape(paper.title)}" aria-pressed="false" aria-controls="home-stage"><span class="home-paper-label">${escape(paper.label)}</span><span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
-  <section class="home-copy" aria-labelledby="home-copy-title"><h2 id="home-copy-title">出卷指令</h2>
-   <div>${(['agent','chat'] as const).map(mode=>`<button id="copy-${mode}" class="button secondary" aria-live="polite">${icon('copy')}<span>${mode==='agent'?'复制 Agent 指令':'复制对话模型指令'}</span></button>`).join('')}</div>
+  <div class="home-library-content"><header class="home-library-heading"><h1 id="home-library-title">组卷示例</h1><button id="browse-templates" class="button text">全部试卷 ${icon('arrow')}</button></header>
+  <div class="home-papers" role="group" aria-label="选择预览示例">${homePapers.map(paper=>`<button type="button" data-home-paper="${paper.id}" aria-label="${escape(paper.title)}" aria-pressed="false" aria-controls="home-stage"><span class="home-paper-label">${escape(paper.label)}</span><span class="selection-mark">${icon('check')}</span></button>`).join('')}</div>
+  <section class="home-copy" aria-labelledby="home-copy-title"><h2 id="home-copy-title">制作我的试卷</h2>
+   <ol class="home-copy-steps">
+    <li><strong>准备资料</strong>：上传教材、题库等资料，或直接说明科目、对象和出卷需求。</li>
+    <li><strong>发送提示词</strong>：复制后发给 Agent 或对话模型，按提问补充要求。</li>
+    <li><strong>导入试卷</strong>：拿到试卷文件后，从右上角导入，调整版式或导出。</li>
+   </ol>
+   <div>${(['agent','chat'] as const).map(mode=>`<button id="copy-${mode}" type="button" class="button secondary" aria-live="polite">${icon('copy')}<span>${mode==='agent'?'复制 Agent 提示词':'复制对话提示词'}</span></button>`).join('')}</div>
   </section></div>
  </section>
- <section id="home-stage" class="home-stage" aria-label="样卷预览"></section>`;
+ <section id="home-stage" class="home-stage" aria-label="组卷示例预览"></section>`;
  main.querySelector<HTMLButtonElement>('#browse-templates')!.onclick=()=>navigate('templates');
  const copyButtons=(['agent','chat'] as const).map(mode=>{
   const button=main.querySelector<HTMLButtonElement>('#copy-'+mode)!;
-  button.onclick=()=>void copyPrompt(button,samplePrompt(mode));
+  button.onclick=()=>void copyPrompt(button,ENTRY_PROMPTS[mode].prompt);
   return button;
  });
  const group=main.querySelector('.home-papers')!,buttons=[...group.querySelectorAll<HTMLButtonElement>('button')];
@@ -260,7 +265,7 @@ function renderStart(){
  }
  async function draw(){
   const paper=homePaper,current=++generation;
-  disposeStage();disposeStage=()=>{};syncButtons();copyButtons.forEach(button=>promptResets.get(button)?.());
+  disposeStage();disposeStage=()=>{};syncButtons();
   host.innerHTML='<p class="home-preview-status" role="status">正在打开试卷…</p>';
   try{
    const entry=await catalogEntry(paper.id);
@@ -278,15 +283,6 @@ function renderStart(){
  syncButtons();segmentedKeys(group);
  void draw();
  disposeView=()=>{generation++;disposeStage();copyButtons.forEach(button=>promptResets.get(button)?.());};
-}
-function samplePrompt(mode:keyof typeof ENTRY_PROMPTS){
- const reference=homePaperAsset(homePaper),command=mode==='agent'?homePaperCommand(homePaper):undefined;
- return [
-  ENTRY_PROMPTS[mode].instructions,
-  '参考样卷：'+reference+'。'+(command?' 可运行 '+command+' 取得参考作者数据。':''),
-  '请结合我附上的资料与要求，自己确定命题和核验步骤，参考样卷的考试规格、题组与版式，制作同类完整试卷。只有我明确要求小练习或选编时才缩减题量。请直接给我题目卷和答案卷。如原卷另配答题卡或我明确需要，请同时提供相应答题卡。',
-  EDITABLE_DELIVERY,
- ].join('\n\n');
 }
 function renderTemplates({publicPaperSets,legacyCatalogLayouts}:typeof import('./catalog-shelf')){
  disposeView();

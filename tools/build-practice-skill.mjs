@@ -8,7 +8,7 @@ const rawAssets={name:'practice-node-raw-assets',setup(api){api.onResolve({filte
 const root=fileURLToPath(new URL('../',import.meta.url));
 const instructionRoot=root+'skills/paper-notebook-practice/prompts/';
 const instructions=JSON.parse(await readFile(instructionRoot+'instructions.json','utf8'));
-for(const [mode,file] of [['agent','coding-agent.txt'],['chat','conversation-model.txt']])await writeFile(instructionRoot+file,instructions[mode].trim()+'\n');
+for(const [mode,file] of [['agent','coding-agent.txt'],['chat','conversation-model.txt']])await writeFile(instructionRoot+file,[instructions[mode],instructions.workflow].join('\n\n')+'\n');
 const {loadPracticeStyles,buildPracticeHtml}=await tsImport('../src/practice/build.ts',import.meta.url);
 const css=await loadPracticeStyles();
 const compiled=await build({stdin:{contents:"import {practiceSession,practiceDigest,normalizePracticeAnswer} from './src/practice/session.ts';import {paperExportRuntime} from './src/practice/export-runtime.ts';practiceSession(practiceDigest,normalizePracticeAnswer);paperExportRuntime();",resolveDir:root,loader:'ts'},bundle:true,platform:'browser',format:'iife',target:'es2022',minify:true,write:false});

@@ -12,12 +12,19 @@
 
 ## 本地运行
 
+需要 Node.js 20.19+、npm 和用于本地预览的 Python 3。
+
 ```sh
+git clone https://github.com/BurntRoses/paper-notebook-practice.git
+cd paper-notebook-practice
 npm ci
 npm run build:site
+python3 -m http.server 4173 --bind 127.0.0.1 --directory dist/site
 ```
 
-通过 HTTP 服务打开 `dist/site/`。运行 `npm run build` 可在 `dist/practice/` 生成离线版。命令行与资料协议见 [Skill](skills/paper-notebook-practice/SKILL.md)。
+打开 `http://localhost:4173/`。运行 `npm run build` 可在 `dist/practice/` 生成离线版，无需账号或 API 密钥。命令行用法与文件格式见 [Skill](skills/paper-notebook-practice/SKILL.md)。
+
+制作与阅读图文笔记，请使用 [Paper Notebook](https://github.com/BurntRoses/paper-notebook)。
 
 ## 许可
 

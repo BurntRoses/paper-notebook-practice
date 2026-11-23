@@ -242,7 +242,7 @@ function renderStart(){
    <ol class="home-copy-steps">
     <li><strong>准备资料</strong>：上传教材、题库等资料，或直接说明科目、对象和出卷需求。</li>
     <li><strong>发送提示词</strong>：复制后发给 Agent 或对话模型，按提问补充要求。</li>
-    <li><strong>导入试卷</strong>：拿到试卷文件后，从右上角导入，调整版式或导出。</li>
+    <li><strong>后续调整（可选）</strong>：如需修改版式或转换格式，点击右上角「导入试卷」。</li>
    </ol>
    <div>${(['agent','chat'] as const).map(mode=>`<button id="copy-${mode}" type="button" class="button secondary" aria-live="polite">${icon('copy')}<span>${mode==='agent'?'复制 Agent 提示词':'复制对话提示词'}</span></button>`).join('')}</div>
   </section></div>
